@@ -1,0 +1,23 @@
+/* css/style.css */
+
+/* スコアがポンっと飛び出すアニメーション */
+@keyframes scorePop {
+    0% { transform: translateY(0) scale(1); opacity: 1; }
+    50% { transform: translateY(-15px) scale(1.1); }
+    100% { transform: translateY(-30px) scale(1); opacity: 0; }
+}
+
+.score-pop {
+    animation: scorePop 1.5s ease-out forwards;
+}
+
+/* 文法バッジ（高校生レベル）のスタイル */
+.grammar-badge {
+    @apply bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md;
+    transition: all 0.3s ease-in-out;
+}
+
+/* 認識中コンテナの発光エフェクト */
+.recording {
+    @apply border-red-400 bg-red-50;
+}

@@ -1,0 +1,71 @@
+[
+  {
+    "id": "theme_301",
+    "imageSrc": "assets/images/301.webp",
+    "description": "カフェで本を読む緑のセーターの女性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": ["woman", "book", "read", "green", "cup", "coffee", "window"],
+        "chunks": ["a woman", "reading a book", "green sweater", "a cup of coffee"],
+        "sentences": [
+          {"text": "A woman is reading a book.", "grammar": "現在進行形"},
+          {"text": "She has a book.", "grammar": "現在形"}
+        ]
+      },
+      "junior_high": {
+        "words": ["cafe", "drink", "sit", "glasses", "table", "sunny"],
+        "chunks": ["sitting by the window", "drinking coffee", "on the table"],
+        "sentences": [
+          {"text": "She is sitting by the window and reading a book.", "grammar": "接続詞and"},
+          {"text": "There are glasses on the table.", "grammar": "There is/are"},
+          {"text": "The woman reading a book is beautiful.", "grammar": "現在分詞の形容詞的用法"},
+          {"text": "She enjoys reading a book.", "grammar": "動名詞"}
+        ]
+      },
+      "high_school": {
+        "words": ["engrossed", "atmosphere", "sunlight", "relaxing", "focus"],
+        "chunks": ["absorbed in reading", "bathed in sunlight", "with her hair tied up"],
+        "sentences": [
+          {"text": "The woman who is wearing a green sweater is reading a book.", "grammar": "関係代名詞"},
+          {"text": "Seen from the side, she looks very relaxed.", "grammar": "分詞構文"},
+          {"text": "It seems that she is focusing on her book.", "grammar": "It seems that~"}
+        ]
+      }
+    }
+  },
+  {
+    "id": "theme_302",
+    "imageSrc": "assets/images/302.webp",
+    "description": "青いセーターの女性と、窓の外を歩く男性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": ["man", "walk", "red", "blue", "plant", "outside"],
+        "chunks": ["a red book", "blue sweater", "walking outside", "a green plant"],
+        "sentences": [
+          {"text": "A man is walking outside.", "grammar": "現在進行形"},
+          {"text": "She is reading a red book.", "grammar": "現在進行形"}
+        ]
+      },
+      "junior_high": {
+        "words": ["scarf", "wear", "pass", "smile", "potted"],
+        "chunks": ["wearing a scarf", "walking past the window", "looking happy"],
+        "sentences": [
+          {"text": "A man is walking outside the window.", "grammar": "前置詞"},
+          {"text": "The woman wearing a scarf is smiling.", "grammar": "現在分詞の形容詞的用法"},
+          {"text": "She looks happy to read the book.", "grammar": "不定詞の副詞的用法(感情の原因)"}
+        ]
+      },
+      "high_school": {
+        "words": ["passerby", "contrast", "observe", "patterned", "stroll"],
+        "chunks": ["walking past the cafe", "wearing a patterned scarf", "unaware of each other"],
+        "sentences": [
+          {"text": "The man walking outside doesn't notice the woman who is reading.", "grammar": "関係代名詞 / 知覚動詞の否定"},
+          {"text": "Besides the coffee, there is a potted plant on the table.", "grammar": "前置詞besides"},
+          {"text": "She is so engrossed in the book that she doesn't see the man.", "grammar": "so ~ that構文"}
+        ]
+      }
+    }
+  }
+]

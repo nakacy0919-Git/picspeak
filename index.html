@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>PicSpeak - English Speaking Battle</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+        
+        body { 
+            font-family: 'Nunito', sans-serif; 
+            background-color: #111827; 
+            /* PC向けに画面全体の中央配置設定を追加 */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            margin: 0;
+        }
+        
+        /* アプリ風のコンテナサイズ制約（レスポンシブ進化版） */
+        .app-container {
+            width: 100%;
+            background-color: #f9fafb;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        }
+
+        /* スマホ・タブレット（縦） */
+        @media (max-width: 767px) {
+            .app-container {
+                height: 100vh;
+                height: 100dvh;
+            }
+        }
+
+        /* PC・タブレット（横） */
+        @media (min-width: 768px) {
+            .app-container {
+                max-width: 1024px; /* PCでは最大1024pxまで広がる */
+                height: 90vh;      /* 画面の90%の高さのカード型になる */
+                border-radius: 1.5rem;
+            }
+        }
+
+        /* 画面切り替えのフェードイン */
+        .fade-in { animation: fadeIn 0.3s ease-in forwards; }
+        @keyframes fadeIn { 
+            from { opacity: 0; transform: translateY(10px); } 
+            to { opacity: 1; transform: translateY(0); } 
+        }
+
+        /* コンボ・フレーズのアニメーション */
+        @keyframes popCombo {
+            0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+            50% { transform: scale(1.3) rotate(5deg); opacity: 1; }
+            100% { transform: scale(1) rotate(0deg); opacity: 1; }
+        }
+        .animate-combo { animation: popCombo 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+        @keyframes popPhrase {
+            0% { transform: scale(0.3) translateY(50px); opacity: 0; }
+            40% { transform: scale(1.2) translateY(-20px); opacity: 1; }
+            60% { transform: scale(0.9) translateY(10px); opacity: 1; }
+            100% { transform: scale(1) translateY(0); opacity: 1; }
+        }
+        .animate-phrase { animation: popPhrase 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+        /* カウントダウン・タイムアップ用アニメーション */
+        @keyframes zoomCenter {
+            0% { transform: scale(0.1); opacity: 0; }
+            50% { transform: scale(1.2); opacity: 1; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-zoom { animation: zoomCenter 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+        /* 録音中のパルス効果 */
+        @keyframes pulse-ring {
+            0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); }
+            70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); }
+            100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); }
+        }
+        .recording-pulse { animation: pulse-ring 2s infinite; }
+
+        /* テキストハイライト用クラス */
+        .hl-mandatory { color: #2563eb; font-weight: 900; background: #dbeafe; padding: 0 4px; border-radius: 4px; }
+        .hl-bonus { color: #059669; font-weight: 900; background: #d1fae5; padding: 0 4px; border-radius: 4px; }
+        .hl-phrase { color: #e11d48; font-weight: 900; background: #ffe4e6; padding: 0 6px; border-radius: 6px; border-bottom: 2px solid #f43f5e; box-shadow: 0 2px 4px rgba(225,29,72,0.2); }
+
+        /* タイマーバーの滑らかな減少 */
+        .timer-transition { transition: width 1s linear, background-color 0.5s ease; }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <div class="app-container mx-auto">
+
+        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-6 bg-gradient-to-br from-blue-500 to-indigo-700 text-white text-center h-full z-10 relative fade-in">
+            <div class="mb-10">
+                <h1 class="text-6xl font-black mb-2 tracking-tighter drop-shadow-lg">PicSpeak</h1>
+                <p class="text-blue-100 text-lg font-bold">English Speaking Battle</p>
+                <div class="mt-2 inline-block bg-white/20 px-3 py-1 rounded-full text-xs font-bold border border-white/30 backdrop-blur-sm">Complete Edition</div>
+            </div>
+
+            <div class="bg-white/10 p-6 rounded-3xl backdrop-blur-sm w-full max-w-md shadow-xl border border-white/20">
+                <h2 class="text-xl font-bold mb-4">How many players?</h2>
+                <div class="grid grid-cols-2 gap-3 mb-6">
+                    <button class="player-btn bg-white/20 hover:bg-white/40 text-white font-bold py-4 rounded-xl text-xl transition-all border-2 border-transparent" data-players="1">1</button>
+                    <button class="player-btn bg-white/20 hover:bg-white/40 text-white font-bold py-4 rounded-xl text-xl transition-all border-2 border-transparent selected-player-btn border-white bg-white/40" data-players="2">2</button>
+                    <button class="player-btn bg-white/20 hover:bg-white/40 text-white font-bold py-4 rounded-xl text-xl transition-all border-2 border-transparent" data-players="3">3</button>
+                    <button class="player-btn bg-white/20 hover:bg-white/40 text-white font-bold py-4 rounded-xl text-xl transition-all border-2 border-transparent" data-players="4">4</button>
+                </div>
+                <button id="btn-start-game" class="w-full bg-yellow-400 hover:bg-yellow-300 text-indigo-900 font-black text-2xl py-4 rounded-xl shadow-[0_6px_0_#b45309] active:shadow-[0_0px_0_#b45309] active:translate-y-[6px] transition-all">
+                    PIC & SPEAK!
+                </button>
+            </div>
+        </div>
+
+        <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
+            <div class="bg-indigo-600 text-white px-4 py-3 flex justify-between items-center shadow-md z-10 shrink-0">
+                <div class="font-black text-xl tracking-tight">PicSpeak</div>
+                <div id="turn-indicator" class="bg-indigo-800 px-4 py-1 rounded-full font-bold text-sm">Player 1's Turn</div>
+            </div>
+
+            <div class="w-full bg-gray-200 h-2 shrink-0">
+                <div id="timer-bar" class="h-full bg-blue-500 w-full timer-transition"></div>
+            </div>
+            <div class="flex justify-between items-center px-4 py-1 bg-white border-b border-gray-100 shrink-0">
+                <span class="text-xs font-bold text-gray-400">Time Limit</span>
+                <span id="timer-text" class="text-lg font-black text-blue-600">30s</span>
+            </div>
+
+            <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative">
+                
+                <div class="relative w-full h-56 md:h-auto md:w-1/2 bg-gray-200 shrink-0 md:shrink shadow-inner overflow-hidden border-b md:border-b-0 md:border-r border-gray-300">
+                    <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-cover filter blur-md transition-all duration-500">
+                    
+                    <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/40 backdrop-blur-sm z-20">
+                        <div class="text-center" id="combo-content"></div>
+                    </div>
+                </div>
+
+                <div class="flex-1 md:w-1/2 flex flex-col overflow-hidden bg-white">
+                    
+                    <div class="flex-1 p-4 flex flex-col overflow-hidden relative bg-gray-50">
+                        <div class="flex justify-between items-end mb-2 shrink-0">
+                            <div class="text-sm font-bold text-gray-500">Describe what you see:</div>
+                            <div class="text-xs font-bold text-pink-500 bg-pink-100 px-2 py-1 rounded">Speak in sentences!</div>
+                        </div>
+                        <div class="text-right mb-2 shrink-0">
+                            <span class="text-sm font-bold text-gray-400">Score: </span>
+                            <span id="scoreDisplay" class="text-2xl font-black text-orange-500">0</span>
+                        </div>
+                        
+                        <div class="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-4 overflow-y-auto shadow-sm text-xl md:text-2xl leading-relaxed relative" id="transcript-box">
+                            <p id="transcript-text" class="text-gray-400 italic">Press START to reveal the picture.</p>
+                        </div>
+                    </div>
+
+                    <div class="p-4 md:p-6 bg-white border-t border-gray-100 shrink-0 md:pb-6 shadow-[0_-4px_10px_rgba(0,0,0,0.02)]">
+                        <div class="flex justify-center mb-2 h-6">
+                            <span id="status-text" class="text-sm font-bold text-gray-400">Ready</span>
+                        </div>
+                        
+                        <button id="btn-start-turn" class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-black text-2xl py-5 rounded-2xl shadow-[0_6px_0_#b45309] active:shadow-[0_0px_0_#b45309] active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
+                            <span class="text-3xl">▶️</span> START TURN
+                        </button>
+
+                        <div id="recording-indicator" class="hidden w-full bg-red-50 text-red-600 font-black text-2xl py-5 rounded-2xl border-2 border-red-200 flex items-center justify-center gap-2 recording-pulse cursor-pointer">
+                            <span class="text-3xl">🎤</span> LISTENING...
+                        </div>
+                        
+                        <button id="btn-finish-turn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-black text-2xl py-5 rounded-2xl shadow-[0_6px_0_#4338ca] active:shadow-[0_0px_0_#4338ca] active:translate-y-[6px] transition-all hidden flex items-center justify-center gap-2">
+                            <span class="text-3xl">🏁</span> FINISH & NEXT
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 overflow-y-auto z-10 relative">
+            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-8 shadow-md shrink-0">
+                <h2 class="text-4xl font-black mb-1 drop-shadow-md">RESULTS</h2>
+                <p class="text-indigo-100 font-bold">Who spoke the best sentences?</p>
+            </div>
+            
+            <div class="w-full max-w-2xl mx-auto flex-1 flex flex-col gap-4 p-4" id="ranking-container">
+                </div>
+            
+            <div class="w-full max-w-2xl mx-auto p-4 bg-transparent shrink-0 pb-8 z-10">
+                <button id="btn-play-again" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-2xl py-4 rounded-xl shadow-[0_6px_0_#1d4ed8] active:shadow-[0_0px_0_#1d4ed8] active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+                    PLAY AGAIN
+                </button>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="js/speech.js"></script>
+    <script src="js/scoring.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
