@@ -32,6 +32,16 @@
           {"text": "It seems that she is focusing on her book.", "grammar": "It seems that~"}
         ]
       }
+    },
+    "pins": {
+      "woman": { "x": 65, "y": 40 },
+      "book": { "x": 50, "y": 70 },
+      "green": { "x": 75, "y": 75 },
+      "cup": { "x": 38, "y": 75 },
+      "coffee": { "x": 38, "y": 75 },
+      "glasses": { "x": 32, "y": 88 },
+      "window": { "x": 20, "y": 30 },
+      "table": { "x": 50, "y": 90 }
     }
   },
   {
@@ -66,6 +76,18 @@
           {"text": "She is so engrossed in the book that she doesn't see the man.", "grammar": "so ~ that構文"}
         ]
       }
+    },
+    "pins": {
+      "man": { "x": 30, "y": 45 },
+      "passerby": { "x": 30, "y": 45 },
+      "woman": { "x": 70, "y": 40 },
+      "red": { "x": 50, "y": 65 },
+      "book": { "x": 50, "y": 65 },
+      "blue": { "x": 80, "y": 75 },
+      "scarf": { "x": 75, "y": 55 },
+      "plant": { "x": 25, "y": 70 },
+      "potted": { "x": 25, "y": 70 },
+      "smile": { "x": 65, "y": 30 }
     }
   }
 ]
