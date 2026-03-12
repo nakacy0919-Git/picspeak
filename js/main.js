@@ -46,8 +46,16 @@ function showView(viewElement) {
     viewElement.classList.remove('hidden');
     viewElement.classList.add('fade-in');
 }
+// --- (前略：変数の宣言など) ---
 
 async function initApp() {
+    // ★NEW: ブラウザが音声認識に対応しているかを最初にチェックする
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert("【マイク非対応エラー】\nお使いのブラウザは音声認識に対応していません。\n\n・iPhoneの場合は「Chrome」アプリでお試しください。\n・LINEなどのアプリから開いている場合は、右上のメニューから標準ブラウザ（Safari/Chrome）で開き直してください。");
+        // スタートボタンを押せなくするなどの処理も可能ですが、今回は警告のみ
+    }
+
     initSpeechRecognition(handleSpeechResult, handleSpeechEnd);
     try {
         const response = await fetch('data/themes.json');
@@ -58,6 +66,7 @@ async function initApp() {
     }
 }
 
+// --- (後略：以降のコードはそのまま) ---
 function startTimer() {
     timeLeft = currentTheme.timeLimit || 30;
     timeElapsed = 0;
