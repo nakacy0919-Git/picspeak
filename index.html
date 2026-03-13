@@ -7,125 +7,178 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
-        body { font-family: 'Nunito', sans-serif; background-color: #f9fafb; margin: 0; overflow: hidden; }
-        .app-container { width: 100vw; height: 100vh; height: 100dvh; background-color: #f9fafb; position: relative; display: flex; flex-direction: column; }
+        
+        /* Netflix風のアニメーション背景設定 */
+        body { 
+            font-family: 'Nunito', sans-serif; 
+            margin: 0; 
+            overflow: hidden; 
+            background: linear-gradient(-45deg, #0a0a0a, #141414, #6b0000, #141414);
+            background-size: 400% 400%;
+            animation: netflixBg 15s ease infinite;
+        }
+        @keyframes netflixBg {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .app-container { width: 100vw; height: 100vh; height: 100dvh; position: relative; display: flex; flex-direction: column; }
         .fade-in { animation: fadeIn 0.3s ease-in forwards; }
         @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+        
         @keyframes popCombo { 0% { transform: scale(0.5) rotate(-10deg); opacity: 0; } 50% { transform: scale(1.3) rotate(5deg); opacity: 1; } 100% { transform: scale(1) rotate(0deg); opacity: 1; } }
         .animate-combo { animation: popCombo 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
-        @keyframes zoomCenter { 0% { transform: scale(0.1); opacity: 0; } 50% { transform: scale(1.2); opacity: 1; } 100% { transform: scale(1); opacity: 1; } }
-        .animate-zoom { animation: zoomCenter 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
         @keyframes pulse-ring { 0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0.7); } 70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(239, 68, 68, 0); } 100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(239, 68, 68, 0); } }
         .recording-pulse { animation: pulse-ring 2s infinite; }
         @keyframes dropPin { 0% { transform: translateY(-30px) scale(0.5); opacity: 0; } 60% { transform: translateY(10px) scale(1.2); opacity: 1; } 100% { transform: translateY(0) scale(1); opacity: 1; } }
         .pin-drop { animation: dropPin 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
         .hl-mandatory { color: #2563eb; font-weight: 900; background: #dbeafe; padding: 0 4px; border-radius: 4px; }
         .hl-phrase { color: #e11d48; font-weight: 900; background: #ffe4e6; padding: 0 6px; border-radius: 6px; border-bottom: 2px solid #f43f5e; box-shadow: 0 2px 4px rgba(225,29,72,0.2); }
         .timer-transition { transition: width 1s linear, background-color 0.5s ease; }
+
+        /* スマホ横向き防止オーバーレイ */
+        @media screen and (max-width: 767px) and (orientation: landscape) {
+            #orientation-lock { display: flex !important; }
+            .app-container { display: none !important; }
+        }
     </style>
 </head>
 <body class="text-gray-800">
+
+    <div id="orientation-lock" class="fixed inset-0 z-[9999] flex-col items-center justify-center bg-black/95 text-white hidden backdrop-blur-md">
+        <svg class="w-20 h-20 animate-bounce mb-6 text-red-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"></path></svg>
+        <p class="text-2xl font-black tracking-wider text-center">スマホを縦向きに<br>してください</p>
+    </div>
+
     <div class="app-container">
 
-        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-6 md:p-12 lg:p-20 bg-gradient-to-br from-blue-500 to-indigo-700 text-white text-center h-full z-10 relative fade-in">
+        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-6 md:p-12 lg:p-20 text-white text-center h-full z-10 relative fade-in">
+            
+            <button id="btn-open-settings" class="absolute top-6 right-6 text-white/80 hover:text-white transition-colors bg-black/30 p-3 rounded-full backdrop-blur-md">
+                <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            </button>
+
+            <div id="settings-modal" class="absolute inset-0 z-50 bg-black/80 backdrop-blur-md flex flex-col items-center justify-center hidden">
+                <div class="bg-gray-900 border border-gray-700 p-8 rounded-3xl shadow-2xl w-11/12 max-w-sm">
+                    <h3 class="text-2xl font-black mb-6 text-white text-center">Speaking Time</h3>
+                    <div class="grid grid-cols-5 gap-2 mb-8">
+                        <button class="time-btn bg-gray-800 text-gray-300 font-bold py-3 rounded-lg border-2 border-transparent transition-all" data-time="20">20s</button>
+                        <button class="time-btn bg-blue-600/30 text-white font-bold py-3 rounded-lg border-2 border-blue-500 transition-all selected-time-btn" data-time="30">30s</button>
+                        <button class="time-btn bg-gray-800 text-gray-300 font-bold py-3 rounded-lg border-2 border-transparent transition-all" data-time="40">40s</button>
+                        <button class="time-btn bg-gray-800 text-gray-300 font-bold py-3 rounded-lg border-2 border-transparent transition-all" data-time="50">50s</button>
+                        <button class="time-btn bg-gray-800 text-gray-300 font-bold py-3 rounded-lg border-2 border-transparent transition-all" data-time="60">60s</button>
+                    </div>
+                    <button id="btn-close-settings" class="w-full bg-red-600 hover:bg-red-500 text-white font-black text-xl py-4 rounded-xl shadow-[0_4px_0_#991b1b] active:translate-y-[4px] active:shadow-none transition-all">
+                        DONE
+                    </button>
+                </div>
+            </div>
+
             <div class="mb-8 md:mb-12 lg:mb-16">
-                <h1 class="text-6xl md:text-8xl lg:text-[10rem] font-black mb-2 md:mb-6 tracking-tighter drop-shadow-2xl">PicSpeak</h1>
-                <p class="text-blue-100 text-xl md:text-3xl lg:text-4xl font-bold drop-shadow-md">English Speaking Battle</p>
+                <h1 class="text-6xl md:text-8xl lg:text-[10rem] font-black mb-2 md:mb-6 tracking-tighter drop-shadow-2xl text-transparent bg-clip-text bg-gradient-to-br from-white to-gray-400">PicSpeak</h1>
+                <p class="text-red-500 text-xl md:text-3xl lg:text-4xl font-black drop-shadow-md tracking-widest uppercase">English Speaking Battle</p>
             </div>
             
-            <div class="bg-white/10 p-6 md:p-10 lg:p-14 rounded-3xl backdrop-blur-sm w-full max-w-md md:max-w-2xl lg:max-w-4xl shadow-2xl border border-white/20">
+            <div class="bg-black/40 p-6 md:p-10 lg:p-14 rounded-3xl backdrop-blur-lg w-full max-w-md md:max-w-2xl lg:max-w-4xl shadow-2xl border border-white/10">
+                
                 <div class="mb-6 lg:mb-10">
-                    <h2 class="text-sm md:text-lg lg:text-2xl font-bold text-blue-200 mb-3 lg:mb-5 uppercase tracking-wider">Target Level</h2>
+                    <h2 class="text-sm md:text-lg lg:text-xl font-bold text-gray-400 mb-3 lg:mb-5 uppercase tracking-widest">Target Level</h2>
                     <div class="grid grid-cols-3 gap-3 lg:gap-6">
-                        <button class="level-btn bg-white/20 border-transparent border-2 text-white font-bold py-3 lg:py-6 lg:text-3xl rounded-xl lg:rounded-2xl hover:bg-white/30 transition-all" data-level="elementary">小学生</button>
-                        <button class="level-btn bg-white/40 border-white border-2 text-white font-bold py-3 lg:py-6 lg:text-3xl rounded-xl lg:rounded-2xl transition-all shadow-md selected-level-btn" data-level="junior_high">中学生</button>
-                        <button class="level-btn bg-white/20 border-transparent border-2 text-white font-bold py-3 lg:py-6 lg:text-3xl rounded-xl lg:rounded-2xl hover:bg-white/30 transition-all" data-level="high_school">高校生</button>
+                        <button class="level-btn bg-white/10 border-transparent border-2 text-gray-300 font-bold py-3 lg:py-5 lg:text-2xl rounded-xl hover:bg-white/20 transition-all" data-level="elementary">小学生</button>
+                        <button class="level-btn bg-red-600/30 border-red-500 border-2 text-white font-bold py-3 lg:py-5 lg:text-2xl rounded-xl transition-all shadow-md selected-level-btn" data-level="junior_high">中学生</button>
+                        <button class="level-btn bg-white/10 border-transparent border-2 text-gray-300 font-bold py-3 lg:py-5 lg:text-2xl rounded-xl hover:bg-white/20 transition-all" data-level="high_school">高校生</button>
                     </div>
                 </div>
 
                 <div class="mb-8 lg:mb-12">
-                    <h2 class="text-sm md:text-lg lg:text-2xl font-bold text-blue-200 mb-3 lg:mb-5 uppercase tracking-wider">Players</h2>
-                    <div class="grid grid-cols-4 gap-3 lg:gap-6">
-                        <button class="player-btn bg-white/20 border-transparent border-2 text-white py-3 lg:py-6 rounded-xl lg:rounded-2xl flex flex-col items-center justify-center transition-all hover:bg-white/30" data-players="1">
-                            <span class="text-2xl lg:text-5xl mb-1 lg:mb-3">👤</span><span class="text-xs lg:text-xl font-bold">1P</span>
+                    <h2 class="text-sm md:text-lg lg:text-xl font-bold text-gray-400 mb-3 lg:mb-5 uppercase tracking-widest">Players</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 lg:gap-6">
+                        <button class="player-btn bg-white/10 border-transparent border-2 text-gray-300 py-3 lg:py-5 rounded-xl flex flex-col items-center justify-center transition-all hover:bg-white/20" data-players="1">
+                            <span class="text-2xl lg:text-4xl mb-1">👤</span><span class="text-xs lg:text-lg font-bold tracking-wider">1 Player</span>
                         </button>
-                        <button class="player-btn bg-white/40 border-white border-2 text-white py-3 lg:py-6 rounded-xl lg:rounded-2xl flex flex-col items-center justify-center transition-all shadow-md selected-player-btn" data-players="2">
-                            <span class="text-2xl lg:text-5xl mb-1 lg:mb-3 flex"><span class="-mr-2 lg:-mr-4">👤</span><span>👤</span></span><span class="text-xs lg:text-xl font-bold">2P</span>
+                        <button class="player-btn bg-red-600/30 border-red-500 border-2 text-white py-3 lg:py-5 rounded-xl flex flex-col items-center justify-center transition-all shadow-md selected-player-btn" data-players="2">
+                            <span class="text-2xl lg:text-4xl mb-1 flex"><span class="-mr-2">👤</span><span>👤</span></span><span class="text-xs lg:text-lg font-bold tracking-wider">2 Players</span>
                         </button>
-                        <button class="player-btn bg-white/20 border-transparent border-2 text-white py-3 lg:py-6 rounded-xl lg:rounded-2xl flex flex-col items-center justify-center transition-all hover:bg-white/30" data-players="3">
-                            <span class="text-2xl lg:text-5xl mb-1 lg:mb-3 flex"><span class="-mr-2 lg:-mr-4">👤</span><span class="-mr-2 lg:-mr-4">👤</span><span>👤</span></span><span class="text-xs lg:text-xl font-bold">3P</span>
+                        <button class="player-btn bg-white/10 border-transparent border-2 text-gray-300 py-3 lg:py-5 rounded-xl flex flex-col items-center justify-center transition-all hover:bg-white/20" data-players="3">
+                            <span class="text-2xl lg:text-4xl mb-1 flex"><span class="-mr-2">👤</span><span class="-mr-2">👤</span><span>👤</span></span><span class="text-xs lg:text-lg font-bold tracking-wider">3 Players</span>
                         </button>
-                        <button class="player-btn bg-white/20 border-transparent border-2 text-white py-3 lg:py-6 rounded-xl lg:rounded-2xl flex flex-col items-center justify-center transition-all hover:bg-white/30" data-players="4">
-                            <span class="text-2xl lg:text-5xl mb-1 lg:mb-3 flex"><span class="-mr-3 lg:-mr-6">👤</span><span class="-mr-3 lg:-mr-6">👤</span><span class="-mr-3 lg:-mr-6">👤</span><span>👤</span></span><span class="text-xs lg:text-xl font-bold">4P</span>
+                        <button class="player-btn bg-white/10 border-transparent border-2 text-gray-300 py-3 lg:py-5 rounded-xl flex flex-col items-center justify-center transition-all hover:bg-white/20" data-players="4">
+                            <span class="text-2xl lg:text-4xl mb-1 flex"><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span>👤</span></span><span class="text-xs lg:text-lg font-bold tracking-wider">4 Players</span>
                         </button>
                     </div>
                 </div>
 
-                <button id="btn-start-game" class="w-full bg-yellow-400 hover:bg-yellow-300 text-indigo-900 font-black text-3xl md:text-5xl lg:text-6xl py-5 md:py-6 lg:py-10 rounded-2xl lg:rounded-3xl shadow-[0_6px_0_#b45309] lg:shadow-[0_12px_0_#b45309] active:shadow-[0_0px_0_#b45309] active:translate-y-[6px] lg:active:translate-y-[12px] transition-all">
+                <button id="btn-start-game" class="w-full bg-red-600 hover:bg-red-500 text-white font-black text-3xl md:text-5xl lg:text-5xl py-5 md:py-6 lg:py-8 rounded-2xl shadow-[0_6px_0_#7f1d1d] lg:shadow-[0_8px_0_#7f1d1d] active:shadow-[0_0px_0_#7f1d1d] active:translate-y-[6px] lg:active:translate-y-[8px] transition-all tracking-widest">
                     PIC & SPEAK!
                 </button>
             </div>
         </div>
 
         <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
-            <div class="bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-md z-10 shrink-0">
-                <div class="font-black text-xl md:text-2xl tracking-tight">PicSpeak</div>
-                <div id="turn-indicator" class="bg-indigo-800 px-4 py-1 rounded-full font-bold text-sm hidden md:block">Player 1's Turn</div>
+            <div class="bg-gray-900 text-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-md z-10 shrink-0 border-b-4 border-red-600">
+                <div class="font-black text-xl md:text-2xl tracking-tight text-red-500">PicSpeak</div>
+                <div id="turn-indicator" class="bg-gray-700 px-4 py-1 rounded-full font-bold text-sm hidden md:block">Player 1's Turn</div>
                 <div class="flex items-center gap-2 md:gap-4">
-                    <span class="text-xs md:text-sm font-bold text-indigo-200">Time</span>
+                    <span class="text-xs md:text-sm font-bold text-gray-400">Time</span>
                     <span id="timer-text" class="text-xl md:text-2xl font-black text-white w-10 md:w-12 text-right">30s</span>
                 </div>
             </div>
 
-            <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0">
-                <div id="timer-bar" class="h-full bg-blue-500 w-full timer-transition"></div>
+            <div class="w-full bg-gray-300 h-1.5 md:h-2 shrink-0">
+                <div id="timer-bar" class="h-full bg-red-600 w-full timer-transition"></div>
             </div>
 
             <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative">
                 
-                <div class="relative w-full h-40 sm:h-52 md:h-auto md:w-3/5 bg-gray-900 shrink-0 md:shrink overflow-hidden border-b md:border-b-0 md:border-r border-gray-300 flex items-center justify-center">
+                <div id="image-panel" class="relative w-full h-48 md:h-auto md:w-3/5 bg-black shrink-0 md:shrink overflow-hidden flex items-center justify-center">
                     <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter blur-md transition-all duration-500">
                     <div id="pin-container" class="absolute inset-0 pointer-events-none z-20 overflow-hidden"></div>
-                    <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/50 backdrop-blur-sm z-30">
+                    <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/60 backdrop-blur-sm z-30">
                         <div class="text-center" id="combo-content"></div>
                     </div>
                 </div>
 
+                <div id="resizer" class="h-5 bg-gray-200 flex flex-col items-center justify-center cursor-ns-resize md:hidden shrink-0 touch-none w-full shadow-inner z-20 border-y border-gray-300">
+                    <div class="w-16 h-1 bg-gray-400 rounded-full mb-0.5"></div>
+                    <div class="w-16 h-1 bg-gray-400 rounded-full"></div>
+                </div>
+
                 <div class="flex-1 md:w-2/5 flex flex-col overflow-hidden bg-white">
-                    
-                    <div class="flex-1 p-3 md:p-6 flex flex-col overflow-hidden relative bg-gray-50">
+                    <div class="flex-1 p-3 md:p-6 flex flex-col overflow-hidden relative bg-gray-100">
                         <div class="flex justify-between items-end mb-2 md:mb-4 shrink-0">
-                            <div class="text-xs md:text-sm font-bold text-gray-500">Describe what you see:</div>
-                            <div id="current-level-badge" class="text-[10px] md:text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 md:py-1 rounded border border-blue-200">中学生レベル</div>
+                            <div class="text-xs md:text-sm font-bold text-gray-500">Transcript:</div>
+                            <div id="current-level-badge" class="text-[10px] md:text-xs font-bold text-red-600 bg-red-100 px-2 py-0.5 md:py-1 rounded border border-red-200">中学生レベル</div>
                         </div>
                         
                         <div class="grid grid-cols-2 gap-2 md:gap-3 mb-2 md:mb-4 shrink-0">
                             <div class="bg-white rounded-lg md:rounded-xl p-2 md:p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
                                 <span class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">Words</span>
-                                <span id="wordCountDisplay" class="text-xl md:text-3xl font-black text-blue-500">0</span>
+                                <span id="wordCountDisplay" class="text-xl md:text-3xl font-black text-gray-800">0</span>
                             </div>
                             <div class="bg-white rounded-lg md:rounded-xl p-2 md:p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
                                 <span class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">Score</span>
-                                <span id="scoreDisplay" class="text-xl md:text-3xl font-black text-orange-500">0</span>
+                                <span id="scoreDisplay" class="text-xl md:text-3xl font-black text-red-600">0</span>
                             </div>
                         </div>
                         
-                        <div class="flex-1 bg-white border-2 border-gray-200 rounded-xl md:rounded-2xl p-3 md:p-5 overflow-y-auto shadow-inner text-base md:text-2xl leading-relaxed relative" id="transcript-box">
-                            <p id="transcript-text" class="text-gray-400 italic">Press START to reveal the picture.</p>
+                        <div class="flex-1 bg-white border-2 border-gray-300 rounded-xl md:rounded-2xl p-3 md:p-5 overflow-y-auto shadow-inner text-base md:text-2xl leading-relaxed relative" id="transcript-box">
+                            <p id="transcript-text" class="text-gray-400 italic">Press START and speak loudly.</p>
                         </div>
                     </div>
 
-                    <div class="p-3 md:p-6 bg-white border-t border-gray-100 shrink-0 shadow-[0_-4px_10px_rgba(0,0,0,0.02)]">
+                    <div class="p-3 md:p-6 bg-white border-t border-gray-200 shrink-0 shadow-[0_-4px_10px_rgba(0,0,0,0.05)]">
                         <div class="flex justify-center mb-1 md:mb-3 h-4 md:h-6">
                             <span id="status-text" class="text-xs md:text-sm font-bold text-gray-400">Ready</span>
                         </div>
-                        <button id="btn-start-turn" class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#b45309] md:shadow-[0_6px_0_#b45309] active:translate-y-[4px] md:active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
-                            <span class="text-2xl md:text-4xl">▶️</span> START
+                        <button id="btn-start-turn" class="w-full bg-red-600 hover:bg-red-700 text-white font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#991b1b] md:shadow-[0_6px_0_#991b1b] active:translate-y-[4px] md:active:translate-y-[6px] active:shadow-none transition-all flex items-center justify-center gap-2 tracking-widest">
+                            <span class="text-2xl md:text-4xl">🎙️</span> START
                         </button>
-                        <div id="recording-indicator" class="hidden w-full bg-red-50 text-red-600 font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl border-2 border-red-200 flex items-center justify-center gap-2 recording-pulse cursor-pointer">
+                        <div id="recording-indicator" class="hidden w-full bg-red-50 text-red-600 font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl border-2 border-red-500 flex items-center justify-center gap-2 recording-pulse cursor-pointer">
                             <span class="text-2xl md:text-4xl">🎤</span> LISTENING
                         </div>
-                        <button id="btn-finish-turn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#4338ca] md:shadow-[0_6px_0_#4338ca] active:translate-y-[4px] md:active:translate-y-[6px] transition-all hidden flex items-center justify-center gap-2">
+                        <button id="btn-finish-turn" class="w-full bg-gray-800 hover:bg-gray-900 text-white font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#000] md:shadow-[0_6px_0_#000] active:translate-y-[4px] md:active:translate-y-[6px] active:shadow-none transition-all hidden flex items-center justify-center gap-2 tracking-widest">
                             <span class="text-2xl md:text-4xl">🏁</span> FINISH
                         </button>
                     </div>
@@ -135,16 +188,16 @@
         </div>
 
         <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 overflow-y-auto z-10 relative">
-            <div class="bg-gradient-to-r from-blue-500 to-indigo-600 text-white text-center py-10 shadow-md shrink-0">
-                <h2 class="text-5xl font-black mb-2 drop-shadow-md">RESULTS</h2>
-                <p class="text-indigo-100 font-bold text-xl">Score & Feedback</p>
+            <div class="bg-gray-900 text-white text-center py-10 shadow-md shrink-0 border-b-4 border-red-600">
+                <h2 class="text-5xl font-black mb-2 drop-shadow-md text-red-500">RESULTS</h2>
+                <p class="text-gray-400 font-bold text-xl uppercase tracking-widest">Score & Feedback</p>
             </div>
             
             <div class="w-full max-w-4xl mx-auto flex-1 flex flex-col gap-6 p-6" id="ranking-container">
             </div>
             
             <div class="w-full max-w-4xl mx-auto p-6 bg-transparent shrink-0 pb-10 z-10">
-                <button id="btn-play-again" class="w-full bg-blue-600 hover:bg-blue-700 text-white font-black text-3xl py-6 rounded-xl shadow-[0_6px_0_#1d4ed8] active:shadow-[0_0px_0_#1d4ed8] active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
+                <button id="btn-play-again" class="w-full bg-red-600 hover:bg-red-700 text-white font-black text-3xl py-6 rounded-xl shadow-[0_6px_0_#991b1b] active:shadow-none active:translate-y-[6px] transition-all flex items-center justify-center gap-2 tracking-widest">
                     PLAY AGAIN
                 </button>
             </div>

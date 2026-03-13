@@ -8,6 +8,7 @@ let timeElapsed = 0;
 
 let selectedPlayers = 2;
 let selectedLevel = 'junior_high'; 
+let customTimeLimit = 30; // ★NEW: ユーザーが設定した時間
 
 // UIの取得
 const viewStart = document.getElementById('view-start');
@@ -22,6 +23,12 @@ const recordingIndicator = document.getElementById('recording-indicator');
 
 const playerBtns = document.querySelectorAll('.player-btn');
 const levelBtns = document.querySelectorAll('.level-btn'); 
+
+// ★NEW: 設定モーダル関連UI
+const btnOpenSettings = document.getElementById('btn-open-settings');
+const btnCloseSettings = document.getElementById('btn-close-settings');
+const settingsModal = document.getElementById('settings-modal');
+const timeBtns = document.querySelectorAll('.time-btn');
 
 const promptImage = document.getElementById('prompt-image');
 const transcriptBox = document.getElementById('transcript-box');
@@ -49,19 +56,14 @@ function showView(viewElement) {
 }
 
 async function initApp() {
-    // ★NEW: ブラウザが音声認識に対応しているか（iPhoneのChrome等でないか）を厳格にチェック
+    // Safari/Chromeの音声認識APIサポートチェック
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
-        alert("【重要】\nお使いのブラウザは音声認識に対応していません。\n\niPhoneをお使いの場合は、必ず標準の「Safari」ブラウザを開いてプレイしてください。\n（ChromeやLINE内ブラウザでは動作しません）");
-        
-        // スタートボタンを押せなくして、エラーで画面が固まるのを防ぐ
+        alert("【重要】お使いのブラウザは音声認識に非対応です。\n\niPhoneをお使いの場合は、標準の「Safari」アプリを開いてプレイしてください。");
         btnStartGame.disabled = true;
-        btnStartGame.classList.replace('bg-yellow-400', 'bg-gray-400');
-        btnStartGame.classList.replace('text-indigo-900', 'text-gray-600');
-        btnStartGame.textContent = "ブラウザ非対応 (Safariを開いてください)";
-        btnStartGame.style.boxShadow = "none";
-        btnStartGame.style.transform = "none";
-        return; // これ以上初期化を進めない
+        btnStartGame.classList.replace('bg-red-600', 'bg-gray-600');
+        btnStartGame.textContent = "ブラウザ非対応";
+        return; 
     }
 
     initSpeechRecognition(handleSpeechResult, handleSpeechEnd);
@@ -75,7 +77,8 @@ async function initApp() {
 }
 
 function startTimer() {
-    timeLeft = currentTheme.timeLimit || 30;
+    // ★NEW: 選択されたカスタム時間を適用
+    timeLeft = customTimeLimit;
     timeElapsed = 0;
     timerText.textContent = `${timeLeft}s`;
     timerBar.style.width = '100%';
@@ -92,8 +95,8 @@ function startTimer() {
         timerText.textContent = `${timeLeft}s`;
         
         if (timeLeft <= 5) {
-            timerBar.classList.replace('bg-blue-500', 'bg-red-500');
-            timerText.classList.replace('text-blue-600', 'text-red-600');
+            timerBar.classList.replace('bg-red-600', 'bg-orange-500');
+            timerText.classList.replace('text-white', 'text-orange-400');
             timerText.classList.add('animate-pulse');
         }
 
@@ -116,10 +119,10 @@ function dropPin(word, theme) {
     pin.style.transform = 'translate(-50%, -100%)';
 
     pin.innerHTML = `
-        <div class="bg-red-500 text-white text-xs font-bold px-2 py-1 rounded-full shadow-lg border-2 border-white mb-1">
+        <div class="bg-red-600 text-white text-[10px] md:text-xs font-bold px-2 py-0.5 md:py-1 rounded-full shadow-lg border border-white mb-1 tracking-wider uppercase">
             ${word}
         </div>
-        <div class="w-1 h-4 bg-red-600 shadow-sm rounded-b-full"></div>
+        <div class="w-1 h-3 md:h-4 bg-red-700 shadow-sm rounded-b-full"></div>
     `;
     pinContainer.appendChild(pin);
 }
@@ -179,9 +182,9 @@ function handleSpeechResult(finalText, interimText) {
     const displayHTML = highlightGlobalText(currentTempText);
 
     if (currentTempText.trim().length > 0) {
-         transcriptBox.innerHTML = `<p class="mb-2 leading-relaxed text-black font-medium">${displayHTML}</p>`;
+         transcriptBox.innerHTML = `<p class="mb-2 leading-relaxed text-gray-800 font-medium">${displayHTML}</p>`;
     } else {
-         transcriptBox.innerHTML = `<p class="text-gray-400 italic">Press START to reveal the picture.</p>`;
+         transcriptBox.innerHTML = `<p class="text-gray-400 italic">Listening...</p>`;
     }
     
     transcriptBox.scrollTop = transcriptBox.scrollHeight;
@@ -190,10 +193,10 @@ function handleSpeechResult(finalText, interimText) {
 function showComboAnimation(multiplier, points) {
     comboOverlay.classList.remove('hidden');
     comboContent.innerHTML = `
-        <div class="text-6xl font-black text-yellow-400 drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] animate-combo">
+        <div class="text-5xl md:text-6xl font-black text-yellow-400 drop-shadow-[0_4px_4px_rgba(0,0,0,0.8)] animate-combo tracking-tighter">
             x${multiplier} COMBO!
         </div>
-        <div class="text-3xl font-bold text-white mt-2 animate-phrase">
+        <div class="text-2xl md:text-3xl font-bold text-white mt-2 animate-phrase">
             +${points} pts
         </div>
     `;
@@ -217,16 +220,72 @@ function stopRecording() {
     timerBar.style.transition = 'none';
 }
 
-// イベントリスナー（人数・レベル選択）
+// ==========================================
+// イベントリスナー群
+// ==========================================
+
+// ★NEW: リサイズ機能 (スマホ表示時の縦幅調整)
+const resizer = document.getElementById('resizer');
+const imagePanel = document.getElementById('image-panel');
+let startY = 0;
+let startHeight = 0;
+
+if (resizer && imagePanel) {
+    resizer.addEventListener('touchstart', (e) => {
+        startY = e.touches[0].clientY;
+        startHeight = imagePanel.getBoundingClientRect().height;
+        e.preventDefault(); // スクロール防止
+    }, { passive: false });
+
+    document.addEventListener('touchmove', (e) => {
+        if (startY === 0) return;
+        const currentY = e.touches[0].clientY;
+        const dy = currentY - startY;
+        let newHeight = startHeight + dy;
+        
+        // 画像が小さすぎたり、大きすぎてテキストが見えなくなるのを防ぐ
+        if (newHeight < 100) newHeight = 100;
+        if (newHeight > window.innerHeight * 0.7) newHeight = window.innerHeight * 0.7;
+        
+        imagePanel.style.height = `${newHeight}px`;
+    }, { passive: false });
+
+    document.addEventListener('touchend', () => {
+        startY = 0;
+    });
+}
+
+// 設定モーダルの開閉と時間選択
+btnOpenSettings.addEventListener('click', () => {
+    settingsModal.classList.remove('hidden');
+});
+btnCloseSettings.addEventListener('click', () => {
+    settingsModal.classList.add('hidden');
+});
+
+timeBtns.forEach(btn => {
+    btn.addEventListener('click', (e) => {
+        timeBtns.forEach(b => {
+            b.classList.remove('selected-time-btn', 'bg-blue-600/30', 'border-blue-500');
+            b.classList.add('bg-gray-800', 'border-transparent');
+        });
+        const target = e.currentTarget;
+        target.classList.remove('bg-gray-800', 'border-transparent');
+        target.classList.add('selected-time-btn', 'bg-blue-600/30', 'border-blue-500');
+        customTimeLimit = parseInt(target.getAttribute('data-time'));
+    });
+});
+
+// 人数・レベル選択
 playerBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         playerBtns.forEach(b => {
-            b.classList.remove('selected-player-btn', 'border-white', 'bg-white/40');
-            b.classList.add('border-transparent');
+            b.classList.remove('selected-player-btn', 'border-red-500', 'bg-red-600/30');
+            b.classList.add('border-transparent', 'bg-white/10');
         });
         const target = e.currentTarget; 
-        target.classList.remove('border-transparent');
-        target.classList.add('selected-player-btn', 'border-white', 'bg-white/40');
+        target.classList.remove('border-transparent', 'bg-white/10');
+        target.classList.add('selected-player-btn', 'border-red-500', 'bg-red-600/30');
         selectedPlayers = parseInt(target.getAttribute('data-players'));
     });
 });
@@ -234,12 +293,12 @@ playerBtns.forEach(btn => {
 levelBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         levelBtns.forEach(b => {
-            b.classList.remove('selected-level-btn', 'border-white', 'bg-white/40');
-            b.classList.add('border-transparent', 'bg-white/20');
+            b.classList.remove('selected-level-btn', 'border-red-500', 'bg-red-600/30');
+            b.classList.add('border-transparent', 'bg-white/10');
         });
         const target = e.currentTarget;
-        target.classList.remove('border-transparent', 'bg-white/20');
-        target.classList.add('selected-level-btn', 'border-white', 'bg-white/40');
+        target.classList.remove('border-transparent', 'bg-white/10');
+        target.classList.add('selected-level-btn', 'border-red-500', 'bg-red-600/30');
         selectedLevel = target.getAttribute('data-level');
         
         let levelText = "中学生レベル";
@@ -249,31 +308,8 @@ levelBtns.forEach(btn => {
     });
 });
 
-// ★NEW: マイク許可取得ロジックの修正（Chromeのロック防止）
-btnStartGame.addEventListener('click', async (e) => {
-    e.preventDefault();
-
-    // 非対応ブラウザで無理やり押された時の防御
-    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-        alert("iPhoneをお使いの場合は、標準の「Safari」ブラウザを開いてください。\n（Chromeやアプリ内ブラウザでは動作しません）");
-        return;
-    }
-
-    try {
-        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
-            // マイクの許可ダイアログを強制的に出す
-            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-            
-            // ★超重要：許可をもらったら、ゲーム本編の音声認識が使えるようにマイクを即座に解放（ストップ）する
-            stream.getTracks().forEach(track => track.stop());
-            console.log("マイク許可取得完了。即座に解放しました。");
-        }
-    } catch (err) {
-        alert("マイクへのアクセスが拒否されました。設定を確認してください。\n詳細: " + err.message);
-        return; 
-    }
-
+// ゲーム開始（遷移のみ。マイク許可のハックを削除してChromeエラーを回避）
+btnStartGame.addEventListener('click', () => {
     if (currentTheme) {
         promptImage.src = currentTheme.imageSrc;
         promptImage.classList.replace('blur-none', 'blur-md'); 
@@ -284,12 +320,14 @@ btnStartGame.addEventListener('click', async (e) => {
     scoreDisplay.textContent = "0";
     wordCountDisplay.textContent = "0";
     pinContainer.innerHTML = ''; 
-    transcriptBox.innerHTML = `<p class="text-gray-400 italic">Press START to reveal the picture.</p>`;
+    transcriptBox.innerHTML = `<p class="text-gray-400 italic">Press START and speak loudly.</p>`;
     
     showView(viewPlay);
 });
 
+// ★NEW: 実際の「START」ボタンを押した瞬間に、純正の音声認識がマイク許可を求める
 btnStartTurn.addEventListener('click', () => {
+    // startSpeech() が走ると、ブラウザが自動的にマイクの許可ダイアログを出します
     startSpeech();
     isRecording = true;
     
@@ -300,7 +338,7 @@ btnStartTurn.addEventListener('click', () => {
     promptImage.classList.remove('blur-md');
     promptImage.classList.add('blur-none');
     
-    if (timeLeft === 30 || timeLeft === currentTheme.timeLimit) {
+    if (timeLeft === customTimeLimit) {
         startTimer();
     }
 });
@@ -309,6 +347,7 @@ recordingIndicator.addEventListener('click', () => {
     stopRecording(); 
 });
 
+// 結果画面への遷移
 btnFinishTurn.addEventListener('click', () => {
     clearInterval(gameTimer);
     
@@ -317,6 +356,7 @@ btnFinishTurn.addEventListener('click', () => {
     
     let wpm = 0;
     if (timeElapsed > 0) {
+        // timeElapsed（実際の経過秒数）で計算するため、設定時間が何秒でもWPMは正確に出ます
         wpm = Math.round(finalWordCount / (timeElapsed / 60));
     }
 
@@ -324,11 +364,11 @@ btnFinishTurn.addEventListener('click', () => {
     let modelAnswersHTML = `<ul class="space-y-3 mt-3">`;
     modelAnswersData.forEach(ans => {
         modelAnswersHTML += `
-            <li class="flex items-start bg-blue-50 p-3 rounded-lg border border-blue-100">
-                <span class="text-blue-500 mr-2 mt-1">💡</span>
+            <li class="flex items-start bg-gray-50 p-3 md:p-4 rounded-xl border border-gray-200 shadow-sm">
+                <span class="text-red-500 mr-2 md:mr-3 mt-0.5 text-xl">💡</span>
                 <div>
-                    <div class="font-bold text-gray-800 text-xl">${ans.text}</div>
-                    <div class="text-sm font-bold text-pink-500 mt-1">Target: ${ans.grammar}</div>
+                    <div class="font-bold text-gray-800 text-lg md:text-xl">${ans.text}</div>
+                    <div class="text-xs md:text-sm font-bold text-red-500 mt-1 uppercase tracking-wider">Target: ${ans.grammar}</div>
                 </div>
             </li>
         `;
@@ -340,36 +380,36 @@ btnFinishTurn.addEventListener('click', () => {
     const rankingContainer = document.getElementById('ranking-container');
     
     rankingContainer.innerHTML = `
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-2">
-            <div class="bg-white rounded-2xl p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                <span class="text-gray-400 font-bold text-sm tracking-wider mb-1">TOTAL SCORE</span>
-                <span class="text-5xl font-black text-orange-500">${finalScore}</span>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-2">
+            <div class="bg-white rounded-2xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
+                <span class="text-gray-400 font-bold text-xs md:text-sm tracking-widest mb-1 uppercase">Total Score</span>
+                <span class="text-4xl md:text-5xl font-black text-orange-500">${finalScore}</span>
             </div>
-            <div class="bg-white rounded-2xl p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                <span class="text-gray-400 font-bold text-sm tracking-wider mb-1">WORDS SPOKEN</span>
-                <span class="text-5xl font-black text-blue-500">${finalWordCount}</span>
+            <div class="bg-white rounded-2xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
+                <span class="text-gray-400 font-bold text-xs md:text-sm tracking-widest mb-1 uppercase">Words Spoken</span>
+                <span class="text-4xl md:text-5xl font-black text-gray-800">${finalWordCount}</span>
             </div>
-            <div class="bg-white rounded-2xl p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                <span class="text-gray-400 font-bold text-sm tracking-wider mb-1">WPM (Speed)</span>
-                <span class="text-5xl font-black text-green-500">${wpm}</span>
+            <div class="bg-white rounded-2xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
+                <span class="text-gray-400 font-bold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM (Speed)</span>
+                <span class="text-4xl md:text-5xl font-black text-red-600">${wpm}</span>
             </div>
         </div>
 
         <div class="bg-white rounded-2xl shadow-lg border border-gray-100 flex-1 flex flex-col overflow-hidden mb-2">
-            <div class="bg-indigo-50 px-6 py-4 border-b border-indigo-100 flex justify-between items-center">
-                <h3 class="text-xl font-black text-indigo-700">🎯 Model Answers</h3>
-                <span class="text-xs font-bold text-indigo-500 bg-white px-2 py-1 rounded-full shadow-sm">${currentLevelBadge.textContent}</span>
+            <div class="bg-gray-900 px-4 md:px-6 py-3 md:py-4 border-b border-gray-800 flex justify-between items-center">
+                <h3 class="text-lg md:text-xl font-black text-white tracking-wider">🎯 MODEL ANSWERS</h3>
+                <span class="text-[10px] md:text-xs font-bold text-red-600 bg-white px-2 py-1 rounded border border-red-200">${currentLevelBadge.textContent}</span>
             </div>
-            <div class="p-6 overflow-y-auto flex-1">
+            <div class="p-4 md:p-6 overflow-y-auto flex-1">
                 ${modelAnswersHTML}
             </div>
         </div>
 
         <div class="bg-white rounded-2xl shadow-lg border border-gray-100 flex-1 flex flex-col overflow-hidden">
-            <div class="bg-gray-100 px-6 py-4 border-b border-gray-200">
-                <h3 class="text-xl font-bold text-gray-700">📝 Your Transcript</h3>
+            <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200">
+                <h3 class="text-lg md:text-xl font-bold text-gray-700 tracking-wider">📝 YOUR TRANSCRIPT</h3>
             </div>
-            <div class="p-6 overflow-y-auto flex-1 text-2xl leading-relaxed text-gray-800">
+            <div class="p-4 md:p-6 overflow-y-auto flex-1 text-lg md:text-2xl leading-relaxed text-gray-800 font-medium">
                 ${finalTranscriptHTML || "Oops, no words were recorded. Try again!"}
             </div>
         </div>
@@ -379,9 +419,8 @@ btnFinishTurn.addEventListener('click', () => {
 });
 
 btnPlayAgain.addEventListener('click', () => {
-    timeLeft = currentTheme ? currentTheme.timeLimit : 30;
-    timerBar.classList.replace('bg-red-500', 'bg-blue-500');
-    timerText.classList.replace('text-red-600', 'text-blue-600');
+    timerBar.classList.replace('bg-orange-500', 'bg-red-600');
+    timerText.classList.replace('text-orange-400', 'text-white');
     timerText.classList.remove('animate-pulse');
     timerBar.style.transition = 'none';
     timerBar.style.width = '100%';
