@@ -34,7 +34,6 @@
             </div>
             
             <div class="bg-white/10 p-6 md:p-10 lg:p-14 rounded-3xl backdrop-blur-sm w-full max-w-md md:max-w-2xl lg:max-w-4xl shadow-2xl border border-white/20">
-                
                 <div class="mb-6 lg:mb-10">
                     <h2 class="text-sm md:text-lg lg:text-2xl font-bold text-blue-200 mb-3 lg:mb-5 uppercase tracking-wider">Target Level</h2>
                     <div class="grid grid-cols-3 gap-3 lg:gap-6">
@@ -69,21 +68,22 @@
         </div>
 
         <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
-            <div class="bg-indigo-600 text-white px-6 py-3 flex justify-between items-center shadow-md z-10 shrink-0">
-                <div class="font-black text-2xl tracking-tight">PicSpeak</div>
+            <div class="bg-indigo-600 text-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-md z-10 shrink-0">
+                <div class="font-black text-xl md:text-2xl tracking-tight">PicSpeak</div>
                 <div id="turn-indicator" class="bg-indigo-800 px-4 py-1 rounded-full font-bold text-sm hidden md:block">Player 1's Turn</div>
-                <div class="flex items-center gap-4">
-                    <span class="text-sm font-bold text-indigo-200">Time</span>
-                    <span id="timer-text" class="text-2xl font-black text-white w-12 text-right">30s</span>
+                <div class="flex items-center gap-2 md:gap-4">
+                    <span class="text-xs md:text-sm font-bold text-indigo-200">Time</span>
+                    <span id="timer-text" class="text-xl md:text-2xl font-black text-white w-10 md:w-12 text-right">30s</span>
                 </div>
             </div>
 
-            <div class="w-full bg-gray-200 h-2 shrink-0">
+            <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0">
                 <div id="timer-bar" class="h-full bg-blue-500 w-full timer-transition"></div>
             </div>
 
             <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative">
-                <div class="relative w-full h-64 md:h-auto md:w-3/5 bg-gray-900 shrink-0 md:shrink overflow-hidden border-b md:border-b-0 md:border-r border-gray-300 flex items-center justify-center">
+                
+                <div class="relative w-full h-40 sm:h-52 md:h-auto md:w-3/5 bg-gray-900 shrink-0 md:shrink overflow-hidden border-b md:border-b-0 md:border-r border-gray-300 flex items-center justify-center">
                     <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter blur-md transition-all duration-500">
                     <div id="pin-container" class="absolute inset-0 pointer-events-none z-20 overflow-hidden"></div>
                     <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/50 backdrop-blur-sm z-30">
@@ -92,42 +92,44 @@
                 </div>
 
                 <div class="flex-1 md:w-2/5 flex flex-col overflow-hidden bg-white">
-                    <div class="flex-1 p-6 flex flex-col overflow-hidden relative bg-gray-50">
-                        <div class="flex justify-between items-end mb-4 shrink-0">
-                            <div class="text-sm font-bold text-gray-500">Describe what you see:</div>
-                            <div id="current-level-badge" class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded border border-blue-200">中学生レベル</div>
+                    
+                    <div class="flex-1 p-3 md:p-6 flex flex-col overflow-hidden relative bg-gray-50">
+                        <div class="flex justify-between items-end mb-2 md:mb-4 shrink-0">
+                            <div class="text-xs md:text-sm font-bold text-gray-500">Describe what you see:</div>
+                            <div id="current-level-badge" class="text-[10px] md:text-xs font-bold text-blue-600 bg-blue-100 px-2 py-0.5 md:py-1 rounded border border-blue-200">中学生レベル</div>
                         </div>
                         
-                        <div class="grid grid-cols-2 gap-3 mb-4 shrink-0">
-                            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
-                                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Words</span>
-                                <span id="wordCountDisplay" class="text-3xl font-black text-blue-500">0</span>
+                        <div class="grid grid-cols-2 gap-2 md:gap-3 mb-2 md:mb-4 shrink-0">
+                            <div class="bg-white rounded-lg md:rounded-xl p-2 md:p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
+                                <span class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">Words</span>
+                                <span id="wordCountDisplay" class="text-xl md:text-3xl font-black text-blue-500">0</span>
                             </div>
-                            <div class="bg-white rounded-xl p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
-                                <span class="text-xs font-bold text-gray-400 uppercase tracking-wider">Score</span>
-                                <span id="scoreDisplay" class="text-3xl font-black text-orange-500">0</span>
+                            <div class="bg-white rounded-lg md:rounded-xl p-2 md:p-3 shadow-sm border border-gray-200 flex flex-col justify-center items-center">
+                                <span class="text-[10px] md:text-xs font-bold text-gray-400 uppercase tracking-wider">Score</span>
+                                <span id="scoreDisplay" class="text-xl md:text-3xl font-black text-orange-500">0</span>
                             </div>
                         </div>
                         
-                        <div class="flex-1 bg-white border-2 border-gray-200 rounded-2xl p-5 overflow-y-auto shadow-inner text-2xl leading-relaxed relative" id="transcript-box">
+                        <div class="flex-1 bg-white border-2 border-gray-200 rounded-xl md:rounded-2xl p-3 md:p-5 overflow-y-auto shadow-inner text-base md:text-2xl leading-relaxed relative" id="transcript-box">
                             <p id="transcript-text" class="text-gray-400 italic">Press START to reveal the picture.</p>
                         </div>
                     </div>
 
-                    <div class="p-6 bg-white border-t border-gray-100 shrink-0 shadow-[0_-4px_10px_rgba(0,0,0,0.02)]">
-                        <div class="flex justify-center mb-3 h-6">
-                            <span id="status-text" class="text-sm font-bold text-gray-400">Ready</span>
+                    <div class="p-3 md:p-6 bg-white border-t border-gray-100 shrink-0 shadow-[0_-4px_10px_rgba(0,0,0,0.02)]">
+                        <div class="flex justify-center mb-1 md:mb-3 h-4 md:h-6">
+                            <span id="status-text" class="text-xs md:text-sm font-bold text-gray-400">Ready</span>
                         </div>
-                        <button id="btn-start-turn" class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-black text-3xl py-6 rounded-2xl shadow-[0_6px_0_#b45309] active:shadow-[0_0px_0_#b45309] active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
-                            <span class="text-4xl">▶️</span> START
+                        <button id="btn-start-turn" class="w-full bg-yellow-400 hover:bg-yellow-500 text-indigo-900 font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#b45309] md:shadow-[0_6px_0_#b45309] active:translate-y-[4px] md:active:translate-y-[6px] transition-all flex items-center justify-center gap-2">
+                            <span class="text-2xl md:text-4xl">▶️</span> START
                         </button>
-                        <div id="recording-indicator" class="hidden w-full bg-red-50 text-red-600 font-black text-3xl py-6 rounded-2xl border-2 border-red-200 flex items-center justify-center gap-2 recording-pulse cursor-pointer">
-                            <span class="text-4xl">🎤</span> LISTENING...
+                        <div id="recording-indicator" class="hidden w-full bg-red-50 text-red-600 font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl border-2 border-red-200 flex items-center justify-center gap-2 recording-pulse cursor-pointer">
+                            <span class="text-2xl md:text-4xl">🎤</span> LISTENING
                         </div>
-                        <button id="btn-finish-turn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-black text-3xl py-6 rounded-2xl shadow-[0_6px_0_#4338ca] active:shadow-[0_0px_0_#4338ca] active:translate-y-[6px] transition-all hidden flex items-center justify-center gap-2">
-                            <span class="text-4xl">🏁</span> FINISH
+                        <button id="btn-finish-turn" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-black text-xl md:text-3xl py-3 md:py-6 rounded-xl md:rounded-2xl shadow-[0_4px_0_#4338ca] md:shadow-[0_6px_0_#4338ca] active:translate-y-[4px] md:active:translate-y-[6px] transition-all hidden flex items-center justify-center gap-2">
+                            <span class="text-2xl md:text-4xl">🏁</span> FINISH
                         </button>
                     </div>
+
                 </div>
             </div>
         </div>
