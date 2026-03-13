@@ -36,7 +36,8 @@ const comboOverlay = document.getElementById('combo-overlay');
 const comboContent = document.getElementById('combo-content');
 const pinContainer = document.getElementById('pin-container');
 
-// 音声記録用変数（ハイライトが消えないように、純粋なテキストのみを蓄積します）
+// 音声記録用変数
+let accumulatedTranscript = ""; 
 let rawTranscriptForCounting = ""; 
 
 function showView(viewElement) {
@@ -46,14 +47,21 @@ function showView(viewElement) {
     viewElement.classList.remove('hidden');
     viewElement.classList.add('fade-in');
 }
-// --- (前略：変数の宣言など) ---
 
 async function initApp() {
-    // ★NEW: ブラウザが音声認識に対応しているかを最初にチェックする
+    // ★NEW: ブラウザが音声認識に対応しているか（iPhoneのChrome等でないか）を厳格にチェック
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
-        alert("【マイク非対応エラー】\nお使いのブラウザは音声認識に対応していません。\n\n・iPhoneの場合は「Chrome」アプリでお試しください。\n・LINEなどのアプリから開いている場合は、右上のメニューから標準ブラウザ（Safari/Chrome）で開き直してください。");
-        // スタートボタンを押せなくするなどの処理も可能ですが、今回は警告のみ
+        alert("【重要】\nお使いのブラウザは音声認識に対応していません。\n\niPhoneをお使いの場合は、必ず標準の「Safari」ブラウザを開いてプレイしてください。\n（ChromeやLINE内ブラウザでは動作しません）");
+        
+        // スタートボタンを押せなくして、エラーで画面が固まるのを防ぐ
+        btnStartGame.disabled = true;
+        btnStartGame.classList.replace('bg-yellow-400', 'bg-gray-400');
+        btnStartGame.classList.replace('text-indigo-900', 'text-gray-600');
+        btnStartGame.textContent = "ブラウザ非対応 (Safariを開いてください)";
+        btnStartGame.style.boxShadow = "none";
+        btnStartGame.style.transform = "none";
+        return; // これ以上初期化を進めない
     }
 
     initSpeechRecognition(handleSpeechResult, handleSpeechEnd);
@@ -66,7 +74,6 @@ async function initApp() {
     }
 }
 
-// --- (後略：以降のコードはそのまま) ---
 function startTimer() {
     timeLeft = currentTheme.timeLimit || 30;
     timeElapsed = 0;
@@ -117,12 +124,10 @@ function dropPin(word, theme) {
     pinContainer.appendChild(pin);
 }
 
-// ★NEW: 過去のテキストも含めて、画面全体を再ハイライトする最強の関数
 function highlightGlobalText(text) {
     if (!text) return "";
     let html = text;
 
-    // 獲得済みのフレーズや文を長い順に並び替え（短い単語の誤爆を防ぐ）
     const phrases = [...Array.from(foundChunksSet), ...Array.from(foundSentencesSet)];
     phrases.sort((a, b) => b.length - a.length);
 
@@ -132,12 +137,10 @@ function highlightGlobalText(text) {
         html = html.replace(regex, `<span class="hl-phrase">$1</span>`);
     });
 
-    // 獲得済みの単語を長い順に並び替え
     const words = Array.from(foundWordsSet);
     words.sort((a, b) => b.length - a.length);
     words.forEach(word => {
         const escaped = word.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
-        // 既にフレーズとしてハイライトされている中身は書き換えない正規表現
         const regex = new RegExp(`\\b(${escaped})\\b(?![^<]*>|[^<>]*<\/span>)`, 'gi');
         html = html.replace(regex, `<span class="hl-mandatory">$1</span>`);
     });
@@ -146,20 +149,16 @@ function highlightGlobalText(text) {
 }
 
 function handleSpeechResult(finalText, interimText) {
-    // 確定したテキストを蓄積
     if (finalText.trim().length > 0) {
         rawTranscriptForCounting += finalText + " ";
     }
     
-    // これまで話した全テキスト ＋ 現在認識中のテキスト
     const currentTempText = rawTranscriptForCounting + interimText;
     
-    // 語数カウント
     const wordsArray = currentTempText.trim().split(/[\s,.?!]+/).filter(w => w.length > 0);
     wordCountDisplay.textContent = wordsArray.length;
     
     if (currentTempText.trim().length > 0 && currentTheme) {
-        // 直近の言葉だけでなく「これまで話した全テキスト」から得点を再計算（取りこぼし防止）
         const result = calculateScore(currentTempText, currentTheme, selectedLevel);
         
         if (result && result.addedPoints > 0) {
@@ -177,7 +176,6 @@ function handleSpeechResult(finalText, interimText) {
         }
     }
     
-    // ★NEW: 常に「全てのテキスト」に対してハイライトをかけ直す！
     const displayHTML = highlightGlobalText(currentTempText);
 
     if (currentTempText.trim().length > 0) {
@@ -251,12 +249,28 @@ levelBtns.forEach(btn => {
     });
 });
 
-// ゲームコントロール
-btnStartGame.addEventListener('click', async () => {
+// ★NEW: マイク許可取得ロジックの修正（Chromeのロック防止）
+btnStartGame.addEventListener('click', async (e) => {
+    e.preventDefault();
+
+    // 非対応ブラウザで無理やり押された時の防御
+    const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (!SpeechRecognition) {
+        alert("iPhoneをお使いの場合は、標準の「Safari」ブラウザを開いてください。\n（Chromeやアプリ内ブラウザでは動作しません）");
+        return;
+    }
+
     try {
-        await navigator.mediaDevices.getUserMedia({ audio: true });
+        if (navigator.mediaDevices && navigator.mediaDevices.getUserMedia) {
+            // マイクの許可ダイアログを強制的に出す
+            const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+            
+            // ★超重要：許可をもらったら、ゲーム本編の音声認識が使えるようにマイクを即座に解放（ストップ）する
+            stream.getTracks().forEach(track => track.stop());
+            console.log("マイク許可取得完了。即座に解放しました。");
+        }
     } catch (err) {
-        alert("マイクの使用が許可されませんでした。ブラウザの設定からマイクをオンにしてください。");
+        alert("マイクへのアクセスが拒否されました。設定を確認してください。\n詳細: " + err.message);
         return; 
     }
 
@@ -306,7 +320,6 @@ btnFinishTurn.addEventListener('click', () => {
         wpm = Math.round(finalWordCount / (timeElapsed / 60));
     }
 
-    // 模範解答の生成
     const modelAnswersData = currentTheme.scoringData[selectedLevel].sentences || [];
     let modelAnswersHTML = `<ul class="space-y-3 mt-3">`;
     modelAnswersData.forEach(ans => {
@@ -322,7 +335,6 @@ btnFinishTurn.addEventListener('click', () => {
     });
     modelAnswersHTML += `</ul>`;
 
-    // ★NEW: リザルト画面用の永久ハイライト済みテキスト
     const finalTranscriptHTML = highlightGlobalText(rawTranscriptForCounting);
 
     const rankingContainer = document.getElementById('ranking-container');
