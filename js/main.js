@@ -45,6 +45,7 @@ const promptImage = document.getElementById('prompt-image');
 const transcriptBox = document.getElementById('transcript-box');
 const scoreDisplay = document.getElementById('scoreDisplay');
 const wordCountDisplay = document.getElementById('wordCountDisplay');
+const liveWpmDisplay = document.getElementById('liveWpmDisplay'); // ★新規追加
 const timerBar = document.getElementById('timer-bar');
 const timerText = document.getElementById('timer-text');
 const statusText = document.getElementById('status-text');
@@ -67,8 +68,7 @@ let audioCtx = null;
 // ==========================================
 function saveLearningLog(logData) {
     let logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
-    logs.unshift(logData); // 先頭に追加
-    // 最大50件まで保存
+    logs.unshift(logData);
     if(logs.length > 50) logs = logs.slice(0, 50);
     localStorage.setItem('picspeak_logs', JSON.stringify(logs));
 }
@@ -96,7 +96,7 @@ function renderHistoryLogs() {
                     <div class="text-xs text-gray-400 font-bold">${dateStr} | Image: ${log.imageId}</div>
                     <div class="text-sm font-black uppercase mt-1 ${levelColor}">${log.level.replace('_', ' ')}</div>
                 </div>
-                <div class="text-right flex gap-3 md:gap-6">
+                <div class="text-right flex gap-4 md:gap-6">
                     <div class="flex flex-col items-center">
                         <span class="text-[10px] font-bold text-gray-400 uppercase">Score</span>
                         <span class="text-lg font-black text-gray-800">${log.score}</span>
@@ -218,6 +218,11 @@ function startTimer() {
         timeElapsed++;
         timerText.textContent = `${timeLeft}s`;
 
+        // ★追加: プレイ中のリアルタイムWPM計算
+        const currentWords = parseInt(wordCountDisplay.textContent) || 0;
+        const currentWpm = Math.round(currentWords / (timeElapsed / 60));
+        if(liveWpmDisplay) liveWpmDisplay.textContent = currentWpm;
+
         if (timeLeft <= 0) {
             clearInterval(gameTimer);
             stopRecording();
@@ -273,7 +278,6 @@ function highlightGlobalText(text) {
     return html;
 }
 
-// ★修正: リアルタイムゲージの更新ロジックを追加
 function handleSpeechResult(finalText, interimText) {
     if (finalText.trim().length > 0) {
         rawTranscriptForCounting += finalText + " ";
@@ -288,7 +292,6 @@ function handleSpeechResult(finalText, interimText) {
         if (result && result.addedPoints > 0) {
             scoreDisplay.textContent = result.score;
             
-            // リアルタイムゲージの更新
             const stats = getCompletionStats(currentTheme, selectedLevel);
             if(liveCompletionBar && liveCompletionText) {
                 liveCompletionBar.style.width = `${stats.completionRate}%`;
@@ -354,7 +357,11 @@ function handleSpeechEnd() {
     isRecording = false;
     if(recordingIndicator) recordingIndicator.classList.add('hidden');
     if (timeLeft > 0) {
-        if(btnStartTurn) btnStartTurn.classList.remove('hidden');
+        if(btnStartTurn) {
+            btnStartTurn.classList.remove('hidden');
+            // ★一時停止になったら再び揺らす
+            btnStartTurn.classList.add('animate-attention');
+        }
         if(statusText) statusText.textContent = "Paused";
     }
 }
@@ -371,7 +378,6 @@ function stopRecording() {
 // イベントリスナー群
 // ==========================================
 
-// モーダル開閉
 if(btnOpenTutorial) btnOpenTutorial.addEventListener('click', () => tutorialModal.classList.remove('hidden'));
 if(btnCloseTutorial) btnCloseTutorial.addEventListener('click', () => tutorialModal.classList.add('hidden'));
 
@@ -386,7 +392,6 @@ if(btnCloseHistory) btnCloseHistory.addEventListener('click', () => historyModal
 if (btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
 if (btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
 
-
 if (btnHomeFromPlay) {
     btnHomeFromPlay.addEventListener('click', () => {
         if (isRecording) stopRecording();
@@ -395,7 +400,6 @@ if (btnHomeFromPlay) {
     });
 }
 
-// PC/タブレット用リサイズ（スマホ用残しつつ）
 const resizer = document.getElementById('resizer');
 const imagePanel = document.getElementById('image-panel');
 let startY = 0;
@@ -423,10 +427,10 @@ timeBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         timeBtns.forEach(b => {
             b.classList.remove('selected-time-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            b.classList.add('bg-gray-100', 'text-gray-700', 'border', 'border-gray-200');
+            b.classList.add('bg-gray-100', 'text-gray-700', 'border-gray-200');
         });
         const target = e.currentTarget;
-        target.classList.remove('bg-gray-100', 'text-gray-700', 'border', 'border-gray-200');
+        target.classList.remove('bg-gray-100', 'text-gray-700', 'border-gray-200');
         target.classList.add('selected-time-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
         customTimeLimit = parseInt(target.getAttribute('data-time'));
     });
@@ -436,10 +440,10 @@ playerBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         playerBtns.forEach(b => {
             b.classList.remove('selected-player-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-700');
+            b.classList.add('bg-white', 'border-gray-200', 'text-gray-700');
         });
         const target = e.currentTarget; 
-        target.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-700');
+        target.classList.remove('bg-white', 'border-gray-200', 'text-gray-700');
         target.classList.add('selected-player-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
         selectedPlayers = parseInt(target.getAttribute('data-players'));
     });
@@ -449,10 +453,10 @@ levelBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         levelBtns.forEach(b => {
             b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            b.classList.add('bg-white', 'border', 'border-gray-200', 'text-gray-700');
+            b.classList.add('bg-white', 'border-gray-200', 'text-gray-700');
         });
         const target = e.currentTarget;
-        target.classList.remove('bg-white', 'border', 'border-gray-200', 'text-gray-700');
+        target.classList.remove('bg-white', 'border-gray-200', 'text-gray-700');
         target.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
         selectedLevel = target.getAttribute('data-level');
         
@@ -465,6 +469,13 @@ levelBtns.forEach(btn => {
 
 if (btnStartGame) {
     btnStartGame.addEventListener('click', async () => {
+        const elem = document.documentElement;
+        if (elem.requestFullscreen) {
+            elem.requestFullscreen().catch(e => console.log("フルスクリーンが拒否されました"));
+        } else if (elem.webkitRequestFullscreen) {
+            elem.webkitRequestFullscreen();
+        }
+
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
 
@@ -495,10 +506,14 @@ if (btnStartGame) {
         
         scoreDisplay.textContent = "0";
         wordCountDisplay.textContent = "0";
+        if(liveWpmDisplay) liveWpmDisplay.textContent = "0";
         if(liveCompletionBar) liveCompletionBar.style.width = '0%';
         if(liveCompletionText) liveCompletionText.textContent = '0%';
         pinContainer.innerHTML = ''; 
         transcriptBox.innerHTML = `<p class="text-gray-400 italic font-bold uppercase tracking-wide">Press START and speak loudly. ❤️📍🏙️✨</p>`;
+        
+        // ★スタートボタンを揺らすクラスを付与
+        if(btnStartTurn) btnStartTurn.classList.add('animate-attention');
         
         showView(viewPlay);
     });
@@ -509,7 +524,10 @@ if (btnStartTurn) {
         startSpeech();
         isRecording = true;
         
+        // ★ボタンを押したら揺れを止める
+        btnStartTurn.classList.remove('animate-attention');
         btnStartTurn.classList.add('hidden');
+        
         if(recordingIndicator) recordingIndicator.classList.remove('hidden');
         if(statusText) statusText.textContent = "Speak Now!";
         
@@ -533,7 +551,6 @@ if (btnFinishTurn) {
         const finalScore = scoreDisplay.textContent;
         const finalWordCount = parseInt(wordCountDisplay.textContent) || 0;
         
-        // ★修正: WPMの計算と表示を復活
         let wpm = 0;
         if (timeElapsed > 0) {
             wpm = Math.round(finalWordCount / (timeElapsed / 60));
@@ -541,7 +558,6 @@ if (btnFinishTurn) {
 
         const stats = getCompletionStats(currentTheme, selectedLevel);
 
-        // ★追加: 学習ログを端末に保存
         saveLearningLog({
             date: new Date().toISOString(),
             imageId: currentTheme.id || 'unknown',
@@ -582,42 +598,41 @@ if (btnFinishTurn) {
         const finalTranscriptHTML = highlightGlobalText(rawTranscriptForCounting);
         const rankingContainer = document.getElementById('ranking-container');
         
-        // ★修正: 4つのカード (Score, Completion, Words, WPM) を2x2のグリッドで配置
         rankingContainer.innerHTML = `
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-2">
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
                     <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Score</span>
-                    <span class="text-3xl md:text-4xl font-black text-gray-900">${finalScore}</span>
+                    <span class="text-3xl md:text-5xl font-black text-gray-900">${finalScore}</span>
                 </div>
                 <div class="bg-sns-gradient rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg text-white transform hover:scale-[1.02] transition-transform">
                     <span class="text-white/80 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Completion</span>
-                    <span class="text-3xl md:text-4xl font-black">${stats.completionRate}<span class="text-xl md:text-2xl">%</span></span>
+                    <span class="text-3xl md:text-5xl font-black">${stats.completionRate}<span class="text-xl md:text-3xl">%</span></span>
                 </div>
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
                     <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Words</span>
-                    <span class="text-3xl md:text-4xl font-black text-gray-900">${finalWordCount}</span>
+                    <span class="text-3xl md:text-5xl font-black text-gray-900">${finalWordCount}</span>
                 </div>
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
                     <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM</span>
-                    <span class="text-3xl md:text-4xl font-black text-gray-900">${wpm}</span>
+                    <span class="text-3xl md:text-5xl font-black text-gray-900">${wpm}</span>
                 </div>
             </div>
 
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4 mb-2">
-                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-4 mb-2">
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 flex flex-col overflow-hidden">
                     <div class="bg-gray-50 px-4 md:px-6 py-4 border-b border-gray-100 flex items-center justify-between">
-                        <h3 class="text-md md:text-lg font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3>
-                        <span class="text-[10px] font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded">これを言えれば100%!</span>
+                        <h3 class="text-md md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3>
+                        <span class="text-[10px] md:text-xs font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded">これを言えれば100%!</span>
                     </div>
                     <div class="p-4 md:p-6 overflow-y-auto flex-1">
                         ${missedHTML}
                     </div>
                 </div>
 
-                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden">
+                <div class="bg-white rounded-3xl shadow-xl border border-gray-100 flex flex-col overflow-hidden">
                     <div class="bg-blue-50 px-4 md:px-6 py-4 border-b border-blue-100 flex items-center justify-between">
-                        <h3 class="text-md md:text-lg font-black text-blue-800 tracking-wider">✨ CLEARED</h3>
-                        <span class="text-[10px] font-bold bg-blue-200 text-blue-700 px-2 py-1 rounded">素晴らしい！</span>
+                        <h3 class="text-md md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3>
+                        <span class="text-[10px] md:text-xs font-bold bg-blue-200 text-blue-700 px-2 py-1 rounded">素晴らしい！</span>
                     </div>
                     <div class="p-4 md:p-6 overflow-y-auto flex-1">
                         ${clearedHTML}
@@ -625,7 +640,7 @@ if (btnFinishTurn) {
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden mt-2">
+            <div class="bg-white rounded-3xl shadow-xl border border-gray-100 flex-1 flex flex-col overflow-hidden mt-2">
                 <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200">
                     <h3 class="text-lg md:text-xl font-extrabold text-gray-600 tracking-wider">📝 YOUR TRANSCRIPT</h3>
                 </div>
@@ -643,7 +658,13 @@ if (btnPlayAgain) {
     btnPlayAgain.addEventListener('click', () => {
         if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
         if(recordingIndicator) recordingIndicator.classList.add('hidden');
-        if(btnStartTurn) btnStartTurn.classList.remove('hidden');
+        
+        if(btnStartTurn) {
+            btnStartTurn.classList.remove('hidden');
+            // ★プレイアゲイン時もSTARTボタンを揺らす
+            btnStartTurn.classList.add('animate-attention');
+        }
+        
         if(statusText) statusText.textContent = "Ready";
         
         if (promptImage) {

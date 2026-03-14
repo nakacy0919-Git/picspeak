@@ -1,0 +1,21 @@
+{
+  "name": "PicSpeak - Modern Speaking Battle",
+  "short_name": "PicSpeak",
+  "description": "英語スピーキングバトルアプリ",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c13584",
+  "icons": [
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/images/icon.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

@@ -169,3 +169,12 @@ body {
     #orientation-lock { display: flex !important; }
     .app-container { display: none !important; }
 }
+/* ★NEW: 「ここを押して！」と視線を誘導する優しい波打ちアニメーション */
+@keyframes attentionPulse {
+    0% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+    50% { transform: scale(1.03); box-shadow: 0 0 25px rgba(245, 96, 64, 0.6); }
+    100% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
+}
+.animate-attention {
+    animation: attentionPulse 1.5s infinite ease-in-out;
+}
