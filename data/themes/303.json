@@ -1,0 +1,128 @@
+{
+  "id": "theme_303",
+  "imageSrc": "assets/images/303.webp",
+  "description": "公園で子供たちのサッカーを見守る両親",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人"},
+        {"text": "woman", "ja": "女の人"},
+        {"text": "boy", "ja": "男の子"},
+        {"text": "ball", "ja": "ボール"},
+        {"text": "soccer", "ja": "サッカー"},
+        {"text": "tree", "ja": "木"},
+        {"text": "park", "ja": "公園"},
+        {"text": "chair", "ja": "椅子"},
+        {"text": "cup", "ja": "カップ"},
+        {"text": "red", "ja": "赤い"},
+        {"text": "brown", "ja": "茶色い"},
+        {"text": "yellow", "ja": "黄色い"},
+        {"text": "sit", "ja": "座る"},
+        {"text": "play", "ja": "遊ぶ"},
+        {"text": "watch", "ja": "見る"},
+        {"text": "drink", "ja": "飲む"}
+      ],
+      "chunks": [
+        {"text": "two boys", "ja": "2人の男の子"},
+        {"text": "a soccer ball", "ja": "サッカーボール"},
+        {"text": "play soccer", "ja": "サッカーをする"},
+        {"text": "in the park", "ja": "公園で"},
+        {"text": "sit on a chair", "ja": "椅子に座る"},
+        {"text": "drink coffee", "ja": "コーヒーを飲む"},
+        {"text": "yellow trees", "ja": "黄色い木々"},
+        {"text": "watch the boys", "ja": "男の子たちを見る"}
+      ],
+      "sentences": [
+        {"text": "I see two boys.", "grammar": "I see~", "ja": "2人の男の子が見えます。"},
+        {"text": "This is a park.", "grammar": "This is~", "ja": "ここは公園です。"},
+        {"text": "They are playing soccer.", "grammar": "is ~ing", "ja": "彼らはサッカーをしています。"},
+        {"text": "The man is sitting on a chair.", "grammar": "is ~ing", "ja": "男の人が椅子に座っています。"},
+        {"text": "The woman has a cup.", "grammar": "have/has", "ja": "女の人はカップを持っています。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "parents", "ja": "両親"},
+        {"text": "children", "ja": "子供たち"},
+        {"text": "sunglasses", "ja": "サングラス"},
+        {"text": "hoodie", "ja": "パーカー"},
+        {"text": "coat", "ja": "コート"},
+        {"text": "autumn", "ja": "秋"},
+        {"text": "grass", "ja": "草"},
+        {"text": "field", "ja": "野原"},
+        {"text": "weekend", "ja": "週末"},
+        {"text": "talk", "ja": "話す"},
+        {"text": "hold", "ja": "持っている"},
+        {"text": "run", "ja": "走る"},
+        {"text": "kick", "ja": "蹴る"},
+        {"text": "wear", "ja": "身につけている"},
+        {"text": "enjoy", "ja": "楽しむ"},
+        {"text": "outside", "ja": "外で"}
+      ],
+      "chunks": [
+        {"text": "sitting in the park", "ja": "公園に座っている"},
+        {"text": "holding a cup", "ja": "カップを持っている"},
+        {"text": "wearing sunglasses", "ja": "サングラスをかけている"},
+        {"text": "talking to each other", "ja": "お互いに話している"},
+        {"text": "playing soccer on the grass", "ja": "芝生でサッカーをしている"},
+        {"text": "autumn leaves", "ja": "秋の葉"},
+        {"text": "kicking the ball", "ja": "ボールを蹴っている"},
+        {"text": "on the weekend", "ja": "週末に"}
+      ],
+      "sentences": [
+        {"text": "There are four people in the park.", "grammar": "There is/are~", "ja": "公園には4人の人がいます。"},
+        {"text": "A man and a woman are sitting on the chairs.", "grammar": "現在進行形", "ja": "男の人と女の人が椅子に座っています。"},
+        {"text": "Two boys are running on the grass.", "grammar": "場所を表す前置詞句", "ja": "2人の男の子が芝生の上を走っています。"},
+        {"text": "The woman wearing a coat has sunglasses.", "grammar": "現在分詞の後置修飾", "ja": "コートを着ている女の人はサングラスをかけています。"},
+        {"text": "They are enjoying playing outside.", "grammar": "動名詞", "ja": "彼らは外で遊ぶのを楽しんでいます。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "couple", "ja": "カップル、夫婦"},
+        {"text": "relax", "ja": "くつろぐ"},
+        {"text": "observe", "ja": "観察する、見守る"},
+        {"text": "tumbler", "ja": "タンブラー"},
+        {"text": "folding chair", "ja": "折りたたみ椅子"},
+        {"text": "match", "ja": "試合"},
+        {"text": "energetic", "ja": "元気な、活動的な"},
+        {"text": "peaceful", "ja": "平和な"},
+        {"text": "outdoors", "ja": "屋外で"},
+        {"text": "foliage", "ja": "紅葉、木の葉"},
+        {"text": "seasonal", "ja": "季節の"},
+        {"text": "chat", "ja": "おしゃべりする"},
+        {"text": "comfortable", "ja": "快適な"},
+        {"text": "gaze", "ja": "見つめる"},
+        {"text": "competitive", "ja": "競争力のある、負けず嫌いな"},
+        {"text": "outfit", "ja": "服装"}
+      ],
+      "chunks": [
+        {"text": "relaxing outdoors", "ja": "屋外でくつろぐ"},
+        {"text": "observing the game", "ja": "試合を見守る"},
+        {"text": "sitting in folding chairs", "ja": "折りたたみ椅子に座っている"},
+        {"text": "chatting comfortably", "ja": "快適におしゃべりする"},
+        {"text": "energetic kids", "ja": "元気な子供たち"},
+        {"text": "beautiful autumn foliage", "ja": "美しい紅葉"},
+        {"text": "a peaceful weekend", "ja": "平和な週末"},
+        {"text": "enjoying the weather", "ja": "天気を楽しんでいる"}
+      ],
+      "sentences": [
+        {"text": "It looks like a peaceful autumn weekend in the park.", "grammar": "It looks like~", "ja": "公園での平和な秋の週末のようです。"},
+        {"text": "The couple who are sitting in folding chairs are chatting comfortably.", "grammar": "関係代名詞", "ja": "折りたたみ椅子に座っている夫婦は、快適そうにおしゃべりしています。"},
+        {"text": "They are drinking coffee while they watch the boys play soccer.", "grammar": "接続詞 while", "ja": "彼らは男の子たちがサッカーをするのを見ながらコーヒーを飲んでいます。"},
+        {"text": "The boys look very energetic to play outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "男の子たちは外で遊ぶにはとても元気にみえます。"},
+        {"text": "The trees in the background have yellow leaves because it is autumn.", "grammar": "接続詞 because", "ja": "秋なので、背景の木々は黄色い葉をつけています。"}
+      ]
+    }
+  },
+  "pins": {
+    "man": {"x": 23, "y": 55},
+    "woman": {"x": 41, "y": 55},
+    "boy": {"x": 75, "y": 50},
+    "ball": {"x": 84, "y": 67},
+    "chair": {"x": 19, "y": 70},
+    "cup": {"x": 30, "y": 56},
+    "tree": {"x": 48, "y": 25}
+  }
+}

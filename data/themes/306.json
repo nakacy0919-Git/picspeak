@@ -1,0 +1,130 @@
+{
+  "id": "theme_306",
+  "imageSrc": "assets/images/306.webp",
+  "description": "教室で勉強する生徒たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子"},
+        {"text": "girl", "ja": "女の子"},
+        {"text": "student", "ja": "生徒"},
+        {"text": "book", "ja": "本"},
+        {"text": "notebook", "ja": "ノート"},
+        {"text": "pencil", "ja": "鉛筆"},
+        {"text": "desk", "ja": "机"},
+        {"text": "chair", "ja": "椅子"},
+        {"text": "window", "ja": "窓"},
+        {"text": "computer", "ja": "コンピューター"},
+        {"text": "water", "ja": "水"},
+        {"text": "globe", "ja": "地球儀"},
+        {"text": "blue", "ja": "青い"},
+        {"text": "yellow", "ja": "黄色い"},
+        {"text": "read", "ja": "読む"},
+        {"text": "write", "ja": "書く"},
+        {"text": "study", "ja": "勉強する"}
+      ],
+      "chunks": [
+        {"text": "many students", "ja": "たくさんの生徒"},
+        {"text": "read a book", "ja": "本を読む"},
+        {"text": "write in a notebook", "ja": "ノートに書く"},
+        {"text": "a blue computer", "ja": "青いコンピューター"},
+        {"text": "a big window", "ja": "大きな窓"},
+        {"text": "sit on a chair", "ja": "椅子に座る"},
+        {"text": "look at a book", "ja": "本を見る"},
+        {"text": "a yellow shirt", "ja": "黄色いシャツ"}
+      ],
+      "sentences": [
+        {"text": "I see many students.", "grammar": "I see~", "ja": "たくさんの生徒が見えます。"},
+        {"text": "This is a classroom.", "grammar": "This is~", "ja": "ここは教室です。"},
+        {"text": "The boy is reading a book.", "grammar": "is ~ing", "ja": "男の子は本を読んでいます。"},
+        {"text": "She has a pencil.", "grammar": "have/has", "ja": "彼女は鉛筆を持っています。"},
+        {"text": "A boy is using a computer.", "grammar": "is ~ing", "ja": "男の子がコンピューターを使っています。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "classroom", "ja": "教室"},
+        {"text": "bookshelf", "ja": "本棚"},
+        {"text": "laptop", "ja": "ノートパソコン"},
+        {"text": "bottle", "ja": "ボトル"},
+        {"text": "pencil case", "ja": "筆箱"},
+        {"text": "hoodie", "ja": "パーカー"},
+        {"text": "map", "ja": "地図"},
+        {"text": "together", "ja": "一緒に"},
+        {"text": "quiet", "ja": "静かな"},
+        {"text": "bright", "ja": "明るい"},
+        {"text": "wear", "ja": "着ている"},
+        {"text": "talk", "ja": "話す"},
+        {"text": "sit", "ja": "座る"},
+        {"text": "look", "ja": "見る"},
+        {"text": "use", "ja": "使う"}
+      ],
+      "chunks": [
+        {"text": "studying in the classroom", "ja": "教室で勉強している"},
+        {"text": "writing something", "ja": "何かを書いている"},
+        {"text": "sitting at the desk", "ja": "机に向かって座っている"},
+        {"text": "next to the window", "ja": "窓の隣に"},
+        {"text": "a bottle of water", "ja": "水の入ったボトル"},
+        {"text": "wearing a blue hoodie", "ja": "青いパーカーを着ている"},
+        {"text": "looking at the screen", "ja": "画面を見ている"},
+        {"text": "on the bookshelf", "ja": "本棚の上に"}
+      ],
+      "sentences": [
+        {"text": "There are many students in the classroom.", "grammar": "There is/are~", "ja": "教室にはたくさんの生徒がいます。"},
+        {"text": "A boy in a blue hoodie is using a laptop.", "grammar": "前置詞を用いた名詞修飾 / 現在進行形", "ja": "青いパーカーを着た男の子がノートパソコンを使っています。"},
+        {"text": "Two girls are talking next to the window.", "grammar": "場所を表す前置詞句", "ja": "二人の女の子が窓の隣で話しています。"},
+        {"text": "Some students are reading books quietly.", "grammar": "副詞の活用", "ja": "何人かの生徒は静かに本を読んでいます。"},
+        {"text": "There is a globe on the bookshelf.", "grammar": "There is/are~", "ja": "本棚の上に地球儀があります。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "pupil", "ja": "生徒(studentの類義語)"},
+        {"text": "concentrate", "ja": "集中する"},
+        {"text": "gaze", "ja": "見つめる(lookの類義語)"},
+        {"text": "discuss", "ja": "話し合う"},
+        {"text": "textbook", "ja": "教科書"},
+        {"text": "stationery", "ja": "文房具"},
+        {"text": "assignment", "ja": "課題"},
+        {"text": "collaborate", "ja": "協力する"},
+        {"text": "sunlight", "ja": "日光"},
+        {"text": "atmosphere", "ja": "雰囲気"},
+        {"text": "diligent", "ja": "勤勉な"},
+        {"text": "observe", "ja": "観察する"},
+        {"text": "typical", "ja": "典型的な"},
+        {"text": "individual", "ja": "個々の"},
+        {"text": "focus", "ja": "集中する"}
+      ],
+      "chunks": [
+        {"text": "concentrate on their studies", "ja": "勉強に集中する"},
+        {"text": "engaged in reading", "ja": "読書に没頭している"},
+        {"text": "discuss the assignment", "ja": "課題について話し合う"},
+        {"text": "type on the laptop", "ja": "ノートパソコンで文字を打つ"},
+        {"text": "a typical classroom scene", "ja": "典型的な教室の風景"},
+        {"text": "bathed in sunlight", "ja": "日光を浴びて"},
+        {"text": "diligently taking notes", "ja": "熱心にノートを取っている"},
+        {"text": "focused on their tasks", "ja": "それぞれの作業に集中している"}
+      ],
+      "sentences": [
+        {"text": "It looks like a typical scene of students studying during a class or free time.", "grammar": "It looks like~", "ja": "授業中または自由時間に生徒たちが勉強している典型的な風景のようです。"},
+        {"text": "The boy who is wearing a blue hoodie is typing on his laptop.", "grammar": "関係代名詞(主格)", "ja": "青いパーカーを着ている男の子は、ノートパソコンで文字を打っています。"},
+        {"text": "The sunlight coming through the window makes the room look bright and warm.", "grammar": "現在分詞の形容詞的用法 / make+O+C", "ja": "窓から差し込む日光が、部屋を明るく暖かく見せています。"},
+        {"text": "I can see a girl concentrating on writing her notes diligently.", "grammar": "知覚動詞+O+現在分詞", "ja": "女の子が熱心にノートを書くことに集中しているのが見えます。"},
+        {"text": "Because it looks quiet, they seem to be working on their own assignments.", "grammar": "接続詞(because) / seem to~", "ja": "静かそうに見えるので、彼らは個々の課題に取り組んでいるようです。"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": {"x": 65, "y": 60},
+    "girl": {"x": 38, "y": 65},
+    "globe": {"x": 56, "y": 14},
+    "window": {"x": 25, "y": 20},
+    "bookshelf": {"x": 90, "y": 40},
+    "laptop": {"x": 58, "y": 70},
+    "bottle": {"x": 51, "y": 68},
+    "pencil case": {"x": 46, "y": 88},
+    "book": {"x": 15, "y": 50},
+    "notebook": {"x": 43, "y": 80}
+  }
+}
