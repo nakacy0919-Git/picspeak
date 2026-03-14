@@ -467,57 +467,76 @@ levelBtns.forEach(btn => {
     });
 });
 
+// --- (js/main.js の btnStartGame 処理を以下にまるごと差し替え) ---
+
 if (btnStartGame) {
-    btnStartGame.addEventListener('click', async () => {
-        const elem = document.documentElement;
-        if (elem.requestFullscreen) {
-            elem.requestFullscreen().catch(e => console.log("フルスクリーンが拒否されました"));
-        } else if (elem.webkitRequestFullscreen) {
-            elem.webkitRequestFullscreen();
+    // asyncを外し、ユーザーのクリック直後に安全にフルスクリーンを実行させる
+    btnStartGame.addEventListener('click', () => {
+        
+        // 1. フルスクリーン化（他の処理に邪魔されないように一番最初に実行）
+        try {
+            const elem = document.documentElement;
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) {
+                    elem.requestFullscreen().catch(e => console.warn("フルスクリーン拒否:", e));
+                } else if (elem.webkitRequestFullscreen) {
+                    elem.webkitRequestFullscreen();
+                }
+            }
+        } catch (e) {
+            console.warn("フルスクリーン処理エラー:", e);
         }
 
+        // 2. 音声エンジンの起動
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
 
-        if (themeList.length === 0) themeList = ["301"];
-
-        if (themeList.length > 0) {
-            const randomId = themeList[Math.floor(Math.random() * themeList.length)];
-            try {
-                const res = await fetch(`data/themes/${randomId}.json`);
-                const fetchedData = await res.json();
-                currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-            } catch (e) {
-                alert(`データの読み込みに失敗しました。`);
-                return; 
-            }
-        }
-
-        if (currentTheme && currentTheme.imageSrc) {
-            promptImage.src = currentTheme.imageSrc;
-            if(promptImage.classList.contains('blur-none')) promptImage.classList.replace('blur-none', 'blur-md'); 
-        }
-        
-        timeLeft = customTimeLimit;
-        timeElapsed = 0;
-        rawTranscriptForCounting = "";
-        accumulatedTranscript = ""; 
-        resetScore(); 
-        
-        scoreDisplay.textContent = "0";
-        wordCountDisplay.textContent = "0";
-        if(liveWpmDisplay) liveWpmDisplay.textContent = "0";
-        if(liveCompletionBar) liveCompletionBar.style.width = '0%';
-        if(liveCompletionText) liveCompletionText.textContent = '0%';
-        pinContainer.innerHTML = ''; 
-        transcriptBox.innerHTML = `<p class="text-gray-400 italic font-bold uppercase tracking-wide">Press START and speak loudly. ❤️📍🏙️✨</p>`;
-        
-        // ★スタートボタンを揺らすクラスを付与
-        if(btnStartTurn) btnStartTurn.classList.add('animate-attention');
-        
-        showView(viewPlay);
+        // 3. 重い処理（データの読み込み・画面遷移）は別の関数に投げてクラッシュを防ぐ！
+        launchGameSequence();
     });
 }
+
+// ★新規追加: データの読み込みや画面遷移を行うための専用関数
+async function launchGameSequence() {
+    if (themeList.length === 0) themeList = ["301"];
+
+    if (themeList.length > 0) {
+        const randomId = themeList[Math.floor(Math.random() * themeList.length)];
+        try {
+            const res = await fetch(`data/themes/${randomId}.json`);
+            const fetchedData = await res.json();
+            currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+        } catch (e) {
+            alert(`データの読み込みに失敗しました。`);
+            return; 
+        }
+    }
+
+    if (currentTheme && currentTheme.imageSrc) {
+        promptImage.src = currentTheme.imageSrc;
+        if(promptImage.classList.contains('blur-none')) promptImage.classList.replace('blur-none', 'blur-md'); 
+    }
+    
+    timeLeft = customTimeLimit;
+    timeElapsed = 0;
+    rawTranscriptForCounting = "";
+    accumulatedTranscript = ""; 
+    resetScore(); 
+    
+    scoreDisplay.textContent = "0";
+    wordCountDisplay.textContent = "0";
+    if(liveWpmDisplay) liveWpmDisplay.textContent = "0";
+    if(liveCompletionBar) liveCompletionBar.style.width = '0%';
+    if(liveCompletionText) liveCompletionText.textContent = '0%';
+    pinContainer.innerHTML = ''; 
+    transcriptBox.innerHTML = `<p class="text-gray-400 italic font-bold uppercase tracking-wide">Press START and speak loudly. ❤️📍🏙️✨</p>`;
+    
+    if(btnStartTurn) btnStartTurn.classList.add('animate-attention');
+    
+    showView(viewPlay);
+}
+
+// -------------------------------------------------------------------
 
 if (btnStartTurn) {
     btnStartTurn.addEventListener('click', () => {

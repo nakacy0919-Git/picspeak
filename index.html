@@ -31,19 +31,19 @@
         <p class="text-2xl font-black tracking-wider text-center">HOLD YOUR DEVICE VERTICALLY<br>SNS Style! ❤️</p>
     </div>
 
-    <div class="app-container h-screen w-screen flex flex-col overflow-hidden relative">
+    <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
 
-        <div id="view-start" class="flex-1 flex flex-col items-center p-4 md:p-8 overflow-y-auto w-full z-10 relative fade-in">
+        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-4 md:p-6 overflow-y-auto w-full z-10 relative fade-in">
             
-            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-3 z-20">
-                <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play">
-                    <span class="text-xl leading-none">📖</span>
+            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-2 md:gap-3 z-20">
+                <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-2 md:p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play">
+                    <span class="text-lg md:text-xl leading-none">📖</span>
                 </button>
-                <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log">
-                    <span class="text-xl leading-none">📊</span>
+                <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-2 md:p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log">
+                    <span class="text-lg md:text-xl leading-none">📊</span>
                 </button>
-                <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
-                    <svg class="w-7 h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-2 md:p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
+                    <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </button>
             </div>
 
@@ -82,41 +82,41 @@
                 </div>
             </div>
 
-            <div class="my-10 md:my-14 text-center shrink-0">
-                <h1 class="clean-title text-[5.5rem] md:text-[8rem] lg:text-[10rem] mb-2 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
-                <p class="text-gray-900 text-lg md:text-3xl font-extrabold tracking-widest uppercase">Modern Speaking Battle</p>
-                <div class="mt-4 inline-block bg-white/30 px-6 py-2 rounded-full text-sm font-black text-gray-900 border-2 border-white backdrop-blur-md shadow-md">Complete Edition</div>
+            <div class="my-6 md:my-8 text-center shrink-0 mt-14 md:mt-0">
+                <h1 class="clean-title text-[5rem] md:text-[6.5rem] lg:text-[8rem] mb-1 md:mb-2 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
+                <p class="text-gray-900 text-base md:text-xl lg:text-2xl font-extrabold tracking-widest uppercase">Modern Speaking Battle</p>
+                <div class="mt-2 md:mt-3 inline-block bg-white/30 px-5 py-1.5 md:py-2 rounded-full text-xs md:text-sm font-black text-gray-900 border-2 border-white backdrop-blur-md shadow-md">Complete Edition</div>
             </div>
             
-            <div class="sns-card p-6 md:p-10 w-full max-w-md md:max-w-2xl lg:max-w-3xl shrink-0 mb-10">
-                <div class="mb-8">
-                    <h2 class="text-sm md:text-lg font-black text-gray-900 mb-4 uppercase tracking-wider text-center">Target Level</h2>
-                    <div class="grid grid-cols-3 gap-3 md:gap-6">
-                        <button class="level-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 lg:py-4 lg:text-xl transition-all selected-level-btn" data-level="elementary">小学生</button>
-                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 lg:py-4 lg:text-xl transition-all" data-level="junior_high">中学生</button>
-                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 lg:py-4 lg:text-xl transition-all" data-level="high_school">高校生</button>
+            <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-md md:max-w-2xl lg:max-w-3xl shrink-0 mb-4 md:mb-8">
+                <div class="mb-6 md:mb-8">
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Target Level</h2>
+                    <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+                        <button class="level-btn sns-btn bg-sns-gradient text-white shadow-lg py-2.5 md:py-3.5 lg:text-xl transition-all selected-level-btn" data-level="elementary">小学生</button>
+                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-2.5 md:py-3.5 lg:text-xl transition-all" data-level="junior_high">中学生</button>
+                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-2.5 md:py-3.5 lg:text-xl transition-all" data-level="high_school">高校生</button>
                     </div>
                 </div>
 
-                <div class="mb-10">
-                    <h2 class="text-sm md:text-lg font-black text-gray-900 mb-4 uppercase tracking-wider text-center">Players</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-6">
-                        <button class="player-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 lg:py-4 flex flex-col items-center justify-center transition-all selected-player-btn" data-players="1">
-                            <span class="text-2xl mb-1">👤</span><span class="text-xs lg:text-sm font-bold">1 Player</span>
+                <div class="mb-6 md:mb-8">
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Players</h2>
+                    <div class="grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4 lg:gap-6">
+                        <button class="player-btn sns-btn bg-sns-gradient text-white shadow-lg py-2.5 md:py-3.5 flex flex-col items-center justify-center transition-all selected-player-btn" data-players="1">
+                            <span class="text-xl md:text-2xl mb-1">👤</span><span class="text-[10px] md:text-xs font-bold">1 Player</span>
                         </button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 lg:py-4 flex flex-col items-center justify-center transition-all" data-players="2">
-                            <span class="text-2xl mb-1 flex"><span class="-mr-2">👤</span><span>👤</span></span><span class="text-xs lg:text-sm font-bold">2 Players</span>
+                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-2.5 md:py-3.5 flex flex-col items-center justify-center transition-all" data-players="2">
+                            <span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2">👤</span><span>👤</span></span><span class="text-[10px] md:text-xs font-bold">2 Players</span>
                         </button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 lg:py-4 flex flex-col items-center justify-center transition-all" data-players="3">
-                            <span class="text-2xl mb-1 flex"><span class="-mr-2">👤</span><span class="-mr-2">👤</span><span>👤</span></span><span class="text-xs lg:text-sm font-bold">3 Players</span>
+                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-2.5 md:py-3.5 flex flex-col items-center justify-center transition-all" data-players="3">
+                            <span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2">👤</span><span class="-mr-2">👤</span><span>👤</span></span><span class="text-[10px] md:text-xs font-bold">3 Players</span>
                         </button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 lg:py-4 flex flex-col items-center justify-center transition-all" data-players="4">
-                            <span class="text-2xl mb-1 flex"><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span>👤</span></span><span class="text-xs lg:text-sm font-bold">4 Players</span>
+                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-2.5 md:py-3.5 flex flex-col items-center justify-center transition-all" data-players="4">
+                            <span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span class="-mr-3">👤</span><span>👤</span></span><span class="text-[10px] md:text-xs font-bold">4 Players</span>
                         </button>
                     </div>
                 </div>
 
-                <button id="btn-start-game" class="w-full sns-btn bg-sns-gradient text-white font-black text-3xl md:text-5xl py-5 md:py-6 transition-all tracking-widest uppercase shadow-xl hover:shadow-sns-gradient/40">
+                <button id="btn-start-game" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-3xl lg:text-4xl py-4 md:py-5 transition-all tracking-widest uppercase shadow-xl hover:shadow-sns-gradient/40">
                     PIC & SPEAK!
                 </button>
             </div>
@@ -126,7 +126,6 @@
             
             <div class="bg-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
                 <div id="btn-home-from-play" class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient cursor-pointer hover:opacity-80 transition-opacity" title="Return to Home">PicSpeak</div>
-                
                 <div class="flex items-center gap-2 bg-gray-100 px-4 py-1.5 rounded-full border border-gray-200 shadow-inner">
                     <span class="text-xl">⏱️</span>
                     <span id="timer-text" class="text-2xl md:text-4xl font-black text-gray-900 w-12 md:w-16 text-right">30s</span>
@@ -159,7 +158,6 @@
                     <div class="flex-1 p-3 md:p-6 flex flex-col overflow-hidden relative">
                         
                         <div class="mb-3 md:mb-5 shrink-0 bg-white p-4 md:p-5 rounded-3xl shadow-md border border-gray-100 relative overflow-hidden">
-                            <div class="absolute -right-4 -top-4 text-pink-500/10 text-6xl">💯</div>
                             <div class="flex justify-between items-end mb-2 relative z-10">
                                 <span class="text-xs md:text-sm font-black text-gray-500 uppercase tracking-widest">Completion Rate</span>
                                 <span id="live-completion-text" class="text-3xl md:text-5xl font-black text-transparent bg-clip-text bg-sns-gradient">0%</span>
