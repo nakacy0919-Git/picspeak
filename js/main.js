@@ -3,7 +3,6 @@
 // アプリケーションの司令塔（初期化・状態管理・イベントの束ね役）
 // ==========================================
 
-// グローバル状態管理
 window.appState = { selectedPlayers: 1, selectedLevel: 'elementary', customTimeLimit: 30 };
 
 let isRecording = false;
@@ -20,11 +19,12 @@ let accumulatedTranscript = "";
 let rawTranscriptForCounting = ""; 
 let audioCtx = null;
 
-// DOM 要素の取得
 const viewStart = document.getElementById('view-start');
 const viewSelect = document.getElementById('view-select'); 
 const viewPlay = document.getElementById('view-play');
 const viewResult = document.getElementById('view-result');
+const viewAbout = document.getElementById('view-about'); // ★追加
+
 const themeGrid = document.getElementById('theme-grid'); 
 const supportToggle = document.getElementById('support-toggle'); 
 const supportTextContainer = document.getElementById('support-text-container'); 
@@ -36,6 +36,9 @@ const recordingIndicator = document.getElementById('recording-indicator');
 const btnHomeFromPlay = document.getElementById('btn-home-from-play'); 
 const btnGotoSelect = document.getElementById('btn-goto-select'); 
 const btnBackToStart = document.getElementById('btn-back-to-start'); 
+
+const btnGotoAbout = document.getElementById('btn-goto-about'); // ★追加
+const btnBackFromAbout = document.getElementById('btn-back-from-about'); // ★追加
 
 const practiceModal = document.getElementById('practice-modal');
 const btnStartPractice = document.getElementById('btn-start-practice');
@@ -58,7 +61,6 @@ const perfectOverlay = document.getElementById('perfect-overlay');
 const perfectContent = document.getElementById('perfect-content');
 const pinContainer = document.getElementById('pin-container');
 
-// 初期化処理
 async function initApp() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
@@ -75,7 +77,6 @@ async function initApp() {
     }
 }
 
-// サムネイル一覧の生成と表示
 async function renderThemeGrid() {
     if (!themeGrid) return;
     themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10 text-2xl">Loading Images...</div>';
@@ -93,7 +94,6 @@ async function renderThemeGrid() {
     });
 }
 
-// ゲームの開始設定
 async function startGameWithTheme(id) {
     try {
         const res = await fetch(`data/themes/${id}.json?t=` + new Date().getTime());
@@ -118,9 +118,6 @@ async function startGameWithTheme(id) {
     if (typeof showView === 'function') showView(viewPlay);
 }
 
-
-// --- イベントリスナーの登録（司令塔の役割） ---
-
 window.addEventListener('DOMContentLoaded', initApp);
 
 if (btnGotoSelect) {
@@ -140,6 +137,11 @@ if (btnGotoSelect) {
 }
 
 if (btnBackToStart) { btnBackToStart.addEventListener('click', () => { if (typeof showView === 'function') showView(viewStart); }); }
+
+// ★追加: About画面への遷移処理
+if (btnGotoAbout) { btnGotoAbout.addEventListener('click', () => { if (typeof showView === 'function') showView(viewAbout); }); }
+if (btnBackFromAbout) { btnBackFromAbout.addEventListener('click', () => { if (typeof showView === 'function') showView(viewStart); }); }
+
 
 if (btnStartTurn) {
     btnStartTurn.addEventListener('click', () => {
@@ -169,12 +171,7 @@ if (btnHomeFromPlay) {
     });
 }
 
-// リザルト画面の生成処理を game.js の関数に丸投げ
-if (btnFinishTurn) {
-    btnFinishTurn.addEventListener('click', () => {
-        window.finishGameAndShowResult();
-    });
-}
+if (btnFinishTurn) { btnFinishTurn.addEventListener('click', () => { window.finishGameAndShowResult(); }); }
 
 if (btnPlayAgain) {
     btnPlayAgain.addEventListener('click', () => {
@@ -188,7 +185,6 @@ if (btnPlayAgain) {
     });
 }
 
-// Practice Mode のボタン制御
 if(btnStartPractice) {
     btnStartPractice.addEventListener('click', () => {
         if(isRecording) {
