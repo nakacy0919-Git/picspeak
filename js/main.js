@@ -5,12 +5,13 @@ let currentTheme = null;
 let gameTimer = null;
 let timeLeft = 30; 
 let timeElapsed = 0; 
+let themeList = [];
 
-// 初期値を小学生・1Playerに
 let selectedPlayers = 1;
 let selectedLevel = 'elementary'; 
 let customTimeLimit = 30; 
 
+// UI Elements
 const viewStart = document.getElementById('view-start');
 const viewPlay = document.getElementById('view-play');
 const viewResult = document.getElementById('view-result');
@@ -22,12 +23,22 @@ const btnPlayAgain = document.getElementById('btn-play-again');
 const recordingIndicator = document.getElementById('recording-indicator');
 const btnHomeFromPlay = document.getElementById('btn-home-from-play'); 
 
-const playerBtns = document.querySelectorAll('.player-btn');
-const levelBtns = document.querySelectorAll('.level-btn'); 
-
+// Modals & Buttons
 const btnOpenSettings = document.getElementById('btn-open-settings');
 const btnCloseSettings = document.getElementById('btn-close-settings');
 const settingsModal = document.getElementById('settings-modal');
+
+const btnOpenTutorial = document.getElementById('btn-open-tutorial');
+const btnCloseTutorial = document.getElementById('btn-close-tutorial');
+const tutorialModal = document.getElementById('tutorial-modal');
+
+const btnOpenHistory = document.getElementById('btn-open-history');
+const btnCloseHistory = document.getElementById('btn-close-history');
+const historyModal = document.getElementById('history-modal');
+const historyList = document.getElementById('history-list');
+
+const playerBtns = document.querySelectorAll('.player-btn');
+const levelBtns = document.querySelectorAll('.level-btn'); 
 const timeBtns = document.querySelectorAll('.time-btn');
 
 const promptImage = document.getElementById('prompt-image');
@@ -38,6 +49,8 @@ const timerBar = document.getElementById('timer-bar');
 const timerText = document.getElementById('timer-text');
 const statusText = document.getElementById('status-text');
 const currentLevelBadge = document.getElementById('current-level-badge'); 
+const liveCompletionBar = document.getElementById('live-completion-bar');
+const liveCompletionText = document.getElementById('live-completion-text');
 
 const comboOverlay = document.getElementById('combo-overlay');
 const comboContent = document.getElementById('combo-content');
@@ -47,18 +60,64 @@ const pinContainer = document.getElementById('pin-container');
 
 let accumulatedTranscript = ""; 
 let rawTranscriptForCounting = ""; 
+let audioCtx = null;
+
+// ==========================================
+// ローカルストレージ (学習ログ) 管理
+// ==========================================
+function saveLearningLog(logData) {
+    let logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
+    logs.unshift(logData); // 先頭に追加
+    // 最大50件まで保存
+    if(logs.length > 50) logs = logs.slice(0, 50);
+    localStorage.setItem('picspeak_logs', JSON.stringify(logs));
+}
+
+function renderHistoryLogs() {
+    let logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
+    if(logs.length === 0) {
+        historyList.innerHTML = `<p class="text-center text-gray-400 py-10 font-bold">まだプレイ履歴がありません。<br>遊んでスコアを残そう！</p>`;
+        return;
+    }
+    
+    let html = '';
+    logs.forEach(log => {
+        const dateObj = new Date(log.date);
+        const dateStr = `${dateObj.getMonth()+1}/${dateObj.getDate()} ${dateObj.getHours()}:${String(dateObj.getMinutes()).padStart(2, '0')}`;
+        
+        let levelColor = "text-gray-500";
+        if(log.level === 'elementary') levelColor = "text-green-500";
+        if(log.level === 'junior_high') levelColor = "text-blue-500";
+        if(log.level === 'high_school') levelColor = "text-pink-500";
+
+        html += `
+            <div class="bg-gray-50 p-4 rounded-2xl border border-gray-100 flex items-center justify-between shadow-sm">
+                <div>
+                    <div class="text-xs text-gray-400 font-bold">${dateStr} | Image: ${log.imageId}</div>
+                    <div class="text-sm font-black uppercase mt-1 ${levelColor}">${log.level.replace('_', ' ')}</div>
+                </div>
+                <div class="text-right flex gap-3 md:gap-6">
+                    <div class="flex flex-col items-center">
+                        <span class="text-[10px] font-bold text-gray-400 uppercase">Score</span>
+                        <span class="text-lg font-black text-gray-800">${log.score}</span>
+                    </div>
+                    <div class="flex flex-col items-center">
+                        <span class="text-[10px] font-bold text-pink-400 uppercase">Comp.</span>
+                        <span class="text-lg font-black text-pink-600">${log.completion}%</span>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+    historyList.innerHTML = html;
+}
 
 // ==========================================
 // 音声生成エンジン
 // ==========================================
-let audioCtx = null;
-
 function playSound(type) {
-    if (!audioCtx) {
-        audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-    }
+    if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
     if (audioCtx.state === 'suspended') audioCtx.resume();
-    
     const now = audioCtx.currentTime;
     
     if (type === 'match') {
@@ -98,16 +157,12 @@ function playSound(type) {
             const gain = audioCtx.createGain();
             osc.connect(gain);
             gain.connect(audioCtx.destination);
-            
             osc.type = 'sine';
             osc.frequency.value = f;
-            
             const startTime = now + (i * 0.05); 
-            
             gain.gain.setValueAtTime(0, startTime);
             gain.gain.linearRampToValueAtTime(0.15, startTime + 0.1);
             gain.gain.exponentialRampToValueAtTime(0.01, startTime + 1.5);
-            
             osc.start(startTime);
             osc.stop(startTime + 1.5);
         });
@@ -139,12 +194,12 @@ async function initApp() {
     }
 
     initSpeechRecognition(handleSpeechResult, handleSpeechEnd);
+    
     try {
-        const response = await fetch('data/themes.json');
-        const themes = await response.json();
-        currentTheme = themes[0]; 
+        const response = await fetch('data/theme_list.json');
+        themeList = await response.json();
     } catch (error) {
-        console.error("テーマの読み込みに失敗しました:", error);
+        console.error("テーマリストの読み込みに失敗しました:", error);
     }
 }
 
@@ -191,7 +246,6 @@ function dropPin(word, theme) {
     const popEffect = document.createElement('div');
     popEffect.className = 'pin-pop-effect';
     pin.appendChild(popEffect);
-
     pinContainer.appendChild(pin);
 }
 
@@ -219,6 +273,7 @@ function highlightGlobalText(text) {
     return html;
 }
 
+// ★修正: リアルタイムゲージの更新ロジックを追加
 function handleSpeechResult(finalText, interimText) {
     if (finalText.trim().length > 0) {
         rawTranscriptForCounting += finalText + " ";
@@ -233,10 +288,15 @@ function handleSpeechResult(finalText, interimText) {
         if (result && result.addedPoints > 0) {
             scoreDisplay.textContent = result.score;
             
+            // リアルタイムゲージの更新
+            const stats = getCompletionStats(currentTheme, selectedLevel);
+            if(liveCompletionBar && liveCompletionText) {
+                liveCompletionBar.style.width = `${stats.completionRate}%`;
+                liveCompletionText.textContent = `${stats.completionRate}%`;
+            }
+            
             if (result.newWords && result.newWords.length > 0) {
-                result.newWords.forEach(word => {
-                    dropPin(word, currentTheme);
-                });
+                result.newWords.forEach(word => { dropPin(word, currentTheme); });
             }
 
             if (result.isPerfect) {
@@ -311,6 +371,22 @@ function stopRecording() {
 // イベントリスナー群
 // ==========================================
 
+// モーダル開閉
+if(btnOpenTutorial) btnOpenTutorial.addEventListener('click', () => tutorialModal.classList.remove('hidden'));
+if(btnCloseTutorial) btnCloseTutorial.addEventListener('click', () => tutorialModal.classList.add('hidden'));
+
+if(btnOpenHistory) {
+    btnOpenHistory.addEventListener('click', () => {
+        renderHistoryLogs();
+        historyModal.classList.remove('hidden');
+    });
+}
+if(btnCloseHistory) btnCloseHistory.addEventListener('click', () => historyModal.classList.add('hidden'));
+
+if (btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+if (btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
+
+
 if (btnHomeFromPlay) {
     btnHomeFromPlay.addEventListener('click', () => {
         if (isRecording) stopRecording();
@@ -319,6 +395,7 @@ if (btnHomeFromPlay) {
     });
 }
 
+// PC/タブレット用リサイズ（スマホ用残しつつ）
 const resizer = document.getElementById('resizer');
 const imagePanel = document.getElementById('image-panel');
 let startY = 0;
@@ -333,40 +410,23 @@ if (resizer && imagePanel) {
 
     document.addEventListener('touchmove', (e) => {
         if (startY === 0) return;
-        const currentY = e.touches[0].clientY;
-        const dy = currentY - startY;
-        let newHeight = startHeight + dy;
-        
+        let newHeight = startHeight + (e.touches[0].clientY - startY);
         if (newHeight < 100) newHeight = 100;
         if (newHeight > window.innerHeight * 0.7) newHeight = window.innerHeight * 0.7;
-        
         imagePanel.style.height = `${newHeight}px`;
     }, { passive: false });
 
-    document.addEventListener('touchend', () => {
-        startY = 0;
-    });
-}
-
-if (btnOpenSettings) {
-    btnOpenSettings.addEventListener('click', () => {
-        settingsModal.classList.remove('hidden');
-    });
-}
-if (btnCloseSettings) {
-    btnCloseSettings.addEventListener('click', () => {
-        settingsModal.classList.add('hidden');
-    });
+    document.addEventListener('touchend', () => { startY = 0; });
 }
 
 timeBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
         timeBtns.forEach(b => {
             b.classList.remove('selected-time-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            b.classList.add('bg-gray-100', 'text-gray-700', 'border-gray-200');
+            b.classList.add('bg-gray-100', 'text-gray-700', 'border', 'border-gray-200');
         });
         const target = e.currentTarget;
-        target.classList.remove('bg-gray-100', 'text-gray-700', 'border-gray-200');
+        target.classList.remove('bg-gray-100', 'text-gray-700', 'border', 'border-gray-200');
         target.classList.add('selected-time-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
         customTimeLimit = parseInt(target.getAttribute('data-time'));
     });
@@ -404,27 +464,39 @@ levelBtns.forEach(btn => {
 });
 
 if (btnStartGame) {
-    btnStartGame.addEventListener('click', () => {
-        if (!audioCtx) {
-            audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        }
+    btnStartGame.addEventListener('click', async () => {
+        if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
 
-        if (currentTheme) {
-            promptImage.src = currentTheme.imageSrc;
-            if(promptImage.classList.contains('blur-none')) {
-                promptImage.classList.replace('blur-none', 'blur-md'); 
+        if (themeList.length === 0) themeList = ["301"];
+
+        if (themeList.length > 0) {
+            const randomId = themeList[Math.floor(Math.random() * themeList.length)];
+            try {
+                const res = await fetch(`data/themes/${randomId}.json`);
+                const fetchedData = await res.json();
+                currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+            } catch (e) {
+                alert(`データの読み込みに失敗しました。`);
+                return; 
             }
+        }
+
+        if (currentTheme && currentTheme.imageSrc) {
+            promptImage.src = currentTheme.imageSrc;
+            if(promptImage.classList.contains('blur-none')) promptImage.classList.replace('blur-none', 'blur-md'); 
         }
         
         timeLeft = customTimeLimit;
         timeElapsed = 0;
-        
         rawTranscriptForCounting = "";
         accumulatedTranscript = ""; 
         resetScore(); 
+        
         scoreDisplay.textContent = "0";
         wordCountDisplay.textContent = "0";
+        if(liveCompletionBar) liveCompletionBar.style.width = '0%';
+        if(liveCompletionText) liveCompletionText.textContent = '0%';
         pinContainer.innerHTML = ''; 
         transcriptBox.innerHTML = `<p class="text-gray-400 italic font-bold uppercase tracking-wide">Press START and speak loudly. ❤️📍🏙️✨</p>`;
         
@@ -446,16 +518,12 @@ if (btnStartTurn) {
             promptImage.classList.add('blur-none');
         }
         
-        if (timeElapsed === 0) {
-            startTimer();
-        }
+        if (timeElapsed === 0) startTimer();
     });
 }
 
 if (recordingIndicator) {
-    recordingIndicator.addEventListener('click', () => {
-        stopRecording(); 
-    });
+    recordingIndicator.addEventListener('click', () => stopRecording());
 }
 
 if (btnFinishTurn) {
@@ -465,58 +533,100 @@ if (btnFinishTurn) {
         const finalScore = scoreDisplay.textContent;
         const finalWordCount = parseInt(wordCountDisplay.textContent) || 0;
         
+        // ★修正: WPMの計算と表示を復活
         let wpm = 0;
         if (timeElapsed > 0) {
             wpm = Math.round(finalWordCount / (timeElapsed / 60));
         }
 
-        const modelAnswersData = currentTheme.scoringData[selectedLevel].sentences || [];
-        let modelAnswersHTML = `<ul class="space-y-3 mt-3">`;
-        modelAnswersData.forEach(ans => {
-            modelAnswersHTML += `
-                <li class="flex items-start bg-gray-50 p-4 rounded-xl border border-gray-100 shadow-sm">
-                    <span class="text-pink-500 mr-3 mt-0.5 text-xl">💡</span>
-                    <div>
-                        <div class="font-bold text-gray-800 text-lg md:text-xl tracking-tight">${ans.text}</div>
-                        <div class="text-sm font-medium text-gray-500 mt-1">${ans.ja}</div>
-                        <div class="text-xs md:text-sm font-extrabold text-gray-400 mt-2 uppercase tracking-widest">Target: ${ans.grammar}</div>
-                    </div>
-                </li>
-            `;
+        const stats = getCompletionStats(currentTheme, selectedLevel);
+
+        // ★追加: 学習ログを端末に保存
+        saveLearningLog({
+            date: new Date().toISOString(),
+            imageId: currentTheme.id || 'unknown',
+            level: selectedLevel,
+            score: finalScore,
+            completion: stats.completionRate,
+            wpm: wpm
         });
-        modelAnswersHTML += `</ul>`;
+
+        let missedHTML = '';
+        if(stats.missedWords.length > 0 || stats.missedChunks.length > 0) {
+            missedHTML += `<div class="mb-4"><p class="text-xs font-extrabold text-gray-400 mb-2 uppercase tracking-widest">Words & Chunks</p><div class="flex flex-wrap gap-2">`;
+            stats.missedWords.forEach(w => missedHTML += `<span class="bg-gray-100 text-gray-500 px-3 py-1.5 rounded-full text-sm font-bold border border-gray-200">${w.text} <span class="text-xs font-medium text-gray-400 ml-1">${w.ja}</span></span>`);
+            stats.missedChunks.forEach(c => missedHTML += `<span class="bg-gray-100 text-gray-500 px-3 py-1.5 rounded-full text-sm font-bold border border-gray-200">${c.text} <span class="text-xs font-medium text-gray-400 ml-1">${c.ja}</span></span>`);
+            missedHTML += `</div></div>`;
+        }
+        if(stats.missedSentences.length > 0) {
+            missedHTML += `<div><p class="text-xs font-extrabold text-gray-400 mb-2 uppercase tracking-widest">Sentences</p><ul class="space-y-2">`;
+            stats.missedSentences.forEach(s => missedHTML += `<li class="bg-gray-50 p-3.5 rounded-xl border border-gray-200"><div class="font-bold text-gray-700 text-md md:text-lg">${s.text}</div><div class="text-sm text-gray-500 mt-1">${s.ja}</div><div class="text-[10px] font-extrabold text-gray-400 mt-1.5 uppercase tracking-wider">Target: ${s.grammar}</div></li>`);
+            missedHTML += `</ul></div>`;
+        }
+        if(!missedHTML) missedHTML = `<div class="text-center text-gray-500 font-bold py-6">🎉 PERFECT! 全てクリアしました！</div>`;
+
+        let clearedHTML = '';
+        if(stats.clearedWords.length > 0 || stats.clearedChunks.length > 0) {
+            clearedHTML += `<div class="mb-4"><p class="text-xs font-extrabold text-blue-400 mb-2 uppercase tracking-widest">Words & Chunks</p><div class="flex flex-wrap gap-2">`;
+            stats.clearedWords.forEach(w => clearedHTML += `<span class="bg-blue-100 text-blue-700 px-3 py-1.5 rounded-full text-sm font-bold border border-blue-200 shadow-sm">👍 ${w.text} <span class="text-xs font-medium text-blue-500 ml-1">${w.ja}</span></span>`);
+            stats.clearedChunks.forEach(c => clearedHTML += `<span class="bg-blue-100 text-blue-700 px-3 py-1.5 rounded-full text-sm font-bold border border-blue-200 shadow-sm">👍 ${c.text} <span class="text-xs font-medium text-blue-500 ml-1">${c.ja}</span></span>`);
+            clearedHTML += `</div></div>`;
+        }
+        if(stats.clearedSentences.length > 0) {
+            clearedHTML += `<div><p class="text-xs font-extrabold text-blue-400 mb-2 uppercase tracking-widest">Sentences</p><ul class="space-y-2">`;
+            stats.clearedSentences.forEach(s => clearedHTML += `<li class="bg-blue-50 p-3.5 rounded-xl border border-blue-200 shadow-sm"><div class="font-bold text-blue-800 text-md md:text-lg">🌟 ${s.text}</div><div class="text-sm text-blue-600 mt-1">${s.ja}</div></li>`);
+            clearedHTML += `</ul></div>`;
+        }
+        if(!clearedHTML) clearedHTML = `<div class="text-center text-gray-400 font-bold py-6">まだクリアした表現がありません。次は頑張ろう！</div>`;
 
         const finalTranscriptHTML = highlightGlobalText(rawTranscriptForCounting);
         const rankingContainer = document.getElementById('ranking-container');
         
+        // ★修正: 4つのカード (Score, Completion, Words, WPM) を2x2のグリッドで配置
         rankingContainer.innerHTML = `
-            <div class="grid grid-cols-1 md:grid-cols-3 gap-3 md:gap-4 mb-2">
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Total Score</span>
-                    <span class="text-4xl md:text-5xl font-black text-gray-900">${finalScore}</span>
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 mb-2">
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Score</span>
+                    <span class="text-3xl md:text-4xl font-black text-gray-900">${finalScore}</span>
                 </div>
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Words Spoken</span>
-                    <span class="text-4xl md:text-5xl font-black text-gray-900">${finalWordCount}</span>
+                <div class="bg-sns-gradient rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg text-white transform hover:scale-[1.02] transition-transform">
+                    <span class="text-white/80 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Completion</span>
+                    <span class="text-3xl md:text-4xl font-black">${stats.completionRate}<span class="text-xl md:text-2xl">%</span></span>
                 </div>
-                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg border border-gray-100">
-                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM (Speed)</span>
-                    <span class="text-4xl md:text-5xl font-black text-gray-900">${wpm}</span>
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Words</span>
+                    <span class="text-3xl md:text-4xl font-black text-gray-900">${finalWordCount}</span>
                 </div>
-            </div>
-
-            <div class="bg-white rounded-3xl shadow-xl shadow-gray-100 border border-gray-100 flex-1 flex flex-col overflow-hidden mb-2">
-                <div class="bg-white px-4 md:px-6 py-3 md:py-4 border-b border-gray-100 flex justify-between items-center">
-                    <h3 class="text-lg md:text-xl font-black text-gray-900 tracking-wider">🎯 MODEL ANSWERS</h3>
-                    <span class="text-[10px] md:text-xs font-extrabold text-gray-700 bg-gray-100 px-3 py-1 rounded-full shadow-inner border border-gray-200">${currentLevelBadge ? currentLevelBadge.textContent : ''}</span>
-                </div>
-                <div class="p-4 md:p-6 overflow-y-auto flex-1">
-                    ${modelAnswersHTML}
+                <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-sm border border-gray-100">
+                    <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM</span>
+                    <span class="text-3xl md:text-4xl font-black text-gray-900">${wpm}</span>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl shadow-xl shadow-gray-100 border border-gray-100 flex-1 flex flex-col overflow-hidden">
-                <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b-2 border-gray-200">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-3 md:gap-4 mb-2">
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden">
+                    <div class="bg-gray-50 px-4 md:px-6 py-4 border-b border-gray-100 flex items-center justify-between">
+                        <h3 class="text-md md:text-lg font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3>
+                        <span class="text-[10px] font-bold bg-gray-200 text-gray-600 px-2 py-1 rounded">これを言えれば100%!</span>
+                    </div>
+                    <div class="p-4 md:p-6 overflow-y-auto flex-1">
+                        ${missedHTML}
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden">
+                    <div class="bg-blue-50 px-4 md:px-6 py-4 border-b border-blue-100 flex items-center justify-between">
+                        <h3 class="text-md md:text-lg font-black text-blue-800 tracking-wider">✨ CLEARED</h3>
+                        <span class="text-[10px] font-bold bg-blue-200 text-blue-700 px-2 py-1 rounded">素晴らしい！</span>
+                    </div>
+                    <div class="p-4 md:p-6 overflow-y-auto flex-1">
+                        ${clearedHTML}
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-3xl shadow-sm border border-gray-100 flex flex-col overflow-hidden mt-2">
+                <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200">
                     <h3 class="text-lg md:text-xl font-extrabold text-gray-600 tracking-wider">📝 YOUR TRANSCRIPT</h3>
                 </div>
                 <div class="p-4 md:p-6 overflow-y-auto flex-1 text-lg md:text-2xl leading-relaxed text-gray-800 font-medium">
@@ -531,19 +641,16 @@ if (btnFinishTurn) {
 
 if (btnPlayAgain) {
     btnPlayAgain.addEventListener('click', () => {
-        // UIの表示状態を安全にリセット
         if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
         if(recordingIndicator) recordingIndicator.classList.add('hidden');
         if(btnStartTurn) btnStartTurn.classList.remove('hidden');
         if(statusText) statusText.textContent = "Ready";
         
-        // 画像のぼかしを安全に戻す
         if (promptImage) {
             promptImage.classList.remove('blur-none');
             promptImage.classList.add('blur-md');
         }
         
-        // タイマーのリセット
         if (timerBar && timerText) {
             timerBar.style.transition = 'none';
             timerBar.style.width = '100%';

@@ -45,7 +45,6 @@ function calculateScore(transcript, theme, selectedLevel) {
     let newSentences = [];
     let pointsToAdd = 0;
 
-    // ★修正: wordObj.text を抽出して判定するように変更
     targetData.words.forEach(wordObj => {
         const wordText = wordObj.text;
         if (!foundWordsSet.has(wordText)) {
@@ -58,7 +57,6 @@ function calculateScore(transcript, theme, selectedLevel) {
         }
     });
 
-    // ★修正: chunkObj.text を抽出して判定するように変更
     targetData.chunks.forEach(chunkObj => {
         const chunkText = chunkObj.text;
         if (!foundChunksSet.has(chunkText)) {
@@ -110,4 +108,35 @@ function resetScore() {
     foundWordsSet.clear();
     foundChunksSet.clear();
     foundSentencesSet.clear();
+}
+
+// ★NEW: 達成率と言えなかった表現を計算する関数
+function getCompletionStats(theme, selectedLevel) {
+    const targetData = getAggregatedData(theme, selectedLevel);
+    
+    const totalWords = targetData.words.length;
+    const totalChunks = targetData.chunks.length;
+    const totalSentences = targetData.sentences.length;
+    const totalItems = totalWords + totalChunks + totalSentences;
+    
+    const foundItems = foundWordsSet.size + foundChunksSet.size + foundSentencesSet.size;
+    
+    // 100%満点での達成率
+    const completionRate = totalItems > 0 ? Math.round((foundItems / totalItems) * 100) : 0;
+    
+    // 未達成（言えなかった）アイテム
+    const missedWords = targetData.words.filter(w => !foundWordsSet.has(w.text));
+    const missedChunks = targetData.chunks.filter(c => !foundChunksSet.has(c.text));
+    const missedSentences = targetData.sentences.filter(s => !foundSentencesSet.has(s.text));
+
+    // 達成済（言えた）アイテム
+    const clearedWords = targetData.words.filter(w => foundWordsSet.has(w.text));
+    const clearedChunks = targetData.chunks.filter(c => foundChunksSet.has(c.text));
+    const clearedSentences = targetData.sentences.filter(s => foundSentencesSet.has(s.text));
+    
+    return {
+        completionRate,
+        missedWords, missedChunks, missedSentences,
+        clearedWords, clearedChunks, clearedSentences
+    };
 }
