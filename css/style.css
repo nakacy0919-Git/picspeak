@@ -1,23 +1,171 @@
 /* css/style.css */
 
-/* スコアがポンっと飛び出すアニメーション */
-@keyframes scorePop {
-    0% { transform: translateY(0) scale(1); opacity: 1; }
-    50% { transform: translateY(-15px) scale(1.1); }
-    100% { transform: translateY(-30px) scale(1); opacity: 0; }
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap');
+
+/* =========================================
+   ベース設定・SNS風クリーン＆モダン背景
+   ========================================= */
+body { 
+    font-family: 'Inter', sans-serif; /* モダンなサンセリフ */
+    margin: 0; 
+    overflow: hidden; 
+    
+    /* 純白ベースに薄いグレー、都会のアクセントを混ぜたクリーン背景 */
+    background: linear-gradient(135deg, #ffffff, #f9fafb, #ffffff, #f9fafb);
+    background-size: 300% 300%;
+    animation: snsBg 20s ease infinite;
+    color: #111827; /* 都会的な黒 */
 }
 
-.score-pop {
-    animation: scorePop 1.5s ease-out forwards;
+@keyframes snsBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
-/* 文法バッジ（高校生レベル）のスタイル */
-.grammar-badge {
-    @apply bg-purple-600 text-white text-xs font-bold px-3 py-1.5 rounded-full shadow-md;
-    transition: all 0.3s ease-in-out;
+/* アプリ全体を都會的でクリーンなすりガラス風に */
+.app-container { 
+    width: 100vw; 
+    height: 100vh; 
+    height: 100dvh; 
+    position: relative; 
+    display: flex; 
+    flex-direction: column; 
+    background-color: rgba(255, 255, 255, 0.6); /* 白の半透明 */
+    backdrop-blur: 5px; /* すりガラス効果 */
 }
 
-/* 認識中コンテナの発光エフェクト */
-.recording {
-    @apply border-red-400 bg-red-50;
+/* =========================================
+   アニメーション群（クリーン＆ダイナミック）
+   ========================================= */
+
+/* 画面切り替え時のフェードイン */
+.fade-in { animation: fadeIn 0.3s ease-in forwards; }
+@keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+
+/* ★NEW: クリーンタイトル & アニメーション停止（若者は静止タイトルを好むため） */
+.clean-title {
+    text-transform: capitalize; /* 大文字小文字そのまま */
+    font-weight: 800;
+}
+
+/* ★NEW: コンボ時のクリーン＆モダンポップアップ */
+@keyframes popCombo { 
+    0% { transform: scale(0.5) rotate(-10deg) translateY(20px); opacity: 0; } 
+    50% { transform: scale(1.2) rotate(5deg) translateY(-10px); opacity: 1; text-shadow: 0 0 10px rgba(193, 53, 132, 0.3), 0 0 20px rgba(193, 53, 132, 0.3); } 
+    100% { transform: scale(1) rotate(0deg) translateY(0); opacity: 1; } 
+}
+.animate-combo { animation: popCombo 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+/* LISTENING中のマイクボタンの波紋効果（SNSアクセントグラデーション） */
+@keyframes pulse-ring { 
+    0% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(193, 53, 132, 0.7); } 
+    70% { transform: scale(1); box-shadow: 0 0 0 15px rgba(193, 53, 132, 0); } 
+    100% { transform: scale(0.8); box-shadow: 0 0 0 0 rgba(193, 53, 132, 0); } 
+}
+.recording-pulse { animation: pulse-ring 2s infinite; }
+
+/* ★NEW: 画像にSNSアイコン（❤️、📍など）がドスッ！と落ちてくる */
+@keyframes dropPin { 
+    0% { transform: translateY(-50px) scale(0.3) rotate(-20deg); opacity: 0; } 
+    60% { transform: translateY(10px) scale(1.1) rotate(5deg); opacity: 1; } 
+    100% { transform: translateY(0) scale(1) rotate(0deg); opacity: 1; } 
+}
+.pin-drop { animation: dropPin 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+/* ピンが刺さった瞬間のクリーンエフェクト（SNS柔らかい光、❤️爆発） */
+@keyframes pinPopEffect {
+    0% { transform: scale(0); opacity: 1; }
+    100% { transform: scale(2); opacity: 0; box-shadow: 0 0 10px rgba(193, 53, 132, 0.3), 0 0 20px rgba(193, 53, 132, 0.3); }
+}
+.pin-pop-effect {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="%23c13584"><path d="M12 .587l3.668 7.568 8.332 1.151-6.064 5.828 1.48 8.279-7.416-3.967-7.417 3.967 1.481-8.279-6.064-5.828 8.332-1.151z"/></svg>'); /* キラキラ -> SNS ❤️ */
+    background-size: contain;
+    background-repeat: no-repeat;
+    animation: pinPopEffect 0.5s ease-out forwards;
+    pointer-events: none;
+    z-index: 15;
+}
+
+/* ★NEW: PERFECT演出のアニメーション */
+@keyframes popPerfect {
+    0% { transform: scale(0.5) translateY(50px); opacity: 0; filter: brightness(2); }
+    40% { transform: scale(1.3) translateY(-10px); opacity: 1; filter: brightness(1.2); }
+    60% { transform: scale(1.1) translateY(0); opacity: 1; filter: brightness(1); }
+    100% { transform: scale(1) translateY(0); opacity: 1; }
+}
+.animate-perfect { 
+    animation: popPerfect 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; 
+}
+
+/* =========================================
+   UI装飾（達成感のあるブルーハイライト！）
+   ========================================= */
+
+/* 単語（Words）のハイライト色（爽やかなブルー） */
+.hl-mandatory { 
+    color: #3b82f6; /* 鮮やかなブルー */
+    font-weight: 800; 
+    background: rgba(59, 130, 246, 0.15); 
+    padding: 0 6px; 
+    border-radius: 6px; 
+    border: 1px solid rgba(59, 130, 246, 0.3);
+    box-shadow: 0 2px 4px rgba(59, 130, 246, 0.1);
+}
+
+/* フレーズ・フル例文のハイライト色（鮮やかなスカイブルー） */
+.hl-phrase { 
+    color: #0284c7; /* 深みのあるスカイブルー */
+    font-weight: 900; 
+    background: rgba(14, 165, 233, 0.15); 
+    padding: 0 8px; 
+    border-radius: 8px; 
+    border: 2px solid rgba(14, 165, 233, 0.4); 
+    box-shadow: 0 4px 6px rgba(14, 165, 233, 0.15);
+}
+
+/* タクシーメーター風タイマーバー -> SNS風クリーンバー */
+.timer-transition { transition: width 1s linear, background-color 0.5s ease; }
+
+/* =========================================
+   都会的フレームとボタン（モノトーン＆立体感） -> SNS風カードと丸いボタン
+   ========================================= */
+
+/* アーバンフレーム -> ★NEW: クリーンなSNSカード型（白ベース、丸角、薄い影） */
+.sns-card {
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #f3f4f6; /* 薄いグレー枠 */
+    border-radius: 3rem; /* 大きな丸角 */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.05), 0 4px 6px -2px rgba(0, 0, 0, 0.02); /* 薄い影 */
+    position: relative;
+    font-family: 'Inter', sans-serif;
+}
+
+/* フレームの四隅アイコンアクセントを全削除 */
+.sns-card::before, .sns-card::after { display: none !important; }
+
+/* アーバンbtn（立体、モノトーン） -> ★NEW: SNS風フラット＆丸いボタン（角丸、グラデーション） */
+.sns-btn {
+    transition: all 0.2s ease;
+    border-radius: 9999px !important; /* 完全な角丸 */
+    font-weight: 700;
+    text-transform: capitalize; /* 大文字小文字そのまま */
+    border-bottom: none !important; /* 立体感を全削除 */
+}
+.sns-btn:active {
+    transform: scale(0.97); /* 押すと少し縮むクリーンなアクション */
+}
+.sns-btn:hover {
+    box-shadow: 0 10px 15px -3px rgba(193, 53, 132, 0.3); /* ホバーで薄くグラデーション発光 */
+}
+
+/* =========================================
+   スマホ横向き（Landscape）防止ロック
+   ========================================= */
+@media screen and (max-width: 767px) and (orientation: landscape) {
+    #orientation-lock { display: flex !important; }
+    .app-container { display: none !important; }
 }

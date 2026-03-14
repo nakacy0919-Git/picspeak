@@ -6,30 +6,137 @@
     "timeLimit": 45,
     "scoringData": {
       "elementary": {
-        "words": ["woman", "book", "read", "green", "cup", "coffee", "window"],
-        "chunks": ["a woman", "reading a book", "green sweater", "a cup of coffee"],
+        "words": [
+          {"text": "woman", "ja": "女性"},
+          {"text": "girl", "ja": "女の子"},
+          {"text": "book", "ja": "本"},
+          {"text": "cup", "ja": "カップ"},
+          {"text": "coffee", "ja": "コーヒー"},
+          {"text": "table", "ja": "テーブル"},
+          {"text": "window", "ja": "窓"},
+          {"text": "tree", "ja": "木"},
+          {"text": "sun", "ja": "太陽"},
+          {"text": "green", "ja": "緑"},
+          {"text": "blue", "ja": "青"},
+          {"text": "black", "ja": "黒"},
+          {"text": "brown", "ja": "茶色"},
+          {"text": "read", "ja": "読む"},
+          {"text": "sit", "ja": "座る"},
+          {"text": "smile", "ja": "微笑む"},
+          {"text": "hair", "ja": "髪"},
+          {"text": "hand", "ja": "手"},
+          {"text": "face", "ja": "顔"},
+          {"text": "outside", "ja": "外"}
+        ],
+        "chunks": [
+          {"text": "a woman", "ja": "ひとりの女性"},
+          {"text": "a green sweater", "ja": "緑のセーター"},
+          {"text": "a blue book", "ja": "青い本"},
+          {"text": "a cup of coffee", "ja": "一杯のコーヒー"},
+          {"text": "black glasses", "ja": "黒いメガネ"},
+          {"text": "on the table", "ja": "テーブルの上に"},
+          {"text": "by the window", "ja": "窓のそばに"},
+          {"text": "brown hair", "ja": "茶色い髪"},
+          {"text": "looking at the book", "ja": "本を見ている"},
+          {"text": "smiling face", "ja": "微笑んでいる顔"}
+        ],
         "sentences": [
-          {"text": "A woman is reading a book.", "grammar": "現在進行形"},
-          {"text": "She has a book.", "grammar": "現在形"}
+          {"text": "A woman is reading a book.", "grammar": "現在進行形", "ja": "女性が本を読んでいます。"},
+          {"text": "She has a blue book.", "grammar": "現在形", "ja": "彼女は青い本を持っています。"},
+          {"text": "She is wearing a green sweater.", "grammar": "現在進行形", "ja": "彼女は緑のセーターを着ています。"},
+          {"text": "There is a cup on the table.", "grammar": "There is構文", "ja": "テーブルの上にカップがあります。"},
+          {"text": "The sun is bright.", "grammar": "be動詞", "ja": "太陽（日差し）が明るいです。"},
+          {"text": "She is smiling.", "grammar": "現在進行形", "ja": "彼女は微笑んでいます。"},
+          {"text": "Her hair is brown.", "grammar": "be動詞", "ja": "彼女の髪は茶色です。"},
+          {"text": "She is sitting on a chair.", "grammar": "現在進行形", "ja": "彼女は椅子に座っています。"}
         ]
       },
       "junior_high": {
-        "words": ["cafe", "drink", "sit", "glasses", "table", "sunny"],
-        "chunks": ["sitting by the window", "drinking coffee", "on the table"],
+        "words": [
+          {"text": "cafe", "ja": "カフェ"},
+          {"text": "glasses", "ja": "メガネ"},
+          {"text": "wooden", "ja": "木製の"},
+          {"text": "bright", "ja": "明るい"},
+          {"text": "warm", "ja": "暖かい"},
+          {"text": "peaceful", "ja": "平和な"},
+          {"text": "relax", "ja": "リラックスする"},
+          {"text": "hold", "ja": "持つ"},
+          {"text": "enjoy", "ja": "楽しむ"},
+          {"text": "wear", "ja": "着ている"},
+          {"text": "sweater", "ja": "セーター"},
+          {"text": "paper", "ja": "紙"},
+          {"text": "lid", "ja": "フタ"},
+          {"text": "saucer", "ja": "ソーサー（受け皿）"},
+          {"text": "leaves", "ja": "葉っぱ"},
+          {"text": "street", "ja": "通り"},
+          {"text": "daytime", "ja": "昼間"},
+          {"text": "happy", "ja": "幸せな"}
+        ],
+        "chunks": [
+          {"text": "sitting by the window", "ja": "窓辺に座って"},
+          {"text": "drinking coffee", "ja": "コーヒーを飲んで"},
+          {"text": "looking outside", "ja": "外を見て"},
+          {"text": "holding a book", "ja": "本を持って"},
+          {"text": "a paper cup with a lid", "ja": "フタ付きの紙コップ"},
+          {"text": "outside the window", "ja": "窓の外に"},
+          {"text": "green trees", "ja": "緑の木々"},
+          {"text": "feeling relaxed", "ja": "リラックスしている"},
+          {"text": "tied hair", "ja": "結んだ髪"},
+          {"text": "enjoying her time", "ja": "自分の時間を楽しんでいる"}
+        ],
         "sentences": [
-          {"text": "She is sitting by the window and reading a book.", "grammar": "接続詞and"},
-          {"text": "There are glasses on the table.", "grammar": "There is/are"},
-          {"text": "The woman reading a book is beautiful.", "grammar": "現在分詞の形容詞的用法"},
-          {"text": "She enjoys reading a book.", "grammar": "動名詞"}
+          {"text": "She is sitting by the window and reading a book.", "grammar": "接続詞and", "ja": "彼女は窓辺に座って本を読んでいます。"},
+          {"text": "There are black glasses on the table.", "grammar": "There are構文", "ja": "テーブルの上に黒いメガネがあります。"},
+          {"text": "The woman reading a book looks happy.", "grammar": "現在分詞の形容詞的用法", "ja": "本を読んでいる女性は幸せそうに見えます。"},
+          {"text": "She enjoys reading in a quiet cafe.", "grammar": "動名詞", "ja": "彼女は静かなカフェで読書を楽しみます。"},
+          {"text": "The book is blue and her sweater is green.", "grammar": "接続詞and", "ja": "本は青色で、彼女のセーターは緑色です。"},
+          {"text": "She tied her hair in a bun.", "grammar": "過去形・熟語", "ja": "彼女は髪をお団子に結んでいます。"},
+          {"text": "It is sunny and warm outside.", "grammar": "天候を表すIt", "ja": "外は晴れていて暖かいです。"},
+          {"text": "We can see trees and a street through the window.", "grammar": "助動詞can", "ja": "窓越しに木々と通りが見えます。"}
         ]
       },
       "high_school": {
-        "words": ["engrossed", "atmosphere", "sunlight", "relaxing", "focus"],
-        "chunks": ["absorbed in reading", "bathed in sunlight", "with her hair tied up"],
+        "words": [
+          {"text": "engrossed", "ja": "没頭して"},
+          {"text": "atmosphere", "ja": "雰囲気"},
+          {"text": "sunlight", "ja": "日光"},
+          {"text": "serene", "ja": "穏やかな"},
+          {"text": "concentrate", "ja": "集中する"},
+          {"text": "sidewalk", "ja": "歩道"},
+          {"text": "beverage", "ja": "飲み物"},
+          {"text": "spectacles", "ja": "メガネ（フォーマル）"},
+          {"text": "posture", "ja": "姿勢"},
+          {"text": "ray", "ja": "光線"},
+          {"text": "background", "ja": "背景"},
+          {"text": "foliage", "ja": "木々の葉"},
+          {"text": "tranquil", "ja": "静寂な"},
+          {"text": "comfortable", "ja": "快適な"},
+          {"text": "casual", "ja": "カジュアルな"},
+          {"text": "absorbed", "ja": "夢中になって"},
+          {"text": "focus", "ja": "集中する"},
+          {"text": "solitary", "ja": "一人の"}
+        ],
+        "chunks": [
+          {"text": "absorbed in reading", "ja": "読書に夢中になって"},
+          {"text": "bathed in sunlight", "ja": "日光を浴びて"},
+          {"text": "with her hair tied up", "ja": "髪を後ろで結んで"},
+          {"text": "a serene atmosphere", "ja": "穏やかな雰囲気"},
+          {"text": "concentrating on the story", "ja": "物語に集中して"},
+          {"text": "rays of sunlight", "ja": "太陽の光線"},
+          {"text": "folded glasses", "ja": "折りたたまれたメガネ"},
+          {"text": "blurred background", "ja": "ぼやけた背景"},
+          {"text": "casual outfit", "ja": "カジュアルな服装"},
+          {"text": "solitary moment", "ja": "一人の時間"}
+        ],
         "sentences": [
-          {"text": "The woman who is wearing a green sweater is reading a book.", "grammar": "関係代名詞"},
-          {"text": "Seen from the side, she looks very relaxed.", "grammar": "分詞構文"},
-          {"text": "It seems that she is focusing on her book.", "grammar": "It seems that~"}
+          {"text": "The woman who is wearing a green sweater is completely engrossed in her book.", "grammar": "関係代名詞", "ja": "緑のセーターを着ている女性は、本に完全に没頭しています。"},
+          {"text": "Seen from the side, she looks very relaxed in the warm sunlight.", "grammar": "分詞構文", "ja": "横から見ると、彼女は暖かい日差しの中でとてもリラックスしているように見えます。"},
+          {"text": "It seems that she is focusing on her reading in a peaceful cafe.", "grammar": "It seems that~", "ja": "彼女は平和なカフェで読書に集中しているようです。"},
+          {"text": "With her glasses placed on the table, she is reading without them.", "grammar": "付帯状況のwith", "ja": "メガネをテーブルに置いたまま、彼女はメガネなしで読んでいます。"},
+          {"text": "The soft sunlight streaming through the window creates a relaxing atmosphere.", "grammar": "現在分詞の後置修飾", "ja": "窓から差し込む柔らかな日差しが、リラックスした雰囲気を作り出しています。"},
+          {"text": "If I had free time, I would like to spend my afternoon like her.", "grammar": "仮定法過去", "ja": "もし時間があれば、彼女のように午後を過ごしたいです。"},
+          {"text": "The blurred trees in the background indicate that she is inside a building.", "grammar": "名詞節を導くthat", "ja": "背景のぼやけた木々は、彼女が建物の中にいることを示しています。"},
+          {"text": "She is holding the book with both hands to read it carefully.", "grammar": "不定詞の副詞的用法", "ja": "彼女は注意深く読むために、両手で本を持っています。"}
         ]
       }
     },
@@ -41,53 +148,15 @@
       "coffee": { "x": 38, "y": 75 },
       "glasses": { "x": 32, "y": 88 },
       "window": { "x": 20, "y": 30 },
-      "table": { "x": 50, "y": 90 }
-    }
-  },
-  {
-    "id": "theme_302",
-    "imageSrc": "assets/images/302.webp",
-    "description": "青いセーターの女性と、窓の外を歩く男性",
-    "timeLimit": 45,
-    "scoringData": {
-      "elementary": {
-        "words": ["man", "walk", "red", "blue", "plant", "outside"],
-        "chunks": ["a red book", "blue sweater", "walking outside", "a green plant"],
-        "sentences": [
-          {"text": "A man is walking outside.", "grammar": "現在進行形"},
-          {"text": "She is reading a red book.", "grammar": "現在進行形"}
-        ]
-      },
-      "junior_high": {
-        "words": ["scarf", "wear", "pass", "smile", "potted"],
-        "chunks": ["wearing a scarf", "walking past the window", "looking happy"],
-        "sentences": [
-          {"text": "A man is walking outside the window.", "grammar": "前置詞"},
-          {"text": "The woman wearing a scarf is smiling.", "grammar": "現在分詞の形容詞的用法"},
-          {"text": "She looks happy to read the book.", "grammar": "不定詞の副詞的用法(感情の原因)"}
-        ]
-      },
-      "high_school": {
-        "words": ["passerby", "contrast", "observe", "patterned", "stroll"],
-        "chunks": ["walking past the cafe", "wearing a patterned scarf", "unaware of each other"],
-        "sentences": [
-          {"text": "The man walking outside doesn't notice the woman who is reading.", "grammar": "関係代名詞 / 知覚動詞の否定"},
-          {"text": "Besides the coffee, there is a potted plant on the table.", "grammar": "前置詞besides"},
-          {"text": "She is so engrossed in the book that she doesn't see the man.", "grammar": "so ~ that構文"}
-        ]
-      }
-    },
-    "pins": {
-      "man": { "x": 30, "y": 45 },
-      "passerby": { "x": 30, "y": 45 },
-      "woman": { "x": 70, "y": 40 },
-      "red": { "x": 50, "y": 65 },
-      "book": { "x": 50, "y": 65 },
-      "blue": { "x": 80, "y": 75 },
-      "scarf": { "x": 75, "y": 55 },
-      "plant": { "x": 25, "y": 70 },
-      "potted": { "x": 25, "y": 70 },
-      "smile": { "x": 65, "y": 30 }
+      "table": { "x": 50, "y": 90 },
+      "tree": { "x": 15, "y": 40 },
+      "sun": { "x": 25, "y": 15 },
+      "hair": { "x": 80, "y": 25 },
+      "face": { "x": 65, "y": 30 },
+      "hand": { "x": 60, "y": 80 },
+      "street": { "x": 15, "y": 70 },
+      "smile": { "x": 62, "y": 35 },
+      "sweater": { "x": 80, "y": 60 }
     }
   }
 ]
