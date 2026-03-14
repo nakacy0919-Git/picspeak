@@ -1,0 +1,125 @@
+{
+  "id": "theme_302",
+  "imageSrc": "assets/images/302.webp",
+  "description": "カフェの窓辺で読書をする女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女の人"},
+        {"text": "man", "ja": "男の人"},
+        {"text": "book", "ja": "本"},
+        {"text": "cup", "ja": "カップ"},
+        {"text": "coffee", "ja": "コーヒー"},
+        {"text": "plant", "ja": "植物"},
+        {"text": "table", "ja": "テーブル"},
+        {"text": "window", "ja": "窓"},
+        {"text": "tree", "ja": "木"},
+        {"text": "blue", "ja": "青い"},
+        {"text": "red", "ja": "赤い"},
+        {"text": "green", "ja": "緑の"},
+        {"text": "read", "ja": "読む"},
+        {"text": "sit", "ja": "座る"},
+        {"text": "smile", "ja": "微笑む"}
+      ],
+      "chunks": [
+        {"text": "a young woman", "ja": "若い女性"},
+        {"text": "a red book", "ja": "赤い本"},
+        {"text": "drink coffee", "ja": "コーヒーを飲む"},
+        {"text": "a green plant", "ja": "緑の植物"},
+        {"text": "read a book", "ja": "本を読む"},
+        {"text": "sit at a table", "ja": "テーブルに座る"},
+        {"text": "a big window", "ja": "大きな窓"},
+        {"text": "a blue sweater", "ja": "青いセーター"}
+      ],
+      "sentences": [
+        {"text": "I see a young woman.", "grammar": "I see~", "ja": "若い女性が見えます。"},
+        {"text": "She is reading a book.", "grammar": "is ~ing", "ja": "彼女は本を読んでいます。"},
+        {"text": "The book is red.", "grammar": "is ~", "ja": "その本は赤いです。"},
+        {"text": "This is a big window.", "grammar": "This is~", "ja": "これは大きな窓です。"},
+        {"text": "She has a cup of coffee.", "grammar": "have/has", "ja": "彼女はコーヒーのカップを持っています。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "cafe", "ja": "カフェ"},
+        {"text": "scarf", "ja": "マフラー、スカーフ"},
+        {"text": "sweater", "ja": "セーター"},
+        {"text": "outside", "ja": "外"},
+        {"text": "walk", "ja": "歩く"},
+        {"text": "enjoy", "ja": "楽しむ"},
+        {"text": "relax", "ja": "くつろぐ"},
+        {"text": "beautiful", "ja": "美しい"},
+        {"text": "sunny", "ja": "晴れた"},
+        {"text": "background", "ja": "背景"},
+        {"text": "hold", "ja": "持っている"},
+        {"text": "look", "ja": "見る、～に見える"},
+        {"text": "pot", "ja": "鉢"},
+        {"text": "saucer", "ja": "受け皿"},
+        {"text": "peaceful", "ja": "平和な"}
+      ],
+      "chunks": [
+        {"text": "reading a book in a cafe", "ja": "カフェで本を読んでいる"},
+        {"text": "sitting by the window", "ja": "窓辺に座っている"},
+        {"text": "wearing a scarf", "ja": "マフラーをしている"},
+        {"text": "a cup of coffee", "ja": "一杯のコーヒー"},
+        {"text": "walking outside", "ja": "外を歩いている"},
+        {"text": "enjoying her time", "ja": "彼女の時間を楽しんでいる"},
+        {"text": "holding a red book", "ja": "赤い本を持っている"},
+        {"text": "looking happy", "ja": "幸せそうに見える"}
+      ],
+      "sentences": [
+        {"text": "There is a woman sitting in the cafe.", "grammar": "There is/are~", "ja": "カフェに座っている女性がいます。"},
+        {"text": "A woman wearing a scarf is reading a book.", "grammar": "現在分詞の後置修飾", "ja": "マフラーをした女性が本を読んでいます。"},
+        {"text": "A man is walking outside the window.", "grammar": "現在進行形 / 場所を表す前置詞句", "ja": "窓の外を男性が歩いています。"},
+        {"text": "There is a small plant on the table.", "grammar": "There is/are~", "ja": "テーブルの上に小さな植物があります。"},
+        {"text": "She is enjoying reading a book.", "grammar": "動名詞", "ja": "彼女は本を読むことを楽しんでいます。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "customer", "ja": "客"},
+        {"text": "comfortable", "ja": "快適な"},
+        {"text": "cozy", "ja": "居心地の良い"},
+        {"text": "concentrate", "ja": "集中する"},
+        {"text": "engrossed", "ja": "夢中になって"},
+        {"text": "passerby", "ja": "通行人"},
+        {"text": "stroll", "ja": "散歩する、ぶらぶら歩く"},
+        {"text": "beverage", "ja": "飲み物"},
+        {"text": "succulent", "ja": "多肉植物"},
+        {"text": "foliage", "ja": "葉、木立"},
+        {"text": "pleasant", "ja": "心地よい"},
+        {"text": "atmosphere", "ja": "雰囲気"},
+        {"text": "focus", "ja": "集中する"},
+        {"text": "content", "ja": "満足して"},
+        {"text": "attire", "ja": "服装"}
+      ],
+      "chunks": [
+        {"text": "engrossed in reading", "ja": "読書に夢中になっている"},
+        {"text": "a cozy cafe atmosphere", "ja": "居心地の良いカフェの雰囲気"},
+        {"text": "a passerby strolling outside", "ja": "外を散歩している通行人"},
+        {"text": "focused on the story", "ja": "物語に集中している"},
+        {"text": "wearing comfortable attire", "ja": "快適な服装をしている"},
+        {"text": "bathed in natural light", "ja": "自然光を浴びて"},
+        {"text": "a pleasant afternoon", "ja": "心地よい午後"},
+        {"text": "seem content", "ja": "満足しているように見える"}
+      ],
+      "sentences": [
+        {"text": "It looks like a pleasant afternoon to read a book in a cafe.", "grammar": "It looks like~ / 不定詞", "ja": "カフェで本を読むには心地よい午後のようです。"},
+        {"text": "The woman who is sitting by the window is engrossed in her book.", "grammar": "関係代名詞", "ja": "窓辺に座っている女性は、本に夢中になっています。"},
+        {"text": "She seems to be enjoying her time because she has a gentle smile.", "grammar": "接続詞 because / seem to~", "ja": "彼女は優しい微笑みを浮かべているので、自分の時間を楽しんでいるようです。"},
+        {"text": "I can see a man strolling outside while she is reading.", "grammar": "接続詞 while / 知覚動詞", "ja": "彼女が読書をしている間、外を散歩している男性が見えます。"},
+        {"text": "The sunlight coming through the window makes the atmosphere very peaceful.", "grammar": "現在分詞の形容詞的用法 / make+O+C", "ja": "窓から差し込む日光が、雰囲気をとても平和なものにしています。"}
+      ]
+    }
+  },
+  "pins": {
+    "woman": {"x": 70, "y": 45},
+    "book": {"x": 55, "y": 68},
+    "cup": {"x": 40, "y": 75},
+    "plant": {"x": 24, "y": 65},
+    "window": {"x": 20, "y": 25},
+    "man": {"x": 33, "y": 55},
+    "table": {"x": 35, "y": 90}
+  }
+}
