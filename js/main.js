@@ -353,23 +353,47 @@ function showPerfectAnimation(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 }
 
+// --- (main.js の 該当部分を以下に差し替え) ---
+
 function handleSpeechEnd() {
     isRecording = false;
     if(recordingIndicator) recordingIndicator.classList.add('hidden');
+    
+    // 時間が残っている場合 (手動ストップや自動一時停止)
     if (timeLeft > 0) {
         if(btnStartTurn) {
             btnStartTurn.classList.remove('hidden');
             btnStartTurn.classList.add('animate-attention');
         }
+        if(btnFinishTurn) btnFinishTurn.classList.add('hidden'); 
         if(statusText) statusText.textContent = "Paused";
+    } else {
+        // 時間切れの場合
+        if(btnStartTurn) btnStartTurn.classList.add('hidden');
+        if(btnFinishTurn) btnFinishTurn.classList.remove('hidden');
+        if(statusText) statusText.textContent = "Time's Up!";
     }
 }
 
 function stopRecording() {
     stopSpeech();
     if(recordingIndicator) recordingIndicator.classList.add('hidden');
-    if(btnFinishTurn) btnFinishTurn.classList.remove('hidden'); 
-    if(statusText) statusText.textContent = "Finished!";
+    
+    // 時間切れになった時だけ FINISH を出す
+    if (timeLeft <= 0) {
+        if(btnStartTurn) btnStartTurn.classList.add('hidden');
+        if(btnFinishTurn) btnFinishTurn.classList.remove('hidden'); 
+        if(statusText) statusText.textContent = "Time's Up!";
+    } else {
+        // まだ時間が残っている時は START に戻す
+        if(btnStartTurn) {
+            btnStartTurn.classList.remove('hidden');
+            btnStartTurn.classList.add('animate-attention');
+        }
+        if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
+        if(statusText) statusText.textContent = "Paused";
+    }
+    
     if(timerBar) timerBar.style.transition = 'none';
 }
 
