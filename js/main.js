@@ -3,6 +3,7 @@
 let isRecording = false;
 let currentTheme = null;
 let gameTimer = null;
+let supportInterval = null; // ★サポートモード用のタイマー
 let timeLeft = 30; 
 let timeElapsed = 0; 
 let themeList = [];
@@ -18,10 +19,16 @@ let practiceRawTranscript = "";
 
 // UI Elements
 const viewStart = document.getElementById('view-start');
+const viewSelect = document.getElementById('view-select'); // ★新規
 const viewPlay = document.getElementById('view-play');
 const viewResult = document.getElementById('view-result');
 
-const btnStartGame = document.getElementById('btn-start-game');
+const btnGotoSelect = document.getElementById('btn-goto-select'); // ★新規
+const btnBackToStart = document.getElementById('btn-back-to-start'); // ★新規
+const themeGrid = document.getElementById('theme-grid'); // ★新規
+const supportToggle = document.getElementById('support-toggle'); // ★新規
+const supportTextContainer = document.getElementById('support-text-container'); // ★新規
+
 const btnStartTurn = document.getElementById('btn-start-turn');
 const btnFinishTurn = document.getElementById('btn-finish-turn');
 const btnPlayAgain = document.getElementById('btn-play-again');
@@ -75,7 +82,7 @@ let rawTranscriptForCounting = "";
 let audioCtx = null;
 
 // ==========================================
-// Text-to-Speech (読み上げ機能)
+// Text-to-Speech
 // ==========================================
 window.speakText = function(text) {
     const ut = new SpeechSynthesisUtterance(text);
@@ -84,7 +91,7 @@ window.speakText = function(text) {
 };
 
 // ==========================================
-// ローカルストレージ (学習ログ) 
+// ローカルストレージ
 // ==========================================
 function saveLearningLog(logData) {
     let logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
@@ -188,8 +195,9 @@ function playSound(type) {
 }
 
 function showView(viewElement) {
-    if(!viewStart || !viewPlay || !viewResult || !viewElement) return;
+    if(!viewStart || !viewSelect || !viewPlay || !viewResult || !viewElement) return;
     viewStart.classList.add('hidden');
+    viewSelect.classList.add('hidden');
     viewPlay.classList.add('hidden');
     viewResult.classList.add('hidden');
     viewElement.classList.remove('hidden');
@@ -200,9 +208,9 @@ async function initApp() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
         alert("【重要】お使いのブラウザは音声認識に非対応です。\niPhoneをお使いの場合は、標準の「Safari」アプリを開いてプレイしてください。");
-        if(btnStartGame) {
-            btnStartGame.disabled = true;
-            btnStartGame.textContent = "ブラウザ非対応";
+        if(btnGotoSelect) {
+            btnGotoSelect.disabled = true;
+            btnGotoSelect.textContent = "ブラウザ非対応";
         }
         return; 
     }
@@ -216,21 +224,18 @@ async function initApp() {
 }
 
 // ==========================================
-// Practice Mode Logic (発音練習モード)
+// Practice Mode Logic
 // ==========================================
 window.openPractice = function(text, ja) {
     isPracticeMode = true;
     practiceTargetText = text;
     document.getElementById('practice-target').textContent = text;
     document.getElementById('practice-ja').textContent = ja;
-    
     practiceTranscriptBox.innerHTML = "Tap START and speak...";
     practiceTranscriptBox.className = "text-xl md:text-3xl font-medium text-gray-400 italic text-center leading-relaxed";
     practiceFeedbackBox.classList.add('hidden');
-    
     btnStartPractice.innerHTML = '<span class="text-3xl">🎙️</span> START';
     btnStartPractice.classList.replace('bg-gray-800', 'bg-sns-gradient');
-    
     practiceModal.classList.remove('hidden');
 }
 
@@ -252,10 +257,8 @@ btnStartPractice.addEventListener('click', () => {
         practiceTranscriptBox.innerHTML = "Listening...";
         practiceTranscriptBox.className = "text-2xl md:text-4xl font-bold text-gray-800 text-center leading-relaxed";
         practiceFeedbackBox.classList.add('hidden');
-        
         btnStartPractice.innerHTML = '<span class="text-3xl">🛑</span> STOP';
         btnStartPractice.classList.replace('bg-sns-gradient', 'bg-gray-800');
-        
         startSpeech();
         isRecording = true;
     }
@@ -263,28 +266,57 @@ btnStartPractice.addEventListener('click', () => {
 
 function processPracticeDiff(spoken, target) {
     if (!spoken.trim()) return { html: "", isPerfect: false };
-
-    // 記号を抜いて比較用の配列にする
     const targetWords = target.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
     const spokenWordsRaw = spoken.trim().split(/\s+/);
     let html = '';
-
     spokenWordsRaw.forEach(word => {
         const cleanWord = word.toLowerCase().replace(/[.,!?]/g, '');
-        // ターゲットに含まれていない単語は紫ハイライト
         if (cleanWord && !targetWords.includes(cleanWord)) {
             html += `<span class="text-purple-600 font-black border-b-4 border-purple-300 bg-purple-50 px-1 mx-1 rounded">${word}</span>`;
         } else {
             html += `${word} `;
         }
     });
-
     const normalizedSpoken = spoken.toLowerCase().replace(/[.,!?]/g, '');
     const normalizedTarget = target.toLowerCase().replace(/[.,!?]/g, '');
     const isPerfect = normalizedSpoken.includes(normalizedTarget) && normalizedTarget.length > 0;
-
     return { html: html.trim(), isPerfect };
 }
+
+// ==========================================
+// Support Mode Logic (サポートモード)
+// ==========================================
+function triggerSupportHint() {
+    if (!supportToggle.checked || !currentTheme || timeLeft <= 0 || !isRecording) return;
+    
+    // まだ言えていないチャンクや例文を探す
+    const targetData = getAggregatedData(currentTheme, selectedLevel);
+    const availableHints = [];
+    targetData.chunks.forEach(c => { if(!foundChunksSet.has(c.text)) availableHints.push(c); });
+    targetData.sentences.forEach(s => { if(!foundSentencesSet.has(s.text)) availableHints.push(s); });
+    
+    if (availableHints.length > 0) {
+        // ランダムに1つ選ぶ
+        const hint = availableHints[Math.floor(Math.random() * availableHints.length)];
+        
+        // 画面中央にふわっと出す要素を作成
+        const hintEl = document.createElement('div');
+        hintEl.className = 'absolute top-[50%] left-[50%] flex flex-col items-center justify-center support-text-float w-[90%] pointer-events-none z-[30]';
+        hintEl.innerHTML = `
+            <div class="bg-black/70 backdrop-blur-md text-white px-6 py-4 rounded-3xl shadow-2xl border border-white/20 text-center">
+                <div class="text-2xl md:text-4xl font-black tracking-wide drop-shadow-md mb-1">${hint.text}</div>
+                <div class="text-sm md:text-lg font-bold text-gray-300">${hint.ja}</div>
+            </div>
+        `;
+        supportTextContainer.appendChild(hintEl);
+        
+        // 5秒後に消す
+        setTimeout(() => {
+            if(supportTextContainer.contains(hintEl)) supportTextContainer.removeChild(hintEl);
+        }, 5000);
+    }
+}
+
 
 // ==========================================
 // Core Game Logic
@@ -316,8 +348,7 @@ function startTimer() {
     }, 1000);
 }
 
-// ... dropPin, highlightGlobalText are kept internal to Game
-function dropPin(word, theme) {
+function dropPin(word, theme, isHint = false) {
     if (!theme || !theme.pins || !theme.pins[word.toLowerCase()]) return;
     const pinData = theme.pins[word.toLowerCase()];
     const pin = document.createElement('div');
@@ -325,10 +356,18 @@ function dropPin(word, theme) {
     pin.style.left = `${pinData.x}%`;
     pin.style.top = `${pinData.y}%`;
     pin.style.transform = 'translate(-50%, -100%)';
-    pin.innerHTML = `<div class="bg-white text-gray-900 text-[10px] md:text-xs font-black px-2.5 py-1 rounded-full shadow-lg border-2 border-white mb-1.5 tracking-wider uppercase drop-shadow-sm">❤️ ${word}</div><div class="w-1.5 h-3.5 md:h-4.5 bg-gray-200 shadow-sm rounded-b-full"></div>`;
-    const popEffect = document.createElement('div');
-    popEffect.className = 'pin-pop-effect';
-    pin.appendChild(popEffect);
+    
+    // サポートモードの最初に出すピンは少し半透明にする
+    const opacityClass = isHint ? 'opacity-80 bg-gray-50 border-gray-200 text-gray-500' : 'bg-white border-white text-gray-900 drop-shadow-sm';
+    const heart = isHint ? '📍' : '❤️';
+    
+    pin.innerHTML = `<div class="${opacityClass} text-[10px] md:text-xs font-black px-2.5 py-1 rounded-full shadow-lg border-2 mb-1.5 tracking-wider uppercase">${heart} ${word}</div><div class="w-1.5 h-3.5 md:h-4.5 bg-gray-200 shadow-sm rounded-b-full"></div>`;
+    
+    if(!isHint) {
+        const popEffect = document.createElement('div');
+        popEffect.className = 'pin-pop-effect';
+        pin.appendChild(popEffect);
+    }
     pinContainer.appendChild(pin);
 }
 
@@ -348,14 +387,10 @@ function highlightGlobalText(text) {
     return html;
 }
 
-// ------------------------------------------
-// Route Speech Results based on Mode
-// ------------------------------------------
 function handleSpeechResult(finalText, interimText) {
     if (isPracticeMode) {
         if (finalText.trim().length > 0) practiceRawTranscript += finalText + " ";
         const currentTempText = practiceRawTranscript + interimText;
-        
         const diffResult = processPracticeDiff(currentTempText, practiceTargetText);
         practiceTranscriptBox.innerHTML = diffResult.html || "Listening...";
         
@@ -363,8 +398,6 @@ function handleSpeechResult(finalText, interimText) {
             practiceFeedbackBox.innerHTML = '<span class="text-transparent bg-clip-text bg-sns-gradient text-4xl md:text-5xl font-black drop-shadow-md animate-perfect">Great Job! ✨</span>';
             practiceFeedbackBox.classList.remove('hidden');
             playSound('practice_perfect');
-            
-            // 成功したら自動で止める
             stopSpeech();
             isRecording = false;
             btnStartPractice.innerHTML = '<span class="text-3xl">✅</span> NEXT';
@@ -373,7 +406,6 @@ function handleSpeechResult(finalText, interimText) {
         return;
     }
 
-    // -- Game Mode Logic --
     if (finalText.trim().length > 0) rawTranscriptForCounting += finalText + " ";
     const currentTempText = rawTranscriptForCounting + interimText;
     const wordsArray = currentTempText.trim().split(/[\s,.?!]+/).filter(w => w.length > 0);
@@ -414,13 +446,11 @@ function handleSpeechResult(finalText, interimText) {
 
 function handleSpeechEnd() {
     isRecording = false;
-    
     if (isPracticeMode) {
         btnStartPractice.innerHTML = '<span class="text-3xl">🔄</span> RETRY';
         btnStartPractice.classList.replace('bg-gray-800', 'bg-sns-gradient');
         return;
     }
-
     if(recordingIndicator) recordingIndicator.classList.add('hidden');
     if (timeLeft > 0) {
         if(btnStartTurn) {
@@ -439,6 +469,10 @@ function handleSpeechEnd() {
 function stopRecording() {
     stopSpeech();
     if(recordingIndicator) recordingIndicator.classList.add('hidden');
+    
+    // サポートモードのタイマー停止
+    if(supportInterval) clearInterval(supportInterval);
+
     if (timeLeft <= 0) {
         if(btnStartTurn) btnStartTurn.classList.add('hidden');
         if(btnFinishTurn) btnFinishTurn.classList.remove('hidden'); 
@@ -468,79 +502,38 @@ function showPerfectAnimation(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 }
 
-// ==========================================
-// Result HTML Builders (スマートなアコーディオン)
-// ==========================================
 function createFeedbackSection(title, items, type, isCleared) {
     if(items.length === 0) return '';
-    
-    // 表示上限（最初はこれだけ見せる）
     const limit = type === 'sentence' ? 2 : 6;
     let bgColor = isCleared ? 'bg-blue-50' : 'bg-gray-50';
     let borderColor = isCleared ? 'border-blue-100' : 'border-gray-200';
     let textColor = isCleared ? 'text-blue-800' : 'text-gray-700';
     let subTextColor = isCleared ? 'text-blue-500' : 'text-gray-400';
     
-    let html = `
-    <div class="mb-8">
-        <p class="text-sm font-black text-gray-400 mb-4 uppercase tracking-widest border-b pb-1 flex items-center justify-between">
-            <span>${title} <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span>
-        </p>
-        <div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
-
+    let html = `<div class="mb-8"><p class="text-sm font-black text-gray-400 mb-4 uppercase tracking-widest border-b pb-1 flex items-center justify-between"><span>${title} <span class="text-xs bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span></p><div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
     items.forEach((item, index) => {
         const hiddenClass = index >= limit ? 'hidden extra-item' : '';
         const escapedText = item.text.replace(/'/g, "\\'");
-        
-        // TTSとPractice用のアイコンボタン
-        const btnHTML = `
-            <div class="flex items-center gap-1 shrink-0 bg-white/50 rounded-full px-1 py-0.5 border border-black/5">
-                <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors" onclick="speakText('${escapedText}')" title="Read Aloud">🔊</button>
-                <button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors" onclick="openPractice('${escapedText}', '${item.ja}')" title="Practice Pronunciation">🎤</button>
-            </div>
-        `;
-
+        const btnHTML = `<div class="flex items-center gap-1 shrink-0 bg-white/50 rounded-full px-1 py-0.5 border border-black/5"><button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors" onclick="speakText('${escapedText}')" title="Read Aloud">🔊</button><button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors" onclick="openPractice('${escapedText}', '${item.ja}')" title="Practice Pronunciation">🎤</button></div>`;
         if (type === 'sentence') {
-            html += `
-                <div class="${bgColor} p-4 md:p-5 rounded-2xl border ${borderColor} shadow-sm ${hiddenClass} transition-all">
-                    <div class="flex justify-between items-start gap-4">
-                        <div class="font-bold ${textColor} text-base md:text-lg leading-tight">${item.text}</div>
-                        ${btnHTML}
-                    </div>
-                    <div class="text-sm ${subTextColor} font-medium mt-2">${item.ja}</div>
-                </div>`;
+            html += `<div class="${bgColor} p-4 md:p-5 rounded-2xl border ${borderColor} shadow-sm ${hiddenClass} transition-all"><div class="flex justify-between items-start gap-4"><div class="font-bold ${textColor} text-base md:text-lg leading-tight">${item.text}</div>${btnHTML}</div><div class="text-sm ${subTextColor} font-medium mt-2">${item.ja}</div></div>`;
         } else {
-            html += `
-                <div class="${bgColor} pl-4 pr-1.5 py-1.5 rounded-full border ${borderColor} shadow-sm flex items-center justify-between gap-3 ${hiddenClass}">
-                    <div>
-                        <span class="font-bold ${textColor} text-sm md:text-base">${item.text}</span>
-                        <span class="text-[10px] md:text-xs font-medium ${subTextColor} ml-1.5">${item.ja}</span>
-                    </div>
-                    ${btnHTML}
-                </div>`;
+            html += `<div class="${bgColor} pl-4 pr-1.5 py-1.5 rounded-full border ${borderColor} shadow-sm flex items-center justify-between gap-3 ${hiddenClass}"><div><span class="font-bold ${textColor} text-sm md:text-base">${item.text}</span><span class="text-[10px] md:text-xs font-medium ${subTextColor} ml-1.5">${item.ja}</span></div>${btnHTML}</div>`;
         }
     });
-
     html += `</div>`;
-    
-    // 隠れているアイテムがあれば「もっと見る」ボタンを追加
-    if(items.length > limit) {
-        html += `<button class="mt-4 text-sm font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg pointer-events-none">▼</span></button>`;
-    }
+    if(items.length > limit) html += `<button class="mt-4 text-sm font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg pointer-events-none">▼</span></button>`;
     html += `</div>`;
     return html;
 }
 
-// Event Delegation for Accrodion Toggle
 document.addEventListener('click', (e) => {
     if (e.target.classList.contains('toggle-more-btn')) {
         const parent = e.target.closest('div.mb-8');
         const extraItems = parent.querySelectorAll('.extra-item');
         const isHidden = extraItems[0].classList.contains('hidden');
         extraItems.forEach(item => item.classList.toggle('hidden'));
-        e.target.innerHTML = isHidden 
-            ? '<span class="pointer-events-none">閉じる</span> <span class="text-lg pointer-events-none">▲</span>' 
-            : '<span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg pointer-events-none">▼</span>';
+        e.target.innerHTML = isHidden ? '<span class="pointer-events-none">閉じる</span> <span class="text-lg pointer-events-none">▲</span>' : '<span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg pointer-events-none">▼</span>';
     }
 });
 
@@ -551,15 +544,12 @@ if(btnOpenTutorial) btnOpenTutorial.addEventListener('click', () => tutorialModa
 if(btnCloseTutorial) btnCloseTutorial.addEventListener('click', () => tutorialModal.classList.add('hidden'));
 
 if(btnOpenHistory) {
-    btnOpenHistory.addEventListener('click', () => {
-        renderHistoryLogs();
-        historyModal.classList.remove('hidden');
-    });
+    btnOpenHistory.addEventListener('click', () => { renderHistoryLogs(); historyModal.classList.remove('hidden'); });
 }
 if(btnCloseHistory) btnCloseHistory.addEventListener('click', () => historyModal.classList.add('hidden'));
 
-if (btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
-if (btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
+if(btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
+if(btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
 
 timeBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
@@ -604,8 +594,43 @@ levelBtns.forEach(btn => {
     });
 });
 
-if (btnStartGame) {
-    btnStartGame.addEventListener('click', () => {
+// ★NEW: 画像選択画面の描画処理
+async function renderThemeGrid() {
+    if (!themeGrid) return;
+    themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10">Loading Images...</div>';
+    let html = '';
+    
+    // 全てのJSONをフェッチしてサムネイルとタイトルを取得
+    for (const id of themeList) {
+        try {
+            const res = await fetch(`data/themes/${id}.json?t=${new Date().getTime()}`);
+            let data = await res.json();
+            data = Array.isArray(data) ? data[0] : data;
+            
+            html += `
+                <div class="theme-card cursor-pointer rounded-2xl overflow-hidden shadow-md border-4 border-transparent hover:border-pink-400 hover:shadow-xl transition-all relative transform hover:-translate-y-1 bg-white" data-id="${id}">
+                    <img src="${data.imageSrc}" class="w-full h-32 md:h-40 object-cover">
+                    <div class="p-3 text-center text-xs md:text-sm font-bold text-gray-700 truncate border-t border-gray-100">${data.description || 'No Title'}</div>
+                </div>
+            `;
+        } catch(e) { console.error(e); }
+    }
+    
+    themeGrid.innerHTML = html;
+    
+    // 画像をクリックした時の処理
+    document.querySelectorAll('.theme-card').forEach(card => {
+        card.addEventListener('click', () => {
+            const id = card.getAttribute('data-id');
+            startGameWithTheme(id);
+        });
+    });
+}
+
+// 最初の画面のボタンを押したら Select 画面へ
+if (btnGotoSelect) {
+    btnGotoSelect.addEventListener('click', () => {
+        // フルスクリーン化の処理（ここでやっておく）
         try {
             const elem = document.documentElement;
             if (!document.fullscreenElement) {
@@ -616,23 +641,31 @@ if (btnStartGame) {
 
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
-        launchGameSequence();
+        
+        showView(viewSelect);
+        renderThemeGrid();
     });
 }
 
-async function launchGameSequence() {
-    if (themeList.length === 0) themeList = ["301"];
-    if (themeList.length > 0) {
-        const randomId = themeList[Math.floor(Math.random() * themeList.length)];
-        try {
-            const res = await fetch(`data/themes/${randomId}.json?t=` + new Date().getTime());
-            const fetchedData = await res.json();
-            currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-        } catch (e) {
-            alert(`データの読み込みに失敗しました。`);
-            return; 
-        }
+// BACKボタン
+if (btnBackToStart) {
+    btnBackToStart.addEventListener('click', () => {
+        showView(viewStart);
+    });
+}
+
+
+// ★NEW: 指定したIDでゲームを開始する関数
+async function startGameWithTheme(id) {
+    try {
+        const res = await fetch(`data/themes/${id}.json?t=` + new Date().getTime());
+        const fetchedData = await res.json();
+        currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+    } catch (e) {
+        alert(`データの読み込みに失敗しました。`);
+        return; 
     }
+
     if (currentTheme && currentTheme.imageSrc) {
         promptImage.src = currentTheme.imageSrc;
         if(promptImage.classList.contains('blur-none')) promptImage.classList.replace('blur-none', 'blur-md'); 
@@ -649,11 +682,13 @@ async function launchGameSequence() {
     if(liveCompletionBar) liveCompletionBar.style.width = '0%';
     if(liveCompletionText) liveCompletionText.textContent = '0%';
     pinContainer.innerHTML = ''; 
+    supportTextContainer.innerHTML = ''; // ヒント文字クリア
     transcriptBox.innerHTML = `<p class="text-gray-400 italic font-bold uppercase tracking-wide">Press START and speak loudly. ❤️📍🏙️✨</p>`;
     
     if(btnStartTurn) btnStartTurn.classList.add('animate-attention');
     showView(viewPlay);
 }
+
 
 if (btnStartTurn) {
     btnStartTurn.addEventListener('click', () => {
@@ -667,18 +702,28 @@ if (btnStartTurn) {
             promptImage.classList.remove('blur-md');
             promptImage.classList.add('blur-none');
         }
+        
+        // ★サポートモード開始処理
+        if (timeElapsed === 0 && supportToggle && supportToggle.checked) {
+            // 1. 最初から全単語のピン（少し薄め）を置く
+            const targetData = getAggregatedData(currentTheme, selectedLevel);
+            targetData.words.forEach(w => dropPin(w.text, currentTheme, true));
+            
+            // 2. ヒントを6秒ごとに出すインターバル
+            supportInterval = setInterval(triggerSupportHint, 6000);
+        }
+        
         if (timeElapsed === 0) startTimer();
     });
 }
 
-if (recordingIndicator) {
-    recordingIndicator.addEventListener('click', () => stopRecording());
-}
+if (recordingIndicator) recordingIndicator.addEventListener('click', () => stopRecording());
 
 if (btnHomeFromPlay) {
     btnHomeFromPlay.addEventListener('click', () => {
         if (isRecording) stopRecording();
         clearInterval(gameTimer);
+        if(supportInterval) clearInterval(supportInterval);
         showView(viewStart);
     });
 }
@@ -686,6 +731,8 @@ if (btnHomeFromPlay) {
 if (btnFinishTurn) {
     btnFinishTurn.addEventListener('click', () => {
         clearInterval(gameTimer);
+        if(supportInterval) clearInterval(supportInterval);
+        
         const finalScore = scoreDisplay.textContent;
         const finalWordCount = parseInt(wordCountDisplay.textContent) || 0;
         let wpm = timeElapsed > 0 ? Math.round(finalWordCount / (timeElapsed / 60)) : 0;
@@ -700,58 +747,31 @@ if (btnFinishTurn) {
             wpm: wpm
         });
 
-        // ===============================================
-        // ★NEW: リザルト画面の生成（画像＋3カラム構造）
-        // ===============================================
         const rankingContainer = document.getElementById('ranking-container');
-        
         let html = `
             <div class="flex flex-col lg:flex-row gap-6 mb-6">
                 <div class="lg:w-2/5 shrink-0 bg-white rounded-3xl p-3 shadow-md border border-gray-100 flex items-center justify-center">
                     <img src="${currentTheme.imageSrc}" class="w-full h-48 lg:h-full object-cover rounded-2xl">
                 </div>
-                
                 <div class="lg:w-3/5 grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 content-start">
-                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100">
-                        <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Score</span>
-                        <span class="text-3xl md:text-4xl font-black text-gray-900">${finalScore}</span>
-                    </div>
-                    <div class="bg-sns-gradient rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg text-white transform hover:scale-[1.02] transition-transform">
-                        <span class="text-white/80 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Completion</span>
-                        <span class="text-3xl md:text-4xl font-black">${stats.completionRate}<span class="text-xl">%</span></span>
-                    </div>
-                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100">
-                        <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Words</span>
-                        <span class="text-3xl md:text-4xl font-black text-gray-900">${finalWordCount}</span>
-                    </div>
-                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100">
-                        <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM</span>
-                        <span class="text-3xl md:text-4xl font-black text-gray-900">${wpm}</span>
-                    </div>
-                    
-                    <div class="col-span-2 md:col-span-4 bg-gray-50 rounded-3xl p-4 md:p-6 border border-gray-200 mt-2 h-40 overflow-y-auto shadow-inner">
-                        <span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-2 block uppercase">Your Transcript</span>
-                        <div class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">${highlightGlobalText(rawTranscriptForCounting) || "No words recorded."}</div>
-                    </div>
+                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Score</span><span class="text-3xl md:text-4xl font-black text-gray-900">${finalScore}</span></div>
+                    <div class="bg-sns-gradient rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-lg text-white transform hover:scale-[1.02] transition-transform"><span class="text-white/80 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Completion</span><span class="text-3xl md:text-4xl font-black">${stats.completionRate}<span class="text-xl">%</span></span></div>
+                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">Words</span><span class="text-3xl md:text-4xl font-black text-gray-900">${finalWordCount}</span></div>
+                    <div class="bg-white rounded-3xl p-4 md:p-6 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-1 uppercase">WPM</span><span class="text-3xl md:text-4xl font-black text-gray-900">${wpm}</span></div>
+                    <div class="col-span-2 md:col-span-4 bg-gray-50 rounded-3xl p-4 md:p-6 border border-gray-200 mt-2 h-40 overflow-y-auto shadow-inner"><span class="text-gray-400 font-extrabold text-xs md:text-sm tracking-widest mb-2 block uppercase">Your Transcript</span><div class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">${highlightGlobalText(rawTranscriptForCounting) || "No words recorded."}</div></div>
                 </div>
             </div>
-
             <div class="flex flex-col gap-6">
                 <div class="bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden">
-                    <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between">
-                        <h3 class="text-lg md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS <span class="text-sm font-bold text-gray-500 ml-2">言えなかった表現</span></h3>
-                    </div>
+                    <div class="bg-gray-100 px-6 py-4 border-b border-gray-200 flex items-center justify-between"><h3 class="text-lg md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS <span class="text-sm font-bold text-gray-500 ml-2">言えなかった表現</span></h3></div>
                     <div class="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                         <div>${createFeedbackSection('Words', stats.missedWords, 'word', false) || '<p class="text-gray-400 font-bold text-sm">全てクリア！</p>'}</div>
                         <div>${createFeedbackSection('Chunks', stats.missedChunks, 'chunk', false) || '<p class="text-gray-400 font-bold text-sm">全てクリア！</p>'}</div>
                         <div>${createFeedbackSection('Sentences', stats.missedSentences, 'sentence', false) || '<p class="text-gray-400 font-bold text-sm">全てクリア！</p>'}</div>
                     </div>
                 </div>
-
                 <div class="bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden">
-                    <div class="bg-blue-100 px-6 py-4 border-b border-blue-200 flex items-center justify-between">
-                        <h3 class="text-lg md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED <span class="text-sm font-bold text-blue-600 ml-2">言えた表現</span></h3>
-                    </div>
+                    <div class="bg-blue-100 px-6 py-4 border-b border-blue-200 flex items-center justify-between"><h3 class="text-lg md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED <span class="text-sm font-bold text-blue-600 ml-2">言えた表現</span></h3></div>
                     <div class="p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 md:gap-8">
                         <div>${createFeedbackSection('Words', stats.clearedWords, 'word', true) || '<p class="text-gray-400 font-bold text-sm">まだありません</p>'}</div>
                         <div>${createFeedbackSection('Chunks', stats.clearedChunks, 'chunk', true) || '<p class="text-gray-400 font-bold text-sm">まだありません</p>'}</div>
@@ -760,7 +780,6 @@ if (btnFinishTurn) {
                 </div>
             </div>
         `;
-        
         rankingContainer.innerHTML = html;
         showView(viewResult);
     });
@@ -770,22 +789,29 @@ if (btnPlayAgain) {
     btnPlayAgain.addEventListener('click', () => {
         if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
         if(recordingIndicator) recordingIndicator.classList.add('hidden');
-        if(btnStartTurn) {
-            btnStartTurn.classList.remove('hidden');
-            btnStartTurn.classList.add('animate-attention');
-        }
+        if(btnStartTurn) { btnStartTurn.classList.remove('hidden'); btnStartTurn.classList.add('animate-attention'); }
         if(statusText) statusText.textContent = "Ready";
-        if (promptImage) {
-            promptImage.classList.remove('blur-none');
-            promptImage.classList.add('blur-md');
-        }
-        if (timerBar && timerText) {
-            timerBar.style.transition = 'none';
-            timerBar.style.width = '100%';
-            timerText.textContent = `${customTimeLimit}s`;
-        }
-        showView(viewStart);
+        if (promptImage) { promptImage.classList.remove('blur-none'); promptImage.classList.add('blur-md'); }
+        
+        // PLAY AGAINを押したら、Select画面（画像一覧）に戻す！
+        showView(viewSelect);
+        renderThemeGrid();
     });
+}
+
+const resizer = document.getElementById('resizer');
+const imagePanel = document.getElementById('image-panel');
+let startY = 0; let startHeight = 0;
+if (resizer && imagePanel) {
+    resizer.addEventListener('touchstart', (e) => { startY = e.touches[0].clientY; startHeight = imagePanel.getBoundingClientRect().height; e.preventDefault(); }, { passive: false });
+    document.addEventListener('touchmove', (e) => {
+        if (startY === 0) return;
+        let newHeight = startHeight + (e.touches[0].clientY - startY);
+        if (newHeight < 100) newHeight = 100;
+        if (newHeight > window.innerHeight * 0.7) newHeight = window.innerHeight * 0.7;
+        imagePanel.style.height = `${newHeight}px`;
+    }, { passive: false });
+    document.addEventListener('touchend', () => { startY = 0; });
 }
 
 window.addEventListener('DOMContentLoaded', initApp);

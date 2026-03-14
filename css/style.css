@@ -178,3 +178,13 @@ body {
 .animate-attention {
     animation: attentionPulse 1.5s infinite ease-in-out;
 }
+/* ★NEW: サポートモードで文字がふわっと現れて消えるアニメーション */
+@keyframes supportFloatFade {
+    0% { opacity: 0; transform: translate(-50%, 15px) scale(0.95); }
+    15% { opacity: 0.9; transform: translate(-50%, 0) scale(1); }
+    85% { opacity: 0.9; transform: translate(-50%, 0) scale(1); }
+    100% { opacity: 0; transform: translate(-50%, -15px) scale(1.05); }
+}
+.support-text-float {
+    animation: supportFloatFade 5s ease-in-out forwards;
+}
