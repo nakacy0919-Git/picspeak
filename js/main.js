@@ -45,7 +45,7 @@ const promptImage = document.getElementById('prompt-image');
 const transcriptBox = document.getElementById('transcript-box');
 const scoreDisplay = document.getElementById('scoreDisplay');
 const wordCountDisplay = document.getElementById('wordCountDisplay');
-const liveWpmDisplay = document.getElementById('liveWpmDisplay'); // ★新規追加
+const liveWpmDisplay = document.getElementById('liveWpmDisplay');
 const timerBar = document.getElementById('timer-bar');
 const timerText = document.getElementById('timer-text');
 const statusText = document.getElementById('status-text');
@@ -196,7 +196,8 @@ async function initApp() {
     initSpeechRecognition(handleSpeechResult, handleSpeechEnd);
     
     try {
-        const response = await fetch('data/theme_list.json');
+        // ★修正①: キャッシュ（古いリスト）を強制的に無視して最新を読み込む呪文！
+        const response = await fetch('data/theme_list.json?t=' + new Date().getTime());
         themeList = await response.json();
     } catch (error) {
         console.error("テーマリストの読み込みに失敗しました:", error);
@@ -218,7 +219,6 @@ function startTimer() {
         timeElapsed++;
         timerText.textContent = `${timeLeft}s`;
 
-        // ★追加: プレイ中のリアルタイムWPM計算
         const currentWords = parseInt(wordCountDisplay.textContent) || 0;
         const currentWpm = Math.round(currentWords / (timeElapsed / 60));
         if(liveWpmDisplay) liveWpmDisplay.textContent = currentWpm;
@@ -359,7 +359,6 @@ function handleSpeechEnd() {
     if (timeLeft > 0) {
         if(btnStartTurn) {
             btnStartTurn.classList.remove('hidden');
-            // ★一時停止になったら再び揺らす
             btnStartTurn.classList.add('animate-attention');
         }
         if(statusText) statusText.textContent = "Paused";
@@ -467,13 +466,9 @@ levelBtns.forEach(btn => {
     });
 });
 
-// --- (js/main.js の btnStartGame 処理を以下にまるごと差し替え) ---
-
 if (btnStartGame) {
-    // asyncを外し、ユーザーのクリック直後に安全にフルスクリーンを実行させる
     btnStartGame.addEventListener('click', () => {
         
-        // 1. フルスクリーン化（他の処理に邪魔されないように一番最初に実行）
         try {
             const elem = document.documentElement;
             if (!document.fullscreenElement) {
@@ -487,23 +482,21 @@ if (btnStartGame) {
             console.warn("フルスクリーン処理エラー:", e);
         }
 
-        // 2. 音声エンジンの起動
         if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (audioCtx.state === 'suspended') audioCtx.resume();
 
-        // 3. 重い処理（データの読み込み・画面遷移）は別の関数に投げてクラッシュを防ぐ！
         launchGameSequence();
     });
 }
 
-// ★新規追加: データの読み込みや画面遷移を行うための専用関数
 async function launchGameSequence() {
     if (themeList.length === 0) themeList = ["301"];
 
     if (themeList.length > 0) {
         const randomId = themeList[Math.floor(Math.random() * themeList.length)];
         try {
-            const res = await fetch(`data/themes/${randomId}.json`);
+            // ★修正②: 個別のデータも、古いものを無視して必ず最新を取りに行く！
+            const res = await fetch(`data/themes/${randomId}.json?t=` + new Date().getTime());
             const fetchedData = await res.json();
             currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
         } catch (e) {
@@ -536,14 +529,12 @@ async function launchGameSequence() {
     showView(viewPlay);
 }
 
-// -------------------------------------------------------------------
 
 if (btnStartTurn) {
     btnStartTurn.addEventListener('click', () => {
         startSpeech();
         isRecording = true;
         
-        // ★ボタンを押したら揺れを止める
         btnStartTurn.classList.remove('animate-attention');
         btnStartTurn.classList.add('hidden');
         
@@ -680,7 +671,6 @@ if (btnPlayAgain) {
         
         if(btnStartTurn) {
             btnStartTurn.classList.remove('hidden');
-            // ★プレイアゲイン時もSTARTボタンを揺らす
             btnStartTurn.classList.add('animate-attention');
         }
         
