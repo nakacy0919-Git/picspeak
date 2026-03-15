@@ -12,15 +12,7 @@
     <title>PicSpeak - Modern Speaking Battle</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              backgroundImage: {
-                'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)',
-              }
-            }
-          }
-        }
+        tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
     </script>
     <link rel="stylesheet" href="css/style.css">
 </head>
@@ -30,32 +22,32 @@
         <button id="btn-close-practice" class="absolute top-6 left-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
         <div class="flex-1 flex flex-col items-center justify-center p-6 w-full max-w-4xl mx-auto">
             <h3 class="text-sm md:text-xl font-extrabold text-pink-500 uppercase tracking-widest mb-2 border-b-2 border-pink-200 pb-1">Pronunciation Practice</h3>
-            <div id="practice-target" class="text-3xl md:text-6xl font-black text-gray-900 mb-4 text-center leading-tight"></div>
-            <div id="practice-ja" class="text-lg md:text-2xl font-bold text-gray-500 mb-8 text-center"></div>
-            <div class="w-full bg-gray-50 rounded-3xl p-6 md:p-10 border border-gray-200 shadow-inner mb-6 min-h-[160px] md:min-h-[200px] flex items-center justify-center relative">
-                <p id="practice-transcript" class="text-2xl md:text-4xl font-medium text-gray-400 italic text-center leading-relaxed">Tap START and speak...</p>
+            <div id="practice-target" class="text-3xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-4 text-center leading-tight"></div>
+            <div id="practice-ja" class="text-lg md:text-3xl font-bold text-gray-500 mb-10 text-center"></div>
+            <div class="w-full bg-gray-50 rounded-3xl p-6 md:p-12 border border-gray-200 shadow-inner mb-8 min-h-[160px] md:min-h-[250px] flex items-center justify-center relative">
+                <p id="practice-transcript" class="text-2xl md:text-5xl font-medium text-gray-400 italic text-center leading-relaxed">Tap START and speak...</p>
             </div>
-            <div id="practice-feedback" class="h-16 flex items-center justify-center mb-6"></div>
-            <button id="btn-start-practice" class="w-full md:w-auto min-w-[280px] sns-btn bg-sns-gradient text-white font-black text-3xl md:text-4xl py-5 px-12 rounded-full shadow-xl hover:scale-[1.02] flex items-center justify-center gap-4 tracking-widest uppercase">
-                <span class="text-4xl md:text-5xl">🎙️</span> START
+            <div id="practice-feedback" class="h-20 flex items-center justify-center mb-8"></div>
+            <button id="btn-start-practice" class="w-full md:w-auto min-w-[320px] sns-btn bg-sns-gradient text-white font-black text-3xl md:text-5xl py-6 px-16 rounded-full shadow-xl hover:scale-[1.02] flex items-center justify-center gap-4 tracking-widest uppercase">
+                <span class="text-4xl md:text-6xl">🎙️</span> START
             </button>
         </div>
     </div>
 
     <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
 
-        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-4 md:p-8 lg:p-12 overflow-y-auto w-full z-10 relative fade-in">
-            <div class="absolute top-4 right-4 md:top-8 md:right-8 flex gap-3 md:gap-4 z-20">
-                <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 md:p-4 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
-                <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 md:p-4 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
-                <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-gray-100 p-3 md:p-4 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
-                    <svg class="w-7 h-7 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
+            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-3 md:gap-4 z-20">
+                <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
+                <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
+                <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
+                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                 </button>
             </div>
 
             <div id="settings-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 rounded-2xl shadow-2xl w-11/12 max-w-sm border border-gray-100">
-                    <h3 class="text-2xl md:text-3xl font-black mb-6 text-gray-900 text-center tracking-tight">Speaking Time ⏰</h3>
+                    <h3 class="text-2xl font-black mb-6 text-gray-900 text-center tracking-tight">Speaking Time ⏰</h3>
                     <div class="grid grid-cols-5 gap-2 mb-8">
                         <button class="time-btn sns-btn bg-gray-100 text-gray-700 border border-gray-200 py-3 transition-all" data-time="20">20s</button>
                         <button class="time-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 transition-all selected-time-btn" data-time="30">30s</button>
@@ -69,55 +61,55 @@
 
             <div id="tutorial-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-11/12 max-w-2xl border border-gray-100 text-left">
-                    <h3 class="text-2xl md:text-3xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
-                    <ul class="space-y-6 text-gray-700 font-medium mb-10 text-lg md:text-xl">
-                        <li class="flex items-start gap-4"><span class="text-2xl">1️⃣</span><p>レベルを選んで <b>PIC & SPEAK!</b> を押します。</p></li>
-                        <li class="flex items-start gap-4"><span class="text-2xl">2️⃣</span><p>STARTを押すとマイクがオンになります。画像に映っているモノや状況を<b>英語でどんどん描写</b>しましょう！</p></li>
-                        <li class="flex items-start gap-4"><span class="text-2xl">3️⃣</span><p>ターゲット表現を言うと、リアルタイムで青色に光ってポイントGET！</p></li>
-                        <li class="flex items-start gap-4"><span class="text-2xl">💯</span><p>終了後、言えなかった表現は「発音練習モード(🎤)」で反復練習できます！</p></li>
+                    <h3 class="text-2xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
+                    <ul class="space-y-4 text-gray-700 font-medium mb-8 text-base md:text-lg">
+                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>レベルを選んで <b>PIC & SPEAK!</b> を押します。</p></li>
+                        <li class="flex items-start gap-3"><span class="text-xl">2️⃣</span><p>STARTを押すとマイクがオンになります。画像に映っているモノや状況を<b>英語でどんどん描写</b>しましょう！</p></li>
+                        <li class="flex items-start gap-3"><span class="text-xl">3️⃣</span><p>ターゲット表現を言うと、リアルタイムで青色に光ってポイントGET！</p></li>
+                        <li class="flex items-start gap-3"><span class="text-xl">💯</span><p>終了後、言えなかった表現は「発音練習モード(🎤)」で反復練習できます！</p></li>
                     </ul>
-                    <button id="btn-close-tutorial" class="w-full sns-btn bg-gray-900 text-white font-black text-2xl py-5 transition-all tracking-widest">GOT IT!</button>
+                    <button id="btn-close-tutorial" class="w-full sns-btn bg-gray-900 text-white font-black text-xl py-4 transition-all tracking-widest">GOT IT!</button>
                 </div>
             </div>
 
             <div id="history-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
-                <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 flex flex-col max-h-[80vh]">
-                    <h3 class="text-2xl md:text-3xl font-black mb-6 text-gray-900 border-b pb-3 text-center">📊 Learning Logs</h3>
-                    <div id="history-list" class="flex-1 overflow-y-auto space-y-4 mb-8 pr-3"></div>
-                    <button id="btn-close-history" class="w-full sns-btn bg-gray-900 text-white font-black text-2xl py-5 transition-all tracking-widest shrink-0">CLOSE</button>
+                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 flex flex-col max-h-[80vh]">
+                    <h3 class="text-2xl font-black mb-4 text-gray-900 border-b pb-3 text-center">📊 Learning Logs</h3>
+                    <div id="history-list" class="flex-1 overflow-y-auto space-y-4 mb-6 pr-3"></div>
+                    <button id="btn-close-history" class="w-full sns-btn bg-gray-900 text-white font-black text-xl py-4 transition-all tracking-widest shrink-0">CLOSE</button>
                 </div>
             </div>
 
-            <div class="my-8 md:my-12 text-center shrink-0 mt-16 md:mt-0">
-                <h1 class="clean-title text-[5.5rem] md:text-[7rem] lg:text-[9rem] mb-2 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
-                <p class="text-gray-900 text-lg md:text-2xl lg:text-3xl font-extrabold tracking-widest uppercase">Modern Speaking Battle</p>
-                <div class="mt-3 md:mt-5 inline-block bg-white/30 px-6 py-2 md:py-3 rounded-full text-sm md:text-base font-black text-gray-900 border-2 border-white backdrop-blur-md shadow-md">Complete Edition</div>
+            <div class="my-4 md:my-6 text-center shrink-0">
+                <h1 class="clean-title text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
+                <p class="text-gray-900 text-sm md:text-lg lg:text-xl font-extrabold tracking-widest uppercase">Modern Speaking Battle</p>
+                <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-xs md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
             </div>
             
-            <div class="sns-card p-6 md:p-8 lg:p-10 w-full max-w-md md:max-w-3xl lg:max-w-4xl shrink-0 mb-6">
+            <div class="sns-card p-6 md:p-8 lg:p-10 w-full max-w-md md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl">
                 <div class="mb-6 md:mb-8">
-                    <h2 class="text-sm md:text-base lg:text-lg font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Target Level</h2>
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Target Level</h2>
                     <div class="grid grid-cols-3 gap-3 md:gap-4 lg:gap-6">
-                        <button class="level-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 md:py-4 lg:text-xl transition-all selected-level-btn" data-level="elementary">小学生</button>
-                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 md:py-4 lg:text-xl transition-all" data-level="junior_high">中学生</button>
-                        <button class="level-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 md:py-4 lg:text-xl transition-all" data-level="high_school">高校生</button>
+                        <button class="level-btn sns-btn bg-sns-gradient text-white shadow-lg py-2.5 md:py-3 lg:text-lg transition-all selected-level-btn" data-level="elementary">小学生</button>
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="junior_high">中学生</button>
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="high_school">高校生</button>
                     </div>
                 </div>
                 <div class="mb-6 md:mb-10">
-                    <h2 class="text-sm md:text-base lg:text-lg font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Players</h2>
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Players</h2>
                     <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
                         <button class="player-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 md:py-4 flex flex-col items-center justify-center transition-all selected-player-btn" data-players="1"><span class="text-xl md:text-2xl mb-1">👤</span><span class="text-xs md:text-sm font-bold">1 Player</span></button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="2"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">2 Players</span></button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="3"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">3 Players</span></button>
-                        <button class="player-btn sns-btn bg-white border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="4"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">4 Players</span></button>
+                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="2"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">2 Players</span></button>
+                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="3"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">3 Players</span></button>
+                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="4"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">4 Players</span></button>
                     </div>
                 </div>
                 <button id="btn-goto-select" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-4xl lg:text-5xl py-5 md:py-6 transition-all tracking-widest uppercase shadow-xl hover:shadow-sns-gradient/40">
                     SELECT IMAGE
                 </button>
 
-                <div class="text-center mt-6 md:mt-8">
-                    <button id="btn-goto-about" class="text-gray-400 font-bold hover:text-pink-500 transition-colors text-sm md:text-base inline-flex items-center gap-2">
+                <div class="text-center mt-5 md:mt-6">
+                    <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
                         <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
                     </button>
                 </div>
@@ -126,12 +118,11 @@
 
         <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
             <div class="bg-white px-4 md:px-8 py-4 md:py-6 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
-                <div class="clean-title text-3xl md:text-4xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">About PicSpeak</div>
+                <div class="clean-title text-2xl md:text-4xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">About PicSpeak</div>
                 <button id="btn-back-from-about" class="text-gray-500 font-black hover:text-gray-800 flex items-center gap-2 transition-colors text-lg md:text-xl"><span class="text-2xl">◀</span> BACK</button>
             </div>
             
             <div class="flex-1 overflow-y-auto p-6 md:p-12 w-full max-w-4xl mx-auto space-y-10 md:space-y-14 pb-20">
-                
                 <section class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
                     <h2 class="text-xl md:text-3xl font-black text-gray-900 mb-4 border-b-4 border-pink-200 pb-2 inline-block">英語スピーキングの壁を打ち破る。<br>新感覚AI学習アプリ「PicSpeak」</h2>
                     <p class="text-sm md:text-lg text-gray-700 leading-relaxed font-medium mt-2">
@@ -182,10 +173,12 @@
             </div>
         </div>
 
-        <div id="view-select" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
-            <div class="bg-white px-4 md:px-8 py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
+        <div id="view-select" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in bg-canvas">
+            <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
                 <div class="clean-title text-2xl md:text-4xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">Select Image</div>
-                <button id="btn-back-to-start" class="text-gray-500 font-black hover:text-gray-800 flex items-center gap-2 transition-colors text-base md:text-xl"><span class="text-xl md:text-2xl">◀</span> BACK</button>
+                <div class="flex items-center gap-3 md:gap-5">
+                    <button id="btn-back-to-start" class="text-gray-500 font-black hover:text-gray-800 flex items-center gap-1.5 transition-colors text-base md:text-xl"><span class="text-xl md:text-2xl">◀</span> BACK</button>
+                </div>
             </div>
             
             <div class="flex-1 overflow-y-auto p-4 md:p-8 flex flex-col items-center">
@@ -201,14 +194,16 @@
                 </div>
 
                 <div id="theme-grid" class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                    </div>
+                </div>
             </div>
         </div>
 
         <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
-            
             <div class="bg-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
-                <div id="btn-home-from-play" class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient cursor-pointer hover:opacity-80 transition-opacity" title="Return to Home">PicSpeak</div>
+                <div id="btn-home-from-play" class="flex items-center gap-1.5 md:gap-2 cursor-pointer hover:opacity-80 transition-opacity" title="Return to Home">
+                    <span class="text-2xl md:text-3xl">🏠</span>
+                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">PicSpeak</div>
+                </div>
                 <div class="flex items-center gap-2 md:gap-3 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-gray-200 shadow-inner">
                     <span class="text-xl md:text-2xl">⏱️</span>
                     <span id="timer-text" class="text-2xl md:text-3xl font-black text-gray-900 w-12 md:w-16 text-right">30s</span>
@@ -273,7 +268,7 @@
                         </div>
 
                         <div class="flex-1 bg-white border border-gray-200 rounded-2xl md:rounded-3xl p-3 md:p-5 overflow-y-auto shadow-inner text-lg md:text-2xl lg:text-3xl leading-relaxed relative font-medium text-gray-800" id="transcript-box">
-                            <p id="transcript-text" class="text-gray-400 italic font-bold">Press START and speak loudly. ❤️📍🏙️✨</p>
+                            <p id="transcript-text" class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>
                         </div>
                     </div>
 
@@ -294,18 +289,18 @@
             </div>
         </div>
 
-        <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 overflow-y-auto z-10 relative">
-            <div class="bg-white text-center py-6 md:py-10 shadow-sm shrink-0 border-b border-gray-200">
-                <h2 class="text-4xl md:text-6xl font-black mb-2 text-transparent bg-clip-text bg-sns-gradient tracking-tighter">RESULTS</h2>
-                <p class="text-gray-400 font-extrabold text-xs md:text-base uppercase tracking-widest">Feedback & Practice</p>
+        <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative overflow-hidden">
+            <div class="bg-white text-center py-4 md:py-6 shadow-sm shrink-0 border-b border-gray-200">
+                <h2 class="text-3xl md:text-5xl font-black mb-1 text-transparent bg-clip-text bg-sns-gradient tracking-tighter">RESULTS</h2>
+                <p class="text-gray-400 font-extrabold text-xs md:text-sm uppercase tracking-widest">Feedback & Practice</p>
             </div>
             
-            <div class="w-full max-w-[1600px] mx-auto flex-1 flex flex-col gap-6 md:gap-10 p-4 md:p-10" id="ranking-container">
-                </div>
+            <div class="flex-1 overflow-hidden p-4 md:p-6 w-full max-w-[1800px] mx-auto flex flex-col" id="ranking-container">
+            </div>
             
-            <div class="w-full max-w-[1600px] mx-auto p-4 md:p-10 bg-transparent shrink-0 pb-16 z-10">
-                <button id="btn-play-again" class="w-full sns-btn bg-sns-gradient text-white font-black text-3xl md:text-5xl py-6 md:py-8 rounded-full shadow-xl hover:scale-[1.02] transition-transform flex items-center justify-center gap-4 tracking-widest uppercase">
-                    PLAY AGAIN ❤️📍
+            <div class="p-4 md:p-6 bg-white border-t border-gray-200 shrink-0 z-10 w-full max-w-[1800px] mx-auto">
+                <button id="btn-play-again" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-4xl py-4 md:py-6 rounded-full shadow-xl hover:scale-[1.02] transition-transform flex items-center justify-center gap-3 tracking-widest uppercase">
+                    PLAY AGAIN 
                 </button>
             </div>
        </div>
