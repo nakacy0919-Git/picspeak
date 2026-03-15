@@ -43,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if(btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
     if(btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
 
-    // ★NEW: トランスクリプト（全文表示）モーダルの閉じる処理
+    // トランスクリプト（全文表示）モーダルの閉じる処理
     const btnCloseTranscript = document.getElementById('btn-close-transcript');
     const transcriptModal = document.getElementById('transcript-modal');
     if(btnCloseTranscript) {
@@ -114,7 +114,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const resizerVertical = document.getElementById('resizer-vertical');
     const resizerHorizontal = document.getElementById('resizer-horizontal');
     
-    // スマホ用（上下）
     let startY = 0; let startHeight = 0;
     if (resizerVertical && imagePanel) {
         resizerVertical.addEventListener('touchstart', (e) => { 
@@ -134,7 +133,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('touchend', () => { startY = 0; });
     }
 
-    // PC/iPad用（左右）
     let isResizingH = false;
     if (resizerHorizontal && imagePanel) {
         const startResizeH = (e) => {
@@ -159,4 +157,14 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('touchmove', doResizeH, { passive: false });
         document.addEventListener('touchend', stopResizeH);
     }
+    
+    // ★画面回転・リサイズ時のスタイル自動リセット（スマホ左半分布バグ防止）
+    window.addEventListener('resize', () => {
+        if (!imagePanel) return;
+        if (window.innerWidth < 768) {
+            imagePanel.style.width = '';
+        } else {
+            imagePanel.style.height = '';
+        }
+    });
 });
