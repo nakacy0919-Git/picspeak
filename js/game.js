@@ -238,7 +238,7 @@ window.showPerfectAnimation = function(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 };
 
-// ★修正: Result画面のアコーディオンをスリム化し、パネル内スクロールに最適化
+// ★修正: UI.jsと連携するための `feedback-section` クラスを付与
 window.createFeedbackSection = function(title, items, type, isCleared) {
     if(items.length === 0) return '';
     const limit = type === 'sentence' ? 2 : 6;
@@ -247,7 +247,8 @@ window.createFeedbackSection = function(title, items, type, isCleared) {
     let textColor = isCleared ? 'text-blue-800' : 'text-gray-700';
     let subTextColor = isCleared ? 'text-blue-500' : 'text-gray-400';
     
-    let html = `<div class="mb-6"><p class="text-sm md:text-base font-black text-gray-400 mb-3 uppercase tracking-widest border-b pb-1 flex items-center justify-between"><span>${title} <span class="text-xs md:text-sm bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span></p><div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
+    // クラス feedback-section を追加！
+    let html = `<div class="feedback-section mb-6"><p class="text-sm md:text-base font-black text-gray-400 mb-3 uppercase tracking-widest border-b pb-1 flex items-center justify-between"><span>${title} <span class="text-xs md:text-sm bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span></p><div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
     items.forEach((item, index) => {
         const hiddenClass = index >= limit ? 'hidden extra-item' : '';
         const escapedText = item.text.replace(/'/g, "\\'");
@@ -259,12 +260,12 @@ window.createFeedbackSection = function(title, items, type, isCleared) {
         }
     });
     html += `</div>`;
-    if(items.length > limit) html += `<button class="mt-3 text-sm md:text-base font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg pointer-events-none">▼</span></button>`;
+    if(items.length > limit) html += `<button class="mt-3 text-sm md:text-base font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg md:text-xl pointer-events-none">▼</span></button>`;
     html += `</div>`;
     return html;
 };
 
-// ★修正: PC/iPad向けに「画面内に収まるダッシュボード（1枚フィードバックシート）」化
+// ★修正: iPad (lg) 以上の画面では、スクロールバーを内部に持つダッシュボード型レイアウト。画像は16:9 (aspect-video)。
 window.finishGameAndShowResult = function() {
     clearInterval(window.gameTimer);
     if(window.supportInterval) clearInterval(window.supportInterval);
@@ -282,35 +283,39 @@ window.finishGameAndShowResult = function() {
     const rankingContainer = document.getElementById('ranking-container');
     if(rankingContainer) {
         let html = `
-            <div class="flex flex-col xl:flex-row gap-6 h-full w-full">
-                <div class="xl:w-1/3 flex flex-col gap-4 h-full shrink-0">
-                    <div class="bg-white rounded-3xl p-3 shadow-md border border-gray-100 flex items-center justify-center shrink-0 h-48 xl:h-64">
-                        <img src="${window.currentTheme.imageSrc}" class="w-full h-full object-cover rounded-2xl">
+            <div class="flex flex-col lg:flex-row gap-4 md:gap-6 h-full w-full">
+                
+                <div class="lg:w-1/3 flex flex-col gap-4 h-auto lg:h-full shrink-0 lg:overflow-hidden pb-4 lg:pb-0">
+                    
+                    <div class="bg-white rounded-3xl p-2 md:p-3 shadow-md border border-gray-100 flex items-center justify-center shrink-0">
+                        <img src="${window.currentTheme.imageSrc}" class="w-full aspect-video object-cover rounded-2xl">
                     </div>
+                    
                     <div class="grid grid-cols-2 gap-3 shrink-0">
-                        <div class="bg-white rounded-2xl p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Score</span><span class="text-3xl font-black text-gray-900">${finalScore}</span></div>
-                        <div class="bg-sns-gradient rounded-2xl p-4 flex flex-col items-center shadow-md text-white"><span class="text-white/80 font-extrabold text-xs tracking-widest mb-1 uppercase">Completion</span><span class="text-3xl font-black">${stats.completionRate}<span class="text-xl">%</span></span></div>
-                        <div class="bg-white rounded-2xl p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Words</span><span class="text-3xl font-black text-gray-900">${finalWordCount}</span></div>
-                        <div class="bg-white rounded-2xl p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">WPM</span><span class="text-3xl font-black text-gray-900">${wpm}</span></div>
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Score</span><span class="text-3xl font-black text-gray-900">${finalScore}</span></div>
+                        <div class="bg-sns-gradient rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md text-white"><span class="text-white/80 font-extrabold text-xs tracking-widest mb-1 uppercase">Completion</span><span class="text-3xl font-black">${stats.completionRate}<span class="text-xl">%</span></span></div>
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Words</span><span class="text-3xl font-black text-gray-900">${finalWordCount}</span></div>
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">WPM</span><span class="text-3xl font-black text-gray-900">${wpm}</span></div>
                     </div>
-                    <div class="bg-gray-50 rounded-3xl p-5 border border-gray-200 flex-1 overflow-y-auto shadow-inner min-h-[150px]">
+                    
+                    <div class="bg-gray-50 rounded-3xl p-4 md:p-5 border border-gray-200 flex-1 overflow-y-auto shadow-inner min-h-[150px] lg:min-h-0">
                         <span class="text-gray-400 font-extrabold text-xs tracking-widest mb-2 block uppercase">Your Transcript</span>
                         <div class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
                     </div>
                 </div>
 
-                <div class="xl:w-2/3 flex flex-col md:flex-row gap-4 h-full overflow-hidden">
-                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden h-[50vh] xl:h-full">
+                <div class="lg:w-2/3 flex flex-col md:flex-row gap-4 h-auto lg:h-full overflow-hidden">
+                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
                         <div class="bg-gray-100 px-5 py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-lg md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3><span class="text-xs font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">言えなかった表現</span></div>
-                        <div class="p-5 overflow-y-auto flex-1">
+                        <div class="p-4 md:p-5 overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.missedWords, 'word', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Chunks', stats.missedChunks, 'chunk', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Sentences', stats.missedSentences, 'sentence', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                         </div>
                     </div>
-                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden h-[50vh] xl:h-full">
+                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
                         <div class="bg-blue-50 px-5 py-4 border-b border-blue-100 flex items-center justify-between shrink-0"><h3 class="text-lg md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3><span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">言えた表現</span></div>
-                        <div class="p-5 overflow-y-auto flex-1">
+                        <div class="p-4 md:p-5 overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.clearedWords, 'word', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Chunks', stats.clearedChunks, 'chunk', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Sentences', stats.clearedSentences, 'sentence', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}

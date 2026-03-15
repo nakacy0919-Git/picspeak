@@ -84,29 +84,28 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // リザルトのアコーディオン
+    // ★修正: リザルト画面のアコーディオン開閉処理を確実に動作させる
     document.addEventListener('click', (e) => {
-        if (e.target.classList.contains('toggle-more-btn')) {
-            const parent = e.target.closest('div.mb-10');
+        const btn = e.target.closest('.toggle-more-btn');
+        if (btn) {
+            const parent = btn.closest('.feedback-section');
             if(parent) {
                 const extraItems = parent.querySelectorAll('.extra-item');
                 if(extraItems.length > 0) {
                     const isHidden = extraItems[0].classList.contains('hidden');
                     extraItems.forEach(item => item.classList.toggle('hidden'));
-                    e.target.innerHTML = isHidden ? '<span class="pointer-events-none">閉じる</span> <span class="text-2xl pointer-events-none">▲</span>' : '<span class="pointer-events-none">もっと表現を確認する</span> <span class="text-2xl pointer-events-none">▼</span>';
+                    btn.innerHTML = isHidden ? '<span class="pointer-events-none">閉じる</span> <span class="text-lg md:text-xl pointer-events-none">▲</span>' : '<span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg md:text-xl pointer-events-none">▼</span>';
                 }
             }
         }
     });
 
-    // ==========================================
-    // ★NEW: リサイズ処理（縦・横 両対応）
-    // ==========================================
+    // リサイズ処理（縦・横 両対応）
     const imagePanel = document.getElementById('image-panel');
-    const resizerVertical = document.getElementById('resizer-vertical');     // スマホ用 (上下)
-    const resizerHorizontal = document.getElementById('resizer-horizontal'); // PC/iPad用 (左右)
+    const resizerVertical = document.getElementById('resizer-vertical');
+    const resizerHorizontal = document.getElementById('resizer-horizontal');
     
-    // --- スマホ用（上下スワイプ） ---
+    // スマホ用（上下）
     let startY = 0; let startHeight = 0;
     if (resizerVertical && imagePanel) {
         resizerVertical.addEventListener('touchstart', (e) => { 
@@ -126,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('touchend', () => { startY = 0; });
     }
 
-    // --- PC/iPad用（左右ドラッグ） ---
+    // PC/iPad用（左右）
     let isResizingH = false;
     if (resizerHorizontal && imagePanel) {
         const startResizeH = (e) => {
@@ -136,7 +135,6 @@ document.addEventListener('DOMContentLoaded', () => {
         const doResizeH = (e) => {
             if (!isResizingH) return;
             const clientX = e.type.includes('mouse') ? e.clientX : e.touches[0].clientX;
-            // 画面幅に対するパーセンテージを計算（20%〜80%の範囲に制限）
             let newWidthPercent = (clientX / window.innerWidth) * 100;
             if (newWidthPercent < 20) newWidthPercent = 20;
             if (newWidthPercent > 80) newWidthPercent = 80;
@@ -144,12 +142,10 @@ document.addEventListener('DOMContentLoaded', () => {
         };
         const stopResizeH = () => { isResizingH = false; };
 
-        // マウスイベント
         resizerHorizontal.addEventListener('mousedown', startResizeH);
         document.addEventListener('mousemove', doResizeH);
         document.addEventListener('mouseup', stopResizeH);
         
-        // タッチイベント (iPad対応)
         resizerHorizontal.addEventListener('touchstart', startResizeH, { passive: false });
         document.addEventListener('touchmove', doResizeH, { passive: false });
         document.addEventListener('touchend', stopResizeH);
