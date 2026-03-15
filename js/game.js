@@ -238,7 +238,6 @@ window.showPerfectAnimation = function(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 };
 
-// ★修正: UI.jsと連携するための `feedback-section` クラスを付与
 window.createFeedbackSection = function(title, items, type, isCleared) {
     if(items.length === 0) return '';
     const limit = type === 'sentence' ? 2 : 6;
@@ -247,7 +246,6 @@ window.createFeedbackSection = function(title, items, type, isCleared) {
     let textColor = isCleared ? 'text-blue-800' : 'text-gray-700';
     let subTextColor = isCleared ? 'text-blue-500' : 'text-gray-400';
     
-    // クラス feedback-section を追加！
     let html = `<div class="feedback-section mb-6"><p class="text-sm md:text-base font-black text-gray-400 mb-3 uppercase tracking-widest border-b pb-1 flex items-center justify-between"><span>${title} <span class="text-xs md:text-sm bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span></p><div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
     items.forEach((item, index) => {
         const hiddenClass = index >= limit ? 'hidden extra-item' : '';
@@ -265,7 +263,16 @@ window.createFeedbackSection = function(title, items, type, isCleared) {
     return html;
 };
 
-// ★修正: iPad (lg) 以上の画面では、スクロールバーを内部に持つダッシュボード型レイアウト。画像は16:9 (aspect-video)。
+// ★NEW: トランスクリプト（文字起こし）全文表示関数
+window.openFullTranscript = function() {
+    const modal = document.getElementById('transcript-modal');
+    const content = document.getElementById('full-transcript-content');
+    if(modal && content) {
+        content.innerHTML = window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded.";
+        modal.classList.remove('hidden');
+    }
+};
+
 window.finishGameAndShowResult = function() {
     clearInterval(window.gameTimer);
     if(window.supportInterval) clearInterval(window.supportInterval);
@@ -276,8 +283,31 @@ window.finishGameAndShowResult = function() {
     let wpm = window.timeElapsed > 0 ? Math.round(finalWordCount / (window.timeElapsed / 60)) : 0;
     const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
 
+    // ★NEW: 過去の記録（前回のスコア）を取得する処理
+    let prevScore = "-", prevComp = "-", prevWords = "-", prevWpm = "-";
+    try {
+        const logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
+        // 今回の画像とレベルが同じ過去の記録を探す
+        const pastLogs = logs.filter(l => l.imageId === (window.currentTheme.id || 'unknown') && l.level === window.appState.selectedLevel);
+        if(pastLogs.length > 0) {
+            prevScore = pastLogs[0].score;
+            prevComp = pastLogs[0].completion + "%";
+            prevWords = pastLogs[0].words || pastLogs[0].wordCount || "-"; 
+            prevWpm = pastLogs[0].wpm || "-";
+        }
+    } catch(e) {}
+
+    // ★今回の記録を保存
     if (typeof window.saveLearningLog === 'function') {
-        window.saveLearningLog({ date: new Date().toISOString(), imageId: window.currentTheme.id || 'unknown', level: window.appState.selectedLevel, score: finalScore, completion: stats.completionRate, wpm: wpm });
+        window.saveLearningLog({ 
+            date: new Date().toISOString(), 
+            imageId: window.currentTheme.id || 'unknown', 
+            level: window.appState.selectedLevel, 
+            score: finalScore, 
+            completion: stats.completionRate, 
+            words: finalWordCount, 
+            wpm: wpm 
+        });
     }
 
     const rankingContainer = document.getElementById('ranking-container');
@@ -285,37 +315,53 @@ window.finishGameAndShowResult = function() {
         let html = `
             <div class="flex flex-col lg:flex-row gap-4 md:gap-6 h-full w-full">
                 
-                <div class="lg:w-1/3 flex flex-col gap-4 h-auto lg:h-full shrink-0 lg:overflow-hidden pb-4 lg:pb-0">
-                    
+                <div class="lg:w-1/3 flex flex-col gap-3 md:gap-4 h-auto lg:h-full shrink-0 lg:overflow-hidden pb-4 lg:pb-0">
                     <div class="bg-white rounded-3xl p-2 md:p-3 shadow-md border border-gray-100 flex items-center justify-center shrink-0">
                         <img src="${window.currentTheme.imageSrc}" class="w-full aspect-video object-cover rounded-2xl">
                     </div>
                     
-                    <div class="grid grid-cols-2 gap-3 shrink-0">
-                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Score</span><span class="text-3xl font-black text-gray-900">${finalScore}</span></div>
-                        <div class="bg-sns-gradient rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md text-white"><span class="text-white/80 font-extrabold text-xs tracking-widest mb-1 uppercase">Completion</span><span class="text-3xl font-black">${stats.completionRate}<span class="text-xl">%</span></span></div>
-                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">Words</span><span class="text-3xl font-black text-gray-900">${finalWordCount}</span></div>
-                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100"><span class="text-gray-400 font-extrabold text-xs tracking-widest mb-1 uppercase">WPM</span><span class="text-3xl font-black text-gray-900">${wpm}</span></div>
+                    <div class="grid grid-cols-2 gap-2 md:gap-3 shrink-0">
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100 relative">
+                            <span class="text-gray-400 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">Score</span>
+                            <span class="text-2xl md:text-4xl font-black text-gray-900">${finalScore}</span>
+                            <span class="text-[9px] md:text-[11px] text-gray-400 font-bold mt-1">前回: ${prevScore}</span>
+                        </div>
+                        <div class="bg-sns-gradient rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md text-white relative">
+                            <span class="text-white/80 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">Completion</span>
+                            <span class="text-2xl md:text-4xl font-black">${stats.completionRate}<span class="text-lg md:text-xl">%</span></span>
+                            <span class="text-[9px] md:text-[11px] text-white/80 font-bold mt-1">前回: ${prevComp}</span>
+                        </div>
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100 relative">
+                            <span class="text-gray-400 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">Words</span>
+                            <span class="text-2xl md:text-4xl font-black text-gray-900">${finalWordCount}</span>
+                            <span class="text-[9px] md:text-[11px] text-gray-400 font-bold mt-1">前回: ${prevWords}</span>
+                        </div>
+                        <div class="bg-white rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md border border-gray-100 relative">
+                            <span class="text-gray-400 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">WPM</span>
+                            <span class="text-2xl md:text-4xl font-black text-gray-900">${wpm}</span>
+                            <span class="text-[9px] md:text-[11px] text-gray-400 font-bold mt-1">前回: ${prevWpm}</span>
+                        </div>
                     </div>
                     
-                    <div class="bg-gray-50 rounded-3xl p-4 md:p-5 border border-gray-200 flex-1 overflow-y-auto shadow-inner min-h-[150px] lg:min-h-0">
+                    <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-4 md:p-5 border border-gray-200 flex flex-col shadow-inner min-h-[120px] lg:min-h-0 lg:flex-1 shrink-0 relative">
                         <span class="text-gray-400 font-extrabold text-xs tracking-widest mb-2 block uppercase">Your Transcript</span>
-                        <div class="text-lg md:text-xl font-medium text-gray-700 leading-relaxed">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
+                        <div class="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-4 flex-1">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
+                        <button onclick="window.openFullTranscript()" class="mt-2 text-xs md:text-sm font-black text-blue-500 hover:text-blue-600 transition-colors self-end flex items-center gap-1">全て表示する <span class="text-lg">▶</span></button>
                     </div>
                 </div>
 
                 <div class="lg:w-2/3 flex flex-col md:flex-row gap-4 h-auto lg:h-full overflow-hidden">
                     <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
-                        <div class="bg-gray-100 px-5 py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-lg md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3><span class="text-xs font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">言えなかった表現</span></div>
-                        <div class="p-4 md:p-5 overflow-y-auto flex-1">
+                        <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3><span class="text-[10px] md:text-sm font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">言えなかった表現</span></div>
+                        <div class="p-4 md:p-6 overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.missedWords, 'word', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Chunks', stats.missedChunks, 'chunk', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Sentences', stats.missedSentences, 'sentence', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                         </div>
                     </div>
                     <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
-                        <div class="bg-blue-50 px-5 py-4 border-b border-blue-100 flex items-center justify-between shrink-0"><h3 class="text-lg md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3><span class="text-xs font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">言えた表現</span></div>
-                        <div class="p-4 md:p-5 overflow-y-auto flex-1">
+                        <div class="bg-blue-50 px-4 md:px-6 py-3 md:py-4 border-b border-blue-100 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3><span class="text-[10px] md:text-sm font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">言えた表現</span></div>
+                        <div class="p-4 md:p-6 overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.clearedWords, 'word', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Chunks', stats.clearedChunks, 'chunk', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Sentences', stats.clearedSentences, 'sentence', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}

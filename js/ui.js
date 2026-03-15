@@ -43,6 +43,15 @@ document.addEventListener('DOMContentLoaded', () => {
     if(btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
     if(btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
 
+    // ★NEW: トランスクリプト（全文表示）モーダルの閉じる処理
+    const btnCloseTranscript = document.getElementById('btn-close-transcript');
+    const transcriptModal = document.getElementById('transcript-modal');
+    if(btnCloseTranscript) {
+        btnCloseTranscript.addEventListener('click', () => {
+            if(transcriptModal) transcriptModal.classList.add('hidden');
+        });
+    }
+
     // 設定ボタン
     const timeBtns = document.querySelectorAll('.time-btn');
     timeBtns.forEach(btn => {
@@ -84,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ★修正: リザルト画面のアコーディオン開閉処理を確実に動作させる
+    // リザルトのアコーディオン
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('.toggle-more-btn');
         if (btn) {
