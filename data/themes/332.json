@@ -1,0 +1,128 @@
+{
+  "id": "theme_332",
+  "imageSrc": "assets/images/332.webp",
+  "description": "キッチンで夕食の盛り付けをする男性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人"},
+        {"text": "kitchen", "ja": "キッチン、台所"},
+        {"text": "food", "ja": "食べ物"},
+        {"text": "plate", "ja": "皿"},
+        {"text": "pot", "ja": "鍋"},
+        {"text": "spoon", "ja": "スプーン"},
+        {"text": "dinner", "ja": "夕食"},
+        {"text": "window", "ja": "窓"},
+        {"text": "plant", "ja": "植物"},
+        {"text": "sink", "ja": "シンク、流し"},
+        {"text": "make", "ja": "作る"},
+        {"text": "cook", "ja": "料理する"},
+        {"text": "eat", "ja": "食べる"},
+        {"text": "white", "ja": "白い"},
+        {"text": "green", "ja": "緑の"},
+        {"text": "silver", "ja": "銀色の"},
+        {"text": "night", "ja": "夜"}
+      ],
+      "chunks": [
+        {"text": "in the kitchen", "ja": "キッチンで"},
+        {"text": "make dinner", "ja": "夕食を作る"},
+        {"text": "a big pot", "ja": "大きな鍋"},
+        {"text": "a white plate", "ja": "白い皿"},
+        {"text": "three plates", "ja": "3枚の皿"},
+        {"text": "a green plant", "ja": "緑の植物"},
+        {"text": "look at", "ja": "～を見る"},
+        {"text": "cook food", "ja": "食べ物を料理する"}
+      ],
+      "sentences": [
+        {"text": "I see a man.", "grammar": "I see~", "ja": "男の人が見えます。"},
+        {"text": "He is in the kitchen.", "grammar": "be動詞", "ja": "彼はキッチンにいます。"},
+        {"text": "He makes dinner.", "grammar": "一般動詞", "ja": "彼は夕食を作ります。"},
+        {"text": "He has a white plate.", "grammar": "have", "ja": "彼は白い皿を持っています。"},
+        {"text": "The plant is green.", "grammar": "be動詞", "ja": "植物は緑色です。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "father", "ja": "父親"},
+        {"text": "meal", "ja": "食事"},
+        {"text": "counter", "ja": "カウンター、調理台"},
+        {"text": "stove", "ja": "コンロ"},
+        {"text": "cabinet", "ja": "戸棚"},
+        {"text": "prepare", "ja": "準備する"},
+        {"text": "serve", "ja": "（食事を）出す、盛り付ける"},
+        {"text": "hold", "ja": "持っている"},
+        {"text": "stand", "ja": "立つ"},
+        {"text": "evening", "ja": "夕方、夜"},
+        {"text": "dark", "ja": "暗い"},
+        {"text": "outside", "ja": "外は"},
+        {"text": "warm", "ja": "暖かい"},
+        {"text": "delicious", "ja": "おいしい"},
+        {"text": "bottle", "ja": "瓶"}
+      ],
+      "chunks": [
+        {"text": "preparing dinner", "ja": "夕食を準備している"},
+        {"text": "serving food", "ja": "食べ物を盛り付けている"},
+        {"text": "holding a plate", "ja": "皿を持っている"},
+        {"text": "standing by the stove", "ja": "コンロのそばに立っている"},
+        {"text": "cooking a meal", "ja": "食事を作っている"},
+        {"text": "looking at the pot", "ja": "鍋を見ている"},
+        {"text": "dark outside", "ja": "外は暗い"},
+        {"text": "on the counter", "ja": "カウンターの上に"}
+      ],
+      "sentences": [
+        {"text": "A man is cooking in the kitchen.", "grammar": "現在進行形", "ja": "男の人がキッチンで料理をしています。"},
+        {"text": "He is preparing dinner for his family.", "grammar": "現在進行形 / 前置詞 (for)", "ja": "彼は家族のために夕食を準備しています。"},
+        {"text": "He is holding a plate and a spoon.", "grammar": "現在進行形", "ja": "彼は皿とスプーンを持っています。"},
+        {"text": "There are two plates of food on the counter.", "grammar": "There is/are~", "ja": "カウンターの上に2つの料理の皿があります。"},
+        {"text": "It is evening because it is dark outside.", "grammar": "時間を表すit / 接続詞 (because)", "ja": "外が暗いので、夕方（夜）です。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "portion", "ja": "1人前、分け前"},
+        {"text": "saucepan", "ja": "片手鍋、深鍋"},
+        {"text": "stovetop", "ja": "コンロの表面"},
+        {"text": "countertop", "ja": "調理台"},
+        {"text": "domestic", "ja": "家庭の"},
+        {"text": "chore", "ja": "家事、雑用"},
+        {"text": "focus", "ja": "集中する"},
+        {"text": "concentrate", "ja": "専念する、集中する"},
+        {"text": "culinary", "ja": "料理の"},
+        {"text": "ingredient", "ja": "材料、食材"},
+        {"text": "household", "ja": "家族、世帯"},
+        {"text": "modern", "ja": "現代的な"},
+        {"text": "appliance", "ja": "家電製品"},
+        {"text": "lighting", "ja": "照明"},
+        {"text": "utensil", "ja": "調理器具"}
+      ],
+      "chunks": [
+        {"text": "serving portions of food", "ja": "食べ物を1人前ずつ盛り付けている"},
+        {"text": "standing at the countertop", "ja": "調理台の前に立っている"},
+        {"text": "focusing on cooking", "ja": "料理に集中している"},
+        {"text": "a modern kitchen", "ja": "現代的なキッチン"},
+        {"text": "dishing up dinner", "ja": "夕食を皿に盛っている"},
+        {"text": "warm lighting", "ja": "暖かい照明"},
+        {"text": "kitchen appliances", "ja": "キッチン家電"},
+        {"text": "cooking utensils", "ja": "調理器具"}
+      ],
+      "sentences": [
+        {"text": "It looks like the man is serving portions of a home-cooked meal.", "grammar": "It looks like~", "ja": "男性は家庭料理を1人前ずつ盛り付けているようです。"},
+        {"text": "He is concentrating on dishing up the food from the stainless steel pot.", "grammar": "動名詞 / 前置詞 (from)", "ja": "彼はステンレス製の鍋から食べ物を皿に盛ることに集中しています。"},
+        {"text": "We can see some plates of food already prepared on the countertop.", "grammar": "過去分詞の形容詞的用法", "ja": "調理台の上にすでに準備された料理の皿がいくつか見えます。"},
+        {"text": "The modern kitchen is well-lit with warm light under the cabinets.", "grammar": "受動態", "ja": "現代的なキッチンは、戸棚の下の暖かい光で明るく照らされています。"},
+        {"text": "He seems to be cooking dinner for his family after work.", "grammar": "seem to be ~ing", "ja": "彼は仕事の後に家族のために夕食を作っているようです。"}
+      ]
+    }
+  },
+  "pins": {
+    "man": { "x": 65, "y": 45 },
+    "pot": { "x": 42, "y": 72 },
+    "plate_hand": { "x": 48, "y": 64 },
+    "plates_counter": { "x": 25, "y": 88 },
+    "plant": { "x": 8, "y": 75 },
+    "stove": { "x": 35, "y": 80 },
+    "window": { "x": 85, "y": 25 },
+    "cabinet": { "x": 20, "y": 20 }
+  }
+}

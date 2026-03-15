@@ -1,0 +1,126 @@
+{
+  "id": "theme_320",
+  "imageSrc": "assets/images/320.webp",
+  "description": "美術室で絵を描く生徒たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子"},
+        {"text": "girl", "ja": "女の子"},
+        {"text": "picture", "ja": "絵"},
+        {"text": "apple", "ja": "りんご"},
+        {"text": "mountain", "ja": "山"},
+        {"text": "brush", "ja": "筆"},
+        {"text": "paint", "ja": "絵の具"},
+        {"text": "sun", "ja": "太陽"},
+        {"text": "window", "ja": "窓"},
+        {"text": "chair", "ja": "椅子"},
+        {"text": "desk", "ja": "机"},
+        {"text": "blue", "ja": "青い"},
+        {"text": "green", "ja": "緑の"},
+        {"text": "red", "ja": "赤い"},
+        {"text": "white", "ja": "白い"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子"},
+        {"text": "draw a picture", "ja": "絵を描く"},
+        {"text": "a red apple", "ja": "赤いいんご"},
+        {"text": "a green mountain", "ja": "緑の山"},
+        {"text": "a big sun", "ja": "大きな太陽"},
+        {"text": "a white shirt", "ja": "白いシャツ"},
+        {"text": "stand up", "ja": "立っている"},
+        {"text": "sit down", "ja": "座っている"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。"},
+        {"text": "The girl is happy.", "grammar": "be動詞", "ja": "女の子は幸せそうです。"},
+        {"text": "This is a red apple.", "grammar": "This is~", "ja": "これは赤いりんごです。"},
+        {"text": "The sun is big and yellow.", "grammar": "be動詞", "ja": "太陽は大きくて黄色いです。"},
+        {"text": "He has a brush.", "grammar": "have", "ja": "彼は筆を持っています。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "art room", "ja": "美術室"},
+        {"text": "canvas", "ja": "キャンバス"},
+        {"text": "easel", "ja": "イーゼル"},
+        {"text": "palette", "ja": "パレット"},
+        {"text": "uniform", "ja": "制服"},
+        {"text": "apron", "ja": "エプロン"},
+        {"text": "landscape", "ja": "風景"},
+        {"text": "sit", "ja": "座る"},
+        {"text": "stand", "ja": "立つ"},
+        {"text": "hold", "ja": "持っている"},
+        {"text": "paint", "ja": "絵を描く"},
+        {"text": "use", "ja": "使う"},
+        {"text": "sunny", "ja": "晴れている"},
+        {"text": "outside", "ja": "外は"},
+        {"text": "student", "ja": "生徒"}
+      ],
+      "chunks": [
+        {"text": "in the art room", "ja": "美術室で"},
+        {"text": "painting a picture", "ja": "絵を描いている"},
+        {"text": "holding a brush", "ja": "筆を持っている"},
+        {"text": "wearing an apron", "ja": "エプロンを着ている"},
+        {"text": "on the easel", "ja": "イーゼルに乗った"},
+        {"text": "a picture of an apple", "ja": "りんごの絵"},
+        {"text": "near the window", "ja": "窓の近くで"},
+        {"text": "sitting on a chair", "ja": "椅子に座っている"}
+      ],
+      "sentences": [
+        {"text": "There are two students in the art room.", "grammar": "There is/are~", "ja": "美術室に2人の生徒がいます。"},
+        {"text": "The boy is painting a mountain on the canvas.", "grammar": "現在進行形", "ja": "男の子はキャンバスに山の絵を描いています。"},
+        {"text": "The girl is sitting on a chair.", "grammar": "現在進行形", "ja": "女の子は椅子に座っています。"},
+        {"text": "They are holding palettes in their hands.", "grammar": "現在進行形", "ja": "彼らは手にパレットを持っています。"},
+        {"text": "It is sunny outside the window.", "grammar": "天候を表すit", "ja": "窓の外は晴れています。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "artwork", "ja": "芸術作品"},
+        {"text": "focus", "ja": "集中する"},
+        {"text": "concentrate", "ja": "専念する"},
+        {"text": "create", "ja": "創造する"},
+        {"text": "masterpiece", "ja": "傑作"},
+        {"text": "colorful", "ja": "カラフルな"},
+        {"text": "sunlight", "ja": "日光"},
+        {"text": "wooden", "ja": "木製の"},
+        {"text": "stool", "ja": "背もたれのない椅子"},
+        {"text": "supply", "ja": "用品"},
+        {"text": "studio", "ja": "アトリエ、作業場"},
+        {"text": "artistic", "ja": "芸術的な"},
+        {"text": "express", "ja": "表現する"},
+        {"text": "imagination", "ja": "想像力"},
+        {"text": "hobby", "ja": "趣味"}
+      ],
+      "chunks": [
+        {"text": "focusing on her artwork", "ja": "自分の作品に集中している"},
+        {"text": "creating a landscape painting", "ja": "風景画を制作している"},
+        {"text": "concentrating on his work", "ja": "自分の作業に専念している"},
+        {"text": "painting with colorful paints", "ja": "カラフルな絵の具で描いている"},
+        {"text": "bright sunlight", "ja": "明るい日差し"},
+        {"text": "a wooden stool", "ja": "木製の丸椅子"},
+        {"text": "art supplies", "ja": "画材"},
+        {"text": "expressing their imagination", "ja": "想像力を表現している"}
+      ],
+      "sentences": [
+        {"text": "It looks like they are enjoying their art class on a sunny afternoon.", "grammar": "It looks like~", "ja": "彼らは晴れた日の午後に美術の授業を楽しんでいるようです。"},
+        {"text": "The boy who is wearing a blue apron is painting a landscape.", "grammar": "関係代名詞 (who)", "ja": "青いエプロンを着ている男の子は風景画を描いています。"},
+        {"text": "The girl is concentrating on drawing a big red apple.", "grammar": "動名詞", "ja": "女の子は大きな赤いりんごを描くことに集中しています。"},
+        {"text": "We can see some art supplies on the desks next to them.", "grammar": "助動詞 (can) / 前置詞", "ja": "彼らの隣にある机の上に、いくつかの画材が見えます。"},
+        {"text": "Bright sunlight comes through the window because it is a fine day.", "grammar": "接続詞 (because)", "ja": "良い天気なので、窓から明るい日差しが差し込んでいます。"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 38, "y": 60 },
+    "girl": { "x": 84, "y": 65 },
+    "canvas_left": { "x": 22, "y": 55 },
+    "canvas_right": { "x": 70, "y": 55 },
+    "palette": { "x": 28, "y": 68 },
+    "window": { "x": 78, "y": 25 },
+    "desk": { "x": 14, "y": 90 },
+    "sun": { "x": 95, "y": 18 }
+  }
+}
