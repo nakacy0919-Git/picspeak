@@ -238,32 +238,49 @@ window.showPerfectAnimation = function(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 };
 
+// ★NEW: 洗練されたSVGアイコンとスマホ表示制限(3つ)の実装
 window.createFeedbackSection = function(title, items, type, isCleared) {
     if(items.length === 0) return '';
-    const limit = type === 'sentence' ? 2 : 6;
+    
+    // スマホ(<768px)は3個、タブレット以上は6個まで表示
+    const isMobile = window.innerWidth < 768;
+    const limit = isMobile ? 3 : 6; 
+    
     let bgColor = isCleared ? 'bg-blue-50' : 'bg-gray-50';
     let borderColor = isCleared ? 'border-blue-100' : 'border-gray-200';
     let textColor = isCleared ? 'text-blue-800' : 'text-gray-700';
     let subTextColor = isCleared ? 'text-blue-500' : 'text-gray-400';
     
+    // SVG Icons
+    const svgSpeaker = `<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"></path></svg>`;
+    const svgMic = `<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>`;
+
     let html = `<div class="feedback-section mb-6"><p class="text-sm md:text-base font-black text-gray-400 mb-3 uppercase tracking-widest border-b pb-1 flex items-center justify-between"><span>${title} <span class="text-xs md:text-sm bg-gray-200 text-gray-600 px-2 py-0.5 rounded-full ml-2">${items.length}</span></span></p><div class="${type === 'sentence' ? 'space-y-3' : 'flex flex-wrap gap-2'}">`;
+    
     items.forEach((item, index) => {
         const hiddenClass = index >= limit ? 'hidden extra-item' : '';
         const escapedText = item.text.replace(/'/g, "\\'");
-        const btnHTML = `<div class="flex items-center gap-1 shrink-0 bg-white/60 rounded-full px-1 py-0.5 border border-black/10"><button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors text-lg shadow-sm" onclick="speakText('${escapedText}')" title="Read Aloud">🔊</button><button class="w-8 h-8 flex items-center justify-center rounded-full hover:bg-white transition-colors text-lg shadow-sm" onclick="window.openPractice('${escapedText}', '${item.ja}')" title="Practice Pronunciation">🎤</button></div>`;
+        
+        const btnHTML = `<div class="flex items-center gap-1 shrink-0 bg-white/60 rounded-full px-1 py-0.5 border border-black/10">
+            <button class="flex items-center justify-center rounded-full hover:text-pink-500 text-gray-500 transition-colors shadow-sm bg-white w-8 h-8 md:w-10 md:h-10" onclick="speakText('${escapedText}')" title="Read Aloud">${svgSpeaker}</button>
+            <button class="flex items-center justify-center rounded-full hover:text-pink-500 text-gray-500 transition-colors shadow-sm bg-white w-8 h-8 md:w-10 md:h-10" onclick="window.openPractice('${escapedText}', '${item.ja}')" title="Practice Pronunciation">${svgMic}</button>
+        </div>`;
+
         if (type === 'sentence') {
             html += `<div class="${bgColor} p-4 md:p-5 rounded-xl border ${borderColor} shadow-sm ${hiddenClass} transition-all"><div class="flex justify-between items-start gap-4"><div class="font-bold ${textColor} text-base md:text-lg leading-snug">${item.text}</div>${btnHTML}</div><div class="text-sm md:text-base ${subTextColor} font-medium mt-2">${item.ja}</div></div>`;
         } else {
             html += `<div class="${bgColor} pl-3 pr-1 py-1 rounded-full border ${borderColor} shadow-sm flex items-center justify-between gap-3 ${hiddenClass}"><div><span class="font-bold ${textColor} text-sm md:text-base">${item.text}</span><span class="text-xs md:text-sm font-medium ${subTextColor} ml-2">${item.ja}</span></div>${btnHTML}</div>`;
         }
     });
+    
     html += `</div>`;
-    if(items.length > limit) html += `<button class="mt-3 text-sm md:text-base font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg md:text-xl pointer-events-none">▼</span></button>`;
+    if(items.length > limit) {
+        html += `<button class="mt-3 text-sm md:text-base font-black text-pink-500 hover:text-pink-600 transition-colors toggle-more-btn flex items-center gap-1"><span class="pointer-events-none">もっと表現を確認する</span> <span class="text-lg md:text-xl pointer-events-none">▼</span></button>`;
+    }
     html += `</div>`;
     return html;
 };
 
-// ★NEW: トランスクリプト（文字起こし）全文表示関数
 window.openFullTranscript = function() {
     const modal = document.getElementById('transcript-modal');
     const content = document.getElementById('full-transcript-content');
@@ -283,11 +300,10 @@ window.finishGameAndShowResult = function() {
     let wpm = window.timeElapsed > 0 ? Math.round(finalWordCount / (window.timeElapsed / 60)) : 0;
     const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
 
-    // ★NEW: 過去の記録（前回のスコア）を取得する処理
+    // ★NEW: 過去スコア比較の処理
     let prevScore = "-", prevComp = "-", prevWords = "-", prevWpm = "-";
     try {
         const logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
-        // 今回の画像とレベルが同じ過去の記録を探す
         const pastLogs = logs.filter(l => l.imageId === (window.currentTheme.id || 'unknown') && l.level === window.appState.selectedLevel);
         if(pastLogs.length > 0) {
             prevScore = pastLogs[0].score;
@@ -297,7 +313,6 @@ window.finishGameAndShowResult = function() {
         }
     } catch(e) {}
 
-    // ★今回の記録を保存
     if (typeof window.saveLearningLog === 'function') {
         window.saveLearningLog({ 
             date: new Date().toISOString(), 
@@ -315,7 +330,7 @@ window.finishGameAndShowResult = function() {
         let html = `
             <div class="flex flex-col lg:flex-row gap-4 md:gap-6 h-full w-full">
                 
-                <div class="lg:w-1/3 flex flex-col gap-3 md:gap-4 h-auto lg:h-full shrink-0 lg:overflow-hidden pb-4 lg:pb-0">
+                <div class="w-full lg:w-1/3 flex flex-col gap-3 md:gap-4 shrink-0 lg:h-full lg:overflow-hidden">
                     <div class="bg-white rounded-3xl p-2 md:p-3 shadow-md border border-gray-100 flex items-center justify-center shrink-0">
                         <img src="${window.currentTheme.imageSrc}" class="w-full aspect-video object-cover rounded-2xl">
                     </div>
@@ -343,25 +358,25 @@ window.finishGameAndShowResult = function() {
                         </div>
                     </div>
                     
-                    <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-4 md:p-5 border border-gray-200 flex flex-col shadow-inner min-h-[120px] lg:min-h-0 lg:flex-1 shrink-0 relative">
+                    <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-4 md:p-5 border border-gray-200 flex flex-col shadow-inner min-h-[120px] lg:flex-1 shrink-0 relative">
                         <span class="text-gray-400 font-extrabold text-xs tracking-widest mb-2 block uppercase">Your Transcript</span>
-                        <div class="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-4 flex-1">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
-                        <button onclick="window.openFullTranscript()" class="mt-2 text-xs md:text-sm font-black text-blue-500 hover:text-blue-600 transition-colors self-end flex items-center gap-1">全て表示する <span class="text-lg">▶</span></button>
+                        <div class="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-4 lg:line-clamp-none flex-1 lg:overflow-y-auto">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
+                        <button onclick="window.openFullTranscript()" class="mt-2 text-xs md:text-sm font-black text-blue-500 hover:text-blue-600 transition-colors self-end flex items-center gap-1 lg:hidden">全て表示する <span class="text-lg">▶</span></button>
                     </div>
                 </div>
 
-                <div class="lg:w-2/3 flex flex-col md:flex-row gap-4 h-auto lg:h-full overflow-hidden">
-                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
-                        <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3><span class="text-[10px] md:text-sm font-bold text-gray-500 bg-gray-200 px-2 py-1 rounded">言えなかった表現</span></div>
-                        <div class="p-4 md:p-6 overflow-y-auto flex-1">
+                <div class="w-full lg:w-2/3 flex flex-col md:flex-row gap-4 lg:h-full lg:overflow-hidden">
+                    <div class="flex-1 bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-100 flex flex-col lg:overflow-hidden lg:h-full">
+                        <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3></div>
+                        <div class="p-4 md:p-6 lg:overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.missedWords, 'word', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Chunks', stats.missedChunks, 'chunk', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Sentences', stats.missedSentences, 'sentence', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                         </div>
                     </div>
-                    <div class="flex-1 bg-white rounded-3xl shadow-lg border border-gray-100 flex flex-col overflow-hidden min-h-[400px] lg:min-h-0 lg:h-full">
-                        <div class="bg-blue-50 px-4 md:px-6 py-3 md:py-4 border-b border-blue-100 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3><span class="text-[10px] md:text-sm font-bold text-blue-600 bg-blue-100 px-2 py-1 rounded">言えた表現</span></div>
-                        <div class="p-4 md:p-6 overflow-y-auto flex-1">
+                    <div class="flex-1 bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-100 flex flex-col lg:overflow-hidden lg:h-full">
+                        <div class="bg-blue-50 px-4 md:px-6 py-3 md:py-4 border-b border-blue-100 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-blue-800 tracking-wider">✨ CLEARED</h3></div>
+                        <div class="p-4 md:p-6 lg:overflow-y-auto flex-1">
                             ${window.createFeedbackSection('Words', stats.clearedWords, 'word', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Chunks', stats.clearedChunks, 'chunk', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
                             ${window.createFeedbackSection('Sentences', stats.clearedSentences, 'sentence', true) || '<p class="text-gray-400 font-bold text-center py-4">まだありません</p>'}
