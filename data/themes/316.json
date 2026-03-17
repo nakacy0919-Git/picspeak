@@ -1,127 +1,129 @@
-{
-  "id": "theme_316",
-  "imageSrc": "assets/images/316.webp",
-  "description": "リビングでテレビを見て笑う家族",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "family", "ja": "家族"},
-        {"text": "father", "ja": "お父さん"},
-        {"text": "mother", "ja": "お母さん"},
-        {"text": "boy", "ja": "男の子"},
-        {"text": "TV", "ja": "テレビ"},
-        {"text": "clock", "ja": "時計"},
-        {"text": "sofa", "ja": "ソファ"},
-        {"text": "window", "ja": "窓"},
-        {"text": "shirt", "ja": "シャツ"},
-        {"text": "wall", "ja": "壁"},
-        {"text": "bear", "ja": "クマ"},
-        {"text": "face", "ja": "顔"},
-        {"text": "smile", "ja": "笑顔"},
-        {"text": "happy", "ja": "幸せな"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "red", "ja": "赤い"},
-        {"text": "yellow", "ja": "黄色い"}
-      ],
-      "chunks": [
-        {"text": "watching TV", "ja": "テレビを見ている"},
-        {"text": "a happy family", "ja": "幸せな家族"},
-        {"text": "on the sofa", "ja": "ソファの上に"},
-        {"text": "a big clock", "ja": "大きな時計"},
-        {"text": "yellow shirt", "ja": "黄色いシャツ"},
-        {"text": "red sweater", "ja": "赤いセーター"},
-        {"text": "blue shirt", "ja": "青いシャツ"},
-        {"text": "three people", "ja": "3人の人"}
-      ],
-      "sentences": [
-        {"text": "I see a family.", "grammar": "I see~", "ja": "家族が見えます。"},
-        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは幸せです。"},
-        {"text": "The boy has a yellow shirt.", "grammar": "have", "ja": "男の子は黄色いシャツを着ています。"},
-        {"text": "A clock is on the wall.", "grammar": "be動詞", "ja": "時計が壁にあります。"},
-        {"text": "This is a living room.", "grammar": "This is~", "ja": "ここはリビングルームです。"}
-      ]
+[
+  {
+    "id": "theme_316",
+    "imageSrc": "assets/images/316.webp",
+    "description": "リビングでテレビを見て笑う家族",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "family", "ja": "家族", "type": "inference", "points": 30},
+          {"text": "father", "ja": "お父さん", "type": "inference", "points": 20},
+          {"text": "mother", "ja": "お母さん", "type": "inference", "points": 20},
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "TV", "ja": "テレビ", "type": "object", "points": 20},
+          {"text": "clock", "ja": "時計", "type": "object", "points": 10},
+          {"text": "sofa", "ja": "ソファ", "type": "object", "points": 10},
+          {"text": "window", "ja": "窓", "type": "detail", "points": 10},
+          {"text": "shirt", "ja": "シャツ", "type": "detail", "points": 10},
+          {"text": "wall", "ja": "壁", "type": "detail", "points": 10},
+          {"text": "bear", "ja": "クマ", "type": "detail", "points": 10},
+          {"text": "face", "ja": "顔", "type": "detail", "points": 10},
+          {"text": "smile", "ja": "笑顔", "type": "attribute", "points": 20},
+          {"text": "happy", "ja": "幸せな", "type": "attribute", "points": 20},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+          {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "watching TV", "ja": "テレビを見ている", "type": "gist", "points": 40},
+          {"text": "a happy family", "ja": "幸せな家族", "type": "inference", "points": 30},
+          {"text": "on the sofa", "ja": "ソファの上に", "type": "detail", "points": 10},
+          {"text": "a big clock", "ja": "大きな時計", "type": "attribute", "points": 10},
+          {"text": "yellow shirt", "ja": "黄色いシャツ", "type": "attribute", "points": 10},
+          {"text": "red sweater", "ja": "赤いセーター", "type": "attribute", "points": 10},
+          {"text": "blue shirt", "ja": "青いシャツ", "type": "attribute", "points": 10},
+          {"text": "three people", "ja": "3人の人", "type": "object", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a family.", "grammar": "I see~", "ja": "家族が見えます。", "type": "inference", "points": 30},
+          {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは幸せです。", "type": "attribute", "points": 20},
+          {"text": "The boy has a yellow shirt.", "grammar": "have", "ja": "男の子は黄色いシャツを着ています。", "type": "attribute", "points": 20},
+          {"text": "A clock is on the wall.", "grammar": "be動詞", "ja": "時計が壁にあります。", "type": "detail", "points": 10},
+          {"text": "This is a living room.", "grammar": "This is~", "ja": "ここはリビングルームです。", "type": "inference", "points": 30}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "living room", "ja": "リビングルーム", "type": "inference", "points": 20},
+          {"text": "parents", "ja": "両親", "type": "inference", "points": 30},
+          {"text": "son", "ja": "息子", "type": "inference", "points": 20},
+          {"text": "screen", "ja": "画面", "type": "detail", "points": 10},
+          {"text": "curtain", "ja": "カーテン", "type": "detail", "points": 10},
+          {"text": "floor", "ja": "床", "type": "detail", "points": 10},
+          {"text": "morning", "ja": "朝", "type": "inference", "points": 20},
+          {"text": "cartoon", "ja": "アニメ", "type": "inference", "points": 20},
+          {"text": "laugh", "ja": "笑う", "type": "attribute", "points": 20},
+          {"text": "sit", "ja": "座る", "type": "gist", "points": 20},
+          {"text": "wear", "ja": "着ている", "type": "attribute", "points": 10},
+          {"text": "watch", "ja": "見る", "type": "gist", "points": 30},
+          {"text": "enjoy", "ja": "楽しむ", "type": "inference", "points": 30},
+          {"text": "animal", "ja": "動物", "type": "detail", "points": 10},
+          {"text": "stand", "ja": "台", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "in the living room", "ja": "リビングルームで", "type": "inference", "points": 20},
+          {"text": "sitting on the sofa", "ja": "ソファに座っている", "type": "detail", "points": 20},
+          {"text": "watching a cartoon", "ja": "アニメを見ている", "type": "inference", "points": 30},
+          {"text": "laughing together", "ja": "一緒に笑っている", "type": "inference", "points": 30},
+          {"text": "eight o'clock", "ja": "8時", "type": "detail", "points": 10},
+          {"text": "wearing a blue shirt", "ja": "青いシャツを着ている", "type": "attribute", "points": 10},
+          {"text": "next to the mother", "ja": "母親の隣に", "type": "detail", "points": 20},
+          {"text": "a wooden TV stand", "ja": "木製のテレビ台", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "There are three people in the living room.", "grammar": "There is/are~", "ja": "リビングルームに3人の人がいます。", "type": "inference", "points": 30},
+          {"text": "They are sitting on the sofa.", "grammar": "現在進行形", "ja": "彼らはソファに座っています。", "type": "gist", "points": 30},
+          {"text": "The family is enjoying watching TV.", "grammar": "動名詞", "ja": "家族はテレビを見るのを楽しんでいます。", "type": "inference", "points": 40},
+          {"text": "The boy is sitting between his parents.", "grammar": "前置詞 (between)", "ja": "男の子は両親の間に座っています。", "type": "detail", "points": 20},
+          {"text": "It is eight o'clock in the morning.", "grammar": "時間を表すit", "ja": "朝の8時です。", "type": "inference", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "quality time", "ja": "充実した時間", "type": "inference", "points": 30},
+          {"text": "joyful", "ja": "喜ばしい", "type": "inference", "points": 20},
+          {"text": "delighted", "ja": "楽しそうな", "type": "inference", "points": 20},
+          {"text": "relaxed", "ja": "リラックスした", "type": "inference", "points": 20},
+          {"text": "cozy", "ja": "居心地の良い", "type": "attribute", "points": 20},
+          {"text": "amusement", "ja": "娯楽", "type": "inference", "points": 20},
+          {"text": "casually", "ja": "カジュアルに", "type": "attribute", "points": 10},
+          {"text": "cheerful", "ja": "陽気な", "type": "attribute", "points": 20},
+          {"text": "animation", "ja": "アニメーション", "type": "inference", "points": 20},
+          {"text": "broadcast", "ja": "放送する", "type": "detail", "points": 10},
+          {"text": "furniture", "ja": "家具", "type": "detail", "points": 10},
+          {"text": "observe", "ja": "観察する", "type": "gist", "points": 20},
+          {"text": "relaxing", "ja": "くつろいでいる", "type": "inference", "points": 20},
+          {"text": "comfortable", "ja": "快適な", "type": "attribute", "points": 20},
+          {"text": "entertain", "ja": "楽しませる", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "spending quality time", "ja": "充実した時間を過ごしている", "type": "inference", "points": 40},
+          {"text": "looking amused", "ja": "楽しそうに見える", "type": "inference", "points": 30},
+          {"text": "a cozy living room", "ja": "居心地の良いリビング", "type": "attribute", "points": 20},
+          {"text": "broadcasting an animation", "ja": "アニメを放送している", "type": "inference", "points": 30},
+          {"text": "cheerfully laughing", "ja": "楽しそうに笑っている", "type": "inference", "points": 30},
+          {"text": "casually dressed", "ja": "カジュアルな服装をした", "type": "attribute", "points": 10},
+          {"text": "looking delighted", "ja": "嬉しそうに見える", "type": "inference", "points": 30},
+          {"text": "natural sunlight", "ja": "自然光", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "The family looks delighted because they are watching a funny animation.", "grammar": "接続詞 because / look + 形容詞", "ja": "面白いアニメを見ているので、家族は楽しそうに見えます。", "type": "inference", "points": 40},
+          {"text": "It seems like they are spending quality time together on a weekend morning.", "grammar": "It seems like~", "ja": "週末の朝に家族の充実した時間を過ごしているようです。", "type": "inference", "points": 40},
+          {"text": "The cozy living room is filled with bright sunlight from the window.", "grammar": "受動態 / 前置詞句", "ja": "居心地の良いリビングルームは、窓からの明るい日差しで満たされています。", "type": "inference", "points": 30},
+          {"text": "The boy sitting between his parents is laughing cheerfully.", "grammar": "現在分詞の形容詞的用法", "ja": "両親の間に座っている男の子は楽しそうに笑っています。", "type": "gist", "points": 40},
+          {"text": "We can see a wooden TV stand with some devices under the screen.", "grammar": "前置詞 with / 助動詞 can", "ja": "画面の下にいくつかの機器が置かれた木製のテレビ台が見えます。", "type": "detail", "points": 20}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "living room", "ja": "リビングルーム"},
-        {"text": "parents", "ja": "両親"},
-        {"text": "son", "ja": "息子"},
-        {"text": "screen", "ja": "画面"},
-        {"text": "curtain", "ja": "カーテン"},
-        {"text": "floor", "ja": "床"},
-        {"text": "morning", "ja": "朝"},
-        {"text": "cartoon", "ja": "アニメ"},
-        {"text": "laugh", "ja": "笑う"},
-        {"text": "sit", "ja": "座る"},
-        {"text": "wear", "ja": "着ている"},
-        {"text": "watch", "ja": "見る"},
-        {"text": "enjoy", "ja": "楽しむ"},
-        {"text": "animal", "ja": "動物"},
-        {"text": "stand", "ja": "台"}
-      ],
-      "chunks": [
-        {"text": "in the living room", "ja": "リビングルームで"},
-        {"text": "sitting on the sofa", "ja": "ソファに座っている"},
-        {"text": "watching a cartoon", "ja": "アニメを見ている"},
-        {"text": "laughing together", "ja": "一緒に笑っている"},
-        {"text": "eight o'clock", "ja": "8時"},
-        {"text": "wearing a blue shirt", "ja": "青いシャツを着ている"},
-        {"text": "next to the mother", "ja": "母親の隣に"},
-        {"text": "a wooden TV stand", "ja": "木製のテレビ台"}
-      ],
-      "sentences": [
-        {"text": "There are three people in the living room.", "grammar": "There is/are~", "ja": "リビングルームに3人の人がいます。"},
-        {"text": "They are sitting on the sofa.", "grammar": "現在進行形", "ja": "彼らはソファに座っています。"},
-        {"text": "The family is enjoying watching TV.", "grammar": "動名詞", "ja": "家族はテレビを見るのを楽しんでいます。"},
-        {"text": "The boy is sitting between his parents.", "grammar": "前置詞 (between)", "ja": "男の子は両親の間に座っています。"},
-        {"text": "It is eight o'clock in the morning.", "grammar": "時間を表すit", "ja": "朝の8時です。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "quality time", "ja": "充実した時間"},
-        {"text": "joyful", "ja": "喜ばしい"},
-        {"text": "delighted", "ja": "楽しそうな"},
-        {"text": "relaxed", "ja": "リラックスした"},
-        {"text": "cozy", "ja": "居心地の良い"},
-        {"text": "amusement", "ja": "娯楽"},
-        {"text": "casually", "ja": "カジュアルに"},
-        {"text": "cheerful", "ja": "陽気な"},
-        {"text": "animation", "ja": "アニメーション"},
-        {"text": "broadcast", "ja": "放送する"},
-        {"text": "furniture", "ja": "家具"},
-        {"text": "observe", "ja": "観察する"},
-        {"text": "relaxing", "ja": "くつろいでいる"},
-        {"text": "comfortable", "ja": "快適な"},
-        {"text": "entertain", "ja": "楽しませる"}
-      ],
-      "chunks": [
-        {"text": "spending quality time", "ja": "充実した時間を過ごしている"},
-        {"text": "looking amused", "ja": "楽しそうに見える"},
-        {"text": "a cozy living room", "ja": "居心地の良いリビング"},
-        {"text": "broadcasting an animation", "ja": "アニメを放送している"},
-        {"text": "cheerfully laughing", "ja": "楽しそうに笑っている"},
-        {"text": "casually dressed", "ja": "カジュアルな服装をした"},
-        {"text": "looking delighted", "ja": "嬉しそうに見える"},
-        {"text": "natural sunlight", "ja": "自然光"}
-      ],
-      "sentences": [
-        {"text": "The family looks delighted because they are watching a funny animation.", "grammar": "接続詞 because / look + 形容詞", "ja": "面白いアニメを見ているので、家族は楽しそうに見えます。"},
-        {"text": "It seems like they are spending quality time together on a weekend morning.", "grammar": "It seems like~", "ja": "週末の朝に家族の充実した時間を過ごしているようです。"},
-        {"text": "The cozy living room is filled with bright sunlight from the window.", "grammar": "受動態 / 前置詞句", "ja": "居心地の良いリビングルームは、窓からの明るい日差しで満たされています。"},
-        {"text": "The boy sitting between his parents is laughing cheerfully.", "grammar": "現在分詞の形容詞的用法", "ja": "両親の間に座っている男の子は楽しそうに笑っています。"},
-        {"text": "We can see a wooden TV stand with some devices under the screen.", "grammar": "前置詞 with / 助動詞 can", "ja": "画面の下にいくつかの機器が置かれた木製のテレビ台が見えます。"}
-      ]
+    "pins": {
+      "father": { "x": 60, "y": 50 },
+      "mother": { "x": 84, "y": 55 },
+      "boy": { "x": 72, "y": 65 },
+      "TV": { "x": 12, "y": 50 },
+      "clock": { "x": 33, "y": 19 },
+      "sofa": { "x": 65, "y": 75 },
+      "window": { "x": 80, "y": 25 }
     }
-  },
-  "pins": {
-    "father": { "x": 60, "y": 50 },
-    "mother": { "x": 84, "y": 55 },
-    "boy": { "x": 72, "y": 65 },
-    "TV": { "x": 12, "y": 50 },
-    "clock": { "x": 33, "y": 19 },
-    "sofa": { "x": 65, "y": 75 },
-    "window": { "x": 80, "y": 25 }
   }
-}
+]

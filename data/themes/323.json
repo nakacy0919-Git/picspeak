@@ -1,125 +1,127 @@
-{
-  "id": "theme_323",
-  "imageSrc": "assets/images/323.webp",
-  "description": "男の子をからかって笑う子供たち",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "boy", "ja": "男の子"},
-        {"text": "girl", "ja": "女の子"},
-        {"text": "school", "ja": "学校"},
-        {"text": "paper", "ja": "紙"},
-        {"text": "picture", "ja": "絵"},
-        {"text": "face", "ja": "顔"},
-        {"text": "bag", "ja": "かばん"},
-        {"text": "friend", "ja": "友達"},
-        {"text": "finger", "ja": "指"},
-        {"text": "hand", "ja": "手"},
-        {"text": "happy", "ja": "幸せな、嬉しい"},
-        {"text": "sad", "ja": "悲しい"},
-        {"text": "red", "ja": "赤い"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "green", "ja": "緑の"}
-      ],
-      "chunks": [
-        {"text": "a sad boy", "ja": "悲しい男の子"},
-        {"text": "a happy girl", "ja": "楽しそうな女の子"},
-        {"text": "point at", "ja": "〜を指さす"},
-        {"text": "walk away", "ja": "歩き去る"},
-        {"text": "hold a paper", "ja": "紙を持つ"},
-        {"text": "a funny face", "ja": "面白い顔"},
-        {"text": "red bag", "ja": "赤いかばん"},
-        {"text": "five children", "ja": "5人の子供"}
-      ],
-      "sentences": [
-        {"text": "I see a sad boy.", "grammar": "I see~", "ja": "悲しそうな男の子が見えます。"},
-        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。"},
-        {"text": "The boy has a red bag.", "grammar": "have", "ja": "男の子は赤いかばんを持っています。"},
-        {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。"},
-        {"text": "She points at him.", "grammar": "一般動詞", "ja": "彼女は彼を指さします。"}
-      ]
+[
+  {
+    "id": "theme_323",
+    "imageSrc": "assets/images/323.webp",
+    "description": "男の子をからかって笑う子供たち",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 20},
+          {"text": "school", "ja": "学校", "type": "inference", "points": 20},
+          {"text": "paper", "ja": "紙", "type": "object", "points": 10},
+          {"text": "picture", "ja": "絵", "type": "object", "points": 10},
+          {"text": "face", "ja": "顔", "type": "detail", "points": 10},
+          {"text": "bag", "ja": "かばん", "type": "detail", "points": 10},
+          {"text": "friend", "ja": "友達", "type": "inference", "points": 10},
+          {"text": "finger", "ja": "指", "type": "detail", "points": 10},
+          {"text": "hand", "ja": "手", "type": "detail", "points": 10},
+          {"text": "happy", "ja": "幸せな、嬉しい", "type": "attribute", "points": 20},
+          {"text": "sad", "ja": "悲しい", "type": "attribute", "points": 20},
+          {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "a sad boy", "ja": "悲しい男の子", "type": "attribute", "points": 30},
+          {"text": "a happy girl", "ja": "楽しそうな女の子", "type": "attribute", "points": 20},
+          {"text": "point at", "ja": "〜を指さす", "type": "gist", "points": 40},
+          {"text": "walk away", "ja": "歩き去る", "type": "gist", "points": 40},
+          {"text": "hold a paper", "ja": "紙を持つ", "type": "detail", "points": 10},
+          {"text": "a funny face", "ja": "面白い顔", "type": "inference", "points": 20},
+          {"text": "red bag", "ja": "赤いかばん", "type": "detail", "points": 10},
+          {"text": "five children", "ja": "5人の子供", "type": "object", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a sad boy.", "grammar": "I see~", "ja": "悲しそうな男の子が見えます。", "type": "attribute", "points": 30},
+          {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "type": "attribute", "points": 20},
+          {"text": "The boy has a red bag.", "grammar": "have", "ja": "男の子は赤いかばんを持っています。", "type": "detail", "points": 10},
+          {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。", "type": "inference", "points": 20},
+          {"text": "She points at him.", "grammar": "一般動詞", "ja": "彼女は彼を指さします。", "type": "gist", "points": 40}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "laugh", "ja": "笑う", "type": "attribute", "points": 20},
+          {"text": "point", "ja": "指さす", "type": "gist", "points": 30},
+          {"text": "drawing", "ja": "描いた絵", "type": "object", "points": 20},
+          {"text": "backpack", "ja": "リュックサック", "type": "detail", "points": 10},
+          {"text": "schoolyard", "ja": "校庭", "type": "inference", "points": 20},
+          {"text": "building", "ja": "建物", "type": "detail", "points": 10},
+          {"text": "walk", "ja": "歩く", "type": "gist", "points": 20},
+          {"text": "hold", "ja": "持っている", "type": "detail", "points": 10},
+          {"text": "show", "ja": "見せる", "type": "gist", "points": 20},
+          {"text": "mean", "ja": "意地悪な", "type": "inference", "points": 30},
+          {"text": "fun", "ja": "楽しみ", "type": "inference", "points": 20},
+          {"text": "alone", "ja": "一人で", "type": "inference", "points": 30},
+          {"text": "together", "ja": "一緒に", "type": "detail", "points": 10},
+          {"text": "behind", "ja": "後ろに", "type": "detail", "points": 10},
+          {"text": "poor", "ja": "かわいそうな", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "make fun of", "ja": "〜をからかう", "type": "inference", "points": 40},
+          {"text": "point at him", "ja": "彼を指さす", "type": "gist", "points": 30},
+          {"text": "walk away", "ja": "歩き去る", "type": "gist", "points": 30},
+          {"text": "a funny drawing", "ja": "面白い絵", "type": "attribute", "points": 20},
+          {"text": "in the schoolyard", "ja": "校庭で", "type": "inference", "points": 20},
+          {"text": "laugh at him", "ja": "彼を笑う", "type": "gist", "points": 30},
+          {"text": "feel sad", "ja": "悲しく感じる", "type": "inference", "points": 30},
+          {"text": "look at the picture", "ja": "その絵を見る", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "The children are pointing at the boy.", "grammar": "現在進行形", "ja": "子供たちはその男の子を指さしています。", "type": "gist", "points": 30},
+          {"text": "A boy is holding a drawing of a face.", "grammar": "現在進行形", "ja": "一人の男の子が顔の絵を持っています。", "type": "detail", "points": 20},
+          {"text": "The boy in red is walking away.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "赤い服の男の子が歩き去っています。", "type": "gist", "points": 30},
+          {"text": "There are five children in the schoolyard.", "grammar": "There is/are~", "ja": "校庭に5人の子供たちがいます。", "type": "object", "points": 20},
+          {"text": "They are making fun of him.", "grammar": "現在進行形", "ja": "彼らは彼をからかっています。", "type": "inference", "points": 40}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "bully", "ja": "いじめる", "type": "inference", "points": 30},
+          {"text": "mock", "ja": "あざ笑う", "type": "inference", "points": 30},
+          {"text": "isolate", "ja": "孤立させる", "type": "inference", "points": 30},
+          {"text": "cruel", "ja": "残酷な、ひどい", "type": "inference", "points": 20},
+          {"text": "upset", "ja": "動揺した、悲しんでいる", "type": "inference", "points": 30},
+          {"text": "depressed", "ja": "落ち込んだ", "type": "inference", "points": 20},
+          {"text": "ignore", "ja": "無視する", "type": "inference", "points": 20},
+          {"text": "laughter", "ja": "笑い声", "type": "attribute", "points": 10},
+          {"text": "tease", "ja": "からかう", "type": "inference", "points": 30},
+          {"text": "sketch", "ja": "スケッチ、絵", "type": "object", "points": 10},
+          {"text": "hoodie", "ja": "パーカー", "type": "detail", "points": 10},
+          {"text": "playground", "ja": "遊び場", "type": "inference", "points": 10},
+          {"text": "behavior", "ja": "行動", "type": "inference", "points": 20},
+          {"text": "exclude", "ja": "仲間外れにする", "type": "inference", "points": 30},
+          {"text": "caricature", "ja": "風刺画、似顔絵", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "being bullied", "ja": "いじめられている", "type": "inference", "points": 40},
+          {"text": "feeling left out", "ja": "のけ者にされていると感じる", "type": "inference", "points": 40},
+          {"text": "a cruel joke", "ja": "残酷な冗談", "type": "inference", "points": 30},
+          {"text": "mocking him", "ja": "彼をあざ笑っている", "type": "inference", "points": 40},
+          {"text": "isolating the boy", "ja": "男の子を孤立させている", "type": "inference", "points": 30},
+          {"text": "walking away quietly", "ja": "静かに歩き去る", "type": "gist", "points": 20},
+          {"text": "feeling very upset", "ja": "とても悲しく感じている", "type": "inference", "points": 30},
+          {"text": "unacceptable behavior", "ja": "許されない行動", "type": "inference", "points": 20}
+        ],
+        "sentences": [
+          {"text": "It looks like the boy in the red hoodie is being bullied by his classmates.", "grammar": "It looks like~ / 受動態", "ja": "赤いパーカーを着た男の子が、クラスメイトにいじめられているようです。", "type": "inference", "points": 40},
+          {"text": "The group is laughing because one of them drew a funny picture of him.", "grammar": "接続詞 (because)", "ja": "そのうちの一人が彼の面白い似顔絵を描いたので、グループは笑っています。", "type": "inference", "points": 40},
+          {"text": "The boy who is walking away looks very upset and lonely.", "grammar": "関係代名詞 (who) / look + 形容詞", "ja": "歩き去っている男の子は、とても悲しそうで孤独に見えます。", "type": "inference", "points": 40},
+          {"text": "It is cruel to make fun of someone like this.", "grammar": "It is ~ to ... (不定詞)", "ja": "このように誰かをからかうのはひどいことです。", "type": "inference", "points": 30},
+          {"text": "We should not ignore such bad behavior in the schoolyard.", "grammar": "助動詞 (should)", "ja": "私たちは校庭でのこのような悪い行動を無視するべきではありません。", "type": "inference", "points": 30}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "laugh", "ja": "笑う"},
-        {"text": "point", "ja": "指さす"},
-        {"text": "drawing", "ja": "描いた絵"},
-        {"text": "backpack", "ja": "リュックサック"},
-        {"text": "schoolyard", "ja": "校庭"},
-        {"text": "building", "ja": "建物"},
-        {"text": "walk", "ja": "歩く"},
-        {"text": "hold", "ja": "持っている"},
-        {"text": "show", "ja": "見せる"},
-        {"text": "mean", "ja": "意地悪な"},
-        {"text": "fun", "ja": "楽しみ"},
-        {"text": "alone", "ja": "一人で"},
-        {"text": "together", "ja": "一緒に"},
-        {"text": "behind", "ja": "後ろに"},
-        {"text": "poor", "ja": "かわいそうな"}
-      ],
-      "chunks": [
-        {"text": "make fun of", "ja": "〜をからかう"},
-        {"text": "point at him", "ja": "彼を指さす"},
-        {"text": "walk away", "ja": "歩き去る"},
-        {"text": "a funny drawing", "ja": "面白い絵"},
-        {"text": "in the schoolyard", "ja": "校庭で"},
-        {"text": "laugh at him", "ja": "彼を笑う"},
-        {"text": "feel sad", "ja": "悲しく感じる"},
-        {"text": "look at the picture", "ja": "その絵を見る"}
-      ],
-      "sentences": [
-        {"text": "The children are pointing at the boy.", "grammar": "現在進行形", "ja": "子供たちはその男の子を指さしています。"},
-        {"text": "A boy is holding a drawing of a face.", "grammar": "現在進行形", "ja": "一人の男の子が顔の絵を持っています。"},
-        {"text": "The boy in red is walking away.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "赤い服の男の子が歩き去っています。"},
-        {"text": "There are five children in the schoolyard.", "grammar": "There is/are~", "ja": "校庭に5人の子供たちがいます。"},
-        {"text": "They are making fun of him.", "grammar": "現在進行形", "ja": "彼らは彼をからかっています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "bully", "ja": "いじめる"},
-        {"text": "mock", "ja": "あざ笑う"},
-        {"text": "isolate", "ja": "孤立させる"},
-        {"text": "cruel", "ja": "残酷な、ひどい"},
-        {"text": "upset", "ja": "動揺した、悲しんでいる"},
-        {"text": "depressed", "ja": "落ち込んだ"},
-        {"text": "ignore", "ja": "無視する"},
-        {"text": "laughter", "ja": "笑い声"},
-        {"text": "tease", "ja": "からかう"},
-        {"text": "sketch", "ja": "スケッチ、絵"},
-        {"text": "hoodie", "ja": "パーカー"},
-        {"text": "playground", "ja": "遊び場"},
-        {"text": "behavior", "ja": "行動"},
-        {"text": "exclude", "ja": "仲間外れにする"},
-        {"text": "caricature", "ja": "風刺画、似顔絵"}
-      ],
-      "chunks": [
-        {"text": "being bullied", "ja": "いじめられている"},
-        {"text": "feeling left out", "ja": "のけ者にされていると感じる"},
-        {"text": "a cruel joke", "ja": "残酷な冗談"},
-        {"text": "mocking him", "ja": "彼をあざ笑っている"},
-        {"text": "isolating the boy", "ja": "男の子を孤立させている"},
-        {"text": "walking away quietly", "ja": "静かに歩き去る"},
-        {"text": "feeling very upset", "ja": "とても悲しく感じている"},
-        {"text": "unacceptable behavior", "ja": "許されない行動"}
-      ],
-      "sentences": [
-        {"text": "It looks like the boy in the red hoodie is being bullied by his classmates.", "grammar": "It looks like~ / 受動態", "ja": "赤いパーカーを着た男の子が、クラスメイトにいじめられているようです。"},
-        {"text": "The group is laughing because one of them drew a funny picture of him.", "grammar": "接続詞 (because)", "ja": "そのうちの一人が彼の面白い似顔絵を描いたので、グループは笑っています。"},
-        {"text": "The boy who is walking away looks very upset and lonely.", "grammar": "関係代名詞 (who) / look + 形容詞", "ja": "歩き去っている男の子は、とても悲しそうで孤独に見えます。"},
-        {"text": "It is cruel to make fun of someone like this.", "grammar": "It is ~ to ... (不定詞)", "ja": "このように誰かをからかうのはひどいことです。"},
-        {"text": "We should not ignore such bad behavior in the schoolyard.", "grammar": "助動詞 (should)", "ja": "私たちは校庭でのこのような悪い行動を無視するべきではありません。"}
-      ]
+    "pins": {
+      "girl": { "x": 14, "y": 50 },
+      "boy_green": { "x": 27, "y": 50 },
+      "boy_grey": { "x": 42, "y": 50 },
+      "boy_blue": { "x": 60, "y": 50 },
+      "drawing": { "x": 67, "y": 45 },
+      "boy_red": { "x": 85, "y": 60 },
+      "school": { "x": 15, "y": 25 }
     }
-  },
-  "pins": {
-    "girl": { "x": 14, "y": 50 },
-    "boy_green": { "x": 27, "y": 50 },
-    "boy_grey": { "x": 42, "y": 50 },
-    "boy_blue": { "x": 60, "y": 50 },
-    "drawing": { "x": 67, "y": 45 },
-    "boy_red": { "x": 85, "y": 60 },
-    "school": { "x": 15, "y": 25 }
   }
-}
+]

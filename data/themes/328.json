@@ -1,125 +1,127 @@
-{
-  "id": "theme_328",
-  "imageSrc": "assets/images/328.webp",
-  "description": "教室でタブレットを使って一緒に勉強する子供たち",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "boy", "ja": "男の子"},
-        {"text": "girl", "ja": "女の子"},
-        {"text": "tablet", "ja": "タブレット"},
-        {"text": "pen", "ja": "ペン"},
-        {"text": "desk", "ja": "机"},
-        {"text": "school", "ja": "学校"},
-        {"text": "class", "ja": "クラス、授業"},
-        {"text": "graph", "ja": "グラフ"},
-        {"text": "hand", "ja": "手"},
-        {"text": "finger", "ja": "指"},
-        {"text": "happy", "ja": "幸せな、嬉しい"},
-        {"text": "study", "ja": "勉強する"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "pink", "ja": "ピンクの"},
-        {"text": "colorful", "ja": "カラフルな"}
-      ],
-      "chunks": [
-        {"text": "a boy and a girl", "ja": "男の子と女の子"},
-        {"text": "a big tablet", "ja": "大きなタブレット"},
-        {"text": "on the desk", "ja": "机の上に"},
-        {"text": "study together", "ja": "一緒に勉強する"},
-        {"text": "touch the screen", "ja": "画面に触れる"},
-        {"text": "a pink shirt", "ja": "ピンクのシャツ"},
-        {"text": "a blue shirt", "ja": "青いシャツ"},
-        {"text": "look at", "ja": "〜を見る"}
-      ],
-      "sentences": [
-        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。"},
-        {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。"},
-        {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。"},
-        {"text": "The boy touches the tablet.", "grammar": "一般動詞", "ja": "男の子がタブレットに触れています。"},
-        {"text": "A pen is on the desk.", "grammar": "be動詞", "ja": "机の上にペンがあります。"}
-      ]
+[
+  {
+    "id": "theme_328",
+    "imageSrc": "assets/images/328.webp",
+    "description": "教室でタブレットを使って一緒に勉強する子供たち",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 20},
+          {"text": "tablet", "ja": "タブレット", "type": "object", "points": 20},
+          {"text": "pen", "ja": "ペン", "type": "detail", "points": 10},
+          {"text": "desk", "ja": "机", "type": "object", "points": 10},
+          {"text": "school", "ja": "学校", "type": "inference", "points": 20},
+          {"text": "class", "ja": "クラス、授業", "type": "inference", "points": 20},
+          {"text": "graph", "ja": "グラフ", "type": "object", "points": 10},
+          {"text": "hand", "ja": "手", "type": "detail", "points": 10},
+          {"text": "finger", "ja": "指", "type": "detail", "points": 10},
+          {"text": "happy", "ja": "幸せな、嬉しい", "type": "attribute", "points": 20},
+          {"text": "study", "ja": "勉強する", "type": "gist", "points": 30},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "pink", "ja": "ピンクの", "type": "attribute", "points": 10},
+          {"text": "colorful", "ja": "カラフルな", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "a boy and a girl", "ja": "男の子と女の子", "type": "object", "points": 20},
+          {"text": "a big tablet", "ja": "大きなタブレット", "type": "object", "points": 20},
+          {"text": "on the desk", "ja": "机の上に", "type": "detail", "points": 10},
+          {"text": "study together", "ja": "一緒に勉強する", "type": "gist", "points": 40},
+          {"text": "touch the screen", "ja": "画面に触れる", "type": "gist", "points": 30},
+          {"text": "a pink shirt", "ja": "ピンクのシャツ", "type": "attribute", "points": 10},
+          {"text": "a blue shirt", "ja": "青いシャツ", "type": "attribute", "points": 10},
+          {"text": "look at", "ja": "〜を見る", "type": "gist", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "type": "object", "points": 20},
+          {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。", "type": "inference", "points": 30},
+          {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。", "type": "attribute", "points": 20},
+          {"text": "The boy touches the tablet.", "grammar": "一般動詞", "ja": "男の子がタブレットに触れています。", "type": "gist", "points": 30},
+          {"text": "A pen is on the desk.", "grammar": "be動詞", "ja": "机の上にペンがあります。", "type": "detail", "points": 10}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "classroom", "ja": "教室", "type": "inference", "points": 20},
+          {"text": "screen", "ja": "画面", "type": "detail", "points": 10},
+          {"text": "chart", "ja": "図表、グラフ", "type": "object", "points": 20},
+          {"text": "stylus", "ja": "タッチペン", "type": "detail", "points": 10},
+          {"text": "point", "ja": "指さす", "type": "gist", "points": 30},
+          {"text": "smile", "ja": "微笑む", "type": "attribute", "points": 20},
+          {"text": "discuss", "ja": "話し合う", "type": "gist", "points": 30},
+          {"text": "learn", "ja": "学ぶ", "type": "inference", "points": 30},
+          {"text": "together", "ja": "一緒に", "type": "inference", "points": 20},
+          {"text": "sit", "ja": "座る", "type": "detail", "points": 10},
+          {"text": "behind", "ja": "〜の後ろに", "type": "detail", "points": 10},
+          {"text": "student", "ja": "生徒", "type": "inference", "points": 20},
+          {"text": "use", "ja": "使う", "type": "gist", "points": 20},
+          {"text": "show", "ja": "見せる", "type": "gist", "points": 20},
+          {"text": "enjoy", "ja": "楽しむ", "type": "inference", "points": 30}
+        ],
+        "chunks": [
+          {"text": "in the classroom", "ja": "教室で", "type": "inference", "points": 20},
+          {"text": "looking at the tablet", "ja": "タブレットを見ている", "type": "gist", "points": 40},
+          {"text": "pointing at the graph", "ja": "グラフを指さしている", "type": "gist", "points": 40},
+          {"text": "sitting at the desk", "ja": "机に座っている", "type": "detail", "points": 20},
+          {"text": "learning together", "ja": "一緒に学んでいる", "type": "inference", "points": 40},
+          {"text": "smiling happily", "ja": "楽しそうに微笑んでいる", "type": "attribute", "points": 20},
+          {"text": "a colorful bar chart", "ja": "カラフルな棒グラフ", "type": "attribute", "points": 20},
+          {"text": "other students", "ja": "他の生徒たち", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "A boy and a girl are looking at a tablet.", "grammar": "現在進行形", "ja": "男の子と女の子がタブレットを見ています。", "type": "gist", "points": 40},
+          {"text": "They are pointing at a colorful bar chart.", "grammar": "現在進行形", "ja": "彼らはカラフルな棒グラフを指さしています。", "type": "gist", "points": 40},
+          {"text": "They are sitting at a desk in the classroom.", "grammar": "現在進行形 / 前置詞", "ja": "彼らは教室で机に座っています。", "type": "detail", "points": 20},
+          {"text": "There are some other students behind them.", "grammar": "There is/are~", "ja": "彼らの後ろには他の生徒たちがいます。", "type": "detail", "points": 20},
+          {"text": "They are smiling and learning together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に学んでいます。", "type": "inference", "points": 40}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "collaborate", "ja": "協力する", "type": "inference", "points": 30},
+          {"text": "interactive", "ja": "対話的な、双方向の", "type": "inference", "points": 20},
+          {"text": "assignment", "ja": "課題", "type": "inference", "points": 20},
+          {"text": "data", "ja": "データ", "type": "inference", "points": 20},
+          {"text": "analyze", "ja": "分析する", "type": "inference", "points": 30},
+          {"text": "focus", "ja": "集中する", "type": "inference", "points": 30},
+          {"text": "engage", "ja": "従事する、取り組む", "type": "inference", "points": 20},
+          {"text": "device", "ja": "機器、デバイス", "type": "object", "points": 10},
+          {"text": "digital", "ja": "デジタルの", "type": "attribute", "points": 10},
+          {"text": "participate", "ja": "参加する", "type": "inference", "points": 20},
+          {"text": "educational", "ja": "教育的な", "type": "inference", "points": 20},
+          {"text": "application", "ja": "アプリ", "type": "detail", "points": 10},
+          {"text": "teamwork", "ja": "チームワーク", "type": "inference", "points": 30},
+          {"text": "observe", "ja": "観察する", "type": "gist", "points": 20},
+          {"text": "fascinated", "ja": "夢中になっている", "type": "inference", "points": 30}
+        ],
+        "chunks": [
+          {"text": "collaborating on an assignment", "ja": "課題に協力して取り組んでいる", "type": "inference", "points": 40},
+          {"text": "analyzing data on the screen", "ja": "画面上のデータを分析している", "type": "inference", "points": 40},
+          {"text": "an interactive educational app", "ja": "対話型の教育アプリ", "type": "inference", "points": 30},
+          {"text": "focusing on the chart", "ja": "グラフに集中している", "type": "inference", "points": 30},
+          {"text": "engaging in digital learning", "ja": "デジタル学習に取り組んでいる", "type": "inference", "points": 30},
+          {"text": "working as a team", "ja": "チームとして機能している", "type": "inference", "points": 30},
+          {"text": "using a digital device", "ja": "デジタル機器を使用している", "type": "gist", "points": 20},
+          {"text": "looking fascinated", "ja": "夢中になっているように見える", "type": "inference", "points": 40}
+        ],
+        "sentences": [
+          {"text": "It looks like the students are collaborating on a digital assignment.", "grammar": "It looks like~", "ja": "生徒たちはデジタルの課題に協力して取り組んでいるようです。", "type": "inference", "points": 40},
+          {"text": "They are analyzing data on a colorful bar chart together.", "grammar": "現在進行形", "ja": "彼らは一緒にカラフルな棒グラフのデータを分析しています。", "type": "inference", "points": 40},
+          {"text": "The boy who is wearing a blue shirt is pointing at the screen.", "grammar": "関係代名詞 (who)", "ja": "青いシャツを着ている男の子が画面を指さしています。", "type": "gist", "points": 40},
+          {"text": "We can see a digital pen on the wooden desk.", "grammar": "助動詞 (can)", "ja": "木製の机の上にデジタルペン（タッチペン）が見えます。", "type": "detail", "points": 20},
+          {"text": "They seem to be enjoying their interactive learning in the classroom.", "grammar": "seem to be ~ing", "ja": "彼らは教室で対話的な学習を楽しんでいるように見えます。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "classroom", "ja": "教室"},
-        {"text": "screen", "ja": "画面"},
-        {"text": "chart", "ja": "図表、グラフ"},
-        {"text": "stylus", "ja": "タッチペン"},
-        {"text": "point", "ja": "指さす"},
-        {"text": "smile", "ja": "微笑む"},
-        {"text": "discuss", "ja": "話し合う"},
-        {"text": "learn", "ja": "学ぶ"},
-        {"text": "together", "ja": "一緒に"},
-        {"text": "sit", "ja": "座る"},
-        {"text": "behind", "ja": "〜の後ろに"},
-        {"text": "student", "ja": "生徒"},
-        {"text": "use", "ja": "使う"},
-        {"text": "show", "ja": "見せる"},
-        {"text": "enjoy", "ja": "楽しむ"}
-      ],
-      "chunks": [
-        {"text": "in the classroom", "ja": "教室で"},
-        {"text": "looking at the tablet", "ja": "タブレットを見ている"},
-        {"text": "pointing at the graph", "ja": "グラフを指さしている"},
-        {"text": "sitting at the desk", "ja": "机に座っている"},
-        {"text": "learning together", "ja": "一緒に学んでいる"},
-        {"text": "smiling happily", "ja": "楽しそうに微笑んでいる"},
-        {"text": "a colorful bar chart", "ja": "カラフルな棒グラフ"},
-        {"text": "other students", "ja": "他の生徒たち"}
-      ],
-      "sentences": [
-        {"text": "A boy and a girl are looking at a tablet.", "grammar": "現在進行形", "ja": "男の子と女の子がタブレットを見ています。"},
-        {"text": "They are pointing at a colorful bar chart.", "grammar": "現在進行形", "ja": "彼らはカラフルな棒グラフを指さしています。"},
-        {"text": "They are sitting at a desk in the classroom.", "grammar": "現在進行形 / 前置詞", "ja": "彼らは教室で机に座っています。"},
-        {"text": "There are some other students behind them.", "grammar": "There is/are~", "ja": "彼らの後ろには他の生徒たちがいます。"},
-        {"text": "They are smiling and learning together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に学んでいます。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "collaborate", "ja": "協力する"},
-        {"text": "interactive", "ja": "対話的な、双方向の"},
-        {"text": "assignment", "ja": "課題"},
-        {"text": "data", "ja": "データ"},
-        {"text": "analyze", "ja": "分析する"},
-        {"text": "focus", "ja": "集中する"},
-        {"text": "engage", "ja": "従事する、取り組む"},
-        {"text": "device", "ja": "機器、デバイス"},
-        {"text": "digital", "ja": "デジタルの"},
-        {"text": "participate", "ja": "参加する"},
-        {"text": "educational", "ja": "教育的な"},
-        {"text": "application", "ja": "アプリ"},
-        {"text": "teamwork", "ja": "チームワーク"},
-        {"text": "observe", "ja": "観察する"},
-        {"text": "fascinated", "ja": "夢中になっている"}
-      ],
-      "chunks": [
-        {"text": "collaborating on an assignment", "ja": "課題に協力して取り組んでいる"},
-        {"text": "analyzing data on the screen", "ja": "画面上のデータを分析している"},
-        {"text": "an interactive educational app", "ja": "対話型の教育アプリ"},
-        {"text": "focusing on the chart", "ja": "グラフに集中している"},
-        {"text": "engaging in digital learning", "ja": "デジタル学習に取り組んでいる"},
-        {"text": "working as a team", "ja": "チームとして機能している"},
-        {"text": "using a digital device", "ja": "デジタル機器を使用している"},
-        {"text": "looking fascinated", "ja": "夢中になっているように見える"}
-      ],
-      "sentences": [
-        {"text": "It looks like the students are collaborating on a digital assignment.", "grammar": "It looks like~", "ja": "生徒たちはデジタルの課題に協力して取り組んでいるようです。"},
-        {"text": "They are analyzing data on a colorful bar chart together.", "grammar": "現在進行形", "ja": "彼らは一緒にカラフルな棒グラフのデータを分析しています。"},
-        {"text": "The boy who is wearing a blue shirt is pointing at the screen.", "grammar": "関係代名詞 (who)", "ja": "青いシャツを着ている男の子が画面を指さしています。"},
-        {"text": "We can see a digital pen on the wooden desk.", "grammar": "助動詞 (can)", "ja": "木製の机の上にデジタルペン（タッチペン）が見えます。"},
-        {"text": "They seem to be enjoying their interactive learning in the classroom.", "grammar": "seem to be ~ing", "ja": "彼らは教室で対話的な学習を楽しんでいるように見えます。"}
-      ]
+    "pins": {
+      "boy": { "x": 30, "y": 40 },
+      "girl": { "x": 70, "y": 40 },
+      "tablet": { "x": 52, "y": 85 },
+      "pen": { "x": 18, "y": 92 },
+      "graph": { "x": 52, "y": 80 },
+      "background_students": { "x": 15, "y": 25 },
+      "desk": { "x": 80, "y": 75 }
     }
-  },
-  "pins": {
-    "boy": { "x": 30, "y": 40 },
-    "girl": { "x": 70, "y": 40 },
-    "tablet": { "x": 52, "y": 85 },
-    "pen": { "x": 18, "y": 92 },
-    "graph": { "x": 52, "y": 80 },
-    "background_students": { "x": 15, "y": 25 },
-    "desk": { "x": 80, "y": 75 }
   }
-}
+]

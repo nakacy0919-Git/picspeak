@@ -1,128 +1,130 @@
-{
-  "id": "theme_313",
-  "imageSrc": "assets/images/313.webp",
-  "description": "朝のキッチンで料理をする男性",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "man", "ja": "男の人"},
-        {"text": "kitchen", "ja": "台所"},
-        {"text": "pan", "ja": "フライパン"},
-        {"text": "tomato", "ja": "トマト"},
-        {"text": "cucumber", "ja": "きゅうり"},
-        {"text": "clock", "ja": "時計"},
-        {"text": "sun", "ja": "太陽"},
-        {"text": "window", "ja": "窓"},
-        {"text": "morning", "ja": "朝"},
-        {"text": "apron", "ja": "エプロン"},
-        {"text": "red", "ja": "赤い"},
-        {"text": "make", "ja": "作る"},
-        {"text": "cook", "ja": "料理する"},
-        {"text": "look", "ja": "見る、～に見える"},
-        {"text": "happy", "ja": "幸せな"}
-      ],
-      "chunks": [
-        {"text": "a young man", "ja": "若い男の人"},
-        {"text": "in the kitchen", "ja": "台所で"},
-        {"text": "cook food", "ja": "食べ物を料理する"},
-        {"text": "make breakfast", "ja": "朝食を作る"},
-        {"text": "a red tomato", "ja": "赤いトマト"},
-        {"text": "a big window", "ja": "大きな窓"},
-        {"text": "wear an apron", "ja": "エプロンを着る"},
-        {"text": "look happy", "ja": "幸せそうに見える"}
-      ],
-      "sentences": [
-        {"text": "I see a young man.", "grammar": "I see~", "ja": "若い男の人が見えます。"},
-        {"text": "He is in the kitchen.", "grammar": "be動詞", "ja": "彼は台所にいます。"},
-        {"text": "He is making breakfast.", "grammar": "is ~ing", "ja": "彼は朝食を作っています。"},
-        {"text": "The clock says eight.", "grammar": "三人称単数現在", "ja": "時計は8時を指しています。"},
-        {"text": "He looks happy.", "grammar": "look + 形容詞", "ja": "彼は幸せそうです。"}
-      ]
+[
+  {
+    "id": "theme_313",
+    "imageSrc": "assets/images/313.webp",
+    "description": "朝のキッチンで料理をする男性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "man", "ja": "男の人", "type": "object", "points": 20},
+          {"text": "kitchen", "ja": "台所", "type": "object", "points": 20},
+          {"text": "pan", "ja": "フライパン", "type": "object", "points": 20},
+          {"text": "tomato", "ja": "トマト", "type": "object", "points": 10},
+          {"text": "cucumber", "ja": "きゅうり", "type": "object", "points": 10},
+          {"text": "clock", "ja": "時計", "type": "object", "points": 10},
+          {"text": "sun", "ja": "太陽", "type": "object", "points": 10},
+          {"text": "window", "ja": "窓", "type": "detail", "points": 10},
+          {"text": "morning", "ja": "朝", "type": "gist", "points": 20},
+          {"text": "apron", "ja": "エプロン", "type": "object", "points": 20},
+          {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+          {"text": "make", "ja": "作る", "type": "gist", "points": 20},
+          {"text": "cook", "ja": "料理する", "type": "gist", "points": 30},
+          {"text": "look", "ja": "見る、～に見える", "type": "detail", "points": 10},
+          {"text": "happy", "ja": "幸せな", "type": "attribute", "points": 20}
+        ],
+        "chunks": [
+          {"text": "a young man", "ja": "若い男の人", "type": "object", "points": 20},
+          {"text": "in the kitchen", "ja": "台所で", "type": "detail", "points": 10},
+          {"text": "cook food", "ja": "食べ物を料理する", "type": "gist", "points": 30},
+          {"text": "make breakfast", "ja": "朝食を作る", "type": "gist", "points": 40},
+          {"text": "a red tomato", "ja": "赤いトマト", "type": "attribute", "points": 10},
+          {"text": "a big window", "ja": "大きな窓", "type": "detail", "points": 10},
+          {"text": "wear an apron", "ja": "エプロンを着る", "type": "attribute", "points": 20},
+          {"text": "look happy", "ja": "幸せそうに見える", "type": "inference", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a young man.", "grammar": "I see~", "ja": "若い男の人が見えます。", "type": "object", "points": 20},
+          {"text": "He is in the kitchen.", "grammar": "be動詞", "ja": "彼は台所にいます。", "type": "detail", "points": 20},
+          {"text": "He is making breakfast.", "grammar": "is ~ing", "ja": "彼は朝食を作っています。", "type": "gist", "points": 40},
+          {"text": "The clock says eight.", "grammar": "三人称単数現在", "ja": "時計は8時を指しています。", "type": "detail", "points": 20},
+          {"text": "He looks happy.", "grammar": "look + 形容詞", "ja": "彼は幸せそうです。", "type": "inference", "points": 30}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "breakfast", "ja": "朝食", "type": "gist", "points": 30},
+          {"text": "prepare", "ja": "準備する", "type": "gist", "points": 20},
+          {"text": "frying pan", "ja": "フライパン", "type": "object", "points": 20},
+          {"text": "cutting board", "ja": "まな板", "type": "object", "points": 10},
+          {"text": "vegetable", "ja": "野菜", "type": "object", "points": 10},
+          {"text": "salt", "ja": "塩", "type": "detail", "points": 10},
+          {"text": "sprinkle", "ja": "振りかける", "type": "gist", "points": 20},
+          {"text": "sink", "ja": "シンク、流し", "type": "detail", "points": 10},
+          {"text": "stove", "ja": "コンロ", "type": "detail", "points": 10},
+          {"text": "sunny", "ja": "晴れた", "type": "attribute", "points": 20},
+          {"text": "counter", "ja": "カウンター、調理台", "type": "detail", "points": 10},
+          {"text": "smile", "ja": "微笑む", "type": "attribute", "points": 20},
+          {"text": "wear", "ja": "身につけている", "type": "attribute", "points": 10},
+          {"text": "delicious", "ja": "美味しい", "type": "inference", "points": 20},
+          {"text": "outside", "ja": "外", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "preparing breakfast", "ja": "朝食を準備している", "type": "gist", "points": 40},
+          {"text": "wearing an apron", "ja": "エプロンをつけている", "type": "attribute", "points": 20},
+          {"text": "cooking in a frying pan", "ja": "フライパンで料理している", "type": "gist", "points": 30},
+          {"text": "sprinkling some salt", "ja": "塩を少し振りかけている", "type": "detail", "points": 20},
+          {"text": "cutting vegetables", "ja": "野菜を切っている", "type": "gist", "points": 30},
+          {"text": "on the cutting board", "ja": "まな板の上に", "type": "detail", "points": 10},
+          {"text": "a sunny morning", "ja": "晴れた朝", "type": "attribute", "points": 20},
+          {"text": "smiling happily", "ja": "幸せそうに微笑んでいる", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "There is a man cooking in the kitchen.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "台所で料理をしている男の人がいます。", "type": "gist", "points": 30},
+          {"text": "He is wearing a red apron and making breakfast.", "grammar": "現在進行形", "ja": "彼は赤いエプロンをつけて朝食を作っています。", "type": "gist", "points": 40},
+          {"text": "He is sprinkling some salt into the frying pan.", "grammar": "現在進行形", "ja": "彼はフライパンに塩を少し振りかけています。", "type": "detail", "points": 20},
+          {"text": "There are some vegetables on the cutting board.", "grammar": "There is/are~", "ja": "まな板の上にいくつか野菜があります。", "type": "detail", "points": 20},
+          {"text": "It is a sunny morning because we can see the sun.", "grammar": "接続詞 because", "ja": "太陽が見えるので、晴れた朝です。", "type": "inference", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "meal", "ja": "食事", "type": "gist", "points": 20},
+          {"text": "ingredient", "ja": "材料、食材", "type": "detail", "points": 20},
+          {"text": "spice", "ja": "スパイス、香辛料", "type": "detail", "points": 10},
+          {"text": "slice", "ja": "薄く切る", "type": "gist", "points": 20},
+          {"text": "chop", "ja": "切る、刻む", "type": "gist", "points": 20},
+          {"text": "routine", "ja": "日課", "type": "inference", "points": 30},
+          {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 20},
+          {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20},
+          {"text": "cheerful", "ja": "陽気な、明るい", "type": "attribute", "points": 20},
+          {"text": "domestic", "ja": "家庭の", "type": "inference", "points": 20},
+          {"text": "comfortable", "ja": "快適な", "type": "attribute", "points": 20},
+          {"text": "add", "ja": "加える", "type": "gist", "points": 10},
+          {"text": "indicate", "ja": "示す、指す", "type": "inference", "points": 20},
+          {"text": "enjoy", "ja": "楽しむ", "type": "inference", "points": 30},
+          {"text": "likely", "ja": "おそらく～しそうである", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "preparing a morning meal", "ja": "朝食を準備している", "type": "gist", "points": 40},
+          {"text": "slicing fresh ingredients", "ja": "新鮮な食材を薄く切っている", "type": "gist", "points": 30},
+          {"text": "adding spices to the dish", "ja": "料理にスパイスを加えている", "type": "detail", "points": 20},
+          {"text": "chopped vegetables on the board", "ja": "まな板の上の切られた野菜", "type": "detail", "points": 20},
+          {"text": "a bright morning atmosphere", "ja": "明るい朝の雰囲気", "type": "inference", "points": 30},
+          {"text": "a daily routine", "ja": "日課", "type": "inference", "points": 30},
+          {"text": "looking cheerful", "ja": "陽気に見える", "type": "inference", "points": 30},
+          {"text": "bathed in sunlight", "ja": "日光を浴びて", "type": "attribute", "points": 20}
+        ],
+        "sentences": [
+          {"text": "It looks like a cheerful morning routine where a man is preparing his breakfast.", "grammar": "It looks like~", "ja": "男性が朝食を準備している、明るい朝の日課のようです。", "type": "inference", "points": 40},
+          {"text": "The man who is wearing a checkered apron is adding some spices to his dish.", "grammar": "関係代名詞", "ja": "チェック柄のエプロンをつけている男性は、料理にスパイスを加えています。", "type": "gist", "points": 40},
+          {"text": "We can see chopped tomatoes and cucumbers which are placed on the cutting board.", "grammar": "関係代名詞", "ja": "まな板の上に置かれた、切られたトマトときゅうりが見えます。", "type": "detail", "points": 30},
+          {"text": "Since the clock indicates eight o'clock and the sun is shining, he is likely making his morning meal.", "grammar": "接続詞 since", "ja": "時計が8時を指しており太陽が輝いているので、彼はおそらく朝食を作っているのでしょう。", "type": "inference", "points": 40},
+          {"text": "He seems to be enjoying cooking because he has a gentle smile on his face.", "grammar": "seem to~ / 接続詞 because", "ja": "彼は優しい微笑みを浮かべているので、料理を楽しんでいるようです。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "breakfast", "ja": "朝食"},
-        {"text": "prepare", "ja": "準備する"},
-        {"text": "frying pan", "ja": "フライパン"},
-        {"text": "cutting board", "ja": "まな板"},
-        {"text": "vegetable", "ja": "野菜"},
-        {"text": "salt", "ja": "塩"},
-        {"text": "sprinkle", "ja": "振りかける"},
-        {"text": "sink", "ja": "シンク、流し"},
-        {"text": "stove", "ja": "コンロ"},
-        {"text": "sunny", "ja": "晴れた"},
-        {"text": "counter", "ja": "カウンター、調理台"},
-        {"text": "smile", "ja": "微笑む"},
-        {"text": "wear", "ja": "身につけている"},
-        {"text": "delicious", "ja": "美味しい"},
-        {"text": "outside", "ja": "外"}
-      ],
-      "chunks": [
-        {"text": "preparing breakfast", "ja": "朝食を準備している"},
-        {"text": "wearing an apron", "ja": "エプロンをつけている"},
-        {"text": "cooking in a frying pan", "ja": "フライパンで料理している"},
-        {"text": "sprinkling some salt", "ja": "塩を少し振りかけている"},
-        {"text": "cutting vegetables", "ja": "野菜を切っている"},
-        {"text": "on the cutting board", "ja": "まな板の上に"},
-        {"text": "a sunny morning", "ja": "晴れた朝"},
-        {"text": "smiling happily", "ja": "幸せそうに微笑んでいる"}
-      ],
-      "sentences": [
-        {"text": "There is a man cooking in the kitchen.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "台所で料理をしている男の人がいます。"},
-        {"text": "He is wearing a red apron and making breakfast.", "grammar": "現在進行形", "ja": "彼は赤いエプロンをつけて朝食を作っています。"},
-        {"text": "He is sprinkling some salt into the frying pan.", "grammar": "現在進行形", "ja": "彼はフライパンに塩を少し振りかけています。"},
-        {"text": "There are some vegetables on the cutting board.", "grammar": "There is/are~", "ja": "まな板の上にいくつか野菜があります。"},
-        {"text": "It is a sunny morning because we can see the sun.", "grammar": "接続詞 because", "ja": "太陽が見えるので、晴れた朝です。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "meal", "ja": "食事"},
-        {"text": "ingredient", "ja": "材料、食材"},
-        {"text": "spice", "ja": "スパイス、香辛料"},
-        {"text": "slice", "ja": "薄く切る"},
-        {"text": "chop", "ja": "切る、刻む"},
-        {"text": "routine", "ja": "日課"},
-        {"text": "atmosphere", "ja": "雰囲気"},
-        {"text": "bright", "ja": "明るい"},
-        {"text": "cheerful", "ja": "陽気な、明るい"},
-        {"text": "domestic", "ja": "家庭の"},
-        {"text": "comfortable", "ja": "快適な"},
-        {"text": "add", "ja": "加える"},
-        {"text": "indicate", "ja": "示す、指す"},
-        {"text": "enjoy", "ja": "楽しむ"},
-        {"text": "likely", "ja": "おそらく～しそうである"}
-      ],
-      "chunks": [
-        {"text": "preparing a morning meal", "ja": "朝食を準備している"},
-        {"text": "slicing fresh ingredients", "ja": "新鮮な食材を薄く切っている"},
-        {"text": "adding spices to the dish", "ja": "料理にスパイスを加えている"},
-        {"text": "chopped vegetables on the board", "ja": "まな板の上の切られた野菜"},
-        {"text": "a bright morning atmosphere", "ja": "明るい朝の雰囲気"},
-        {"text": "a daily routine", "ja": "日課"},
-        {"text": "looking cheerful", "ja": "陽気に見える"},
-        {"text": "bathed in sunlight", "ja": "日光を浴びて"}
-      ],
-      "sentences": [
-        {"text": "It looks like a cheerful morning routine where a man is preparing his breakfast.", "grammar": "It looks like~", "ja": "男性が朝食を準備している、明るい朝の日課のようです。"},
-        {"text": "The man who is wearing a checkered apron is adding some spices to his dish.", "grammar": "関係代名詞", "ja": "チェック柄のエプロンをつけている男性は、料理にスパイスを加えています。"},
-        {"text": "We can see chopped tomatoes and cucumbers which are placed on the cutting board.", "grammar": "関係代名詞", "ja": "まな板の上に置かれた、切られたトマトときゅうりが見えます。"},
-        {"text": "Since the clock indicates eight o'clock and the sun is shining, he is likely making his morning meal.", "grammar": "接続詞 since", "ja": "時計が8時を指しており太陽が輝いているので、彼はおそらく朝食を作っているのでしょう。"},
-        {"text": "He seems to be enjoying cooking because he has a gentle smile on his face.", "grammar": "seem to~ / 接続詞 because", "ja": "彼は優しい微笑みを浮かべているので、料理を楽しんでいるようです。"}
-      ]
+    "pins": {
+      "man": {"x": 61, "y": 50},
+      "pan": {"x": 48, "y": 85},
+      "clock": {"x": 32, "y": 18},
+      "sun": {"x": 91, "y": 20},
+      "tomato": {"x": 15, "y": 86},
+      "cucumber": {"x": 19, "y": 84},
+      "window": {"x": 86, "y": 30},
+      "cutting board": {"x": 20, "y": 90},
+      "apron": {"x": 61, "y": 65},
+      "salt": {"x": 45, "y": 68}
     }
-  },
-  "pins": {
-    "man": {"x": 61, "y": 50},
-    "pan": {"x": 48, "y": 85},
-    "clock": {"x": 32, "y": 18},
-    "sun": {"x": 91, "y": 20},
-    "tomato": {"x": 15, "y": 86},
-    "cucumber": {"x": 19, "y": 84},
-    "window": {"x": 86, "y": 30},
-    "cutting board": {"x": 20, "y": 90},
-    "apron": {"x": 61, "y": 65},
-    "salt": {"x": 45, "y": 68}
   }
-}
+]

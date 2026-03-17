@@ -1,127 +1,129 @@
-{
-  "id": "theme_317",
-  "imageSrc": "assets/images/317.webp",
-  "description": "教室の掃除をする生徒たち",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "boy", "ja": "男の子"},
-        {"text": "girl", "ja": "女の子"},
-        {"text": "student", "ja": "生徒"},
-        {"text": "blackboard", "ja": "黒板"},
-        {"text": "desk", "ja": "机"},
-        {"text": "chair", "ja": "椅子"},
-        {"text": "window", "ja": "窓"},
-        {"text": "sun", "ja": "太陽"},
-        {"text": "school", "ja": "学校"},
-        {"text": "class", "ja": "クラス"},
-        {"text": "eraser", "ja": "黒板消し"},
-        {"text": "broom", "ja": "ほうき"},
-        {"text": "test", "ja": "テスト"},
-        {"text": "white", "ja": "白い"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "brown", "ja": "茶色い"},
-        {"text": "happy", "ja": "幸せな"}
-      ],
-      "chunks": [
-        {"text": "a tall boy", "ja": "背の高い男の子"},
-        {"text": "a young girl", "ja": "若い女の子"},
-        {"text": "three students", "ja": "3人の生徒"},
-        {"text": "many desks", "ja": "たくさんの机"},
-        {"text": "white shirt", "ja": "白いシャツ"},
-        {"text": "big window", "ja": "大きな窓"},
-        {"text": "sunny day", "ja": "晴れの日"},
-        {"text": "clean the room", "ja": "部屋を掃除する"}
-      ],
-      "sentences": [
-        {"text": "I see three students.", "grammar": "I see~", "ja": "3人の生徒が見えます。"},
-        {"text": "He has an eraser.", "grammar": "have", "ja": "彼は黒板消しを持っています。"},
-        {"text": "The boy is tall.", "grammar": "be動詞", "ja": "その男の子は背が高いです。"},
-        {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。"},
-        {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。"}
-      ]
+[
+  {
+    "id": "theme_317",
+    "imageSrc": "assets/images/317.webp",
+    "description": "教室の掃除をする生徒たち",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 20},
+          {"text": "student", "ja": "生徒", "type": "object", "points": 20},
+          {"text": "blackboard", "ja": "黒板", "type": "object", "points": 20},
+          {"text": "desk", "ja": "机", "type": "object", "points": 10},
+          {"text": "chair", "ja": "椅子", "type": "detail", "points": 10},
+          {"text": "window", "ja": "窓", "type": "detail", "points": 10},
+          {"text": "sun", "ja": "太陽", "type": "detail", "points": 10},
+          {"text": "school", "ja": "学校", "type": "inference", "points": 20},
+          {"text": "class", "ja": "クラス", "type": "inference", "points": 20},
+          {"text": "eraser", "ja": "黒板消し", "type": "object", "points": 20},
+          {"text": "broom", "ja": "ほうき", "type": "object", "points": 20},
+          {"text": "test", "ja": "テスト", "type": "detail", "points": 10},
+          {"text": "white", "ja": "白い", "type": "attribute", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "brown", "ja": "茶色い", "type": "attribute", "points": 10},
+          {"text": "happy", "ja": "幸せな", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "a tall boy", "ja": "背の高い男の子", "type": "attribute", "points": 10},
+          {"text": "a young girl", "ja": "若い女の子", "type": "attribute", "points": 10},
+          {"text": "three students", "ja": "3人の生徒", "type": "object", "points": 20},
+          {"text": "many desks", "ja": "たくさんの机", "type": "detail", "points": 10},
+          {"text": "white shirt", "ja": "白いシャツ", "type": "attribute", "points": 10},
+          {"text": "big window", "ja": "大きな窓", "type": "attribute", "points": 10},
+          {"text": "sunny day", "ja": "晴れの日", "type": "inference", "points": 20},
+          {"text": "clean the room", "ja": "部屋を掃除する", "type": "gist", "points": 40}
+        ],
+        "sentences": [
+          {"text": "I see three students.", "grammar": "I see~", "ja": "3人の生徒が見えます。", "type": "object", "points": 20},
+          {"text": "He has an eraser.", "grammar": "have", "ja": "彼は黒板消しを持っています。", "type": "gist", "points": 30},
+          {"text": "The boy is tall.", "grammar": "be動詞", "ja": "その男の子は背が高いです。", "type": "attribute", "points": 10},
+          {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。", "type": "inference", "points": 30},
+          {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。", "type": "detail", "points": 10}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "classroom", "ja": "教室", "type": "inference", "points": 20},
+          {"text": "uniform", "ja": "制服", "type": "attribute", "points": 20},
+          {"text": "eraser", "ja": "黒板消し", "type": "object", "points": 20},
+          {"text": "floor", "ja": "床", "type": "detail", "points": 10},
+          {"text": "broom", "ja": "ほうき", "type": "object", "points": 20},
+          {"text": "sweep", "ja": "掃く", "type": "gist", "points": 30},
+          {"text": "clean", "ja": "掃除する", "type": "gist", "points": 30},
+          {"text": "hold", "ja": "持っている", "type": "detail", "points": 10},
+          {"text": "stand", "ja": "立っている", "type": "detail", "points": 10},
+          {"text": "behind", "ja": "後ろに", "type": "detail", "points": 10},
+          {"text": "near", "ja": "近くに", "type": "detail", "points": 10},
+          {"text": "outside", "ja": "外は", "type": "detail", "points": 10},
+          {"text": "sunny", "ja": "晴れている", "type": "attribute", "points": 10},
+          {"text": "tomorrow", "ja": "明日", "type": "detail", "points": 10},
+          {"text": "chalk", "ja": "チョーク", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "in the classroom", "ja": "教室で", "type": "inference", "points": 20},
+          {"text": "erasing the blackboard", "ja": "黒板を消している", "type": "gist", "points": 40},
+          {"text": "sweeping the floor", "ja": "床を掃いている", "type": "gist", "points": 40},
+          {"text": "near the window", "ja": "窓の近くで", "type": "detail", "points": 10},
+          {"text": "behind the boy", "ja": "男の子の後ろに", "type": "detail", "points": 10},
+          {"text": "wearing uniforms", "ja": "制服を着ている", "type": "attribute", "points": 20},
+          {"text": "a sunny day", "ja": "晴れた日", "type": "inference", "points": 20},
+          {"text": "holding a broom", "ja": "ほうきを持っている", "type": "detail", "points": 20}
+        ],
+        "sentences": [
+          {"text": "There are three students in the classroom.", "grammar": "There is/are~", "ja": "教室には3人の生徒がいます。", "type": "inference", "points": 30},
+          {"text": "A boy is erasing the blackboard.", "grammar": "現在進行形", "ja": "男の子が黒板を消しています。", "type": "gist", "points": 40},
+          {"text": "Another boy is sweeping the floor with a broom.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "もう一人の男の子がほうきで床を掃いています。", "type": "gist", "points": 40},
+          {"text": "The girl is standing near the boy.", "grammar": "現在進行形 / 前置詞 (near)", "ja": "女の子は男の子の近くに立っています。", "type": "detail", "points": 20},
+          {"text": "They are wearing school uniforms.", "grammar": "現在進行形", "ja": "彼らは学校の制服を着ています。", "type": "attribute", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "wipe", "ja": "拭く", "type": "gist", "points": 20},
+          {"text": "chore", "ja": "雑用、日課", "type": "inference", "points": 30},
+          {"text": "task", "ja": "課題、仕事", "type": "inference", "points": 20},
+          {"text": "tidy", "ja": "片付ける", "type": "gist", "points": 20},
+          {"text": "dusty", "ja": "ほこりっぽい", "type": "inference", "points": 20},
+          {"text": "bright", "ja": "明るい", "type": "attribute", "points": 10},
+          {"text": "sunlight", "ja": "日光", "type": "detail", "points": 10},
+          {"text": "duty", "ja": "当番、義務", "type": "inference", "points": 30},
+          {"text": "diligent", "ja": "勤勉な", "type": "attribute", "points": 20},
+          {"text": "teamwork", "ja": "チームワーク", "type": "inference", "points": 20},
+          {"text": "observe", "ja": "観察する", "type": "inference", "points": 20},
+          {"text": "prepare", "ja": "準備する", "type": "inference", "points": 20},
+          {"text": "upcoming", "ja": "もうすぐ来る", "type": "inference", "points": 20},
+          {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 10},
+          {"text": "afternoon", "ja": "午後", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "doing their chores", "ja": "日課（掃除）をしている", "type": "inference", "points": 40},
+          {"text": "tidying up the room", "ja": "部屋を片付けている", "type": "gist", "points": 30},
+          {"text": "wiping the board", "ja": "黒板を拭いている", "type": "gist", "points": 30},
+          {"text": "observing her classmate", "ja": "クラスメイトを観察している", "type": "inference", "points": 20},
+          {"text": "preparing for tomorrow", "ja": "明日の準備をしている", "type": "inference", "points": 30},
+          {"text": "bright sunlight", "ja": "明るい日差し", "type": "attribute", "points": 10},
+          {"text": "a wooden desk", "ja": "木製の机", "type": "detail", "points": 10},
+          {"text": "working diligently", "ja": "真面目に働いている", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "It looks like the students are cleaning their classroom after school.", "grammar": "It looks like~", "ja": "放課後、生徒たちは教室の掃除をしているようです。", "type": "inference", "points": 40},
+          {"text": "The boy who is standing near the window is sweeping the floor.", "grammar": "関係代名詞 (who)", "ja": "窓の近くに立っている男の子は床を掃いています。", "type": "gist", "points": 40},
+          {"text": "They are working hard because it is their cleaning duty.", "grammar": "接続詞 (because)", "ja": "掃除当番なので、彼らは一生懸命働いています。", "type": "inference", "points": 40},
+          {"text": "We can see the words \"Test tomorrow\" on the large blackboard.", "grammar": "助動詞 (can)", "ja": "大きな黒板に「明日テスト」という文字が見えます。", "type": "detail", "points": 20},
+          {"text": "Bright sunlight comes through the window, and the classroom looks warm.", "grammar": "接続詞 (and) / look + 形容詞", "ja": "窓から明るい日差しが差し込み、教室は暖かそうです。", "type": "inference", "points": 30}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "classroom", "ja": "教室"},
-        {"text": "uniform", "ja": "制服"},
-        {"text": "eraser", "ja": "黒板消し"},
-        {"text": "floor", "ja": "床"},
-        {"text": "broom", "ja": "ほうき"},
-        {"text": "sweep", "ja": "掃く"},
-        {"text": "clean", "ja": "掃除する"},
-        {"text": "hold", "ja": "持っている"},
-        {"text": "stand", "ja": "立っている"},
-        {"text": "behind", "ja": "後ろに"},
-        {"text": "near", "ja": "近くに"},
-        {"text": "outside", "ja": "外は"},
-        {"text": "sunny", "ja": "晴れている"},
-        {"text": "tomorrow", "ja": "明日"},
-        {"text": "chalk", "ja": "チョーク"}
-      ],
-      "chunks": [
-        {"text": "in the classroom", "ja": "教室で"},
-        {"text": "erasing the blackboard", "ja": "黒板を消している"},
-        {"text": "sweeping the floor", "ja": "床を掃いている"},
-        {"text": "near the window", "ja": "窓の近くで"},
-        {"text": "behind the boy", "ja": "男の子の後ろに"},
-        {"text": "wearing uniforms", "ja": "制服を着ている"},
-        {"text": "a sunny day", "ja": "晴れた日"},
-        {"text": "holding a broom", "ja": "ほうきを持っている"}
-      ],
-      "sentences": [
-        {"text": "There are three students in the classroom.", "grammar": "There is/are~", "ja": "教室には3人の生徒がいます。"},
-        {"text": "A boy is erasing the blackboard.", "grammar": "現在進行形", "ja": "男の子が黒板を消しています。"},
-        {"text": "Another boy is sweeping the floor with a broom.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "もう一人の男の子がほうきで床を掃いています。"},
-        {"text": "The girl is standing near the boy.", "grammar": "現在進行形 / 前置詞 (near)", "ja": "女の子は男の子の近くに立っています。"},
-        {"text": "They are wearing school uniforms.", "grammar": "現在進行形", "ja": "彼らは学校の制服を着ています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "wipe", "ja": "拭く"},
-        {"text": "chore", "ja": "雑用、日課"},
-        {"text": "task", "ja": "課題、仕事"},
-        {"text": "tidy", "ja": "片付ける"},
-        {"text": "dusty", "ja": "ほこりっぽい"},
-        {"text": "bright", "ja": "明るい"},
-        {"text": "sunlight", "ja": "日光"},
-        {"text": "duty", "ja": "当番、義務"},
-        {"text": "diligent", "ja": "勤勉な"},
-        {"text": "teamwork", "ja": "チームワーク"},
-        {"text": "observe", "ja": "観察する"},
-        {"text": "prepare", "ja": "準備する"},
-        {"text": "upcoming", "ja": "もうすぐ来る"},
-        {"text": "wooden", "ja": "木製の"},
-        {"text": "afternoon", "ja": "午後"}
-      ],
-      "chunks": [
-        {"text": "doing their chores", "ja": "日課（掃除）をしている"},
-        {"text": "tidying up the room", "ja": "部屋を片付けている"},
-        {"text": "wiping the board", "ja": "黒板を拭いている"},
-        {"text": "observing her classmate", "ja": "クラスメイトを観察している"},
-        {"text": "preparing for tomorrow", "ja": "明日の準備をしている"},
-        {"text": "bright sunlight", "ja": "明るい日差し"},
-        {"text": "a wooden desk", "ja": "木製の机"},
-        {"text": "working diligently", "ja": "真面目に働いている"}
-      ],
-      "sentences": [
-        {"text": "It looks like the students are cleaning their classroom after school.", "grammar": "It looks like~", "ja": "放課後、生徒たちは教室の掃除をしているようです。"},
-        {"text": "The boy who is standing near the window is sweeping the floor.", "grammar": "関係代名詞 (who)", "ja": "窓の近くに立っている男の子は床を掃いています。"},
-        {"text": "They are working hard because it is their cleaning duty.", "grammar": "接続詞 (because)", "ja": "掃除当番なので、彼らは一生懸命働いています。"},
-        {"text": "We can see the words \"Test tomorrow\" on the large blackboard.", "grammar": "助動詞 (can)", "ja": "大きな黒板に「明日テスト」という文字が見えます。"},
-        {"text": "Bright sunlight comes through the window, and the classroom looks warm.", "grammar": "接続詞 (and) / look + 形容詞", "ja": "窓から明るい日差しが差し込み、教室は暖かそうです。"}
-      ]
+    "pins": {
+      "boy_erasing": { "x": 38, "y": 60 },
+      "girl": { "x": 49, "y": 60 },
+      "boy_sweeping": { "x": 69, "y": 65 },
+      "blackboard": { "x": 18, "y": 42 },
+      "window": { "x": 80, "y": 30 },
+      "desk": { "x": 92, "y": 80 },
+      "broom": { "x": 74, "y": 90 }
     }
-  },
-  "pins": {
-    "boy_erasing": { "x": 38, "y": 60 },
-    "girl": { "x": 49, "y": 60 },
-    "boy_sweeping": { "x": 69, "y": 65 },
-    "blackboard": { "x": 18, "y": 42 },
-    "window": { "x": 80, "y": 30 },
-    "desk": { "x": 92, "y": 80 },
-    "broom": { "x": 74, "y": 90 }
   }
-}
+]

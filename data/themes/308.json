@@ -1,126 +1,128 @@
-{
-  "id": "theme_308",
-  "imageSrc": "assets/images/308.webp",
-  "description": "公園でサッカーをして遊ぶ子供たち",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "boy", "ja": "男の子"},
-        {"text": "girl", "ja": "女の子"},
-        {"text": "children", "ja": "子供たち"},
-        {"text": "park", "ja": "公園"},
-        {"text": "ball", "ja": "ボール"},
-        {"text": "soccer", "ja": "サッカー"},
-        {"text": "tree", "ja": "木"},
-        {"text": "sun", "ja": "太陽"},
-        {"text": "kite", "ja": "凧"},
-        {"text": "dog", "ja": "犬"},
-        {"text": "run", "ja": "走る"},
-        {"text": "play", "ja": "遊ぶ"},
-        {"text": "happy", "ja": "幸せな"},
-        {"text": "big", "ja": "大きい"},
-        {"text": "green", "ja": "緑の"},
-        {"text": "sky", "ja": "空"}
-      ],
-      "chunks": [
-        {"text": "play soccer", "ja": "サッカーをする"},
-        {"text": "in the park", "ja": "公園で"},
-        {"text": "a big tree", "ja": "大きな木"},
-        {"text": "a yellow sun", "ja": "黄色い太陽"},
-        {"text": "run fast", "ja": "速く走る"},
-        {"text": "fly a kite", "ja": "凧を揚げる"},
-        {"text": "many children", "ja": "たくさんの子供たち"},
-        {"text": "a cute dog", "ja": "かわいい犬"}
-      ],
-      "sentences": [
-        {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。"},
-        {"text": "They are playing soccer.", "grammar": "is ~ing", "ja": "彼らはサッカーをしています。"},
-        {"text": "The sun is yellow.", "grammar": "is ~", "ja": "太陽は黄色いです。"},
-        {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。"},
-        {"text": "A boy has a dog.", "grammar": "have/has", "ja": "男の子が犬を連れています。"}
-      ]
+[
+  {
+    "id": "theme_308",
+    "imageSrc": "assets/images/308.webp",
+    "description": "公園でサッカーをして遊ぶ子供たち",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 20},
+          {"text": "children", "ja": "子供たち", "type": "object", "points": 20},
+          {"text": "park", "ja": "公園", "type": "object", "points": 20},
+          {"text": "ball", "ja": "ボール", "type": "object", "points": 10},
+          {"text": "soccer", "ja": "サッカー", "type": "gist", "points": 30},
+          {"text": "tree", "ja": "木", "type": "detail", "points": 10},
+          {"text": "sun", "ja": "太陽", "type": "detail", "points": 10},
+          {"text": "kite", "ja": "凧", "type": "object", "points": 10},
+          {"text": "dog", "ja": "犬", "type": "object", "points": 10},
+          {"text": "run", "ja": "走る", "type": "gist", "points": 20},
+          {"text": "play", "ja": "遊ぶ", "type": "gist", "points": 30},
+          {"text": "happy", "ja": "幸せな", "type": "attribute", "points": 20},
+          {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+          {"text": "sky", "ja": "空", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "play soccer", "ja": "サッカーをする", "type": "gist", "points": 40},
+          {"text": "in the park", "ja": "公園で", "type": "detail", "points": 10},
+          {"text": "a big tree", "ja": "大きな木", "type": "attribute", "points": 10},
+          {"text": "a yellow sun", "ja": "黄色い太陽", "type": "attribute", "points": 10},
+          {"text": "run fast", "ja": "速く走る", "type": "gist", "points": 20},
+          {"text": "fly a kite", "ja": "凧を揚げる", "type": "gist", "points": 20},
+          {"text": "many children", "ja": "たくさんの子供たち", "type": "object", "points": 20},
+          {"text": "a cute dog", "ja": "かわいい犬", "type": "attribute", "points": 10}
+        ],
+        "sentences": [
+          {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。", "type": "object", "points": 20},
+          {"text": "They are playing soccer.", "grammar": "is ~ing", "ja": "彼らはサッカーをしています。", "type": "gist", "points": 40},
+          {"text": "The sun is yellow.", "grammar": "is ~", "ja": "太陽は黄色いです。", "type": "attribute", "points": 10},
+          {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。", "type": "object", "points": 20},
+          {"text": "A boy has a dog.", "grammar": "have/has", "ja": "男の子が犬を連れています。", "type": "detail", "points": 20}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "grass", "ja": "草", "type": "detail", "points": 10},
+          {"text": "field", "ja": "野原", "type": "object", "points": 10},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 10},
+          {"text": "shadow", "ja": "影", "type": "detail", "points": 10},
+          {"text": "leash", "ja": "リード", "type": "detail", "points": 10},
+          {"text": "smile", "ja": "微笑む", "type": "attribute", "points": 20},
+          {"text": "walk", "ja": "歩く", "type": "gist", "points": 20},
+          {"text": "kick", "ja": "蹴る", "type": "gist", "points": 20},
+          {"text": "fly", "ja": "飛ぶ", "type": "gist", "points": 20},
+          {"text": "enjoy", "ja": "楽しむ", "type": "inference", "points": 30},
+          {"text": "together", "ja": "一緒に", "type": "inference", "points": 20},
+          {"text": "outside", "ja": "外で", "type": "detail", "points": 10},
+          {"text": "sunny", "ja": "晴れた", "type": "attribute", "points": 20},
+          {"text": "beautiful", "ja": "美しい", "type": "attribute", "points": 10},
+          {"text": "catch", "ja": "捕まえる", "type": "gist", "points": 20}
+        ],
+        "chunks": [
+          {"text": "playing soccer together", "ja": "一緒にサッカーをしている", "type": "gist", "points": 40},
+          {"text": "running on the grass", "ja": "草の上を走っている", "type": "gist", "points": 30},
+          {"text": "walking a dog", "ja": "犬の散歩をしている", "type": "gist", "points": 20},
+          {"text": "flying in the sky", "ja": "空を飛んでいる", "type": "detail", "points": 10},
+          {"text": "under the tree", "ja": "木の下に", "type": "detail", "points": 10},
+          {"text": "having fun", "ja": "楽しんでいる", "type": "inference", "points": 30},
+          {"text": "a sunny day", "ja": "晴れの日", "type": "attribute", "points": 20},
+          {"text": "smiling happily", "ja": "幸せそうに微笑んでいる", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "There are six children playing soccer in the park.", "grammar": "There is/are~", "ja": "公園にはサッカーをしている6人の子供たちがいます。", "type": "gist", "points": 40},
+          {"text": "The children are enjoying playing soccer together.", "grammar": "動名詞", "ja": "子供たちは一緒にサッカーをするのを楽しんでいます。", "type": "inference", "points": 30},
+          {"text": "A colorful kite is flying high in the sky.", "grammar": "現在進行形", "ja": "カラフルな凧が空高く飛んでいます。", "type": "detail", "points": 20},
+          {"text": "They look very happy to play outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外で遊べてとても幸せそうです。", "type": "inference", "points": 30},
+          {"text": "A boy is walking his dog in the background.", "grammar": "場所を表す前置詞句", "ja": "背景で男の子が犬の散歩をしています。", "type": "detail", "points": 20}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "energetic", "ja": "エネルギッシュな", "type": "inference", "points": 30},
+          {"text": "joyful", "ja": "喜ばしい", "type": "inference", "points": 20},
+          {"text": "delighted", "ja": "大喜びの", "type": "inference", "points": 20},
+          {"text": "leisure", "ja": "余暇", "type": "inference", "points": 20},
+          {"text": "activity", "ja": "活動", "type": "inference", "points": 20},
+          {"text": "recreation", "ja": "レクリエーション", "type": "inference", "points": 20},
+          {"text": "outdoors", "ja": "屋外で", "type": "detail", "points": 10},
+          {"text": "gather", "ja": "集まる", "type": "gist", "points": 20},
+          {"text": "participate", "ja": "参加する", "type": "inference", "points": 20},
+          {"text": "chase", "ja": "追いかける", "type": "gist", "points": 20},
+          {"text": "soar", "ja": "舞い上がる", "type": "gist", "points": 20},
+          {"text": "companion", "ja": "仲間", "type": "inference", "points": 10},
+          {"text": "enormous", "ja": "巨大な", "type": "attribute", "points": 10},
+          {"text": "pleasant", "ja": "心地よい", "type": "attribute", "points": 20},
+          {"text": "lawn", "ja": "芝生", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "full of energy", "ja": "エネルギーに満ちて", "type": "inference", "points": 30},
+          {"text": "a pleasant afternoon", "ja": "心地よい午後", "type": "inference", "points": 20},
+          {"text": "chasing the ball", "ja": "ボールを追いかけている", "type": "gist", "points": 30},
+          {"text": "soaring in the wind", "ja": "風に乗って舞い上がる", "type": "detail", "points": 20},
+          {"text": "an enormous oak tree", "ja": "巨大なオークの木", "type": "attribute", "points": 10},
+          {"text": "gathered on the lawn", "ja": "芝生に集まった", "type": "detail", "points": 20},
+          {"text": "recreational activity", "ja": "レクリエーション活動", "type": "inference", "points": 20},
+          {"text": "enjoying their leisure time", "ja": "余暇を楽しんでいる", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "It looks like a pleasant afternoon for the children to play outdoors.", "grammar": "It looks like~ / 不定詞", "ja": "子供たちが屋外で遊ぶには心地よい午後のようです。", "type": "inference", "points": 40},
+          {"text": "The kids who are gathered on the lawn are full of energy.", "grammar": "関係代名詞", "ja": "芝生に集まっている子供たちはエネルギーに満ち溢れています。", "type": "inference", "points": 40},
+          {"text": "A colorful kite is soaring in the sky because a gentle wind is blowing.", "grammar": "接続詞 because", "ja": "穏やかな風が吹いているので、カラフルな凧が空に舞い上がっています。", "type": "inference", "points": 30},
+          {"text": "The enormous tree provides a nice shade when they want to take a rest.", "grammar": "接続詞 when", "ja": "彼らが休憩したいとき、その巨大な木は良い日陰を提供してくれます。", "type": "inference", "points": 30},
+          {"text": "They seem delighted to participate in this fun activity together.", "grammar": "不定詞の副詞的用法", "ja": "彼らはこの楽しい活動に一緒に参加できて大喜びのようです。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "grass", "ja": "草"},
-        {"text": "field", "ja": "野原"},
-        {"text": "background", "ja": "背景"},
-        {"text": "shadow", "ja": "影"},
-        {"text": "leash", "ja": "リード"},
-        {"text": "smile", "ja": "微笑む"},
-        {"text": "walk", "ja": "歩く"},
-        {"text": "kick", "ja": "蹴る"},
-        {"text": "fly", "ja": "飛ぶ"},
-        {"text": "enjoy", "ja": "楽しむ"},
-        {"text": "together", "ja": "一緒に"},
-        {"text": "outside", "ja": "外で"},
-        {"text": "sunny", "ja": "晴れた"},
-        {"text": "beautiful", "ja": "美しい"},
-        {"text": "catch", "ja": "捕まえる"}
-      ],
-      "chunks": [
-        {"text": "playing soccer together", "ja": "一緒にサッカーをしている"},
-        {"text": "running on the grass", "ja": "草の上を走っている"},
-        {"text": "walking a dog", "ja": "犬の散歩をしている"},
-        {"text": "flying in the sky", "ja": "空を飛んでいる"},
-        {"text": "under the tree", "ja": "木の下に"},
-        {"text": "having fun", "ja": "楽しんでいる"},
-        {"text": "a sunny day", "ja": "晴れの日"},
-        {"text": "smiling happily", "ja": "幸せそうに微笑んでいる"}
-      ],
-      "sentences": [
-        {"text": "There are six children playing soccer in the park.", "grammar": "There is/are~", "ja": "公園にはサッカーをしている6人の子供たちがいます。"},
-        {"text": "The children are enjoying playing soccer together.", "grammar": "動名詞", "ja": "子供たちは一緒にサッカーをするのを楽しんでいます。"},
-        {"text": "A colorful kite is flying high in the sky.", "grammar": "現在進行形", "ja": "カラフルな凧が空高く飛んでいます。"},
-        {"text": "They look very happy to play outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外で遊べてとても幸せそうです。"},
-        {"text": "A boy is walking his dog in the background.", "grammar": "場所を表す前置詞句", "ja": "背景で男の子が犬の散歩をしています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "energetic", "ja": "エネルギッシュな"},
-        {"text": "joyful", "ja": "喜ばしい"},
-        {"text": "delighted", "ja": "大喜びの"},
-        {"text": "leisure", "ja": "余暇"},
-        {"text": "activity", "ja": "活動"},
-        {"text": "recreation", "ja": "レクリエーション"},
-        {"text": "outdoors", "ja": "屋外で"},
-        {"text": "gather", "ja": "集まる"},
-        {"text": "participate", "ja": "参加する"},
-        {"text": "chase", "ja": "追いかける"},
-        {"text": "soar", "ja": "舞い上がる"},
-        {"text": "companion", "ja": "仲間"},
-        {"text": "enormous", "ja": "巨大な"},
-        {"text": "pleasant", "ja": "心地よい"},
-        {"text": "lawn", "ja": "芝生"}
-      ],
-      "chunks": [
-        {"text": "full of energy", "ja": "エネルギーに満ちて"},
-        {"text": "a pleasant afternoon", "ja": "心地よい午後"},
-        {"text": "chasing the ball", "ja": "ボールを追いかけている"},
-        {"text": "soaring in the wind", "ja": "風に乗って舞い上がる"},
-        {"text": "an enormous oak tree", "ja": "巨大なオークの木"},
-        {"text": "gathered on the lawn", "ja": "芝生に集まった"},
-        {"text": "recreational activity", "ja": "レクリエーション活動"},
-        {"text": "enjoying their leisure time", "ja": "余暇を楽しんでいる"}
-      ],
-      "sentences": [
-        {"text": "It looks like a pleasant afternoon for the children to play outdoors.", "grammar": "It looks like~ / 不定詞", "ja": "子供たちが屋外で遊ぶには心地よい午後のようです。"},
-        {"text": "The kids who are gathered on the lawn are full of energy.", "grammar": "関係代名詞", "ja": "芝生に集まっている子供たちはエネルギーに満ち溢れています。"},
-        {"text": "A colorful kite is soaring in the sky because a gentle wind is blowing.", "grammar": "接続詞 because", "ja": "穏やかな風が吹いているので、カラフルな凧が空に舞い上がっています。"},
-        {"text": "The enormous tree provides a nice shade when they want to take a rest.", "grammar": "接続詞 when", "ja": "彼らが休憩したいとき、その巨大な木は良い日陰を提供してくれます。"},
-        {"text": "They seem delighted to participate in this fun activity together.", "grammar": "不定詞の副詞的用法", "ja": "彼らはこの楽しい活動に一緒に参加できて大喜びのようです。"}
-      ]
+    "pins": {
+      "ball": { "x": 47, "y": 85 },
+      "kite": { "x": 33, "y": 12 },
+      "sun": { "x": 16, "y": 15 },
+      "tree": { "x": 84, "y": 45 },
+      "dog": { "x": 14, "y": 60 },
+      "boy": { "x": 38, "y": 65 },
+      "girl": { "x": 52, "y": 60 }
     }
-  },
-  "pins": {
-    "ball": { "x": 47, "y": 85 },
-    "kite": { "x": 33, "y": 12 },
-    "sun": { "x": 16, "y": 15 },
-    "tree": { "x": 84, "y": 45 },
-    "dog": { "x": 14, "y": 60 },
-    "boy": { "x": 38, "y": 65 },
-    "girl": { "x": 52, "y": 60 }
   }
-}
+]

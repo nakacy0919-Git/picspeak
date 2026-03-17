@@ -1,127 +1,129 @@
-{
-  "id": "theme_322",
-  "imageSrc": "assets/images/322.webp",
-  "description": "教室でグループワークをする生徒たち",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "student", "ja": "生徒"},
-        {"text": "boy", "ja": "男の子"},
-        {"text": "girl", "ja": "女の子"},
-        {"text": "paper", "ja": "紙"},
-        {"text": "pencil", "ja": "鉛筆"},
-        {"text": "ruler", "ja": "定規"},
-        {"text": "desk", "ja": "机"},
-        {"text": "chair", "ja": "椅子"},
-        {"text": "class", "ja": "授業、クラス"},
-        {"text": "school", "ja": "学校"},
-        {"text": "big", "ja": "大きい"},
-        {"text": "long", "ja": "長い"},
-        {"text": "draw", "ja": "描く"},
-        {"text": "study", "ja": "勉強する"},
-        {"text": "write", "ja": "書く"},
-        {"text": "four", "ja": "4（人）"}
-      ],
-      "chunks": [
-        {"text": "four students", "ja": "4人の生徒"},
-        {"text": "a big paper", "ja": "大きな紙"},
-        {"text": "a long ruler", "ja": "長い定規"},
-        {"text": "draw a line", "ja": "線を引く"},
-        {"text": "in the classroom", "ja": "教室で"},
-        {"text": "study together", "ja": "一緒に勉強する"},
-        {"text": "hold a pencil", "ja": "鉛筆を持つ"},
-        {"text": "on the desk", "ja": "机の上に"}
-      ],
-      "sentences": [
-        {"text": "I see four students.", "grammar": "I see~", "ja": "4人の生徒が見えます。"},
-        {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。"},
-        {"text": "The students study together.", "grammar": "一般動詞", "ja": "生徒たちは一緒に勉強します。"},
-        {"text": "A boy has a pencil.", "grammar": "have", "ja": "男の子が鉛筆を持っています。"},
-        {"text": "The paper is big.", "grammar": "be動詞", "ja": "その紙は大きいです。"}
-      ]
+[
+  {
+    "id": "theme_322",
+    "imageSrc": "assets/images/322.webp",
+    "description": "教室でグループワークをする生徒たち",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "student", "ja": "生徒", "type": "object", "points": 20},
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 20},
+          {"text": "paper", "ja": "紙", "type": "object", "points": 20},
+          {"text": "pencil", "ja": "鉛筆", "type": "object", "points": 10},
+          {"text": "ruler", "ja": "定規", "type": "object", "points": 10},
+          {"text": "desk", "ja": "机", "type": "object", "points": 10},
+          {"text": "chair", "ja": "椅子", "type": "detail", "points": 10},
+          {"text": "class", "ja": "授業、クラス", "type": "inference", "points": 20},
+          {"text": "school", "ja": "学校", "type": "inference", "points": 20},
+          {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+          {"text": "long", "ja": "長い", "type": "attribute", "points": 10},
+          {"text": "draw", "ja": "描く", "type": "gist", "points": 30},
+          {"text": "study", "ja": "勉強する", "type": "gist", "points": 30},
+          {"text": "write", "ja": "書く", "type": "gist", "points": 20},
+          {"text": "four", "ja": "4（人）", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "four students", "ja": "4人の生徒", "type": "object", "points": 20},
+          {"text": "a big paper", "ja": "大きな紙", "type": "attribute", "points": 20},
+          {"text": "a long ruler", "ja": "長い定規", "type": "attribute", "points": 10},
+          {"text": "draw a line", "ja": "線を引く", "type": "gist", "points": 30},
+          {"text": "in the classroom", "ja": "教室で", "type": "inference", "points": 20},
+          {"text": "study together", "ja": "一緒に勉強する", "type": "gist", "points": 40},
+          {"text": "hold a pencil", "ja": "鉛筆を持つ", "type": "detail", "points": 10},
+          {"text": "on the desk", "ja": "机の上に", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "I see four students.", "grammar": "I see~", "ja": "4人の生徒が見えます。", "type": "object", "points": 20},
+          {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。", "type": "inference", "points": 30},
+          {"text": "The students study together.", "grammar": "一般動詞", "ja": "生徒たちは一緒に勉強します。", "type": "gist", "points": 40},
+          {"text": "A boy has a pencil.", "grammar": "have", "ja": "男の子が鉛筆を持っています。", "type": "detail", "points": 20},
+          {"text": "The paper is big.", "grammar": "be動詞", "ja": "その紙は大きいです。", "type": "attribute", "points": 20}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "group", "ja": "グループ", "type": "inference", "points": 20},
+          {"text": "classroom", "ja": "教室", "type": "inference", "points": 20},
+          {"text": "graph", "ja": "グラフ", "type": "object", "points": 20},
+          {"text": "math", "ja": "数学", "type": "inference", "points": 30},
+          {"text": "science", "ja": "理科", "type": "inference", "points": 30},
+          {"text": "notebook", "ja": "ノート", "type": "detail", "points": 10},
+          {"text": "measure", "ja": "測る", "type": "gist", "points": 30},
+          {"text": "straight", "ja": "まっすぐな", "type": "attribute", "points": 10},
+          {"text": "work", "ja": "作業する、取り組む", "type": "gist", "points": 30},
+          {"text": "discuss", "ja": "話し合う", "type": "gist", "points": 30},
+          {"text": "hold", "ja": "持っている", "type": "detail", "points": 10},
+          {"text": "sit", "ja": "座る", "type": "detail", "points": 10},
+          {"text": "around", "ja": "〜の周りに", "type": "detail", "points": 10},
+          {"text": "together", "ja": "一緒に", "type": "inference", "points": 20},
+          {"text": "listen", "ja": "聞く", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "work in a group", "ja": "グループで作業する", "type": "gist", "points": 40},
+          {"text": "draw a graph", "ja": "グラフを描く", "type": "gist", "points": 40},
+          {"text": "look at the paper", "ja": "紙を見る", "type": "gist", "points": 20},
+          {"text": "hold a long ruler", "ja": "長い定規を持っている", "type": "detail", "points": 20},
+          {"text": "sit around the desk", "ja": "机の周りに座る", "type": "detail", "points": 20},
+          {"text": "a math class", "ja": "数学の授業", "type": "inference", "points": 30},
+          {"text": "write in a notebook", "ja": "ノートに書く", "type": "detail", "points": 10},
+          {"text": "learn together", "ja": "一緒に学ぶ", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "There are four students working in a group.", "grammar": "There is/are~", "ja": "グループで作業している4人の生徒がいます。", "type": "gist", "points": 40},
+          {"text": "They are drawing a big graph on the paper.", "grammar": "現在進行形", "ja": "彼らは紙に大きなグラフを描いています。", "type": "gist", "points": 40},
+          {"text": "A boy is holding a long ruler.", "grammar": "現在進行形", "ja": "男の子が長い定規を持っています。", "type": "detail", "points": 20},
+          {"text": "They are sitting around the desk to study.", "grammar": "不定詞（副詞的用法）", "ja": "彼らは勉強するために机の周りに座っています。", "type": "inference", "points": 30},
+          {"text": "They are discussing a problem together.", "grammar": "現在進行形", "ja": "彼らは一緒に問題について話し合っています。", "type": "inference", "points": 40}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "collaborate", "ja": "協力する", "type": "inference", "points": 30},
+          {"text": "project", "ja": "課題、プロジェクト", "type": "inference", "points": 30},
+          {"text": "assignment", "ja": "宿題、課題", "type": "inference", "points": 30},
+          {"text": "chart", "ja": "図表、チャート", "type": "object", "points": 20},
+          {"text": "data", "ja": "データ", "type": "inference", "points": 20},
+          {"text": "analyze", "ja": "分析する", "type": "inference", "points": 30},
+          {"text": "focus", "ja": "集中する", "type": "inference", "points": 30},
+          {"text": "concentrate", "ja": "専念する", "type": "inference", "points": 30},
+          {"text": "engage", "ja": "従事する、取り組む", "type": "inference", "points": 20},
+          {"text": "diverse", "ja": "多様な", "type": "attribute", "points": 20},
+          {"text": "interactive", "ja": "対話的な、双方向の", "type": "inference", "points": 20},
+          {"text": "teamwork", "ja": "チームワーク", "type": "inference", "points": 30},
+          {"text": "observe", "ja": "観察する", "type": "gist", "points": 20},
+          {"text": "figure", "ja": "図、数字", "type": "detail", "points": 10},
+          {"text": "participate", "ja": "参加する", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "collaborate on a project", "ja": "プロジェクトに協力して取り組む", "type": "inference", "points": 40},
+          {"text": "draw a line graph", "ja": "折れ線グラフを描く", "type": "gist", "points": 40},
+          {"text": "focus on their assignment", "ja": "課題に集中する", "type": "inference", "points": 40},
+          {"text": "analyze the data", "ja": "データを分析する", "type": "inference", "points": 40},
+          {"text": "work as a team", "ja": "チームとして働く", "type": "inference", "points": 30},
+          {"text": "diverse group of students", "ja": "多様な生徒のグループ", "type": "attribute", "points": 20},
+          {"text": "engaging in interactive learning", "ja": "対話的な学習に取り組んでいる", "type": "inference", "points": 40},
+          {"text": "concentrate on the task", "ja": "その作業に専念する", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "It looks like the students are collaborating on a group project.", "grammar": "It looks like~", "ja": "生徒たちはグループの課題に協力して取り組んでいるようです。", "type": "inference", "points": 40},
+          {"text": "They are drawing a line graph to analyze some data.", "grammar": "不定詞（副詞的用法）", "ja": "彼らはデータを分析するために折れ線グラフを描いています。", "type": "inference", "points": 40},
+          {"text": "The students who are sitting around the desk are focusing on their assignment.", "grammar": "関係代名詞 (who)", "ja": "机の周りに座っている生徒たちは、自分たちの課題に集中しています。", "type": "inference", "points": 40},
+          {"text": "We can see a boy holding a long wooden ruler to draw straight lines.", "grammar": "知覚動詞＋O＋現在分詞 / 不定詞", "ja": "直線を引くために長い木製の定規を持っている男の子が見えます。", "type": "detail", "points": 30},
+          {"text": "They are working well as a team because interactive learning is important.", "grammar": "接続詞 (because)", "ja": "対話的な学習は重要なので、彼らはチームとしてうまく機能しています。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "group", "ja": "グループ"},
-        {"text": "classroom", "ja": "教室"},
-        {"text": "graph", "ja": "グラフ"},
-        {"text": "math", "ja": "数学"},
-        {"text": "science", "ja": "理科"},
-        {"text": "notebook", "ja": "ノート"},
-        {"text": "measure", "ja": "測る"},
-        {"text": "straight", "ja": "まっすぐな"},
-        {"text": "work", "ja": "作業する、取り組む"},
-        {"text": "discuss", "ja": "話し合う"},
-        {"text": "hold", "ja": "持っている"},
-        {"text": "sit", "ja": "座る"},
-        {"text": "around", "ja": "〜の周りに"},
-        {"text": "together", "ja": "一緒に"},
-        {"text": "listen", "ja": "聞く"}
-      ],
-      "chunks": [
-        {"text": "work in a group", "ja": "グループで作業する"},
-        {"text": "draw a graph", "ja": "グラフを描く"},
-        {"text": "look at the paper", "ja": "紙を見る"},
-        {"text": "hold a long ruler", "ja": "長い定規を持っている"},
-        {"text": "sit around the desk", "ja": "机の周りに座る"},
-        {"text": "a math class", "ja": "数学の授業"},
-        {"text": "write in a notebook", "ja": "ノートに書く"},
-        {"text": "learn together", "ja": "一緒に学ぶ"}
-      ],
-      "sentences": [
-        {"text": "There are four students working in a group.", "grammar": "There is/are~", "ja": "グループで作業している4人の生徒がいます。"},
-        {"text": "They are drawing a big graph on the paper.", "grammar": "現在進行形", "ja": "彼らは紙に大きなグラフを描いています。"},
-        {"text": "A boy is holding a long ruler.", "grammar": "現在進行形", "ja": "男の子が長い定規を持っています。"},
-        {"text": "They are sitting around the desk to study.", "grammar": "不定詞（副詞的用法）", "ja": "彼らは勉強するために机の周りに座っています。"},
-        {"text": "They are discussing a problem together.", "grammar": "現在進行形", "ja": "彼らは一緒に問題について話し合っています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "collaborate", "ja": "協力する"},
-        {"text": "project", "ja": "課題、プロジェクト"},
-        {"text": "assignment", "ja": "宿題、課題"},
-        {"text": "chart", "ja": "図表、チャート"},
-        {"text": "data", "ja": "データ"},
-        {"text": "analyze", "ja": "分析する"},
-        {"text": "focus", "ja": "集中する"},
-        {"text": "concentrate", "ja": "専念する"},
-        {"text": "engage", "ja": "従事する、取り組む"},
-        {"text": "diverse", "ja": "多様な"},
-        {"text": "interactive", "ja": "対話的な、双方向の"},
-        {"text": "teamwork", "ja": "チームワーク"},
-        {"text": "observe", "ja": "観察する"},
-        {"text": "figure", "ja": "図、数字"},
-        {"text": "participate", "ja": "参加する"}
-      ],
-      "chunks": [
-        {"text": "collaborate on a project", "ja": "プロジェクトに協力して取り組む"},
-        {"text": "draw a line graph", "ja": "折れ線グラフを描く"},
-        {"text": "focus on their assignment", "ja": "課題に集中する"},
-        {"text": "analyze the data", "ja": "データを分析する"},
-        {"text": "work as a team", "ja": "チームとして働く"},
-        {"text": "diverse group of students", "ja": "多様な生徒のグループ"},
-        {"text": "engaging in interactive learning", "ja": "対話的な学習に取り組んでいる"},
-        {"text": "concentrate on the task", "ja": "その作業に専念する"}
-      ],
-      "sentences": [
-        {"text": "It looks like the students are collaborating on a group project.", "grammar": "It looks like~", "ja": "生徒たちはグループの課題に協力して取り組んでいるようです。"},
-        {"text": "They are drawing a line graph to analyze some data.", "grammar": "不定詞（副詞的用法）", "ja": "彼らはデータを分析するために折れ線グラフを描いています。"},
-        {"text": "The students who are sitting around the desk are focusing on their assignment.", "grammar": "関係代名詞 (who)", "ja": "机の周りに座っている生徒たちは、自分たちの課題に集中しています。"},
-        {"text": "We can see a boy holding a long wooden ruler to draw straight lines.", "grammar": "知覚動詞＋O＋現在分詞 / 不定詞", "ja": "直線を引くために長い木製の定規を持っている男の子が見えます。"},
-        {"text": "They are working well as a team because interactive learning is important.", "grammar": "接続詞 (because)", "ja": "対話的な学習は重要なので、彼らはチームとしてうまく機能しています。"}
-      ]
+    "pins": {
+      "girl": { "x": 22, "y": 28 },
+      "boy_middle": { "x": 50, "y": 30 },
+      "boy_right": { "x": 88, "y": 55 },
+      "boy_left": { "x": 12, "y": 68 },
+      "paper": { "x": 52, "y": 70 },
+      "ruler": { "x": 68, "y": 72 },
+      "pencil": { "x": 48, "y": 48 },
+      "window": { "x": 65, "y": 12 }
     }
-  },
-  "pins": {
-    "girl": { "x": 22, "y": 28 },
-    "boy_middle": { "x": 50, "y": 30 },
-    "boy_right": { "x": 88, "y": 55 },
-    "boy_left": { "x": 12, "y": 68 },
-    "paper": { "x": 52, "y": 70 },
-    "ruler": { "x": 68, "y": 72 },
-    "pencil": { "x": 48, "y": 48 },
-    "window": { "x": 65, "y": 12 }
   }
-}
+]

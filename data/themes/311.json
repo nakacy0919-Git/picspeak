@@ -1,126 +1,128 @@
-{
-  "id": "theme_311",
-  "imageSrc": "assets/images/311.webp",
-  "description": "ソファで咳をして体調が悪そうな女性",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "woman", "ja": "女の人"},
-        {"text": "sofa", "ja": "ソファ"},
-        {"text": "tissue", "ja": "ティッシュ"},
-        {"text": "box", "ja": "箱"},
-        {"text": "hand", "ja": "手"},
-        {"text": "mouth", "ja": "口"},
-        {"text": "window", "ja": "窓"},
-        {"text": "green", "ja": "緑の"},
-        {"text": "brown", "ja": "茶色い"},
-        {"text": "sick", "ja": "病気の、具合が悪い"},
-        {"text": "cold", "ja": "風邪"},
-        {"text": "bad", "ja": "悪い"},
-        {"text": "sit", "ja": "座る"},
-        {"text": "cough", "ja": "咳をする"},
-        {"text": "look", "ja": "見る、〜に見える"}
-      ],
-      "chunks": [
-        {"text": "a young woman", "ja": "若い女の人"},
-        {"text": "on the sofa", "ja": "ソファの上で"},
-        {"text": "a green sweater", "ja": "緑のセーター"},
-        {"text": "a box of tissues", "ja": "ティッシュの箱"},
-        {"text": "have a cold", "ja": "風邪をひいている"},
-        {"text": "sit on the sofa", "ja": "ソファに座る"},
-        {"text": "cover her mouth", "ja": "口を覆う"},
-        {"text": "feel bad", "ja": "気分が悪い"}
-      ],
-      "sentences": [
-        {"text": "I see a young woman.", "grammar": "I see~", "ja": "若い女の人が見えます。"},
-        {"text": "She is sitting on the sofa.", "grammar": "is ~ing", "ja": "彼女はソファに座っています。"},
-        {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。"},
-        {"text": "This is a box of tissues.", "grammar": "This is~", "ja": "これはティッシュの箱です。"},
-        {"text": "The woman looks sick.", "grammar": "look + 形容詞", "ja": "女の人は具合が悪そうです。"}
-      ]
+[
+  {
+    "id": "theme_311",
+    "imageSrc": "assets/images/311.webp",
+    "description": "ソファで咳をして体調が悪そうな女性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "woman", "ja": "女の人", "type": "object", "points": 20},
+          {"text": "sofa", "ja": "ソファ", "type": "object", "points": 20},
+          {"text": "tissue", "ja": "ティッシュ", "type": "object", "points": 20},
+          {"text": "box", "ja": "箱", "type": "object", "points": 10},
+          {"text": "hand", "ja": "手", "type": "detail", "points": 10},
+          {"text": "mouth", "ja": "口", "type": "detail", "points": 10},
+          {"text": "window", "ja": "窓", "type": "detail", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+          {"text": "brown", "ja": "茶色い", "type": "attribute", "points": 10},
+          {"text": "sick", "ja": "病気の、具合が悪い", "type": "attribute", "points": 20},
+          {"text": "cold", "ja": "風邪", "type": "gist", "points": 30},
+          {"text": "bad", "ja": "悪い", "type": "attribute", "points": 10},
+          {"text": "sit", "ja": "座る", "type": "gist", "points": 20},
+          {"text": "cough", "ja": "咳をする", "type": "gist", "points": 30},
+          {"text": "look", "ja": "見る、〜に見える", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "a young woman", "ja": "若い女の人", "type": "object", "points": 20},
+          {"text": "on the sofa", "ja": "ソファの上で", "type": "detail", "points": 10},
+          {"text": "a green sweater", "ja": "緑のセーター", "type": "attribute", "points": 10},
+          {"text": "a box of tissues", "ja": "ティッシュの箱", "type": "object", "points": 20},
+          {"text": "have a cold", "ja": "風邪をひいている", "type": "gist", "points": 40},
+          {"text": "sit on the sofa", "ja": "ソファに座る", "type": "gist", "points": 20},
+          {"text": "cover her mouth", "ja": "口を覆う", "type": "gist", "points": 20},
+          {"text": "feel bad", "ja": "気分が悪い", "type": "attribute", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a young woman.", "grammar": "I see~", "ja": "若い女の人が見えます。", "type": "object", "points": 20},
+          {"text": "She is sitting on the sofa.", "grammar": "is ~ing", "ja": "彼女はソファに座っています。", "type": "gist", "points": 20},
+          {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。", "type": "gist", "points": 40},
+          {"text": "This is a box of tissues.", "grammar": "This is~", "ja": "これはティッシュの箱です。", "type": "object", "points": 20},
+          {"text": "The woman looks sick.", "grammar": "look + 形容詞", "ja": "女の人は具合が悪そうです。", "type": "inference", "points": 30}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "couch", "ja": "ソファ（sofaの類義語）", "type": "object", "points": 20},
+          {"text": "living room", "ja": "リビングルーム", "type": "inference", "points": 20},
+          {"text": "blanket", "ja": "毛布、ブランケット", "type": "object", "points": 20},
+          {"text": "cushion", "ja": "クッション", "type": "detail", "points": 10},
+          {"text": "picture", "ja": "絵、写真", "type": "detail", "points": 10},
+          {"text": "health", "ja": "健康", "type": "inference", "points": 20},
+          {"text": "catch", "ja": "（病気に）かかる", "type": "gist", "points": 30},
+          {"text": "rest", "ja": "休む", "type": "gist", "points": 20},
+          {"text": "keep", "ja": "保つ", "type": "inference", "points": 20},
+          {"text": "warm", "ja": "暖かい", "type": "attribute", "points": 10},
+          {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+          {"text": "weak", "ja": "弱い、弱っている", "type": "attribute", "points": 20},
+          {"text": "inside", "ja": "屋内に", "type": "detail", "points": 10},
+          {"text": "seem", "ja": "〜のように見える", "type": "inference", "points": 20},
+          {"text": "unfortunately", "ja": "不運にも、残念ながら", "type": "inference", "points": 30}
+        ],
+        "chunks": [
+          {"text": "catch a cold", "ja": "風邪をひく", "type": "gist", "points": 40},
+          {"text": "coughing badly", "ja": "ひどく咳をしている", "type": "gist", "points": 30},
+          {"text": "sitting on the couch", "ja": "ソファに座っている", "type": "detail", "points": 10},
+          {"text": "resting in the living room", "ja": "リビングで休んでいる", "type": "inference", "points": 30},
+          {"text": "next to her", "ja": "彼女の隣に", "type": "detail", "points": 10},
+          {"text": "feeling sick", "ja": "気分が悪い", "type": "attribute", "points": 20},
+          {"text": "keeping warm", "ja": "暖かくしている", "type": "inference", "points": 30},
+          {"text": "looking unwell", "ja": "体調が悪そうに見える", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "There is a woman sitting on the couch.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "ソファに座っている女性がいます。", "type": "gist", "points": 20},
+          {"text": "She is coughing and covering her mouth with her hand.", "grammar": "現在進行形 / 手段のwith", "ja": "彼女は手で口を覆いながら咳をしています。", "type": "gist", "points": 40},
+          {"text": "There is a box of tissues next to the cushion.", "grammar": "場所を表す前置詞句", "ja": "クッションの隣にティッシュの箱があります。", "type": "detail", "points": 20},
+          {"text": "She must have caught a terrible cold.", "grammar": "助動詞 + have + 過去分詞", "ja": "彼女はひどい風邪をひいたに違いありません。", "type": "inference", "points": 40},
+          {"text": "She is resting to get better soon.", "grammar": "不定詞の副詞的用法", "ja": "彼女は早く良くなるために休んでいます。", "type": "inference", "points": 40}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "unwell", "ja": "体調が優れない", "type": "attribute", "points": 30},
+          {"text": "pale", "ja": "青白い", "type": "attribute", "points": 20},
+          {"text": "flu", "ja": "インフルエンザ", "type": "inference", "points": 30},
+          {"text": "symptom", "ja": "症状", "type": "inference", "points": 20},
+          {"text": "wrap", "ja": "包む、くるむ", "type": "gist", "points": 20},
+          {"text": "recover", "ja": "回復する", "type": "inference", "points": 30},
+          {"text": "exhausted", "ja": "疲れ切った", "type": "attribute", "points": 30},
+          {"text": "miserable", "ja": "みじめな、とても苦しい", "type": "inference", "points": 30},
+          {"text": "sneeze", "ja": "くしゃみをする", "type": "gist", "points": 20},
+          {"text": "cozy", "ja": "居心地の良い", "type": "attribute", "points": 10},
+          {"text": "currently", "ja": "現在", "type": "detail", "points": 10},
+          {"text": "endure", "ja": "耐える", "type": "inference", "points": 30},
+          {"text": "feverish", "ja": "熱っぽい", "type": "attribute", "points": 30},
+          {"text": "indoor", "ja": "屋内の", "type": "detail", "points": 10},
+          {"text": "suffer", "ja": "苦しむ", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {"text": "suffer from a bad cold", "ja": "ひどい風邪に苦しむ", "type": "gist", "points": 40},
+          {"text": "look pale and exhausted", "ja": "青白く疲れ切って見える", "type": "attribute", "points": 30},
+          {"text": "wrapped in a blanket", "ja": "毛布にくるまって", "type": "detail", "points": 20},
+          {"text": "trying to keep warm", "ja": "暖かくしようとしている", "type": "inference", "points": 30},
+          {"text": "experiencing flu symptoms", "ja": "インフルエンザの症状が出ている", "type": "inference", "points": 40},
+          {"text": "placed near her", "ja": "彼女の近くに置かれている", "type": "detail", "points": 10},
+          {"text": "staying indoors", "ja": "屋内に留まる", "type": "inference", "points": 20},
+          {"text": "waiting to recover", "ja": "回復するのを待っている", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "It looks like she is suffering from a terrible cold or the flu.", "grammar": "It looks like~", "ja": "彼女はひどい風邪かインフルエンザに苦しんでいるように見えます。", "type": "inference", "points": 40},
+          {"text": "The woman who is wearing a green sweater is coughing badly and looks miserable.", "grammar": "関係代名詞", "ja": "緑のセーターを着ている女性はひどく咳き込んでおり、とても辛そうです。", "type": "gist", "points": 40},
+          {"text": "She seems to be resting on the sofa because she feels completely exhausted.", "grammar": "接続詞 because / seem to~", "ja": "彼女は完全に疲れ切っているので、ソファで休んでいるようです。", "type": "inference", "points": 40},
+          {"text": "A box of tissues is placed near her so that she can use them easily.", "grammar": "so that構文", "ja": "簡単に使えるように、ティッシュの箱が彼女の近くに置かれています。", "type": "inference", "points": 30},
+          {"text": "I hope she will recover soon by staying warm and resting indoors.", "grammar": "前置詞 + 動名詞", "ja": "暖かくして屋内で休むことで、彼女が早く回復することを願っています。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "couch", "ja": "ソファ（sofaの類義語）"},
-        {"text": "living room", "ja": "リビングルーム"},
-        {"text": "blanket", "ja": "毛布、ブランケット"},
-        {"text": "cushion", "ja": "クッション"},
-        {"text": "picture", "ja": "絵、写真"},
-        {"text": "health", "ja": "健康"},
-        {"text": "catch", "ja": "（病気に）かかる"},
-        {"text": "rest", "ja": "休む"},
-        {"text": "keep", "ja": "保つ"},
-        {"text": "warm", "ja": "暖かい"},
-        {"text": "terrible", "ja": "ひどい"},
-        {"text": "weak", "ja": "弱い、弱っている"},
-        {"text": "inside", "ja": "屋内に"},
-        {"text": "seem", "ja": "〜のように見える"},
-        {"text": "unfortunately", "ja": "不運にも、残念ながら"}
-      ],
-      "chunks": [
-        {"text": "catch a cold", "ja": "風邪をひく"},
-        {"text": "coughing badly", "ja": "ひどく咳をしている"},
-        {"text": "sitting on the couch", "ja": "ソファに座っている"},
-        {"text": "resting in the living room", "ja": "リビングで休んでいる"},
-        {"text": "next to her", "ja": "彼女の隣に"},
-        {"text": "feeling sick", "ja": "気分が悪い"},
-        {"text": "keeping warm", "ja": "暖かくしている"},
-        {"text": "looking unwell", "ja": "体調が悪そうに見える"}
-      ],
-      "sentences": [
-        {"text": "There is a woman sitting on the couch.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "ソファに座っている女性がいます。"},
-        {"text": "She is coughing and covering her mouth with her hand.", "grammar": "現在進行形 / 手段のwith", "ja": "彼女は手で口を覆いながら咳をしています。"},
-        {"text": "There is a box of tissues next to the cushion.", "grammar": "場所を表す前置詞句", "ja": "クッションの隣にティッシュの箱があります。"},
-        {"text": "She must have caught a terrible cold.", "grammar": "助動詞 + have + 過去分詞", "ja": "彼女はひどい風邪をひいたに違いありません。"},
-        {"text": "She is resting to get better soon.", "grammar": "不定詞の副詞的用法", "ja": "彼女は早く良くなるために休んでいます。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "unwell", "ja": "体調が優れない"},
-        {"text": "pale", "ja": "青白い"},
-        {"text": "flu", "ja": "インフルエンザ"},
-        {"text": "symptom", "ja": "症状"},
-        {"text": "wrap", "ja": "包む、くるむ"},
-        {"text": "recover", "ja": "回復する"},
-        {"text": "exhausted", "ja": "疲れ切った"},
-        {"text": "miserable", "ja": "みじめな、とても苦しい"},
-        {"text": "sneeze", "ja": "くしゃみをする"},
-        {"text": "cozy", "ja": "居心地の良い"},
-        {"text": "currently", "ja": "現在"},
-        {"text": "endure", "ja": "耐える"},
-        {"text": "feverish", "ja": "熱っぽい"},
-        {"text": "indoor", "ja": "屋内の"},
-        {"text": "suffer", "ja": "苦しむ"}
-      ],
-      "chunks": [
-        {"text": "suffer from a bad cold", "ja": "ひどい風邪に苦しむ"},
-        {"text": "look pale and exhausted", "ja": "青白く疲れ切って見える"},
-        {"text": "wrapped in a blanket", "ja": "毛布にくるまって"},
-        {"text": "trying to keep warm", "ja": "暖かくしようとしている"},
-        {"text": "experiencing flu symptoms", "ja": "インフルエンザの症状が出ている"},
-        {"text": "placed near her", "ja": "彼女の近くに置かれている"},
-        {"text": "staying indoors", "ja": "屋内に留まる"},
-        {"text": "waiting to recover", "ja": "回復するのを待っている"}
-      ],
-      "sentences": [
-        {"text": "It looks like she is suffering from a terrible cold or the flu.", "grammar": "It looks like~", "ja": "彼女はひどい風邪かインフルエンザに苦しんでいるように見えます。"},
-        {"text": "The woman who is wearing a green sweater is coughing badly and looks miserable.", "grammar": "関係代名詞", "ja": "緑のセーターを着ている女性はひどく咳き込んでおり、とても辛そうです。"},
-        {"text": "She seems to be resting on the sofa because she feels completely exhausted.", "grammar": "接続詞 because / seem to~", "ja": "彼女は完全に疲れ切っているので、ソファで休んでいるようです。"},
-        {"text": "A box of tissues is placed near her so that she can use them easily.", "grammar": "so that構文", "ja": "簡単に使えるように、ティッシュの箱が彼女の近くに置かれています。"},
-        {"text": "I hope she will recover soon by staying warm and resting indoors.", "grammar": "前置詞 + 動名詞", "ja": "暖かくして屋内で休むことで、彼女が早く回復することを願っています。"}
-      ]
+    "pins": {
+      "woman": {"x": 52, "y": 45},
+      "tissue": {"x": 28, "y": 85},
+      "box": {"x": 28, "y": 92},
+      "cushion": {"x": 20, "y": 75},
+      "sofa": {"x": 75, "y": 65},
+      "blanket": {"x": 50, "y": 92},
+      "window": {"x": 15, "y": 30},
+      "picture": {"x": 93, "y": 10}
     }
-  },
-  "pins": {
-    "woman": {"x": 52, "y": 45},
-    "tissue": {"x": 28, "y": 85},
-    "box": {"x": 28, "y": 92},
-    "cushion": {"x": 20, "y": 75},
-    "sofa": {"x": 75, "y": 65},
-    "blanket": {"x": 50, "y": 92},
-    "window": {"x": 15, "y": 30},
-    "picture": {"x": 93, "y": 10}
   }
-}
+]

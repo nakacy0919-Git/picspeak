@@ -1,4 +1,7 @@
 // js/scoring.js
+// ==========================================
+// スコアリングおよび達成率計算システム
+// ==========================================
 
 let currentScore = 0;
 let foundWordsSet = new Set();
@@ -52,7 +55,8 @@ function calculateScore(transcript, theme, selectedLevel) {
             if (regex.test(lowerTranscript)) {
                 foundWordsSet.add(wordText);
                 newWords.push(wordText);
-                pointsToAdd += 10;
+                // ★修正: 新データは設定ポイント、旧データは従来通り10点
+                pointsToAdd += (wordObj.points || 10);
             }
         }
     });
@@ -64,7 +68,8 @@ function calculateScore(transcript, theme, selectedLevel) {
             if (normalizedTranscript.includes(normalizedChunk)) {
                 foundChunksSet.add(chunkText);
                 newChunks.push(chunkText);
-                pointsToAdd += 50;
+                // ★修正: 新データは設定ポイント、旧データは従来通り50点
+                pointsToAdd += (chunkObj.points || 50);
             }
         }
     });
@@ -75,7 +80,8 @@ function calculateScore(transcript, theme, selectedLevel) {
             if (normalizedTranscript.includes(normalizedSentence)) {
                 foundSentencesSet.add(sentenceObj.text);
                 newSentences.push(sentenceObj);
-                pointsToAdd += 200;
+                // ★修正: 新データは設定ポイント、旧データは従来通り200点
+                pointsToAdd += (sentenceObj.points || 200);
             }
         }
     });
@@ -110,19 +116,33 @@ function resetScore() {
     foundSentencesSet.clear();
 }
 
-// ★NEW: 達成率と言えなかった表現を計算する関数
+// ★NEW: 認知心理学アプローチに基づく、重要度(points)ベースの達成率計算
 function getCompletionStats(theme, selectedLevel) {
     const targetData = getAggregatedData(theme, selectedLevel);
     
-    const totalWords = targetData.words.length;
-    const totalChunks = targetData.chunks.length;
-    const totalSentences = targetData.sentences.length;
-    const totalItems = totalWords + totalChunks + totalSentences;
-    
-    const foundItems = foundWordsSet.size + foundChunksSet.size + foundSentencesSet.size;
-    
-    // 100%満点での達成率
-    const completionRate = totalItems > 0 ? Math.round((foundItems / totalItems) * 100) : 0;
+    let totalPoints = 0;
+    let earnedPoints = 0;
+
+    // アイテムごとのポイントを加算するヘルパー関数
+    const processPoints = (items, foundSet, fallbackPoints) => {
+        items.forEach(item => {
+            // 新JSONは重み付け(points)、旧JSONは一律 fallbackPoints（10点）で個数ベース計算を再現
+            const pts = item.points || fallbackPoints;
+            totalPoints += pts;
+            if (foundSet.has(item.text)) {
+                earnedPoints += pts;
+            }
+        });
+    };
+
+    // すべてfallbackPointsを「10」に設定することで、
+    // 古いJSONデータでは「全体の個数に対する言えた個数」と数学的に同じ結果になります。
+    processPoints(targetData.words, foundWordsSet, 10);
+    processPoints(targetData.chunks, foundChunksSet, 10);
+    processPoints(targetData.sentences, foundSentencesSet, 10);
+
+    // 100%満点での達成率（重み付けされたポイントベース）
+    const completionRate = totalPoints > 0 ? Math.min(100, Math.round((earnedPoints / totalPoints) * 100)) : 0;
     
     // 未達成（言えなかった）アイテム
     const missedWords = targetData.words.filter(w => !foundWordsSet.has(w.text));

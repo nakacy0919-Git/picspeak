@@ -1,126 +1,128 @@
-{
-  "id": "theme_312",
-  "imageSrc": "assets/images/312.webp",
-  "description": "オフィスでマスクをして咳き込む女性",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "woman", "ja": "女の人"},
-        {"text": "mask", "ja": "マスク"},
-        {"text": "computer", "ja": "コンピューター"},
-        {"text": "desk", "ja": "机"},
-        {"text": "chair", "ja": "椅子"},
-        {"text": "cold", "ja": "風邪"},
-        {"text": "sick", "ja": "病気の、具合が悪い"},
-        {"text": "water", "ja": "水"},
-        {"text": "white", "ja": "白い"},
-        {"text": "black", "ja": "黒い"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "work", "ja": "働く"},
-        {"text": "cough", "ja": "咳をする"},
-        {"text": "sit", "ja": "座る"},
-        {"text": "feel", "ja": "感じる"}
-      ],
-      "chunks": [
-        {"text": "a sick woman", "ja": "具合の悪い女の人"},
-        {"text": "a white mask", "ja": "白いマスク"},
-        {"text": "a black computer", "ja": "黒いコンピューター"},
-        {"text": "sit on a chair", "ja": "椅子に座る"},
-        {"text": "have a cold", "ja": "風邪をひいている"},
-        {"text": "work at a desk", "ja": "机で働く"},
-        {"text": "look bad", "ja": "具合が悪そうに見える"},
-        {"text": "a blue chair", "ja": "青い椅子"}
-      ],
-      "sentences": [
-        {"text": "I see a woman.", "grammar": "I see~", "ja": "女の人が見えます。"},
-        {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。"},
-        {"text": "She is wearing a mask.", "grammar": "is ~ing", "ja": "彼女はマスクをつけています。"},
-        {"text": "She is working at a desk.", "grammar": "is ~ing", "ja": "彼女は机で働いています。"},
-        {"text": "This is a black computer.", "grammar": "This is~", "ja": "これは黒いコンピューターです。"}
-      ]
+[
+  {
+    "id": "theme_312",
+    "imageSrc": "assets/images/312.webp",
+    "description": "オフィスでマスクをして咳き込む女性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "woman", "ja": "女の人", "type": "object", "points": 20},
+          {"text": "mask", "ja": "マスク", "type": "object", "points": 20},
+          {"text": "computer", "ja": "コンピューター", "type": "object", "points": 20},
+          {"text": "desk", "ja": "机", "type": "object", "points": 10},
+          {"text": "chair", "ja": "椅子", "type": "detail", "points": 10},
+          {"text": "cold", "ja": "風邪", "type": "gist", "points": 30},
+          {"text": "sick", "ja": "病気の、具合が悪い", "type": "attribute", "points": 20},
+          {"text": "water", "ja": "水", "type": "detail", "points": 10},
+          {"text": "white", "ja": "白い", "type": "attribute", "points": 10},
+          {"text": "black", "ja": "黒い", "type": "attribute", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "work", "ja": "働く", "type": "gist", "points": 20},
+          {"text": "cough", "ja": "咳をする", "type": "gist", "points": 30},
+          {"text": "sit", "ja": "座る", "type": "detail", "points": 10},
+          {"text": "feel", "ja": "感じる", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "a sick woman", "ja": "具合の悪い女の人", "type": "object", "points": 20},
+          {"text": "a white mask", "ja": "白いマスク", "type": "attribute", "points": 10},
+          {"text": "a black computer", "ja": "黒いコンピューター", "type": "object", "points": 20},
+          {"text": "sit on a chair", "ja": "椅子に座る", "type": "detail", "points": 10},
+          {"text": "have a cold", "ja": "風邪をひいている", "type": "gist", "points": 40},
+          {"text": "work at a desk", "ja": "机で働く", "type": "gist", "points": 20},
+          {"text": "look bad", "ja": "具合が悪そうに見える", "type": "inference", "points": 20},
+          {"text": "a blue chair", "ja": "青い椅子", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "I see a woman.", "grammar": "I see~", "ja": "女の人が見えます。", "type": "object", "points": 20},
+          {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。", "type": "gist", "points": 40},
+          {"text": "She is wearing a mask.", "grammar": "is ~ing", "ja": "彼女はマスクをつけています。", "type": "gist", "points": 30},
+          {"text": "She is working at a desk.", "grammar": "is ~ing", "ja": "彼女は机で働いています。", "type": "gist", "points": 30},
+          {"text": "This is a black computer.", "grammar": "This is~", "ja": "これは黒いコンピューターです。", "type": "object", "points": 20}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "office", "ja": "オフィス、会社", "type": "object", "points": 20},
+          {"text": "humidifier", "ja": "加湿器", "type": "object", "points": 20},
+          {"text": "keyboard", "ja": "キーボード", "type": "detail", "points": 10},
+          {"text": "screen", "ja": "画面", "type": "detail", "points": 10},
+          {"text": "calendar", "ja": "カレンダー", "type": "detail", "points": 10},
+          {"text": "steam", "ja": "蒸気、湯気", "type": "detail", "points": 10},
+          {"text": "dry", "ja": "乾燥した", "type": "attribute", "points": 10},
+          {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+          {"text": "careful", "ja": "注意深い", "type": "inference", "points": 10},
+          {"text": "use", "ja": "使う", "type": "gist", "points": 20},
+          {"text": "wear", "ja": "身につけている", "type": "attribute", "points": 10},
+          {"text": "catch", "ja": "（病気に）かかる", "type": "gist", "points": 20},
+          {"text": "keep", "ja": "保つ", "type": "inference", "points": 10},
+          {"text": "type", "ja": "キーボードを打つ", "type": "detail", "points": 10},
+          {"text": "inside", "ja": "屋内に", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "working in the office", "ja": "オフィスで働いている", "type": "gist", "points": 30},
+          {"text": "wearing a mask", "ja": "マスクをつけている", "type": "attribute", "points": 20},
+          {"text": "coughing badly", "ja": "ひどく咳をしている", "type": "gist", "points": 40},
+          {"text": "using a computer", "ja": "コンピューターを使っている", "type": "gist", "points": 20},
+          {"text": "a humidifier on the desk", "ja": "机の上の加湿器", "type": "detail", "points": 20},
+          {"text": "feeling sick", "ja": "気分が悪い", "type": "inference", "points": 30},
+          {"text": "keeping the air clean", "ja": "空気をきれいに保っている", "type": "inference", "points": 30},
+          {"text": "looking at the screen", "ja": "画面を見ている", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "There is a woman working in the office.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "オフィスで働いている女性がいます。", "type": "gist", "points": 30},
+          {"text": "She is coughing and wearing a white mask.", "grammar": "現在進行形", "ja": "彼女は咳をしており、白いマスクをつけています。", "type": "gist", "points": 40},
+          {"text": "There is a humidifier on the desk.", "grammar": "There is/are~", "ja": "机の上に加湿器があります。", "type": "detail", "points": 20},
+          {"text": "She must have caught a cold.", "grammar": "助動詞 + have + 過去分詞", "ja": "彼女は風邪をひいたに違いありません。", "type": "inference", "points": 40},
+          {"text": "She is using a computer to do her job.", "grammar": "不定詞の副詞的用法", "ja": "彼女は仕事をするためにコンピューターを使っています。", "type": "gist", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "employee", "ja": "従業員、社員", "type": "inference", "points": 20},
+          {"text": "workplace", "ja": "職場", "type": "inference", "points": 20},
+          {"text": "symptom", "ja": "症状", "type": "inference", "points": 30},
+          {"text": "unwell", "ja": "体調が優れない", "type": "attribute", "points": 30},
+          {"text": "uncomfortable", "ja": "不快な、具合の悪い", "type": "inference", "points": 20},
+          {"text": "miserable", "ja": "みじめな、とても苦しい", "type": "inference", "points": 20},
+          {"text": "moisture", "ja": "湿気、水分", "type": "inference", "points": 20},
+          {"text": "prevent", "ja": "防ぐ", "type": "inference", "points": 20},
+          {"text": "spread", "ja": "広がる、広げる", "type": "inference", "points": 10},
+          {"text": "endure", "ja": "耐える", "type": "inference", "points": 30},
+          {"text": "concentrate", "ja": "集中する", "type": "inference", "points": 30},
+          {"text": "operate", "ja": "操作する", "type": "gist", "points": 20},
+          {"text": "currently", "ja": "現在", "type": "detail", "points": 10},
+          {"text": "pale", "ja": "青白い", "type": "attribute", "points": 20},
+          {"text": "suffer", "ja": "苦しむ", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {"text": "suffering from a cold", "ja": "風邪に苦しむ", "type": "gist", "points": 40},
+          {"text": "operating the computer", "ja": "コンピューターを操作している", "type": "gist", "points": 30},
+          {"text": "an office employee", "ja": "会社員", "type": "inference", "points": 20},
+          {"text": "providing moisture", "ja": "湿気を与えている", "type": "inference", "points": 30},
+          {"text": "enduring the symptoms", "ja": "症状に耐えている", "type": "inference", "points": 30},
+          {"text": "feeling very unwell", "ja": "とても体調が悪く感じる", "type": "inference", "points": 30},
+          {"text": "concentrating on her work", "ja": "仕事に集中している", "type": "inference", "points": 30},
+          {"text": "placed on the desk", "ja": "机の上に置かれている", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "It looks like the employee is suffering from a bad cold at her workplace.", "grammar": "It looks like~", "ja": "その社員は職場でひどい風邪に苦しんでいるように見えます。", "type": "inference", "points": 40},
+          {"text": "The woman who is wearing a mask is coughing while looking at the computer screen.", "grammar": "関係代名詞 / 接続詞 while", "ja": "マスクをつけている女性は、コンピューターの画面を見ながら咳き込んでいます。", "type": "gist", "points": 40},
+          {"text": "A humidifier is placed on the desk to provide moisture to the dry air.", "grammar": "受動態 / 不定詞の副詞的用法", "ja": "乾燥した空気に湿気を与えるため、机の上に加湿器が置かれています。", "type": "inference", "points": 40},
+          {"text": "She seems to be feeling unwell, but she is trying to concentrate on her work.", "grammar": "seem to~", "ja": "彼女は体調が優れないようですが、仕事に集中しようとしています。", "type": "inference", "points": 40},
+          {"text": "I hope she can go home and rest soon because she looks very uncomfortable.", "grammar": "接続詞 because / look + 形容詞", "ja": "彼女はとても具合が悪そうなので、早く家に帰って休めることを願っています。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "office", "ja": "オフィス、会社"},
-        {"text": "humidifier", "ja": "加湿器"},
-        {"text": "keyboard", "ja": "キーボード"},
-        {"text": "screen", "ja": "画面"},
-        {"text": "calendar", "ja": "カレンダー"},
-        {"text": "steam", "ja": "蒸気、湯気"},
-        {"text": "dry", "ja": "乾燥した"},
-        {"text": "terrible", "ja": "ひどい"},
-        {"text": "careful", "ja": "注意深い"},
-        {"text": "use", "ja": "使う"},
-        {"text": "wear", "ja": "身につけている"},
-        {"text": "catch", "ja": "（病気に）かかる"},
-        {"text": "keep", "ja": "保つ"},
-        {"text": "type", "ja": "キーボードを打つ"},
-        {"text": "inside", "ja": "屋内に"}
-      ],
-      "chunks": [
-        {"text": "working in the office", "ja": "オフィスで働いている"},
-        {"text": "wearing a mask", "ja": "マスクをつけている"},
-        {"text": "coughing badly", "ja": "ひどく咳をしている"},
-        {"text": "using a computer", "ja": "コンピューターを使っている"},
-        {"text": "a humidifier on the desk", "ja": "机の上の加湿器"},
-        {"text": "feeling sick", "ja": "気分が悪い"},
-        {"text": "keeping the air clean", "ja": "空気をきれいに保っている"},
-        {"text": "looking at the screen", "ja": "画面を見ている"}
-      ],
-      "sentences": [
-        {"text": "There is a woman working in the office.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "オフィスで働いている女性がいます。"},
-        {"text": "She is coughing and wearing a white mask.", "grammar": "現在進行形", "ja": "彼女は咳をしており、白いマスクをつけています。"},
-        {"text": "There is a humidifier on the desk.", "grammar": "There is/are~", "ja": "机の上に加湿器があります。"},
-        {"text": "She must have caught a cold.", "grammar": "助動詞 + have + 過去分詞", "ja": "彼女は風邪をひいたに違いありません。"},
-        {"text": "She is using a computer to do her job.", "grammar": "不定詞の副詞的用法", "ja": "彼女は仕事をするためにコンピューターを使っています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "employee", "ja": "従業員、社員"},
-        {"text": "workplace", "ja": "職場"},
-        {"text": "symptom", "ja": "症状"},
-        {"text": "unwell", "ja": "体調が優れない"},
-        {"text": "uncomfortable", "ja": "不快な、具合の悪い"},
-        {"text": "miserable", "ja": "みじめな、とても苦しい"},
-        {"text": "moisture", "ja": "湿気、水分"},
-        {"text": "prevent", "ja": "防ぐ"},
-        {"text": "spread", "ja": "広がる、広げる"},
-        {"text": "endure", "ja": "耐える"},
-        {"text": "concentrate", "ja": "集中する"},
-        {"text": "operate", "ja": "操作する"},
-        {"text": "currently", "ja": "現在"},
-        {"text": "pale", "ja": "青白い"},
-        {"text": "suffer", "ja": "苦しむ"}
-      ],
-      "chunks": [
-        {"text": "suffering from a cold", "ja": "風邪に苦しむ"},
-        {"text": "operating the computer", "ja": "コンピューターを操作している"},
-        {"text": "an office employee", "ja": "会社員"},
-        {"text": "providing moisture", "ja": "湿気を与えている"},
-        {"text": "enduring the symptoms", "ja": "症状に耐えている"},
-        {"text": "feeling very unwell", "ja": "とても体調が悪く感じる"},
-        {"text": "concentrating on her work", "ja": "仕事に集中している"},
-        {"text": "placed on the desk", "ja": "机の上に置かれている"}
-      ],
-      "sentences": [
-        {"text": "It looks like the employee is suffering from a bad cold at her workplace.", "grammar": "It looks like~", "ja": "その社員は職場でひどい風邪に苦しんでいるように見えます。"},
-        {"text": "The woman who is wearing a mask is coughing while looking at the computer screen.", "grammar": "関係代名詞 / 接続詞 while", "ja": "マスクをつけている女性は、コンピューターの画面を見ながら咳き込んでいます。"},
-        {"text": "A humidifier is placed on the desk to provide moisture to the dry air.", "grammar": "受動態 / 不定詞の副詞的用法", "ja": "乾燥した空気に湿気を与えるため、机の上に加湿器が置かれています。"},
-        {"text": "She seems to be feeling unwell, but she is trying to concentrate on her work.", "grammar": "seem to~", "ja": "彼女は体調が優れないようですが、仕事に集中しようとしています。"},
-        {"text": "I hope she can go home and rest soon because she looks very uncomfortable.", "grammar": "接続詞 because / look + 形容詞", "ja": "彼女はとても具合が悪そうなので、早く家に帰って休めることを願っています。"}
-      ]
+    "pins": {
+      "woman": {"x": 50, "y": 50},
+      "mask": {"x": 47, "y": 40},
+      "computer": {"x": 15, "y": 55},
+      "keyboard": {"x": 35, "y": 94},
+      "humidifier": {"x": 81, "y": 84},
+      "steam": {"x": 80, "y": 50},
+      "calendar": {"x": 12, "y": 12},
+      "chair": {"x": 70, "y": 70}
     }
-  },
-  "pins": {
-    "woman": {"x": 50, "y": 50},
-    "mask": {"x": 47, "y": 40},
-    "computer": {"x": 15, "y": 55},
-    "keyboard": {"x": 35, "y": 94},
-    "humidifier": {"x": 81, "y": 84},
-    "steam": {"x": 80, "y": 50},
-    "calendar": {"x": 12, "y": 12},
-    "chair": {"x": 70, "y": 70}
   }
-}
+]

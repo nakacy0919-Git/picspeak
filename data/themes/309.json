@@ -1,126 +1,128 @@
-{
-  "id": "theme_309",
-  "imageSrc": "assets/images/309.webp",
-  "description": "テニスコートでプレーする二人の男性",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "man", "ja": "男の人"},
-        {"text": "tennis", "ja": "テニス"},
-        {"text": "racket", "ja": "ラケット"},
-        {"text": "ball", "ja": "ボール"},
-        {"text": "court", "ja": "コート"},
-        {"text": "bag", "ja": "バッグ"},
-        {"text": "shoe", "ja": "靴"},
-        {"text": "fence", "ja": "フェンス"},
-        {"text": "white", "ja": "白い"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "green", "ja": "緑の"},
-        {"text": "yellow", "ja": "黄色い"},
-        {"text": "play", "ja": "する、遊ぶ"},
-        {"text": "hit", "ja": "打つ"},
-        {"text": "look", "ja": "見る"},
-        {"text": "run", "ja": "走る"}
-      ],
-      "chunks": [
-        {"text": "two men", "ja": "2人の男の人"},
-        {"text": "play tennis", "ja": "テニスをする"},
-        {"text": "a tennis racket", "ja": "テニスラケット"},
-        {"text": "a yellow ball", "ja": "黄色いボール"},
-        {"text": "a white shirt", "ja": "白いシャツ"},
-        {"text": "hit a ball", "ja": "ボールを打つ"},
-        {"text": "on the court", "ja": "コートで"},
-        {"text": "a big bag", "ja": "大きなバッグ"}
-      ],
-      "sentences": [
-        {"text": "I see two men.", "grammar": "I see~", "ja": "2人の男の人が見えます。"},
-        {"text": "They are playing tennis.", "grammar": "is ~ing", "ja": "彼らはテニスをしています。"},
-        {"text": "The man has a racket.", "grammar": "have/has", "ja": "男の人はラケットを持っています。"},
-        {"text": "This is a tennis court.", "grammar": "This is~", "ja": "ここはテニスコートです。"},
-        {"text": "The ball is yellow.", "grammar": "is ~", "ja": "ボールは黄色いです。"}
-      ]
+[
+  {
+    "id": "theme_309",
+    "imageSrc": "assets/images/309.webp",
+    "description": "テニスコートでプレーする二人の男性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "man", "ja": "男の人", "type": "object", "points": 20},
+          {"text": "tennis", "ja": "テニス", "type": "gist", "points": 30},
+          {"text": "racket", "ja": "ラケット", "type": "object", "points": 20},
+          {"text": "ball", "ja": "ボール", "type": "object", "points": 20},
+          {"text": "court", "ja": "コート", "type": "object", "points": 10},
+          {"text": "bag", "ja": "バッグ", "type": "detail", "points": 10},
+          {"text": "shoe", "ja": "靴", "type": "detail", "points": 10},
+          {"text": "fence", "ja": "フェンス", "type": "detail", "points": 10},
+          {"text": "white", "ja": "白い", "type": "attribute", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+          {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10},
+          {"text": "play", "ja": "する、遊ぶ", "type": "gist", "points": 30},
+          {"text": "hit", "ja": "打つ", "type": "gist", "points": 20},
+          {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+          {"text": "run", "ja": "走る", "type": "gist", "points": 20}
+        ],
+        "chunks": [
+          {"text": "two men", "ja": "2人の男の人", "type": "object", "points": 20},
+          {"text": "play tennis", "ja": "テニスをする", "type": "gist", "points": 40},
+          {"text": "a tennis racket", "ja": "テニスラケット", "type": "object", "points": 20},
+          {"text": "a yellow ball", "ja": "黄色いボール", "type": "attribute", "points": 10},
+          {"text": "a white shirt", "ja": "白いシャツ", "type": "attribute", "points": 10},
+          {"text": "hit a ball", "ja": "ボールを打つ", "type": "gist", "points": 30},
+          {"text": "on the court", "ja": "コートで", "type": "detail", "points": 10},
+          {"text": "a big bag", "ja": "大きなバッグ", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "I see two men.", "grammar": "I see~", "ja": "2人の男の人が見えます。", "type": "object", "points": 20},
+          {"text": "They are playing tennis.", "grammar": "is ~ing", "ja": "彼らはテニスをしています。", "type": "gist", "points": 40},
+          {"text": "The man has a racket.", "grammar": "have/has", "ja": "男の人はラケットを持っています。", "type": "object", "points": 20},
+          {"text": "This is a tennis court.", "grammar": "This is~", "ja": "ここはテニスコートです。", "type": "object", "points": 10},
+          {"text": "The ball is yellow.", "grammar": "is ~", "ja": "ボールは黄色いです。", "type": "attribute", "points": 10}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "player", "ja": "選手", "type": "inference", "points": 20},
+          {"text": "match", "ja": "試合", "type": "inference", "points": 30},
+          {"text": "sports", "ja": "スポーツ", "type": "inference", "points": 20},
+          {"text": "ground", "ja": "地面", "type": "detail", "points": 10},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 10},
+          {"text": "foreground", "ja": "手前", "type": "detail", "points": 10},
+          {"text": "swing", "ja": "振る", "type": "gist", "points": 20},
+          {"text": "hold", "ja": "持っている", "type": "detail", "points": 10},
+          {"text": "practice", "ja": "練習する", "type": "inference", "points": 30},
+          {"text": "wait", "ja": "待つ", "type": "gist", "points": 20},
+          {"text": "watch", "ja": "見る", "type": "gist", "points": 20},
+          {"text": "wear", "ja": "着ている", "type": "attribute", "points": 10},
+          {"text": "ready", "ja": "準備ができて", "type": "inference", "points": 20},
+          {"text": "outside", "ja": "外で", "type": "detail", "points": 10},
+          {"text": "together", "ja": "一緒に", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {"text": "practicing tennis outside", "ja": "外でテニスの練習をしている", "type": "gist", "points": 40},
+          {"text": "swinging a racket", "ja": "ラケットを振っている", "type": "gist", "points": 30},
+          {"text": "holding a racket", "ja": "ラケットを持っている", "type": "detail", "points": 20},
+          {"text": "waiting in the background", "ja": "背景で待っている", "type": "gist", "points": 20},
+          {"text": "wearing a white shirt", "ja": "白いシャツを着ている", "type": "attribute", "points": 10},
+          {"text": "a sports bag on the ground", "ja": "地面にあるスポーツバッグ", "type": "detail", "points": 10},
+          {"text": "ready to hit", "ja": "打つ準備ができている", "type": "inference", "points": 30},
+          {"text": "watching the ball", "ja": "ボールを見ている", "type": "gist", "points": 20}
+        ],
+        "sentences": [
+          {"text": "Two men are practicing tennis outside.", "grammar": "現在進行形", "ja": "2人の男の人が外でテニスの練習をしています。", "type": "gist", "points": 40},
+          {"text": "There is a yellow ball in the air.", "grammar": "There is/are~", "ja": "空中に黄色いボールがあります。", "type": "attribute", "points": 10},
+          {"text": "The man in the white shirt is swinging his racket.", "grammar": "前置詞を用いた名詞修飾", "ja": "白いシャツを着た男の人がラケットを振っています。", "type": "gist", "points": 30},
+          {"text": "A sports bag is on the ground near the fence.", "grammar": "場所を表す前置詞句", "ja": "フェンスの近くの地面にスポーツバッグがあります。", "type": "detail", "points": 20},
+          {"text": "The other player is waiting in the background.", "grammar": "現在進行形", "ja": "もう一人の選手は背景で待っています。", "type": "gist", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "athlete", "ja": "アスリート、スポーツ選手", "type": "inference", "points": 20},
+          {"text": "focus", "ja": "集中する", "type": "inference", "points": 30},
+          {"text": "concentrate", "ja": "集中する", "type": "inference", "points": 30},
+          {"text": "opponent", "ja": "対戦相手", "type": "inference", "points": 20},
+          {"text": "equipment", "ja": "道具、用品", "type": "inference", "points": 10},
+          {"text": "participate", "ja": "参加する", "type": "inference", "points": 20},
+          {"text": "intense", "ja": "激しい、白熱した", "type": "inference", "points": 20},
+          {"text": "energetic", "ja": "エネルギッシュな", "type": "inference", "points": 20},
+          {"text": "stance", "ja": "構え", "type": "gist", "points": 20},
+          {"text": "prepare", "ja": "準備する", "type": "inference", "points": 20},
+          {"text": "grip", "ja": "握る", "type": "detail", "points": 10},
+          {"text": "observe", "ja": "観察する", "type": "gist", "points": 20},
+          {"text": "competitive", "ja": "競争の、真剣勝負の", "type": "inference", "points": 30},
+          {"text": "outdoors", "ja": "屋外で", "type": "detail", "points": 10},
+          {"text": "return", "ja": "打ち返す", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {"text": "focused on the ball", "ja": "ボールに集中している", "type": "inference", "points": 30},
+          {"text": "playing against an opponent", "ja": "対戦相手と試合をしている", "type": "inference", "points": 30},
+          {"text": "returning the ball", "ja": "ボールを打ち返す", "type": "gist", "points": 30},
+          {"text": "getting ready to hit", "ja": "打つ準備をしている", "type": "inference", "points": 30},
+          {"text": "tennis equipment", "ja": "テニス用品", "type": "inference", "points": 10},
+          {"text": "concentrating on the game", "ja": "試合に集中している", "type": "inference", "points": 30},
+          {"text": "taking a stance", "ja": "構えをとっている", "type": "gist", "points": 20},
+          {"text": "an outdoor tennis court", "ja": "屋外のテニスコート", "type": "detail", "points": 20}
+        ],
+        "sentences": [
+          {"text": "It looks like the two men are playing a competitive tennis match.", "grammar": "It looks like~", "ja": "2人の男性は真剣勝負のテニスの試合をしているように見えます。", "type": "inference", "points": 40},
+          {"text": "The player who is in the foreground is getting ready to hit the ball.", "grammar": "関係代名詞", "ja": "手前にいる選手は、ボールを打つ準備をしています。", "type": "inference", "points": 40},
+          {"text": "He is gripping his racket tightly because he wants to hit a strong shot.", "grammar": "接続詞 because", "ja": "強いショットを打ちたいので、彼はラケットを強く握っています。", "type": "inference", "points": 40},
+          {"text": "You can see a sports bag which is placed near the fence.", "grammar": "関係代名詞", "ja": "フェンスの近くに置かれているスポーツバッグを見ることができます。", "type": "detail", "points": 20},
+          {"text": "The other athlete is observing the ball carefully to anticipate the next move.", "grammar": "不定詞の副詞的用法", "ja": "もう一人の選手は次の動きを予測するために、ボールを注意深く観察しています。", "type": "inference", "points": 30}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "player", "ja": "選手"},
-        {"text": "match", "ja": "試合"},
-        {"text": "sports", "ja": "スポーツ"},
-        {"text": "ground", "ja": "地面"},
-        {"text": "background", "ja": "背景"},
-        {"text": "foreground", "ja": "手前"},
-        {"text": "swing", "ja": "振る"},
-        {"text": "hold", "ja": "持っている"},
-        {"text": "practice", "ja": "練習する"},
-        {"text": "wait", "ja": "待つ"},
-        {"text": "watch", "ja": "見る"},
-        {"text": "wear", "ja": "着ている"},
-        {"text": "ready", "ja": "準備ができて"},
-        {"text": "outside", "ja": "外で"},
-        {"text": "together", "ja": "一緒に"}
-      ],
-      "chunks": [
-        {"text": "practicing tennis outside", "ja": "外でテニスの練習をしている"},
-        {"text": "swinging a racket", "ja": "ラケットを振っている"},
-        {"text": "holding a racket", "ja": "ラケットを持っている"},
-        {"text": "waiting in the background", "ja": "背景で待っている"},
-        {"text": "wearing a white shirt", "ja": "白いシャツを着ている"},
-        {"text": "a sports bag on the ground", "ja": "地面にあるスポーツバッグ"},
-        {"text": "ready to hit", "ja": "打つ準備ができている"},
-        {"text": "watching the ball", "ja": "ボールを見ている"}
-      ],
-      "sentences": [
-        {"text": "Two men are practicing tennis outside.", "grammar": "現在進行形", "ja": "2人の男の人が外でテニスの練習をしています。"},
-        {"text": "There is a yellow ball in the air.", "grammar": "There is/are~", "ja": "空中に黄色いボールがあります。"},
-        {"text": "The man in the white shirt is swinging his racket.", "grammar": "前置詞を用いた名詞修飾", "ja": "白いシャツを着た男の人がラケットを振っています。"},
-        {"text": "A sports bag is on the ground near the fence.", "grammar": "場所を表す前置詞句", "ja": "フェンスの近くの地面にスポーツバッグがあります。"},
-        {"text": "The other player is waiting in the background.", "grammar": "現在進行形", "ja": "もう一人の選手は背景で待っています。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "athlete", "ja": "アスリート、スポーツ選手"},
-        {"text": "focus", "ja": "集中する"},
-        {"text": "concentrate", "ja": "集中する"},
-        {"text": "opponent", "ja": "対戦相手"},
-        {"text": "equipment", "ja": "道具、用品"},
-        {"text": "participate", "ja": "参加する"},
-        {"text": "intense", "ja": "激しい、白熱した"},
-        {"text": "energetic", "ja": "エネルギッシュな"},
-        {"text": "stance", "ja": "構え"},
-        {"text": "prepare", "ja": "準備する"},
-        {"text": "grip", "ja": "握る"},
-        {"text": "observe", "ja": "観察する"},
-        {"text": "competitive", "ja": "競争の、真剣勝負の"},
-        {"text": "outdoors", "ja": "屋外で"},
-        {"text": "return", "ja": "打ち返す"}
-      ],
-      "chunks": [
-        {"text": "focused on the ball", "ja": "ボールに集中している"},
-        {"text": "playing against an opponent", "ja": "対戦相手と試合をしている"},
-        {"text": "returning the ball", "ja": "ボールを打ち返す"},
-        {"text": "getting ready to hit", "ja": "打つ準備をしている"},
-        {"text": "tennis equipment", "ja": "テニス用品"},
-        {"text": "concentrating on the game", "ja": "試合に集中している"},
-        {"text": "taking a stance", "ja": "構えをとっている"},
-        {"text": "an outdoor tennis court", "ja": "屋外のテニスコート"}
-      ],
-      "sentences": [
-        {"text": "It looks like the two men are playing a competitive tennis match.", "grammar": "It looks like~", "ja": "2人の男性は真剣勝負のテニスの試合をしているように見えます。"},
-        {"text": "The player who is in the foreground is getting ready to hit the ball.", "grammar": "関係代名詞", "ja": "手前にいる選手は、ボールを打つ準備をしています。"},
-        {"text": "He is gripping his racket tightly because he wants to hit a strong shot.", "grammar": "接続詞 because", "ja": "強いショットを打ちたいので、彼はラケットを強く握っています。"},
-        {"text": "You can see a sports bag which is placed near the fence.", "grammar": "関係代名詞", "ja": "フェンスの近くに置かれているスポーツバッグを見ることができます。"},
-        {"text": "The other athlete is observing the ball carefully to anticipate the next move.", "grammar": "不定詞の副詞的用法", "ja": "もう一人の選手は次の動きを予測するために、ボールを注意深く観察しています。"}
-      ]
+    "pins": {
+      "man": {"x": 38, "y": 45},
+      "player": {"x": 82, "y": 40},
+      "racket": {"x": 12, "y": 32},
+      "ball": {"x": 57, "y": 34},
+      "bag": {"x": 12, "y": 60},
+      "fence": {"x": 60, "y": 20},
+      "court": {"x": 50, "y": 80}
     }
-  },
-  "pins": {
-    "man": {"x": 38, "y": 45},
-    "player": {"x": 82, "y": 40},
-    "racket": {"x": 12, "y": 32},
-    "ball": {"x": 57, "y": 34},
-    "bag": {"x": 12, "y": 60},
-    "fence": {"x": 60, "y": 20},
-    "court": {"x": 50, "y": 80}
   }
-}
+]

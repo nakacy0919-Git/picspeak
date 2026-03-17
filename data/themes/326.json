@@ -1,125 +1,127 @@
-{
-  "id": "theme_326",
-  "imageSrc": "assets/images/326.webp",
-  "description": "首の痛みに顔をしかめる女性",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "woman", "ja": "女性"},
-        {"text": "neck", "ja": "首"},
-        {"text": "hand", "ja": "手"},
-        {"text": "face", "ja": "顔"},
-        {"text": "sofa", "ja": "ソファ"},
-        {"text": "lamp", "ja": "ランプ"},
-        {"text": "book", "ja": "本"},
-        {"text": "table", "ja": "テーブル"},
-        {"text": "TV", "ja": "テレビ"},
-        {"text": "room", "ja": "部屋"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "green", "ja": "緑の"},
-        {"text": "brown", "ja": "茶色い"},
-        {"text": "bad", "ja": "悪い"},
-        {"text": "hurt", "ja": "痛む"}
-      ],
-      "chunks": [
-        {"text": "a woman", "ja": "女性"},
-        {"text": "touch her neck", "ja": "首を触る"},
-        {"text": "a blue shirt", "ja": "青いシャツ"},
-        {"text": "a green sofa", "ja": "緑のソファ"},
-        {"text": "a big TV", "ja": "大きなテレビ"},
-        {"text": "a white lamp", "ja": "白いランプ"},
-        {"text": "in the room", "ja": "部屋の中で"},
-        {"text": "sad face", "ja": "悲しい顔"}
-      ],
-      "sentences": [
-        {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。"},
-        {"text": "She has a blue shirt.", "grammar": "have", "ja": "彼女は青いシャツを着ています。"},
-        {"text": "She touches her neck.", "grammar": "一般動詞", "ja": "彼女は首を触っています。"},
-        {"text": "The sofa is green.", "grammar": "be動詞", "ja": "ソファは緑色です。"},
-        {"text": "This is a room.", "grammar": "This is~", "ja": "ここは部屋です。"}
-      ]
+[
+  {
+    "id": "theme_326",
+    "imageSrc": "assets/images/326.webp",
+    "description": "首の痛みに顔をしかめる女性",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "woman", "ja": "女性", "type": "object", "points": 20},
+          {"text": "neck", "ja": "首", "type": "object", "points": 20},
+          {"text": "hand", "ja": "手", "type": "detail", "points": 10},
+          {"text": "face", "ja": "顔", "type": "detail", "points": 10},
+          {"text": "sofa", "ja": "ソファ", "type": "object", "points": 10},
+          {"text": "lamp", "ja": "ランプ", "type": "detail", "points": 10},
+          {"text": "book", "ja": "本", "type": "detail", "points": 10},
+          {"text": "table", "ja": "テーブル", "type": "detail", "points": 10},
+          {"text": "TV", "ja": "テレビ", "type": "object", "points": 10},
+          {"text": "room", "ja": "部屋", "type": "object", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+          {"text": "brown", "ja": "茶色い", "type": "attribute", "points": 10},
+          {"text": "bad", "ja": "悪い", "type": "attribute", "points": 10},
+          {"text": "hurt", "ja": "痛む", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {"text": "a woman", "ja": "女性", "type": "object", "points": 20},
+          {"text": "touch her neck", "ja": "首を触る", "type": "gist", "points": 40},
+          {"text": "a blue shirt", "ja": "青いシャツ", "type": "attribute", "points": 10},
+          {"text": "a green sofa", "ja": "緑のソファ", "type": "attribute", "points": 10},
+          {"text": "a big TV", "ja": "大きなテレビ", "type": "detail", "points": 10},
+          {"text": "a white lamp", "ja": "白いランプ", "type": "detail", "points": 10},
+          {"text": "in the room", "ja": "部屋の中で", "type": "inference", "points": 10},
+          {"text": "sad face", "ja": "悲しい顔", "type": "inference", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "type": "object", "points": 20},
+          {"text": "She has a blue shirt.", "grammar": "have", "ja": "彼女は青いシャツを着ています。", "type": "attribute", "points": 10},
+          {"text": "She touches her neck.", "grammar": "一般動詞", "ja": "彼女は首を触っています。", "type": "gist", "points": 40},
+          {"text": "The sofa is green.", "grammar": "be動詞", "ja": "ソファは緑色です。", "type": "detail", "points": 10},
+          {"text": "This is a room.", "grammar": "This is~", "ja": "ここは部屋です。", "type": "inference", "points": 20}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "living room", "ja": "リビングルーム", "type": "inference", "points": 20},
+          {"text": "shoulder", "ja": "肩", "type": "object", "points": 20},
+          {"text": "pain", "ja": "痛み", "type": "gist", "points": 30},
+          {"text": "tired", "ja": "疲れた", "type": "inference", "points": 20},
+          {"text": "sick", "ja": "具合が悪い", "type": "inference", "points": 20},
+          {"text": "hold", "ja": "押さえる、持つ", "type": "gist", "points": 20},
+          {"text": "feel", "ja": "感じる", "type": "inference", "points": 10},
+          {"text": "look", "ja": "～に見える", "type": "inference", "points": 10},
+          {"text": "behind", "ja": "～の後ろに", "type": "detail", "points": 10},
+          {"text": "bookshelf", "ja": "本棚", "type": "detail", "points": 10},
+          {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 10},
+          {"text": "screen", "ja": "画面", "type": "detail", "points": 10},
+          {"text": "stand", "ja": "台", "type": "detail", "points": 10},
+          {"text": "furniture", "ja": "家具", "type": "detail", "points": 10},
+          {"text": "wall", "ja": "壁", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "in the living room", "ja": "リビングルームで", "type": "inference", "points": 20},
+          {"text": "holding her neck", "ja": "首を押さえている", "type": "gist", "points": 40},
+          {"text": "looking tired", "ja": "疲れているように見える", "type": "inference", "points": 30},
+          {"text": "feeling pain", "ja": "痛みを感じている", "type": "gist", "points": 40},
+          {"text": "behind the woman", "ja": "女性の後ろに", "type": "detail", "points": 10},
+          {"text": "on the bookshelf", "ja": "本棚の上に", "type": "detail", "points": 10},
+          {"text": "next to the TV", "ja": "テレビの隣に", "type": "detail", "points": 10},
+          {"text": "a wooden stand", "ja": "木製の台", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "There is a woman in the living room.", "grammar": "There is/are~", "ja": "リビングルームに女性がいます。", "type": "inference", "points": 20},
+          {"text": "She is holding the back of her neck.", "grammar": "現在進行形", "ja": "彼女は首の後ろを押さえています。", "type": "gist", "points": 40},
+          {"text": "She looks tired and feels pain.", "grammar": "look + 形容詞", "ja": "彼女は疲れているようで、痛みを感じています。", "type": "inference", "points": 40},
+          {"text": "A green sofa is behind her.", "grammar": "前置詞 (behind)", "ja": "彼女の後ろには緑のソファがあります。", "type": "detail", "points": 10},
+          {"text": "We can see a TV on the wooden stand.", "grammar": "助動詞 (can)", "ja": "木製の台の上にテレビが見えます。", "type": "detail", "points": 10}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "ache", "ja": "痛み", "type": "gist", "points": 30},
+          {"text": "stiff", "ja": "凝った、硬い", "type": "inference", "points": 30},
+          {"text": "sore", "ja": "痛い", "type": "attribute", "points": 20},
+          {"text": "muscle", "ja": "筋肉", "type": "inference", "points": 20},
+          {"text": "posture", "ja": "姿勢", "type": "inference", "points": 20},
+          {"text": "exhausted", "ja": "疲れ切った", "type": "inference", "points": 20},
+          {"text": "discomfort", "ja": "不快感", "type": "inference", "points": 20},
+          {"text": "suffer", "ja": "苦しむ", "type": "gist", "points": 20},
+          {"text": "massage", "ja": "マッサージする", "type": "gist", "points": 30},
+          {"text": "relieve", "ja": "和らげる", "type": "inference", "points": 20},
+          {"text": "frown", "ja": "顔をしかめる", "type": "attribute", "points": 20},
+          {"text": "grimace", "ja": "苦痛で顔をしかめる", "type": "inference", "points": 30},
+          {"text": "interior", "ja": "室内", "type": "detail", "points": 10},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 10},
+          {"text": "device", "ja": "機器", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "suffering from a stiff neck", "ja": "肩こり（首の凝り）に苦しんでいる", "type": "inference", "points": 40},
+          {"text": "massaging her neck", "ja": "首をマッサージしている", "type": "gist", "points": 40},
+          {"text": "frowning in pain", "ja": "痛みで顔をしかめている", "type": "inference", "points": 30},
+          {"text": "poor posture", "ja": "悪い姿勢", "type": "inference", "points": 20},
+          {"text": "feeling discomfort", "ja": "不快感を感じている", "type": "inference", "points": 20},
+          {"text": "trying to relieve the pain", "ja": "痛みを和らげようとしている", "type": "inference", "points": 30},
+          {"text": "an exhausted woman", "ja": "疲れ切った女性", "type": "attribute", "points": 20},
+          {"text": "in the background", "ja": "背景に", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "It looks like the woman is suffering from a stiff neck.", "grammar": "It looks like~", "ja": "女性は首の凝り（寝違え）に苦しんでいるようです。", "type": "inference", "points": 40},
+          {"text": "She is massaging her neck because her muscles are sore.", "grammar": "接続詞 (because)", "ja": "筋肉が痛むので、彼女は首をマッサージしています。", "type": "inference", "points": 40},
+          {"text": "The woman who is wearing a blue shirt is frowning in pain.", "grammar": "関係代名詞 (who)", "ja": "青いシャツを着ている女性は、痛みで顔をしかめています。", "type": "gist", "points": 30},
+          {"text": "She might have a pain in her neck from bad posture.", "grammar": "推測の助動詞 (might)", "ja": "彼女は悪い姿勢からくる首の痛みがあるのかもしれません。", "type": "inference", "points": 40},
+          {"text": "We can see a modern TV and a green sofa to relax in the room.", "grammar": "不定詞の形容詞的用法", "ja": "部屋の中には、リラックスするための緑のソファや近代的なテレビが見えます。", "type": "detail", "points": 20}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "living room", "ja": "リビングルーム"},
-        {"text": "shoulder", "ja": "肩"},
-        {"text": "pain", "ja": "痛み"},
-        {"text": "tired", "ja": "疲れた"},
-        {"text": "sick", "ja": "具合が悪い"},
-        {"text": "hold", "ja": "押さえる、持つ"},
-        {"text": "feel", "ja": "感じる"},
-        {"text": "look", "ja": "～に見える"},
-        {"text": "behind", "ja": "～の後ろに"},
-        {"text": "bookshelf", "ja": "本棚"},
-        {"text": "wooden", "ja": "木製の"},
-        {"text": "screen", "ja": "画面"},
-        {"text": "stand", "ja": "台"},
-        {"text": "furniture", "ja": "家具"},
-        {"text": "wall", "ja": "壁"}
-      ],
-      "chunks": [
-        {"text": "in the living room", "ja": "リビングルームで"},
-        {"text": "holding her neck", "ja": "首を押さえている"},
-        {"text": "looking tired", "ja": "疲れているように見える"},
-        {"text": "feeling pain", "ja": "痛みを感じている"},
-        {"text": "behind the woman", "ja": "女性の後ろに"},
-        {"text": "on the bookshelf", "ja": "本棚の上に"},
-        {"text": "next to the TV", "ja": "テレビの隣に"},
-        {"text": "a wooden stand", "ja": "木製の台"}
-      ],
-      "sentences": [
-        {"text": "There is a woman in the living room.", "grammar": "There is/are~", "ja": "リビングルームに女性がいます。"},
-        {"text": "She is holding the back of her neck.", "grammar": "現在進行形", "ja": "彼女は首の後ろを押さえています。"},
-        {"text": "She looks tired and feels pain.", "grammar": "look + 形容詞", "ja": "彼女は疲れているようで、痛みを感じています。"},
-        {"text": "A green sofa is behind her.", "grammar": "前置詞 (behind)", "ja": "彼女の後ろには緑のソファがあります。"},
-        {"text": "We can see a TV on the wooden stand.", "grammar": "助動詞 (can)", "ja": "木製の台の上にテレビが見えます。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "ache", "ja": "痛み"},
-        {"text": "stiff", "ja": "凝った、硬い"},
-        {"text": "sore", "ja": "痛い"},
-        {"text": "muscle", "ja": "筋肉"},
-        {"text": "posture", "ja": "姿勢"},
-        {"text": "exhausted", "ja": "疲れ切った"},
-        {"text": "discomfort", "ja": "不快感"},
-        {"text": "suffer", "ja": "苦しむ"},
-        {"text": "massage", "ja": "マッサージする"},
-        {"text": "relieve", "ja": "和らげる"},
-        {"text": "frown", "ja": "顔をしかめる"},
-        {"text": "grimace", "ja": "苦痛で顔をしかめる"},
-        {"text": "interior", "ja": "室内"},
-        {"text": "background", "ja": "背景"},
-        {"text": "device", "ja": "機器"}
-      ],
-      "chunks": [
-        {"text": "suffering from a stiff neck", "ja": "肩こり（首の凝り）に苦しんでいる"},
-        {"text": "massaging her neck", "ja": "首をマッサージしている"},
-        {"text": "frowning in pain", "ja": "痛みで顔をしかめている"},
-        {"text": "poor posture", "ja": "悪い姿勢"},
-        {"text": "feeling discomfort", "ja": "不快感を感じている"},
-        {"text": "trying to relieve the pain", "ja": "痛みを和らげようとしている"},
-        {"text": "an exhausted woman", "ja": "疲れ切った女性"},
-        {"text": "in the background", "ja": "背景に"}
-      ],
-      "sentences": [
-        {"text": "It looks like the woman is suffering from a stiff neck.", "grammar": "It looks like~", "ja": "女性は首の凝り（寝違え）に苦しんでいるようです。"},
-        {"text": "She is massaging her neck because her muscles are sore.", "grammar": "接続詞 (because)", "ja": "筋肉が痛むので、彼女は首をマッサージしています。"},
-        {"text": "The woman who is wearing a blue shirt is frowning in pain.", "grammar": "関係代名詞 (who)", "ja": "青いシャツを着ている女性は、痛みで顔をしかめています。"},
-        {"text": "She might have a pain in her neck from bad posture.", "grammar": "推測の助動詞 (might)", "ja": "彼女は悪い姿勢からくる首の痛みがあるのかもしれません。"},
-        {"text": "We can see a modern TV and a green sofa to relax in the room.", "grammar": "不定詞の形容詞的用法", "ja": "部屋の中には、リラックスするための緑のソファや近代的なテレビが見えます。"}
-      ]
+    "pins": {
+      "woman_face": { "x": 42, "y": 35 },
+      "hand": { "x": 52, "y": 42 },
+      "sofa": { "x": 25, "y": 65 },
+      "lamp": { "x": 5, "y": 55 },
+      "bookshelf": { "x": 10, "y": 10 },
+      "TV": { "x": 92, "y": 50 },
+      "TV_stand": { "x": 92, "y": 80 }
     }
-  },
-  "pins": {
-    "woman_face": { "x": 42, "y": 35 },
-    "hand": { "x": 52, "y": 42 },
-    "sofa": { "x": 25, "y": 65 },
-    "lamp": { "x": 5, "y": 55 },
-    "bookshelf": { "x": 10, "y": 10 },
-    "TV": { "x": 92, "y": 50 },
-    "TV_stand": { "x": 92, "y": 80 }
   }
-}
+]

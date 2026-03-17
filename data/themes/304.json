@@ -1,126 +1,128 @@
-{
-  "id": "theme_304",
-  "imageSrc": "assets/images/304.webp",
-  "description": "公園でサッカーの試合を撮影する両親",
-  "timeLimit": 45,
-  "scoringData": {
-    "elementary": {
-      "words": [
-        {"text": "man", "ja": "男の人"},
-        {"text": "woman", "ja": "女の人"},
-        {"text": "boy", "ja": "男の子"},
-        {"text": "park", "ja": "公園"},
-        {"text": "chair", "ja": "椅子"},
-        {"text": "phone", "ja": "電話、スマホ"},
-        {"text": "cup", "ja": "カップ"},
-        {"text": "grass", "ja": "草"},
-        {"text": "tree", "ja": "木"},
-        {"text": "blue", "ja": "青い"},
-        {"text": "red", "ja": "赤い"},
-        {"text": "green", "ja": "緑の"},
-        {"text": "stand", "ja": "立つ"},
-        {"text": "play", "ja": "遊ぶ、する"},
-        {"text": "look", "ja": "見る"}
-      ],
-      "chunks": [
-        {"text": "a man and a woman", "ja": "男の人と女の人"},
-        {"text": "take a picture", "ja": "写真を撮る"},
-        {"text": "a blue chair", "ja": "青い椅子"},
-        {"text": "play soccer", "ja": "サッカーをする"},
-        {"text": "in the park", "ja": "公園で"},
-        {"text": "a green tree", "ja": "緑の木"},
-        {"text": "hold a phone", "ja": "スマホを持つ"},
-        {"text": "stand on the grass", "ja": "草の上に立つ"}
-      ],
-      "sentences": [
-        {"text": "I see a man and a woman.", "grammar": "I see~", "ja": "男の人と女の人が見えます。"},
-        {"text": "They are standing.", "grammar": "is ~ing", "ja": "彼らは立っています。"},
-        {"text": "The woman has a phone.", "grammar": "have/has", "ja": "女の人はスマホを持っています。"},
-        {"text": "The boys are playing soccer.", "grammar": "is ~ing", "ja": "男の子たちはサッカーをしています。"},
-        {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。"}
-      ]
+[
+  {
+    "id": "theme_304",
+    "imageSrc": "assets/images/304.webp",
+    "description": "公園でサッカーの試合を撮影する両親",
+    "timeLimit": 45,
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "man", "ja": "男の人", "type": "object", "points": 20},
+          {"text": "woman", "ja": "女の人", "type": "object", "points": 20},
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 20},
+          {"text": "park", "ja": "公園", "type": "object", "points": 20},
+          {"text": "chair", "ja": "椅子", "type": "object", "points": 10},
+          {"text": "phone", "ja": "電話、スマホ", "type": "object", "points": 20},
+          {"text": "cup", "ja": "カップ", "type": "detail", "points": 10},
+          {"text": "grass", "ja": "草", "type": "detail", "points": 10},
+          {"text": "tree", "ja": "木", "type": "detail", "points": 10},
+          {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+          {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+          {"text": "stand", "ja": "立つ", "type": "gist", "points": 20},
+          {"text": "play", "ja": "遊ぶ、する", "type": "gist", "points": 30},
+          {"text": "look", "ja": "見る", "type": "gist", "points": 20}
+        ],
+        "chunks": [
+          {"text": "a man and a woman", "ja": "男の人と女の人", "type": "object", "points": 20},
+          {"text": "take a picture", "ja": "写真を撮る", "type": "gist", "points": 40},
+          {"text": "a blue chair", "ja": "青い椅子", "type": "detail", "points": 10},
+          {"text": "play soccer", "ja": "サッカーをする", "type": "gist", "points": 30},
+          {"text": "in the park", "ja": "公園で", "type": "detail", "points": 10},
+          {"text": "a green tree", "ja": "緑の木", "type": "detail", "points": 10},
+          {"text": "hold a phone", "ja": "スマホを持つ", "type": "gist", "points": 30},
+          {"text": "stand on the grass", "ja": "草の上に立つ", "type": "detail", "points": 20}
+        ],
+        "sentences": [
+          {"text": "I see a man and a woman.", "grammar": "I see~", "ja": "男の人と女の人が見えます。", "type": "object", "points": 20},
+          {"text": "They are standing.", "grammar": "is ~ing", "ja": "彼らは立っています。", "type": "gist", "points": 20},
+          {"text": "The woman has a phone.", "grammar": "have/has", "ja": "女の人はスマホを持っています。", "type": "gist", "points": 30},
+          {"text": "The boys are playing soccer.", "grammar": "is ~ing", "ja": "男の子たちはサッカーをしています。", "type": "gist", "points": 40},
+          {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。", "type": "object", "points": 20}
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "parents", "ja": "両親", "type": "inference", "points": 30},
+          {"text": "children", "ja": "子供たち", "type": "inference", "points": 20},
+          {"text": "smartphone", "ja": "スマートフォン", "type": "object", "points": 20},
+          {"text": "picture", "ja": "写真", "type": "object", "points": 10},
+          {"text": "coat", "ja": "コート", "type": "attribute", "points": 10},
+          {"text": "hoodie", "ja": "パーカー", "type": "attribute", "points": 10},
+          {"text": "goal", "ja": "ゴール", "type": "detail", "points": 10},
+          {"text": "picnic", "ja": "ピクニック", "type": "inference", "points": 20},
+          {"text": "blanket", "ja": "毛布、敷物", "type": "detail", "points": 10},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 10},
+          {"text": "smile", "ja": "微笑む", "type": "attribute", "points": 20},
+          {"text": "hold", "ja": "持っている", "type": "gist", "points": 20},
+          {"text": "enjoy", "ja": "楽しむ", "type": "inference", "points": 30},
+          {"text": "watch", "ja": "見る", "type": "gist", "points": 20},
+          {"text": "outside", "ja": "外で", "type": "detail", "points": 10}
+        ],
+        "chunks": [
+          {"text": "taking a picture", "ja": "写真を撮っている", "type": "gist", "points": 40},
+          {"text": "holding a cup", "ja": "カップを持っている", "type": "detail", "points": 10},
+          {"text": "watching the game", "ja": "試合を見ている", "type": "gist", "points": 30},
+          {"text": "playing soccer in the background", "ja": "背景でサッカーをしている", "type": "gist", "points": 30},
+          {"text": "having a picnic", "ja": "ピクニックをしている", "type": "inference", "points": 20},
+          {"text": "wearing a coat", "ja": "コートを着ている", "type": "attribute", "points": 10},
+          {"text": "enjoying the weekend", "ja": "週末を楽しんでいる", "type": "inference", "points": 30},
+          {"text": "next to the chairs", "ja": "椅子の隣に", "type": "detail", "points": 10}
+        ],
+        "sentences": [
+          {"text": "A woman is taking a picture with her smartphone.", "grammar": "現在進行形", "ja": "女の人がスマートフォンで写真を撮っています。", "type": "gist", "points": 40},
+          {"text": "The man next to her is holding a cup.", "grammar": "前置詞を用いた名詞修飾", "ja": "彼女の隣の男の人はカップを持っています。", "type": "detail", "points": 20},
+          {"text": "There are some boys playing soccer in the background.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "背景にはサッカーをしている男の子たちがいます。", "type": "gist", "points": 30},
+          {"text": "A couple is having a picnic on the blanket.", "grammar": "場所を表す前置詞句", "ja": "カップルが敷物の上でピクニックをしています。", "type": "detail", "points": 20},
+          {"text": "They look happy to be outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外にいられて幸せそうに見えます。", "type": "inference", "points": 30}
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "couple", "ja": "カップル、夫婦", "type": "inference", "points": 20},
+          {"text": "capture", "ja": "（写真や映像に）記録する、捉える", "type": "gist", "points": 30},
+          {"text": "photograph", "ja": "写真", "type": "object", "points": 10},
+          {"text": "tumbler", "ja": "タンブラー", "type": "detail", "points": 10},
+          {"text": "match", "ja": "試合", "type": "gist", "points": 20},
+          {"text": "spectator", "ja": "観客", "type": "inference", "points": 20},
+          {"text": "relax", "ja": "くつろぐ", "type": "inference", "points": 20},
+          {"text": "autumn", "ja": "秋", "type": "inference", "points": 20},
+          {"text": "foliage", "ja": "紅葉、木の葉", "type": "attribute", "points": 10},
+          {"text": "memorable", "ja": "記憶に残る、忘れられない", "type": "inference", "points": 30},
+          {"text": "moment", "ja": "瞬間", "type": "detail", "points": 10},
+          {"text": "observe", "ja": "観察する、見守る", "type": "gist", "points": 30},
+          {"text": "comfortable", "ja": "快適な", "type": "attribute", "points": 20},
+          {"text": "outdoors", "ja": "屋外で", "type": "detail", "points": 10},
+          {"text": "record", "ja": "記録する、録画する", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {"text": "capturing a memorable moment", "ja": "記憶に残る瞬間を写真に収めている", "type": "inference", "points": 40},
+          {"text": "observing a soccer match", "ja": "サッカーの試合を見守っている", "type": "gist", "points": 30},
+          {"text": "standing beside the folding chairs", "ja": "折りたたみ椅子のそばに立っている", "type": "detail", "points": 20},
+          {"text": "enjoying a relaxing weekend", "ja": "リラックスした週末を楽しんでいる", "type": "inference", "points": 30},
+          {"text": "beautiful autumn foliage", "ja": "美しい紅葉", "type": "attribute", "points": 20},
+          {"text": "people having a picnic", "ja": "ピクニックをしている人々", "type": "detail", "points": 20},
+          {"text": "recording a video", "ja": "動画を録画している", "type": "gist", "points": 30},
+          {"text": "a peaceful atmosphere", "ja": "平和な雰囲気", "type": "inference", "points": 30}
+        ],
+        "sentences": [
+          {"text": "It looks like a pleasant autumn day for people to relax outdoors.", "grammar": "It looks like~ / 不定詞", "ja": "人々が屋外でくつろぐには、心地よい秋の日のように見えます。", "type": "inference", "points": 40},
+          {"text": "The woman who is wearing a beige coat is capturing a moment with her smartphone.", "grammar": "関係代名詞", "ja": "ベージュのコートを着ている女性は、スマートフォンで瞬間を撮影しています。", "type": "gist", "points": 40},
+          {"text": "The man standing beside her is holding a tumbler while watching the match.", "grammar": "接続詞 while", "ja": "彼女のそばに立っている男性は、試合を見ながらタンブラーを持っています。", "type": "gist", "points": 30},
+          {"text": "In the background, we can see a couple enjoying a picnic on a blanket.", "grammar": "知覚動詞+O+現在分詞", "ja": "背景には、敷物の上でピクニックを楽しんでいるカップルが見えます。", "type": "detail", "points": 20},
+          {"text": "The parents seem delighted because they are watching their children play soccer.", "grammar": "接続詞 because / seem + 形容詞", "ja": "両親は子供たちがサッカーをするのを見ているので、喜んでいるようです。", "type": "inference", "points": 40}
+        ]
+      }
     },
-    "junior_high": {
-      "words": [
-        {"text": "parents", "ja": "両親"},
-        {"text": "children", "ja": "子供たち"},
-        {"text": "smartphone", "ja": "スマートフォン"},
-        {"text": "picture", "ja": "写真"},
-        {"text": "coat", "ja": "コート"},
-        {"text": "hoodie", "ja": "パーカー"},
-        {"text": "goal", "ja": "ゴール"},
-        {"text": "picnic", "ja": "ピクニック"},
-        {"text": "blanket", "ja": "毛布、敷物"},
-        {"text": "background", "ja": "背景"},
-        {"text": "smile", "ja": "微笑む"},
-        {"text": "hold", "ja": "持っている"},
-        {"text": "enjoy", "ja": "楽しむ"},
-        {"text": "watch", "ja": "見る"},
-        {"text": "outside", "ja": "外で"}
-      ],
-      "chunks": [
-        {"text": "taking a picture", "ja": "写真を撮っている"},
-        {"text": "holding a cup", "ja": "カップを持っている"},
-        {"text": "watching the game", "ja": "試合を見ている"},
-        {"text": "playing soccer in the background", "ja": "背景でサッカーをしている"},
-        {"text": "having a picnic", "ja": "ピクニックをしている"},
-        {"text": "wearing a coat", "ja": "コートを着ている"},
-        {"text": "enjoying the weekend", "ja": "週末を楽しんでいる"},
-        {"text": "next to the chairs", "ja": "椅子の隣に"}
-      ],
-      "sentences": [
-        {"text": "A woman is taking a picture with her smartphone.", "grammar": "現在進行形", "ja": "女の人がスマートフォンで写真を撮っています。"},
-        {"text": "The man next to her is holding a cup.", "grammar": "前置詞を用いた名詞修飾", "ja": "彼女の隣の男の人はカップを持っています。"},
-        {"text": "There are some boys playing soccer in the background.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "背景にはサッカーをしている男の子たちがいます。"},
-        {"text": "A couple is having a picnic on the blanket.", "grammar": "場所を表す前置詞句", "ja": "カップルが敷物の上でピクニックをしています。"},
-        {"text": "They look happy to be outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外にいられて幸せそうに見えます。"}
-      ]
-    },
-    "high_school": {
-      "words": [
-        {"text": "couple", "ja": "カップル、夫婦"},
-        {"text": "capture", "ja": "（写真や映像に）記録する、捉える"},
-        {"text": "photograph", "ja": "写真"},
-        {"text": "tumbler", "ja": "タンブラー"},
-        {"text": "match", "ja": "試合"},
-        {"text": "spectator", "ja": "観客"},
-        {"text": "relax", "ja": "くつろぐ"},
-        {"text": "autumn", "ja": "秋"},
-        {"text": "foliage", "ja": "紅葉、木の葉"},
-        {"text": "memorable", "ja": "記憶に残る、忘れられない"},
-        {"text": "moment", "ja": "瞬間"},
-        {"text": "observe", "ja": "観察する、見守る"},
-        {"text": "comfortable", "ja": "快適な"},
-        {"text": "outdoors", "ja": "屋外で"},
-        {"text": "record", "ja": "記録する、録画する"}
-      ],
-      "chunks": [
-        {"text": "capturing a memorable moment", "ja": "記憶に残る瞬間を写真に収めている"},
-        {"text": "observing a soccer match", "ja": "サッカーの試合を見守っている"},
-        {"text": "standing beside the folding chairs", "ja": "折りたたみ椅子のそばに立っている"},
-        {"text": "enjoying a relaxing weekend", "ja": "リラックスした週末を楽しんでいる"},
-        {"text": "beautiful autumn foliage", "ja": "美しい紅葉"},
-        {"text": "people having a picnic", "ja": "ピクニックをしている人々"},
-        {"text": "recording a video", "ja": "動画を録画している"},
-        {"text": "a peaceful atmosphere", "ja": "平和な雰囲気"}
-      ],
-      "sentences": [
-        {"text": "It looks like a pleasant autumn day for people to relax outdoors.", "grammar": "It looks like~ / 不定詞", "ja": "人々が屋外でくつろぐには、心地よい秋の日のように見えます。"},
-        {"text": "The woman who is wearing a beige coat is capturing a moment with her smartphone.", "grammar": "関係代名詞", "ja": "ベージュのコートを着ている女性は、スマートフォンで瞬間を撮影しています。"},
-        {"text": "The man standing beside her is holding a tumbler while watching the match.", "grammar": "接続詞 while", "ja": "彼女のそばに立っている男性は、試合を見ながらタンブラーを持っています。"},
-        {"text": "In the background, we can see a couple enjoying a picnic on a blanket.", "grammar": "知覚動詞+O+現在分詞", "ja": "背景には、敷物の上でピクニックを楽しんでいるカップルが見えます。"},
-        {"text": "The parents seem delighted because they are watching their children play soccer.", "grammar": "接続詞 because / seem + 形容詞", "ja": "両親は子供たちがサッカーをするのを見ているので、喜んでいるようです。"}
-      ]
+    "pins": {
+      "man": {"x": 35, "y": 50},
+      "woman": {"x": 48, "y": 50},
+      "phone": {"x": 55, "y": 18},
+      "chair": {"x": 22, "y": 65},
+      "goal": {"x": 67, "y": 42},
+      "picnic": {"x": 88, "y": 58},
+      "cup": {"x": 41, "y": 38},
+      "tree": {"x": 85, "y": 25}
     }
-  },
-  "pins": {
-    "man": {"x": 35, "y": 50},
-    "woman": {"x": 48, "y": 50},
-    "phone": {"x": 55, "y": 18},
-    "chair": {"x": 22, "y": 65},
-    "goal": {"x": 67, "y": 42},
-    "picnic": {"x": 88, "y": 58},
-    "cup": {"x": 41, "y": 38},
-    "tree": {"x": 85, "y": 25}
   }
-}
+]
