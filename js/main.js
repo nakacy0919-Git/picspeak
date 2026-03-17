@@ -4,8 +4,8 @@
 // ==========================================
 
 window.appState = { 
-    selectedPlayers: 1, 
-    selectedLevel: 'elementary', 
+    selectedMode: null, // ★初期は未選択
+    selectedLevel: null, // ★初期は未選択
     customTimeLimit: 30,
     isPracticeMode: false,
     practiceTargetText: "",
@@ -91,8 +91,6 @@ window.renderThemeGrid = async function() {
         let html = '';
         results.forEach(item => {
             if(!item || !item.data) return;
-            
-            // 日本語タイトルのみを取得（description または titleJa）
             let titleText = item.data.description || item.data.titleJa || '名称未設定';
 
             html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-md border-4 border-transparent hover:border-pink-400 hover:shadow-xl transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
@@ -165,6 +163,14 @@ window.addEventListener('DOMContentLoaded', initApp);
 
 if (btnGotoSelect) {
     btnGotoSelect.addEventListener('click', () => {
+        // もしLevelかModeが未選択なら進めない（UI制御で防いでいるが念のため）
+        if(!window.appState.selectedLevel || !window.appState.selectedMode) return;
+
+        if (window.appState.selectedMode === 'story') {
+            window.location.href = 'story.html';
+            return;
+        }
+
         try {
             const elem = document.documentElement;
             if (!document.fullscreenElement) {

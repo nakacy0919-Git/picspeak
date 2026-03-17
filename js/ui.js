@@ -1,6 +1,6 @@
 // js/ui.js
 // ==========================================
-// UI制御（画面遷移、モーダル、ボタン操作、リサイズ）モジュール
+// UI制御（画面遷移、モーダル、ボタン操作、リサイズ、STEPアニメーション）
 // ==========================================
 
 window.showView = function(viewElement) {
@@ -19,7 +19,6 @@ window.showView = function(viewElement) {
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    // モーダル開閉
     const btnOpenTutorial = document.getElementById('btn-open-tutorial');
     const btnCloseTutorial = document.getElementById('btn-close-tutorial');
     const tutorialModal = document.getElementById('tutorial-modal');
@@ -43,7 +42,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if(btnOpenSettings) btnOpenSettings.addEventListener('click', () => settingsModal.classList.remove('hidden'));
     if(btnCloseSettings) btnCloseSettings.addEventListener('click', () => settingsModal.classList.add('hidden'));
 
-    // トランスクリプト（全文表示）モーダルの閉じる処理
     const btnCloseTranscript = document.getElementById('btn-close-transcript');
     const transcriptModal = document.getElementById('transcript-modal');
     if(btnCloseTranscript) {
@@ -52,7 +50,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 設定ボタン
     const timeBtns = document.querySelectorAll('.time-btn');
     timeBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -64,25 +61,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    const playerBtns = document.querySelectorAll('.player-btn');
-    playerBtns.forEach(btn => {
-        btn.addEventListener('click', (e) => {
-            playerBtns.forEach(b => { b.classList.remove('selected-player-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-white', 'border-gray-200', 'text-gray-700'); });
-            const target = e.currentTarget; 
-            target.classList.remove('bg-white', 'border-gray-200', 'text-gray-700');
-            target.classList.add('selected-player-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            if (window.appState) window.appState.selectedPlayers = parseInt(target.getAttribute('data-players'));
-        });
-    });
-
+    // ★STEP 1: Target Level 選択時の処理
     const levelBtns = document.querySelectorAll('.level-btn');
     const currentLevelBadge = document.getElementById('current-level-badge');
     levelBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
-            levelBtns.forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-white', 'border-gray-200', 'text-gray-700'); });
+            levelBtns.forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
             const target = e.currentTarget;
-            target.classList.remove('bg-white', 'border-gray-200', 'text-gray-700');
+            target.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
             target.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            
             if (window.appState) {
                 window.appState.selectedLevel = target.getAttribute('data-level');
                 let levelText = "中学生レベル";
@@ -90,10 +78,57 @@ document.addEventListener('DOMContentLoaded', () => {
                 if (window.appState.selectedLevel === "high_school") levelText = "高校生レベル";
                 if(currentLevelBadge) currentLevelBadge.textContent = levelText;
             }
+
+            // STEP誘導のUI更新
+            const badgeStep1 = document.getElementById('badge-step1');
+            const stepMode = document.getElementById('step-mode');
+            const badgeStep2 = document.getElementById('badge-step2');
+            
+            if(badgeStep1) badgeStep1.classList.remove('animate-bounce');
+            if(stepMode) stepMode.classList.remove('opacity-40', 'pointer-events-none');
+            if(badgeStep2) {
+                badgeStep2.classList.remove('hidden');
+                if (!window.appState.selectedMode) badgeStep2.classList.add('animate-bounce');
+            }
         });
     });
 
-    // リザルトのアコーディオン
+    // ★STEP 2: Game Mode 選択時の処理
+    const modeBtns = document.querySelectorAll('.mode-btn');
+    const btnGotoSelect = document.getElementById('btn-goto-select');
+    modeBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            modeBtns.forEach(b => { 
+                b.classList.remove('selected-mode-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+            });
+            const target = e.currentTarget;
+            target.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            target.classList.add('selected-mode-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            
+            if (window.appState) {
+                window.appState.selectedMode = target.getAttribute('data-mode');
+                if (btnGotoSelect) {
+                    btnGotoSelect.innerText = window.appState.selectedMode === 'story' ? 'SELECT STORY' : 'SELECT IMAGE';
+                }
+            }
+
+            // STEP誘導のUI更新
+            const badgeStep2 = document.getElementById('badge-step2');
+            const badgeStep3 = document.getElementById('badge-step3');
+            
+            if(badgeStep2) badgeStep2.classList.remove('animate-bounce');
+            if(btnGotoSelect) {
+                btnGotoSelect.classList.remove('opacity-40', 'pointer-events-none');
+                btnGotoSelect.classList.add('hover:shadow-sns-gradient/40');
+            }
+            if(badgeStep3) {
+                badgeStep3.classList.remove('hidden');
+                badgeStep3.classList.add('animate-bounce');
+            }
+        });
+    });
+
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('.toggle-more-btn');
         if (btn) {
@@ -109,7 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // リサイズ処理（縦・横 両対応）
     const imagePanel = document.getElementById('image-panel');
     const resizerVertical = document.getElementById('resizer-vertical');
     const resizerHorizontal = document.getElementById('resizer-horizontal');
@@ -158,7 +192,6 @@ document.addEventListener('DOMContentLoaded', () => {
         document.addEventListener('touchend', stopResizeH);
     }
     
-    // ★画面回転・リサイズ時のスタイル自動リセット（スマホ左半分布バグ防止）
     window.addEventListener('resize', () => {
         if (!imagePanel) return;
         if (window.innerWidth < 768) {

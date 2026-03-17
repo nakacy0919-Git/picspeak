@@ -9,7 +9,7 @@
     <meta name="apple-mobile-web-app-title" content="PicSpeak">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
     
-    <title>PicSpeak - Modern Speaking Battle</title>
+    <title>PicSpeak - AI Picture Description</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
@@ -72,7 +72,7 @@
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-11/12 max-w-2xl border border-gray-100 text-left">
                     <h3 class="text-2xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
                     <ul class="space-y-4 text-gray-700 font-medium mb-8 text-base md:text-lg">
-                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>レベルを選んで <b>PIC & SPEAK!</b> を押します。</p></li>
+                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>レベルを選んで <b>SELECT IMAGE</b> を押します。</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">2️⃣</span><p>STARTを押すとマイクがオンになります。画像に映っているモノや状況を<b>英語でどんどん描写</b>しましょう！</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">3️⃣</span><p>ターゲット表現を言うと、リアルタイムで青色に光ってポイントGET！</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">💯</span><p>終了後、言えなかった表現は「発音練習モード(🎤)」で反復練習できます！</p></li>
@@ -91,31 +91,43 @@
 
             <div class="my-4 md:my-6 text-center shrink-0">
                 <h1 class="clean-title text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
-                <p class="text-gray-900 text-sm md:text-lg lg:text-xl font-extrabold tracking-widest uppercase">Modern Speaking Battle</p>
-                <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-xs md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
+                <p class="text-gray-900 text-xs md:text-base lg:text-xl font-extrabold tracking-widest uppercase">AI Picture Description & Retelling</p>
+                <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
             </div>
             
-            <div class="sns-card p-6 md:p-8 lg:p-10 w-full max-w-md md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl">
-                <div class="mb-6 md:mb-8">
-                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Target Level</h2>
-                    <div class="grid grid-cols-3 gap-3 md:gap-4 lg:gap-6">
-                        <button class="level-btn sns-btn bg-sns-gradient text-white shadow-lg py-2.5 md:py-3 lg:text-lg transition-all selected-level-btn" data-level="elementary">小学生</button>
+            <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-md md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl">
+                
+                <div id="step-level" class="mb-5 md:mb-8 relative border-2 border-transparent rounded-2xl md:rounded-3xl p-2 transition-all duration-300">
+                    <div id="badge-step1" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-10 animate-bounce shadow-md tracking-wider">STEP 1</div>
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center pt-1 md:pt-2">Target Level</h2>
+                    <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="elementary">小学生</button>
                         <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="junior_high">中学生</button>
                         <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="high_school">高校生</button>
                     </div>
                 </div>
-                <div class="mb-6 md:mb-10">
-                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center">Players</h2>
-                    <div class="grid grid-cols-2 md:grid-cols-4 gap-3 md:gap-4 lg:gap-6">
-                        <button class="player-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 md:py-4 flex flex-col items-center justify-center transition-all selected-player-btn" data-players="1"><span class="text-xl md:text-2xl mb-1">👤</span><span class="text-xs md:text-sm font-bold">1 Player</span></button>
-                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="2"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">2 Players</span></button>
-                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="3"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-2 md:-mr-3">👤</span><span class="-mr-2 md:-mr-3">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">3 Players</span></button>
-                        <button class="player-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-3 md:py-4 flex flex-col items-center justify-center transition-all" data-players="4"><span class="text-xl md:text-2xl mb-1 flex"><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span class="-mr-3 md:-mr-4">👤</span><span>👤</span></span><span class="text-xs md:text-sm font-bold">4 Players</span></button>
+
+                <div id="step-mode" class="mb-5 md:mb-8 relative border-2 border-transparent rounded-2xl md:rounded-3xl p-2 opacity-40 pointer-events-none transition-all duration-500">
+                    <div id="badge-step2" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-10 hidden shadow-md tracking-wider">STEP 2</div>
+                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center pt-1 md:pt-2">Game Mode</h2>
+                    <div class="grid grid-cols-2 gap-2 md:gap-4 lg:gap-6">
+                        <button class="mode-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 flex flex-col items-center justify-center transition-all hover:bg-gray-100" data-mode="snapshot">
+                            <span class="text-base md:text-lg lg:text-xl font-black uppercase tracking-wider leading-none mt-1">SNAPSHOT</span>
+                            <span class="text-[9px] md:text-xs font-bold opacity-70 mt-1 mb-1">1枚の画像を説明する</span>
+                        </button>
+                        <button class="mode-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 flex flex-col items-center justify-center transition-all hover:bg-gray-100" data-mode="story">
+                            <span class="text-base md:text-lg lg:text-xl font-black uppercase tracking-wider leading-none mt-1">STORY</span>
+                            <span class="text-[9px] md:text-xs font-bold opacity-70 mt-1 mb-1">4枚の画像を順番に説明</span>
+                        </button>
                     </div>
                 </div>
-                <button id="btn-goto-select" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-4xl lg:text-5xl py-5 md:py-6 transition-all tracking-widest uppercase shadow-xl hover:shadow-sns-gradient/40">
-                    SELECT IMAGE
-                </button>
+
+                <div class="relative">
+                    <div id="badge-step3" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-20 hidden shadow-md tracking-wider">STEP 3</div>
+                    <button id="btn-goto-select" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-4xl lg:text-5xl py-5 md:py-6 transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
+                        SELECT IMAGE
+                    </button>
+                </div>
 
                 <div class="text-center mt-5 md:mt-6">
                     <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
@@ -315,7 +327,7 @@
             
             <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
                 <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
-                    </div>
+                </div>
             </div>
        </div>
        
