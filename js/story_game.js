@@ -3,7 +3,8 @@
 // PSS専用 ゲーム進行・タイマー・状態遷移コントローラー
 // ==========================================
 
-// --- モード選択 ---
+window.isSupportMode = false; 
+
 window.openStoryModeSelect = function(storyId) {
     window.storyState.currentStoryId = storyId;
     const modal = document.getElementById('story-mode-modal');
@@ -42,7 +43,132 @@ window.selectStoryMode = function(mode) {
     }
 };
 
-// --- Reading Practice モード進行 ---
+window.renderReadingText = function() {
+    const idx = window.storyState.currentSceneIndex;
+    const level = window.storyState.selectedLevel;
+    if(!window.storyState.currentStory) return;
+    const levelData = window.storyState.currentStory.scenes[idx].levels[level];
+    
+    if (levelData.vocabulary) {
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = levelData.readingText || "";
+        let html = tempDiv.textContent || tempDiv.innerText || "";
+
+        if (window.isSupportMode) {
+            const vocabList = [...levelData.vocabulary].sort((a, b) => b.word.length - a.word.length);
+            const replacements = [];
+            
+            vocabList.forEach((item) => {
+                const safeWord = item.word.replace(/[-\/\\^$*+?.()|[\]{}]/g, '\\$&');
+                const regex = new RegExp(`\\b(${safeWord})\\b`, 'gi');
+                
+                html = html.replace(regex, (match) => {
+                    replacements.push({ match: match, word: item.word, meaning: item.meaning });
+                    return `###VOCAB_${replacements.length - 1}###`;
+                });
+            });
+
+            replacements.forEach((rep, index) => {
+                const placeholder = `###VOCAB_${index}###`;
+                const spanHtml = `<span class="story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors" data-word="${rep.word}" data-meaning="${rep.meaning}">${rep.match}</span>`;
+                html = html.replace(new RegExp(placeholder, 'g'), spanHtml);
+            });
+        }
+        const content = document.getElementById('reading-text-content');
+        if (content) content.innerHTML = html;
+
+    } else {
+        let html = levelData.readingText || "";
+        if (!window.isSupportMode) {
+            const tempDiv = document.createElement('div');
+            tempDiv.innerHTML = html;
+            const spans = tempDiv.querySelectorAll('.story-clickable');
+            spans.forEach(span => {
+                const text = document.createTextNode(span.textContent);
+                span.parentNode.replaceChild(text, span);
+            });
+            html = tempDiv.innerHTML;
+        }
+        const content = document.getElementById('reading-text-content');
+        if (content) content.innerHTML = html;
+    }
+};
+
+document.addEventListener('click', (e) => {
+    
+    const btnJa = e.target.closest('#btn-toggle-ja');
+    if (btnJa) {
+        const jaArea = document.getElementById('ja-container');
+        if (jaArea) {
+            if (jaArea.classList.contains('hidden')) {
+                jaArea.classList.remove('hidden');
+                btnJa.innerHTML = '🇯🇵 訳を隠す';
+                btnJa.classList.replace('bg-white', 'bg-gray-100');
+            } else {
+                jaArea.classList.add('hidden');
+                btnJa.innerHTML = '🇯🇵 訳を表示';
+                btnJa.classList.replace('bg-gray-100', 'bg-white');
+            }
+        }
+        return;
+    }
+
+    const btnSupport = e.target.closest('#btn-toggle-support');
+    if (btnSupport) {
+        window.isSupportMode = !window.isSupportMode;
+        if (window.isSupportMode) {
+            btnSupport.innerHTML = '💡 サポートをOFFにする';
+            btnSupport.classList.remove('bg-gray-50', 'text-gray-700', 'border-gray-300');
+            btnSupport.classList.add('bg-yellow-400', 'text-yellow-900', 'border-yellow-400', 'shadow-inner');
+        } else {
+            btnSupport.innerHTML = '💡 サポートをONにする';
+            btnSupport.classList.remove('bg-yellow-400', 'text-yellow-900', 'border-yellow-400', 'shadow-inner');
+            btnSupport.classList.add('bg-gray-50', 'text-gray-700', 'border-gray-300');
+            document.getElementById('word-support-popup')?.classList.add('hidden');
+        }
+        window.renderReadingText();
+        return;
+    }
+
+    const targetWord = e.target.closest('.story-clickable');
+    if (targetWord && window.isSupportMode) {
+        const meaning = targetWord.getAttribute('data-meaning') || targetWord.getAttribute('data-ja') || "意味が登録されていません";
+        const popup = document.getElementById('word-support-popup');
+        
+        document.getElementById('support-word-text').textContent = targetWord.textContent;
+        document.getElementById('support-word-meaning').textContent = meaning;
+
+        // ★修正: 画面(Viewport)を基準にした絶対座標で配置（はみ出さない）
+        const rect = targetWord.getBoundingClientRect();
+        const top = rect.top - 10; // 単語の少し上に配置
+        const left = rect.left + (rect.width / 2);
+        
+        popup.style.top = `${top}px`;
+        popup.style.left = `${left}px`;
+        popup.classList.remove('hidden');
+        popup.classList.add('flex');
+
+        const pronounceBtn = document.getElementById('btn-support-pronounce');
+        if (pronounceBtn) {
+            pronounceBtn.onclick = (event) => {
+                event.stopPropagation(); // 発音ボタンを押してもポップアップが閉じないようにする
+                speechSynthesis.cancel();
+                const u = new SpeechSynthesisUtterance(targetWord.textContent);
+                u.lang = 'en-US';
+                u.rate = 0.75;
+                if (window.bestEnglishVoice) u.voice = window.bestEnglishVoice;
+                speechSynthesis.speak(u);
+            };
+        }
+        return;
+    }
+
+    if (window.isSupportMode && !e.target.closest('#word-support-popup')) {
+        document.getElementById('word-support-popup')?.classList.add('hidden');
+        document.getElementById('word-support-popup')?.classList.remove('flex');
+    }
+});
+
 window.loadReadingScene = function(index) {
     const scene = window.storyState.currentStory.scenes[index];
     const level = window.storyState.selectedLevel;
@@ -58,8 +184,15 @@ window.loadReadingScene = function(index) {
         sceneBadge.innerHTML = `Scene <span class="text-2xl text-blue-600 mx-1">${index + 1}</span> / 4 <span class="text-xs md:text-sm ml-3 px-3 py-1 bg-blue-100 rounded-lg text-blue-600 align-middle shadow-sm border border-blue-200">${window.levelMap[level]}</span>`;
     }
     
-    const content = document.getElementById('reading-text-content');
-    if(content) content.innerHTML = levelData.readingText || "Text not found.";
+    window.isSupportMode = false;
+    const btnSupport = document.getElementById('btn-toggle-support');
+    if (btnSupport) {
+        btnSupport.innerHTML = '💡 サポートをONにする';
+        btnSupport.classList.remove('bg-yellow-400', 'text-yellow-900', 'shadow-inner');
+        btnSupport.classList.add('bg-gray-50', 'text-gray-700', 'border-gray-300');
+    }
+    document.getElementById('word-support-popup')?.classList.add('hidden');
+    window.renderReadingText();
     
     const jaText = document.getElementById('reading-text-ja');
     if(jaText) jaText.textContent = levelData.readingJa || "日本語訳はありません。";
@@ -115,7 +248,6 @@ document.getElementById('btn-next-scene')?.addEventListener('click', () => {
     }
 });
 
-// --- マイク状態(State Machine)制御 ---
 window.setMicState = function(state) {
     window.micState = state;
     const btn = document.getElementById('btn-start-reading');
@@ -134,7 +266,7 @@ window.setMicState = function(state) {
         if(typeof stopSpeech === 'function') stopSpeech();
         btn.innerHTML = '⏸️ PAUSE (再開)';
         btn.className = "flex-1 px-4 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 bg-gray-500 text-white shadow-md";
-    } else { // idle
+    } else { 
         window.isRecording = false;
         if(typeof stopSpeech === 'function') stopSpeech();
         btn.innerHTML = '🎤 START';
@@ -149,7 +281,6 @@ document.getElementById('btn-start-reading')?.addEventListener('click', () => {
     else window.setMicState('paused');
 });
 
-// --- Retelling Practice モード進行 ---
 window.loadRetellingScene = function(index) {
     const scene = window.storyState.currentStory.scenes[index];
     const level = window.storyState.selectedLevel;

@@ -68,6 +68,11 @@ async function initStoryApp() {
     
     // データ取得
     await fetchStoryData();
+
+    // ★修正: データ読み込み完了後に、最初の画面（ストーリー選択）を表示する！
+    if(typeof showStoryView === 'function') {
+        showStoryView(document.getElementById('view-select'));
+    }
 }
 
 // レベル保存処理

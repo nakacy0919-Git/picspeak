@@ -50,7 +50,11 @@ function handleStorySpeechResult(finalText, interimText) {
         if (finalText.trim().length > 0) window.storyState.readingTranscripts[idx] += finalText + " ";
         const currentTempText = window.storyState.readingTranscripts[idx] + interimText;
         
-        const targetText = levelData.readingText.replace(/<[^>]*>?/gm, '');
+        // ★修正: HTMLタグを安全に剥がして純粋なテキストのみを抽出
+        const tempDiv = document.createElement('div');
+        tempDiv.innerHTML = levelData.readingText;
+        const targetText = tempDiv.textContent || tempDiv.innerText || "";
+        
         const targetSentences = targetText.match(/[^.!?]+[.!?]+/g) || [targetText];
         const spokenRaw = currentTempText.toLowerCase().replace(/[.,!?]/g, '');
         

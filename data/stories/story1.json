@@ -8,31 +8,48 @@
       "imageSrc": "assets/images/story/story1_scene1.webp",
       "levels": {
         "elementary": {
-          "readingText": "Ken is a boy. He goes to school. Today, he is walking to school. He is using his smartphone. He <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='likes' data-ja='～が好きだ' data-synonyms='enjoys, loves'>likes</span> a game very much. It is a new game. He plays the game. He does not see the road. He does not see people. He is very happy. Many people are walking. But Ken only sees his smartphone. The street is busy. He is walking very slowly. He is dangerous.",
+          "readingText": "Ken is a boy. He goes to school. Today, he is walking to school. He is using his smartphone. He likes a game very much. It is a new game. He plays the game. He does not see the road. He does not see people. He is very happy. Many people are walking. But Ken only sees his smartphone. The street is busy. He is walking very slowly. He is dangerous.",
           "readingJa": "ケンは男の子です。彼は学校に行きます。今日、彼は学校に歩いています。彼はスマートフォンを使っています。彼はゲームが大好きです。それは新しいゲームです。彼はそのゲームをプレイします。彼は道を見ていません。彼は人々を見ていません。彼はとても幸せです。多くの人々が歩いています。しかし、ケンはスマートフォンだけを見ています。通りは賑やかです。彼はとてもゆっくり歩いています。彼は危険です。",
-          "targets": [
-            {"text": "likes", "ja": "～が好きだ"},
-            {"text": "smartphone", "ja": "スマートフォン"},
-            {"text": "dangerous", "ja": "危険な"}
-          ]
+          "vocabulary": [
+            {"word": "boy", "meaning": "男の子"}, {"word": "goes to", "meaning": "～へ行く"}, {"word": "school", "meaning": "学校"},
+            {"word": "Today", "meaning": "今日"}, {"word": "walking to", "meaning": "～へ歩いて向かっている"}, {"word": "using", "meaning": "使っている"},
+            {"word": "smartphone", "meaning": "スマートフォン"}, {"word": "likes", "meaning": "～が好きだ"}, {"word": "game", "meaning": "ゲーム"},
+            {"word": "very much", "meaning": "とても"}, {"word": "new", "meaning": "新しい"}, {"word": "plays", "meaning": "プレイする、遊ぶ"},
+            {"word": "does not see", "meaning": "見ていない"}, {"word": "road", "meaning": "道"}, {"word": "people", "meaning": "人々"},
+            {"word": "very happy", "meaning": "とても幸せだ"}, {"word": "Many", "meaning": "たくさんの"}, {"word": "only sees", "meaning": "～だけを見ている"},
+            {"word": "street", "meaning": "通り"}, {"word": "busy", "meaning": "賑やかだ、混んでいる"}, {"word": "slowly", "meaning": "ゆっくりと"}, {"word": "dangerous", "meaning": "危険だ"}
+          ],
+          "targets": [{"text": "likes"}, {"text": "smartphone"}, {"text": "dangerous"}]
         },
         "junior_high": {
-          "readingText": "Ken was walking on a busy street. It was a normal morning. He was completely focused on his smartphone because he wanted to play a new game. He was very happy and smiled. But he didn't <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='look up' data-ja='顔を上げる、見上げる' data-synonyms='look up at all, raise his head'>look up</span>. He didn't look at the road or other people. While he was playing, many people passed him. They were walking faster than Ken. A woman in a nice dress was walking. A man in a suit was walking, too. They didn't see Ken's face. Ken's face was always facing down. He was dangerous.",
+          "readingText": "Ken was walking on a busy street. It was a normal morning. He was completely focused on his smartphone because he wanted to play a new game. He was very happy and smiled. But he didn't look up. He didn't look at the road or other people. While he was playing, many people passed him. They were walking faster than Ken. A woman in a nice dress was walking. A man in a suit was walking, too. They didn't see Ken's face. Ken's face was always facing down. He was dangerous.",
           "readingJa": "ケンは賑やかな通りを歩いていました。それは普通のアサでした。彼は新しいゲームをプレイしたかったので、スマートフォンに完全に集中していました。彼はとても幸せそうで、微笑んでいました。しかし、彼は顔を上げませんでした。彼は道も他の人々も見ませんでした。彼がプレイしている間、多くの人々が彼を追い越していきました。彼らはケンよりも速く歩いていました。素敵なドレスを着た女性が歩いていました。スーツを着た男性も歩いていました。彼らはケンの顔を見ていませんでした。ケンの顔はいつも下を向いていました。彼は危険でした。",
-          "targets": [
-            {"text": "focused on", "ja": "集中している"},
-            {"text": "look up", "ja": "顔を上げる、見上げる"},
-            {"text": "dangerous", "ja": "危険な"}
-          ]
+          "vocabulary": [
+            {"word": "walking on", "meaning": "～を歩いていた"}, {"word": "busy street", "meaning": "賑やかな通り"}, {"word": "normal morning", "meaning": "普通の朝"},
+            {"word": "completely", "meaning": "完全に"}, {"word": "focused on", "meaning": "～に集中している"}, {"word": "because", "meaning": "なぜなら"},
+            {"word": "wanted to play", "meaning": "プレイしたかった"}, {"word": "smiled", "meaning": "微笑んだ"}, {"word": "look up", "meaning": "顔を上げる、見上げる"},
+            {"word": "road", "meaning": "道"}, {"word": "other people", "meaning": "他の人々"}, {"word": "While", "meaning": "～している間"},
+            {"word": "passed him", "meaning": "彼を追い越した"}, {"word": "faster than", "meaning": "～よりも速く"}, {"word": "nice dress", "meaning": "素敵なドレス"},
+            {"word": "suit", "meaning": "スーツ"}, {"word": "always", "meaning": "いつも"}, {"word": "facing down", "meaning": "下を向いている"}, {"word": "dangerous", "meaning": "危険な"}
+          ],
+          "targets": [{"text": "focused on"}, {"text": "look up"}, {"text": "dangerous"}]
         },
         "high_school": {
-          "readingText": "Lost in a world of digital colors, Ken, a student, was navigating a densely packed urban thoroughfare, oblivious to his physical surroundings. His attention was completely monopolized by a new and exciting game on his smartphone. He was smiling broadly, a reflection of the small screen's captivating content. Unfortunately, while <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='engrossed in' data-ja='～に夢中になって' data-synonyms='absorbed in, lost in'>engrossed in</span> his virtual realm, he was entirely ignorant of the flow of real-world foot traffic. Other pedestrians, many dressed professionally, were maneuvering around him, which Ken didn't even notice. This prolonged act of distraction posed a significant, albeit unrecognized, hazard to both himself and others.",
+          "readingText": "Lost in a world of digital colors, Ken, a student, was navigating a densely packed urban thoroughfare, oblivious to his physical surroundings. His attention was completely monopolized by a new and exciting game on his smartphone. He was smiling broadly, a reflection of the small screen's captivating content. Unfortunately, while engrossed in his virtual realm, he was entirely ignorant of the flow of real-world foot traffic. Other pedestrians, many dressed professionally, were maneuvering around him, which Ken didn't even notice. This prolonged act of distraction posed a significant, albeit unrecognized, hazard to both himself and others.",
           "readingJa": "デジタルな色の世界に迷い込み、学生のケンは、物理的な周囲の状況に気づかず、人が密集した都会の大通りを進んでいました。彼の注意はスマートフォンの新しくエキサイティングなゲームに完全に独占されていました。彼は満面の笑みを浮かべており、それは小さな画面の魅力的なコンテンツの反映でした。不運なことに、彼が仮想領域に夢中になっている間、彼は現実世界の歩行者の流れを完全に無視していました。他の歩行者の多くはプロフェッショナルな服装をしており、彼の周りを操縦していましたが、ケンはそれにさえ気づいていませんでした。この長引く気晴らしの行為は、彼自身と他の人々の両方に、重要ではあるが認識されていない危険をもたらしました。",
-          "targets": [
-            {"text": "engrossed in", "ja": "～に夢中になって"},
-            {"text": "oblivious to", "ja": "～に気づかない"},
-            {"text": "ignorant of", "ja": "～を無視して"}
-          ]
+          "vocabulary": [
+            {"word": "Lost in", "meaning": "～に迷い込んで"}, {"word": "digital colors", "meaning": "デジタルな色"}, {"word": "student", "meaning": "学生"},
+            {"word": "navigating", "meaning": "進んでいる、航行している"}, {"word": "densely packed", "meaning": "人が密集した"}, {"word": "urban thoroughfare", "meaning": "都会の大通り"},
+            {"word": "oblivious to", "meaning": "～に気づかない"}, {"word": "physical surroundings", "meaning": "物理的な周囲の状況"}, {"word": "attention", "meaning": "注意"},
+            {"word": "completely monopolized by", "meaning": "完全に独占されて"}, {"word": "exciting game", "meaning": "エキサイティングなゲーム"}, {"word": "smiling broadly", "meaning": "満面の笑みを浮かべて"},
+            {"word": "reflection", "meaning": "反映"}, {"word": "captivating content", "meaning": "魅力的なコンテンツ"}, {"word": "Unfortunately", "meaning": "不運なことに"},
+            {"word": "engrossed in", "meaning": "～に夢中になって"}, {"word": "virtual realm", "meaning": "仮想領域"}, {"word": "entirely ignorant of", "meaning": "完全に無視して"},
+            {"word": "foot traffic", "meaning": "歩行者の流れ"}, {"word": "pedestrians", "meaning": "歩行者"}, {"word": "dressed professionally", "meaning": "プロフェッショナルな服装をして"},
+            {"word": "maneuvering around", "meaning": "～の周りを操縦している"}, {"word": "notice", "meaning": "気づく"}, {"word": "prolonged act of", "meaning": "長引く～の行為"},
+            {"word": "distraction", "meaning": "気晴らし、注意散漫"}, {"word": "posed", "meaning": "もたらした"}, {"word": "significant", "meaning": "重要な"},
+            {"word": "albeit", "meaning": "～ではあるが"}, {"word": "unrecognized", "meaning": "認識されていない"}, {"word": "hazard", "meaning": "危険"}
+          ],
+          "targets": [{"text": "engrossed in"}, {"text": "oblivious to"}, {"text": "ignorant of"}]
         }
       }
     },
@@ -41,31 +58,45 @@
       "imageSrc": "assets/images/story/story1_scene2.webp",
       "levels": {
         "elementary": {
-          "readingText": "A woman is walking, too. She has shopping bags. Many vegetables are in her bags. Ken does not see her. He <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='hits' data-ja='～にぶつかる' data-synonyms='strikes, bumps into'>hits</span> her. \"CRASH!\" The woman is angry. Ken is surprised. His smartphone falls. Her bags fall. Vegetables fall. Bread falls. Everything falls. The woman shouts at Ken. She is very, very angry. Ken is scared. It is a bad thing.",
+          "readingText": "A woman is walking, too. She has shopping bags. Many vegetables are in her bags. Ken does not see her. He hits her. CRASH! The woman is angry. Ken is surprised. His smartphone falls. Her bags fall. Vegetables fall. Bread falls. Everything falls. The woman shouts at Ken. She is very, very angry. Ken is scared. It is a bad thing.",
           "readingJa": "女性も歩いています。彼女は買い物袋を持っています。彼女の袋にはたくさんの野菜が入っています。ケンは彼女を見ていません。彼は彼女にぶつかります。「ドカーン！」女性は怒っています。ケンは驚いています。彼のスマートフォンが落ちます。彼女の袋が落ちます。野菜が落ちます。パンが落ちます。すべてが落ちます。女性はケンを怒鳴ります。彼女はとても、とても怒っています。ケンは怖がっています。それは悪いことです。",
-          "targets": [
-            {"text": "hits", "ja": "～にぶつかる"},
-            {"text": "surprised", "ja": "驚いた"},
-            {"text": "angry", "ja": "怒っている"}
-          ]
+          "vocabulary": [
+            {"word": "woman", "meaning": "女性"}, {"word": "walking", "meaning": "歩いている"}, {"word": "shopping bags", "meaning": "買い物袋"},
+            {"word": "Many vegetables", "meaning": "たくさんの野菜"}, {"word": "does not see", "meaning": "見ていない"}, {"word": "hits", "meaning": "～にぶつかる"},
+            {"word": "CRASH", "meaning": "ドカーン！（衝突音）"}, {"word": "angry", "meaning": "怒っている"}, {"word": "surprised", "meaning": "驚いた"},
+            {"word": "falls", "meaning": "落ちる"}, {"word": "Bread", "meaning": "パン"}, {"word": "Everything", "meaning": "すべて"},
+            {"word": "shouts at", "meaning": "～を怒鳴る"}, {"word": "scared", "meaning": "怖がっている"}, {"word": "bad thing", "meaning": "悪いこと"}
+          ],
+          "targets": [{"text": "hits"}, {"text": "surprised"}, {"text": "angry"}]
         },
         "junior_high": {
-          "readingText": "Suddenly, a woman came walking from the opposite direction. She was carrying heavy grocery bags, which were full of vegetables and other food. While she was walking, Ken, who was still playing his game, <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='bumped into' data-ja='～にぶつかった' data-synonyms='collided with, hit'>bumped into</span> her. The impact was loud. He dropped his phone, and she dropped her bags. Vegetables, like carrots and apples, and a loaf of bread scattered on the ground. The woman got very angry at Ken. She was shouting at him because her food was dirty. Ken looked very surprised and shocked.",
+          "readingText": "Suddenly, a woman came walking from the opposite direction. She was carrying heavy grocery bags, which were full of vegetables and other food. While she was walking, Ken, who was still playing his game, bumped into her. The impact was loud. He dropped his phone, and she dropped her bags. Vegetables, like carrots and apples, and a loaf of bread scattered on the ground. The woman got very angry at Ken. She was shouting at him because her food was dirty. Ken looked very surprised and shocked.",
           "readingJa": "突然、反対方向から女性が歩いてきました。彼女は重い食料品袋を運んでおり、その袋は野菜や他の食べ物でいっぱいでした。彼女が歩いている間、まだゲームをプレイしていたケンは彼女にぶつかりました。衝撃は大きかったです。彼は携帯電話を落とし、彼女は袋を落としました。ニンジンのような野菜や、リンゴ、そして1斤のパンが地面に散乱しました。女性はケンにとても怒りました。彼女は食べ物が汚れたので、彼を怒鳴っていました。ケンはとても驚き、ショックを受けているように見えました。",
-          "targets": [
-            {"text": "bumped into", "ja": "～にぶつかった"},
-            {"text": "shouting", "ja": "怒鳴っている"},
-            {"text": "surprised", "ja": "驚いた"}
-          ]
+          "vocabulary": [
+            {"word": "Suddenly", "meaning": "突然"}, {"word": "opposite direction", "meaning": "反対方向"}, {"word": "carrying", "meaning": "運んでいる"},
+            {"word": "heavy grocery bags", "meaning": "重い食料品袋"}, {"word": "full of", "meaning": "～でいっぱいの"}, {"word": "still playing", "meaning": "まだプレイしている"},
+            {"word": "bumped into", "meaning": "～にぶつかった"}, {"word": "impact", "meaning": "衝撃"}, {"word": "loud", "meaning": "大きい（音が）"},
+            {"word": "dropped", "meaning": "落とした"}, {"word": "like carrots and apples", "meaning": "ニンジンやリンゴのような"}, {"word": "a loaf of bread", "meaning": "1斤のパン"},
+            {"word": "scattered", "meaning": "散乱した"}, {"word": "got very angry at", "meaning": "～にとても怒った"}, {"word": "shouting at", "meaning": "～を怒鳴っている"},
+            {"word": "dirty", "meaning": "汚れた"}, {"word": "surprised", "meaning": "驚いた"}, {"word": "shocked", "meaning": "ショックを受けた"}
+          ],
+          "targets": [{"text": "bumped into"}, {"text": "shouting"}, {"text": "surprised"}]
         },
         "high_school": {
-          "readingText": "An inevitable consequence of his split focus, Ken collided head-on with a woman carrying several bulky grocery bags. The impact, which echoed like a single, sharp clap, sent both of them tumbling, albeit Ken more so. Her carefully selected groceries, which included various vegetables and a large loaf of bread, were instantly and chaotically distributed across the dirty sidewalk. A visibly <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='frustrated' data-ja='不満げな、いらいらした' data-synonyms='upset, irritated'>angry</span> woman immediately began to berate Ken, her voice rising in a mixture of frustration and indignation. For his part, Ken looked utterly stunned, the immediate reality of his error finally shattering his digital dream. ",
+          "readingText": "An inevitable consequence of his split focus, Ken collided head-on with a woman carrying several bulky grocery bags. The impact, which echoed like a single, sharp clap, sent both of them tumbling, albeit Ken more so. Her carefully selected groceries, which included various vegetables and a large loaf of bread, were instantly and chaotically distributed across the dirty sidewalk. A visibly frustrated woman immediately began to berate Ken, her voice rising in a mixture of frustration and indignation. For his part, Ken looked utterly stunned, the immediate reality of his error finally shattering his digital dream.",
           "readingJa": "彼の注意が分散した結果、避けられないことに、ケンはいくつかの大きな食料品袋を運んでいた女性と正面衝突しました。その衝撃は単一の鋭い拍手のように響き、ケンはより激しく、両方を転倒させました。彼女が慎重に選んだ食料品には、様々な野菜や1斤の大きなパンが含まれており、汚れた歩道に一瞬にして混沌と散乱しました。明らかに怒った女性はすぐにケンを非難し始め、不満と憤慨が混ざり合った声を上げました。彼の方では、ケンは完全に唖然としており、彼の過ちの即座の現実に、ついに彼のデジタルの夢が打ち砕かれました。",
-          "targets": [
-            {"text": "collided with", "ja": "～と衝突した"},
-            {"text": "distributed", "ja": "散乱した"},
-            {"text": "frustrated", "ja": "不満げな、いらいらした"}
-          ]
+          "vocabulary": [
+            {"word": "inevitable consequence", "meaning": "避けられない結果"}, {"word": "split focus", "meaning": "分散した注意"}, {"word": "collided head-on with", "meaning": "～と正面衝突した"},
+            {"word": "bulky", "meaning": "かさばる、大きい"}, {"word": "impact", "meaning": "衝撃"}, {"word": "echoed", "meaning": "響いた"},
+            {"word": "sharp clap", "meaning": "鋭い拍手"}, {"word": "tumbling", "meaning": "転倒して"}, {"word": "carefully selected", "meaning": "慎重に選ばれた"},
+            {"word": "included", "meaning": "含まれていた"}, {"word": "various", "meaning": "様々な"}, {"word": "instantly", "meaning": "一瞬にして"},
+            {"word": "chaotically", "meaning": "混沌と"}, {"word": "distributed", "meaning": "散乱した"}, {"word": "dirty sidewalk", "meaning": "汚れた歩道"},
+            {"word": "visibly", "meaning": "明らかに"}, {"word": "frustrated", "meaning": "不満げな、いらいらした"}, {"word": "immediately", "meaning": "すぐに"},
+            {"word": "berate", "meaning": "非難する"}, {"word": "mixture", "meaning": "混ざり合ったもの"}, {"word": "indignation", "meaning": "憤慨"},
+            {"word": "For his part", "meaning": "彼の方では"}, {"word": "utterly stunned", "meaning": "完全に唖然として"}, {"word": "immediate reality", "meaning": "即座の現実"},
+            {"word": "error", "meaning": "過ち"}, {"word": "shattering", "meaning": "打ち砕く"}
+          ],
+          "targets": [{"text": "collided with"}, {"text": "distributed"}, {"text": "frustrated"}]
         }
       }
     },
@@ -74,31 +105,45 @@
       "imageSrc": "assets/images/story/story1_scene3.webp",
       "levels": {
         "elementary": {
-          "readingText": "Ken is <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='helping' data-ja='手伝っている' data-synonyms='assisting, aiding'>helping</span> the woman. He picks up the vegetables. He is putting them in her bag. He has her bag. He holds her vegetables. He is sorry. But the woman is still standing. She is looking at Ken. She is not happy. She is watching him. Other people are watching, too. A man and a woman are watching. They are looking at the mess. Ken is very sorry. He is doing the right thing now.",
+          "readingText": "Ken is helping the woman. He picks up the vegetables. He is putting them in her bag. He has her bag. He holds her vegetables. He is sorry. But the woman is still standing. She is looking at Ken. She is not happy. She is watching him. Other people are watching, too. A man and a woman are watching. They are looking at the mess. Ken is very sorry. He is doing the right thing now.",
           "readingJa": "ケンは女性を手伝っています。彼は野菜を拾います。彼はそれらを彼女の袋に入れています。彼は彼女の袋を持っています。彼は彼女の野菜を持っています。彼は申し訳なく思っています。しかし、女性はまだ立っています。彼女はケンを見ています。彼女は幸せではありません。彼女は彼を見ています。他の人々も見ています。男性と女性が見ています。彼らは散らかったものを見ています。ケンはとても申し訳なく思っています。彼は今、正しいことをしています。",
-          "targets": [
-            {"text": "helping", "ja": "手伝っている"},
-            {"text": "picks up", "ja": "拾う"},
-            {"text": "sorry", "ja": "すまなく思って"}
-          ]
+          "vocabulary": [
+            {"word": "helping", "meaning": "手伝っている"}, {"word": "picks up", "meaning": "拾う"}, {"word": "putting them in", "meaning": "それらを～に入れている"},
+            {"word": "holds", "meaning": "持っている"}, {"word": "sorry", "meaning": "申し訳なく思って"}, {"word": "still standing", "meaning": "まだ立っている"},
+            {"word": "looking at", "meaning": "～を見ている"}, {"word": "not happy", "meaning": "幸せではない、怒っている"}, {"word": "watching", "meaning": "見つめている"},
+            {"word": "Other people", "meaning": "他の人々"}, {"word": "man", "meaning": "男性"}, {"word": "woman", "meaning": "女性"},
+            {"word": "mess", "meaning": "散らかったもの"}, {"word": "very sorry", "meaning": "とても申し訳なく思って"}, {"word": "right thing", "meaning": "正しいこと"}
+          ],
+          "targets": [{"text": "helping"}, {"text": "picks up"}, {"text": "sorry"}]
         },
         "junior_high": {
-          "readingText": "Ken immediately started to help the woman. He gathered the scattered vegetables. He was <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='picking up' data-ja='拾っている' data-synonyms='gathering, collecting'>picking up</span> carrots, apples, and bread and putting them back into her bag, which was now messy. He wanted to apologize. But the woman just stood there. She was not helping. Instead, she was looking down at Ken. She was watching him carefully. Other people on the street also stopped to watch. A man with gray hair and an older woman were looking at the two. Ken felt very embarrassed. ",
+          "readingText": "Ken immediately started to help the woman. He gathered the scattered vegetables. He was picking up carrots, apples, and bread and putting them back into her bag, which was now messy. He wanted to apologize. But the woman just stood there. She was not helping. Instead, she was looking down at Ken. She was watching him carefully. Other people on the street also stopped to watch. A man with gray hair and an older woman were looking at the two. Ken felt very embarrassed.",
           "readingJa": "ケンはすぐに女性を手伝い始めました。彼は散乱した野菜を集めました。彼はニンジン、リンゴ、パンを拾い、今や散らかった彼女の袋に戻していました。彼は謝りたかったのです。しかし、女性はただ立っていました。彼女は手伝っていませんでした。代わりに、彼女はケンを見下ろしていました。彼女は彼を注意深く見ていました。通りの他の人々も立ち止まって見ていました。白髪の男性と年配の女性が2人を見ていました。ケンはとても恥ずかしく感じました。",
-          "targets": [
-            {"text": "help", "ja": "手伝う"},
-            {"text": "picking up", "ja": "拾っている"},
-            {"text": "embarrassed", "ja": "恥ずかしい"}
-          ]
+          "vocabulary": [
+            {"word": "immediately", "meaning": "すぐに"}, {"word": "started to help", "meaning": "手伝い始めた"}, {"word": "gathered", "meaning": "集めた"},
+            {"word": "scattered", "meaning": "散乱した"}, {"word": "picking up", "meaning": "拾っている"}, {"word": "putting them back into", "meaning": "それらを～に戻している"},
+            {"word": "messy", "meaning": "散らかった"}, {"word": "wanted to apologize", "meaning": "謝りたかった"}, {"word": "just stood there", "meaning": "ただそこに立っていた"},
+            {"word": "Instead", "meaning": "代わりに"}, {"word": "looking down at", "meaning": "～を見下ろしている"}, {"word": "carefully", "meaning": "注意深く"},
+            {"word": "stopped to watch", "meaning": "立ち止まって見た"}, {"word": "gray hair", "meaning": "白髪"}, {"word": "older woman", "meaning": "年配の女性"},
+            {"word": "felt very embarrassed", "meaning": "とても恥ずかしく感じた"}
+          ],
+          "targets": [{"text": "help"}, {"text": "picking up"}, {"text": "embarrassed"}]
         },
         "high_school": {
-          "readingText": "Driven by a strong sense of remorse, Ken immediately attempted to rectify his mistake. He was on his knees, meticulously gathering the widely dispersed vegetables and re-securing them in the woman's reusable grocery bag. While he labored, the woman stood over him, her arms crossed and a expression of unyielding dissatisfaction on her face. A sense of discomfort permeated the air as other passersby, including a couple who appeared to be in their golden years, halted to witness the spectacle. Their collective gaze, coupled with the woman's scrutiny, served as a profound public lesson for Ken. ",
+          "readingText": "Driven by a strong sense of remorse, Ken immediately attempted to rectify his mistake. He was on his knees, meticulously gathering the widely dispersed vegetables and re-securing them in the woman's reusable grocery bag. While he labored, the woman stood over him, her arms crossed and an expression of unyielding dissatisfaction on her face. A sense of discomfort permeated the air as other passersby, including a couple who appeared to be in their golden years, halted to witness the spectacle. Their collective gaze, coupled with the woman's scrutiny, served as a profound public lesson for Ken.",
           "readingJa": "強い後悔の念に駆られ、ケンはすぐに過ちを正そうと試みました。彼は膝をつき、広く散乱した野菜を注意深く集め、女性の再利用可能な食料品袋に再固定していました。彼が働いている間、女性は腕を組み、不屈の不満の表情を浮かべて彼の上に立っていました。彼らの黄金期にあるように見えるカップルを含む他の通行人が、その光景を目撃するために立ち止まると、不快感が漂いました。彼らの集団的な視線は、女性の精査と相まって、ケンにとって深刻な公の教訓となりました。",
-          "targets": [
-            {"text": "remorse", "ja": "後悔"},
-            {"text": "gathering", "ja": "集める"},
-            {"text": "scrutiny", "ja": "精査、注視"}
-          ]
+          "vocabulary": [
+            {"word": "Driven by", "meaning": "～に駆られて"}, {"word": "sense of remorse", "meaning": "後悔の念"}, {"word": "attempted to", "meaning": "～しようと試みた"},
+            {"word": "rectify his mistake", "meaning": "彼の過ちを正す"}, {"word": "on his knees", "meaning": "膝をついて"}, {"word": "meticulously", "meaning": "注意深く、きちょうめんに"},
+            {"word": "widely dispersed", "meaning": "広く散乱した"}, {"word": "re-securing", "meaning": "再固定する、元に戻す"}, {"word": "reusable grocery bag", "meaning": "再利用可能な食料品袋（エコバッグ）"},
+            {"word": "labored", "meaning": "働いた"}, {"word": "stood over him", "meaning": "彼の上に立った"}, {"word": "arms crossed", "meaning": "腕を組んで"},
+            {"word": "expression", "meaning": "表情"}, {"word": "unyielding dissatisfaction", "meaning": "不屈の不満"}, {"word": "discomfort", "meaning": "不快感"},
+            {"word": "permeated", "meaning": "漂った、充満した"}, {"word": "passersby", "meaning": "通行人"}, {"word": "golden years", "meaning": "黄金期（老後）"},
+            {"word": "halted to witness", "meaning": "目撃するために立ち止まった"}, {"word": "spectacle", "meaning": "光景"}, {"word": "collective gaze", "meaning": "集団的な視線"},
+            {"word": "coupled with", "meaning": "～と相まって"}, {"word": "scrutiny", "meaning": "精査、注視"}, {"word": "served as", "meaning": "～として機能した"},
+            {"word": "profound", "meaning": "深刻な、深い"}, {"word": "public lesson", "meaning": "公の教訓"}
+          ],
+          "targets": [{"text": "remorse"}, {"text": "gathering"}, {"text": "scrutiny"}]
         }
       }
     },
@@ -107,31 +152,44 @@
       "imageSrc": "assets/images/story/story1_scene4.webp",
       "levels": {
         "elementary": {
-          "readingText": "Ken is sad. He is in a park now. He is sitting on a bench. He is not happy. He is not using his smartphone. He is <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='thinking' data-ja='考えている' data-synonyms='contemplating, reflecting'>thinking</span>. His smartphone is in his bag. He thinks about the accident. He made a mistake. He made people sad. He thinks, \"No smartphone while walking.\" He is not happy. It is a very, very sad day. But he wants to be a good boy now. He will be careful. ",
+          "readingText": "Ken is sad. He is in a park now. He is sitting on a bench. He is not happy. He is not using his smartphone. He is thinking. His smartphone is in his bag. He thinks about the accident. He made a mistake. He made people sad. He thinks, No smartphone while walking. He is not happy. It is a very, very sad day. But he wants to be a good boy now. He will be careful.",
           "readingJa": "ケンは悲しいです。彼は今、公園にいます。彼はベンチに座っています。彼は幸せではありません。彼はスマートフォンを使っていません。彼は考えています。彼のスマートフォンはカバンに入っています。彼は事故について考えます。彼は過ちを犯しました。彼は人々を悲しませました。彼は、「歩きながらスマートフォンはだめだ」と考えます。彼は幸せではありません。とても、とても悲しい日です。しかし、彼は今、良い男の子になりたいです。彼は気をつけます。",
-          "targets": [
-            {"text": "sad", "ja": "悲しい"},
-            {"text": "thinking", "ja": "考えている"},
-            {"text": "careful", "ja": "気をつける"}
-          ]
+          "vocabulary": [
+            {"word": "sad", "meaning": "悲しい"}, {"word": "park", "meaning": "公園"}, {"word": "sitting on a bench", "meaning": "ベンチに座っている"},
+            {"word": "not happy", "meaning": "幸せではない"}, {"word": "not using", "meaning": "使っていない"}, {"word": "thinking", "meaning": "考えている"},
+            {"word": "in his bag", "meaning": "カバンの中に"}, {"word": "thinks about", "meaning": "～について考える"}, {"word": "accident", "meaning": "事故"},
+            {"word": "made a mistake", "meaning": "過ちを犯した"}, {"word": "while walking", "meaning": "歩いている間"}, {"word": "good boy", "meaning": "良い男の子"},
+            {"word": "will be careful", "meaning": "気をつけるつもりだ"}
+          ],
+          "targets": [{"text": "sad"}, {"text": "thinking"}, {"text": "careful"}]
         },
         "junior_high": {
-          "readingText": "After the accident, Ken went to a nearby park. He sat on a bench all alone. He <span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='felt bad' data-ja='気分が悪くなった、後悔した' data-synonyms='regretted, felt sorry'>felt bad</span>. He was not looking at his smartphone anymore. His smartphone was in his backpack. He was thinking about what happened. He made a big mistake. He made a woman very angry. He was thinking, \"I should not play games when I walk.\" He saw an old man and a woman walking nearby. They were walking slowly. But they were looking at the road. Ken promised himself not to use his phone while walking ever again. ",
+          "readingText": "After the accident, Ken went to a nearby park. He sat on a bench all alone. He felt bad. He was not looking at his smartphone anymore. His smartphone was in his backpack. He was thinking about what happened. He made a big mistake. He made a woman very angry. He was thinking, I should not play games when I walk. He saw an old man and a woman walking nearby. They were walking slowly. But they were looking at the road. Ken promised himself not to use his phone while walking ever again.",
           "readingJa": "事故の後、ケンは近くの公園に行きました。彼は一人ぼっちでベンチに座りました。彼は後悔しました。彼はもうスマートフォンを見ていませんでした。彼のスマートフォンはバックパックに入っていました。彼は何が起こったのか考えていました。彼は大きな過ちを犯しました。彼は女性をとても怒らせました。彼は、「歩くときはゲームをするべきではない」と考えていました。彼は老人がと女性が近くを歩いているのを見ました。彼らはゆっくり歩いていました。しかし、彼らは道を見ていました。ケンは、もう二度と歩きながら携帯電話を使わないと自分に約束しました。",
-          "targets": [
-            {"text": "felt bad", "ja": "気分が悪くなった、後悔した"},
-            {"text": "mistake", "ja": "間違い"},
-            {"text": "promised", "ja": "約束した"}
-          ]
+          "vocabulary": [
+            {"word": "After the accident", "meaning": "事故の後"}, {"word": "nearby park", "meaning": "近くの公園"}, {"word": "sat on a bench", "meaning": "ベンチに座った"},
+            {"word": "all alone", "meaning": "一人ぼっちで"}, {"word": "felt bad", "meaning": "後悔した、気分が悪くなった"}, {"word": "anymore", "meaning": "もう（～ない）"},
+            {"word": "backpack", "meaning": "バックパック、リュック"}, {"word": "what happened", "meaning": "何が起こったのか"}, {"word": "big mistake", "meaning": "大きな過ち"},
+            {"word": "very angry", "meaning": "とても怒って"}, {"word": "should not play", "meaning": "プレイするべきではない"}, {"word": "old man", "meaning": "老人"},
+            {"word": "walking slowly", "meaning": "ゆっくり歩いている"}, {"word": "promised himself", "meaning": "自分自身に約束した"}, {"word": "ever again", "meaning": "もう二度と"}
+          ],
+          "targets": [{"text": "felt bad"}, {"text": "mistake"}, {"text": "promised"}]
         },
         "high_school": {
-          "readingText": "<span class='story-clickable text-blue-500 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='Reflecting on' data-ja='～を振り返って、反省して' data-synonyms='Thinking about, Considering'>Reflecting on</span> his actions, Ken was found sitting alone on a secluded park bench, a profound look of regret and introspection on his face. His smartphone, the source of the recent conflict, was conspicuously concealed within his backpack. He was deeply contemplating the ethical and safety implications of his negligent behavior. The memory of the angry woman and the scattered groceries was a powerful and humiliating one. In that moment of solitary reflection, he came to a firm resolution: \"I must prioritize safety and others over digital entertainment.\" The simple image of a smartphone with a forbidden cross mark was burned into his mind. This experience was a catalyst for personal growth. ",
+          "readingText": "Reflecting on his actions, Ken was found sitting alone on a secluded park bench, a profound look of regret and introspection on his face. His smartphone, the source of the recent conflict, was conspicuously concealed within his backpack. He was deeply contemplating the ethical and safety implications of his negligent behavior. The memory of the angry woman and the scattered groceries was a powerful and humiliating one. In that moment of solitary reflection, he came to a firm resolution: I must prioritize safety and others over digital entertainment. The simple image of a smartphone with a forbidden cross mark was burned into his mind. This experience was a catalyst for personal growth.",
           "readingJa": "自分の行動を振り返り、ケンは人里離れた公園のベンチに一人で座っており、顔には後悔と内省の深い表情が浮かんでいました。最近の紛争の原因である彼のスマートフォンは、バックパックの中に目立つように隠されていました。彼は自分の怠慢な行動の倫理的および安全上の含意を深く熟考していました。怒った女性と散ら乱した食料品の記憶は、力強く、屈辱的なものでした。その孤独な反省の瞬間に、彼は確固たる決意に至りました。「私はデジタルエンターテインメントよりも安全と他人を優先しなければならない」。禁止された十字マークの付いたスマートフォンの単純なイメージが、彼の心に焼き付いていました。この経験は個人的な成長の触媒となりました。",
-          "targets": [
-            {"text": "Reflecting on", "ja": "～を振り返って、反省して"},
-            {"text": "contemplating", "ja": "熟考している"},
-            {"text": "resolution", "ja": "決意"}
-          ]
+          "vocabulary": [
+            {"word": "Reflecting on", "meaning": "～を振り返って、反省して"}, {"word": "actions", "meaning": "行動"}, {"word": "secluded", "meaning": "人里離れた"},
+            {"word": "profound look", "meaning": "深い表情"}, {"word": "regret", "meaning": "後悔"}, {"word": "introspection", "meaning": "内省"},
+            {"word": "source", "meaning": "原因、源"}, {"word": "recent conflict", "meaning": "最近の紛争"}, {"word": "conspicuously", "meaning": "目立つように"},
+            {"word": "concealed", "meaning": "隠された"}, {"word": "deeply contemplating", "meaning": "深く熟考している"}, {"word": "ethical", "meaning": "倫理的な"},
+            {"word": "safety implications", "meaning": "安全上の含意（影響）"}, {"word": "negligent behavior", "meaning": "怠慢な行動"}, {"word": "memory", "meaning": "記憶"},
+            {"word": "humiliating", "meaning": "屈辱的な"}, {"word": "solitary reflection", "meaning": "孤独な反省"}, {"word": "firm resolution", "meaning": "確固たる決意"},
+            {"word": "prioritize", "meaning": "～を優先する"}, {"word": "over", "meaning": "～よりも"}, {"word": "digital entertainment", "meaning": "デジタルエンターテインメント"},
+            {"word": "forbidden cross mark", "meaning": "禁止された十字マーク"}, {"word": "burned into his mind", "meaning": "彼の心に焼き付いた"}, {"word": "experience", "meaning": "経験"},
+            {"word": "catalyst", "meaning": "触媒、きっかけ"}, {"word": "personal growth", "meaning": "個人的な成長"}
+          ],
+          "targets": [{"text": "Reflecting on"}, {"text": "contemplating"}, {"text": "resolution"}]
         }
       }
     }
