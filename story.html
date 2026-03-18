@@ -12,12 +12,21 @@
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        
+        /* Perfect表示用 */
         @keyframes popIn {
             0% { transform: scale(0.5) translate(-50%, -50%); opacity: 0; }
             50% { transform: scale(1.2) translate(-50%, -50%); opacity: 1; }
             100% { transform: scale(1) translate(-50%, -50%); opacity: 1; }
         }
         .animate-pop { transform-origin: top left; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+        
+        /* ★追加: シーン切り替え時のトランジション演出 */
+        @keyframes sceneSlideIn {
+            0% { opacity: 0; transform: translateX(30px) scale(0.95); }
+            100% { opacity: 1; transform: translateX(0) scale(1); }
+        }
+        .animate-scene-change { animation: sceneSlideIn 0.4s cubic-bezier(0.2, 0.8, 0.2, 1) forwards; }
     </style>
 </head>
 <body class="bg-gray-100 text-gray-800 h-[100dvh] flex flex-col overflow-hidden relative">

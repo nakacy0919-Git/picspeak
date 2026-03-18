@@ -281,6 +281,7 @@ document.getElementById('btn-start-reading')?.addEventListener('click', () => {
     else window.setMicState('paused');
 });
 
+// --- Retelling Practice モード進行 ---
 window.loadRetellingScene = function(index) {
     const scene = window.storyState.currentStory.scenes[index];
     const level = window.storyState.selectedLevel;
@@ -290,7 +291,18 @@ window.loadRetellingScene = function(index) {
     }
     
     const imgEl = document.getElementById('retelling-image');
-    if (imgEl) imgEl.src = scene.imageSrc;
+    if (imgEl) {
+        imgEl.src = scene.imageSrc;
+        
+        // ★追加: アニメーションのリセットと再発動
+        const imgContainer = imgEl.parentElement;
+        imgContainer.classList.remove('animate-scene-change');
+        void imgContainer.offsetWidth; // 強制リフロー（アニメーションを再起動する魔法のコード）
+        imgContainer.classList.add('animate-scene-change');
+        
+        // ★追加: 効果音を鳴らす
+        if(typeof playSyntheticSound === 'function') playSyntheticSound('transition');
+    }
 
     const overlay = document.getElementById('retelling-start-overlay');
     if (index === 0 && overlay) {
