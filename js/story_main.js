@@ -20,14 +20,13 @@ window.storyState = {
     retellingTranscripts: ["", "", "", ""]
 };
 
-// マイクの状態: 'idle', 'listening', 'paused'
 window.micState = 'idle'; 
 window.isTTSPlaying = false;
 window.currentUtterance = null;
 window.retellingTimer = null;
 window.timeLeft = 0;
 window.storyList = [];
-window.perfectedSentences = new Set(); // 文単位の正解記録
+window.perfectedSentences = new Set();
 
 const levelMap = { 'elementary': '小学生', 'junior_high': '中学生', 'high_school': '高校生' };
 
@@ -37,7 +36,7 @@ const viewRetelling = document.getElementById('view-retelling');
 const viewResultStory = document.getElementById('view-result-story');
 const storyModeModal = document.getElementById('story-mode-modal');
 
-// --- サウンド合成（外部ファイル不要） ---
+// --- サウンド合成 ---
 function playSyntheticSound(type) {
     if (!window.pssSettings.effectsOn) return;
     try {
@@ -51,9 +50,9 @@ function playSyntheticSound(type) {
         
         if (type === 'perfect') {
             osc.type = 'sine';
-            osc.frequency.setValueAtTime(523.25, ctx.currentTime); // C5
-            osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.1); // E5
-            osc.frequency.setValueAtTime(783.99, ctx.currentTime + 0.2); // G5
+            osc.frequency.setValueAtTime(523.25, ctx.currentTime); 
+            osc.frequency.setValueAtTime(659.25, ctx.currentTime + 0.1); 
+            osc.frequency.setValueAtTime(783.99, ctx.currentTime + 0.2); 
             gain.gain.setValueAtTime(0, ctx.currentTime);
             gain.gain.linearRampToValueAtTime(0.3, ctx.currentTime + 0.05);
             gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.5);
@@ -61,7 +60,7 @@ function playSyntheticSound(type) {
             osc.stop(ctx.currentTime + 0.5);
         } else if (type === 'match') {
             osc.type = 'triangle';
-            osc.frequency.setValueAtTime(880, ctx.currentTime); // A5
+            osc.frequency.setValueAtTime(880, ctx.currentTime); 
             gain.gain.setValueAtTime(0, ctx.currentTime);
             gain.gain.linearRampToValueAtTime(0.1, ctx.currentTime + 0.02);
             gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2);
@@ -82,9 +81,9 @@ async function initStoryApp() {
         initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
     }
 
-    // 設定の復元
     const savedLevel = localStorage.getItem('picSpeakSelectedLevel');
     if (savedLevel) window.storyState.selectedLevel = savedLevel;
+    updateStoryLevelUI(); // 初期レベルに合わせてボタンUIを更新
     
     const savedSettings = JSON.parse(localStorage.getItem('pss-settings'));
     if (savedSettings) {
@@ -98,6 +97,28 @@ async function initStoryApp() {
     initResizers();
     initFontSliders();
     await fetchStoryData();
+}
+
+// ★追加: レベル選択機能
+window.setStoryLevel = function(level) {
+    window.storyState.selectedLevel = level;
+    localStorage.setItem('picSpeakSelectedLevel', level);
+    updateStoryLevelUI();
+};
+
+function updateStoryLevelUI() {
+    const levels = ['elementary', 'junior_high', 'high_school'];
+    levels.forEach(lvl => {
+        const btn = document.getElementById(`btn-lvl-${lvl}`);
+        if (!btn) return;
+        if (lvl === window.storyState.selectedLevel) {
+            btn.classList.add('bg-blue-500', 'text-white', 'border-blue-500', 'shadow-md');
+            btn.classList.remove('bg-white', 'text-gray-500', 'border-gray-200', 'hover:bg-gray-50');
+        } else {
+            btn.classList.remove('bg-blue-500', 'text-white', 'border-blue-500', 'shadow-md');
+            btn.classList.add('bg-white', 'text-gray-500', 'border-gray-200', 'hover:bg-gray-50');
+        }
+    });
 }
 
 window.savePssSettings = function() {
@@ -278,12 +299,8 @@ function loadReadingScene(index) {
     updateTTSButtonUI();
     window.perfectedSentences.clear();
     
-    const sceneBadge = document.getElementById('reading-scene-badge');
-    if (sceneBadge) {
-        sceneBadge.innerHTML = `Scene <span class="text-2xl text-blue-600 mx-1">${index + 1}</span> / 4 <span class="text-xs md:text-sm ml-3 px-3 py-1 bg-blue-100 rounded-lg text-blue-600 align-middle shadow-sm border border-blue-200">${levelMap[level]}</span>`;
-    }
-    
-    document.getElementById('reading-text-content').innerHTML = levelData.readingText || "";
+    document.getElementById('reading-scene-badge').innerHTML = `Scene <span class="text-2xl text-blue-600 mx-1">${index + 1}</span> / 4 <span class="text-xs md:text-sm ml-3 px-3 py-1 bg-blue-100 rounded-lg text-blue-600 align-middle shadow-sm border border-blue-200">${levelMap[level]}</span>`;
+    document.getElementById('reading-text-content').innerHTML = levelData.readingText || "Text not found.";
     document.getElementById('reading-text-ja').textContent = levelData.readingJa || "日本語訳はありません。";
     document.getElementById('reading-accuracy').textContent = "0%";
     
@@ -386,19 +403,19 @@ function setMicState(state) {
         window.isRecording = true;
         if(typeof startSpeech === 'function') startSpeech();
         btn.innerHTML = '<span class="animate-pulse">🔴</span> Listening...';
-        btn.className = "flex-1 md:flex-none px-8 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 min-w-[200px] bg-red-50 text-red-600 border-2 border-red-200 shadow-inner";
+        btn.className = "flex-1 px-4 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 bg-red-50 text-red-600 border-2 border-red-200 shadow-inner";
         transcriptBox.className = "flex-1 overflow-y-auto text-gray-800 font-bold leading-relaxed pt-1 transition-all";
         if(transcriptBox.textContent.includes("START")) transcriptBox.textContent = "聞き取っています...";
     } else if (state === 'paused') {
         window.isRecording = false;
         if(typeof stopSpeech === 'function') stopSpeech();
         btn.innerHTML = '⏸️ PAUSE (再開)';
-        btn.className = "flex-1 md:flex-none px-8 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 min-w-[200px] bg-gray-500 text-white shadow-md";
+        btn.className = "flex-1 px-4 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 bg-gray-500 text-white shadow-md";
     } else { // idle
         window.isRecording = false;
         if(typeof stopSpeech === 'function') stopSpeech();
         btn.innerHTML = '🎤 START';
-        btn.className = "flex-1 md:flex-none px-8 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 min-w-[200px] bg-red-500 hover:bg-red-400 text-white shadow-md";
+        btn.className = "flex-1 px-4 py-3 md:py-4 rounded-2xl font-black text-lg md:text-xl transition-all active:scale-95 flex justify-center items-center gap-2 bg-red-500 hover:bg-red-400 text-white shadow-md";
     }
 }
 
@@ -425,9 +442,13 @@ function handleStorySpeechResult(finalText, interimText) {
         for(let i=0; i<idx; i++){ allText += window.storyState.retellingTranscripts[i] + " "; }
         allText += currentTempText;
 
-        // ターゲット語彙の抽出とハイライト
         let targetWords = [];
-        if(levelData.words) targetWords = levelData.words.map(w=>w.text.toLowerCase().replace(/[.,!?]/g, ''));
+        if(levelData.targets) {
+            levelData.targets.forEach(t => {
+                const words = t.text.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
+                targetWords = targetWords.concat(words);
+            });
+        }
         const targetSet = new Set(targetWords);
         
         const htmlText = allText.split(/\s+/).map(w => {
@@ -501,9 +522,10 @@ function handleStorySpeechEnd() {
 // ==========================================
 function loadRetellingScene(index) {
     const scene = window.storyState.currentStory.scenes[index];
+    const level = window.storyState.selectedLevel;
     const sceneBadge = document.getElementById('retelling-scene-badge');
     if (sceneBadge) {
-        sceneBadge.innerHTML = `Scene <span class="text-2xl text-pink-400 mx-1">${index + 1}</span> / 4 <span class="text-xs md:text-sm ml-3 px-3 py-1 bg-pink-100 rounded-lg text-pink-600 align-middle shadow-sm">${levelMap[window.storyState.selectedLevel]}</span>`;
+        sceneBadge.innerHTML = `Scene <span class="text-2xl text-pink-400 mx-1">${index + 1}</span> / 4 <span class="text-xs md:text-sm ml-3 px-3 py-1 bg-pink-100 rounded-lg text-pink-600 align-middle shadow-sm">${levelMap[level]}</span>`;
     }
     
     const imgEl = document.getElementById('retelling-image');
@@ -511,10 +533,11 @@ function loadRetellingScene(index) {
 
     const overlay = document.getElementById('retelling-start-overlay');
     if (index === 0 && overlay) {
+        document.getElementById('retelling-start-scene-num').textContent = `Scene 1`;
         document.getElementById('retelling-start-time-num').textContent = window.pssSettings.retellingTime;
         overlay.classList.remove('hidden');
         document.getElementById('retelling-transcript-box').textContent = "Press START to begin...";
-        window.perfectedSentences.clear(); // Retelling用にクリア
+        window.perfectedSentences.clear(); 
     }
 }
 
@@ -596,7 +619,7 @@ function finishStoryRetelling() {
 
     const completionRate = allTargets.length === 0 ? 0 : Math.floor((clearedTargets.length / allTargets.length) * 100);
     const totalWords = fullTranscript.split(/\s+/).filter(w=>w).length;
-    const wpm = Math.round(totalWords / ( (window.pssSettings.retellingTime * 4) / 60) ); // 設定秒数に基づいて計算
+    const wpm = Math.round(totalWords / ( (window.pssSettings.retellingTime * 4) / 60) ); 
 
     const container = document.getElementById('story-ranking-container');
     if (container && typeof window.createFeedbackSection === 'function') {
