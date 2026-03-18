@@ -11,104 +11,131 @@
             font-family: 'Nunito', 'Noto Sans JP', sans-serif; 
             overscroll-behavior-y: none; 
         }
-        ::-webkit-scrollbar { width: 8px; height: 8px; }
+        ::-webkit-scrollbar { width: 6px; height: 6px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 10px; }
         ::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+        /* Perfect アニメーション用 */
+        @keyframes popIn {
+            0% { transform: scale(0.5) translate(-50%, -50%); opacity: 0; }
+            50% { transform: scale(1.2) translate(-50%, -50%); opacity: 1; }
+            100% { transform: scale(1) translate(-50%, -50%); opacity: 1; }
+        }
+        .animate-pop { transform-origin: top left; animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
     </style>
 </head>
-<body class="bg-gray-100 text-gray-800 h-screen flex flex-col overflow-hidden">
+<body class="bg-gray-100 text-gray-800 h-[100dvh] flex flex-col overflow-hidden">
 
-    <header class="bg-white shadow-sm py-3 px-4 md:px-8 flex items-center justify-between shrink-0 z-50">
+    <header class="bg-white shadow-sm py-2 md:py-3 px-4 md:px-8 flex items-center justify-between shrink-0 z-50">
         <div class="flex items-center gap-2 cursor-pointer" onclick="location.href='index.html'">
             <span class="text-2xl md:text-3xl font-black text-pink-500 tracking-tight">Pic<span class="text-yellow-400">Speak</span> <span class="text-blue-500">Story</span></span>
         </div>
         <button onclick="location.href='index.html'" class="text-sm font-bold text-gray-500 hover:text-gray-800 transition-colors bg-gray-100 hover:bg-gray-200 px-4 py-2 rounded-xl">
-            ◀ HOMEへ戻る
+            ◀ HOMEへ
         </button>
     </header>
 
-    <main class="flex-1 overflow-hidden relative w-full h-full flex flex-col bg-gray-100">
+    <main class="flex-1 min-h-0 relative w-full h-full flex flex-col bg-gray-100">
         
-        <div id="view-select" class="hidden flex-col h-full w-full p-4 md:p-8 overflow-y-auto max-w-6xl mx-auto">
-            <h2 class="text-2xl md:text-3xl font-black text-gray-800 mb-6 text-center">ストーリーを選ぶ</h2>
+        <div id="view-select" class="hidden flex-col h-full w-full p-4 md:p-8 overflow-y-auto max-w-6xl mx-auto relative">
+            <button onclick="document.getElementById('pss-settings-modal').classList.remove('hidden')" class="absolute top-4 md:top-8 right-4 md:right-8 bg-white p-3 rounded-full shadow-md text-xl hover:bg-gray-50 hover:scale-110 transition-transform border border-gray-200">
+                ⚙️
+            </button>
+            <h2 class="text-2xl md:text-3xl font-black text-gray-800 mb-6 text-center mt-4">ストーリーを選ぶ</h2>
             <div id="story-grid" class="grid grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 pb-20"></div>
         </div>
 
         <div id="view-reading" class="hidden flex-col h-full w-full relative">
-            
-            <div class="flex justify-between items-center p-3 md:px-6 bg-white shadow-sm shrink-0 z-10 border-b border-gray-200">
-                <div id="reading-scene-badge" class="font-bold text-gray-700 text-sm md:text-lg flex items-center gap-2"></div>
-                <div class="flex items-center gap-3 text-sm font-bold text-gray-600 bg-gray-50 px-4 py-1.5 rounded-full border border-gray-200">
-                    <span class="text-xs">A</span>
-                    <input type="range" id="font-size-slider" min="14" max="40" value="20" class="w-24 md:w-32 accent-blue-500">
-                    <span class="text-lg">A</span>
-                </div>
-            </div>
-
-            <div class="flex flex-col md:flex-row flex-1 overflow-hidden p-2 md:p-4 gap-1 md:gap-2" id="reading-panes-container">
+            <div class="flex flex-col md:flex-row flex-1 overflow-hidden min-h-0 p-1 md:p-3 gap-1 md:gap-3" id="reading-panes-container">
                 
-                <div id="pane-image" class="flex flex-col relative shrink-0 bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden" style="flex-basis: 40%;">
+                <div id="pane-image" class="flex flex-col relative shrink-0 bg-white rounded-2xl md:rounded-3xl shadow-sm border border-gray-200 overflow-hidden min-h-0" style="flex-basis: 35%;">
+                    <div id="reading-scene-badge" class="absolute top-2 left-2 md:top-4 md:left-4 z-10 bg-white/90 backdrop-blur-md px-3 py-1.5 rounded-xl shadow-sm font-black text-blue-600 text-sm md:text-base border border-white/50"></div>
                     <img id="reading-image" src="" class="w-full h-full object-contain bg-gray-50 p-2">
                 </div>
                 
-                <div id="resizer-1" class="flex justify-center items-center shrink-0 cursor-row-resize md:cursor-col-resize group w-full h-4 md:w-4 md:h-full z-10">
-                    <div class="w-12 h-1.5 md:w-1.5 md:h-12 bg-gray-300 rounded-full group-hover:bg-blue-400 transition-colors"></div>
+                <div id="resizer-1" class="flex justify-center items-center shrink-0 cursor-row-resize md:cursor-col-resize group w-full h-3 md:w-3 md:h-full z-10">
+                    <div class="w-12 h-1 md:w-1.5 md:h-12 bg-gray-300 rounded-full group-hover:bg-blue-400 transition-colors"></div>
                 </div>
 
-                <div id="right-container" class="flex flex-col flex-1 overflow-hidden shrink-0 gap-1 md:gap-2">
+                <div id="right-container" class="flex flex-col flex-1 overflow-hidden min-h-0 shrink-0 gap-1 md:gap-3">
                     
-                    <div id="pane-text" class="flex flex-col bg-white p-5 md:p-8 shrink-0 rounded-3xl shadow-sm border border-gray-200 relative" style="flex-basis: 50%;">
-                        <div class="absolute top-3 left-5 text-xs font-black text-gray-400 uppercase tracking-widest">Story Text</div>
-                        <div class="flex-1 overflow-y-auto mt-4">
+                    <div id="pane-text" class="flex flex-col bg-white p-3 md:p-5 shrink-0 rounded-2xl md:rounded-3xl shadow-sm border border-gray-200 relative min-h-0" style="flex-basis: 45%;">
+                        <div class="flex flex-wrap items-center justify-between gap-2 mb-2 shrink-0 border-b border-gray-100 pb-2">
+                            <div class="flex gap-2">
+                                <button id="btn-read-aloud" class="px-3 py-1.5 rounded-lg bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold text-sm flex items-center gap-1 transition-colors">
+                                    <span id="tts-icon">▶</span> <span id="tts-text">お手本</span>
+                                </button>
+                                <button id="btn-toggle-ja" class="px-3 py-1.5 rounded-lg border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 text-sm font-bold transition-colors">
+                                    🇯🇵 訳を表示
+                                </button>
+                            </div>
+                            <div class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full border border-gray-200">
+                                <span class="text-[10px] text-gray-500">A</span>
+                                <input type="range" id="font-slider-en" min="14" max="40" value="20" class="w-16 md:w-20 accent-blue-500">
+                                <span class="text-sm text-gray-600">A</span>
+                            </div>
+                        </div>
+
+                        <div class="flex-1 overflow-y-auto min-h-0 pr-1">
                             <div id="reading-text-content" class="font-medium leading-relaxed text-gray-800 transition-all" style="font-size: 20px;"></div>
-                            <div id="reading-text-ja" class="text-sm text-gray-500 mt-6 hidden border-t border-dashed border-gray-300 pt-4"></div>
+                            
+                            <div id="ja-container" class="hidden mt-4 pt-3 border-t border-dashed border-gray-300">
+                                <div class="flex justify-between items-center mb-1">
+                                    <span class="text-xs font-bold text-pink-400">日本語訳</span>
+                                    <div class="flex items-center gap-1 bg-pink-50 px-2 py-0.5 rounded-full border border-pink-100">
+                                        <span class="text-[10px] text-pink-500">A</span>
+                                        <input type="range" id="font-slider-ja" min="12" max="30" value="14" class="w-16 accent-pink-500">
+                                        <span class="text-sm text-pink-600">A</span>
+                                    </div>
+                                </div>
+                                <div id="reading-text-ja" class="text-gray-500 font-medium leading-relaxed transition-all" style="font-size: 14px;"></div>
+                            </div>
                         </div>
                     </div>
 
-                    <div id="resizer-2" class="h-4 w-full cursor-row-resize flex justify-center items-center shrink-0 group z-10">
-                        <div class="w-12 h-1.5 bg-gray-300 rounded-full group-hover:bg-blue-400 transition-colors"></div>
+                    <div id="resizer-2" class="h-3 w-full cursor-row-resize flex justify-center items-center shrink-0 group z-10">
+                        <div class="w-12 h-1 bg-gray-300 rounded-full group-hover:bg-blue-400 transition-colors"></div>
                     </div>
 
-                    <div id="pane-transcript" class="flex flex-col bg-white p-5 md:p-6 shrink-0 flex-1 min-h-0 rounded-3xl shadow-sm border border-gray-200 border-l-4 border-l-blue-400 relative">
-                        <div class="flex justify-between items-end mb-3 shrink-0 border-b border-gray-100 pb-2">
+                    <div id="pane-transcript" class="flex flex-col bg-white p-3 md:p-5 shrink-0 flex-1 min-h-0 rounded-2xl md:rounded-3xl shadow-sm border border-gray-200 border-l-4 border-l-blue-400 relative">
+                        <div class="flex justify-between items-end mb-2 shrink-0 border-b border-gray-100 pb-2">
                             <div class="flex flex-col">
-                                <span class="text-xs font-black text-blue-400 uppercase tracking-wider mb-1">Your Speech</span>
-                                <span class="text-sm font-bold text-gray-600">🗣️ あなたの音声（文字起こし）</span>
+                                <span class="text-xs font-black text-blue-400 uppercase tracking-wider mb-0.5">Your Speech</span>
+                                <span class="text-xs font-bold text-gray-500">🗣️ あなたの音声</span>
                             </div>
-                            <div class="flex flex-col items-end">
-                                <span class="text-xs text-gray-400 font-bold mb-1">発音の正確性 (Accuracy)</span>
-                                <span id="reading-accuracy" class="text-3xl font-black text-blue-600 leading-none">0%</span>
+                            <div class="flex items-center gap-3">
+                                <div class="flex items-center gap-1 bg-gray-50 px-2 py-1 rounded-full border border-gray-200">
+                                    <span class="text-[10px] text-gray-500">A</span>
+                                    <input type="range" id="font-slider-transcript" min="14" max="40" value="18" class="w-16 md:w-20 accent-blue-500">
+                                    <span class="text-sm text-gray-600">A</span>
+                                </div>
+                                <div class="flex flex-col items-end">
+                                    <span class="text-[10px] text-gray-400 font-bold mb-0.5">Accuracy(正確性)</span>
+                                    <span id="reading-accuracy" class="text-2xl md:text-3xl font-black text-blue-600 leading-none">0%</span>
+                                </div>
                             </div>
                         </div>
-                        <div id="reading-transcript" class="flex-1 overflow-y-auto text-lg md:text-xl text-gray-400 font-bold italic leading-relaxed pt-2">
+                        <div id="reading-transcript" class="flex-1 overflow-y-auto transition-all text-gray-400 font-bold italic leading-relaxed pt-1" style="font-size: 18px;">
                             下の「START」ボタンを押して、英語を読んでみましょう！
                         </div>
                     </div>
                 </div>
             </div>
 
-            <div class="p-3 md:p-4 bg-white border-t border-gray-200 flex flex-col md:flex-row justify-between items-center gap-3 shrink-0 z-10 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.05)]">
-                <div class="flex gap-2 w-full md:w-auto justify-center md:justify-start">
-                    <button id="btn-tts-rewind" class="p-3 rounded-2xl bg-gray-100 hover:bg-gray-200 text-gray-700 transition-colors shadow-sm" title="最初から再生">
-                        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0019 16V8a1 1 0 00-1.6-.8l-5.333 4zM4.066 11.2a1 1 0 000 1.6l5.334 4A1 1 0 0011 16V8a1 1 0 00-1.6-.8l-5.334 4z"></path></svg>
-                    </button>
-                    <button id="btn-read-aloud" class="px-6 py-3 rounded-2xl bg-indigo-50 hover:bg-indigo-100 text-indigo-700 font-bold flex items-center justify-center gap-2 transition-colors shadow-sm w-36 border border-indigo-100">
-                        <span id="tts-icon" class="text-xl">▶</span> <span id="tts-text">お手本</span>
-                    </button>
-                    <button id="btn-toggle-ja" class="px-6 py-3 rounded-2xl border border-gray-200 bg-white hover:bg-gray-50 text-gray-600 text-sm font-bold shadow-sm transition-colors">
-                        🇯🇵 訳を表示
-                    </button>
-                </div>
-                
-                <div class="flex gap-3 w-full md:w-auto mt-2 md:mt-0">
-                    <button id="btn-start-reading" class="flex-1 md:flex-none px-8 py-3 rounded-2xl bg-red-500 hover:bg-red-400 text-white font-black text-lg shadow-md transition-all active:scale-95 flex justify-center items-center gap-2 min-w-[200px]">
+            <div class="p-3 md:p-4 bg-white border-t border-gray-200 flex justify-center shrink-0 z-10 shadow-[0_-10px_15px_-3px_rgba(0,0,0,0.05)]">
+                <div class="flex gap-3 w-full max-w-2xl">
+                    <button id="btn-start-reading" class="flex-1 px-4 py-3 md:py-4 rounded-2xl bg-red-500 hover:bg-red-400 text-white font-black text-lg md:text-xl shadow-md transition-all active:scale-95 flex justify-center items-center gap-2">
                         🎤 START
                     </button>
-                    <button id="btn-next-scene" class="flex-1 md:flex-none px-8 py-3 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-black text-lg shadow-md shadow-blue-200 transition-all active:scale-95 flex items-center justify-center gap-2 min-w-[200px]">
-                        次のシーンへ ➔
+                    <button id="btn-next-scene" class="w-1/3 px-2 py-3 md:py-4 rounded-2xl bg-blue-600 hover:bg-blue-500 text-white font-black text-sm md:text-lg shadow-md shadow-blue-200 transition-all active:scale-95 flex items-center justify-center">
+                        NEXT ➔
                     </button>
                 </div>
+            </div>
+            
+            <div id="perfect-animation" class="hidden absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-50 pointer-events-none flex-col items-center justify-center drop-shadow-2xl">
+                <div class="text-7xl md:text-9xl font-black text-transparent bg-clip-text bg-gradient-to-br from-yellow-300 to-yellow-600 tracking-tighter italic">PERFECT!</div>
+                <div class="text-5xl md:text-7xl mt-2">✨🎉✨</div>
             </div>
         </div>
 
@@ -116,29 +143,33 @@
             <div class="flex justify-between items-center p-3 bg-gray-800 shrink-0 z-10 border-b border-gray-700">
                 <div id="retelling-scene-badge" class="font-bold text-gray-200 text-sm md:text-base"></div>
                 <div class="flex items-center gap-3">
-                    <span id="retelling-timer-text" class="text-xl md:text-2xl font-black text-pink-500 w-12 text-right tracking-tighter">20s</span>
+                    <span class="text-xs text-gray-400 font-bold uppercase">Time Left</span>
+                    <span id="retelling-timer-text" class="text-xl md:text-2xl font-black text-pink-500 w-12 text-right tracking-tighter"></span>
                 </div>
             </div>
-            <div class="w-full h-1.5 bg-gray-700 shrink-0"><div id="retelling-timer-bar" class="h-full bg-pink-500 w-full" style="transition: width 20s linear;"></div></div>
-            <div class="flex-1 relative overflow-hidden flex flex-col items-center justify-center p-4 bg-black">
+            <div class="w-full h-1.5 bg-gray-700 shrink-0"><div id="retelling-timer-bar" class="h-full bg-pink-500 w-full"></div></div>
+            
+            <div class="flex-1 relative overflow-hidden flex flex-col items-center justify-center p-2 bg-black min-h-0">
                 <img id="retelling-image" src="" class="max-w-full max-h-full object-contain rounded-2xl">
-                <div id="retelling-recording-indicator" class="hidden absolute top-6 right-6 bg-red-500/90 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse flex items-center gap-2 shadow-lg backdrop-blur-sm"><div class="w-2.5 h-2.5 bg-white rounded-full"></div> REC</div>
+                <div id="retelling-recording-indicator" class="hidden absolute top-4 right-4 bg-red-500/90 text-white px-3 py-1.5 rounded-full text-xs font-bold animate-pulse flex items-center gap-2 shadow-lg backdrop-blur-sm"><div class="w-2 h-2 bg-white rounded-full"></div> REC</div>
             </div>
-            <div class="h-1/3 md:h-1/4 bg-gray-800 p-6 shrink-0 flex flex-col border-t border-gray-700 rounded-t-3xl shadow-[0_-10px_20px_rgba(0,0,0,0.3)] z-10">
+            
+            <div class="h-1/3 md:h-1/4 bg-gray-800 p-4 shrink-0 flex flex-col border-t border-gray-700 min-h-0">
                 <span class="text-xs font-black text-gray-400 uppercase tracking-wider mb-2 flex items-center gap-2"><span class="w-2 h-2 rounded-full bg-green-500 inline-block"></span> Recognized Speech</span>
-                <div id="retelling-transcript-box" class="flex-1 overflow-y-auto text-lg md:text-xl text-gray-200 font-medium leading-relaxed"></div>
+                <div id="retelling-transcript-box" class="flex-1 overflow-y-auto text-base md:text-lg text-gray-200 font-medium leading-relaxed"></div>
             </div>
+
             <div id="retelling-start-overlay" class="absolute inset-0 bg-gray-900/85 backdrop-blur-sm z-20 flex flex-col items-center justify-center p-6 hidden">
-                <h3 class="text-3xl font-black text-white mb-2 text-center drop-shadow-md">Scene 1</h3>
-                <p class="text-gray-300 text-center mb-10 font-bold text-lg">20秒間で絵の状況を英語で説明しましょう！</p>
-                <button id="btn-start-retelling" class="px-10 py-5 rounded-3xl bg-pink-500 hover:bg-pink-400 text-white font-black text-2xl shadow-[0_8px_0_#be185d] active:translate-y-2 transition-all">🎤 録音スタート</button>
+                <h3 class="text-3xl font-black text-white mb-2 text-center drop-shadow-md" id="retelling-start-scene-num">Scene 1</h3>
+                <p class="text-gray-300 text-center mb-10 font-bold text-lg"><span id="retelling-start-time-num">20</span>秒間で絵の状況を英語で説明しましょう！</p>
+                <button id="btn-start-retelling" class="px-10 py-5 rounded-2xl bg-pink-500 hover:bg-pink-400 text-white font-black text-2xl shadow-[0_8px_0_#be185d] active:translate-y-2 transition-all">🎤 録音スタート</button>
             </div>
             <div id="retelling-finish-overlay" class="absolute inset-0 bg-gray-900/90 backdrop-blur-md z-30 flex-col items-center justify-center p-6 hidden">
                 <div class="text-6xl mb-4">🎉</div>
                 <h3 class="text-3xl md:text-4xl font-black text-white mb-4 text-center">Great Job!</h3>
-                <button id="btn-finish-retelling" class="px-10 py-5 rounded-3xl bg-blue-500 hover:bg-blue-400 text-white font-black text-2xl shadow-[0_8px_0_#1d4ed8] active:translate-y-2 transition-all">結果を見る ➔</button>
+                <button id="btn-finish-retelling" class="px-10 py-5 rounded-2xl bg-blue-500 hover:bg-blue-400 text-white font-black text-2xl shadow-[0_8px_0_#1d4ed8] active:translate-y-2 transition-all">結果を見る ➔</button>
             </div>
-            <button id="btn-next-retelling" class="hidden absolute bottom-8 right-8 z-10 px-6 py-3 rounded-xl bg-gray-600/80 hover:bg-gray-500 text-white font-bold shadow-lg backdrop-blur-sm border border-gray-500 transition-colors">SKIP ➔</button>
+            <button id="btn-next-retelling" class="hidden absolute bottom-6 right-6 z-10 px-6 py-3 rounded-xl bg-gray-600/80 hover:bg-gray-500 text-white font-bold shadow-lg backdrop-blur-sm border border-gray-500 transition-colors">SKIP ➔</button>
         </div>
 
         <div id="view-result-story" class="hidden flex-col h-full w-full bg-gray-50 overflow-hidden relative max-w-6xl mx-auto">
@@ -152,7 +183,7 @@
     </main>
 
     <div id="story-mode-modal" class="hidden fixed inset-0 bg-gray-900/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity">
-        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl transform transition-all">
+        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-md w-full shadow-2xl transform transition-all relative">
             <h3 class="text-2xl font-black text-gray-800 mb-2 text-center">モード選択</h3>
             <p class="text-gray-500 text-sm font-bold text-center mb-6">学習方法を選んでください</p>
             <div class="flex flex-col gap-4">
@@ -167,7 +198,7 @@
                     <div class="text-4xl group-hover:scale-110 transition-transform drop-shadow-sm">🗣️</div>
                     <div>
                         <div class="font-black text-pink-800 text-lg">Retelling (本番)</div>
-                        <div class="text-xs font-bold text-pink-600 mt-1 leading-relaxed">1枚20秒で絵の状況を英語で説明します。<br>最後にスコアとフィードバックが出ます。</div>
+                        <div class="text-xs font-bold text-pink-600 mt-1 leading-relaxed">指定された秒数で絵の状況を英語で説明します。<br>最後にスコアとフィードバックが出ます。</div>
                     </div>
                 </button>
             </div>
@@ -177,19 +208,45 @@
         </div>
     </div>
 
+    <div id="pss-settings-modal" class="hidden fixed inset-0 bg-black/60 backdrop-blur-sm z-50 flex items-center justify-center p-4 transition-opacity">
+        <div class="bg-white rounded-3xl p-6 md:p-8 max-w-sm w-full shadow-2xl relative">
+            <button onclick="document.getElementById('pss-settings-modal').classList.add('hidden')" class="absolute top-4 right-4 text-gray-400 hover:text-gray-700 font-bold text-xl">✕</button>
+            <h3 class="text-xl font-black text-gray-800 mb-6 flex items-center gap-2">⚙️ Story Settings</h3>
+            
+            <div class="mb-6 border-b border-gray-100 pb-6">
+                <label class="block text-sm font-bold text-gray-600 mb-2">Retelling 制限時間 (1枚あたり)</label>
+                <select id="setting-time-select" class="w-full p-3 rounded-xl border border-gray-300 bg-gray-50 text-gray-800 font-bold focus:border-blue-500 focus:outline-none">
+                    <option value="20">20 Seconds</option>
+                    <option value="30">30 Seconds</option>
+                    <option value="40">40 Seconds</option>
+                    <option value="50">50 Seconds</option>
+                    <option value="60">60 Seconds</option>
+                </select>
+            </div>
+
+            <div class="mb-6">
+                <label class="flex items-center justify-between cursor-pointer">
+                    <span class="text-sm font-bold text-gray-600">効果音 & アニメーション</span>
+                    <input type="checkbox" id="setting-effect-toggle" class="w-5 h-5 text-blue-600 rounded focus:ring-blue-500 border-gray-300">
+                </label>
+                <p class="text-xs text-gray-400 mt-1">正解時のPerfect演出やサウンドをONにします。</p>
+            </div>
+
+            <button onclick="savePssSettings()" class="w-full py-3 bg-blue-600 hover:bg-blue-500 text-white font-black rounded-xl shadow-md transition-colors">
+                保存して閉じる
+            </button>
+        </div>
+    </div>
+
     <script>
         function showStoryView(viewElement) {
             ['view-select', 'view-reading', 'view-retelling', 'view-result-story'].forEach(id => {
                 document.getElementById(id).classList.add('hidden');
+                document.getElementById(id).classList.remove('flex');
             });
             viewElement.classList.remove('hidden');
-            if(viewElement.id === 'view-reading' || viewElement.id === 'view-retelling') {
-                viewElement.classList.add('flex');
-            } else {
-                viewElement.classList.add('flex'); // selectやresultもflex
-            }
+            viewElement.classList.add('flex');
         }
-        // 初期表示
         showStoryView(document.getElementById('view-select'));
     </script>
     
