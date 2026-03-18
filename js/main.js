@@ -4,8 +4,8 @@
 // ==========================================
 
 window.appState = { 
-    selectedMode: null, // ★初期は未選択
-    selectedLevel: null, // ★初期は未選択
+    selectedMode: null,
+    selectedLevel: null,
     customTimeLimit: 30,
     isPracticeMode: false,
     practiceTargetText: "",
@@ -137,6 +137,128 @@ async function startGameWithTheme(id) {
     if (typeof showView === 'function') showView(viewPlay);
 }
 
+// ==========================================
+// ★ 新・アカデミックリザルト描画機能 (Snapshot)
+// ==========================================
+window.renderSnapshotResult = function() {
+    // スコアリングのデータを取得
+    const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
+    // 音声認識の結果を取得
+    const finalTranscript = document.getElementById('transcript-box').innerText.replace("Press START and speak loudly.（STARTを押して、大きな声で話しましょう）", "").trim();
+
+    // 以前のranking-containerを使用する（元のidに合わせています）
+    const container = document.getElementById('ranking-container');
+    if (!container) return;
+
+    let categoryHtml = "";
+    
+    const themeColors = {
+        "object": { light: "bg-green-50", border: "border-green-200", text: "text-green-700", dark: "bg-green-500", label: "text-green-500" },
+        "attribute": { light: "bg-orange-50", border: "border-orange-200", text: "text-orange-700", dark: "bg-orange-500", label: "text-orange-500" },
+        "detail": { light: "bg-purple-50", border: "border-purple-200", text: "text-purple-700", dark: "bg-purple-500", label: "text-purple-500" },
+        "gist": { light: "bg-blue-50", border: "border-blue-200", text: "text-blue-700", dark: "bg-blue-500", label: "text-blue-500" },
+        "inference": { light: "bg-pink-50", border: "border-pink-200", text: "text-pink-700", dark: "bg-pink-500", label: "text-pink-500" },
+        "other": { light: "bg-gray-50", border: "border-gray-200", text: "text-gray-700", dark: "bg-gray-500", label: "text-gray-500" }
+    };
+
+    if (stats.categories) {
+        Object.entries(stats.categories).forEach(([key, cat]) => {
+            if (cat.cleared.length === 0 && cat.missed.length === 0) return;
+            
+            const colors = themeColors[key] || themeColors["other"];
+            let itemsHtml = "";
+            
+            cat.cleared.forEach(item => {
+                itemsHtml += `
+                    <div class="flex items-start gap-2 mb-2 ${colors.light} p-2 rounded-lg border ${colors.border}">
+                        <span class="text-sm font-bold ${colors.text} flex-1">${item.ja} <span class="text-xs opacity-70 font-normal ml-1">(${item.text})</span></span>
+                        <span class="${colors.label} font-black text-lg shrink-0">✅</span>
+                    </div>`;
+            });
+            
+            cat.missed.forEach(item => {
+                itemsHtml += `
+                    <div class="flex items-start gap-2 mb-2 bg-gray-50 p-2 rounded-lg border border-gray-200 opacity-80">
+                        <span class="text-sm font-bold text-gray-500 flex-1 line-through decoration-gray-400">${item.ja} <span class="text-xs font-normal ml-1">(${item.text})</span></span>
+                        <span class="text-red-400 font-black text-lg shrink-0">❌</span>
+                    </div>`;
+            });
+
+            const totalInCat = cat.cleared.length + cat.missed.length;
+            const catMatchRate = totalInCat === 0 ? 0 : Math.floor((cat.cleared.length / totalInCat) * 100);
+            
+            categoryHtml += `
+                <div class="bg-white rounded-3xl p-5 shadow-sm border border-gray-200 mb-5 relative overflow-hidden">
+                    <div class="absolute top-0 left-0 w-1.5 h-full ${colors.dark}"></div>
+                    <div class="flex justify-between items-center mb-3 pb-2 border-b border-gray-100">
+                        <h4 class="font-black text-gray-800 text-lg pl-2">${cat.label}</h4>
+                        <span class="font-black ${catMatchRate >= 80 ? 'text-green-500' : catMatchRate >= 50 ? 'text-yellow-500' : 'text-pink-500'} text-2xl">${catMatchRate}%</span>
+                    </div>
+                    <div class="flex flex-col">${itemsHtml}</div>
+                </div>
+            `;
+        });
+    }
+
+    const totalWords = finalTranscript.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=>w).length;
+    const wpm = Math.round(totalWords / (window.appState.customTimeLimit / 60));
+
+    let html = `
+        <div class="flex flex-col lg:flex-row gap-4 md:gap-6 h-full w-full max-w-6xl mx-auto">
+            <div class="w-full lg:w-1/3 flex flex-col gap-4 shrink-0 pb-4 lg:pb-0">
+                <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-3xl p-6 flex flex-col items-center shadow-lg text-white relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-10 text-9xl">📸</div>
+                    <span class="text-white/90 font-extrabold text-xs tracking-widest mb-1 uppercase">Overall Accuracy</span>
+                    <span class="text-7xl font-black">${stats.completionRate}<span class="text-3xl">%</span></span>
+                    <p class="text-sm font-medium text-white/90 mt-4 text-center">写真の情報をどれだけ正確に、詳しく伝えられたかの達成率です。</p>
+                </div>
+                <div class="flex gap-4">
+                    <div class="bg-white rounded-3xl p-5 flex flex-col items-center shadow-sm border border-gray-200 flex-1">
+                        <span class="text-gray-400 font-extrabold text-[10px] tracking-widest mb-1 uppercase">Total Words</span>
+                        <span class="text-3xl font-black text-gray-800">${totalWords}</span>
+                    </div>
+                    <div class="bg-white rounded-3xl p-5 flex flex-col items-center shadow-sm border border-gray-200 flex-1">
+                        <span class="text-gray-400 font-extrabold text-[10px] tracking-widest mb-1 uppercase">WPM (Speed)</span>
+                        <span class="text-3xl font-black text-gray-800">${wpm || 0}</span>
+                    </div>
+                </div>
+                <div class="bg-gray-50 rounded-3xl p-5 shadow-inner border border-gray-200 flex-1 overflow-y-auto">
+                    <span class="text-gray-400 font-extrabold text-[10px] tracking-widest mb-2 uppercase block">Your Speech (あなたの音声)</span>
+                    <div class="text-base font-medium text-gray-700 italic leading-relaxed">"${finalTranscript || 'No speech recorded.'}"</div>
+                </div>
+            </div>
+
+            <div class="w-full lg:w-2/3 flex flex-col lg:h-full lg:overflow-y-auto pb-20">
+                <div class="mb-4">
+                    <h3 class="text-sm font-black text-gray-500 uppercase tracking-widest flex items-center gap-2 mb-2">
+                        <span class="w-2 h-2 rounded-full bg-blue-500 inline-block"></span>
+                        Category Analysis
+                    </h3>
+                    <p class="text-sm text-gray-600 font-bold bg-blue-50 p-3 rounded-xl border border-blue-100">
+                        💡 <span class="text-pink-600">❌ がついている表現</span> があなたの説明に不足していた要素です。次回はこのカテゴリーの単語を意識して使ってみましょう！
+                    </p>
+                </div>
+                ${categoryHtml}
+            </div>
+        </div>
+    `;
+    
+    container.innerHTML = html;
+};
+
+// ★修正: ゲーム終了時に新しいリザルト関数を呼び出すように変更
+window.finishGameAndShowResult = function() {
+    window.stopRecording();
+    if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
+    if(recordingIndicator) recordingIndicator.classList.add('hidden');
+    
+    // リザルト画面を描画！
+    window.renderSnapshotResult();
+    
+    if (typeof showView === 'function') showView(viewResult);
+};
+
+
 window.openPractice = function(text, ja) {
     window.appState.isPracticeMode = true;
     window.appState.practiceTargetText = text;
@@ -163,7 +285,6 @@ window.addEventListener('DOMContentLoaded', initApp);
 
 if (btnGotoSelect) {
     btnGotoSelect.addEventListener('click', () => {
-        // もしLevelかModeが未選択なら進めない（UI制御で防いでいるが念のため）
         if(!window.appState.selectedLevel || !window.appState.selectedMode) return;
 
         if (window.appState.selectedMode === 'story') {
@@ -217,6 +338,7 @@ if (btnHomeFromPlay) {
     });
 }
 
+// 終了ボタンのイベントリスナーは finishGameAndShowResult() に差し替え済み
 if (btnFinishTurn) { btnFinishTurn.addEventListener('click', () => { window.finishGameAndShowResult(); }); }
 
 if (btnPlayAgain) {

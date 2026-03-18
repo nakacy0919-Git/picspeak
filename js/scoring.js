@@ -1,12 +1,19 @@
 // js/scoring.js
 // ==========================================
-// スコアリングおよび達成率計算システム
+// スコアリングおよび達成率計算システム (柔軟なアカデミック採点版)
 // ==========================================
 
 let currentScore = 0;
 let foundWordsSet = new Set();
 let foundChunksSet = new Set();
 let foundSentencesSet = new Set();
+
+// ★評価に影響させないストップワード（冠詞、be動詞、前置詞など）
+const STOP_WORDS = new Set([
+    'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
+    'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
+    'with', 'for', 'there', 'some'
+]);
 
 function getAggregatedData(theme, level) {
     const data = { words: [], chunks: [], sentences: [] };
@@ -31,16 +38,43 @@ function getAggregatedData(theme, level) {
     return data;
 }
 
-function normalizeText(str) {
-    return str.toLowerCase().replace(/[.,!?'"-\s]/g, '');
+// ★NEW: 柔軟なマッチング判定（コア単語の60%以上が含まれていればOK）
+function flexibleMatch(targetText, spokenWordsArray) {
+    if (!targetText) return false;
+    
+    // ターゲットテキストを小文字化し、記号を消して配列化
+    const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
+    
+    // ストップワードを除外した「コア単語」を抽出
+    const coreWords = targetWords.filter(w => !STOP_WORDS.has(w) && w.length > 0);
+    
+    // もしコア単語が空になってしまったら、元の単語で判定
+    const wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
+
+    if (wordsToMatch.length === 0) return false;
+
+    let matchCount = 0;
+    wordsToMatch.forEach(w => {
+        const isMatch = spokenWordsArray.some(spoken => {
+            if (spoken === w) return true;
+            // 3文字以上の単語なら部分一致を許容（例: read と reading、sit と sitting等）
+            if (w.length >= 3 && spoken.length >= 3) {
+                return spoken.includes(w) || w.includes(spoken);
+            }
+            return false;
+        });
+        if (isMatch) matchCount++;
+    });
+
+    // コア単語の60%以上が発話に含まれていればクリア
+    return (matchCount / wordsToMatch.length) >= 0.6;
 }
 
 function calculateScore(transcript, theme, selectedLevel) {
     if (!transcript || !theme || !theme.scoringData) return null;
 
-    const lowerTranscript = transcript.toLowerCase();
-    const normalizedTranscript = normalizeText(transcript); 
-    
+    // ユーザーの発話を小文字化して配列にする
+    const spokenWordsArray = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
     const targetData = getAggregatedData(theme, selectedLevel);
 
     let newWords = [];
@@ -48,39 +82,34 @@ function calculateScore(transcript, theme, selectedLevel) {
     let newSentences = [];
     let pointsToAdd = 0;
 
+    // Wordsの判定
     targetData.words.forEach(wordObj => {
-        const wordText = wordObj.text;
-        if (!foundWordsSet.has(wordText)) {
-            const regex = new RegExp(`\\b${wordText.toLowerCase()}\\b`, 'i');
-            if (regex.test(lowerTranscript)) {
-                foundWordsSet.add(wordText);
-                newWords.push(wordText);
-                // ★修正: 新データは設定ポイント、旧データは従来通り10点
+        if (!foundWordsSet.has(wordObj.text)) {
+            if (flexibleMatch(wordObj.text, spokenWordsArray)) {
+                foundWordsSet.add(wordObj.text);
+                newWords.push(wordObj.text);
                 pointsToAdd += (wordObj.points || 10);
             }
         }
     });
 
+    // Chunksの判定
     targetData.chunks.forEach(chunkObj => {
-        const chunkText = chunkObj.text;
-        if (!foundChunksSet.has(chunkText)) {
-            const normalizedChunk = normalizeText(chunkText);
-            if (normalizedTranscript.includes(normalizedChunk)) {
-                foundChunksSet.add(chunkText);
-                newChunks.push(chunkText);
-                // ★修正: 新データは設定ポイント、旧データは従来通り50点
+        if (!foundChunksSet.has(chunkObj.text)) {
+            if (flexibleMatch(chunkObj.text, spokenWordsArray)) {
+                foundChunksSet.add(chunkObj.text);
+                newChunks.push(chunkObj.text);
                 pointsToAdd += (chunkObj.points || 50);
             }
         }
     });
 
+    // Sentencesの判定
     targetData.sentences.forEach(sentenceObj => {
         if (!foundSentencesSet.has(sentenceObj.text)) {
-            const normalizedSentence = normalizeText(sentenceObj.text);
-            if (normalizedTranscript.includes(normalizedSentence)) {
+            if (flexibleMatch(sentenceObj.text, spokenWordsArray)) {
                 foundSentencesSet.add(sentenceObj.text);
                 newSentences.push(sentenceObj);
-                // ★修正: 新データは設定ポイント、旧データは従来通り200点
                 pointsToAdd += (sentenceObj.points || 200);
             }
         }
@@ -116,47 +145,57 @@ function resetScore() {
     foundSentencesSet.clear();
 }
 
-// ★NEW: 認知心理学アプローチに基づく、重要度(points)ベースの達成率計算
+// 認知心理学アプローチに基づく、重要度(points)ベースの達成率計算
 function getCompletionStats(theme, selectedLevel) {
     const targetData = getAggregatedData(theme, selectedLevel);
     
     let totalPoints = 0;
     let earnedPoints = 0;
 
-    // アイテムごとのポイントを加算するヘルパー関数
-    const processPoints = (items, foundSet, fallbackPoints) => {
+    // ★NEW: カテゴリー(type)別の集計データを追加作成
+    const categoryStats = {
+        "object": { label: "Object (物体・人物)", cleared: [], missed: [] },
+        "attribute": { label: "Attribute (属性・状態)", cleared: [], missed: [] },
+        "detail": { label: "Detail (詳細・背景)", cleared: [], missed: [] },
+        "gist": { label: "Gist (要点・動作)", cleared: [], missed: [] },
+        "inference": { label: "Inference (推測・雰囲気)", cleared: [], missed: [] },
+        "other": { label: "Others (その他)", cleared: [], missed: [] }
+    };
+
+    const processItems = (items, foundSet, fallbackPoints) => {
         items.forEach(item => {
-            // 新JSONは重み付け(points)、旧JSONは一律 fallbackPoints（10点）で個数ベース計算を再現
             const pts = item.points || fallbackPoints;
             totalPoints += pts;
+            
+            const type = item.type || "other";
+            if (!categoryStats[type]) {
+                categoryStats[type] = { label: type, cleared: [], missed: [] };
+            }
+
             if (foundSet.has(item.text)) {
                 earnedPoints += pts;
+                categoryStats[type].cleared.push(item);
+            } else {
+                categoryStats[type].missed.push(item);
             }
         });
     };
 
-    // すべてfallbackPointsを「10」に設定することで、
-    // 古いJSONデータでは「全体の個数に対する言えた個数」と数学的に同じ結果になります。
-    processPoints(targetData.words, foundWordsSet, 10);
-    processPoints(targetData.chunks, foundChunksSet, 10);
-    processPoints(targetData.sentences, foundSentencesSet, 10);
+    processItems(targetData.words, foundWordsSet, 10);
+    processItems(targetData.chunks, foundChunksSet, 10);
+    processItems(targetData.sentences, foundSentencesSet, 10);
 
-    // 100%満点での達成率（重み付けされたポイントベース）
     const completionRate = totalPoints > 0 ? Math.min(100, Math.round((earnedPoints / totalPoints) * 100)) : 0;
     
-    // 未達成（言えなかった）アイテム
-    const missedWords = targetData.words.filter(w => !foundWordsSet.has(w.text));
-    const missedChunks = targetData.chunks.filter(c => !foundChunksSet.has(c.text));
-    const missedSentences = targetData.sentences.filter(s => !foundSentencesSet.has(s.text));
-
-    // 達成済（言えた）アイテム
-    const clearedWords = targetData.words.filter(w => foundWordsSet.has(w.text));
-    const clearedChunks = targetData.chunks.filter(c => foundChunksSet.has(c.text));
-    const clearedSentences = targetData.sentences.filter(s => foundSentencesSet.has(s.text));
-    
+    // 従来のデータ形式との互換性を保ちつつ、新しいカテゴリーデータもUIに渡す
     return {
         completionRate,
-        missedWords, missedChunks, missedSentences,
-        clearedWords, clearedChunks, clearedSentences
+        missedWords: targetData.words.filter(w => !foundWordsSet.has(w.text)),
+        missedChunks: targetData.chunks.filter(c => !foundChunksSet.has(c.text)),
+        missedSentences: targetData.sentences.filter(s => !foundSentencesSet.has(s.text)),
+        clearedWords: targetData.words.filter(w => foundWordsSet.has(w.text)),
+        clearedChunks: targetData.chunks.filter(c => foundChunksSet.has(c.text)),
+        clearedSentences: targetData.sentences.filter(s => foundSentencesSet.has(s.text)),
+        categories: categoryStats // ← これを使ってリザルト画面をアップデート可能！
     };
 }
