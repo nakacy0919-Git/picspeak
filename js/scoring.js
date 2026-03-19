@@ -1,6 +1,6 @@
 // js/scoring.js
 // ==========================================
-// スコアリングおよび達成率計算システム (柔軟なアカデミック採点版)
+// スコアリングおよび達成率計算システム (厳格＆誤認識防止版)
 // ==========================================
 
 let currentScore = 0;
@@ -8,7 +8,6 @@ let foundWordsSet = new Set();
 let foundChunksSet = new Set();
 let foundSentencesSet = new Set();
 
-// ★評価に影響させないストップワード（冠詞、be動詞、前置詞など）
 const STOP_WORDS = new Set([
     'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
     'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
@@ -20,13 +19,9 @@ function getAggregatedData(theme, level) {
     if (!theme || !theme.scoringData) return data;
 
     const levelsToInclude = [];
-    if (level === 'elementary') {
-        levelsToInclude.push('elementary');
-    } else if (level === 'junior_high') {
-        levelsToInclude.push('elementary', 'junior_high');
-    } else if (level === 'high_school') {
-        levelsToInclude.push('elementary', 'junior_high', 'high_school');
-    }
+    if (level === 'elementary') levelsToInclude.push('elementary');
+    else if (level === 'junior_high') levelsToInclude.push('elementary', 'junior_high');
+    else if (level === 'high_school') levelsToInclude.push('elementary', 'junior_high', 'high_school');
 
     levelsToInclude.forEach(lvl => {
         if (theme.scoringData[lvl]) {
@@ -38,42 +33,37 @@ function getAggregatedData(theme, level) {
     return data;
 }
 
-// ★NEW: 柔軟なマッチング判定（コア単語の60%以上が含まれていればOK）
+// ★修正: 誤認識を防ぎ、適度な厳格さを持つマッチングエンジン
 function flexibleMatch(targetText, spokenWordsArray) {
     if (!targetText) return false;
-    
-    // ターゲットテキストを小文字化し、記号を消して配列化
     const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
-    
-    // ストップワードを除外した「コア単語」を抽出
     const coreWords = targetWords.filter(w => !STOP_WORDS.has(w) && w.length > 0);
-    
-    // もしコア単語が空になってしまったら、元の単語で判定
     const wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
-
     if (wordsToMatch.length === 0) return false;
 
     let matchCount = 0;
     wordsToMatch.forEach(w => {
         const isMatch = spokenWordsArray.some(spoken => {
+            // 完全一致
             if (spoken === w) return true;
-            // 3文字以上の単語なら部分一致を許容（例: read と reading、sit と sitting等）
-            if (w.length >= 3 && spoken.length >= 3) {
-                return spoken.includes(w) || w.includes(spoken);
-            }
+            // 語形変化（複数形、進行形、過去形）のみを許容。部分一致（sun が Sunday になる等）は弾く！
+            if (spoken === w + 's' || spoken === w + 'es' || spoken === w + 'ing' || spoken === w + 'ed' || spoken === w + 'd') return true;
+            if (w === spoken + 's' || w === spoken + 'es' || w === spoken + 'ing' || w === spoken + 'ed' || w === spoken + 'd') return true;
             return false;
         });
         if (isMatch) matchCount++;
     });
 
-    // コア単語の60%以上が発話に含まれていればクリア
-    return (matchCount / wordsToMatch.length) >= 0.6;
+    // ★採点の厳格化
+    // 単語数が2語以下の短いフレーズは「100%（すべて）」言えないとバツ。
+    // 3語以上の文は「80%以上」のコア単語が言えていればマル。
+    const requiredRate = wordsToMatch.length <= 2 ? 1.0 : 0.8;
+    return (matchCount / wordsToMatch.length) >= requiredRate;
 }
 
 function calculateScore(transcript, theme, selectedLevel) {
     if (!transcript || !theme || !theme.scoringData) return null;
 
-    // ユーザーの発話を小文字化して配列にする
     const spokenWordsArray = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
     const targetData = getAggregatedData(theme, selectedLevel);
 
@@ -82,36 +72,27 @@ function calculateScore(transcript, theme, selectedLevel) {
     let newSentences = [];
     let pointsToAdd = 0;
 
-    // Wordsの判定
     targetData.words.forEach(wordObj => {
-        if (!foundWordsSet.has(wordObj.text)) {
-            if (flexibleMatch(wordObj.text, spokenWordsArray)) {
-                foundWordsSet.add(wordObj.text);
-                newWords.push(wordObj.text);
-                pointsToAdd += (wordObj.points || 10);
-            }
+        if (!foundWordsSet.has(wordObj.text) && flexibleMatch(wordObj.text, spokenWordsArray)) {
+            foundWordsSet.add(wordObj.text);
+            newWords.push(wordObj.text);
+            pointsToAdd += (wordObj.points || 10);
         }
     });
 
-    // Chunksの判定
     targetData.chunks.forEach(chunkObj => {
-        if (!foundChunksSet.has(chunkObj.text)) {
-            if (flexibleMatch(chunkObj.text, spokenWordsArray)) {
-                foundChunksSet.add(chunkObj.text);
-                newChunks.push(chunkObj.text);
-                pointsToAdd += (chunkObj.points || 50);
-            }
+        if (!foundChunksSet.has(chunkObj.text) && flexibleMatch(chunkObj.text, spokenWordsArray)) {
+            foundChunksSet.add(chunkObj.text);
+            newChunks.push(chunkObj.text);
+            pointsToAdd += (chunkObj.points || 50);
         }
     });
 
-    // Sentencesの判定
     targetData.sentences.forEach(sentenceObj => {
-        if (!foundSentencesSet.has(sentenceObj.text)) {
-            if (flexibleMatch(sentenceObj.text, spokenWordsArray)) {
-                foundSentencesSet.add(sentenceObj.text);
-                newSentences.push(sentenceObj);
-                pointsToAdd += (sentenceObj.points || 200);
-            }
+        if (!foundSentencesSet.has(sentenceObj.text) && flexibleMatch(sentenceObj.text, spokenWordsArray)) {
+            foundSentencesSet.add(sentenceObj.text);
+            newSentences.push(sentenceObj);
+            pointsToAdd += (sentenceObj.points || 200);
         }
     });
 
@@ -120,60 +101,49 @@ function calculateScore(transcript, theme, selectedLevel) {
         const chunkCombo = foundChunksSet.size * 0.2;
         const sentenceCombo = foundSentencesSet.size * 0.5;
         const totalMultiplier = 1.0 + chunkCombo + sentenceCombo;
-
         const finalPoints = Math.floor(pointsToAdd * totalMultiplier);
         currentScore += finalPoints;
 
         return {
-            score: currentScore,
-            addedPoints: finalPoints,
-            multiplier: totalMultiplier.toFixed(1),
-            newWords: newWords, 
-            allFoundWords: Array.from(foundWordsSet),
-            allFoundChunks: Array.from(foundChunksSet),
-            allFoundSentences: Array.from(foundSentencesSet),
-            isPerfect: newSentences.length > 0 
+            score: currentScore, addedPoints: finalPoints, multiplier: totalMultiplier.toFixed(1),
+            newWords, allFoundWords: Array.from(foundWordsSet), allFoundChunks: Array.from(foundChunksSet),
+            allFoundSentences: Array.from(foundSentencesSet), isPerfect: newSentences.length > 0 
         };
     }
     return null; 
 }
 
 function resetScore() {
-    currentScore = 0;
-    foundWordsSet.clear();
-    foundChunksSet.clear();
-    foundSentencesSet.clear();
+    currentScore = 0; foundWordsSet.clear(); foundChunksSet.clear(); foundSentencesSet.clear();
 }
 
-// 認知心理学アプローチに基づく、重要度(points)ベースの達成率計算
 function getCompletionStats(theme, selectedLevel) {
     const targetData = getAggregatedData(theme, selectedLevel);
-    
-    let totalPoints = 0;
-    let earnedPoints = 0;
+    let overallCap = 100;
+    let categoryCap = 20;
 
-    // ★NEW: カテゴリー(type)別の集計データを追加作成
+    if (selectedLevel === 'junior_high') { overallCap = 200; categoryCap = 40; } 
+    else if (selectedLevel === 'high_school') { overallCap = 300; categoryCap = 60; }
+
+    let totalEarnedPoints = 0;
     const categoryStats = {
-        "object": { label: "Object (物体・人物)", cleared: [], missed: [] },
-        "attribute": { label: "Attribute (属性・状態)", cleared: [], missed: [] },
-        "detail": { label: "Detail (詳細・背景)", cleared: [], missed: [] },
-        "gist": { label: "Gist (要点・動作)", cleared: [], missed: [] },
-        "inference": { label: "Inference (推測・雰囲気)", cleared: [], missed: [] },
-        "other": { label: "Others (その他)", cleared: [], missed: [] }
+        "object": { label: "Object (物体・人物)", earned: 0, cleared: [], missed: [] },
+        "attribute": { label: "Attribute (属性・状態)", earned: 0, cleared: [], missed: [] },
+        "detail": { label: "Detail (詳細・背景)", earned: 0, cleared: [], missed: [] },
+        "gist": { label: "Gist (要点・動作)", earned: 0, cleared: [], missed: [] },
+        "inference": { label: "Inference (推測・雰囲気)", earned: 0, cleared: [], missed: [] },
+        "other": { label: "Others (その他)", earned: 0, cleared: [], missed: [] }
     };
 
     const processItems = (items, foundSet, fallbackPoints) => {
         items.forEach(item => {
             const pts = item.points || fallbackPoints;
-            totalPoints += pts;
-            
             const type = item.type || "other";
-            if (!categoryStats[type]) {
-                categoryStats[type] = { label: type, cleared: [], missed: [] };
-            }
+            if (!categoryStats[type]) categoryStats[type] = { label: type, earned: 0, cleared: [], missed: [] };
 
             if (foundSet.has(item.text)) {
-                earnedPoints += pts;
+                totalEarnedPoints += pts;
+                categoryStats[type].earned += pts;
                 categoryStats[type].cleared.push(item);
             } else {
                 categoryStats[type].missed.push(item);
@@ -182,12 +152,15 @@ function getCompletionStats(theme, selectedLevel) {
     };
 
     processItems(targetData.words, foundWordsSet, 10);
-    processItems(targetData.chunks, foundChunksSet, 10);
-    processItems(targetData.sentences, foundSentencesSet, 10);
+    processItems(targetData.chunks, foundChunksSet, 20);
+    processItems(targetData.sentences, foundSentencesSet, 40);
 
-    const completionRate = totalPoints > 0 ? Math.min(100, Math.round((earnedPoints / totalPoints) * 100)) : 0;
-    
-    // 従来のデータ形式との互換性を保ちつつ、新しいカテゴリーデータもUIに渡す
+    const completionRate = Math.min(100, Math.floor((totalEarnedPoints / overallCap) * 100));
+    Object.keys(categoryStats).forEach(key => {
+        const cat = categoryStats[key];
+        cat.matchRate = Math.min(100, Math.floor((cat.earned / categoryCap) * 100));
+    });
+
     return {
         completionRate,
         missedWords: targetData.words.filter(w => !foundWordsSet.has(w.text)),
@@ -196,6 +169,6 @@ function getCompletionStats(theme, selectedLevel) {
         clearedWords: targetData.words.filter(w => foundWordsSet.has(w.text)),
         clearedChunks: targetData.chunks.filter(c => foundChunksSet.has(c.text)),
         clearedSentences: targetData.sentences.filter(s => foundSentencesSet.has(s.text)),
-        categories: categoryStats // ← これを使ってリザルト画面をアップデート可能！
+        categories: categoryStats 
     };
 }
