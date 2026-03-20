@@ -1,0 +1,380 @@
+{
+  "id": "story_bentoAppreciation",
+  "titleJa": "お弁当への感謝",
+  "imageSrc": "assets/images/story/story3_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story3_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I am a high school student. My mother makes my bento every day. The bento is always the same. I don't like it. I want a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='better' data-ja='より良い、もっと良い'>better</span> one.",
+          "readingJa": "私は高校生です。母は毎日お弁当を作ってくれます。お弁当はいつも同じです。私はそれが好きではありません。もっと良いものが欲しいです。",
+          "vocabulary": [
+            { "word": "high school student", "meaning": "高校生" },
+            { "word": "high", "meaning": "高い、高等（の）" },
+            { "word": "school", "meaning": "学校" },
+            { "word": "student", "meaning": "学生、生徒" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "makes", "meaning": "作る（makeの三人称単数現在形）" },
+            { "word": "bento", "meaning": "お弁当" },
+            { "word": "every day", "meaning": "毎日" },
+            { "word": "always", "meaning": "いつも" },
+            { "word": "same", "meaning": "同じ" },
+            { "word": "don't", "meaning": "（〜し）ない（do notの短縮形）" },
+            { "word": "like", "meaning": "好き、好む" },
+            { "word": "want", "meaning": "欲しい、欲しがる" },
+            { "word": "better", "meaning": "より良い、もっと良い（goodの比較級）" },
+            { "word": "one", "meaning": "もの（bentoを指す）" },
+            { "word": "a better one", "meaning": "もっと良いもの" }
+          ],
+          "targets": [
+            { "category": "Context (状況)", "text": "主人公は、母が毎日作る同じようなお弁当に不満を持っている", "keywords": [ "high school student", "makes bento", "always same", "better one" ] }
+          ]
+        },
+        "junior_high": {
+          "readingText": "In high school, my mother made my bento every single day. I used to complain to her about it. 'The bento is <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='always the same' data-ja='いつも同じ、代わり映えしない'>always the same</span>!' I said. I thought about more delicious bentos.",
+          "readingJa": "高校時代、母は毎日お弁当を作ってくれました。私はそれについて母に文句を言うのが常でした。「お弁当はいつも同じだ！」と私は言いました。私はもっと美味しいお弁当について考えました。",
+          "vocabulary": [
+            { "word": "high school", "meaning": "高校" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "made", "meaning": "作った（makeの過去形）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "bento", "meaning": "お弁当" },
+            { "word": "every single day", "meaning": "毎日、一日も欠かさず" },
+            { "word": "single", "meaning": "たった一つの、単一の" },
+            { "word": "used to", "meaning": "以前は〜したものだ、かつては〜だった" },
+            { "word": "complain", "meaning": "文句を言う、苦情を言う" },
+            { "word": "to", "meaning": "〜に" },
+            { "word": "about", "meaning": "〜について" },
+            { "word": "always", "meaning": "いつも" },
+            { "word": "same", "meaning": "同じ" },
+            { "word": "said", "meaning": "言った（sayの過去形）" },
+            { "word": "say", "meaning": "言う" },
+            { "word": "thought", "meaning": "考えた（thinkの過去形）" },
+            { "word": "think", "meaning": "考える" },
+            { "word": "delicious", "meaning": "美味しい" },
+            { "word": "bentos", "meaning": "お弁当（複数形）" }
+          ],
+          "targets": [
+            { "category": "Habit (習慣)", "text": "高校時代、母が毎日作る同じようなお弁当に文句を言っていた", "keywords": [ "high school", "made bento", "used to complain", "always the same" ] }
+          ]
+        },
+        "high_school": {
+          "readingText": "I am a high school student who is never satisfied. I often complained about my mother's daily bentos, saying 'They're <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='always the same' data-ja='いつも同じ、代わり映えしない'>always the same</span>! I want a more <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='luxurious' data-ja='豪華な、贅沢な'>luxurious</span> one!' looking up fancy lunches online.",
+          "readingJa": "私は高校生で、決して満足しない生徒です。私はよく母の毎日の弁当について、「いつも同じだ！もっと豪華なのがいい！」と言いながら、ネットで豪華なランチを検索して文句を言っていました。",
+          "vocabulary": [
+            { "word": "high school student", "meaning": "高校生" },
+            { "word": "student", "meaning": "学生、生徒" },
+            { "word": "never", "meaning": "決して〜ない、一度も〜ない" },
+            { "word": "satisfied", "meaning": "満足した、満たされた" },
+            { "word": "often", "meaning": "よく、しばしば" },
+            { "word": "complained", "meaning": "文句を言った（complainの過去形）" },
+            { "word": "complain", "meaning": "文句を言う" },
+            { "word": "about", "meaning": "〜について" },
+            { "word": "mother's", "meaning": "母の" },
+            { "word": "daily", "meaning": "毎日の、日常の" },
+            { "word": "bentos", "meaning": "お弁当（複数形）" },
+            { "word": "saying", "meaning": "言っている（sayの現在分詞）" },
+            { "word": "say", "meaning": "言う" },
+            { "word": "always", "meaning": "いつも" },
+            { "word": "same", "meaning": "同じ" }, "a always same one",
+            { "word": "want", "meaning": "欲しい、欲しがる" },
+            { "word": "luxurious", "meaning": "豪華な、贅沢な" },
+            { "word": "one", "meaning": "もの（bentoを指す）" }, "a luxurious one",
+            { "word": "looking up", "meaning": "（辞書などで）検索する" },
+            { "word": "fancy", "meaning": "豪華な、素敵な、高級な" },
+            { "word": "lunches", "meaning": "昼食（lunchの複数形）" },
+            { "word": "online", "meaning": "ネットで、オンラインで" }
+          ],
+          "targets": [
+            { "category": "Mindset (考え方)", "text": "高校生として、母が毎日作る同じような弁当に不満を持ち、豪華な弁当を求めていた", "keywords": [ "high school student", "complained", "daily bento", "always the same", "luxurious", "fancy lunches" ] }
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/bentoAppreciation_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "One day, I saw my mother. She was very busy. She was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='working hard' data-ja='一生懸命働いている、頑張っている'>working hard</span>. She was making bento very early in the morning.",
+          "readingJa": "ある日、母を見ました。彼女はとても忙しかったです。彼女は一生懸命働いていました。彼女は朝早くにお弁当を作っていました。",
+          "vocabulary": [
+            { "word": "one day", "meaning": "ある日" },
+            { "word": "saw", "meaning": "見た（seeの過去形）" },
+            { "word": "see", "meaning": "見る" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "was", "meaning": "〜だった（be動詞の過去形）" },
+            { "word": "very", "meaning": "とても" },
+            { "word": "busy", "meaning": "忙しい" },
+            { "word": "working", "meaning": "働いている（workの現在分詞）" },
+            { "word": "work", "meaning": "働く" },
+            { "word": "hard", "meaning": "一生懸命に" },
+            { "word": "working hard", "meaning": "一生懸命働いている" },
+            { "word": "making", "meaning": "作っている（makeの現在分詞）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "bento", "meaning": "お弁当" },
+            { "word": "early", "meaning": "早い、早く" },
+            { "word": "morning", "meaning": "朝" },
+            { "word": "very early", "meaning": "とても早く" }, "very early in the morning"
+          ],
+          "targets": [
+            { "category": "Observation (観察)", "text": "母がとても忙しく働き、朝早くからお弁当を作っているのを見た", "keywords": [ "saw mother", "very busy", "working hard", "early morning" ] }
+          ]
+        },
+        "junior_high": {
+          "readingText": "I didn't know how busy my mother was. One night, I saw her working at her desk <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='late at night' data-ja='夜遅くに、夜更けに'>late at night</span>. Then, very early in the morning, I heard her making bento for me while I was still sleeping.",
+          "readingJa": "母がいかに忙しいか、私は知りませんでした。ある夜、私は母が夜遅くに机で仕事をしているのを見ました。そして、朝早くに、私がまだ寝ている間、母が私にお弁当を作っている音を聞きました。",
+          "vocabulary": [
+            { "word": "didn't", "meaning": "（〜し）なかった（do notの過去の短縮形）" },
+            { "word": "know", "meaning": "知る、わかる" },
+            { "word": "how", "meaning": "どれくらい、どのように" },
+            { "word": "busy", "meaning": "忙しい" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "was", "meaning": "〜だった（be動詞の過去形）" },
+            { "word": "one night", "meaning": "ある夜" },
+            { "word": "saw", "meaning": "見た（seeの過去形）" },
+            { "word": "see", "meaning": "見る" },
+            { "word": "her", "meaning": "彼女を（母）" },
+            { "word": "working", "meaning": "働いている（workの現在分詞）" },
+            { "word": "work", "meaning": "働く" },
+            { "word": "desk", "meaning": "机" },
+            { "word": "late", "meaning": "遅い、遅く" },
+            { "word": "night", "meaning": "夜" }, "late at night",
+            { "word": "then", "meaning": "それから、その時" },
+            { "word": "very early", "meaning": "とても早く" }, "very early in the morning",
+            { "word": "heard", "meaning": "聞いた（hearの過去形）" },
+            { "word": "hear", "meaning": "聞く" },
+            { "word": "making", "meaning": "作っている（makeの現在分詞）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "bento", "meaning": "お弁当" },
+            { "word": "for", "meaning": "〜のために" },
+            { "word": "while", "meaning": "〜する間" },
+            { "word": "still", "meaning": "まだ、いまだに" },
+            { "word": "sleeping", "meaning": "眠っている（sleepの現在分詞）" }
+          ],
+          "targets": [
+            { "category": "Observation (観察)", "text": "夜遅くまで母が仕事をし、朝早くからお弁当を作っているのを目撃または聞いた", "keywords": [ "mother busy", "saw mother working", "late night", "heard mother making bento", "early morning" ] }
+          ]
+        },
+        "high_school": {
+          "readingText": "My world view changed completely one night. I discovered that my mother, who I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='assumed' data-ja='思い込んでいた、仮定していた'>assumed</span> was just making simple bentos, was actually <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='balancing' data-ja='両立している、バランスをとっている'>balancing</span> a demanding job with endless household chores. I realized she woke up at dawn to ensure I had lunch before school.",
+          "readingJa": "ある夜、私の世界観は完全に変わりました。私は母が単に簡単な弁当を作っているだけだと思い込んでいましたが、実際には大変な仕事と終わりのない家事とを両立させていることを知りました。彼女は夜明け前に起きて、私が学校へ行く前に弁当があるようにしてくれていたことを悟りました。",
+          "vocabulary": [
+            { "word": "world", "meaning": "世界" },
+            { "word": "view", "meaning": "見方、視点" },
+            { "word": "world view", "meaning": "世界観" },
+            { "word": "changed", "meaning": "変わった（changeの過去形）" },
+            { "word": "completely", "meaning": "完全に、すっかり" },
+            { "word": "discovered", "meaning": "発見した、気づいた（discoverの過去形）" },
+            { "word": "discover", "meaning": "発見する、気づく" },
+            { "word": "that", "meaning": "〜ということ" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "who", "meaning": "〜するところの（関係代名詞）" },
+            { "word": "assumed", "meaning": "思い込んでいた、仮定していた（assumeの過去形）" },
+            { "word": "assume", "meaning": "思い込む、仮定する" },
+            { "word": "just", "meaning": "ただ、単に" },
+            { "word": "making", "meaning": "作っている（makeの現在分詞）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "simple", "meaning": "簡単な、単純な" },
+            { "word": "bentos", "meaning": "お弁当（複数形）" },
+            { "word": "actually", "meaning": "実際には" },
+            { "word": "balancing", "meaning": "両立している、バランスをとっている（balanceの現在分詞）" },
+            { "word": "demanding", "meaning": "大変な、要求の厳しい" },
+            { "word": "job", "meaning": "仕事" },
+            { "word": "household", "meaning": "家事の、家庭の" },
+            { "word": "household chores", "meaning": "家事" },
+            { "word": "chores", "meaning": "家事、雑用（choreの複数形）" },
+            { "word": "realized", "meaning": "悟った、気づいた（realizeの過去形）" },
+            { "word": "woke up", "meaning": "目が覚めた（wake upの過去形）" },
+            { "word": "wake up", "meaning": "目が覚める" },
+            { "word": "at dawn", "meaning": "夜明けに、明け方に" },
+            { "word": "ensure", "meaning": "確実にする、保証する" },
+            { "word": "ensure I had lunch", "meaning": "昼食があるようにする" },
+            { "word": "before school", "meaning": "学校へ行く前に" }
+          ],
+          "targets": [
+            { "category": "Observation (観察)", "text": "母が大変な仕事と家事を両立させ、夜明け前に起きてお弁当を作っていたことを悟った", "keywords": [ "world view changed", "discovered mother", "assumed just making simple bentos", "actually balancing", "demanding job", "household chores", "realized mother woke up at dawn" ] }
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/bentoAppreciation_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "The next day, I made my bento. It was not easy. I am not good at cooking. The egg was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='burned' data-ja='焦げた、燃えた'>burned</span>. The vegetables were not good.",
+          "readingJa": "次の日、私はお弁当を作りました。それは簡単ではありませんでした。私は料理が得意ではありません。卵は焦げていました。野菜は良くありませんでした。",
+          "vocabulary": [
+            { "word": "next day", "meaning": "次の日、翌日" },
+            { "word": "made", "meaning": "作った（makeの過去形）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "bento", "meaning": "お弁当" },
+            { "word": "easy", "meaning": "簡単な、容易な" },
+            { "word": "was", "meaning": "〜だった（be動詞の過去形）" },
+            { "word": "not easy", "meaning": "簡単ではない" },
+            { "word": "cooking", "meaning": "料理" }, "good at cooking",
+            { "word": "good at", "meaning": "〜が得意、上手" },
+            { "word": "egg", "meaning": "卵" },
+            { "word": "burned", "meaning": "焦げた、燃えた（burnの過去形）" },
+            { "word": "vegetables", "meaning": "野菜（vegetableの複数形）" },
+            { "word": "were", "meaning": "〜だった（be動詞の過去形、複数）" },
+            { "word": "not good", "meaning": "良くない、下手" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "翌日、自分でお弁当を作ろうとしたが、焦がしたり散らかしたりしてうまくいかなかった", "keywords": [ "next day", "made bento", "not easy", "not good at cooking", "egg burned", "vegetables not good" ] }
+          ]
+        },
+        "junior_high": {
+          "readingText": "Determined to change my attitude, I decided to make my own bento the next morning. I tried cutting vegetables and <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='cooking an omelet' data-ja='オムレツを作っている、オムレツを焼いている'>cooking an omelet</span>, but everything <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='went wrong' data-ja='うまくいかなかった、失敗した'>went wrong</span>. I realized that making bento is harder than I thought.",
+          "readingJa": "態度を変えることを決意して、私は翌朝、自分でお弁当を作ることにしました。私は野菜を切り、オムレツを作ることに挑戦しましたが、すべてがうまくいきませんでした。私はお弁当を作ることは私が思っていたよりも大変だと悟りました。",
+          "vocabulary": [
+            { "word": "determined", "meaning": "決意した、決定した（determineの過去分詞）" },
+            { "word": "change", "meaning": "変える" },
+            { "word": "attitude", "meaning": "態度、考え方" }, "determined to change my attitude",
+            { "word": "decided to", "meaning": "〜することに決めた（decide toの過去形）" },
+            { "word": "make", "meaning": "作る" },
+            { "word": "bento", "meaning": "お弁当" }, "make my own bento",
+            { "word": "tried", "meaning": "挑戦した、試した（tryの過去形）" },
+            { "word": "cutting", "meaning": "切っている（cutの現在分詞）" },
+            { "word": "vegetables", "meaning": "野菜（vegetableの複数形）" },
+            { "word": "cooking", "meaning": "作っている、焼いている（cookの現在分詞）" },
+            { "word": "omelet", "meaning": "オムレツ" }, "cooking an omelet",
+            { "word": "but", "meaning": "しかし、けれども" },
+            { "word": "everything", "meaning": "すべて" },
+            { "word": "went wrong", "meaning": "うまくいかなかった、失敗した（go wrongの過去形）" },
+            { "word": "go wrong", "meaning": "失敗する" },
+            { "word": "realized", "meaning": "悟った、気づいた（realizeの過去形）" },
+            { "word": "that", "meaning": "〜ということ" },
+            { "word": "making bento", "meaning": "お弁当を作ること" },
+            { "word": "harder", "meaning": "より大変な、より難しい（hardの比較級）" },
+            { "word": "thought", "meaning": "思った（thinkの過去形）" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "翌朝、自分でお弁当を作ろうとしたが、オムレツを焦がしたりしてうまくいかなかった", "keywords": [ "determined", "make my own bento", "tried cutting vegetables", "cooking an omelet", "everything went wrong", "making bento harder" ] }
+          ]
+        },
+        "high_school": {
+          "readingText": "Determined to try it myself, I attempted to create my own lunch <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='from scratch' data-ja='一から、ゼロから'>from scratch</span> the following day. I fumbled through cutting vegetables and struggled to master the omelet, only to find the results were inedible. I finally understood the sheer effort required.",
+          "readingJa": "自分で試してみることを決意して、私は翌日、一から自分で昼食を作ることに挑戦しました。私は野菜を切るのに手間取り、オムレツをマスターするのに苦労しましたが、その結果は食べられないものでした。私はついに、母が費やしているその多大な努力を理解しました。",
+          "vocabulary": [
+            { "word": "determined", "meaning": "決意した、決定した（determineの過去分詞）" },
+            { "word": "try it myself", "meaning": "自分で試してみる" },
+            { "word": "attempted to", "meaning": "〜することに挑戦した、試みた（attempt toの過去形）" },
+            { "word": "create", "meaning": "作る、創造する" }, "create my own lunch",
+            { "word": "from scratch", "meaning": "一から、ゼロから" },
+            { "word": "following day", "meaning": "翌日、次の日" },
+            { "word": "fumbled through", "meaning": "手間取る、手探りする" },
+            { "word": "cutting", "meaning": "切っている（cutの現在分詞）" },
+            { "word": "vegetables", "meaning": "野菜（vegetableの複数形）" },
+            { "word": "struggled to", "meaning": "〜することに苦労した、闘った（struggle toの過去形）" },
+            { "word": "master", "meaning": "マスターする、習得する" }, "master the omelet",
+            { "word": "only to find", "meaning": "結局〜だと気づいただけだった（不定詞）" },
+            { "word": "results", "meaning": "結果（resultの複数形）" },
+            { "word": "were inedible", "meaning": "食べられなかった" },
+            { "word": "inedible", "meaning": "食べられない" },
+            { "word": "finally", "meaning": "ついに、ようやく" },
+            { "word": "understood", "meaning": "理解した（understandの過去形）" },
+            { "word": "sheer", "meaning": "多大な、まったくの" },
+            { "word": "effort", "meaning": "努力" },
+            { "word": "required", "meaning": "必要な、求められる（requireの過去分詞）" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "翌日、自分でお弁当を作ろうとしたが、オムレツが食べられない結果になるなどうまくいかなかった", "keywords": [ "determined", "attempted to create", "from scratch", "fumbled cutting", "struggled to master", "inedible results", "understood sheer effort" ] }
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/bentoAppreciation_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I came home. I saw my mother. I said, '<span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='Thank you for everything' data-ja='何から何までありがとう、いつもありがとう'>Thank you for everything</span>.' She was surprised. She smiled at me.",
+          "readingJa": "私は家に帰りました。母を見ました。私は、「何から何までありがとう」と言いました。彼女は驚いていました。彼女は私に微笑みました。",
+          "vocabulary": [
+            { "word": "came home", "meaning": "家に帰った（come homeの過去形）" },
+            { "word": "home", "meaning": "家、家庭" },
+            { "word": "saw", "meaning": "見た（seeの過去形）" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "said", "meaning": "言った（sayの過去形）" },
+            { "word": "say", "meaning": "言う" },
+            { "word": "thank you for everything", "meaning": "何から何までありがとう、いつもありがとう" },
+            { "word": "everything", "meaning": "すべて" },
+            { "word": "was surprised", "meaning": "驚いた、びっくりした" },
+            { "word": "surprised", "meaning": "驚いた（surpriseの過去分詞）" },
+            { "word": "was", "meaning": "〜だった（be動詞の過去形）" },
+            { "word": "smiled", "meaning": "微笑んだ（smileの過去形）" },
+            { "word": "smile", "meaning": "微笑む" },
+            { "word": "at", "meaning": "〜に" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "帰宅後、母に感謝を伝えると、母は驚きつつも嬉しそうに微笑んだ", "keywords": [ "came home", "saw mother", "said thank you for everything", "mother surprised", "smiled" ] }
+          ]
+        },
+        "junior_high": {
+          "readingText": "When I came back home, I saw my mother. I told her, '<span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='Thank you for making' data-ja='作ってくれてありがとう'>Thank you for making</span> my bento every day.' She looked at me with a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='surprised expression' data-ja='驚いた表情、びっくりした顔'>surprised expression</span>. Then, she smiled a very warm and happy smile.",
+          "readingJa": "私が家に帰った時、母を見ました。私は、「毎日お弁当を作ってくれてありがとう」と母に言いました。彼女は驚いた表情で私を見ました。それから、彼女はとても温かく幸せな微笑みを浮かべました。",
+          "vocabulary": [
+            { "word": "came back home", "meaning": "家に帰った（come back homeの過去形）" },
+            { "word": "when", "meaning": "〜の時" },
+            { "word": "home", "meaning": "家、家庭" },
+            { "word": "saw", "meaning": "見た（seeの過去形）" },
+            { "word": "mother", "meaning": "母親、母" },
+            { "word": "told", "meaning": "言った（tellの過去形）" },
+            { "word": "thank you for making", "meaning": "作ってくれてありがとう" },
+            { "word": "making", "meaning": "作ること（makeの現在分詞、動名詞）" },
+            { "word": "bento", "meaning": "お弁当" }, "my bento",
+            { "word": "every day", "meaning": "毎日" },
+            { "word": "looked at", "meaning": "〜を見た（look atの過去形）" },
+            { "word": "with", "meaning": "〜で、〜を持って" },
+            { "word": "surprised", "meaning": "驚いた（surpriseの過去分詞）" },
+            { "word": "expression", "meaning": "表情、表現" }, "surprised expression",
+            { "word": "then", "meaning": "それから、その時" },
+            { "word": "smiled", "meaning": "微笑んだ（smileの過去形）" },
+            { "word": "warm", "meaning": "温かい、暖かい" },
+            { "word": "happy", "meaning": "幸せな、うれしい" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "帰宅後、母にお弁当を作ってくれることへの感謝を伝えると、母は驚きつつも温かく幸せに微笑んだ", "keywords": [ "came back home", "told mother", "thank you for making bento every day", "surprised expression", "warm happy smile" ] }
+          ]
+        },
+        "high_school": {
+          "readingText": "After returning from school, I immediately approached my mother. '<span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='Thank you so much' data-ja='本当にありがとう、とても感謝している'>Thank you so much</span> for all you do for me, especially the bentos,' I confessed. She was momentarily <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='speechless' data-ja='言葉を失っている、呆然としている'>speechless</span>, her expression a mix of surprise and pure joy, before her face lit up with a truly <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='radiant' data-ja='輝くような、晴れやかな'>radiant</span> smile.",
+          "readingJa": "学校から帰った後、私はすぐに母に近づきました。私は、「何から何までありがとう、特に弁当を」と告白しました。彼女は一瞬、言葉を失い、表情は驚きと純粋な喜びが混ざったものでしたが、その後、彼女の顔は本当に輝くような微笑みで明るくなりました。",
+          "vocabulary": [
+            { "word": "after", "meaning": "〜の後で" },
+            { "word": "returning", "meaning": "戻っている（returnの現在分詞）" },
+            { "word": "return", "meaning": "戻る" },
+            { "word": "from school", "meaning": "学校から" },
+            { "word": "immediately", "meaning": "すぐに、即座に" },
+            { "word": "approached", "meaning": "近づいた（approachの過去形）" },
+            { "word": "approach", "meaning": "近づく" },
+            { "word": "confessed", "meaning": "告白した（confessの過去形）" },
+            { "word": "confess", "meaning": "告白する" },
+            { "word": "all", "meaning": "すべて" },
+            { "word": "especially", "meaning": "特に" },
+            { "word": "bentos", "meaning": "お弁当（複数形）" },
+            { "word": "was speechless", "meaning": "言葉を失った、呆然とした" },
+            { "word": "momentarily", "meaning": "一瞬、一時的に" },
+            { "word": "expression", "meaning": "表情、表現" },
+            { "word": "mix", "meaning": "混ぜたもの、混合物" }, "a mix of surprise and pure joy",
+            { "word": "surprise", "meaning": "驚き" },
+            { "word": "pure", "meaning": "純粋な、まったくの" },
+            { "word": "joy", "meaning": "喜び" },
+            { "word": "face", "meaning": "顔" },
+            { "word": "lit up", "meaning": "明るくなった、照らされた（light upの過去形）" },
+            { "word": "light up", "meaning": "明るくなる" },
+            { "word": "truly", "meaning": "本当に、真に" },
+            { "word": "radiant", "meaning": "輝くような、晴れやかな" }
+          ],
+          "targets": [
+            { "category": "Action (行動)", "text": "帰宅後、母にこれまでの感謝、特に弁当への感謝を伝えると、母は驚きつつも晴れやかに微笑んだ", "keywords": [ "returned from school", "confessed", "thank you", "especially bentos", "speechless", "surprised pure joy", "radiant smile" ] }
+          ]
+        }
+      }
+    }
+  ]
+}

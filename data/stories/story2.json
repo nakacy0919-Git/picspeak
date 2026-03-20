@@ -1,0 +1,371 @@
+{
+  "id": "story_theRegretfulStudent",
+  "titleJa": "勉強をサボった後悔",
+  "imageSrc": "assets/images/story/story2_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story2_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I am a high school student. <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='do homework' data-ja='宿題をする'>I don't do my homework</span>. My mom is angry. But I am happy with my smartphone.",
+          "readingJa": "私は高校生です。私は宿題をしません。お母さんは怒っています。でも私はスマホでハッピーです。",
+          "vocabulary": [
+            {"word": "high school student", "meaning": "高校生"},
+            {"word": "high", "meaning": "高い、高等（の）"},
+            {"word": "school", "meaning": "学校"},
+            {"word": "student", "meaning": "学生、生徒"},
+            {"word": "do", "meaning": "する"},
+            {"word": "don't", "meaning": "（〜し）ない"},
+            {"word": "homework", "meaning": "宿題"},
+            {"word": "do one's homework", "meaning": "宿題をする"},
+            {"word": "mom", "meaning": "お母さん"},
+            {"word": "mother", "meaning": "お母さん、母親"},
+            {"word": "is", "meaning": "〜です（be動詞）"},
+            {"word": "angry", "meaning": "怒った"},
+            {"word": "but", "meaning": "しかし、でも"},
+            {"word": "happy", "meaning": "幸せな、うれしい"},
+            {"word": "with", "meaning": "〜と一緒に、〜を持って"},
+            {"word": "smartphone", "meaning": "スマートフォン、スマホ"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "女子高生が宿題をせず、スマホを楽しんでいる", "keywords": ["homework", "not do", "smartphone"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "Back when I was a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='freshman' data-ja='新入生'>freshman</span>, I never did my homework. My teacher often got angry at me, and my mom was worried. But I was always busy checking social media.",
+          "readingJa": "高校1年生だった頃、私は一度も宿題をしませんでした。先生はよく私に怒ったし、お母さんは心配していました。でも、私はいつもSNSをチェックするのに忙しかったのです。",
+          "vocabulary": [
+            {"word": "back when", "meaning": "〜だった頃（を振り返って）"},
+            {"word": "was", "meaning": "〜でした（be動詞、過去形）"},
+            {"word": "freshman", "meaning": "高校・大学の1年生"},
+            {"word": "never", "meaning": "一度も（〜し）ない、決して（〜し）ない"},
+            {"word": "did", "meaning": "した（doの過去形）"},
+            {"word": "do homework", "meaning": "宿題をする"},
+            {"word": "teacher", "meaning": "先生"},
+            {"word": "often", "meaning": "しばしば、よく"},
+            {"word": "got", "meaning": "なった（getの過去形）"},
+            {"word": "angry at", "meaning": "〜に対して怒る"},
+            {"word": "worried", "meaning": "心配した"},
+            {"word": "always", "meaning": "いつも"},
+            {"word": "busy", "meaning": "忙しい"},
+            {"word": "check", "meaning": "チェックする、確認する"},
+            {"word": "social media", "meaning": "ソーシャルメディア、SNS"},
+            {"word": "busy checking", "meaning": "チェックするのに忙しい"},
+            {"word": "was worried about", "meaning": "〜のことを心配していた"}
+          ],
+          "targets": [
+            {"category": "Habit (習慣)", "text": "宿題をせず、先生や母親に心配されていたが、SNSに夢中だった", "keywords": ["never did homework", "worried", "busy checking social media"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Looking back at my first two years of high school, I was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='be engrossed in' data-ja='〜に夢中になっている、没頭している'>totally engrossed in</span> mindless entertainment on my phone. My desk was a mess, littered with untouched assignments. My priority was purely immediate gratification, not academic achievement.",
+          "readingJa": "高校の最初の2年間を振り返ると、私は完全にスマホの下らないエンターテインメントに夢中になっていました。私の机は、手付かずの課題で散乱し、めちゃくちゃでした。私の優先事項は単に、その場の満足であり、学業の達成ではありませんでした。",
+          "vocabulary": [
+            {"word": "looking back at", "meaning": "〜を振り返ると"},
+            {"word": "first", "meaning": "最初の、第1の"},
+            {"word": "two", "meaning": "2つの"},
+            {"word": "year", "meaning": "年、年度"},
+            {"word": "totally", "meaning": "完全に"},
+            {"word": "engrossed", "meaning": "夢中になっている"},
+            {"word": "be engrossed in", "meaning": "〜に夢中になっている"},
+            {"word": "mindless", "meaning": "中身のない、くだらない"},
+            {"word": "entertainment", "meaning": "娯楽、エンターテインメント"},
+            {"word": "on", "meaning": "〜で、〜の上に（この場合「スマホの」）"},
+            {"word": "phone", "meaning": "電話、スマートフォン"},
+            {"word": "desk", "meaning": "机"},
+            {"word": "mess", "meaning": "散らかった状態、めちゃくちゃな状態"},
+            {"word": "litter", "meaning": "散らかす"},
+            {"word": "littered with", "meaning": "〜で散らかっている"},
+            {"word": "untouched", "meaning": "手付かずの"},
+            {"word": "assignment", "meaning": "課題、宿題"},
+            {"word": "priority", "meaning": "優先事項"},
+            {"word": "purely", "meaning": "単に、純粋に"},
+            {"word": "immediate", "meaning": "即座の、目の前の"},
+            {"word": "gratification", "meaning": "満足、充足感"},
+            {"word": "academic", "meaning": "学業の、学問的な"},
+            {"word": "achievement", "meaning": "達成、業績"}
+          ],
+          "targets": [
+            {"category": "Mindset (考え方)", "text": "スマホの娯楽に没頭し、課題を放置して、学業より即座の満足を優先していた", "keywords": ["engrossed", "mindless entertainment", "priority", "immediate gratification"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/regretfulStudent_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "Now I am a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='senior' data-ja='最上級生、高校3年生'>senior</span> in high school. The teacher asks about <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='future plans' data-ja='将来の計画、進路'>future plans</span>. My friend knows her plan. But I do not know. My mom is with me. She is sad.",
+          "readingJa": "今、私は高校3年生です。先生が進路について聞きます。私の友達は自分の計画を知っています。でも私は知りません。お母さんが私と一緒にいます。お母さんは悲しんでいます。",
+          "vocabulary": [
+            {"word": "now", "meaning": "今"},
+            {"word": "senior", "meaning": "（高校・大学の）最上級生、4年生（この場合「高校3年生」）"},
+            {"word": "high school", "meaning": "高校"},
+            {"word": "in high school", "meaning": "高校で"},
+            {"word": "teacher", "meaning": "先生"},
+            {"word": "ask", "meaning": "尋ねる、聞く"},
+            {"word": "about", "meaning": "〜について"},
+            {"word": "future", "meaning": "将来（の）、未来（の）"},
+            {"word": "plan", "meaning": "計画、進路"},
+            {"word": "future plans", "meaning": "将来の計画、進路"},
+            {"word": "friend", "meaning": "友達"},
+            {"word": "know", "meaning": "知っている"},
+            {"word": "her", "meaning": "彼女の"},
+            {"word": "but", "meaning": "しかし、でも"},
+            {"word": "do not", "meaning": "（〜し）ない"},
+            {"word": "mom", "meaning": "お母さん"},
+            {"word": "mother", "meaning": "お母さん、母親"},
+            {"word": "with", "meaning": "〜と一緒に"},
+            {"word": "with me", "meaning": "私と一緒に"},
+            {"word": "sad", "meaning": "悲しい"}
+          ],
+          "targets": [
+            {"category": "Situation (状況)", "text": "高校3年生になり、進路を尋ねられたが答えられず、母親を悲しませている", "keywords": ["senior", "future plans", "not know", "mom sad"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "When I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='become a senior' data-ja='高校3年生になる'>became a senior</span>, the teacher held a conference to discuss my path. Another student was talking happily about university. However, I didn't know what to do <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='after graduation' data-ja='卒業後'>after graduation</span> because my grades were terrible.",
+          "readingJa": "高校3年生になった時、先生は私の進路を相談するために面談を開きました。他の生徒は楽しそうに大学について話していました。しかし、私は成績がひどかったので、卒業後どうすればいいか分かりませんでした。",
+          "vocabulary": [
+            {"word": "become", "meaning": "なる"},
+            {"word": "became", "meaning": "なった（becomeの過去形）"},
+            {"word": "senior", "meaning": "（高校・大学の）最上級生（この場合「高校3年生」）"},
+            {"word": "become a senior", "meaning": "高校3年生になる"},
+            {"word": "held", "meaning": "開いた（holdの過去形）"},
+            {"word": "conference", "meaning": "会議、面談"},
+            {"word": "to discuss", "meaning": "議論するために、相談するために"},
+            {"word": "path", "meaning": "道、進路"},
+            {"word": "another", "meaning": "別の、もう一人の"},
+            {"word": "student", "meaning": "生徒"},
+            {"word": "talking", "meaning": "話している（進行形）"},
+            {"word": "happily", "meaning": "楽しそうに、幸せに"},
+            {"word": "about", "meaning": "〜について"},
+            {"word": "university", "meaning": "大学"},
+            {"word": "however", "meaning": "しかし、けれども"},
+            {"word": "didn't", "meaning": "（〜し）なかった（過去の否定）"},
+            {"word": "graduation", "meaning": "卒業"},
+            {"word": "after graduation", "meaning": "卒業後"},
+            {"word": "what to do", "meaning": "何をすべきか、どうすべきか"},
+            {"word": "because", "meaning": "なぜなら〜だから"},
+            {"word": "grades", "meaning": "成績"},
+            {"word": "terrible", "meaning": "ひどい、恐ろしい"}
+          ],
+          "targets": [
+            {"category": "Crisis (危機)", "text": "高3の面談で、成績が悪すぎて卒業後の進路が決まっていないことに気づいた", "keywords": ["became a senior", "conference", "didn't know", "after graduation", "grades terrible"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "In my final school year, the reality of the <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='career guidance' data-ja='進路指導、キャリアガイダンス'>career guidance</span> conference with my teacher and mom was painful. Other students already had clear <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='career paths' data-ja='キャリアパス、将来の進路'>career paths</span>. Due to my consistently low <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='GPA' data-ja='GPA、成績平均点、成績'>GPA</span>, I had virtually no options for higher education.",
+          "readingJa": "学校生活の最後の年に、先生とお母さんとの進路指導面談の現実は辛いものでした。他の生徒は既に明確なキャリアパスを持っていました。ずっと低かった私のGPAのせいで、高等教育への選択肢は実質的にゼロでした。",
+          "vocabulary": [
+            {"word": "final", "meaning": "最後の"},
+            {"word": "final school year", "meaning": "学校生活の最後の年（この場合「高校3年生」）"},
+            {"word": "reality", "meaning": "現実"},
+            {"word": "career", "meaning": "経歴、職業、キャリア"},
+            {"word": "guidance", "meaning": "指導"},
+            {"word": "career guidance", "meaning": "進路指導"},
+            {"word": "guidance conference", "meaning": "進路指導面談"},
+            {"word": "teacher", "meaning": "先生"},
+            {"word": "mom", "meaning": "お母さん、母親"},
+            {"word": "painful", "meaning": "痛い、辛い"},
+            {"word": "other", "meaning": "他の"},
+            {"word": "student", "meaning": "生徒"},
+            {"word": "already", "meaning": "既に"},
+            {"word": "had", "meaning": "持っていた（haveの過去形）"},
+            {"word": "clear", "meaning": "明確な、はっきりとした"},
+            {"word": "career paths", "meaning": "キャリアパス、将来の進路"},
+            {"word": "due to", "meaning": "〜のために、〜のせいで"},
+            {"word": "consistently", "meaning": "一貫して、ずっと"},
+            {"word": "low", "meaning": "低い"},
+            {"word": "GPA", "meaning": "Grade Point Average（成績平均点）"},
+            {"word": "due to consistently low GPA", "meaning": "ずっと低かったGPAのせいで"},
+            {"word": "virtually", "meaning": "実質的に、ほとんど"},
+            {"word": "no options", "meaning": "選択肢がない"},
+            {"word": "higher education", "meaning": "高等教育（大学など）"},
+            {"word": "options for higher education", "meaning": "高等教育への選択肢"}
+          ],
+          "targets": [
+            {"category": "Consequence (結果)", "text": "高3の進路面談で、成績(GPA)が低すぎて大学進学の選択肢がない現実を突きつけられた", "keywords": ["career guidance", "painful", "low GPA", "no options", "higher education"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/regretfulStudent_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='graduate from' data-ja='〜を卒業する'>graduated from high school</span>. Now I work in a factory. It is hard work. I do not like my job.",
+          "readingJa": "私は高校を卒業しました。今、私は工場で働いています。大変な仕事です。私は自分の仕事が好きではありません。",
+          "vocabulary": [
+            {"word": "graduated", "meaning": "卒業した"},
+            {"word": "graduate", "meaning": "卒業する"},
+            {"word": "from", "meaning": "〜から"},
+            {"word": "graduate from", "meaning": "〜を卒業する"},
+            {"word": "graduated from high school", "meaning": "高校を卒業した"},
+            {"word": "high school", "meaning": "高校"},
+            {"word": "now", "meaning": "今"},
+            {"word": "work", "meaning": "働く、仕事"},
+            {"word": "in", "meaning": "〜で（場所）"},
+            {"word": "factory", "meaning": "工場"},
+            {"word": "work in a factory", "meaning": "工場で働く"},
+            {"word": "hard work", "meaning": "大変な仕事、重労働"},
+            {"word": "hard", "meaning": "難しい、大変な、固い"},
+            {"word": "job", "meaning": "仕事"},
+            {"word": "my job", "meaning": "私の仕事"},
+            {"word": "like", "meaning": "好きだ、好む"},
+            {"word": "do not like", "meaning": "好きではない、嫌いだ"}
+          ],
+          "targets": [
+            {"category": "Job (仕事)", "text": "高校卒業後、工場で大変で嫌な仕事をしている", "keywords": ["graduated", "factory", "hard work", "not like"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "After finishing school, I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='start working' data-ja='働き始める、就職する'>started working</span> at a processing plant because <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='go to college' data-ja='大学に行く、大学に進学する'>I could not go to college</span>. Every day is the same repetitive work. It is very <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='exhausting' data-ja='ヘトヘトにさせる、ひどく疲れさせる'>exhausting</span>.",
+          "readingJa": "学校を終えた後、私は大学に行けなかったので、加工工場で働き始めました。毎日本当に同じ繰り返しの作業です。とても疲れます。",
+          "vocabulary": [
+            {"word": "after", "meaning": "〜の後で"},
+            {"word": "finishing school", "meaning": "学校を終えること（卒業）"},
+            {"word": "start", "meaning": "始める"},
+            {"word": "started", "meaning": "始めた（startの過去形）"},
+            {"word": "working", "meaning": "働くこと（動名詞）"},
+            {"word": "started working", "meaning": "働き始めた"},
+            {"word": "at", "meaning": "〜で（場所）"},
+            {"word": "processing plant", "meaning": "加工工場"},
+            {"word": "could not", "meaning": "〜できなかった（canの過去の否定）"},
+            {"word": "go to", "meaning": "〜に行く、〜へ進学する"},
+            {"word": "college", "meaning": "大学"},
+            {"word": "could not go to college", "meaning": "大学に行けなかった"},
+            {"word": "every day", "meaning": "毎日"},
+            {"word": "same", "meaning": "同じ"},
+            {"word": "repetitive", "meaning": "繰り返しの"},
+            {"word": "work", "meaning": "仕事"},
+            {"word": "very", "meaning": "とても、非常に"},
+            {"word": "exhausting", "meaning": "ヘトヘトにさせる、ひどく疲れさせる"}
+          ],
+          "targets": [
+            {"category": "Lifestyle (生活)", "text": "大学に行けず工場で働き始め、毎日の単純作業で疲れ果てている", "keywords": ["processing plant", "started working", "could not go to college", "repetitive", "exhausting"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Without <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='further education' data-ja='高等教育、さらなる教育'>further education</span>, I was forced into a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='dead-end job' data-ja='将来性のない仕事、行き止まりの仕事'>dead-end job</span> at a processing plant. It's uninspiring, manual labor. I often think about what my college-bound classmates are doing and feel so disconnected from the future.",
+          "readingJa": "高等教育を受けることなく、私は加工工場での将来性のない仕事に追いやられました。それは刺激のない、肉体労働です。私はよく、大学に進学したクラスメイトたちが何をしているのかを考え、将来からひどく切り離されたように感じます。",
+          "vocabulary": [
+            {"word": "without", "meaning": "〜なしに、〜しないで"},
+            {"word": "further", "meaning": "さらなる、もっと進んだ"},
+            {"word": "education", "meaning": "教育"},
+            {"word": "further education", "meaning": "高等教育、さらなる教育"},
+            {"word": "was forced into", "meaning": "〜に追いやられた、〜を余儀なくされた"},
+            {"word": "dead-end", "meaning": "将来性のない、行き止まりの"},
+            {"word": "job", "meaning": "仕事"},
+            {"word": "dead-end job", "meaning": "将来性のない仕事、行き止まりの仕事"},
+            {"word": "at", "meaning": "〜で（場所）"},
+            {"word": "processing plant", "meaning": "加工工場"},
+            {"word": "uninspiring", "meaning": "刺激のない、魅力のない"},
+            {"word": "manual", "meaning": "手動の、肉体的な"},
+            {"word": "labor", "meaning": "労働"},
+            {"word": "often", "meaning": "しばしば、よく"},
+            {"word": "think about", "meaning": "〜について考える"},
+            {"word": "what", "meaning": "何、何が"},
+            {"word": "college-bound", "meaning": "大学進学を予定している、大学志向の"},
+            {"word": "classmates", "meaning": "クラスメイト"},
+            {"word": "are doing", "meaning": "している（現在進行形）"},
+            {"word": "feel", "meaning": "感じる"},
+            {"word": "disconnected", "meaning": "切り離された、関係のない"},
+            {"word": "feel disconnected from the future", "meaning": "将来から切り離されたように感じる"}
+          ],
+          "targets": [
+            {"category": "Regret (後悔)", "text": "大学に進学せず将来性のない単純労働に従事しており、大学に行った同級生と自分を比べて将来に不安を感じている", "keywords": ["no further education", "dead-end job", "processing plant", "college-bound classmates", "feel disconnected"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/regretfulStudent_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "Now I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='regret' data-ja='後悔する'>regret</span> my past. In high school, I didn't study. I should have studied <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='harder' data-ja='もっと熱心に、もっと一生懸命'>harder</span>. I am sad now.",
+          "readingJa": "今、私は過去を後悔しています。高校生の頃、私は勉強しませんでした。もっと一生懸命勉強すべきでした。私は今、悲しいです。",
+          "vocabulary": [
+            {"word": "now", "meaning": "今"},
+            {"word": "regret", "meaning": "後悔する"},
+            {"word": "past", "meaning": "過去、昔"},
+            {"word": "high school", "meaning": "高校"},
+            {"word": "didn't", "meaning": "（〜し）なかった（過去の否定）"},
+            {"word": "study", "meaning": "勉強する"},
+            {"word": "didn't study", "meaning": "勉強しなかった"},
+            {"word": "should have studied", "meaning": "勉強すべきだった（のにしなかった）"},
+            {"word": "should", "meaning": "〜すべきである"},
+            {"word": "hard", "meaning": "一生懸命に、熱心に"},
+            {"word": "harder", "meaning": "もっと一生懸命に（hardの比較級）"},
+            {"word": "should have studied harder", "meaning": "もっと一生懸命勉強すべきだった"},
+            {"word": "sad", "meaning": "悲しい"}
+          ],
+          "targets": [
+            {"category": "Emotion (感情)", "text": "過去を後悔し、高校時代にもっと勉強すべきだったと悲しんでいる", "keywords": ["regret", "past", "should have studied harder", "sad"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "I deeply <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='regret not studying' data-ja='勉強しなかったことを後悔する'>regret not studying</span>. I remember <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='ignoring' data-ja='無視すること'>ignoring</span> my mother's advice. If I could go back, I would do things differently.",
+          "readingJa": "私は勉強しなかったことを深く後悔しています。お母さんのアドバイスを無視したことを覚えています。もし戻ることができるなら、違うふうにやりたいです。",
+          "vocabulary": [
+            {"word": "deeply", "meaning": "深く"},
+            {"word": "regret", "meaning": "後悔する"},
+            {"word": "not studying", "meaning": "勉強しないこと（動名詞の否定）"},
+            {"word": "regret not studying", "meaning": "勉強しなかったことを後悔する"},
+            {"word": "remember", "meaning": "覚えている、思い出す"},
+            {"word": "ignoring", "meaning": "無視すること（動名詞）"},
+            {"word": "mother's", "meaning": "お母さんの、母親の"},
+            {"word": "advice", "meaning": "アドバイス、助言"},
+            {"word": "ignoring mother's advice", "meaning": "お母さんのアドバイスを無視すること"},
+            {"word": "if", "meaning": "もし〜なら"},
+            {"word": "could", "meaning": "〜できる（canの過去形）"},
+            {"word": "go back", "meaning": "戻る"},
+            {"word": "could go back", "meaning": "戻ることができれば"},
+            {"word": "would", "meaning": "〜だろう（仮定）"},
+            {"word": "do things differently", "meaning": "違うふうにやる、異なる行動をとる"}
+          ],
+          "targets": [
+            {"category": "Reflections (振り返り)", "text": "勉強せず母親の助言を無視したことを後悔し、時間を巻き戻したいと思っている", "keywords": ["deeply regret not studying", "ignoring", "advice", "could go back", "differently"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "I am <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='burdened with' data-ja='〜を負わされている、〜に苦しめられている'>burdened with profound regret</span>. I understand now that my <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='laziness' data-ja='怠惰、怠け心'>laziness</span> was not a small mistake but a significant life-altering choice. <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='had I known' data-ja='もし（私が）知っていたら（仮定法過去完了の倒置）'>Had I known</span> the real consequences, I would have made a different choice.",
+          "readingJa": "私は深い後悔を背負っています。私は今、自分の怠惰さが小さな間違いではなく、人生を変えるような重大な選択であったことを理解しています。もし本当の結果を知っていたら、私は違う選択をしていたでしょう。",
+          "vocabulary": [
+            {"word": "burdened with", "meaning": "〜を負わされている、〜に苦しめられている"},
+            {"word": "burden", "meaning": "負担、重荷"},
+            {"word": "burdened", "meaning": "負担をかけられた"},
+            {"word": "profound", "meaning": "深い、重大な"},
+            {"word": "regret", "meaning": "後悔"},
+            {"word": "profound regret", "meaning": "深い後悔"},
+            {"word": "burdened with profound regret", "meaning": "深い後悔を背負っている"},
+            {"word": "understand", "meaning": "理解する、分かる"},
+            {"word": "now", "meaning": "今"},
+            {"word": "that", "meaning": "〜ということ（接続詞）"},
+            {"word": "laziness", "meaning": "怠惰、怠け心"},
+            {"word": "small mistake", "meaning": "小さな間違い"},
+            {"word": "mistake", "meaning": "間違い"},
+            {"word": "significant", "meaning": "重大な、重要な"},
+            {"word": "life-altering", "meaning": "人生を変えるような"},
+            {"word": "choice", "meaning": "選択"},
+            {"word": "had I known", "meaning": "もし（私が）知っていたら（仮定法過去完了の倒置）"},
+            {"word": "known", "meaning": "知っていた（knowの過去分詞）"},
+            {"word": "real", "meaning": "本当の、実際の"},
+            {"word": "consequences", "meaning": "結果、影響"},
+            {"word": "would have made", "meaning": "しただろう（のにしなかった、仮定法）"},
+            {"word": "made", "meaning": "作った（makeの過去・過去分詞）"},
+            {"word": "different choice", "meaning": "違う選択"},
+            {"word": "made a different choice", "meaning": "違う選択をした"}
+          ],
+          "targets": [
+            {"category": "Final thought (最終的な考え)", "text": "怠惰な過去が人生を台無しにしたと深く後悔しており、もし結果を知っていたら違う選択をしただろうと考えている", "keywords": ["burdened with profound regret", "laziness", "significant", "life-altering choice", "had I known", "consequences"]}
+          ]
+        }
+      }
+    }
+  ]
+}
