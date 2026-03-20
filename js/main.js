@@ -220,9 +220,16 @@ window.finishGameAndShowResult = function() {
 // ★ Result画面のレイアウト
 // ==========================================
 window.renderSnapshotResult = function() {
-    if(typeof getCompletionStats !== 'function') return;
     
-    const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
+    // 👇👇👇 修正ポイント：静かに終了(return)させず、必ず画面を描画するように変更
+    let stats = null;
+    if(typeof getCompletionStats === 'function') {
+        stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
+    } else {
+        console.error("【警告】スコア計算機能(getCompletionStats)が見つかりません。scoring.jsの読み込み等を確認してください。");
+    }
+    // 👆👆👆
+    
     const box = document.getElementById('transcript-box');
     const finalTranscript = (box && box.innerText) ? box.innerText.replace("Press START and speak loudly.（STARTを押して、大きな声で話しましょう）", "").trim() : "";
 
