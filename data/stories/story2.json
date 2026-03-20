@@ -94,7 +94,7 @@
     },
     {
       "sceneIndex": 2,
-      "imageSrc": "assets/images/story/regretfulStudent_scene2.webp",
+      "imageSrc": "assets/images/story/story2_scene2.webp",
       "levels": {
         "elementary": {
           "readingText": "Now I am a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='senior' data-ja='最上級生、高校3年生'>senior</span> in high school. The teacher asks about <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='future plans' data-ja='将来の計画、進路'>future plans</span>. My friend knows her plan. But I do not know. My mom is with me. She is sad.",
@@ -194,7 +194,7 @@
     },
     {
       "sceneIndex": 3,
-      "imageSrc": "assets/images/story/regretfulStudent_scene3.webp",
+      "imageSrc": "assets/images/story/story2_scene3.webp",
       "levels": {
         "elementary": {
           "readingText": "I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='graduate from' data-ja='〜を卒業する'>graduated from high school</span>. Now I work in a factory. It is hard work. I do not like my job.",
@@ -284,7 +284,7 @@
     },
     {
       "sceneIndex": 4,
-      "imageSrc": "assets/images/story/regretfulStudent_scene4.webp",
+      "imageSrc": "assets/images/story/story2_scene4.webp",
       "levels": {
         "elementary": {
           "readingText": "Now I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='regret' data-ja='後悔する'>regret</span> my past. In high school, I didn't study. I should have studied <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='harder' data-ja='もっと熱心に、もっと一生懸命'>harder</span>. I am sad now.",

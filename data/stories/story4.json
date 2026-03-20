@@ -161,14 +161,14 @@
     },
     {
       "sceneIndex": 2,
-      "imageSrc": "assets/images/story/cleanupPark_scene2.webp",
+      "imageSrc": "assets/images/story/story4_scene2.webp",
       "levels": {
         "elementary": {
-          "readingText": "One child starts to pick up the trash without saying a word. The child picks up many bottles and bags. The other people are <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='watch' data-ja='見る、見守る'>watching</span>. They do not help yet.",
+          "readingText": "One student starts to pick up the trash without saying a word. The student picks up many bottles and bags. The other people are <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='watch' data-ja='見る、見守る'>watching</span>. They do not help yet.",
           "readingJa": "一人の子が言葉を言わずにゴミを拾い始めます。その子は多くのボトルや袋を拾います。他の人々は見ています。彼らはまだ手助けをしません。",
           "vocabulary": [
             {"word": "one", "meaning": "1つ（の）、1人（の）"},
-            {"word": "child", "meaning": "子供"},
+            {"word": "student", "meaning": "生徒"},
             {"word": "starts", "meaning": "始める（startの三人称単数現在形）"},
             {"word": "starts to pick up", "meaning": "拾い始める"},
             {"word": "pick up", "meaning": "拾い上げる"},
@@ -209,7 +209,7 @@
             {"word": "situation", "meaning": "状況、事態"},
             {"word": "in that situation", "meaning": "その状況で"},
             {"word": "single", "meaning": "たった1人の、単独の"},
-            {"word": "child", "meaning": "子供"},
+            {"word": "student", "meaning": "生徒"},
             {"word": "began", "meaning": "始めた（beginの過去形）"},
             {"word": "began picking up", "meaning": "拾い始めた"},
             {"word": "pick up", "meaning": "拾い上げる"},
@@ -322,7 +322,7 @@
     },
     {
       "sceneIndex": 3,
-      "imageSrc": "assets/images/story/cleanupPark_scene3.webp",
+      "imageSrc": "assets/images/story/story4_scene3.webp",
       "levels": {
         "elementary": {
           "readingText": "After watching the child, a few people want to help. They think, \"I can help <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='a little bit' data-ja='少しだけ'>a little bit</span>.\" Then, <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='more people' data-ja='より多くの人々'>more people</span> join in. Everyone is working together now.",
@@ -332,7 +332,7 @@
             {"word": "watching", "meaning": "見ている（watchの現在分詞、動名詞）"},
             {"word": "watch", "meaning": "見る、見守る"},
             {"word": "watching the child", "meaning": "子供を見ている"},
-            {"word": "child", "meaning": "子供"},
+            {"word": "student", "meaning": "生徒"},
             {"word": "few", "meaning": "少数の、ほとんどない（可算名詞に）"},
             {"word": "a few people", "meaning": "数人の人々"},
             {"word": "a few", "meaning": "数人の、いくつかの"},
@@ -375,7 +375,7 @@
             {"word": "observed", "meaning": "観察した（observeの過去形、過去分詞）"},
             {"word": "observe", "meaning": "観察する"},
             {"word": "observed the child's persistence", "meaning": "子供の粘り強さを観察した"},
-            {"word": "child's", "meaning": "子供の"},
+            {"word": "student's", "meaning": "生徒の"},
             {"word": "persistence", "meaning": "粘り強さ、持続性、固執"},
             {"word": "someone", "meaning": "誰か"},
             {"word": "thought", "meaning": "思った（thinkの過去形）"},
@@ -415,13 +415,13 @@
           ]
         },
         "high_school": {
-          "readingText": "The child's persistent efforts did not go unnoticed for long. Compelled by the spectacle of <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='selfless devotion' data-ja='無私の献身、自己犠牲'>selfless devotion</span>, a few onlookers overcame their initial hesitation and decided to assist, reasoning that a minimal contribution wouldn't hurt. This small crack in the wall of indifference triggered a chain reaction, inspiring countless others to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='lend a hand' data-ja='手を貸す、手伝う'>lend a hand</span>.",
-          "readingJa": "子供の粘り強い努力は、長い間気づかれないままではありませんでした。無私の献身という光景に突き動かされて、数人の傍観者が最初の躊躇を克服し、最小限の貢献なら誰も傷つけないだろうという理由で、手助けすることを決めました。この無関心という壁の中の小さな亀裂は連鎖反応を引き起こし、無数の他の人々が手を貸すように促しました。",
+          "readingText": "The student's persistent efforts did not go unnoticed for long. Compelled by the spectacle of <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='selfless devotion' data-ja='無私の献身、自己犠牲'>selfless devotion</span>, a few onlookers overcame their initial hesitation and decided to assist, reasoning that a minimal contribution wouldn't hurt. This small crack in the wall of indifference triggered a chain reaction, inspiring countless others to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='lend a hand' data-ja='手を貸す、手伝う'>lend a hand</span>.",
+          "readingJa": "生徒の粘り強い努力は、長い間気づかれないままではありませんでした。無私の献身という光景に突き動かされて、数人の傍観者が最初の躊躇を克服し、最小限の貢献なら誰も傷つけないだろうという理由で、手助けすることを決めました。この無関心という壁の中の小さな亀裂は連鎖反応を引き起こし、無数の他の人々が手を貸すように促しました。",
           "vocabulary": [
-            {"word": "child's", "meaning": "子供の"},
+            {"word": "student's", "meaning": "生徒の"},
             {"word": "persistent", "meaning": "粘り強い、持続的な、固執する"},
             {"word": "efforts", "meaning": "努力、尽力（effortの複数形）"},
-            {"word": "child's persistent efforts", "meaning": "子供の粘り強い努力"},
+            {"word": "student's persistent efforts", "meaning": "生徒の粘り強い努力"},
             {"word": "did not go", "meaning": "（〜し）なかった（過去の否定）"},
             {"word": "unnoticed", "meaning": "気づかれない、無視される"},
             {"word": "did not go unnoticed", "meaning": "気づかれないままではなかった"},
@@ -495,7 +495,7 @@
     },
     {
       "sceneIndex": 4,
-      "imageSrc": "assets/images/story/cleanupPark_scene4.webp",
+      "imageSrc": "assets/images/story/story4_scene4.webp",
       "levels": {
         "elementary": {
           "readingText": "Soon, the park is very clean. It looks beautiful. <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='one person' data-ja='一人の人、一人の人間'>One person</span> can change a lot. The child learns this important lesson today.",

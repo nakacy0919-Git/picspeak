@@ -95,7 +95,7 @@
     },
     {
       "sceneIndex": 2,
-      "imageSrc": "assets/images/story/bentoAppreciation_scene2.webp",
+      "imageSrc": "assets/images/story/story3_scene2.webp",
       "levels": {
         "elementary": {
           "readingText": "One day, I saw my mother. She was very busy. She was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='working hard' data-ja='一生懸命働いている、頑張っている'>working hard</span>. She was making bento very early in the morning.",
@@ -202,7 +202,7 @@
     },
     {
       "sceneIndex": 3,
-      "imageSrc": "assets/images/story/bentoAppreciation_scene3.webp",
+      "imageSrc": "assets/images/story/story3_scene3.webp",
       "levels": {
         "elementary": {
           "readingText": "The next day, I made my bento. It was not easy. I am not good at cooking. The egg was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='burned' data-ja='焦げた、燃えた'>burned</span>. The vegetables were not good.",
@@ -289,7 +289,7 @@
     },
     {
       "sceneIndex": 4,
-      "imageSrc": "assets/images/story/bentoAppreciation_scene4.webp",
+      "imageSrc": "assets/images/story/story3_scene4.webp",
       "levels": {
         "elementary": {
           "readingText": "I came home. I saw my mother. I said, '<span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='Thank you for everything' data-ja='何から何までありがとう、いつもありがとう'>Thank you for everything</span>.' She was surprised. She smiled at me.",
