@@ -5,7 +5,7 @@
 
 window.appState = { 
     selectedMode: null,
-    selectedLevel: null,
+    selectedLevel: 'elementary', // ★初期値を小学生(elementary)に設定
     customTimeLimit: 30,
     isPracticeMode: false,
     practiceTargetText: "",
@@ -34,13 +34,6 @@ const viewPlay = document.getElementById('view-play');
 const viewResult = document.getElementById('view-result');
 const viewAbout = document.getElementById('view-about');
 const themeGrid = document.getElementById('theme-grid'); 
-
-// どこからでも戻れる「ホームボタン」
-const homeBtn = document.createElement('button');
-homeBtn.id = 'global-home-btn';
-homeBtn.className = 'fixed top-4 left-4 sm:top-6 sm:left-6 z-[90] bg-white/90 backdrop-blur-md p-3 sm:p-4 rounded-full shadow-lg border-2 border-blue-200 hover:bg-blue-50 hover:scale-110 hover:border-blue-400 transition-all flex items-center justify-center hidden';
-homeBtn.innerHTML = '<span class="text-2xl sm:text-3xl">🏠</span>';
-document.body.appendChild(homeBtn);
 
 // ==========================================
 // ★ 紙吹雪＆Excellentポップアップ用のCSSを動的に追加
@@ -224,7 +217,7 @@ window.finishGameAndShowResult = function() {
 };
 
 // ==========================================
-// ★ Result画面のレイアウト (先生の指定レイアウトを完全維持)
+// ★ Result画面のレイアウト
 // ==========================================
 window.renderSnapshotResult = function() {
     if(typeof getCompletionStats !== 'function') return;
@@ -424,6 +417,34 @@ window.playSuccessChime = function() {
 };
 
 // ==========================================
+// ★ 優しいタップ音（ポッ）を鳴らす関数
+// ==========================================
+window.playTapSound = function() {
+    try {
+        const ctx = window.audioCtx || new (window.AudioContext || window.webkitAudioContext)();
+        window.audioCtx = ctx;
+        if (ctx.state === 'suspended') ctx.resume();
+
+        const osc = ctx.createOscillator();
+        const gainNode = ctx.createGain();
+
+        osc.type = 'sine'; // 丸みのある優しい音（サイン波）
+        osc.frequency.setValueAtTime(600, ctx.currentTime); // 少し高めの音から
+        osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.1); // 一瞬で低く落とす（ポッという響き）
+
+        gainNode.gain.setValueAtTime(0, ctx.currentTime);
+        gainNode.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.01); // 音量を一瞬で上げる
+        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1); // 余韻を残さずすぐ消す
+
+        osc.connect(gainNode);
+        gainNode.connect(ctx.destination);
+
+        osc.start(ctx.currentTime);
+        osc.stop(ctx.currentTime + 0.1);
+    } catch (e) { console.error("Tap sound failed", e); }
+};
+
+// ==========================================
 // ★ 紙吹雪（Confetti）生成関数
 // ==========================================
 window.createConfetti = function() {
@@ -455,7 +476,7 @@ window.showExcellentPrompt = function() {
 };
 
 // ==========================================
-// ★ 練習ポップアップ処理 (非破壊・スタイル上書き版)
+// ★ 練習ポップアップ処理
 // ==========================================
 window.closePracticeModal = function() {
     window.appState.isPracticeMode = false;
@@ -491,7 +512,6 @@ window.togglePracticeRecording = function() {
             
             if(transcriptEl) {
                 transcriptEl.innerText = text;
-                // クラスを破壊せずインラインで色だけを変える
                 transcriptEl.style.color = "#ef4444"; 
             }
             window.appState.practiceRawTranscript = text;
@@ -505,7 +525,6 @@ window.togglePracticeRecording = function() {
             });
             const rate = targetWords.length > 0 ? (match / targetWords.length) : 0;
 
-            // 80%以上マッチで大成功の演出
             if (rate >= 0.8 && window.isPracticeRecording) {
                 window.isPracticeRecording = false;
                 window.practiceSuccess = true; 
@@ -516,7 +535,7 @@ window.togglePracticeRecording = function() {
                 window.showExcellentPrompt(); 
 
                 if(transcriptEl) {
-                    transcriptEl.style.color = "#22c55e"; // 成功時は緑
+                    transcriptEl.style.color = "#22c55e"; 
                 }
                 
                 if(feedbackEl) {
@@ -623,22 +642,54 @@ window.openPractice = function(text, ja) {
 // ==========================================
 // ★ イベントデリゲーション
 // ==========================================
+// ==========================================
+// ★ イベントデリゲーション (完全版)
+// ==========================================
 document.addEventListener('click', (e) => {
     
-    if (e.target.closest('#global-home-btn')) {
+    // 🎵 優しいタップ音
+    if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home')) {
+        if(typeof window.playTapSound === 'function') window.playTapSound();
+    }
+
+    // 🏠 ホームボタン（初期画面へ一気に戻る）
+    const btnHome = e.target.closest('.action-btn-home');
+    if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
         clearInterval(window.gameTimer);
         if(window.supportInterval) clearInterval(window.supportInterval);
         window.closePracticeModal();
         if (typeof showView === 'function') showView(document.getElementById('view-start'));
-        document.getElementById('global-home-btn').classList.add('hidden');
         return;
     }
 
+    // ◀ 戻るボタン（1つ前の画面に戻る）
+    const btnBack = e.target.closest('.action-btn-back');
+    if (btnBack) {
+        if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
+        window.isRecording = false;
+        clearInterval(window.gameTimer);
+        if(window.supportInterval) clearInterval(window.supportInterval);
+        
+        // 現在表示されている画面を判定して、1つ前に戻す
+        const currentView = document.querySelector('.app-container > div:not(.hidden)[id^="view-"]');
+        if (currentView) {
+            if (currentView.id === 'view-about' || currentView.id === 'view-select') {
+                if (typeof showView === 'function') showView(document.getElementById('view-start'));
+            } else if (currentView.id === 'view-play' || currentView.id === 'view-result') {
+                if (typeof showView === 'function') showView(document.getElementById('view-select'));
+                if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
+            }
+        }
+        return;
+    }
+
+    // 🎯 SELECT IMAGE / STORY ボタン
     const btnGotoSelect = e.target.closest('#btn-goto-select');
     if (btnGotoSelect && !btnGotoSelect.disabled) {
-        if(!window.appState.selectedLevel || !window.appState.selectedMode) return;
+        if(!window.appState.selectedMode) return; 
+        
         if (window.appState.selectedMode === 'story') {
             window.location.href = 'story.html';
             return;
@@ -653,12 +704,25 @@ document.addEventListener('click', (e) => {
         if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
         
-        document.getElementById('global-home-btn').classList.remove('hidden');
+        // エラーの原因だった古いボタンの呼び出しを削除済み！
+        
+        const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
+        if (elementaryBtn) {
+            document.querySelectorAll('.level-btn').forEach(b => { 
+                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+            });
+            elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            window.appState.selectedLevel = 'elementary';
+        }
+        
         if (typeof showView === 'function') showView(document.getElementById('view-select')); 
-        window.renderThemeGrid();
+        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
+    // 🖼️ 画像選択時の処理
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
@@ -666,6 +730,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 🎙️ PLAY画面：STARTボタン
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
@@ -692,6 +757,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 🛑 PLAY画面：録音中インジケーター（手動ストップ用）
     const recIndicator = e.target.closest('#recording-indicator');
     if (recIndicator) {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -699,12 +765,14 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 🏁 PLAY画面：FINISHボタン
     const btnFinishTurn = e.target.closest('#btn-finish-turn');
     if (btnFinishTurn) {
         window.finishGameAndShowResult();
         return;
     }
 
+    // 🔄 RESULT画面：PLAY AGAIN
     const btnPlayAgain = e.target.closest('#btn-play-again');
     if (btnPlayAgain) {
         const finishBtn = document.getElementById('btn-finish-turn');
@@ -718,21 +786,30 @@ document.addEventListener('click', (e) => {
         const pImage = document.getElementById('prompt-image');
         if (pImage) { pImage.classList.remove('blur-none'); pImage.classList.add('blur-md'); }
         if (typeof showView === 'function') showView(document.getElementById('view-select')); 
-        window.renderThemeGrid();
+        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
+    // 🎤 発音練習の開始・再試行
     const practiceStartBtn = e.target.closest('#btn-start-practice');
     if (practiceStartBtn) {
         window.togglePracticeRecording();
         return;
     }
 
-    const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('.absolute.top-6.left-6') || e.target.closest('.absolute.top-6.right-6') || e.target.closest('button[onclick*="closePractice"]');
+    // ❌ 練習モーダルを閉じる
+    const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('button[onclick*="closePractice"]');
     if (practiceCloseBtn) {
         window.closePracticeModal();
         return;
     }
+
+    // ℹ️ About画面へ行くボタン
+    const btnGotoAbout = e.target.closest('#btn-goto-about');
+    if (btnGotoAbout) {
+        if (typeof showView === 'function') showView(document.getElementById('view-about'));
+        return;
+    }
 });
 
-window.addEventListener('DOMContentLoaded', initApp);
+window.addEventListener('DOMContentLoaded', window.initApp);

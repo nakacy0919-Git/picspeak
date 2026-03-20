@@ -9,15 +9,34 @@
     <meta name="apple-mobile-web-app-title" content="PicSpeak">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
     
-    <title>PicSpeak - AI Picture Description</title>
+    <title>PicSpeak - Picture Description</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
     </script>
     <link rel="stylesheet" href="css/style.css">
+    
+    <!-- 追加: ウサギのふわふわアニメーションと吹き出しのアニメーション -->
+    <style>
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-12px); }
+        }
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
+        }
+        @keyframes pop {
+            0% { transform: scale(0.8); opacity: 0; }
+            100% { transform: scale(1); opacity: 1; }
+        }
+        .animate-pop {
+            animation: pop 0.2s ease-out forwards;
+        }
+    </style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
 
+    <!-- Pronunciation Practice Modal -->
     <div id="practice-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
         <button id="btn-close-practice" class="absolute top-6 left-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
         <div class="flex-1 flex flex-col items-center justify-center p-6 w-full max-w-4xl mx-auto">
@@ -34,18 +53,36 @@
         </div>
     </div>
 
+    <!-- Transcript Modal -->
     <div id="transcript-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
         <button id="btn-close-transcript" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
         <div class="flex-1 flex flex-col p-6 md:p-12 w-full max-w-5xl mx-auto mt-12 md:mt-16">
             <h3 class="text-2xl md:text-3xl font-black text-gray-800 mb-4 border-b-2 border-gray-200 pb-3 flex items-center gap-3">📝 Your Full Transcript</h3>
-            <div id="full-transcript-content" class="flex-1 overflow-y-auto text-xl md:text-3xl leading-relaxed font-medium text-gray-700 p-6 md:p-8 bg-gray-50 rounded-3xl border border-gray-200 shadow-inner">
-            </div>
+            <div id="full-transcript-content" class="flex-1 overflow-y-auto text-xl md:text-3xl leading-relaxed font-medium text-gray-700 p-6 md:p-8 bg-gray-50 rounded-3xl border border-gray-200 shadow-inner"></div>
         </div>
     </div>
 
     <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
 
         <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
+            
+            <!-- 🐰 ウサギキャラクターと吹き出し -->
+            <div class="absolute top-4 left-4 md:top-6 md:left-6 z-30">
+                <!-- 絵文字でウサギを表示（画像にしたい場合は <img>タグに差し替えてください） -->
+                <div id="rabbit-char" class="text-6xl md:text-7xl cursor-pointer animate-float drop-shadow-md hover:scale-110 transition-transform origin-bottom">🐰</div>
+                
+                <div id="rabbit-bubble" class="hidden absolute top-16 left-6 md:top-20 md:left-12 bg-white p-4 md:p-5 rounded-2xl shadow-xl border-2 border-pink-200 w-[280px] md:w-[320px] z-40 origin-top-left animate-pop">
+                    <button id="btn-close-bubble" class="absolute top-2 right-2 text-gray-400 hover:text-gray-800 font-bold text-xl leading-none">&times;</button>
+                    <h4 class="font-black text-pink-500 mb-2 text-sm md:text-base">PicSpeakってどんなアプリ？</h4>
+                    <p class="text-xs md:text-sm text-gray-700 font-bold leading-relaxed">
+                        ピックスピークは、目の前の写真を英語で描写して遊ぶ、新しいスピーキング学習アプリです！<br>
+                        正しい英語を言うと画面が光ってポイントGET！ゲーム感覚で英語を話せるようになるよ！
+                    </p>
+                    <div class="absolute -top-3 left-6 w-5 h-5 bg-white border-t-2 border-l-2 border-pink-200 transform rotate-45"></div>
+                </div>
+            </div>
+
+            <!-- 右上の設定ボタン類 -->
             <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-3 md:gap-4 z-20">
                 <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
                 <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
@@ -54,6 +91,7 @@
                 </button>
             </div>
 
+            <!-- Settings Modal -->
             <div id="settings-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 rounded-2xl shadow-2xl w-11/12 max-w-sm border border-gray-100">
                     <h3 class="text-2xl font-black mb-6 text-gray-900 text-center tracking-tight">Speaking Time ⏰</h3>
@@ -68,11 +106,12 @@
                 </div>
             </div>
 
+            <!-- Tutorial Modal -->
             <div id="tutorial-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-11/12 max-w-2xl border border-gray-100 text-left">
                     <h3 class="text-2xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
                     <ul class="space-y-4 text-gray-700 font-medium mb-8 text-base md:text-lg">
-                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>レベルを選んで <b>SELECT IMAGE</b> を押します。</p></li>
+                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>モードとレベルを選んで画像を選択します。</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">2️⃣</span><p>STARTを押すとマイクがオンになります。画像に映っているモノや状況を<b>英語でどんどん描写</b>しましょう！</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">3️⃣</span><p>ターゲット表現を言うと、リアルタイムで青色に光ってポイントGET！</p></li>
                         <li class="flex items-start gap-3"><span class="text-xl">💯</span><p>終了後、言えなかった表現は「発音練習モード(🎤)」で反復練習できます！</p></li>
@@ -81,6 +120,7 @@
                 </div>
             </div>
 
+            <!-- History Modal -->
             <div id="history-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 flex flex-col max-h-[80vh]">
                     <h3 class="text-2xl font-black mb-4 text-gray-900 border-b pb-3 text-center">📊 Learning Logs</h3>
@@ -89,47 +129,40 @@
                 </div>
             </div>
 
-            <div class="my-4 md:my-6 text-center shrink-0">
+            <!-- Title Area -->
+            <div class="my-4 md:my-6 text-center shrink-0 mt-16 md:mt-0 relative z-20">
                 <h1 class="clean-title text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
-                <p class="text-gray-900 text-xs md:text-base lg:text-xl font-extrabold tracking-widest uppercase">AI Picture Description & Retelling</p>
+                <p class="text-gray-900 text-sm md:text-lg lg:text-xl font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
                 <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
             </div>
             
-            <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-md md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl">
+            <!-- Main Card Area -->
+            <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-[95%] md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
                 
-                <div id="step-level" class="mb-5 md:mb-8 relative border-2 border-transparent rounded-2xl md:rounded-3xl p-2 transition-all duration-300">
-                    <div id="badge-step1" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-10 animate-bounce shadow-md tracking-wider">STEP 1</div>
-                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center pt-1 md:pt-2">Target Level</h2>
-                    <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6">
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="elementary">小学生</button>
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="junior_high">中学生</button>
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="high_school">高校生</button>
-                    </div>
-                </div>
-
-                <div id="step-mode" class="mb-5 md:mb-8 relative border-2 border-transparent rounded-2xl md:rounded-3xl p-2 opacity-40 pointer-events-none transition-all duration-500">
-                    <div id="badge-step2" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-10 hidden shadow-md tracking-wider">STEP 2</div>
-                    <h2 class="text-xs md:text-sm lg:text-base font-black text-gray-900 mb-3 uppercase tracking-wider text-center pt-1 md:pt-2">Game Mode</h2>
-                    <div class="grid grid-cols-2 gap-2 md:gap-4 lg:gap-6">
-                        <button class="mode-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 flex flex-col items-center justify-center transition-all hover:bg-gray-100" data-mode="snapshot">
-                            <span class="text-base md:text-lg lg:text-xl font-black uppercase tracking-wider leading-none mt-1">SNAPSHOT</span>
-                            <span class="text-[9px] md:text-xs font-bold opacity-70 mt-1 mb-1">1枚の画像を説明する</span>
+                <!-- Game Mode Selection (STEP表記削除, 角丸四角に変更) -->
+                <div id="step-mode" class="mb-6 md:mb-10 relative transition-all duration-500">
+                    <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
+                    
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
+                            <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
+                            <span class="text-sm md:text-base font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[13px] md:text-xs">（話す快適さを実感！）</span></span>
                         </button>
-                        <button class="mode-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 flex flex-col items-center justify-center transition-all hover:bg-gray-100" data-mode="story">
-                            <span class="text-base md:text-lg lg:text-xl font-black uppercase tracking-wider leading-none mt-1">STORY</span>
-                            <span class="text-[9px] md:text-xs font-bold opacity-70 mt-1 mb-1">4枚の画像を順番に説明</span>
+                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
+                            <span class="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
+                            <span class="text-sm md:text-base font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[20px] md:text-xs">（音読＆リテリング練習！）</span></span>
                         </button>
                     </div>
                 </div>
 
-                <div class="relative">
-                    <div id="badge-step3" class="absolute -top-3 -left-2 bg-pink-500 text-white text-[10px] md:text-xs font-black px-3 py-1 rounded-full z-20 hidden shadow-md tracking-wider">STEP 3</div>
-                    <button id="btn-goto-select" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-4xl lg:text-5xl py-5 md:py-6 transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
+                <!-- SELECT IMAGE / STORY Button (横幅を狭く中央寄せ) -->
+                <div class="relative flex justify-center mb-2">
+                    <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-2xl md:text-3xl py-4 md:py-5 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
                         SELECT IMAGE
                     </button>
                 </div>
 
-                <div class="text-center mt-5 md:mt-6">
+                <div class="text-center mt-6 md:mt-8">
                     <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
                         <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
                     </button>
@@ -138,17 +171,23 @@
         </div>
 
         <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
-            <div class="bg-white px-4 md:px-8 py-4 md:py-6 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
-                <div class="clean-title text-2xl md:text-4xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">About PicSpeak</div>
-                <button id="btn-back-from-about" class="text-gray-500 font-black hover:text-gray-800 flex items-center gap-2 transition-colors text-lg md:text-xl"><span class="text-2xl">◀</span> BACK</button>
+           <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
+                <div class="flex items-center gap-3 md:gap-4">
+                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
+                    <div class="flex items-center gap-1.5 md:gap-2">
+                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
+                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
+                    </div>
+                </div>
+                <div class="text-sm md:text-base font-bold text-gray-400">About</div>
             </div>
             
             <div class="flex-1 overflow-y-auto p-6 md:p-12 w-full max-w-4xl mx-auto space-y-10 md:space-y-14 pb-20">
                 <section class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                    <h2 class="text-xl md:text-3xl font-black text-gray-900 mb-4 border-b-4 border-pink-200 pb-2 inline-block">英語スピーキングの壁を打ち破る。<br>新感覚AI学習アプリ「PicSpeak」</h2>
+                    <h2 class="text-xl md:text-3xl font-black text-gray-900 mb-4 border-b-4 border-pink-200 pb-2 inline-block">英語スピーキングの壁を打ち破る。<br>新感覚スピーキング学習アプリ</h2>
                     <p class="text-sm md:text-lg text-gray-700 leading-relaxed font-medium mt-2">
                         日本の英語教育において、圧倒的に不足しているのは「アウトプット（話す）量」です。PicSpeak（ピックスピーク）は、目の前に提示された写真や画像を英語で描写する「Picture Description」のタスクを通じて、学習者の即興的なスピーキング力を飛躍的に高めるために開発されました。<br><br>
-                        最新の音声認識AIを活用し、学習者が発した英語をリアルタイムでテキスト化。正しい単語やフレーズ（チャンク）、例文を言い当てると画面が鮮やかに反応し、ゲーム感覚で「英語を口に出す楽しさ」を体験できます。
+                        音声認識機能を活用し、学習者が発した英語をリアルタイムでテキスト化。正しい単語やフレーズ（チャンク）、例文を言い当てると画面が鮮やかに反応し、ゲーム感覚で「英語を口に出す楽しさ」を体験できます。
                     </p>
                 </section>
 
@@ -157,8 +196,8 @@
                     <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                         <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
                             <div class="text-4xl mb-3">🎯</div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">リアルタイムAI判定 & WPM計測</h3>
-                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">発話内容は瞬時にAIによって解析され、目標となるターゲット表現との「一致率」を表示します。さらに、1分間あたりの発話単語数である「WPM」をリアルタイムで計測し、流暢さをフィードバックします。</p>
+                            <h3 class="text-lg font-bold text-gray-900 mb-2">リアルタイム判定 & WPM計測</h3>
+                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">発話内容は瞬時に解析され、目標となるターゲット表現との「一致率」を表示します。さらに、1分間あたりの発話単語数である「WPM」をリアルタイムで計測し、流暢さをフィードバックします。</p>
                         </div>
                         <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
                             <div class="text-4xl mb-3">🛟</div>
@@ -168,7 +207,7 @@
                         <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
                             <div class="text-4xl mb-3">🎤</div>
                             <h3 class="text-lg font-bold text-gray-900 mb-2">徹底的な「発音練習」と振り返り</h3>
-                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">終了後のリザルト画面では、TTSによるネイティブ発音の確認機能に加え、言えなかったフレーズだけをピンポイントで練習できる「Practiceモード」を搭載。間違えた単語が紫にハイライトされ定着を促します。</p>
+                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">終了後のリザルト画面では、ネイティブ発音の確認機能に加え、言えなかったフレーズだけをピンポイントで練習できる「Practiceモード」を搭載。間違えた単語が紫にハイライトされ定着を促します。</p>
                         </div>
                     </div>
                 </section>
@@ -194,15 +233,27 @@
             </div>
         </div>
 
+        <!-- これ以下（view-select, view-play, view-result 等）は変更なしのためそのまま -->
         <div id="view-select" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in bg-canvas">
-            <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
-                <div class="clean-title text-2xl md:text-4xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">Select Image</div>
-                <div class="flex items-center gap-3 md:gap-5">
-                    <button id="btn-back-to-start" class="text-gray-500 font-black hover:text-gray-800 flex items-center gap-1.5 transition-colors text-base md:text-xl"><span class="text-xl md:text-2xl">◀</span> BACK</button>
+           <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
+                <div class="flex items-center gap-3 md:gap-4">
+                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
+                    <div class="flex items-center gap-1.5 md:gap-2">
+                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
+                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
+                    </div>
                 </div>
+                <div class="text-sm md:text-base font-bold text-gray-400">Select Image</div>
             </div>
-            
             <div class="flex-1 overflow-y-auto p-4 md:p-8 flex flex-col items-center">
+                <div id="step-level" class="w-full max-w-5xl bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 mb-4 shadow-sm border border-gray-200 text-center">
+                    <h2 class="text-sm md:text-base lg:text-lg font-black text-gray-900 mb-4 uppercase tracking-wider">Target Level</h2>
+                    <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6">
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="elementary">小学生</button>
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="junior_high">中学生</button>
+                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="high_school">高校生</button>
+                    </div>
+                </div>
                 <div class="w-full max-w-5xl bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 shadow-sm border border-gray-200 flex items-center justify-between">
                     <div>
                         <h3 class="text-lg md:text-2xl font-black text-gray-800 flex items-center gap-2">🛟 Support Mode</h3>
@@ -213,30 +264,26 @@
                       <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-pink-500 shadow-inner"></div>
                     </label>
                 </div>
-
-                <div id="theme-grid" class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6">
-                </div>
+                <div id="theme-grid" class="w-full max-w-5xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"></div>
             </div>
         </div>
 
         <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
-            <div class="bg-white px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200">
-                <div id="btn-home-from-play" class="flex items-center gap-1.5 md:gap-2 cursor-pointer hover:opacity-80 transition-opacity" title="Return to Home">
-                    <span class="text-2xl md:text-3xl">🏠</span>
-                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient">PicSpeak</div>
+            <div class="bg-white/90 backdrop-blur-md px-4 md:px-6 py-2 md:py-3 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
+                <div class="flex items-center gap-3 md:gap-4">
+                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
+                    <div class="flex items-center gap-1.5 md:gap-2">
+                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
+                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
+                    </div>
                 </div>
                 <div class="flex items-center gap-2 md:gap-3 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-gray-200 shadow-inner">
                     <span class="text-xl md:text-2xl">⏱️</span>
                     <span id="timer-text" class="text-2xl md:text-3xl font-black text-gray-900 w-12 md:w-16 text-right">30s</span>
                 </div>
             </div>
-
-            <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0">
-                <div id="timer-bar" class="h-full bg-sns-gradient w-full timer-transition"></div>
-            </div>
-
+            <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0"><div id="timer-bar" class="h-full bg-sns-gradient w-full timer-transition"></div></div>
             <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative w-full h-full">
-                
                 <div id="image-panel" class="relative w-full md:w-1/2 h-48 md:h-full bg-white shrink-0 overflow-hidden flex items-center justify-center border-b md:border-b-0 md:border-r border-gray-200 shadow-inner md:shadow-none">
                     <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter blur-md transition-all duration-500">
                     <div id="pin-container" class="absolute inset-0 pointer-events-none z-20 overflow-hidden"></div>
@@ -244,20 +291,14 @@
                     <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/50 backdrop-blur-sm z-30"><div class="text-center" id="combo-content"></div></div>
                     <div id="perfect-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-white/70 backdrop-blur-md z-40"><div class="text-center" id="perfect-content"></div></div>
                 </div>
-
                 <div id="resizer-vertical" class="h-6 bg-gray-200 flex flex-col items-center justify-center cursor-ns-resize md:hidden shrink-0 touch-none w-full shadow-inner z-20 border-y border-gray-300">
-                    <div class="w-16 h-1 bg-gray-400 rounded-full mb-0.5"></div>
-                    <div class="w-16 h-1 bg-gray-400 rounded-full"></div>
+                    <div class="w-16 h-1 bg-gray-400 rounded-full mb-0.5"></div><div class="w-16 h-1 bg-gray-400 rounded-full"></div>
                 </div>
-
                 <div id="resizer-horizontal" class="hidden md:flex w-3 lg:w-4 bg-gray-200 flex-col items-center justify-center cursor-ew-resize shrink-0 touch-none shadow-inner z-20 border-x border-gray-300 hover:bg-gray-300 transition-colors">
-                    <div class="w-1 h-6 bg-gray-400 rounded-full mb-1"></div>
-                    <div class="w-1 h-6 bg-gray-400 rounded-full"></div>
+                    <div class="w-1 h-6 bg-gray-400 rounded-full mb-1"></div><div class="w-1 h-6 bg-gray-400 rounded-full"></div>
                 </div>
-
                 <div class="flex-1 flex flex-col overflow-hidden bg-gray-50 relative">
                     <div class="flex-1 p-3 md:p-4 lg:p-5 flex flex-col overflow-hidden relative">
-                        
                         <div class="mb-2 md:mb-3 shrink-0 bg-white p-3 md:p-4 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
                             <div class="flex justify-between items-end mb-1 md:mb-2 relative z-10">
                                 <span class="text-xs md:text-sm font-black text-gray-500 uppercase tracking-widest">Completion Rate</span>
@@ -267,32 +308,25 @@
                                 <div id="live-completion-bar" class="bg-sns-gradient h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                             </div>
                         </div>
-
                         <div class="grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3 shrink-0">
                             <div class="bg-white rounded-xl p-2 md:p-3 shadow-sm border border-gray-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-0.5">Words</span>
-                                <span id="wordCountDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-gray-800">0</span>
+                                <span class="text-[10px] md:text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-0.5">Words</span><span id="wordCountDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-gray-800">0</span>
                             </div>
                             <div class="bg-blue-50 rounded-xl p-2 md:p-3 shadow-sm border border-blue-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-blue-400 uppercase tracking-wider mb-0.5">WPM</span>
-                                <span id="liveWpmDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-blue-600">0</span>
+                                <span class="text-[10px] md:text-xs font-extrabold text-blue-400 uppercase tracking-wider mb-0.5">WPM</span><span id="liveWpmDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-blue-600">0</span>
                             </div>
                             <div class="bg-orange-50 rounded-xl p-2 md:p-3 shadow-sm border border-orange-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-orange-400 uppercase tracking-wider mb-0.5">Score</span>
-                                <span id="scoreDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-orange-600">0</span>
+                                <span class="text-[10px] md:text-xs font-extrabold text-orange-400 uppercase tracking-wider mb-0.5">Score</span><span id="scoreDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-orange-600">0</span>
                             </div>
                         </div>
-                        
                         <div class="flex justify-between items-end mb-1 md:mb-2 shrink-0 px-2">
                             <div class="text-xs md:text-sm font-extrabold text-gray-400 uppercase tracking-widest">Transcript:</div>
                             <div id="current-level-badge" class="text-[10px] md:text-xs font-extrabold text-white bg-gray-400 px-3 py-1 rounded-full shadow-sm">小学生レベル</div>
                         </div>
-
                         <div class="flex-1 bg-white border border-gray-200 rounded-2xl md:rounded-3xl p-3 md:p-5 overflow-y-auto shadow-inner text-lg md:text-2xl lg:text-3xl leading-relaxed relative font-medium text-gray-800" id="transcript-box">
                             <p id="transcript-text" class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>
                         </div>
                     </div>
-
                     <div class="p-3 md:p-4 bg-white border-t border-gray-200 shrink-0 shadow-[0_-10px_20px_rgba(0,0,0,0.03)] z-20">
                         <div class="flex justify-center mb-1.5 md:mb-2 h-4 md:h-5"><span id="status-text" class="text-xs md:text-sm font-extrabold text-gray-400 uppercase tracking-wider">Ready</span></div>
                         <button id="btn-start-turn" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-3xl py-4 md:py-5 transition-all flex items-center justify-center gap-3 uppercase shadow-xl hover:scale-[1.02] animate-attention">
@@ -305,17 +339,21 @@
                             <span class="text-3xl md:text-4xl">🏁</span> FINISH
                         </button>
                     </div>
-
                 </div>
             </div>
         </div>
 
         <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative overflow-hidden">
-            
-            <div class="bg-white px-4 py-3 md:px-8 md:py-4 shadow-sm shrink-0 border-b border-gray-200 flex items-center justify-between relative z-30">
-                <div class="flex-1 text-left">
-                    <h2 class="text-2xl md:text-4xl font-black mb-0 text-transparent bg-clip-text bg-sns-gradient tracking-tighter leading-none">RESULTS</h2>
-                    <p class="text-gray-400 font-extrabold text-[10px] md:text-xs uppercase tracking-widest mt-1">Feedback & Practice</p>
+           <div class="bg-white/90 backdrop-blur-md px-4 py-3 md:px-8 md:py-4 shadow-sm shrink-0 border-b border-gray-200 flex items-center justify-between relative z-30 sticky top-0">
+                <div class="flex items-center gap-3 md:gap-4">
+                    <div class="clean-title hidden sm:block text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
+                    <div class="flex items-center gap-1.5 md:gap-2">
+                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
+                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
+                    </div>
+                    <div class="ml-2 border-l-2 border-gray-200 pl-4 hidden md:block">
+                        <h2 class="text-xl md:text-2xl font-black mb-0 text-gray-800 tracking-tighter leading-none">RESULTS</h2>
+                    </div>
                 </div>
                 <div class="w-32 md:w-48">
                     <button id="btn-play-again" class="w-full sns-btn bg-sns-gradient text-white font-black text-xs md:text-base py-2.5 md:py-3 rounded-full shadow-lg hover:scale-[1.05] transition-transform flex items-center justify-center gap-1 tracking-wider uppercase relative overflow-hidden group">
@@ -324,12 +362,6 @@
                     </button>
                 </div>
             </div>
-            
-            <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
-                <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
-                </div>
-            </div>
-       </div>
        
        <footer id="app-footer" class="bg-white border-t border-gray-200 py-3 shrink-0 z-10 w-full mt-auto hidden md:block">
             <div class="flex justify-center gap-6 text-[10px] md:text-xs font-bold text-gray-400">

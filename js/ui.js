@@ -61,50 +61,45 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // ★STEP 1: Target Level 選択時の処理
+    // ★画像選択画面（STEP2）のTarget Level 選択時の処理（UIの切り替えのみ）
     const levelBtns = document.querySelectorAll('.level-btn');
     const currentLevelBadge = document.getElementById('current-level-badge');
     levelBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
+            // ボタンの見た目切り替え
             levelBtns.forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
             const target = e.currentTarget;
             target.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
             target.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
             
+            // アプリのレベル状態を更新し、バッジの文字を変える
             if (window.appState) {
                 window.appState.selectedLevel = target.getAttribute('data-level');
                 let levelText = "中学生レベル";
                 if (window.appState.selectedLevel === "elementary") levelText = "小学生レベル";
                 if (window.appState.selectedLevel === "high_school") levelText = "高校生レベル";
                 if(currentLevelBadge) currentLevelBadge.textContent = levelText;
-            }
-
-            // STEP誘導のUI更新
-            const badgeStep1 = document.getElementById('badge-step1');
-            const stepMode = document.getElementById('step-mode');
-            const badgeStep2 = document.getElementById('badge-step2');
-            
-            if(badgeStep1) badgeStep1.classList.remove('animate-bounce');
-            if(stepMode) stepMode.classList.remove('opacity-40', 'pointer-events-none');
-            if(badgeStep2) {
-                badgeStep2.classList.remove('hidden');
-                if (!window.appState.selectedMode) badgeStep2.classList.add('animate-bounce');
+                
+                // ※もしレベル切り替え時に画像リストの中身も変えたい場合は、ここで renderThemes() などを呼ぶ仕組みが main.js 側に必要です。
             }
         });
     });
 
-    // ★STEP 2: Game Mode 選択時の処理
+    // ★初期画面（STEP1）の Game Mode 選択時の処理
     const modeBtns = document.querySelectorAll('.mode-btn');
     const btnGotoSelect = document.getElementById('btn-goto-select');
+    const modeQuestion = document.getElementById('mode-question'); // 追加
+
     modeBtns.forEach(btn => {
         btn.addEventListener('click', (e) => {
+            // ボタンの見た目切り替え（デザイン案に合わせて、選択時はピンク背景に）
             modeBtns.forEach(b => { 
-                b.classList.remove('selected-mode-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
-                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+                b.classList.remove('selected-mode-btn', 'bg-pink-50', 'border-pink-300', 'text-pink-600', 'shadow-md', 'scale-105'); 
+                b.classList.add('bg-white', 'border-gray-200', 'text-gray-700'); 
             });
             const target = e.currentTarget;
-            target.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
-            target.classList.add('selected-mode-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            target.classList.remove('bg-white', 'border-gray-200', 'text-gray-700');
+            target.classList.add('selected-mode-btn', 'bg-pink-50', 'border-pink-300', 'text-pink-600', 'shadow-md', 'scale-105');
             
             if (window.appState) {
                 window.appState.selectedMode = target.getAttribute('data-mode');
@@ -113,22 +108,37 @@ document.addEventListener('DOMContentLoaded', () => {
                 }
             }
 
-            // STEP誘導のUI更新
-            const badgeStep2 = document.getElementById('badge-step2');
-            const badgeStep3 = document.getElementById('badge-step3');
-            
-            if(badgeStep2) badgeStep2.classList.remove('animate-bounce');
+            // 「どちらのGameで遊びますか？」のテキストをフェードアウトして消す
+            if(modeQuestion) {
+                modeQuestion.style.opacity = '0';
+                setTimeout(() => modeQuestion.classList.add('hidden'), 300);
+            }
+
+            // 次へ進めるようにSELECTボタンのロック解除
             if(btnGotoSelect) {
                 btnGotoSelect.classList.remove('opacity-40', 'pointer-events-none');
-                btnGotoSelect.classList.add('hover:shadow-sns-gradient/40');
-            }
-            if(badgeStep3) {
-                badgeStep3.classList.remove('hidden');
-                badgeStep3.classList.add('animate-bounce');
+                btnGotoSelect.classList.add('hover:shadow-sns-gradient/40', 'hover:scale-105');
             }
         });
     });
 
+    // ★ウサギちゃんの吹き出し処理
+    const rabbitChar = document.getElementById('rabbit-char');
+    const rabbitBubble = document.getElementById('rabbit-bubble');
+    const btnCloseBubble = document.getElementById('btn-close-bubble');
+
+    if (rabbitChar && rabbitBubble) {
+        rabbitChar.addEventListener('click', () => {
+            rabbitBubble.classList.toggle('hidden');
+        });
+    }
+    if (btnCloseBubble && rabbitBubble) {
+        btnCloseBubble.addEventListener('click', () => {
+            rabbitBubble.classList.add('hidden');
+        });
+    }
+
+    // トグルボタン等の汎用処理
     document.addEventListener('click', (e) => {
         const btn = e.target.closest('.toggle-more-btn');
         if (btn) {
@@ -144,6 +154,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
+    // パネルリサイズ処理
     const imagePanel = document.getElementById('image-panel');
     const resizerVertical = document.getElementById('resizer-vertical');
     const resizerHorizontal = document.getElementById('resizer-horizontal');

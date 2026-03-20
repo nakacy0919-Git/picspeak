@@ -1,0 +1,454 @@
+{
+  "id": "story5",
+  "titleJa": "言葉の壁を越えて",
+  "imageSrc": "assets/images/story/story5_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story5_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I have a new classmate. He is from America. He <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='speaks English' data-ja='英語を話す'>speaks English</span>. My friends speak Japanese. He does not understand. My friends are sad. He is <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='alone' data-ja='一人、単独で'>alone</span>.",
+          "readingJa": "私には新しいクラスメイトがいます。彼はアメリカ出身です。彼は英語を話します。私の友達は日本語を話します。彼は理解できません。私の友達は悲しんでいます。彼は一人です。",
+          "vocabulary": [
+            {"word": "new", "meaning": "新しい"},
+            {"word": "classmate", "meaning": "クラスメイト、同級生"},
+            {"word": "from", "meaning": "〜出身"},
+            {"word": "America", "meaning": "アメリカ"},
+            {"word": "he", "meaning": "彼（留学生）"},
+            {"word": "speaks", "meaning": "話す（speakの三人称単数現在形）"},
+            {"word": "speaks English", "meaning": "英語を話す"},
+            {"word": "English", "meaning": "英語"},
+            {"word": "my", "meaning": "私の"},
+            {"word": "friends", "meaning": "友達（friendの複数形）"},
+            {"word": "speak", "meaning": "話す"},
+            {"word": "Japanese", "meaning": "日本語"},
+            {"word": "does", "meaning": "〜する（助動詞）"},
+            {"word": "does not", "meaning": "理解しない（understandの否定）"},
+            {"word": "understand", "meaning": "理解する、わかる"},
+            {"word": "are", "meaning": "〜である（be動詞）"},
+            {"word": "sad", "meaning": "悲しい"},
+            {"word": "alone", "meaning": "一人、単独で"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "新しい外国人留学生がやってきたが、日本語がわからず孤立している", "keywords": ["new classmate", "from America", "he speaks English", "Japanese", "does not understand", "sad", "alone"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "A new student from America arrived in our class. He was very tall and nice. He tried to introduce himself, but his Japanese was very poor. Our classmates used Japanese slang, and he looked confused. They thought he was unfriendly. He sat <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='alone at his desk' data-ja='自分の机に一人で'>alone at his desk</span>.",
+          "readingJa": "アメリカからの新しい生徒が私たちのクラスに到着しました。彼はとても背が高くて、親切でした。彼は自己紹介しようとしましたが、彼の日本語はとても下手でした。私たちのクラスメイトは日本語のスラングを使い、彼は混乱しているようでした。彼らは彼を不親切だと思いました。彼は自分の机に一人で座っていました。",
+          "vocabulary": [
+            {"word": "new", "meaning": "新しい"},
+            {"word": "student", "meaning": "生徒"},
+            {"word": "from", "meaning": "〜出身"},
+            {"word": "America", "meaning": "アメリカ"},
+            {"word": "arrived", "meaning": "到着した（arriveの過去形）"},
+            {"word": "arrive", "meaning": "到着する"},
+            {"word": "in", "meaning": "〜に"},
+            {"word": "our", "meaning": "私たちの"},
+            {"word": "class", "meaning": "クラス、授業"},
+            {"word": "very", "meaning": "とても"},
+            {"word": "tall", "meaning": "背が高い"},
+            {"word": "and", "meaning": "と、そして"},
+            {"word": "nice", "meaning": "親切な、良い"},
+            {"word": "tried to introduce", "meaning": "自己紹介しようと試みた"},
+            {"word": "tried", "meaning": "試みた（tryの過去形）"},
+            {"word": "introduce", "meaning": "紹介する、導入する"},
+            {"word": "himself", "meaning": "彼自身"},
+            {"word": "poor", "meaning": "下手な、貧しい"},
+            {"word": "used", "meaning": "使った（useの過去形）"},
+            {"word": "Japanese slang", "meaning": "日本語のスラング"},
+            {"word": "slang", "meaning": "スラング、俗語"},
+            {"word": "looked", "meaning": "〜に見えた（lookの過去形）"},
+            {"word": "confused", "meaning": "混乱した"},
+            {"word": "thought", "meaning": "思った（thinkの過去形）"},
+            {"word": "unfriendly", "meaning": "不親切な、冷たい"},
+            {"word": "sat", "meaning": "座った（sitの過去形）"},
+            {"word": "alone at his desk", "meaning": "自分の机に一人で"},
+            {"word": "alone", "meaning": "一人で"},
+            {"word": "desk", "meaning": "机"}
+          ],
+          "targets": [
+            {"category": "Habit (習慣)", "text": "新しい留学生は自己紹介を試みたが日本語が下手で、クラスメイトの誤解を招き孤立した", "keywords": ["arrived in class", "tried to introduce", "poor Japanese", "slang", "confused", "unfriendly", "sat alone"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Our class recently welcomed an <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='exchange student' data-ja='交換留学生'>exchange student</span> from the United States. He appeared genuinely enthusiastic, but a significant <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='language barrier' data-ja='言葉の壁'>language barrier</span> immediately emerged. Our classmates tried to engage him with localized Japanese expressions, resulting only in confusion. This led to a misunderstanding, as many students perceived his silence as rudeness or indifference. He quickly became <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='isolated' data-ja='孤立した、分離された'>isolated</span> within the classroom environment.",
+          "readingJa": "私たちのクラスは最近、アメリカ合衆国からの交換留学生を迎えました。彼は本当に熱心に見えましたが、重大な言葉の壁がすぐに現れました。私たちのクラスメイトは地域化された日本語の表現で彼を関わらせようとしましたが、混乱だけを招きました。これは誤解につながりました。多くの生徒が彼の沈黙を無礼さや無関心と見なしたからです。彼はすぐに教室の環境内で孤立しました。",
+          "vocabulary": [
+            {"word": "recently", "meaning": "最近"},
+            {"word": "welcomed", "meaning": "迎えた、歓迎した（welcomeの過去形）"},
+            {"word": "exchange student", "meaning": "交換留学生"},
+            {"word": "student", "meaning": "学生"},
+            {"word": "from", "meaning": "〜出身"},
+            {"word": "United States", "meaning": "アメリカ合衆国"},
+            {"word": "appeared", "meaning": "〜に見えた（appearの過去形）"},
+            {"word": "genuinely", "meaning": "本当に、純粋に"},
+            {"word": "enthusiastic", "meaning": "熱心な"},
+            {"word": "significant", "meaning": "重大な、重要な"},
+            {"word": "language", "meaning": "言葉"},
+            {"word": "barrier", "meaning": "壁、障壁"},
+            {"word": "language barrier", "meaning": "言葉の壁"},
+            {"word": "immediately", "meaning": "すぐに"},
+            {"word": "emerged", "meaning": "現れた（emergeの過去形）"},
+            {"word": "tried to engage", "meaning": "彼を関わらせようとした"},
+            {"word": "tried", "meaning": "試みた（tryの過去形）"},
+            {"word": "engage", "meaning": "関わらせる、雇用する"},
+            {"word": "localized", "meaning": "地域化された、局所的な"},
+            {"word": "expressions", "meaning": "表現（expressionの複数形）"},
+            {"word": "localized expressions", "meaning": "地域化された表現"},
+            {"word": "resulting only in", "meaning": "〜だけを招く（の結果として）"},
+            {"word": "results", "meaning": "結果（resultの複数形、または動詞の三人称単数現在形）"},
+            {"word": "confusion", "meaning": "混乱"},
+            {"word": "led to", "meaning": "〜につながった（lead toの過去形）"},
+            {"word": "misunderstanding", "meaning": "誤解"},
+            {"word": "as", "meaning": "〜なので、〜として"},
+            {"word": "perceived", "meaning": "見なした、知覚した（perceiveの過去形）"},
+            {"word": "silence", "meaning": "沈黙"},
+            {"word": "as", "meaning": "〜として"},
+            {"word": "rudeness", "meaning": "無礼さ、不作法"},
+            {"word": "indifference", "meaning": "無関心、冷淡"},
+            {"word": "isolated", "meaning": "孤立した、分離された（isolateの過去分詞）"},
+            {"word": "classroom environment", "meaning": "教室の環境"},
+            {"word": "environment", "meaning": "環境"}
+          ],
+          "targets": [
+            {"category": "Attitude (態度)", "text": "新しい留学生は自己紹介を試みたが重大な言葉の壁に直面し、クラスメイトの誤解を招き孤立した", "keywords": ["welcomed an exchange student", "enthusiastic", "language barrier", "misunderstanding", "perceived silence as rudeness or indifference", "isolated in class"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/story5_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I want to talk to him. I use my hands. I use small <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='English words' data-ja='英語の単語'>English words</span>. I draw a happy picture. We are <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='smiling' data-ja='微笑んでいる'>smiling</span>. He is happy.",
+          "readingJa": "私は彼と話したいです。私は手を使います。私は小さな英語の単語を使います。私は幸せな絵を描きます。私たちは微笑んでいます。彼は幸せです。",
+          "vocabulary": [
+            {"word": "want to talk", "meaning": "話したいと思う"},
+            {"word": "talk to him", "meaning": "彼と話す"},
+            {"word": "talk", "meaning": "話す"},
+            {"word": "use", "meaning": "使う"},
+            {"word": "my hands", "meaning": "私の手（ジェスチャー）"},
+            {"word": "hands", "meaning": "手（複数形）"},
+            {"word": "English", "meaning": "英語"},
+            {"word": "words", "meaning": "単語（wordの複数形）"},
+            {"word": "English words", "meaning": "英語の単語"},
+            {"word": "draw", "meaning": "描く"},
+            {"word": "draw a happy picture", "meaning": "幸せな絵を描く"},
+            {"word": "happy picture", "meaning": "幸せな絵"},
+            {"word": "picture", "meaning": "絵、写真"},
+            {"word": "we are", "meaning": "私たちは〜である（be動詞）"},
+            {"word": "smiling", "meaning": "微笑んでいる（smileの現在分詞）"},
+            {"word": "smile", "meaning": "微笑む"},
+            {"word": "he is", "meaning": "彼は〜である"},
+            {"word": "happy", "meaning": "幸せな"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "主人公は留学生に近づき、ジェスチャー、簡単な英語、絵を使って話しかけ、彼を笑顔にした", "keywords": ["talk to him", "use my hands", "English words", "draw a picture", "smiling", "happy"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "After seeing him so alone, I decided to act. I didn't use many Japanese words. I used <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='gestures' data-ja='ジェスチャー、身振り手振り'>gestures</span>, simple English, and a picture I drew of us together. He looked <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='surprised at first' data-ja='最初は驚いた'>surprised at first</span>, but then he gave me a small smile. It worked!",
+          "readingJa": "彼があまりにも一人でいるのを見て、私は行動することに決めました。私は多くの日本語の単語を使いませんでした。私はジェスチャー、簡単な英語、そして私たちが一緒にいる絵を描きました。彼は最初は驚いたようでしたが、それから彼は私に小さな微笑みをくれました。うまくいきました！",
+          "vocabulary": [
+            {"word": "seeing him", "meaning": "彼を見て（現在分詞）"},
+            {"word": "him so alone", "meaning": "彼があまりにも一人で"},
+            {"word": "decided to", "meaning": "〜することに決めた（decide toの過去形）"},
+            {"word": "decide", "meaning": "決める"},
+            {"word": "decide to act", "meaning": "行動することに決める"},
+            {"word": "act", "meaning": "行動する"},
+            {"word": "didn't use", "meaning": "使わなかった（過去の否定）"},
+            {"word": "use", "meaning": "使う"},
+            {"word": "many", "meaning": "多くの"},
+            {"word": "Japanese words", "meaning": "日本語の単語"},
+            {"word": "words", "meaning": "単語（wordの複数形）"},
+            {"word": "used gestures", "meaning": "ジェスチャーを使った"},
+            {"word": "used", "meaning": "使った（useの過去形）"},
+            {"word": "gestures", "meaning": "ジェスチャー、身振り手振り（gestureの複数形）"},
+            {"word": "English", "meaning": "英語"},
+            {"word": "draw", "meaning": "描く"},
+            {"word": "drew", "meaning": "描いた（drawの過去形）"},
+            {"word": "surprised", "meaning": "驚いた（surpriseの過去分詞）"},
+            {"word": "looked surprised", "meaning": "驚いたようだった"},
+            {"word": "gave", "meaning": "くれた（giveの過去形）"},
+            {"word": "gave me a small smile", "meaning": "私に小さな微笑みをくれた"},
+            {"word": "small smile", "meaning": "小さな微笑み"},
+            {"word": "it worked", "meaning": "うまくいった（work「うまくいく」の過去形）"}
+          ],
+          "targets": [
+            {"category": "Crisis (危機)", "text": "主人公は留学生の孤立を見て行動することを決め、ジェスチャー、簡単な英語、絵を使って彼を笑顔にした", "keywords": ["seeing him so alone", "decided to act", "used gestures", "surprised at first", "small smile", "it worked"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "While <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='observing' data-ja='観察する、見守る'>observing</span> his isolation, I realized the core problem was simply a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='communication gap' data-ja='意思疎通のギャップ、コミュニケーションギャップ'>communication gap</span>. I decided to make an initial approach. Instead of using complex Japanese, I utilized exaggerated gestures, basic English phrases, and a simple drawing of us interacting with a positive outcome. I was thrilled to see a small smile finally appear on his face. This initial contact was a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='crucial first step' data-ja='重大な最初の一歩'>crucial first step</span>.",
+          "readingJa": "彼の孤立を観察している間、私は核心的な問題が単にコミュニケーションギャップであると気づきました。私は最初のアプローチをすることに決めました。複雑な日本語を使う代わりに、私は誇張されたジェスチャー、基本的な英語のフレーズ、そして肯定的な結果を伴って私たちが相互作用している単純な絵を利用しました。私は彼の顔にようやく小さな微笑みが現れるのを見てワクワクしました。この最初の接触は重大な最初の一歩でした。",
+          "vocabulary": [
+            {"word": "observing", "meaning": "観察している（現在分詞、同時進行）"},
+            {"word": "observe", "meaning": "観察する、見守る"},
+            {"word": "isolation", "meaning": "孤立"},
+            {"word": "realized", "meaning": "気づいた（realizeの過去形）"},
+            {"word": "core problem", "meaning": "核心的な問題"},
+            {"word": "communication", "meaning": "意思疎通、コミュニケーション"},
+            {"word": "gap", "meaning": "ギャップ、隙間"},
+            {"word": "communication gap", "meaning": "意思疎通のギャップ"},
+            {"word": "decided to", "meaning": "〜することに決めた（decide toの過去形）"},
+            {"word": "decide to make", "meaning": "アプローチすることに決める"},
+            {"word": "initial", "meaning": "最初の、初期の"},
+            {"word": "approach", "meaning": "アプローチ、接近"},
+            {"word": "utilize", "meaning": "利用する"},
+            {"word": "complex", "meaning": "複雑な"},
+            {"word": "exaggerated", "meaning": "誇張された（exaggerateの過去分詞）"},
+            {"word": "basic", "meaning": "基本的な"},
+            {"word": "phrases", "meaning": "フレーズ（phraseの複数形）"},
+            {"word": "drawing", "meaning": "絵（drawの現在分詞、動名詞、不可算名詞）"},
+            {"word": "picture", "meaning": "絵、写真"},
+            {"word": "interacting", "meaning": "相互作用している、交流している（interactの現在分詞）"},
+            {"word": "positive", "meaning": "肯定的な"},
+            {"word": "outcome", "meaning": "結果、成果"},
+            {"word": "thrilled", "meaning": "ワクワクした（thrillの過去分詞、形容詞）"},
+            {"word": "small smile", "meaning": "小さな微笑み"},
+            {"word": "finally", "meaning": "ようやく、ついに"},
+            {"word": "crucial", "meaning": "重大な、決定的な"},
+            {"word": "first step", "meaning": "最初の一歩"}
+          ],
+          "targets": [
+            {"category": "Response (反応)", "text": "主人公は留学生の孤立を見て問題を理解し、ジェスチャー、簡単な英語、絵を使って彼を笑顔にし、重大な一歩を踏み出した", "keywords": ["observing isolation", "communication gap", "decided to approach", "utilize gestures", "draw a picture", "small smile finally appeared", "crucial first step"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/story5_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "Now my friends help. We use pictures of food. We use a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='translation app' data-ja='翻訳アプリ'>translation app</span>. We <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='learn a lot' data-ja='多くのことを学ぶ'>learn a lot</span>. We are all happy.",
+          "readingJa": "今、私の友達が助けてくれます。私たちは食べ物の絵を使います。私たちは翻訳アプリを使います。私たちは多くのことを学びます。私たちは皆、幸せです。",
+          "vocabulary": [
+            {"word": "now", "meaning": "今"},
+            {"word": "my friends", "meaning": "私の友達（複数形）"},
+            {"word": "help", "meaning": "助ける、手伝う"},
+            {"word": "use", "meaning": "使う"},
+            {"word": "pictures of food", "meaning": "食べ物の絵（複数形）"},
+            {"word": "food", "meaning": "食べ物"},
+            {"word": "translation app", "meaning": "翻訳アプリ"},
+            {"word": "translation", "meaning": "翻訳"},
+            {"word": "app", "meaning": "アプリ"},
+            {"word": "learn", "meaning": "学ぶ、覚える"},
+            {"word": "learn a lot", "meaning": "多くのことを学ぶ"},
+            {"word": "a lot", "meaning": "多くのこと"},
+            {"word": "we are", "meaning": "私たちは〜である（be動詞）"},
+            {"word": "all happy", "meaning": "皆、幸せ"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "クラスメイトが手伝い始め、絵や翻訳アプリを使って彼と多くのことを学び合い、皆が幸せになった", "keywords": ["friends help", "use pictures", "translation app", "learn a lot", "all happy"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "Slowly, things <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='improved' data-ja='改善した、良くなった'>improved</span>. When my friends saw me using non-verbal communication, they became <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='curious' data-ja='好奇心旺盛な'>curious</span>. We started using more pictures and even a translation app to share our interests like music and sports. We realized he wasn't cold; he was just shy and couldn't speak our language. The class atmosphere was changing positively.",
+          "readingJa": "ゆっくりと、事態は改善しました。私の友達が私が言葉を使わないコミュニケーションを使っているのを見たとき、彼らは好奇心旺盛になりました。私たちは、音楽やスポーツのような私たちの興味を共有するために、より多くの絵や翻訳アプリさえ使い始めました。私たちは彼が冷たいのではなく、ただ恥ずかしがり屋で、私たちの言葉を話せなかっただけだと気づしました。クラスの雰囲気は肯定的に変わっていました。",
+          "vocabulary": [
+            {"word": "slowly", "meaning": "ゆっくりと"},
+            {"word": "things improved", "meaning": "事態は改善した（things「事態」+ improved「改善した」）"},
+            {"word": "improve", "meaning": "改善する"},
+            {"word": "when", "meaning": "〜のとき"},
+            {"word": "friends", "meaning": "友達（複数形）"},
+            {"word": "saw", "meaning": "見た（seeの過去形）"},
+            {"word": "see", "meaning": "見る"},
+            {"word": "using", "meaning": "使っている（useの現在分詞）"},
+            {"word": "using non-verbal communication", "meaning": "非言語コミュニケーションを使っている"},
+            {"word": "non-verbal", "meaning": "言葉を使わない"},
+            {"word": "communication", "meaning": "意思疎通、コミュニケーション"},
+            {"word": "became curious", "meaning": "好奇心旺盛になった（become「なる」の過去形+ curious「好奇心旺盛な」）"},
+            {"word": "started", "meaning": "始めた（startの過去形）"},
+            {"word": "using", "meaning": "使っている（useの現在分詞、動名詞）"},
+            {"word": "use", "meaning": "使う"},
+            {"word": "pictures", "meaning": "絵、写真（複数形）"},
+            {"word": "translation app", "meaning": "翻訳アプリ"},
+            {"word": "share", "meaning": "共有する"},
+            {"word": "share our interests", "meaning": "私たちの興味を共有する"},
+            {"word": "interests", "meaning": "興味（複数形）"},
+            {"word": "realized", "meaning": "気づいた（realizeの過去形）"},
+            {"word": "realize", "meaning": "気づく"},
+            {"word": "cold", "meaning": "冷たい、不親切な、寒い"},
+            {"word": "shy", "meaning": "恥ずかしがり屋"},
+            {"word": "couldn't speak", "meaning": "話せなかった（could not speak）"},
+            {"word": "can", "meaning": "〜できる"},
+            {"word": "speak", "meaning": "話す"},
+            {"word": "our language", "meaning": "私たちの言葉"},
+            {"word": "language", "meaning": "言葉"},
+            {"word": "atmosphere", "meaning": "雰囲気、大気"},
+            {"word": "was changing", "meaning": "変わっていた（changeの過去進行形）"},
+            {"word": "change", "meaning": "変わる、変える"},
+            {"word": "positively", "meaning": "肯定的に、積極的に"}
+          ],
+          "targets": [
+            {"category": "Decision (決断)", "text": "数人が少しずつ手伝い始め、絵や翻訳アプリを使って興味を共有し、彼を理解してクラスの雰囲気も良くなった", "keywords": ["Slowly things improved", "using non-verbal communication", "curious", "started using pictures", "translation app", "realized he wasn't cold", "positive atmosphere changing"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "The initial success with gesture and drawing broke down the initial barriers. As other students witnessed our interactive and successful communication, they <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='overcame' data-ja='克服した、打ち勝った'>overcame</span> their initial hesitation and <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='joined' data-ja='参加した、加わった'>joined</span> us. We utilized all available resources: a translation app, photos of local attractions, and detailed drawings of cultural differences. The class was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='transforming' data-ja='変貌している、完全に変わっている'>transforming</span>; misunderstandings dissolved as genuine curiosity and mutual respect replaced previous indifference.",
+          "readingJa": "ジェスチャーと絵を描くことによる最初の成功は、最初の障壁を打ち破りました。他の生徒たちが私たちの相互作用的で成功したコミュニケーションを目撃したとき、彼らは最初の躊躇を克服し、私たちに参加しました。私たちは利用可能なすべての資源を利用しました：翻訳アプリ、地元の観光名所の写真、そして文化的な違いの詳細な絵。クラスは変貌していました。誤解は解消され、真の好奇心と相互尊重が以前の無関心に取って代わりました。",
+          "vocabulary": [
+            {"word": "initial success", "meaning": "最初の成功"},
+            {"word": "broke down", "meaning": "打ち破った（break downの過去形）"},
+            {"word": "break down", "meaning": "打ち破る、分解する"},
+            {"word": "gesture", "meaning": "ジェスチャー"},
+            {"word": "drawing", "meaning": "絵（drawの現在分詞、動名詞、不可算名詞）"},
+            {"word": "as", "meaning": "〜なので、〜として"},
+            {"word": "other", "meaning": "他の"},
+            {"word": "students", "meaning": "生徒たち（複数形）"},
+            {"word": "witnessed", "meaning": "目撃した（witnessの過去形）"},
+            {"word": "interactive", "meaning": "相互作用的な、交流的な"},
+            {"word": "successful", "meaning": "成功した"},
+            {"word": "overcame", "meaning": "克服した、打ち勝った（overcomeの過去形）"},
+            {"word": "overcome", "meaning": "克服する"},
+            {"word": "hesitation", "meaning": "躊躇"},
+            {"word": "initial hesitation", "meaning": "最初の躊躇"},
+            {"word": "overcame initial hesitation", "meaning": "最初の躊躇を克服した"},
+            {"word": "overcome their initial hesitation", "meaning": "彼らの最初の躊躇を克服した"},
+            {"word": "joined", "meaning": "参加した、加わった（joinの過去形）"},
+            {"word": "utilize", "meaning": "利用する"},
+            {"word": "available", "meaning": "利用可能な、入手可能な"},
+            {"word": "resources", "meaning": "資源、リソース（複数形）"},
+            {"word": "available resources", "meaning": "利用可能な資源"},
+            {"word": "utilize resources", "meaning": "資源を利用する"},
+            {"word": "translation app", "meaning": "翻訳アプリ"},
+            {"word": "photos of local attractions", "meaning": "地元の観光名所の写真（複数形）"},
+            {"word": "attractions", "meaning": "観光名所（複数形）"},
+            {"word": "detailed drawings of cultural differences", "meaning": "文化的な違いの詳細な絵（複数形）"},
+            {"word": "transform", "meaning": "変貌させる、完全に変える"},
+            {"word": "transforming", "meaning": "変貌している、完全に変わっている（transformの現在分詞）"},
+            {"word": "transform", "meaning": "変貌する、変貌させる"},
+            {"word": "class was transforming", "meaning": "クラスは変貌していた"},
+            {"word": "misunderstanding", "meaning": "誤解"},
+            {"word": "misunderstandings dissolved", "meaning": "誤解は解消された"},
+            {"word": "dissolved", "meaning": "解消された、溶解した（dissolveの過去形）"},
+            {"word": "dissolve", "meaning": "解消する、溶解する"},
+            {"word": "as", "meaning": "〜なので、〜として"},
+            {"word": "genuine", "meaning": "真の、本物の"},
+            {"word": "curiosity", "meaning": "好奇心"},
+            {"word": "genuine curiosity", "meaning": "真の好奇心"},
+            {"word": "mutual respect", "meaning": "相互尊重"},
+            {"word": "respect", "meaning": "尊重、尊敬"},
+            {"word": "replaced", "meaning": "取って代わった（replaceの過去形）"},
+            {"word": "replace", "meaning": "取って代わる"},
+            {"word": "previous indifference", "meaning": "以前の無関心"},
+            {"word": "indifference", "meaning": "無関心"},
+            {"word": "replaced previous indifference", "meaning": "以前の無関心に取って代わった"}
+          ],
+          "targets": [
+            {"category": "Execution (実行)", "text": "無関心な中で一人の子の努力が数人の心を動かし、やがて無数の人々が協力し始め、誤解が解けクラスが変貌した", "keywords": ["initial success broke barriers", "witnessed interaction overcoming hesitation", "joined and utilized resources", "utilize translation app", "class was transforming", "misunderstandings dissolved", "genuine curiosity mutual respect replaced indifference"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/story5_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "Our class is a good <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='team' data-ja='チーム'>team</span> now. We <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='learn' data-ja='学ぶ'>learn</span> different things. We <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='accept' data-ja='受け入れる'>accept</span> our differences.",
+          "readingJa": "私たちのクラスは今、良いチームです。私たちはさまざまなことを学びます。私たちは私たちの違いを受け入れます。",
+          "vocabulary": [
+            {"word": "our class", "meaning": "私たちのクラス"},
+            {"word": "team", "meaning": "チーム"},
+            {"word": "now", "meaning": "今"},
+            {"word": "learn", "meaning": "学ぶ"},
+            {"word": "different", "meaning": "さまざまな、異なる"},
+            {"word": "different things", "meaning": "さまざまなこと（複数形）"},
+            {"word": "things", "meaning": "こと、もの（複数形）"},
+            {"word": "learn different things", "meaning": "さまざまなことを学ぶ"},
+            {"word": "accept", "meaning": "受け入れる"},
+            {"word": "differences", "meaning": "違い（differenceの複数形）"},
+            {"word": "accept differences", "meaning": "違いを受け入れる"}
+          ],
+          "targets": [
+            {"category": "Learning (学び)", "text": "クラス全体が学び合い、互いの違いを受け入れ、良いチームになった", "keywords": ["good team", "learn different things", "learn", "accept differences", "accept"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "By the end of the semester, the classroom was completely different. We learned many new things about each other's cultures. We didn't just accept our differences; we <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='celebrated' data-ja='お祝いした、讃えた、楽しんだ'>celebrated</span> them. We <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='realized' data-ja='悟った、気づいた'>realized</span> that a little bit of effort from one person can start a very powerful and beautiful chain reaction in the whole class.",
+          "readingJa": "学期の終わりまでに、教室は完全に異なっていました。私たちは、お互いの文化について多くの新しいことを学びました。私たちは単に私たちの違いを受け入れるだけではありませんでした。私たちは彼らをお祝いしました。私たちは、一人の人からの少しの努力がクラス全体に非常に強力で美しい連鎖反応を始めることができることに気づきました。",
+          "vocabulary": [
+            {"word": "semester", "meaning": "学期"},
+            {"word": "by the end of", "meaning": "〜の終わりまでに"},
+            {"word": "classroom", "meaning": "教室"},
+            {"word": "was completely different", "meaning": "完全に異なっていた"},
+            {"word": "completely", "meaning": "完全に"},
+            {"word": "learned many new things", "meaning": "多くの新しいことを学んだ（learned「学んだ」+ new things「新しいこと」）"},
+            {"word": "learn", "meaning": "学ぶ"},
+            {"word": "new things", "meaning": "新しいこと"},
+            {"word": "each other's cultures", "meaning": "お互いの文化"},
+            {"word": "cultures", "meaning": "文化（複数形）"},
+            {"word": "accept our differences", "meaning": "私たちの違いを受け入れる"},
+            {"word": "accept", "meaning": "受け入れる"},
+            {"word": "celebrate", "meaning": "お祝いする、讃える、楽しむ"},
+            {"word": "realize that", "meaning": "〜ということに気づく"},
+            {"word": "little bit of effort", "meaning": "少しの努力"},
+            {"word": "effort", "meaning": "努力、尽力"},
+            {"word": "one person", "meaning": "一人の人"},
+            {"word": "person", "meaning": "人、人間"},
+            {"word": "start a powerful and beautiful chain reaction", "meaning": "強力で美しい連鎖反応を始める"},
+            {"word": "powerful", "meaning": "強力な"},
+            {"word": "beautiful", "meaning": "美しい"},
+            {"word": "chain reaction", "meaning": "連鎖反応"},
+            {"word": "in the whole class", "meaning": "クラス全体に"},
+            {"word": "whole", "meaning": "全体"}
+          ],
+          "targets": [
+            {"category": "Growth (成長)", "text": "学期末までに、クラス全体が学び合い、互いの違いを受け入れ、讃え、讃え、一人の人の行動が大きな変化をもたらすことを学んだ", "keywords": ["By the end of the semester classroom different", "learned many new things about cultures", "accepted differences", "celebrated our differences", "realized that effort can start powerful beautifully chain reaction"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "The class environment underwent a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='remarkable transformation' data-ja='驚くべき変貌'>remarkable transformation</span>. Our shared experience of navigating linguistic and cultural differences led to a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='profound transformation' data-ja='深刻な変貌、大きな変化'>profound transformation</span>, fostering genuine mutual respect. The once-isolated student was now fully <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='integrated' data-ja='統合された、組み込まれた'>integrated</span> into our class community. This entire process confirm that a collective effort can catalyze a truly magnificent outcome.",
+          "readingJa": "クラスの環境は驚くべき変貌を遂げました。言語的、文化的な違いを乗り越えるという私たちの共有された経験は深刻な変貌につながり、真の相互尊重を育みました。かつて孤立していた生徒は、今や私たちのクラスコミュニティに完全に統合されていました。この全プロセスは、集団的な努力が本当に壮大な結果を促進できることを確認しました。",
+          "vocabulary": [
+            {"word": "environment", "meaning": "環境"},
+            {"word": "classroom environment", "meaning": "教室の環境"},
+            {"word": "underwent", "meaning": "経験した、受けた（undergoの過去形）"},
+            {"word": "undergo", "meaning": "経験する"},
+            {"word": "remarkable", "meaning": "驚くべき、著しい"},
+            {"word": "transformation", "meaning": "変貌、変化"},
+            {"word": "underwent a remarkable transformation", "meaning": "驚くべき変貌を遂げた"},
+            {"word": "shared", "meaning": "共有された（shareの過去分詞）"},
+            {"word": "shared experience", "meaning": "共有された経験"},
+            {"word": "navigating", "meaning": "乗り越える（navigateの現在分詞、動名詞、または形容詞的用法、理由または連続した動作）"},
+            {"word": "navigate", "meaning": "乗り越える、操縦する、航行する"},
+            {"word": "misunderstandings", "meaning": "誤解（misunderstandingの複数形）"},
+            {"word": "navigate understandings", "meaning": "理解を深める（ここでは「言葉の壁を乗り越える」という意味）"},
+            {"word": "profound", "meaning": "深刻な、大きな、深遠な"},
+            {"word": "foster", "meaning": "育む、促進する"},
+            {"word": "fostering", "meaning": "育んでいる（fosterの現在分詞、同時進行または連続した動作）"},
+            {"word": "genuine curiosity", "meaning": "真の好奇心"},
+            {"word": "mutual respect", "meaning": "相互尊重"},
+            {"word": "respect", "meaning": "尊重"},
+            {"word": "fostering mutual respect", "meaning": "相互尊重を育んでいる"},
+            {"word": "once-isolated", "meaning": "かつて孤立していた（once「かつて」+ isolated「孤立した」）"},
+            {"word": "once", "meaning": "かつて、一度"},
+            {"word": "isolated student", "meaning": "孤立した生徒"},
+            {"word": "fully integrated", "meaning": "完全に統合された"},
+            {"word": "integrated", "meaning": "統合された、組み込まれた（integrateの過去分詞、形容詞）"},
+            {"word": "integrate", "meaning": "統合する"},
+            {"word": "class community", "meaning": "クラスコミュニティ"},
+            {"word": "community", "meaning": "コミュニティ、地域社会"},
+            {"word": "entire process", "meaning": "全プロセス"},
+            {"word": "collective", "meaning": "集団的な、共同の"},
+            {"word": "collective effort", "meaning": "集団的な努力"},
+            {"word": "catalyze", "meaning": "触媒となる、促進する"},
+            {"word": "catalyze a truly magnificent outcome", "meaning": "本当に壮大な結果を促進する"},
+            {"word": "truly", "meaning": "本当に、真に"},
+            {"word": "magnificent", "meaning": "壮大な、素晴らしい"},
+            {"word": "outcome", "meaning": "結果、成果"},
+            {"word": "confirm that", "meaning": "〜ということを確認する（動詞）"}
+          ],
+          "targets": [
+            {"category": "Final thought (最終的な考え)", "text": "クラス全体が共有された経験を通じて劇的に変貌し、互いの違いを乗り越えて本当の相互尊重を育み、集団的な努力が本当に壮大な結果を促進することを学んだ", "keywords": ["class environment underwent remarkable transformation", "shared experience navigating differences", "profound transformation fostering mutual respect", "once-isolated student", "integrated class community", "collective effort catalyze a truly magnificent outcome", "confirm that", "Catalyze magnificent"]}
+          ]
+        }
+      }
+    }
+  ]
+}

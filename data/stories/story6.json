@@ -1,0 +1,384 @@
+{
+  "id": "story6",
+  "titleJa": "変わりゆく私たちの町",
+  "imageSrc": "assets/images/story/story6_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story6_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I live in a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='quiet' data-ja='静かな'>quiet</span> town. Many houses are empty now. Their doors and windows are closed. I do not see many people in the street.",
+          "readingJa": "私は静かな町に住んでいます。今、多くの家が空き家です。ドアや窓は閉まっています。通りで多くの人を見かけません。",
+          "vocabulary": [
+            {"word": "live in", "meaning": "～に住んでいる"},
+            {"word": "quiet", "meaning": "静かな"},
+            {"word": "town", "meaning": "町"},
+            {"word": "many", "meaning": "多くの"},
+            {"word": "house", "meaning": "家"},
+            {"word": "empty", "meaning": "空っぽの、空き家の"},
+            {"word": "now", "meaning": "今"},
+            {"word": "their", "meaning": "それらの（家の）"},
+            {"word": "door", "meaning": "ドア"},
+            {"word": "window", "meaning": "窓"},
+            {"word": "closed", "meaning": "閉まっている"},
+            {"word": "see", "meaning": "見る、見かける"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "street", "meaning": "通り"},
+            {"word": "do not see", "meaning": "見かけない"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "主人公の住む町は今、静かで空き家が多い。", "keywords": ["quiet town", "empty houses", "closed"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "My town is becoming very quiet. There are many <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='vacant house' data-ja='空き家'>vacant houses</span> in my neighborhood. They look lonely with their shutters closed. In the past, this area was much livelier with children's voices.",
+          "readingJa": "私の町はとても静かになりつつあります。近所にはたくさんの空き家があります。シャッターが閉まっていて、寂しそうに見えます。昔、この地域は子供たちの声でもっとにぎやかでした。",
+          "vocabulary": [
+            {"word": "become", "meaning": "～になる"},
+            {"word": "becoming", "meaning": "～になりつつある（現在進行形）"},
+            {"word": "quiet", "meaning": "静かな"},
+            {"word": "there are", "meaning": "～がある、いる"},
+            {"word": "vacant", "meaning": "空いている"},
+            {"word": "vacant house", "meaning": "空き家"},
+            {"word": "neighborhood", "meaning": "近所、近隣"},
+            {"word": "look", "meaning": "～のように見える"},
+            {"word": "lonely", "meaning": "寂しい"},
+            {"word": "with", "meaning": "～の状態で（付帯状況）"},
+            {"word": "shutter", "meaning": "シャッター"},
+            {"word": "closed", "meaning": "閉められた"},
+            {"word": "in the past", "meaning": "過去には、昔は"},
+            {"word": "area", "meaning": "地域、場所"},
+            {"word": "much", "meaning": "（比較級を強調して）ずっと、はるかに"},
+            {"word": "lively", "meaning": "にぎやかな、活気のある"},
+            {"word": "livelier", "meaning": "もっとにぎやかな（比較級）"},
+            {"word": "children's", "meaning": "子供たちの"},
+            {"word": "voice", "meaning": "声"}
+          ],
+          "targets": [
+            {"category": "Change (変化)", "text": "近所に空き家が増え、昔の活気が失われている。", "keywords": ["vacant houses", "shutters closed", "past", "livelier"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "The neighborhood I live in is facing a serious issue: <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='depopulation' data-ja='人口減少'>depopulation</span>. The number of abandoned houses with permanently closed shutters is increasing. It is a stark contrast to the past, when the streets were filled with the energetic voices of children playing.",
+          "readingJa": "私が住んでいる地域は、人口減少という深刻な問題に直面しています。シャッターが永久に閉められたままの放棄された家の数が増えています。通りが遊んでいる子供たちの元気な声で満たされていた過去とは、まったく対照的です。",
+          "vocabulary": [
+            {"word": "neighborhood", "meaning": "地域、近隣"},
+            {"word": "face", "meaning": "～に直面する"},
+            {"word": "serious", "meaning": "深刻な"},
+            {"word": "issue", "meaning": "問題"},
+            {"word": "depopulation", "meaning": "人口減少、過疎化"},
+            {"word": "the number of", "meaning": "～の数"},
+            {"word": "abandoned", "meaning": "見捨てられた、放棄された"},
+            {"word": "permanently", "meaning": "永久に"},
+            {"word": "shutter", "meaning": "シャッター"},
+            {"word": "closed", "meaning": "閉められた"},
+            {"word": "increase", "meaning": "増加する"},
+            {"word": "increasing", "meaning": "増加している（現在進行形）"},
+            {"word": "stark", "meaning": "際立った、全くの"},
+            {"word": "contrast", "meaning": "対照、対比"},
+            {"word": "stark contrast to", "meaning": "～との著しい対照"},
+            {"word": "the past", "meaning": "過去"},
+            {"word": "when", "meaning": "～な時（関係副詞）"},
+            {"word": "street", "meaning": "通り"},
+            {"word": "be filled with", "meaning": "～で満たされている"},
+            {"word": "energetic", "meaning": "元気な、精力的な"},
+            {"word": "voice", "meaning": "声"},
+            {"word": "children playing", "meaning": "遊んでいる子供たち（分詞による後置修飾）"}
+          ],
+          "targets": [
+            {"category": "Situation (状況)", "text": "人口減少により放置された家が増え、昔のにぎやかさと対照的である。", "keywords": ["depopulation", "abandoned houses", "stark contrast", "energetic voices"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/story6_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I see some old people. They walk slowly. But I do not see many young people. The town is too quiet. I feel a little sad.",
+          "readingJa": "お年寄りを何人か見かけます。彼らはゆっくり歩きます。でも、若い人はあまり見かけません。町は静かすぎます。私は少し悲しく感じます。",
+          "vocabulary": [
+            {"word": "see", "meaning": "見る、見かける"},
+            {"word": "some", "meaning": "いくらかの、何人かの"},
+            {"word": "old people", "meaning": "お年寄り、高齢者"},
+            {"word": "walk", "meaning": "歩く"},
+            {"word": "slowly", "meaning": "ゆっくりと"},
+            {"word": "but", "meaning": "しかし"},
+            {"word": "many", "meaning": "多くの"},
+            {"word": "young people", "meaning": "若い人たち"},
+            {"word": "do not see", "meaning": "見かけない"},
+            {"word": "town", "meaning": "町"},
+            {"word": "too", "meaning": "～すぎる"},
+            {"word": "quiet", "meaning": "静かな"},
+            {"word": "feel", "meaning": "感じる"},
+            {"word": "a little", "meaning": "少し"},
+            {"word": "sad", "meaning": "悲しい"}
+          ],
+          "targets": [
+            {"category": "Demographics (人口構成)", "text": "お年寄りはいるが若い人が少なく、町が静かすぎて悲しい。", "keywords": ["old people", "young people", "too quiet", "sad"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "I notice that the number of elderly people is increasing. On the other hand, it is hard to find young people around here. This makes me feel <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='lonely' data-ja='寂しい'>lonely</span> and worried about the town's future.",
+          "readingJa": "高齢者の数が増えていることに気づきました。一方で、この辺りで若い人を見つけるのは難しいです。このことは私を寂しく、そして町の将来について心配にさせます。",
+          "vocabulary": [
+            {"word": "notice", "meaning": "気づく"},
+            {"word": "that", "meaning": "～ということ（接続詞）"},
+            {"word": "the number of", "meaning": "～の数"},
+            {"word": "elderly", "meaning": "高齢の、お年寄りの"},
+            {"word": "elderly people", "meaning": "お年寄り、高齢者"},
+            {"word": "increase", "meaning": "増加する"},
+            {"word": "increasing", "meaning": "増加している（現在進行形）"},
+            {"word": "on the other hand", "meaning": "他方では、一方で"},
+            {"word": "hard", "meaning": "難しい、困難な"},
+            {"word": "to find", "meaning": "見つけること（不定詞の名詞的用法）"},
+            {"word": "young people", "meaning": "若い人たち"},
+            {"word": "around here", "meaning": "この辺りで"},
+            {"word": "make + 人 + 形容詞", "meaning": "人を～な状態にする"},
+            {"word": "make me feel", "meaning": "私を～な気分にさせる"},
+            {"word": "lonely", "meaning": "寂しい"},
+            {"word": "worried", "meaning": "心配して"},
+            {"word": "about", "meaning": "～について"},
+            {"word": "future", "meaning": "未来、将来"}
+          ],
+          "targets": [
+            {"category": "Observation (観察)", "text": "高齢者が増え若者が少ない現状に、寂しさと将来への不安を感じる。", "keywords": ["elderly people", "young people", "hard to find", "lonely", "worried"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "The demographic shift is <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='obvious' data-ja='明白な'>obvious</span>. While I frequently see elderly residents taking slow walks, I rarely encounter anyone from the younger generation. The lack of youthfulness creates a solitary atmosphere, making me contemplate the sustainability of our community.",
+          "readingJa": "人口構成の変化は明らかです。高齢の住民がゆっくり散歩しているのは頻繁に見かけますが、若い世代の人に出会うことはめったにありません。若々しさの欠如は寂しい雰囲気を作り出し、私に私たちのコミュニティの持続可能性について熟考させます。",
+          "vocabulary": [
+            {"word": "demographic", "meaning": "人口統計の、人口構成の"},
+            {"word": "shift", "meaning": "変化、移行"},
+            {"word": "obvious", "meaning": "明白な、明らかな"},
+            {"word": "while", "meaning": "～の一方で（接続詞）"},
+            {"word": "frequently", "meaning": "頻繁に"},
+            {"word": "see", "meaning": "見る、見かける"},
+            {"word": "elderly", "meaning": "高齢の"},
+            {"word": "resident", "meaning": "住民"},
+            {"word": "take a walk", "meaning": "散歩する"},
+            {"word": "slow", "meaning": "ゆっくりとした"},
+            {"word": "rarely", "meaning": "めったに～ない（準否定語）"},
+            {"word": "encounter", "meaning": "（偶然）出会う、遭遇する"},
+            {"word": "anyone", "meaning": "誰か（否定・疑問文で使うが、準否定語rarelyの後でも使われる）"},
+            {"word": "younger generation", "meaning": "より若い世代"},
+            {"word": "lack", "meaning": "欠如、不足"},
+            {"word": "youthfulness", "meaning": "若々しさ"},
+            {"word": "create", "meaning": "作り出す"},
+            {"word": "solitary", "meaning": "孤独な、寂しい"},
+            {"word": "atmosphere", "meaning": "雰囲気"},
+            {"word": "make + 人 + 動詞の原形", "meaning": "人に～させる（使役動詞）"},
+            {"word": "make me contemplate", "meaning": "私に熟考させる"},
+            {"word": "contemplate", "meaning": "熟考する、じっくり考える"},
+            {"word": "sustainability", "meaning": "持続可能性"},
+            {"word": "community", "meaning": "地域社会、コミュニティ"}
+          ],
+          "targets": [
+            {"category": "Analysis (分析)", "text": "高齢化と若者不足が顕著で、地域社会の持続可能性に危機感を持つ。", "keywords": ["demographic shift", "rarely encounter", "younger generation", "solitary atmosphere", "sustainability"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/story6_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "One day, I helped at a town event. I talked to an old man. He said, \"This town was very lively before.\" I <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='finally' data-ja='ついに'>finally</span> understood the change.",
+          "readingJa": "ある日、私は町のイベントを手伝いました。私はおじいさんと話しました。彼は「この町は以前、とてもにぎやかだったんだ」と言いました。私はついにその変化を理解しました。",
+          "vocabulary": [
+            {"word": "one day", "meaning": "ある日"},
+            {"word": "help", "meaning": "手伝う"},
+            {"word": "helped", "meaning": "手伝った（過去形）"},
+            {"word": "town", "meaning": "町"},
+            {"word": "event", "meaning": "イベント、行事"},
+            {"word": "talk to", "meaning": "～と話す"},
+            {"word": "talked", "meaning": "話した（過去形）"},
+            {"word": "old man", "meaning": "おじいさん、高齢の男性"},
+            {"word": "say", "meaning": "言う"},
+            {"word": "said", "meaning": "言った（過去形）"},
+            {"word": "this", "meaning": "この"},
+            {"word": "lively", "meaning": "にぎやかな"},
+            {"word": "before", "meaning": "以前、前は"},
+            {"word": "finally", "meaning": "ついに、ようやく"},
+            {"word": "understand", "meaning": "理解する"},
+            {"word": "understood", "meaning": "理解した（過去形）"},
+            {"word": "change", "meaning": "変化"}
+          ],
+          "targets": [
+            {"category": "Trigger (契機)", "text": "イベントでお年寄りの話を聞き、町の変化を実感した。", "keywords": ["helped", "town event", "old man", "lively before", "understood"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "One weekend, I decided to help with a local event. While I was talking to an elderly neighbor, he said that the town used to be much more energetic. Hearing his story, I really <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='realize' data-ja='実感する'>realized</span> the big change in my community.",
+          "readingJa": "ある週末、私は地元のイベントを手伝うことに決めました。高齢の近所の人と話しているとき、彼は町がかつてはもっともっと元気だったと言いました。彼の話を聞いて、私は自分のコミュニティの大きな変化を本当に実感しました。",
+          "vocabulary": [
+            {"word": "one weekend", "meaning": "ある週末"},
+            {"word": "decide to", "meaning": "～することに決める"},
+            {"word": "decided to", "meaning": "～することに決めた（過去形）"},
+            {"word": "help with", "meaning": "～を手伝う"},
+            {"word": "local", "meaning": "地元の"},
+            {"word": "event", "meaning": "イベント"},
+            {"word": "while", "meaning": "～している間に（接続詞）"},
+            {"word": "be talking to", "meaning": "～と話している（過去進行形）"},
+            {"word": "elderly", "meaning": "高齢の"},
+            {"word": "neighbor", "meaning": "近所の人"},
+            {"word": "say", "meaning": "言う"},
+            {"word": "said", "meaning": "言った（過去形）"},
+            {"word": "that", "meaning": "～ということ（接続詞）"},
+            {"word": "used to be", "meaning": "かつては～だった"},
+            {"word": "much", "meaning": "（比較級を強調して）ずっと"},
+            {"word": "energetic", "meaning": "元気な、活気のある"},
+            {"word": "more energetic", "meaning": "もっと元気な（比較級）"},
+            {"word": "hear", "meaning": "聞く"},
+            {"word": "hearing", "meaning": "聞くこと（動名詞）"},
+            {"word": "story", "meaning": "話、物語"},
+            {"word": "really", "meaning": "本当に"},
+            {"word": "realize", "meaning": "実感する、悟る"},
+            {"word": "realized", "meaning": "実感した（過去形）"},
+            {"word": "big", "meaning": "大きな"},
+            {"word": "change", "meaning": "変化"},
+            {"word": "community", "meaning": "コミュニティ、地域社会"}
+          ],
+          "targets": [
+            {"category": "Experience (体験)", "text": "地元のイベントでお年寄りの思い出話を聞き、町の大きな変化を実感した。", "keywords": ["local event", "talking to", "elderly neighbor", "used to be", "realized"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "I had an opportunity to volunteer at a community event recently. There, I had a conversation with an elderly resident who nostalgically <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='reminisce' data-ja='昔話を語る'>reminisced</span> about the old days. He described how vibrant the town once was, which made me truly understand the profound transformation the area had undergone.",
+          "readingJa": "最近、コミュニティのイベントでボランティアをする機会がありました。そこで、懐かしそうに昔話を語る高齢の住民と会話をしました。彼はかつて町がいかに活気に満ちていたかを説明し、それが私にこの地域が遂げた深い変貌を本当に理解させました。",
+          "vocabulary": [
+            {"word": "opportunity", "meaning": "機会"},
+            {"word": "to volunteer", "meaning": "ボランティアをする（不定詞の形容詞的用法）"},
+            {"word": "community", "meaning": "コミュニティ、地域"},
+            {"word": "event", "meaning": "イベント"},
+            {"word": "recently", "meaning": "最近"},
+            {"word": "there", "meaning": "そこで"},
+            {"word": "have a conversation with", "meaning": "～と会話をする"},
+            {"word": "elderly", "meaning": "高齢の"},
+            {"word": "resident", "meaning": "住民"},
+            {"word": "who", "meaning": "～な（関係代名詞）"},
+            {"word": "nostalgically", "meaning": "懐かしそうに、追憶にふけって"},
+            {"word": "reminisce", "meaning": "（古き良き日を）回想する、昔話を語る"},
+            {"word": "reminisced", "meaning": "回想した（過去形）"},
+            {"word": "about", "meaning": "～について"},
+            {"word": "old days", "meaning": "昔の日々、昔"},
+            {"word": "describe", "meaning": "～を描写する、説明する"},
+            {"word": "described", "meaning": "説明した（過去形）"},
+            {"word": "how", "meaning": "いかに、どれほど（間接疑問文）"},
+            {"word": "vibrant", "meaning": "活気に満ちた、鮮やかな"},
+            {"word": "once", "meaning": "かつて、かつては"},
+            {"word": "which", "meaning": "そしてそのことは（関係代名詞の前文受け）"},
+            {"word": "make + 人 + 動詞の原形", "meaning": "人に～させる"},
+            {"word": "make me truly understand", "meaning": "私に本当に理解させる"},
+            {"word": "truly", "meaning": "本当に"},
+            {"word": "understand", "meaning": "理解する"},
+            {"word": "profound", "meaning": "深い、重大な"},
+            {"word": "transformation", "meaning": "変貌、変化"},
+            {"word": "undergo", "meaning": "経験する、（変化などを）経る"},
+            {"word": "had undergone", "meaning": "経てきた（過去完了形）"}
+          ],
+          "targets": [
+            {"category": "Realization (実感)", "text": "ボランティア中に高齢住民の回想を聞き、町が遂げた深い変貌を理解した。", "keywords": ["volunteer", "elderly resident", "reminisced", "how vibrant", "profound transformation"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/story6_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "I want to make this town <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='lively' data-ja='にぎやかな'>lively</span> again. How can we bring people back? I am thinking hard. I want to do something for my town.",
+          "readingJa": "私はこの町をまたにぎやかにしたいです。どうすれば人々を戻すことができるでしょうか？私は一生懸命考えています。私は町のために何かしたいです。",
+          "vocabulary": [
+            {"word": "want to", "meaning": "～したい"},
+            {"word": "make + 物 + 形容詞", "meaning": "物を～な状態にする"},
+            {"word": "make this town lively", "meaning": "この町をにぎやかにする"},
+            {"word": "lively", "meaning": "にぎやかな"},
+            {"word": "again", "meaning": "また、再び"},
+            {"word": "how", "meaning": "どうやって、どのように"},
+            {"word": "can", "meaning": "～できる"},
+            {"word": "bring", "meaning": "連れてくる、持ってくる"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "back", "meaning": "戻って、後ろへ"},
+            {"word": "bring people back", "meaning": "人々を戻す"},
+            {"word": "thinking", "meaning": "考えている（現在進行形）"},
+            {"word": "hard", "meaning": "一生懸命に"},
+            {"word": "something", "meaning": "何か"},
+            {"word": "for", "meaning": "～のために"}
+          ],
+          "targets": [
+            {"category": "Action (行動意欲)", "text": "町を再び元気にしたいと考え、自分に何ができるか考え始めた。", "keywords": ["make lively", "bring people back", "thinking hard", "do something"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "I started to think about what I can do for my town. I want to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='bring together' data-ja='（人々を）集める'>bring</span> people <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='bring together' data-ja='（人々を）集める'>together</span> and make the community more active. It might be difficult, but I want to find a solution.",
+          "readingJa": "私は町のために何ができるかについて考え始めました。私は人々を集めて、コミュニティをもっと活発にしたいです。難しいかもしれませんが、解決策を見つけたいです。",
+          "vocabulary": [
+            {"word": "start to", "meaning": "～し始める"},
+            {"word": "started to", "meaning": "～し始めた（過去形）"},
+            {"word": "think about", "meaning": "～について考える"},
+            {"word": "what", "meaning": "何、何ができるか（間接疑問文）"},
+            {"word": "can", "meaning": "～できる"},
+            {"word": "do for", "meaning": "～のためにする"},
+            {"word": "want to", "meaning": "～したい"},
+            {"word": "bring", "meaning": "連れてくる"},
+            {"word": "together", "meaning": "一緒に"},
+            {"word": "bring together", "meaning": "集める、団結させる"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "make + 物 + 形容詞", "meaning": "物を～にする"},
+            {"word": "make the community more active", "meaning": "コミュニティをもっと活発にする"},
+            {"word": "community", "meaning": "コミュニティ"},
+            {"word": "active", "meaning": "活発な"},
+            {"word": "more active", "meaning": "もっと活発な（比較級）"},
+            {"word": "might", "meaning": "～かもしれない"},
+            {"word": "difficult", "meaning": "難しい"},
+            {"word": "find", "meaning": "見つける"},
+            {"word": "solution", "meaning": "解決策"}
+          ],
+          "targets": [
+            {"category": "Goal (目標)", "text": "人々を集めコミュニティを活発にするため、解決策を見つけたい。", "keywords": ["what I can do", "bring people together", "more active", "solution"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Now I am motivated to take action to revitalize our town. I need to brainstorm ways to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='attract' data-ja='惹きつける、呼び込む'>attract</span> new residents and create a vibrant environment where people of all generations can connect. I am determined to find what contribution I can make.",
+          "readingJa": "今、私は町を活性化するために行動を起こす意欲があります。新しい住民を呼び込み、あらゆる世代の人々がつながることができる活気ある環境を作り出す方法をブレインストーミングする必要があります。私は自分にどんな貢献ができるかを見つける決意をしています。",
+          "vocabulary": [
+            {"word": "now", "meaning": "今"},
+            {"word": "motivated", "meaning": "やる気になって、意欲を持って"},
+            {"word": "to take action", "meaning": "行動を起こす（不定詞の形容詞的用法）"},
+            {"word": "revitalize", "meaning": "活性化させる、再興する"},
+            {"word": "town", "meaning": "町"},
+            {"word": "need to", "meaning": "～する必要がある"},
+            {"word": "brainstorm", "meaning": "ブレインストーミングする、アイデアを出し合う"},
+            {"word": "way", "meaning": "方法"},
+            {"word": "to attract", "meaning": "惹きつける、呼び込む（不定詞の形容詞的用法）"},
+            {"word": "attract", "meaning": "（人を）惹きつける、呼び込む"},
+            {"word": "new", "meaning": "新しい"},
+            {"word": "resident", "meaning": "住民"},
+            {"word": "create", "meaning": "作り出す"},
+            {"word": "vibrant", "meaning": "活気のある"},
+            {"word": "environment", "meaning": "環境"},
+            {"word": "where", "meaning": "～な（関係副詞）"},
+            {"word": "people of all generations", "meaning": "全世代の人々、あらゆる世代の人"},
+            {"word": "can", "meaning": "～できる"},
+            {"word": "connect", "meaning": "つながる"},
+            {"word": "determined", "meaning": "決意して、固く心に決めて"},
+            {"word": "find", "meaning": "見つける"},
+            {"word": "what", "meaning": "どのような、何の（疑問形容詞）"},
+            {"word": "contribution", "meaning": "貢献"},
+            {"word": "I can make", "meaning": "私ができる（関係代名詞の目的格省略）"},
+            {"word": "make a contribution", "meaning": "貢献する"}
+          ],
+          "targets": [
+            {"category": "Resolution (決意)", "text": "町活性化のため、新住民誘致や全世代交流の方法を考え、貢献したい。", "keywords": ["motivated", "revitalize", "attract new residents", "all generations connect", "contribution"]}
+          ]
+        }
+      }
+    }
+  ]
+}
