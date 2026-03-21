@@ -1,0 +1,133 @@
+{
+  "id": "theme_352",
+  "imageSrc": "assets/images/352.webp",
+  "description": "キッチンで料理をする子供たちと見守る女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "kitchen", "ja": "キッチン、台所", "category": "detail"},
+        {"text": "carrot", "ja": "ニンジン", "category": "object"},
+        {"text": "onion", "ja": "玉ねぎ", "category": "object"},
+        {"text": "knife", "ja": "包丁、ナイフ", "category": "object"},
+        {"text": "bowl", "ja": "ボウル", "category": "object"},
+        {"text": "apron", "ja": "エプロン", "category": "object"},
+        {"text": "table", "ja": "テーブル", "category": "object"},
+        {"text": "cook", "ja": "料理する", "category": "gist"},
+        {"text": "cut", "ja": "切る", "category": "gist"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "in the kitchen", "ja": "キッチンで", "category": "detail"},
+        {"text": "cut a carrot", "ja": "ニンジンを切る", "category": "gist"},
+        {"text": "cook food", "ja": "食べ物を料理する", "category": "gist"},
+        {"text": "a red shirt", "ja": "赤いシャツ", "category": "attribute"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a white apron", "ja": "白いエプロン", "category": "attribute"},
+        {"text": "look happy", "ja": "楽しそうに見える", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
+        {"text": "They are in a kitchen.", "grammar": "be動詞", "ja": "彼らはキッチンにいます。", "category": "detail"},
+        {"text": "The boy cuts a carrot.", "grammar": "一般動詞", "ja": "男の子がニンジンを切ります。", "category": "gist"},
+        {"text": "The woman is happy.", "grammar": "be動詞", "ja": "女性は嬉しそうです。", "category": "inference"},
+        {"text": "This is an onion.", "grammar": "This is~", "ja": "これは玉ねぎです。", "category": "object"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "mother", "ja": "母親", "category": "object"},
+        {"text": "children", "ja": "子供たち", "category": "object"},
+        {"text": "vegetable", "ja": "野菜", "category": "object"},
+        {"text": "cutting board", "ja": "まな板", "category": "object"},
+        {"text": "stove", "ja": "コンロ", "category": "object"},
+        {"text": "sink", "ja": "シンク、流し", "category": "object"},
+        {"text": "cabinet", "ja": "戸棚、キャビネット", "category": "object"},
+        {"text": "counter", "ja": "カウンター、調理台", "category": "detail"},
+        {"text": "slice", "ja": "薄く切る", "category": "gist"},
+        {"text": "prepare", "ja": "準備する", "category": "gist"},
+        {"text": "watch", "ja": "見る、見守る", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "together", "ja": "一緒に", "category": "inference"},
+        {"text": "help", "ja": "手伝う", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "preparing a meal", "ja": "食事の準備をしている", "category": "gist"},
+        {"text": "slicing vegetables", "ja": "野菜を切っている", "category": "gist"},
+        {"text": "holding a knife", "ja": "包丁を持っている", "category": "gist"},
+        {"text": "standing at the counter", "ja": "カウンターの前に立っている", "category": "detail"},
+        {"text": "watching the children", "ja": "子供たちを見守っている", "category": "gist"},
+        {"text": "wearing an apron", "ja": "エプロンを着ている", "category": "attribute"},
+        {"text": "on the cutting board", "ja": "まな板の上で", "category": "detail"},
+        {"text": "cooking together", "ja": "一緒に料理している", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "There are three people in the kitchen.", "grammar": "There is/are~", "ja": "キッチンに3人の人がいます。", "category": "detail"},
+        {"text": "The children are slicing vegetables with knives.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "子供たちは包丁で野菜を切っています。", "category": "gist"},
+        {"text": "The boy is wearing a blue shirt and a yellow apron.", "grammar": "現在進行形", "ja": "男の子は青いシャツと黄色いエプロンを着ています。", "category": "attribute"},
+        {"text": "A woman is watching them happily.", "grammar": "現在進行形 / 副詞", "ja": "女性が彼らを楽しそうに見守っています。", "category": "inference"},
+        {"text": "They have some carrots and onions on the table.", "grammar": "have / 場所を表す前置詞", "ja": "彼らはテーブルの上にいくつかのニンジンと玉ねぎを持っています。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "ingredient", "ja": "材料、食材", "category": "object"},
+        {"text": "culinary", "ja": "料理の", "category": "attribute"},
+        {"text": "chop", "ja": "（食材を）刻む、切る", "category": "gist"},
+        {"text": "dice", "ja": "賽の目に切る", "category": "gist"},
+        {"text": "supervise", "ja": "監督する、見守る", "category": "gist"},
+        {"text": "instruct", "ja": "指導する", "category": "gist"},
+        {"text": "assist", "ja": "手伝う、補助する", "category": "gist"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "domestic", "ja": "家庭の", "category": "attribute"},
+        {"text": "modern", "ja": "現代的な", "category": "attribute"},
+        {"text": "appliance", "ja": "家電製品", "category": "object"},
+        {"text": "countertop", "ja": "調理台", "category": "detail"},
+        {"text": "focused", "ja": "集中した", "category": "inference"},
+        {"text": "delightful", "ja": "楽しい、喜ばしい", "category": "inference"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "chopping ingredients", "ja": "食材を刻んでいる", "category": "gist"},
+        {"text": "supervising the children", "ja": "子供たちを見守っている", "category": "gist"},
+        {"text": "focusing on cooking", "ja": "料理に集中している", "category": "inference"},
+        {"text": "a modern domestic kitchen", "ja": "現代的な家庭のキッチン", "category": "detail"},
+        {"text": "learning culinary skills", "ja": "料理のスキルを学んでいる", "category": "gist"},
+        {"text": "assisting with dinner", "ja": "夕食の手伝いをしている", "category": "gist"},
+        {"text": "a delightful atmosphere", "ja": "楽しい雰囲気", "category": "inference"},
+        {"text": "preparing a healthy meal", "ja": "健康的な食事を準備している", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the children are learning how to cook in the kitchen.", "grammar": "It looks like~ / 疑問詞+to不定詞", "ja": "子供たちはキッチンで料理の仕方を学んでいるようです。", "category": "inference"},
+        {"text": "The woman who is standing on the right is supervising them.", "grammar": "関係代名詞 (who)", "ja": "右に立っている女性が彼らを監督しています。", "category": "gist"},
+        {"text": "They are carefully chopping carrots because they want to make a healthy meal.", "grammar": "接続詞 (because) / 不定詞の名詞的用法", "ja": "彼らは健康的な食事を作りたいので、注意深くニンジンを刻んでいます。", "category": "gist"},
+        {"text": "We can see some fresh ingredients like onions and carrots on the countertop.", "grammar": "助動詞 (can) / 前置詞 (like)", "ja": "調理台の上に、玉ねぎやニンジンのような新鮮な食材がいくつか見えます。", "category": "detail"},
+        {"text": "The children seem to be enjoying the cooking task together.", "grammar": "seem to be ~ing", "ja": "子供たちは一緒に料理の作業を楽しんでいるようです。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "girl": { "x": 20, "y": 40 },
+    "boy": { "x": 48, "y": 40 },
+    "woman": { "x": 80, "y": 40 },
+    "cutting_board_left": { "x": 28, "y": 78 },
+    "cutting_board_right": { "x": 55, "y": 72 },
+    "carrot": { "x": 32, "y": 90 },
+    "knife_girl": { "x": 30, "y": 75 },
+    "knife_boy": { "x": 52, "y": 66 },
+    "onion": { "x": 62, "y": 80 },
+    "bowl": { "x": 72, "y": 75 },
+    "stove": { "x": 5, "y": 55 },
+    "kitchen_tools": { "x": 8, "y": 20 },
+    "sink": { "x": 95, "y": 38 }
+  }
+}

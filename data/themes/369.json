@@ -1,0 +1,125 @@
+{
+  "id": "theme_369",
+  "imageSrc": "assets/images/369.webp",
+  "description": "プールでクロールで泳ぐ少年たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "pool", "ja": "プール", "category": "object"},
+        {"text": "water", "ja": "水", "category": "object"},
+        {"text": "cap", "ja": "帽子", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "foot", "ja": "足", "category": "object"},
+        {"text": "head", "ja": "頭", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "fast", "ja": "速く", "category": "attribute"},
+        {"text": "four", "ja": "4（人）", "category": "attribute"},
+        {"text": "swim", "ja": "泳ぐ", "category": "gist"},
+        {"text": "splash", "ja": "水をはねかす", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "four boys", "ja": "4人の男の子", "category": "object"},
+        {"text": "in the pool", "ja": "プールの中で", "category": "detail"},
+        {"text": "swim fast", "ja": "速く泳ぐ", "category": "gist"},
+        {"text": "blue water", "ja": "青い水", "category": "attribute"},
+        {"text": "a yellow cap", "ja": "黄色い帽子", "category": "object"},
+        {"text": "a green cap", "ja": "緑の帽子", "category": "object"},
+        {"text": "blue caps", "ja": "青い帽子", "category": "object"},
+        {"text": "splash water", "ja": "水をはねかす", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see four boys.", "grammar": "I see~", "ja": "4人の男の子が見えます。", "category": "object"},
+        {"text": "They are in a pool.", "grammar": "be動詞", "ja": "彼らはプールにいます。", "category": "detail"},
+        {"text": "They swim fast.", "grammar": "一般動詞", "ja": "彼らは速く泳ぎます。", "category": "gist"},
+        {"text": "The water is blue.", "grammar": "be動詞", "ja": "水は青いです。", "category": "attribute"},
+        {"text": "The boy has a yellow cap.", "grammar": "have", "ja": "その男の子は黄色い帽子を被っています。", "category": "attribute"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "swimmer", "ja": "水泳選手", "category": "object"},
+        {"text": "race", "ja": "レース", "category": "inference"},
+        {"text": "lane", "ja": "コース、レーン", "category": "detail"},
+        {"text": "rope", "ja": "ロープ", "category": "object"},
+        {"text": "ladder", "ja": "はしご", "category": "object"},
+        {"text": "block", "ja": "飛び込み台", "category": "object"},
+        {"text": "line", "ja": "線", "category": "object"},
+        {"text": "breathe", "ja": "息継ぎをする", "category": "gist"},
+        {"text": "try", "ja": "努力する、挑戦する", "category": "gist"},
+        {"text": "wear", "ja": "着ている", "category": "gist"},
+        {"text": "competitive", "ja": "競争の激しい", "category": "inference"},
+        {"text": "hard", "ja": "一生懸命に", "category": "attribute"},
+        {"text": "colorful", "ja": "カラフルな", "category": "attribute"},
+        {"text": "indoor", "ja": "屋内の", "category": "detail"},
+        {"text": "surface", "ja": "表面", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "swimming in the pool", "ja": "プールで泳いでいる", "category": "gist"},
+        {"text": "wearing a swim cap", "ja": "水泳帽を被っている", "category": "gist"},
+        {"text": "breathing air", "ja": "息継ぎをしている", "category": "gist"},
+        {"text": "a swimming race", "ja": "水泳のレース", "category": "inference"},
+        {"text": "splashing water", "ja": "水をはねかしている", "category": "gist"},
+        {"text": "colorful ropes", "ja": "カラフルなロープ", "category": "attribute"},
+        {"text": "trying hard", "ja": "一生懸命頑張っている", "category": "gist"},
+        {"text": "swimming fast", "ja": "速く泳いでいる", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "Four swimmers are swimming in the pool.", "grammar": "現在進行形", "ja": "4人の水泳選手がプールで泳いでいます。", "category": "gist"},
+        {"text": "They are wearing swim caps.", "grammar": "現在進行形", "ja": "彼らは水泳帽を被っています。", "category": "gist"},
+        {"text": "The boy with a green cap is swimming fast.", "grammar": "前置詞 (with) / 現在進行形", "ja": "緑の帽子を被った男の子が速く泳いでいます。", "category": "attribute"},
+        {"text": "They are trying hard in a race.", "grammar": "現在進行形", "ja": "彼らはレースで一生懸命頑張っています。", "category": "inference"},
+        {"text": "There are ropes in the pool.", "grammar": "There is/are~", "ja": "プールにはロープがあります。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "freestyle", "ja": "自由形", "category": "inference"},
+        {"text": "crawl", "ja": "クロール", "category": "gist"},
+        {"text": "tournament", "ja": "大会、トーナメント", "category": "inference"},
+        {"text": "compete", "ja": "競争する", "category": "gist"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "athletic", "ja": "運動の、アスリートの", "category": "attribute"},
+        {"text": "energetic", "ja": "エネルギッシュな", "category": "attribute"},
+        {"text": "intense", "ja": "激しい、白熱した", "category": "inference"},
+        {"text": "divide", "ja": "分ける", "category": "gist"},
+        {"text": "vigorously", "ja": "力強く", "category": "attribute"},
+        {"text": "advance", "ja": "前進する", "category": "gist"},
+        {"text": "overtake", "ja": "追い抜く", "category": "gist"},
+        {"text": "focus", "ja": "集中する", "category": "inference"},
+        {"text": "maintain", "ja": "維持する", "category": "gist"},
+        {"text": "technique", "ja": "技術", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "participating in a swimming tournament", "ja": "水泳大会に参加している", "category": "inference"},
+        {"text": "competing against each other", "ja": "互いに競争している", "category": "gist"},
+        {"text": "doing the front crawl", "ja": "クロールをしている", "category": "gist"},
+        {"text": "swimming the freestyle", "ja": "自由形を泳いでいる", "category": "inference"},
+        {"text": "an intense race", "ja": "白熱したレース", "category": "inference"},
+        {"text": "energetic swimmers", "ja": "エネルギッシュなスイマーたち", "category": "attribute"},
+        {"text": "dividing the lanes", "ja": "レーンを分けている", "category": "detail"},
+        {"text": "splashing water vigorously", "ja": "力強く水しぶきを上げている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the energetic students are competing in a swimming race.", "grammar": "It looks like~", "ja": "エネルギッシュな生徒たちが水泳のレースで競っているようです。", "category": "inference"},
+        {"text": "They are doing the front crawl, which is a very fast swimming style.", "grammar": "関係代名詞 (非制限用法)", "ja": "彼らはクロールをしていますが、それはとても速い泳ぎ方です。", "category": "gist"},
+        {"text": "The boy who is wearing a yellow cap is breathing to his right.", "grammar": "関係代名詞 (who)", "ja": "黄色い帽子を被っている男の子は右側に息継ぎをしています。", "category": "detail"},
+        {"text": "We can see colorful ropes dividing the lanes in the indoor pool.", "grammar": "現在分詞の形容詞的用法", "ja": "屋内プールのレーンを分けるカラフルなロープが見えます。", "category": "detail"},
+        {"text": "They are swimming vigorously because they want to win the race.", "grammar": "接続詞 (because)", "ja": "彼らはレースに勝ちたいので、力強く泳いでいます。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 40, "y": 80 },
+    "swimmer": { "x": 20, "y": 50 },
+    "cap": { "x": 53, "y": 48 },
+    "water": { "x": 80, "y": 80 },
+    "rope": { "x": 50, "y": 42 },
+    "ladder": { "x": 70, "y": 15 },
+    "block": { "x": 88, "y": 18 }
+  }
+}

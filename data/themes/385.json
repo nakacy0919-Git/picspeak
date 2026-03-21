@@ -1,0 +1,151 @@
+{
+  "id": "theme_385",
+  "imageSrc": "assets/images/385.webp",
+  "description": "実験中の生徒たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "child", "ja": "子供", "category": "object"},
+        {"text": "suit", "ja": "防護服、つなぎ", "category": "object"},
+        {"text": "hat", "ja": "ヘルメット、帽子", "category": "object"},
+        {"text": "wood", "ja": "木材、木", "category": "object"},
+        {"text": "plank", "ja": "板、厚板", "category": "object"},
+        {"text": "nail", "ja": "釘", "category": "object"},
+        {"text": "hammer", "ja": "ハンマー、金槌", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "tree", "ja": "木、立木", "category": "object"},
+        {"text": "sky", "ja": "空", "category": "detail"},
+        {"text": "wall", "ja": "壁、塀", "category": "object"},
+        {"text": "paper", "ja": "紙、図面", "category": "object"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "use", "ja": "使う", "category": "gist"},
+        {"text": "work", "ja": "働く、作業する", "category": "gist"},
+        {"text": "build", "ja": "建てる、作る", "category": "gist"},
+        {"text": "many", "ja": "たくさんの、多くの", "category": "attribute"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "hard", "ja": "硬い、一生懸命に", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "many children", "ja": "たくさんの子供たち", "category": "object"},
+        {"text": "white suits", "ja": "白い防護服", "category": "attribute"},
+        {"text": "yellow hats", "ja": "黄色いヘルメット", "category": "object"},
+        {"text": "blue hat", "ja": "青いヘルメット", "category": "object"},
+        {"text": "use a hammer", "ja": "ハンマーを使う", "category": "gist"},
+        {"text": "work hard", "ja": "一生懸命働く", "category": "gist"},
+        {"text": "build a house", "ja": "家を建てる", "category": "inference"},
+        {"text": "many trees", "ja": "たくさんの木々", "category": "detail"},
+        {"text": "on the paper", "ja": "紙の上に", "category": "detail"},
+        {"text": "look happy", "ja": "楽しそうに見える", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。", "category": "object"},
+        {"text": "They build something.", "grammar": "一般動詞", "ja": "彼らは何かを建てています。", "category": "gist"},
+        {"text": "She uses a hammer.", "grammar": "一般動詞", "ja": "彼女はハンマーを使っています。", "category": "gist"},
+        {"text": "A boy has a blue hat.", "grammar": "have", "ja": "男の子が青いヘルメットを持っています。", "category": "attribute"},
+        {"text": "There are many trees.", "grammar": "There is/are~", "ja": "たくさんの木があります。", "category": "object"},
+        {"text": "They are working hard.", "grammar": "現在進行形", "ja": "彼らは一生懸命働いています。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "construction", "ja": "建設、工事", "category": "inference"},
+        {"text": "worker", "ja": "作業員、労働者", "category": "inference"},
+        {"text": "hard hat", "ja": "安全ヘルメット", "category": "object"},
+        {"text": "protective", "ja": "保護用の、防護の", "category": "attribute"},
+        {"text": "coverall", "ja": "カバーオール、つなぎ", "category": "object"},
+        {"text": "structure", "ja": "構造物、建築物", "category": "object"},
+        {"text": "material", "ja": "材料、資材", "category": "object"},
+        {"text": "fastener", "ja": "留め具、釘など", "category": "object"},
+        {"text": "activity", "ja": "活動、作業", "category": "inference"},
+        {"text": "cooperate", "ja": "協力する", "category": "gist"},
+        {"text": "supervise", "ja": "監督する、管理する", "category": "gist"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "instruct", "ja": "指導する、指示する", "category": "gist"},
+        {"text": "observe", "ja": "観察する、見る", "category": "gist"},
+        {"text": "focused", "ja": "集中した", "category": "inference"},
+        {"text": "outdoor", "ja": "屋外の、戸外の", "category": "detail"},
+        {"text": "busy", "ja": "忙しい、活気がある", "category": "inference"},
+        {"text": "together", "ja": "一緒に、共に", "category": "detail"},
+        {"text": "learning", "ja": "学習、学び", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "participating in a construction activity", "ja": "建設活動に参加している", "category": "inference"},
+        {"text": "wearing hard hats and protective coveralls", "ja": "安全ヘルメットと防護服を着用している", "category": "gist"},
+        {"text": "using tools like hammers and nails", "ja": "ハンマーや釘のような道具を使っている", "category": "gist"},
+        {"text": "cooperating to build a structure", "ja": "構造物を建てるために協力している", "category": "inference"},
+        {"text": "supervising the children's work", "ja": "子供たちの作業を監督している", "category": "gist"},
+        {"text": "holding a piece of paper", "ja": "一枚の紙を持っている", "category": "detail"},
+        {"text": "sitting and watching", "ja": "座って見ている", "category": "gist"},
+        {"text": "focused on the task", "ja": "課題に集中している", "category": "inference"},
+        {"text": "many wooden planks and beams", "ja": "たくさんの木の板や梁", "category": "object"}
+      ],
+      "sentences": [
+        {"text": "Children in hard hats and coveralls are building a wooden structure.", "grammar": "現在進行形", "ja": "ヘルメットとつなぎを着た子供たちが木の構造物を建てています。", "category": "gist"},
+        {"text": "Some adults are nearby to supervise and instruct them.", "grammar": "不定詞の副詞的用法", "ja": "近くに大人が数人いて、彼らを監督し指導しています。", "category": "gist"},
+        {"text": "The children use tools like hammers and nails diligently.", "grammar": "一般動詞 / 副詞", "ja": "子供たちはハンマーや釘のような道具を熱心に使っています。", "category": "gist"},
+        {"text": "They cooperating together to build something large.", "grammar": "現在進行形 / 副詞", "ja": "彼らは大きなものを建てるために一緒に協力しています。", "category": "inference"},
+        {"text": "In the background, there are many trees and a building.", "grammar": "There is/are~ / 場所を表す前置詞句", "ja": "背景にはたくさんの木と建物があります。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "craftsmanship", "ja": "職人技、技能", "category": "inference"},
+        {"text": "collaboration", "ja": "コラボレーション、協力", "category": "inference"},
+        {"text": "architecture", "ja": "建築物、構造", "category": "object"},
+        {"text": "engineering", "ja": "工学、エンジニアリング", "category": "inference"},
+        {"text": "blueprint", "ja": "設計図、青写真", "category": "object"},
+        {"text": "protective gear", "ja": "保護具", "category": "object"},
+        {"text": "fasten", "ja": "留める、固定する", "category": "gist"},
+        {"text": "assemble", "ja": "組み立てる、集める", "category": "gist"},
+        {"text": "supervision", "ja": "監督、管理", "category": "gist"},
+        {"text": "instruction", "ja": "指示、指導", "category": "gist"},
+        {"text": "participation", "ja": "参加、関与", "category": "gist"},
+        {"text": "enthusiastic", "ja": "熱心な、やる気のある", "category": "inference"},
+        {"text": "meticulous", "ja": "細心の、注意深い", "category": "inference"},
+        {"text": "complex", "ja": "複雑な", "category": "inference"},
+        {"text": "vibrant", "ja": "活気のある、鮮やかな", "category": "inference"},
+        {"text": "learning by doing", "ja": "実践して学ぶ", "category": "inference"},
+        {"text": "cooperative learning", "ja": "協働学習", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "collaborating to build a structure", "ja": "構造物を建てるために協力している", "category": "inference"},
+        {"text": "wearing full protective gear", "ja": "完全な保護具を着用している", "category": "gist"},
+        {"text": "fastening wooden planks with nails", "ja": "釘で木の板を固定している", "category": "gist"},
+        {"text": "under the meticulous supervision of adults", "ja": "大人の細心の監督の下で", "category": "gist"},
+        {"text": "inspecting a blueprint or instruction sheet", "ja": "設計図または指示書を点検している", "category": "detail"},
+        {"text": "displaying great enthusiasm for the project", "ja": "プロジェクトに対する素晴らしい熱意を示している", "category": "inference"},
+        {"text": "learning valuable construction and cooperative skills", "ja": "貴重な建設技術と協調性を学んでいる", "category": "inference"},
+        {"text": "an energetic and complex building activity", "ja": "活気があり複雑な建築活動", "category": "inference"},
+        {"text": "many trees and a building in the background", "ja": "背景にあるたくさんの木と建物", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It seems that the children are participating in a hands-on construction activity, learning valuable skills.", "grammar": "It seems that~ / 分詞構文", "ja": "子供たちは実践的な建設活動に参加し、貴重なスキルを学んでいるようです。", "category": "inference"},
+        {"text": "They are carefully assembling a wooden structure while wearing protective coveralls and hard hats.", "grammar": "現在進行形 / 接続詞 (while) / 現在分詞", "ja": "彼らは防護服とヘルメットを着用しながら、木の構造物を注意深く組み立てています。", "category": "gist"},
+        {"text": "An adult is closely observing a boy while another holds a paper, perhaps a blueprint or instruction sheet.", "grammar": "現在進行形 / 接続詞 (while) / 現在分詞 / 助動詞 (perhaps)", "ja": "一人の大人が男の子を注意深く観察しており、もう一人の大人が紙（おそらく設計図か指示書）を持っています。", "category": "gist"},
+        {"text": "Many other children and adults are actively involved in this busy outdoor workshop.", "grammar": "受動態的表現 (be involved in) / 形容詞", "ja": "他の多くの子供や大人が、この活気のある屋外ワークショップに積極的に参加しています。", "category": "inference"},
+        {"text": "A beautiful natural background with many trees contrasts with the artificial construction site.", "grammar": "一般動詞 / 前置詞句", "ja": "たくさんの木がある美しい自然の背景が、人工的な建設現場と対照をなしています。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "girl": { "x": 30, "y": 45 },
+    "boy": { "x": 48, "y": 42 },
+    "hard hat": { "x": 15, "y": 65 },
+    "coverall": { "x": 30, "y": 50 },
+    "plank": { "x": 42, "y": 78 },
+    "nail": { "x": 24, "y": 45 },
+    "hammer": { "x": 35, "y": 62 },
+    "tree": { "x": 10, "y": 25 },
+    "paper": { "x": 65, "y": 55 },
+    "building": { "x": 50, "y": 15 },
+    "adult": { "x": 78, "y": 35 },
+    "shoe": { "x": 18, "y": 85 }
+  }
+}

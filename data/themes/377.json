@@ -1,0 +1,130 @@
+{
+  "id": "theme_377",
+  "imageSrc": "assets/images/377.webp",
+  "description": "動物保護施設で犬とボウルを洗う少年たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "dog", "ja": "犬", "category": "object"},
+        {"text": "cage", "ja": "ケージ、檻", "category": "object"},
+        {"text": "brush", "ja": "ブラシ", "category": "object"},
+        {"text": "hose", "ja": "ホース", "category": "object"},
+        {"text": "water", "ja": "水", "category": "object"},
+        {"text": "bowl", "ja": "ボウル", "category": "object"},
+        {"text": "sink", "ja": "シンク、流し", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "brown", "ja": "茶色い", "category": "attribute"},
+        {"text": "wet", "ja": "濡れた", "category": "attribute"},
+        {"text": "wash", "ja": "洗う", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "two boys", "ja": "2人の男の子", "category": "object"},
+        {"text": "a brown dog", "ja": "茶色い犬", "category": "object"},
+        {"text": "a green shirt", "ja": "緑のシャツ", "category": "attribute"},
+        {"text": "a red shirt", "ja": "赤いシャツ", "category": "attribute"},
+        {"text": "wash the dog", "ja": "犬を洗う", "category": "gist"},
+        {"text": "wash the bowl", "ja": "ボウルを洗う", "category": "gist"},
+        {"text": "in the cage", "ja": "ケージの中で", "category": "detail"},
+        {"text": "with water", "ja": "水を使って", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see two boys and a dog.", "grammar": "I see~", "ja": "2人の男の子と1匹の犬が見えます。", "category": "object"},
+        {"text": "The dog is in the cage.", "grammar": "be動詞", "ja": "犬はケージの中にいます。", "category": "detail"},
+        {"text": "The boy washes the dog.", "grammar": "一般動詞", "ja": "男の子が犬を洗います。", "category": "gist"},
+        {"text": "He has a brush.", "grammar": "have", "ja": "彼はブラシを持っています。", "category": "object"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "shelter", "ja": "保護施設、シェルター", "category": "detail"},
+        {"text": "volunteer", "ja": "ボランティア", "category": "inference"},
+        {"text": "animal", "ja": "動物", "category": "object"},
+        {"text": "faucet", "ja": "蛇口", "category": "object"},
+        {"text": "mirror", "ja": "鏡", "category": "object"},
+        {"text": "soap", "ja": "石鹸", "category": "object"},
+        {"text": "clean", "ja": "きれいにする、掃除する", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "run", "ja": "（水が）流れる", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "inference"},
+        {"text": "help", "ja": "手伝う、助ける", "category": "gist"},
+        {"text": "together", "ja": "一緒に", "category": "detail"},
+        {"text": "inside", "ja": "〜の内側に", "category": "detail"},
+        {"text": "metal", "ja": "金属の", "category": "attribute"},
+        {"text": "friendly", "ja": "人懐っこい", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "in the animal shelter", "ja": "動物保護施設で", "category": "detail"},
+        {"text": "working as volunteers", "ja": "ボランティアとして働いている", "category": "inference"},
+        {"text": "holding a hose", "ja": "ホースを持っている", "category": "gist"},
+        {"text": "washing a friendly dog", "ja": "人懐っこい犬を洗っている", "category": "gist"},
+        {"text": "cleaning a metal bowl", "ja": "金属のボウルを洗っている", "category": "gist"},
+        {"text": "water from the faucet", "ja": "蛇口からの水", "category": "object"},
+        {"text": "inside the cage", "ja": "ケージの内側に", "category": "detail"},
+        {"text": "smiling happily", "ja": "楽しそうに微笑んでいる", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "Two boys are helping at an animal shelter.", "grammar": "現在進行形", "ja": "2人の少年が動物保護施設でお手伝いをしています。", "category": "inference"},
+        {"text": "The boy in green is washing the dog with a brush.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "緑の服の少年はブラシで犬を洗っています。", "category": "gist"},
+        {"text": "The dog in the cage looks wet and happy.", "grammar": "look + 形容詞", "ja": "ケージの中の犬は濡れていて嬉しそうに見えます。", "category": "inference"},
+        {"text": "The other boy is cleaning a bowl in the sink.", "grammar": "現在進行形", "ja": "もう一人の少年はシンクでボウルを洗っています。", "category": "gist"},
+        {"text": "Water is running from the faucet.", "grammar": "現在進行形", "ja": "蛇口から水が流れています。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "facility", "ja": "施設", "category": "detail"},
+        {"text": "enclosure", "ja": "囲い、ケージ", "category": "object"},
+        {"text": "canine", "ja": "犬", "category": "object"},
+        {"text": "equipment", "ja": "備品、道具", "category": "object"},
+        {"text": "container", "ja": "容器", "category": "object"},
+        {"text": "dispenser", "ja": "ディスペンサー", "category": "object"},
+        {"text": "sanitize", "ja": "消毒する、清潔にする", "category": "gist"},
+        {"text": "rinse", "ja": "すすぐ", "category": "gist"},
+        {"text": "scrub", "ja": "ごしごし洗う", "category": "gist"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "dedicated", "ja": "熱心な、献身的な", "category": "attribute"},
+        {"text": "diligent", "ja": "勤勉な、真面目な", "category": "attribute"},
+        {"text": "hygiene", "ja": "衛生", "category": "inference"},
+        {"text": "rewarding", "ja": "やりがいのある", "category": "inference"},
+        {"text": "stainless", "ja": "ステンレスの", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "volunteering at an animal facility", "ja": "動物施設でボランティアをしている", "category": "inference"},
+        {"text": "scrubbing the dog's fur", "ja": "犬の毛をこすり洗いしている", "category": "gist"},
+        {"text": "rinsing with fresh water", "ja": "新鮮な水ですすいでいる", "category": "gist"},
+        {"text": "inside the metal enclosure", "ja": "金属製の囲いの中で", "category": "detail"},
+        {"text": "sanitizing the feeding containers", "ja": "餌用の容器を清潔にしている", "category": "gist"},
+        {"text": "maintaining good hygiene", "ja": "良好な衛生状態を保っている", "category": "inference"},
+        {"text": "looking diligent and dedicated", "ja": "真面目で熱心に見える", "category": "inference"},
+        {"text": "doing a rewarding job", "ja": "やりがいのある仕事をしている", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "It looks like the boys are participating in volunteer work at an animal facility.", "grammar": "It looks like~", "ja": "少年たちは動物施設でのボランティア活動に参加しているようです。", "category": "inference"},
+        {"text": "The boy who is wearing a green shirt is carefully scrubbing the canine.", "grammar": "関係代名詞 (who) / 現在進行形", "ja": "緑のシャツを着ている少年は、注意深く犬をこすり洗いしています。", "category": "gist"},
+        {"text": "The dog inside the metal enclosure seems to be enjoying the bath.", "grammar": "seem to be ~ing", "ja": "金属製の囲いの中にいる犬は、お風呂を楽しんでいるようです。", "category": "inference"},
+        {"text": "To maintain good hygiene, the other boy is diligently rinsing a stainless bowl.", "grammar": "不定詞の副詞的用法", "ja": "良好な衛生状態を保つために、もう一人の少年はステンレスのボウルを熱心にすすいでいます。", "category": "gist"},
+        {"text": "Because they love animals, they find this activity very rewarding.", "grammar": "接続詞 (because) / find O C", "ja": "彼らは動物が好きなので、この活動にとてもやりがいを感じています。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "kid": { "x": 38, "y": 35 },
+    "boy": { "x": 68, "y": 45 },
+    "dog": { "x": 15, "y": 60 },
+    "cage": { "x": 10, "y": 30 },
+    "brush": { "x": 24, "y": 45 },
+    "hose": { "x": 34, "y": 52 },
+    "water": { "x": 25, "y": 90 },
+    "bowl": { "x": 86, "y": 65 },
+    "sink": { "x": 88, "y": 75 },
+    "faucet": { "x": 93, "y": 50 },
+    "dispenser": { "x": 86, "y": 35 },
+    "mirror": { "x": 96, "y": 20 }
+  }
+}

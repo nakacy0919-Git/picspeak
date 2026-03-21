@@ -1,0 +1,130 @@
+{
+  "id": "theme_375",
+  "imageSrc": "assets/images/375.webp",
+  "description": "和室で茶道のお点前をする女性たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "kimono", "ja": "着物", "category": "object"},
+        {"text": "room", "ja": "部屋", "category": "object"},
+        {"text": "cup", "ja": "茶碗、カップ", "category": "object"},
+        {"text": "tea", "ja": "お茶", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "floor", "ja": "床", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "make", "ja": "作る", "category": "gist"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "three women", "ja": "3人の女性", "category": "object"},
+        {"text": "a blue kimono", "ja": "青い着物", "category": "attribute"},
+        {"text": "a pink kimono", "ja": "ピンクの着物", "category": "attribute"},
+        {"text": "a green kimono", "ja": "緑の着物", "category": "attribute"},
+        {"text": "a Japanese room", "ja": "和室", "category": "detail"},
+        {"text": "make tea", "ja": "お茶をたてる", "category": "gist"},
+        {"text": "sit on the floor", "ja": "床に座る", "category": "detail"},
+        {"text": "look at", "ja": "〜を見る", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see three women.", "grammar": "I see~", "ja": "3人の女性が見えます。", "category": "object"},
+        {"text": "They wear kimonos.", "grammar": "一般動詞", "ja": "彼女たちは着物を着ています。", "category": "gist"},
+        {"text": "The woman has a cup.", "grammar": "have", "ja": "その女性は茶碗を持っています。", "category": "object"},
+        {"text": "They sit on the floor.", "grammar": "一般動詞 / 場所を表す前置詞", "ja": "彼女たちは床に座っています。", "category": "detail"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼女たちは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "ceremony", "ja": "儀式、式", "category": "inference"},
+        {"text": "master", "ja": "先生、師匠", "category": "object"},
+        {"text": "student", "ja": "生徒", "category": "object"},
+        {"text": "bowl", "ja": "茶碗、ボウル", "category": "object"},
+        {"text": "traditional", "ja": "伝統的な", "category": "attribute"},
+        {"text": "Japanese", "ja": "日本の", "category": "attribute"},
+        {"text": "tatami", "ja": "畳", "category": "object"},
+        {"text": "mat", "ja": "マット", "category": "object"},
+        {"text": "wipe", "ja": "拭く", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "watch", "ja": "見る、見守る", "category": "gist"},
+        {"text": "learn", "ja": "学ぶ", "category": "inference"},
+        {"text": "quiet", "ja": "静かな", "category": "attribute"},
+        {"text": "front", "ja": "前", "category": "detail"},
+        {"text": "center", "ja": "中央", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "Japanese tea ceremony", "ja": "日本の茶道", "category": "inference"},
+        {"text": "wearing traditional kimonos", "ja": "伝統的な着物を着ている", "category": "attribute"},
+        {"text": "sitting on the tatami mat", "ja": "畳の上に座っている", "category": "detail"},
+        {"text": "holding a cloth", "ja": "布を持っている", "category": "gist"},
+        {"text": "wiping a tea bowl", "ja": "茶碗を拭いている", "category": "gist"},
+        {"text": "watching the students", "ja": "生徒たちを見守っている", "category": "gist"},
+        {"text": "learning how to make tea", "ja": "お茶のたて方を学んでいる", "category": "inference"},
+        {"text": "in front of them", "ja": "彼女たちの前に", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "Three women are having a tea ceremony.", "grammar": "現在進行形", "ja": "3人の女性が茶道をしています。", "category": "inference"},
+        {"text": "They are sitting on the tatami mat.", "grammar": "現在進行形 / 場所を表す前置詞", "ja": "彼女たちは畳の上に座っています。", "category": "detail"},
+        {"text": "The girl in the pink kimono is wiping a bowl.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "ピンクの着物を着た女の子が茶碗を拭いています。", "category": "gist"},
+        {"text": "The teacher is watching them quietly.", "grammar": "現在進行形 / 副詞", "ja": "先生が静かに彼女たちを見守っています。", "category": "gist"},
+        {"text": "There are some tea cups on the floor.", "grammar": "There is/are~", "ja": "床の上にいくつかの茶碗があります。", "category": "object"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "culture", "ja": "文化", "category": "inference"},
+        {"text": "elegant", "ja": "上品な、優雅な", "category": "attribute"},
+        {"text": "graceful", "ja": "優雅な、しとやかな", "category": "attribute"},
+        {"text": "instructor", "ja": "指導者", "category": "object"},
+        {"text": "pupil", "ja": "生徒", "category": "object"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "perform", "ja": "行う、実行する", "category": "gist"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "concentrate", "ja": "集中する", "category": "inference"},
+        {"text": "peaceful", "ja": "平和な、穏やかな", "category": "inference"},
+        {"text": "serene", "ja": "静かな、穏やかな", "category": "attribute"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"},
+        {"text": "utensil", "ja": "道具", "category": "object"},
+        {"text": "authentic", "ja": "本物の、本格的な", "category": "attribute"},
+        {"text": "ritual", "ja": "儀式、作法", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "participating in a traditional tea ceremony", "ja": "伝統的な茶道に参加している", "category": "inference"},
+        {"text": "wearing elegant kimonos", "ja": "優雅な着物を着ている", "category": "attribute"},
+        {"text": "performing the ritual gracefully", "ja": "作法を優雅に行っている", "category": "gist"},
+        {"text": "an authentic Japanese room", "ja": "本格的な和室", "category": "attribute"},
+        {"text": "concentrating on the process", "ja": "過程に集中している", "category": "inference"},
+        {"text": "observing the pupils carefully", "ja": "生徒たちを注意深く観察している", "category": "gist"},
+        {"text": "a peaceful atmosphere", "ja": "穏やかな雰囲気", "category": "inference"},
+        {"text": "handling the tea utensils", "ja": "茶道具を扱っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like they are participating in a traditional Japanese tea ceremony.", "grammar": "It looks like~", "ja": "彼女たちは日本の伝統的な茶道に参加しているようです。", "category": "inference"},
+        {"text": "The women wearing elegant kimonos are performing the ritual gracefully.", "grammar": "現在分詞の形容詞的用法", "ja": "優雅な着物を着た女性たちが、しとやかに作法を行っています。", "category": "gist"},
+        {"text": "The instructor on the right is observing her pupils carefully.", "grammar": "現在進行形 / 場所を表す形容詞句", "ja": "右側にいる指導者は、生徒たちを注意深く見守っています。", "category": "gist"},
+        {"text": "We can see some tea utensils such as bowls placed on the tatami mat.", "grammar": "過去分詞の形容詞的用法", "ja": "畳の上に置かれた茶碗などの茶道具が見えます。", "category": "object"},
+        {"text": "Because they are in an authentic room, the serene atmosphere makes the cultural experience very special.", "grammar": "接続詞 because / 使役動詞 make", "ja": "彼女たちは本格的な和室にいるため、その静かな雰囲気が文化体験をとても特別なものにしています。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "woman": { "x": 25, "y": 45 },
+    "girl": { "x": 55, "y": 45 },
+    "teacher": { "x": 90, "y": 60 },
+    "kimono": { "x": 20, "y": 50 },
+    "bowl": { "x": 38, "y": 88 },
+    "cup": { "x": 63, "y": 78 },
+    "container": { "x": 45, "y": 87 },
+    "spoon": { "x": 55, "y": 85 },
+    "cloth": { "x": 32, "y": 70 },
+    "tatami": { "x": 50, "y": 75 },
+    "door": { "x": 75, "y": 20 },
+    "wall": { "x": 20, "y": 20 }
+  }
+}

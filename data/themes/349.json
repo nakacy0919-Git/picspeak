@@ -1,0 +1,130 @@
+{
+  "id": "theme_349",
+  "imageSrc": "assets/images/349.webp",
+  "description": "教室の掃除をする子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "desk", "ja": "机", "category": "object"},
+        {"text": "blackboard", "ja": "黒板", "category": "object"},
+        {"text": "window", "ja": "窓", "category": "object"},
+        {"text": "water", "ja": "水", "category": "object"},
+        {"text": "bucket", "ja": "バケツ", "category": "object"},
+        {"text": "cloth", "ja": "布、雑巾", "category": "object"},
+        {"text": "clean", "ja": "掃除する、きれいにする", "category": "gist"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "brown", "ja": "茶色い", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな、嬉しい", "category": "inference"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "room", "ja": "部屋", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "clean the room", "ja": "部屋を掃除する", "category": "gist"},
+        {"text": "a blue cloth", "ja": "青い雑巾", "category": "attribute"},
+        {"text": "a green shirt", "ja": "緑のシャツ", "category": "attribute"},
+        {"text": "a pink shirt", "ja": "ピンクのシャツ", "category": "attribute"},
+        {"text": "a gray bucket", "ja": "グレーのバケツ", "category": "attribute"},
+        {"text": "on the desk", "ja": "机の上に", "category": "detail"},
+        {"text": "in the classroom", "ja": "教室で", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
+        {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。", "category": "detail"},
+        {"text": "The girl cleans the desk.", "grammar": "一般動詞", "ja": "女の子が机を掃除します。", "category": "gist"},
+        {"text": "She has a blue cloth.", "grammar": "have", "ja": "彼女は青い雑巾を持っています。", "category": "object"},
+        {"text": "The boy is happy.", "grammar": "be動詞", "ja": "男の子は楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "classroom", "ja": "教室", "category": "detail"},
+        {"text": "rag", "ja": "雑巾、ぼろ布", "category": "object"},
+        {"text": "wipe", "ja": "拭く", "category": "gist"},
+        {"text": "squeeze", "ja": "絞る", "category": "gist"},
+        {"text": "wash", "ja": "洗う", "category": "gist"},
+        {"text": "drop", "ja": "落ちる、滴", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "floor", "ja": "床", "category": "detail"},
+        {"text": "together", "ja": "一緒に", "category": "inference"},
+        {"text": "duty", "ja": "当番、義務", "category": "object"},
+        {"text": "chalk", "ja": "チョーク", "category": "object"},
+        {"text": "eraser", "ja": "黒板消し", "category": "object"},
+        {"text": "wet", "ja": "濡れた", "category": "attribute"},
+        {"text": "after", "ja": "〜の後に", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "in the classroom", "ja": "教室で", "category": "detail"},
+        {"text": "wiping the desk", "ja": "机を拭いている", "category": "gist"},
+        {"text": "squeezing a rag", "ja": "雑巾を絞っている", "category": "gist"},
+        {"text": "holding a bucket", "ja": "バケツを持っている", "category": "gist"},
+        {"text": "full of water", "ja": "水でいっぱいの", "category": "attribute"},
+        {"text": "smiling happily", "ja": "楽しそうに微笑んでいる", "category": "inference"},
+        {"text": "near the blackboard", "ja": "黒板の近くで", "category": "detail"},
+        {"text": "cleaning together", "ja": "一緒に掃除している", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "There are two students in the classroom.", "grammar": "There is/are~", "ja": "教室に2人の生徒がいます。", "category": "detail"},
+        {"text": "The girl is wiping the desk with a blue rag.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "女の子は青い雑巾で机を拭いています。", "category": "gist"},
+        {"text": "The boy is squeezing a wet rag over a bucket.", "grammar": "現在進行形 / 前置詞 (over)", "ja": "男の子はバケツの上で濡れた雑巾を絞っています。", "category": "gist"},
+        {"text": "Water is dropping from the rag.", "grammar": "現在進行形", "ja": "雑巾から水が滴り落ちています。", "category": "gist"},
+        {"text": "They are cleaning the room together happily.", "grammar": "現在進行形 / 副詞", "ja": "彼らは一緒に楽しそうに部屋を掃除しています。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "chore", "ja": "雑用、日課の仕事", "category": "object"},
+        {"text": "collaborate", "ja": "協力する", "category": "gist"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "diligent", "ja": "勤勉な、真面目な", "category": "inference"},
+        {"text": "surface", "ja": "表面", "category": "object"},
+        {"text": "wring", "ja": "絞る", "category": "gist"},
+        {"text": "dripping", "ja": "滴っている", "category": "gist"},
+        {"text": "puddle", "ja": "水たまり", "category": "object"},
+        {"text": "cheerful", "ja": "陽気な、快活な", "category": "inference"},
+        {"text": "teamwork", "ja": "チームワーク", "category": "inference"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "tidy", "ja": "片付ける、整頓する", "category": "gist"},
+        {"text": "wooden", "ja": "木製の", "category": "attribute"},
+        {"text": "metal", "ja": "金属の", "category": "attribute"},
+        {"text": "task", "ja": "課題、仕事", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "doing their chores cheerfully", "ja": "陽気に日課（掃除）をしている", "category": "inference"},
+        {"text": "wringing out a wet rag", "ja": "濡れた雑巾を絞り出している", "category": "gist"},
+        {"text": "wiping the surface of the desk", "ja": "机の表面を拭いている", "category": "gist"},
+        {"text": "dripping into the bucket", "ja": "バケツの中に滴り落ちている", "category": "gist"},
+        {"text": "a puddle of water", "ja": "水たまり", "category": "object"},
+        {"text": "collaborating on a task", "ja": "作業に協力している", "category": "gist"},
+        {"text": "looking enthusiastic", "ja": "熱心そうに見える", "category": "inference"},
+        {"text": "a well-lit classroom", "ja": "明るい教室", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are doing their cleaning duties cheerfully after school.", "grammar": "It looks like~", "ja": "生徒たちは放課後、楽しそうに掃除当番をしているようです。", "category": "inference"},
+        {"text": "The boy in the green shirt is wringing out a wet rag over a bucket.", "grammar": "前置詞 (in) / 現在進行形", "ja": "緑のシャツを着た男の子は、バケツの上で濡れた雑巾を絞っています。", "category": "gist"},
+        {"text": "The girl is wiping the surface of the wooden desk to make it clean.", "grammar": "不定詞の副詞的用法", "ja": "女の子は机をきれいにするために木製の机の表面を拭いています。", "category": "gist"},
+        {"text": "Water drops are falling from the rag into the bucket.", "grammar": "現在進行形 / 前置詞 (into)", "ja": "雑巾からバケツの中に水滴が落ちています。", "category": "gist"},
+        {"text": "They seem to be enjoying their teamwork in the classroom.", "grammar": "seem to be ~ing", "ja": "彼らは教室でのチームワークを楽しんでいるようです。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "girl": { "x": 25, "y": 45 },
+    "boy": { "x": 78, "y": 45 },
+    "rag_desk": { "x": 34, "y": 72 },
+    "rag_hands": { "x": 72, "y": 62 },
+    "bucket": { "x": 70, "y": 85 },
+    "water_puddle": { "x": 35, "y": 75 },
+    "desk_front": { "x": 35, "y": 85 },
+    "desk_back": { "x": 55, "y": 50 },
+    "blackboard": { "x": 80, "y": 15 },
+    "eraser": { "x": 63, "y": 22 },
+    "window": { "x": 10, "y": 15 }
+  }
+}

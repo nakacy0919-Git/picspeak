@@ -1,0 +1,132 @@
+{
+  "id": "theme_365",
+  "imageSrc": "assets/images/365.webp",
+  "description": "テーブルでロボットカーを組み立てる子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "robot", "ja": "ロボット", "category": "object"},
+        {"text": "car", "ja": "車", "category": "object"},
+        {"text": "table", "ja": "テーブル", "category": "object"},
+        {"text": "tablet", "ja": "タブレット", "category": "object"},
+        {"text": "paper", "ja": "紙", "category": "object"},
+        {"text": "tool", "ja": "道具", "category": "object"},
+        {"text": "wheel", "ja": "車輪、タイヤ", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "make", "ja": "作る", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a pink shirt", "ja": "ピンクのシャツ", "category": "attribute"},
+        {"text": "make a robot car", "ja": "ロボットカーを作る", "category": "gist"},
+        {"text": "on the table", "ja": "テーブルの上で", "category": "detail"},
+        {"text": "look at the tablet", "ja": "タブレットを見る", "category": "gist"},
+        {"text": "a red tool", "ja": "赤い道具", "category": "attribute"},
+        {"text": "have a tablet", "ja": "タブレットを持っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"},
+        {"text": "The boy makes a robot car.", "grammar": "一般動詞", "ja": "男の子がロボットカーを作ります。", "category": "gist"},
+        {"text": "The girl has a tablet.", "grammar": "have", "ja": "女の子はタブレットを持っています。", "category": "object"},
+        {"text": "The tool is red.", "grammar": "be動詞", "ja": "その道具は赤色です。", "category": "attribute"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "screwdriver", "ja": "ドライバー", "category": "object"},
+        {"text": "gear", "ja": "歯車", "category": "object"},
+        {"text": "motor", "ja": "モーター", "category": "object"},
+        {"text": "instruction", "ja": "説明書", "category": "object"},
+        {"text": "build", "ja": "組み立てる、建てる", "category": "gist"},
+        {"text": "assemble", "ja": "組み立てる", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "screen", "ja": "画面", "category": "object"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "work", "ja": "作業する、働く", "category": "gist"},
+        {"text": "together", "ja": "一緒に", "category": "inference"},
+        {"text": "project", "ja": "プロジェクト、課題", "category": "object"},
+        {"text": "part", "ja": "部品", "category": "object"},
+        {"text": "desk", "ja": "机", "category": "detail"},
+        {"text": "use", "ja": "使う", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "building a robot car", "ja": "ロボットカーを組み立てている", "category": "gist"},
+        {"text": "holding a screwdriver", "ja": "ドライバーを持っている", "category": "gist"},
+        {"text": "looking at the screen", "ja": "画面を見ている", "category": "gist"},
+        {"text": "working together", "ja": "一緒に作業している", "category": "gist"},
+        {"text": "reading the instructions", "ja": "説明書を読んでいる", "category": "gist"},
+        {"text": "sitting at the desk", "ja": "机に座っている", "category": "detail"},
+        {"text": "using a tool", "ja": "道具を使っている", "category": "gist"},
+        {"text": "many parts on the table", "ja": "テーブルの上のたくさんの部品", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "Two children are building a robot car.", "grammar": "現在進行形", "ja": "2人の子供がロボットカーを組み立てています。", "category": "gist"},
+        {"text": "The boy is using a red screwdriver.", "grammar": "現在進行形", "ja": "男の子は赤いドライバーを使っています。", "category": "gist"},
+        {"text": "The girl is holding a tablet in her hands.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "女の子は両手でタブレットを持っています。", "category": "gist"},
+        {"text": "There are many gears and motors on the desk.", "grammar": "There is/are~", "ja": "机の上にはたくさんの歯車とモーターがあります。", "category": "detail"},
+        {"text": "They are working together happily.", "grammar": "現在進行形 / 副詞", "ja": "彼らは一緒に楽しそうに作業しています。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "construct", "ja": "組み立てる、建設する", "category": "gist"},
+        {"text": "collaborate", "ja": "協力する", "category": "gist"},
+        {"text": "component", "ja": "部品、構成要素", "category": "object"},
+        {"text": "manual", "ja": "マニュアル、説明書", "category": "object"},
+        {"text": "gadget", "ja": "ちょっとした機械、ガジェット", "category": "object"},
+        {"text": "focus", "ja": "集中する", "category": "inference"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "device", "ja": "装置、端末", "category": "object"},
+        {"text": "robotics", "ja": "ロボット工学", "category": "object"},
+        {"text": "blueprint", "ja": "設計図", "category": "object"},
+        {"text": "attach", "ja": "取り付ける", "category": "gist"},
+        {"text": "tighten", "ja": "締める", "category": "gist"},
+        {"text": "screw", "ja": "ネジ", "category": "object"},
+        {"text": "electronic", "ja": "電子の", "category": "attribute"},
+        {"text": "machinery", "ja": "機械類", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "collaborating on a robotics project", "ja": "ロボット工学のプロジェクトで協力している", "category": "gist"},
+        {"text": "tightening a screw", "ja": "ネジを締めている", "category": "gist"},
+        {"text": "looking at a digital blueprint", "ja": "デジタルの設計図を見ている", "category": "gist"},
+        {"text": "focusing on their task", "ja": "自分たちの作業に集中している", "category": "inference"},
+        {"text": "assembling electronic components", "ja": "電子部品を組み立てている", "category": "gist"},
+        {"text": "using a smart device", "ja": "スマート端末を使用している", "category": "gist"},
+        {"text": "an enthusiastic expression", "ja": "熱心な表情", "category": "inference"},
+        {"text": "following the instructions", "ja": "説明書に従っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the children are collaborating on a fun robotics project.", "grammar": "It looks like~", "ja": "子供たちは楽しいロボット作りの課題に協力して取り組んでいるようです。", "category": "inference"},
+        {"text": "The boy in the blue shirt is tightening a screw to assemble the car.", "grammar": "不定詞の副詞的用法 / 前置詞 (in)", "ja": "青いシャツを着た男の子は、車を組み立てるためにネジを締めています。", "category": "gist"},
+        {"text": "The girl is looking at a digital blueprint on her tablet so that she can help him.", "grammar": "接続詞 (so that)", "ja": "彼を手伝えるように、女の子はタブレットでデジタルの設計図を見ています。", "category": "gist"},
+        {"text": "We can see various electronic components like gears and motors on the desk.", "grammar": "助動詞 (can) / 前置詞 (like)", "ja": "机の上に、歯車やモーターのような様々な電子部品が見えます。", "category": "detail"},
+        {"text": "Because they are working as a team, they seem to be enjoying the activity.", "grammar": "接続詞 (because) / seem to be ~ing", "ja": "彼らはチームとして作業しているので、その活動を楽しんでいるように見えます。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "boy_face": { "x": 30, "y": 30 },
+    "girl_face": { "x": 75, "y": 28 },
+    "screwdriver_hand": { "x": 35, "y": 62 },
+    "robot_car": { "x": 42, "y": 78 },
+    "wheel_front": { "x": 39, "y": 86 },
+    "wheel_back": { "x": 52, "y": 75 },
+    "tablet": { "x": 65, "y": 58 },
+    "blueprint": { "x": 72, "y": 80 },
+    "screwdriver_table": { "x": 20, "y": 82 },
+    "gears_left": { "x": 10, "y": 85 },
+    "gear_front": { "x": 58, "y": 92 },
+    "motor_small": { "x": 80, "y": 88 },
+    "motor_large": { "x": 90, "y": 82 },
+    "screw": { "x": 65, "y": 92 }
+  }
+}

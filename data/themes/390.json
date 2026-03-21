@@ -1,0 +1,195 @@
+{
+  "id": "theme_390",
+  "imageSrc": "assets/images/390.webp",
+  "description": "公園でピクニックをする生徒たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子"},
+        {"text": "girl", "ja": "女の子"},
+        {"text": "child", "ja": "子供"},
+        {"text": "hat", "ja": "帽子"},
+        {"text": "mat", "ja": "レジャーシート、マット"},
+        {"text": "food", "ja": "食べ物"},
+        {"text": "drink", "ja": "飲み物"},
+        {"text": "tree", "ja": "木"},
+        {"text": "grass", "ja": "草、芝生"},
+        {"text": "park", "ja": "公園"},
+        {"text": "blanket", "ja": "毛布、レジャーシート"},
+        {"text": "lunch", "ja": "昼食、お弁当"},
+        {"text": "smile", "ja": "微笑む、笑顔"},
+        {"text": "happy", "ja": "幸せな、楽しい"},
+        {"text": "fun", "ja": "楽しい"},
+        {"text": "sit", "ja": "座る"},
+        {"text": "eat", "ja": "食べる"},
+        {"text": "look", "ja": "見る"},
+        {"text": "wear", "ja": "着ている、被っている"}
+      ],
+      "chunks": [
+        {"text": "a group of children", "ja": "子供たちのグループ"},
+        {"text": "wearing a white hat", "ja": "白い帽子を被っている"},
+        {"text": "on a colorful mat", "ja": "カラフルなマットの上で"},
+        {"text": "many lunch boxes", "ja": "たくさんのお弁当箱"},
+        {"text": "having a picnic", "ja": "ピクニックをしている"},
+        {"text": "sitting on the grass", "ja": "草の上に座っている"},
+        {"text": "a tree in the park", "ja": "公園の木"},
+        {"text": "happy smiles", "ja": "幸せな笑顔"},
+        {"text": "look very happy", "ja": "とても幸せそうに見える"},
+        {"text": "fun time together", "ja": "一緒に楽しい時間"}
+      ],
+      "sentences": [
+        {"text": "There are many children having a picnic.", "grammar": "There is/are~", "ja": "ピクニックをしている子供たちがたくさんいます。"},
+        {"text": "A girl is wearing a white hat.", "grammar": "現在進行形", "ja": "女の子が白い帽子を被っています。"},
+        {"text": "They sit on a colorful mat.", "grammar": "一般動詞", "ja": "彼らはカラフルなマットに座っています。"},
+        {"text": "Many lunch boxes are on the mat.", "grammar": "be動詞", "ja": "マットの上にたくさんのお弁当箱があります。"},
+        {"text": "They look happy together.", "grammar": "look + 形容詞", "ja": "彼らは一緒に幸せそうです。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "student", "ja": "生徒"},
+        {"text": "elementary", "ja": "小学生の、初等の"},
+        {"text": "excursion", "ja": "遠足"},
+        {"text": "blanket", "ja": "レジャーシート"},
+        {"text": "lunchbox", "ja": "お弁当箱"},
+        {"text": "bottle", "ja": "水筒"},
+        {"text": "uniform", "ja": "ユニフォーム、制服"},
+        {"text": "sunny", "ja": "晴れた"},
+        {"text": "scenery", "ja": "景色"},
+        {"text": "surround", "ja": "囲む"},
+        {"text": "share", "ja": "共有する、分け合う"},
+        {"text": "participate", "ja": "参加する"},
+        {"text": "observe", "ja": "観察する"},
+        {"text": "joyful", "ja": "喜ばしい、楽しい"},
+        {"text": "together", "ja": "一緒に"},
+        {"text": "various", "ja": "様々な"},
+        {"text": "bright", "ja": "明るい"}
+      ],
+      "chunks": [
+        {"text": "elementary school students having a picnic", "ja": "ピクニックをしている小学生"},
+        {"text": "sitting on a checkered blanket", "ja": "格子柄のレジャーシートに座っている"},
+        {"text": "wearing a white sun hat", "ja": "白い日よけ帽を被っている"},
+        {"text": "sharing lunch and drinks", "ja": "お弁当と飲み物を分け合っている"},
+        {"text": "on a bright sunny day", "ja": "明るく晴れた日に"},
+        {"text": "surrounded by green trees", "ja": "緑の木々に囲まれて"},
+        {"text": "a joyful atmosphere", "ja": "楽しい雰囲気"},
+        {"text": "observing their smiles", "ja": "彼らの笑顔を観察する"},
+        {"text": "playing in the background", "ja": "背景で遊んでいる"},
+        {"text": "enjoying the scenery", "ja": "景色を楽しんでいる"}
+      ],
+      "sentences": [
+        {"text": "A group of elementary school students are enjoying a picnic in the park.", "grammar": "現在進行形", "ja": "小学生のグループが公園でピクニックを楽しんでいます。"},
+        {"text": "They are sitting closely together on colorful blankets.", "grammar": "現在進行形", "ja": "彼らはカラフルなレジャーシートに身を寄せ合って座っています。"},
+        {"text": "Several students are wearing white hats to block the sun.", "grammar": "現在進行形 / 不定詞", "ja": "何人かの生徒は太陽を遮るために白い帽子を被っています。"},
+        {"text": "They share various kinds of food from their lunch boxes.", "grammar": "一般動詞", "ja": "彼らはお弁当箱から様々な種類の食べ物を分け合っています。"},
+        {"text": "We can see many other students in the background.", "grammar": "助動詞 can", "ja": "背景に他の多くの生徒が見えます。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "elementary", "ja": "小学生の、初等の"},
+        {"text": "excursion", "ja": "遠足"},
+        {"text": "recreation", "ja": "レクリエーション"},
+        {"text": "gathering", "ja": "集まり"},
+        {"text": "atmosphere", "ja": "雰囲気"},
+        {"text": "picturesque", "ja": "絵のように美しい"},
+        {"text": "interaction", "ja": "交流"},
+        {"text": "collaborative", "ja": "協働的な"},
+        {"text": "supervised", "ja": "監督された"},
+        {"text": "extensive", "ja": "広範囲な、広い"},
+        {"text": "environment", "ja": "環境"},
+        {"text": "enthusiastic", "ja": "熱心な"},
+        {"text": "joyful", "ja": "楽しい、喜ばしい"},
+        {"text": "vibrant", "ja": "活気のある、鮮やかな"},
+        {"text": "spontaneous", "ja": "自然な、のびのびとした"},
+        {"text": "participate", "ja": "参加する"},
+        {"text": "engage in", "ja": "〜に従事する、参加する"},
+        {"text": "supervise", "ja": "監督する"},
+        {"text": "observe", "ja": "観察する"},
+        {"text": "capture", "ja": "捉える、撮影する"}
+      ],
+      "chunks": [
+        {"text": "elementary school students having a recreational gathering", "ja": "レクリエーションの集まりをしている小学生"},
+        {"text": "participating in a supervised excursion", "ja": "監督された遠足に参加している"},
+        {"text": "engaging in social interaction", "ja": "社会的交流に参加している"},
+        {"text": "sitting on a picturesque green grass area", "ja": "絵のように美しい緑の草地に座っている"},
+        {"text": "a vibrant and joyful atmosphere", "ja": "活気があり楽しい雰囲気"},
+        {"text": "surrounded by lush green trees", "ja": "青々とした緑の木々に囲まれて"},
+        {"text": "spontaneous behavior of children", "ja": "子供たちののびのびとした行動"},
+        {"text": "extensive picnic area", "ja": "広いピクニックエリア"},
+        {"text": "capturing a moment of happiness", "ja": "幸せな瞬間を捉える"},
+        {"text": "collaborative outdoor activity", "ja": "協働的な屋外活動"}
+      ],
+      "sentences": [
+        {"text": "It looks like a group of elementary school students participating in a supervised excursion in a picturesque park.", "grammar": "It looks like~", "ja": "それは、絵のように美しい公園で監督された遠足に参加している小学生のグループのようです。"},
+        {"text": "They are seated closely on colourful blankets, enjoying their spontaneous interactions.", "grammar": "受動態的表現 (be seated) / 分詞構文", "ja": "彼らはカラフルなレジャーシートに身を寄せ合って座り、のびのびとした交流を楽しんでいます。"},
+        {"text": "The atmosphere is joyful and vibrant as the students share food from their lunch boxes.", "grammar": "be動詞 / 接続詞 as", "ja": "生徒たちがお弁当箱の食べ物を分け合っており、雰囲気は楽しく活気があります。"},
+        {"text": "A teacher is likely supervising them from a close distance to ensure their safety.", "grammar": "現在進行形 / 副詞", "ja": "彼らの安全を確保するために、先生が近くから彼らを監督している可能性が高いです。"},
+        {"text": "The extensive green area surrounded by lush trees provides a perfect environment for outdoor recreation.", "grammar": "一般動詞 / 過去分詞の形容詞的用法", "ja": "青々とした木々に囲まれた広い緑地は、屋外レクリエーションに最適な環境を提供しています。"}
+      ]
+    }
+  },
+  "pins": {
+    "boy1": {
+      "x": 20,
+      "y": 60,
+      "word": "boy"
+    },
+    "girl1": {
+      "x": 40,
+      "y": 62,
+      "word": "girl"
+    },
+    "girl2": {
+      "x": 60,
+      "y": 58,
+      "word": "girl"
+    },
+    "child1": {
+      "x": 80,
+      "y": 55,
+      "word": "child"
+    },
+    "mat": {
+      "x": 50,
+      "y": 75,
+      "word": "mat"
+    },
+    "food1": {
+      "x": 48,
+      "y": 85,
+      "word": "food"
+    },
+    "drink1": {
+      "x": 72,
+      "y": 70,
+      "word": "drink"
+    },
+    "hat1": {
+      "x": 58,
+      "y": 48,
+      "word": "hat"
+    },
+    "tree1": {
+      "x": 30,
+      "y": 25,
+      "word": "tree"
+    },
+    "grass": {
+      "x": 50,
+      "y": 92,
+      "word": "grass"
+    },
+    "people1": {
+      "x": 85,
+      "y": 30,
+      "word": "people"
+    },
+    "bag1": {
+      "x": 10,
+      "y": 70,
+      "word": "bag"
+    }
+  }
+}

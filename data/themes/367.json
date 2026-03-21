@@ -1,0 +1,127 @@
+{
+  "id": "theme_367",
+  "imageSrc": "assets/images/367.webp",
+  "description": "道場で剣道の防具を着ける子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "mask", "ja": "お面", "category": "object"},
+        {"text": "clothes", "ja": "服", "category": "object"},
+        {"text": "stick", "ja": "棒", "category": "object"},
+        {"text": "room", "ja": "部屋", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "object"},
+        {"text": "floor", "ja": "床", "category": "object"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "black", "ja": "黒い", "category": "attribute"},
+        {"text": "put", "ja": "置く、つける", "category": "gist"},
+        {"text": "wear", "ja": "着ている", "category": "gist"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "two boys", "ja": "2人の男の子", "category": "object"},
+        {"text": "a happy girl", "ja": "楽しそうな女の子", "category": "inference"},
+        {"text": "white clothes", "ja": "白い服", "category": "attribute"},
+        {"text": "a big mask", "ja": "大きなお面", "category": "attribute"},
+        {"text": "put on a mask", "ja": "お面をつける", "category": "gist"},
+        {"text": "two sticks", "ja": "2本の棒", "category": "object"},
+        {"text": "in the room", "ja": "部屋の中に", "category": "detail"},
+        {"text": "on the floor", "ja": "床の上に", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see two boys and a girl.", "grammar": "I see~", "ja": "2人の男の子と1人の女の子が見えます。", "category": "object"},
+        {"text": "They are in a room.", "grammar": "be動詞", "ja": "彼らは部屋にいます。", "category": "detail"},
+        {"text": "The boy puts on a mask.", "grammar": "一般動詞", "ja": "男の子がお面をつけます。", "category": "gist"},
+        {"text": "They wear white and blue clothes.", "grammar": "一般動詞", "ja": "彼らは白と青の服を着ています。", "category": "attribute"},
+        {"text": "This is a wooden floor.", "grammar": "This is~", "ja": "これは木の床です。", "category": "object"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "student", "ja": "生徒", "category": "object"},
+        {"text": "uniform", "ja": "ユニフォーム、道着", "category": "object"},
+        {"text": "helmet", "ja": "ヘルメット、面", "category": "object"},
+        {"text": "glove", "ja": "手袋、小手", "category": "object"},
+        {"text": "sword", "ja": "剣、竹刀", "category": "object"},
+        {"text": "bamboo", "ja": "竹", "category": "attribute"},
+        {"text": "bag", "ja": "かばん、袋", "category": "object"},
+        {"text": "gym", "ja": "体育館、道場", "category": "detail"},
+        {"text": "tie", "ja": "結ぶ", "category": "gist"},
+        {"text": "prepare", "ja": "準備する", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "practice", "ja": "練習する", "category": "inference"},
+        {"text": "traditional", "ja": "伝統的な", "category": "attribute"},
+        {"text": "ready", "ja": "準備ができて", "category": "inference"},
+        {"text": "behind", "ja": "～の後ろに", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "putting on a helmet", "ja": "面をつけている", "category": "gist"},
+        {"text": "wearing traditional uniforms", "ja": "伝統的な道着を着ている", "category": "attribute"},
+        {"text": "tying the string", "ja": "紐を結んでいる", "category": "gist"},
+        {"text": "bamboo swords", "ja": "竹刀", "category": "object"},
+        {"text": "preparing for practice", "ja": "練習の準備をしている", "category": "inference"},
+        {"text": "standing on the floor", "ja": "床に立っている", "category": "detail"},
+        {"text": "behind the girl", "ja": "女の子の後ろに", "category": "detail"},
+        {"text": "leaning against the wall", "ja": "壁に立てかけられている", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "Three students are preparing for their practice.", "grammar": "現在進行形", "ja": "3人の生徒が練習の準備をしています。", "category": "inference"},
+        {"text": "The boy on the left is putting on his helmet.", "grammar": "現在進行形 / 前置詞 (on)", "ja": "左の男の子は面をつけています。", "category": "gist"},
+        {"text": "The girl is wearing special gloves.", "grammar": "現在進行形", "ja": "女の子は特別な手袋（小手）をつけています。", "category": "gist"},
+        {"text": "There are two bamboo swords leaning against the wall.", "grammar": "There is/are~", "ja": "壁に立てかけられた竹刀が2本あります。", "category": "object"},
+        {"text": "Another boy is standing behind them.", "grammar": "現在進行形 / 前置詞 (behind)", "ja": "もう1人の男の子が彼らの後ろに立っています。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "kendo", "ja": "剣道", "category": "inference"},
+        {"text": "practitioner", "ja": "実践者、修行者", "category": "object"},
+        {"text": "armor", "ja": "防具", "category": "object"},
+        {"text": "gear", "ja": "装備、道具", "category": "object"},
+        {"text": "dojo", "ja": "道場", "category": "detail"},
+        {"text": "equip", "ja": "装備する", "category": "gist"},
+        {"text": "fasten", "ja": "しっかり留める、結ぶ", "category": "gist"},
+        {"text": "adjust", "ja": "調整する", "category": "gist"},
+        {"text": "focus", "ja": "集中する", "category": "inference"},
+        {"text": "dedicate", "ja": "専念する", "category": "inference"},
+        {"text": "protective", "ja": "保護用の", "category": "attribute"},
+        {"text": "serious", "ja": "真剣な", "category": "inference"},
+        {"text": "Japanese", "ja": "日本の", "category": "attribute"},
+        {"text": "martial arts", "ja": "武道", "category": "inference"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "equipping protective armor", "ja": "保護用の防具を装備している", "category": "gist"},
+        {"text": "practicing Japanese martial arts", "ja": "日本の武道を練習している", "category": "inference"},
+        {"text": "fastening the helmet string", "ja": "面の紐を結んでいる", "category": "gist"},
+        {"text": "adjusting her gear", "ja": "自分の装備を調整している", "category": "gist"},
+        {"text": "focusing on the preparation", "ja": "準備に集中している", "category": "inference"},
+        {"text": "inside a traditional dojo", "ja": "伝統的な道場の中で", "category": "detail"},
+        {"text": "a serious atmosphere", "ja": "真剣な雰囲気", "category": "inference"},
+        {"text": "getting ready for a match", "ja": "試合の準備をしている", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "It looks like the young practitioners are getting ready for a kendo practice.", "grammar": "It looks like~", "ja": "若い剣士たちは剣道の練習の準備をしているようです。", "category": "inference"},
+        {"text": "The boy who is wearing a white top is carefully fastening his helmet.", "grammar": "関係代名詞 (who)", "ja": "白い上着を着ている男の子は、注意深く面を結んでいます。", "category": "gist"},
+        {"text": "They wear protective armor because kendo is a physical martial art.", "grammar": "接続詞 (because)", "ja": "剣道は身体的な武道なので、彼らは保護用の防具を身につけます。", "category": "inference"},
+        {"text": "We can see a traditional wooden dojo, which creates a serious atmosphere.", "grammar": "関係代名詞 (非制限用法)", "ja": "伝統的な木造の道場が見え、それが真剣な雰囲気を作り出しています。", "category": "detail"},
+        {"text": "The girl in the middle is adjusting her gloves to hold the bamboo sword tightly.", "grammar": "不定詞の副詞的用法", "ja": "真ん中の女の子は、竹刀をしっかり握るために小手を調整しています。", "category": "gist"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 35, "y": 55 },
+    "girl": { "x": 65, "y": 55 },
+    "mask": { "x": 35, "y": 25 },
+    "glove": { "x": 55, "y": 68 },
+    "armor": { "x": 35, "y": 65 },
+    "stick": { "x": 10, "y": 65 },
+    "wall": { "x": 50, "y": 20 },
+    "floor": { "x": 50, "y": 90 },
+    "bag": { "x": 80, "y": 72 }
+  }
+}

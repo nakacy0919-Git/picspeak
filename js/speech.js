@@ -4,6 +4,9 @@
 const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 let recognition;
 
+// ★プログラムから意図的に止めたかどうかを判定する「証拠」フラグ
+let isForceStopped = false;
+
 // 音声認識の初期設定
 function initSpeechRecognition(onResultCallback, onEndCallback) {
     if (!SpeechRecognition) {
@@ -34,16 +37,40 @@ function initSpeechRecognition(onResultCallback, onEndCallback) {
 
     // 音声認識が終了（停止）した時の処理
     recognition.onend = () => {
-        if (onEndCallback) onEndCallback();
+        // ★無音で勝手に切れた場合（意図的に止めておらず、かつ録音モード中なら）自動で再起動する！
+        if (!isForceStopped && window.isRecording) {
+            try {
+                recognition.start();
+            } catch (e) {
+                console.error("音声認識の自動再起動に失敗しました:", e);
+            }
+        } else {
+            // 本当に終了させたい時（FINISHを押した等）だけ、終了処理を呼ぶ
+            if (onEndCallback) onEndCallback();
+        }
     };
 
     return recognition;
 }
 
 function startSpeech() {
-    if (recognition) recognition.start();
+    isForceStopped = false; // スタート時はフラグをリセット
+    if (recognition) {
+        try {
+            recognition.start();
+        } catch (e) {
+            console.error("音声認識の開始に失敗しました:", e);
+        }
+    }
 }
 
 function stopSpeech() {
-    if (recognition) recognition.stop();
+    isForceStopped = true; // プログラムが「意図的に止めた」という証拠を残す
+    if (recognition) {
+        try {
+            recognition.stop();
+        } catch (e) {
+            console.error("音声認識の停止に失敗しました:", e);
+        }
+    }
 }

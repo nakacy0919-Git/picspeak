@@ -1,0 +1,132 @@
+{
+  "id": "theme_356",
+  "imageSrc": "assets/images/356.webp",
+  "description": "図書館のカウンターで本を借りる男の子",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "book", "ja": "本", "category": "object"},
+        {"text": "card", "ja": "カード", "category": "object"},
+        {"text": "desk", "ja": "机", "category": "object"},
+        {"text": "computer", "ja": "コンピューター", "category": "object"},
+        {"text": "bag", "ja": "かばん", "category": "object"},
+        {"text": "glasses", "ja": "メガネ", "category": "object"},
+        {"text": "window", "ja": "窓", "category": "detail"},
+        {"text": "tree", "ja": "木", "category": "object"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"},
+        {"text": "give", "ja": "渡す", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a boy and a woman", "ja": "男の子と女性", "category": "object"},
+        {"text": "a green shirt", "ja": "緑のシャツ", "category": "attribute"},
+        {"text": "a blue bag", "ja": "青いかばん", "category": "attribute"},
+        {"text": "a yellow book", "ja": "黄色い本", "category": "attribute"},
+        {"text": "on the desk", "ja": "机の上に", "category": "detail"},
+        {"text": "look at", "ja": "～を見る", "category": "gist"},
+        {"text": "give a card", "ja": "カードを渡す", "category": "gist"},
+        {"text": "in the room", "ja": "部屋の中に", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a woman.", "grammar": "I see~", "ja": "男の子と女性が見えます。", "category": "object"},
+        {"text": "The boy has a card.", "grammar": "have", "ja": "男の子はカードを持っています。", "category": "object"},
+        {"text": "A book is on the desk.", "grammar": "be動詞", "ja": "本が机の上にあります。", "category": "detail"},
+        {"text": "The woman has glasses.", "grammar": "have", "ja": "女性はメガネをかけています。", "category": "attribute"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "librarian", "ja": "司書", "category": "object"},
+        {"text": "library", "ja": "図書館", "category": "detail"},
+        {"text": "monitor", "ja": "モニター", "category": "object"},
+        {"text": "keyboard", "ja": "キーボード", "category": "object"},
+        {"text": "scanner", "ja": "スキャナー", "category": "object"},
+        {"text": "cart", "ja": "カート", "category": "object"},
+        {"text": "borrow", "ja": "借りる", "category": "gist"},
+        {"text": "scan", "ja": "スキャンする", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "behind", "ja": "～の後ろに", "category": "detail"},
+        {"text": "near", "ja": "～の近くに", "category": "detail"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "wear", "ja": "着ている、身につけている", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "in the library", "ja": "図書館で", "category": "detail"},
+        {"text": "borrowing a book", "ja": "本を借りている", "category": "gist"},
+        {"text": "holding a library card", "ja": "図書カードを持っている", "category": "gist"},
+        {"text": "scanning a book", "ja": "本をスキャンしている", "category": "gist"},
+        {"text": "sitting behind the desk", "ja": "机の後ろに座っている", "category": "detail"},
+        {"text": "standing by the counter", "ja": "カウンターのそばに立っている", "category": "detail"},
+        {"text": "wearing glasses", "ja": "メガネをかけている", "category": "attribute"},
+        {"text": "a book cart", "ja": "ブックカート", "category": "object"}
+      ],
+      "sentences": [
+        {"text": "A boy is borrowing a book in the library.", "grammar": "現在進行形", "ja": "男の子が図書館で本を借りています。", "category": "gist"},
+        {"text": "The librarian is scanning the book with a scanner.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "司書はスキャナーで本をスキャンしています。", "category": "gist"},
+        {"text": "The boy is holding his library card in his hand.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "男の子は手に図書カードを持っています。", "category": "gist"},
+        {"text": "The woman is sitting behind the desk.", "grammar": "現在進行形 / 前置詞 (behind)", "ja": "女性は机の後ろに座っています。", "category": "detail"},
+        {"text": "There is a book cart near the window.", "grammar": "There is/are~", "ja": "窓の近くにブックカートがあります。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "check out", "ja": "貸し出し手続きをする", "category": "gist"},
+        {"text": "transaction", "ja": "手続き、処理", "category": "object"},
+        {"text": "counter", "ja": "カウンター", "category": "detail"},
+        {"text": "barcode", "ja": "バーコード", "category": "object"},
+        {"text": "reader", "ja": "読み取り機", "category": "object"},
+        {"text": "assist", "ja": "手伝う、補助する", "category": "gist"},
+        {"text": "interact", "ja": "やり取りする", "category": "gist"},
+        {"text": "process", "ja": "処理する", "category": "gist"},
+        {"text": "display", "ja": "表示する", "category": "gist"},
+        {"text": "screen", "ja": "画面", "category": "object"},
+        {"text": "backpack", "ja": "リュックサック", "category": "object"},
+        {"text": "organized", "ja": "整理された", "category": "attribute"},
+        {"text": "facility", "ja": "施設", "category": "detail"},
+        {"text": "request", "ja": "要求、依頼", "category": "object"},
+        {"text": "issue", "ja": "発行する、貸し出す", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "checking out a book", "ja": "本の貸し出し手続きをしている", "category": "gist"},
+        {"text": "assisting the student", "ja": "生徒の対応をしている", "category": "gist"},
+        {"text": "processing the transaction", "ja": "貸し出し処理を行っている", "category": "gist"},
+        {"text": "using a barcode reader", "ja": "バーコードリーダーを使っている", "category": "gist"},
+        {"text": "interacting with the librarian", "ja": "司書とやり取りしている", "category": "gist"},
+        {"text": "at the circulation desk", "ja": "貸し出しカウンターで", "category": "detail"},
+        {"text": "displaying information on the screen", "ja": "画面に情報を表示している", "category": "gist"},
+        {"text": "an organized library facility", "ja": "整理された図書館の施設", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "It looks like the student is checking out a book at the library counter.", "grammar": "It looks like~", "ja": "生徒は図書館のカウンターで本の貸し出し手続きをしているようです。", "category": "inference"},
+        {"text": "The librarian, who is wearing glasses, is using a barcode reader to scan the book.", "grammar": "関係代名詞 (who) / 不定詞の副詞的用法", "ja": "メガネをかけている司書は、本をスキャンするためにバーコードリーダーを使っています。", "category": "gist"},
+        {"text": "The boy is holding his library card so that she can process his request.", "grammar": "接続詞 (so that)", "ja": "彼女が手続きを処理できるように、男の子は図書カードを持っています。", "category": "gist"},
+        {"text": "We can see a computer monitor and a keyboard on the large wooden desk.", "grammar": "助動詞 (can)", "ja": "大きな木製の机の上に、コンピューターのモニターとキーボードが見えます。", "category": "detail"},
+        {"text": "A metal cart with a book is placed near the window in the background.", "grammar": "受動態 / 前置詞 (with)", "ja": "背景の窓の近くには、本が乗った金属製のカートが置かれています。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 42, "y": 55 },
+    "librarian": { "x": 88, "y": 42 },
+    "book_desk": { "x": 75, "y": 68 },
+    "scanner": { "x": 70, "y": 48 },
+    "card": { "x": 55, "y": 53 },
+    "computer_monitor": { "x": 60, "y": 42 },
+    "keyboard": { "x": 68, "y": 62 },
+    "counter_desk": { "x": 65, "y": 80 },
+    "backpack": { "x": 32, "y": 60 },
+    "book_cart": { "x": 15, "y": 65 },
+    "book_on_cart": { "x": 18, "y": 52 },
+    "window": { "x": 20, "y": 20 },
+    "tree_outside": { "x": 65, "y": 15 },
+    "glasses": { "x": 84, "y": 25 }
+  }
+}

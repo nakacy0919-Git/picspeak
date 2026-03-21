@@ -1,0 +1,139 @@
+{
+  "id": "theme_344",
+  "imageSrc": "assets/images/344.webp",
+  "description": "スポットライトの下でブレイクダンスをする女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "dancer", "ja": "ダンサー", "category": "object"},
+        {"text": "cap", "ja": "帽子", "category": "object"},
+        {"text": "pants", "ja": "パンツ", "category": "object"},
+        {"text": "shoes", "ja": "靴", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "detail"},
+        {"text": "floor", "ja": "床", "category": "detail"},
+        {"text": "light", "ja": "光", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "foot", "ja": "足", "category": "object"},
+        {"text": "head", "ja": "頭", "category": "object"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "black", "ja": "黒い", "category": "attribute"},
+        {"text": "gray", "ja": "グレーの", "category": "attribute"},
+        {"text": "orange", "ja": "オレンジ色の", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "breakdance", "ja": "ブレイクダンス", "category": "gist"},
+        {"text": "smile", "ja": "笑顔", "category": "gist"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"},
+        {"text": "fun", "ja": "楽しい", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "a girl", "ja": "女の子", "category": "object"},
+        {"text": "a cap", "ja": "帽子", "category": "object"},
+        {"text": "a green cap", "ja": "緑の帽子", "category": "attribute"},
+        {"text": "gray pants", "ja": "グレーのパンツ", "category": "attribute"},
+        {"text": "orange shoes", "ja": "オレンジ色の靴", "category": "attribute"},
+        {"text": "breakdance", "ja": "ブレイクダンスをする", "category": "gist"},
+        {"text": "is happy", "ja": "幸せだ", "category": "inference"},
+        {"text": "can dance", "ja": "踊れる", "category": "gist"},
+        {"text": "on the floor", "ja": "床の上で", "category": "detail"},
+        {"text": "in the spotlight", "ja": "スポットライトの中で", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "category": "object"},
+        {"text": "She is a dancer.", "grammar": "be動詞", "ja": "彼女はダンサーです。", "category": "object"},
+        {"text": "She has a green cap.", "grammar": "have", "ja": "彼女は緑の帽子を持っています。", "category": "attribute"},
+        {"text": "She is happy.", "grammar": "be動詞", "ja": "彼女は幸せです。", "category": "inference"},
+        {"text": "This is a breakdance.", "grammar": "This is~", "ja": "これはブレイクダンスです。", "category": "gist"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "breakdancer", "ja": "ブレイクダンサー", "category": "object"},
+        {"text": "pose", "ja": "ポーズ", "category": "object"},
+        {"text": "hoodie", "ja": "フーディー（パーカー）", "category": "object"},
+        {"text": "sneakers", "ja": "スニーカー", "category": "object"},
+        {"text": "graffiti", "ja": "グラフィティ（落書き）", "category": "object"},
+        {"text": "spotlight", "ja": "スポットライト", "category": "object"},
+        {"text": "stage", "ja": "ステージ", "category": "detail"},
+        {"text": "handstand", "ja": "倒立", "category": "gist"},
+        {"text": "dynamic", "ja": "ダイナミックな", "category": "attribute"},
+        {"text": "cool", "ja": "かっこいい", "category": "attribute"},
+        {"text": "perform", "ja": "パフォーマンスする", "category": "gist"},
+        {"text": "practicing", "ja": "練習している", "category": "gist"},
+        {"text": "talent", "ja": "才能", "category": "inference"},
+        {"text": "energy", "ja": "エネルギー", "category": "inference"},
+        {"text": "colored", "ja": "色とりどりの", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "in the center", "ja": "中央で", "category": "detail"},
+        {"text": "a dynamic pose", "ja": "ダイナミックなポーズ", "category": "attribute"},
+        {"text": "wearing a cap", "ja": "帽子を被っている", "category": "attribute"},
+        {"text": "gray sweatpants", "ja": "グレーのスウェットパンツ", "category": "attribute"},
+        {"text": "orange sneakers", "ja": "オレンジ色のスニーカー", "category": "attribute"},
+        {"text": "handstand on one hand", "ja": "片手で倒立する", "category": "gist"},
+        {"text": "in the spotlight", "ja": "スポットライトの中で", "category": "detail"},
+        {"text": "colored wall", "ja": "色とりどりの壁", "category": "attribute"},
+        {"text": "cool performance", "ja": "かっこいいパフォーマンス", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "A breakdancer is performing a handstand.", "grammar": "現在進行形", "ja": "ブレイクダンサーが倒立をしています。", "category": "gist"},
+        {"text": "She is wearing a black hoodie and gray sweatpants.", "grammar": "現在進行形", "ja": "彼女は黒いフーディーとグレーのスウェットパンツを着ています。", "category": "attribute"},
+        {"text": "There are two spotlights on the stage.", "grammar": "There is/are~", "ja": "ステージに2つのスポットライトがあります。", "category": "detail"},
+        {"text": "She can dance very well.", "grammar": "助動詞can", "ja": "彼女はとても上手に踊れます。", "category": "gist"},
+        {"text": "She is holding her foot to show a dynamic pose.", "grammar": "不定詞の副詞的用法 / 現在進行形", "ja": "彼女はダイナミックなポーズを見せるために足を持っています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "Athletic", "ja": "運動能力の高い", "category": "attribute"},
+        {"text": "energetic", "ja": "エネルギッシュな", "category": "attribute"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "performer", "ja": "パフォーマー", "category": "object"},
+        {"text": "costume", "ja": "衣装", "category": "object"},
+        {"text": "outfit", "ja": "服装", "category": "object"},
+        {"text": "headwear", "ja": "ヘッドウェア（帽子）", "category": "object"},
+        {"text": "intricate", "ja": "複雑な", "category": "attribute"},
+        {"text": "elaborate", "ja": "凝った", "category": "attribute"},
+        {"text": "colorful", "ja": "色とりどりの", "category": "attribute"},
+        {"text": "vibrant", "ja": "鮮やかな", "category": "attribute"},
+        {"text": "graffitied", "ja": "グラフィティが描かれた", "category": "attribute"},
+        {"text": "illuminating", "ja": "照らしている", "category": "gist"},
+        {"text": "focal point", "ja": "焦点", "category": "detail"},
+        {"text": "balancing", "ja": "バランスをとっている", "category": "gist"},
+        {"text": "acrobatic", "ja": "アクロバティックな", "category": "attribute"},
+        {"text": "skill", "ja": "技術", "category": "object"},
+        {"text": "passion", "ja": "情熱", "category": "inference"},
+        {"text": "joy", "ja": "喜び", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "stylish athletic outfit", "ja": "スタイリッシュな運動着の服装", "category": "attribute"},
+        {"text": "an impressive acrobatic move", "ja": "印象的なアクロバティックな動き", "category": "attribute"},
+        {"text": "balancing on one hand", "ja": "片手でバランスをとっている", "category": "gist"},
+        {"text": "intricate colorful graffiti", "ja": "複雑で色とりどりのグラフィティ", "category": "attribute"},
+        {"text": "graffitied background", "ja": "グラフィティが描かれた背景", "category": "detail"},
+        {"text": "impressive handstand pose", "ja": "印象的な倒立のポーズ", "category": "attribute"},
+        {"text": "displaying her skill", "ja": "技術を披露している", "category": "gist"},
+        {"text": "filled with energy", "ja": "エネルギーに満ち溢れた", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "The young breakdancer looks very energetic as she performs an impressive handstand.", "grammar": "look + 形容詞 / 接続詞 as / 現在進行形", "ja": "若いブレイクダンサーは、印象的な倒立をする際、とてもエネルギッシュに見えます。", "category": "inference"},
+        {"text": "She is holding her foot to create a dynamic and passionate pose.", "grammar": "不定詞の副詞的用法 / 現在進行形", "ja": "彼女はダイナミックで情熱的なポーズを作るために足を持っています。", "category": "gist"},
+        {"text": "Two spotlights are illuminating the center, where she is performing.", "grammar": "現在進行形 / 関係副詞", "ja": "2つのスポットライトが中央を照らしており、そこで彼女はパフォーマンスをしています。", "category": "detail"},
+        {"text": "It looks like she is practicing a new acrobatic skill in front of a graffitied wall.", "grammar": "It looks like~ / 前置詞句", "ja": "彼女はグラフィティが描かれた壁の前で、新しいアクロバティックな技術を練習しているようです。", "category": "inference"},
+        {"text": "The colorful and elaborate graffiti on the background wall is eye-catching.", "grammar": "形容詞 / 関係代名詞省略の形容詞的用法", "ja": "背景の壁にある色とりどりで凝ったグラフィティは目を引きます。", "category": "attribute"}
+      ]
+    }
+  },
+  "pins": {
+    "woman_face": { "x": 45, "y": 60 },
+    "cap": { "x": 43, "y": 50 },
+    "hoodie": { "x": 55, "y": 60 },
+    "pants": { "x": 70, "y": 45 },
+    "shoes": { "x": 88, "y": 40 },
+    "spotlight_left": { "x": 5, "y": 5 },
+    "spotlight_right": { "x": 95, "y": 5 },
+    "graffiti": { "x": 50, "y": 40 }
+  }
+}

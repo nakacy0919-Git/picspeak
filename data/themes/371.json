@@ -1,0 +1,129 @@
+{
+  "id": "theme_371",
+  "imageSrc": "assets/images/371.webp",
+  "description": "天体望遠鏡で夜空の星を観察する子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "star", "ja": "星", "category": "object"},
+        {"text": "sky", "ja": "空", "category": "object"},
+        {"text": "night", "ja": "夜", "category": "detail"},
+        {"text": "map", "ja": "地図（星図）", "category": "object"},
+        {"text": "paper", "ja": "紙", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "point", "ja": "指さす", "category": "gist"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"},
+        {"text": "big", "ja": "大きい", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "many stars", "ja": "たくさんの星", "category": "object"},
+        {"text": "at night", "ja": "夜に", "category": "detail"},
+        {"text": "the blue sky", "ja": "青い空", "category": "attribute"},
+        {"text": "a star map", "ja": "星図", "category": "object"},
+        {"text": "look at stars", "ja": "星を見る", "category": "gist"},
+        {"text": "point to the sky", "ja": "空を指さす", "category": "gist"},
+        {"text": "happy face", "ja": "幸せそうな顔", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
+        {"text": "There are many stars.", "grammar": "There is/are~", "ja": "たくさんの星があります。", "category": "object"},
+        {"text": "The boy points to a star.", "grammar": "一般動詞", "ja": "男の子が星を指さしています。", "category": "gist"},
+        {"text": "The sky is blue.", "grammar": "be動詞", "ja": "空は青いです。", "category": "attribute"},
+        {"text": "She has a star map.", "grammar": "have", "ja": "彼女は星図を持っています。", "category": "object"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "telescope", "ja": "望遠鏡", "category": "object"},
+        {"text": "astronomy", "ja": "天文学", "category": "inference"},
+        {"text": "observation", "ja": "観察", "category": "gist"},
+        {"text": "tripod", "ja": "三脚", "category": "object"},
+        {"text": "constellation", "ja": "星座", "category": "object"},
+        {"text": "chart", "ja": "図、チャート", "category": "object"},
+        {"text": "outdoor", "ja": "屋外の", "category": "detail"},
+        {"text": "dark", "ja": "暗い", "category": "attribute"},
+        {"text": "shining", "ja": "輝いている", "category": "attribute"},
+        {"text": "discover", "ja": "発見する", "category": "gist"},
+        {"text": "science", "ja": "科学", "category": "inference"},
+        {"text": "excited", "ja": "ワクワクした", "category": "inference"},
+        {"text": "together", "ja": "一緒に", "category": "detail"},
+        {"text": "holding", "ja": "持っている", "category": "gist"},
+        {"text": "pointing", "ja": "指さしている", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "using a telescope", "ja": "望遠鏡を使っている", "category": "gist"},
+        {"text": "observing the night sky", "ja": "夜空を観察している", "category": "gist"},
+        {"text": "shining in the dark", "ja": "暗闇で輝いている", "category": "attribute"},
+        {"text": "looking for constellations", "ja": "星座を探している", "category": "gist"},
+        {"text": "on a tripod", "ja": "三脚の上に", "category": "detail"},
+        {"text": "holding a star chart", "ja": "星図を持っている", "category": "gist"},
+        {"text": "pointing at a bright star", "ja": "明るい星を指さしている", "category": "gist"},
+        {"text": "learning about science", "ja": "科学について学んでいる", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "They are observing the stars in the night sky.", "grammar": "現在進行形", "ja": "彼らは夜空の星を観察しています。", "category": "gist"},
+        {"text": "The telescope is standing on a tripod.", "grammar": "現在進行形", "ja": "望遠鏡が三脚の上に立っています。", "category": "object"},
+        {"text": "The girl is holding a constellation map in her hands.", "grammar": "現在進行形", "ja": "女の子は両手で星座図を持っています。", "category": "object"},
+        {"text": "They look very excited to see the stars.", "grammar": "look + 形容詞 + 不定詞", "ja": "彼らは星を見てとてもワクワクしているように見えます。", "category": "inference"},
+        {"text": "The boy is pointing at a star that he found.", "grammar": "関係代名詞", "ja": "男の子は見つけた星を指さしています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "astronomer", "ja": "天文学者", "category": "inference"},
+        {"text": "celestial", "ja": "天体の", "category": "attribute"},
+        {"text": "curiosity", "ja": "好奇心", "category": "inference"},
+        {"text": "instrument", "ja": "器具、道具", "category": "object"},
+        {"text": "stargazing", "ja": "星空観察", "category": "gist"},
+        {"text": "identify", "ja": "特定する", "category": "gist"},
+        {"text": "vibrant", "ja": "鮮やかな", "category": "attribute"},
+        {"text": "fascinated", "ja": "魅了された", "category": "inference"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "universe", "ja": "宇宙", "category": "inference"},
+        {"text": "knowledge", "ja": "知識", "category": "inference"},
+        {"text": "magnify", "ja": "拡大する", "category": "gist"},
+        {"text": "horizon", "ja": "地平線", "category": "detail"},
+        {"text": "glimmering", "ja": "かすかに光る", "category": "attribute"},
+        {"text": "orientation", "ja": "方向、位置づけ", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "exploring the vast universe", "ja": "広大な宇宙を探索している", "category": "inference"},
+        {"text": "identifying celestial bodies", "ja": "天体を特定している", "category": "gist"},
+        {"text": "full of curiosity", "ja": "好奇心に満ち溢れた", "category": "inference"},
+        {"text": "a sophisticated optical instrument", "ja": "洗練された光学器具", "category": "object"},
+        {"text": "referring to the star map", "ja": "星図を参照している", "category": "gist"},
+        {"text": "fascinated by the glimmering stars", "ja": "かすかに光る星々に魅了された", "category": "inference"},
+        {"text": "an enthusiastic science student", "ja": "熱心な理科の生徒", "category": "inference"},
+        {"text": "orienting the telescope correctly", "ja": "望遠鏡を正しく向けている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the children are captivated by the beauty of the celestial sphere.", "grammar": "It looks like~", "ja": "子供たちは天球の美しさに心を奪われているようです。", "category": "inference"},
+        {"text": "The boy is pointing toward a specific star while looking through the telescope.", "grammar": "接続詞 while", "ja": "男の子は望遠鏡を覗き込みながら、特定の星を指さしています。", "category": "gist"},
+        {"text": "They are using a star chart to identify the constellations appearing tonight.", "grammar": "不定詞の副詞的用法", "ja": "彼らは今夜現れる星座を特定するために、星図を使用しています。", "category": "gist"},
+        {"text": "Because they are so enthusiastic about astronomy, they stayed up late tonight.", "grammar": "接続詞 because", "ja": "彼らは天文学にとても熱心なので、今夜は夜更かしをしました。", "category": "inference"},
+        {"text": "The telescope, which is mounted on a sturdy tripod, helps them see far away objects.", "grammar": "関係代名詞（非制限用法）", "ja": "頑丈な三脚に取り付けられた望遠鏡は、遠くの物体を見るのを助けてくれます。", "category": "object"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 18, "y": 62 },
+    "girl": { "x": 84, "y": 65 },
+    "telescope": { "x": 42, "y": 42 },
+    "star": { "x": 72, "y": 8 },
+    "sky": { "x": 50, "y": 20 },
+    "map": { "x": 68, "y": 78 },
+    "tripod": { "x": 41, "y": 82 },
+    "hand": { "x": 30, "y": 32 },
+    "constellation": { "x": 70, "y": 75 },
+    "stars": { "x": 12, "y": 10 },
+    "paper": { "x": 63, "y": 70 }
+  }
+}

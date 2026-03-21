@@ -1,0 +1,132 @@
+{
+  "id": "theme_362",
+  "imageSrc": "assets/images/362.webp",
+  "description": "畑で野菜を育てる子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "carrot", "ja": "ニンジン", "category": "object"},
+        {"text": "tomato", "ja": "トマト", "category": "object"},
+        {"text": "plant", "ja": "植物、植える", "category": "gist"},
+        {"text": "water", "ja": "水、水をやる", "category": "gist"},
+        {"text": "tree", "ja": "木", "category": "object"},
+        {"text": "sky", "ja": "空", "category": "detail"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "brown", "ja": "茶色い", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな、嬉しい", "category": "inference"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a red shirt", "ja": "赤いシャツ", "category": "attribute"},
+        {"text": "water the plants", "ja": "植物に水をやる", "category": "gist"},
+        {"text": "many tomatoes", "ja": "たくさんのトマト", "category": "attribute"},
+        {"text": "in the garden", "ja": "庭（畑）で", "category": "detail"},
+        {"text": "look at", "ja": "〜を見る", "category": "gist"},
+        {"text": "a happy boy", "ja": "楽しそうな男の子", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
+        {"text": "They are in a garden.", "grammar": "be動詞", "ja": "彼らは畑にいます。", "category": "detail"},
+        {"text": "The boy has a blue shirt.", "grammar": "have", "ja": "男の子は青いシャツを着ています。", "category": "attribute"},
+        {"text": "The girl waters the tomatoes.", "grammar": "一般動詞", "ja": "女の子がトマトに水をやります。", "category": "gist"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "garden", "ja": "庭、畑", "category": "detail"},
+        {"text": "field", "ja": "畑、野原", "category": "detail"},
+        {"text": "seed", "ja": "種", "category": "object"},
+        {"text": "soil", "ja": "土", "category": "object"},
+        {"text": "vegetable", "ja": "野菜", "category": "object"},
+        {"text": "sign", "ja": "看板、標識", "category": "object"},
+        {"text": "watering can", "ja": "じょうろ", "category": "object"},
+        {"text": "grow", "ja": "育てる、育つ", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "farm", "ja": "農場", "category": "detail"},
+        {"text": "sunny", "ja": "晴れた", "category": "attribute"},
+        {"text": "together", "ja": "一緒に", "category": "inference"},
+        {"text": "near", "ja": "〜の近くに", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "in the garden", "ja": "畑で", "category": "detail"},
+        {"text": "planting seeds", "ja": "種を植えている", "category": "gist"},
+        {"text": "watering the tomatoes", "ja": "トマトに水をやっている", "category": "gist"},
+        {"text": "holding a watering can", "ja": "じょうろを持っている", "category": "gist"},
+        {"text": "sitting on the ground", "ja": "地面に座っている", "category": "detail"},
+        {"text": "standing near the plants", "ja": "植物の近くに立っている", "category": "detail"},
+        {"text": "a wooden sign", "ja": "木の看板", "category": "attribute"},
+        {"text": "growing vegetables", "ja": "野菜を育てている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "There are two children in the garden.", "grammar": "There is/are~", "ja": "畑に2人の子供がいます。", "category": "detail"},
+        {"text": "The boy is planting seeds in the soil.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "男の子は土に種を植えています。", "category": "gist"},
+        {"text": "The girl is watering the tomatoes with a watering can.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "女の子はじょうろでトマトに水をやっています。", "category": "gist"},
+        {"text": "There are some wooden signs for the vegetables.", "grammar": "There is/are~", "ja": "野菜のための木製の看板がいくつかあります。", "category": "detail"},
+        {"text": "They are smiling and working together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に働いています。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "gardening", "ja": "園芸、庭いじり", "category": "object"},
+        {"text": "agriculture", "ja": "農業", "category": "object"},
+        {"text": "sow", "ja": "（種を）まく", "category": "gist"},
+        {"text": "irrigate", "ja": "水を引く、水をやる", "category": "gist"},
+        {"text": "cultivate", "ja": "耕す、栽培する", "category": "gist"},
+        {"text": "crop", "ja": "作物", "category": "object"},
+        {"text": "harvest", "ja": "収穫", "category": "gist"},
+        {"text": "patch", "ja": "区画、小さな土地", "category": "detail"},
+        {"text": "fertile", "ja": "肥沃な", "category": "attribute"},
+        {"text": "outdoors", "ja": "屋外で", "category": "detail"},
+        {"text": "engaged", "ja": "従事している、没頭している", "category": "inference"},
+        {"text": "joyful", "ja": "喜ばしい、楽しい", "category": "inference"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "carefully", "ja": "注意深く", "category": "inference"},
+        {"text": "identify", "ja": "識別する、特定する", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "engaging in gardening", "ja": "園芸に取り組んでいる", "category": "gist"},
+        {"text": "sowing seeds carefully", "ja": "注意深く種をまいている", "category": "gist"},
+        {"text": "irrigating the tomato patch", "ja": "トマトの区画に水をやっている", "category": "gist"},
+        {"text": "fertile brown soil", "ja": "肥沃な茶色い土", "category": "attribute"},
+        {"text": "cultivating various vegetables", "ja": "様々な野菜を栽培している", "category": "gist"},
+        {"text": "holding a metal watering can", "ja": "金属製のじょうろを持っている", "category": "gist"},
+        {"text": "looking joyful", "ja": "楽しそうに見える", "category": "inference"},
+        {"text": "wooden signs identifying crops", "ja": "作物を識別する木製の看板", "category": "object"}
+      ],
+      "sentences": [
+        {"text": "It looks like the children are enjoying gardening on a sunny day.", "grammar": "It looks like~", "ja": "子供たちは晴れた日に園芸を楽しんでいるようです。", "category": "inference"},
+        {"text": "The boy who is wearing a blue shirt is carefully sowing seeds in the fertile soil.", "grammar": "関係代名詞 (who) / 現在進行形", "ja": "青いシャツを着ている男の子は、肥沃な土に注意深く種をまいています。", "category": "gist"},
+        {"text": "The girl is irrigating the ripe red tomatoes with a watering can.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "女の子はじょうろで熟した赤いトマトに水をやっています。", "category": "gist"},
+        {"text": "We can see wooden signs that identify the different vegetable patches.", "grammar": "助動詞 (can) / 関係代名詞 (that)", "ja": "異なる野菜の区画を識別する木製の看板が見えます。", "category": "detail"},
+        {"text": "Because they are working outside, they seem very joyful and healthy.", "grammar": "接続詞 (because) / seem + 形容詞", "ja": "彼らは外で働いているので、とても楽しく健康そうに見えます。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 18, "y": 55 },
+    "girl": { "x": 82, "y": 45 },
+    "watering_can": { "x": 74, "y": 52 },
+    "sign_carrots_left": { "x": 10, "y": 40 },
+    "sign_carrots_right": { "x": 38, "y": 43 },
+    "sign_tomatoes": { "x": 60, "y": 43 },
+    "sign_plant": { "x": 93, "y": 42 },
+    "tomatoes": { "x": 62, "y": 75 },
+    "carrots": { "x": 5, "y": 60 },
+    "seeds": { "x": 28, "y": 90 },
+    "soil_patch_left": { "x": 40, "y": 75 },
+    "soil_patch_right": { "x": 50, "y": 75 },
+    "trees": { "x": 50, "y": 25 },
+    "plants_right": { "x": 95, "y": 65 }
+  }
+}

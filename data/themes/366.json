@@ -1,0 +1,130 @@
+{
+  "id": "theme_366",
+  "imageSrc": "assets/images/366.webp",
+  "description": "壁にぶつかったロボットカーを見て困惑する子供たちとアドバイスする先生",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "teacher", "ja": "先生", "category": "object"},
+        {"text": "robot", "ja": "ロボット", "category": "object"},
+        {"text": "car", "ja": "車", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "detail"},
+        {"text": "floor", "ja": "床", "category": "detail"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "head", "ja": "頭", "category": "object"},
+        {"text": "line", "ja": "線", "category": "object"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "orange", "ja": "オレンジ色の", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "sad", "ja": "悲しい、困った", "category": "inference"},
+        {"text": "hit", "ja": "ぶつかる", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "two boys", "ja": "2人の男の子", "category": "object"},
+        {"text": "a robot car", "ja": "ロボットカー", "category": "object"},
+        {"text": "hit the wall", "ja": "壁にぶつかる", "category": "gist"},
+        {"text": "an orange shirt", "ja": "オレンジ色のシャツ", "category": "attribute"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "on the floor", "ja": "床の上に", "category": "detail"},
+        {"text": "look sad", "ja": "悲しそうに見える", "category": "inference"},
+        {"text": "a yellow line", "ja": "黄色い線", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "I see two boys.", "grammar": "I see~", "ja": "2人の男の子が見えます。", "category": "object"},
+        {"text": "They have a robot car.", "grammar": "have", "ja": "彼らはロボットカーを持っています。", "category": "object"},
+        {"text": "The robot hits the wall.", "grammar": "一般動詞", "ja": "ロボットが壁にぶつかります。", "category": "gist"},
+        {"text": "They are sad.", "grammar": "be動詞", "ja": "彼らは悲し（困って）います。", "category": "inference"},
+        {"text": "The teacher is a woman.", "grammar": "This is / She is~", "ja": "先生は女性です。", "category": "object"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "student", "ja": "生徒", "category": "object"},
+        {"text": "problem", "ja": "問題", "category": "inference"},
+        {"text": "question", "ja": "質問、疑問", "category": "inference"},
+        {"text": "mark", "ja": "記号、マーク", "category": "object"},
+        {"text": "bump", "ja": "ぶつかる", "category": "gist"},
+        {"text": "move", "ja": "動く", "category": "gist"},
+        {"text": "scratch", "ja": "かく", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "listen", "ja": "聞く", "category": "gist"},
+        {"text": "talk", "ja": "話す", "category": "gist"},
+        {"text": "back", "ja": "後ろへ", "category": "detail"},
+        {"text": "arrow", "ja": "矢印", "category": "object"},
+        {"text": "wheel", "ja": "車輪", "category": "object"},
+        {"text": "above", "ja": "〜の上に", "category": "detail"},
+        {"text": "wrong", "ja": "間違った", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "hitting the wall", "ja": "壁にぶつかっている", "category": "gist"},
+        {"text": "scratching their heads", "ja": "頭をかいている", "category": "gist"},
+        {"text": "a question mark", "ja": "クエスチョンマーク", "category": "object"},
+        {"text": "moving back", "ja": "後ろに動いている", "category": "gist"},
+        {"text": "looking at the robot", "ja": "ロボットを見ている", "category": "gist"},
+        {"text": "having a problem", "ja": "問題を抱えている", "category": "inference"},
+        {"text": "talking to the boys", "ja": "男の子たちに話しかけている", "category": "gist"},
+        {"text": "an arrow on the floor", "ja": "床にある矢印", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "The robot car is hitting the wall.", "grammar": "現在進行形", "ja": "ロボットカーが壁にぶつかっています。", "category": "gist"},
+        {"text": "They are scratching their heads.", "grammar": "現在進行形", "ja": "彼らは頭をかいています。", "category": "gist"},
+        {"text": "There are question marks above their heads.", "grammar": "There is/are~", "ja": "彼らの頭の上にクエスチョンマークがあります。", "category": "detail"},
+        {"text": "The boys are looking at the robot.", "grammar": "現在進行形", "ja": "男の子たちはロボットを見ています。", "category": "gist"},
+        {"text": "The teacher is talking to them.", "grammar": "現在進行形", "ja": "先生が彼らに話しかけています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "malfunction", "ja": "誤作動する、故障", "category": "gist"},
+        {"text": "unexpected", "ja": "予期しない", "category": "attribute"},
+        {"text": "direction", "ja": "方向", "category": "detail"},
+        {"text": "puzzled", "ja": "困惑した", "category": "inference"},
+        {"text": "confused", "ja": "混乱した", "category": "inference"},
+        {"text": "frustrated", "ja": "イライラした、フラストレーションを感じた", "category": "inference"},
+        {"text": "experiment", "ja": "実験", "category": "object"},
+        {"text": "programming", "ja": "プログラミング", "category": "attribute"},
+        {"text": "error", "ja": "エラー、間違い", "category": "inference"},
+        {"text": "boundary", "ja": "境界線", "category": "detail"},
+        {"text": "advise", "ja": "助言する", "category": "gist"},
+        {"text": "suggest", "ja": "提案する", "category": "gist"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "backward", "ja": "後ろ向きに", "category": "detail"},
+        {"text": "project", "ja": "プロジェクト、課題", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "moving in an unexpected direction", "ja": "予期しない方向に動いている", "category": "gist"},
+        {"text": "looking very puzzled", "ja": "とても困惑しているように見える", "category": "inference"},
+        {"text": "scratching their heads in confusion", "ja": "混乱して頭をかいている", "category": "gist"},
+        {"text": "a programming error", "ja": "プログラミングのエラー", "category": "inference"},
+        {"text": "giving them some advice", "ja": "彼らにいくつかアドバイスをしている", "category": "gist"},
+        {"text": "a malfunctioning robot", "ja": "誤作動しているロボット", "category": "attribute"},
+        {"text": "a yellow boundary line", "ja": "黄色い境界線", "category": "attribute"},
+        {"text": "observing the experiment", "ja": "実験を観察している", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the boys are confused because their robot car hit the wall.", "grammar": "It looks like~ / 接続詞 (because)", "ja": "ロボットカーが壁にぶつかったため、男の子たちは混乱しているようです。", "category": "inference"},
+        {"text": "The robot is moving backward instead of forward.", "grammar": "現在進行形 / 前置詞 (instead of)", "ja": "ロボットは前進せずに後退しています。", "category": "gist"},
+        {"text": "They are scratching their heads to understand the programming error.", "grammar": "現在進行形 / 不定詞の副詞的用法", "ja": "彼らはプログラミングのエラーを理解するために頭をかいています。", "category": "gist"},
+        {"text": "The teacher who is standing on the right is giving them advice.", "grammar": "関係代名詞 (who)", "ja": "右に立っている先生は彼らにアドバイスをしています。", "category": "gist"},
+        {"text": "We can see an arrow showing the direction on the floor.", "grammar": "助動詞 (can) / 現在分詞の形容詞的用法", "ja": "床に方向を示す矢印が見えます。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 35, "y": 40 },
+    "teacher": { "x": 82, "y": 40 },
+    "robot": { "x": 20, "y": 75 },
+    "wheel": { "x": 15, "y": 80 },
+    "collision": { "x": 10, "y": 65 },
+    "question_mark": { "x": 45, "y": 15 },
+    "arrow": { "x": 45, "y": 80 },
+    "boundary_line": { "x": 50, "y": 95 },
+    "hand_scratching_left": { "x": 40, "y": 15 },
+    "hand_scratching_right": { "x": 53, "y": 18 },
+    "teacher_hand": { "x": 72, "y": 38 }
+  }
+}

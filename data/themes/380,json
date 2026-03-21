@@ -1,0 +1,129 @@
+{
+  "id": "theme_380",
+  "imageSrc": "assets/images/380.webp",
+  "description": "湖畔で野鳥観察をする少年と女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "bird", "ja": "鳥", "category": "object"},
+        {"text": "lake", "ja": "湖", "category": "detail"},
+        {"text": "water", "ja": "水", "category": "object"},
+        {"text": "tree", "ja": "木", "category": "object"},
+        {"text": "sun", "ja": "太陽", "category": "object"},
+        {"text": "sky", "ja": "空", "category": "detail"},
+        {"text": "chart", "ja": "図、表", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "point", "ja": "指さす", "category": "gist"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "a boy and a woman", "ja": "男の子と女性", "category": "object"},
+        {"text": "a big bird", "ja": "大きな鳥", "category": "attribute"},
+        {"text": "a blue lake", "ja": "青い湖", "category": "attribute"},
+        {"text": "a yellow sun", "ja": "黄色い太陽", "category": "attribute"},
+        {"text": "look at the bird", "ja": "鳥を見る", "category": "gist"},
+        {"text": "hold a chart", "ja": "図を持つ", "category": "gist"},
+        {"text": "in the water", "ja": "水の中に", "category": "detail"},
+        {"text": "a happy face", "ja": "幸せそうな顔", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a woman.", "grammar": "I see~", "ja": "男の子と女性が見えます。", "category": "object"},
+        {"text": "The boy looks at the bird.", "grammar": "一般動詞", "ja": "男の子が鳥を見ます。", "category": "gist"},
+        {"text": "The woman has a bird chart.", "grammar": "have", "ja": "女性は鳥の図を持っています。", "category": "object"},
+        {"text": "The bird is in the water.", "grammar": "場所を表す前置詞", "ja": "鳥は水の中にいます。", "category": "detail"},
+        {"text": "The sun is yellow.", "grammar": "be動詞", "ja": "太陽は黄色いです。", "category": "attribute"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "telescope", "ja": "望遠鏡", "category": "object"},
+        {"text": "tripod", "ja": "三脚", "category": "object"},
+        {"text": "heron", "ja": "サギ", "category": "object"},
+        {"text": "glasses", "ja": "メガネ", "category": "object"},
+        {"text": "grass", "ja": "草", "category": "detail"},
+        {"text": "morning", "ja": "朝", "category": "inference"},
+        {"text": "evening", "ja": "夕方", "category": "inference"},
+        {"text": "watch", "ja": "観察する", "category": "gist"},
+        {"text": "find", "ja": "見つける", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "beautiful", "ja": "美しい", "category": "attribute"},
+        {"text": "quiet", "ja": "静かな", "category": "attribute"},
+        {"text": "near", "ja": "〜の近くに", "category": "detail"},
+        {"text": "through", "ja": "〜を通して", "category": "detail"},
+        {"text": "together", "ja": "一緒に", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "bird watching", "ja": "野鳥観察", "category": "inference"},
+        {"text": "looking through a telescope", "ja": "望遠鏡を覗いている", "category": "gist"},
+        {"text": "pointing at the chart", "ja": "図を指さしている", "category": "gist"},
+        {"text": "standing near the lake", "ja": "湖の近くに立っている", "category": "detail"},
+        {"text": "wearing glasses", "ja": "メガネをかけている", "category": "gist"},
+        {"text": "early in the morning", "ja": "朝早くに", "category": "inference"},
+        {"text": "a beautiful heron", "ja": "美しいサギ", "category": "attribute"},
+        {"text": "a quiet place", "ja": "静かな場所", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "A boy is looking through a telescope.", "grammar": "現在進行形", "ja": "男の子が望遠鏡を覗いています。", "category": "gist"},
+        {"text": "The woman is pointing at a bird chart.", "grammar": "現在進行形", "ja": "女性は鳥の図を指さしています。", "category": "gist"},
+        {"text": "They are watching a bird together.", "grammar": "現在進行形", "ja": "彼らは一緒に鳥を観察しています。", "category": "gist"},
+        {"text": "There is a big bird in the water.", "grammar": "There is/are~", "ja": "水の中に大きな鳥がいます。", "category": "object"},
+        {"text": "The sun is shining in the sky.", "grammar": "現在進行形", "ja": "空に太陽が輝いています。", "category": "detail"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "wildlife", "ja": "野生動物", "category": "object"},
+        {"text": "scope", "ja": "スコープ、望遠鏡", "category": "object"},
+        {"text": "identify", "ja": "特定する", "category": "gist"},
+        {"text": "reference", "ja": "参考", "category": "inference"},
+        {"text": "species", "ja": "種", "category": "object"},
+        {"text": "scenery", "ja": "景色", "category": "detail"},
+        {"text": "peaceful", "ja": "平和な、穏やかな", "category": "inference"},
+        {"text": "fascinating", "ja": "魅力的な", "category": "inference"},
+        {"text": "dawn", "ja": "夜明け", "category": "inference"},
+        {"text": "dusk", "ja": "夕暮れ", "category": "inference"},
+        {"text": "concentrate", "ja": "集中する", "category": "inference"},
+        {"text": "majestic", "ja": "雄大な、威厳のある", "category": "attribute"},
+        {"text": "horizon", "ja": "地平線、水平線", "category": "detail"},
+        {"text": "background", "ja": "背景", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "observing wildlife", "ja": "野生動物を観察している", "category": "gist"},
+        {"text": "identifying bird species", "ja": "鳥の種を特定している", "category": "gist"},
+        {"text": "a majestic heron", "ja": "威厳のあるサギ", "category": "attribute"},
+        {"text": "a peaceful scenery", "ja": "穏やかな景色", "category": "inference"},
+        {"text": "concentrating on observation", "ja": "観察に集中している", "category": "inference"},
+        {"text": "referring to a bird chart", "ja": "鳥の図を参照している", "category": "gist"},
+        {"text": "using a spotting scope", "ja": "スポッティングスコープを使用している", "category": "gist"},
+        {"text": "beautiful colors of dawn", "ja": "夜明けの美しい色彩", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "It looks like they are enjoying bird watching in nature.", "grammar": "It looks like~", "ja": "彼らは自然の中で野鳥観察を楽しんでいるようです。", "category": "inference"},
+        {"text": "The boy is using a spotting scope to observe the majestic heron.", "grammar": "不定詞の副詞的用法", "ja": "男の子は威厳のあるサギを観察するためにスポッティングスコープを使っています。", "category": "gist"},
+        {"text": "The woman is referring to a chart to identify the bird species.", "grammar": "不定詞の副詞的用法", "ja": "女性は鳥の種を特定するために図を参照しています。", "category": "gist"},
+        {"text": "We can see the beautiful colors of dawn in the background.", "grammar": "助動詞", "ja": "背景に夜明けの美しい色彩が見えます。", "category": "detail"},
+        {"text": "Because the scenery is peaceful, they are deeply engaged in their activity.", "grammar": "接続詞 because", "ja": "景色が穏やかなので、彼らは活動に深く没頭しています。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 16, "y": 62 },
+    "woman": { "x": 86, "y": 60 },
+    "telescope": { "x": 35, "y": 52 },
+    "bird": { "x": 68, "y": 45 },
+    "chart": { "x": 68, "y": 74 },
+    "tripod": { "x": 35, "y": 85 },
+    "lake": { "x": 55, "y": 42 },
+    "sun": { "x": 52, "y": 25 },
+    "tree": { "x": 8, "y": 18 },
+    "glasses": { "x": 81, "y": 46 },
+    "grass": { "x": 48, "y": 85 }
+  }
+}

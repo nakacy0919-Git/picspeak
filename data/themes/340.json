@@ -1,0 +1,126 @@
+{
+  "id": "theme_340",
+  "imageSrc": "assets/images/334.webp",
+  "description": "公園で犬を散歩させる女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女性", "category": "object"},
+        {"text": "dog", "ja": "犬", "category": "object"},
+        {"text": "walk", "ja": "歩く", "category": "gist"},
+        {"text": "park", "ja": "公園", "category": "detail"},
+        {"text": "tree", "ja": "木", "category": "object"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "sun", "ja": "太陽", "category": "object"},
+        {"text": "sunny", "ja": "晴れた", "category": "attribute"},
+        {"text": "hat", "ja": "帽子（サンバイザー）", "category": "object"},
+        {"text": "shoes", "ja": "靴", "category": "object"},
+        {"text": "shirt", "ja": "シャツ", "category": "object"},
+        {"text": "leash", "ja": "リード", "category": "object"},
+        {"text": "grass", "ja": "草、芝生", "category": "detail"},
+        {"text": "path", "ja": "小道、遊歩道", "category": "detail"},
+        {"text": "sky", "ja": "空", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "a woman and a dog", "ja": "女性と犬", "category": "object"},
+        {"text": "walk the dog", "ja": "犬を散歩させる", "category": "gist"},
+        {"text": "in the park", "ja": "公園で", "category": "detail"},
+        {"text": "a sunny day", "ja": "晴れた日", "category": "attribute"},
+        {"text": "a big tree", "ja": "大きな木", "category": "object"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a happy dog", "ja": "幸せな犬", "category": "inference"},
+        {"text": "on the grass", "ja": "草の上で", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "category": "object"},
+        {"text": "She is walking her dog.", "grammar": "現在進行形", "ja": "彼女は犬を散歩させています。", "category": "gist"},
+        {"text": "The dog is big and golden.", "grammar": "be動詞", "ja": "その犬は大きくて金色です。", "category": "attribute"},
+        {"text": "It is a sunny day.", "grammar": "天候を表すit", "ja": "晴れた日です。", "category": "attribute"},
+        {"text": "There are many trees in the park.", "grammar": "There is/are~", "ja": "公園にはたくさんの木があります。", "category": "detail"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "jog", "ja": "ジョギングする", "category": "gist"},
+        {"text": "exercise", "ja": "運動する", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "leash", "ja": "リード", "category": "object"},
+        {"text": "sniff", "ja": "クンクン嗅ぐ", "category": "gist"},
+        {"text": "tree trunk", "ja": "木の幹", "category": "object"},
+        {"text": "sidewalk", "ja": "歩道、遊歩道", "category": "detail"},
+        {"text": "nature", "ja": "自然", "category": "detail"},
+        {"text": "foliage", "ja": "葉、木の葉", "category": "object"},
+        {"text": "scenery", "ja": "景色", "category": "detail"},
+        {"text": "outdoor", "ja": "屋外の", "category": "attribute"},
+        {"text": "active", "ja": "活発な", "category": "attribute"},
+        {"text": "clear sky", "ja": "澄んだ空", "category": "attribute"},
+        {"text": "relax", "ja": "リラックスする", "category": "inference"},
+        {"text": "comfortable", "ja": "快適な", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "walking her dog in the park", "ja": "公園で犬を散歩させている", "category": "gist"},
+        {"text": "holding a leash", "ja": "リードを持っている", "category": "gist"},
+        {"text": "enjoying the fresh air", "ja": "新鮮な空気を楽しんでいる", "category": "inference"},
+        {"text": "sniffing the tree trunk", "ja": "木の幹を嗅いでいる", "category": "gist"},
+        {"text": "under the blue sky", "ja": "青空の下で", "category": "detail"},
+        {"text": "a cozy park", "ja": "居心地の良い公園", "category": "inference"},
+        {"text": "having a relax time", "ja": "リラックスした時間を過ごしている", "category": "inference"},
+        {"text": "wearing athletic clothes", "ja": "運動着を着ている", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "A woman is walking her dog on a path in the park.", "grammar": "現在進行形", "ja": "女性が公園の小道で犬を散歩させています。", "category": "gist"},
+        {"text": "The dog is sniffing a tree trunk curiously.", "grammar": "現在進行形 / 副詞", "ja": "犬が好奇心旺盛に木の幹を嗅いでいます。", "category": "gist"},
+        {"text": "She is wearing a blue t-shirt and a white sun visor.", "grammar": "現在進行形", "ja": "彼女は青いTシャツと白いサンバイザーを着用しています。", "category": "attribute"},
+        {"text": "There are many trees and green grass around them.", "grammar": "There is/are~", "ja": "彼らの周りにはたくさんの木と緑の草があります。", "category": "detail"},
+        {"text": "They seem to be enjoying a calm afternoon in nature.", "grammar": "seem to be ~ing", "ja": "彼らは自然の中、穏やかな午後を楽しんでいるようです。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "take a stroll", "ja": "散策する", "category": "gist"},
+        {"text": "golden retriever", "ja": "ゴールデンレトリバー", "category": "object"},
+        {"text": "furry friend", "ja": "毛皮の友達（ペットの愛称）", "category": "object"},
+        {"text": "investigate", "ja": "調査する、調べる", "category": "gist"},
+        {"text": "curiously", "ja": "好奇心を持って", "category": "inference"},
+        {"text": "athletic", "ja": "運動用の、スポーティーな", "category": "attribute"},
+        {"text": "apparel", "ja": "衣服", "category": "object"},
+        {"text": "lush", "ja": "青々とした、豊かな", "category": "attribute"},
+        {"text": "botanical", "ja": "植物の", "category": "attribute"},
+        {"text": "surroundings", "ja": "環境、周囲", "category": "detail"},
+        {"text": "tranquil", "ja": "静かな、穏やかな", "category": "inference"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"},
+        {"text": "active lifestyle", "ja": "活動的なライフスタイル", "category": "attribute"},
+        {"text": "pet owner", "ja": "ペットの飼い主", "category": "object"},
+        {"text": "responsible", "ja": "責任ある", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "taking a stroll in the park", "ja": "公園を散策している", "category": "gist"},
+        {"text": "investigating something curiosly", "ja": "好奇心を持って何かを調査している", "category": "gist"},
+        {"text": "wearing athletic apparel", "ja": "運動着を着用している", "category": "attribute"},
+        {"text": "lush green grass", "ja": "青々とした緑の草", "category": "attribute"},
+        {"text": "botanical surroundings", "ja": "植物に囲まれた環境", "category": "detail"},
+        {"text": "a tranquil atmosphere", "ja": "穏やかな雰囲気", "category": "inference"},
+        {"text": "leading an active lifestyle", "ja": "活動的な生活を送っている", "category": "gist"},
+        {"text": "a well-behaved dog", "ja": "行儀の良い犬", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "It looks like the woman is spending a relaxing afternoon in a lush green park.", "grammar": "It looks like~", "ja": "女性は緑豊かな公園でリラックスした午後を過ごしているようです。", "category": "inference"},
+        {"text": "The dog, which is a big golden retriever, is carefully sniffing a tree trunk.", "grammar": "関係代名詞 (非制限用法) / 現在進行形", "ja": "犬は大きなゴールデンレトリバーで、注意深く木の幹を嗅いでいます。", "category": "gist"},
+        {"text": "She is walking her dog on a scenic path under the clear blue sky.", "grammar": "現在進行形 / 前置詞 (under)", "ja": "彼女は澄んだ青空の下、景色の良い小道で犬を散歩させています。", "category": "detail"},
+        {"text": "We can see her holding a leash and wearing athletic apparel.", "grammar": "助動詞 (can) / 動名詞 / 現在進行形", "ja": "彼女がリードを持ち、運動着を着用しているのが見えます。", "category": "attribute"},
+        {"text": "They seem to be enjoying the fresh air and the natural surroundings.", "grammar": "seem to be ~ing", "ja": "彼らは新鮮な空気と自然の環境を楽しんでいるようです。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "woman": { "x": 30, "y": 50 },
+    "dog": { "x": 75, "y": 75 },
+    "leash": { "x": 48, "y": 55 },
+    "tree": { "x": 90, "y": 50 },
+    "path": { "x": 15, "y": 85 },
+    "grass": { "x": 60, "y": 80 },
+    "sky": { "x": 50, "y": 10 }
+  }
+}

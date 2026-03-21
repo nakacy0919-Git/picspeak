@@ -1,0 +1,142 @@
+{
+  "id": "theme_347",
+  "imageSrc": "assets/images/347.webp",
+  "description": "音楽室で楽器を演奏する子供たちと見守る先生",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "teacher", "ja": "先生", "category": "object"},
+        {"text": "man", "ja": "男の人", "category": "object"},
+        {"text": "woman", "ja": "女の人", "category": "object"},
+        {"text": "piano", "ja": "ピアノ", "category": "object"},
+        {"text": "guitar", "ja": "ギター", "category": "object"},
+        {"text": "drum", "ja": "ドラム", "category": "object"},
+        {"text": "music", "ja": "音楽", "category": "object"},
+        {"text": "room", "ja": "部屋", "category": "detail"},
+        {"text": "school", "ja": "学校", "category": "detail"},
+        {"text": "play", "ja": "演奏する", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "play the piano", "ja": "ピアノを弾く", "category": "gist"},
+        {"text": "play the guitar", "ja": "ギターを弾く", "category": "gist"},
+        {"text": "a red drum", "ja": "赤いドラム", "category": "attribute"},
+        {"text": "a happy boy", "ja": "楽しそうな男の子", "category": "inference"},
+        {"text": "two teachers", "ja": "2人の先生", "category": "object"},
+        {"text": "a music room", "ja": "音楽室", "category": "detail"},
+        {"text": "stand up", "ja": "立っている", "category": "gist"},
+        {"text": "look at", "ja": "〜を見る", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see boys and girls.", "grammar": "I see~", "ja": "男の子たちと女の子たちが見えます。", "category": "object"},
+        {"text": "They play music.", "grammar": "一般動詞", "ja": "彼らは音楽を演奏します。", "category": "gist"},
+        {"text": "A boy plays the drum.", "grammar": "一般動詞", "ja": "男の子がドラムを叩きます。", "category": "gist"},
+        {"text": "The girl has a guitar.", "grammar": "have", "ja": "女の子はギターを持っています。", "category": "object"},
+        {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "band", "ja": "バンド", "category": "object"},
+        {"text": "keyboard", "ja": "キーボード", "category": "object"},
+        {"text": "saxophone", "ja": "サックス", "category": "object"},
+        {"text": "cymbals", "ja": "シンバル", "category": "object"},
+        {"text": "headphones", "ja": "ヘッドホン", "category": "object"},
+        {"text": "locker", "ja": "ロッカー", "category": "object"},
+        {"text": "door", "ja": "ドア", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "detail"},
+        {"text": "panel", "ja": "パネル", "category": "object"},
+        {"text": "practice", "ja": "練習する", "category": "gist"},
+        {"text": "listen", "ja": "聞く", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "behind", "ja": "〜の後ろに", "category": "detail"},
+        {"text": "near", "ja": "〜の近くに", "category": "detail"},
+        {"text": "together", "ja": "一緒に", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "in the music room", "ja": "音楽室で", "category": "detail"},
+        {"text": "practicing in a band", "ja": "バンドの練習をしている", "category": "gist"},
+        {"text": "playing the saxophone", "ja": "サックスを吹いている", "category": "gist"},
+        {"text": "holding cymbals", "ja": "シンバルを持っている", "category": "gist"},
+        {"text": "wearing headphones", "ja": "ヘッドホンをつけている", "category": "attribute"},
+        {"text": "behind the girls", "ja": "女の子たちの後ろに", "category": "detail"},
+        {"text": "next to the door", "ja": "ドアの隣に", "category": "detail"},
+        {"text": "giving a thumbs up", "ja": "親指を立てている（いいね！としている）", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "The students are practicing music together.", "grammar": "現在進行形", "ja": "生徒たちは一緒に音楽の練習をしています。", "category": "gist"},
+        {"text": "There is a drum set in the center of the room.", "grammar": "There is/are~", "ja": "部屋の中央にドラムセットがあります。", "category": "detail"},
+        {"text": "A girl in a purple shirt is playing the bass guitar.", "grammar": "現在進行形 / 前置詞", "ja": "紫色のシャツを着た女の子がベースを弾いています。", "category": "gist"},
+        {"text": "The male teacher is watching them and giving a thumbs up.", "grammar": "現在進行形", "ja": "男性の先生は彼らを見て、親指を立てています。", "category": "gist"},
+        {"text": "They are playing their instruments happily.", "grammar": "現在進行形 / 副詞", "ja": "彼らは楽しそうに楽器を演奏しています。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "instrument", "ja": "楽器", "category": "object"},
+        {"text": "studio", "ja": "スタジオ", "category": "detail"},
+        {"text": "acoustic", "ja": "音響の", "category": "attribute"},
+        {"text": "soundproof", "ja": "防音の", "category": "attribute"},
+        {"text": "encourage", "ja": "励ます", "category": "gist"},
+        {"text": "instruct", "ja": "指導する", "category": "gist"},
+        {"text": "perform", "ja": "演奏する", "category": "gist"},
+        {"text": "collaborate", "ja": "協力する", "category": "gist"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "joyful", "ja": "喜ばしい、楽しい", "category": "inference"},
+        {"text": "rhythm", "ja": "リズム", "category": "object"},
+        {"text": "melody", "ja": "メロディ", "category": "object"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "session", "ja": "セッション、活動", "category": "object"},
+        {"text": "equipment", "ja": "機材、設備", "category": "object"},
+        {"text": "sheet music", "ja": "楽譜", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "collaborating in a music session", "ja": "音楽セッションで協力している", "category": "gist"},
+        {"text": "playing various instruments", "ja": "様々な楽器を演奏している", "category": "gist"},
+        {"text": "acoustic panels on the wall", "ja": "壁の防音（音響）パネル", "category": "detail"},
+        {"text": "encouraging the students", "ja": "生徒たちを励ましている", "category": "gist"},
+        {"text": "observing their performance", "ja": "彼らの演奏を観察している", "category": "gist"},
+        {"text": "an enthusiastic band practice", "ja": "熱心なバンド練習", "category": "inference"},
+        {"text": "holding a sheet of music", "ja": "楽譜を持っている", "category": "gist"},
+        {"text": "a soundproof studio", "ja": "防音スタジオ", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are enjoying a band practice in a soundproof studio.", "grammar": "It looks like~", "ja": "生徒たちは防音スタジオでバンドの練習を楽しんでいるようです。", "category": "inference"},
+        {"text": "The teacher who is standing near the door is giving them a thumbs up to encourage them.", "grammar": "関係代名詞 (who) / 不定詞", "ja": "ドアの近くに立っている先生は、彼らを励ますために親指を立てています。", "category": "gist"},
+        {"text": "Because they are collaborating well, they seem to be having a lot of fun.", "grammar": "接続詞 (because) / seem to~", "ja": "彼らはうまく協力しているので、とても楽しんでいるようです。", "category": "inference"},
+        {"text": "The female teacher holding a paper is observing the saxophone players.", "grammar": "現在分詞の形容詞的用法", "ja": "紙を持っている女性の先生は、サックス奏者たちを観察しています。", "category": "gist"},
+        {"text": "We can see some acoustic panels on the wall to make the room quiet.", "grammar": "助動詞 (can) / 不定詞", "ja": "部屋を静かにするために、壁にいくつかの防音パネルが見えます。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "girl_keyboard": { "x": 13, "y": 55 },
+    "keyboard": { "x": 18, "y": 68 },
+    "teacher_man": { "x": 25, "y": 35 },
+    "girl_bass": { "x": 34, "y": 50 },
+    "headphones": { "x": 31, "y": 35 },
+    "bass_guitar": { "x": 38, "y": 55 },
+    "boy_drum": { "x": 54, "y": 38 },
+    "drums": { "x": 54, "y": 58 },
+    "boy_sax": { "x": 65, "y": 55 },
+    "sax_left": { "x": 67, "y": 62 },
+    "girl_sax": { "x": 77, "y": 55 },
+    "sax_right": { "x": 74, "y": 62 },
+    "teacher_woman": { "x": 84, "y": 40 },
+    "paper": { "x": 81, "y": 45 },
+    "boy_cymbals": { "x": 94, "y": 60 },
+    "cymbals": { "x": 89, "y": 55 },
+    "soundproof_panel": { "x": 45, "y": 25 },
+    "lockers": { "x": 95, "y": 25 },
+    "door": { "x": 12, "y": 30 }
+  }
+}

@@ -1,0 +1,127 @@
+{
+  "id": "theme_339",
+  "imageSrc": "assets/images/339.webp",
+  "description": "校庭でサッカーをする子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "ball", "ja": "ボール", "category": "object"},
+        {"text": "soccer", "ja": "サッカー", "category": "object"},
+        {"text": "school", "ja": "学校", "category": "detail"},
+        {"text": "grass", "ja": "芝生", "category": "detail"},
+        {"text": "sun", "ja": "太陽", "category": "object"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "goal", "ja": "ゴール", "category": "object"},
+        {"text": "shoe", "ja": "靴", "category": "object"},
+        {"text": "play", "ja": "遊ぶ、する", "category": "gist"},
+        {"text": "throw", "ja": "投げる", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"},
+        {"text": "big", "ja": "大きい", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "a soccer ball", "ja": "サッカーボール", "category": "object"},
+        {"text": "play soccer", "ja": "サッカーをする", "category": "gist"},
+        {"text": "on the grass", "ja": "芝生の上で", "category": "detail"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a red shirt", "ja": "赤いシャツ", "category": "attribute"},
+        {"text": "a white shirt", "ja": "白いシャツ", "category": "attribute"},
+        {"text": "throw the ball", "ja": "ボールを投げる", "category": "gist"},
+        {"text": "under the sun", "ja": "太陽の下で", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "I see boys.", "grammar": "I see~", "ja": "男の子たちが見えます。", "category": "object"},
+        {"text": "This is a school.", "grammar": "This is~", "ja": "これは学校です。", "category": "detail"},
+        {"text": "He has a ball.", "grammar": "have", "ja": "彼はボールを持っています。", "category": "object"},
+        {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。", "category": "attribute"},
+        {"text": "They play soccer.", "grammar": "一般動詞", "ja": "彼らはサッカーをします。", "category": "gist"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "player", "ja": "選手、プレイヤー", "category": "object"},
+        {"text": "field", "ja": "フィールド、運動場", "category": "detail"},
+        {"text": "uniform", "ja": "ユニフォーム", "category": "object"},
+        {"text": "kick", "ja": "蹴る", "category": "gist"},
+        {"text": "throw-in", "ja": "スローイン", "category": "gist"},
+        {"text": "watch", "ja": "見る", "category": "gist"},
+        {"text": "run", "ja": "走る", "category": "gist"},
+        {"text": "outdoor", "ja": "屋外の", "category": "attribute"},
+        {"text": "behind", "ja": "〜の後ろに", "category": "detail"},
+        {"text": "near", "ja": "〜の近くに", "category": "detail"},
+        {"text": "building", "ja": "建物", "category": "detail"},
+        {"text": "sunny", "ja": "晴れた", "category": "attribute"},
+        {"text": "teammate", "ja": "チームメイト", "category": "object"},
+        {"text": "concentrate", "ja": "集中する", "category": "inference"},
+        {"text": "game", "ja": "試合、ゲーム", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "playing soccer", "ja": "サッカーをしている", "category": "gist"},
+        {"text": "throwing the ball", "ja": "ボールを投げている", "category": "gist"},
+        {"text": "in the field", "ja": "フィールドで", "category": "detail"},
+        {"text": "near the goal", "ja": "ゴールの近くに", "category": "detail"},
+        {"text": "behind the boy", "ja": "男の子の後ろに", "category": "detail"},
+        {"text": "blue uniform", "ja": "青いユニフォーム", "category": "attribute"},
+        {"text": "white uniform", "ja": "白いユニフォーム", "category": "attribute"},
+        {"text": "red uniform", "ja": "赤いユニフォーム", "category": "attribute"},
+        {"text": "under a sunny sky", "ja": "晴れた空の下で", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "They are playing soccer.", "grammar": "現在進行形", "ja": "彼らはサッカーをしています。", "category": "gist"},
+        {"text": "One boy is throwing the ball.", "grammar": "現在進行形", "ja": "一人の男の子がボールを投げています。", "category": "gist"},
+        {"text": "There is a goal behind the girl.", "grammar": "There is/are~", "ja": "女の子の後ろにゴールがあります。", "category": "detail"},
+        {"text": "The children are running on the field.", "grammar": "現在進行形", "ja": "子供たちはフィールドを走っています。", "category": "gist"},
+        {"text": "The boy in blue is watching the ball.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "青い服の男の子がボールを見ています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "opponent", "ja": "相手、対戦相手", "category": "object"},
+        {"text": "match", "ja": "試合", "category": "object"},
+        {"text": "compete", "ja": "競う", "category": "gist"},
+        {"text": "focus", "ja": "集中する", "category": "inference"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "active", "ja": "活発な", "category": "attribute"},
+        {"text": "healthy", "ja": "健康な", "category": "attribute"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "lush", "ja": "青々とした", "category": "attribute"},
+        {"text": "competitive", "ja": "競争的な", "category": "attribute"},
+        {"text": "recess", "ja": "休み時間", "category": "detail"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"},
+        {"text": "perform", "ja": "行う", "category": "gist"},
+        {"text": "kit", "ja": "（スポーツ用の）道具一式、ユニフォーム", "category": "object"},
+        {"text": "participation", "ja": "参加", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "performing a throw-in", "ja": "スローインを行っている", "category": "gist"},
+        {"text": "concentrating on the game", "ja": "試合に集中している", "category": "inference"},
+        {"text": "an outdoor sports field", "ja": "屋外のスポーツフィールド", "category": "detail"},
+        {"text": "wearing soccer kits", "ja": "サッカーのユニフォームを着ている", "category": "attribute"},
+        {"text": "looking enthusiastic", "ja": "熱心そうに見える", "category": "inference"},
+        {"text": "a sunny afternoon", "ja": "晴れた午後", "category": "detail"},
+        {"text": "on the lush green grass", "ja": "青々とした緑の芝生の上で", "category": "detail"},
+        {"text": "a competitive match", "ja": "競争の激しい試合", "category": "attribute"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are enjoying a soccer match during recess.", "grammar": "It looks like~", "ja": "生徒たちは休み時間にサッカーの試合を楽しんでいるようです。", "category": "inference"},
+        {"text": "A boy in a blue uniform is performing a throw-in.", "grammar": "現在進行形", "ja": "青いユニフォームを着た男の子がスローインを行っています。", "category": "gist"},
+        {"text": "The girl in red is observing the throw-in carefully.", "grammar": "現在進行形", "ja": "赤い服の女の子がスローインを注意深く観察しています。", "category": "gist"},
+        {"text": "There is a school building on the left side of the field.", "grammar": "There is/are~ / 前置詞句", "ja": "フィールドの左側に学校の校舎があります。", "category": "detail"},
+        {"text": "They are playing soccer under a clear blue sky.", "grammar": "現在進行形", "ja": "彼らは澄んだ青空の下でサッカーをしています。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 12, "y": 60 },
+    "ball": { "x": 12, "y": 28 },
+    "girl": { "x": 45, "y": 52 },
+    "boy_front": { "x": 75, "y": 60 },
+    "goal": { "x": 92, "y": 35 },
+    "school": { "x": 18, "y": 25 },
+    "sun": { "x": 80, "y": 15 }
+  }
+}

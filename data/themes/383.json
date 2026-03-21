@@ -1,0 +1,131 @@
+{
+  "id": "theme_383",
+  "imageSrc": "assets/images/383.webp",
+  "description": "公園で犬とアジリティの練習をする女の子",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "dog", "ja": "犬", "category": "object"},
+        {"text": "hurdle", "ja": "ハードル", "category": "object"},
+        {"text": "grass", "ja": "草、芝生", "category": "object"},
+        {"text": "fence", "ja": "フェンス", "category": "object"},
+        {"text": "cloud", "ja": "雲", "category": "object"},
+        {"text": "sky", "ja": "空", "category": "object"},
+        {"text": "jump", "ja": "跳ぶ", "category": "gist"},
+        {"text": "run", "ja": "走る", "category": "gist"},
+        {"text": "smile", "ja": "ほほえむ", "category": "gist"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "green", "ja": "緑の", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "a happy girl", "ja": "楽しそうな女の子", "category": "inference"},
+        {"text": "a big dog", "ja": "大きな犬", "category": "attribute"},
+        {"text": "jump high", "ja": "高く跳ぶ", "category": "gist"},
+        {"text": "run fast", "ja": "速く走る", "category": "gist"},
+        {"text": "a pink shirt", "ja": "ピンクのシャツ", "category": "attribute"},
+        {"text": "green grass", "ja": "緑の芝生", "category": "detail"},
+        {"text": "blue sky", "ja": "青い空", "category": "detail"},
+        {"text": "a yellow bar", "ja": "黄色のバー", "category": "object"}
+      ],
+      "sentences": [
+        {"text": "I see a girl and a dog.", "grammar": "I see~", "ja": "女の子と犬が見えます。", "category": "object"},
+        {"text": "The dog jumps.", "grammar": "一般動詞", "ja": "犬が跳びます。", "category": "gist"},
+        {"text": "The girl runs.", "grammar": "一般動詞", "ja": "女の子が走ります。", "category": "gist"},
+        {"text": "She has a pink shirt.", "grammar": "have", "ja": "彼女はピンクのシャツを着ています。", "category": "attribute"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "owner", "ja": "飼い主", "category": "object"},
+        {"text": "pet", "ja": "ペット", "category": "object"},
+        {"text": "obstacle", "ja": "障害物", "category": "object"},
+        {"text": "shadow", "ja": "影", "category": "object"},
+        {"text": "field", "ja": "野原、グラウンド", "category": "detail"},
+        {"text": "outdoor", "ja": "屋外の", "category": "detail"},
+        {"text": "practice", "ja": "練習する", "category": "gist"},
+        {"text": "train", "ja": "訓練する", "category": "gist"},
+        {"text": "watch", "ja": "見る", "category": "gist"},
+        {"text": "leap", "ja": "跳ぶ", "category": "gist"},
+        {"text": "colorful", "ja": "カラフルな", "category": "attribute"},
+        {"text": "high", "ja": "高く", "category": "attribute"},
+        {"text": "sunny", "ja": "晴れた", "category": "attribute"},
+        {"text": "behind", "ja": "〜の後ろに", "category": "detail"},
+        {"text": "together", "ja": "一緒に", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "running with her dog", "ja": "犬と一緒に走っている", "category": "gist"},
+        {"text": "jumping over the hurdle", "ja": "ハードルを跳び越えている", "category": "gist"},
+        {"text": "practicing in the field", "ja": "グラウンドで練習している", "category": "detail"},
+        {"text": "a colorful obstacle", "ja": "カラフルな障害物", "category": "attribute"},
+        {"text": "smiling happily", "ja": "楽しそうに微笑んでいる", "category": "inference"},
+        {"text": "behind the dog", "ja": "犬の後ろに", "category": "detail"},
+        {"text": "a sunny day", "ja": "晴れた日", "category": "attribute"},
+        {"text": "a dark shadow", "ja": "暗い影", "category": "object"}
+      ],
+      "sentences": [
+        {"text": "A girl is running with her dog in the field.", "grammar": "現在進行形 / 場所を表す前置詞", "ja": "女の子がグラウンドで犬と一緒に走っています。", "category": "gist"},
+        {"text": "The dog is jumping over a colorful hurdle.", "grammar": "現在進行形 / 前置詞 (over)", "ja": "犬がカラフルなハードルを跳び越えています。", "category": "gist"},
+        {"text": "The girl is smiling happily.", "grammar": "現在進行形 / 副詞", "ja": "女の子は楽しそうに微笑んでいます。", "category": "inference"},
+        {"text": "There is a fence behind them.", "grammar": "There is/are~ / 前置詞 (behind)", "ja": "彼らの後ろにフェンスがあります。", "category": "detail"},
+        {"text": "The dog has a shadow on the grass.", "grammar": "一般動詞 / 場所を表す前置詞", "ja": "芝生の上に犬の影があります。", "category": "object"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "companion", "ja": "仲間、相棒", "category": "object"},
+        {"text": "canine", "ja": "犬", "category": "object"},
+        {"text": "agility", "ja": "敏捷性、アジリティ（犬の障害物競技）", "category": "inference"},
+        {"text": "competition", "ja": "競技、大会", "category": "inference"},
+        {"text": "teamwork", "ja": "チームワーク", "category": "inference"},
+        {"text": "sprint", "ja": "全力疾走する", "category": "gist"},
+        {"text": "encourage", "ja": "励ます", "category": "gist"},
+        {"text": "bound", "ja": "跳ねる", "category": "gist"},
+        {"text": "energetic", "ja": "エネルギッシュな", "category": "attribute"},
+        {"text": "vibrant", "ja": "鮮やかな", "category": "attribute"},
+        {"text": "athletic", "ja": "運動の、運動神経が良い", "category": "attribute"},
+        {"text": "delightful", "ja": "楽しい、喜ばしい", "category": "inference"},
+        {"text": "grassy", "ja": "草に覆われた", "category": "detail"},
+        {"text": "background", "ja": "背景", "category": "detail"},
+        {"text": "alongside", "ja": "〜と並んで", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "participating in an agility practice", "ja": "アジリティの練習に参加している", "category": "inference"},
+        {"text": "leaping over the obstacle", "ja": "障害物を跳び越えている", "category": "gist"},
+        {"text": "encouraging her canine companion", "ja": "犬の相棒を励ましている", "category": "gist"},
+        {"text": "an energetic and athletic dog", "ja": "エネルギッシュで運動能力の高い犬", "category": "attribute"},
+        {"text": "vibrant colors of the hurdle", "ja": "ハードルの鮮やかな色", "category": "attribute"},
+        {"text": "casting a shadow on the grassy field", "ja": "草の生えたグラウンドに影を落としている", "category": "detail"},
+        {"text": "a delightful outdoor activity", "ja": "楽しい屋外活動", "category": "inference"},
+        {"text": "running alongside the dog", "ja": "犬と並んで走っている", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It looks like the girl and her dog are practicing for an agility competition.", "grammar": "It looks like~", "ja": "女の子と犬はアジリティの大会に向けて練習しているようです。", "category": "inference"},
+        {"text": "The energetic dog is leaping over the colorful obstacle while the girl runs alongside.", "grammar": "接続詞 while / 現在進行形", "ja": "女の子が並んで走る中、エネルギッシュな犬がカラフルな障害物を跳び越えています。", "category": "gist"},
+        {"text": "She seems to be enjoying the outdoor activity with her canine companion.", "grammar": "seem to be ~ing", "ja": "彼女は犬の相棒と一緒に屋外での活動を楽しんでいるようです。", "category": "inference"},
+        {"text": "We can see a chain-link fence and some trees in the background.", "grammar": "助動詞 can / 前置詞 (in)", "ja": "背景に金網のフェンスといくつかの木が見えます。", "category": "detail"},
+        {"text": "The bright sunshine is casting a clear shadow of the dog on the grassy field.", "grammar": "現在進行形 / 前置詞 (on)", "ja": "明るい日差しが、草の生えたグラウンドに犬のくっきりとした影を落としています。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "girl": { "x": 80, "y": 40 },
+    "dog": { "x": 45, "y": 45 },
+    "hurdle": { "x": 15, "y": 65 },
+    "bar": { "x": 45, "y": 60 },
+    "pole": { "x": 65, "y": 55 },
+    "grass": { "x": 50, "y": 85 },
+    "fence": { "x": 50, "y": 35 },
+    "cloud": { "x": 20, "y": 10 },
+    "sky": { "x": 50, "y": 15 },
+    "tree": { "x": 10, "y": 25 },
+    "shadow": { "x": 40, "y": 80 },
+    "shirt": { "x": 78, "y": 35 },
+    "shoes": { "x": 86, "y": 78 }
+  }
+}

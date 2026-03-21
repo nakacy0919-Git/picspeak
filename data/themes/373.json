@@ -1,0 +1,128 @@
+{
+  "id": "theme_373",
+  "imageSrc": "assets/images/373.webp",
+  "description": "焚き火を囲んで話をするキャンプの様子",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人", "category": "object"},
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "fire", "ja": "火", "category": "object"},
+        {"text": "log", "ja": "丸太", "category": "object"},
+        {"text": "tent", "ja": "テント", "category": "object"},
+        {"text": "night", "ja": "夜", "category": "detail"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"},
+        {"text": "big", "ja": "大きい", "category": "attribute"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "red", "ja": "赤い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"},
+        {"text": "smile", "ja": "ほほえむ", "category": "gist"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "talk", "ja": "話す", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a big fire", "ja": "大きな火", "category": "attribute"},
+        {"text": "at night", "ja": "夜に", "category": "detail"},
+        {"text": "five children", "ja": "5人の子供", "category": "object"},
+        {"text": "on the log", "ja": "丸太の上に", "category": "detail"},
+        {"text": "happy people", "ja": "幸せな人々", "category": "inference"},
+        {"text": "a yellow shirt", "ja": "黄色いシャツ", "category": "attribute"},
+        {"text": "near the fire", "ja": "火の近くに", "category": "detail"},
+        {"text": "look happy", "ja": "幸せそうに見える", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see a man and children.", "grammar": "I see~", "ja": "男の人と子供たちが見えます。", "category": "object"},
+        {"text": "They are near the fire.", "grammar": "be動詞", "ja": "彼らは火の近くにいます。", "category": "detail"},
+        {"text": "The man is talking.", "grammar": "現在進行形", "ja": "男の人が話をしています。", "category": "gist"},
+        {"text": "It is night.", "grammar": "It is~", "ja": "夜です。", "category": "detail"},
+        {"text": "They have smiles.", "grammar": "have", "ja": "彼らは笑顔です。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "campfire", "ja": "キャンプファイヤー", "category": "object"},
+        {"text": "camping", "ja": "キャンプ", "category": "inference"},
+        {"text": "outdoor", "ja": "屋外の", "category": "detail"},
+        {"text": "forest", "ja": "森", "category": "detail"},
+        {"text": "together", "ja": "一緒に", "category": "detail"},
+        {"text": "laugh", "ja": "笑う", "category": "gist"},
+        {"text": "listen", "ja": "聞く", "category": "gist"},
+        {"text": "story", "ja": "物語", "category": "object"},
+        {"text": "wood", "ja": "薪、木材", "category": "object"},
+        {"text": "stone", "ja": "石", "category": "object"},
+        {"text": "bright", "ja": "明るい", "category": "attribute"},
+        {"text": "warm", "ja": "暖かい", "category": "attribute"},
+        {"text": "excited", "ja": "わくわくした", "category": "inference"},
+        {"text": "around", "ja": "〜の周りに", "category": "detail"},
+        {"text": "dark", "ja": "暗い", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "around the campfire", "ja": "キャンプファイヤーを囲んで", "category": "detail"},
+        {"text": "sitting on logs", "ja": "丸太に座っている", "category": "gist"},
+        {"text": "telling a story", "ja": "話を伝えている", "category": "gist"},
+        {"text": "listening carefully", "ja": "注意深く聞いている", "category": "gist"},
+        {"text": "under the dark sky", "ja": "暗い空の下で", "category": "detail"},
+        {"text": "a triangular tent", "ja": "三角形のテント", "category": "object"},
+        {"text": "burning wood", "ja": "燃えている薪", "category": "object"},
+        {"text": "enjoying the night", "ja": "夜を楽しんでいる", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "They are sitting around a campfire together.", "grammar": "現在進行形", "ja": "彼らは一緒にキャンプファイヤーを囲んで座っています。", "category": "detail"},
+        {"text": "The man is telling an interesting story to the children.", "grammar": "現在進行形", "ja": "男の人が子供たちに面白い話をしています。", "category": "gist"},
+        {"text": "There is a large tent behind them.", "grammar": "There is/are~", "ja": "彼らの後ろに大きなテントがあります。", "category": "detail"},
+        {"text": "Everyone looks very excited and happy.", "grammar": "look + 形容詞", "ja": "みんなとてもわくわくして幸せそうです。", "category": "inference"},
+        {"text": "The fire is burning brightly in the center.", "grammar": "現在進行形", "ja": "中央で火が明るく燃えています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "leader", "ja": "リーダー、指導者", "category": "object"},
+        {"text": "activity", "ja": "活動", "category": "inference"},
+        {"text": "atmosphere", "ja": "雰囲気", "category": "inference"},
+        {"text": "surroundings", "ja": "周囲の環境", "category": "detail"},
+        {"text": "triangular", "ja": "三角形の", "category": "attribute"},
+        {"text": "flame", "ja": "炎", "category": "object"},
+        {"text": "gesture", "ja": "身振り手振り", "category": "gist"},
+        {"text": "interact", "ja": "交流する", "category": "gist"},
+        {"text": "delighted", "ja": "大喜びの", "category": "inference"},
+        {"text": "peaceful", "ja": "平和な", "category": "inference"},
+        {"text": "crecrackling", "ja": "パチパチいう音", "category": "inference"},
+        {"text": "background", "ja": "背景", "category": "detail"},
+        {"text": "gather", "ja": "集まる", "category": "gist"},
+        {"text": "memorable", "ja": "思い出深い", "category": "inference"},
+        {"text": "illuminated", "ja": "照らされた", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "sharing a memorable moment", "ja": "思い出深い瞬間を共有している", "category": "inference"},
+        {"text": "making large gestures", "ja": "大きな身振り手振りをしている", "category": "gist"},
+        {"text": "illuminated by the fire", "ja": "火に照らされて", "category": "attribute"},
+        {"text": "a warm and cozy atmosphere", "ja": "暖かく居心地の良い雰囲気", "category": "inference"},
+        {"text": "gathered in the wilderness", "ja": "荒野（野外）に集まった", "category": "detail"},
+        {"text": "surrounded by lush trees", "ja": "豊かな木々に囲まれて", "category": "detail"},
+        {"text": "gazing at the flames", "ja": "炎をじっと見つめている", "category": "gist"},
+        {"text": "engaging in conversation", "ja": "会話に参加している", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like a camp leader is entertaining the group with a captivating story.", "grammar": "It looks like~", "ja": "キャンプリーダーが魅力的な話でグループを楽しませているようです。", "category": "inference"},
+        {"text": "The children are listening to him while enjoying the warmth of the fire.", "grammar": "接続詞 while", "ja": "子供たちは火の暖かさを楽しみながら彼の話を聞いています。", "category": "gist"},
+        {"text": "Their faces are brightly illuminated by the glowing orange flames.", "grammar": "受動態", "ja": "彼らの顔は燃えるオレンジ色の炎によって明るく照らされています。", "category": "attribute"},
+        {"text": "We can see a simple triangular tent pitched in the background.", "grammar": "助動詞 + 受動態", "ja": "背景に設営されたシンプルな三角形のテントが見えます。", "category": "detail"},
+        {"text": "The peaceful surroundings make the camping experience even more special.", "grammar": "使役動詞的用法 (make OC)", "ja": "平和な周囲の環境が、キャンプ体験をさらに特別なものにしています。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "leader": {"x": 51, "y": 37},
+    "fire": {"x": 51, "y": 80},
+    "tent": {"x": 90, "y": 24},
+    "log": {"x": 10, "y": 81},
+    "girl": {"x": 15, "y": 51},
+    "boy": {"x": 27, "y": 42},
+    "stone": {"x": 42, "y": 89},
+    "sky": {"x": 48, "y": 14},
+    "tree": {"x": 75, "y": 22},
+    "wood": {"x": 55, "y": 94}
+  }
+}

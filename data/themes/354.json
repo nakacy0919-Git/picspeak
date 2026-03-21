@@ -1,0 +1,133 @@
+{
+  "id": "theme_354",
+  "imageSrc": "assets/images/354.webp",
+  "description": "美術室で絵を描く子供たちと先生",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "teacher", "ja": "先生", "category": "object"},
+        {"text": "picture", "ja": "絵", "category": "object"},
+        {"text": "book", "ja": "本", "category": "object"},
+        {"text": "table", "ja": "テーブル", "category": "object"},
+        {"text": "tree", "ja": "木", "category": "object"},
+        {"text": "flower", "ja": "花", "category": "object"},
+        {"text": "sun", "ja": "太陽", "category": "object"},
+        {"text": "room", "ja": "部屋", "category": "detail"},
+        {"text": "draw", "ja": "描く", "category": "gist"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "a happy girl", "ja": "楽しそうな女の子", "category": "inference"},
+        {"text": "draw a picture", "ja": "絵を描く", "category": "gist"},
+        {"text": "on the table", "ja": "テーブルの上に", "category": "detail"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a big book", "ja": "大きな本", "category": "attribute"},
+        {"text": "three children", "ja": "3人の子供", "category": "object"},
+        {"text": "in the room", "ja": "部屋の中で", "category": "detail"},
+        {"text": "look at", "ja": "～を見る", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see boys and a girl.", "grammar": "I see~", "ja": "男の子たちと女の子が見えます。", "category": "object"},
+        {"text": "They are in a room.", "grammar": "be動詞", "ja": "彼らは部屋にいます。", "category": "detail"},
+        {"text": "The girl draws a picture.", "grammar": "一般動詞", "ja": "女の子が絵を描きます。", "category": "gist"},
+        {"text": "This is a teacher.", "grammar": "This is~", "ja": "この人は先生です。", "category": "object"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "art room", "ja": "美術室", "category": "detail"},
+        {"text": "canvas", "ja": "キャンバス", "category": "object"},
+        {"text": "easel", "ja": "イーゼル", "category": "object"},
+        {"text": "brush", "ja": "絵筆", "category": "object"},
+        {"text": "shelf", "ja": "棚", "category": "object"},
+        {"text": "vase", "ja": "花瓶、壺", "category": "object"},
+        {"text": "statue", "ja": "彫像", "category": "object"},
+        {"text": "wall", "ja": "壁", "category": "detail"},
+        {"text": "paint", "ja": "絵の具で描く", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "talk", "ja": "話す", "category": "gist"},
+        {"text": "sit", "ja": "座る", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"},
+        {"text": "point", "ja": "指さす", "category": "gist"},
+        {"text": "creative", "ja": "創造的な", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "in the art room", "ja": "美術室で", "category": "detail"},
+        {"text": "painting a picture", "ja": "絵を描いている", "category": "gist"},
+        {"text": "holding a brush", "ja": "絵筆を持っている", "category": "gist"},
+        {"text": "talking to the teacher", "ja": "先生と話している", "category": "gist"},
+        {"text": "sitting at the table", "ja": "テーブルに座っている", "category": "detail"},
+        {"text": "on the wall", "ja": "壁に", "category": "detail"},
+        {"text": "on the shelf", "ja": "棚に", "category": "detail"},
+        {"text": "pointing at her canvas", "ja": "自分のキャンバスを指さしている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "There are three students in the art room.", "grammar": "There is/are~", "ja": "美術室には3人の生徒がいます。", "category": "detail"},
+        {"text": "A boy in a yellow shirt is holding a brush.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "黄色いシャツを着た男の子が絵筆を持っています。", "category": "gist"},
+        {"text": "The teacher is talking to the students.", "grammar": "現在進行形", "ja": "先生が生徒たちに話しかけています。", "category": "gist"},
+        {"text": "There are many pictures on the wall.", "grammar": "There is/are~", "ja": "壁にはたくさんの絵があります。", "category": "detail"},
+        {"text": "The girl is pointing at her painting on the table.", "grammar": "現在進行形", "ja": "女の子はテーブルの上の自分の絵を指さしています。", "category": "gist"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "artwork", "ja": "芸術作品", "category": "object"},
+        {"text": "masterpiece", "ja": "傑作", "category": "object"},
+        {"text": "creativity", "ja": "創造性", "category": "inference"},
+        {"text": "instruct", "ja": "指導する", "category": "gist"},
+        {"text": "encourage", "ja": "励ます", "category": "gist"},
+        {"text": "engaged", "ja": "没頭している", "category": "inference"},
+        {"text": "delightful", "ja": "楽しい、喜ばしい", "category": "inference"},
+        {"text": "studio", "ja": "アトリエ、作業場", "category": "detail"},
+        {"text": "pottery", "ja": "陶器", "category": "object"},
+        {"text": "sculpture", "ja": "彫刻", "category": "object"},
+        {"text": "vibrant", "ja": "鮮やかな", "category": "attribute"},
+        {"text": "collaborate", "ja": "協力する", "category": "gist"},
+        {"text": "express", "ja": "表現する", "category": "gist"},
+        {"text": "focus", "ja": "集中する", "category": "inference"},
+        {"text": "artistic", "ja": "芸術的な", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "focusing on their artwork", "ja": "自分たちの作品に集中している", "category": "inference"},
+        {"text": "expressing their creativity", "ja": "創造性を表現している", "category": "gist"},
+        {"text": "instructing the students", "ja": "生徒たちを指導している", "category": "gist"},
+        {"text": "a delightful atmosphere", "ja": "楽しい雰囲気", "category": "inference"},
+        {"text": "an artistic studio", "ja": "芸術的なスタジオ", "category": "attribute"},
+        {"text": "vibrant paintings", "ja": "鮮やかな絵画", "category": "attribute"},
+        {"text": "engaging in the art class", "ja": "美術の授業に参加している", "category": "gist"},
+        {"text": "a sculpture on the cabinet", "ja": "戸棚の上の彫刻", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are enjoying their art class in the studio.", "grammar": "It looks like~", "ja": "生徒たちはスタジオで美術の授業を楽しんでいるようです。", "category": "inference"},
+        {"text": "The teacher who is standing on the right is encouraging the students.", "grammar": "関係代名詞 (who)", "ja": "右に立っている先生は生徒たちを励ましています。", "category": "gist"},
+        {"text": "They are expressing their creativity because they love art.", "grammar": "接続詞 (because)", "ja": "彼らは美術が好きなので、創造性を表現しています。", "category": "gist"},
+        {"text": "We can see some pottery and a sculpture on the cabinet in the background.", "grammar": "助動詞 (can)", "ja": "背景の戸棚の上に、陶器や彫刻がいくつか見えます。", "category": "detail"},
+        {"text": "The vibrant paintings on the table show their artistic talent.", "grammar": "無生物主語", "ja": "テーブルの上の鮮やかな絵画が、彼らの芸術的才能を示しています。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "girl": { "x": 28, "y": 65 },
+    "boy_purple": { "x": 65, "y": 65 },
+    "boy_yellow": { "x": 90, "y": 70 },
+    "teacher": { "x": 85, "y": 45 },
+    "painting_table_left": { "x": 35, "y": 88 },
+    "painting_table_center": { "x": 60, "y": 85 },
+    "painting_table_right": { "x": 78, "y": 92 },
+    "easel_left": { "x": 10, "y": 65 },
+    "painting_easel_left": { "x": 10, "y": 50 },
+    "painting_easel_right": { "x": 32, "y": 45 },
+    "statue": { "x": 55, "y": 45 },
+    "vase": { "x": 45, "y": 50 },
+    "shelf": { "x": 78, "y": 30 },
+    "painting_wall": { "x": 45, "y": 20 },
+    "brush": { "x": 80, "y": 80 }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "id": "theme_393",
+  "imageSrc": "assets/images/393.webp",
+  "description": "川沿いでカヌーのレクチャーを受ける生徒たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子"},
+        {"text": "girl", "ja": "女の子"},
+        {"text": "child", "ja": "子供"},
+        {"text": "man", "ja": "男の人"},
+        {"text": "canoe", "ja": "カヌー"},
+        {"text": "paddle", "ja": "パドル"},
+        {"text": "jacket", "ja": "ライフジャケット"},
+        {"text": "water", "ja": "水"},
+        {"text": "river", "ja": "川"},
+        {"text": "bank", "ja": "川岸"},
+        {"text": "tree", "ja": "木"},
+        {"text": "sky", "ja": "空"},
+        {"text": "blue", "ja": "青い"},
+        {"text": "green", "ja": "緑の"},
+        {"text": "orange", "ja": "オレンジ色の"},
+        {"text": "yellow", "ja": "黄色い"},
+        {"text": "happy", "ja": "幸せな、楽しい"},
+        {"text": "smile", "ja": "微笑む"},
+        {"text": "listen", "ja": "聞く"},
+        {"text": "look", "ja": "見る"},
+        {"text": "hold", "ja": "持つ"},
+        {"text": "stand", "ja": "立つ"}
+      ],
+      "chunks": [
+        {"text": "many children", "ja": "たくさんの子供たち"},
+        {"text": "on the river bank", "ja": "川岸で"},
+        {"text": "hold a paddle", "ja": "パドルを持つ"},
+        {"text": "wear a jacket", "ja": "ライフジャケットを着る"},
+        {"text": "blue canoe", "ja": "青いカヌー"},
+        {"text": "green trees", "ja": "緑の木々"},
+        {"text": "orange jacket", "ja": "オレンジ色のライフジャケット"},
+        {"text": "listen to the man", "ja": "男の人の話を聞く"},
+        {"text": "look at the water", "ja": "水を見る"},
+        {"text": "stand in a line", "ja": "列に立つ"},
+        {"text": "happy smile", "ja": "楽しそうな笑顔"}
+      ],
+      "sentences": [
+        {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。"},
+        {"text": "They are on a river bank.", "grammar": "be動詞", "ja": "彼らは川岸にいます。"},
+        {"text": "A man talks to them.", "grammar": "一般動詞", "ja": "男の人が彼らに話しています。"},
+        {"text": "The man holds a paddle.", "grammar": "一般動詞", "ja": "男の人はパドルを持っています。"},
+        {"text": "They wear orange life jackets.", "grammar": "一般動詞", "ja": "彼らはオレンジ色のライフジャケットを着ています。"},
+        {"text": "The children look happy.", "grammar": "look + 形容詞", "ja": "子供たちは楽しそうです。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "instructor", "ja": "インストラクター"},
+        {"text": "student", "ja": "生徒"},
+        {"text": "lecture", "ja": "講義、説明"},
+        {"text": "activity", "ja": "活動"},
+        {"text": "extracurricular", "ja": "課外の"},
+        {"text": "life jacket", "ja": "ライフジャケット"},
+        {"text": "surface", "ja": "表面"},
+        {"text": "dock", "ja": "ドック、桟橋"},
+        {"text": "background", "ja": "背景"},
+        {"text": "explain", "ja": "説明する"},
+        {"text": "demonstrate", "ja": "実演する"},
+        {"text": "participate", "ja": "参加する"},
+        {"text": "observe", "ja": "観察する"},
+        {"text": "attentive", "ja": "注意深い、熱心な"},
+        {"text": "outdoors", "ja": "屋外で"},
+        {"text": "scenery", "ja": "景色"}
+      ],
+      "chunks": [
+        {"text": "attending a lecture", "ja": "講義に参加している"},
+        {"text": "an outdoor activity", "ja": "屋外活動"},
+        {"text": "on a river bank", "ja": "川岸で"},
+        {"text": "wearing life jackets", "ja": "ライフジャケットを着ている"},
+        {"text": "holding paddles", "ja": "パドルを持っている"},
+        {"text": "blue canoes on the water", "ja": "水上の青いカヌー"},
+        {"text": "listening attentively", "ja": "熱心に聞いている"},
+        {"text": "instructor explaining how to paddle", "ja": "パドルの使い方を説明するインストラクター"},
+        {"text": "beautiful scenery with trees", "ja": "木々のある美しい景色"},
+        {"text": "extracurricular activity", "ja": "課外活動"}
+      ],
+      "sentences": [
+        {"text": "The students are attending an extracurricular activity outdoors.", "grammar": "現在進行形", "ja": "生徒たちは屋外で課外活動に参加しています。"},
+        {"text": "An instructor is demonstrating how to use a paddle.", "grammar": "現在進行形", "ja": "インストラクターがパドルの使い方を実演しています。"},
+        {"text": "They are wearing orange life jackets for safety.", "grammar": "現在進行形", "ja": "彼らは安全のためにオレンジ色のライフジャケットを着ています。"},
+        {"text": "The students look attentive to the instructor's words.", "grammar": "look + 形容詞", "ja": "生徒たちはインストラクターの言葉を熱心に聞いているように見えます。"},
+        {"text": "We can see some blue canoes on the water in the background.", "grammar": "助動詞 can", "ja": "背景の水上に青いカヌーが見えます。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "instruction", "ja": "指導、説明"},
+        {"text": "demonstration", "ja": "実演"},
+        {"text": "paddle", "ja": "パドルでこぐ"},
+        {"text": "navigation", "ja": "航行"},
+        {"text": "safety measure", "ja": "安全対策"},
+        {"text": "flotation device", "ja": "浮力装置"},
+        {"text": "riverfront", "ja": "リバーフロント"},
+        {"text": "landscape", "ja": "風景、景色"},
+        {"text": "environment", "ja": "環境"},
+        {"text": "engage in", "ja": "従事する、参加する"},
+        {"text": "collaborate", "ja": "協力する"},
+        {"text": "enthusiastic", "ja": "熱心な"},
+        {"text": "scenic", "ja": "景色の良い"},
+        {"text": "supervise", "ja": "監督する"},
+        {"text": "practical", "ja": "実践的な"},
+        {"text": "hands-on", "ja": "実践的な、体験的な"}
+      ],
+      "chunks": [
+        {"text": "receiving a practical lesson on canoeing", "ja": "カヌーの実践的なレッスンを受けている"},
+        {"text": "attending an extracurricular program", "ja": "課外プログラムに参加している"},
+        {"text": "holding a demonstration of paddling", "ja": "パドリングの実演を行っている"},
+        {"text": "safety measures using life jackets", "ja": "ライフジャケットを使った安全対策"},
+        {"text": "enthusiastic students engaged in learning", "ja": "学習に熱心に取り組んでいる生徒たち"},
+        {"text": "scenic landscape with a river and trees", "ja": "川と木々のある風光明媚な景色"},
+        {"text": "supervised outdoor activity", "ja": "監督された屋外活動"},
+        {"text": "hands-on experience with paddles", "ja": "パドルの実践的な体験"},
+        {"text": "along the riverfront", "ja": "リバーフロント沿いで"}
+      ],
+      "sentences": [
+        {"text": "It looks like a group of high school students attending a practical canoeing lesson.", "grammar": "It looks like~ / be Ving", "ja": "カヌーの実践的なレッスンに参加している高校生のグループのようです。"},
+        {"text": "An instructor is providing hands-on instruction on how to hold a paddle correctly.", "grammar": "現在進行形", "ja": "インストラクターがパドルの正しい持ち方を実践的に指導しています。"},
+        {"text": "They are engaged in the extracurricular activity under the supervision of adults.", "grammar": "be engaged in", "ja": "彼らは大人の監督の下で課外活動に取り組んでいます。"},
+        {"text": "The students wearing life jackets seem enthusiastic about learning the new skill.", "grammar": "Seem + 形容詞", "ja": "ライフジャケットを着た生徒たちは、新しいスキルを学ぶことに熱心なようです。"},
+        {"text": "The scenic environment with a wide river and lush trees provides a wonderful backdrop.", "grammar": "一般動詞", "ja": "広い川と青々とした木々のある風光明媚な環境が、素晴らしい背景を提供しています。"}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 10, "y": 62 },
+    "girl": { "x": 25, "y": 65 },
+    "child": { "x": 55, "y": 68 },
+    "instructor": { "x": 35, "y": 55 },
+    "canoe": { "x": 80, "y": 45 },
+    "paddle": { "x": 45, "y": 60 },
+    "jacket": { "x": 60, "y": 45 },
+    "water": { "x": 72, "y": 70 },
+    "river": { "x": 55, "y": 42 },
+    "bank": { "x": 50, "y": 85 },
+    "tree": { "x": 10, "y": 25 },
+    "sky": { "x": 50, "y": 15 },
+    "landscape": { "x": 92, "y": 18 },
+    "outdoors": { "x": 65, "y": 15 }
+  }
+}

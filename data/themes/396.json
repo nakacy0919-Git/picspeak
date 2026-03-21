@@ -1,0 +1,128 @@
+{
+  "id": "theme_396",
+  "imageSrc": "assets/images/image_3.webp",
+  "description": "体育の授業で先生から組体操のレクチャーを受けている",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "child", "ja": "子供"},
+        {"text": "boy", "ja": "男の子"},
+        {"text": "girl", "ja": "女の子"},
+        {"text": "teacher", "ja": "先生"},
+        {"text": "Physical Education", "ja": "体育"},
+        {"text": "mat", "ja": "マット"},
+        {"text": "hand", "ja": "手"},
+        {"text": "leg", "ja": "足"},
+        {"text": "arm", "ja": "腕"},
+        {"text": "head", "ja": "頭"},
+        {"text": "floor", "ja": "床"},
+        {"text": "body", "ja": "体"},
+        {"text": "fun", "ja": "楽しい"},
+        {"text": "active", "ja": "元気"},
+        {"text": "good", "ja": "上手"}
+      ],
+      "chunks": [
+        {"text": "PE class", "ja": "体育の授業"},
+        {"text": "forming a shape", "ja": "形を作る"},
+        {"text": "children interacting", "ja": "子供同士の交流"},
+        {"text": "standing together", "ja": "一緒に立っている"},
+        {"text": "holding hands", "ja": "手を握る"},
+        {"text": "learning from a teacher", "ja": "先生から学ぶ"},
+        {"text": "lying down", "ja": "横になっている"}
+      ],
+      "sentences": [
+        {"text": "Students are in a PE class.", "grammar": "be動詞", "ja": "生徒が体育の授業にいます。"},
+        {"text": "The teacher is demonstrating a pose.", "grammar": "現在進行形", "ja": "先生がポーズを実演しています。"},
+        {"text": "Students are listening to the lecture.", "grammar": "一般動詞", "ja": "生徒はレクチャーを聞いています。"},
+        {"text": "They are forming a structure together.", "grammar": "現在進行形", "ja": "彼らは一緒に構造を作っています。"},
+        {"text": "This is a collaborative physical exercise.", "grammar": "This is / that is", "ja": "これは協働的な身体エクササイズです。"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "student", "ja": "生徒"},
+        {"text": "gymnastics", "ja": "体操"},
+        {"text": "class", "ja": "クラス"},
+        {"text": "instructor", "ja": "講師"},
+        {"text": "cooperation", "ja": "協力"},
+        {"text": "structure", "ja": "構造"},
+        {"text": "pose", "ja": "ポーズ"},
+        {"text": "kneeling", "ja": "膝立ち"},
+        {"text": "balance", "ja": "バランス"},
+        {"text": "holding", "ja": "保持"},
+        {"text": "observing", "ja": "観察"},
+        {"text": "demonstration", "ja": "デモンストレーション"},
+        {"text": "outdoor", "ja": "屋外"},
+        {"text": "physical", "ja": "身体的"}
+      ],
+      "chunks": [
+        {"text": "cooperative gymnastic formation", "ja": "協同体操の隊形"},
+        {"text": "under teacher's guidance", "ja": "先生の指導下で"},
+        {"text": "demonstrating the pose", "ja": "ポーズを実演している"},
+        {"text": "observing the dynamic", "ja": "動きを観察している"},
+        {"text": "holding the position", "ja": "姿勢を保持している"},
+        {"text": "learning new skills", "ja": "新しいスキルを学んでいる"},
+        {"text": "an active group", "ja": "元気なグループ"}
+      ],
+      "sentences": [
+        {"text": "Students are learning group gymnastics skills.", "grammar": "現在進行形", "ja": "生徒は集団体操のスキルを学んでいます。"},
+        {"text": "The teacher is observing their collaborative efforts.", "grammar": "現在進行形", "ja": "先生は彼らの協働的な努力を観察しています。"},
+        {"text": "There are several groups forming poses.", "grammar": "There is/are", "ja": "ポーズを作っているグループがいくつかあります。"},
+        {"text": "They high school students are more dynamic than the elementary students.", "grammar": "比較", "ja": "高校生は小学生よりダイナミックです。"},
+        {"text": "They are practicing to perform together.", "grammar": "不定詞", "ja": "彼らは一緒にパフォーマンスするために練習しています。"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "acquisition", "ja": "獲得"},
+        {"text": "instruction", "ja": "指導"},
+        {"text": "collaboration", "ja": "協働"},
+        {"text": "coordination", "ja": "協調"},
+        {"text": "execution", "ja": "遂行"},
+        {"text": "form", "ja": "フォーム"},
+        {"text": "dynamic", "ja": "ダイナミック"},
+        {"text": "complex", "ja": "複雑"},
+        {"text": "formation", "ja": "隊形"},
+        {"text": "support", "ja": "支持"},
+        {"text": "synchronize", "ja": "同期"},
+        {"text": "observation", "ja": "観察"},
+        {"text": "analysis", "ja": "分析"},
+        {"text": "interactive", "ja": "インタラクティブ"}
+      ],
+      "chunks": [
+        {"text": "acquiring physical coordination skills", "ja": "身体協調スキルを獲得している"},
+        {"text": "under rigorous instruction", "ja": "厳格な指導の下で"},
+        {"text": "executing the complex pose", "ja": "複雑なポーズを遂行している"},
+        {"text": "analyzing the collaborative dynamic", "ja": "協働的な動きを分析している"},
+        {"text": "synchronizing the body movements", "ja": "身体の動きを同期させている"},
+        {"text": "interactive group exercise", "ja": "インタラクティブなグループエクササイズ"},
+        {"text": "demonstrating high-level cooperation", "ja": "高レベルの協力を実演している"}
+      ],
+      "sentences": [
+        {"text": "It seems that the children are participating in a hands-on construction activity, learning valuable skills.", "grammar": "It seems that~ / 分詞構文", "ja": "子供たちは実践的な建設活動に参加し、貴重なスキルを学んでいるようです。"},
+        {"text": "Dynamic collaborative formation is meticulously instructed.", "grammar": "受動態", "ja": "ダイナミックな協働的隊形は細かく指導されています。"},
+        {"text": "Working together helps synchronize their body movements.", "grammar": "動名詞", "ja": "協力して働くことは、彼らの身体の動きを同期させるのに役立ちます。"},
+        {"text": "If they coordinate well, they can execute complex poses.", "grammar": "仮定法", "ja": "もし彼らがうまく協調すれば、複雑なポーズを遂行できます。"},
+        {"text": "The students who are kneeling are preparing for support.", "grammar": "関係代名詞", "ja": "膝立ちしている生徒は支持の準備をしています。"}
+      ]
+    }
+  },
+  "pins": {
+    "man": { "x": 10, "y": 62 },
+    "child": { "x": 25, "y": 65 },
+    "boy": { "x": 35, "y": 55 },
+    "girl": { "x": 75, "y": 28 },
+    "clothes": { "x": 60, "y": 45 },
+    "glove": { "x": 23, "y": 65 },
+    "arm": { "x": 30, "y": 60 },
+    "leg": { "x": 38, "y": 52 },
+    "hand": { "x": 55, "y": 42 },
+    "mat": { "x": 50, "y": 75 },
+    "floor": { "x": 50, "y": 90 },
+    "cushion": { "x": 16, "y": 80 },
+    "railing": { "x": 50, "y": 42 },
+    "wall": { "x": 70, "y": 15 },
+    "tree": { "x": 50, "y": 15 }
+  }
+}

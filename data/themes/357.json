@@ -1,0 +1,133 @@
+{
+  "id": "theme_357",
+  "imageSrc": "assets/images/357.webp",
+  "description": "木工教室で作業をする子供たちと先生",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "teacher", "ja": "先生", "category": "object"},
+        {"text": "wood", "ja": "木", "category": "object"},
+        {"text": "saw", "ja": "ノコギリ", "category": "object"},
+        {"text": "hammer", "ja": "ハンマー", "category": "object"},
+        {"text": "table", "ja": "テーブル", "category": "object"},
+        {"text": "goggles", "ja": "ゴーグル", "category": "object"},
+        {"text": "tool", "ja": "道具", "category": "object"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "make", "ja": "作る", "category": "gist"},
+        {"text": "cut", "ja": "切る", "category": "gist"},
+        {"text": "happy", "ja": "幸せな、楽しい", "category": "inference"},
+        {"text": "blue", "ja": "青い", "category": "attribute"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "yellow", "ja": "黄色い", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "a boy and a girl", "ja": "男の子と女の子", "category": "object"},
+        {"text": "cut the wood", "ja": "木を切る", "category": "gist"},
+        {"text": "make a box", "ja": "箱を作る", "category": "gist"},
+        {"text": "a big saw", "ja": "大きなノコギリ", "category": "attribute"},
+        {"text": "on the table", "ja": "テーブルの上で", "category": "detail"},
+        {"text": "a blue shirt", "ja": "青いシャツ", "category": "attribute"},
+        {"text": "a pink shirt", "ja": "ピンクのシャツ", "category": "attribute"},
+        {"text": "a happy teacher", "ja": "楽しそうな先生", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "I see boys and a girl.", "grammar": "I see~", "ja": "男の子たちと女の子が見えます。", "category": "object"},
+        {"text": "They make things.", "grammar": "一般動詞", "ja": "彼らは物を作ります。", "category": "gist"},
+        {"text": "The boy cuts wood.", "grammar": "一般動詞", "ja": "男の子が木を切ります。", "category": "gist"},
+        {"text": "The boy has goggles.", "grammar": "have", "ja": "男の子はゴーグルをつけています。", "category": "object"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "classroom", "ja": "教室", "category": "detail"},
+        {"text": "woodwork", "ja": "木工", "category": "object"},
+        {"text": "safety glasses", "ja": "安全メガネ、保護メガネ", "category": "object"},
+        {"text": "clamp", "ja": "クランプ、万力", "category": "object"},
+        {"text": "sandpaper", "ja": "紙ヤスリ", "category": "object"},
+        {"text": "rub", "ja": "こする、磨く", "category": "gist"},
+        {"text": "supervise", "ja": "監督する", "category": "gist"},
+        {"text": "watch", "ja": "見守る", "category": "gist"},
+        {"text": "carefully", "ja": "注意深く", "category": "inference"},
+        {"text": "together", "ja": "一緒に", "category": "inference"},
+        {"text": "pegboard", "ja": "有孔ボード（工具掛け）", "category": "object"},
+        {"text": "back", "ja": "後ろ", "category": "detail"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "wear", "ja": "着ている、身につけている", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "in the classroom", "ja": "教室で", "category": "detail"},
+        {"text": "cutting a piece of wood", "ja": "木片を切っている", "category": "gist"},
+        {"text": "wearing safety glasses", "ja": "保護メガネをかけている", "category": "attribute"},
+        {"text": "rubbing the wood with sandpaper", "ja": "紙ヤスリで木を磨いている", "category": "gist"},
+        {"text": "watching the students", "ja": "生徒たちを見守っている", "category": "gist"},
+        {"text": "standing in the back", "ja": "後ろに立っている", "category": "detail"},
+        {"text": "holding a saw", "ja": "ノコギリを持っている", "category": "gist"},
+        {"text": "making something together", "ja": "一緒に何かを作っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "There are three students and a teacher in the classroom.", "grammar": "There is/are~", "ja": "教室には3人の生徒と1人の先生がいます。", "category": "detail"},
+        {"text": "The boy is cutting a board with a saw.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "男の子はノコギリで板を切っています。", "category": "gist"},
+        {"text": "The girl is rubbing the wood with sandpaper.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "女の子は紙ヤスリで木を磨いています。", "category": "gist"},
+        {"text": "The teacher is watching them carefully.", "grammar": "現在進行形 / 副詞", "ja": "先生は彼らを注意深く見守っています。", "category": "gist"},
+        {"text": "The boy is wearing safety glasses to protect his eyes.", "grammar": "不定詞の副詞的用法", "ja": "男の子は目を保護するために安全メガネをかけています。", "category": "attribute"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "workshop", "ja": "作業場、実習室", "category": "detail"},
+        {"text": "crafting", "ja": "工作、クラフト", "category": "gist"},
+        {"text": "construct", "ja": "組み立てる、建設する", "category": "gist"},
+        {"text": "protective", "ja": "保護用の", "category": "attribute"},
+        {"text": "equipment", "ja": "装備、器具", "category": "object"},
+        {"text": "concentrate", "ja": "集中する", "category": "inference"},
+        {"text": "smooth", "ja": "滑らかにする", "category": "gist"},
+        {"text": "surface", "ja": "表面", "category": "object"},
+        {"text": "workbench", "ja": "作業台", "category": "detail"},
+        {"text": "carpentry", "ja": "大工仕事、木工", "category": "object"},
+        {"text": "engaged", "ja": "没頭している、従事している", "category": "inference"},
+        {"text": "instruction", "ja": "指導", "category": "object"},
+        {"text": "diligently", "ja": "熱心に、勤勉に", "category": "inference"},
+        {"text": "hang", "ja": "掛かっている", "category": "gist"},
+        {"text": "ensure", "ja": "確保する、確実にする", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "working in a carpentry workshop", "ja": "木工の実習室で作業している", "category": "gist"},
+        {"text": "constructing something out of wood", "ja": "木で何かを組み立てている", "category": "gist"},
+        {"text": "wearing protective equipment", "ja": "保護具を着用している", "category": "attribute"},
+        {"text": "smoothing the surface with sandpaper", "ja": "紙ヤスリで表面を滑らかにしている", "category": "gist"},
+        {"text": "concentrating on their task", "ja": "自分たちの作業に集中している", "category": "inference"},
+        {"text": "a pegboard with various tools", "ja": "様々な工具が掛かった有孔ボード", "category": "attribute"},
+        {"text": "supervising the crafting process", "ja": "工作の過程を監督している", "category": "gist"},
+        {"text": "engaging in the woodwork class", "ja": "木工の授業に取り組んでいる", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are engaging in a woodwork class in the workshop.", "grammar": "It looks like~", "ja": "生徒たちは実習室で木工の授業に取り組んでいるようです。", "category": "inference"},
+        {"text": "The boy wearing safety goggles is carefully cutting a piece of wood with a handsaw.", "grammar": "現在分詞の形容詞的用法 / 前置詞 (with)", "ja": "保護メガネをかけた男の子は、手ノコギリで木片を注意深く切っています。", "category": "gist"},
+        {"text": "The girl on the right is smoothing the surface of the wood with sandpaper.", "grammar": "現在進行形", "ja": "右側の女の子は紙ヤスリで木の表面を滑らかにしています。", "category": "gist"},
+        {"text": "The teacher standing in the back is supervising them to ensure their safety.", "grammar": "現在分詞の形容詞的用法 / 不定詞の副詞的用法", "ja": "後ろに立っている先生は、彼らの安全を確保するために監督しています。", "category": "gist"},
+        {"text": "We can see various tools like hammers and saws hanging on the pegboard.", "grammar": "知覚動詞+O+現在分詞", "ja": "ハンマーやノコギリのような様々な工具が有孔ボードに掛かっているのが見えます。", "category": "detail"}
+      ]
+    }
+  },
+  "pins": {
+    "boy_sawing": { "x": 18, "y": 55 },
+    "girl_sanding": { "x": 80, "y": 50 },
+    "boy_back": { "x": 42, "y": 38 },
+    "teacher": { "x": 62, "y": 32 },
+    "saw": { "x": 30, "y": 72 },
+    "wood_cutting": { "x": 28, "y": 78 },
+    "clamp": { "x": 38, "y": 80 },
+    "goggles": { "x": 28, "y": 28 },
+    "sandpaper": { "x": 68, "y": 75 },
+    "wood_sanding": { "x": 72, "y": 82 },
+    "hammer_wall": { "x": 40, "y": 12 },
+    "saws_wall": { "x": 10, "y": 18 },
+    "pegboard": { "x": 18, "y": 15 },
+    "workbench": { "x": 55, "y": 85 }
+  }
+}

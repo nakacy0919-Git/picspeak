@@ -1,0 +1,132 @@
+{
+  "id": "theme_399",
+  "imageSrc": "assets/images/399.webp",
+  "description": "和室（道場）で弓道着を着用し、弓を引く学生たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人", "category": "object"},
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "clothes", "ja": "服、道着", "category": "object"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "black", "ja": "黒い", "category": "attribute"},
+        {"text": "brown", "ja": "茶色い", "category": "attribute"},
+        {"text": "tall", "ja": "背が高い、長い", "category": "attribute"},
+        {"text": "short", "ja": "背が低い、短い", "category": "attribute"},
+        {"text": "many", "ja": "たくさんの", "category": "attribute"},
+        {"text": "hand", "ja": "手", "category": "object"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "draw", "ja": "引く", "category": "gist"},
+        {"text": "wear", "ja": "着ている", "category": "gist"},
+        {"text": "stand", "ja": "立つ", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a tall man", "ja": "背が高い男の人", "category": "attribute"},
+        {"text": "many people", "ja": "たくさんの人", "category": "object"},
+        {"text": "draw a bow", "ja": "弓を引く", "category": "gist"},
+        {"text": "white clothes", "ja": "白い服", "category": "attribute"},
+        {"text": "black clothes", "ja": "黒い服", "category": "attribute"},
+        {"text": "look at the target", "ja": "的を見る", "category": "gist"},
+        {"text": "in the room", "ja": "部屋の中で", "category": "detail"},
+        {"text": "standing together", "ja": "一緒に立っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see many people.", "grammar": "I see~", "ja": "たくさんの人が見えます。", "category": "object"},
+        {"text": "The man draws a bow.", "grammar": "一般動詞", "ja": "男の人が弓を引きます。", "category": "gist"},
+        {"text": "They wear white and black clothes.", "grammar": "一般動詞", "ja": "彼らは白と黒の服を着ています。", "category": "attribute"},
+        {"text": "The people stand in a room.", "grammar": "一般動詞 / 場所を表す前置詞", "ja": "人々は部屋の中に立っています。", "category": "detail"},
+        {"text": "They are looking at something.", "grammar": "現在進行形", "ja": "彼らは何かを見ています。", "category": "gist"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "student", "ja": "生徒", "category": "object"},
+        {"text": "practitioner", "ja": "実践者、修練者", "category": "object"},
+        {"text": "archer", "ja": "弓手、アーチャー", "category": "inference"},
+        {"text": "bow", "ja": "弓", "category": "object"},
+        {"text": "arrow", "ja": "矢", "category": "object"},
+        {"text": "quiver", "ja": "矢筒", "category": "object"},
+        {"text": "target", "ja": "的", "category": "inference"},
+        {"text": "uniform", "ja": "ユニフォーム、道着", "category": "object"},
+        {"text": "draw", "ja": "引く", "category": "gist"},
+        {"text": "aim", "ja": "狙う", "category": "gist"},
+        {"text": "practice", "ja": "練習する", "category": "gist"},
+        {"text": "observe", "ja": "観察する、見る", "category": "gist"},
+        {"text": "traditional", "ja": "伝統的な", "category": "attribute"},
+        {"text": "Japanese", "ja": "日本の", "category": "attribute"},
+        {"text": "wooden", "ja": "木製の", "category": "attribute"}
+      ],
+      "chunks": [
+        {"text": "Japanese archery kudo", "ja": "日本の弓道", "category": "inference"},
+        {"text": "practicing the draw", "ja": "引く練習をしている", "category": "gist"},
+        {"text": "holding a wooden bow", "ja": "木製の弓を持っている", "category": "gist"},
+        {"text": "wearing traditional uniforms", "ja": "伝統的な道着を着ている", "category": "attribute"},
+        {"text": "aiming at the target", "ja": "的を狙っている", "category": "gist"},
+        {"text": "students in the dojo", "ja": "道場の生徒たち", "category": "detail"},
+        {"text": "carrying a quiver", "ja": "矢筒を運んでいる", "category": "gist"},
+        {"text": "standing in a line", "ja": "一列に立っている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "The students are practicing kudo together.", "grammar": "現在進行形", "ja": "生徒たちは一緒に弓道を練習しています。", "category": "gist"},
+        {"text": "The main archer is drawing a long bow.", "grammar": "現在進行形", "ja": "主たる弓手は長い弓を引いています。", "category": "gist"},
+        {"text": "They wear traditional white and black uniforms.", "grammar": "一般動詞", "ja": "彼らは伝統的な白と黒の道着を着ています。", "category": "attribute"},
+        {"text": "Others are observing the draw carefully.", "grammar": "現在進行形 / 副詞", "ja": "他の人たちは引く様子を注意深く見ています。", "category": "gist"},
+        {"text": "They look focused and serious.", "grammar": "look + 形容詞", "ja": "彼らは集中していて、真剣に見えます。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "kudo", "ja": "弓道", "category": "inference"},
+        {"text": "dojo", "ja": "道場", "category": "detail"},
+        {"text": "yumi", "ja": "弓（弓道）", "category": "object"},
+        {"text": "ya", "ja": "矢（弓道）", "category": "object"},
+        {"text": "yuzutsu", "ja": "矢筒（弓道）", "category": "object"},
+        {"text": "mato", "ja": "的（弓道）", "category": "inference"},
+        {"text": "archery", "ja": "アーチェリー、弓術", "category": "inference"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "perform", "ja": "行う", "category": "gist"},
+        {"text": "demonstrate", "ja": "実演する", "category": "gist"},
+        {"text": "concentration", "ja": "集中", "category": "inference"},
+        {"text": "vibrant", "ja": "活気のある", "category": "inference"},
+        {"text": "authentic", "ja": "本物の", "category": "attribute"},
+        {"text": "martial arts", "ja": "武道", "category": "inference"},
+        {"text": "procedure", "ja": "手順、作法", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "participating in a kudo practice", "ja": "弓道の練習に参加している", "category": "gist"},
+        {"text": "demonstrating intense concentration", "ja": "激しい集中を実演している", "category": "gist"},
+        {"text": "holding an authentic yumi", "ja": "本物の弓（弓道）を持っている", "category": "gist"},
+        {"text": "performing a martial arts procedure", "ja": "武道の手順を行っている", "category": "inference"},
+        {"text": "vibrant atmosphere of the dojo", "ja": "道場の活気のある雰囲気", "category": "detail"},
+        {"text": "under the authentic Japanese setting", "ja": "本物の日本の設定の下で", "category": "detail"},
+        {"text": "carrying multiple ya in a yuzutsu", "ja": "矢筒に複数の矢を運んでいる", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "It looks like a group of students participating in a traditional kudo practice.", "grammar": "It looks like~", "ja": "それは、伝統的な弓道の練習に参加している生徒たちのグループのようです。", "category": "inference"},
+        {"text": "The lead practitioner is drawing a yumi, demonstrating intense concentration.", "grammar": "現在進行形 / 分詞構文", "ja": "主たる実践者は弓（弓道）を引いて、激しい集中を実演しています。", "category": "gist"},
+        {"text": "They are dressed in authentic white and black uniforms suitable for the martial art.", "grammar": "受動態的表現 (be dressed in) / 形容詞句", "ja": "彼らは、その武道に適した本物の白と黒の道着を着用しています。", "category": "attribute"},
+        {"text": "We can see other students observing and holding additional equipment.", "grammar": "助動詞 + 知覚動詞的用法 (see O Ving)", "ja": "他の生徒たちが観察したり、追加の装備を持っていたりするのが見えます。", "category": "gist"},
+        {"text": "The entire group seems deeply engaged in the procedure of kudo.", "grammar": "Seem + 形容詞的用法 (be engaged in)", "ja": "グループ全体が、弓道の手順に深く関わっているようです。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "bow": { "x": 10, "y": 62 },
+    "man": { "x": 35, "y": 55 },
+    "clothes": { "x": 60, "y": 45 },
+    "arm": { "x": 55, "y": 42 },
+    "girl": { "x": 75, "y": 28 },
+    "student": { "x": 10, "y": 18 },
+    "helmet": { "x": 25, "y": 25 },
+    "quiver": { "x": 92, "y": 18 },
+    "door": { "x": 70, "y": 15 },
+    "floor": { "x": 50, "y": 90 },
+    "railing": { "x": 50, "y": 42 },
+    "light": { "x": 20, "y": 10 },
+    "white": { "x": 80, "y": 40 },
+    "hand": { "x": 48, "y": 38 },
+    "black": { "x": 86, "y": 78 }
+  }
+}

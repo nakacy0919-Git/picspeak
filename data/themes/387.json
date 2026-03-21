@@ -1,0 +1,130 @@
+{
+  "id": "theme_387",
+  "imageSrc": "assets/images/387.webp",
+  "description": "舞台で劇の練習をしている子供たち",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "category": "object"},
+        {"text": "girl", "ja": "女の子", "category": "object"},
+        {"text": "child", "ja": "子供", "category": "object"},
+        {"text": "sword", "ja": "剣", "category": "object"},
+        {"text": "dress", "ja": "ドレス", "category": "object"},
+        {"text": "crown", "ja": "王冠", "category": "object"},
+        {"text": "paper", "ja": "紙", "category": "object"},
+        {"text": "stage", "ja": "舞台", "category": "detail"},
+        {"text": "curtain", "ja": "カーテン", "category": "object"},
+        {"text": "pink", "ja": "ピンクの", "category": "attribute"},
+        {"text": "silver", "ja": "銀色の", "category": "attribute"},
+        {"text": "happy", "ja": "幸せな", "category": "inference"},
+        {"text": "look", "ja": "見る", "category": "gist"},
+        {"text": "smile", "ja": "微笑む", "category": "gist"},
+        {"text": "play", "ja": "遊ぶ、演じる", "category": "gist"}
+      ],
+      "chunks": [
+        {"text": "a pink dress", "ja": "ピンクのドレス", "category": "attribute"},
+        {"text": "a long sword", "ja": "長い剣", "category": "object"},
+        {"text": "on the stage", "ja": "舞台の上で", "category": "detail"},
+        {"text": "look at the boy", "ja": "男の子を見る", "category": "gist"},
+        {"text": "read the paper", "ja": "紙を読む", "category": "gist"},
+        {"text": "a happy girl", "ja": "幸せそうな女の子", "category": "inference"},
+        {"text": "many children", "ja": "たくさんの子供たち", "category": "object"},
+        {"text": "wear a crown", "ja": "王冠をかぶる", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。", "category": "object"},
+        {"text": "The boy has a sword.", "grammar": "have", "ja": "男の子は剣を持っています。", "category": "object"},
+        {"text": "The girl wears a pink dress.", "grammar": "一般動詞", "ja": "女の子はピンクのドレスを着ています。", "category": "gist"},
+        {"text": "They are on the stage.", "grammar": "場所を表す前置詞", "ja": "彼らは舞台の上にいます。", "category": "detail"},
+        {"text": "They look very happy.", "grammar": "look + 形容詞", "ja": "彼らはとても楽しそうに見えます。", "category": "inference"}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "knight", "ja": "騎士", "category": "object"},
+        {"text": "princess", "ja": "お姫様", "category": "object"},
+        {"text": "actor", "ja": "俳優、役者", "category": "object"},
+        {"text": "costume", "ja": "衣装", "category": "object"},
+        {"text": "script", "ja": "台本", "category": "object"},
+        {"text": "armor", "ja": "鎧", "category": "object"},
+        {"text": "theater", "ja": "劇場", "category": "detail"},
+        {"text": "practice", "ja": "練習する", "category": "gist"},
+        {"text": "perform", "ja": "演じる", "category": "gist"},
+        {"text": "hold", "ja": "持っている", "category": "gist"},
+        {"text": "watch", "ja": "見る", "category": "gist"},
+        {"text": "wear", "ja": "着ている", "category": "gist"},
+        {"text": "together", "ja": "一緒に", "category": "detail"},
+        {"text": "exciting", "ja": "ワクワクする", "category": "inference"},
+        {"text": "around", "ja": "〜の周りに", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "practicing a play", "ja": "劇の練習をしている", "category": "gist"},
+        {"text": "acting on stage", "ja": "舞台で演じている", "category": "gist"},
+        {"text": "wearing a costume", "ja": "衣装を着ている", "category": "gist"},
+        {"text": "holding a wooden sword", "ja": "木の剣を持っている", "category": "gist"},
+        {"text": "reading a script", "ja": "台本を読んでいる", "category": "gist"},
+        {"text": "a beautiful princess", "ja": "美しいお姫様", "category": "attribute"},
+        {"text": "a brave knight", "ja": "勇敢な騎士", "category": "attribute"},
+        {"text": "watching the performance", "ja": "演技を見ている", "category": "gist"}
+      ],
+      "sentences": [
+        {"text": "The children are practicing a play on the stage.", "grammar": "現在進行形", "ja": "子供たちは舞台で劇の練習をしています。", "category": "gist"},
+        {"text": "The boy is wearing knight armor.", "grammar": "現在進行形", "ja": "男の子は騎士の鎧を着ています。", "category": "gist"},
+        {"text": "The girl in the pink dress is playing a princess.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "ピンクのドレスを着た女の子はお姫様を演じています。", "category": "gist"},
+        {"text": "Some students are reading their scripts.", "grammar": "現在進行形", "ja": "何人かの生徒は台本を読んでいます。", "category": "gist"},
+        {"text": "Everyone looks excited about the play.", "grammar": "look + 形容詞", "ja": "みんな劇にワクワクしているように見えます。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "rehearse", "ja": "リハーサルをする", "category": "gist"},
+        {"text": "rehearsal", "ja": "リハーサル", "category": "inference"},
+        {"text": "theatrical", "ja": "演劇の", "category": "attribute"},
+        {"text": "drama", "ja": "演劇、劇", "category": "inference"},
+        {"text": "character", "ja": "登場人物", "category": "object"},
+        {"text": "wooden", "ja": "木製の", "category": "attribute"},
+        {"text": "observe", "ja": "観察する", "category": "gist"},
+        {"text": "participate", "ja": "参加する", "category": "gist"},
+        {"text": "engage", "ja": "従事する、取り組む", "category": "gist"},
+        {"text": "enthusiastic", "ja": "熱心な", "category": "inference"},
+        {"text": "delightful", "ja": "楽しい、喜ばしい", "category": "inference"},
+        {"text": "spotlight", "ja": "スポットライト", "category": "object"},
+        {"text": "background", "ja": "背景", "category": "detail"},
+        {"text": "role", "ja": "役割、役", "category": "inference"},
+        {"text": "audience", "ja": "観客", "category": "object"}
+      ],
+      "chunks": [
+        {"text": "engaging in a theatrical rehearsal", "ja": "演劇のリハーサルに取り組んでいる", "category": "gist"},
+        {"text": "rehearsing a school drama", "ja": "学校の劇のリハーサルをしている", "category": "gist"},
+        {"text": "playing the main characters", "ja": "主要な登場人物を演じている", "category": "gist"},
+        {"text": "wearing a wooden sword and armor", "ja": "木の剣と鎧を身につけている", "category": "gist"},
+        {"text": "observing the actors", "ja": "役者たちを観察している", "category": "gist"},
+        {"text": "a delightful school activity", "ja": "楽しい学校行事", "category": "inference"},
+        {"text": "standing under the spotlight", "ja": "スポットライトの下に立っている", "category": "detail"},
+        {"text": "a red curtain in the background", "ja": "背景にある赤いカーテン", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It looks like the students are engaging in a theatrical rehearsal for a school play.", "grammar": "It looks like~", "ja": "生徒たちは学校の劇の演劇リハーサルに取り組んでいるようです。", "category": "inference"},
+        {"text": "The boy acting as a knight is holding a wooden sword.", "grammar": "現在分詞の形容詞的用法", "ja": "騎士を演じている男の子は木の剣を持っています。", "category": "gist"},
+        {"text": "The girl wearing a beautiful crown is playing the role of a princess.", "grammar": "現在分詞の形容詞的用法", "ja": "美しい王冠をかぶっている女の子は、お姫様の役を演じています。", "category": "gist"},
+        {"text": "Some students holding scripts are carefully observing the main actors.", "grammar": "現在分詞の形容詞的用法 / 副詞", "ja": "台本を持っている生徒たちは、主役たちを注意深く観察しています。", "category": "gist"},
+        {"text": "Because they are enjoying the drama, the atmosphere is very delightful.", "grammar": "接続詞 because", "ja": "彼らは劇を楽しんでいるので、雰囲気はとても楽しいです。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "knight": { "x": 30, "y": 50 },
+    "princess": { "x": 60, "y": 55 },
+    "sword": { "x": 45, "y": 35 },
+    "crown": { "x": 58, "y": 22 },
+    "armor": { "x": 30, "y": 45 },
+    "dress": { "x": 60, "y": 70 },
+    "curtain": { "x": 95, "y": 30 },
+    "script": { "x": 10, "y": 45 },
+    "stage": { "x": 50, "y": 85 },
+    "light": { "x": 50, "y": 10 },
+    "boy": { "x": 80, "y": 40 },
+    "girl": { "x": 15, "y": 30 }
+  }
+}
