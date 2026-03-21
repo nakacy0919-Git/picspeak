@@ -11,10 +11,23 @@
     
     <title>PicSpeak - Picture Description</title>
     <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        @keyframes dynamicPulse {
+            0% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7); transform: scale(1); }
+            70% { box-shadow: 0 0 0 15px rgba(236, 72, 153, 0); transform: scale(1.02); }
+            100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0); transform: scale(1); }
+        }
+        .guide-banner-pulse {
+            animation: dynamicPulse 2.5s infinite;
+        }
+    </style>
+
     <script>
         tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
     </script>
     <link rel="stylesheet" href="css/style.css">
+   
     
     <!-- 追加: ウサギのふわふわアニメーションと吹き出しのアニメーション -->
     <style>
@@ -127,7 +140,7 @@
                     <button id="btn-close-history" class="w-full sns-btn bg-gray-900 text-white font-black text-xl py-4 transition-all tracking-widest shrink-0">CLOSE</button>
                 </div>
             </div>
-
+            
             <!-- Title Area -->
             <div class="my-4 md:my-6 text-center shrink-0 mt-16 md:mt-0 relative z-20">
                 <h1 class="clean-title text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
@@ -161,11 +174,35 @@
                     </button>
                 </div>
 
-                <div class="text-center mt-6 md:mt-8">
+                <!-- 👇ここから差し替え👇 -->
+                <div class="text-center mt-6 md:mt-8 flex flex-col items-center gap-4">
+                    <!-- PicSpeakについてボタン -->
                     <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
                         <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
                     </button>
+                    
+                    <!-- 追加：少しサイズダウンしたガイドバナー -->
+                    <a href="guide.html" target="_blank" rel="noopener noreferrer" 
+                       class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-3 md:p-4 transition-all transform hover:scale-[1.02] shadow-md mt-2"
+                       style="background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 50%, #f97316 100%);">
+                        
+                        <div class="flex items-center gap-3">
+                            <!-- 光る電球アイコン（小さめ） -->
+                            <div class="flex-shrink-0 bg-white/90 p-2.5 md:p-3 rounded-full shadow-inner relative">
+                                <span class="text-2xl md:text-3xl relative z-10">💡</span>
+                                <div class="absolute inset-0 bg-pink-200 rounded-full animate-ping opacity-60"></div>
+                            </div>
+                            
+                            <!-- テキスト部分（少し小さめ） -->
+                            <div class="flex-grow text-left">
+                                <p class="text-[9px] md:text-[10px] font-bold text-pink-100 mb-0.5 tracking-wider uppercase">For Teachers & Students</p>
+                                <h2 class="text-base md:text-lg font-black text-white leading-tight tracking-tight mb-0.5">PicSpeak 完全活用ガイド</h2>
+                                <p class="text-[10px] md:text-xs text-white/90 font-bold">スピーキング力UPのコツと授業アイデア！</p>
+                            </div>
+                        </div>
+                    </a>
                 </div>
+                <!-- 👆ここまで差し替え👆 -->
             </div>
         </div>
 
@@ -373,6 +410,9 @@
        
        <footer id="app-footer" class="bg-white border-t border-gray-200 py-3 shrink-0 z-10 w-full mt-auto hidden md:block">
             <div class="flex justify-center gap-6 text-[10px] md:text-xs font-bold text-gray-400">
+                <!-- 👇 この1行を追加！ 👇 -->
+                <a href="guide.html" class="text-pink-500 font-black hover:text-pink-700 transition-colors" target="_blank">💡 活用ガイド（学習のコツ）</a>
+                
                 <a href="privacy.html" class="hover:text-pink-500 transition-colors" target="_blank">プライバシーポリシー</a>
                 <a href="terms.html" class="hover:text-pink-500 transition-colors" target="_blank">利用規約</a>
                 <a href="https://sites.google.com/view/koheinakashima/bio" class="hover:text-pink-500 transition-colors" target="_blank">作成者について</a>
