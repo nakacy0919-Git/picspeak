@@ -7,6 +7,9 @@ let recognition;
 // ★プログラムから意図的に止めたかどうかを判定する「証拠」フラグ
 let isForceStopped = false;
 
+// ★ユーザーエージェントからiOS（iPad/iPhone）かどうかを判定する
+const isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent) || (navigator.platform === 'MacIntel' && navigator.maxTouchPoints > 1);
+
 // 音声認識の初期設定
 function initSpeechRecognition(onResultCallback, onEndCallback) {
     if (!SpeechRecognition) {
@@ -17,7 +20,9 @@ function initSpeechRecognition(onResultCallback, onEndCallback) {
     recognition = new SpeechRecognition();
     recognition.lang = 'en-US'; // 英語に設定
     recognition.interimResults = true; // 話している途中の結果も取得する
-    recognition.continuous = true; // 認識を継続する
+    
+    // 👇ここが修正ポイント！iPad/iOSでは必ず false にする！
+    recognition.continuous = !isIOS; 
 
     // 音声が認識された時の処理
     recognition.onresult = (event) => {
@@ -32,7 +37,9 @@ function initSpeechRecognition(onResultCallback, onEndCallback) {
             }
         }
         // メイン処理にテキストを渡す
-        onResultCallback(finalTranscript, interimTranscript);
+        if (typeof onResultCallback === 'function') {
+            onResultCallback(finalTranscript, interimTranscript);
+        }
     };
 
     // 音声認識が終了（停止）した時の処理
@@ -40,13 +47,20 @@ function initSpeechRecognition(onResultCallback, onEndCallback) {
         // ★無音で勝手に切れた場合（意図的に止めておらず、かつ録音モード中なら）自動で再起動する！
         if (!isForceStopped && window.isRecording) {
             try {
-                recognition.start();
+                // 少しだけ時間（50ミリ秒）を空けて再起動することで、ブラウザの負荷（クラッシュ）を防ぐ
+                setTimeout(() => {
+                    if (!isForceStopped && window.isRecording) {
+                        recognition.start();
+                    }
+                }, 50);
             } catch (e) {
                 console.error("音声認識の自動再起動に失敗しました:", e);
             }
         } else {
             // 本当に終了させたい時（FINISHを押した等）だけ、終了処理を呼ぶ
-            if (onEndCallback) onEndCallback();
+            if (typeof onEndCallback === 'function') {
+                onEndCallback();
+            }
         }
     };
 
