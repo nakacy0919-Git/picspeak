@@ -1,0 +1,388 @@
+{
+  "id": "story8",
+  "titleJa": "終わらない貧困とフードバンク",
+  "imageSrc": "assets/images/story/story8_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story8_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "A boy goes to a food bank after school. He is a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='volunteer' data-ja='ボランティア'>volunteer</span>. He helps people in his town. He gives food to them.",
+          "readingJa": "男の子が放課後にフードバンクに行きます。彼はボランティアです。彼は町の助けを必要とする人々を助けます。彼は彼らに食べ物をあげます。",
+          "vocabulary": [
+            {"word": "boy", "meaning": "男の子"},
+            {"word": "go to", "meaning": "〜へ行く"},
+            {"word": "food bank", "meaning": "フードバンク（食料支援所）"},
+            {"word": "after school", "meaning": "放課後"},
+            {"word": "he", "meaning": "彼は"},
+            {"word": "is", "meaning": "〜である"},
+            {"word": "volunteer", "meaning": "ボランティア"},
+            {"word": "help", "meaning": "〜を助ける"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "in", "meaning": "〜の中の"},
+            {"word": "his", "meaning": "彼の"},
+            {"word": "town", "meaning": "町"},
+            {"word": "give", "meaning": "〜を与える、あげる"},
+            {"word": "food", "meaning": "食べ物"},
+            {"word": "to", "meaning": "〜へ、〜に"},
+            {"word": "them", "meaning": "彼らに"},
+            {"word": "work", "meaning": "働く"},
+            {"word": "many", "meaning": "たくさんの"},
+            {"word": "kind", "meaning": "親切な"},
+            {"word": "today", "meaning": "今日"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "放課後に地域のフードバンクでボランティアをする", "keywords": ["food bank", "after school", "volunteer"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "After school, a boy went to a local food bank to work as a volunteer. He helped <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='distribute' data-ja='〜を配る'>distribute</span> boxes of food to people. He was glad to support his community.",
+          "readingJa": "放課後、男の子はボランティアとして働くために地元のフードバンクに行きました。彼は人々に食べ物の箱を配るのを手伝いました。彼は地域社会を支援できて嬉しかったです。",
+          "vocabulary": [
+            {"word": "after school", "meaning": "放課後"},
+            {"word": "went to", "meaning": "〜へ行った"},
+            {"word": "local", "meaning": "地元の、地域の"},
+            {"word": "food bank", "meaning": "フードバンク"},
+            {"word": "work", "meaning": "働く"},
+            {"word": "as", "meaning": "〜として"},
+            {"word": "volunteer", "meaning": "ボランティア"},
+            {"word": "helped", "meaning": "〜を助けた（helpの過去形）"},
+            {"word": "distribute", "meaning": "〜を分配する、配る"},
+            {"word": "box", "meaning": "箱"},
+            {"word": "of", "meaning": "〜の"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "was glad to", "meaning": "〜して嬉しかった"},
+            {"word": "support", "meaning": "〜を支援する"},
+            {"word": "community", "meaning": "地域、コミュニティ"},
+            {"word": "important", "meaning": "重要な"},
+            {"word": "activity", "meaning": "活動"},
+            {"word": "prepare", "meaning": "準備する"},
+            {"word": "everyone", "meaning": "みんな"},
+            {"word": "member", "meaning": "一員、メンバー"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "地元のフードバンクで食料を配る手伝いをする", "keywords": ["local food bank", "volunteer", "distribute"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "After finishing his classes, a teenage boy enthusiastically headed to a local food bank to volunteer his time. He was responsible for organizing and <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='hand out' data-ja='〜を配る'>handing out</span> <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='essential' data-ja='不可欠な、必須の'>essential</span> food supplies to community members in need.",
+          "readingJa": "授業を終えた後、10代の少年は自分の時間をボランティアに充てるため、熱心に地元のフードバンクへ向かった。彼は、困っている地域の人々に不可欠な食料品を整理し、配る責任を負っていた。",
+          "vocabulary": [
+            {"word": "finish", "meaning": "〜を終える"},
+            {"word": "class", "meaning": "授業"},
+            {"word": "teenage", "meaning": "10代の"},
+            {"word": "enthusiastically", "meaning": "熱心に"},
+            {"word": "head to", "meaning": "〜へ向かう"},
+            {"word": "local", "meaning": "地元の"},
+            {"word": "volunteer one's time", "meaning": "（ボランティアとして）時間を捧げる"},
+            {"word": "be responsible for", "meaning": "〜に対して責任がある、〜を担当する"},
+            {"word": "organize", "meaning": "〜を整理する、準備する"},
+            {"word": "hand out", "meaning": "〜を配る"},
+            {"word": "essential", "meaning": "不可欠な、必須の"},
+            {"word": "food supply", "meaning": "食料品、供給物資"},
+            {"word": "community member", "meaning": "地域住民"},
+            {"word": "in need", "meaning": "困窮している、助けを必要としている"},
+            {"word": "facility", "meaning": "施設"},
+            {"word": "resident", "meaning": "居住者"},
+            {"word": "distribute", "meaning": "配分する"},
+            {"word": "package", "meaning": "パッケージ、荷物"},
+            {"word": "arrive", "meaning": "到着する"},
+            {"word": "assistance", "meaning": "援助、支援"},
+            {"word": "weekly", "meaning": "毎週の"},
+            {"word": "event", "meaning": "イベント、行事"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "放課後、地域で困窮する人々に食料を配るボランティアに参加する", "keywords": ["volunteer", "hand out", "essential supplies", "in need"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/story8_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "He looks outside. He sees a very long line. Many people want food. There are children, too. He is very <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='surprised' data-ja='驚いた'>surprised</span>.",
+          "readingJa": "彼は外を見ます。彼はとても長い列を見ます。多くの人々が食べ物を欲しがっています。子どもたちもいます。彼はとても驚いています。",
+          "vocabulary": [
+            {"word": "look outside", "meaning": "外を見る"},
+            {"word": "see", "meaning": "〜を見る、〜が見える"},
+            {"word": "very", "meaning": "とても"},
+            {"word": "long", "meaning": "長い"},
+            {"word": "line", "meaning": "列"},
+            {"word": "many", "meaning": "たくさんの"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "want", "meaning": "〜を欲しがる"},
+            {"word": "food", "meaning": "食べ物"},
+            {"word": "there are", "meaning": "〜がいる、〜がある"},
+            {"word": "children", "meaning": "子どもたち"},
+            {"word": "too", "meaning": "〜もまた"},
+            {"word": "surprised", "meaning": "驚いた"},
+            {"word": "standing", "meaning": "立っている"},
+            {"word": "outside", "meaning": "外に"},
+            {"word": "waiting", "meaning": "待っている"},
+            {"word": "front", "meaning": "前"},
+            {"word": "door", "meaning": "ドア"},
+            {"word": "building", "meaning": "建物"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "食べ物を求める長い列を見て驚く", "keywords": ["long line", "want food", "surprised"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "When he looked outside the building, he was deeply surprised to see a huge line of people waiting for food. There were far more people than he had <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='expect' data-ja='〜を予期する、予想する'>expected</span>. Many families were <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='struggle' data-ja='奮闘する、苦しむ'>struggling</span> with hunger.",
+          "readingJa": "建物の外を見た時、彼は食べ物を待つ人々の巨大な列を見て深く驚きました。彼が予想していたよりもはるかに多くの人がいました。多くの家族が飢えに苦しんでいました。",
+          "vocabulary": [
+            {"word": "looked", "meaning": "見た（lookの過去形）"},
+            {"word": "outside", "meaning": "外"},
+            {"word": "building", "meaning": "建物"},
+            {"word": "deeply", "meaning": "深く"},
+            {"word": "surprised", "meaning": "驚いた"},
+            {"word": "to see", "meaning": "見て（不定詞の副詞的用法）"},
+            {"word": "huge", "meaning": "巨大な"},
+            {"word": "line", "meaning": "列"},
+            {"word": "waiting for", "meaning": "〜を待っている"},
+            {"word": "far more", "meaning": "はるかに多くの"},
+            {"word": "than", "meaning": "〜よりも"},
+            {"word": "had expected", "meaning": "予想していた（過去完了形）"},
+            {"word": "family", "meaning": "家族"},
+            {"word": "struggle", "meaning": "奮闘する、苦しむ"},
+            {"word": "hunger", "meaning": "飢え、空腹"},
+            {"word": "realize", "meaning": "〜を悟る、気づく"},
+            {"word": "serious", "meaning": "深刻な"},
+            {"word": "problem", "meaning": "問題"},
+            {"word": "poverty", "meaning": "貧困"},
+            {"word": "area", "meaning": "地域、場所"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "予想以上に多くの人が飢えに苦しんでいる現状を目の当たりにする", "keywords": ["huge line", "expected", "struggling with hunger"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Stepping outside the facility, he was completely shocked to witness an unexpectedly <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='massive' data-ja='巨大な、大規模な'>massive</span> queue of individuals desperately waiting for food assistance. He had never imagined that such severe <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='food insecurity' data-ja='食料不安、食料の欠乏'>food insecurity</span> existed right within his own community.",
+          "readingJa": "施設の外に出ると、彼は食料支援を必死に待つ人々の予想外に大規模な列を目撃し、完全にショックを受けた。自分自身の地域社会のまさに内側に、これほど深刻な食料不安が存在しているとは想像もしていなかった。",
+          "vocabulary": [
+            {"word": "step outside", "meaning": "外に出る"},
+            {"word": "facility", "meaning": "施設"},
+            {"word": "completely", "meaning": "完全に"},
+            {"word": "shocked", "meaning": "ショックを受けた"},
+            {"word": "witness", "meaning": "〜を目撃する"},
+            {"word": "unexpectedly", "meaning": "予想外に"},
+            {"word": "massive", "meaning": "巨大な、大規模な"},
+            {"word": "queue", "meaning": "（順番を待つ）列"},
+            {"word": "individual", "meaning": "個人、人々"},
+            {"word": "desperately", "meaning": "必死に"},
+            {"word": "assistance", "meaning": "援助、支援"},
+            {"word": "never imagined", "meaning": "決して想像しなかった"},
+            {"word": "such", "meaning": "そのような"},
+            {"word": "severe", "meaning": "深刻な"},
+            {"word": "food insecurity", "meaning": "食料不安（食料が十分に手に入らない状態）"},
+            {"word": "exist", "meaning": "存在する"},
+            {"word": "right within", "meaning": "〜のまさに内側に"},
+            {"word": "own", "meaning": "自分自身の"},
+            {"word": "community", "meaning": "地域社会"},
+            {"word": "street", "meaning": "通り"},
+            {"word": "crowded", "meaning": "混雑した"},
+            {"word": "reality", "meaning": "現実"},
+            {"word": "poverty", "meaning": "貧困"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "想像以上に深刻な食料不安が地域に存在することを知りショックを受ける", "keywords": ["massive queue", "food insecurity", "shocked", "witness"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/story8_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "Soon, the food is gone. The boxes are <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='empty' data-ja='空の'>empty</span>. A mother and a child come. He has no food for them. He feels sorry.",
+          "readingJa": "すぐに食べ物はなくなります。箱は空っぽです。お母さんと子どもが来ます。彼は彼らにあげる食べ物を持っていません。彼は申し訳なく思います。",
+          "vocabulary": [
+            {"word": "soon", "meaning": "すぐに"},
+            {"word": "food", "meaning": "食べ物"},
+            {"word": "is gone", "meaning": "なくなった、なくなった状態である"},
+            {"word": "box", "meaning": "箱"},
+            {"word": "empty", "meaning": "空の"},
+            {"word": "mother", "meaning": "母"},
+            {"word": "child", "meaning": "子ども"},
+            {"word": "come", "meaning": "来る"},
+            {"word": "have no ~", "meaning": "〜が全くない"},
+            {"word": "for", "meaning": "〜のための"},
+            {"word": "them", "meaning": "彼らに"},
+            {"word": "feel sorry", "meaning": "申し訳なく思う、気の毒に思う"},
+            {"word": "sad", "meaning": "悲しい"},
+            {"word": "finish", "meaning": "終わる"},
+            {"word": "already", "meaning": "すでに"},
+            {"word": "give", "meaning": "与える"},
+            {"word": "anything", "meaning": "何か、何も（否定文）"},
+            {"word": "late", "meaning": "遅い"},
+            {"word": "hungry", "meaning": "お腹が空いた"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "食料がすぐになくなり、困っている親子に申し訳なく思う", "keywords": ["gone", "empty", "feel sorry"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "Before long, all the food <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='run out' data-ja='使い果たす、なくなる'>ran out</span> quickly. A mother and her small child came, but the boxes were completely empty. He felt very <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='sorry' data-ja='申し訳なく思う'>sorry</span> because he couldn't give them anything to eat.",
+          "readingJa": "まもなく、すべての食べ物はすぐになくなってしまいました。母親と小さな子どもが来ましたが、箱は完全に空でした。彼は彼らに何も食べるものをあげられなかったので、とても申し訳なく感じました。",
+          "vocabulary": [
+            {"word": "before long", "meaning": "まもなく"},
+            {"word": "all the food", "meaning": "すべての食べ物"},
+            {"word": "ran out", "meaning": "なくなった、使い果たした（run outの過去形）"},
+            {"word": "quickly", "meaning": "素早く、すぐに"},
+            {"word": "mother", "meaning": "母"},
+            {"word": "small", "meaning": "小さい"},
+            {"word": "child", "meaning": "子ども"},
+            {"word": "came", "meaning": "来た（comeの過去形）"},
+            {"word": "but", "meaning": "しかし"},
+            {"word": "completely", "meaning": "完全に"},
+            {"word": "empty", "meaning": "空の"},
+            {"word": "felt", "meaning": "感じた（feelの過去形）"},
+            {"word": "sorry", "meaning": "申し訳なく思う"},
+            {"word": "because", "meaning": "〜なので"},
+            {"word": "couldn't", "meaning": "〜できなかった"},
+            {"word": "give", "meaning": "〜をあげる"},
+            {"word": "anything to eat", "meaning": "食べるための何か（食べるもの）"},
+            {"word": "problem", "meaning": "問題"},
+            {"word": "shortage", "meaning": "不足"},
+            {"word": "demand", "meaning": "需要"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "食料が底をつき、食べ物を渡せない親子に罪悪感を抱く", "keywords": ["ran out", "completely empty", "felt sorry"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Despite their continuous efforts, the prepared <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='provision' data-ja='供給品、食料品'>provisions</span> ran out much faster than anticipated. When a distressed mother and her young child finally reached the front of the line, the supply boxes were already entirely empty. He felt <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='profoundly' data-ja='深く、大いに'>profoundly</span> apologetic that he couldn't provide the vital nourishment they required.",
+          "readingJa": "彼らの絶え間ない努力にもかかわらず、用意された食料は予想よりはるかに早く底をついた。困窮した母親と幼い子供がついに列の先頭にたどり着いた時、供給用の箱はすでに完全に空だった。彼は彼らが必要としている不可欠な栄養を提供できないことを深く申し訳なく思った。",
+          "vocabulary": [
+            {"word": "despite", "meaning": "〜にもかかわらず"},
+            {"word": "continuous", "meaning": "絶え間ない、連続的な"},
+            {"word": "effort", "meaning": "努力"},
+            {"word": "prepared", "meaning": "準備された"},
+            {"word": "provision", "meaning": "供給品、食料品"},
+            {"word": "run out", "meaning": "尽きる、なくなる"},
+            {"word": "much faster", "meaning": "はるかに速く"},
+            {"word": "than anticipated", "meaning": "予想されたよりも"},
+            {"word": "distressed", "meaning": "困窮した、ひどく苦しんでいる"},
+            {"word": "finally", "meaning": "ついに"},
+            {"word": "reached", "meaning": "〜に到着した、〜に届いた"},
+            {"word": "the front of the line", "meaning": "列の先頭"},
+            {"word": "supply box", "meaning": "供給箱"},
+            {"word": "already", "meaning": "すでに"},
+            {"word": "entirely", "meaning": "完全に"},
+            {"word": "profoundly", "meaning": "深く、大いに"},
+            {"word": "apologetic", "meaning": "申し訳なく思う"},
+            {"word": "provide", "meaning": "〜を提供する"},
+            {"word": "vital", "meaning": "不可欠な、極めて重要な"},
+            {"word": "nourishment", "meaning": "栄養、食べ物"},
+            {"word": "require", "meaning": "〜を必要とする"},
+            {"word": "helpless", "meaning": "無力な"},
+            {"word": "situation", "meaning": "状況"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "需要に対して食料供給が追いつかない現実に無力感を覚える", "keywords": ["provisions", "ran out", "entirely empty", "profoundly apologetic"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/story8_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "He goes home. He thinks about the food bank. Giving food is not <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='enough' data-ja='十分な'>enough</span>. He opens a book. He wants to know about poor people.",
+          "readingJa": "彼は家に帰ります。彼はフードバンクについて考えます。食べ物をあげることだけでは十分ではありません。彼は本を開きます。彼は貧しい人々について知りたいと思っています。",
+          "vocabulary": [
+            {"word": "go home", "meaning": "家に帰る"},
+            {"word": "think about", "meaning": "〜について考える"},
+            {"word": "food bank", "meaning": "フードバンク"},
+            {"word": "giving", "meaning": "与えること（動名詞）"},
+            {"word": "food", "meaning": "食べ物"},
+            {"word": "not enough", "meaning": "十分ではない"},
+            {"word": "open", "meaning": "〜を開く"},
+            {"word": "book", "meaning": "本"},
+            {"word": "want to", "meaning": "〜したい"},
+            {"word": "know", "meaning": "知る、わかる"},
+            {"word": "about", "meaning": "〜について"},
+            {"word": "poor", "meaning": "貧しい"},
+            {"word": "people", "meaning": "人々"},
+            {"word": "help", "meaning": "助ける"},
+            {"word": "learn", "meaning": "学ぶ"},
+            {"word": "why", "meaning": "なぜ"},
+            {"word": "today", "meaning": "今日"},
+            {"word": "dinner", "meaning": "夕食"},
+            {"word": "study", "meaning": "勉強する"},
+            {"word": "hard", "meaning": "一生懸命"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "食料配給だけでは解決しないと気づき、貧困について調べ始める", "keywords": ["go home", "not enough", "poor people"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "After he went home, he couldn't stop thinking about the food bank. He understood that just giving food was only a <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='temporary' data-ja='一時的な'>temporary</span> solution. He opened a book to learn about the real <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='cause' data-ja='原因'>causes</span> of poverty.",
+          "readingJa": "家に帰った後、彼はフードバンクのことを考えずにはいられませんでした。彼はただ食べ物をあげることは一時的な解決策にすぎないことを理解しました。彼は貧困の本当の原因について学ぶために本を開きました。",
+          "vocabulary": [
+            {"word": "after", "meaning": "〜の後"},
+            {"word": "went home", "meaning": "家に帰った"},
+            {"word": "couldn't stop ~ing", "meaning": "〜するのをやめられなかった"},
+            {"word": "thinking", "meaning": "考えること"},
+            {"word": "about", "meaning": "〜について"},
+            {"word": "understood", "meaning": "理解した（understandの過去形）"},
+            {"word": "just", "meaning": "単に、ただ〜だけ"},
+            {"word": "giving", "meaning": "与えること"},
+            {"word": "only", "meaning": "〜にすぎない"},
+            {"word": "temporary", "meaning": "一時的な"},
+            {"word": "solution", "meaning": "解決策、解決法"},
+            {"word": "opened", "meaning": "開いた"},
+            {"word": "book", "meaning": "本"},
+            {"word": "to learn", "meaning": "学ぶために（不定詞の目的用法）"},
+            {"word": "real", "meaning": "本当の、実際の"},
+            {"word": "cause", "meaning": "原因"},
+            {"word": "poverty", "meaning": "貧困"},
+            {"word": "fundamental", "meaning": "根本的な"},
+            {"word": "reason", "meaning": "理由"},
+            {"word": "society", "meaning": "社会"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "食料支援は一時的だと悟り、貧困の根本原因について本で学ぶ", "keywords": ["couldn't stop thinking", "temporary solution", "causes of poverty"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Upon returning home, he recognized that simply distributing meals was <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='merely' data-ja='単に〜にすぎない'>merely</span> a temporary fix for a much deeper societal issue. Determined to make a lasting difference, he opened several books to extensively research the fundamental <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='root cause' data-ja='根本的な原因'>root causes</span> of systemic poverty.",
+          "readingJa": "帰宅すると、彼は単に食事を配ることは、より深い社会問題に対する一時的な対処にすぎないことを認識した。永続的な変化をもたらす決心をして、彼は制度的貧困の根本的な原因を広く調査するために何冊かの本を開いた。",
+          "vocabulary": [
+            {"word": "upon ~ing", "meaning": "〜するとすぐに、〜する際"},
+            {"word": "return home", "meaning": "帰宅する"},
+            {"word": "recognize", "meaning": "〜を認識する、認める"},
+            {"word": "simply", "meaning": "単に"},
+            {"word": "distribute", "meaning": "〜を配る、分配する"},
+            {"word": "meal", "meaning": "食事"},
+            {"word": "merely", "meaning": "単に〜にすぎない"},
+            {"word": "temporary fix", "meaning": "一時的な解決策、その場しのぎ"},
+            {"word": "deeper", "meaning": "より深い"},
+            {"word": "societal issue", "meaning": "社会問題"},
+            {"word": "determined to", "meaning": "〜することを固く決心して"},
+            {"word": "make a difference", "meaning": "変化をもたらす、影響を与える"},
+            {"word": "lasting", "meaning": "永続的な"},
+            {"word": "several", "meaning": "いくつかの"},
+            {"word": "extensively", "meaning": "広く、徹底的に"},
+            {"word": "research", "meaning": "〜を調査する、研究する"},
+            {"word": "fundamental", "meaning": "根本的な"},
+            {"word": "root cause", "meaning": "根本原因"},
+            {"word": "systemic", "meaning": "制度上の、システム的な"},
+            {"word": "poverty", "meaning": "貧困"},
+            {"word": "inequality", "meaning": "不平等"},
+            {"word": "gap", "meaning": "格差"},
+            {"word": "economy", "meaning": "経済"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "対処療法ではなく、社会の貧困の根本原因を追究する決意をする", "keywords": ["merely", "temporary fix", "lasting difference", "root causes"]}
+          ]
+        }
+      }
+    }
+  ]
+}

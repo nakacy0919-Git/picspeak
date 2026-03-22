@@ -1,0 +1,395 @@
+{
+  "id": "story7",
+  "titleJa": "ファストファッションと環境問題",
+  "imageSrc": "assets/images/story/story7_scene1.webp",
+  "scenes": [
+    {
+      "sceneIndex": 1,
+      "imageSrc": "assets/images/story/story7_scene1.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "A girl looks at her smartphone. She buys many cheap and cute clothes. She stands in front of a mirror. She is very <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='happy' data-ja='幸せな'>happy</span>.",
+          "readingJa": "女の子がスマートフォンを見ています。彼女は安くてかわいい服をたくさん買います。彼女は鏡の前に立ちます。彼女はとても幸せです。",
+          "vocabulary": [
+            {"word": "a", "meaning": "1つの、ある"},
+            {"word": "girl", "meaning": "女の子"},
+            {"word": "look at", "meaning": "〜を見る"},
+            {"word": "her", "meaning": "彼女の"},
+            {"word": "smartphone", "meaning": "スマートフォン"},
+            {"word": "she", "meaning": "彼女は"},
+            {"word": "buy", "meaning": "買う"},
+            {"word": "many", "meaning": "たくさんの"},
+            {"word": "cheap", "meaning": "安い"},
+            {"word": "and", "meaning": "〜と、そして"},
+            {"word": "cute", "meaning": "かわいい"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "stand", "meaning": "立つ"},
+            {"word": "in front of", "meaning": "〜の前に"},
+            {"word": "mirror", "meaning": "鏡"},
+            {"word": "be", "meaning": "〜である、いる"},
+            {"word": "very", "meaning": "とても"},
+            {"word": "happy", "meaning": "幸せな、嬉しい"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "スマホで安い服をたくさん買って喜んでいる状況", "keywords": ["smartphone", "cheap clothes", "happy"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "A young girl was looking at an online shop on her smartphone. She ordered a lot of cheap, trendy clothes. Later, she stood in front of the mirror and felt excited. She <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='try on' data-ja='〜を試着する'>tried on</span> her new outfits happily.",
+          "readingJa": "若い女の子がスマートフォンでオンラインショップを見ていました。彼女は安くて流行の服をたくさん注文しました。その後、彼女は鏡の前に立ち、ワクワクしました。彼女は新しい服を嬉しそうに試着しました。",
+          "vocabulary": [
+            {"word": "young", "meaning": "若い"},
+            {"word": "girl", "meaning": "女の子"},
+            {"word": "look at", "meaning": "〜を見る"},
+            {"word": "online shop", "meaning": "オンラインショップ"},
+            {"word": "on", "meaning": "（通信機器・画面）で"},
+            {"word": "smartphone", "meaning": "スマートフォン"},
+            {"word": "order", "meaning": "〜を注文する"},
+            {"word": "a lot of", "meaning": "たくさんの"},
+            {"word": "cheap", "meaning": "安い"},
+            {"word": "trendy", "meaning": "流行の"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "later", "meaning": "後で、その後"},
+            {"word": "stand", "meaning": "立つ"},
+            {"word": "in front of", "meaning": "〜の前に"},
+            {"word": "mirror", "meaning": "鏡"},
+            {"word": "feel", "meaning": "〜と感じる"},
+            {"word": "excited", "meaning": "興奮した、ワクワクした"},
+            {"word": "try on", "meaning": "〜を試着する"},
+            {"word": "new", "meaning": "新しい"},
+            {"word": "outfit", "meaning": "服装、衣装"},
+            {"word": "happily", "meaning": "嬉しそうに、幸せに"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "ネットで流行の服を注文し、試着して喜ぶ", "keywords": ["ordered", "trendy clothes", "tried on"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Scrolling through an online shopping app, a teenage girl excitedly <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='purchase' data-ja='〜を購入する'>purchased</span> a large amount of inexpensive, trendy fast fashion items. When the packages arrived, she immediately rushed to the mirror, trying on various outfits with great delight. She completely <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='ignore' data-ja='〜を無視する'>ignored</span> the potential environmental impact hidden behind those appealing but incredibly cheap garments.",
+          "readingJa": "オンラインショッピングのアプリをスクロールしながら、10代の少女は安価で流行のファストファッションの品々を大量に興奮して購入した。荷物が届くと、彼女はすぐに鏡の前に駆け寄り、大喜びで様々な服を試着した。彼女は、魅力的だが信じられないほど安い衣服の裏に隠された、環境への潜在的な悪影響を完全に無視していた。",
+          "vocabulary": [
+            {"word": "scroll through", "meaning": "〜をスクロールして見る"},
+            {"word": "online shopping", "meaning": "オンラインショッピング"},
+            {"word": "app", "meaning": "アプリ"},
+            {"word": "teenage", "meaning": "10代の"},
+            {"word": "excitedly", "meaning": "興奮して"},
+            {"word": "purchase", "meaning": "〜を購入する"},
+            {"word": "a large amount of", "meaning": "大量の"},
+            {"word": "inexpensive", "meaning": "安価な"},
+            {"word": "trendy", "meaning": "流行の"},
+            {"word": "fast fashion", "meaning": "ファストファッション"},
+            {"word": "item", "meaning": "品目、アイテム"},
+            {"word": "package", "meaning": "小包、荷物"},
+            {"word": "arrive", "meaning": "到着する"},
+            {"word": "immediately", "meaning": "すぐに"},
+            {"word": "rush to", "meaning": "〜へ駆け寄る"},
+            {"word": "try on", "meaning": "〜を試着する"},
+            {"word": "various", "meaning": "様々な"},
+            {"word": "outfit", "meaning": "服装"},
+            {"word": "with great delight", "meaning": "大喜びで"},
+            {"word": "completely", "meaning": "完全に"},
+            {"word": "ignore", "meaning": "〜を無視する"},
+            {"word": "potential", "meaning": "潜在的な"},
+            {"word": "environmental impact", "meaning": "環境への影響"},
+            {"word": "hidden", "meaning": "隠された"},
+            {"word": "behind", "meaning": "〜の後ろに、裏に"},
+            {"word": "appealing", "meaning": "魅力的な"},
+            {"word": "incredibly", "meaning": "信じられないほど"},
+            {"word": "garment", "meaning": "衣服"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "安い服を大量に買い、環境への影響を意識していない結果", "keywords": ["purchased", "fast fashion items", "ignored", "environmental impact"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 2,
+      "imageSrc": "assets/images/story/story7_scene2.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "She watches TV in the living room. The news shows a big <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='desert' data-ja='砂漠'>desert</span>. There is a mountain of old clothes. She is surprised.",
+          "readingJa": "彼女は居間でテレビを見ます。ニュースで大きな砂漠が映ります。そこには古い服の山があります。彼女は驚きます。",
+          "vocabulary": [
+            {"word": "she", "meaning": "彼女は"},
+            {"word": "watch", "meaning": "〜を見る"},
+            {"word": "TV", "meaning": "テレビ"},
+            {"word": "in", "meaning": "〜の中に、〜で"},
+            {"word": "the", "meaning": "その"},
+            {"word": "living room", "meaning": "居間、リビング"},
+            {"word": "news", "meaning": "ニュース"},
+            {"word": "show", "meaning": "〜を見せる、映す"},
+            {"word": "big", "meaning": "大きい"},
+            {"word": "desert", "meaning": "砂漠"},
+            {"word": "there is", "meaning": "〜がある"},
+            {"word": "a", "meaning": "1つの"},
+            {"word": "mountain", "meaning": "山"},
+            {"word": "of", "meaning": "〜の"},
+            {"word": "old", "meaning": "古い"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "be", "meaning": "〜である"},
+            {"word": "surprised", "meaning": "驚いた"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "ニュースで砂漠の服の山を見て驚く", "keywords": ["TV", "desert", "mountain of old clothes"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "While she was watching the evening news, she saw a shocking video. It showed a huge mountain of thrown-away clothes in a far desert. She couldn't believe her eyes. It looked like a terrible <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='garbage' data-ja='ゴミ'>garbage</span> dump.",
+          "readingJa": "夕方のニュースを見ていると、彼女は衝撃的な映像を目にしました。それは遠くの砂漠にある、捨てられた服の巨大な山を映していました。彼女は自分の目が信じられませんでした。それはひどいゴミ捨て場のように見えました。",
+          "vocabulary": [
+            {"word": "while", "meaning": "〜している間に"},
+            {"word": "watch", "meaning": "〜を見る"},
+            {"word": "evening", "meaning": "夕方、晩"},
+            {"word": "news", "meaning": "ニュース"},
+            {"word": "see", "meaning": "〜が見える、見る"},
+            {"word": "shocking", "meaning": "衝撃的な"},
+            {"word": "video", "meaning": "映像、ビデオ"},
+            {"word": "it", "meaning": "それは"},
+            {"word": "show", "meaning": "〜を示す、映す"},
+            {"word": "huge", "meaning": "巨大な"},
+            {"word": "mountain", "meaning": "山"},
+            {"word": "thrown-away", "meaning": "捨てられた"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "far", "meaning": "遠い"},
+            {"word": "desert", "meaning": "砂漠"},
+            {"word": "can't believe one's eyes", "meaning": "自分の目を疑う"},
+            {"word": "look like", "meaning": "〜のように見える"},
+            {"word": "terrible", "meaning": "ひどい、恐ろしい"},
+            {"word": "garbage", "meaning": "ゴミ"},
+            {"word": "dump", "meaning": "捨てる場所、ゴミ捨て場"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "ニュースで捨てられた服の巨大なゴミの山を見る", "keywords": ["shocking video", "thrown-away clothes", "garbage dump"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Later that evening, a documentary on the news caught her attention. It broadcasted shocking footage of a massive <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='landfill' data-ja='埋め立て地、ゴミ捨て場'>landfill</span> in a remote desert, completely covered with <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='discard' data-ja='〜を捨てる'>discarded</span> clothing. Staring at the screen, she was deeply appalled to witness the devastating scale of textile waste continuously generated by the global fast fashion industry.",
+          "readingJa": "その日の晩遅く、ニュースのドキュメンタリーが彼女の目を引いた。それは、遠く離れた砂漠にある、捨てられた衣服で完全に覆われた巨大な埋め立て地の衝撃的な映像を放送していた。画面を見つめながら、彼女は世界のファストファッション産業によって絶えず生み出される繊維廃棄物の壊滅的な規模を目の当たりにし、深くぞっとした。",
+          "vocabulary": [
+            {"word": "later", "meaning": "後で"},
+            {"word": "evening", "meaning": "晩"},
+            {"word": "documentary", "meaning": "ドキュメンタリー"},
+            {"word": "catch one's attention", "meaning": "〜の注意を引く"},
+            {"word": "broadcast", "meaning": "〜を放送する"},
+            {"word": "shocking", "meaning": "衝撃的な"},
+            {"word": "footage", "meaning": "映像"},
+            {"word": "massive", "meaning": "巨大な"},
+            {"word": "landfill", "meaning": "埋め立て地、ゴミ捨て場"},
+            {"word": "remote", "meaning": "遠く離れた"},
+            {"word": "desert", "meaning": "砂漠"},
+            {"word": "completely", "meaning": "完全に"},
+            {"word": "covered with", "meaning": "〜で覆われた"},
+            {"word": "discard", "meaning": "〜を捨てる"},
+            {"word": "clothing", "meaning": "衣類"},
+            {"word": "stare at", "meaning": "〜を見つめる"},
+            {"word": "screen", "meaning": "画面"},
+            {"word": "deeply", "meaning": "深く"},
+            {"word": "appalled", "meaning": "ぞっとした、愕然とした"},
+            {"word": "witness", "meaning": "〜を目撃する"},
+            {"word": "devastating", "meaning": "壊滅的な、ひどい"},
+            {"word": "scale", "meaning": "規模"},
+            {"word": "textile", "meaning": "織物、繊維"},
+            {"word": "waste", "meaning": "廃棄物"},
+            {"word": "continuously", "meaning": "絶えず、連続的に"},
+            {"word": "generate", "meaning": "〜を生み出す"},
+            {"word": "global", "meaning": "世界的な"},
+            {"word": "industry", "meaning": "産業"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "ファストファッションが引き起こす衣料廃棄の惨状を知る", "keywords": ["landfill", "discarded clothing", "textile waste", "fast fashion industry"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 3,
+      "imageSrc": "assets/images/story/story7_scene3.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "She thinks about her room. She has many clothes. She does not wear them all. She knows she makes garbage, too. She feels <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='sad' data-ja='悲しい'>sad</span>.",
+          "readingJa": "彼女は自分の部屋について考えます。彼女はたくさんの服を持っています。彼女はそれらを全ては着ません。彼女は自分もゴミを作っていることを知ります。彼女は悲しく感じます。",
+          "vocabulary": [
+            {"word": "think about", "meaning": "〜について考える"},
+            {"word": "her", "meaning": "彼女の"},
+            {"word": "room", "meaning": "部屋"},
+            {"word": "have", "meaning": "〜を持っている"},
+            {"word": "many", "meaning": "たくさんの"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "do not", "meaning": "〜しない"},
+            {"word": "wear", "meaning": "〜を着る"},
+            {"word": "them", "meaning": "それらを"},
+            {"word": "all", "meaning": "すべて"},
+            {"word": "know", "meaning": "知っている、わかる"},
+            {"word": "make", "meaning": "作る"},
+            {"word": "garbage", "meaning": "ゴミ"},
+            {"word": "too", "meaning": "〜もまた"},
+            {"word": "feel", "meaning": "感じる"},
+            {"word": "sad", "meaning": "悲しい"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "自分の服もゴミになることに気づき悲しむ", "keywords": ["thinks about", "makes garbage", "sad"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "She remembered her own closet filled with clothes she no longer wore. She <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='realize' data-ja='〜に気づく'>realized</span> that her unwanted clothes might also become a mountain of trash. The harsh reality of destroying the environment shocked her deeply.",
+          "readingJa": "彼女は、もう着なくなった服でいっぱいの自分のクローゼットを思い出しました。彼女は、自分のいらなくなった服もゴミの山になるかもしれないと気づきました。環境を破壊しているという厳しい現実は、彼女に深いショックを与えました。",
+          "vocabulary": [
+            {"word": "remember", "meaning": "〜を思い出す"},
+            {"word": "own", "meaning": "自分自身の"},
+            {"word": "closet", "meaning": "クローゼット"},
+            {"word": "filled with", "meaning": "〜で満たされた、いっぱいの"},
+            {"word": "clothes", "meaning": "服"},
+            {"word": "no longer", "meaning": "もはや〜ない"},
+            {"word": "wear", "meaning": "〜を着る"},
+            {"word": "realize", "meaning": "〜に気づく"},
+            {"word": "that", "meaning": "〜ということ"},
+            {"word": "unwanted", "meaning": "不要な、望まれない"},
+            {"word": "might", "meaning": "〜かもしれない"},
+            {"word": "also", "meaning": "〜もまた"},
+            {"word": "become", "meaning": "〜になる"},
+            {"word": "mountain", "meaning": "山"},
+            {"word": "trash", "meaning": "ゴミ"},
+            {"word": "harsh", "meaning": "厳しい、残酷な"},
+            {"word": "reality", "meaning": "現実"},
+            {"word": "destroy", "meaning": "〜を破壊する"},
+            {"word": "environment", "meaning": "環境"},
+            {"word": "shock", "meaning": "〜にショックを与える"},
+            {"word": "deeply", "meaning": "深く"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "自分の行動が環境破壊に繋がっている現実に気づく", "keywords": ["closet", "realized", "mountain of trash", "harsh reality"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "A sudden wave of guilt washed over her as she thought about her own overflowing closet. She recognized that the garments she effortlessly threw away were directly <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='contribute to' data-ja='〜の一因となる'>contributing to</span> this <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='ecological' data-ja='生態学的な、環境の'>ecological</span> disaster. The harsh realization that her consumer habits were actively harming the planet left her profoundly shocked and questioning her past choices.",
+          "readingJa": "あふれかえる自分のクローゼットのことを考えた時、突然の罪悪感の波が彼女に押し寄せた。彼女は、自分が苦労せずに捨てていた衣服が、この環境災害に直接加担していることを認識した。自分の消費習慣が積極的に地球を傷つけているという厳しい認識は、彼女に深いショックを与え、過去の選択を問い直させた。",
+          "vocabulary": [
+            {"word": "sudden", "meaning": "突然の"},
+            {"word": "wave of guilt", "meaning": "罪悪感の波"},
+            {"word": "wash over", "meaning": "（感情などが）〜に押し寄せる"},
+            {"word": "as", "meaning": "〜する時、〜につれて"},
+            {"word": "think about", "meaning": "〜について考える"},
+            {"word": "overflowing", "meaning": "あふれかえっている"},
+            {"word": "closet", "meaning": "クローゼット"},
+            {"word": "recognize", "meaning": "〜を認識する、認める"},
+            {"word": "garment", "meaning": "衣服"},
+            {"word": "effortlessly", "meaning": "いとも簡単に、苦労せずに"},
+            {"word": "throw away", "meaning": "〜を捨てる"},
+            {"word": "directly", "meaning": "直接的に"},
+            {"word": "contribute to", "meaning": "〜の一因となる、〜に貢献する"},
+            {"word": "ecological", "meaning": "生態学的な、環境の"},
+            {"word": "disaster", "meaning": "災害、惨事"},
+            {"word": "harsh", "meaning": "厳しい"},
+            {"word": "realization", "meaning": "認識、気づくこと"},
+            {"word": "consumer", "meaning": "消費者の"},
+            {"word": "habit", "meaning": "習慣"},
+            {"word": "actively", "meaning": "積極的に"},
+            {"word": "harm", "meaning": "〜を傷つける、害する"},
+            {"word": "planet", "meaning": "地球、惑星"},
+            {"word": "leave someone shocked", "meaning": "（人）をショックを受けた状態にする"},
+            {"word": "profoundly", "meaning": "深く、大いに"},
+            {"word": "question", "meaning": "〜を疑問視する、問い直す"},
+            {"word": "past", "meaning": "過去の"},
+            {"word": "choice", "meaning": "選択"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "自分の消費行動が環境破壊に加担していると自覚しショックを受ける", "keywords": ["guilt", "contributing to", "ecological disaster", "consumer habits"]}
+          ]
+        }
+      }
+    },
+    {
+      "sceneIndex": 4,
+      "imageSrc": "assets/images/story/story7_scene4.webp",
+      "levels": {
+        "elementary": {
+          "readingText": "She opens her closet. She looks at her clothes carefully. She decides to keep them for a long time. She wants to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='protect' data-ja='〜を守る'>protect</span> the earth.",
+          "readingJa": "彼女はクローゼットを開けます。彼女は自分の服を注意深く見ます。彼女はそれらを長い間持ち続けることに決めます。彼女は地球を守りたいのです。",
+          "vocabulary": [
+            {"word": "open", "meaning": "〜を開ける"},
+            {"word": "closet", "meaning": "クローゼット"},
+            {"word": "look at", "meaning": "〜を見る"},
+            {"word": "carefully", "meaning": "注意深く"},
+            {"word": "decide to", "meaning": "〜することに決める"},
+            {"word": "keep", "meaning": "〜を保つ、持ち続ける"},
+            {"word": "them", "meaning": "それらを"},
+            {"word": "for a long time", "meaning": "長い間"},
+            {"word": "want to", "meaning": "〜したい"},
+            {"word": "protect", "meaning": "〜を守る"},
+            {"word": "the", "meaning": "その"},
+            {"word": "earth", "meaning": "地球"}
+          ],
+          "targets": [
+            {"category": "Context (状況)", "text": "服を大切に長く着て地球を守ろうと決心する", "keywords": ["closet", "carefully", "keep", "protect the earth"]}
+          ]
+        },
+        "junior_high": {
+          "readingText": "She opened her closet again, but this time, her feelings changed. Before buying new things easily, she made a promise to herself. She decided to choose only what she truly needed and <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='take care of' data-ja='〜を大切にする、世話をする'>take care of</span> her clothes longer.",
+          "readingJa": "彼女は再びクローゼットを開けましたが、今度は彼女の気持ちが変わっていました。新しいものを簡単に買う前に、彼女は自分自身と約束をしました。彼女は本当に必要なものだけを選び、自分の服をより長く大切にすることに決めました。",
+          "vocabulary": [
+            {"word": "open", "meaning": "〜を開ける"},
+            {"word": "closet", "meaning": "クローゼット"},
+            {"word": "again", "meaning": "再び"},
+            {"word": "but", "meaning": "しかし"},
+            {"word": "this time", "meaning": "今回は、今度は"},
+            {"word": "feeling", "meaning": "気持ち、感情"},
+            {"word": "change", "meaning": "変わる"},
+            {"word": "before", "meaning": "〜の前に"},
+            {"word": "buy", "meaning": "買う"},
+            {"word": "new", "meaning": "新しい"},
+            {"word": "thing", "meaning": "もの"},
+            {"word": "easily", "meaning": "簡単に"},
+            {"word": "make a promise", "meaning": "約束する"},
+            {"word": "to oneself", "meaning": "自分自身に"},
+            {"word": "decide to", "meaning": "〜することに決める"},
+            {"word": "choose", "meaning": "〜を選ぶ"},
+            {"word": "only", "meaning": "〜だけ"},
+            {"word": "what", "meaning": "〜なもの、こと"},
+            {"word": "truly", "meaning": "本当に"},
+            {"word": "need", "meaning": "〜を必要とする"},
+            {"word": "take care of", "meaning": "〜を大切にする、世話をする"},
+            {"word": "longer", "meaning": "より長く"}
+          ],
+          "targets": [
+            {"category": "Action (行動)", "text": "安易に買わず、必要な服だけを選んで大切にすると誓う", "keywords": ["promise", "choose only", "truly needed", "take care of"]}
+          ]
+        },
+        "high_school": {
+          "readingText": "Opening her wardrobe, she viewed her collection from a fresh perspective. Instead of blindly following fleeting trends, she made a firm resolution to prioritize <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='sustainability' data-ja='持続可能性'>sustainability</span>. She promised herself to carefully consider the environmental impact of each purchase, buying only essential items, and to <span class='story-clickable text-blue-600 font-bold border-b-2 border-blue-300 cursor-pointer hover:bg-blue-50 px-1 rounded transition-colors' data-word='cherish' data-ja='〜を大切にする'>cherish</span> her current garments for as long as possible.",
+          "readingJa": "ワードローブを開け、彼女は新鮮な視点から自分のコレクションを眺めた。過ぎ去るトレンドを盲目的に追うのではなく、彼女は持続可能性を優先するという固い決意をした。彼女は、それぞれの購入が環境に与える影響を慎重に考慮し、不可欠なアイテムだけを買い、現在の衣服をできる限り長く大切にすることを自分に誓った。",
+          "vocabulary": [
+            {"word": "opening", "meaning": "開けながら（分詞構文）"},
+            {"word": "wardrobe", "meaning": "ワードローブ、洋服だんす"},
+            {"word": "view", "meaning": "〜を眺める、見る"},
+            {"word": "collection", "meaning": "収集品、コレクション"},
+            {"word": "from a fresh perspective", "meaning": "新鮮な視点から"},
+            {"word": "instead of", "meaning": "〜の代わりに、〜せずに"},
+            {"word": "blindly", "meaning": "盲目的に"},
+            {"word": "follow", "meaning": "〜を追う、従う"},
+            {"word": "fleeting", "meaning": "束の間の、あっという間に過ぎ去る"},
+            {"word": "trend", "meaning": "流行、トレンド"},
+            {"word": "make a resolution", "meaning": "決心する"},
+            {"word": "firm", "meaning": "固い、しっかりとした"},
+            {"word": "prioritize", "meaning": "〜を優先する"},
+            {"word": "sustainability", "meaning": "持続可能性"},
+            {"word": "promise oneself", "meaning": "心に誓う"},
+            {"word": "carefully", "meaning": "慎重に"},
+            {"word": "consider", "meaning": "〜をよく考える、考慮する"},
+            {"word": "environmental impact", "meaning": "環境への影響"},
+            {"word": "each", "meaning": "それぞれの"},
+            {"word": "purchase", "meaning": "購入（品）"},
+            {"word": "essential", "meaning": "不可欠な、必須の"},
+            {"word": "cherish", "meaning": "〜を大切にする、慈しむ"},
+            {"word": "current", "meaning": "現在の"},
+            {"word": "garment", "meaning": "衣服"},
+            {"word": "for as long as possible", "meaning": "できる限り長く"}
+          ],
+          "targets": [
+            {"category": "Result (結果)", "text": "持続可能性を意識し、本当に必要な服を長く大切にすると決意する", "keywords": ["fresh perspective", "prioritize sustainability", "essential items", "cherish"]}
+          ]
+        }
+      }
+    }
+  ]
+}
