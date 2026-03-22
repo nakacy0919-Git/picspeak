@@ -746,7 +746,7 @@ document.addEventListener('click', (e) => {
         const statusText = document.getElementById('status-text');
         if(statusText) statusText.textContent = "Speak Now!";
         const promptImage = document.getElementById('prompt-image');
-        // if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
+        if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
         const supportToggle = document.getElementById('support-toggle');
         if (window.timeElapsed === 0 && supportToggle && supportToggle.checked) {
             if(typeof getAggregatedData === 'function') {
