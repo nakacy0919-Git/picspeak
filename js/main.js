@@ -217,18 +217,16 @@ window.finishGameAndShowResult = function() {
 };
 
 // ==========================================
-// ★ Result画面のレイアウト
+// ★ Result画面のレイアウト (タブレット md: 対応版)
 // ==========================================
 window.renderSnapshotResult = function() {
     
-    // 👇👇👇 修正ポイント：静かに終了(return)させず、必ず画面を描画するように変更
     let stats = null;
     if(typeof getCompletionStats === 'function') {
         stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
     } else {
         console.error("【警告】スコア計算機能(getCompletionStats)が見つかりません。scoring.jsの読み込み等を確認してください。");
     }
-    // 👆👆👆
     
     const box = document.getElementById('transcript-box');
     const finalTranscript = (box && box.innerText) ? box.innerText.replace("Press START and speak loudly.（STARTを押して、大きな声で話しましょう）", "").trim() : "";
@@ -269,8 +267,8 @@ window.renderSnapshotResult = function() {
                 clearedItemsHtml += `
                     <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 ${style.light} p-4 rounded-xl border ${style.border} shadow-sm">
                         <div class="flex-1 pr-2">
-                            <div class="text-base lg:text-lg font-black ${style.text} tracking-wide">${safeText} <span class="text-2xl ml-1">✅</span></div>
-                            <div class="text-sm lg:text-base font-bold ${style.text} opacity-80 mt-1">${safeJa}</div>
+                            <div class="text-base md:text-lg font-black ${style.text} tracking-wide">${safeText} <span class="text-2xl ml-1">✅</span></div>
+                            <div class="text-sm md:text-base font-bold ${style.text} opacity-80 mt-1">${safeJa}</div>
                         </div>
                         <div class="flex gap-2 shrink-0 mt-2 sm:mt-0">
                             <button onclick="window.playResultTTS('${escapedText}')" class="px-4 py-2 bg-white/80 hover:bg-white rounded-xl text-sm font-bold ${style.text} transition-colors flex items-center justify-center gap-1 shadow-sm border ${style.border}">🔊 発音</button>
@@ -290,8 +288,8 @@ window.renderSnapshotResult = function() {
                         <div class="flex items-start gap-3 flex-1">
                             <span class="${style.text} font-black text-2xl shrink-0">💡</span>
                             <div class="flex-1 pr-2">
-                                <div class="text-base lg:text-lg font-black text-gray-800 tracking-wide">${safeText}</div>
-                                <div class="text-sm lg:text-base font-bold text-gray-500 mt-1">${safeJa}</div>
+                                <div class="text-base md:text-lg font-black text-gray-800 tracking-wide">${safeText}</div>
+                                <div class="text-sm md:text-base font-bold text-gray-500 mt-1">${safeJa}</div>
                             </div>
                         </div>
                         <div class="flex gap-2 shrink-0 mt-2 sm:mt-0">
@@ -303,7 +301,7 @@ window.renderSnapshotResult = function() {
 
             let showMoreBtn = "";
             if (cat.missed.length > previewCount) {
-                showMoreBtn = `<button onclick="const items = this.parentElement.querySelectorAll('.hidden'); if(items.length > 0) { items.forEach(el => el.classList.remove('hidden')); this.innerHTML = '閉じる ⬆️'; } else { const allItems = this.parentElement.querySelectorAll('.missed-item-card'); allItems.forEach((el, i) => { if (i >= ${previewCount}) el.classList.add('hidden'); }); this.innerHTML = '他の表現も見る ➔'; }" class="w-full mt-2 py-3 text-sm lg:text-base font-black ${style.text} ${style.btnBg} border ${style.border} rounded-xl transition-colors shadow-sm hover:opacity-80">他の表現も見る ➔</button>`;
+                showMoreBtn = `<button onclick="const items = this.parentElement.querySelectorAll('.hidden'); if(items.length > 0) { items.forEach(el => el.classList.remove('hidden')); this.innerHTML = '閉じる ⬆️'; } else { const allItems = this.parentElement.querySelectorAll('.missed-item-card'); allItems.forEach((el, i) => { if (i >= ${previewCount}) el.classList.add('hidden'); }); this.innerHTML = '他の表現も見る ➔'; }" class="w-full mt-2 py-3 text-sm md:text-base font-black ${style.text} ${style.btnBg} border ${style.border} rounded-xl transition-colors shadow-sm hover:opacity-80">他の表現も見る ➔</button>`;
             }
 
             let adviceTitleHtml = catMatchRate >= 100 
@@ -313,24 +311,24 @@ window.renderSnapshotResult = function() {
             categoryHtml += `
                 <div class="bg-white rounded-3xl shadow-md border border-gray-200 relative transition-all flex flex-col h-auto">
                     <div class="absolute top-0 left-0 w-2 h-full ${style.bar} rounded-l-3xl"></div>
-                    <div class="flex justify-between items-center p-5 lg:p-6 cursor-pointer hover:bg-gray-50 transition-colors" onclick="document.getElementById('cat-body-${key}').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
+                    <div class="flex justify-between items-center p-5 md:p-6 cursor-pointer hover:bg-gray-50 transition-colors" onclick="document.getElementById('cat-body-${key}').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
                         <div class="pl-2">
-                            <h4 class="font-black text-gray-800 text-xl lg:text-2xl">${dict.title}</h4>
-                            <p class="text-xs lg:text-sm font-bold text-gray-500 mt-1.5">${dict.advice}</p>
+                            <h4 class="font-black text-gray-800 text-xl md:text-2xl">${dict.title}</h4>
+                            <p class="text-xs md:text-sm font-bold text-gray-500 mt-1.5">${dict.advice}</p>
                         </div>
-                        <div class="flex items-center gap-3 lg:gap-4 shrink-0">
-                            <span class="font-black ${style.text} text-3xl lg:text-4xl">${catMatchRate}%</span>
+                        <div class="flex items-center gap-3 md:gap-4 shrink-0">
+                            <span class="font-black ${style.text} text-3xl md:text-4xl">${catMatchRate}%</span>
                             <svg class="chevron w-7 h-7 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                         </div>
                     </div>
-                    <div id="cat-body-${key}" class="px-5 lg:px-6 pb-6 flex-1 flex flex-col">
+                    <div id="cat-body-${key}" class="px-5 md:px-6 pb-6 flex-1 flex flex-col">
                         <div class="flex items-center gap-3 mb-6 pl-2">
                             <div class="w-full bg-gray-100 rounded-full h-4 overflow-hidden border border-gray-200 shadow-inner">
                                 <div class="${style.bar} h-4 rounded-full transition-all duration-1000" style="width: ${catMatchRate}%"></div>
                             </div>
                         </div>
                         ${cat.cleared.length > 0 ? `<div class="mb-6 flex-1 pl-2"><div class="text-sm font-black text-gray-400 uppercase mb-3 flex items-center gap-2"><span class="bg-green-100 text-green-700 px-3 py-1.5 rounded-lg shadow-sm">✅ 言えた表現</span></div><div class="max-h-80 overflow-y-auto pr-3 custom-scrollbar flex flex-col gap-2">${clearedItemsHtml}</div></div>` : ''}
-                        ${cat.missed.length > 0 ? `<div class="bg-gray-50 rounded-2xl p-4 lg:p-5 border border-gray-100 mt-4 ml-2"><div class="text-sm font-black mb-4 flex items-center">${adviceTitleHtml}</div><div class="flex flex-col gap-2">${missedItemsHtml}</div>${showMoreBtn}</div>` : `<div class="text-center py-8 bg-white rounded-2xl border ${style.border} shadow-sm mt-4 ml-2"><span class="text-6xl mb-4 block">✨🎉✨</span><span class="text-lg lg:text-xl font-black ${style.text}">完璧！この分野の表現はすべてマスターしました！</span></div>`}
+                        ${cat.missed.length > 0 ? `<div class="bg-gray-50 rounded-2xl p-4 md:p-5 border border-gray-100 mt-4 ml-2"><div class="text-sm font-black mb-4 flex items-center">${adviceTitleHtml}</div><div class="flex flex-col gap-2">${missedItemsHtml}</div>${showMoreBtn}</div>` : `<div class="text-center py-8 bg-white rounded-2xl border ${style.border} shadow-sm mt-4 ml-2"><span class="text-6xl mb-4 block">✨🎉✨</span><span class="text-lg md:text-xl font-black ${style.text}">完璧！この分野の表現はすべてマスターしました！</span></div>`}
                     </div>
                 </div>`;
         });
@@ -339,9 +337,10 @@ window.renderSnapshotResult = function() {
     const totalWords = finalTranscript ? finalTranscript.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=>w).length : 0;
     const wpm = window.appState.customTimeLimit > 0 ? Math.round(totalWords / (window.appState.customTimeLimit / 60)) : 0;
 
+    // 👇 ここが重要！フレックスボックスの設定を lg: から md: に変更しています
     let html = `
-        <div class="flex flex-col lg:flex-row gap-6 lg:gap-8 h-full w-full max-w-[120rem] mx-auto px-4 md:px-8 xl:px-12">
-            <div class="w-full lg:w-[350px] xl:w-[420px] flex flex-col gap-5 shrink-0 pb-4 lg:pb-0 h-full">
+        <div class="flex flex-col md:flex-row gap-6 md:gap-8 h-full w-full max-w-[120rem] mx-auto px-4 md:px-8 xl:px-12">
+            <div class="w-full md:w-[350px] xl:w-[420px] flex flex-col gap-5 shrink-0 pb-4 md:pb-0 h-full">
                 <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-3xl p-8 flex flex-col items-center shadow-xl text-white relative overflow-hidden">
                     <div class="absolute -right-4 -top-4 opacity-10 text-9xl">📸</div>
                     <span class="text-white/90 font-extrabold text-sm tracking-widest mb-2 uppercase">総合達成度</span>
@@ -376,7 +375,8 @@ window.renderSnapshotResult = function() {
                         次へのステップアップ
                     </h3>
                 </div>
-                <div class="grid grid-cols-1 xl:grid-cols-2 gap-6 lg:gap-8 overflow-y-auto pb-20 pr-4 custom-scrollbar content-start">
+                <!-- 👇 ここも xl: から lg: に早めに2列になるよう変更 -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 overflow-y-auto pb-20 pr-4 custom-scrollbar content-start">
                     ${categoryHtml}
                 </div>
             </div>
@@ -646,9 +646,6 @@ window.openPractice = function(text, ja) {
     modal.classList.remove('hidden');
 };
 
-// ==========================================
-// ★ イベントデリゲーション
-// ==========================================
 // ==========================================
 // ★ イベントデリゲーション (完全版)
 // ==========================================

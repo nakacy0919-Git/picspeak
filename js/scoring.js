@@ -119,6 +119,8 @@ function resetScore() {
 
 function getCompletionStats(theme, selectedLevel) {
     const targetData = getAggregatedData(theme, selectedLevel);
+    
+    // 全体の満点目安（レベルに応じて変動）
     let overallCap = 100;
     let categoryCap = 20;
 
@@ -126,6 +128,8 @@ function getCompletionStats(theme, selectedLevel) {
     else if (selectedLevel === 'high_school') { overallCap = 300; categoryCap = 60; }
 
     let totalEarnedPoints = 0;
+    
+    // カテゴリーの初期化
     const categoryStats = {
         "object": { label: "Object (物体・人物)", earned: 0, cleared: [], missed: [] },
         "attribute": { label: "Attribute (属性・状態)", earned: 0, cleared: [], missed: [] },
@@ -138,27 +142,41 @@ function getCompletionStats(theme, selectedLevel) {
     const processItems = (items, foundSet, fallbackPoints) => {
         items.forEach(item => {
             const pts = item.points || fallbackPoints;
-            const type = item.type || "other";
-            if (!categoryStats[type]) categoryStats[type] = { label: type, earned: 0, cleared: [], missed: [] };
+            // ★ここを修正: JSONデータに書かれている "category" キーを見るように変更しました！
+            // JSONにcategoryの指定がない場合は "other" に分類します。
+            const categoryName = item.category || item.type || "other";
+            
+            if (!categoryStats[categoryName]) {
+                categoryStats[categoryName] = { label: categoryName, earned: 0, cleared: [], missed: [] };
+            }
 
             if (foundSet.has(item.text)) {
                 totalEarnedPoints += pts;
-                categoryStats[type].earned += pts;
-                categoryStats[type].cleared.push(item);
+                categoryStats[categoryName].earned += pts;
+                categoryStats[categoryName].cleared.push(item);
             } else {
-                categoryStats[type].missed.push(item);
+                categoryStats[categoryName].missed.push(item);
             }
         });
     };
 
+    // ポイント配分：単語10点、チャンク20点、文40点
     processItems(targetData.words, foundWordsSet, 10);
     processItems(targetData.chunks, foundChunksSet, 20);
     processItems(targetData.sentences, foundSentencesSet, 40);
 
+    // 全体の達成率（最大100%）
     const completionRate = Math.min(100, Math.floor((totalEarnedPoints / overallCap) * 100));
+    
+    // 各カテゴリーの達成率（カテゴリー内のアイテム数に対するクリア数の割合で計算）
     Object.keys(categoryStats).forEach(key => {
         const cat = categoryStats[key];
-        cat.matchRate = Math.min(100, Math.floor((cat.earned / categoryCap) * 100));
+        const totalItemsInCat = cat.cleared.length + cat.missed.length;
+        if (totalItemsInCat > 0) {
+            cat.matchRate = Math.min(100, Math.floor((cat.cleared.length / totalItemsInCat) * 100));
+        } else {
+            cat.matchRate = 0;
+        }
     });
 
     return {
