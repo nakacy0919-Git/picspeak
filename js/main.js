@@ -217,15 +217,12 @@ window.finishGameAndShowResult = function() {
 };
 
 // ==========================================
-// ★ Result画面のレイアウト (タブレット md: 対応版)
+// ★ Result画面のレイアウト (iPad鳥瞰的コンパクト＆ボタンはみ出し防止版)
 // ==========================================
 window.renderSnapshotResult = function() {
-    
     let stats = null;
     if(typeof getCompletionStats === 'function') {
         stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
-    } else {
-        console.error("【警告】スコア計算機能(getCompletionStats)が見つかりません。scoring.jsの読み込み等を確認してください。");
     }
     
     const box = document.getElementById('transcript-box');
@@ -235,7 +232,6 @@ window.renderSnapshotResult = function() {
     if (!container) return;
 
     let categoryHtml = "";
-    
     const catDict = {
         "object": { title: "🧍 モノ・人（名詞）", advice: "写真に写っているものを言葉にしてみよう！", style: { light: "bg-green-50", border: "border-green-200", text: "text-green-700", bar: "bg-green-500", btnBg: "bg-green-100" } },
         "attribute": { title: "🎨 ようす・色（形容詞）", advice: "どんな色？どんな状態？をくわしく伝えてみよう！", style: { light: "bg-orange-50", border: "border-orange-200", text: "text-orange-700", bar: "bg-orange-500", btnBg: "bg-orange-100" } },
@@ -255,24 +251,23 @@ window.renderSnapshotResult = function() {
             
             if(cat.missed) cat.missed.sort((a, b) => (b.points || 0) - (a.points || 0));
 
-            let missedItemsHtml = "";
-            let clearedItemsHtml = "";
-            const previewCount = 3; 
+            let missedItemsHtml = ""; let clearedItemsHtml = ""; const previewCount = 3; 
 
             cat.cleared.forEach(item => {
                 const safeText = item.text ? String(item.text) : "";
                 const safeJa = item.ja ? String(item.ja) : "";
                 const escapedText = safeText.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 const escapedJa = safeJa.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                
                 clearedItemsHtml += `
-                    <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-3 ${style.light} p-4 rounded-xl border ${style.border} shadow-sm">
-                        <div class="flex-1 pr-2">
-                            <div class="text-base md:text-lg font-black ${style.text} tracking-wide">${safeText} <span class="text-2xl ml-1">✅</span></div>
-                            <div class="text-sm md:text-base font-bold ${style.text} opacity-80 mt-1">${safeJa}</div>
+                    <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-2 mb-2 ${style.light} p-3 rounded-xl border ${style.border} shadow-sm">
+                        <div class="flex-1 pr-1">
+                            <div class="text-sm sm:text-base font-black ${style.text} tracking-wide leading-tight">${safeText} <span class="text-lg ml-1">✅</span></div>
+                            <div class="text-xs sm:text-sm font-bold ${style.text} opacity-80 mt-1">${safeJa}</div>
                         </div>
-                        <div class="flex gap-2 shrink-0 mt-2 sm:mt-0">
-                            <button onclick="window.playResultTTS('${escapedText}')" class="px-4 py-2 bg-white/80 hover:bg-white rounded-xl text-sm font-bold ${style.text} transition-colors flex items-center justify-center gap-1 shadow-sm border ${style.border}">🔊 発音</button>
-                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-4 py-2 bg-blue-50 hover:bg-blue-100 rounded-xl text-sm font-bold text-blue-700 transition-colors flex items-center justify-center gap-1 shadow-sm border border-blue-200">🎤 練習</button>
+                        <div class="flex flex-wrap gap-2 shrink-0 mt-2 xl:mt-0 justify-end">
+                            <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-1.5 bg-white/80 hover:bg-white rounded-lg text-xs sm:text-sm font-bold ${style.text} transition-colors shadow-sm border ${style.border}">🔊 発音</button>
+                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
                         </div>
                     </div>`;
             });
@@ -284,51 +279,51 @@ window.renderSnapshotResult = function() {
                 const escapedText = safeText.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 const escapedJa = safeJa.replace(/'/g, "\\'").replace(/"/g, "&quot;");
                 missedItemsHtml += `
-                    <div class="${isHidden} flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-3 bg-white p-4 rounded-xl border ${style.border} shadow-sm">
-                        <div class="flex items-start gap-3 flex-1">
-                            <span class="${style.text} font-black text-2xl shrink-0">💡</span>
-                            <div class="flex-1 pr-2">
-                                <div class="text-base md:text-lg font-black text-gray-800 tracking-wide">${safeText}</div>
-                                <div class="text-sm md:text-base font-bold text-gray-500 mt-1">${safeJa}</div>
+                    <div class="${isHidden} flex flex-col xl:flex-row xl:items-center justify-between gap-2 mb-2 bg-white p-3 rounded-xl border ${style.border} shadow-sm">
+                        <div class="flex items-start gap-2 flex-1">
+                            <span class="${style.text} font-black text-lg sm:text-xl shrink-0 mt-0.5">💡</span>
+                            <div class="flex-1 pr-1">
+                                <div class="text-sm sm:text-base font-black text-gray-800 tracking-wide leading-tight">${safeText}</div>
+                                <div class="text-xs font-bold text-gray-500 mt-1">${safeJa}</div>
                             </div>
                         </div>
-                        <div class="flex gap-2 shrink-0 mt-2 sm:mt-0">
-                            <button onclick="window.playResultTTS('${escapedText}')" class="px-4 py-2 bg-gray-100 hover:bg-gray-200 rounded-xl text-sm font-bold text-gray-700 transition-colors flex items-center gap-1 shadow-sm border border-gray-200">🔊 発音</button>
-                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-4 py-2 bg-blue-50 hover:bg-blue-100 rounded-xl text-sm font-bold text-blue-700 transition-colors flex items-center gap-1 shadow-sm border border-blue-200">🎤 練習</button>
+                        <div class="flex flex-wrap gap-2 shrink-0 mt-2 xl:mt-0 justify-end">
+                            <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs sm:text-sm font-bold text-gray-700 transition-colors shadow-sm border border-gray-200">🔊 発音</button>
+                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
                         </div>
                     </div>`;
             });
 
             let showMoreBtn = "";
             if (cat.missed.length > previewCount) {
-                showMoreBtn = `<button onclick="const items = this.parentElement.querySelectorAll('.hidden'); if(items.length > 0) { items.forEach(el => el.classList.remove('hidden')); this.innerHTML = '閉じる ⬆️'; } else { const allItems = this.parentElement.querySelectorAll('.missed-item-card'); allItems.forEach((el, i) => { if (i >= ${previewCount}) el.classList.add('hidden'); }); this.innerHTML = '他の表現も見る ➔'; }" class="w-full mt-2 py-3 text-sm md:text-base font-black ${style.text} ${style.btnBg} border ${style.border} rounded-xl transition-colors shadow-sm hover:opacity-80">他の表現も見る ➔</button>`;
+                showMoreBtn = `<button onclick="const items = this.parentElement.querySelectorAll('.hidden'); if(items.length > 0) { items.forEach(el => el.classList.remove('hidden')); this.innerHTML = '閉じる ⬆️'; } else { const allItems = this.parentElement.querySelectorAll('.missed-item-card'); allItems.forEach((el, i) => { if (i >= ${previewCount}) el.classList.add('hidden'); }); this.innerHTML = '他の表現も見る ➔'; }" class="w-full mt-1 py-2 text-xs sm:text-sm font-black ${style.text} ${style.btnBg} border ${style.border} rounded-xl transition-colors shadow-sm hover:opacity-80">他の表現も見る ➔</button>`;
             }
 
             let adviceTitleHtml = catMatchRate >= 100 
-                ? `<span class="bg-gradient-to-r from-yellow-300 to-yellow-500 text-white px-3 py-1.5 rounded-lg shadow-sm font-black flex items-center gap-1 border border-yellow-400">🏆 100%達成！さらに高度な表現に挑戦！</span>`
-                : `<span class="bg-white px-3 py-1.5 rounded-lg shadow-sm border ${style.border} ${style.text} flex items-center gap-1">💡 他にもこんな表現を使ってみよう！</span>`;
+                ? `<span class="bg-gradient-to-r from-yellow-300 to-yellow-500 text-white px-2.5 py-1 rounded-lg shadow-sm font-black flex items-center gap-1 border border-yellow-400">🏆 100%達成！</span>`
+                : `<span class="bg-white px-2.5 py-1 rounded-lg shadow-sm border ${style.border} ${style.text} flex items-center gap-1">💡 他の表現を使おう！</span>`;
 
             categoryHtml += `
-                <div class="bg-white rounded-3xl shadow-md border border-gray-200 relative transition-all flex flex-col h-auto">
-                    <div class="absolute top-0 left-0 w-2 h-full ${style.bar} rounded-l-3xl"></div>
-                    <div class="flex justify-between items-center p-5 md:p-6 cursor-pointer hover:bg-gray-50 transition-colors" onclick="document.getElementById('cat-body-${key}').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
+                <div class="bg-white rounded-2xl shadow-sm border border-gray-200 relative transition-all flex flex-col h-auto">
+                    <div class="absolute top-0 left-0 w-1.5 h-full ${style.bar} rounded-l-2xl"></div>
+                    <div class="flex justify-between items-center p-3 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors" onclick="document.getElementById('cat-body-${key}').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
                         <div class="pl-2">
-                            <h4 class="font-black text-gray-800 text-xl md:text-2xl">${dict.title}</h4>
-                            <p class="text-xs md:text-sm font-bold text-gray-500 mt-1.5">${dict.advice}</p>
+                            <h4 class="font-black text-gray-800 text-base sm:text-lg">${dict.title}</h4>
+                            <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-0.5">${dict.advice}</p>
                         </div>
-                        <div class="flex items-center gap-3 md:gap-4 shrink-0">
-                            <span class="font-black ${style.text} text-3xl md:text-4xl">${catMatchRate}%</span>
-                            <svg class="chevron w-7 h-7 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
+                        <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+                            <span class="font-black ${style.text} text-xl sm:text-2xl">${catMatchRate}%</span>
+                            <svg class="chevron w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                         </div>
                     </div>
-                    <div id="cat-body-${key}" class="px-5 md:px-6 pb-6 flex-1 flex flex-col">
-                        <div class="flex items-center gap-3 mb-6 pl-2">
-                            <div class="w-full bg-gray-100 rounded-full h-4 overflow-hidden border border-gray-200 shadow-inner">
-                                <div class="${style.bar} h-4 rounded-full transition-all duration-1000" style="width: ${catMatchRate}%"></div>
+                    <div id="cat-body-${key}" class="px-3 sm:px-4 pb-4 flex-1 flex flex-col">
+                        <div class="flex items-center gap-2 mb-3 pl-2">
+                            <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden border border-gray-200 shadow-inner">
+                                <div class="${style.bar} h-2 rounded-full transition-all duration-1000" style="width: ${catMatchRate}%"></div>
                             </div>
                         </div>
-                        ${cat.cleared.length > 0 ? `<div class="mb-6 flex-1 pl-2"><div class="text-sm font-black text-gray-400 uppercase mb-3 flex items-center gap-2"><span class="bg-green-100 text-green-700 px-3 py-1.5 rounded-lg shadow-sm">✅ 言えた表現</span></div><div class="max-h-80 overflow-y-auto pr-3 custom-scrollbar flex flex-col gap-2">${clearedItemsHtml}</div></div>` : ''}
-                        ${cat.missed.length > 0 ? `<div class="bg-gray-50 rounded-2xl p-4 md:p-5 border border-gray-100 mt-4 ml-2"><div class="text-sm font-black mb-4 flex items-center">${adviceTitleHtml}</div><div class="flex flex-col gap-2">${missedItemsHtml}</div>${showMoreBtn}</div>` : `<div class="text-center py-8 bg-white rounded-2xl border ${style.border} shadow-sm mt-4 ml-2"><span class="text-6xl mb-4 block">✨🎉✨</span><span class="text-lg md:text-xl font-black ${style.text}">完璧！この分野の表現はすべてマスターしました！</span></div>`}
+                        ${cat.cleared.length > 0 ? `<div class="mb-3 flex-1 pl-1"><div class="text-[10px] sm:text-xs font-black text-gray-400 uppercase mb-2 flex items-center gap-1"><span class="bg-green-100 text-green-700 px-2 py-0.5 rounded shadow-sm">✅ 言えた表現</span></div><div class="max-h-48 overflow-y-auto pr-2 custom-scrollbar flex flex-col gap-1">${clearedItemsHtml}</div></div>` : ''}
+                        ${cat.missed.length > 0 ? `<div class="bg-gray-50 rounded-xl p-3 border border-gray-100 mt-2 ml-1"><div class="text-[10px] sm:text-xs font-black mb-2 flex items-center">${adviceTitleHtml}</div><div class="flex flex-col gap-1">${missedItemsHtml}</div>${showMoreBtn}</div>` : `<div class="text-center py-4 bg-white rounded-xl border ${style.border} shadow-sm mt-2 ml-1"><span class="text-4xl mb-2 block">✨🎉✨</span><span class="text-sm font-black ${style.text}">完璧！すべてマスターしました！</span></div>`}
                     </div>
                 </div>`;
         });
@@ -337,46 +332,44 @@ window.renderSnapshotResult = function() {
     const totalWords = finalTranscript ? finalTranscript.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=>w).length : 0;
     const wpm = window.appState.customTimeLimit > 0 ? Math.round(totalWords / (window.appState.customTimeLimit / 60)) : 0;
 
-    // 👇 ここが重要！フレックスボックスの設定を lg: から md: に変更しています
     let html = `
-        <div class="flex flex-col md:flex-row gap-6 md:gap-8 h-full w-full max-w-[120rem] mx-auto px-4 md:px-8 xl:px-12">
-            <div class="w-full md:w-[350px] xl:w-[420px] flex flex-col gap-5 shrink-0 pb-4 md:pb-0 h-full">
-                <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-3xl p-8 flex flex-col items-center shadow-xl text-white relative overflow-hidden">
-                    <div class="absolute -right-4 -top-4 opacity-10 text-9xl">📸</div>
-                    <span class="text-white/90 font-extrabold text-sm tracking-widest mb-2 uppercase">総合達成度</span>
-                    <span class="text-8xl font-black">${stats ? stats.completionRate : 0}<span class="text-4xl">%</span></span>
-                    <p class="text-base font-bold text-white/90 mt-5 text-center">写真の情報をどれだけくわしく伝えられたかのスコアです。</p>
+        <div class="flex flex-col lg:flex-row gap-4 sm:gap-6 h-full w-full max-w-[120rem] mx-auto px-3 sm:px-5 xl:px-8">
+            <div class="w-full lg:w-[280px] xl:w-[360px] flex flex-col gap-3 sm:gap-4 shrink-0 pb-4 lg:pb-0 h-full">
+                <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col items-center shadow-xl text-white relative overflow-hidden">
+                    <div class="absolute -right-4 -top-4 opacity-10 text-8xl sm:text-9xl">📸</div>
+                    <span class="text-white/90 font-extrabold text-xs tracking-widest mb-1 uppercase">総合達成度</span>
+                    <span class="text-6xl sm:text-7xl font-black">${stats ? stats.completionRate : 0}<span class="text-3xl">%</span></span>
+                    <p class="text-xs sm:text-sm font-bold text-white/90 mt-3 text-center">写真の情報をどれだけくわしく伝えられたかのスコアです。</p>
                 </div>
-                <div class="flex gap-5">
-                    <div class="bg-white rounded-3xl p-6 flex flex-col items-center shadow-md border border-gray-200 flex-1">
-                        <span class="text-gray-400 font-extrabold text-[11px] xl:text-xs tracking-widest mb-2 uppercase">話した単語数</span>
-                        <span class="text-4xl xl:text-5xl font-black text-gray-800">${totalWords}</span>
+                <div class="flex gap-3 sm:gap-4">
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-4 flex flex-col items-center shadow-md border border-gray-200 flex-1">
+                        <span class="text-gray-400 font-extrabold text-[9px] sm:text-[10px] tracking-widest mb-1 uppercase">話した単語数</span>
+                        <span class="text-3xl sm:text-4xl font-black text-gray-800">${totalWords}</span>
                     </div>
-                    <div class="bg-white rounded-3xl p-6 flex flex-col items-center shadow-md border border-gray-200 flex-1">
-                        <span class="text-gray-400 font-extrabold text-[11px] xl:text-xs tracking-widest mb-2 uppercase text-center">話すスピード<br>(WPM)</span>
-                        <span class="text-4xl xl:text-5xl font-black text-gray-800">${wpm || 0}</span>
+                    <div class="bg-white rounded-2xl sm:rounded-3xl p-4 flex flex-col items-center shadow-md border border-gray-200 flex-1">
+                        <span class="text-gray-400 font-extrabold text-[9px] sm:text-[10px] tracking-widest mb-1 uppercase text-center">スピード<br>(WPM)</span>
+                        <span class="text-3xl sm:text-4xl font-black text-gray-800">${wpm || 0}</span>
                     </div>
                 </div>
-                <div class="bg-gray-50 rounded-3xl p-6 shadow-inner border border-gray-200 flex-1 overflow-y-auto relative">
-                    <div class="flex justify-between items-center mb-4">
-                        <span class="text-gray-400 font-extrabold text-[11px] xl:text-xs tracking-widest uppercase block">あなたが話した英語</span>
-                        <div class="flex gap-2">
-                            <button onclick="window.changeTranscriptSize(-1)" class="w-8 h-8 bg-white border border-gray-300 rounded-full text-gray-600 font-black hover:bg-gray-100 shadow-sm flex items-center justify-center transition-colors">－</button>
-                            <button onclick="window.changeTranscriptSize(1)" class="w-8 h-8 bg-white border border-gray-300 rounded-full text-gray-600 font-black hover:bg-gray-100 shadow-sm flex items-center justify-center transition-colors">＋</button>
+                <div class="bg-gray-50 rounded-2xl sm:rounded-3xl p-4 sm:p-5 shadow-inner border border-gray-200 flex-1 overflow-y-auto relative min-h-[120px]">
+                    <div class="flex justify-between items-center mb-2">
+                        <span class="text-gray-400 font-extrabold text-[9px] sm:text-[10px] tracking-widest uppercase block">あなたが話した英語</span>
+                        <div class="flex gap-1.5">
+                            <button onclick="window.changeTranscriptSize(-1)" class="w-6 h-6 bg-white border border-gray-300 rounded-full text-gray-600 font-black hover:bg-gray-100 shadow-sm flex items-center justify-center transition-colors">－</button>
+                            <button onclick="window.changeTranscriptSize(1)" class="w-6 h-6 bg-white border border-gray-300 rounded-full text-gray-600 font-black hover:bg-gray-100 shadow-sm flex items-center justify-center transition-colors">＋</button>
                         </div>
                     </div>
-                    <div id="final-transcript-text" class="font-medium text-gray-700 italic transition-all duration-200" style="font-size: 1.125rem; line-height: 1.6;">"${finalTranscript || 'No speech recorded.'}"</div>
+                    <div id="final-transcript-text" class="font-medium text-gray-700 italic transition-all duration-200" style="font-size: 0.95rem; line-height: 1.5;">"${finalTranscript || 'No speech recorded.'}"</div>
                 </div>
             </div>
             <div class="w-full flex-1 flex flex-col h-full overflow-hidden">
-                <div class="mb-5 pl-2 shrink-0">
-                    <h3 class="text-base md:text-lg font-black text-gray-500 uppercase tracking-widest flex items-center gap-3 mb-2">
-                        <span class="w-3 h-3 rounded-full bg-blue-500 inline-block"></span>
+                <div class="mb-2 sm:mb-3 pl-1 shrink-0">
+                    <h3 class="text-xs sm:text-sm font-black text-gray-500 uppercase tracking-widest flex items-center gap-2 mb-1">
+                        <span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
                         次へのステップアップ
                     </h3>
                 </div>
-                <!-- 👇 ここも xl: から lg: に早めに2列になるよう変更 -->
-                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8 overflow-y-auto pb-20 pr-4 custom-scrollbar content-start">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 overflow-y-auto pb-20 pr-2 custom-scrollbar content-start">
                     ${categoryHtml}
                 </div>
             </div>
