@@ -21,7 +21,58 @@ const pfState = {
 window.CATEGORIES_DATA = [];
 
 // ------------------------------------------
-// 音声認識のセットアップ (激甘判定化！)
+// ★ iPad用：音声ブロック解除の魔法のコード
+// ------------------------------------------
+const correctAudio = new Audio('assets/sounds/correct.mp3');
+
+function unlockAudio() {
+    correctAudio.volume = 0;
+    correctAudio.play().then(() => {
+        correctAudio.pause();
+        correctAudio.volume = 1;
+        correctAudio.currentTime = 0;
+    }).catch(e => console.log("Unlock failed, but will retry:", e));
+    document.removeEventListener('touchstart', unlockAudio);
+    document.removeEventListener('click', unlockAudio);
+}
+document.addEventListener('touchstart', unlockAudio, {once: true});
+document.addEventListener('click', unlockAudio, {once: true});
+
+// ------------------------------------------
+// サウンド演出
+// ------------------------------------------
+function playPfSound(type) {
+    if (type === 'correct' || type === 'levelUp' || type === 'practiceCorrect') {
+        // ★ 何度でも鳴るように巻き戻して再生
+        correctAudio.currentTime = 0;
+        correctAudio.play().catch(e => console.log("音声再生エラー:", e));
+    } else if (type === 'skip') {
+        try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
+            const osc = ctx.createOscillator();
+            const gain = ctx.createGain();
+            osc.connect(gain); gain.connect(ctx.destination);
+            osc.type = 'sawtooth'; osc.frequency.setValueAtTime(150, ctx.currentTime);
+            gain.gain.setValueAtTime(0, ctx.currentTime);
+            gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.05);
+            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
+            osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.3);
+        } catch(e) {}
+    }
+}
+
+// ------------------------------------------
+// ★ 新・激甘判定ロジック (余計な単語が混ざってもOK)
+// ------------------------------------------
+function checkIsCorrect(targetWordsArray, transcript) {
+    return targetWordsArray.some(targetPhrase => {
+        const words = targetPhrase.toLowerCase().replace(/[.,!?]/g, '').trim().split(/\s+/);
+        return words.every(w => transcript.includes(w));
+    });
+}
+
+// ------------------------------------------
+// 音声認識のセットアップ
 // ------------------------------------------
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
 let pfRec = null;
@@ -35,21 +86,17 @@ if (SpeechRec) {
     pfRec.onresult = (e) => {
         let currentTranscript = '';
         for (let i = e.resultIndex; i < e.results.length; ++i) {
-            currentTranscript += e.results[i][0].transcript;
+            currentTranscript += e.results[i][0].transcript.toLowerCase();
         }
+        const cleanTranscript = currentTranscript.replace(/[.,!?]/g, '');
 
-        // ★ 画面のテキストボックスにリアルタイム表示
         if (pfState.isPlaying && pfState.mode === 'trial') {
             const statusTextEl = document.getElementById('pf-status-text');
             if (statusTextEl) statusTextEl.innerText = currentTranscript || 'Listening...';
         }
 
-        // ★ 激甘判定用：小文字化し、アルファベットと数字以外（スペースや記号）を「全て」消去！
-        const cleanTranscript = currentTranscript.toLowerCase().replace(/[^a-z0-9]/g, '');
-        
         // --- タイムアタック中の判定 ---
         if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.hasAnswered) {
-            // スキップ判定
             if (cleanTranscript.includes("skip")) {
                 handleSkip();
                 return;
@@ -59,22 +106,14 @@ if (SpeechRec) {
             const levelData = card[`level${pfState.currentLevel}`];
             if (!levelData || !levelData.words) return;
 
-            // ターゲット単語もスペース・記号を抜いて比較
-            const isCorrect = levelData.words.some(w => {
-                const cleanWord = w.toLowerCase().replace(/[^a-z0-9]/g, '');
-                return cleanTranscript.includes(cleanWord);
-            });
-
-            if (isCorrect) handleCorrect();
+            if (checkIsCorrect(levelData.words, cleanTranscript)) {
+                handleCorrect();
+            }
         }
         
         // --- 学習モードでの発音判定 ---
         if (pfState.mode === 'practice' && window.practiceTargetWords) {
-            const isCorrect = window.practiceTargetWords.some(w => {
-                const cleanWord = w.toLowerCase().replace(/[^a-z0-9]/g, '');
-                return cleanTranscript.includes(cleanWord);
-            });
-
+            const isCorrect = checkIsCorrect(window.practiceTargetWords, cleanTranscript);
             const statusEl = document.getElementById(window.practiceStatusId);
             
             if (isCorrect) {
@@ -109,9 +148,6 @@ function showPfView(viewId) {
     document.getElementById(viewId).classList.remove('hidden');
 }
 
-// ------------------------------------------
-// UI制御：STARTボタンの活性化
-// ------------------------------------------
 function updateStartButtonState() {
     const startBtn = document.getElementById('btn-pf-start');
     if (pfState.category !== '') {
@@ -123,33 +159,11 @@ function updateStartButtonState() {
     }
 }
 
-// ------------------------------------------
-// サウンド演出 (外部ファイルに変更！)
-// ------------------------------------------
-function playPfSound(type) {
-    if (type === 'correct' || type === 'levelUp' || type === 'practiceCorrect') {
-        // ★ 指定された correct.mp3 を鳴らす
-        const audio = new Audio('assets/sounds/correct.mp3');
-        audio.play().catch(e => console.log("音声再生エラー:", e));
-    } else if (type === 'skip') {
-        // スキップ音は現状維持
-        try {
-            const ctx = new (window.AudioContext || window.webkitAudioContext)();
-            const osc = ctx.createOscillator();
-            const gain = ctx.createGain();
-            osc.connect(gain); gain.connect(ctx.destination);
-            osc.type = 'sawtooth'; osc.frequency.setValueAtTime(150, ctx.currentTime);
-            gain.gain.setValueAtTime(0, ctx.currentTime);
-            gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.05);
-            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
-            osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.3);
-        } catch(e) {}
-    }
-}
-
 function triggerPracticeSuccessAnim() {
     const animEl = document.getElementById('pf-practice-success-anim');
     animEl.classList.remove('hidden');
+    // アニメーションを確実に再実行させる魔法
+    void animEl.offsetWidth; 
     animEl.classList.add('animate-practice-success');
     setTimeout(() => {
         animEl.classList.add('hidden');
@@ -427,7 +441,6 @@ function startTrialMode() {
     pfState.penalty = 0; 
     document.getElementById('pf-total-count').innerText = pfState.cards.length;
     
-    // UI初期化：テキストボックスを空にする
     const statusTextEl = document.getElementById('pf-status-text');
     if (statusTextEl) statusTextEl.innerText = 'Listening...';
 
@@ -508,7 +521,18 @@ function handleCorrect() {
 
     const cardEl = document.getElementById('pf-card');
     cardEl.classList.add('scale-95');
-    document.getElementById('pf-overlay-correct').classList.remove('hidden');
+    
+    // 従来の「⭕️」は表示せず、代わりに新しいSVGアニメーションを表示
+    const checkAnimEl = document.getElementById('correct-answer-anim');
+    if (checkAnimEl) {
+        checkAnimEl.classList.remove('hidden');
+        checkAnimEl.classList.add('animate-pop-check');
+        // 0.6秒後にアニメーションクラスをリセットして隠す
+        setTimeout(() => {
+            checkAnimEl.classList.remove('animate-pop-check');
+            checkAnimEl.classList.add('hidden');
+        }, 600); 
+    }
 
     if (pfState.currentLevel < pfState.maxLevel) {
         playPfSound('levelUp');
@@ -516,14 +540,14 @@ function handleCorrect() {
             pfState.currentLevel++;
             try { pfRec.abort(); } catch(e){} 
             loadPfCard(false); 
-        }, 150);
+        }, 250); // アニメーションが一瞬見えるように 250ms に微調整
     } else {
         playPfSound('correct');
         setTimeout(() => {
             pfState.currentIndex++;
             if (pfState.currentIndex >= pfState.cards.length) endPfGame();
             else { try { pfRec.abort(); } catch(e){} loadPfCard(true); }
-        }, 150);
+        }, 250); // 同上
     }
 }
 
@@ -588,20 +612,16 @@ async function initPicFlashCategories() {
         
         window.CATEGORIES_DATA.forEach(cat => {
             const btn = document.createElement('button');
-            // ★ 初期状態を明確に「非選択」のグレーテキストにする
             btn.className = "pf-cat-btn bg-white text-gray-700 p-4 md:p-6 rounded-3xl shadow-sm border-4 border-transparent hover:border-pink-300 transition-all flex flex-col items-center gap-2";
             btn.innerHTML = `<span class="text-4xl md:text-5xl mb-1">${cat.icon}</span><span class="font-black capitalize text-base md:text-lg">${cat.title}</span>`;
             
             btn.onclick = () => {
                 pfState.category = cat.id;
-                
-                // ★ 全てのボタンをリセット
                 document.querySelectorAll('.pf-cat-btn').forEach(b => {
                     b.classList.remove('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
                     b.classList.add('bg-white', 'text-gray-700');
                 });
                 
-                // ★ クリックされたボタンだけ色をピンクにして白抜き文字にする！
                 btn.classList.remove('bg-white', 'text-gray-700');
                 btn.classList.add('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
                 
