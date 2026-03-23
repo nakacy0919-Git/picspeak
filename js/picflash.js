@@ -21,7 +21,7 @@ const pfState = {
 window.CATEGORIES_DATA = [];
 
 // ------------------------------------------
-// 音声認識のセットアップ
+// 音声認識のセットアップ (激甘判定化！)
 // ------------------------------------------
 const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
 let pfRec = null;
@@ -35,21 +35,46 @@ if (SpeechRec) {
     pfRec.onresult = (e) => {
         let currentTranscript = '';
         for (let i = e.resultIndex; i < e.results.length; ++i) {
-            currentTranscript += e.results[i][0].transcript.toLowerCase().replace(/[.,!?]/g, '');
+            currentTranscript += e.results[i][0].transcript;
         }
+
+        // ★ 画面のテキストボックスにリアルタイム表示
+        if (pfState.isPlaying && pfState.mode === 'trial') {
+            const statusTextEl = document.getElementById('pf-status-text');
+            if (statusTextEl) statusTextEl.innerText = currentTranscript || 'Listening...';
+        }
+
+        // ★ 激甘判定用：小文字化し、アルファベットと数字以外（スペースや記号）を「全て」消去！
+        const cleanTranscript = currentTranscript.toLowerCase().replace(/[^a-z0-9]/g, '');
         
+        // --- タイムアタック中の判定 ---
         if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.hasAnswered) {
+            // スキップ判定
+            if (cleanTranscript.includes("skip")) {
+                handleSkip();
+                return;
+            }
+
             const card = pfState.cards[pfState.currentIndex];
             const levelData = card[`level${pfState.currentLevel}`];
             if (!levelData || !levelData.words) return;
 
-            const isCorrect = levelData.words.some(w => currentTranscript.includes(w.toLowerCase()));
+            // ターゲット単語もスペース・記号を抜いて比較
+            const isCorrect = levelData.words.some(w => {
+                const cleanWord = w.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return cleanTranscript.includes(cleanWord);
+            });
+
             if (isCorrect) handleCorrect();
-            else if (currentTranscript.includes("skip")) handleSkip();
         }
         
+        // --- 学習モードでの発音判定 ---
         if (pfState.mode === 'practice' && window.practiceTargetWords) {
-            const isCorrect = window.practiceTargetWords.some(w => currentTranscript.includes(w.toLowerCase()));
+            const isCorrect = window.practiceTargetWords.some(w => {
+                const cleanWord = w.toLowerCase().replace(/[^a-z0-9]/g, '');
+                return cleanTranscript.includes(cleanWord);
+            });
+
             const statusEl = document.getElementById(window.practiceStatusId);
             
             if (isCorrect) {
@@ -89,36 +114,27 @@ function showPfView(viewId) {
 // ------------------------------------------
 function updateStartButtonState() {
     const startBtn = document.getElementById('btn-pf-start');
-    
-    // カテゴリが選ばれていればボタンを光らせて押せるようにする
     if (pfState.category !== '') {
         startBtn.disabled = false;
         startBtn.className = "w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gradient-to-r from-pink-500 to-purple-500 text-white font-black text-3xl md:text-4xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all tracking-widest";
     } else {
-        // 未選択時はグレーアウト
         startBtn.disabled = true;
         startBtn.className = "w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gray-300 text-white font-black text-3xl md:text-4xl shadow-none transition-all tracking-widest cursor-not-allowed";
     }
 }
 
 // ------------------------------------------
-// サウンドとアニメーション演出
+// サウンド演出 (外部ファイルに変更！)
 // ------------------------------------------
 function playPfSound(type) {
-    try {
-        const ctx = new (window.AudioContext || window.webkitAudioContext)();
-        if (type === 'correct' || type === 'levelUp') {
-            const osc = ctx.createOscillator();
-            const gain = ctx.createGain();
-            osc.connect(gain); gain.connect(ctx.destination);
-            osc.type = 'triangle'; 
-            osc.frequency.setValueAtTime(type==='levelUp'?1046:880, ctx.currentTime);
-            if(type==='levelUp') osc.frequency.setValueAtTime(1318, ctx.currentTime + 0.1);
-            gain.gain.setValueAtTime(0, ctx.currentTime);
-            gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.05);
-            gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.2); 
-            osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.2);
-        } else if (type === 'skip') {
+    if (type === 'correct' || type === 'levelUp' || type === 'practiceCorrect') {
+        // ★ 指定された correct.mp3 を鳴らす
+        const audio = new Audio('assets/sounds/correct.mp3');
+        audio.play().catch(e => console.log("音声再生エラー:", e));
+    } else if (type === 'skip') {
+        // スキップ音は現状維持
+        try {
+            const ctx = new (window.AudioContext || window.webkitAudioContext)();
             const osc = ctx.createOscillator();
             const gain = ctx.createGain();
             osc.connect(gain); gain.connect(ctx.destination);
@@ -127,22 +143,8 @@ function playPfSound(type) {
             gain.gain.linearRampToValueAtTime(0.2, ctx.currentTime + 0.05);
             gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.3);
             osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.3);
-        } else if (type === 'practiceCorrect') {
-            const chord = [523.25, 659.25, 783.99]; 
-            chord.forEach((freq, i) => {
-                const osc = ctx.createOscillator();
-                const gain = ctx.createGain();
-                osc.connect(gain); gain.connect(ctx.destination);
-                osc.type = 'sine'; 
-                osc.frequency.setValueAtTime(freq, ctx.currentTime);
-                gain.gain.setValueAtTime(0, ctx.currentTime);
-                gain.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.05 + (i * 0.05));
-                gain.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 1.0 + (i * 0.05));
-                osc.start(ctx.currentTime + (i * 0.05));
-                osc.stop(ctx.currentTime + 1.0 + (i * 0.05));
-            });
-        }
-    } catch(e) {}
+        } catch(e) {}
+    }
 }
 
 function triggerPracticeSuccessAnim() {
@@ -164,8 +166,6 @@ function renderPracticeGrid() {
 
     pfState.cards.forEach((card, cardIdx) => {
         let targetWord = card.level1.words[0];
-        
-        // ★ カテゴリが「months」の場合は先頭を大文字にする
         if (pfState.category === 'months') {
             targetWord = targetWord.charAt(0).toUpperCase() + targetWord.slice(1);
         }
@@ -222,9 +222,7 @@ window.openPracticeModal = function(cardIdx) {
                 displayText = formatSentence(levelData.words[0]);
             }
         } else {
-            // Level 1, 2 の表示
             displayText = levelData.words[0];
-            // ★ カテゴリが「months」の場合は先頭を大文字にする
             if (pfState.category === 'months') {
                 displayText = displayText.charAt(0).toUpperCase() + displayText.slice(1);
             }
@@ -428,6 +426,11 @@ function startTrialMode() {
     pfState.isPlaying = true;
     pfState.penalty = 0; 
     document.getElementById('pf-total-count').innerText = pfState.cards.length;
+    
+    // UI初期化：テキストボックスを空にする
+    const statusTextEl = document.getElementById('pf-status-text');
+    if (statusTextEl) statusTextEl.innerText = 'Listening...';
+
     showPfView('view-picflash-play');
     
     pfState.startTime = Date.now();
@@ -585,15 +588,24 @@ async function initPicFlashCategories() {
         
         window.CATEGORIES_DATA.forEach(cat => {
             const btn = document.createElement('button');
-            btn.className = "pf-cat-btn bg-white p-4 md:p-6 rounded-3xl shadow-sm border-4 border-transparent hover:border-pink-300 transition-all flex flex-col items-center gap-2";
-            btn.innerHTML = `<span class="text-4xl md:text-5xl mb-1">${cat.icon}</span><span class="font-black text-gray-700 capitalize text-base md:text-lg">${cat.title}</span>`;
+            // ★ 初期状態を明確に「非選択」のグレーテキストにする
+            btn.className = "pf-cat-btn bg-white text-gray-700 p-4 md:p-6 rounded-3xl shadow-sm border-4 border-transparent hover:border-pink-300 transition-all flex flex-col items-center gap-2";
+            btn.innerHTML = `<span class="text-4xl md:text-5xl mb-1">${cat.icon}</span><span class="font-black capitalize text-base md:text-lg">${cat.title}</span>`;
             
-            // ★ クリック時にボタンを活性化させる処理を追加
             btn.onclick = () => {
                 pfState.category = cat.id;
-                document.querySelectorAll('.pf-cat-btn').forEach(b => b.classList.remove('border-pink-400', 'bg-pink-50'));
-                btn.classList.add('border-pink-400', 'bg-pink-50');
-                updateStartButtonState(); // ★ これでSTARTボタンが光ります！
+                
+                // ★ 全てのボタンをリセット
+                document.querySelectorAll('.pf-cat-btn').forEach(b => {
+                    b.classList.remove('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
+                    b.classList.add('bg-white', 'text-gray-700');
+                });
+                
+                // ★ クリックされたボタンだけ色をピンクにして白抜き文字にする！
+                btn.classList.remove('bg-white', 'text-gray-700');
+                btn.classList.add('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
+                
+                updateStartButtonState(); 
             };
             grid.appendChild(btn);
         });
@@ -663,6 +675,6 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(pfState.timerId);
         try { pfRec.abort(); } catch(e){}
         showPfView('view-picflash-select');
-        updateStartButtonState(); // トップに戻った時も状態を維持
+        updateStartButtonState(); 
     });
 });
