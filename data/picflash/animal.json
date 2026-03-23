@@ -1,0 +1,176 @@
+[
+    {
+        "img": "assets/images/picflash/animal/dog.webp",
+        "level1": { "words": ["dog", "dogs"], "ja": "犬" },
+        "level2": { "words": ["cute dog", "cute dogs", "big dog", "small dog"], "ja": "可愛い犬" },
+        "level3": { "words": ["i like cute dogs", "i don't like cute dogs", "i do not like cute dogs", "i like cute dog", "i don't like cute dog"], "ja": "可愛い犬が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/cat.webp",
+        "level1": { "words": ["cat", "cats"], "ja": "猫" },
+        "level2": { "words": ["cute cat", "cute cats", "brown cat"], "ja": "可愛い猫" },
+        "level3": { "words": ["i like cute cats", "i don't like cute cats", "i do not like cute cats", "i like cute cat", "i don't like cute cat"], "ja": "可愛い猫が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/bird.webp",
+        "level1": { "words": ["bird", "birds"], "ja": "鳥" },
+        "level2": { "words": ["small bird", "small birds", "blue bird"], "ja": "小さな鳥" },
+        "level3": { "words": ["i like small birds", "i don't like small birds", "i do not like small birds", "i like small bird", "i don't like small bird"], "ja": "小さな鳥が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/rabbit.webp",
+        "level1": { "words": ["rabbit", "rabbits"], "ja": "ウサギ" },
+        "level2": { "words": ["cute rabbit", "cute rabbits", "fast rabbit", "white rabbit"], "ja": "可愛いウサギ" },
+        "level3": { "words": ["i like cute rabbits", "i don't like cute rabbits", "i do not like cute rabbits", "i like cute rabbit", "i don't like cute rabbit"], "ja": "可愛いウサギが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/panda.webp",
+        "level1": { "words": ["panda", "pandas"], "ja": "パンダ" },
+        "level2": { "words": ["cute panda", "cute pandas", "big panda"], "ja": "可愛いパンダ" },
+        "level3": { "words": ["i like cute pandas", "i don't like cute pandas", "i do not like cute pandas", "i like cute panda", "i don't like cute panda"], "ja": "可愛いパンダが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/fox.webp",
+        "level1": { "words": ["fox", "foxes"], "ja": "キツネ" },
+        "level2": { "words": ["smart fox", "smart foxes", "red fox"], "ja": "賢いキツネ" },
+        "level3": { "words": ["i like smart foxes", "i don't like smart foxes", "i do not like smart foxes", "i like smart fox", "i don't like smart fox"], "ja": "賢いキツネが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/koala.webp",
+        "level1": { "words": ["koala", "koalas"], "ja": "コアラ" },
+        "level2": { "words": ["cute koala", "cute koalas", "sleepy koala"], "ja": "可愛いコアラ" },
+        "level3": { "words": ["i like cute koalas", "i don't like cute koalas", "i do not like cute koalas", "i like cute koala", "i don't like cute koala"], "ja": "可愛いコアラが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/mouse.webp",
+        "level1": { "words": ["mouse", "mice"], "ja": "ネズミ" },
+        "level2": { "words": ["small mouse", "small mice", "little mouse"], "ja": "小さなネズミ" },
+        "level3": { "words": ["i like small mice", "i don't like small mice", "i do not like small mice", "i like small mouse", "i don't like small mouse"], "ja": "小さなネズミが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/bear.webp",
+        "level1": { "words": ["bear", "bears"], "ja": "クマ" },
+        "level2": { "words": ["big bear", "big bears", "brown bear"], "ja": "大きなクマ" },
+        "level3": { "words": ["i like big bears", "i don't like big bears", "i do not like big bears", "i like big bear", "i don't like big bear"], "ja": "大きなクマが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/elephant.webp",
+        "level1": { "words": ["elephant", "elephants"], "ja": "ゾウ" },
+        "level2": { "words": ["big elephant", "big elephants"], "ja": "大きなゾウ" },
+        "level3": { "words": ["i like big elephants", "i don't like big elephants", "i do not like big elephants", "i like big elephant", "i don't like big elephant"], "ja": "大きなゾウが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/tiger.webp",
+        "level1": { "words": ["tiger", "tigers"], "ja": "トラ" },
+        "level2": { "words": ["scary tiger", "scary tigers", "big tiger", "strong tiger"], "ja": "怖いトラ" },
+        "level3": { "words": ["i like scary tigers", "i don't like scary tigers", "i do not like scary tigers", "i like scary tiger", "i don't like scary tiger"], "ja": "怖いトラが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/lion.webp",
+        "level1": { "words": ["lion", "lions"], "ja": "ライオン" },
+        "level2": { "words": ["scary lion", "scary lions", "strong lion", "big lion"], "ja": "怖いライオン" },
+        "level3": { "words": ["i like scary lions", "i don't like scary lions", "i do not like scary lions", "i like scary lion", "i don't like scary lion"], "ja": "怖いライオンが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/horse.webp",
+        "level1": { "words": ["horse", "horses"], "ja": "馬" },
+        "level2": { "words": ["fast horse", "fast horses", "big horse"], "ja": "速い馬" },
+        "level3": { "words": ["i like fast horses", "i don't like fast horses", "i do not like fast horses", "i like fast horse", "i don't like fast horse"], "ja": "速い馬が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/zebra.webp",
+        "level1": { "words": ["zebra", "zebras"], "ja": "シマウマ" },
+        "level2": { "words": ["fast zebra", "fast zebras"], "ja": "速いシマウマ" },
+        "level3": { "words": ["i like fast zebras", "i don't like fast zebras", "i do not like fast zebras", "i like fast zebra", "i don't like fast zebra"], "ja": "速いシマウマが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/giraffe.webp",
+        "level1": { "words": ["giraffe", "giraffes"], "ja": "キリン" },
+        "level2": { "words": ["tall giraffe", "tall giraffes"], "ja": "背が高いキリン" },
+        "level3": { "words": ["i like tall giraffes", "i don't like tall giraffes", "i do not like tall giraffes", "i like tall giraffe", "i don't like tall giraffe"], "ja": "背が高いキリンが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/camel.webp",
+        "level1": { "words": ["camel", "camels"], "ja": "ラクダ" },
+        "level2": { "words": ["big camel", "big camels", "slow camel"], "ja": "大きなラクダ" },
+        "level3": { "words": ["i like big camels", "i don't like big camels", "i do not like big camels", "i like big camel", "i don't like big camel"], "ja": "大きなラクダが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/monkey.webp",
+        "level1": { "words": ["monkey", "monkeys"], "ja": "サル" },
+        "level2": { "words": ["smart monkey", "smart monkeys", "cute monkey", "funny monkey"], "ja": "賢いサル" },
+        "level3": { "words": ["i like smart monkeys", "i don't like smart monkeys", "i do not like smart monkeys", "i like smart monkey", "i don't like smart monkey"], "ja": "賢いサルが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/gorilla.webp",
+        "level1": { "words": ["gorilla", "gorillas"], "ja": "ゴリラ" },
+        "level2": { "words": ["strong gorilla", "strong gorillas", "big gorilla"], "ja": "強いゴリラ" },
+        "level3": { "words": ["i like strong gorillas", "i don't like strong gorillas", "i do not like strong gorillas", "i like strong gorilla", "i don't like strong gorilla"], "ja": "強いゴリラが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/snake.webp",
+        "level1": { "words": ["snake", "snakes"], "ja": "ヘビ" },
+        "level2": { "words": ["scary snake", "scary snakes", "long snake"], "ja": "怖いヘビ" },
+        "level3": { "words": ["i like scary snakes", "i don't like scary snakes", "i do not like scary snakes", "i like scary snake", "i don't like scary snake"], "ja": "怖いヘビが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/frog.webp",
+        "level1": { "words": ["frog", "frogs"], "ja": "カエル" },
+        "level2": { "words": ["green frog", "green frogs", "small frog"], "ja": "緑色のカエル" },
+        "level3": { "words": ["i like green frogs", "i don't like green frogs", "i do not like green frogs", "i like green frog", "i don't like green frog"], "ja": "緑色のカエルが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/whale.webp",
+        "level1": { "words": ["whale", "whales"], "ja": "クジラ" },
+        "level2": { "words": ["big whale", "big whales", "blue whale"], "ja": "大きなクジラ" },
+        "level3": { "words": ["i like big whales", "i don't like big whales", "i do not like big whales", "i like big whale", "i don't like big whale"], "ja": "大きなクジラが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/dolphin.webp",
+        "level1": { "words": ["dolphin", "dolphins"], "ja": "イルカ" },
+        "level2": { "words": ["smart dolphin", "smart dolphins", "cute dolphin"], "ja": "賢いイルカ" },
+        "level3": { "words": ["i like smart dolphins", "i don't like smart dolphins", "i do not like smart dolphins", "i like smart dolphin", "i don't like smart dolphin"], "ja": "賢いイルカが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/penguin.webp",
+        "level1": { "words": ["penguin", "penguins"], "ja": "ペンギン" },
+        "level2": { "words": ["cute penguin", "cute penguins"], "ja": "可愛いペンギン" },
+        "level3": { "words": ["i like cute penguins", "i don't like cute penguins", "i do not like cute penguins", "i like cute penguin", "i don't like cute penguin"], "ja": "可愛いペンギンが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/sea_turtle.webp",
+        "level1": { "words": ["sea turtle", "sea turtles", "turtle", "turtles"], "ja": "ウミガメ" },
+        "level2": { "words": ["big sea turtle", "big sea turtles", "slow sea turtle"], "ja": "大きなウミガメ" },
+        "level3": { "words": ["i like big sea turtles", "i don't like big sea turtles", "i do not like big sea turtles", "i like big sea turtle", "i don't like big sea turtle"], "ja": "大きなウミガメが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/fish.webp",
+        "level1": { "words": ["fish", "fishes"], "ja": "魚" },
+        "level2": { "words": ["small fish", "beautiful fish", "colorful fish"], "ja": "小さな魚" },
+        "level3": { "words": ["i like small fish", "i don't like small fish", "i do not like small fish"], "ja": "小さな魚が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/shark.webp",
+        "level1": { "words": ["shark", "sharks"], "ja": "サメ" },
+        "level2": { "words": ["scary shark", "scary sharks", "big shark"], "ja": "怖いサメ" },
+        "level3": { "words": ["i like scary sharks", "i don't like scary sharks", "i do not like scary sharks", "i like scary shark", "i don't like scary shark"], "ja": "怖いサメが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/ant.webp",
+        "level1": { "words": ["ant", "ants"], "ja": "アリ" },
+        "level2": { "words": ["small ant", "small ants", "little ant"], "ja": "小さなアリ" },
+        "level3": { "words": ["i like small ants", "i don't like small ants", "i do not like small ants", "i like small ant", "i don't like small ant"], "ja": "小さなアリが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/butterfly.webp",
+        "level1": { "words": ["butterfly", "butterflies"], "ja": "チョウ" },
+        "level2": { "words": ["beautiful butterfly", "beautiful butterflies", "colorful butterfly"], "ja": "美しいチョウ" },
+        "level3": { "words": ["i like beautiful butterflies", "i don't like beautiful butterflies", "i do not like beautiful butterflies", "i like beautiful butterfly", "i don't like beautiful butterfly"], "ja": "美しいチョウが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/animal/spider.webp",
+        "level1": { "words": ["spider", "spiders"], "ja": "クモ" },
+        "level2": { "words": ["scary spider", "scary spiders", "black spider"], "ja": "怖いクモ" },
+        "level3": { "words": ["i like scary spiders", "i don't like scary spiders", "i do not like scary spiders", "i like scary spider", "i don't like scary spider"], "ja": "怖いクモが好き / 好きではない" }
+    }
+]

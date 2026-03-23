@@ -163,14 +163,20 @@ function renderPracticeGrid() {
     gridEl.innerHTML = '';
 
     pfState.cards.forEach((card, cardIdx) => {
-        const targetWord = card.level1.words[0];
+        let targetWord = card.level1.words[0];
+        
+        // ★ カテゴリが「months」の場合は先頭を大文字にする
+        if (pfState.category === 'months') {
+            targetWord = targetWord.charAt(0).toUpperCase() + targetWord.slice(1);
+        }
+
         gridEl.innerHTML += `
-            <div onclick="openPracticeModal(${cardIdx})" class="bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden cursor-pointer transform hover:-translate-y-2 transition-all hover:shadow-lg hover:border-pink-300 group">
-                <div class="w-full aspect-square bg-gray-50 relative p-4 flex items-center justify-center">
+            <div onclick="openPracticeModal(${cardIdx})" class="bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden cursor-pointer transform hover:-translate-y-2 transition-all hover:shadow-lg hover:border-pink-300 group flex flex-col">
+                <div class="w-full aspect-square bg-gray-50 relative p-3 md:p-4 flex items-center justify-center shrink-0">
                     <img src="${card.img}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-4 md:p-5 text-center bg-white border-t border-gray-100">
-                    <div class="font-black text-gray-700 text-lg md:text-xl truncate">${targetWord}</div>
+                <div class="p-3 md:p-4 text-center bg-white border-t border-gray-100 flex-1 flex items-center justify-center">
+                    <div class="font-black text-gray-800 text-2xl md:text-3xl lg:text-4xl break-words leading-tight w-full px-1 line-clamp-2">${targetWord}</div>
                 </div>
             </div>
         `;
@@ -216,7 +222,12 @@ window.openPracticeModal = function(cardIdx) {
                 displayText = formatSentence(levelData.words[0]);
             }
         } else {
+            // Level 1, 2 の表示
             displayText = levelData.words[0];
+            // ★ カテゴリが「months」の場合は先頭を大文字にする
+            if (pfState.category === 'months') {
+                displayText = displayText.charAt(0).toUpperCase() + displayText.slice(1);
+            }
         }
 
         const statusId = `prac-status-modal-${lv}`;
@@ -237,7 +248,7 @@ window.openPracticeModal = function(cardIdx) {
                         <span class="text-xs md:text-sm font-bold text-gray-500">${levelData.ja}</span>
                     </div>
                     ${promptHtml}
-                    <div class="text-lg md:text-2xl font-black text-gray-800 mb-2 leading-tight">${displayText}</div>
+                    <div class="text-xl md:text-3xl font-black text-gray-800 mb-2 leading-tight">${displayText}</div>
                 </div>
                 
                 <div class="flex items-center justify-between mt-auto pt-2">
