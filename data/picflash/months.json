@@ -1,0 +1,50 @@
+[
+    {
+        "img": "assets/images/picflash/months/january.webp",
+        "level1": { "words": ["january"], "ja": "1月" }
+    },
+    {
+        "img": "assets/images/picflash/months/february.webp",
+        "level1": { "words": ["february"], "ja": "2月" }
+    },
+    {
+        "img": "assets/images/picflash/months/march.webp",
+        "level1": { "words": ["march"], "ja": "3月" }
+    },
+    {
+        "img": "assets/images/picflash/months/april.webp",
+        "level1": { "words": ["april"], "ja": "4月" }
+    },
+    {
+        "img": "assets/images/picflash/months/may.webp",
+        "level1": { "words": ["may"], "ja": "5月" }
+    },
+    {
+        "img": "assets/images/picflash/months/june.webp",
+        "level1": { "words": ["june"], "ja": "6月" }
+    },
+    {
+        "img": "assets/images/picflash/months/july.webp",
+        "level1": { "words": ["july"], "ja": "7月" }
+    },
+    {
+        "img": "assets/images/picflash/months/august.webp",
+        "level1": { "words": ["august"], "ja": "8月" }
+    },
+    {
+        "img": "assets/images/picflash/months/september.webp",
+        "level1": { "words": ["september"], "ja": "9月" }
+    },
+    {
+        "img": "assets/images/picflash/months/october.webp",
+        "level1": { "words": ["october"], "ja": "10月" }
+    },
+    {
+        "img": "assets/images/picflash/months/november.webp",
+        "level1": { "words": ["november"], "ja": "11月" }
+    },
+    {
+        "img": "assets/images/picflash/months/december.webp",
+        "level1": { "words": ["december"], "ja": "12月" }
+    }
+]

@@ -1,0 +1,4 @@
+[
+    { "id": "food", "title": "Food (食べ物)", "icon": "🍔" },
+    { "id": "months", "title": "Months (月)", "icon": "🗓️" }
+]

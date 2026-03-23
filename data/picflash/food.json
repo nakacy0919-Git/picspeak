@@ -1,0 +1,188 @@
+[
+    {
+        "img": "assets/images/picflash/food/rice.webp",
+        "level1": { "words": ["rice"], "ja": "ご飯" },
+        "level2": { "words": ["hot rice", "white rice"], "ja": "温かいご飯" },
+        "level3": { "words": ["i like hot rice", "i don't like hot rice", "i do not like hot rice"], "ja": "温かいご飯が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/bread.webp",
+        "level1": { "words": ["bread"], "ja": "パン" },
+        "level2": { "words": ["fresh bread", "sweet bread"], "ja": "焼きたてのパン" },
+        "level3": { "words": ["i like fresh bread", "i don't like fresh bread", "i do not like fresh bread"], "ja": "焼きたてのパンが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/sandwich.webp",
+        "level1": { "words": ["sandwich"], "ja": "サンドイッチ" },
+        "level2": { "words": ["egg sandwich", "delicious sandwich"], "ja": "たまごサンド（美味しいサンドイッチ）" },
+        "level3": { "words": ["i like egg sandwiches", "i don't like egg sandwiches", "i like egg sandwich", "i don't like egg sandwich"], "ja": "たまごサンドが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/pizza.webp",
+        "level1": { "words": ["pizza"], "ja": "ピザ" },
+        "level2": { "words": ["hot pizza", "cheese pizza", "delicious pizza"], "ja": "温かいピザ（チーズピザ）" },
+        "level3": { "words": ["i like hot pizza", "i don't like hot pizza", "i do not like hot pizza"], "ja": "温かいピザが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/hamburger.webp",
+        "level1": { "words": ["hamburger"], "ja": "ハンバーガー" },
+        "level2": { "words": ["big hamburger", "delicious hamburger"], "ja": "大きなハンバーガー" },
+        "level3": { "words": ["i like big hamburgers", "i don't like big hamburgers", "i like a big hamburger", "i don't like a big hamburger"], "ja": "大きなハンバーガーが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/tea.webp",
+        "level1": { "words": ["tea"], "ja": "紅茶・お茶" },
+        "level2": { "words": ["hot tea", "iced tea"], "ja": "温かい紅茶" },
+        "level3": { "words": ["i like hot tea", "i don't like hot tea", "i do not like hot tea"], "ja": "温かい紅茶が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/juice.webp",
+        "level1": { "words": ["juice"], "ja": "ジュース" },
+        "level2": { "words": ["cold juice", "orange juice", "apple juice"], "ja": "冷たいジュース" },
+        "level3": { "words": ["i like cold juice", "i don't like cold juice", "i do not like cold juice"], "ja": "冷たいジュースが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/water.webp",
+        "level1": { "words": ["water"], "ja": "水" },
+        "level2": { "words": ["cold water", "fresh water"], "ja": "冷たい水" },
+        "level3": { "words": ["i like cold water", "i don't like cold water", "i do not like cold water"], "ja": "冷たい水が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/cake.webp",
+        "level1": { "words": ["cake"], "ja": "ケーキ" },
+        "level2": { "words": ["sweet cake", "chocolate cake", "delicious cake"], "ja": "甘いケーキ" },
+        "level3": { "words": ["i like sweet cake", "i don't like sweet cake", "i do not like sweet cake"], "ja": "甘いケーキが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/donut.webp",
+        "level1": { "words": ["donut"], "ja": "ドーナツ" },
+        "level2": { "words": ["sweet donut", "chocolate donut"], "ja": "甘いドーナツ" },
+        "level3": { "words": ["i like sweet donuts", "i don't like sweet donuts", "i like sweet donut", "i don't like sweet donut"], "ja": "甘いドーナツが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/rice_ball.webp",
+        "level1": { "words": ["rice ball"], "ja": "おにぎり" },
+        "level2": { "words": ["big rice ball", "delicious rice ball"], "ja": "大きなおにぎり" },
+        "level3": { "words": ["i like big rice balls", "i don't like big rice balls", "i like big rice ball", "i don't like big rice ball"], "ja": "大きなおにぎりが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/curry_and_rice.webp",
+        "level1": { "words": ["curry and rice", "curry rice", "curry"], "ja": "カレーライス" },
+        "level2": { "words": ["hot curry and rice", "spicy curry and rice", "delicious curry"], "ja": "温かいカレーライス" },
+        "level3": { "words": ["i like hot curry and rice", "i don't like hot curry and rice", "i like hot curry"], "ja": "温かいカレーライスが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/pancake.webp",
+        "level1": { "words": ["pancake"], "ja": "パンケーキ" },
+        "level2": { "words": ["sweet pancake", "hot pancake"], "ja": "甘いパンケーキ" },
+        "level3": { "words": ["i like sweet pancakes", "i don't like sweet pancakes", "i like sweet pancake"], "ja": "甘いパンケーキが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/hot_dog.webp",
+        "level1": { "words": ["hot dog"], "ja": "ホットドッグ" },
+        "level2": { "words": ["big hot dog", "delicious hot dog"], "ja": "大きなホットドッグ" },
+        "level3": { "words": ["i like big hot dogs", "i don't like big hot dogs", "i like big hot dog"], "ja": "大きなホットドッグが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/french_fries.webp",
+        "level1": { "words": ["french fries"], "ja": "フライドポテト" },
+        "level2": { "words": ["hot french fries", "salty french fries"], "ja": "温かいフライドポテト" },
+        "level3": { "words": ["i like hot french fries", "i don't like hot french fries", "i do not like hot french fries"], "ja": "温かいフライドポテトが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/fried_chicken.webp",
+        "level1": { "words": ["fried chicken"], "ja": "フライドチキン" },
+        "level2": { "words": ["hot fried chicken", "crispy fried chicken"], "ja": "温かいフライドチキン" },
+        "level3": { "words": ["i like hot fried chicken", "i don't like hot fried chicken", "i do not like hot fried chicken"], "ja": "温かいフライドチキンが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/sausage.webp",
+        "level1": { "words": ["sausage"], "ja": "ソーセージ" },
+        "level2": { "words": ["hot sausage", "big sausage"], "ja": "温かいソーセージ" },
+        "level3": { "words": ["i like hot sausages", "i don't like hot sausages", "i like hot sausage"], "ja": "温かいソーセージが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/steak.webp",
+        "level1": { "words": ["steak"], "ja": "ステーキ" },
+        "level2": { "words": ["big steak", "delicious steak", "hot steak"], "ja": "大きなステーキ" },
+        "level3": { "words": ["i like big steak", "i don't like big steak", "i like big steaks"], "ja": "大きなステーキが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/omelet.webp",
+        "level1": { "words": ["omelet"], "ja": "オムレツ" },
+        "level2": { "words": ["hot omelet", "delicious omelet"], "ja": "温かいオムレツ" },
+        "level3": { "words": ["i like hot omelets", "i don't like hot omelets", "i like hot omelet"], "ja": "温かいオムレツが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/spaghetti.webp",
+        "level1": { "words": ["spaghetti", "pasta"], "ja": "スパゲッティ" },
+        "level2": { "words": ["hot spaghetti", "delicious spaghetti"], "ja": "温かいスパゲッティ" },
+        "level3": { "words": ["i like hot spaghetti", "i don't like hot spaghetti", "i do not like hot spaghetti"], "ja": "温かいスパゲッティが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/pie.webp",
+        "level1": { "words": ["pie"], "ja": "パイ" },
+        "level2": { "words": ["sweet pie", "apple pie", "hot pie"], "ja": "甘いパイ" },
+        "level3": { "words": ["i like sweet pie", "i don't like sweet pie", "i like sweet pies"], "ja": "甘いパイが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/salad.webp",
+        "level1": { "words": ["salad"], "ja": "サラダ" },
+        "level2": { "words": ["fresh salad", "green salad"], "ja": "新鮮なサラダ" },
+        "level3": { "words": ["i like fresh salad", "i don't like fresh salad", "i do not like fresh salad"], "ja": "新鮮なサラダが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/soup.webp",
+        "level1": { "words": ["soup"], "ja": "スープ" },
+        "level2": { "words": ["hot soup", "delicious soup"], "ja": "温かいスープ" },
+        "level3": { "words": ["i like hot soup", "i don't like hot soup", "i do not like hot soup"], "ja": "温かいスープが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/coffee.webp",
+        "level1": { "words": ["coffee"], "ja": "コーヒー" },
+        "level2": { "words": ["hot coffee", "iced coffee", "black coffee"], "ja": "温かいコーヒー" },
+        "level3": { "words": ["i like hot coffee", "i don't like hot coffee", "i do not like hot coffee"], "ja": "温かいコーヒーが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/green_tea.webp",
+        "level1": { "words": ["green tea"], "ja": "緑茶" },
+        "level2": { "words": ["hot green tea", "cold green tea"], "ja": "温かい緑茶" },
+        "level3": { "words": ["i like hot green tea", "i don't like hot green tea", "i do not like hot green tea"], "ja": "温かい緑茶が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/soda.webp",
+        "level1": { "words": ["soda"], "ja": "炭酸飲料" },
+        "level2": { "words": ["cold soda", "sweet soda"], "ja": "冷たい炭酸飲料" },
+        "level3": { "words": ["i like cold soda", "i don't like cold soda", "i do not like cold soda"], "ja": "冷たい炭酸飲料が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/milk.webp",
+        "level1": { "words": ["milk"], "ja": "牛乳" },
+        "level2": { "words": ["cold milk", "hot milk"], "ja": "冷たい牛乳" },
+        "level3": { "words": ["i like cold milk", "i don't like cold milk", "i do not like cold milk"], "ja": "冷たい牛乳が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/parfait.webp",
+        "level1": { "words": ["parfait"], "ja": "パフェ" },
+        "level2": { "words": ["sweet parfait", "big parfait"], "ja": "甘いパフェ" },
+        "level3": { "words": ["i like sweet parfaits", "i don't like sweet parfaits", "i like sweet parfait"], "ja": "甘いパフェが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/ice_cream.webp",
+        "level1": { "words": ["ice cream"], "ja": "アイスクリーム" },
+        "level2": { "words": ["cold ice cream", "sweet ice cream", "delicious ice cream"], "ja": "冷たいアイスクリーム" },
+        "level3": { "words": ["i like cold ice cream", "i don't like cold ice cream", "i do not like cold ice cream"], "ja": "冷たいアイスクリームが好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/shaved_ice.webp",
+        "level1": { "words": ["shaved ice"], "ja": "かき氷" },
+        "level2": { "words": ["cold shaved ice", "sweet shaved ice"], "ja": "冷たいかき氷" },
+        "level3": { "words": ["i like cold shaved ice", "i don't like cold shaved ice", "i do not like cold shaved ice"], "ja": "冷たいかき氷が好き / 好きではない" }
+    },
+    {
+        "img": "assets/images/picflash/food/chocolate.webp",
+        "level1": { "words": ["chocolate"], "ja": "チョコレート" },
+        "level2": { "words": ["sweet chocolate", "dark chocolate"], "ja": "甘いチョコレート" },
+        "level3": { "words": ["i like sweet chocolate", "i don't like sweet chocolate", "i do not like sweet chocolate"], "ja": "甘いチョコレートが好き / 好きではない" }
+    }
+]

@@ -157,18 +157,30 @@
             <!-- Main Card Area -->
             <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-[95%] md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
                 
-                <!-- Game Mode Selection -->
+       <!-- Game Mode Selection -->
                 <div id="step-mode" class="mb-6 md:mb-10 relative transition-all duration-500">
                     <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
                     
+                    <!-- 2×2のグリッド設定（現在は3つ、右下は自動的に空白になります） -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                        
+                        <!-- ① SNAPSHOT -->
                         <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
                             <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
                             <span class="text-sm md:text-base font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[13px] md:text-xs">（話す快適さを実感！）</span></span>
                         </button>
+                        
+                        <!-- ② STORY -->
                         <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
                             <span class="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
                             <span class="text-sm md:text-base font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[13px] md:text-xs">（音読＆リテリング練習！）</span></span>
+                        </button>
+
+                        <!-- ③ PIC FLASH（他の2つと全く同じ大きさ・デザインに統一！） -->
+                        <!-- ※ホバーした時だけ少し紫っぽく光るようにして、遊び心を入れています -->
+                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" onclick="window.location.href='picflash.html'">
+                            <span class="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
+                            <span class="text-sm md:text-base font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[13px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
                         </button>
                     </div>
                 </div>
