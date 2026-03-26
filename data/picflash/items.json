@@ -1,0 +1,260 @@
+[
+    {
+        "img": "assets/images/picflash/items/pen.webp",
+        "level1": { "words": ["pen", "pens"], "ja": "ペン" },
+        "level2": { "words": ["red pen", "red pens", "blue pen"], "ja": "赤いペン" },
+        "level3": { "words": ["i use a red pen", "i use red pen", "i write with a red pen"], "ja": "赤いペンを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/book.webp",
+        "level1": { "words": ["book", "books"], "ja": "本" },
+        "level2": { "words": ["interesting book", "interesting books", "good book"], "ja": "面白い本" },
+        "level3": { "words": ["i read an interesting book", "i read interesting book", "i read interesting books"], "ja": "面白い本を読みます" }
+    },
+    {
+        "img": "assets/images/picflash/items/tv.webp",
+        "level1": { "words": ["tv", "television", "tvs"], "ja": "テレビ" },
+        "level2": { "words": ["big tv", "big television"], "ja": "大きなテレビ" },
+        "level3": { "words": ["i watch a big tv", "i watch big tv", "i watch the big tv"], "ja": "大きなテレビを見ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/computer.webp",
+        "level1": { "words": ["computer", "computers"], "ja": "コンピュータ" },
+        "level2": { "words": ["new computer", "fast computer", "new computers"], "ja": "新しいコンピュータ" },
+        "level3": { "words": ["i use a new computer", "i use new computer"], "ja": "新しいコンピュータを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/smartphone.webp",
+        "level1": { "words": ["smartphone", "smartphones", "smart phone", "phone"], "ja": "スマートフォン" },
+        "level2": { "words": ["new smartphone", "new smart phone"], "ja": "新しいスマートフォン" },
+        "level3": { "words": ["i use a new smartphone", "i use new smartphone"], "ja": "新しいスマートフォンを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/desk.webp",
+        "level1": { "words": ["desk", "desks"], "ja": "机" },
+        "level2": { "words": ["clean desk", "clean desks", "big desk"], "ja": "きれいな机" },
+        "level3": { "words": ["i study at a clean desk", "i use a clean desk", "i use clean desk", "i clean my desk"], "ja": "きれいな机で勉強します / 使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/chair.webp",
+        "level1": { "words": ["chair", "chairs"], "ja": "椅子" },
+        "level2": { "words": ["comfortable chair", "soft chair"], "ja": "快適な（座り心地の良い）椅子" },
+        "level3": { "words": ["i sit on a comfortable chair", "i sit in a comfortable chair", "i sit on comfortable chair"], "ja": "快適な椅子に座ります" }
+    },
+    {
+        "img": "assets/images/picflash/items/umbrella.webp",
+        "level1": { "words": ["umbrella", "umbrellas"], "ja": "傘" },
+        "level2": { "words": ["black umbrella", "big umbrella", "black umbrellas"], "ja": "黒い傘" },
+        "level3": { "words": ["i use a black umbrella", "i open a black umbrella", "i use black umbrella"], "ja": "黒い傘を使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/bag.webp",
+        "level1": { "words": ["bag", "bags"], "ja": "かばん" },
+        "level2": { "words": ["heavy bag", "big bag", "heavy bags"], "ja": "重いかばん" },
+        "level3": { "words": ["i carry a heavy bag", "i have a heavy bag", "i carry heavy bag"], "ja": "重いかばんを運びます（持ちます）" }
+    },
+    {
+        "img": "assets/images/picflash/items/t_shirt.webp",
+        "level1": { "words": ["t-shirt", "tshirt", "t shirt", "t-shirts", "tshirts", "t shirts"], "ja": "Tシャツ" },
+        "level2": { "words": ["white t-shirt", "white tshirt", "white t shirt"], "ja": "白いTシャツ" },
+        "level3": { "words": ["i wear a white t-shirt", "i wear a white tshirt", "i wear white t-shirt", "i wear white tshirt"], "ja": "白いTシャツを着ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/bed.webp",
+        "level1": { "words": ["bed", "beds"], "ja": "ベッド" },
+        "level2": { "words": ["soft bed", "soft beds", "big bed"], "ja": "柔らかいベッド" },
+        "level3": { "words": ["i sleep in a soft bed", "i sleep on a soft bed", "i sleep in soft bed"], "ja": "柔らかいベッドで寝ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/racket.webp",
+        "level1": { "words": ["racket", "rackets", "racquet", "racquets"], "ja": "ラケット" },
+        "level2": { "words": ["new racket", "new rackets", "light racket"], "ja": "新しいラケット" },
+        "level3": { "words": ["i swing a new racket", "i use a new racket", "i buy a new racket", "i use new racket"], "ja": "新しいラケットを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/glass.webp",
+        "level1": { "words": ["glass", "glasses"], "ja": "グラス（コップ）" },
+        "level2": { "words": ["clean glass", "cold glass", "clean glasses"], "ja": "きれいなグラス" },
+        "level3": { "words": ["i drink from a clean glass", "i use a clean glass", "i use clean glass"], "ja": "きれいなグラスで飲みます" }
+    },
+    {
+        "img": "assets/images/picflash/items/mug.webp",
+        "level1": { "words": ["mug", "mugs"], "ja": "マグカップ" },
+        "level2": { "words": ["favorite mug", "my favorite mug", "favorite mugs"], "ja": "お気に入りのマグカップ" },
+        "level3": { "words": ["i use my favorite mug", "i drink from my favorite mug", "i use favorite mug"], "ja": "お気に入りのマグカップを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/textbook.webp",
+        "level1": { "words": ["textbook", "textbooks"], "ja": "教科書" },
+        "level2": { "words": ["english textbook", "math textbook", "english textbooks"], "ja": "英語の教科書" },
+        "level3": { "words": ["i read an english textbook", "i open my english textbook", "i read english textbook"], "ja": "英語の教科書を読みます" }
+    },
+    {
+        "img": "assets/images/picflash/items/comic_book.webp",
+        "level1": { "words": ["comic book", "comic books", "comic"], "ja": "漫画" },
+        "level2": { "words": ["funny comic book", "interesting comic book", "funny comic books"], "ja": "面白い漫画" },
+        "level3": { "words": ["i read a funny comic book", "i read funny comic book", "i read funny comic books"], "ja": "面白い漫画を読みます" }
+    },
+    {
+        "img": "assets/images/picflash/items/dictionary.webp",
+        "level1": { "words": ["dictionary", "dictionaries"], "ja": "辞書" },
+        "level2": { "words": ["heavy dictionary", "electronic dictionary", "heavy dictionaries"], "ja": "重い辞書" },
+        "level3": { "words": ["i use a heavy dictionary", "i use heavy dictionary", "i open a heavy dictionary"], "ja": "重い辞書を使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/present.webp",
+        "level1": { "words": ["present", "presents", "gift", "gifts"], "ja": "プレゼント" },
+        "level2": { "words": ["nice present", "wonderful present", "nice presents"], "ja": "素敵なプレゼント" },
+        "level3": { "words": ["i get a nice present", "i give a nice present", "i get nice present"], "ja": "素敵なプレゼントをもらいます" }
+    },
+    {
+        "img": "assets/images/picflash/items/camera.webp",
+        "level1": { "words": ["camera", "cameras"], "ja": "カメラ" },
+        "level2": { "words": ["digital camera", "new camera", "digital cameras"], "ja": "デジタルカメラ" },
+        "level3": { "words": ["i use a digital camera", "i take a picture with a digital camera", "i use digital camera"], "ja": "デジタルカメラを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/ticket.webp",
+        "level1": { "words": ["ticket", "tickets"], "ja": "チケット" },
+        "level2": { "words": ["movie ticket", "concert ticket", "movie tickets"], "ja": "映画のチケット" },
+        "level3": { "words": ["i buy a movie ticket", "i have a movie ticket", "i buy movie ticket"], "ja": "映画のチケットを買います" }
+    },
+    {
+        "img": "assets/images/picflash/items/watch.webp",
+        "level1": { "words": ["watch", "watches"], "ja": "腕時計" },
+        "level2": { "words": ["cool watch", "expensive watch", "cool watches", "new watch"], "ja": "かっこいい腕時計" },
+        "level3": { "words": ["i wear a cool watch", "i wear cool watch", "i buy a cool watch"], "ja": "かっこいい腕時計をつけます" }
+    },
+    {
+        "img": "assets/images/picflash/items/tablet.webp",
+        "level1": { "words": ["tablet", "tablets"], "ja": "タブレット" },
+        "level2": { "words": ["new tablet", "new tablets"], "ja": "新しいタブレット" },
+        "level3": { "words": ["i use a new tablet", "i watch a new tablet", "i use new tablet"], "ja": "新しいタブレットを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/crayon.webp",
+        "level1": { "words": ["crayon", "crayons"], "ja": "クレヨン" },
+        "level2": { "words": ["red crayon", "red crayons"], "ja": "赤いクレヨン" },
+        "level3": { "words": ["i draw with a red crayon", "i use a red crayon", "i use red crayon"], "ja": "赤いクレヨンで描きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/marker.webp",
+        "level1": { "words": ["marker", "markers"], "ja": "マーカー" },
+        "level2": { "words": ["black marker", "black markers", "red marker"], "ja": "黒いマーカー" },
+        "level3": { "words": ["i write with a black marker", "i use a black marker", "i use black marker"], "ja": "黒いマーカーで書きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/pencil.webp",
+        "level1": { "words": ["pencil", "pencils"], "ja": "鉛筆" },
+        "level2": { "words": ["short pencil", "long pencil", "short pencils"], "ja": "短い鉛筆" },
+        "level3": { "words": ["i use a short pencil", "i use short pencil", "i sharpen a short pencil"], "ja": "短い鉛筆を使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/pencil_case.webp",
+        "level1": { "words": ["pencil case", "pencil cases"], "ja": "筆箱" },
+        "level2": { "words": ["big pencil case", "big pencil cases"], "ja": "大きな筆箱" },
+        "level3": { "words": ["i open a big pencil case", "i use a big pencil case", "i use big pencil case"], "ja": "大きな筆箱を開けます" }
+    },
+    {
+        "img": "assets/images/picflash/items/eraser.webp",
+        "level1": { "words": ["eraser", "erasers"], "ja": "消しゴム" },
+        "level2": { "words": ["white eraser", "small eraser", "white erasers"], "ja": "白い消しゴム" },
+        "level3": { "words": ["i use a white eraser", "i use white eraser"], "ja": "白い消しゴムを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/ruler.webp",
+        "level1": { "words": ["ruler", "rulers"], "ja": "定規" },
+        "level2": { "words": ["long ruler", "long rulers", "short ruler"], "ja": "長い定規" },
+        "level3": { "words": ["i use a long ruler", "i use long ruler"], "ja": "長い定規を使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/glue.webp",
+        "level1": { "words": ["glue"], "ja": "のり" },
+        "level2": { "words": ["sticky glue", "liquid glue"], "ja": "ベタベタののり" },
+        "level3": { "words": ["i use sticky glue"], "ja": "ベタベタののりを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/scissors.webp",
+        "level1": { "words": ["scissors"], "ja": "はさみ" },
+        "level2": { "words": ["sharp scissors"], "ja": "よく切れるはさみ" },
+        "level3": { "words": ["i use sharp scissors", "i cut with sharp scissors"], "ja": "よく切れるはさみを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/stapler.webp",
+        "level1": { "words": ["stapler", "staplers"], "ja": "ホッチキス" },
+        "level2": { "words": ["small stapler", "small staplers"], "ja": "小さなホッチキス" },
+        "level3": { "words": ["i use a small stapler", "i use small stapler"], "ja": "小さなホッチキスを使います" }
+    },
+    {
+        "img": "assets/images/picflash/items/notebook.webp",
+        "level1": { "words": ["notebook", "notebooks"], "ja": "ノート" },
+        "level2": { "words": ["new notebook", "new notebooks"], "ja": "新しいノート" },
+        "level3": { "words": ["i write in a new notebook", "i use a new notebook", "i use new notebook"], "ja": "新しいノートに書きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/shirt.webp",
+        "level1": { "words": ["shirt", "shirts"], "ja": "シャツ" },
+        "level2": { "words": ["clean shirt", "clean shirts", "white shirt"], "ja": "きれいなシャツ" },
+        "level3": { "words": ["i wear a clean shirt", "i wear clean shirt"], "ja": "きれいなシャツを着ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/sweatshirt.webp",
+        "level1": { "words": ["sweatshirt", "sweatshirts"], "ja": "トレーナー（スウェット）" },
+        "level2": { "words": ["warm sweatshirt", "warm sweatshirts", "gray sweatshirt"], "ja": "暖かいトレーナー" },
+        "level3": { "words": ["i wear a warm sweatshirt", "i wear warm sweatshirt"], "ja": "暖かいトレーナーを着ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/sweater.webp",
+        "level1": { "words": ["sweater", "sweaters"], "ja": "セーター" },
+        "level2": { "words": ["warm sweater", "warm sweaters", "red sweater"], "ja": "暖かいセーター" },
+        "level3": { "words": ["i wear a warm sweater", "i wear warm sweater"], "ja": "暖かいセーターを着ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/uniform.webp",
+        "level1": { "words": ["uniform", "uniforms"], "ja": "制服" },
+        "level2": { "words": ["school uniform", "school uniforms"], "ja": "学校の制服" },
+        "level3": { "words": ["i wear a school uniform", "i wear school uniform"], "ja": "学校の制服を着ます" }
+    },
+    {
+        "img": "assets/images/picflash/items/pants.webp",
+        "level1": { "words": ["pants"], "ja": "ズボン" },
+        "level2": { "words": ["long pants", "black pants"], "ja": "長いズボン" },
+        "level3": { "words": ["i wear long pants", "i wear black pants"], "ja": "長いズボンを履きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/jeans.webp",
+        "level1": { "words": ["jeans", "blue jeans"], "ja": "ジーンズ" },
+        "level2": { "words": ["blue jeans", "tight jeans"], "ja": "青いジーンズ" },
+        "level3": { "words": ["i wear blue jeans"], "ja": "青いジーンズを履きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/cap.webp",
+        "level1": { "words": ["cap", "caps"], "ja": "キャップ（帽子）" },
+        "level2": { "words": ["red cap", "red caps", "cool cap"], "ja": "赤いキャップ" },
+        "level3": { "words": ["i wear a red cap", "i wear red cap", "i put on a red cap"], "ja": "赤いキャップをかぶります" }
+    },
+    {
+        "img": "assets/images/picflash/items/hat.webp",
+        "level1": { "words": ["hat", "hats"], "ja": "帽子" },
+        "level2": { "words": ["big hat", "big hats", "straw hat"], "ja": "大きな帽子" },
+        "level3": { "words": ["i wear a big hat", "i wear big hat"], "ja": "大きな帽子をかぶります" }
+    },
+    {
+        "img": "assets/images/picflash/items/gloves.webp",
+        "level1": { "words": ["gloves", "glove"], "ja": "手袋" },
+        "level2": { "words": ["warm gloves", "warm glove", "leather gloves"], "ja": "暖かい手袋" },
+        "level3": { "words": ["i wear warm gloves", "i put on warm gloves"], "ja": "暖かい手袋をつけます" }
+    },
+    {
+        "img": "assets/images/picflash/items/socks.webp",
+        "level1": { "words": ["socks", "sock"], "ja": "靴下" },
+        "level2": { "words": ["white socks", "white sock", "clean socks"], "ja": "白い靴下" },
+        "level3": { "words": ["i wear white socks", "i put on white socks"], "ja": "白い靴下を履きます" }
+    },
+    {
+        "img": "assets/images/picflash/items/shoes.webp",
+        "level1": { "words": ["shoes", "shoe"], "ja": "靴" },
+        "level2": { "words": ["new shoes", "new shoe", "running shoes"], "ja": "新しい靴" },
+        "level3": { "words": ["i wear new shoes", "i put on new shoes"], "ja": "新しい靴を履きます" }
+    }
+]

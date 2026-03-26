@@ -1,5 +1,6 @@
 [
-    { "id": "food", "title": "Food (食べ物・飲み物)", "icon": "🍔" },
-    { "id": "animal", "title": "Animal (動物)", "icon": "🦁" },
-    { "id": "months", "title": "Months (月)", "icon": "🗓️" }
+    { "id": "food", "title": "Food", "icon": "🍔" },
+    { "id": "animal", "title": "Animal", "icon": "🦁" },
+    { "id": "items", "title": "Items", "icon": "🎒" },
+    { "id": "months", "title": "Months", "icon": "🗓️" }
 ]
