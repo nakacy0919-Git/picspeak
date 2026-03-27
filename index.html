@@ -83,7 +83,8 @@
 
     <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
 
-        <div id="view-start" class="flex-1 flex flex-col justify-center items-center p-4 md:p-6 lg:p-8 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
+        <!-- 修正箇所：flex-1とoverflow-y-autoを持ち、中身の配置を安全に中央揃えする構造に変更 -->
+        <div id="view-start" class="flex-1 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
             
             <!-- 🐰 ウサギキャラクターと吹き出し -->
             <div class="absolute top-4 left-4 md:top-6 md:left-6 z-30">
@@ -147,83 +148,83 @@
                 </div>
             </div>
             
-            <!-- Title Area -->
-            <div class="my-4 md:my-6 text-center shrink-0 mt-16 md:mt-0 relative z-20">
-                <h1 class="clean-title text-[4.5rem] md:text-[6rem] lg:text-[7.5rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
-                <p class="text-gray-900 text-sm md:text-lg lg:text-xl font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
-                <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
-            </div>
-            
-            <!-- Main Card Area -->
-            <div class="sns-card p-5 md:p-8 lg:p-10 w-full max-w-[95%] md:max-w-2xl lg:max-w-4xl shrink-0 mb-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
+            <!-- 修正箇所：スクロール時に上部が切れない安全な中央揃えラッパー -->
+            <div class="flex flex-col items-center justify-center min-h-full w-full px-4 md:px-8 pt-24 pb-8">
                 
-       <!-- Game Mode Selection -->
-                <div id="step-mode" class="mb-6 md:mb-10 relative transition-all duration-500">
-                    <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
+                <!-- Title Area -->
+                <div class="mb-4 md:mb-6 text-center shrink-0 relative z-20">
+                    <h1 class="clean-title text-[4.5rem] md:text-[5.5rem] lg:text-[6rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
+                    <p class="text-gray-900 text-sm md:text-base font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
+                    <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
+                </div>
+                
+                <!-- Main Card Area -->
+                <!-- 修正箇所：カードのパディングとマージンを少しシェイプアップ -->
+                <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-4xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
                     
-                    <!-- 2×2のグリッド設定（現在は3つ、右下は自動的に空白になります） -->
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+                    <!-- Game Mode Selection -->
+                    <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
+                        <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
                         
-                        <!-- ① SNAPSHOT -->
-                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
-                            <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
-                            <span class="text-sm md:text-base font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[13px] md:text-xs">（話す快適さを実感！）</span></span>
-                        </button>
-                        
-                        <!-- ② STORY -->
-                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
-                            <span class="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
-                            <span class="text-sm md:text-base font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[13px] md:text-xs">（音読＆リテリング練習！）</span></span>
-                        </button>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
+                            
+                            <!-- ① SNAPSHOT -->
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
+                            </button>
+                            
+                            <!-- ② STORY -->
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
+                            </button>
 
-                        <!-- ③ PIC FLASH（他の2つと全く同じ大きさ・デザインに統一！） -->
-                        <!-- ※ホバーした時だけ少し紫っぽく光るようにして、遊び心を入れています -->
-                        <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-5 md:py-6 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" onclick="window.location.href='picflash.html'">
-                            <span class="text-xl md:text-3xl lg:text-4xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
-                            <span class="text-sm md:text-base font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[13px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
+                            <!-- ③ PIC FLASH -->
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" onclick="window.location.href='picflash.html'">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- SELECT IMAGE / STORY Button -->
+                    <div class="relative flex justify-center mb-2">
+                        <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-xl md:text-2xl py-3 md:py-4 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
+                            SELECT IMAGE
                         </button>
                     </div>
-                </div>
 
-                <!-- SELECT IMAGE / STORY Button -->
-                <div class="relative flex justify-center mb-2">
-                    <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-2xl md:text-3xl py-4 md:py-5 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
-                        SELECT IMAGE
-                    </button>
-                </div>
-
-                <!-- 👇ここから差し替え👇 -->
-                <div class="text-center mt-6 md:mt-8 flex flex-col items-center gap-4">
-                    <!-- PicSpeakについてボタン -->
-                    <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
-                        <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
-                    </button>
-                    
-                    <!-- 追加：少しサイズダウンしたガイドバナー -->
-                    <a href="guide.html" target="_blank" rel="noopener noreferrer" 
-                       class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-3 md:p-4 transition-all transform hover:scale-[1.02] shadow-md mt-2"
-                       style="background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 50%, #f97316 100%);">
+                    <div class="text-center mt-4 md:mt-6 flex flex-col items-center gap-3">
+                        <!-- PicSpeakについてボタン -->
+                        <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
+                            <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
+                        </button>
                         
-                        <div class="flex items-center gap-3">
-                            <!-- 光る電球アイコン（小さめ） -->
-                            <div class="flex-shrink-0 bg-white/90 p-2.5 md:p-3 rounded-full shadow-inner relative">
-                                <span class="text-2xl md:text-3xl relative z-10">💡</span>
-                                <div class="absolute inset-0 bg-pink-200 rounded-full animate-ping opacity-60"></div>
-                            </div>
+                        <!-- ガイドバナー -->
+                        <a href="guide.html" target="_blank" rel="noopener noreferrer" 
+                           class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-2.5 md:p-3 transition-all transform hover:scale-[1.02] shadow-md mt-1"
+                           style="background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 50%, #f97316 100%);">
                             
-                            <!-- テキスト部分（少し小さめ） -->
-                            <div class="flex-grow text-left">
-                                <p class="text-[9px] md:text-[10px] font-bold text-pink-100 mb-0.5 tracking-wider uppercase">For Teachers & Students</p>
-                                <h2 class="text-base md:text-lg font-black text-white leading-tight tracking-tight mb-0.5">PicSpeak 完全活用ガイド</h2>
-                                <p class="text-[10px] md:text-xs text-white/90 font-bold">スピーキング力UPのコツと授業アイデア！</p>
+                            <div class="flex items-center gap-3">
+                                <div class="flex-shrink-0 bg-white/90 p-2 md:p-2.5 rounded-full shadow-inner relative">
+                                    <span class="text-xl md:text-2xl relative z-10">💡</span>
+                                    <div class="absolute inset-0 bg-pink-200 rounded-full animate-ping opacity-60"></div>
+                                </div>
+                                
+                                <div class="flex-grow text-left">
+                                    <p class="text-[9px] md:text-[10px] font-bold text-pink-100 mb-0.5 tracking-wider uppercase">For Teachers & Students</p>
+                                    <h2 class="text-sm md:text-base font-black text-white leading-tight tracking-tight mb-0.5">PicSpeak 完全活用ガイド</h2>
+                                    <p class="text-[9px] md:text-[10px] text-white/90 font-bold">スピーキング力UPのコツと授業アイデア！</p>
+                                </div>
                             </div>
-                        </div>
-                    </a>
+                        </a>
+                    </div>
                 </div>
-                <!-- 👆ここまで差し替え👆 -->
             </div>
         </div>
 
+        <!-- 以下の画面レイアウトは変更なし -->
         <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
             <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
                 <div class="flex items-center gap-3 md:gap-4">
@@ -396,7 +397,6 @@
             </div>
         </div>
 
-        <!-- 修正箇所：消えていた「結果を表示する箱（ranking-container）」を復元したRESULT画面 -->
         <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative overflow-hidden">
             <div class="bg-white/90 backdrop-blur-md px-4 py-3 md:px-8 md:py-4 shadow-sm shrink-0 border-b border-gray-200 flex items-center justify-between relative z-30 sticky top-0">
                 <div class="flex items-center gap-3 md:gap-4">
@@ -417,13 +417,11 @@
                 </div>
             </div>
             
-            <!-- ここが消えていたので真っ白になっていました！ -->
             <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
                 <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
                     <!-- ここにmain.jsから結果（HTML）が流し込まれます -->
                 </div>
             </div>
-
        </div>
        
        <footer id="app-footer" class="bg-white border-t border-gray-200 py-3 shrink-0 z-10 w-full mt-auto hidden md:block">
