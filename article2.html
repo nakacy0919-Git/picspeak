@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="1人1台端末時代の英語スピーキング授業をどう構築するか。現役英語教員が提案する、PicSpeakやAI音声認識を活用した「全員が必ず話す」ための授業アイデア。">
+    <title>【教員向け】1人1台端末を活用したスピーキング授業アイデア | PicSpeak 公式ブログ</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2212278850521165" crossorigin="anonymous"></script>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "【教員向け】1人1台端末を活用したスピーキング授業アイデア",
+      "author": {
+        "@type": "Person",
+        "name": "Kohei Nakashima"
+      },
+      "datePublished": "2026-02-20T08:00:00+09:00",
+      "dateModified": "2026-02-20T08:00:00+09:00",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Global Classroom"
+      }
+    }
+    </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
+    </script>
+    <style>
+        body { font-family: 'Nunito', 'Noto Sans JP', sans-serif; background-color: #f9fafb; }
+        .article-body h3 { font-size: 1.25rem; font-weight: 900; color: #1e3a8a; border-bottom: 2px solid #bfdbfe; padding-bottom: 0.5rem; margin-top: 2rem; margin-bottom: 1rem; display: inline-block;}
+        .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
+        .article-body strong { color: #2563eb; background: linear-gradient(transparent 70%, #dbeafe 0%); }
+    </style>
+</head>
+<body class="text-gray-900 overflow-x-hidden flex flex-col min-h-screen">
+
+    <header class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm sticky top-0 z-50 border-b border-gray-200">
+        <div class="flex items-center gap-3">
+            <button onclick="window.location.href='blog.html'" class="w-10 h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-xl" title="ブログ一覧へ戻る">◀</button>
+            <div class="text-2xl md:text-3xl font-black tracking-tighter text-transparent bg-clip-text bg-sns-gradient">PicSpeak</div>
+        </div>
+    </header>
+
+    <main class="flex-1 w-full max-w-4xl mx-auto px-4 py-8 md:py-12">
+        
+        <div class="bg-white rounded-t-3xl p-6 md:p-10 border-b border-gray-100 relative overflow-hidden shadow-sm">
+            <div class="flex flex-wrap items-center gap-3 mb-4 relative z-10">
+                <span class="bg-blue-100 text-blue-600 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">For Teachers</span>
+                <span class="text-gray-400 text-sm font-bold">Published: 2026.02.20</span>
+            </div>
+            <h1 id="title-text" class="text-2xl md:text-4xl font-black text-gray-900 leading-tight mb-6 relative z-10">【教員向け】1人1台端末を活用した<br>スピーキング授業アイデア</h1>
+            
+            <div class="flex items-center gap-4 relative z-10">
+                <div class="w-12 h-12 bg-gradient-to-br from-blue-400 to-teal-400 rounded-full flex items-center justify-center text-white font-black text-xl shadow-md">KN</div>
+                <div>
+                    <p class="font-bold text-gray-800">中島 浩平 (Kohei Nakashima)</p>
+                    <p class="text-xs text-gray-500 font-medium">Founder of Global Classroom / English Educator</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white px-6 py-4 flex justify-end gap-2 border-b border-gray-100 shadow-sm sticky top-[68px] z-40">
+            <span class="text-xs font-extrabold text-gray-400 uppercase tracking-widest mr-2 self-center">Language</span>
+            <button id="btn-ja" onclick="switchLang('ja')" class="px-4 py-1.5 rounded-full text-sm font-bold bg-blue-500 text-white transition-colors shadow-sm">日本語</button>
+            <button id="btn-en" onclick="switchLang('en')" class="px-4 py-1.5 rounded-full text-sm font-bold bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors">English</button>
+        </div>
+
+        <div class="bg-white rounded-b-3xl shadow-md p-6 md:p-10 article-body">
+            
+            <div id="content-ja" class="fade-in">
+                <p>GIGAスクール構想により、日本の教室に「1人1台端末」が当たり前のように存在するようになりました。しかし、英語の授業において、この端末を<strong>「スピーキング（アウトプット）の最大化」</strong>に使いこなせている現場はまだ多くありません。</p>
+                <p>今回は、ChromebookやiPadを活用し、クラス全員が「恥ずかしがらずに、必ず英語を話す」ための具体的な授業アイデアをご紹介します。</p>
+
+                <h3>一斉ペアワークの限界とICTの強み</h3>
+                <p>従来のスピーキング活動といえば、隣の席との「ペアワーク」が主流でした。しかし、この手法には「クラスメイトに自分の英語を聞かれるのが恥ずかしい」「教員の目が届かないところでは日本語で雑談してしまう」という課題が常に付き纏います。</p>
+                <p>ここで1人1台端末とAI音声認識技術が活きてきます。端末に向かって話す個人ワークを取り入れることで、他人の目を気にせず、<strong>完全に自分のペースで英語を発話する「心理的安全性」の高い空間</strong>を作り出すことができるのです。</p>
+
+                <h3>実践アイデア：PicSpeakを使った授業デザイン</h3>
+                <p>私が開発した「PicSpeak」を授業に組み込む際の、おすすめのフローをご紹介します。</p>
+                <p><strong>ステップ1：Warm-up（瞬発力の育成）</strong><br>
+                まずはクラス全体でプロジェクターに画像を表示し、ペアで「目に見えるものを10秒で言い合う」ブレインストーミングを行います。これにより、「間違えてもいいからとにかく口に出す」という教室の空気を作ります。</p>
+                <p><strong>ステップ2：個人ワーク（PicSpeak - Snapshotモード）</strong><br>
+                生徒は自分の端末を開き、PicSpeakのSnapshotモードに挑戦します。音声認識が自分の発音を拾い、正解すると画面が光るため、ゲーム感覚で没頭します。教員は机間巡視をしながら、「Wow, you got a perfect score!」とポジティブな声かけに専念できます。</p>
+                <p><strong>ステップ3：振り返りと発音練習</strong><br>
+                PicSpeakの終了画面では、言えなかった表現（Missed Words）が表示されます。これを「Practiceモード」で反復練習させ、最後にその日学んだ新しい表現を使って、ペアでもう一度画像を説明し合います。</p>
+
+                <h3>教員の役割は「教える」から「導く」へ</h3>
+                <p>ICTは教員の代わりになるものではありません。むしろ、評価や発音チェックといった機械的な作業をICTに任せることで、教員は<strong>「生徒のモチベーションを高め、対人コミュニケーションの楽しさをファシリテートする」という、人間にしかできない役割</strong>に集中できるようになります。</p>
+                <p>端末を単なる「デジタル教科書」として終わらせるのではなく、「スピーキングのパーソナルトレーナー」として活用してみてください。生徒たちの発話量は、劇的に変化するはずです。</p>
+            </div>
+
+            <div id="content-en" class="hidden fade-in">
+                <p>With the realization of the GIGA School Concept, having a "1-to-1 device" setup has become the norm in Japanese classrooms. However, not many educational frontlines are fully utilizing these devices to <strong>maximize speaking (output)</strong> in English classes yet.</p>
+                <p>Today, I will introduce concrete lesson ideas using Chromebooks or iPads to ensure that all students in the class "speak English without hesitation."</p>
+
+                <h3>The Limits of Pair Work and the Strengths of ICT</h3>
+                <p>Traditionally, speaking activities mostly relied on "pair work" with the person sitting next to you. However, this method always comes with challenges: students feeling embarrassed to have classmates hear their English, or reverting to chatting in Japanese when the teacher is not looking.</p>
+                <p>This is where 1-to-1 devices and AI speech recognition technology come into play. By incorporating individual work where students speak into their devices, we can create a highly <strong>psychologically safe space</strong> where students can speak English entirely at their own pace without worrying about the gaze of others.</p>
+
+                <h3>Practical Idea: Lesson Design Using PicSpeak</h3>
+                <p>Here is a recommended flow for integrating "PicSpeak," an app I developed, into your lessons.</p>
+                <p><strong>Step 1: Warm-up (Developing Agility)</strong><br>
+                First, project an image to the whole class and have pairs brainstorm by "saying what they see in 10 seconds." This creates a classroom atmosphere where "it's okay to make mistakes; just speak out."</p>
+                <p><strong>Step 2: Individual Work (PicSpeak - Snapshot Mode)</strong><br>
+                Students open their devices and try the Snapshot mode on PicSpeak. Because speech recognition picks up their pronunciation and the screen lights up when they get it right, they become immersed in it like a game. Teachers can walk around the desks and focus purely on positive reinforcement, saying things like, "Wow, you got a perfect score!"</p>
+                <p><strong>Step 3: Reflection and Pronunciation Practice</strong><br>
+                On the results screen of PicSpeak, expressions they couldn't say (Missed Words) are displayed. Have students repeatedly practice these in "Practice Mode," and finally, have them describe the picture to their pair again using the new expressions they learned that day.</p>
+
+                <h3>The Teacher's Role: From "Teaching" to "Guiding"</h3>
+                <p>ICT is not a replacement for teachers. Rather, by entrusting mechanical tasks like evaluation and pronunciation checks to ICT, teachers can focus on the uniquely human role of <strong>motivating students and facilitating the joy of interpersonal communication.</strong></p>
+                <p>Don't let the devices end up as mere "digital textbooks." Try using them as "personal speaking trainers." You will surely see a dramatic change in the amount of English your students speak.</p>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+        <div class="w-full max-w-5xl mx-auto px-4 flex flex-col items-center gap-4">
+            <div class="flex gap-6 text-sm font-bold text-gray-500">
+                <a href="index.html" class="hover:text-pink-500 transition-colors">トップページ</a>
+                <a href="blog.html" class="hover:text-pink-500 transition-colors">ブログ一覧</a>
+            </div>
+            <p class="text-xs text-gray-400">&copy; 2026 Kohei Nakashima / Global Classroom. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        function switchLang(lang) {
+            const contentJa = document.getElementById('content-ja');
+            const contentEn = document.getElementById('content-en');
+            const btnJa = document.getElementById('btn-ja');
+            const btnEn = document.getElementById('btn-en');
+            const titleText = document.getElementById('title-text');
+
+            if (lang === 'ja') {
+                contentJa.classList.remove('hidden');
+                contentEn.classList.add('hidden');
+                btnJa.className = "px-4 py-1.5 rounded-full text-sm font-bold bg-blue-500 text-white transition-colors shadow-sm";
+                btnEn.className = "px-4 py-1.5 rounded-full text-sm font-bold bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors";
+                titleText.innerHTML = "【教員向け】1人1台端末を活用した<br>スピーキング授業アイデア";
+            } else {
+                contentEn.classList.remove('hidden');
+                contentJa.classList.add('hidden');
+                btnEn.className = "px-4 py-1.5 rounded-full text-sm font-bold bg-blue-500 text-white transition-colors shadow-sm";
+                btnJa.className = "px-4 py-1.5 rounded-full text-sm font-bold bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors";
+                titleText.innerHTML = "[For Teachers] Speaking Class Ideas<br>Using 1-to-1 Devices";
+            }
+        }
+    </script>
+</body>
+</html>
