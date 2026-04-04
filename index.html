@@ -10,11 +10,37 @@
     <link rel="apple-touch-icon" href="assets/images/icon.png">
     
     <title>PicSpeak - Picture Description</title>
-　
-　　<!-- 👇 ここに追加します！ 👇 -->
-    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2212278850521165"
-     crossorigin="anonymous"></script>
-    <!-- 👆 ここまで 👆 -->
+
+    <meta name="description" content="PicSpeak（ピックスピーク）は、写真や画像を英語で描写（Picture Description）してスピーキング力を鍛える無料の英語学習Webアプリです。音声認識で発話の流暢さ（WPM）や正確さをリアルタイム判定します。">
+    <link rel="canonical" href="https://pic-speak-story.com/">
+    
+    <meta property="og:title" content="PicSpeak - 写真描写で鍛える英語スピーキングアプリ">
+    <meta property="og:description" content="写真や画像を英語で描写してスピーキング力を鍛える無料の英語学習Webアプリ。音声認識で発音や流暢さ(WPM)をリアルタイム判定！">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://pic-speak-story.com/">
+    <meta property="og:site_name" content="PicSpeak">
+    
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "PicSpeak",
+      "url": "https://pic-speak-story.com/",
+      "description": "写真や画像を英語で描写（Picture Description）して、即興的なスピーキング力や瞬発力を鍛える無料の教育用Webアプリです。小学生から高校生までレベル別に学習可能。音声認識を活用し、リアルタイムでターゲット表現の一致率や流暢さ（WPM）を判定します。",
+      "applicationCategory": "EducationalApplication",
+      "operatingSystem": "All",
+      "author": {
+        "@type": "Person",
+        "name": "Kohei Nakashima"
+      },
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "JPY"
+      }
+    }
+    </script>
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2212278850521165" crossorigin="anonymous"></script>
 
     <script src="https://cdn.tailwindcss.com"></script>
 
@@ -34,8 +60,6 @@
     </script>
     <link rel="stylesheet" href="css/style.css">
    
-    
-    <!-- 追加: ウサギのふわふわアニメーションと吹き出しのアニメーション -->
     <style>
         @keyframes float {
             0%, 100% { transform: translateY(0); }
@@ -55,7 +79,6 @@
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
 
-    <!-- Pronunciation Practice Modal -->
     <div id="practice-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
         <button id="btn-close-practice" class="absolute top-6 left-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
         <div class="flex-1 flex flex-col items-center justify-center p-6 w-full max-w-4xl mx-auto">
@@ -72,7 +95,6 @@
         </div>
     </div>
 
-    <!-- Transcript Modal -->
     <div id="transcript-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
         <button id="btn-close-transcript" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
         <div class="flex-1 flex flex-col p-6 md:p-12 w-full max-w-5xl mx-auto mt-12 md:mt-16">
@@ -83,10 +105,8 @@
 
     <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
 
-        <!-- 修正箇所：flex-1とoverflow-y-autoを持ち、中身の配置を安全に中央揃えする構造に変更 -->
         <div id="view-start" class="flex-1 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
             
-            <!-- 🐰 ウサギキャラクターと吹き出し -->
             <div class="absolute top-4 left-4 md:top-6 md:left-6 z-30">
                 <div id="rabbit-char" class="text-6xl md:text-7xl cursor-pointer animate-float drop-shadow-md hover:scale-110 transition-transform origin-bottom">🐰</div>
                 
@@ -101,7 +121,6 @@
                 </div>
             </div>
 
-            <!-- 右上の設定ボタン類 -->
             <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-3 md:gap-4 z-20">
                 <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
                 <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
@@ -110,7 +129,6 @@
                 </button>
             </div>
 
-            <!-- Settings Modal -->
             <div id="settings-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 rounded-2xl shadow-2xl w-11/12 max-w-sm border border-gray-100">
                     <h3 class="text-2xl font-black mb-6 text-gray-900 text-center tracking-tight">Speaking Time ⏰</h3>
@@ -125,7 +143,6 @@
                 </div>
             </div>
 
-            <!-- Tutorial Modal -->
             <div id="tutorial-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-11/12 max-w-2xl border border-gray-100 text-left">
                     <h3 class="text-2xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
@@ -139,7 +156,6 @@
                 </div>
             </div>
 
-            <!-- History Modal -->
             <div id="history-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
                 <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 flex flex-col max-h-[80vh]">
                     <h3 class="text-2xl font-black mb-4 text-gray-900 border-b pb-3 text-center">📊 Learning Logs</h3>
@@ -148,39 +164,31 @@
                 </div>
             </div>
             
-            <!-- 修正箇所：スクロール時に上部が切れない安全な中央揃えラッパー -->
             <div class="flex flex-col items-center justify-center min-h-full w-full px-4 md:px-8 pt-24 pb-8">
                 
-                <!-- Title Area -->
                 <div class="mb-4 md:mb-6 text-center shrink-0 relative z-20">
                     <h1 class="clean-title text-[4.5rem] md:text-[5.5rem] lg:text-[6rem] mb-1 text-transparent bg-clip-text bg-sns-gradient leading-none">PicSpeak</h1>
                     <p class="text-gray-900 text-sm md:text-base font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
                     <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
                 </div>
                 
-                <!-- Main Card Area -->
-                <!-- 修正箇所：カードのパディングとマージンを少しシェイプアップ -->
                 <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-4xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
                     
-                    <!-- Game Mode Selection -->
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
                             
-                            <!-- ① SNAPSHOT -->
                             <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
                             </button>
                             
-                            <!-- ② STORY -->
                             <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
                             </button>
 
-                            <!-- ③ PIC FLASH -->
                             <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" onclick="window.location.href='picflash.html'">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
@@ -188,7 +196,6 @@
                         </div>
                     </div>
 
-                    <!-- SELECT IMAGE / STORY Button -->
                     <div class="relative flex justify-center mb-2">
                         <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-xl md:text-2xl py-3 md:py-4 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
                             SELECT IMAGE
@@ -196,12 +203,10 @@
                     </div>
 
                     <div class="text-center mt-4 md:mt-6 flex flex-col items-center gap-3">
-                        <!-- PicSpeakについてボタン -->
                         <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
                             <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
                         </button>
                         
-                        <!-- ガイドバナー -->
                         <a href="guide.html" target="_blank" rel="noopener noreferrer" 
                            class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-2.5 md:p-3 transition-all transform hover:scale-[1.02] shadow-md mt-1"
                            style="background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 50%, #f97316 100%);">
@@ -224,7 +229,6 @@
             </div>
         </div>
 
-        <!-- 以下の画面レイアウトは変更なし -->
         <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
             <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
                 <div class="flex items-center gap-3 md:gap-4">
@@ -419,16 +423,13 @@
             
             <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
                 <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
-                    <!-- ここにmain.jsから結果（HTML）が流し込まれます -->
-                </div>
+                    </div>
             </div>
        </div>
        
        <footer id="app-footer" class="bg-white border-t border-gray-200 py-3 shrink-0 z-10 w-full mt-auto hidden md:block">
             <div class="flex justify-center gap-6 text-[10px] md:text-xs font-bold text-gray-400">
-                <!-- 👇 この1行を追加！ 👇 -->
                 <a href="guide.html" class="text-pink-500 font-black hover:text-pink-700 transition-colors" target="_blank">💡 活用ガイド（学習のコツ）</a>
-                
                 <a href="privacy.html" class="hover:text-pink-500 transition-colors" target="_blank">プライバシーポリシー</a>
                 <a href="terms.html" class="hover:text-pink-500 transition-colors" target="_blank">利用規約</a>
                 <a href="https://sites.google.com/view/koheinakashima/bio" class="hover:text-pink-500 transition-colors" target="_blank">作成者について</a>
