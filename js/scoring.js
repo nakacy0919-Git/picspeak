@@ -33,7 +33,6 @@ function getAggregatedData(theme, level) {
     return data;
 }
 
-// ★修正: 誤認識を防ぎ、適度な厳格さを持つマッチングエンジン
 function flexibleMatch(targetText, spokenWordsArray) {
     if (!targetText) return false;
     const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
@@ -44,9 +43,7 @@ function flexibleMatch(targetText, spokenWordsArray) {
     let matchCount = 0;
     wordsToMatch.forEach(w => {
         const isMatch = spokenWordsArray.some(spoken => {
-            // 完全一致
             if (spoken === w) return true;
-            // 語形変化（複数形、進行形、過去形）のみを許容。部分一致（sun が Sunday になる等）は弾く！
             if (spoken === w + 's' || spoken === w + 'es' || spoken === w + 'ing' || spoken === w + 'ed' || spoken === w + 'd') return true;
             if (w === spoken + 's' || w === spoken + 'es' || w === spoken + 'ing' || w === spoken + 'ed' || w === spoken + 'd') return true;
             return false;
@@ -54,9 +51,6 @@ function flexibleMatch(targetText, spokenWordsArray) {
         if (isMatch) matchCount++;
     });
 
-    // ★採点の厳格化
-    // 単語数が2語以下の短いフレーズは「100%（すべて）」言えないとバツ。
-    // 3語以上の文は「80%以上」のコア単語が言えていればマル。
     const requiredRate = wordsToMatch.length <= 2 ? 1.0 : 0.8;
     return (matchCount / wordsToMatch.length) >= requiredRate;
 }
@@ -117,38 +111,35 @@ function resetScore() {
     currentScore = 0; foundWordsSet.clear(); foundChunksSet.clear(); foundSentencesSet.clear();
 }
 
+// ★ 大幅修正: 固定の天井を廃止し、全体とカテゴリーを厳密に計算するロジック
 function getCompletionStats(theme, selectedLevel) {
     const targetData = getAggregatedData(theme, selectedLevel);
     
-    // 全体の満点目安（レベルに応じて変動）
-    let overallCap = 100;
-    let categoryCap = 20;
-
-    if (selectedLevel === 'junior_high') { overallCap = 200; categoryCap = 40; } 
-    else if (selectedLevel === 'high_school') { overallCap = 300; categoryCap = 60; }
-
     let totalEarnedPoints = 0;
+    let maxPossiblePoints = 0; // そのレベルで獲得できる理論上の「満点」
     
-    // カテゴリーの初期化
+    // カテゴリーの初期化 (earned:獲得点, max:そのカテゴリの満点)
     const categoryStats = {
-        "object": { label: "Object (物体・人物)", earned: 0, cleared: [], missed: [] },
-        "attribute": { label: "Attribute (属性・状態)", earned: 0, cleared: [], missed: [] },
-        "detail": { label: "Detail (詳細・背景)", earned: 0, cleared: [], missed: [] },
-        "gist": { label: "Gist (要点・動作)", earned: 0, cleared: [], missed: [] },
-        "inference": { label: "Inference (推測・雰囲気)", earned: 0, cleared: [], missed: [] },
-        "other": { label: "Others (その他)", earned: 0, cleared: [], missed: [] }
+        "object": { label: "Object (物体・人物)", earned: 0, max: 0, cleared: [], missed: [] },
+        "attribute": { label: "Attribute (属性・状態)", earned: 0, max: 0, cleared: [], missed: [] },
+        "detail": { label: "Detail (詳細・背景)", earned: 0, max: 0, cleared: [], missed: [] },
+        "gist": { label: "Gist (要点・動作)", earned: 0, max: 0, cleared: [], missed: [] },
+        "inference": { label: "Inference (推測・雰囲気)", earned: 0, max: 0, cleared: [], missed: [] },
+        "other": { label: "Others (その他)", earned: 0, max: 0, cleared: [], missed: [] }
     };
 
     const processItems = (items, foundSet, fallbackPoints) => {
         items.forEach(item => {
             const pts = item.points || fallbackPoints;
-            // ★ここを修正: JSONデータに書かれている "category" キーを見るように変更しました！
-            // JSONにcategoryの指定がない場合は "other" に分類します。
             const categoryName = item.category || item.type || "other";
             
             if (!categoryStats[categoryName]) {
-                categoryStats[categoryName] = { label: categoryName, earned: 0, cleared: [], missed: [] };
+                categoryStats[categoryName] = { label: categoryName, earned: 0, max: 0, cleared: [], missed: [] };
             }
+
+            // 全体の満点と、各カテゴリーの満点を加算
+            maxPossiblePoints += pts;
+            categoryStats[categoryName].max += pts;
 
             if (foundSet.has(item.text)) {
                 totalEarnedPoints += pts;
@@ -165,15 +156,17 @@ function getCompletionStats(theme, selectedLevel) {
     processItems(targetData.chunks, foundChunksSet, 20);
     processItems(targetData.sentences, foundSentencesSet, 40);
 
-    // 全体の達成率（最大100%）
-    const completionRate = Math.min(100, Math.floor((totalEarnedPoints / overallCap) * 100));
+    // ★ 総合達成率（固定の天井ではなく、獲得ポイント ÷ 全問題の総ポイントで厳密計算）
+    let completionRate = 0;
+    if (maxPossiblePoints > 0) {
+        completionRate = Math.min(100, Math.floor((totalEarnedPoints / maxPossiblePoints) * 100));
+    }
     
-    // 各カテゴリーの達成率（カテゴリー内のアイテム数に対するクリア数の割合で計算）
+    // ★ 各カテゴリーの達成率（アイテム数ではなく、カテゴリー内の獲得ポイントベースで厳密計算）
     Object.keys(categoryStats).forEach(key => {
         const cat = categoryStats[key];
-        const totalItemsInCat = cat.cleared.length + cat.missed.length;
-        if (totalItemsInCat > 0) {
-            cat.matchRate = Math.min(100, Math.floor((cat.cleared.length / totalItemsInCat) * 100));
+        if (cat.max > 0) {
+            cat.matchRate = Math.min(100, Math.floor((cat.earned / cat.max) * 100));
         } else {
             cat.matchRate = 0;
         }
