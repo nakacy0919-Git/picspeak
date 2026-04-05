@@ -101,7 +101,24 @@
                 <p>If English education disappears, we will avoid friction with different cultures and values, and we will only be able to see the world through the filter of AI. That would undoubtedly lead to a highly intolerant, isolated, and "divided society" lacking imagination for others.</p>
                 <p>That is precisely why there is significance in teaching and learning English today. Through the English language, we are learning the essence of humanity: "how to survive in a diverse society and how to connect with others."</p>
             </div>
-
+            <div class="mt-12 pt-8 border-t border-gray-100 fade-in">
+                <h4 class="text-center text-sm font-extrabold text-gray-400 uppercase tracking-widest mb-4">Share this article</h4>
+                <div class="flex justify-center gap-4">
+                    <button onclick="shareOnSNS('x')" class="w-12 h-12 rounded-full bg-gray-900 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md" title="Xでシェア">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-5 h-5"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 22.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </button>
+                    <button onclick="shareOnSNS('facebook')" class="w-12 h-12 rounded-full bg-[#1877F2] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md" title="Facebookでシェア">
+                        <svg viewBox="0 0 24 24" fill="currentColor" class="w-6 h-6"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.469h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.469h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+                    </button>
+                    <button onclick="shareOnSNS('line')" class="w-12 h-12 rounded-full bg-[#06C755] text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md font-black text-sm tracking-tighter" title="LINEでシェア">
+                        LINE
+                    </button>
+                    <button onclick="copyArticleUrl()" class="w-12 h-12 rounded-full bg-gray-400 text-white flex items-center justify-center hover:scale-110 transition-transform shadow-md" title="URLをコピー">
+                        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="w-5 h-5"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path></svg>
+                    </button>
+                </div>
+            </div>
+            </div>
         </div>
     </main>
 
@@ -136,6 +153,33 @@
                 btnJa.className = "px-4 py-1.5 rounded-full text-sm font-bold bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors";
                 titleText.innerHTML = "Thought Experiment: What if<br>'English Teachers' Disappeared?";
             }
+        }
+        function shareOnSNS(platform) {
+            const url = encodeURIComponent(window.location.href);
+            const title = encodeURIComponent(document.title + " | PicSpeak");
+            let shareUrl = '';
+
+            if (platform === 'x') {
+                shareUrl = `https://twitter.com/intent/tweet?url=${url}&text=${title}`;
+            } else if (platform === 'facebook') {
+                shareUrl = `https://www.facebook.com/sharer/sharer.php?u=${url}`;
+            } else if (platform === 'line') {
+                shareUrl = `https://social-plugins.line.me/lineit/share?url=${url}`;
+            }
+
+            if (shareUrl) {
+                window.open(shareUrl, '_blank', 'width=600,height=500');
+            }
+        }
+
+        function copyArticleUrl() {
+            const url = window.location.href;
+            navigator.clipboard.writeText(url).then(() => {
+                alert("記事のURLをコピーしました！");
+            }).catch(err => {
+                console.error("コピーに失敗しました", err);
+                alert("コピーに失敗しました。");
+            });
         }
     </script>
 </body>
