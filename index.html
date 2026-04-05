@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <link rel="manifest" href="manifest.json">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="PicSpeak">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
-    
     <title>PicSpeak - Picture Description</title>
 
     <meta name="description" content="PicSpeak（ピックスピーク）は、写真や画像を英語で描写（Picture Description）してスピーキング力を鍛える無料の英語学習Webアプリです。音声認識で発話の流暢さ（WPM）や正確さをリアルタイム判定します。">
@@ -441,6 +441,57 @@
 
     </div>
 
+    <div id="ios-prompt" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white rounded-2xl shadow-2xl p-4 z-50 transform translate-y-full transition-transform duration-500 hidden border border-gray-200">
+        <div class="flex items-start gap-4">
+            <img src="assets/images/icon.png" alt="PicSpeak" class="w-12 h-12 rounded-xl shadow-sm border border-gray-100">
+            <div class="flex-1">
+                <p class="text-sm font-black text-gray-800 mb-1">ホーム画面に追加</p>
+                <p class="text-[11px] text-gray-500 leading-relaxed font-bold">
+                    全画面で快適にプレイできます。<br>下部の <svg class="inline w-4 h-4 text-blue-500 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg> （共有ボタン）をタップし、<br><span class="text-gray-700 bg-gray-100 px-1 rounded">「ホーム画面に追加」</span> を選択してください。
+                </p>
+            </div>
+            <button onclick="closeIosPrompt()" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full w-7 h-7 flex items-center justify-center font-bold transition-colors">&times;</button>
+        </div>
+    </div>
+
+    <script>
+        // iOSプロンプトの表示ロジック
+        function showIosPrompt() {
+            // iPhoneかiPadかを判定
+            const isIos = () => {
+                const userAgent = window.navigator.userAgent.toLowerCase();
+                return /iphone|ipad|ipod/.test(userAgent);
+            };
+            // すでに全画面（ホーム画面から起動）か判定
+            const isStandalone = window.navigator.standalone === true;
+            // 過去に「×」ボタンを押して閉じたか判定
+            const hasPromptBeenClosed = localStorage.getItem('iosPromptClosed');
+
+            // iOSで、かつブラウザから開いていて、まだ閉じていない場合だけ表示
+            if (isIos() && !isStandalone && !hasPromptBeenClosed) {
+                const prompt = document.getElementById('ios-prompt');
+                prompt.classList.remove('hidden');
+                // ページを開いてから2秒後にスッと下から出てくる
+                setTimeout(() => {
+                    prompt.classList.remove('translate-y-full');
+                }, 2000);
+            }
+        }
+
+        // プロンプトを閉じるロジック
+        function closeIosPrompt() {
+            const prompt = document.getElementById('ios-prompt');
+            prompt.classList.add('translate-y-full'); // 下に隠すアニメーション
+            setTimeout(() => {
+                prompt.classList.add('hidden');
+            }, 500);
+            // 閉じたことを記録（次回から出さない配慮）
+            localStorage.setItem('iosPromptClosed', 'true');
+        }
+
+        // 画面読み込み時にチェックを実行
+        window.addEventListener('load', showIosPrompt);
+    </script>
     <script src="js/speech.js"></script>
     <script src="js/scoring.js"></script>
     <script src="js/audio.js"></script>   
