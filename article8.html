@@ -27,11 +27,13 @@
         .article-body p { margin-bottom: 1.25rem; line-height: 1.8; color: #4b5563; }
         .article-body strong { color: #db2777; background: linear-gradient(transparent 70%, #fbcfe8 0%); }
         .link-text { color: #3b82f6; text-decoration: underline; font-weight: 600; }
-        .article-hero { border-radius: 1.5rem; overflow: hidden; margin-bottom: 2rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
-        .article-image { border-radius: 1rem; overflow: hidden; margin: 2.5rem 0; }
+        .article-header { border-radius: 1.5rem; background: linear-gradient(135deg, #fbcfe8 0%, #fdba74 100%); padding: 3rem 2rem; margin-bottom: 2rem; box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); text-align: center;}
     </style>
 </head>
 <body class="text-gray-900 overflow-x-hidden flex flex-col min-h-screen">
+
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v19.0" nonce="abc"></script>
 
     <header class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm sticky top-0 z-50 border-b border-gray-200">
         <div class="flex items-center gap-3">
@@ -42,36 +44,32 @@
 
     <main class="flex-1 w-full max-w-4xl mx-auto px-4 py-8 md:py-12">
         
-        <div class="article-hero">
-            <img src="http://googleusercontent.com/image_collection/image_retrieval/6497110738794758701" alt="Nostalgic broadcasting microphone" class="w-full h-auto object-cover max-h-[400px]">
-        </div>
-
-        <div class="bg-white rounded-t-3xl p-6 md:p-10 border-b border-gray-100 shadow-sm">
-            <div class="flex flex-wrap items-center gap-3 mb-4">
-                <span class="bg-blue-100 text-blue-700 text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Reflection</span>
-                <span class="text-gray-400 text-sm font-bold">2026.04.04</span>
+        <div class="article-header flex flex-col items-center justify-center">
+            <div class="flex flex-wrap items-center justify-center gap-3 mb-4">
+                <span class="bg-white/30 text-white text-xs font-black px-3 py-1 rounded-full uppercase tracking-wider">Reflection</span>
+                <span class="text-white/80 text-sm font-bold">2026.04.04</span>
             </div>
             <h1 id="title-text" class="text-2xl md:text-4xl font-black text-gray-900 leading-tight mb-6">放送室から世界へ：マイケルが教えてくれた<br>「言語を教える本当の理由」</h1>
-            <div class="flex items-center gap-4">
-                <div class="w-12 h-12 bg-gradient-to-br from-pink-400 to-orange-400 rounded-full flex items-center justify-center text-white font-black text-xl shadow-md">KN</div>
-                <div>
-                    <p class="font-bold text-gray-800">中島 浩平 (Kohei Nakashima)</p>
-                    <p class="text-xs text-gray-500 font-medium">Global Educator / Father / Lifelong Learner</p>
+            <div class="flex items-center gap-4 justify-center">
+                <div class="w-12 h-12 bg-white rounded-full flex items-center justify-center text-pink-500 font-black text-xl shadow-md overflow-hidden">KN</div>
+                <div class="text-left">
+                    <p class="font-bold text-gray-900">中島 浩平 (Kohei Nakashima)</p>
+                    <p class="text-xs text-gray-700 font-medium">Global Educator / Father</p>
                 </div>
             </div>
         </div>
 
-        <div class="bg-white px-6 py-4 flex justify-end gap-2 border-b border-gray-100 shadow-sm sticky top-[68px] z-40">
-            <button id="btn-ja" onclick="switchLang('ja')" class="px-4 py-1.5 rounded-full text-sm font-bold bg-pink-500 text-white transition-colors">日本語</button>
+        <div class="bg-white px-6 py-4 flex justify-end gap-2 border-b border-gray-100 shadow-sm sticky top-[68px] z-40 rounded-xl mb-4">
+            <button id="btn-ja" onclick="switchLang('ja')" class="px-4 py-1.5 rounded-full text-sm font-bold bg-pink-500 text-white transition-colors shadow-sm">日本語</button>
             <button id="btn-en" onclick="switchLang('en')" class="px-4 py-1.5 rounded-full text-sm font-bold bg-gray-100 text-gray-500 hover:bg-gray-200 transition-colors">English</button>
         </div>
 
-        <div class="bg-white rounded-b-3xl shadow-md p-6 md:p-10 article-body">
+        <div class="bg-white rounded-3xl shadow-md p-6 md:p-10 article-body">
             <div id="content-ja">
                 <p>19:00、中学校の下校時刻。誰もいなくなった校舎に響く、優しくも力強い歌声がありました。当時、放送委員だった私が校内放送で毎日流していた曲、それがマイケル・ジャクソンの<strong>"Heal the World"</strong>でした。</p>
                 <p>正直に告白すれば、当時の私は英語に全く興味がありませんでした。それどころか、大人たちに反抗し、問題を起こし、他人の痛みなど想像することさえできない未熟な少年でした。英語教師になるなんて、夢にも思っていなかったあの頃。そんな私がなぜこの曲を選んでいたのか——。理屈ではなく、その歌声に「頼もしさ」を感じていたのかもしれません。</p>
 
-                <div class="my-10 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <div class="my-10 rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <div class="aspect-video">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BWf-eARnf6U" title="Michael Jackson - Heal The World (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -81,10 +79,6 @@
                 <p>44歳になり、教育者として、父として、そして一人の世界人として活動する今、改めてこの歌詞が胸に突き刺さります。</p>
                 <p><em>"Make it a better place for you and for me..."</em></p>
                 <p>言語を教えること。それは単に単語や文法を詰め込むことではありません。生徒たちに、この広い世界で何が起きているかを知るための「窓」を与え、他者を尊重し、繋がりを作るための「道具」を渡すことです。ユネスコが提唱する<strong>「グローバル・シチズンシップ教育（GCED）」</strong>が目指すのは、まさに平和で公正な社会を作るための市民を育てることですが、私の原点はあの放送室にありました。</p>
-
-                <div class="article-image">
-                    <img src="http://googleusercontent.com/image_collection/image_retrieval/12361834326676970349" alt="Children holding hands around a globe" class="w-full h-auto">
-                </div>
 
                 <h3>共感が育む「利他的な学び」</h3>
                 <p>近年の教育心理学では、<strong>Social Emotional Learning (SEL)</strong>、すなわち「社会情緒的学習」の重要性が叫ばれています。音楽や芸術を通じて他者への共感力を養うことは、言語習得の障壁となる不安（Affective Filter）を取り除くだけでなく、学習の動機を「自分のため」から「誰かの役に立つため」へと昇華させます。</p>
@@ -100,7 +94,7 @@
                 <p>19:00—the time to leave school in junior high. In the quiet school building, a gentle yet powerful voice would echo through the speakers. Back then, as a member of the broadcasting committee, I played Michael Jackson’s <strong>"Heal the World"</strong> every single day.</p>
                 <p>To be honest, I had zero interest in English at that time. I was a rebellious teenager, often getting into trouble. I never imagined I would become an English teacher. But something about that voice felt "reliable" and comforting to me, even without understanding the words.</p>
 
-                <div class="my-10 rounded-2xl overflow-hidden shadow-lg border border-gray-100">
+                <div class="my-10 rounded-2xl overflow-hidden shadow-xl border border-gray-100">
                     <div class="aspect-video">
                         <iframe width="100%" height="100%" src="https://www.youtube.com/embed/BWf-eARnf6U" title="Michael Jackson - Heal The World (Official Video)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                     </div>
@@ -119,13 +113,29 @@
                 <p><strong>"Make it a better place for the children."</strong></p>
             </div>
 
-            <div class="mt-12 pt-8 border-t border-gray-100 flex justify-center gap-4">
-                <button onclick="shareOnSNS('facebook')" class="px-6 py-2 bg-[#1877F2] text-white rounded-full font-bold shadow-md hover:scale-105 transition-transform">Facebookで共有する</button>
+            <div class="mt-12 pt-8 border-t border-gray-100 flex flex-col items-center gap-6">
+                <h4 class="text-sm font-extrabold text-gray-400 uppercase tracking-widest">If you liked this article...</h4>
+                
+                <div class="flex flex-col items-center gap-4">
+                    <div class="fb-like" 
+                         data-href="https://www.pic-speak-story.com/article8.html" 
+                         data-width="" 
+                         data-layout="button_count" 
+                         data-action="like" 
+                         data-size="large" 
+                         data-share="true">
+                    </div>
+                </div>
+
+                <button onclick="sayThanks(this)" class="group flex items-center gap-2 px-8 py-3 bg-white border-2 border-pink-500 text-pink-500 rounded-full font-bold hover:bg-pink-500 hover:text-white transition-all duration-300 shadow-md">
+                    <span class="text-xl group-hover:scale-125 transition-transform inline-block">❤️</span>
+                    <span id="like-text">この記事に「いいね！」を送る</span>
+                </button>
             </div>
         </div>
     </main>
 
-    <footer class="bg-white border-t border-gray-200 py-8 mt-auto">
+    <footer class="bg-white border-t border-gray-200 py-8 mt-auto rounded-t-3xl">
         <div class="w-full max-w-5xl mx-auto px-4 flex flex-col items-center gap-2">
             <p class="text-xs text-gray-400">&copy; 2026 Kohei Nakashima / Global Classroom. All rights reserved.</p>
         </div>
@@ -153,9 +163,11 @@
                 titleText.innerHTML = "From the Broadcast Room to the World:<br>Michael's Lesson on Teaching";
             }
         }
-        function shareOnSNS(platform) {
-            const url = encodeURIComponent(window.location.href);
-            window.open(`https://www.facebook.com/sharer/sharer.php?u=${url}`, '_blank', 'width=600,height=500');
+        function sayThanks(btn) {
+            const text = document.getElementById('like-text');
+            text.innerText = "Thank you! 心から感謝します！";
+            btn.classList.add('bg-pink-500', 'text-white');
+            btn.style.pointerEvents = 'none';
         }
     </script>
 </body>
