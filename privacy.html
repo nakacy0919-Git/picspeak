@@ -13,28 +13,26 @@
         <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200 space-y-6">
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">1. はじめに</h2>
-                <p>本プライバシーポリシーは、英語スピーキング学習アプリ「PicSpeak」（以下「本サービス」）において、利用者の皆様の情報をどのように取り扱うかを定めるものです。</p>
+                <p>本プライバシーポリシーは、英語スピーキング学習アプリ「PicSpeak」および関連ツール（音読ツール「Copeak」等を含む、以下総称して「本サービス」）において、利用者の皆様の情報をどのように取り扱うかを定めるものです。</p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">2. 音声データの取り扱いについて</h2>
-                <p>本サービスは、発音判定のためにブラウザの音声認識機能（SpeechRecognition API等）を利用し、端末のマイクへアクセスします。<br>
+                <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">2. 音声データ（マイク機能）の取り扱いについて</h2>
+                <p>本サービスは、発音判定やシャドーイングの音声認識のために、ブラウザ標準の音声認識機能（SpeechRecognition API等）を利用し、利用者が許可した場合に限り端末のマイクへアクセスします。<br>
                 <strong>取得された音声データは、お使いの端末またはブラウザの提供元（GoogleやAppleなど）の音声認識エンジン内でリアルタイムにテキスト化されるのみであり、当サービスの運営サーバーに音声データが送信・保存・録音されることは一切ありません。</strong></p>
             </section>
 
             <section>
-                <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">3. 学習履歴（ローカルストレージ）について</h2>
-                <p>本サービスは、利便性向上のため、プレイ日時、スコア、達成率などの学習履歴を、利用者のブラウザの「ローカルストレージ」に保存します。これらのデータは利用者の端末内にのみ保存され、外部サーバーへ送信されることはありません。</p>
+                <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">3. 学習データ（ローカルストレージ・IndexedDB）について</h2>
+                <p>本サービスは、利便性向上のため、プレイ日時、スコア、達成率、および利用者が入力した学習用テキスト（Copeak等）を、利用者のブラウザ内（ローカルストレージやIndexedDB等）に保存します。<strong>これらのデータは利用者の端末内にのみ保存され、外部の運営サーバーへ送信・蓄積されることは一切ありません。</strong></p>
             </section>
 
-            <!-- 👇ここがAdSense審査通過のための最重要ポイントです！👇 -->
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">4. 広告の配信について（Google AdSense）</h2>
                 <p class="mb-3">本サービスは、第三者配信の広告サービス（Google AdSense）を利用しています。</p>
                 <p class="mb-3">Googleなどの第三者配信事業者は、利用者が本サービスや他のウェブサイトに過去にアクセスした際の情報（Cookie）に基づき、利用者の興味に応じた適切な広告（パーソナライズ広告）を配信します。</p>
                 <p>利用者は、<a href="https://myadcenter.google.com/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 underline font-bold">Googleの広告設定</a>からパーソナライズ広告を無効にすることができます。また、<a href="https://www.aboutads.info/" target="_blank" rel="noopener noreferrer" class="text-blue-500 hover:text-blue-700 underline font-bold">www.aboutads.info</a> にアクセスすることで、パーソナライズ広告に使われる第三者配信事業者のCookieを無効にすることも可能です。</p>
             </section>
-            <!-- 👆ここまで👆 -->
 
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">5. 免責事項</h2>
@@ -48,8 +46,9 @@
             </section>
         </div>
         
-        <div class="mt-8 text-center">
-            <a href="index.html" class="text-gray-500 hover:text-gray-800 font-bold transition-colors">◀ PicSpeak トップへ戻る</a>
+        <div class="mt-8 flex justify-center gap-6">
+            <a href="index.html" class="text-gray-500 hover:text-gray-800 font-bold transition-colors">◀ トップへ戻る</a>
+            <a href="blog.html" class="text-gray-500 hover:text-gray-800 font-bold transition-colors">ブログ一覧へ</a>
         </div>
     </div>
 </body>
