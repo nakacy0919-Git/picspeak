@@ -188,25 +188,47 @@
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
                         
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-3 md:gap-5">
-                            
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="snapshot">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" data-mode="snapshot">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
                             </button>
                             
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" data-mode="story">
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" data-mode="story">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
                             </button>
 
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm" onclick="window.location.href='picflash.html'">
+                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" onclick="window.location.href='picflash.html'">
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
                                 <span class="text-xs md:text-sm font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
                             </button>
-                        </div>
-                    </div>
 
+                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
+                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
+                                </div>
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">NG WORD</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-400">NGワードを避けて説明しろ<br><span class="text-[11px] md:text-xs">（言い換え力を極限まで鍛える！）</span></span>
+                            </button>
+
+                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
+                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
+                                </div>
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">MOSAIC</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-400">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
+                            </button>
+
+                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
+                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
+                                </div>
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">DETECTIVE</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-400">2枚の写真の違いを見つけ出せ<br><span class="text-[11px] md:text-xs">（比較・論理的描写力！）</span></span>
+                            </button>
+                        </div>
+                      </div>
                     <div class="relative flex justify-center mb-2">
                         <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-xl md:text-2xl py-3 md:py-4 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
                             SELECT IMAGE
@@ -353,8 +375,20 @@
             </div>
             <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0"><div id="timer-bar" class="h-full bg-sns-gradient w-full timer-transition"></div></div>
             <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative w-full h-full">
-                <div id="image-panel" class="relative w-full md:w-1/2 h-48 md:h-full bg-white shrink-0 overflow-hidden flex items-center justify-center border-b md:border-b-0 md:border-r border-gray-200 shadow-inner md:shadow-none">
-                    <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter blur-md transition-all duration-500">
+                <div id="image-panel" class="relative w-full md:w-1/2 h-48 md:h-full bg-white shrink-0 overflow-hidden flex flex-row items-center justify-center border-b md:border-b-0 md:border-r border-gray-200 shadow-inner md:shadow-none">
+                    
+                    <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter transition-all duration-300">
+                    
+                    <img id="prompt-image-b" src="" alt="Prompt B" class="absolute inset-0 w-1/2 h-full right-0 object-contain filter transition-all duration-300 hidden border-l-4 border-dashed border-blue-400">
+
+                    <div id="ng-word-panel" class="absolute top-4 right-4 bg-black/80 backdrop-blur-md rounded-xl p-3 border-2 border-red-500 hidden z-30 shadow-2xl transform rotate-2">
+                        <div class="text-red-400 font-black text-xs uppercase tracking-widest text-center mb-1">⚠️ DO NOT SAY</div>
+                        <ul id="ng-word-list" class="text-white font-bold text-sm space-y-1 text-center"></ul>
+                    </div>
+
+                    <div id="ng-alert-overlay" class="absolute inset-0 bg-red-600/60 flex items-center justify-center pointer-events-none hidden z-40 transition-opacity">
+                        <span class="text-6xl md:text-8xl font-black text-white drop-shadow-2xl uppercase tracking-tighter transform scale-150">NG!!</span>
+                    </div>
                     <div id="pin-container" class="absolute inset-0 pointer-events-none z-20 overflow-hidden"></div>
                     <div id="support-text-container" class="absolute inset-0 pointer-events-none z-[25] overflow-hidden"></div>
                     <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/50 backdrop-blur-sm z-30"><div class="text-center" id="combo-content"></div></div>
@@ -624,11 +658,13 @@
         window.addEventListener('load', showIosPrompt);
     </script>
     <script src="js/speech.js"></script>
+    <script src="js/splash.js"></script>
     <script src="js/scoring.js"></script>
     <script src="js/audio.js"></script>   
     <script src="js/storage.js"></script> 
     <script src="js/ui.js"></script>   
     <script src="js/game.js"></script>  
+    <script src="js/ngword_game.js"></script>
     <script src="js/main.js"></script>  
 </body>
 </html>

@@ -157,6 +157,14 @@ window.startGameWithTheme = async function(id) {
     if(document.getElementById('pin-container')) document.getElementById('pin-container').innerHTML = ''; 
     if(document.getElementById('support-text-container')) document.getElementById('support-text-container').innerHTML = '';
     
+    // ▼▼ 追加：NG WORDモードなら初期化、違うモードなら非表示にする ▼▼
+    if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
+        ngWordGame.init(window.currentTheme);
+    } else if (typeof ngWordGame !== 'undefined') {
+        ngWordGame.cleanup();
+    }
+    // ▲▲ 追加ここまで ▲▲
+
     const transcriptBox = document.getElementById('transcript-box');
     if(transcriptBox) transcriptBox.innerHTML = `<p class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>`;
     
@@ -195,6 +203,11 @@ window.finishGameAndShowResult = function() {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
         
+        // ▼▼ 追加：ゲーム終了時にNGパネルを隠す ▼▼
+        if (typeof ngWordGame !== 'undefined') {
+            ngWordGame.cleanup();
+        }
+
         const btnFinishTurn = document.getElementById('btn-finish-turn');
         if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
         const recIndicator = document.getElementById('recording-indicator');

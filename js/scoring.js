@@ -58,6 +58,13 @@ function flexibleMatch(targetText, spokenWordsArray) {
 function calculateScore(transcript, theme, selectedLevel) {
     if (!transcript || !theme || !theme.scoringData) return null;
 
+    // ▼▼ 追加：NG WORDモード時の強制ゲームオーバー判定 ▼▼
+    if (window.appState && window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
+        if (ngWordGame.checkNgWord(transcript)) {
+            return null; // NGワードを踏んだら即座にスコア計算を停止
+        }
+    }
+
     const spokenWordsArray = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
     const targetData = getAggregatedData(theme, selectedLevel);
 
