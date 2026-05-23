@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1002",
+  "imageSrc": "assets/images/mosaic/1002.jpg",
+  "description": "ビーチパーティーの後のポイ捨てと環境問題",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "sea", "ja": "海", "type": "object", "points": 10},
+        {"text": "sand", "ja": "砂", "type": "object", "points": 10},
+        {"text": "cup", "ja": "カップ", "type": "object", "points": 10},
+        {"text": "bottle", "ja": "ビン", "type": "object", "points": 10},
+        {"text": "plate", "ja": "皿", "type": "object", "points": 10},
+        {"text": "fire", "ja": "火", "type": "object", "points": 10},
+        {"text": "wood", "ja": "木・薪", "type": "object", "points": 10},
+        {"text": "people", "ja": "人々", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "white", "ja": "白い", "type": "attribute", "points": 10},
+        {"text": "dirty", "ja": "汚い", "type": "attribute", "points": 20},
+        {"text": "drink", "ja": "飲む", "type": "gist", "points": 20},
+        {"text": "leave", "ja": "残す", "type": "gist", "points": 20},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a red cup", "ja": "赤いカップ", "type": "object", "points": 10},
+        {"text": "a green bottle", "ja": "緑のビン", "type": "object", "points": 10},
+        {"text": "on the sand", "ja": "砂の上に", "type": "detail", "points": 20},
+        {"text": "many people", "ja": "たくさんの人", "type": "object", "points": 10},
+        {"text": "have a party", "ja": "パーティーをする", "type": "gist", "points": 20},
+        {"text": "leave trash", "ja": "ゴミを残す", "type": "gist", "points": 30},
+        {"text": "a dirty beach", "ja": "汚いビーチ", "type": "attribute", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a blue sea.", "grammar": "I see~", "ja": "青い海が見えます。", "type": "object", "points": 20},
+        {"text": "There are many red cups.", "grammar": "There is/are~", "ja": "たくさんの赤いカップがあります。", "type": "object", "points": 30},
+        {"text": "The people have a party.", "grammar": "一般動詞", "ja": "人々はパーティーをします。", "type": "gist", "points": 30},
+        {"text": "The beach is very dirty.", "grammar": "be動詞", "ja": "ビーチはとても汚いです。", "type": "attribute", "points": 20},
+        {"text": "This is a bad thing.", "grammar": "This is~", "ja": "これは悪いことです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "beach", "ja": "ビーチ", "type": "object", "points": 20},
+        {"text": "trash", "ja": "ゴミ", "type": "object", "points": 20},
+        {"text": "garbage", "ja": "ゴミ", "type": "object", "points": 20},
+        {"text": "campfire", "ja": "キャンプファイヤー", "type": "object", "points": 20},
+        {"text": "litter", "ja": "ポイ捨てする・ゴミ", "type": "gist", "points": 30},
+        {"text": "pollute", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "enjoy", "ja": "楽しむ", "type": "gist", "points": 20},
+        {"text": "forget", "ja": "忘れる", "type": "gist", "points": 20},
+        {"text": "messy", "ja": "散らかった", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "irresponsible", "ja": "無責任な", "type": "inference", "points": 30},
+        {"text": "environmental", "ja": "環境の", "type": "inference", "points": 30},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "around", "ja": "〜の周りに", "type": "detail", "points": 10},
+        {"text": "after", "ja": "〜の後に", "type": "detail", "points": 10}
+      ],
+      "chunks": [
+        {"text": "enjoy a party", "ja": "パーティーを楽しむ", "type": "gist", "points": 20},
+        {"text": "leave garbage behind", "ja": "ゴミを置いていく", "type": "gist", "points": 30},
+        {"text": "around the campfire", "ja": "キャンプファイヤーの周りに", "type": "detail", "points": 20},
+        {"text": "full of trash", "ja": "ゴミでいっぱいの", "type": "attribute", "points": 30},
+        {"text": "an environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "look terrible", "ja": "ひどく見える", "type": "inference", "points": 20},
+        {"text": "throw away bottles", "ja": "ビンを捨てる", "type": "gist", "points": 30},
+        {"text": "after the party", "ja": "パーティーの後に", "type": "detail", "points": 20}
+      ],
+      "sentences": [
+        {"text": "Young people are enjoying a beach party.", "grammar": "現在進行形", "ja": "若者たちがビーチパーティーを楽しんでいます。", "type": "gist", "points": 30},
+        {"text": "They left a lot of trash on the sand.", "grammar": "過去形", "ja": "彼らは砂の上にたくさんのゴミを残しました。", "type": "gist", "points": 30},
+        {"text": "There are many empty bottles around the fire.", "grammar": "There is/are~ + 場所", "ja": "火の周りにはたくさんの空き瓶があります。", "type": "detail", "points": 40},
+        {"text": "We must not litter on the beautiful beach.", "grammar": "助動詞must", "ja": "美しいビーチにポイ捨てをしてはいけません。", "type": "inference", "points": 40},
+        {"text": "This picture shows an environmental problem.", "grammar": "一般動詞", "ja": "この絵は環境問題を示しています。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "coastline", "ja": "海岸線", "type": "object", "points": 30},
+        {"text": "debris", "ja": "がれき・ゴミ", "type": "object", "points": 30},
+        {"text": "youth", "ja": "若者", "type": "object", "points": 20},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "behavior", "ja": "行動", "type": "inference", "points": 20},
+        {"text": "abandon", "ja": "見捨てる・置いていく", "type": "gist", "points": 30},
+        {"text": "ruin", "ja": "台無しにする", "type": "gist", "points": 30},
+        {"text": "consume", "ja": "消費する", "type": "gist", "points": 20},
+        {"text": "scatter", "ja": "ばらまく・散乱させる", "type": "gist", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "unacceptable", "ja": "容認できない", "type": "attribute", "points": 30},
+        {"text": "discarded", "ja": "捨てられた", "type": "attribute", "points": 30},
+        {"text": "negatively", "ja": "否定的に・悪く", "type": "detail", "points": 30},
+        {"text": "ecosystem", "ja": "生態系", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "abandon empty bottles", "ja": "空き瓶を放置する", "type": "gist", "points": 30},
+        {"text": "ruin the beautiful coast", "ja": "美しい海岸を台無しにする", "type": "gist", "points": 40},
+        {"text": "scattered red cups", "ja": "散乱した赤いカップ", "type": "object", "points": 40},
+        {"text": "a severe environmental issue", "ja": "深刻な環境問題", "type": "inference", "points": 40},
+        {"text": "illustrate the consequence", "ja": "結果を示す", "type": "inference", "points": 30},
+        {"text": "irresponsible behavior of youth", "ja": "若者の無責任な行動", "type": "inference", "points": 40},
+        {"text": "protect the marine ecosystem", "ja": "海洋生態系を守る", "type": "gist", "points": 40},
+        {"text": "without cleaning up", "ja": "片付けずに", "type": "detail", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the severe consequence of a beach party.", "grammar": "無生物主語 / 一般動詞", "ja": "この絵はビーチパーティーの深刻な結果を示しています。", "type": "inference", "points": 40},
+        {"text": "It looks like the young people abandoned their trash without cleaning up.", "grammar": "It looks like~ / 前置詞+動名詞", "ja": "若者たちは片付けずにゴミを放置していったように見えます。", "type": "inference", "points": 50},
+        {"text": "Scattered red cups and empty bottles ruin the beautiful coastline.", "grammar": "過去分詞の形容詞的用法", "ja": "散乱した赤いカップや空き瓶が美しい海岸線を台無しにしています。", "type": "gist", "points": 50},
+        {"text": "Leaving garbage on the beach is an irresponsible behavior that harms nature.", "grammar": "動名詞を主語とする文 / 関係代名詞", "ja": "ビーチにゴミを残すことは、自然を傷つける無責任な行動です。", "type": "inference", "points": 50},
+        {"text": "People should take their trash home to protect the marine ecosystem.", "grammar": "不定詞の副詞的用法", "ja": "海洋生態系を守るために、人々はゴミを家に持ち帰るべきです。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "cup": { "x": 18, "y": 72 },
+    "bottle": { "x": 65, "y": 75 },
+    "plate": { "x": 42, "y": 85 },
+    "wood": { "x": 48, "y": 72 },
+    "stone": { "x": 42, "y": 75 },
+    "sand": { "x": 25, "y": 90 },
+    "sea": { "x": 70, "y": 50 },
+    "wave": { "x": 50, "y": 45 },
+    "sky": { "x": 20, "y": 15 },
+    "cloud": { "x": 80, "y": 10 },
+    "party": { "x": 75, "y": 25 },
+    "people": { "x": 75, "y": 30 },
+    "trash": { "x": 80, "y": 85 },
+    "bubble": { "x": 60, "y": 20 },
+    "arrow": { "x": 40, "y": 60 }
+  }
+}

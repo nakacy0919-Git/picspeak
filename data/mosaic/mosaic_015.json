@@ -1,0 +1,135 @@
+{
+  "id": "mosaic_015",
+  "imageSrc": "assets/images/mosaic/015.webp",
+  "description": "壁掛け時計とサボテンのある窓辺",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "clock", "ja": "時計", "type": "object", "points": 10},
+        {"text": "wall", "ja": "壁", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "curtain", "ja": "カーテン", "type": "object", "points": 20},
+        {"text": "plant", "ja": "植物", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "cloud", "ja": "雲", "type": "object", "points": 10},
+        {"text": "brown", "ja": "茶色", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑色", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青色", "type": "attribute", "points": 10},
+        {"text": "white", "ja": "白色", "type": "attribute", "points": 10},
+        {"text": "two", "ja": "2つ", "type": "attribute", "points": 10},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 10},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "bright", "ja": "明るい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a brown clock", "ja": "茶色い時計", "type": "attribute", "points": 20},
+        {"text": "a blue wall", "ja": "青い壁", "type": "attribute", "points": 20},
+        {"text": "two green plants", "ja": "2つの緑の植物", "type": "attribute", "points": 20},
+        {"text": "a white cloud", "ja": "白い雲", "type": "attribute", "points": 20},
+        {"text": "by the window", "ja": "窓のそばに", "type": "detail", "points": 20},
+        {"text": "on the wall", "ja": "壁に", "type": "detail", "points": 20},
+        {"text": "look outside", "ja": "外を見る", "type": "gist", "points": 20},
+        {"text": "very bright", "ja": "とても明るい", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a brown clock.", "grammar": "I see~", "ja": "茶色い時計が見えます。", "type": "object", "points": 30},
+        {"text": "The wall is blue.", "grammar": "SVC（現在形）", "ja": "壁は青色です。", "type": "attribute", "points": 20},
+        {"text": "This is a green plant.", "grammar": "This is~", "ja": "これは緑の植物です。", "type": "object", "points": 20},
+        {"text": "The sky is white and blue.", "grammar": "SVC（現在形）", "ja": "空は白と青です。", "type": "attribute", "points": 20},
+        {"text": "The room is bright.", "grammar": "SVC（現在形）", "ja": "部屋は明るいです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "cactus", "ja": "サボテン", "type": "object", "points": 20},
+        {"text": "pot", "ja": "鉢", "type": "object", "points": 20},
+        {"text": "shadow", "ja": "影", "type": "object", "points": 20},
+        {"text": "glass", "ja": "ガラス", "type": "object", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 30},
+        {"text": "sunny", "ja": "晴れた", "type": "attribute", "points": 20},
+        {"text": "clear", "ja": "澄んだ・晴れた", "type": "attribute", "points": 20},
+        {"text": "round", "ja": "丸い", "type": "attribute", "points": 20},
+        {"text": "hang", "ja": "掛かっている", "type": "gist", "points": 20},
+        {"text": "grow", "ja": "育つ", "type": "gist", "points": 20},
+        {"text": "place", "ja": "置く", "type": "gist", "points": 20},
+        {"text": "next to", "ja": "〜の隣に", "type": "detail", "points": 20},
+        {"text": "outside", "ja": "外に", "type": "detail", "points": 20},
+        {"text": "daytime", "ja": "昼間", "type": "inference", "points": 20},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a wooden clock", "ja": "木製の時計", "type": "object", "points": 20},
+        {"text": "a green cactus", "ja": "緑のサボテン", "type": "object", "points": 20},
+        {"text": "hanging on the wall", "ja": "壁に掛かっている", "type": "gist", "points": 30},
+        {"text": "next to the window", "ja": "窓の隣に", "type": "detail", "points": 30},
+        {"text": "looking outside", "ja": "外を見て", "type": "gist", "points": 20},
+        {"text": "a sunny day", "ja": "晴れた日", "type": "inference", "points": 30},
+        {"text": "in a brown pot", "ja": "茶色い鉢に", "type": "detail", "points": 20},
+        {"text": "a quiet room", "ja": "静かな部屋", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There is a wooden clock hanging on the wall.", "grammar": "There is~ / 現在分詞の後置修飾", "ja": "壁に木製の時計が掛かっています。", "type": "detail", "points": 40},
+        {"text": "A green cactus is placed in a small brown pot.", "grammar": "受動態", "ja": "緑のサボテンが小さな茶色い鉢に置かれています。", "type": "gist", "points": 40},
+        {"text": "We can see clouds in the sky outside the window.", "grammar": "助動詞can", "ja": "窓の外の空に雲が見えます。", "type": "object", "points": 30},
+        {"text": "The room looks quiet because it is a sunny daytime.", "grammar": "look + 形容詞 / 接続詞because", "ja": "晴れた昼間なので、部屋は静かそうです。", "type": "inference", "points": 40},
+        {"text": "The clock is making a shadow on the blue wall.", "grammar": "現在進行形", "ja": "時計が青い壁に影を作っています。", "type": "gist", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "cuckoo clock", "ja": "鳩時計", "type": "object", "points": 30},
+        {"text": "windowsill", "ja": "窓台", "type": "object", "points": 30},
+        {"text": "pendulum", "ja": "振り子", "type": "object", "points": 30},
+        {"text": "pinecone", "ja": "松ぼっくり", "type": "object", "points": 30},
+        {"text": "prickly", "ja": "トゲトゲした", "type": "attribute", "points": 30},
+        {"text": "classic", "ja": "伝統的な・古典的な", "type": "attribute", "points": 30},
+        {"text": "vibrant", "ja": "鮮やかな", "type": "attribute", "points": 30},
+        {"text": "mount", "ja": "取り付ける・設置する", "type": "gist", "points": 30},
+        {"text": "cast", "ja": "（影を）落とす", "type": "gist", "points": 30},
+        {"text": "reveal", "ja": "見せる・現す", "type": "gist", "points": 30},
+        {"text": "beneath", "ja": "〜の下に", "type": "detail", "points": 30},
+        {"text": "indoors", "ja": "屋内で", "type": "detail", "points": 20},
+        {"text": "tranquil", "ja": "穏やかな", "type": "inference", "points": 30},
+        {"text": "peaceful", "ja": "平和な", "type": "inference", "points": 30},
+        {"text": "cozy", "ja": "居心地の良い", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "a classic cuckoo clock", "ja": "伝統的な鳩時計", "type": "object", "points": 40},
+        {"text": "a prickly green cactus", "ja": "トゲトゲの緑のサボテン", "type": "attribute", "points": 40},
+        {"text": "resting on the windowsill", "ja": "窓台に置かれて", "type": "gist", "points": 40},
+        {"text": "casting a shadow", "ja": "影を落としている", "type": "gist", "points": 40},
+        {"text": "drawn back curtains", "ja": "引かれたカーテン", "type": "attribute", "points": 40},
+        {"text": "a tranquil atmosphere", "ja": "穏やかな雰囲気", "type": "inference", "points": 30},
+        {"text": "decorated with plants", "ja": "植物で飾られた", "type": "attribute", "points": 30},
+        {"text": "beneath the wooden clock", "ja": "木製の時計の下に", "type": "detail", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A traditional cuckoo clock is mounted firmly on the light blue wall.", "grammar": "受動態 / 副詞", "ja": "伝統的な鳩時計が、水色の壁にしっかりと取り付けられています。", "type": "gist", "points": 50},
+        {"text": "The prickly cactus resting on the windowsill is bathed in natural light.", "grammar": "現在分詞の形容詞的用法 / 受動態", "ja": "窓台に置かれたトゲトゲのサボテンは、自然光を浴びています。", "type": "gist", "points": 50},
+        {"text": "The curtains are drawn back to reveal a beautiful, partly cloudy sky.", "grammar": "不定詞の副詞的用法", "ja": "カーテンが引かれており、美しいところどころ曇った空が見えます。", "type": "gist", "points": 50},
+        {"text": "The pendulum and pinecone weights hang peacefully beneath the wooden clock.", "grammar": "副詞", "ja": "振り子と松ぼっくりの重りが、木製の時計の下で静かにぶら下がっています。", "type": "detail", "points": 40},
+        {"text": "The overall atmosphere of the room appears extremely tranquil and cozy.", "grammar": "appear + 形容詞", "ja": "部屋全体の雰囲気は、とても穏やかで居心地が良いように見えます。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "clock": { "x": 24, "y": 32 },
+    "clock_face": { "x": 24, "y": 38 },
+    "roof": { "x": 20, "y": 15 },
+    "pendulum": { "x": 23, "y": 63 },
+    "pinecone": { "x": 26, "y": 80 },
+    "wall": { "x": 15, "y": 75 },
+    "cactus_table": { "x": 48, "y": 75 },
+    "pot_table": { "x": 48, "y": 92 },
+    "table": { "x": 40, "y": 98 },
+    "curtain_left": { "x": 60, "y": 45 },
+    "curtain_right": { "x": 97, "y": 45 },
+    "window": { "x": 82, "y": 35 },
+    "cactus_window": { "x": 72, "y": 65 },
+    "pot_window": { "x": 72, "y": 78 },
+    "windowsill": { "x": 78, "y": 88 },
+    "sky": { "x": 88, "y": 25 },
+    "cloud": { "x": 78, "y": 15 }
+  }
+}

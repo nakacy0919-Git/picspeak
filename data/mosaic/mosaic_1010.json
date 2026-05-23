@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_1010",
+  "imageSrc": "assets/images/mosaic/1010.jpg",
+  "description": "地球温暖化による永久凍土の融解と家屋の傾き",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "house", "ja": "家", "type": "object", "points": 10},
+        {"text": "grass", "ja": "草", "type": "object", "points": 10},
+        {"text": "dirt", "ja": "土", "type": "object", "points": 10},
+        {"text": "ice", "ja": "氷", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "earth", "ja": "地球", "type": "object", "points": 20},
+        {"text": "thermometer", "ja": "温度計", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "hot", "ja": "暑い", "type": "attribute", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "sink", "ja": "沈む", "type": "gist", "points": 20},
+        {"text": "fall", "ja": "落ちる", "type": "gist", "points": 20},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10}
+      ],
+      "chunks": [
+        {"text": "a big house", "ja": "大きな家", "type": "object", "points": 10},
+        {"text": "red earth", "ja": "赤い地球", "type": "attribute", "points": 20},
+        {"text": "green grass", "ja": "緑の草", "type": "attribute", "points": 10},
+        {"text": "a hot earth", "ja": "暑い地球", "type": "attribute", "points": 20},
+        {"text": "sink down", "ja": "沈み込む", "type": "gist", "points": 20},
+        {"text": "under the ground", "ja": "地面の下に", "type": "detail", "points": 20},
+        {"text": "look bad", "ja": "悪く見える", "type": "inference", "points": 20},
+        {"text": "melt ice", "ja": "氷を溶かす", "type": "gist", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a big house.", "grammar": "I see~", "ja": "大きな家が見えます。", "type": "object", "points": 20},
+        {"text": "The earth is very hot.", "grammar": "be動詞", "ja": "地球はとても暑いです。", "type": "attribute", "points": 30},
+        {"text": "The house sinks down.", "grammar": "一般動詞", "ja": "家が沈み込みます。", "type": "gist", "points": 30},
+        {"text": "There is ice under the ground.", "grammar": "There is/are~", "ja": "地面の下に氷があります。", "type": "detail", "points": 30},
+        {"text": "This is a bad thing.", "grammar": "This is~", "ja": "これは悪いことです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "warming", "ja": "温暖化", "type": "inference", "points": 30},
+        {"text": "temperature", "ja": "温度", "type": "object", "points": 20},
+        {"text": "ground", "ja": "地面", "type": "object", "points": 10},
+        {"text": "hole", "ja": "穴", "type": "object", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "melt", "ja": "溶ける", "type": "gist", "points": 30},
+        {"text": "tilt", "ja": "傾く", "type": "gist", "points": 30},
+        {"text": "break", "ja": "壊れる", "type": "gist", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "dangerous", "ja": "危険な", "type": "attribute", "points": 20},
+        {"text": "underground", "ja": "地下に", "type": "detail", "points": 30},
+        {"text": "happen", "ja": "起こる", "type": "gist", "points": 20},
+        {"text": "environment", "ja": "環境", "type": "inference", "points": 30},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "cause", "ja": "引き起こす", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "global warming", "ja": "地球温暖化", "type": "inference", "points": 40},
+        {"text": "a tilted house", "ja": "傾いた家", "type": "object", "points": 30},
+        {"text": "melt the ice", "ja": "氷を溶かす", "type": "gist", "points": 30},
+        {"text": "sink into the ground", "ja": "地面に沈む", "type": "gist", "points": 30},
+        {"text": "underground ice", "ja": "地下の氷", "type": "object", "points": 30},
+        {"text": "an environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "cause a big hole", "ja": "大きな穴を引き起こす", "type": "gist", "points": 30},
+        {"text": "look dangerous", "ja": "危険に見える", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "Global warming is melting the underground ice.", "grammar": "現在進行形", "ja": "地球温暖化が地下の氷を溶かしています。", "type": "gist", "points": 40},
+        {"text": "The house is tilting and sinking into the ground.", "grammar": "現在進行形", "ja": "家が傾いて地面に沈んでいます。", "type": "gist", "points": 40},
+        {"text": "There is a big hole under the house.", "grammar": "There is/are~ + 場所", "ja": "家の下に大きな穴があります。", "type": "detail", "points": 30},
+        {"text": "This picture shows a serious environmental problem.", "grammar": "一般動詞", "ja": "この絵は深刻な環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "We must think about global warming.", "grammar": "助動詞must", "ja": "私たちは地球温暖化について考えなければなりません。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "permafrost", "ja": "永久凍土", "type": "object", "points": 30},
+        {"text": "climate", "ja": "気候", "type": "inference", "points": 30},
+        {"text": "disaster", "ja": "災害", "type": "inference", "points": 30},
+        {"text": "subsidence", "ja": "陥没・地盤沈下", "type": "inference", "points": 30},
+        {"text": "issue", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "extreme", "ja": "極端な", "type": "attribute", "points": 30},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "unstable", "ja": "不安定な", "type": "attribute", "points": 30},
+        {"text": "threaten", "ja": "脅かす", "type": "gist", "points": 30},
+        {"text": "collapse", "ja": "崩壊する", "type": "gist", "points": 30},
+        {"text": "indicate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "illustrate", "ja": "説明する", "type": "gist", "points": 20},
+        {"text": "impact", "ja": "影響を与える", "type": "gist", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "dramatically", "ja": "劇的に", "type": "detail", "points": 30}
+      ],
+      "chunks": [
+        {"text": "melting permafrost", "ja": "溶けゆく永久凍土", "type": "object", "points": 40},
+        {"text": "climate change", "ja": "気候変動", "type": "inference", "points": 40},
+        {"text": "severe environmental disaster", "ja": "深刻な環境災害", "type": "inference", "points": 40},
+        {"text": "cause ground subsidence", "ja": "地盤沈下を引き起こす", "type": "gist", "points": 40},
+        {"text": "threaten people's lives", "ja": "人々の命を脅かす", "type": "gist", "points": 40},
+        {"text": "an unstable house", "ja": "不安定な家", "type": "attribute", "points": 30},
+        {"text": "illustrate the consequence", "ja": "結果を示す", "type": "inference", "points": 30},
+        {"text": "impact dramatically", "ja": "劇的に影響を与える", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates a severe disaster which is caused by climate change.", "grammar": "関係代名詞", "ja": "この絵は気候変動によって引き起こされる深刻な災害を示しています。", "type": "inference", "points": 50},
+        {"text": "It looks like the house will collapse because the permafrost is melting.", "grammar": "It looks like~ / 接続詞because", "ja": "永久凍土が溶けているため、家が崩壊してしまいそうに見えます。", "type": "inference", "points": 50},
+        {"text": "Global warming causes ground subsidence and threatens people's lives.", "grammar": "接続詞 and", "ja": "地球温暖化は地盤沈下を引き起こし、人々の命を脅かします。", "type": "gist", "points": 40},
+        {"text": "We must stop climate change to protect our safe environment.", "grammar": "不定詞の副詞的用法", "ja": "安全な環境を守るために、私たちは気候変動を止めなければなりません。", "type": "inference", "points": 40},
+        {"text": "The thermometer indicates an extreme increase in temperature.", "grammar": "一般動詞", "ja": "温度計は極端な気温の上昇を示しています。", "type": "gist", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "house": { "x": 20, "y": 40 },
+    "roof": { "x": 22, "y": 28 },
+    "door": { "x": 27, "y": 52 },
+    "window": { "x": 15, "y": 45 },
+    "grass": { "x": 50, "y": 65 },
+    "ground": { "x": 55, "y": 85 },
+    "ice": { "x": 80, "y": 88 },
+    "soil": { "x": 40, "y": 80 },
+    "bubble": { "x": 75, "y": 25 },
+    "earth": { "x": 70, "y": 30 },
+    "thermometer": { "x": 88, "y": 30 },
+    "red": { "x": 88, "y": 25 },
+    "sky": { "x": 40, "y": 10 },
+    "crack": { "x": 35, "y": 70 },
+    "arrow": { "x": 36, "y": 65 },
+    "hill": { "x": 85, "y": 60 }
+  }
+}

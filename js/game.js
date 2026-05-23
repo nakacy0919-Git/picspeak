@@ -41,6 +41,11 @@ window.triggerSupportHint = function() {
 };
 
 window.startTimer = function() {
+    // ★追加: MOSAICモードならゲーム開始（ぼかし設定など）処理を呼ぶ
+    if (window.appState && window.appState.selectedMode === 'mosaic') {
+        window.MosaicGame.start();
+    }
+    
     const timerText = document.getElementById('timer-text');
     const timerBar = document.getElementById('timer-bar');
     const wordCountDisplay = document.getElementById('wordCountDisplay');
@@ -141,6 +146,10 @@ window.handleSpeechResult = function(finalText, interimText) {
     
     if(wordCountDisplay) wordCountDisplay.textContent = wordsArray.length;
     
+    // ★追加: MOSAICモードなら単語数を送ってモザイクを晴らす
+    if (window.appState && window.appState.selectedMode === 'mosaic') {
+        window.MosaicGame.updateProgress(wordsArray.length);
+    }
     if (currentTempText.trim().length > 0 && window.currentTheme) {
         const result = calculateScore(currentTempText, window.currentTheme, window.appState.selectedLevel);
         if (result && result.addedPoints > 0) {
@@ -293,6 +302,11 @@ window.openFullTranscript = function() {
 window.finishGameAndShowResult = function() {
     clearInterval(window.gameTimer);
     if(window.supportInterval) clearInterval(window.supportInterval);
+    
+    // ★追加: MOSAICモードならシステムを停止する
+    if (window.appState && window.appState.selectedMode === 'mosaic') {
+        window.MosaicGame.stop();
+    }
     const scoreDisplay = document.getElementById('scoreDisplay');
     const wordCountDisplay = document.getElementById('wordCountDisplay');
     const finalScore = scoreDisplay ? scoreDisplay.textContent : "0";

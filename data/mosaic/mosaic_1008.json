@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_1008",
+  "imageSrc": "assets/images/mosaic/1008.jpg",
+  "description": "交通渋滞と排気ガス",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "car", "ja": "車", "type": "object", "points": 10},
+        {"text": "truck", "ja": "トラック", "type": "object", "points": 10},
+        {"text": "road", "ja": "道", "type": "object", "points": 10},
+        {"text": "smoke", "ja": "煙", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "grey", "ja": "灰色の", "type": "attribute", "points": 10},
+        {"text": "dirty", "ja": "汚い", "type": "attribute", "points": 20},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "stop", "ja": "止まる", "type": "gist", "points": 10},
+        {"text": "drive", "ja": "運転する", "type": "gist", "points": 20},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "many cars", "ja": "たくさんの車", "type": "object", "points": 10},
+        {"text": "a big truck", "ja": "大きなトラック", "type": "object", "points": 20},
+        {"text": "grey smoke", "ja": "灰色の煙", "type": "attribute", "points": 20},
+        {"text": "on the road", "ja": "道の上に", "type": "detail", "points": 20},
+        {"text": "stop here", "ja": "ここで止まる", "type": "gist", "points": 20},
+        {"text": "drive a car", "ja": "車を運転する", "type": "gist", "points": 20},
+        {"text": "look dirty", "ja": "汚く見える", "type": "inference", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see many cars.", "grammar": "I see~", "ja": "たくさんの車が見えます。", "type": "object", "points": 20},
+        {"text": "There is a big truck.", "grammar": "There is/are~", "ja": "大きなトラックがあります。", "type": "object", "points": 20},
+        {"text": "The cars stop on the road.", "grammar": "一般動詞", "ja": "車が道で止まっています。", "type": "gist", "points": 30},
+        {"text": "The smoke is dirty.", "grammar": "be動詞", "ja": "煙は汚いです。", "type": "attribute", "points": 20},
+        {"text": "This is bad.", "grammar": "This is~", "ja": "これは悪いです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "traffic", "ja": "交通", "type": "object", "points": 20},
+        {"text": "gas", "ja": "ガス・排気", "type": "object", "points": 20},
+        {"text": "pollution", "ja": "汚染", "type": "inference", "points": 30},
+        {"text": "highway", "ja": "幹線道路", "type": "object", "points": 20},
+        {"text": "environment", "ja": "環境", "type": "inference", "points": 30},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "driver", "ja": "運転手", "type": "object", "points": 20},
+        {"text": "produce", "ja": "生み出す", "type": "gist", "points": 20},
+        {"text": "cause", "ja": "引き起こす", "type": "gist", "points": 20},
+        {"text": "wait", "ja": "待つ", "type": "gist", "points": 10},
+        {"text": "heavy", "ja": "激しい・重い", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "serious", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "slowly", "ja": "ゆっくりと", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "traffic jam", "ja": "交通渋滞", "type": "object", "points": 30},
+        {"text": "exhaust gas", "ja": "排気ガス", "type": "object", "points": 40},
+        {"text": "heavy traffic", "ja": "激しい交通渋滞", "type": "attribute", "points": 30},
+        {"text": "air pollution", "ja": "大気汚染", "type": "inference", "points": 40},
+        {"text": "produce smoke", "ja": "煙を出す", "type": "gist", "points": 30},
+        {"text": "wait in line", "ja": "列に並んで待つ", "type": "gist", "points": 30},
+        {"text": "environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "look terrible", "ja": "ひどく見える", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "There is a heavy traffic jam on the highway.", "grammar": "There is/are~ + 場所", "ja": "幹線道路で激しい交通渋滞が起きています。", "type": "detail", "points": 40},
+        {"text": "The cars are producing a lot of exhaust gas.", "grammar": "現在進行形", "ja": "車がたくさんの排気ガスを出しています。", "type": "gist", "points": 40},
+        {"text": "This picture shows an environmental problem.", "grammar": "一般動詞", "ja": "この絵は環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "The air looks very dirty and terrible.", "grammar": "look + 形容詞", "ja": "空気はとても汚くてひどく見えます。", "type": "attribute", "points": 40},
+        {"text": "We must think about air pollution.", "grammar": "助動詞must", "ja": "私たちは大気汚染について考えなければなりません。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "vehicle", "ja": "乗り物・車両", "type": "object", "points": 20},
+        {"text": "emission", "ja": "排出（物）", "type": "inference", "points": 30},
+        {"text": "smog", "ja": "スモッグ", "type": "object", "points": 30},
+        {"text": "atmosphere", "ja": "大気", "type": "object", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "issue", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "emit", "ja": "排出する", "type": "gist", "points": 30},
+        {"text": "pollute", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "contribute", "ja": "一因となる", "type": "gist", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "stuck", "ja": "立ち往生した", "type": "attribute", "points": 30},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "toxic", "ja": "有毒な", "type": "attribute", "points": 30},
+        {"text": "harmful", "ja": "有害な", "type": "attribute", "points": 30},
+        {"text": "negative", "ja": "否定的な", "type": "attribute", "points": 20}
+      ],
+      "chunks": [
+        {"text": "stuck in a traffic jam", "ja": "交通渋滞にはまる", "type": "gist", "points": 40},
+        {"text": "emit harmful gas", "ja": "有害なガスを排出する", "type": "gist", "points": 40},
+        {"text": "severe air pollution", "ja": "深刻な大気汚染", "type": "inference", "points": 40},
+        {"text": "toxic exhaust emissions", "ja": "有毒な排気ガス", "type": "object", "points": 40},
+        {"text": "a massive amount of vehicles", "ja": "大量の車両", "type": "object", "points": 30},
+        {"text": "contribute to global warming", "ja": "地球温暖化の一因となる", "type": "gist", "points": 40},
+        {"text": "illustrate the consequence", "ja": "結果を示す", "type": "inference", "points": 30},
+        {"text": "negatively impact the environment", "ja": "環境に悪影響を与える", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates a severe issue of air pollution caused by vehicles.", "grammar": "過去分詞の形容詞的用法", "ja": "この絵は車両によって引き起こされる大気汚染という深刻な問題を示しています。", "type": "inference", "points": 50},
+        {"text": "Many vehicles are stuck in a heavy traffic jam on the highway.", "grammar": "受動態 + 前置詞", "ja": "多くの車両が幹線道路で激しい交通渋滞にはまっています。", "type": "gist", "points": 40},
+        {"text": "The cars are emitting toxic gas which contributes to global warming.", "grammar": "関係代名詞", "ja": "車は地球温暖化の一因となる有毒なガスを排出しています。", "type": "gist", "points": 50},
+        {"text": "It looks like the massive amount of exhaust emissions will negatively impact the environment.", "grammar": "It looks like~", "ja": "大量の排気ガスが環境に悪影響を与えるように見えます。", "type": "inference", "points": 50},
+        {"text": "We should reduce the number of vehicles to protect the clean atmosphere.", "grammar": "不定詞の副詞的用法", "ja": "きれいな大気を守るために、私たちは車の数を減らすべきです。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "car": { "x": 42, "y": 85 },
+    "truck": { "x": 72, "y": 70 },
+    "smoke": { "x": 50, "y": 92 },
+    "road": { "x": 20, "y": 80 },
+    "highway": { "x": 10, "y": 85 },
+    "sky": { "x": 20, "y": 20 },
+    "line": { "x": 28, "y": 90 },
+    "bubble": { "x": 75, "y": 30 },
+    "traffic": { "x": 50, "y": 75 },
+    "light": { "x": 5, "y": 50 },
+    "smog": { "x": 20, "y": 60 },
+    "bumper": { "x": 42, "y": 90 },
+    "wheel": { "x": 82, "y": 92 },
+    "exhaust": { "x": 80, "y": 45 },
+    "driver": { "x": 62, "y": 80 },
+    "red": { "x": 88, "y": 35 }
+  }
+}

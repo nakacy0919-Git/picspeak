@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1021",
+  "imageSrc": "assets/images/mosaic/1021.jpg",
+  "description": "少子高齢化と労働力不足",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "people", "ja": "人々", "type": "object", "points": 10},
+        {"text": "paper", "ja": "紙", "type": "object", "points": 10},
+        {"text": "sign", "ja": "看板", "type": "object", "points": 10},
+        {"text": "work", "ja": "仕事", "type": "object", "points": 20},
+        {"text": "chart", "ja": "グラフ", "type": "object", "points": 10},
+        {"text": "baby", "ja": "赤ちゃん", "type": "object", "points": 20},
+        {"text": "old", "ja": "年配の", "type": "attribute", "points": 20},
+        {"text": "help", "ja": "助け", "type": "gist", "points": 20},
+        {"text": "want", "ja": "欲しい", "type": "gist", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20},
+        {"text": "read", "ja": "読む", "type": "gist", "points": 20},
+        {"text": "desk", "ja": "机", "type": "object", "points": 10}
+      ],
+      "chunks": [
+        {"text": "old men", "ja": "年配の男性", "type": "object", "points": 20},
+        {"text": "many people", "ja": "たくさんの人", "type": "object", "points": 10},
+        {"text": "help wanted", "ja": "求人", "type": "object", "points": 30},
+        {"text": "read paper", "ja": "紙を読む", "type": "gist", "points": 20},
+        {"text": "red line", "ja": "赤い線", "type": "attribute", "points": 20},
+        {"text": "in the room", "ja": "部屋で", "type": "detail", "points": 20},
+        {"text": "need help", "ja": "助けが必要", "type": "gist", "points": 30},
+        {"text": "bad news", "ja": "悪い知らせ", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see old men.", "grammar": "I see~", "ja": "年配の男性が見えます。", "type": "object", "points": 30},
+        {"text": "They want help.", "grammar": "一般動詞", "ja": "彼らは助けを求めています。", "type": "gist", "points": 30},
+        {"text": "There is a red sign.", "grammar": "There is/are~", "ja": "赤い看板があります。", "type": "object", "points": 30},
+        {"text": "The line is red.", "grammar": "be動詞", "ja": "線は赤いです。", "type": "attribute", "points": 20},
+        {"text": "It is a room.", "grammar": "It is~", "ja": "そこは部屋です。", "type": "detail", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "worker", "ja": "労働者", "type": "object", "points": 20},
+        {"text": "elderly", "ja": "高齢者", "type": "object", "points": 20},
+        {"text": "document", "ja": "書類", "type": "object", "points": 20},
+        {"text": "hiring", "ja": "採用", "type": "inference", "points": 30},
+        {"text": "shortage", "ja": "不足", "type": "inference", "points": 30},
+        {"text": "declining", "ja": "減少する", "type": "attribute", "points": 20},
+        {"text": "birthrate", "ja": "出生率", "type": "object", "points": 30},
+        {"text": "trend", "ja": "傾向", "type": "object", "points": 20},
+        {"text": "stroller", "ja": "ベビーカー", "type": "object", "points": 30},
+        {"text": "vacant", "ja": "空いている", "type": "attribute", "points": 20},
+        {"text": "recruit", "ja": "採用する", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る・見える", "type": "gist", "points": 10},
+        {"text": "construction", "ja": "建設", "type": "object", "points": 20},
+        {"text": "population", "ja": "人口", "type": "inference", "points": 30},
+        {"text": "need", "ja": "必要とする", "type": "gist", "points": 10}
+      ],
+      "chunks": [
+        {"text": "looking for workers", "ja": "労働者を探している", "type": "gist", "points": 30},
+        {"text": "help wanted sign", "ja": "求人看板", "type": "object", "points": 30},
+        {"text": "declining birthrate", "ja": "出生率の低下", "type": "inference", "points": 40},
+        {"text": "older generation", "ja": "高齢世代", "type": "object", "points": 30},
+        {"text": "reading documents", "ja": "書類を読む", "type": "gist", "points": 20},
+        {"text": "in the office", "ja": "オフィスで", "type": "detail", "points": 20},
+        {"text": "work in construction", "ja": "建設現場で働く", "type": "gist", "points": 30},
+        {"text": "downward trend", "ja": "下降傾向", "type": "attribute", "points": 30}
+      ],
+      "sentences": [
+        {"text": "Many elderly people are working.", "grammar": "現在進行形", "ja": "多くの高齢者が働いています。", "type": "gist", "points": 30},
+        {"text": "There is a 'HELP WANTED' sign.", "grammar": "There is/are~", "ja": "「求人」という看板があります。", "type": "object", "points": 30},
+        {"text": "The chart shows a declining trend.", "grammar": "一般動詞", "ja": "グラフは減少傾向を示しています。", "type": "inference", "points": 40},
+        {"text": "They are looking for new workers.", "grammar": "現在進行形", "ja": "彼らは新しい労働者を探しています。", "type": "gist", "points": 40},
+        {"text": "It is because of the low birthrate.", "grammar": "It is because of~", "ja": "それは低い出生率のせいです。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "demographics", "ja": "人口統計", "type": "object", "points": 30},
+        {"text": "labor", "ja": "労働", "type": "object", "points": 30},
+        {"text": "shortage", "ja": "不足", "type": "inference", "points": 30},
+        {"text": "aging", "ja": "高齢化", "type": "inference", "points": 30},
+        {"text": "fertility", "ja": "出生率", "type": "object", "points": 30},
+        {"text": "workforce", "ja": "労働力", "type": "object", "points": 30},
+        {"text": "vacancy", "ja": "空席", "type": "object", "points": 30},
+        {"text": "personnel", "ja": "人事・職員", "type": "object", "points": 30},
+        {"text": "demographic", "ja": "人口の", "type": "attribute", "points": 30},
+        {"text": "economic", "ja": "経済の", "type": "attribute", "points": 30},
+        {"text": "sustain", "ja": "維持する", "type": "gist", "points": 30},
+        {"text": "crisis", "ja": "危機", "type": "inference", "points": 30},
+        {"text": "alarming", "ja": "懸念すべき", "type": "attribute", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "worsen", "ja": "悪化する", "type": "gist", "points": 30}
+      ],
+      "chunks": [
+        {"text": "aging society", "ja": "高齢化社会", "type": "inference", "points": 40},
+        {"text": "labor shortage", "ja": "労働力不足", "type": "inference", "points": 40},
+        {"text": "declining birthrate", "ja": "出生率の低下", "type": "inference", "points": 40},
+        {"text": "demographic crisis", "ja": "人口危機", "type": "inference", "points": 40},
+        {"text": "recruitment advertisement", "ja": "求人広告", "type": "object", "points": 30},
+        {"text": "economic impact", "ja": "経済的影響", "type": "inference", "points": 40},
+        {"text": "workforce participation", "ja": "労働力参加", "type": "object", "points": 30},
+        {"text": "alarming downward trend", "ja": "懸念すべき下降傾向", "type": "attribute", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the labor shortage caused by an aging society and a declining birthrate.", "grammar": "過去分詞の形容詞的用法", "ja": "この絵は、高齢化社会と出生率の低下によって引き起こされる労働力不足を示しています。", "type": "inference", "points": 50},
+        {"text": "The chart clearly indicates an alarming downward trend in fertility rates.", "grammar": "一般動詞 / 副詞の修飾", "ja": "グラフは出生率の懸念すべき下降傾向を明確に示しています。", "type": "inference", "points": 50},
+        {"text": "Companies are struggling to find young workers to fill vacancies.", "grammar": "不定詞の副詞的用法", "ja": "企業は空席を埋めるための若い労働者を見つけるのに苦労しています。", "type": "gist", "points": 50},
+        {"text": "Elderly people are currently sustaining the workforce in many industries.", "grammar": "現在進行形 / 現在分詞", "ja": "現在、高齢者が多くの産業において労働力を維持しています。", "type": "gist", "points": 50},
+        {"text": "It reflects a severe demographic challenge that threatens economic growth.", "grammar": "関係代名詞", "ja": "それは経済成長を脅かす深刻な人口問題の課題を反映しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "worker": { "x": 10, "y": 60 },
+    "elderly": { "x": 30, "y": 60 },
+    "sign": { "x": 50, "y": 45 },
+    "chart": { "x": 80, "y": 20 },
+    "stroller": { "x": 75, "y": 15 },
+    "baby": { "x": 90, "y": 20 },
+    "paper": { "x": 50, "y": 75 },
+    "computer": { "x": 80, "y": 60 },
+    "crane": { "x": 25, "y": 20 },
+    "woman": { "x": 90, "y": 60 },
+    "desk": { "x": 80, "y": 75 },
+    "helmet": { "x": 10, "y": 50 },
+    "clipboard": { "x": 50, "y": 80 },
+    "office": { "x": 70, "y": 70 },
+    "construction": { "x": 30, "y": 30 }
+  }
+}

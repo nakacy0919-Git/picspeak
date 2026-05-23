@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1019",
+  "imageSrc": "assets/images/mosaic/1019.jpg",
+  "description": "食料品の値上げと経済への影響",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "meat", "ja": "肉", "type": "object", "points": 10},
+        {"text": "cart", "ja": "カート", "type": "object", "points": 10},
+        {"text": "shop", "ja": "お店", "type": "object", "points": 10},
+        {"text": "price", "ja": "価格", "type": "object", "points": 20},
+        {"text": "food", "ja": "食べ物", "type": "object", "points": 10},
+        {"text": "gas", "ja": "ガソリン", "type": "object", "points": 10},
+        {"text": "truck", "ja": "トラック", "type": "object", "points": 10},
+        {"text": "tag", "ja": "値札", "type": "object", "points": 20},
+        {"text": "shelf", "ja": "棚", "type": "object", "points": 10},
+        {"text": "high", "ja": "高い", "type": "attribute", "points": 10},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20},
+        {"text": "buy", "ja": "買う", "type": "gist", "points": 10},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 10},
+        {"text": "pay", "ja": "払う", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "in the shop", "ja": "お店で", "type": "detail", "points": 10},
+        {"text": "the price is high", "ja": "価格が高い", "type": "attribute", "points": 20},
+        {"text": "look at the meat", "ja": "肉を見る", "type": "gist", "points": 20},
+        {"text": "a big truck", "ja": "大きなトラック", "type": "object", "points": 20},
+        {"text": "a gas pump", "ja": "ガソリンポンプ", "type": "object", "points": 20},
+        {"text": "food price", "ja": "食料品の価格", "type": "object", "points": 20},
+        {"text": "sad woman", "ja": "悲しい女性", "type": "inference", "points": 20},
+        {"text": "buy food", "ja": "食べ物を買う", "type": "gist", "points": 10}
+      ],
+      "sentences": [
+        {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "type": "object", "points": 20},
+        {"text": "The price is very high.", "grammar": "be動詞", "ja": "価格がとても高いです。", "type": "attribute", "points": 30},
+        {"text": "She looks at the meat.", "grammar": "一般動詞", "ja": "彼女は肉を見ています。", "type": "gist", "points": 30},
+        {"text": "The truck brings food.", "grammar": "一般動詞", "ja": "トラックが食べ物を運びます。", "type": "gist", "points": 30},
+        {"text": "This is sad.", "grammar": "This is~", "ja": "これは悲しいです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "supermarket", "ja": "スーパーマーケット", "type": "object", "points": 20},
+        {"text": "inflation", "ja": "インフレ", "type": "inference", "points": 30},
+        {"text": "expensive", "ja": "高価な", "type": "attribute", "points": 20},
+        {"text": "worry", "ja": "心配する", "type": "inference", "points": 20},
+        {"text": "delivery", "ja": "配送", "type": "object", "points": 20},
+        {"text": "fuel", "ja": "燃料", "type": "object", "points": 20},
+        {"text": "cost", "ja": "費用", "type": "object", "points": 20},
+        {"text": "check", "ja": "確認する", "type": "gist", "points": 20},
+        {"text": "increase", "ja": "増加する", "type": "gist", "points": 30},
+        {"text": "transport", "ja": "輸送する", "type": "gist", "points": 30},
+        {"text": "label", "ja": "ラベル・値札", "type": "object", "points": 20},
+        {"text": "economy", "ja": "経済", "type": "inference", "points": 30},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "high", "ja": "高い", "type": "attribute", "points": 10}
+      ],
+      "chunks": [
+        {"text": "high food prices", "ja": "高い食料品価格", "type": "attribute", "points": 30},
+        {"text": "gas prices", "ja": "ガソリン価格", "type": "object", "points": 30},
+        {"text": "look worried", "ja": "心配そうに見える", "type": "inference", "points": 30},
+        {"text": "in the supermarket", "ja": "スーパーで", "type": "detail", "points": 20},
+        {"text": "delivery truck", "ja": "配送トラック", "type": "object", "points": 30},
+        {"text": "cost of food", "ja": "食料品の費用", "type": "object", "points": 30},
+        {"text": "due to fuel costs", "ja": "燃料費のために", "type": "detail", "points": 40},
+        {"text": "think about the economy", "ja": "経済について考える", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The woman is looking at the price tag.", "grammar": "現在進行形", "ja": "女性が値札を見ています。", "type": "gist", "points": 30},
+        {"text": "The prices of meat are rising.", "grammar": "現在進行形", "ja": "肉の価格が上がっています。", "type": "gist", "points": 40},
+        {"text": "High gas prices make food expensive.", "grammar": "make O C", "ja": "高いガソリン価格が食料品を高くします。", "type": "inference", "points": 40},
+        {"text": "The truck delivers food to the store.", "grammar": "一般動詞 + 場所", "ja": "トラックが店に食べ物を届けます。", "type": "gist", "points": 30},
+        {"text": "She looks worried about her money.", "grammar": "look + 形容詞", "ja": "彼女はお金について心配そうに見えます。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "consumer", "ja": "消費者", "type": "object", "points": 30},
+        {"text": "affordability", "ja": "手頃な価格", "type": "inference", "points": 30},
+        {"text": "logistics", "ja": "物流", "type": "object", "points": 30},
+        {"text": "skyrocketing", "ja": "急騰している", "type": "attribute", "points": 30},
+        {"text": "burden", "ja": "負担", "type": "inference", "points": 30},
+        {"text": "significant", "ja": "重大な", "type": "attribute", "points": 30},
+        {"text": "fluctuation", "ja": "変動", "type": "inference", "points": 30},
+        {"text": "impact", "ja": "影響を与える", "type": "gist", "points": 30},
+        {"text": "distribute", "ja": "流通させる", "type": "gist", "points": 30},
+        {"text": "analyze", "ja": "分析する", "type": "gist", "points": 20},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "freight", "ja": "貨物", "type": "object", "points": 30},
+        {"text": "soaring", "ja": "急上昇する", "type": "attribute", "points": 30},
+        {"text": "dramatically", "ja": "劇的に", "type": "detail", "points": 30},
+        {"text": "inflationary", "ja": "インフレの", "type": "attribute", "points": 30}
+      ],
+      "chunks": [
+        {"text": "skyrocketing food prices", "ja": "急騰する食料品価格", "type": "object", "points": 40},
+        {"text": "transportation logistics", "ja": "輸送の物流", "type": "object", "points": 40},
+        {"text": "economic burden", "ja": "経済的負担", "type": "inference", "points": 40},
+        {"text": "soaring fuel costs", "ja": "急上昇する燃料費", "type": "object", "points": 40},
+        {"text": "impact on affordability", "ja": "手頃さへの影響", "type": "inference", "points": 40},
+        {"text": "consequences of inflation", "ja": "インフレの結果", "type": "inference", "points": 40},
+        {"text": "distribute essential goods", "ja": "必需品を流通させる", "type": "gist", "points": 40},
+        {"text": "dramatically rising costs", "ja": "劇的に上昇するコスト", "type": "attribute", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The woman is concerned because the price of meat has risen significantly.", "grammar": "接続詞 because / 現在完了形", "ja": "肉の価格が大幅に上昇したため、女性は懸念しています。", "type": "inference", "points": 50},
+        {"text": "Skyrocketing fuel costs are impacting food transportation logistics.", "grammar": "現在進行形", "ja": "急騰する燃料費が食品の輸送物流に影響を与えています。", "type": "gist", "points": 50},
+        {"text": "It looks like inflation is placing a heavy burden on consumers.", "grammar": "It looks like~", "ja": "インフレが消費者に重い負担をかけているように見えます。", "type": "inference", "points": 50},
+        {"text": "The connection between gas prices and food costs illustrates the complexity of the economy.", "grammar": "一般動詞", "ja": "ガソリン価格と食料品コストの関連性は経済の複雑さを示しています。", "type": "inference", "points": 50},
+        {"text": "Consumers are struggling to afford basic goods due to economic changes.", "grammar": "現在進行形", "ja": "消費者は経済変化により必需品を買うのに苦労しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "woman": { "x": 50, "y": 60 },
+    "meat": { "x": 15, "y": 60 },
+    "cart": { "x": 70, "y": 90 },
+    "shelf": { "x": 10, "y": 30 },
+    "tag": { "x": 10, "y": 55 },
+    "truck": { "x": 85, "y": 30 },
+    "gaspump": { "x": 70, "y": 20 },
+    "bubble": { "x": 75, "y": 30 },
+    "arrow": { "x": 50, "y": 40 },
+    "floor": { "x": 80, "y": 95 },
+    "ceiling": { "x": 50, "y": 5 },
+    "products": { "x": 15, "y": 20 },
+    "carthandle": { "x": 60, "y": 80 },
+    "price": { "x": 12, "y": 58 },
+    "shelfright": { "x": 85, "y": 70 }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_805",
+  "imageSrc": "assets/images/mosaic/805.webp",
+  "description": "日本文化を体験する二人",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男性", "type": "object", "points": 20},
+        {"text": "woman", "ja": "女性", "type": "object", "points": 20},
+        {"text": "tea", "ja": "お茶", "type": "object", "points": 20},
+        {"text": "cup", "ja": "カップ", "type": "object", "points": 20},
+        {"text": "room", "ja": "部屋", "type": "object", "points": 20},
+        {"text": "garden", "ja": "庭", "type": "object", "points": 20},
+        {"text": "sit", "ja": "座る", "type": "gist", "points": 20},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑", "type": "attribute", "points": 10},
+        {"text": "house", "ja": "家", "type": "object", "points": 10},
+        {"text": "tree", "ja": "木", "type": "object", "points": 10},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 10},
+        {"text": "pour", "ja": "注ぐ", "type": "gist", "points": 20},
+        {"text": "floor", "ja": "床", "type": "object", "points": 10},
+        {"text": "kind", "ja": "親切な", "type": "inference", "points": 10}
+      ],
+      "chunks": [
+        {"text": "in a room", "ja": "部屋の中で", "type": "detail", "points": 20},
+        {"text": "on the floor", "ja": "床の上に", "type": "detail", "points": 20},
+        {"text": "a blue shirt", "ja": "青いシャツ", "type": "attribute", "points": 20},
+        {"text": "the green garden", "ja": "緑の庭", "type": "attribute", "points": 20},
+        {"text": "sit on the floor", "ja": "床に座る", "type": "gist", "points": 20},
+        {"text": "pour tea", "ja": "お茶を注ぐ", "type": "gist", "points": 20},
+        {"text": "a small cup", "ja": "小さなカップ", "type": "object", "points": 20},
+        {"text": "tea time", "ja": "お茶の時間", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a man.", "grammar": "I see~", "ja": "男性が見えます。", "type": "object", "points": 30},
+        {"text": "The tea is hot.", "grammar": "The is~", "ja": "お茶は熱いです。", "type": "attribute", "points": 30},
+        {"text": "They are sitting.", "grammar": "are ~ing", "ja": "彼らは座っています。", "type": "gist", "points": 30},
+        {"text": "I like the garden.", "grammar": "I like~", "ja": "庭が好きです。", "type": "inference", "points": 30},
+        {"text": "She has a kimono.", "grammar": "She has~", "ja": "彼女は着物を着ています。", "type": "object", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "kneeling", "ja": "ひざまずく", "type": "gist", "points": 30},
+        {"text": "traditional", "ja": "伝統的な", "type": "attribute", "points": 30},
+        {"text": "kimono", "ja": "着物", "type": "object", "points": 20},
+        {"text": "ceremony", "ja": "儀式", "type": "object", "points": 20},
+        {"text": "tatami", "ja": "畳", "type": "object", "points": 20},
+        {"text": "pouring", "ja": "注いでいる", "type": "gist", "points": 20},
+        {"text": "peaceful", "ja": "平和な", "type": "inference", "points": 30},
+        {"text": "respect", "ja": "敬意", "type": "inference", "points": 20},
+        {"text": "interact", "ja": "交流する", "type": "gist", "points": 20},
+        {"text": "landscape", "ja": "風景", "type": "object", "points": 20},
+        {"text": "culture", "ja": "文化", "type": "inference", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20},
+        {"text": "enjoy", "ja": "楽しむ", "type": "gist", "points": 20},
+        {"text": "experience", "ja": "体験", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "sitting on the tatami", "ja": "畳の上に座って", "type": "detail", "points": 30},
+        {"text": "wearing a kimono", "ja": "着物を着ている", "type": "attribute", "points": 30},
+        {"text": "serving the tea", "ja": "お茶を出している", "type": "gist", "points": 30},
+        {"text": "looking at the garden", "ja": "庭を見ている", "type": "detail", "points": 30},
+        {"text": "Japanese tea ceremony", "ja": "日本の茶道", "type": "object", "points": 30},
+        {"text": "a beautiful garden view", "ja": "美しい庭の眺め", "type": "detail", "points": 30},
+        {"text": "enjoying the moment", "ja": "その瞬間を楽しんでいる", "type": "inference", "points": 30},
+        {"text": "traditional room", "ja": "伝統的な部屋", "type": "object", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The woman is serving tea to the man.", "grammar": "is ~ing", "ja": "女性が男性にお茶を出しています。", "type": "gist", "points": 40},
+        {"text": "They are sitting in a traditional Japanese room.", "grammar": "are ~ing", "ja": "彼らは日本の伝統的な部屋に座っています。", "type": "detail", "points": 40},
+        {"text": "It looks like a tea ceremony.", "grammar": "look like", "ja": "茶道のように見えます。", "type": "inference", "points": 40},
+        {"text": "The man is kneeling respectfully.", "grammar": "is ~ing", "ja": "男性は敬意を込めて座っています。", "type": "gist", "points": 40},
+        {"text": "I can see a beautiful garden outside.", "grammar": "can see", "ja": "外に美しい庭が見えます。", "type": "detail", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "seiza", "ja": "正座", "type": "gist", "points": 40},
+        {"text": "tranquility", "ja": "静けさ", "type": "inference", "points": 40},
+        {"text": "hospitality", "ja": "おもてなし", "type": "inference", "points": 40},
+        {"text": "authentic", "ja": "本物の", "type": "attribute", "points": 30},
+        {"text": "harmonious", "ja": "調和のとれた", "type": "attribute", "points": 30},
+        {"text": "ritual", "ja": "儀式", "type": "object", "points": 30},
+        {"text": "serene", "ja": "穏やかな", "type": "attribute", "points": 30},
+        {"text": "appreciation", "ja": "鑑賞", "type": "inference", "points": 30},
+        {"text": "cultural", "ja": "文化的な", "type": "attribute", "points": 30},
+        {"text": "interaction", "ja": "交流", "type": "gist", "points": 30},
+        {"text": "meticulous", "ja": "細心の", "type": "attribute", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "setting", "ja": "環境", "type": "object", "points": 30},
+        {"text": "graceful", "ja": "優雅な", "type": "attribute", "points": 30},
+        {"text": "experience", "ja": "経験", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "performing a tea ceremony", "ja": "茶道を行う", "type": "gist", "points": 40},
+        {"text": "a tranquil garden backdrop", "ja": "穏やかな庭を背景に", "type": "detail", "points": 40},
+        {"text": "graceful kimono attire", "ja": "優雅な着物姿", "type": "attribute", "points": 40},
+        {"text": "sitting in seiza position", "ja": "正座で座っている", "type": "detail", "points": 40},
+        {"text": "deep cultural exchange", "ja": "深い文化交流", "type": "inference", "points": 40},
+        {"text": "the spirit of hospitality", "ja": "おもてなしの心", "type": "inference", "points": 40},
+        {"text": "meticulously maintained garden", "ja": "手入れの行き届いた庭", "type": "detail", "points": 40},
+        {"text": "harmonious indoor setting", "ja": "調和のとれた室内の環境", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The woman is gracefully performing a traditional tea ceremony for her guest.", "grammar": "present continuous", "ja": "女性はゲストのために優雅に伝統的な茶道を行っています。", "type": "gist", "points": 50},
+        {"text": "They are sitting in seiza, demonstrating mutual respect.", "grammar": "participle", "ja": "彼らは正座をして座り、相互の敬意を示しています。", "type": "inference", "points": 50},
+        {"text": "Outside, the serene Japanese garden provides a tranquil backdrop for their interaction.", "grammar": "present simple", "ja": "外では、静穏な日本庭園が彼らの交流に穏やかな背景を提供しています。", "type": "detail", "points": 50},
+        {"text": "The scene captures the authentic spirit of Japanese hospitality.", "grammar": "present simple", "ja": "この光景は、日本のおもてなしの本物の精神を捉えています。", "type": "inference", "points": 50},
+        {"text": "It is a harmonious moment where culture and tradition meet.", "grammar": "It is a ~", "ja": "文化と伝統が出会う、調和のとれた瞬間です。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "man_head": { "x": 35, "y": 25 },
+    "man_shirt": { "x": 30, "y": 45 },
+    "man_hand": { "x": 45, "y": 75 },
+    "woman_head": { "x": 65, "y": 25 },
+    "woman_kimono": { "x": 70, "y": 50 },
+    "woman_hand_teapot": { "x": 55, "y": 75 },
+    "tea_bowl_man": { "x": 45, "y": 85 },
+    "tea_bowl_woman": { "x": 55, "y": 85 },
+    "tatami_floor": { "x": 50, "y": 90 },
+    "garden_trees": { "x": 50, "y": 35 },
+    "sliding_door_left": { "x": 5, "y": 50 },
+    "sliding_door_right": { "x": 95, "y": 50 },
+    "teapot": { "x": 55, "y": 75 },
+    "garden_stones": { "x": 45, "y": 50 },
+    "man_knees": { "x": 30, "y": 70 },
+    "woman_knees": { "x": 70, "y": 75 }
+  }
+}

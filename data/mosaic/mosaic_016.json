@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_016",
+  "imageSrc": "assets/images/mosaic/016.webp",
+  "description": "窓辺の植物と壁掛け時計",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "clock", "ja": "時計", "type": "object", "points": 10},
+        {"text": "wall", "ja": "壁", "type": "object", "points": 10},
+        {"text": "plant", "ja": "植物", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+        {"text": "sun", "ja": "太陽", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤色", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑色", "type": "attribute", "points": 10},
+        {"text": "yellow", "ja": "黄色", "type": "attribute", "points": 10},
+        {"text": "white", "ja": "白色", "type": "attribute", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "room", "ja": "部屋", "type": "detail", "points": 20},
+        {"text": "see", "ja": "見る", "type": "gist", "points": 10},
+        {"text": "warm", "ja": "暖かい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a red clock", "ja": "赤い時計", "type": "attribute", "points": 20},
+        {"text": "a green plant", "ja": "緑の植物", "type": "attribute", "points": 20},
+        {"text": "a big window", "ja": "大きな窓", "type": "attribute", "points": 20},
+        {"text": "on the wall", "ja": "壁に", "type": "detail", "points": 20},
+        {"text": "on the table", "ja": "テーブルの上に", "type": "detail", "points": 20},
+        {"text": "yellow sun", "ja": "黄色の太陽", "type": "attribute", "points": 20},
+        {"text": "in the room", "ja": "部屋の中に", "type": "detail", "points": 20},
+        {"text": "very warm", "ja": "とても暖かい", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a red clock.", "grammar": "I see~", "ja": "赤い時計が見えます。", "type": "object", "points": 30},
+        {"text": "The clock is on the wall.", "grammar": "be動詞 + 前置詞", "ja": "時計は壁にあります。", "type": "detail", "points": 20},
+        {"text": "This is a green plant.", "grammar": "This is~", "ja": "これは緑の植物です。", "type": "object", "points": 20},
+        {"text": "The sun is yellow.", "grammar": "SVC（現在形）", "ja": "太陽は黄色です。", "type": "attribute", "points": 20},
+        {"text": "The room is warm.", "grammar": "SVC（現在形）", "ja": "部屋は暖かいです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "sunset", "ja": "夕日", "type": "object", "points": 20},
+        {"text": "evening", "ja": "夕方", "type": "inference", "points": 20},
+        {"text": "pattern", "ja": "模様", "type": "object", "points": 20},
+        {"text": "wallpaper", "ja": "壁紙", "type": "object", "points": 30},
+        {"text": "pot", "ja": "鉢", "type": "object", "points": 20},
+        {"text": "curtain", "ja": "カーテン", "type": "object", "points": 20},
+        {"text": "leaf", "ja": "葉", "type": "object", "points": 20},
+        {"text": "round", "ja": "丸い", "type": "attribute", "points": 20},
+        {"text": "beautiful", "ja": "美しい", "type": "attribute", "points": 20},
+        {"text": "hang", "ja": "掛かっている", "type": "gist", "points": 20},
+        {"text": "place", "ja": "置く", "type": "gist", "points": 20},
+        {"text": "next to", "ja": "〜の隣に", "type": "detail", "points": 20},
+        {"text": "outside", "ja": "外に", "type": "detail", "points": 20},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20}
+      ],
+      "chunks": [
+        {"text": "hanging on the wall", "ja": "壁に掛かっている", "type": "gist", "points": 30},
+        {"text": "next to the window", "ja": "窓の隣に", "type": "detail", "points": 30},
+        {"text": "a patterned pot", "ja": "模様のある鉢", "type": "object", "points": 30},
+        {"text": "looking at the clock", "ja": "時計を見て", "type": "gist", "points": 20},
+        {"text": "outside the window", "ja": "窓の外に", "type": "detail", "points": 20},
+        {"text": "a setting sun", "ja": "沈む太陽", "type": "object", "points": 30},
+        {"text": "a beautiful sunset", "ja": "美しい夕日", "type": "inference", "points": 30},
+        {"text": "placed on the table", "ja": "テーブルに置かれて", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There is a round clock on the wall.", "grammar": "There is~ / 場所の前置詞", "ja": "壁に丸い時計があります。", "type": "detail", "points": 40},
+        {"text": "A green plant is placed in a beautiful pot.", "grammar": "受動態", "ja": "緑の植物が美しい鉢に置かれています。", "type": "gist", "points": 40},
+        {"text": "We can see the setting sun outside the window.", "grammar": "助動詞can", "ja": "窓の外に沈む太陽が見えます。", "type": "object", "points": 30},
+        {"text": "The room is quiet because it is evening.", "grammar": "接続詞because", "ja": "夕方なので部屋は静かです。", "type": "inference", "points": 40},
+        {"text": "The clock has a red frame.", "grammar": "has（現在形）", "ja": "時計は赤い枠を持っています。", "type": "attribute", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "timepiece", "ja": "時計（類義語）", "type": "object", "points": 30},
+        {"text": "foliage", "ja": "葉・群葉", "type": "object", "points": 30},
+        {"text": "ceramic", "ja": "陶器の", "type": "attribute", "points": 30},
+        {"text": "dusk", "ja": "夕暮れ", "type": "inference", "points": 30},
+        {"text": "glowing", "ja": "輝く", "type": "attribute", "points": 30},
+        {"text": "patterned", "ja": "模様のある", "type": "attribute", "points": 30},
+        {"text": "decorative", "ja": "装飾的な", "type": "attribute", "points": 30},
+        {"text": "serene", "ja": "穏やかな", "type": "inference", "points": 30},
+        {"text": "tranquil", "ja": "静かな・穏やかな", "type": "inference", "points": 30},
+        {"text": "illuminate", "ja": "照らす", "type": "gist", "points": 30},
+        {"text": "cast", "ja": "（光や影を）投げる", "type": "gist", "points": 30},
+        {"text": "mount", "ja": "設置する・取り付ける", "type": "gist", "points": 30},
+        {"text": "reveal", "ja": "見せる・現す", "type": "gist", "points": 30},
+        {"text": "beneath", "ja": "〜の下に", "type": "detail", "points": 30},
+        {"text": "indoors", "ja": "屋内で", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a decorative red timepiece", "ja": "装飾的な赤い時計", "type": "object", "points": 40},
+        {"text": "healthy green foliage", "ja": "健康的な緑の葉", "type": "attribute", "points": 40},
+        {"text": "a beautifully patterned ceramic pot", "ja": "美しく模様が描かれた陶器の鉢", "type": "object", "points": 40},
+        {"text": "illuminated by the setting sun", "ja": "沈む太陽に照らされて", "type": "gist", "points": 40},
+        {"text": "a serene atmosphere", "ja": "穏やかな雰囲気", "type": "inference", "points": 30},
+        {"text": "a glowing orange sky", "ja": "オレンジ色に輝く空", "type": "attribute", "points": 40},
+        {"text": "casting a warm light", "ja": "暖かい光を投げかけて", "type": "gist", "points": 40},
+        {"text": "resting on the wooden table", "ja": "木製のテーブルの上に置かれて", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A decorative red timepiece is mounted on the beautifully patterned wall.", "grammar": "受動態 / 副詞", "ja": "美しく模様が描かれた壁に、装飾的な赤い時計が取り付けられています。", "type": "gist", "points": 50},
+        {"text": "The healthy green foliage is resting in a beautifully patterned ceramic pot.", "grammar": "現在進行形 / 前置詞", "ja": "健康的な緑の葉が、美しく模様が描かれた陶器の鉢に置かれています。", "type": "gist", "points": 40},
+        {"text": "The setting sun outside the window illuminates the room with warm light.", "grammar": "現在形 / 前置詞with", "ja": "窓の外の夕日が、暖かい光で部屋を照らしています。", "type": "gist", "points": 50},
+        {"text": "It looks like a tranquil evening because the sky is glowing orange.", "grammar": "It looks like~ / 接続詞because", "ja": "空がオレンジ色に輝いているので、穏やかな夕暮れのように見えます。", "type": "inference", "points": 50},
+        {"text": "The drawn curtain on the right reveals a beautiful sunset.", "grammar": "過去分詞の形容詞的用法", "ja": "右側に引かれたカーテンが、美しい夕日を見せています。", "type": "detail", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "clock": { "x": 22, "y": 30 },
+    "clock_face": { "x": 22, "y": 30 },
+    "clock_hand": { "x": 22, "y": 30 },
+    "wall": { "x": 10, "y": 70 },
+    "wallpaper_pattern": { "x": 28, "y": 65 },
+    "plant": { "x": 48, "y": 50 },
+    "leaf": { "x": 40, "y": 40 },
+    "pot": { "x": 50, "y": 85 },
+    "pot_pattern": { "x": 50, "y": 88 },
+    "table": { "x": 40, "y": 95 },
+    "window_frame": { "x": 65, "y": 40 },
+    "glass": { "x": 75, "y": 60 },
+    "sun": { "x": 78, "y": 68 },
+    "sky": { "x": 75, "y": 20 },
+    "cloud": { "x": 80, "y": 30 },
+    "curtain": { "x": 95, "y": 50 }
+  }
+}

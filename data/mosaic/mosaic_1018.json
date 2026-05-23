@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1018",
+  "imageSrc": "assets/images/mosaic/1018.jpg",
+  "description": "観光地の物価上昇とオーバーツーリズムの経済的影響",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "street", "ja": "通り", "type": "object", "points": 10},
+        {"text": "shop", "ja": "店", "type": "object", "points": 10},
+        {"text": "people", "ja": "人々", "type": "object", "points": 10},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 10},
+        {"text": "money", "ja": "お金", "type": "object", "points": 20},
+        {"text": "graph", "ja": "グラフ", "type": "object", "points": 10},
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "high", "ja": "高い", "type": "attribute", "points": 20},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 10},
+        {"text": "shop", "ja": "買い物する", "type": "gist", "points": 10},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "rich", "ja": "裕福な", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "many shops", "ja": "たくさんのお店", "type": "object", "points": 20},
+        {"text": "a busy street", "ja": "混んでいる通り", "type": "attribute", "points": 20},
+        {"text": "lots of money", "ja": "たくさんのお金", "type": "object", "points": 20},
+        {"text": "walk on the street", "ja": "通りを歩く", "type": "gist", "points": 20},
+        {"text": "go shopping", "ja": "買い物に行く", "type": "gist", "points": 20},
+        {"text": "a high graph", "ja": "高いグラフ", "type": "object", "points": 20},
+        {"text": "have a bag", "ja": "かばんを持つ", "type": "gist", "points": 20},
+        {"text": "look at money", "ja": "お金を見る", "type": "gist", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see many shops.", "grammar": "I see~", "ja": "たくさんのお店が見えます。", "type": "object", "points": 20},
+        {"text": "There are many people.", "grammar": "There is/are~", "ja": "たくさんの人がいます。", "type": "object", "points": 20},
+        {"text": "The people have money.", "grammar": "have/has", "ja": "人々はお金を持っています。", "type": "object", "points": 30},
+        {"text": "The graph is high.", "grammar": "be動詞", "ja": "グラフは高いです。", "type": "attribute", "points": 20},
+        {"text": "They walk on the street.", "grammar": "一般動詞", "ja": "彼らは通りを歩きます。", "type": "gist", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 20},
+        {"text": "price", "ja": "価格", "type": "object", "points": 20},
+        {"text": "profit", "ja": "利益", "type": "inference", "points": 30},
+        {"text": "market", "ja": "市場", "type": "object", "points": 20},
+        {"text": "suitcase", "ja": "スーツケース", "type": "object", "points": 20},
+        {"text": "crowded", "ja": "混雑した", "type": "attribute", "points": 20},
+        {"text": "expensive", "ja": "高価な", "type": "attribute", "points": 20},
+        {"text": "rise", "ja": "上がる", "type": "gist", "points": 30},
+        {"text": "increase", "ja": "増加する", "type": "gist", "points": 30},
+        {"text": "shop", "ja": "買い物する", "type": "gist", "points": 10},
+        {"text": "visit", "ja": "訪れる", "type": "gist", "points": 20},
+        {"text": "travel", "ja": "旅行する", "type": "gist", "points": 20},
+        {"text": "busy", "ja": "忙しい", "type": "attribute", "points": 10},
+        {"text": "economy", "ja": "経済", "type": "inference", "points": 30},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "price increase", "ja": "価格上昇", "type": "inference", "points": 40},
+        {"text": "a lot of money", "ja": "たくさんのお金", "type": "object", "points": 20},
+        {"text": "visit the city", "ja": "都市を訪れる", "type": "gist", "points": 20},
+        {"text": "carry a suitcase", "ja": "スーツケースを運ぶ", "type": "gist", "points": 20},
+        {"text": "a crowded street", "ja": "混雑した通り", "type": "attribute", "points": 30},
+        {"text": "make a profit", "ja": "利益を上げる", "type": "gist", "points": 40},
+        {"text": "think about the price", "ja": "価格について考える", "type": "inference", "points": 20},
+        {"text": "look expensive", "ja": "高価に見える", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "Many tourists are visiting the city.", "grammar": "現在進行形", "ja": "多くの観光客がその都市を訪れています。", "type": "gist", "points": 30},
+        {"text": "The prices are rising in this area.", "grammar": "現在進行形", "ja": "この地域では価格が上がっています。", "type": "gist", "points": 40},
+        {"text": "Shops make a lot of profit from tourists.", "grammar": "一般動詞", "ja": "お店は観光客からたくさんの利益を得ます。", "type": "inference", "points": 40},
+        {"text": "There are many people with suitcases on the street.", "grammar": "There is/are~ + 場所", "ja": "通りにはスーツケースを持ったたくさんの人がいます。", "type": "detail", "points": 30},
+        {"text": "This picture shows the growth of the local economy.", "grammar": "一般動詞", "ja": "この絵は地域経済の成長を示しています。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "inflation", "ja": "インフレ", "type": "inference", "points": 30},
+        {"text": "economy", "ja": "経済", "type": "inference", "points": 30},
+        {"text": "tourism", "ja": "観光", "type": "object", "points": 30},
+        {"text": "revenue", "ja": "収益", "type": "inference", "points": 30},
+        {"text": "cost", "ja": "コスト・費用", "type": "object", "points": 20},
+        {"text": "growth", "ja": "成長", "type": "inference", "points": 30},
+        {"text": "fluctuate", "ja": "変動する", "type": "gist", "points": 30},
+        {"text": "soar", "ja": "急騰する", "type": "gist", "points": 30},
+        {"text": "boost", "ja": "押し上げる", "type": "gist", "points": 30},
+        {"text": "generate", "ja": "生み出す", "type": "gist", "points": 20},
+        {"text": "dramatically", "ja": "劇的に", "type": "detail", "points": 30},
+        {"text": "consequently", "ja": "結果として", "type": "detail", "points": 30},
+        {"text": "significant", "ja": "重大な", "type": "attribute", "points": 30},
+        {"text": "prosperous", "ja": "繁栄した", "type": "attribute", "points": 30},
+        {"text": "affordability", "ja": "手頃な価格であること", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "economic growth", "ja": "経済成長", "type": "inference", "points": 40},
+        {"text": "soaring prices", "ja": "急騰する価格", "type": "object", "points": 40},
+        {"text": "generate massive revenue", "ja": "莫大な収益を生み出す", "type": "gist", "points": 40},
+        {"text": "boost the local economy", "ja": "地域経済を押し上げる", "type": "gist", "points": 40},
+        {"text": "significant inflation", "ja": "重大なインフレ", "type": "inference", "points": 40},
+        {"text": "a prosperous tourist destination", "ja": "繁栄した観光地", "type": "object", "points": 30},
+        {"text": "consequently affect affordability", "ja": "結果として手頃さを損なう", "type": "inference", "points": 40},
+        {"text": "dramatically increase costs", "ja": "コストを劇的に増加させる", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the economic growth caused by massive tourism.", "grammar": "過去分詞の形容詞的用法", "ja": "この絵は大規模な観光によって引き起こされる経済成長を示しています。", "type": "inference", "points": 50},
+        {"text": "Local shops generate massive revenue as prices soar dramatically.", "grammar": "接続詞 as", "ja": "価格が劇的に急騰するにつれて、地元のお店は莫大な収益を生み出します。", "type": "gist", "points": 50},
+        {"text": "It looks like the tourism industry boosts the local economy.", "grammar": "It looks like~", "ja": "観光産業が地域経済を押し上げているように見えます。", "type": "inference", "points": 50},
+        {"text": "Significant inflation might negatively affect the affordability for local residents.", "grammar": "助動詞 might", "ja": "重大なインフレが地元住民の手頃さを損なう可能性があります。", "type": "inference", "points": 50},
+        {"text": "We should consider the consequences of rapid economic growth in tourist areas.", "grammar": "助動詞should", "ja": "私たちは観光地における急速な経済成長の結果を考慮すべきです。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "store": { "x": 15, "y": 65 },
+    "money": { "x": 68, "y": 30 },
+    "graph": { "x": 83, "y": 30 },
+    "street": { "x": 45, "y": 80 },
+    "tourist": { "x": 35, "y": 70 },
+    "suitcase": { "x": 38, "y": 82 },
+    "people": { "x": 55, "y": 75 },
+    "building": { "x": 20, "y": 40 },
+    "window": { "x": 25, "y": 18 },
+    "bag": { "x": 10, "y": 55 },
+    "man": { "x": 15, "y": 75 },
+    "woman": { "x": 90, "y": 70 },
+    "bubble": { "x": 75, "y": 25 },
+    "arrow": { "x": 45, "y": 35 },
+    "barbershop": { "x": 25, "y": 50 }
+  }
+}

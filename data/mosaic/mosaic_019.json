@@ -1,0 +1,135 @@
+{
+  "id": "mosaic_019",
+  "imageSrc": "assets/images/mosaic/019.webp",
+  "description": "夜の勉強机",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "desk", "ja": "机", "type": "object", "points": 20},
+        {"text": "lamp", "ja": "ランプ", "type": "object", "points": 20},
+        {"text": "book", "ja": "本", "type": "object", "points": 20},
+        {"text": "light", "ja": "光", "type": "attribute", "points": 10},
+        {"text": "night", "ja": "夜", "type": "inference", "points": 20},
+        {"text": "star", "ja": "星", "type": "object", "points": 20},
+        {"text": "laptop", "ja": "ノートパソコン", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "brown", "ja": "茶色い", "type": "attribute", "points": 10},
+        {"text": "study", "ja": "勉強する", "type": "gist", "points": 20},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "dark", "ja": "暗い", "type": "attribute", "points": 10},
+        {"text": "home", "ja": "家", "type": "inference", "points": 20},
+        {"text": "room", "ja": "部屋", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "on the desk", "ja": "机の上に", "type": "detail", "points": 20},
+        {"text": "under the desk", "ja": "机の下に", "type": "detail", "points": 20},
+        {"text": "a desk lamp", "ja": "電気スタンド", "type": "object", "points": 20},
+        {"text": "at night", "ja": "夜に", "type": "inference", "points": 30},
+        {"text": "books in a stack", "ja": "積み重なった本", "type": "object", "points": 20},
+        {"text": "the bright light", "ja": "明るい光", "type": "attribute", "points": 20},
+        {"text": "looking at stars", "ja": "星を見ている", "type": "gist", "points": 30},
+        {"text": "very quiet", "ja": "とても静か", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a laptop.", "grammar": "I see~", "ja": "ノートパソコンが見えます。", "type": "object", "points": 30},
+        {"text": "The light is bright.", "grammar": "is + adj", "ja": "光が明るいです。", "type": "attribute", "points": 30},
+        {"text": "Books are under the desk.", "grammar": "are + prep", "ja": "本が机の下にあります。", "type": "detail", "points": 30},
+        {"text": "It is night time.", "grammar": "It is~", "ja": "夜の時間です。", "type": "inference", "points": 30},
+        {"text": "I study at my desk.", "grammar": "I + verb", "ja": "私は机で勉強します。", "type": "gist", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "computer", "ja": "コンピューター", "type": "object", "points": 20},
+        {"text": "illuminate", "ja": "照らす", "type": "gist", "points": 30},
+        {"text": "midnight", "ja": "真夜中", "type": "inference", "points": 30},
+        {"text": "stack", "ja": "積み重ね", "type": "object", "points": 20},
+        {"text": "nocturnal", "ja": "夜の", "type": "attribute", "points": 30},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20},
+        {"text": "working", "ja": "仕事中", "type": "gist", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20},
+        {"text": "reading", "ja": "読書", "type": "gist", "points": 20},
+        {"text": "screen", "ja": "画面", "type": "object", "points": 20},
+        {"text": "moonlight", "ja": "月光", "type": "inference", "points": 30},
+        {"text": "peaceful", "ja": "平和な", "type": "inference", "points": 20},
+        {"text": "focused", "ja": "集中した", "type": "attribute", "points": 30},
+        {"text": "furniture", "ja": "家具", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "working at night", "ja": "夜に仕事をしている", "type": "gist", "points": 40},
+        {"text": "under the table", "ja": "テーブルの下に", "type": "detail", "points": 20},
+        {"text": "the light of the lamp", "ja": "ランプの光", "type": "object", "points": 30},
+        {"text": "studying for the test", "ja": "テスト勉強中", "type": "inference", "points": 40},
+        {"text": "next to the window", "ja": "窓の隣に", "type": "detail", "points": 20},
+        {"text": "a laptop computer", "ja": "ノートパソコン", "type": "object", "points": 20},
+        {"text": "three books stacked", "ja": "積み重なった3冊の本", "type": "object", "points": 30},
+        {"text": "through the window", "ja": "窓を通して", "type": "detail", "points": 20}
+      ],
+      "sentences": [
+        {"text": "There is a lamp on the desk.", "grammar": "There is/are", "ja": "机の上にランプがあります。", "type": "object", "points": 40},
+        {"text": "The laptop is being used at night.", "grammar": "passive voice", "ja": "夜にパソコンが使われています。", "type": "gist", "points": 40},
+        {"text": "I can see stars through the window.", "grammar": "can + verb", "ja": "窓から星が見えます。", "type": "inference", "points": 40},
+        {"text": "Someone is studying late.", "grammar": "is ~ing", "ja": "誰かが遅くまで勉強しています。", "type": "inference", "points": 40},
+        {"text": "The books are stacked under the table.", "grammar": "are + pp", "ja": "本がテーブルの下に積まれています。", "type": "detail", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "workstation", "ja": "作業環境", "type": "object", "points": 30},
+        {"text": "illumination", "ja": "照明", "type": "attribute", "points": 30},
+        {"text": "nocturnal", "ja": "夜の", "type": "attribute", "points": 30},
+        {"text": "industrious", "ja": "勤勉な", "type": "inference", "points": 40},
+        {"text": "tranquility", "ja": "静寂", "type": "inference", "points": 40},
+        {"text": "aesthetic", "ja": "美的", "type": "attribute", "points": 30},
+        {"text": "arrangement", "ja": "配置", "type": "object", "points": 30},
+        {"text": "peripheral", "ja": "周辺の", "type": "attribute", "points": 20},
+        {"text": "intellectual", "ja": "知的な", "type": "inference", "points": 40},
+        {"text": "solitude", "ja": "孤独", "type": "inference", "points": 40},
+        {"text": "environment", "ja": "環境", "type": "object", "points": 20},
+        {"text": "concentrated", "ja": "集中した", "type": "attribute", "points": 30},
+        {"text": "dimly-lit", "ja": "薄暗い", "type": "attribute", "points": 30},
+        {"text": "composition", "ja": "構成", "type": "object", "points": 20},
+        {"text": "starlit", "ja": "星明かりの", "type": "attribute", "points": 30}
+      ],
+      "chunks": [
+        {"text": "a warm pool of light", "ja": "温かい光の溜まり", "type": "attribute", "points": 40},
+        {"text": "in the quiet of the night", "ja": "夜の静寂の中で", "type": "inference", "points": 40},
+        {"text": "creating a studious mood", "ja": "勉強する雰囲気を作る", "type": "inference", "points": 40},
+        {"text": "resting on the wooden floor", "ja": "木の床に置かれた", "type": "detail", "points": 30},
+        {"text": "a well-organized setup", "ja": "よく整理された配置", "type": "object", "points": 30},
+        {"text": "gazing at the night sky", "ja": "夜空を見つめる", "type": "gist", "points": 40},
+        {"text": "late night work session", "ja": "深夜の作業時間", "type": "inference", "points": 40},
+        {"text": "illuminated laptop screen", "ja": "照らされたパソコンの画面", "type": "object", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The desk lamp casts a warm glow on the laptop.", "grammar": "S+V+O", "ja": "電気スタンドがパソコンに温かい光を投げかけています。", "type": "detail", "points": 50},
+        {"text": "It appears as though the room is prepared for deep work.", "grammar": "It appears as though", "ja": "部屋が深い作業のために準備されているようです。", "type": "inference", "points": 50},
+        {"text": "Beyond the window, a starlit night sky stretches out.", "grammar": "Prepositional phrase", "ja": "窓の外には、星空が広がっています。", "type": "detail", "points": 50},
+        {"text": "The stack of books suggests a serious study session.", "grammar": "S+V+O", "ja": "本の山は、真剣な勉強の時間を示唆しています。", "type": "inference", "points": 50},
+        {"text": "This setup provides an ideal environment for nocturnal study.", "grammar": "S+V+O", "ja": "この環境は、夜の勉強に理想的です。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "laptop": { "x": 55, "y": 40 },
+    "lamp": { "x": 40, "y": 20 },
+    "books_stack": { "x": 40, "y": 80 },
+    "window": { "x": 10, "y": 20 },
+    "stars": { "x": 5, "y": 10 },
+    "desk_surface": { "x": 50, "y": 60 },
+    "desk_leg_left": { "x": 25, "y": 70 },
+    "desk_leg_right": { "x": 95, "y": 70 },
+    "light_pool": { "x": 55, "y": 50 },
+    "lamp_head": { "x": 42, "y": 15 },
+    "room_wall_back": { "x": 60, "y": 20 },
+    "night_sky": { "x": 10, "y": 15 },
+    "floor": { "x": 50, "y": 90 },
+    "table_edge_right": { "x": 90, "y": 50 },
+    "laptop_keyboard": { "x": 55, "y": 45 },
+    "window_frame": { "x": 15, "y": 30 },
+    "book_top": { "x": 40, "y": 75 }
+  }
+}

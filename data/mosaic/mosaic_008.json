@@ -1,0 +1,129 @@
+{
+  "id": "mosaic_008",
+  "imageSrc": "assets/images/mosaic/008.webp",
+  "description": "リビングでくつろぐ猫と犬",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "cat", "ja": "猫", "type": "object", "points": 20},
+        {"text": "dog", "ja": "犬", "type": "object", "points": 20},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+        {"text": "book", "ja": "本", "type": "object", "points": 10},
+        {"text": "room", "ja": "部屋", "type": "object", "points": 10},
+        {"text": "plant", "ja": "植物", "type": "object", "points": 10},
+        {"text": "sofa", "ja": "ソファ", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "orange", "ja": "オレンジ色の", "type": "attribute", "points": 10},
+        {"text": "brown", "ja": "茶色の", "type": "attribute", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "sit", "ja": "座る", "type": "gist", "points": 20},
+        {"text": "sleep", "ja": "眠る", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 10}
+      ],
+      "chunks": [
+        {"text": "an orange cat", "ja": "オレンジ色の猫", "type": "attribute", "points": 20},
+        {"text": "a brown dog", "ja": "茶色の犬", "type": "attribute", "points": 20},
+        {"text": "a big table", "ja": "大きなテーブル", "type": "attribute", "points": 20},
+        {"text": "on the table", "ja": "テーブルの上に", "type": "detail", "points": 20},
+        {"text": "under the table", "ja": "テーブルの下に", "type": "detail", "points": 20},
+        {"text": "a green plant", "ja": "緑の植物", "type": "attribute", "points": 10},
+        {"text": "in the room", "ja": "部屋の中に", "type": "detail", "points": 10},
+        {"text": "open book", "ja": "開いた本", "type": "attribute", "points": 10}
+      ],
+      "sentences": [
+        {"text": "I see a cat.", "grammar": "I see~", "ja": "猫が見えます。", "type": "object", "points": 30},
+        {"text": "This is a dog.", "grammar": "This is~", "ja": "これは犬です。", "type": "object", "points": 30},
+        {"text": "The table is big.", "grammar": "be動詞", "ja": "そのテーブルは大きいです。", "type": "attribute", "points": 20},
+        {"text": "The cat is orange.", "grammar": "be動詞", "ja": "その猫はオレンジ色です。", "type": "attribute", "points": 20},
+        {"text": "The dog sleeps.", "grammar": "一般動詞（現在形）", "ja": "犬が眠っています。", "type": "gist", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "curtain", "ja": "カーテン", "category": "object"},
+        {"text": "rug", "ja": "ラグ（敷物）", "category": "object"},
+        {"text": "picture", "ja": "写真・絵", "category": "object"},
+        {"text": "cabinet", "ja": "棚", "category": "object"},
+        {"text": "floor", "ja": "床", "category": "object"},
+        {"text": "open", "ja": "開いている", "category": "attribute"},
+        {"text": "cute", "ja": "かわいい", "category": "attribute"},
+        {"text": "wooden", "ja": "木製の", "category": "attribute"},
+        {"text": "white", "ja": "白い", "category": "attribute"},
+        {"text": "rest", "ja": "休む", "category": "gist"},
+        {"text": "watch", "ja": "じっと見る", "category": "gist"},
+        {"text": "under", "ja": "〜の下に", "category": "detail"},
+        {"text": "on", "ja": "〜の上に", "category": "detail"},
+        {"text": "near", "ja": "〜の近くに", "category": "detail"},
+        {"text": "peaceful", "ja": "平和な", "category": "inference"}
+      ],
+      "chunks": [
+        {"text": "sleeping on the rug", "ja": "ラグの上で眠っている", "category": "gist"},
+        {"text": "sitting on the table", "ja": "テーブルの上に座っている", "category": "gist"},
+        {"text": "next to the window", "ja": "窓の隣に", "category": "detail"},
+        {"text": "look at something", "ja": "何かを見る", "category": "gist"},
+        {"text": "a striped cat", "ja": "縞模様の猫", "category": "attribute"},
+        {"text": "on a wooden table", "ja": "木製のテーブルの上に", "category": "detail"},
+        {"text": "a small potted plant", "ja": "小さな鉢植え", "category": "object"},
+        {"text": "look very relaxed", "ja": "とてもリラックスして見える", "category": "inference"}
+      ],
+      "sentences": [
+        {"text": "There is a cat on the table.", "grammar": "There is/are~", "ja": "テーブルの上に猫がいます。", "category": "detail"},
+        {"text": "A dog is sleeping under the table.", "grammar": "現在進行形", "ja": "犬がテーブルの下で眠っています。", "category": "gist"},
+        {"text": "The cat is looking at something.", "grammar": "現在進行形", "ja": "猫が何かを見ています。", "category": "gist"},
+        {"text": "We can see a book on the table.", "grammar": "助動詞can", "ja": "テーブルの上に本が見えます。", "category": "detail"},
+        {"text": "The room looks very peaceful.", "grammar": "look + 形容詞", "ja": "部屋はとても平和に見えます。", "category": "inference"}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "furniture", "ja": "家具", "category": "object"},
+        {"text": "frame", "ja": "額縁", "category": "object"},
+        {"text": "cushion", "ja": "クッション", "category": "object"},
+        {"text": "striped", "ja": "縞模様の", "category": "attribute"},
+        {"text": "adorable", "ja": "愛らしい", "category": "attribute"},
+        {"text": "cozy", "ja": "居心地の良い", "category": "inference"},
+        {"text": "relaxing", "ja": "くつろげる", "category": "inference"},
+        {"text": "comfortable", "ja": "快適な", "category": "inference"},
+        {"text": "silent", "ja": "静寂な", "category": "inference"},
+        {"text": "calm", "ja": "穏やかな", "category": "inference"},
+        {"text": "place", "ja": "置く", "category": "gist"},
+        {"text": "gaze", "ja": "見つめる", "category": "gist"},
+        {"text": "remain", "ja": "〜のままでいる", "category": "gist"},
+        {"text": "beside", "ja": "〜のそばに", "category": "detail"},
+        {"text": "beneath", "ja": "〜の真下に", "category": "detail"}
+      ],
+      "chunks": [
+        {"text": "completely fast asleep", "ja": "完全に熟睡して", "category": "attribute"},
+        {"text": "placed on the cabinet", "ja": "棚の上に置かれた", "category": "detail"},
+        {"text": "an empty picture frame", "ja": "空の額縁", "category": "attribute"},
+        {"text": "staring at something", "ja": "何かを見つめている", "category": "gist"},
+        {"text": "a calm atmosphere", "ja": "穏やかな雰囲気", "category": "inference"},
+        {"text": "having a relaxing time", "ja": "くつろいだ時間を過ごしている", "category": "inference"},
+        {"text": "neatly arranged furniture", "ja": "きちんと配置された家具", "category": "attribute"},
+        {"text": "resting comfortably beneath", "ja": "〜の下で快適に休んでいる", "category": "detail"}
+      ],
+      "sentences": [
+        {"text": "It looks like a peaceful afternoon in the living room.", "grammar": "It looks like~", "ja": "リビングルームでの平和な午後のように見えます。", "category": "inference"},
+        {"text": "A striped cat is sitting beside an open book.", "grammar": "前置詞", "ja": "縞模様の猫が開いた本のそばに座っています。", "category": "detail"},
+        {"text": "The dog is resting comfortably on the soft rug.", "grammar": "副詞の修飾", "ja": "犬は柔らかいラグの上で快適に休んでいます。", "category": "gist"},
+        {"text": "There is a small plant placed on the wooden cabinet.", "grammar": "過去分詞の形容詞的用法", "ja": "木製の棚の上には小さな植物が置かれています。", "category": "detail"},
+        {"text": "The room seems cozy and quiet because the animals are relaxing.", "grammar": "接続詞because", "ja": "動物たちがくつろいでいるので、部屋は居心地が良く静かに思えます。", "category": "inference"}
+      ]
+    }
+  },
+  "pins": {
+    "cat": { "x": 58, "y": 20 },
+    "dog": { "x": 50, "y": 80 },
+    "table": { "x": 50, "y": 45 },
+    "book": { "x": 35, "y": 32 },
+    "plant": { "x": 4, "y": 12 },
+    "cabinet": { "x": 8, "y": 30 },
+    "frame": { "x": 7, "y": 8 },
+    "sofa": { "x": 92, "y": 35 },
+    "curtain": { "x": 20, "y": 15 },
+    "rug": { "x": 50, "y": 90 },
+    "window": { "x": 50, "y": 5 }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1016",
+  "imageSrc": "assets/images/mosaic/1016.jpg",
+  "description": "配車アプリと交通渋滞",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "car", "ja": "車", "type": "object", "points": 10},
+        {"text": "taxi", "ja": "タクシー", "type": "object", "points": 10},
+        {"text": "street", "ja": "通り", "type": "object", "points": 10},
+        {"text": "building", "ja": "建物", "type": "object", "points": 10},
+        {"text": "phone", "ja": "電話・スマホ", "type": "object", "points": 10},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 10},
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "busy", "ja": "忙しい・混んでいる", "type": "inference", "points": 20},
+        {"text": "wait", "ja": "待つ", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+        {"text": "use", "ja": "使う", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a yellow taxi", "ja": "黄色いタクシー", "type": "object", "points": 20},
+        {"text": "many cars", "ja": "たくさんの車", "type": "object", "points": 10},
+        {"text": "on the street", "ja": "通りに", "type": "detail", "points": 20},
+        {"text": "a big bag", "ja": "大きなかばん", "type": "object", "points": 20},
+        {"text": "look at a phone", "ja": "スマホを見る", "type": "gist", "points": 30},
+        {"text": "wait for a car", "ja": "車を待つ", "type": "gist", "points": 30},
+        {"text": "many people", "ja": "たくさんの人", "type": "object", "points": 10},
+        {"text": "a busy street", "ja": "混んでいる通り", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see many cars.", "grammar": "I see~", "ja": "たくさんの車が見えます。", "type": "object", "points": 20},
+        {"text": "The taxi is yellow.", "grammar": "be動詞", "ja": "そのタクシーは黄色いです。", "type": "attribute", "points": 20},
+        {"text": "A man has a big bag.", "grammar": "have/has", "ja": "男の人が大きなかばんを持っています。", "type": "object", "points": 30},
+        {"text": "A woman looks at her phone.", "grammar": "一般動詞", "ja": "女の人がスマホを見ます。", "type": "gist", "points": 30},
+        {"text": "The street is very busy.", "grammar": "be動詞", "ja": "通りはとても混んでいます。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "smartphone", "ja": "スマートフォン", "type": "object", "points": 20},
+        {"text": "luggage", "ja": "手荷物", "type": "object", "points": 20},
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 20},
+        {"text": "traffic", "ja": "交通", "type": "object", "points": 20},
+        {"text": "map", "ja": "地図", "type": "object", "points": 10},
+        {"text": "order", "ja": "注文する", "type": "gist", "points": 20},
+        {"text": "hold", "ja": "持つ", "type": "gist", "points": 20},
+        {"text": "call", "ja": "呼ぶ", "type": "gist", "points": 20},
+        {"text": "crowded", "ja": "混雑した", "type": "attribute", "points": 20},
+        {"text": "convenient", "ja": "便利な", "type": "inference", "points": 20},
+        {"text": "outside", "ja": "外で", "type": "detail", "points": 20},
+        {"text": "between", "ja": "〜の間に", "type": "detail", "points": 30},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "tired", "ja": "疲れた", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "use a smartphone", "ja": "スマホを使う", "type": "gist", "points": 30},
+        {"text": "order a taxi", "ja": "タクシーを呼ぶ", "type": "gist", "points": 30},
+        {"text": "a heavy traffic jam", "ja": "激しい交通渋滞", "type": "object", "points": 40},
+        {"text": "hold a phone", "ja": "スマホを持つ", "type": "gist", "points": 20},
+        {"text": "a crowded street", "ja": "混雑した通り", "type": "attribute", "points": 30},
+        {"text": "wait outside", "ja": "外で待つ", "type": "gist", "points": 20},
+        {"text": "look at a map", "ja": "地図を見る", "type": "gist", "points": 20},
+        {"text": "a convenient app", "ja": "便利なアプリ", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There is a heavy traffic jam on the street.", "grammar": "There is/are~ + 場所", "ja": "通りでは激しい交通渋滞が起きています。", "type": "detail", "points": 40},
+        {"text": "Many tourists are waiting for taxis.", "grammar": "現在進行形", "ja": "多くの観光客がタクシーを待っています。", "type": "gist", "points": 30},
+        {"text": "They are using smartphones to call a car.", "grammar": "不定詞の副詞的用法", "ja": "彼らは車を呼ぶためにスマートフォンを使っています。", "type": "gist", "points": 40},
+        {"text": "The street looks very crowded with people.", "grammar": "look + 形容詞", "ja": "通りは人でとても混雑しているように見えます。", "type": "inference", "points": 30},
+        {"text": "Ordering a taxi is very convenient.", "grammar": "動名詞を主語とする文", "ja": "タクシーを注文することはとても便利です。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "vehicle", "ja": "車両", "type": "object", "points": 20},
+        {"text": "passenger", "ja": "乗客", "type": "object", "points": 20},
+        {"text": "application", "ja": "アプリ", "type": "object", "points": 30},
+        {"text": "congestion", "ja": "渋滞・混雑", "type": "inference", "points": 30},
+        {"text": "destination", "ja": "目的地", "type": "inference", "points": 30},
+        {"text": "transportation", "ja": "交通機関", "type": "object", "points": 30},
+        {"text": "utilize", "ja": "利用する", "type": "gist", "points": 30},
+        {"text": "request", "ja": "要求する・頼む", "type": "gist", "points": 30},
+        {"text": "operate", "ja": "操作する", "type": "gist", "points": 20},
+        {"text": "navigate", "ja": "道案内する・進む", "type": "gist", "points": 30},
+        {"text": "modern", "ja": "現代の", "type": "attribute", "points": 20},
+        {"text": "digital", "ja": "デジタルの", "type": "attribute", "points": 30},
+        {"text": "overwhelming", "ja": "圧倒的な", "type": "attribute", "points": 30},
+        {"text": "currently", "ja": "現在", "type": "detail", "points": 20},
+        {"text": "via", "ja": "〜を経由して", "type": "detail", "points": 30}
+      ],
+      "chunks": [
+        {"text": "a ride-hailing application", "ja": "配車アプリ", "type": "object", "points": 40},
+        {"text": "severe traffic congestion", "ja": "深刻な交通渋滞", "type": "inference", "points": 40},
+        {"text": "request a ride", "ja": "配車をリクエストする", "type": "gist", "points": 30},
+        {"text": "a digital map on the screen", "ja": "画面上のデジタルマップ", "type": "object", "points": 40},
+        {"text": "an overwhelming number of vehicles", "ja": "圧倒的な数の車両", "type": "attribute", "points": 40},
+        {"text": "modern transportation", "ja": "現代の交通機関", "type": "object", "points": 30},
+        {"text": "navigate the narrow street", "ja": "狭い通りを進む", "type": "gist", "points": 40},
+        {"text": "wait for their rides", "ja": "自分たちの迎えを待つ", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates severe traffic congestion on a narrow city street.", "grammar": "一般動詞", "ja": "この絵は狭い市街地の通りにおける深刻な交通渋滞を示しています。", "type": "inference", "points": 40},
+        {"text": "Tourists are utilizing ride-hailing applications on their smartphones.", "grammar": "現在進行形", "ja": "観光客はスマートフォンの配車アプリを利用しています。", "type": "gist", "points": 40},
+        {"text": "It looks like they are requesting vehicles to reach their destinations.", "grammar": "It looks like~ / 不定詞の副詞的用法", "ja": "彼らは目的地に到着するために車をリクエストしているように見えます。", "type": "inference", "points": 50},
+        {"text": "There are an overwhelming number of taxis which are waiting for passengers.", "grammar": "関係代名詞", "ja": "乗客を待っている圧倒的な数のタクシーがあります。", "type": "object", "points": 50},
+        {"text": "Modern technology makes it easy to order transportation anywhere.", "grammar": "使役動詞make", "ja": "現代のテクノロジーのおかげで、どこにいても簡単に交通機関を注文できます。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "taxi": { "x": 35, "y": 68 },
+    "car": { "x": 75, "y": 25 },
+    "phone": { "x": 67, "y": 38 },
+    "tourist": { "x": 74, "y": 75 },
+    "luggage": { "x": 70, "y": 82 },
+    "street": { "x": 28, "y": 95 },
+    "building": { "x": 10, "y": 20 },
+    "window": { "x": 16, "y": 22 },
+    "map": { "x": 67, "y": 42 },
+    "balcony": { "x": 44, "y": 28 },
+    "bag": { "x": 30, "y": 78 },
+    "woman": { "x": 6, "y": 70 },
+    "man": { "x": 61, "y": 75 },
+    "wheel": { "x": 43, "y": 93 },
+    "bubble": { "x": 75, "y": 25 }
+  }
+}

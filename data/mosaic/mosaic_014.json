@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_014",
+  "imageSrc": "assets/images/mosaic/014.webp",
+  "description": "子ども部屋の段ボールとおもちゃ",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "box", "ja": "箱", "type": "object", "points": 10},
+        {"text": "ball", "ja": "ボール", "type": "object", "points": 10},
+        {"text": "bear", "ja": "くま", "type": "object", "points": 10},
+        {"text": "bed", "ja": "ベッド", "type": "object", "points": 10},
+        {"text": "star", "ja": "星", "type": "object", "points": 10},
+        {"text": "room", "ja": "部屋", "type": "detail", "points": 20},
+        {"text": "yellow", "ja": "黄色", "type": "attribute", "points": 10},
+        {"text": "brown", "ja": "茶色", "type": "attribute", "points": 10},
+        {"text": "red", "ja": "赤色", "type": "attribute", "points": 10},
+        {"text": "white", "ja": "白色", "type": "attribute", "points": 10},
+        {"text": "two", "ja": "2つ", "type": "attribute", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "cute", "ja": "かわいい", "type": "inference", "points": 20},
+        {"text": "sit", "ja": "座る", "type": "gist", "points": 10},
+        {"text": "see", "ja": "見る", "type": "gist", "points": 10}
+      ],
+      "chunks": [
+        {"text": "two boxes", "ja": "2つの箱", "type": "attribute", "points": 20},
+        {"text": "a big ball", "ja": "大きなボール", "type": "attribute", "points": 20},
+        {"text": "a cute bear", "ja": "かわいいくま", "type": "inference", "points": 20},
+        {"text": "a yellow star", "ja": "黄色の星", "type": "attribute", "points": 20},
+        {"text": "in the room", "ja": "部屋の中に", "type": "detail", "points": 20},
+        {"text": "on the bed", "ja": "ベッドの上に", "type": "detail", "points": 20},
+        {"text": "brown boxes", "ja": "茶色い箱", "type": "attribute", "points": 20},
+        {"text": "red and white", "ja": "赤と白", "type": "attribute", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see two boxes.", "grammar": "I see~", "ja": "2つの箱が見えます。", "type": "object", "points": 30},
+        {"text": "The ball is big.", "grammar": "SVC（現在形）", "ja": "そのボールは大きいです。", "type": "attribute", "points": 20},
+        {"text": "This is a cute bear.", "grammar": "This is~", "ja": "これはかわいいくまです。", "type": "inference", "points": 20},
+        {"text": "The star is yellow.", "grammar": "SVC（現在形）", "ja": "その星は黄色です。", "type": "attribute", "points": 20},
+        {"text": "The bear is brown.", "grammar": "SVC（現在形）", "ja": "くまは茶色です。", "type": "attribute", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "teddy bear", "ja": "テディベア", "type": "object", "points": 20},
+        {"text": "soccer ball", "ja": "サッカーボール", "type": "object", "points": 20},
+        {"text": "cardboard", "ja": "段ボール", "type": "object", "points": 30},
+        {"text": "tape", "ja": "テープ", "type": "object", "points": 20},
+        {"text": "wall", "ja": "壁", "type": "object", "points": 20},
+        {"text": "floor", "ja": "床", "type": "object", "points": 20},
+        {"text": "drawer", "ja": "引き出し・タンス", "type": "object", "points": 20},
+        {"text": "bedroom", "ja": "寝室", "type": "detail", "points": 20},
+        {"text": "patterned", "ja": "模様のある", "type": "attribute", "points": 30},
+        {"text": "between", "ja": "〜の間に", "type": "detail", "points": 20},
+        {"text": "in front of", "ja": "〜の前に", "type": "detail", "points": 20},
+        {"text": "next to", "ja": "〜の隣に", "type": "detail", "points": 20},
+        {"text": "stick", "ja": "貼る", "type": "gist", "points": 20},
+        {"text": "place", "ja": "置く", "type": "gist", "points": 20},
+        {"text": "look", "ja": "〜に見える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a soccer ball", "ja": "サッカーボール", "type": "object", "points": 20},
+        {"text": "a teddy bear", "ja": "テディベア", "type": "object", "points": 20},
+        {"text": "between the boxes", "ja": "箱の間に", "type": "detail", "points": 30},
+        {"text": "in front of the box", "ja": "箱の前に", "type": "detail", "points": 30},
+        {"text": "on the wall", "ja": "壁に", "type": "detail", "points": 20},
+        {"text": "starry wallpaper", "ja": "星柄の壁紙", "type": "object", "points": 30},
+        {"text": "next to the bed", "ja": "ベッドの隣に", "type": "detail", "points": 20},
+        {"text": "sitting on the floor", "ja": "床に座って", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There is a soccer ball between the boxes.", "grammar": "There is~ / 場所の前置詞", "ja": "箱の間にサッカーボールがあります。", "type": "detail", "points": 40},
+        {"text": "A teddy bear is sitting in front of the box.", "grammar": "現在進行形 / 場所の前置詞", "ja": "テディベアが箱の前に座っています。", "type": "gist", "points": 40},
+        {"text": "We can see stars on the wall.", "grammar": "助動詞can", "ja": "壁に星が見えます。", "type": "object", "points": 30},
+        {"text": "The room looks like a child's bedroom.", "grammar": "look like~", "ja": "その部屋は子ども部屋のように見えます。", "type": "inference", "points": 40},
+        {"text": "Two boxes are placed on the floor.", "grammar": "受動態", "ja": "2つの箱が床に置かれています。", "type": "gist", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "carton", "ja": "段ボール箱", "type": "object", "points": 30},
+        {"text": "stuffed animal", "ja": "ぬいぐるみ", "type": "object", "points": 30},
+        {"text": "sphere", "ja": "球体", "type": "object", "points": 30},
+        {"text": "toy", "ja": "おもちゃ", "type": "object", "points": 20},
+        {"text": "pillow", "ja": "枕", "type": "object", "points": 20},
+        {"text": "blanket", "ja": "毛布・掛け布団", "type": "object", "points": 20},
+        {"text": "adorable", "ja": "愛らしい", "type": "attribute", "points": 30},
+        {"text": "closed", "ja": "閉じられた", "type": "attribute", "points": 20},
+        {"text": "sealed", "ja": "封をされた", "type": "attribute", "points": 30},
+        {"text": "arrange", "ja": "配置する・並べる", "type": "gist", "points": 30},
+        {"text": "organize", "ja": "整理する", "type": "gist", "points": 30},
+        {"text": "position", "ja": "置く・配置する", "type": "gist", "points": 30},
+        {"text": "playfully", "ja": "遊び心をもって", "type": "inference", "points": 30},
+        {"text": "indoors", "ja": "屋内で", "type": "detail", "points": 20},
+        {"text": "cozy", "ja": "居心地の良い", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "sealed cardboard cartons", "ja": "封をされた段ボール箱", "type": "attribute", "points": 40},
+        {"text": "an adorable stuffed animal", "ja": "愛らしいぬいぐるみ", "type": "attribute", "points": 40},
+        {"text": "positioned between the boxes", "ja": "箱の間に配置されて", "type": "gist", "points": 40},
+        {"text": "leaning against the carton", "ja": "箱に寄りかかって", "type": "gist", "points": 40},
+        {"text": "decorated with stars", "ja": "星で飾られた", "type": "attribute", "points": 30},
+        {"text": "ready for moving", "ja": "引っ越しの準備ができて", "type": "inference", "points": 40},
+        {"text": "a cozy atmosphere", "ja": "居心地の良い雰囲気", "type": "inference", "points": 30},
+        {"text": "organizing toys", "ja": "おもちゃを整理すること", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A soccer ball is positioned exactly between the two sealed cartons.", "grammar": "受動態 / 副詞", "ja": "サッカーボールが2つの封をされた段ボール箱のちょうど間に配置されています。", "type": "gist", "points": 50},
+        {"text": "An adorable stuffed animal is leaning against the right box.", "grammar": "現在進行形 / 前置詞against", "ja": "愛らしいぬいぐるみが右側の箱に寄りかかっています。", "type": "gist", "points": 50},
+        {"text": "It looks like someone is packing or organizing their toys.", "grammar": "It looks like~ / 接続詞or", "ja": "誰かがおもちゃを梱包するか整理しているように見えます。", "type": "inference", "points": 50},
+        {"text": "The wall is beautifully decorated with star patterns.", "grammar": "受動態 / 副詞", "ja": "壁は星の模様で美しく飾られています。", "type": "detail", "points": 40},
+        {"text": "The cozy room appears to be a child's bedroom.", "grammar": "appear to be~", "ja": "その居心地の良い部屋は子ども部屋のようです。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "box_left": { "x": 25, "y": 60 },
+    "box_right": { "x": 75, "y": 60 },
+    "ball": { "x": 50, "y": 65 },
+    "bear": { "x": 85, "y": 70 },
+    "bed": { "x": 10, "y": 50 },
+    "pillow": { "x": 8, "y": 15 },
+    "blanket": { "x": 5, "y": 35 },
+    "wall": { "x": 50, "y": 20 },
+    "star_yellow": { "x": 35, "y": 35 },
+    "star_blue": { "x": 48, "y": 40 },
+    "tape_left": { "x": 25, "y": 45 },
+    "tape_right": { "x": 75, "y": 45 },
+    "drawer": { "x": 95, "y": 30 },
+    "floor": { "x": 50, "y": 90 },
+    "bear_ear": { "x": 78, "y": 55 },
+    "bear_eye": { "x": 82, "y": 60 }
+  }
+}

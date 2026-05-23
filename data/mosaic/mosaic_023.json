@@ -1,0 +1,135 @@
+{
+  "id": "mosaic_023",
+  "imageSrc": "assets/images/mosaic/023.webp",
+  "description": "雨の日の寝室",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "bed", "ja": "ベッド", "type": "object", "points": 20},
+        {"text": "boots", "ja": "ブーツ", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "rain", "ja": "雨", "type": "object", "points": 20},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "closet", "ja": "クローゼット", "type": "object", "points": 20},
+        {"text": "room", "ja": "部屋", "type": "object", "points": 20},
+        {"text": "wet", "ja": "濡れた", "type": "attribute", "points": 10},
+        {"text": "floor", "ja": "床", "type": "object", "points": 10},
+        {"text": "clothes", "ja": "服", "type": "object", "points": 20},
+        {"text": "day", "ja": "日", "type": "inference", "points": 10},
+        {"text": "inside", "ja": "中で", "type": "detail", "points": 10},
+        {"text": "outside", "ja": "外で", "type": "detail", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "rug", "ja": "ラグ", "type": "object", "points": 10}
+      ],
+      "chunks": [
+        {"text": "red boots", "ja": "赤いブーツ", "type": "object", "points": 20},
+        {"text": "under the bed", "ja": "ベッドの下に", "type": "detail", "points": 20},
+        {"text": "in the closet", "ja": "クローゼットの中に", "type": "detail", "points": 20},
+        {"text": "the rainy window", "ja": "雨の窓", "type": "attribute", "points": 20},
+        {"text": "on the floor", "ja": "床の上に", "type": "detail", "points": 20},
+        {"text": "rain outside", "ja": "外の雨", "type": "detail", "points": 20},
+        {"text": "some clothes", "ja": "いくつかの服", "type": "object", "points": 20},
+        {"text": "rainy day", "ja": "雨の日", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "It is raining.", "grammar": "It is ~ing", "ja": "雨が降っています。", "type": "gist", "points": 30},
+        {"text": "I see red boots.", "grammar": "I see~", "ja": "赤いブーツが見えます。", "type": "object", "points": 30},
+        {"text": "The boots are under the bed.", "grammar": "under ~", "ja": "ブーツはベッドの下にあります。", "type": "detail", "points": 30},
+        {"text": "There are clothes in the closet.", "grammar": "There are~", "ja": "クローゼットに服があります。", "type": "object", "points": 30},
+        {"text": "I stay inside.", "grammar": "I + verb", "ja": "私は中にいます。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "raincoat", "ja": "レインコート", "type": "object", "points": 20},
+        {"text": "stormy", "ja": "嵐の", "type": "attribute", "points": 30},
+        {"text": "wardrobe", "ja": "ワードローブ", "type": "object", "points": 20},
+        {"text": "footwear", "ja": "履き物", "type": "object", "points": 30},
+        {"text": "hanging", "ja": "掛かっている", "type": "gist", "points": 30},
+        {"text": "gloomy", "ja": "憂鬱な", "type": "inference", "points": 30},
+        {"text": "weather", "ja": "天気", "type": "object", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "preparation", "ja": "準備", "type": "inference", "points": 30},
+        {"text": "interior", "ja": "室内", "type": "object", "points": 20},
+        {"text": "outside", "ja": "外", "type": "detail", "points": 20},
+        {"text": "pair", "ja": "一組", "type": "object", "points": 20},
+        {"text": "damp", "ja": "湿った", "type": "attribute", "points": 30},
+        {"text": "comfort", "ja": "快適さ", "type": "inference", "points": 30},
+        {"text": "view", "ja": "景色", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "hanging in the closet", "ja": "クローゼットに掛かっている", "type": "detail", "points": 30},
+        {"text": "a pair of red boots", "ja": "一足の赤いブーツ", "type": "object", "points": 30},
+        {"text": "raining outside the window", "ja": "窓の外で雨が降っている", "type": "detail", "points": 30},
+        {"text": "placed under the bed", "ja": "ベッドの下に置かれた", "type": "detail", "points": 30},
+        {"text": "stormy weather", "ja": "嵐の天気", "type": "attribute", "points": 30},
+        {"text": "looking out", "ja": "外を見ている", "type": "gist", "points": 30},
+        {"text": "warm and dry", "ja": "暖かくて乾燥した", "type": "inference", "points": 30},
+        {"text": "preparing for the rain", "ja": "雨への準備", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "It is raining outside today.", "grammar": "It is ~ing", "ja": "今日は外で雨が降っています。", "type": "gist", "points": 40},
+        {"text": "There are red boots under the bed.", "grammar": "There are~", "ja": "ベッドの下に赤いブーツがあります。", "type": "detail", "points": 40},
+        {"text": "The clothes are hanging in the closet.", "grammar": "passive / is ~ing", "ja": "服がクローゼットに掛かっています。", "type": "object", "points": 40},
+        {"text": "I can see the rain through the window.", "grammar": "can see", "ja": "窓越しに雨が見えます。", "type": "detail", "points": 40},
+        {"text": "The room feels warm compared to the cold rain.", "grammar": "feels + adj", "ja": "冷たい雨に比べて部屋は暖かく感じます。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "precipitation", "ja": "降雨", "type": "object", "points": 40},
+        {"text": "inclement", "ja": "荒れた", "type": "attribute", "points": 40},
+        {"text": "protective", "ja": "保護する", "type": "attribute", "points": 30},
+        {"text": "shelter", "ja": "避難所", "type": "inference", "points": 40},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "downpour", "ja": "土砂降り", "type": "object", "points": 40},
+        {"text": "organized", "ja": "整理された", "type": "inference", "points": 30},
+        {"text": "attire", "ja": "服装", "type": "object", "points": 30},
+        {"text": "backdrop", "ja": "背景", "type": "object", "points": 30},
+        {"text": "interior", "ja": "室内", "type": "object", "points": 20},
+        {"text": "seclusion", "ja": "隔離", "type": "inference", "points": 40},
+        {"text": "readiness", "ja": "準備", "type": "inference", "points": 40},
+        {"text": "aesthetic", "ja": "審美的な", "type": "inference", "points": 30},
+        {"text": "unsettled", "ja": "不安定な", "type": "attribute", "points": 30},
+        {"text": "comforting", "ja": "心地よい", "type": "inference", "points": 40}
+      ],
+      "chunks": [
+        {"text": "heavy rain falling", "ja": "激しく降る雨", "type": "gist", "points": 40},
+        {"text": "organized clothing storage", "ja": "整理された衣類収納", "type": "object", "points": 40},
+        {"text": "protective rain boots", "ja": "保護用の長靴", "type": "attribute", "points": 40},
+        {"text": "cozy bedroom shelter", "ja": "居心地の良い寝室という避難所", "type": "inference", "points": 40},
+        {"text": "looking out at the downpour", "ja": "土砂降りを眺める", "type": "gist", "points": 40},
+        {"text": "a rainy day atmosphere", "ja": "雨の日の雰囲気", "type": "inference", "points": 40},
+        {"text": "prepared for inclement weather", "ja": "荒れた天気に備えて", "type": "inference", "points": 40},
+        {"text": "hanging neatly in the wardrobe", "ja": "ワードローブにきれいに掛かっている", "type": "detail", "points": 40}
+      ],
+      "sentences": [
+        {"text": "It is pouring outside, creating a gloomy but cozy atmosphere indoors.", "grammar": "participial phrase", "ja": "外は土砂降りで、室内には憂鬱ながらも心地よい雰囲気が漂っています。", "type": "inference", "points": 50},
+        {"text": "The red rain boots placed under the bed are ready for the wet weather.", "grammar": "participle", "ja": "ベッドの下に置かれた赤い長靴が、雨の天気に備えています。", "type": "detail", "points": 50},
+        {"text": "A collection of clothes is hanging neatly inside the closet.", "grammar": "present passive", "ja": "服のコレクションがクローゼットの中にきれいに掛かっています。", "type": "object", "points": 50},
+        {"text": "The window provides a view of the storm outside while remaining safe within.", "grammar": "while + participle", "ja": "窓は中に留まりながら外の嵐の景色を提供しています。", "type": "detail", "points": 50},
+        {"text": "Everything in the room suggests a quiet day spent avoiding the rain.", "grammar": "suggests + gerund", "ja": "部屋の全てが、雨を避けて過ごす静かな一日を示唆しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "red_boots_under_bed": { "x": 35, "y": 85 },
+    "bed_frame": { "x": 20, "y": 60 },
+    "window": { "x": 40, "y": 20 },
+    "rain_on_window": { "x": 40, "y": 25 },
+    "closet_left_door": { "x": 60, "y": 40 },
+    "closet_right_door": { "x": 90, "y": 40 },
+    "jacket_1": { "x": 73, "y": 35 },
+    "jacket_2": { "x": 77, "y": 35 },
+    "sweater": { "x": 82, "y": 35 },
+    "red_boots_in_closet": { "x": 75, "y": 70 },
+    "floor_wood": { "x": 50, "y": 95 },
+    "rug": { "x": 75, "y": 90 },
+    "bed_pillow": { "x": 5, "y": 30 },
+    "curtain": { "x": 30, "y": 20 },
+    "bed_blanket": { "x": 20, "y": 50 },
+    "closet_interior": { "x": 75, "y": 40 },
+    "rainy_sky": { "x": 40, "y": 10 }
+  }
+}

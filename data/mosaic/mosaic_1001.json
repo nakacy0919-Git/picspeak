@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1001",
+  "imageSrc": "assets/images/mosaic/1001.webp",
+  "description": "海岸のゴミ問題とポイ捨て",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "sea", "ja": "海", "type": "object", "points": 10},
+        {"text": "beach", "ja": "ビーチ", "type": "object", "points": 10},
+        {"text": "sand", "ja": "砂", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "car", "ja": "車", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "hand", "ja": "手", "type": "object", "points": 20},
+        {"text": "can", "ja": "缶", "type": "object", "points": 10},
+        {"text": "bottle", "ja": "ビン", "type": "object", "points": 10},
+        {"text": "trash", "ja": "ゴミ", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "dirty", "ja": "汚い", "type": "attribute", "points": 20},
+        {"text": "throw", "ja": "投げる", "type": "gist", "points": 30},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a blue sea", "ja": "青い海", "type": "attribute", "points": 10},
+        {"text": "on the sand", "ja": "砂の上に", "type": "detail", "points": 20},
+        {"text": "a red can", "ja": "赤い缶", "type": "object", "points": 10},
+        {"text": "a green bottle", "ja": "緑のビン", "type": "object", "points": 10},
+        {"text": "from a car", "ja": "車から", "type": "detail", "points": 20},
+        {"text": "throw trash", "ja": "ゴミを投げる", "type": "gist", "points": 30},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20},
+        {"text": "many cans", "ja": "たくさんの缶", "type": "object", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a blue sea.", "grammar": "I see~", "ja": "青い海が見えます。", "type": "object", "points": 20},
+        {"text": "There is a car.", "grammar": "There is/are~", "ja": "車があります。", "type": "object", "points": 20},
+        {"text": "A hand throws a can.", "grammar": "一般動詞", "ja": "手が缶を投げます。", "type": "gist", "points": 30},
+        {"text": "The beach is very dirty.", "grammar": "be動詞", "ja": "ビーチはとても汚いです。", "type": "attribute", "points": 30},
+        {"text": "This is bad.", "grammar": "This is~", "ja": "これは悪いです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "ocean", "ja": "海", "type": "object", "points": 20},
+        {"text": "coast", "ja": "海岸", "type": "object", "points": 20},
+        {"text": "garbage", "ja": "ゴミ", "type": "object", "points": 20},
+        {"text": "road", "ja": "道路", "type": "object", "points": 10},
+        {"text": "arm", "ja": "腕", "type": "object", "points": 20},
+        {"text": "drive", "ja": "運転する", "type": "gist", "points": 20},
+        {"text": "drop", "ja": "落とす", "type": "gist", "points": 20},
+        {"text": "litter", "ja": "ポイ捨てする", "type": "gist", "points": 30},
+        {"text": "clean", "ja": "きれいな", "type": "attribute", "points": 10},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "outside", "ja": "外へ", "type": "detail", "points": 20},
+        {"text": "along", "ja": "〜に沿って", "type": "detail", "points": 30},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "out of the window", "ja": "窓から外へ", "type": "detail", "points": 30},
+        {"text": "drop a can", "ja": "缶を落とす", "type": "gist", "points": 20},
+        {"text": "full of garbage", "ja": "ゴミでいっぱいの", "type": "attribute", "points": 30},
+        {"text": "along the road", "ja": "道路に沿って", "type": "detail", "points": 20},
+        {"text": "environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "look sad", "ja": "悲しそうに見える", "type": "inference", "points": 20},
+        {"text": "drive a car", "ja": "車を運転する", "type": "gist", "points": 10},
+        {"text": "think about it", "ja": "それについて考える", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "Someone is throwing a can out of the window.", "grammar": "現在進行形", "ja": "誰かが窓から缶を投げています。", "type": "gist", "points": 30},
+        {"text": "There is a lot of garbage on the beach.", "grammar": "There is/are~ + 場所", "ja": "ビーチにはたくさんのゴミがあります。", "type": "detail", "points": 30},
+        {"text": "Dropping cans is a bad thing to do.", "grammar": "動名詞 / 不定詞の形容詞的用法", "ja": "缶を落とすことはするべき悪いことです。", "type": "inference", "points": 40},
+        {"text": "We must not throw garbage here.", "grammar": "助動詞must", "ja": "ここにゴミを捨ててはいけません。", "type": "gist", "points": 30},
+        {"text": "The beach looks very dirty and terrible.", "grammar": "look + 形容詞", "ja": "ビーチはとても汚くてひどく見えます。", "type": "attribute", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "pollution", "ja": "汚染", "type": "inference", "points": 30},
+        {"text": "littering", "ja": "ポイ捨て", "type": "inference", "points": 30},
+        {"text": "vehicle", "ja": "乗り物", "type": "object", "points": 20},
+        {"text": "coastline", "ja": "海岸線", "type": "object", "points": 30},
+        {"text": "environment", "ja": "環境", "type": "object", "points": 20},
+        {"text": "issue", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "irresponsible", "ja": "無責任な", "type": "attribute", "points": 30},
+        {"text": "conscious", "ja": "意識している", "type": "attribute", "points": 30},
+        {"text": "discard", "ja": "捨てる", "type": "gist", "points": 30},
+        {"text": "pollute", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "imagine", "ja": "想像する", "type": "inference", "points": 20},
+        {"text": "cause", "ja": "引き起こす", "type": "gist", "points": 20},
+        {"text": "effect", "ja": "影響", "type": "inference", "points": 20},
+        {"text": "unappealing", "ja": "魅力のない", "type": "attribute", "points": 30},
+        {"text": "numerous", "ja": "多数の", "type": "attribute", "points": 30}
+      ],
+      "chunks": [
+        {"text": "cause pollution", "ja": "汚染を引き起こす", "type": "gist", "points": 30},
+        {"text": "discard an empty can", "ja": "空き缶を捨てる", "type": "gist", "points": 30},
+        {"text": "irresponsible behavior", "ja": "無責任な行動", "type": "inference", "points": 40},
+        {"text": "imagine the situation", "ja": "状況を想像する", "type": "inference", "points": 20},
+        {"text": "have a negative effect", "ja": "悪影響を及ぼす", "type": "inference", "points": 40},
+        {"text": "numerous empty bottles", "ja": "多数の空き瓶", "type": "object", "points": 30},
+        {"text": "pollute the beautiful ocean", "ja": "美しい海を汚染する", "type": "gist", "points": 30},
+        {"text": "serious environmental issue", "ja": "深刻な環境問題", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture shows a serious environmental problem because there is a lot of garbage.", "grammar": "接続詞 because", "ja": "ゴミがたくさんあるため、この絵は深刻な環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "Someone discarded a red can when they were driving a vehicle.", "grammar": "接続詞 when", "ja": "誰かが車を運転しているときに赤い缶を捨てました。", "type": "gist", "points": 40},
+        {"text": "It looks like the driver doesn't care about the environment.", "grammar": "It looks like~", "ja": "運転手は環境を気にしていないように見えます。", "type": "inference", "points": 50},
+        {"text": "We should not throw trash to protect the beautiful ocean.", "grammar": "不定詞の副詞的用法", "ja": "美しい海を守るために、私たちはゴミを捨てるべきではありません。", "type": "inference", "points": 40},
+        {"text": "Littering on the beach is an irresponsible behavior that pollutes nature.", "grammar": "関係代名詞", "ja": "ビーチでのポイ捨ては、自然を汚染する無責任な行動です。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "sea": { "x": 15, "y": 45 },
+    "beach": { "x": 30, "y": 70 },
+    "sky": { "x": 20, "y": 20 },
+    "car": { "x": 80, "y": 40 },
+    "window": { "x": 82, "y": 30 },
+    "hand": { "x": 75, "y": 25 },
+    "can": { "x": 65, "y": 30 },
+    "bottle": { "x": 86, "y": 75 },
+    "trash": { "x": 72, "y": 82 },
+    "road": { "x": 90, "y": 55 },
+    "sand": { "x": 20, "y": 85 },
+    "grass": { "x": 95, "y": 90 },
+    "arm": { "x": 83, "y": 32 },
+    "garbage": { "x": 40, "y": 92 },
+    "coast": { "x": 48, "y": 45 }
+  }
+}

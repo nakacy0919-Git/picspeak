@@ -1,0 +1,135 @@
+{
+  "id": "mosaic_1011",
+  "imageSrc": "assets/images/mosaic/1011.jpg",
+  "description": "ビュッフェの取りすぎと食品ロス",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "food", "ja": "食べ物", "type": "object", "points": 10},
+        {"text": "plate", "ja": "皿", "type": "object", "points": 10},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+        {"text": "chair", "ja": "椅子", "type": "object", "points": 10},
+        {"text": "restaurant", "ja": "レストラン", "type": "object", "points": 20},
+        {"text": "meat", "ja": "肉", "type": "object", "points": 10},
+        {"text": "rice", "ja": "ご飯", "type": "object", "points": 10},
+        {"text": "fork", "ja": "フォーク", "type": "object", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "much", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "eat", "ja": "食べる", "type": "gist", "points": 10},
+        {"text": "take", "ja": "取る", "type": "gist", "points": 10},
+        {"text": "leave", "ja": "残す", "type": "gist", "points": 20},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a young man", "ja": "若い男の人", "type": "object", "points": 10},
+        {"text": "much food", "ja": "たくさんの食べ物", "type": "object", "points": 20},
+        {"text": "many plates", "ja": "たくさんのお皿", "type": "object", "points": 20},
+        {"text": "on the table", "ja": "テーブルの上に", "type": "detail", "points": 20},
+        {"text": "take too much", "ja": "取りすぎる", "type": "gist", "points": 30},
+        {"text": "leave food", "ja": "食べ物を残す", "type": "gist", "points": 30},
+        {"text": "in the restaurant", "ja": "レストランで", "type": "detail", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a man.", "grammar": "I see~", "ja": "男の人が見えます。", "type": "object", "points": 20},
+        {"text": "There is much food on the table.", "grammar": "There is/are~ + 場所", "ja": "テーブルの上にたくさんの食べ物があります。", "type": "detail", "points": 30},
+        {"text": "He takes too much food.", "grammar": "一般動詞", "ja": "彼は食べ物を取りすぎます。", "type": "gist", "points": 30},
+        {"text": "He leaves food on the plates.", "grammar": "一般動詞 + 場所", "ja": "彼はお皿に食べ物を残します。", "type": "gist", "points": 30},
+        {"text": "This is a bad thing.", "grammar": "This is~", "ja": "これは悪いことです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "buffet", "ja": "ビュッフェ", "type": "object", "points": 20},
+        {"text": "waste", "ja": "無駄・ロス", "type": "inference", "points": 30},
+        {"text": "meal", "ja": "食事", "type": "object", "points": 20},
+        {"text": "dish", "ja": "料理・皿", "type": "object", "points": 20},
+        {"text": "customer", "ja": "客", "type": "object", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "hungry", "ja": "お腹が空いた", "type": "inference", "points": 20},
+        {"text": "full", "ja": "お腹がいっぱいの", "type": "inference", "points": 20},
+        {"text": "order", "ja": "注文する", "type": "gist", "points": 20},
+        {"text": "finish", "ja": "終える・食べ切る", "type": "gist", "points": 20},
+        {"text": "serve", "ja": "よそる・提供する", "type": "gist", "points": 30},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "important", "ja": "重要な", "type": "attribute", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "about", "ja": "〜について", "type": "detail", "points": 10}
+      ],
+      "chunks": [
+        {"text": "food waste", "ja": "食品ロス", "type": "inference", "points": 40},
+        {"text": "at a buffet", "ja": "ビュッフェで", "type": "detail", "points": 20},
+        {"text": "take too much food", "ja": "食べ物を取りすぎる", "type": "gist", "points": 30},
+        {"text": "leave the dishes", "ja": "料理を残す", "type": "gist", "points": 30},
+        {"text": "look hungry", "ja": "お腹が空いているように見える", "type": "inference", "points": 20},
+        {"text": "a lot of leftovers", "ja": "たくさんの食べ残し", "type": "object", "points": 30},
+        {"text": "an environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "think about the food", "ja": "食べ物について考える", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There are a lot of leftovers on the table.", "grammar": "There is/are~ + 場所", "ja": "テーブルの上にたくさんの食べ残しがあります。", "type": "detail", "points": 40},
+        {"text": "The man took too much food at the buffet.", "grammar": "一般動詞の過去形", "ja": "男の人はビュッフェで食べ物を取りすぎました。", "type": "gist", "points": 40},
+        {"text": "He could not finish his meal because he was full.", "grammar": "助動詞canの過去形 / 接続詞because", "ja": "彼はお腹がいっぱいだったので、食事を食べ切ることができませんでした。", "type": "inference", "points": 40},
+        {"text": "Leaving food is a bad thing to do.", "grammar": "動名詞 / 不定詞の形容詞的用法", "ja": "食べ物を残すことはするべき悪いことです。", "type": "inference", "points": 40},
+        {"text": "This picture shows the problem of food waste.", "grammar": "一般動詞", "ja": "この絵は食品ロスの問題を示しています。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "leftover", "ja": "食べ残し", "type": "object", "points": 30},
+        {"text": "appetite", "ja": "食欲", "type": "inference", "points": 30},
+        {"text": "portion", "ja": "一人前・量", "type": "object", "points": 30},
+        {"text": "consumption", "ja": "消費", "type": "inference", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "grab", "ja": "取る・つかむ", "type": "gist", "points": 20},
+        {"text": "pile", "ja": "積み上げる", "type": "gist", "points": 30},
+        {"text": "consume", "ja": "消費する・食べる", "type": "gist", "points": 30},
+        {"text": "discard", "ja": "捨てる", "type": "gist", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "greedy", "ja": "欲張りな", "type": "attribute", "points": 30},
+        {"text": "excessive", "ja": "過度な", "type": "attribute", "points": 30},
+        {"text": "irresponsible", "ja": "無責任な", "type": "attribute", "points": 30},
+        {"text": "significant", "ja": "重大な", "type": "attribute", "points": 30},
+        {"text": "regret", "ja": "後悔する", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "an excessive amount of food", "ja": "過度な量の食べ物", "type": "object", "points": 40},
+        {"text": "leave leftovers", "ja": "食べ残しを残す", "type": "gist", "points": 30},
+        {"text": "pile up food", "ja": "食べ物を山積みにする", "type": "gist", "points": 40},
+        {"text": "irresponsible behavior", "ja": "無責任な行動", "type": "inference", "points": 40},
+        {"text": "a significant issue", "ja": "重大な問題", "type": "inference", "points": 30},
+        {"text": "lack of awareness", "ja": "意識の欠如", "type": "inference", "points": 40},
+        {"text": "consider the consequence", "ja": "結果を考慮する", "type": "inference", "points": 30},
+        {"text": "contribute to food waste", "ja": "食品ロスの一因となる", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the significant issue of food waste in restaurants.", "grammar": "無生物主語 / 一般動詞", "ja": "この絵はレストランにおける食品ロスという重大な問題を示しています。", "type": "inference", "points": 40},
+        {"text": "It looks like the man grabbed an excessive amount of food because he had a big appetite.", "grammar": "It looks like~ / 接続詞because", "ja": "男の人は食欲旺盛だったため、過度な量の食べ物を取ってしまったように見えます。", "type": "inference", "points": 50},
+        {"text": "Leaving massive leftovers on the table is an irresponsible behavior.", "grammar": "動名詞を主語とする文", "ja": "テーブルに大量の食べ残しを残すことは無責任な行動です。", "type": "inference", "points": 40},
+        {"text": "We should order only what we can consume to avoid food waste.", "grammar": "関係代名詞what / 不定詞の副詞的用法", "ja": "食品ロスを避けるために、私たちは消費できる分だけを注文するべきです。", "type": "inference", "points": 50},
+        {"text": "Piling up too much food on the plate contributes to environmental problems.", "grammar": "動名詞を主語とする文", "ja": "お皿に食べ物を山積みにしすぎることは、環境問題の一因となります。", "type": "gist", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "man": { "x": 75, "y": 20 },
+    "plate": { "x": 45, "y": 88 },
+    "table": { "x": 45, "y": 80 },
+    "chair": { "x": 10, "y": 80 },
+    "food": { "x": 46, "y": 88 },
+    "leftover": { "x": 55, "y": 75 },
+    "fork": { "x": 60, "y": 92 },
+    "spoon": { "x": 30, "y": 90 },
+    "salt": { "x": 55, "y": 80 },
+    "picture": { "x": 15, "y": 15 },
+    "light": { "x": 45, "y": 5 },
+    "bubble": { "x": 75, "y": 25 },
+    "buffet": { "x": 75, "y": 45 },
+    "meat": { "x": 75, "y": 42 },
+    "rice": { "x": 65, "y": 25 },
+    "pancake": { "x": 85, "y": 25 },
+    "arrow": { "x": 45, "y": 60 }
+  }
+}

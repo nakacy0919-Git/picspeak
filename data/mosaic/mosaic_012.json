@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_012",
+  "imageSrc": "assets/images/mosaic/012.webp",
+  "description": "テーブルの上のフルーツ",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "apple", "ja": "りんご", "type": "object", "points": 10},
+        {"text": "banana", "ja": "バナナ", "type": "object", "points": 10},
+        {"text": "basket", "ja": "かご", "type": "object", "points": 10},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤色", "type": "attribute", "points": 10},
+        {"text": "yellow", "ja": "黄色", "type": "attribute", "points": 10},
+        {"text": "five", "ja": "5つ", "type": "attribute", "points": 10},
+        {"text": "three", "ja": "3つ", "type": "attribute", "points": 10},
+        {"text": "fruit", "ja": "果物", "type": "object", "points": 20},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "see", "ja": "見る", "type": "gist", "points": 10},
+        {"text": "eat", "ja": "食べる", "type": "gist", "points": 10},
+        {"text": "sweet", "ja": "甘い", "type": "inference", "points": 20},
+        {"text": "room", "ja": "部屋", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "red apples", "ja": "赤いりんご", "type": "attribute", "points": 20},
+        {"text": "yellow bananas", "ja": "黄色のバナナ", "type": "attribute", "points": 20},
+        {"text": "in a basket", "ja": "かごの中に", "type": "detail", "points": 20},
+        {"text": "on the table", "ja": "テーブルの上に", "type": "detail", "points": 20},
+        {"text": "five apples", "ja": "5つのりんご", "type": "attribute", "points": 20},
+        {"text": "three bananas", "ja": "3つのバナナ", "type": "attribute", "points": 20},
+        {"text": "a big window", "ja": "大きな窓", "type": "object", "points": 20},
+        {"text": "very sweet", "ja": "とても甘い", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see red apples.", "grammar": "I see~", "ja": "赤いりんごが見えます。", "type": "object", "points": 30},
+        {"text": "The apples are in the basket.", "grammar": "be動詞 + 前置詞", "ja": "りんごはかごの中にあります。", "type": "detail", "points": 30},
+        {"text": "The bananas are yellow.", "grammar": "SVC（現在形）", "ja": "バナナは黄色です。", "type": "attribute", "points": 20},
+        {"text": "They are on the table.", "grammar": "be動詞 + 前置詞", "ja": "それらはテーブルの上にあります。", "type": "detail", "points": 20},
+        {"text": "This is a big window.", "grammar": "This is~", "ja": "これは大きな窓です。", "type": "object", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "shelf", "ja": "棚", "type": "object", "points": 20},
+        {"text": "pot", "ja": "鍋・鉢", "type": "object", "points": 20},
+        {"text": "pitcher", "ja": "水差し", "type": "object", "points": 20},
+        {"text": "cloth", "ja": "布", "type": "object", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 30},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20},
+        {"text": "ripe", "ja": "熟した", "type": "attribute", "points": 30},
+        {"text": "fresh", "ja": "新鮮な", "type": "attribute", "points": 20},
+        {"text": "spot", "ja": "斑点", "type": "object", "points": 20},
+        {"text": "place", "ja": "置く", "type": "gist", "points": 20},
+        {"text": "hold", "ja": "入れる・持つ", "type": "gist", "points": 20},
+        {"text": "next to", "ja": "〜の隣に", "type": "detail", "points": 20},
+        {"text": "inside", "ja": "〜の中に", "type": "detail", "points": 20},
+        {"text": "kitchen", "ja": "キッチン", "type": "detail", "points": 20},
+        {"text": "morning", "ja": "朝", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a wooden table", "ja": "木製のテーブル", "type": "object", "points": 20},
+        {"text": "next to the basket", "ja": "かごの隣に", "type": "detail", "points": 20},
+        {"text": "inside the basket", "ja": "かごの中に", "type": "detail", "points": 20},
+        {"text": "on the shelf", "ja": "棚の上に", "type": "detail", "points": 20},
+        {"text": "a white cloth", "ja": "白い布", "type": "object", "points": 20},
+        {"text": "bright light", "ja": "明るい光", "type": "inference", "points": 20},
+        {"text": "ripe bananas", "ja": "熟したバナナ", "type": "attribute", "points": 30},
+        {"text": "fresh fruit", "ja": "新鮮な果物", "type": "attribute", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There are five apples in the basket.", "grammar": "There is/are~", "ja": "かごの中にりんごが5つあります。", "type": "detail", "points": 30},
+        {"text": "Three bananas are on the table next to the basket.", "grammar": "場所の前置詞", "ja": "かごの隣のテーブルの上にバナナが3本あります。", "type": "detail", "points": 40},
+        {"text": "I can see a white pitcher on the shelf.", "grammar": "助動詞can", "ja": "棚の上に白い水差しが見えます。", "type": "object", "points": 30},
+        {"text": "The bananas have brown spots and look ripe.", "grammar": "look + 形容詞", "ja": "バナナには茶色い斑点があり、熟しているように見えます。", "type": "inference", "points": 40},
+        {"text": "The room is bright because of the window.", "grammar": "because of~", "ja": "窓があるため、部屋は明るいです。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "container", "ja": "容器", "type": "object", "points": 30},
+        {"text": "jug", "ja": "水差し（類義語）", "type": "object", "points": 30},
+        {"text": "ceramic", "ja": "陶器の", "type": "attribute", "points": 30},
+        {"text": "nutritious", "ja": "栄養のある", "type": "inference", "points": 30},
+        {"text": "spotted", "ja": "斑点のある", "type": "attribute", "points": 30},
+        {"text": "bunch", "ja": "房・束", "type": "object", "points": 30},
+        {"text": "appetizing", "ja": "食欲をそそる", "type": "inference", "points": 30},
+        {"text": "sunlight", "ja": "日光", "type": "detail", "points": 20},
+        {"text": "counter", "ja": "カウンター・調理台", "type": "object", "points": 20},
+        {"text": "arrange", "ja": "並べる・配置する", "type": "gist", "points": 30},
+        {"text": "contain", "ja": "含む・入っている", "type": "gist", "points": 30},
+        {"text": "display", "ja": "飾る・展示する", "type": "gist", "points": 20},
+        {"text": "appealing", "ja": "魅力的な", "type": "inference", "points": 30},
+        {"text": "healthy", "ja": "健康的な", "type": "inference", "points": 20},
+        {"text": "indoors", "ja": "屋内で", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a bunch of bananas", "ja": "バナナの房", "type": "object", "points": 30},
+        {"text": "spotted yellow bananas", "ja": "斑点のある黄色のバナナ", "type": "attribute", "points": 40},
+        {"text": "a ceramic pot", "ja": "陶器の鍋", "type": "object", "points": 30},
+        {"text": "arranged in a basket", "ja": "かごの中に並べられて", "type": "gist", "points": 40},
+        {"text": "placed on the counter", "ja": "カウンターに置かれて", "type": "gist", "points": 40},
+        {"text": "bathed in sunlight", "ja": "日光を浴びて", "type": "inference", "points": 40},
+        {"text": "an appetizing snack", "ja": "食欲をそそるおやつ", "type": "inference", "points": 40},
+        {"text": "displayed on the shelf", "ja": "棚に飾られて", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A basket containing several red apples is placed on the wooden counter.", "grammar": "現在分詞の後置修飾", "ja": "いくつかの赤いりんごが入ったかごが、木製のカウンターの上に置かれています。", "type": "gist", "points": 50},
+        {"text": "Next to the basket, there is a bunch of ripe, spotted bananas.", "grammar": "副詞句の倒置表現", "ja": "かごの隣には、熟して斑点のあるバナナの房があります。", "type": "detail", "points": 40},
+        {"text": "Sunlight is shining through the window in the background.", "grammar": "現在進行形 / 前置詞through", "ja": "背景の窓から日光が差し込んでいます。", "type": "detail", "points": 40},
+        {"text": "Several ceramic items are beautifully displayed on the shelf.", "grammar": "受動態", "ja": "いくつかの陶器の品が棚の上に美しく飾られています。", "type": "gist", "points": 40},
+        {"text": "The fresh fruits look very appetizing, making it a perfect healthy snack.", "grammar": "分詞構文", "ja": "新鮮な果物はとても食欲をそそるように見え、完璧な健康的なおやつになります。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "apple": { "x": 30, "y": 45 },
+    "banana": { "x": 75, "y": 70 },
+    "basket": { "x": 30, "y": 65 },
+    "table": { "x": 50, "y": 85 },
+    "window": { "x": 75, "y": 20 },
+    "pitcher": { "x": 5, "y": 35 },
+    "jug": { "x": 22, "y": 10 },
+    "pot": { "x": 8, "y": 10 },
+    "shelf": { "x": 10, "y": 20 },
+    "cloth": { "x": 25, "y": 55 },
+    "stem": { "x": 34, "y": 44 },
+    "spot": { "x": 80, "y": 75 },
+    "glass": { "x": 65, "y": 25 },
+    "frame": { "x": 53, "y": 20 },
+    "wall": { "x": 40, "y": 15 },
+    "handle": { "x": 12, "y": 40 }
+  }
+}

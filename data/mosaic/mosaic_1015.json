@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1015",
+  "imageSrc": "assets/images/mosaic/1015.jpg",
+  "description": "観光地の混雑とオーバーツーリズム",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "building", "ja": "建物", "type": "object", "points": 10},
+        {"text": "people", "ja": "人々", "type": "object", "points": 10},
+        {"text": "bus", "ja": "バス", "type": "object", "points": 10},
+        {"text": "phone", "ja": "電話・スマホ", "type": "object", "points": 10},
+        {"text": "camera", "ja": "カメラ", "type": "object", "points": 10},
+        {"text": "hat", "ja": "帽子", "type": "object", "points": 10},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "stone", "ja": "石", "type": "object", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "take", "ja": "撮る", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 10},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 10},
+        {"text": "fun", "ja": "楽しい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a big building", "ja": "大きな建物", "type": "object", "points": 20},
+        {"text": "many people", "ja": "たくさんの人", "type": "object", "points": 10},
+        {"text": "take a picture", "ja": "写真を撮る", "type": "gist", "points": 20},
+        {"text": "look at the building", "ja": "建物を見る", "type": "gist", "points": 20},
+        {"text": "many buses", "ja": "たくさんのバス", "type": "object", "points": 20},
+        {"text": "a blue sky", "ja": "青い空", "type": "attribute", "points": 10},
+        {"text": "wear a hat", "ja": "帽子をかぶる", "type": "gist", "points": 20},
+        {"text": "have fun", "ja": "楽しむ", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a big building.", "grammar": "I see~", "ja": "大きな建物が見えます。", "type": "object", "points": 20},
+        {"text": "There are many people.", "grammar": "There is/are~", "ja": "たくさんの人がいます。", "type": "object", "points": 20},
+        {"text": "The people take pictures.", "grammar": "一般動詞", "ja": "人々は写真を撮ります。", "type": "gist", "points": 30},
+        {"text": "The buses are big.", "grammar": "be動詞", "ja": "バスは大きいです。", "type": "attribute", "points": 20},
+        {"text": "They have fun.", "grammar": "一般動詞", "ja": "彼らは楽しんでいます。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 20},
+        {"text": "temple", "ja": "神殿", "type": "object", "points": 20},
+        {"text": "crowd", "ja": "群集", "type": "object", "points": 20},
+        {"text": "smartphone", "ja": "スマートフォン", "type": "object", "points": 10},
+        {"text": "backpack", "ja": "リュックサック", "type": "object", "points": 20},
+        {"text": "pillar", "ja": "柱", "type": "object", "points": 20},
+        {"text": "crowded", "ja": "混雑した", "type": "attribute", "points": 20},
+        {"text": "popular", "ja": "人気のある", "type": "attribute", "points": 20},
+        {"text": "visit", "ja": "訪れる", "type": "gist", "points": 20},
+        {"text": "enjoy", "ja": "楽しむ", "type": "gist", "points": 10},
+        {"text": "gather", "ja": "集まる", "type": "gist", "points": 20},
+        {"text": "hold", "ja": "持つ", "type": "gist", "points": 10},
+        {"text": "arrive", "ja": "到着する", "type": "gist", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a crowded place", "ja": "混雑した場所", "type": "attribute", "points": 30},
+        {"text": "visit the temple", "ja": "神殿を訪れる", "type": "gist", "points": 20},
+        {"text": "take a selfie", "ja": "自撮りをする", "type": "gist", "points": 30},
+        {"text": "hold a smartphone", "ja": "スマートフォンを持つ", "type": "gist", "points": 20},
+        {"text": "arrive by bus", "ja": "バスで到着する", "type": "gist", "points": 20},
+        {"text": "full of tourists", "ja": "観光客でいっぱいの", "type": "attribute", "points": 30},
+        {"text": "an old building", "ja": "古い建物", "type": "object", "points": 20},
+        {"text": "a serious problem", "ja": "深刻な問題", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "Many tourists are visiting the temple.", "grammar": "現在進行形", "ja": "多くの観光客が神殿を訪れています。", "type": "gist", "points": 30},
+        {"text": "The place is full of tourists.", "grammar": "be full of", "ja": "その場所は観光客でいっぱいです。", "type": "detail", "points": 30},
+        {"text": "A woman is taking a selfie with her smartphone.", "grammar": "現在進行形", "ja": "女性がスマートフォンで自撮りをしています。", "type": "gist", "points": 40},
+        {"text": "There are many buses in the background.", "grammar": "There is/are~ + 場所", "ja": "背景にたくさんのバスがあります。", "type": "detail", "points": 30},
+        {"text": "This picture shows a serious problem.", "grammar": "一般動詞", "ja": "この絵は深刻な問題を示しています。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "overtourism", "ja": "オーバーツーリズム", "type": "inference", "points": 30},
+        {"text": "destination", "ja": "目的地", "type": "object", "points": 30},
+        {"text": "monument", "ja": "記念碑・遺跡", "type": "object", "points": 30},
+        {"text": "historic", "ja": "歴史的な", "type": "attribute", "points": 30},
+        {"text": "ancient", "ja": "古代の", "type": "attribute", "points": 30},
+        {"text": "massive", "ja": "大規模な", "type": "attribute", "points": 30},
+        {"text": "overwhelming", "ja": "圧倒的な", "type": "attribute", "points": 30},
+        {"text": "negative", "ja": "否定的な", "type": "attribute", "points": 20},
+        {"text": "flock", "ja": "群がる", "type": "gist", "points": 30},
+        {"text": "capture", "ja": "記録する・撮る", "type": "gist", "points": 30},
+        {"text": "ruin", "ja": "遺跡", "type": "object", "points": 20},
+        {"text": "structure", "ja": "建造物", "type": "object", "points": 20},
+        {"text": "attract", "ja": "惹きつける", "type": "gist", "points": 30},
+        {"text": "impact", "ja": "影響", "type": "inference", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "cause overtourism", "ja": "オーバーツーリズムを引き起こす", "type": "gist", "points": 40},
+        {"text": "flock to the monument", "ja": "遺跡に群がる", "type": "gist", "points": 40},
+        {"text": "an ancient structure", "ja": "古代の建造物", "type": "object", "points": 30},
+        {"text": "capture the moment", "ja": "瞬間を記録する", "type": "gist", "points": 30},
+        {"text": "a massive crowd of tourists", "ja": "大規模な観光客の群集", "type": "object", "points": 40},
+        {"text": "have a negative impact", "ja": "悪影響を及ぼす", "type": "inference", "points": 30},
+        {"text": "illustrate an issue", "ja": "問題を示す", "type": "inference", "points": 30},
+        {"text": "attract too many people", "ja": "あまりにも多くの人を惹きつける", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the issue of overtourism at a popular destination.", "grammar": "一般動詞", "ja": "この絵は人気のある目的地でのオーバーツーリズムの問題を示しています。", "type": "inference", "points": 40},
+        {"text": "A massive crowd of tourists is flocking to the ancient monument.", "grammar": "現在進行形 + 前置詞", "ja": "大規模な観光客の群集が古代の遺跡に群がっています。", "type": "gist", "points": 40},
+        {"text": "Many people are holding their smartphones to capture the historic ruins.", "grammar": "不定詞の副詞的用法", "ja": "多くの人々が歴史的な遺跡を記録するためにスマートフォンを持っています。", "type": "object", "points": 50},
+        {"text": "It looks like the massive buses bring too many tourists to this place.", "grammar": "It looks like~", "ja": "大型バスがこの場所にあまりにも多くの観光客を運んできているように見えます。", "type": "inference", "points": 50},
+        {"text": "We should think about how to reduce the negative impact on the destination.", "grammar": "疑問詞 + to do", "ja": "目的地への悪影響を減らす方法について私たちは考えるべきです。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "temple": { "x": 25, "y": 35 },
+    "pillar": { "x": 20, "y": 45 },
+    "crowd": { "x": 30, "y": 80 },
+    "phone": { "x": 10, "y": 62 },
+    "camera": { "x": 82, "y": 95 },
+    "hat": { "x": 53, "y": 68 },
+    "backpack": { "x": 95, "y": 90 },
+    "tourist": { "x": 18, "y": 80 },
+    "bus": { "x": 65, "y": 30 },
+    "bubble": { "x": 75, "y": 25 },
+    "arrow": { "x": 45, "y": 50 },
+    "sky": { "x": 20, "y": 10 },
+    "roof": { "x": 25, "y": 18 },
+    "stairs": { "x": 28, "y": 62 },
+    "ruin": { "x": 90, "y": 65 }
+  }
+}

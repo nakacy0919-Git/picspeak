@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_807",
+  "imageSrc": "assets/images/mosaic/807.webp",
+  "description": "伝統的な儀式の光景",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女性", "type": "object", "points": 20},
+        {"text": "girl", "ja": "少女", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "mark", "ja": "しるし", "type": "object", "points": 20},
+        {"text": "mountain", "ja": "山", "type": "object", "points": 20},
+        {"text": "temple", "ja": "寺院", "type": "object", "points": 20},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 20},
+        {"text": "hand", "ja": "手", "type": "object", "points": 20},
+        {"text": "bowl", "ja": "ボウル", "type": "object", "points": 20},
+        {"text": "face", "ja": "顔", "type": "object", "points": 20},
+        {"text": "day", "ja": "日", "type": "inference", "points": 10},
+        {"text": "smile", "ja": "笑顔", "type": "object", "points": 20},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "people", "ja": "人々", "type": "object", "points": 10},
+        {"text": "old", "ja": "年配の", "type": "attribute", "points": 10}
+      ],
+      "chunks": [
+        {"text": "a red mark", "ja": "赤いしるし", "type": "attribute", "points": 20},
+        {"text": "on her face", "ja": "彼女の顔に", "type": "detail", "points": 20},
+        {"text": "in the city", "ja": "街の中で", "type": "detail", "points": 20},
+        {"text": "old woman", "ja": "年配の女性", "type": "object", "points": 20},
+        {"text": "young girl", "ja": "若い女の子", "type": "object", "points": 20},
+        {"text": "smiling face", "ja": "笑顔", "type": "attribute", "points": 20},
+        {"text": "holding a bowl", "ja": "ボウルを持っている", "type": "gist", "points": 20},
+        {"text": "blue sky", "ja": "青い空", "type": "attribute", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "type": "object", "points": 30},
+        {"text": "She is happy.", "grammar": "She is~", "ja": "彼女は幸せです。", "type": "inference", "points": 30},
+        {"text": "There are mountains.", "grammar": "There are~", "ja": "山があります。", "type": "detail", "points": 30},
+        {"text": "The mark is red.", "grammar": "The is~", "ja": "しるしは赤いです。", "type": "attribute", "points": 30},
+        {"text": "She is smiling.", "grammar": "is ~ing", "ja": "彼女は笑っています。", "type": "gist", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "forehead", "ja": "額", "type": "object", "points": 20},
+        {"text": "ceremony", "ja": "儀式", "type": "object", "points": 30},
+        {"text": "tradition", "ja": "伝統", "type": "inference", "points": 30},
+        {"text": "blessing", "ja": "祝福", "type": "gist", "points": 30},
+        {"text": "temple", "ja": "寺院", "type": "object", "points": 20},
+        {"text": "architecture", "ja": "建築", "type": "object", "points": 20},
+        {"text": "ritual", "ja": "儀式", "type": "object", "points": 20},
+        {"text": "elderly", "ja": "年配の", "type": "attribute", "points": 20},
+        {"text": "youthful", "ja": "若い", "type": "attribute", "points": 20},
+        {"text": "applying", "ja": "塗る", "type": "gist", "points": 20},
+        {"text": "cultural", "ja": "文化的な", "type": "inference", "points": 20},
+        {"text": "crowd", "ja": "群衆", "type": "object", "points": 20},
+        {"text": "orange", "ja": "オレンジ色の", "type": "attribute", "points": 20},
+        {"text": "vibrant", "ja": "鮮やかな", "type": "attribute", "points": 20},
+        {"text": "snowy", "ja": "雪の", "type": "attribute", "points": 20}
+      ],
+      "chunks": [
+        {"text": "applying a mark", "ja": "しるしを塗る", "type": "gist", "points": 30},
+        {"text": "traditional ceremony", "ja": "伝統的な儀式", "type": "inference", "points": 30},
+        {"text": "in front of the temple", "ja": "寺院の前で", "type": "detail", "points": 30},
+        {"text": "receiving a blessing", "ja": "祝福を受けている", "type": "gist", "points": 30},
+        {"text": "snowy mountains", "ja": "雪山", "type": "object", "points": 30},
+        {"text": "wearing a scarf", "ja": "スカーフを巻いている", "type": "attribute", "points": 30},
+        {"text": "busy street scene", "ja": "賑やかな通りの景色", "type": "detail", "points": 30},
+        {"text": "smiling happily", "ja": "幸せそうに笑っている", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "An old woman is applying a red mark to the girl's forehead.", "grammar": "is ~ing", "ja": "年配の女性が女の子の額に赤いしるしを塗っています。", "type": "gist", "points": 40},
+        {"text": "There is a temple in the background.", "grammar": "There is~", "ja": "背景に寺院があります。", "type": "detail", "points": 40},
+        {"text": "The girl is smiling because she is happy.", "grammar": "because", "ja": "女の子は幸せなので笑っています。", "type": "inference", "points": 40},
+        {"text": "The mountains look beautiful.", "grammar": "look + adj", "ja": "山が美しく見えます。", "type": "detail", "points": 40},
+        {"text": "This is a special cultural tradition.", "grammar": "This is~", "ja": "これは特別な文化的な伝統です。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "benediction", "ja": "祝福の祈り", "type": "gist", "points": 40},
+        {"text": "ritualistic", "ja": "儀式的な", "type": "attribute", "points": 40},
+        {"text": "ornate", "ja": "装飾された", "type": "attribute", "points": 30},
+        {"text": "architecture", "ja": "建築", "type": "object", "points": 30},
+        {"text": "mountainous", "ja": "山岳の", "type": "attribute", "points": 30},
+        {"text": "cultural", "ja": "文化的な", "type": "inference", "points": 30},
+        {"text": "significant", "ja": "重要な", "type": "inference", "points": 30},
+        {"text": "generational", "ja": "世代間の", "type": "inference", "points": 40},
+        {"text": "connection", "ja": "つながり", "type": "inference", "points": 40},
+        {"text": "expression", "ja": "表情", "type": "object", "points": 30},
+        {"text": "vibrant", "ja": "鮮やかな", "type": "attribute", "points": 30},
+        {"text": "symbolic", "ja": "象徴的な", "type": "attribute", "points": 30},
+        {"text": "customary", "ja": "慣習的な", "type": "inference", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "heritage", "ja": "遺産", "type": "inference", "points": 40}
+      ],
+      "chunks": [
+        {"text": "a symbolic red tika", "ja": "象徴的な赤いティカ", "type": "object", "points": 40},
+        {"text": "traditional architectural setting", "ja": "伝統的な建築の背景", "type": "detail", "points": 40},
+        {"text": "generational connection", "ja": "世代間のつながり", "type": "inference", "points": 40},
+        {"text": "snowy Himalayan peaks", "ja": "雪を頂いたヒマラヤの峰々", "type": "object", "points": 40},
+        {"text": "performing a blessing", "ja": "祝福の儀式を行う", "type": "gist", "points": 40},
+        {"text": "expressions of joy", "ja": "喜びの表情", "type": "inference", "points": 40},
+        {"text": "cultural heritage", "ja": "文化遺産", "type": "inference", "points": 40},
+        {"text": "vibrant religious ceremony", "ja": "鮮やかな宗教儀式", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The elderly woman is performing a traditional blessing by applying a red tika to the young woman's forehead.", "grammar": "by + gerund", "ja": "年配の女性が若い女性の額に赤いティカを塗ることで、伝統的な祝福を行っています。", "type": "gist", "points": 50},
+        {"text": "The backdrop features ornate temple architecture set against the snowy Himalayan mountains.", "grammar": "participial phrase", "ja": "背景には、雪を頂いたヒマラヤ山脈を背にした装飾的な寺院建築があります。", "type": "detail", "points": 50},
+        {"text": "This scene captures a touching moment of generational connection and cultural appreciation.", "grammar": "present simple", "ja": "この光景は、世代間のつながりと文化への理解という感動的な瞬間を捉えています。", "type": "inference", "points": 50},
+        {"text": "The young woman's radiant smile suggests she feels honored by this ritual.", "grammar": "S+V+O", "ja": "若い女性の輝くような笑顔は、彼女がこの儀式を光栄に思っていることを示唆しています。", "type": "inference", "points": 50},
+        {"text": "This traditional ceremony creates a warm and deeply meaningful atmosphere.", "grammar": "S+V+O", "ja": "この伝統的な儀式は、温かく深い意味のある雰囲気を作り出しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "forehead_tika": { "x": 45, "y": 35 },
+    "young_woman_face": { "x": 42, "y": 40 },
+    "old_woman_hand": { "x": 48, "y": 30 },
+    "tika_bowl": { "x": 51, "y": 85 },
+    "old_woman_face": { "x": 70, "y": 45 },
+    "temple_structure_left": { "x": 22, "y": 35 },
+    "temple_structure_right": { "x": 60, "y": 25 },
+    "mountains": { "x": 50, "y": 15 },
+    "young_woman_backpack": { "x": 25, "y": 75 },
+    "old_woman_shawl": { "x": 80, "y": 80 },
+    "crowd_left": { "x": 10, "y": 65 },
+    "market_stall": { "x": 10, "y": 55 },
+    "sky": { "x": 50, "y": 10 },
+    "young_woman_scarf": { "x": 38, "y": 75 },
+    "old_woman_bangles": { "x": 55, "y": 48 },
+    "background_street": { "x": 52, "y": 65 }
+  }
+}

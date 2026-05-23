@@ -5,7 +5,7 @@
 
 window.appState = { 
     selectedMode: null,
-    selectedLevel: 'elementary', // ★初期値を小学生(elementary)に設定
+    selectedLevel: 'elementary',
     customTimeLimit: 30,
     isPracticeMode: false,
     practiceTargetText: "",
@@ -106,20 +106,38 @@ window.renderThemeGrid = async function() {
     if (!themeGrid) return;
     themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10 text-xl md:text-2xl">Loading Images...</div>';
     try {
-        const fetchPromises = window.themeList.map(id => 
-            fetch(`data/themes/${id}.json?t=${new Date().getTime()}`)
-            .then(res => res.json())
-            .then(data => ({ id, data: Array.isArray(data) ? data[0] : data }))
-            .catch(e => null)
-        );
-        const results = await Promise.all(fetchPromises);
+        let results = [];
+        
+        // MOSAICモードの場合は専用のリストを読み込む
+        if (window.appState.selectedMode === 'mosaic') {
+            const res = await fetch('data/mosaic_list.json?t=' + new Date().getTime());
+            results = await res.json();
+        } else {
+            // 従来の処理
+            const fetchPromises = window.themeList.map(id => 
+                fetch(`data/themes/${id}.json?t=${new Date().getTime()}`)
+                .then(res => res.json())
+                .then(data => ({ id, data: Array.isArray(data) ? data[0] : data }))
+                .catch(e => null)
+            );
+            results = await Promise.all(fetchPromises);
+        }
+
         let html = '';
         results.forEach(item => {
             if(!item || !item.data) return;
+            
+            let imageFilterClass = "";
             let titleText = item.data.description || item.data.titleJa || '名称未設定';
+            
+            if (window.appState.selectedMode === 'mosaic') {
+                imageFilterClass = "blur-2xl scale-110"; 
+                titleText = "??? (Secret Image)";
+            }
+            
             html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-md border-4 border-transparent hover:border-pink-400 hover:shadow-xl transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
-                <div class="relative w-full aspect-video bg-gray-100 shrink-0 pointer-events-none">
-                    <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover pointer-events-none">
+                <div class="relative w-full aspect-video bg-gray-100 shrink-0 pointer-events-none overflow-hidden">
+                    <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover pointer-events-none transition-all duration-500 ${imageFilterClass}">
                 </div>
                 <div class="p-3 md:p-4 text-center text-xs md:text-sm lg:text-base font-black text-gray-700 line-clamp-2 border-t border-gray-100 flex-1 flex items-center justify-center leading-tight bg-white pointer-events-none">${titleText}</div>
             </div>`;
@@ -130,25 +148,49 @@ window.renderThemeGrid = async function() {
 
 window.startGameWithTheme = async function(id) {
     try {
-        const res = await fetch(`data/themes/${id}.json?t=` + new Date().getTime());
+        // ★大修正: リスト用の浅いデータではなく、必ず個別JSON(深い採点データ)を読み込む
+        // MOSAICモードなら 'data/mosaic'、それ以外なら 'data/themes' を見に行く
+        const folderPath = window.appState.selectedMode === 'mosaic' ? 'data/mosaic' : 'data/themes';
+        
+        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
+        
+        // 読み込んだ個別データを currentTheme にセット（これで scoringData や pins が入る！）
         window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-    } catch (e) { alert(`データの読み込みに失敗しました。`); return; }
+        
+    } catch (e) { 
+        alert(`データの読み込みに失敗しました。`); 
+        return; 
+    }
     
     const promptImage = document.getElementById('prompt-image');
     if (window.currentTheme && window.currentTheme.imageSrc && promptImage) {
         promptImage.src = window.currentTheme.imageSrc;
-        promptImage.classList.remove('blur-none');
-        promptImage.classList.add('blur-md'); 
+        
+        // MOSAICモードなら、一瞬たりとも見せないように強制モザイク
+        if (window.appState.selectedMode === 'mosaic') {
+            promptImage.classList.remove('blur-none', 'blur-md');
+            promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
+            promptImage.style.transform = 'scale(1.1)';
+        } else {
+            // 他のモードのデフォルト
+            promptImage.style.filter = '';
+            promptImage.style.transform = '';
+            promptImage.classList.remove('blur-none');
+            promptImage.classList.add('blur-md'); 
+        }
     }
     
     window.timeLeft = window.appState.customTimeLimit || 30; 
     const timerText = document.getElementById('timer-text');
     if(timerText) timerText.textContent = `${window.timeLeft}s`; 
     
-    window.timeElapsed = 0; window.rawTranscriptForCounting = ""; window.accumulatedTranscript = ""; 
+    window.timeElapsed = 0; 
+    window.rawTranscriptForCounting = ""; 
+    window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
     
+    // UIのリセット
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
     if(document.getElementById('wordCountDisplay')) document.getElementById('wordCountDisplay').textContent = "0";
     if(document.getElementById('liveWpmDisplay')) document.getElementById('liveWpmDisplay').textContent = "0";
@@ -157,17 +199,54 @@ window.startGameWithTheme = async function(id) {
     if(document.getElementById('pin-container')) document.getElementById('pin-container').innerHTML = ''; 
     if(document.getElementById('support-text-container')) document.getElementById('support-text-container').innerHTML = '';
     
-    // ▼▼ 追加：NG WORDモードなら初期化、違うモードなら非表示にする ▼▼
     if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
         ngWordGame.init(window.currentTheme);
     } else if (typeof ngWordGame !== 'undefined') {
         ngWordGame.cleanup();
     }
-    // ▲▲ 追加ここまで ▲▲
 
+    // ヒントパネルの処理
     const transcriptBox = document.getElementById('transcript-box');
-    if(transcriptBox) transcriptBox.innerHTML = `<p class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>`;
-    
+    const existingHint = document.getElementById('mosaic-hint-panel');
+    if (existingHint) existingHint.remove();
+
+    if(transcriptBox) {
+        if (window.appState.selectedMode === 'mosaic') {
+            const hintPanel = document.createElement('div');
+            hintPanel.id = 'mosaic-hint-panel';
+            hintPanel.className = 'mb-2 md:mb-3 bg-pink-50 border border-pink-100 rounded-xl p-2 md:p-3 shadow-sm shrink-0 z-10';
+            
+            hintPanel.innerHTML = `
+                <span class="text-pink-500 font-black mb-2 block tracking-wider text-xs md:text-sm">💡 言葉に詰まったら使ってみよう！</span>
+                <div class="space-y-2">
+                    <div class="flex flex-wrap gap-1.5 items-center">
+                        <span class="text-[10px] md:text-xs font-black text-pink-400 border border-pink-200 bg-white px-1.5 py-0.5 rounded uppercase tracking-wider">推測</span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">It looks like ~</span> <span class="text-gray-500">(〜に見える)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">Maybe it's ~</span> <span class="text-gray-500">(たぶん〜)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I think this is ~</span> <span class="text-gray-500">(〜だと思う)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I'm not sure, but ~</span> <span class="text-gray-500">(よくわからないけど)</span></span>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 items-center">
+                        <span class="text-[10px] md:text-xs font-black text-blue-400 border border-blue-200 bg-white px-1.5 py-0.5 rounded uppercase tracking-wider">描写</span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I can see ~</span> <span class="text-gray-500">(〜が見える)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">There is / are ~</span> <span class="text-gray-500">(〜がある)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">It has a [色] color</span> <span class="text-gray-500">([色]をしている)</span></span>
+                    </div>
+                    <div class="flex flex-wrap gap-1.5 items-center">
+                        <span class="text-[10px] md:text-xs font-black text-emerald-400 border border-emerald-200 bg-white px-1.5 py-0.5 rounded uppercase tracking-wider">場所</span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">In the center, ~</span> <span class="text-gray-500">(真ん中に)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">On the right / left, ~</span> <span class="text-gray-500">(右/左に)</span></span>
+                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">In the background, ~</span> <span class="text-gray-500">(奥のほうに)</span></span>
+                    </div>
+                </div>
+            `;
+            transcriptBox.parentNode.insertBefore(hintPanel, transcriptBox);
+            transcriptBox.innerHTML = `<p class="text-gray-400 font-bold">Press START and guess the picture!<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して推測してみよう）</span></p>`;
+        } else {
+            transcriptBox.innerHTML = `<p class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>`;
+        }
+    }
+
     const btnStartTurn = document.getElementById('btn-start-turn');
     if(btnStartTurn) {
         btnStartTurn.classList.remove('hidden');
@@ -175,7 +254,7 @@ window.startGameWithTheme = async function(id) {
     }
     
     if (typeof showView === 'function') showView(document.getElementById('view-play'));
-}
+};
 
 window.playResultTTS = function(text) {
     speechSynthesis.cancel();
@@ -203,7 +282,6 @@ window.finishGameAndShowResult = function() {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
         
-        // ▼▼ 追加：ゲーム終了時にNGパネルを隠す ▼▼
         if (typeof ngWordGame !== 'undefined') {
             ngWordGame.cleanup();
         }
@@ -229,9 +307,6 @@ window.finishGameAndShowResult = function() {
     }
 };
 
-// ==========================================
-// ★ Result画面のレイアウト (iPad鳥瞰的コンパクト＆ボタンはみ出し防止版)
-// ==========================================
 window.renderSnapshotResult = function() {
     let stats = null;
     if(typeof getCompletionStats === 'function') {
@@ -239,7 +314,7 @@ window.renderSnapshotResult = function() {
     }
     
     const box = document.getElementById('transcript-box');
-    const finalTranscript = (box && box.innerText) ? box.innerText.replace("Press START and speak loudly.（STARTを押して、大きな声で話しましょう）", "").trim() : "";
+    const finalTranscript = (box && box.innerText) ? box.innerText.replace("Press START and speak loudly.（STARTを押して、大きな声で話しましょう）", "").replace("Press START and guess the picture!（STARTを押して推測してみよう）", "").trim() : "";
 
     const container = document.getElementById('ranking-container');
     if (!container) return;
@@ -392,7 +467,7 @@ window.renderSnapshotResult = function() {
 };
 
 // ==========================================
-// ★ キラキラ音を鳴らす関数
+// ★ 音声・エフェクト関連
 // ==========================================
 window.playSuccessChime = function() {
     try {
@@ -416,8 +491,8 @@ window.playSuccessChime = function() {
         gainNode.gain.linearRampToValueAtTime(0.3, now + 0.05);
         gainNode.gain.exponentialRampToValueAtTime(0.01, now + 0.6);
 
-        osc1.frequency.setValueAtTime(987.77, now); // B5
-        osc1.frequency.setValueAtTime(1318.51, now + 0.1); // E6
+        osc1.frequency.setValueAtTime(987.77, now);
+        osc1.frequency.setValueAtTime(1318.51, now + 0.1);
         
         osc2.frequency.setValueAtTime(987.77, now);
         osc2.frequency.setValueAtTime(1318.51, now + 0.1);
@@ -429,9 +504,6 @@ window.playSuccessChime = function() {
     } catch (e) { console.error("Audio play failed", e); }
 };
 
-// ==========================================
-// ★ 優しいタップ音（ポッ）を鳴らす関数
-// ==========================================
 window.playTapSound = function() {
     try {
         const ctx = window.audioCtx || new (window.AudioContext || window.webkitAudioContext)();
@@ -441,13 +513,13 @@ window.playTapSound = function() {
         const osc = ctx.createOscillator();
         const gainNode = ctx.createGain();
 
-        osc.type = 'sine'; // 丸みのある優しい音（サイン波）
-        osc.frequency.setValueAtTime(600, ctx.currentTime); // 少し高めの音から
-        osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.1); // 一瞬で低く落とす（ポッという響き）
+        osc.type = 'sine'; 
+        osc.frequency.setValueAtTime(600, ctx.currentTime); 
+        osc.frequency.exponentialRampToValueAtTime(300, ctx.currentTime + 0.1); 
 
         gainNode.gain.setValueAtTime(0, ctx.currentTime);
-        gainNode.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.01); // 音量を一瞬で上げる
-        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1); // 余韻を残さずすぐ消す
+        gainNode.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.01); 
+        gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1); 
 
         osc.connect(gainNode);
         gainNode.connect(ctx.destination);
@@ -457,9 +529,6 @@ window.playTapSound = function() {
     } catch (e) { console.error("Tap sound failed", e); }
 };
 
-// ==========================================
-// ★ 紙吹雪（Confetti）生成関数
-// ==========================================
 window.createConfetti = function() {
     const colors = ['#4ade80', '#60a5fa', '#facc15', '#f87171', '#a78bfa', '#fb923c'];
     const confettiCount = 100;
@@ -477,9 +546,6 @@ window.createConfetti = function() {
     }
 };
 
-// ==========================================
-// ★ Excellent一瞬表示関数
-// ==========================================
 window.showExcellentPrompt = function() {
     const prompt = document.createElement('div');
     prompt.className = 'excellent-prompt';
@@ -657,12 +723,32 @@ window.openPractice = function(text, ja) {
 // ==========================================
 document.addEventListener('click', (e) => {
     
-    // 🎵 優しいタップ音
     if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home')) {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // 🏠 ホームボタン（初期画面へ一気に戻る）
+    // 🎮 ★★★ 追加したモードボタンの処理 ★★★
+    const modeBtn = e.target.closest('.mode-btn');
+    if (modeBtn) {
+        document.querySelectorAll('.mode-btn').forEach(b => {
+            b.classList.remove('ring-4', 'ring-pink-400', 'bg-pink-50', 'border-pink-300');
+            b.classList.add('bg-white', 'border-gray-200');
+        });
+        
+        modeBtn.classList.remove('bg-white', 'border-gray-200');
+        modeBtn.classList.add('ring-4', 'ring-pink-400', 'bg-pink-50', 'border-pink-300');
+        
+        window.appState.selectedMode = modeBtn.getAttribute('data-mode');
+        
+        const btnSelect = document.getElementById('btn-goto-select');
+        if (btnSelect) {
+            btnSelect.classList.remove('opacity-40', 'pointer-events-none');
+            btnSelect.classList.add('animate-pulse-slow');
+        }
+        return;
+    }
+
+    // 🏠 ホームボタン
     const btnHome = e.target.closest('.action-btn-home');
     if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -674,7 +760,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ◀ 戻るボタン（1つ前の画面に戻る）
+    // ◀ 戻るボタン
     const btnBack = e.target.closest('.action-btn-back');
     if (btnBack) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -682,7 +768,6 @@ document.addEventListener('click', (e) => {
         clearInterval(window.gameTimer);
         if(window.supportInterval) clearInterval(window.supportInterval);
         
-        // 現在表示されている画面を判定して、1つ前に戻す
         const currentView = document.querySelector('.app-container > div:not(.hidden)[id^="view-"]');
         if (currentView) {
             if (currentView.id === 'view-about' || currentView.id === 'view-select') {
@@ -695,7 +780,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🎯 SELECT IMAGE / STORY ボタン
+    // 🎯 SELECT IMAGE ボタン
     const btnGotoSelect = e.target.closest('#btn-goto-select');
     if (btnGotoSelect && !btnGotoSelect.disabled) {
         if(!window.appState.selectedMode) return; 
@@ -713,8 +798,6 @@ document.addEventListener('click', (e) => {
         } catch (err) {}
         if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
-        
-        // エラーの原因だった古いボタンの呼び出しを削除済み！
         
         const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
         if (elementaryBtn) {
@@ -767,7 +850,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🛑 PLAY画面：録音中インジケーター（手動ストップ用）
+    // 🛑 PLAY画面：録音中インジケーター
     const recIndicator = e.target.closest('#recording-indicator');
     if (recIndicator) {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -794,27 +877,38 @@ document.addEventListener('click', (e) => {
         const sText = document.getElementById('status-text');
         if(sText) sText.textContent = "Ready";
         const pImage = document.getElementById('prompt-image');
-        if (pImage) { pImage.classList.remove('blur-none'); pImage.classList.add('blur-md'); }
-        if (typeof showView === 'function') showView(document.getElementById('view-select')); 
+        if (pImage) {
+            // ★修正：MOSAICモードなら強烈なモザイクをかけ直す
+            if (window.appState.selectedMode === 'mosaic') {
+                pImage.classList.remove('blur-none', 'blur-md');
+                pImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
+                pImage.style.transform = 'scale(1.1)';
+            } else {
+                pImage.style.filter = '';
+                pImage.style.transform = '';
+                pImage.classList.remove('blur-none');
+                pImage.classList.add('blur-md');
+            }
+        }
+        if (typeof showView === 'function') showView(document.getElementById('view-select'));
         if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
-    // 🎤 発音練習の開始・再試行
+    // 🎤 発音練習関連
     const practiceStartBtn = e.target.closest('#btn-start-practice');
     if (practiceStartBtn) {
         window.togglePracticeRecording();
         return;
     }
 
-    // ❌ 練習モーダルを閉じる
     const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('button[onclick*="closePractice"]');
     if (practiceCloseBtn) {
         window.closePracticeModal();
         return;
     }
 
-    // ℹ️ About画面へ行くボタン
+    // ℹ️ About画面へ
     const btnGotoAbout = e.target.closest('#btn-goto-about');
     if (btnGotoAbout) {
         if (typeof showView === 'function') showView(document.getElementById('view-about'));
@@ -822,4 +916,5 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// ★ 最後のカッコのエラーも修正済みです
 window.addEventListener('DOMContentLoaded', window.initApp);

@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1009",
+  "imageSrc": "assets/images/mosaic/1009.jpg",
+  "description": "地球温暖化による氷河の融解とペンギン",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "penguin", "ja": "ペンギン", "type": "object", "points": 10},
+        {"text": "ice", "ja": "氷", "type": "object", "points": 10},
+        {"text": "sea", "ja": "海", "type": "object", "points": 10},
+        {"text": "water", "ja": "水", "type": "object", "points": 10},
+        {"text": "bird", "ja": "鳥", "type": "object", "points": 10},
+        {"text": "factory", "ja": "工場", "type": "object", "points": 20},
+        {"text": "smoke", "ja": "煙", "type": "object", "points": 10},
+        {"text": "white", "ja": "白い", "type": "attribute", "points": 10},
+        {"text": "cold", "ja": "冷たい", "type": "attribute", "points": 10},
+        {"text": "hot", "ja": "暑い", "type": "attribute", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20},
+        {"text": "break", "ja": "割れる", "type": "gist", "points": 20},
+        {"text": "fall", "ja": "落ちる", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 10}
+      ],
+      "chunks": [
+        {"text": "cute penguins", "ja": "かわいいペンギン", "type": "object", "points": 20},
+        {"text": "white ice", "ja": "白い氷", "type": "attribute", "points": 20},
+        {"text": "in the sea", "ja": "海の中に", "type": "detail", "points": 20},
+        {"text": "break off", "ja": "割れ落ちる", "type": "gist", "points": 30},
+        {"text": "a big factory", "ja": "大きな工場", "type": "object", "points": 20},
+        {"text": "dirty smoke", "ja": "汚い煙", "type": "attribute", "points": 20},
+        {"text": "hot air", "ja": "暑い空気", "type": "attribute", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see some cute penguins.", "grammar": "I see~", "ja": "かわいいペンギンが何羽か見えます。", "type": "object", "points": 30},
+        {"text": "The ice is white and cold.", "grammar": "be動詞", "ja": "氷は白くて冷たいです。", "type": "attribute", "points": 20},
+        {"text": "A big ice falls into the sea.", "grammar": "一般動詞 + 前置詞", "ja": "大きな氷が海に落ちます。", "type": "gist", "points": 30},
+        {"text": "The factory has dirty smoke.", "grammar": "have/has", "ja": "工場には汚い煙があります。", "type": "object", "points": 30},
+        {"text": "This is a sad thing.", "grammar": "This is~", "ja": "これは悲しいことです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "warming", "ja": "温暖化", "type": "inference", "points": 30},
+        {"text": "ocean", "ja": "海", "type": "object", "points": 20},
+        {"text": "temperature", "ja": "温度", "type": "object", "points": 20},
+        {"text": "coal", "ja": "石炭", "type": "object", "points": 20},
+        {"text": "plant", "ja": "発電所・工場", "type": "object", "points": 20},
+        {"text": "home", "ja": "家・生息地", "type": "object", "points": 10},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "melt", "ja": "溶ける", "type": "gist", "points": 30},
+        {"text": "rise", "ja": "上がる", "type": "gist", "points": 20},
+        {"text": "cause", "ja": "引き起こす", "type": "gist", "points": 20},
+        {"text": "float", "ja": "浮く", "type": "gist", "points": 20},
+        {"text": "lose", "ja": "失う", "type": "gist", "points": 20},
+        {"text": "dangerous", "ja": "危険な", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "global warming", "ja": "地球温暖化", "type": "inference", "points": 40},
+        {"text": "melt the ice", "ja": "氷を溶かす", "type": "gist", "points": 30},
+        {"text": "rise up", "ja": "上昇する", "type": "gist", "points": 20},
+        {"text": "a coal plant", "ja": "石炭火力発電所", "type": "object", "points": 30},
+        {"text": "lose their homes", "ja": "彼らの住処を失う", "type": "gist", "points": 30},
+        {"text": "float on the water", "ja": "水に浮く", "type": "gist", "points": 20},
+        {"text": "look dangerous", "ja": "危険に見える", "type": "inference", "points": 30},
+        {"text": "an environmental problem", "ja": "環境問題", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "Global warming is melting the ice in the ocean.", "grammar": "現在進行形", "ja": "地球温暖化が海の氷を溶かしています。", "type": "gist", "points": 40},
+        {"text": "There are some penguins on the big ice.", "grammar": "There is/are~ + 場所", "ja": "大きな氷の上に何羽かのペンギンがいます。", "type": "detail", "points": 30},
+        {"text": "The temperature is rising because of the coal plant.", "grammar": "現在進行形", "ja": "石炭工場のせいで気温が上昇しています。", "type": "gist", "points": 40},
+        {"text": "Penguins are losing their homes now.", "grammar": "現在進行形", "ja": "ペンギンたちは今、住み家を失っています。", "type": "gist", "points": 30},
+        {"text": "We must think about this environmental problem.", "grammar": "助動詞must", "ja": "私たちはこの環境問題について考えなければなりません。", "type": "inference", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "climate", "ja": "気候", "type": "inference", "points": 30},
+        {"text": "glacier", "ja": "氷河", "type": "object", "points": 30},
+        {"text": "ecosystem", "ja": "生態系", "type": "inference", "points": 30},
+        {"text": "emission", "ja": "排出", "type": "inference", "points": 30},
+        {"text": "fossil", "ja": "化石", "type": "attribute", "points": 30},
+        {"text": "fuel", "ja": "燃料", "type": "object", "points": 20},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "survival", "ja": "生存", "type": "inference", "points": 20},
+        {"text": "threaten", "ja": "脅かす", "type": "gist", "points": 30},
+        {"text": "collapse", "ja": "崩壊する", "type": "gist", "points": 30},
+        {"text": "indicate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "illustrate", "ja": "説明する・示す", "type": "gist", "points": 20},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 30},
+        {"text": "dramatically", "ja": "劇的に", "type": "detail", "points": 30},
+        {"text": "decrease", "ja": "減少する", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "climate change", "ja": "気候変動", "type": "inference", "points": 40},
+        {"text": "fossil fuels like coal", "ja": "石炭のような化石燃料", "type": "object", "points": 40},
+        {"text": "greenhouse gas emissions", "ja": "温室効果ガスの排出", "type": "inference", "points": 40},
+        {"text": "the collapse of glaciers", "ja": "氷河の崩壊", "type": "gist", "points": 40},
+        {"text": "threaten the ecosystem", "ja": "生態系を脅かす", "type": "gist", "points": 40},
+        {"text": "indicate global warming", "ja": "地球温暖化を示す", "type": "inference", "points": 30},
+        {"text": "struggle for survival", "ja": "生存のために奮闘する", "type": "gist", "points": 40},
+        {"text": "a severe consequence", "ja": "深刻な結果", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the severe problem of global warming and climate change.", "grammar": "無生物主語 / 一般動詞", "ja": "この絵は地球温暖化と気候変動の深刻な問題を示しています。", "type": "inference", "points": 40},
+        {"text": "Burning fossil fuels like coal causes the temperature to rise dramatically.", "grammar": "動名詞 / cause O to do", "ja": "石炭などの化石燃料を燃やすことは、気温を劇的に上昇させる原因となります。", "type": "gist", "points": 50},
+        {"text": "It looks like the penguins will lose their habitats because the ice is melting.", "grammar": "It looks like~ / 接続詞because", "ja": "氷が溶けているため、ペンギンたちは生息地を失うように見えます。", "type": "inference", "points": 40},
+        {"text": "We must reduce greenhouse gas emissions to protect the marine ecosystem.", "grammar": "不定詞の副詞的用法", "ja": "海洋生態系を守るために、私たちは温室効果ガスの排出を減らさなければなりません。", "type": "inference", "points": 40},
+        {"text": "The collapsing glacier threatens the survival of these innocent animals.", "grammar": "現在分詞の形容詞的用法", "ja": "崩壊する氷河が、これらの罪のない動物たちの生存を脅かしています。", "type": "gist", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "penguin": { "x": 10, "y": 75 },
+    "glacier": { "x": 35, "y": 60 },
+    "sea": { "x": 80, "y": 75 },
+    "splash": { "x": 48, "y": 80 },
+    "factory": { "x": 65, "y": 38 },
+    "smoke": { "x": 75, "y": 15 },
+    "coal": { "x": 78, "y": 48 },
+    "thermometer": { "x": 88, "y": 30 },
+    "bubble": { "x": 75, "y": 25 },
+    "arrow": { "x": 45, "y": 60 },
+    "red": { "x": 91, "y": 28 },
+    "chimney": { "x": 65, "y": 25 },
+    "ice": { "x": 65, "y": 78 },
+    "sky": { "x": 20, "y": 20 },
+    "water": { "x": 55, "y": 90 }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1017",
+  "imageSrc": "assets/images/mosaic/1017.jpg",
+  "description": "SNS映えを狙ったマナー違反と自然破壊",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "phone", "ja": "電話・スマホ", "type": "object", "points": 10},
+        {"text": "flower", "ja": "花", "type": "object", "points": 10},
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "field", "ja": "畑・野原", "type": "object", "points": 10},
+        {"text": "tape", "ja": "テープ", "type": "object", "points": 10},
+        {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10},
+        {"text": "pink", "ja": "ピンクの", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "picture", "ja": "写真", "type": "object", "points": 10},
+        {"text": "take", "ja": "撮る", "type": "gist", "points": 20},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10}
+      ],
+      "chunks": [
+        {"text": "many flowers", "ja": "たくさんの花", "type": "object", "points": 10},
+        {"text": "a yellow tape", "ja": "黄色いテープ", "type": "object", "points": 20},
+        {"text": "take a picture", "ja": "写真を撮る", "type": "gist", "points": 20},
+        {"text": "walk in the field", "ja": "畑の中を歩く", "type": "gist", "points": 20},
+        {"text": "look at a phone", "ja": "スマホを見る", "type": "gist", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20},
+        {"text": "beautiful flowers", "ja": "美しい花", "type": "attribute", "points": 20},
+        {"text": "many people", "ja": "たくさんの人", "type": "object", "points": 10}
+      ],
+      "sentences": [
+        {"text": "I see many flowers.", "grammar": "I see~", "ja": "たくさんの花が見えます。", "type": "object", "points": 20},
+        {"text": "The tape is yellow.", "grammar": "be動詞", "ja": "テープは黄色いです。", "type": "attribute", "points": 20},
+        {"text": "A man takes a picture.", "grammar": "一般動詞", "ja": "男の人が写真を撮ります。", "type": "gist", "points": 30},
+        {"text": "They walk in the field.", "grammar": "一般動詞 + 場所", "ja": "彼らは野原を歩きます。", "type": "gist", "points": 30},
+        {"text": "This is a bad thing.", "grammar": "This is~", "ja": "これは悪いことです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 20},
+        {"text": "smartphone", "ja": "スマートフォン", "type": "object", "points": 20},
+        {"text": "photo", "ja": "写真", "type": "object", "points": 10},
+        {"text": "rule", "ja": "ルール", "type": "inference", "points": 20},
+        {"text": "sign", "ja": "標識・サイン", "type": "object", "points": 20},
+        {"text": "step", "ja": "踏む・歩く", "type": "gist", "points": 20},
+        {"text": "enter", "ja": "入る", "type": "gist", "points": 20},
+        {"text": "ignore", "ja": "無視する", "type": "gist", "points": 30},
+        {"text": "beautiful", "ja": "美しい", "type": "attribute", "points": 10},
+        {"text": "popular", "ja": "人気のある", "type": "attribute", "points": 20},
+        {"text": "wrong", "ja": "間違った", "type": "inference", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "outside", "ja": "外に", "type": "detail", "points": 20},
+        {"text": "inside", "ja": "中に", "type": "detail", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "take a photo", "ja": "写真を撮る", "type": "gist", "points": 20},
+        {"text": "step on flowers", "ja": "花を踏む", "type": "gist", "points": 30},
+        {"text": "ignore the sign", "ja": "標識を無視する", "type": "gist", "points": 30},
+        {"text": "enter the field", "ja": "野原に入る", "type": "gist", "points": 20},
+        {"text": "a popular spot", "ja": "人気のある場所", "type": "object", "points": 30},
+        {"text": "break the rule", "ja": "ルールを破る", "type": "gist", "points": 30},
+        {"text": "a bad manner", "ja": "悪いマナー", "type": "inference", "points": 30},
+        {"text": "look at the smartphone", "ja": "スマートフォンを見る", "type": "gist", "points": 20}
+      ],
+      "sentences": [
+        {"text": "The tourists are taking photos with their smartphones.", "grammar": "現在進行形", "ja": "観光客はスマートフォンで写真を撮っています。", "type": "gist", "points": 30},
+        {"text": "They are stepping on the beautiful flowers.", "grammar": "現在進行形", "ja": "彼らは美しい花を踏んでいます。", "type": "gist", "points": 40},
+        {"text": "We must not enter this field.", "grammar": "助動詞must", "ja": "私たちはこの野原に入ってはいけません。", "type": "gist", "points": 30},
+        {"text": "Ignoring the sign is a bad thing.", "grammar": "動名詞を主語とする文", "ja": "標識を無視することは悪いことです。", "type": "inference", "points": 40},
+        {"text": "This picture shows a problem of bad manners.", "grammar": "一般動詞", "ja": "この絵はマナー違反の問題を示しています。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "media", "ja": "メディア", "type": "object", "points": 20},
+        {"text": "spot", "ja": "場所", "type": "object", "points": 20},
+        {"text": "boundary", "ja": "境界線", "type": "object", "points": 30},
+        {"text": "vegetation", "ja": "植物・植生", "type": "object", "points": 30},
+        {"text": "trespass", "ja": "不法侵入する", "type": "gist", "points": 30},
+        {"text": "trample", "ja": "踏みにじる", "type": "gist", "points": 30},
+        {"text": "capture", "ja": "撮る・記録する", "type": "gist", "points": 20},
+        {"text": "attract", "ja": "惹きつける", "type": "gist", "points": 30},
+        {"text": "prohibit", "ja": "禁止する", "type": "gist", "points": 30},
+        {"text": "photogenic", "ja": "写真映えする", "type": "attribute", "points": 30},
+        {"text": "illegal", "ja": "違法な", "type": "attribute", "points": 30},
+        {"text": "irresponsible", "ja": "無責任な", "type": "attribute", "points": 30},
+        {"text": "unfortunately", "ja": "残念なことに", "type": "detail", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "behavior", "ja": "行動", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a photogenic spot", "ja": "写真映えする場所", "type": "object", "points": 40},
+        {"text": "post on social media", "ja": "SNSに投稿する", "type": "gist", "points": 40},
+        {"text": "trample the flowers", "ja": "花を踏みにじる", "type": "gist", "points": 30},
+        {"text": "cross the boundary", "ja": "境界線を越える", "type": "gist", "points": 30},
+        {"text": "irresponsible behavior", "ja": "無責任な行動", "type": "inference", "points": 40},
+        {"text": "attract many tourists", "ja": "多くの観光客を惹きつける", "type": "gist", "points": 30},
+        {"text": "ignore the warning tape", "ja": "警告テープを無視する", "type": "gist", "points": 40},
+        {"text": "capture the perfect shot", "ja": "完璧な一枚を撮る", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates tourists who are trespassing in a prohibited area.", "grammar": "関係代名詞", "ja": "この絵は立ち入り禁止区域に不法侵入している観光客を示しています。", "type": "gist", "points": 50},
+        {"text": "It looks like they are ignoring the warning tape to take photogenic pictures.", "grammar": "It looks like~ / 不定詞の副詞的用法", "ja": "彼らは写真映えする写真を撮るために警告テープを無視しているように見えます。", "type": "inference", "points": 50},
+        {"text": "Trampling the beautiful flowers is an irresponsible behavior.", "grammar": "動名詞を主語とする文", "ja": "美しい花を踏みにじることは無責任な行動です。", "type": "inference", "points": 40},
+        {"text": "We should respect the rules and protect nature instead of seeking likes.", "grammar": "助動詞should / 接続詞and", "ja": "私たちは「いいね」を求める代わりに、ルールを尊重し自然を保護すべきです。", "type": "inference", "points": 50},
+        {"text": "This massive flock of tourists causes a severe problem for the local environment.", "grammar": "無生物主語 / 一般動詞", "ja": "この大規模な観光客の群れは、現地の環境に深刻な問題を引き起こします。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "phone": { "x": 75, "y": 30 },
+    "flower": { "x": 15, "y": 85 },
+    "tape": { "x": 70, "y": 72 },
+    "man": { "x": 32, "y": 55 },
+    "woman": { "x": 20, "y": 60 },
+    "field": { "x": 50, "y": 80 },
+    "backpack": { "x": 46, "y": 62 },
+    "camera": { "x": 53, "y": 68 },
+    "text": { "x": 80, "y": 70 },
+    "bubble": { "x": 75, "y": 25 },
+    "sky": { "x": 30, "y": 15 },
+    "tree": { "x": 10, "y": 30 },
+    "hand": { "x": 65, "y": 35 },
+    "screen": { "x": 75, "y": 25 },
+    "tourist": { "x": 40, "y": 55 }
+  }
+}

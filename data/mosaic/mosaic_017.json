@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_017",
+  "imageSrc": "assets/images/mosaic/017.webp",
+  "description": "教室の風景",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "desk", "ja": "机", "type": "object", "points": 20},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 20},
+        {"text": "map", "ja": "地図", "type": "object", "points": 20},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "chair", "ja": "椅子", "type": "object", "points": 20},
+        {"text": "wall", "ja": "壁", "type": "object", "points": 10},
+        {"text": "floor", "ja": "床", "type": "object", "points": 10},
+        {"text": "sun", "ja": "太陽", "type": "object", "points": 10},
+        {"text": "school", "ja": "学校", "type": "object", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 10},
+        {"text": "empty", "ja": "空の", "type": "attribute", "points": 30},
+        {"text": "class", "ja": "授業", "type": "object", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a blue bag", "ja": "青いかばん", "type": "attribute", "points": 20},
+        {"text": "on the desk", "ja": "机の上に", "type": "detail", "points": 20},
+        {"text": "in the classroom", "ja": "教室の中に", "type": "detail", "points": 20},
+        {"text": "a world map", "ja": "世界地図", "type": "object", "points": 20},
+        {"text": "by the window", "ja": "窓のそばに", "type": "detail", "points": 20},
+        {"text": "on the wall", "ja": "壁に", "type": "detail", "points": 20},
+        {"text": "the sunlight", "ja": "日光", "type": "object", "points": 20},
+        {"text": "is empty", "ja": "空いている", "type": "attribute", "points": 30}
+      ],
+      "sentences": [
+        {"text": "I see a desk.", "grammar": "I see~", "ja": "机が見えます。", "type": "object", "points": 30},
+        {"text": "The bag is blue.", "grammar": "This is~", "ja": "かばんは青いです。", "type": "attribute", "points": 30},
+        {"text": "This is a map.", "grammar": "This is~", "ja": "これは地図です。", "type": "object", "points": 30},
+        {"text": "There is a window.", "grammar": "There is~", "ja": "窓があります。", "type": "object", "points": 30},
+        {"text": "It is a classroom.", "grammar": "It is~", "ja": "ここは教室です。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "backpack", "ja": "バックパック", "type": "object", "points": 20},
+        {"text": "classroom", "ja": "教室", "type": "object", "points": 20},
+        {"text": "geography", "ja": "地理", "type": "object", "points": 30},
+        {"text": "lesson", "ja": "授業", "type": "object", "points": 20},
+        {"text": "furniture", "ja": "家具", "type": "object", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "hanging", "ja": "掛かっている", "type": "gist", "points": 30},
+        {"text": "quiet", "ja": "静かな", "type": "attribute", "points": 20},
+        {"text": "empty", "ja": "空っぽの", "type": "attribute", "points": 20},
+        {"text": "study", "ja": "勉強する", "type": "gist", "points": 20},
+        {"text": "surface", "ja": "表面", "type": "object", "points": 20},
+        {"text": "morning", "ja": "朝", "type": "inference", "points": 30},
+        {"text": "sunny", "ja": "晴れの", "type": "attribute", "points": 20},
+        {"text": "peaceful", "ja": "平和な", "type": "inference", "points": 30},
+        {"text": "education", "ja": "教育", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a blue backpack", "ja": "青いバックパック", "type": "attribute", "points": 20},
+        {"text": "on the desk", "ja": "机の上に", "type": "detail", "points": 20},
+        {"text": "hanging on the wall", "ja": "壁に掛かっている", "type": "detail", "points": 30},
+        {"text": "in the classroom", "ja": "教室の中に", "type": "detail", "points": 20},
+        {"text": "near the window", "ja": "窓の近くに", "type": "detail", "points": 20},
+        {"text": "looking at the map", "ja": "地図を見て", "type": "gist", "points": 30},
+        {"text": "during a break", "ja": "休憩中に", "type": "inference", "points": 30},
+        {"text": "school furniture", "ja": "学校の家具", "type": "object", "points": 20}
+      ],
+      "sentences": [
+        {"text": "There is a backpack on the desk.", "grammar": "There is/are", "ja": "机の上にバックパックがあります。", "type": "object", "points": 40},
+        {"text": "The map is hanging on the wall.", "grammar": "is ~ing", "ja": "地図が壁に掛かっています。", "type": "detail", "points": 40},
+        {"text": "The classroom is empty now.", "grammar": "is + adj", "ja": "教室は今、空っぽです。", "type": "inference", "points": 40},
+        {"text": "Sunlight is coming through the window.", "grammar": "is ~ing", "ja": "日光が窓から差し込んでいます。", "type": "detail", "points": 40},
+        {"text": "Students study geography in this room.", "grammar": "present simple", "ja": "生徒たちはこの部屋で地理を勉強します。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "schoolbag", "ja": "通学かばん", "type": "object", "points": 20},
+        {"text": "arrangement", "ja": "配置", "type": "object", "points": 30},
+        {"text": "academic", "ja": "学問の", "type": "attribute", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "interior", "ja": "室内", "type": "object", "points": 20},
+        {"text": "wall-mounted", "ja": "壁掛けの", "type": "attribute", "points": 30},
+        {"text": "cartography", "ja": "地図学", "type": "object", "points": 30},
+        {"text": "illumination", "ja": "照明", "type": "attribute", "points": 30},
+        {"text": "unoccupied", "ja": "使用されていない", "type": "attribute", "points": 30},
+        {"text": "stillness", "ja": "静寂", "type": "inference", "points": 30},
+        {"text": "environment", "ja": "環境", "type": "object", "points": 20},
+        {"text": "educational", "ja": "教育的な", "type": "attribute", "points": 20},
+        {"text": "setting", "ja": "舞台", "type": "object", "points": 20},
+        {"text": "perspective", "ja": "視点", "type": "inference", "points": 30},
+        {"text": "composed", "ja": "落ち着いた", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "a lonely blue backpack", "ja": "寂しげな青いバックパック", "type": "attribute", "points": 30},
+        {"text": "mounted on the wall", "ja": "壁に設置された", "type": "detail", "points": 30},
+        {"text": "filled with light", "ja": "光で満たされた", "type": "attribute", "points": 30},
+        {"text": "classic classroom setting", "ja": "古典的な教室の舞台", "type": "object", "points": 30},
+        {"text": "waiting for students", "ja": "生徒を待っている", "type": "inference", "points": 40},
+        {"text": "quiet morning atmosphere", "ja": "静かな朝の雰囲気", "type": "inference", "points": 40},
+        {"text": "a detailed world map", "ja": "詳細な世界地図", "type": "object", "points": 30},
+        {"text": "sunlight streaming in", "ja": "差し込む日光", "type": "detail", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A blue backpack is placed on the desk.", "grammar": "passive voice", "ja": "机の上に青いバックパックが置かれています。", "type": "object", "points": 50},
+        {"text": "The world map is displayed on the wall.", "grammar": "passive voice", "ja": "世界地図が壁に掲示されています。", "type": "detail", "points": 50},
+        {"text": "It looks like the classroom is waiting for the next lesson.", "grammar": "It looks like", "ja": "教室が次の授業を待っているように見えます。", "type": "inference", "points": 50},
+        {"text": "Sunlight is streaming through the window, making the room bright.", "grammar": "participle", "ja": "窓から日光が差し込み、部屋を明るくしています。", "type": "detail", "points": 50},
+        {"text": "The empty classroom creates a quiet and calm atmosphere.", "grammar": "present simple", "ja": "誰もいない教室が、静かで落ち着いた雰囲気を作り出しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "backpack": { "x": 35, "y": 70 },
+    "desk_1": { "x": 40, "y": 75 },
+    "world_map": { "x": 50, "y": 30 },
+    "window": { "x": 10, "y": 40 },
+    "chalkboard": { "x": 95, "y": 40 },
+    "desk_2": { "x": 90, "y": 80 },
+    "wall": { "x": 50, "y": 20 },
+    "floor": { "x": 50, "y": 90 },
+    "sunlight": { "x": 20, "y": 20 },
+    "chair_1": { "x": 45, "y": 85 },
+    "chair_2": { "x": 95, "y": 85 },
+    "map_border": { "x": 50, "y": 15 },
+    "backpack_strap": { "x": 40, "y": 65 },
+    "table_surface": { "x": 45, "y": 68 },
+    "room_corner": { "x": 5, "y": 90 }
+  }
+}

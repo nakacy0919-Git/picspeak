@@ -64,6 +64,23 @@
         .guide-banner-pulse {
             animation: dynamicPulse 2.5s infinite;
         }
+
+        /* ★ パステル＆白ステッチボタン用 CSS */
+        .btn-stitch {
+            position: relative;
+            border: none !important; 
+        }
+        .btn-stitch::after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 6px;
+            right: 6px;
+            bottom: 6px;
+            border: 2px dashed rgba(255, 255, 255, 0.8);
+            border-radius: 1.1rem;
+            pointer-events: none;
+        }
     </style>
 
     <script>
@@ -197,43 +214,46 @@
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
                         
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" data-mode="snapshot">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">SNAPSHOT</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-600">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
+                            
+                            <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="snapshot">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">SNAPSHOT</span>
+                                <span class="text-xs md:text-sm font-bold text-blue-800 z-10">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
                             </button>
                             
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" data-mode="story">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">STORY</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-600">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
+                            <button class="mode-btn btn-stitch bg-emerald-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="story">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">STORY</span>
+                                <span class="text-xs md:text-sm font-bold text-emerald-800 z-10">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
                             </button>
 
-                            <button class="mode-btn bg-white border-2 border-gray-200 text-gray-700 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all hover:bg-pink-50 hover:border-pink-300 shadow-sm relative" onclick="window.location.href='picflash.html'">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2">PIC FLASH</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-600">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
+                            <button class="mode-btn btn-stitch bg-purple-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" onclick="window.location.href='picflash.html'">
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">PIC FLASH</span>
+                                <span class="text-xs md:text-sm font-bold text-purple-800 z-10">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
                             </button>
 
-                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
-                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                            <button class="btn-stitch bg-gray-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
+                                <div class="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-20 flex items-center justify-center">
                                     <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
                                 </div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">NG WORD</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-400">NGワードを避けて説明しろ<br><span class="text-[11px] md:text-xs">（言い換え力を極限まで鍛える！）</span></span>
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">NG WORD</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-600 z-10">NGワードを避けて説明しろ<br><span class="text-[11px] md:text-xs">（言い換え力を極限まで鍛える！）</span></span>
                             </button>
 
-                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
-                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
-                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
-                                </div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">MOSAIC</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-400">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
+                            <button class="mode-btn btn-stitch bg-pink-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="mosaic">
+    
+                               <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">
+                                    NEW!
+                               </div>
+
+                               <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">MOSAIC</span>
+                               <span class="text-xs md:text-sm font-bold text-pink-800 z-10">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
                             </button>
 
-                            <button class="bg-gray-50 border-2 border-gray-200 text-gray-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
-                                <div class="absolute inset-0 bg-white/40 backdrop-blur-[1px] z-10 flex items-center justify-center">
+                            <button class="btn-stitch bg-gray-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
+                                <div class="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-20 flex items-center justify-center">
                                     <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
                                 </div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-gray-400">DETECTIVE</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-400">2枚の写真の違いを見つけ出せ<br><span class="text-[11px] md:text-xs">（比較・論理的描写力！）</span></span>
+                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">DETECTIVE</span>
+                                <span class="text-xs md:text-sm font-bold text-gray-600 z-10">2枚の写真の違いを見つけ出せ<br><span class="text-[11px] md:text-xs">（比較・論理的描写力！）</span></span>
                             </button>
                         </div>
                       </div>
@@ -476,7 +496,7 @@
             
             <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
                 <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
-                    </div>
+                </div>
             </div>
        </div>
        
@@ -494,7 +514,7 @@
 
     </div>
 
-    </div> <main class="w-full bg-white relative z-0 border-t border-gray-200">
+    <main class="w-full bg-white relative z-0 border-t border-gray-200">
         
         <section class="max-w-5xl mx-auto px-6 py-16 md:py-24">
             <div class="text-center mb-12">
@@ -611,8 +631,6 @@
             </div>
         </footer>
     </main>
-    <div id="ios-prompt" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white rounded-2xl shadow-2xl p-4 z-50 transform translate-y-full transition-transform duration-500 hidden border border-gray-200">
-        ```
 
     <div id="ios-prompt" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white rounded-2xl shadow-2xl p-4 z-50 transform translate-y-full transition-transform duration-500 hidden border border-gray-200">
         <div class="flex items-start gap-4">
@@ -665,6 +683,7 @@
         // 画面読み込み時にチェックを実行
         window.addEventListener('load', showIosPrompt);
     </script>
+    
     <script src="js/speech.js"></script>
     <script src="js/splash.js"></script>
     <script src="js/scoring.js"></script>
@@ -673,6 +692,7 @@
     <script src="js/ui.js"></script>   
     <script src="js/game.js"></script>  
     <script src="js/ngword_game.js"></script>
+    <script src="js/mosaic_game.js"></script>
     <script src="js/main.js"></script>  
 </body>
 </html>

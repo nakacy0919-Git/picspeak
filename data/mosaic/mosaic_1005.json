@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_1005",
+  "imageSrc": "assets/images/mosaic/1005.jpg",
+  "description": "川のゴミ問題と水質汚染",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "river", "ja": "川", "type": "object", "points": 10},
+        {"text": "water", "ja": "水", "type": "object", "points": 10},
+        {"text": "trash", "ja": "ゴミ", "type": "object", "points": 10},
+        {"text": "bag", "ja": "袋", "type": "object", "points": 10},
+        {"text": "bottle", "ja": "ビン・ボトル", "type": "object", "points": 10},
+        {"text": "city", "ja": "街", "type": "object", "points": 10},
+        {"text": "building", "ja": "建物", "type": "object", "points": 10},
+        {"text": "grass", "ja": "草", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "dirty", "ja": "汚い", "type": "attribute", "points": 20},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "float", "ja": "浮く", "type": "gist", "points": 30},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a blue river", "ja": "青い川", "type": "attribute", "points": 10},
+        {"text": "green grass", "ja": "緑の草", "type": "attribute", "points": 10},
+        {"text": "many buildings", "ja": "たくさんの建物", "type": "object", "points": 20},
+        {"text": "a plastic bag", "ja": "ビニール袋", "type": "object", "points": 20},
+        {"text": "a plastic bottle", "ja": "ペットボトル", "type": "object", "points": 20},
+        {"text": "many trash", "ja": "たくさんのゴミ", "type": "object", "points": 20},
+        {"text": "in the water", "ja": "水の中に", "type": "detail", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a blue river.", "grammar": "I see~", "ja": "青い川が見えます。", "type": "object", "points": 20},
+        {"text": "There are many buildings.", "grammar": "There is/are~", "ja": "たくさんの建物があります。", "type": "object", "points": 30},
+        {"text": "There is much trash in the water.", "grammar": "There is/are~", "ja": "水の中にたくさんのゴミがあります。", "type": "object", "points": 30},
+        {"text": "The water is dirty.", "grammar": "be動詞", "ja": "水は汚いです。", "type": "attribute", "points": 20},
+        {"text": "This is bad.", "grammar": "This is~", "ja": "これは悪いです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "garbage", "ja": "ゴミ", "type": "object", "points": 20},
+        {"text": "pollution", "ja": "汚染", "type": "inference", "points": 30},
+        {"text": "environment", "ja": "環境", "type": "inference", "points": 30},
+        {"text": "town", "ja": "町", "type": "object", "points": 10},
+        {"text": "field", "ja": "野原", "type": "object", "points": 10},
+        {"text": "bin", "ja": "ゴミ箱", "type": "object", "points": 20},
+        {"text": "throw", "ja": "投げる・捨てる", "type": "gist", "points": 20},
+        {"text": "flow", "ja": "流れる", "type": "gist", "points": 20},
+        {"text": "pollute", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "full", "ja": "いっぱいの", "type": "attribute", "points": 20},
+        {"text": "empty", "ja": "空の", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "protect", "ja": "守る", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "full of garbage", "ja": "ゴミでいっぱいの", "type": "attribute", "points": 30},
+        {"text": "a lot of garbage", "ja": "たくさんのゴミ", "type": "object", "points": 20},
+        {"text": "float on the water", "ja": "水に浮く", "type": "gist", "points": 30},
+        {"text": "throw garbage", "ja": "ゴミを捨てる", "type": "gist", "points": 20},
+        {"text": "environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "an empty bottle", "ja": "空き瓶・空のペットボトル", "type": "object", "points": 20},
+        {"text": "look terrible", "ja": "ひどく見える", "type": "inference", "points": 30},
+        {"text": "flow into the river", "ja": "川に流れ込む", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A lot of garbage is floating on the water.", "grammar": "現在進行形", "ja": "たくさんのゴミが水に浮いています。", "type": "gist", "points": 40},
+        {"text": "The bins are full of garbage.", "grammar": "be full of", "ja": "ゴミ箱はゴミでいっぱいです。", "type": "detail", "points": 30},
+        {"text": "Garbage flows from the city into the river.", "grammar": "一般動詞", "ja": "ゴミが街から川へ流れ込みます。", "type": "gist", "points": 40},
+        {"text": "This picture shows a serious environmental problem.", "grammar": "一般動詞", "ja": "この絵は深刻な環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "We must protect the clean river.", "grammar": "助動詞must", "ja": "私たちはきれいな川を守らなければなりません。", "type": "gist", "points": 30}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "waste", "ja": "廃棄物", "type": "object", "points": 30},
+        {"text": "plastic", "ja": "プラスチック", "type": "object", "points": 20},
+        {"text": "container", "ja": "容器", "type": "object", "points": 30},
+        {"text": "ecosystem", "ja": "生態系", "type": "inference", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "discard", "ja": "捨てる", "type": "gist", "points": 30},
+        {"text": "contaminate", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "illustrate", "ja": "示す・説明する", "type": "gist", "points": 20},
+        {"text": "indicate", "ja": "指し示す", "type": "gist", "points": 20},
+        {"text": "stream", "ja": "小川・流れ", "type": "object", "points": 20},
+        {"text": "irresponsible", "ja": "無責任な", "type": "attribute", "points": 30},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "massive", "ja": "大量の", "type": "attribute", "points": 30},
+        {"text": "downstream", "ja": "下流へ", "type": "detail", "points": 30},
+        {"text": "overflow", "ja": "あふれる", "type": "gist", "points": 30}
+      ],
+      "chunks": [
+        {"text": "contaminate the water", "ja": "水を汚染する", "type": "gist", "points": 30},
+        {"text": "discard plastic waste", "ja": "プラスチック廃棄物を捨てる", "type": "gist", "points": 40},
+        {"text": "a massive amount of garbage", "ja": "大量のゴミ", "type": "object", "points": 40},
+        {"text": "float downstream", "ja": "下流へ流れる", "type": "gist", "points": 30},
+        {"text": "severe water pollution", "ja": "深刻な水質汚染", "type": "inference", "points": 40},
+        {"text": "illustrate an environmental issue", "ja": "環境問題を示す", "type": "inference", "points": 40},
+        {"text": "the consequence of our actions", "ja": "私たちの行動の結果", "type": "inference", "points": 40},
+        {"text": "overflow from the bins", "ja": "ゴミ箱からあふれる", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates severe water pollution caused by plastic waste.", "grammar": "過去分詞の形容詞的用法", "ja": "この絵はプラスチック廃棄物によって引き起こされる深刻な水質汚染を示しています。", "type": "inference", "points": 50},
+        {"text": "A massive amount of garbage is floating downstream.", "grammar": "現在進行形", "ja": "大量のゴミが下流に流れています。", "type": "gist", "points": 40},
+        {"text": "The garbage from the city contaminates the beautiful river.", "grammar": "一般動詞", "ja": "街から出たゴミが美しい川を汚染します。", "type": "gist", "points": 40},
+        {"text": "We should reduce plastic waste to protect the ecosystem.", "grammar": "不定詞の副詞的用法", "ja": "生態系を守るために、私たちはプラスチック廃棄物を減らすべきです。", "type": "inference", "points": 50},
+        {"text": "It looks like the river is full of discarded containers.", "grammar": "It looks like~", "ja": "川は捨てられた容器でいっぱいのようです。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "river": { "x": 40, "y": 70 },
+    "trash": { "x": 60, "y": 80 },
+    "bottle": { "x": 78, "y": 90 },
+    "bag": { "x": 92, "y": 90 },
+    "grass": { "x": 20, "y": 30 },
+    "city": { "x": 85, "y": 18 },
+    "building": { "x": 88, "y": 15 },
+    "sky": { "x": 40, "y": 10 },
+    "bubble": { "x": 75, "y": 25 },
+    "arrow": { "x": 38, "y": 65 },
+    "bin": { "x": 65, "y": 35 },
+    "garbage": { "x": 65, "y": 25 },
+    "sack": { "x": 70, "y": 40 },
+    "tree": { "x": 60, "y": 20 },
+    "water": { "x": 20, "y": 55 }
+  }
+}

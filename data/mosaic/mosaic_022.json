@@ -1,0 +1,135 @@
+{
+  "id": "mosaic_022",
+  "imageSrc": "assets/images/mosaic/022.webp",
+  "description": "寝室の様子",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "bed", "ja": "ベッド", "type": "object", "points": 20},
+        {"text": "shoes", "ja": "靴", "type": "object", "points": 20},
+        {"text": "shirt", "ja": "シャツ", "type": "object", "points": 20},
+        {"text": "closet", "ja": "クローゼット", "type": "object", "points": 20},
+        {"text": "rug", "ja": "ラグ", "type": "object", "points": 20},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "floor", "ja": "床", "type": "object", "points": 10},
+        {"text": "room", "ja": "部屋", "type": "inference", "points": 20},
+        {"text": "tidy", "ja": "整頓された", "type": "inference", "points": 20},
+        {"text": "home", "ja": "家", "type": "inference", "points": 10},
+        {"text": "wood", "ja": "木", "type": "attribute", "points": 10}
+      ],
+      "chunks": [
+        {"text": "under the bed", "ja": "ベッドの下に", "type": "detail", "points": 20},
+        {"text": "in the closet", "ja": "クローゼットの中に", "type": "detail", "points": 20},
+        {"text": "a blue shoe", "ja": "青い靴", "type": "object", "points": 20},
+        {"text": "on the floor", "ja": "床の上に", "type": "detail", "points": 20},
+        {"text": "by the window", "ja": "窓のそばに", "type": "detail", "points": 20},
+        {"text": "my bedroom", "ja": "私の寝室", "type": "inference", "points": 20},
+        {"text": "colorful shirts", "ja": "カラフルなシャツ", "type": "object", "points": 20},
+        {"text": "the big bed", "ja": "大きなベッド", "type": "attribute", "points": 20}
+      ],
+      "sentences": [
+        {"text": "This is a bedroom.", "grammar": "This is~", "ja": "ここは寝室です。", "type": "inference", "points": 30},
+        {"text": "I see shoes.", "grammar": "I see~", "ja": "靴が見えます。", "type": "object", "points": 30},
+        {"text": "The shirt is yellow.", "grammar": "The is~", "ja": "シャツは黄色です。", "type": "attribute", "points": 30},
+        {"text": "The bed is big.", "grammar": "The is~", "ja": "ベッドは大きいです。", "type": "attribute", "points": 30},
+        {"text": "It is a nice room.", "grammar": "It is~", "ja": "素敵な部屋です。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "sneakers", "ja": "スニーカー", "type": "object", "points": 20},
+        {"text": "wardrobe", "ja": "洋服ダンス", "type": "object", "points": 20},
+        {"text": "hanging", "ja": "掛かっている", "type": "gist", "points": 30},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "furniture", "ja": "家具", "type": "object", "points": 20},
+        {"text": "sunlight", "ja": "日光", "type": "attribute", "points": 20},
+        {"text": "colorful", "ja": "カラフルな", "type": "attribute", "points": 20},
+        {"text": "organized", "ja": "整理された", "type": "inference", "points": 30},
+        {"text": "curtain", "ja": "カーテン", "type": "object", "points": 20},
+        {"text": "relax", "ja": "リラックスする", "type": "inference", "points": 30},
+        {"text": "pair", "ja": "一組", "type": "object", "points": 20},
+        {"text": "cotton", "ja": "綿", "type": "attribute", "points": 20},
+        {"text": "morning", "ja": "朝", "type": "inference", "points": 20},
+        {"text": "shelf", "ja": "棚", "type": "object", "points": 20},
+        {"text": "clean", "ja": "清潔な", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "hanging in the closet", "ja": "クローゼットに掛かっている", "type": "detail", "points": 30},
+        {"text": "under the bed frame", "ja": "ベッドの枠の下に", "type": "detail", "points": 30},
+        {"text": "a pair of sneakers", "ja": "一足のスニーカー", "type": "object", "points": 30},
+        {"text": "next to the window", "ja": "窓の隣に", "type": "detail", "points": 30},
+        {"text": "neatly organized", "ja": "きれいに整理された", "type": "inference", "points": 30},
+        {"text": "morning sunshine", "ja": "朝の日差し", "type": "attribute", "points": 30},
+        {"text": "wooden floor", "ja": "木の床", "type": "object", "points": 30},
+        {"text": "soft blanket", "ja": "柔らかい毛布", "type": "attribute", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There are some shoes under the bed.", "grammar": "There is/are", "ja": "ベッドの下に靴がいくつかあります。", "type": "detail", "points": 40},
+        {"text": "The shirts are hanging in the closet.", "grammar": "is ~ing", "ja": "シャツがクローゼットに掛かっています。", "type": "gist", "points": 40},
+        {"text": "The room looks tidy.", "grammar": "look + adj", "ja": "部屋はきれいに見えます。", "type": "inference", "points": 40},
+        {"text": "I can see a window with curtains.", "grammar": "can + verb", "ja": "カーテン付きの窓が見えます。", "type": "detail", "points": 40},
+        {"text": "The bed is made of wood.", "grammar": "be made of", "ja": "ベッドは木で作られています。", "type": "object", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "attire", "ja": "服装", "type": "object", "points": 30},
+        {"text": "garments", "ja": "衣類", "type": "object", "points": 30},
+        {"text": "tidy", "ja": "整理整頓された", "type": "inference", "points": 40},
+        {"text": "minimalist", "ja": "最小限の", "type": "inference", "points": 40},
+        {"text": "interior", "ja": "室内", "type": "object", "points": 30},
+        {"text": "cozy", "ja": "居心地の良い", "type": "inference", "points": 40},
+        {"text": "arrangement", "ja": "配置", "type": "object", "points": 30},
+        {"text": "illumination", "ja": "照明", "type": "attribute", "points": 30},
+        {"text": "footwear", "ja": "履き物", "type": "object", "points": 30},
+        {"text": "spacious", "ja": "広々とした", "type": "inference", "points": 40},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 40},
+        {"text": "aesthetic", "ja": "美的な", "type": "inference", "points": 40},
+        {"text": "storage", "ja": "収納", "type": "object", "points": 30},
+        {"text": "casual", "ja": "カジュアルな", "type": "attribute", "points": 30},
+        {"text": "residence", "ja": "住居", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "lined up in the closet", "ja": "クローゼットに並べられた", "type": "detail", "points": 40},
+        {"text": "placed under the bed", "ja": "ベッドの下に置かれた", "type": "detail", "points": 40},
+        {"text": "a well-organized room", "ja": "よく整理された部屋", "type": "inference", "points": 40},
+        {"text": "catching the morning light", "ja": "朝の光を浴びる", "type": "attribute", "points": 40},
+        {"text": "a cozy bedroom setting", "ja": "居心地の良い寝室の風景", "type": "inference", "points": 40},
+        {"text": "hanging neatly on hangers", "ja": "ハンガーにきれいに掛かっている", "type": "gist", "points": 40},
+        {"text": "bright and airy", "ja": "明るく風通しの良い", "type": "inference", "points": 40},
+        {"text": "casual daily wear", "ja": "普段着のカジュアルウェア", "type": "object", "points": 40}
+      ],
+      "sentences": [
+        {"text": "A row of colorful t-shirts is hanging inside the closet.", "grammar": "is ~ing", "ja": "色とりどりのTシャツの列がクローゼットの中に掛かっています。", "type": "gist", "points": 50},
+        {"text": "The blue sneakers are left on the wooden floor beneath the bed.", "grammar": "passive voice", "ja": "青いスニーカーがベッドの下の木の床に残されています。", "type": "detail", "points": 50},
+        {"text": "The room appears neat and well-organized.", "grammar": "appear + adj", "ja": "部屋はきちんと整頓されているようです。", "type": "inference", "points": 50},
+        {"text": "Sunlight is streaming through the window, illuminating the space.", "grammar": "participle", "ja": "窓から日光が差し込み、空間を照らしています。", "type": "attribute", "points": 50},
+        {"text": "The bedroom creates a sense of comfort and relaxation.", "grammar": "S + V + O", "ja": "その寝室は快適さとリラックス感を生み出しています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "sneakers_left": { "x": 30, "y": 85 },
+    "sneakers_right": { "x": 38, "y": 80 },
+    "bed_leg": { "x": 45, "y": 60 },
+    "bed_covers": { "x": 20, "y": 50 },
+    "closet_left_door": { "x": 58, "y": 45 },
+    "closet_right_door": { "x": 90, "y": 50 },
+    "tshirt_yellow": { "x": 72, "y": 35 },
+    "tshirt_blue": { "x": 75, "y": 35 },
+    "tshirt_red": { "x": 78, "y": 35 },
+    "tshirt_green": { "x": 82, "y": 35 },
+    "tshirt_blue_dark": { "x": 85, "y": 35 },
+    "window": { "x": 40, "y": 20 },
+    "curtain": { "x": 30, "y": 20 },
+    "rug": { "x": 70, "y": 90 },
+    "wooden_floor": { "x": 50, "y": 95 },
+    "closet_shelf": { "x": 75, "y": 10 },
+    "bed_pillow": { "x": 5, "y": 30 }
+  }
+}

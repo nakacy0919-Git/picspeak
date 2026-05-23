@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_011",
+  "imageSrc": "assets/images/mosaic/011.webp",
+  "description": "リビングでくつろぐ兄妹",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "boy", "ja": "男の子", "type": "object", "points": 10},
+        {"text": "girl", "ja": "女の子", "type": "object", "points": 10},
+        {"text": "sofa", "ja": "ソファ", "type": "object", "points": 10},
+        {"text": "doll", "ja": "人形", "type": "object", "points": 10},
+        {"text": "plant", "ja": "植物", "type": "object", "points": 20},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+        {"text": "shirt", "ja": "シャツ", "type": "object", "points": 10},
+        {"text": "dress", "ja": "ドレス・ワンピース", "type": "object", "points": 10},
+        {"text": "floor", "ja": "床", "type": "object", "points": 20},
+        {"text": "red", "ja": "赤色", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青色", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑色", "type": "attribute", "points": 10},
+        {"text": "stand", "ja": "立つ", "type": "gist", "points": 10},
+        {"text": "sit", "ja": "座る", "type": "gist", "points": 10},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a happy boy", "ja": "幸せそうな男の子", "type": "inference", "points": 20},
+        {"text": "a small girl", "ja": "小さな女の子", "type": "attribute", "points": 20},
+        {"text": "a big sofa", "ja": "大きなソファ", "type": "attribute", "points": 20},
+        {"text": "a green plant", "ja": "緑の植物", "type": "attribute", "points": 20},
+        {"text": "a red shirt", "ja": "赤いシャツ", "type": "attribute", "points": 20},
+        {"text": "a blue dress", "ja": "青いワンピース", "type": "attribute", "points": 20},
+        {"text": "on the floor", "ja": "床の上に", "type": "detail", "points": 20},
+        {"text": "very happy", "ja": "とても幸せ", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "type": "object", "points": 30},
+        {"text": "This is a big sofa.", "grammar": "This is~", "ja": "これは大きなソファです。", "type": "object", "points": 20},
+        {"text": "The boy is happy.", "grammar": "SVC（現在形）", "ja": "男の子は幸せそうです。", "type": "inference", "points": 20},
+        {"text": "She has a doll.", "grammar": "has（現在形）", "ja": "彼女は人形を持っています。", "type": "gist", "points": 30},
+        {"text": "The plant is green.", "grammar": "SVC（現在形）", "ja": "その植物は緑色です。", "type": "attribute", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "brother", "ja": "兄・弟", "type": "inference", "points": 20},
+        {"text": "sister", "ja": "姉・妹", "type": "inference", "points": 20},
+        {"text": "rug", "ja": "敷物・ラグ", "type": "object", "points": 20},
+        {"text": "pot", "ja": "鉢", "type": "object", "points": 20},
+        {"text": "curtain", "ja": "カーテン", "type": "object", "points": 20},
+        {"text": "striped", "ja": "しま模様の", "type": "attribute", "points": 30},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "hold", "ja": "持つ", "type": "gist", "points": 10},
+        {"text": "wear", "ja": "着ている", "type": "gist", "points": 10},
+        {"text": "look", "ja": "見る・〜に見える", "type": "gist", "points": 10},
+        {"text": "behind", "ja": "〜の後ろに", "type": "detail", "points": 20},
+        {"text": "front", "ja": "前", "type": "detail", "points": 20},
+        {"text": "living room", "ja": "リビングルーム", "type": "detail", "points": 20},
+        {"text": "relax", "ja": "くつろぐ", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "behind the sofa", "ja": "ソファの後ろに", "type": "detail", "points": 20},
+        {"text": "on the rug", "ja": "ラグの上に", "type": "detail", "points": 20},
+        {"text": "holding a doll", "ja": "人形を持って", "type": "gist", "points": 30},
+        {"text": "wearing a dress", "ja": "ワンピースを着て", "type": "gist", "points": 30},
+        {"text": "looking at me", "ja": "私の方を見て", "type": "gist", "points": 30},
+        {"text": "a potted plant", "ja": "鉢植えの植物", "type": "object", "points": 30},
+        {"text": "in the living room", "ja": "リビングルームで", "type": "detail", "points": 20},
+        {"text": "smiling happily", "ja": "幸せそうに微笑んで", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "There is a plant on the small table.", "grammar": "There is~ / 場所の前置詞", "ja": "小さなテーブルの上に植物があります。", "type": "detail", "points": 30},
+        {"text": "The boy is standing behind the sofa.", "grammar": "現在進行形 / 場所の前置詞", "ja": "男の子がソファの後ろに立っています。", "type": "gist", "points": 40},
+        {"text": "A girl is holding a doll in her hands.", "grammar": "現在進行形", "ja": "女の子が手に人形を持っています。", "type": "gist", "points": 40},
+        {"text": "The boy is wearing a striped shirt.", "grammar": "現在進行形", "ja": "男の子はしま模様のシャツを着ています。", "type": "attribute", "points": 30},
+        {"text": "They look very relaxed in the room.", "grammar": "look + 形容詞", "ja": "彼らは部屋でとてもくつろいでいるように見えます。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "sibling", "ja": "きょうだい", "type": "inference", "points": 30},
+        {"text": "youngster", "ja": "子供・若者", "type": "inference", "points": 30},
+        {"text": "couch", "ja": "ソファ（類義語）", "type": "object", "points": 20},
+        {"text": "carpet", "ja": "カーペット", "type": "object", "points": 20},
+        {"text": "houseplant", "ja": "観葉植物", "type": "object", "points": 30},
+        {"text": "matching", "ja": "おそろいの", "type": "attribute", "points": 30},
+        {"text": "adorable", "ja": "愛らしい", "type": "attribute", "points": 30},
+        {"text": "cheerful", "ja": "陽気な・ご機嫌な", "type": "inference", "points": 30},
+        {"text": "cozy", "ja": "居心地の良い", "type": "inference", "points": 30},
+        {"text": "domestic", "ja": "家庭の", "type": "inference", "points": 30},
+        {"text": "grasp", "ja": "しっかり握る・持つ", "type": "gist", "points": 30},
+        {"text": "lean", "ja": "寄りかかる", "type": "gist", "points": 30},
+        {"text": "peek", "ja": "のぞく", "type": "gist", "points": 30},
+        {"text": "affectionately", "ja": "愛情を込めて", "type": "inference", "points": 30},
+        {"text": "indoors", "ja": "屋内で", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a cozy living room", "ja": "居心地の良いリビング", "type": "detail", "points": 30},
+        {"text": "leaning on the couch", "ja": "ソファに寄りかかって", "type": "gist", "points": 40},
+        {"text": "matching blue outfits", "ja": "おそろいの青い服", "type": "attribute", "points": 40},
+        {"text": "grasping a toy", "ja": "おもちゃを握って", "type": "gist", "points": 30},
+        {"text": "peeking over", "ja": "上からのぞき込んで", "type": "gist", "points": 40},
+        {"text": "a relaxed domestic atmosphere", "ja": "リラックスした家庭的な雰囲気", "type": "inference", "points": 40},
+        {"text": "a well-lit indoor space", "ja": "明るく照らされた屋内空間", "type": "detail", "points": 40},
+        {"text": "looking cheerful", "ja": "ご機嫌に見える", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "It looks like a brother and sister are spending a relaxing time at home.", "grammar": "It looks like~ / 接続詞", "ja": "兄と妹が家でリラックスした時間を過ごしているように見えます。", "type": "inference", "points": 50},
+        {"text": "The young girl sitting on the floor is grasping an adorable doll.", "grammar": "現在分詞の形容詞的用法", "ja": "床に座っている幼い女の子は、愛らしい人形を握っています。", "type": "gist", "points": 50},
+        {"text": "The boy in the striped shirt is peeking over the back of the beige couch.", "grammar": "前置詞を用いた名詞修飾 / 現在進行形", "ja": "しま模様のシャツを着た男の子が、ベージュのソファの後ろからのぞいています。", "type": "gist", "points": 50},
+        {"text": "The room has a cozy atmosphere because of the warm light from the window.", "grammar": "because of~ / 理由", "ja": "窓からの暖かい光のおかげで、部屋は居心地の良い雰囲気です。", "type": "inference", "points": 50},
+        {"text": "Both of the youngsters look cheerful, and they are smiling at the camera.", "grammar": "both of~ / 接続詞and", "ja": "子供たちは二人ともご機嫌に見え、カメラに向かって微笑んでいます。", "type": "inference", "points": 40}
+      ]
+    }
+  },
+  "pins": {
+    "boy": { "x": 48, "y": 10 },
+    "girl": { "x": 68, "y": 60 },
+    "sofa": { "x": 50, "y": 45 },
+    "doll": { "x": 73, "y": 75 },
+    "plant": { "x": 8, "y": 28 },
+    "table": { "x": 8, "y": 55 },
+    "shirt": { "x": 48, "y": 22 },
+    "dress": { "x": 68, "y": 80 },
+    "floor": { "x": 20, "y": 85 },
+    "curtain": { "x": 25, "y": 15 },
+    "pot": { "x": 7, "y": 47 },
+    "rug": { "x": 50, "y": 92 },
+    "foot": { "x": 48, "y": 78 },
+    "cushion": { "x": 38, "y": 38 },
+    "wall": { "x": 85, "y": 15 }
+  }
+}

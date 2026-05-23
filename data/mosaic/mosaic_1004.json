@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1003",
+  "imageSrc": "assets/images/mosaic/1003.webp",
+  "description": "森林伐採と環境問題",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "tree", "ja": "木", "type": "object", "points": 10},
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "truck", "ja": "トラック", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "ground", "ja": "地面", "type": "object", "points": 10},
+        {"text": "wood", "ja": "木材", "type": "object", "points": 10},
+        {"text": "cut", "ja": "切る", "type": "gist", "points": 20},
+        {"text": "work", "ja": "働く", "type": "gist", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "brown", "ja": "茶色の", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a blue sky", "ja": "青い空", "type": "attribute", "points": 10},
+        {"text": "brown ground", "ja": "茶色い地面", "type": "attribute", "points": 10},
+        {"text": "many trees", "ja": "たくさんの木", "type": "object", "points": 20},
+        {"text": "big trucks", "ja": "大きなトラック", "type": "object", "points": 20},
+        {"text": "two men", "ja": "2人の男の人", "type": "object", "points": 20},
+        {"text": "cut trees", "ja": "木を切る", "type": "gist", "points": 30},
+        {"text": "hard work", "ja": "大変な仕事", "type": "inference", "points": 20},
+        {"text": "look sad", "ja": "悲しそうに見える", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a blue sky.", "grammar": "I see~", "ja": "青い空が見えます。", "type": "object", "points": 20},
+        {"text": "There are many trees.", "grammar": "There is/are~", "ja": "たくさんの木があります。", "type": "object", "points": 20},
+        {"text": "The men cut the trees.", "grammar": "一般動詞", "ja": "男の人たちが木を切ります。", "type": "gist", "points": 30},
+        {"text": "The trucks are big.", "grammar": "be動詞", "ja": "トラックは大きいです。", "type": "attribute", "points": 30},
+        {"text": "This is sad.", "grammar": "This is~", "ja": "これは悲しいです。", "type": "inference", "points": 20}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "forest", "ja": "森", "type": "object", "points": 20},
+        {"text": "stump", "ja": "切り株", "type": "object", "points": 20},
+        {"text": "log", "ja": "丸太", "type": "object", "points": 20},
+        {"text": "worker", "ja": "作業員", "type": "object", "points": 20},
+        {"text": "road", "ja": "道路", "type": "object", "points": 10},
+        {"text": "machine", "ja": "機械", "type": "object", "points": 20},
+        {"text": "environment", "ja": "環境", "type": "object", "points": 20},
+        {"text": "carry", "ja": "運ぶ", "type": "gist", "points": 20},
+        {"text": "drive", "ja": "運転する", "type": "gist", "points": 20},
+        {"text": "destroy", "ja": "破壊する", "type": "gist", "points": 30},
+        {"text": "dry", "ja": "乾燥した", "type": "attribute", "points": 20},
+        {"text": "empty", "ja": "空っぽの", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "cut down trees", "ja": "木を切り倒す", "type": "gist", "points": 30},
+        {"text": "carry the logs", "ja": "丸太を運ぶ", "type": "gist", "points": 30},
+        {"text": "drive a truck", "ja": "トラックを運転する", "type": "gist", "points": 20},
+        {"text": "an empty land", "ja": "何もない土地", "type": "attribute", "points": 30},
+        {"text": "environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "think about nature", "ja": "自然について考える", "type": "inference", "points": 30},
+        {"text": "destroy the forest", "ja": "森を破壊する", "type": "gist", "points": 30},
+        {"text": "work hard", "ja": "一生懸命働く", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "The workers are cutting down trees.", "grammar": "現在進行形", "ja": "作業員たちが木を切り倒しています。", "type": "gist", "points": 30},
+        {"text": "There are many stumps on the ground.", "grammar": "There is/are~ + 場所", "ja": "地面にはたくさんの切り株があります。", "type": "detail", "points": 30},
+        {"text": "A big truck is carrying logs.", "grammar": "現在進行形", "ja": "大きなトラックが丸太を運んでいます。", "type": "gist", "points": 30},
+        {"text": "This picture shows a serious environmental problem.", "grammar": "一般動詞", "ja": "この絵は深刻な環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "The land looks empty and dry.", "grammar": "look + 形容詞", "ja": "土地は何もなく乾燥しているように見えます。", "type": "attribute", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "deforestation", "ja": "森林伐採", "type": "inference", "points": 30},
+        {"text": "timber", "ja": "材木", "type": "object", "points": 30},
+        {"text": "chainsaw", "ja": "チェーンソー", "type": "object", "points": 30},
+        {"text": "landscape", "ja": "風景", "type": "object", "points": 20},
+        {"text": "destruction", "ja": "破壊", "type": "inference", "points": 30},
+        {"text": "impact", "ja": "影響", "type": "inference", "points": 30},
+        {"text": "operate", "ja": "操作する", "type": "gist", "points": 30},
+        {"text": "transport", "ja": "輸送する", "type": "gist", "points": 30},
+        {"text": "reduce", "ja": "減らす", "type": "gist", "points": 20},
+        {"text": "cause", "ja": "引き起こす", "type": "gist", "points": 20},
+        {"text": "imagine", "ja": "想像する", "type": "inference", "points": 20},
+        {"text": "barren", "ja": "不毛の", "type": "attribute", "points": 30},
+        {"text": "serious", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "negative", "ja": "否定的な", "type": "attribute", "points": 20},
+        {"text": "disappear", "ja": "消える", "type": "gist", "points": 20}
+      ],
+      "chunks": [
+        {"text": "cause deforestation", "ja": "森林伐採を引き起こす", "type": "gist", "points": 40},
+        {"text": "operate a chainsaw", "ja": "チェーンソーを操作する", "type": "gist", "points": 30},
+        {"text": "transport timber", "ja": "材木を輸送する", "type": "gist", "points": 30},
+        {"text": "a barren landscape", "ja": "不毛な風景", "type": "attribute", "points": 40},
+        {"text": "environmental destruction", "ja": "環境破壊", "type": "inference", "points": 40},
+        {"text": "imagine the past", "ja": "過去を想像する", "type": "inference", "points": 30},
+        {"text": "have a negative impact", "ja": "悪影響を及ぼす", "type": "inference", "points": 40},
+        {"text": "reduce the forest", "ja": "森林を減らす", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture shows the serious problem of deforestation.", "grammar": "一般動詞", "ja": "この絵は森林伐採という深刻な問題を示しています。", "type": "inference", "points": 40},
+        {"text": "We can see workers who are operating chainsaws to cut down trees.", "grammar": "関係代名詞 / 不定詞の副詞的用法", "ja": "木を切り倒すためにチェーンソーを操作している作業員たちが見えます。", "type": "gist", "points": 50},
+        {"text": "Huge trucks are transporting a lot of timber on the road.", "grammar": "現在進行形 + 場所", "ja": "巨大なトラックが道路でたくさんの材木を輸送しています。", "type": "gist", "points": 40},
+        {"text": "It looks like the forest disappeared because of human activities.", "grammar": "It looks like~ / 接続詞because", "ja": "人間の活動によって森が消えてしまったように見えます。", "type": "inference", "points": 50},
+        {"text": "The barren landscape makes me feel sad about environmental destruction.", "grammar": "使役動詞make", "ja": "不毛な風景は私に環境破壊についての悲しみを感じさせます。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "stump": { "x": 38, "y": 88 },
+    "land": { "x": 50, "y": 75 },
+    "sky": { "x": 20, "y": 20 },
+    "truck": { "x": 88, "y": 26 },
+    "log": { "x": 78, "y": 22 },
+    "worker": { "x": 67, "y": 38 },
+    "chainsaw": { "x": 70, "y": 40 },
+    "road": { "x": 85, "y": 40 },
+    "forest": { "x": 80, "y": 15 },
+    "bubble": { "x": 75, "y": 30 },
+    "arrow": { "x": 45, "y": 55 },
+    "wheel": { "x": 86, "y": 34 },
+    "window": { "x": 92, "y": 24 },
+    "helmet": { "x": 68, "y": 31 },
+    "driver": { "x": 65, "y": 23 }
+  }
+}

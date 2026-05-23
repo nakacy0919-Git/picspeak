@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_804",
+  "imageSrc": "assets/images/mosaic/804.webp",
+  "description": "パリのカフェの風景",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "cafe", "ja": "カフェ", "type": "object", "points": 20},
+        {"text": "paris", "ja": "パリ", "type": "object", "points": 20},
+        {"text": "tower", "ja": "塔", "type": "object", "points": 20},
+        {"text": "man", "ja": "男性", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女性", "type": "object", "points": 10},
+        {"text": "cup", "ja": "カップ", "type": "object", "points": 20},
+        {"text": "bread", "ja": "パン", "type": "object", "points": 20},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 20},
+        {"text": "chair", "ja": "椅子", "type": "object", "points": 20},
+        {"text": "waiter", "ja": "ウェイター", "type": "object", "points": 20},
+        {"text": "eat", "ja": "食べる", "type": "gist", "points": 20},
+        {"text": "drink", "ja": "飲む", "type": "gist", "points": 20},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 10},
+        {"text": "nice", "ja": "素敵な", "type": "inference", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10}
+      ],
+      "chunks": [
+        {"text": "at the cafe", "ja": "カフェで", "type": "detail", "points": 20},
+        {"text": "in Paris", "ja": "パリで", "type": "detail", "points": 20},
+        {"text": "the Eiffel Tower", "ja": "エッフェル塔", "type": "object", "points": 20},
+        {"text": "drink coffee", "ja": "コーヒーを飲む", "type": "gist", "points": 20},
+        {"text": "eat a croissant", "ja": "クロワッサンを食べる", "type": "gist", "points": 20},
+        {"text": "sit at a table", "ja": "テーブルに座る", "type": "gist", "points": 20},
+        {"text": "a waiter", "ja": "ウェイター", "type": "object", "points": 20},
+        {"text": "two people", "ja": "二人", "type": "object", "points": 20}
+      ],
+      "sentences": [
+        {"text": "This is a cafe.", "grammar": "This is~", "ja": "ここはカフェです。", "type": "inference", "points": 30},
+        {"text": "I see the Eiffel Tower.", "grammar": "I see~", "ja": "エッフェル塔が見えます。", "type": "object", "points": 30},
+        {"text": "The man is a waiter.", "grammar": "The is~", "ja": "その男性はウェイターです。", "type": "object", "points": 30},
+        {"text": "The woman is sitting.", "grammar": "is ~ing", "ja": "女性が座っています。", "type": "gist", "points": 30},
+        {"text": "I like this place.", "grammar": "I like~", "ja": "この場所が好きです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "landmark", "ja": "名所", "type": "object", "points": 20},
+        {"text": "croissant", "ja": "クロワッサン", "type": "object", "points": 30},
+        {"text": "service", "ja": "サービス", "type": "gist", "points": 20},
+        {"text": "counter", "ja": "カウンター", "type": "object", "points": 20},
+        {"text": "restaurant", "ja": "レストラン", "type": "object", "points": 20},
+        {"text": "outdoors", "ja": "屋外", "type": "detail", "points": 20},
+        {"text": "morning", "ja": "朝", "type": "inference", "points": 20},
+        {"text": "delicious", "ja": "美味しい", "type": "attribute", "points": 20},
+        {"text": "mustache", "ja": "口ひげ", "type": "attribute", "points": 20},
+        {"text": "apron", "ja": "エプロン", "type": "object", "points": 20},
+        {"text": "serving", "ja": "提供する", "type": "gist", "points": 30},
+        {"text": "talking", "ja": "話している", "type": "gist", "points": 20},
+        {"text": "chatting", "ja": "おしゃべりする", "type": "gist", "points": 20},
+        {"text": "relaxing", "ja": "リラックスする", "type": "inference", "points": 20},
+        {"text": "scenery", "ja": "景色", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "serving a croissant", "ja": "クロワッサンを提供する", "type": "gist", "points": 30},
+        {"text": "sitting at a table", "ja": "テーブルに座る", "type": "detail", "points": 30},
+        {"text": "near the Eiffel Tower", "ja": "エッフェル塔の近くで", "type": "detail", "points": 30},
+        {"text": "talking together", "ja": "一緒に話す", "type": "gist", "points": 30},
+        {"text": "working at the cafe", "ja": "カフェで働く", "type": "inference", "points": 30},
+        {"text": "holding a plate", "ja": "皿を持つ", "type": "gist", "points": 30},
+        {"text": "on the counter", "ja": "カウンターの上に", "type": "detail", "points": 30},
+        {"text": "in the morning", "ja": "朝に", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "The waiter is serving a croissant to the customer.", "grammar": "is ~ing", "ja": "ウェイターが顧客にクロワッサンを提供しています。", "type": "gist", "points": 40},
+        {"text": "The Eiffel Tower is in the background.", "grammar": "There is/are", "ja": "背景にエッフェル塔があります。", "type": "detail", "points": 40},
+        {"text": "There is a couple sitting at a table.", "grammar": "There is", "ja": "テーブルに座っているカップルがいます。", "type": "object", "points": 40},
+        {"text": "They are at a cafe in Paris.", "grammar": "They are at", "ja": "彼らはパリのカフェにいます。", "type": "inference", "points": 40},
+        {"text": "The coffee shop looks very busy.", "grammar": "look + adj", "ja": "そのコーヒーショップはとても忙しそうです。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "iconic", "ja": "象徴的な", "type": "attribute", "points": 30},
+        {"text": "architecture", "ja": "建築物", "type": "object", "points": 30},
+        {"text": "hospitality", "ja": "おもてなし", "type": "inference", "points": 30},
+        {"text": "patron", "ja": "顧客", "type": "object", "points": 30},
+        {"text": "interaction", "ja": "交流", "type": "gist", "points": 30},
+        {"text": "terrace", "ja": "テラス", "type": "object", "points": 30},
+        {"text": "pastry", "ja": "ペストリー", "type": "object", "points": 30},
+        {"text": "beverage", "ja": "飲み物", "type": "object", "points": 30},
+        {"text": "professional", "ja": "プロの", "type": "attribute", "points": 30},
+        {"text": "panorama", "ja": "パノラマ", "type": "inference", "points": 30},
+        {"text": "interior", "ja": "インテリア", "type": "object", "points": 30},
+        {"text": "classic", "ja": "古典的な", "type": "attribute", "points": 30},
+        {"text": "welcoming", "ja": "歓迎的な", "type": "inference", "points": 30},
+        {"text": "bustling", "ja": "活気のある", "type": "inference", "points": 30},
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 30}
+      ],
+      "chunks": [
+        {"text": "iconic Eiffel Tower", "ja": "象徴的なエッフェル塔", "type": "object", "points": 40},
+        {"text": "serving a freshly baked croissant", "ja": "焼きたてのクロワッサンを提供する", "type": "gist", "points": 40},
+        {"text": "engaged in a conversation", "ja": "会話に没頭する", "type": "gist", "points": 40},
+        {"text": "a bustling Parisian cafe", "ja": "活気あるパリのカフェ", "type": "inference", "points": 40},
+        {"text": "view of the city landmark", "ja": "街の名所の景色", "type": "detail", "points": 40},
+        {"text": "seated on the terrace", "ja": "テラスに座っている", "type": "detail", "points": 40},
+        {"text": "professional waiter", "ja": "プロのウェイター", "type": "object", "points": 40},
+        {"text": "starting the day with coffee", "ja": "コーヒーで一日を始める", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The iconic Eiffel Tower is visible in the background, confirming the location is Paris.", "grammar": "participle", "ja": "象徴的なエッフェル塔が背景に見え、場所がパリであることを示しています。", "type": "detail", "points": 50},
+        {"text": "The waiter is handing a plate with a croissant to a customer at the counter.", "grammar": "S+V+O", "ja": "ウェイターがカウンターで顧客にクロワッサンの皿を手渡しています。", "type": "gist", "points": 50},
+        {"text": "A couple is seated at a table on the terrace, enjoying the scenery.", "grammar": "participle", "ja": "カップルがテラスのテーブルに座り、景色を楽しんでいます。", "type": "detail", "points": 50},
+        {"text": "The atmosphere of the cafe feels welcoming and classic.", "grammar": "feel + adj", "ja": "カフェの雰囲気は歓迎的でクラシックに感じられます。", "type": "inference", "points": 50},
+        {"text": "It looks like a popular spot for tourists and locals alike.", "grammar": "It looks like", "ja": "観光客にも地元の人にも人気のスポットのようです。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "eiffel_tower": { "x": 22, "y": 25 },
+    "waiter": { "x": 70, "y": 50 },
+    "customer": { "x": 35, "y": 60 },
+    "croissant": { "x": 52, "y": 68 },
+    "counter": { "x": 60, "y": 80 },
+    "coffee_machine": { "x": 95, "y": 55 },
+    "menu_board": { "x": 75, "y": 15 },
+    "outdoor_table": { "x": 16, "y": 70 },
+    "outdoor_chairs": { "x": 10, "y": 75 },
+    "lamp_post": { "x": 65, "y": 42 },
+    "sign": { "x": 47, "y": 15 },
+    "coffee_cup": { "x": 55, "y": 88 },
+    "coffee_grinder": { "x": 85, "y": 50 },
+    "coffee_jar": { "x": 95, "y": 28 },
+    "couple_background": { "x": 12, "y": 65 }
+  }
+}

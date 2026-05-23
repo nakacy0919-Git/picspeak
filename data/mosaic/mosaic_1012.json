@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1012",
+  "imageSrc": "assets/images/mosaic/1012.jpg",
+  "description": "農場での規格外野菜の廃棄と食品ロス",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "farm", "ja": "農場", "type": "object", "points": 10},
+        {"text": "field", "ja": "畑", "type": "object", "points": 10},
+        {"text": "barn", "ja": "納屋", "type": "object", "points": 20},
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "store", "ja": "お店", "type": "object", "points": 10},
+        {"text": "vegetable", "ja": "野菜", "type": "object", "points": 10},
+        {"text": "tomato", "ja": "トマト", "type": "object", "points": 10},
+        {"text": "carrot", "ja": "ニンジン", "type": "object", "points": 10},
+        {"text": "food", "ja": "食べ物", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "many", "ja": "たくさんの", "type": "attribute", "points": 10},
+        {"text": "buy", "ja": "買う", "type": "gist", "points": 10},
+        {"text": "throw", "ja": "投げる・捨てる", "type": "gist", "points": 20},
+        {"text": "sad", "ja": "悲しい", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a big farm", "ja": "大きな農場", "type": "object", "points": 20},
+        {"text": "a red barn", "ja": "赤い納屋", "type": "object", "points": 20},
+        {"text": "in the store", "ja": "お店で", "type": "detail", "points": 20},
+        {"text": "buy vegetables", "ja": "野菜を買う", "type": "gist", "points": 30},
+        {"text": "many vegetables", "ja": "たくさんの野菜", "type": "object", "points": 20},
+        {"text": "on the ground", "ja": "地面の上に", "type": "detail", "points": 20},
+        {"text": "throw food", "ja": "食べ物を捨てる", "type": "gist", "points": 30},
+        {"text": "a sad thing", "ja": "悲しいこと", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a big farm.", "grammar": "I see~", "ja": "大きな農場が見えます。", "type": "object", "points": 30},
+        {"text": "A woman buys vegetables.", "grammar": "一般動詞", "ja": "女の人が野菜を買います。", "type": "gist", "points": 30},
+        {"text": "There are many vegetables on the ground.", "grammar": "There is/are~ + 場所", "ja": "地面の上にたくさんの野菜があります。", "type": "detail", "points": 40},
+        {"text": "They throw food.", "grammar": "一般動詞", "ja": "彼らは食べ物を捨てます。", "type": "gist", "points": 30},
+        {"text": "This is very sad.", "grammar": "This is~", "ja": "これはとても悲しいです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "supermarket", "ja": "スーパーマーケット", "type": "object", "points": 20},
+        {"text": "customer", "ja": "客", "type": "object", "points": 20},
+        {"text": "crop", "ja": "作物", "type": "object", "points": 20},
+        {"text": "waste", "ja": "無駄・ゴミ", "type": "inference", "points": 30},
+        {"text": "shape", "ja": "形", "type": "object", "points": 10},
+        {"text": "perfect", "ja": "完璧な", "type": "attribute", "points": 20},
+        {"text": "ugly", "ja": "醜い・不格好な", "type": "attribute", "points": 20},
+        {"text": "fresh", "ja": "新鮮な", "type": "attribute", "points": 20},
+        {"text": "choose", "ja": "選ぶ", "type": "gist", "points": 20},
+        {"text": "throw", "ja": "捨てる", "type": "gist", "points": 20},
+        {"text": "produce", "ja": "生産する", "type": "gist", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "outside", "ja": "外に", "type": "detail", "points": 20},
+        {"text": "strict", "ja": "厳しい", "type": "inference", "points": 30},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "choose perfect vegetables", "ja": "完璧な野菜を選ぶ", "type": "gist", "points": 30},
+        {"text": "at the supermarket", "ja": "スーパーマーケットで", "type": "detail", "points": 20},
+        {"text": "ugly vegetables", "ja": "不格好な野菜", "type": "object", "points": 30},
+        {"text": "throw away", "ja": "捨てる", "type": "gist", "points": 30},
+        {"text": "food waste", "ja": "食品ロス", "type": "inference", "points": 40},
+        {"text": "an environmental problem", "ja": "環境問題", "type": "inference", "points": 40},
+        {"text": "look fresh", "ja": "新鮮に見える", "type": "inference", "points": 20},
+        {"text": "produce crops", "ja": "作物を生産する", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The customer is choosing perfect vegetables at the supermarket.", "grammar": "現在進行形", "ja": "客はスーパーマーケットで完璧な野菜を選んでいます。", "type": "gist", "points": 40},
+        {"text": "Ugly vegetables are thrown away on the farm.", "grammar": "受動態", "ja": "不格好な野菜は農場で捨てられます。", "type": "gist", "points": 40},
+        {"text": "This picture shows the serious problem of food waste.", "grammar": "一般動詞", "ja": "この絵は食品ロスという深刻な問題を示しています。", "type": "inference", "points": 40},
+        {"text": "We should not throw away fresh food.", "grammar": "助動詞should", "ja": "私たちは新鮮な食べ物を捨てるべきではありません。", "type": "gist", "points": 40},
+        {"text": "It is important to eat ugly vegetables too.", "grammar": "It is ~ to do", "ja": "不格好な野菜も食べることが重要です。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "agriculture", "ja": "農業", "type": "object", "points": 30},
+        {"text": "consumer", "ja": "消費者", "type": "object", "points": 30},
+        {"text": "appearance", "ja": "外見", "type": "object", "points": 30},
+        {"text": "standard", "ja": "基準", "type": "inference", "points": 30},
+        {"text": "discard", "ja": "捨てる", "type": "gist", "points": 30},
+        {"text": "harvest", "ja": "収穫する", "type": "gist", "points": 30},
+        {"text": "reject", "ja": "はねる・拒絶する", "type": "gist", "points": 30},
+        {"text": "demand", "ja": "要求する", "type": "gist", "points": 30},
+        {"text": "cosmetic", "ja": "表面的な・見た目の", "type": "attribute", "points": 30},
+        {"text": "edible", "ja": "食べられる", "type": "attribute", "points": 30},
+        {"text": "flawed", "ja": "欠陥のある", "type": "attribute", "points": 30},
+        {"text": "massive", "ja": "大量の", "type": "attribute", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "unfortunately", "ja": "残念なことに", "type": "detail", "points": 30}
+      ],
+      "chunks": [
+        {"text": "cosmetic standards", "ja": "見た目の基準", "type": "inference", "points": 40},
+        {"text": "perfectly shaped vegetables", "ja": "完璧な形の野菜", "type": "object", "points": 40},
+        {"text": "demand perfect appearance", "ja": "完璧な外見を要求する", "type": "gist", "points": 40},
+        {"text": "discard edible food", "ja": "食べられる食品を捨てる", "type": "gist", "points": 40},
+        {"text": "massive food waste", "ja": "大量の食品ロス", "type": "inference", "points": 40},
+        {"text": "reject flawed crops", "ja": "欠陥のある作物をはねる", "type": "gist", "points": 40},
+        {"text": "illustrate a serious consequence", "ja": "深刻な結果を示す", "type": "inference", "points": 40},
+        {"text": "perfectly fine to eat", "ja": "食べるのに全く問題ない", "type": "attribute", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates massive food waste caused by strict cosmetic standards.", "grammar": "過去分詞の形容詞的用法", "ja": "この絵は厳しい見た目の基準によって引き起こされる大量の食品ロスを示しています。", "type": "inference", "points": 50},
+        {"text": "Consumers demand perfectly shaped vegetables at the grocery store.", "grammar": "一般動詞", "ja": "消費者はスーパーマーケットで完璧な形の野菜を要求します。", "type": "gist", "points": 40},
+        {"text": "Unfortunately, farmers must discard edible crops if they look flawed.", "grammar": "接続詞if", "ja": "残念なことに、農家は見た目に欠陥がある場合、食べられる作物を捨てなければなりません。", "type": "gist", "points": 50},
+        {"text": "Discarding edible food is a serious issue that we need to solve.", "grammar": "関係代名詞", "ja": "食べられる食品を捨てることは、私たちが解決しなければならない深刻な問題です。", "type": "inference", "points": 50},
+        {"text": "We should change our minds and buy ugly vegetables to reduce food waste.", "grammar": "不定詞の副詞的用法", "ja": "食品ロスを減らすために、私たちは考えを改め、不格好な野菜を買うべきです。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "barn": { "x": 15, "y": 25 },
+    "silo": { "x": 22, "y": 18 },
+    "field": { "x": 40, "y": 50 },
+    "woman": { "x": 68, "y": 30 },
+    "shelf": { "x": 85, "y": 25 },
+    "bag": { "x": 64, "y": 45 },
+    "tomato": { "x": 75, "y": 92 },
+    "carrot": { "x": 67, "y": 88 },
+    "cabbage": { "x": 88, "y": 82 },
+    "pile": { "x": 18, "y": 80 },
+    "arrow": { "x": 40, "y": 65 },
+    "bubble": { "x": 75, "y": 10 },
+    "sky": { "x": 40, "y": 10 },
+    "hill": { "x": 45, "y": 25 },
+    "pepper": { "x": 62, "y": 80 }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1013",
+  "imageSrc": "assets/images/mosaic/1013.jpg",
+  "description": "ガソリンスタンドと化石燃料の供給",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "car", "ja": "車", "type": "object", "points": 10},
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "gas", "ja": "ガソリン", "type": "object", "points": 10},
+        {"text": "station", "ja": "駅・スタンド", "type": "object", "points": 10},
+        {"text": "pump", "ja": "ポンプ", "type": "object", "points": 20},
+        {"text": "truck", "ja": "トラック", "type": "object", "points": 10},
+        {"text": "oil", "ja": "油・石油", "type": "object", "points": 10},
+        {"text": "store", "ja": "お店", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "black", "ja": "黒い", "type": "attribute", "points": 10},
+        {"text": "grey", "ja": "灰色の", "type": "attribute", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "put", "ja": "入れる", "type": "gist", "points": 20},
+        {"text": "drive", "ja": "運転する", "type": "gist", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "a grey car", "ja": "灰色の車", "type": "object", "points": 10},
+        {"text": "a gas station", "ja": "ガソリンスタンド", "type": "object", "points": 20},
+        {"text": "a big truck", "ja": "大きなトラック", "type": "object", "points": 20},
+        {"text": "put gas", "ja": "ガソリンを入れる", "type": "gist", "points": 20},
+        {"text": "drive a car", "ja": "車を運転する", "type": "gist", "points": 20},
+        {"text": "black oil", "ja": "黒い石油", "type": "attribute", "points": 10},
+        {"text": "a blue pump", "ja": "青いポンプ", "type": "object", "points": 20},
+        {"text": "think about", "ja": "〜について考える", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a gas station.", "grammar": "I see~", "ja": "ガソリンスタンドが見えます。", "type": "object", "points": 20},
+        {"text": "A man has a car.", "grammar": "have/has", "ja": "男の人が車を持っています。", "type": "object", "points": 20},
+        {"text": "The car is dark grey.", "grammar": "be動詞", "ja": "車は濃い灰色です。", "type": "attribute", "points": 20},
+        {"text": "A big truck carries oil.", "grammar": "一般動詞", "ja": "大きなトラックが石油を運びます。", "type": "gist", "points": 30},
+        {"text": "He puts gas in the car.", "grammar": "一般動詞 + 場所", "ja": "彼は車にガソリンを入れます。", "type": "gist", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "fuel", "ja": "燃料", "type": "object", "points": 20},
+        {"text": "energy", "ja": "エネルギー", "type": "inference", "points": 30},
+        {"text": "machine", "ja": "機械", "type": "object", "points": 20},
+        {"text": "ground", "ja": "地面", "type": "object", "points": 10},
+        {"text": "driver", "ja": "運転手", "type": "object", "points": 20},
+        {"text": "roof", "ja": "屋根", "type": "object", "points": 10},
+        {"text": "transport", "ja": "輸送する", "type": "gist", "points": 30},
+        {"text": "use", "ja": "使う", "type": "gist", "points": 10},
+        {"text": "carry", "ja": "運ぶ", "type": "gist", "points": 20},
+        {"text": "dig", "ja": "掘る", "type": "gist", "points": 20},
+        {"text": "useful", "ja": "役に立つ", "type": "attribute", "points": 20},
+        {"text": "expensive", "ja": "高価な", "type": "attribute", "points": 20},
+        {"text": "underground", "ja": "地下の", "type": "detail", "points": 30},
+        {"text": "imagine", "ja": "想像する", "type": "inference", "points": 20},
+        {"text": "background", "ja": "背景", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "put fuel in", "ja": "燃料を入れる", "type": "gist", "points": 30},
+        {"text": "at the gas station", "ja": "ガソリンスタンドで", "type": "detail", "points": 20},
+        {"text": "an oil pump", "ja": "石油ポンプ", "type": "object", "points": 20},
+        {"text": "carry oil", "ja": "石油を運ぶ", "type": "gist", "points": 20},
+        {"text": "transport energy", "ja": "エネルギーを輸送する", "type": "gist", "points": 30},
+        {"text": "underground oil", "ja": "地下の石油", "type": "detail", "points": 30},
+        {"text": "a useful machine", "ja": "役に立つ機械", "type": "attribute", "points": 20},
+        {"text": "imagine the background", "ja": "背景を想像する", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The man is putting fuel into his car.", "grammar": "現在進行形", "ja": "男の人が車に燃料を入れています。", "type": "gist", "points": 30},
+        {"text": "The black oil comes from underground.", "grammar": "一般動詞 + 前置詞", "ja": "黒い石油は地下から来ます。", "type": "detail", "points": 30},
+        {"text": "A big truck carries fuel to the gas station.", "grammar": "一般動詞 + 方向", "ja": "大きなトラックがガソリンスタンドに燃料を運びます。", "type": "gist", "points": 30},
+        {"text": "We use a lot of energy every day.", "grammar": "一般動詞", "ja": "私たちは毎日たくさんのエネルギーを使います。", "type": "inference", "points": 30},
+        {"text": "He is thinking about the background of energy.", "grammar": "現在進行形 + 前置詞", "ja": "彼はエネルギーの背景について考えています。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "petroleum", "ja": "石油", "type": "object", "points": 30},
+        {"text": "fossil", "ja": "化石の", "type": "attribute", "points": 30},
+        {"text": "extraction", "ja": "抽出・採掘", "type": "inference", "points": 30},
+        {"text": "distribution", "ja": "分配・流通", "type": "inference", "points": 30},
+        {"text": "vehicle", "ja": "乗り物・車両", "type": "object", "points": 20},
+        {"text": "consumption", "ja": "消費", "type": "inference", "points": 30},
+        {"text": "essential", "ja": "不可欠な", "type": "attribute", "points": 30},
+        {"text": "limited", "ja": "限られた", "type": "attribute", "points": 20},
+        {"text": "extract", "ja": "採掘する・抽出する", "type": "gist", "points": 30},
+        {"text": "supply", "ja": "供給する", "type": "gist", "points": 30},
+        {"text": "refuel", "ja": "給油する", "type": "gist", "points": 30},
+        {"text": "consume", "ja": "消費する", "type": "gist", "points": 30},
+        {"text": "connect", "ja": "つなぐ", "type": "gist", "points": 20},
+        {"text": "eventually", "ja": "最終的に", "type": "detail", "points": 30},
+        {"text": "resource", "ja": "資源", "type": "inference", "points": 20}
+      ],
+      "chunks": [
+        {"text": "fossil fuels", "ja": "化石燃料", "type": "object", "points": 40},
+        {"text": "refuel a vehicle", "ja": "車両に給油する", "type": "gist", "points": 40},
+        {"text": "extract petroleum", "ja": "石油を採掘する", "type": "gist", "points": 40},
+        {"text": "supply energy", "ja": "エネルギーを供給する", "type": "gist", "points": 30},
+        {"text": "global distribution", "ja": "世界的な流通", "type": "inference", "points": 40},
+        {"text": "limited resources", "ja": "限られた資源", "type": "inference", "points": 30},
+        {"text": "consume energy", "ja": "エネルギーを消費する", "type": "gist", "points": 30},
+        {"text": "connect to the source", "ja": "供給源につながる", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the process of energy distribution.", "grammar": "一般動詞", "ja": "この絵はエネルギー流通のプロセスを示しています。", "type": "inference", "points": 40},
+        {"text": "A man is refueling his vehicle at a gas station.", "grammar": "現在進行形 + 場所", "ja": "男性がガソリンスタンドで自分の車に給油しています。", "type": "gist", "points": 40},
+        {"text": "We can see a machine which extracts petroleum from underground.", "grammar": "関係代名詞", "ja": "地下から石油を採掘する機械が見えます。", "type": "object", "points": 50},
+        {"text": "Tanker trucks transport the fossil fuel because we need it.", "grammar": "接続詞 because", "ja": "私たちが必要としているため、タンクローリーが化石燃料を輸送します。", "type": "gist", "points": 40},
+        {"text": "It looks like the man is thinking about the limited resources.", "grammar": "It looks like~", "ja": "男性は限られた資源について考えているように見えます。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "man": { "x": 30, "y": 70 },
+    "car": { "x": 48, "y": 78 },
+    "pump": { "x": 16, "y": 75 },
+    "hose": { "x": 25, "y": 82 },
+    "roof": { "x": 25, "y": 20 },
+    "store": { "x": 80, "y": 65 },
+    "bubble": { "x": 75, "y": 30 },
+    "pumpjack": { "x": 62, "y": 25 },
+    "oil": { "x": 68, "y": 45 },
+    "truck": { "x": 88, "y": 28 },
+    "arrow": { "x": 45, "y": 50 },
+    "wheel": { "x": 41, "y": 92 },
+    "window": { "x": 48, "y": 65 },
+    "light": { "x": 43, "y": 75 },
+    "column": { "x": 23, "y": 50 }
+  }
+}

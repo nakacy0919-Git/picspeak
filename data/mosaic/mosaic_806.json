@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_806",
+  "imageSrc": "assets/images/mosaic/806.webp",
+  "description": "市場を歩く高齢のカップル",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "couple", "ja": "カップル", "type": "object", "points": 20},
+        {"text": "man", "ja": "男性", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女性", "type": "object", "points": 10},
+        {"text": "market", "ja": "市場", "type": "object", "points": 20},
+        {"text": "spice", "ja": "スパイス", "type": "object", "points": 20},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 10},
+        {"text": "lamp", "ja": "ランプ", "type": "object", "points": 20},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 20},
+        {"text": "laugh", "ja": "笑う", "type": "gist", "points": 20},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 20},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "yellow", "ja": "黄色い", "type": "attribute", "points": 10},
+        {"text": "shop", "ja": "店", "type": "object", "points": 10},
+        {"text": "food", "ja": "食べ物", "type": "object", "points": 10},
+        {"text": "clothes", "ja": "服", "type": "object", "points": 10}
+      ],
+      "chunks": [
+        {"text": "a happy couple", "ja": "幸せなカップル", "type": "attribute", "points": 20},
+        {"text": "in the market", "ja": "市場で", "type": "detail", "points": 20},
+        {"text": "laughing together", "ja": "一緒に笑う", "type": "gist", "points": 30},
+        {"text": "walk arm in arm", "ja": "腕を組んで歩く", "type": "gist", "points": 30},
+        {"text": "many spices", "ja": "たくさんのスパイス", "type": "object", "points": 20},
+        {"text": "colorful shops", "ja": "カラフルな店", "type": "attribute", "points": 20},
+        {"text": "bright lamps", "ja": "明るいランプ", "type": "object", "points": 20},
+        {"text": "shopping for food", "ja": "食べ物を買う", "type": "gist", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a happy couple.", "grammar": "I see~", "ja": "幸せなカップルが見えます。", "type": "inference", "points": 30},
+        {"text": "They are walking in the market.", "grammar": "are ~ing", "ja": "彼らは市場を歩いています。", "type": "gist", "points": 30},
+        {"text": "The man is laughing.", "grammar": "is ~ing", "ja": "男性が笑っています。", "type": "gist", "points": 30},
+        {"text": "There are many spices.", "grammar": "There are~", "ja": "たくさんのスパイスがあります。", "type": "object", "points": 30},
+        {"text": "It is a nice day.", "grammar": "It is~", "ja": "いい日です。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "bazaar", "ja": "バザール", "type": "object", "points": 20},
+        {"text": "elderly", "ja": "高齢の", "type": "attribute", "points": 30},
+        {"text": "marketplace", "ja": "市場", "type": "object", "points": 20},
+        {"text": "merchant", "ja": "商人", "type": "object", "points": 20},
+        {"text": "vibrant", "ja": "活気のある", "type": "attribute", "points": 20},
+        {"text": "traditional", "ja": "伝統的な", "type": "attribute", "points": 20},
+        {"text": "textile", "ja": "織物", "type": "object", "points": 20},
+        {"text": "lantern", "ja": "ランタン", "type": "object", "points": 20},
+        {"text": "stroll", "ja": "ぶらつく", "type": "gist", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "vibrant", "ja": "鮮やかな", "type": "attribute", "points": 20},
+        {"text": "crowded", "ja": "混雑した", "type": "inference", "points": 20},
+        {"text": "merchandise", "ja": "商品", "type": "object", "points": 20},
+        {"text": "exuberant", "ja": "元気な", "type": "inference", "points": 30},
+        {"text": "aisle", "ja": "通路", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "strolling through the bazaar", "ja": "バザールを散策する", "type": "gist", "points": 30},
+        {"text": "an elderly couple", "ja": "高齢のカップル", "type": "object", "points": 30},
+        {"text": "vibrant colorful fabrics", "ja": "鮮やかな布", "type": "attribute", "points": 30},
+        {"text": "spices in large bowls", "ja": "大きなボウルに入ったスパイス", "type": "object", "points": 30},
+        {"text": "laughing and talking", "ja": "笑って話す", "type": "gist", "points": 30},
+        {"text": "traditional lamps hanging", "ja": "吊るされた伝統的なランプ", "type": "detail", "points": 30},
+        {"text": "a lively atmosphere", "ja": "活気ある雰囲気", "type": "inference", "points": 30},
+        {"text": "people shopping around", "ja": "買い物をする人々", "type": "gist", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The elderly couple is strolling through the bazaar.", "grammar": "is ~ing", "ja": "高齢のカップルがバザールを散策しています。", "type": "gist", "points": 40},
+        {"text": "They are laughing and enjoying the day.", "grammar": "are ~ing", "ja": "彼らは笑って一日を楽しんでいます。", "type": "inference", "points": 40},
+        {"text": "There are many spices in the shop.", "grammar": "There are~", "ja": "店にはたくさんのスパイスがあります。", "type": "object", "points": 40},
+        {"text": "The market is filled with colorful fabrics.", "grammar": "is + pp", "ja": "市場はカラフルな布で満たされています。", "type": "detail", "points": 40},
+        {"text": "It looks like a very lively marketplace.", "grammar": "look like", "ja": "とても活気のある市場のように見えます。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "exuberant", "ja": "陽気な", "type": "attribute", "points": 40},
+        {"text": "bustling", "ja": "賑やかな", "type": "attribute", "points": 30},
+        {"text": "aromatic", "ja": "香りのよい", "type": "attribute", "points": 30},
+        {"text": "communal", "ja": "共同の", "type": "inference", "points": 30},
+        {"text": "merchants", "ja": "商人たち", "type": "object", "points": 30},
+        {"text": "array", "ja": "勢揃い", "type": "object", "points": 30},
+        {"text": "lively", "ja": "活気にあふれた", "type": "attribute", "points": 30},
+        {"text": "stroll", "ja": "散策する", "type": "gist", "points": 30},
+        {"text": "textiles", "ja": "織物", "type": "object", "points": 30},
+        {"text": "cultural", "ja": "文化的な", "type": "inference", "points": 30},
+        {"text": "interaction", "ja": "交流", "type": "inference", "points": 30},
+        {"text": "exhibit", "ja": "展示", "type": "object", "points": 30},
+        {"text": "vibrant", "ja": "鮮やかな", "type": "attribute", "points": 30},
+        {"text": "leisure", "ja": "余暇", "type": "inference", "points": 30},
+        {"text": "spices", "ja": "香辛料", "type": "object", "points": 30}
+      ],
+      "chunks": [
+        {"text": "strolling arm in arm", "ja": "腕を組んで散策する", "type": "gist", "points": 40},
+        {"text": "bustling traditional bazaar", "ja": "賑やかな伝統的バザール", "type": "inference", "points": 40},
+        {"text": "aromatic array of spices", "ja": "香りのよいスパイスの山", "type": "object", "points": 40},
+        {"text": "vibrant textiles hanging", "ja": "鮮やかな織物が吊るされている", "type": "detail", "points": 40},
+        {"text": "lively communal atmosphere", "ja": "活気ある共同の雰囲気", "type": "inference", "points": 40},
+        {"text": "engaging with local merchants", "ja": "地元の商人と交流する", "type": "gist", "points": 40},
+        {"text": "exuberant elderly couple", "ja": "陽気な高齢のカップル", "type": "object", "points": 40},
+        {"text": "immersed in local culture", "ja": "地元の文化に浸る", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The exuberant couple is strolling through the bustling bazaar, sharing a joyful moment.", "grammar": "participle", "ja": "陽気なカップルが賑やかなバザールを散策し、喜びを分かち合っています。", "type": "inference", "points": 50},
+        {"text": "The market is filled with an aromatic array of spices and vibrant textiles.", "grammar": "is + pp", "ja": "市場は香りのよいスパイスと鮮やかな織物で満たされています。", "type": "detail", "points": 50},
+        {"text": "This scene captures the lively communal atmosphere of a traditional marketplace.", "grammar": "S+V+O", "ja": "この光景は、伝統的な市場の活気ある共同の雰囲気を捉えています。", "type": "inference", "points": 50},
+        {"text": "They seem to be enjoying their leisure time while exploring the local culture.", "grammar": "seem to be", "ja": "彼らは地元の文化を探索しながら余暇を楽しんでいるようです。", "type": "inference", "points": 50},
+        {"text": "Merchants are busy attending to their diverse assortment of goods in the crowded aisle.", "grammar": "present continuous", "ja": "混雑した通路で、商人たちは多様な品揃えの対応に追われています。", "type": "detail", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "couple_man": { "x": 58, "y": 50 },
+    "couple_woman": { "x": 42, "y": 50 },
+    "spice_bowl_1": { "x": 88, "y": 55 },
+    "spice_bowl_2": { "x": 92, "y": 65 },
+    "spice_bowl_3": { "x": 82, "y": 50 },
+    "hanging_lantern": { "x": 15, "y": 10 },
+    "hanging_fabric": { "x": 90, "y": 20 },
+    "vendor_1": { "x": 20, "y": 45 },
+    "vendor_2": { "x": 28, "y": 55 },
+    "woman_hijab": { "x": 75, "y": 60 },
+    "sack_grain": { "x": 85, "y": 85 },
+    "bunting": { "x": 50, "y": 5 },
+    "man_jacket": { "x": 60, "y": 55 },
+    "woman_coat": { "x": 38, "y": 60 },
+    "aisle": { "x": 50, "y": 80 }
+  }
+}

@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_808",
+  "imageSrc": "assets/images/mosaic/808.jpg",
+  "description": "アンデス山脈の織物と観光客",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "man", "ja": "男の人", "type": "object", "points": 10},
+        {"text": "woman", "ja": "女の人", "type": "object", "points": 10},
+        {"text": "mountain", "ja": "山", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "cloud", "ja": "雲", "type": "object", "points": 10},
+        {"text": "grass", "ja": "草", "type": "object", "points": 10},
+        {"text": "bag", "ja": "かばん", "type": "object", "points": 10},
+        {"text": "hat", "ja": "帽子", "type": "object", "points": 10},
+        {"text": "camera", "ja": "カメラ", "type": "object", "points": 20},
+        {"text": "animal", "ja": "動物", "type": "object", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "green", "ja": "緑の", "type": "attribute", "points": 10},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+        {"text": "smile", "ja": "ほほえむ", "type": "gist", "points": 20},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 10}
+      ],
+      "chunks": [
+        {"text": "four people", "ja": "4人の人", "type": "object", "points": 20},
+        {"text": "a big mountain", "ja": "大きな山", "type": "attribute", "points": 20},
+        {"text": "a red hat", "ja": "赤い帽子", "type": "attribute", "points": 20},
+        {"text": "a big bag", "ja": "大きなかばん", "type": "attribute", "points": 20},
+        {"text": "green grass", "ja": "緑の草", "type": "attribute", "points": 10},
+        {"text": "a blue sky", "ja": "青い空", "type": "attribute", "points": 10},
+        {"text": "look at", "ja": "〜を見る", "type": "gist", "points": 30},
+        {"text": "very colorful", "ja": "とてもカラフルな", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "I see a big mountain.", "grammar": "I see~", "ja": "大きな山が見えます。", "type": "object", "points": 30},
+        {"text": "There are four people.", "grammar": "There are~", "ja": "4人の人がいます。", "type": "object", "points": 30},
+        {"text": "The woman has a red hat.", "grammar": "have/has", "ja": "女の人は赤い帽子をかぶっています。", "type": "object", "points": 30},
+        {"text": "They look happy.", "grammar": "look + 形容詞", "ja": "彼らは幸せそうです。", "type": "inference", "points": 40},
+        {"text": "A man has a camera.", "grammar": "have/has", "ja": "男の人がカメラを持っています。", "type": "object", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "tourist", "ja": "観光客", "type": "object", "points": 20},
+        {"text": "backpack", "ja": "リュックサック", "type": "object", "points": 20},
+        {"text": "camera", "ja": "カメラ", "type": "object", "points": 10},
+        {"text": "cloth", "ja": "布", "type": "object", "points": 20},
+        {"text": "animal", "ja": "動物", "type": "object", "points": 10},
+        {"text": "traditional", "ja": "伝統的な", "type": "attribute", "points": 30},
+        {"text": "colorful", "ja": "カラフルな", "type": "attribute", "points": 20},
+        {"text": "interesting", "ja": "興味深い", "type": "inference", "points": 20},
+        {"text": "wear", "ja": "着ている", "type": "gist", "points": 20},
+        {"text": "stand", "ja": "立つ", "type": "gist", "points": 20},
+        {"text": "sit", "ja": "座る", "type": "gist", "points": 20},
+        {"text": "make", "ja": "作る", "type": "gist", "points": 10},
+        {"text": "watch", "ja": "じっと見る", "type": "gist", "points": 20},
+        {"text": "hold", "ja": "持っている", "type": "gist", "points": 20},
+        {"text": "background", "ja": "背景", "type": "detail", "points": 30}
+      ],
+      "chunks": [
+        {"text": "make a cloth", "ja": "布を作る", "type": "gist", "points": 30},
+        {"text": "watch the woman", "ja": "その女性を見る", "type": "gist", "points": 30},
+        {"text": "wear a backpack", "ja": "リュックサックを背負う", "type": "gist", "points": 30},
+        {"text": "hold a camera", "ja": "カメラを持つ", "type": "gist", "points": 30},
+        {"text": "in the background", "ja": "背景に", "type": "detail", "points": 40},
+        {"text": "a colorful cloth", "ja": "カラフルな布", "type": "attribute", "points": 20},
+        {"text": "traditional clothes", "ja": "伝統的な服", "type": "attribute", "points": 30},
+        {"text": "look interesting", "ja": "面白そうに見える", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A woman is making a cloth.", "grammar": "現在進行形", "ja": "女性が布を作っています。", "type": "gist", "points": 30},
+        {"text": "There are some animals in the background.", "grammar": "There is/are + 場所", "ja": "背景に何匹かの動物がいます。", "type": "detail", "points": 40},
+        {"text": "The tourists are watching her carefully.", "grammar": "現在進行形", "ja": "観光客たちは彼女を注意深く見ています。", "type": "gist", "points": 40},
+        {"text": "A man is holding a black camera.", "grammar": "現在進行形", "ja": "男の人が黒いカメラを持っています。", "type": "object", "points": 30},
+        {"text": "The cloth looks very beautiful and colorful.", "grammar": "look + 形容詞", "ja": "その布はとてもきれいでカラフルに見えます。", "type": "attribute", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "traveler", "ja": "旅行者", "type": "object", "points": 20},
+        {"text": "local", "ja": "地元の人", "type": "object", "points": 30},
+        {"text": "textile", "ja": "織物", "type": "object", "points": 30},
+        {"text": "loom", "ja": "織機", "type": "object", "points": 30},
+        {"text": "alpaca", "ja": "アルパカ", "type": "object", "points": 30},
+        {"text": "ruin", "ja": "遺跡", "type": "object", "points": 30},
+        {"text": "ancient", "ja": "古代の", "type": "attribute", "points": 30},
+        {"text": "gorgeous", "ja": "とても美しい", "type": "attribute", "points": 20},
+        {"text": "striped", "ja": "縞模様の", "type": "attribute", "points": 30},
+        {"text": "fascinated", "ja": "魅了された", "type": "inference", "points": 30},
+        {"text": "weave", "ja": "織る", "type": "gist", "points": 30},
+        {"text": "observe", "ja": "観察する", "type": "gist", "points": 20},
+        {"text": "carry", "ja": "運ぶ・背負う", "type": "gist", "points": 20},
+        {"text": "interact", "ja": "交流する", "type": "gist", "points": 30},
+        {"text": "distance", "ja": "遠く", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "weave a textile", "ja": "織物を織る", "type": "gist", "points": 30},
+        {"text": "observe the local woman", "ja": "地元の女性を観察する", "type": "gist", "points": 30},
+        {"text": "carry heavy backpacks", "ja": "重いリュックサックを背負う", "type": "gist", "points": 30},
+        {"text": "ancient ruins in the distance", "ja": "遠くにある古代遺跡", "type": "detail", "points": 40},
+        {"text": "a gorgeous striped textile", "ja": "美しい縞模様の織物", "type": "attribute", "points": 40},
+        {"text": "fascinating traditional culture", "ja": "魅力的な伝統文化", "type": "inference", "points": 40},
+        {"text": "interact with locals", "ja": "地元の人々と交流する", "type": "gist", "points": 40},
+        {"text": "graze on the grass", "ja": "草を食べる", "type": "gist", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The tourists are watching a local woman who is weaving a gorgeous textile.", "grammar": "関係代名詞", "ja": "観光客たちは美しい織物を織っている地元の女性を見ています。", "type": "gist", "points": 50},
+        {"text": "It looks like they are traveling in the Andes because we can see alpacas.", "grammar": "It looks like~ / 接続詞because", "ja": "アルパカが見えるので、彼らはアンデスを旅行しているようです。", "type": "inference", "points": 50},
+        {"text": "The local woman is weaving a gorgeous striped textile on a traditional loom.", "grammar": "現在進行形 + 前置詞", "ja": "地元の女性は伝統的な織機で美しい縞模様の織物を織っています。", "type": "gist", "points": 40},
+        {"text": "The travelers look fascinated by her amazing skills.", "grammar": "look + 形容詞(過去分詞)", "ja": "旅行者たちは彼女の素晴らしい技術に魅了されているようです。", "type": "inference", "points": 40},
+        {"text": "A man in a blue jacket is holding a camera to take a picture.", "grammar": "不定詞の副詞的用法", "ja": "青いジャケットを着た男性が、写真を撮るためにカメラを持っています。", "type": "object", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "woman": { "x": 83, "y": 70 },
+    "man": { "x": 45, "y": 30 },
+    "backpack": { "x": 10, "y": 30 },
+    "camera": { "x": 45, "y": 45 },
+    "loom": { "x": 52, "y": 77 },
+    "textile": { "x": 40, "y": 65 },
+    "alpaca": { "x": 60, "y": 48 },
+    "mountain": { "x": 30, "y": 15 },
+    "ruin": { "x": 75, "y": 25 },
+    "hat": { "x": 81, "y": 33 },
+    "tourist": { "x": 22, "y": 35 },
+    "grass": { "x": 60, "y": 60 },
+    "sky": { "x": 50, "y": 5 },
+    "cloud": { "x": 30, "y": 10 },
+    "local": { "x": 80, "y": 55 }
+  }
+}

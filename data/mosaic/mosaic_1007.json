@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_1007",
+  "imageSrc": "assets/images/mosaic/1007.jpg",
+  "description": "大気汚染と工場排煙",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "house", "ja": "家", "type": "object", "points": 10},
+        {"text": "tree", "ja": "木", "type": "object", "points": 10},
+        {"text": "town", "ja": "町", "type": "object", "points": 10},
+        {"text": "factory", "ja": "工場", "type": "object", "points": 20},
+        {"text": "smoke", "ja": "煙", "type": "object", "points": 10},
+        {"text": "sky", "ja": "空", "type": "object", "points": 10},
+        {"text": "roof", "ja": "屋根", "type": "object", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 10},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "dark", "ja": "暗い", "type": "attribute", "points": 10},
+        {"text": "dirty", "ja": "汚い", "type": "attribute", "points": 20},
+        {"text": "brown", "ja": "茶色の", "type": "attribute", "points": 10},
+        {"text": "bad", "ja": "悪い", "type": "inference", "points": 20},
+        {"text": "look", "ja": "見る", "type": "gist", "points": 20},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10}
+      ],
+      "chunks": [
+        {"text": "many houses", "ja": "たくさんの家", "type": "object", "points": 10},
+        {"text": "a big factory", "ja": "大きな工場", "type": "object", "points": 20},
+        {"text": "dirty smoke", "ja": "汚い煙", "type": "attribute", "points": 20},
+        {"text": "a dark sky", "ja": "暗い空", "type": "attribute", "points": 20},
+        {"text": "brown air", "ja": "茶色い空気", "type": "attribute", "points": 20},
+        {"text": "look dirty", "ja": "汚く見える", "type": "inference", "points": 20},
+        {"text": "a bad thing", "ja": "悪いこと", "type": "inference", "points": 20},
+        {"text": "in the town", "ja": "町に", "type": "detail", "points": 10}
+      ],
+      "sentences": [
+        {"text": "I see many houses.", "grammar": "I see~", "ja": "たくさんの家が見えます。", "type": "object", "points": 20},
+        {"text": "There is a big factory.", "grammar": "There is/are~", "ja": "大きな工場があります。", "type": "object", "points": 20},
+        {"text": "The sky is very dark.", "grammar": "be動詞", "ja": "空はとても暗いです。", "type": "attribute", "points": 20},
+        {"text": "The smoke is dirty.", "grammar": "be動詞", "ja": "煙は汚いです。", "type": "attribute", "points": 30},
+        {"text": "This is a bad thing.", "grammar": "This is~", "ja": "これは悪いことです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "city", "ja": "都市", "type": "object", "points": 20},
+        {"text": "air", "ja": "空気", "type": "object", "points": 10},
+        {"text": "pollution", "ja": "汚染", "type": "inference", "points": 30},
+        {"text": "chimney", "ja": "煙突", "type": "object", "points": 20},
+        {"text": "plant", "ja": "工場・施設", "type": "object", "points": 20},
+        {"text": "environment", "ja": "環境", "type": "inference", "points": 30},
+        {"text": "produce", "ja": "生み出す", "type": "gist", "points": 20},
+        {"text": "cover", "ja": "覆う", "type": "gist", "points": 20},
+        {"text": "spread", "ja": "広がる", "type": "gist", "points": 30},
+        {"text": "thick", "ja": "濃い・厚い", "type": "attribute", "points": 20},
+        {"text": "terrible", "ja": "ひどい", "type": "attribute", "points": 20},
+        {"text": "serious", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "problem", "ja": "問題", "type": "inference", "points": 20},
+        {"text": "think", "ja": "考える", "type": "inference", "points": 20},
+        {"text": "above", "ja": "〜の上に", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "air pollution", "ja": "大気汚染", "type": "inference", "points": 40},
+        {"text": "thick smoke", "ja": "濃い煙", "type": "object", "points": 20},
+        {"text": "produce smoke", "ja": "煙を出す", "type": "gist", "points": 30},
+        {"text": "cover the city", "ja": "都市を覆う", "type": "gist", "points": 30},
+        {"text": "look terrible", "ja": "ひどく見える", "type": "inference", "points": 20},
+        {"text": "a serious problem", "ja": "深刻な問題", "type": "inference", "points": 30},
+        {"text": "above the town", "ja": "町の上に", "type": "detail", "points": 20},
+        {"text": "environmental problem", "ja": "環境問題", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The factory is producing thick smoke.", "grammar": "現在進行形", "ja": "工場が濃い煙を出しています。", "type": "gist", "points": 40},
+        {"text": "There is a lot of smoke in the sky.", "grammar": "There is/are~ + 場所", "ja": "空にはたくさんの煙があります。", "type": "detail", "points": 30},
+        {"text": "This picture shows air pollution.", "grammar": "一般動詞", "ja": "この絵は大気汚染を示しています。", "type": "inference", "points": 40},
+        {"text": "The dark smoke covers the city.", "grammar": "一般動詞", "ja": "暗い煙が都市を覆っています。", "type": "gist", "points": 40},
+        {"text": "It looks like a serious environmental problem.", "grammar": "look like 名詞", "ja": "深刻な環境問題のようです。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "industrial", "ja": "産業の", "type": "attribute", "points": 30},
+        {"text": "smog", "ja": "スモッグ", "type": "object", "points": 30},
+        {"text": "atmosphere", "ja": "大気", "type": "object", "points": 30},
+        {"text": "facility", "ja": "施設", "type": "object", "points": 30},
+        {"text": "emission", "ja": "排出（物）", "type": "inference", "points": 30},
+        {"text": "consequence", "ja": "結果", "type": "inference", "points": 30},
+        {"text": "emit", "ja": "排出する", "type": "gist", "points": 30},
+        {"text": "pollute", "ja": "汚染する", "type": "gist", "points": 30},
+        {"text": "threaten", "ja": "脅かす", "type": "gist", "points": 30},
+        {"text": "illustrate", "ja": "示す", "type": "gist", "points": 20},
+        {"text": "harmful", "ja": "有害な", "type": "attribute", "points": 30},
+        {"text": "toxic", "ja": "有毒な", "type": "attribute", "points": 30},
+        {"text": "severe", "ja": "深刻な", "type": "attribute", "points": 20},
+        {"text": "massive", "ja": "大量の", "type": "attribute", "points": 30},
+        {"text": "globally", "ja": "世界的に", "type": "detail", "points": 20}
+      ],
+      "chunks": [
+        {"text": "harmful emissions", "ja": "有害な排出物", "type": "object", "points": 40},
+        {"text": "an industrial facility", "ja": "産業施設", "type": "object", "points": 40},
+        {"text": "emit toxic smoke", "ja": "有毒な煙を排出する", "type": "gist", "points": 40},
+        {"text": "cause air pollution", "ja": "大気汚染を引き起こす", "type": "gist", "points": 30},
+        {"text": "a severe environmental issue", "ja": "深刻な環境問題", "type": "inference", "points": 40},
+        {"text": "threaten human health", "ja": "人間の健康を脅かす", "type": "gist", "points": 40},
+        {"text": "massive smog", "ja": "大量のスモッグ", "type": "object", "points": 30},
+        {"text": "illustrate the consequence", "ja": "結果を示す", "type": "inference", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The picture illustrates the severe environmental issue of air pollution.", "grammar": "無生物主語 / 一般動詞", "ja": "この絵は大気汚染という深刻な環境問題を示しています。", "type": "inference", "points": 40},
+        {"text": "An industrial facility is emitting massive amounts of toxic smoke into the atmosphere.", "grammar": "現在進行形 + 前置詞", "ja": "産業施設が大量の有毒な煙を大気中に排出しています。", "type": "gist", "points": 50},
+        {"text": "The thick smog covers the entire city and threatens human health.", "grammar": "接続詞 and", "ja": "濃いスモッグが都市全体を覆い、人間の健康を脅かしています。", "type": "gist", "points": 40},
+        {"text": "It looks like the harmful emissions are causing global warming.", "grammar": "It looks like~", "ja": "有害な排出物が地球温暖化を引き起こしているように見えます。", "type": "inference", "points": 40},
+        {"text": "We must reduce industrial waste to protect our clean atmosphere.", "grammar": "不定詞の副詞的用法", "ja": "きれいな大気を守るために、私たちは産業廃棄物を減らさなければなりません。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "house": { "x": 55, "y": 90 },
+    "tree": { "x": 25, "y": 92 },
+    "town": { "x": 50, "y": 80 },
+    "sky": { "x": 20, "y": 20 },
+    "smoke": { "x": 25, "y": 55 },
+    "city": { "x": 40, "y": 65 },
+    "chimney": { "x": 71, "y": 25 },
+    "factory": { "x": 67, "y": 40 },
+    "tower": { "x": 80, "y": 35 },
+    "roof": { "x": 39, "y": 81 },
+    "window": { "x": 41, "y": 88 },
+    "bubble": { "x": 75, "y": 30 },
+    "arrow": { "x": 43, "y": 52 },
+    "smog": { "x": 75, "y": 15 },
+    "road": { "x": 73, "y": 93 }
+  }
+}

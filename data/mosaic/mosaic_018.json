@@ -1,0 +1,134 @@
+{
+  "id": "mosaic_018",
+  "imageSrc": "assets/images/mosaic/018.webp",
+  "description": "勉強机の風景",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "desk", "ja": "机", "type": "object", "points": 20},
+        {"text": "laptop", "ja": "ノートパソコン", "type": "object", "points": 30},
+        {"text": "book", "ja": "本", "type": "object", "points": 20},
+        {"text": "mug", "ja": "マグカップ", "type": "object", "points": 20},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "red", "ja": "赤い", "type": "attribute", "points": 10},
+        {"text": "sun", "ja": "太陽", "type": "object", "points": 10},
+        {"text": "room", "ja": "部屋", "type": "object", "points": 10},
+        {"text": "table", "ja": "テーブル", "type": "object", "points": 20},
+        {"text": "big", "ja": "大きい", "type": "attribute", "points": 10},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 10},
+        {"text": "home", "ja": "家", "type": "inference", "points": 20},
+        {"text": "see", "ja": "見える", "type": "gist", "points": 10},
+        {"text": "open", "ja": "開いている", "type": "attribute", "points": 20}
+      ],
+      "chunks": [
+        {"text": "on the table", "ja": "テーブルの上に", "type": "detail", "points": 20},
+        {"text": "under the table", "ja": "テーブルの下に", "type": "detail", "points": 20},
+        {"text": "a blue mug", "ja": "青いマグカップ", "type": "attribute", "points": 20},
+        {"text": "a red book", "ja": "赤い本", "type": "attribute", "points": 20},
+        {"text": "by the window", "ja": "窓のそばに", "type": "detail", "points": 20},
+        {"text": "in the room", "ja": "部屋の中に", "type": "detail", "points": 20},
+        {"text": "the computer", "ja": "そのパソコン", "type": "object", "points": 20},
+        {"text": "sunny day", "ja": "晴れた日", "type": "inference", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a desk.", "grammar": "I see~", "ja": "机が見えます。", "type": "object", "points": 30},
+        {"text": "The mug is blue.", "grammar": "This is~", "ja": "マグカップは青いです。", "type": "attribute", "points": 30},
+        {"text": "The book is under the table.", "grammar": "Preposition", "ja": "本がテーブルの下にあります。", "type": "detail", "points": 30},
+        {"text": "This is a laptop.", "grammar": "This is~", "ja": "これはノートパソコンです。", "type": "object", "points": 30},
+        {"text": "I like this room.", "grammar": "I like~", "ja": "この部屋が好きです。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "computer", "ja": "コンピューター", "type": "object", "points": 20},
+        {"text": "beverage", "ja": "飲み物", "type": "object", "points": 20},
+        {"text": "wooden", "ja": "木製の", "type": "attribute", "points": 20},
+        {"text": "surface", "ja": "表面", "type": "object", "points": 20},
+        {"text": "beneath", "ja": "～の下に", "type": "detail", "points": 20},
+        {"text": "resting", "ja": "休んでいる", "type": "gist", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "morning", "ja": "朝", "type": "inference", "points": 20},
+        {"text": "sunlight", "ja": "日光", "type": "attribute", "points": 20},
+        {"text": "interior", "ja": "室内", "type": "object", "points": 20},
+        {"text": "study", "ja": "勉強する", "type": "gist", "points": 20},
+        {"text": "prepare", "ja": "準備する", "type": "gist", "points": 20},
+        {"text": "screen", "ja": "画面", "type": "object", "points": 20},
+        {"text": "handle", "ja": "取っ手", "type": "object", "points": 20},
+        {"text": "edition", "ja": "版", "type": "object", "points": 20}
+      ],
+      "chunks": [
+        {"text": "sitting on the desk", "ja": "机の上に置かれている", "type": "detail", "points": 30},
+        {"text": "placed under the table", "ja": "テーブルの下に置かれた", "type": "detail", "points": 30},
+        {"text": "bright morning light", "ja": "明るい朝の光", "type": "attribute", "points": 20},
+        {"text": "next to the window", "ja": "窓の隣に", "type": "detail", "points": 20},
+        {"text": "working from home", "ja": "在宅ワーク", "type": "inference", "points": 30},
+        {"text": "a cup of coffee", "ja": "コーヒー1杯", "type": "object", "points": 30},
+        {"text": "opening a book", "ja": "本を開く", "type": "gist", "points": 30},
+        {"text": "simple wooden table", "ja": "シンプルな木のテーブル", "type": "attribute", "points": 20}
+      ],
+      "sentences": [
+        {"text": "There is a laptop on the desk.", "grammar": "There is/are", "ja": "机の上にノートパソコンがあります。", "type": "object", "points": 40},
+        {"text": "A book is placed under the table.", "grammar": "Passive", "ja": "本がテーブルの下に置かれています。", "type": "detail", "points": 40},
+        {"text": "The sun is shining through the window.", "grammar": "is ~ing", "ja": "太陽が窓から差し込んでいます。", "type": "detail", "points": 40},
+        {"text": "I am preparing for my class.", "grammar": "is ~ing", "ja": "授業の準備をしています。", "type": "inference", "points": 40},
+        {"text": "The mug is sitting next to the laptop.", "grammar": "is ~ing", "ja": "マグカップがパソコンの隣にあります。", "type": "detail", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "workstation", "ja": "作業環境", "type": "object", "points": 30},
+        {"text": "electronic", "ja": "電子的な", "type": "attribute", "points": 20},
+        {"text": "mahogany", "ja": "マホガニー（木製）", "type": "attribute", "points": 30},
+        {"text": "vicinity", "ja": "近辺", "type": "detail", "points": 30},
+        {"text": "placement", "ja": "配置", "type": "object", "points": 20},
+        {"text": "illumination", "ja": "照明", "type": "attribute", "points": 30},
+        {"text": "minimalist", "ja": "最小限の", "type": "attribute", "points": 30},
+        {"text": "productive", "ja": "生産的な", "type": "inference", "points": 30},
+        {"text": "scholarly", "ja": "学問的な", "type": "inference", "points": 30},
+        {"text": "ambient", "ja": "周囲の", "type": "attribute", "points": 20},
+        {"text": "solitude", "ja": "孤独", "type": "inference", "points": 30},
+        {"text": "organized", "ja": "整理された", "type": "attribute", "points": 20},
+        {"text": "accessory", "ja": "付属品", "type": "object", "points": 20},
+        {"text": "peripheral", "ja": "周辺の", "type": "attribute", "points": 20},
+        {"text": "contrast", "ja": "対比", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "sunlight streaming through", "ja": "差し込む日光", "type": "detail", "points": 40},
+        {"text": "an organized workstation", "ja": "整理された作業環境", "type": "object", "points": 30},
+        {"text": "a minimalist interior", "ja": "ミニマリストのインテリア", "type": "object", "points": 30},
+        {"text": "coffee in a blue mug", "ja": "青いマグカップのコーヒー", "type": "object", "points": 30},
+        {"text": "solitude of the room", "ja": "部屋の静けさ", "type": "inference", "points": 40},
+        {"text": "resting on the floor", "ja": "床に置かれた", "type": "detail", "points": 30},
+        {"text": "focused study session", "ja": "集中した勉強時間", "type": "inference", "points": 40},
+        {"text": "technology at hand", "ja": "手元にあるテクノロジー", "type": "object", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A laptop is set up on the wooden desk.", "grammar": "Passive voice", "ja": "木製の机の上にノートパソコンがセットされています。", "type": "object", "points": 50},
+        {"text": "The book is resting on the floor beneath the table.", "grammar": "Participle", "ja": "本がテーブルの下の床に置かれています。", "type": "detail", "points": 50},
+        {"text": "Sunlight filters through the window, illuminating the workspace.", "grammar": "Participle", "ja": "窓から日光が差し込み、作業スペースを照らしています。", "type": "detail", "points": 50},
+        {"text": "It looks like someone is studying here.", "grammar": "It looks like", "ja": "誰かがここで勉強しているように見えます。", "type": "inference", "points": 50},
+        {"text": "The blue mug suggests a relaxing break time.", "grammar": "Present simple", "ja": "青いマグカップが、リラックスした休憩時間を連想させます。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "laptop_screen": { "x": 60, "y": 25 },
+    "laptop_keyboard": { "x": 55, "y": 45 },
+    "mug": { "x": 80, "y": 45 },
+    "table_top": { "x": 50, "y": 50 },
+    "table_leg_left": { "x": 25, "y": 70 },
+    "table_leg_right": { "x": 95, "y": 70 },
+    "book": { "x": 45, "y": 80 },
+    "window_frame": { "x": 10, "y": 30 },
+    "wall": { "x": 45, "y": 10 },
+    "floor": { "x": 50, "y": 90 },
+    "mug_handle": { "x": 85, "y": 45 },
+    "table_edge": { "x": 70, "y": 50 },
+    "laptop_hinge": { "x": 55, "y": 35 },
+    "sunlight_reflection": { "x": 30, "y": 20 },
+    "book_cover": { "x": 45, "y": 85 },
+    "table_corner": { "x": 95, "y": 45 }
+  }
+}

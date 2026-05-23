@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_021",
+  "imageSrc": "assets/images/mosaic/021.webp",
+  "description": "木の下で眠る猫と鳥かごの中の鳥",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "cat", "ja": "猫", "type": "object", "points": 20},
+        {"text": "bird", "ja": "鳥", "type": "object", "points": 20},
+        {"text": "cage", "ja": "鳥かご", "type": "object", "points": 20},
+        {"text": "tree", "ja": "木", "type": "object", "points": 20},
+        {"text": "grass", "ja": "芝生", "type": "object", "points": 10},
+        {"text": "sleeping", "ja": "寝ている", "type": "gist", "points": 30},
+        {"text": "blue", "ja": "青い", "type": "attribute", "points": 10},
+        {"text": "small", "ja": "小さい", "type": "attribute", "points": 10},
+        {"text": "under", "ja": "～の下に", "type": "detail", "points": 10},
+        {"text": "in", "ja": "中に", "type": "detail", "points": 10},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 10},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20},
+        {"text": "day", "ja": "日", "type": "inference", "points": 10},
+        {"text": "park", "ja": "公園", "type": "object", "points": 10},
+        {"text": "nice", "ja": "すてきな", "type": "inference", "points": 10}
+      ],
+      "chunks": [
+        {"text": "a blue bird", "ja": "青い鳥", "type": "attribute", "points": 20},
+        {"text": "in the cage", "ja": "かごの中に", "type": "detail", "points": 20},
+        {"text": "under the tree", "ja": "木の下で", "type": "detail", "points": 20},
+        {"text": "a sleeping cat", "ja": "寝ている猫", "type": "attribute", "points": 20},
+        {"text": "on the grass", "ja": "芝生の上に", "type": "detail", "points": 20},
+        {"text": "a hanging cage", "ja": "ぶら下がっているかご", "type": "attribute", "points": 20},
+        {"text": "in the park", "ja": "公園で", "type": "detail", "points": 20},
+        {"text": "a small bird", "ja": "小さな鳥", "type": "attribute", "points": 20}
+      ],
+      "sentences": [
+        {"text": "I see a cat.", "grammar": "I see~", "ja": "猫が見えます。", "type": "object", "points": 30},
+        {"text": "The cat is sleeping.", "grammar": "is ~ing", "ja": "猫が寝ています。", "type": "gist", "points": 30},
+        {"text": "The bird is in the cage.", "grammar": "in + noun", "ja": "鳥がかごの中にいます。", "type": "detail", "points": 30},
+        {"text": "The bird is blue.", "grammar": "is + adj", "ja": "鳥は青いです。", "type": "attribute", "points": 30},
+        {"text": "It is a nice day.", "grammar": "It is~", "ja": "いい天気です。", "type": "inference", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "kitten", "ja": "子猫", "type": "object", "points": 20},
+        {"text": "feline", "ja": "ネコ科の動物", "type": "object", "points": 30},
+        {"text": "branch", "ja": "枝", "type": "object", "points": 20},
+        {"text": "hanging", "ja": "ぶら下がっている", "type": "gist", "points": 30},
+        {"text": "peaceful", "ja": "平和な", "type": "inference", "points": 30},
+        {"text": "striped", "ja": "縞模様の", "type": "attribute", "points": 20},
+        {"text": "meadow", "ja": "牧草地", "type": "object", "points": 20},
+        {"text": "outdoors", "ja": "屋外", "type": "detail", "points": 20},
+        {"text": "captive", "ja": "捕らえられた", "type": "inference", "points": 30},
+        {"text": "resting", "ja": "休んでいる", "type": "gist", "points": 20},
+        {"text": "nature", "ja": "自然", "type": "inference", "points": 20},
+        {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20},
+        {"text": "bright", "ja": "明るい", "type": "attribute", "points": 20},
+        {"text": "safe", "ja": "安全な", "type": "inference", "points": 20},
+        {"text": "afternoon", "ja": "午後", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "sleeping under the tree", "ja": "木の下で寝ている", "type": "detail", "points": 30},
+        {"text": "hanging from a branch", "ja": "枝からぶら下がって", "type": "detail", "points": 30},
+        {"text": "a blue bird inside", "ja": "中にいる青い鳥", "type": "object", "points": 30},
+        {"text": "resting on the grass", "ja": "芝生の上で休んでいる", "type": "detail", "points": 30},
+        {"text": "peaceful afternoon", "ja": "平和な午後", "type": "inference", "points": 30},
+        {"text": "watching the bird", "ja": "鳥を観察して", "type": "gist", "points": 30},
+        {"text": "nature scene", "ja": "自然の光景", "type": "inference", "points": 30},
+        {"text": "golden fur", "ja": "金色の毛", "type": "attribute", "points": 30}
+      ],
+      "sentences": [
+        {"text": "A cat is sleeping under the tree.", "grammar": "is ~ing", "ja": "猫が木の下で眠っています。", "type": "gist", "points": 40},
+        {"text": "There is a bird in the cage.", "grammar": "There is/are", "ja": "かごの中に鳥がいます。", "type": "object", "points": 40},
+        {"text": "The cage is hanging from a branch.", "grammar": "is ~ing", "ja": "かごが枝からぶら下がっています。", "type": "detail", "points": 40},
+        {"text": "The cat looks very peaceful.", "grammar": "look + adj", "ja": "猫はとても平和そうに見えます。", "type": "inference", "points": 40},
+        {"text": "I can see a beautiful blue bird.", "grammar": "can + verb", "ja": "美しい青い鳥が見えます。", "type": "object", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "slumbering", "ja": "まどろんでいる", "type": "gist", "points": 40},
+        {"text": "enclosure", "ja": "囲い", "type": "object", "points": 30},
+        {"text": "perched", "ja": "止まっている", "type": "gist", "points": 40},
+        {"text": "tranquil", "ja": "静穏な", "type": "inference", "points": 40},
+        {"text": "scenery", "ja": "風景", "type": "inference", "points": 30},
+        {"text": "captivating", "ja": "魅惑的な", "type": "inference", "points": 40},
+        {"text": "serenity", "ja": "静けさ", "type": "inference", "points": 40},
+        {"text": "rustic", "ja": "素朴な", "type": "attribute", "points": 30},
+        {"text": "wildlife", "ja": "野生生物", "type": "object", "points": 30},
+        {"text": "picturesque", "ja": "絵のように美しい", "type": "inference", "points": 40},
+        {"text": "plumage", "ja": "羽毛", "type": "object", "points": 30},
+        {"text": "ginger", "ja": "赤茶色の", "type": "attribute", "points": 30},
+        {"text": "unaware", "ja": "気づいていない", "type": "inference", "points": 40},
+        {"text": "curled", "ja": "丸まった", "type": "attribute", "points": 30},
+        {"text": "environment", "ja": "環境", "type": "object", "points": 30}
+      ],
+      "chunks": [
+        {"text": "slumbering peacefully under the tree", "ja": "木の下で平和に眠る", "type": "gist", "points": 40},
+        {"text": "hanging securely from the branch", "ja": "枝からしっかりとぶら下がる", "type": "detail", "points": 40},
+        {"text": "a captive blue bird", "ja": "捕らえられた青い鳥", "type": "object", "points": 40},
+        {"text": "curled up on the grass", "ja": "芝生の上で丸くなる", "type": "detail", "points": 40},
+        {"text": "a tranquil garden setting", "ja": "静かな庭園の風景", "type": "inference", "points": 40},
+        {"text": "vibrant blue plumage", "ja": "鮮やかな青い羽毛", "type": "attribute", "points": 40},
+        {"text": "striped ginger cat", "ja": "縞模様の赤茶色の猫", "type": "object", "points": 40},
+        {"text": "safe from the sun", "ja": "太陽から守られて", "type": "detail", "points": 40}
+      ],
+      "sentences": [
+        {"text": "A ginger cat is slumbering peacefully under the large tree.", "grammar": "present continuous", "ja": "赤茶色の猫が大きな木の下で平和に眠っています。", "type": "gist", "points": 50},
+        {"text": "The blue bird is trapped inside the hanging cage.", "grammar": "passive voice", "ja": "青い鳥がぶら下がっているかごの中に閉じ込められています。", "type": "detail", "points": 50},
+        {"text": "It appears to be a tranquil afternoon in the garden.", "grammar": "It appears to be", "ja": "庭で静かな午後のひとときを過ごしているようです。", "type": "inference", "points": 50},
+        {"text": "The cat is curled up on the grass, unaware of the bird.", "grammar": "participle", "ja": "猫は鳥に気づかず、芝生の上で丸まっています。", "type": "detail", "points": 50},
+        {"text": "The scene captures a quiet moment in nature.", "grammar": "present simple", "ja": "この光景は自然の中の静かな瞬間を捉えています。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "cat_head": { "x": 50, "y": 80 },
+    "cat_body": { "x": 60, "y": 85 },
+    "cat_tail": { "x": 68, "y": 92 },
+    "cat_paw": { "x": 52, "y": 92 },
+    "bird": { "x": 28, "y": 38 },
+    "birdcage": { "x": 29, "y": 38 },
+    "cage_hook": { "x": 29, "y": 5 },
+    "cage_door": { "x": 39, "y": 38 },
+    "branch": { "x": 35, "y": 15 },
+    "tree_trunk": { "x": 70, "y": 30 },
+    "tree_roots": { "x": 75, "y": 85 },
+    "grass": { "x": 50, "y": 90 },
+    "background_left": { "x": 10, "y": 60 },
+    "background_right": { "x": 90, "y": 60 },
+    "sky": { "x": 50, "y": 20 }
+  }
+}

@@ -1,0 +1,133 @@
+{
+  "id": "mosaic_803",
+  "imageSrc": "assets/images/mosaic/803.webp",
+  "description": "カフェでコーヒーを淹れる女性",
+  "timeLimit": 45,
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {"text": "woman", "ja": "女性", "type": "object", "points": 20},
+        {"text": "cafe", "ja": "カフェ", "type": "object", "points": 20},
+        {"text": "coffee", "ja": "コーヒー", "type": "object", "points": 20},
+        {"text": "rain", "ja": "雨", "type": "object", "points": 20},
+        {"text": "umbrella", "ja": "傘", "type": "object", "points": 20},
+        {"text": "tree", "ja": "木", "type": "object", "points": 20},
+        {"text": "pink", "ja": "ピンク色", "type": "attribute", "points": 10},
+        {"text": "brown", "ja": "茶色", "type": "attribute", "points": 10},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "pour", "ja": "注ぐ", "type": "gist", "points": 20},
+        {"text": "walk", "ja": "歩く", "type": "gist", "points": 20},
+        {"text": "day", "ja": "日", "type": "inference", "points": 10},
+        {"text": "flower", "ja": "花", "type": "object", "points": 20},
+        {"text": "shop", "ja": "店", "type": "object", "points": 20},
+        {"text": "happy", "ja": "幸せな", "type": "inference", "points": 10}
+      ],
+      "chunks": [
+        {"text": "a brown apron", "ja": "茶色のエプロン", "type": "attribute", "points": 20},
+        {"text": "in the cafe", "ja": "カフェの中で", "type": "detail", "points": 20},
+        {"text": "under the rain", "ja": "雨の中で", "type": "detail", "points": 20},
+        {"text": "a pink tree", "ja": "ピンクの木", "type": "attribute", "points": 20},
+        {"text": "hold an umbrella", "ja": "傘を持つ", "type": "gist", "points": 20},
+        {"text": "pour coffee", "ja": "コーヒーを注ぐ", "type": "gist", "points": 20},
+        {"text": "on the street", "ja": "通りで", "type": "detail", "points": 20},
+        {"text": "the window", "ja": "窓", "type": "object", "points": 20}
+      ],
+      "sentences": [
+        {"text": "She is a barista.", "grammar": "She is~", "ja": "彼女はバリスタです。", "type": "object", "points": 30},
+        {"text": "I see a cafe.", "grammar": "I see~", "ja": "カフェが見えます。", "type": "object", "points": 30},
+        {"text": "It is raining.", "grammar": "It is ~ing", "ja": "雨が降っています。", "type": "gist", "points": 30},
+        {"text": "There is a tree.", "grammar": "There is~", "ja": "木があります。", "type": "object", "points": 30},
+        {"text": "She is pouring coffee.", "grammar": "is ~ing", "ja": "彼女はコーヒーを注いでいます。", "type": "gist", "points": 30}
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {"text": "barista", "ja": "バリスタ", "type": "object", "points": 20},
+        {"text": "brewing", "ja": "抽出する", "type": "gist", "points": 30},
+        {"text": "umbrella", "ja": "傘", "type": "object", "points": 20},
+        {"text": "rainy", "ja": "雨の", "type": "attribute", "points": 20},
+        {"text": "blossom", "ja": "花", "type": "object", "points": 20},
+        {"text": "street", "ja": "通り", "type": "object", "points": 20},
+        {"text": "counter", "ja": "カウンター", "type": "object", "points": 20},
+        {"text": "apron", "ja": "エプロン", "type": "object", "points": 20},
+        {"text": "machine", "ja": "マシン", "type": "object", "points": 20},
+        {"text": "customer", "ja": "客", "type": "object", "points": 20},
+        {"text": "busy", "ja": "忙しい", "type": "inference", "points": 20},
+        {"text": "calm", "ja": "落ち着いた", "type": "inference", "points": 20},
+        {"text": "spring", "ja": "春", "type": "inference", "points": 20},
+        {"text": "window", "ja": "窓", "type": "object", "points": 20},
+        {"text": "reflection", "ja": "反射", "type": "inference", "points": 30}
+      ],
+      "chunks": [
+        {"text": "brewing some coffee", "ja": "コーヒーを淹れる", "type": "gist", "points": 30},
+        {"text": "walking outside", "ja": "外を歩く", "type": "gist", "points": 30},
+        {"text": "rainy spring day", "ja": "雨の春の日", "type": "inference", "points": 30},
+        {"text": "cherry blossom tree", "ja": "桜の木", "type": "object", "points": 30},
+        {"text": "inside the cafe", "ja": "カフェの中で", "type": "detail", "points": 30},
+        {"text": "wearing an apron", "ja": "エプロンを着けている", "type": "attribute", "points": 30},
+        {"text": "holding an umbrella", "ja": "傘をさして", "type": "gist", "points": 30},
+        {"text": "next to the window", "ja": "窓の隣で", "type": "detail", "points": 30}
+      ],
+      "sentences": [
+        {"text": "The barista is brewing coffee.", "grammar": "is ~ing", "ja": "バリスタがコーヒーを淹れています。", "type": "gist", "points": 40},
+        {"text": "People are walking outside with umbrellas.", "grammar": "are ~ing", "ja": "人々が傘をさして外を歩いています。", "type": "detail", "points": 40},
+        {"text": "It is a rainy day in spring.", "grammar": "It is", "ja": "春の雨の日です。", "type": "inference", "points": 40},
+        {"text": "The cherry blossoms are beautiful.", "grammar": "are + adj", "ja": "桜がきれいです。", "type": "inference", "points": 40},
+        {"text": "The cafe looks very calm.", "grammar": "look + adj", "ja": "カフェはとても落ち着いて見えます。", "type": "inference", "points": 40}
+      ]
+    },
+    "high_school": {
+      "words": [
+        {"text": "preparation", "ja": "準備", "type": "gist", "points": 30},
+        {"text": "aesthetic", "ja": "美的な", "type": "attribute", "points": 30},
+        {"text": "artisan", "ja": "職人", "type": "object", "points": 30},
+        {"text": "drizzle", "ja": "小雨", "type": "attribute", "points": 30},
+        {"text": "scenery", "ja": "風景", "type": "inference", "points": 30},
+        {"text": "atmosphere", "ja": "雰囲気", "type": "inference", "points": 30},
+        {"text": "machinery", "ja": "機械", "type": "object", "points": 30},
+        {"text": "blooming", "ja": "咲いている", "type": "attribute", "points": 30},
+        {"text": "serenity", "ja": "静けさ", "type": "inference", "points": 40},
+        {"text": "bustling", "ja": "賑やかな", "type": "inference", "points": 30},
+        {"text": "professional", "ja": "専門的な", "type": "attribute", "points": 30},
+        {"text": "specialty", "ja": "特産", "type": "object", "points": 30},
+        {"text": "fragrance", "ja": "香り", "type": "inference", "points": 40},
+        {"text": "tranquil", "ja": "静かな", "type": "attribute", "points": 30},
+        {"text": "focus", "ja": "集中する", "type": "gist", "points": 30}
+      ],
+      "chunks": [
+        {"text": "a rainy spring atmosphere", "ja": "雨の春の雰囲気", "type": "inference", "points": 40},
+        {"text": "artisan coffee preparation", "ja": "職人によるコーヒーの準備", "type": "gist", "points": 40},
+        {"text": "blooming cherry blossoms", "ja": "咲き誇る桜", "type": "object", "points": 40},
+        {"text": "watching the rain fall", "ja": "降る雨を眺める", "type": "gist", "points": 40},
+        {"text": "bustling city street", "ja": "賑やかな都会の通り", "type": "detail", "points": 40},
+        {"text": "a professional barista", "ja": "プロのバリスタ", "type": "object", "points": 40},
+        {"text": "serene cafe interior", "ja": "静穏なカフェの店内", "type": "inference", "points": 40},
+        {"text": "enjoying the moment", "ja": "その瞬間を楽しむ", "type": "inference", "points": 40}
+      ],
+      "sentences": [
+        {"text": "The barista is carefully pouring hot water over the coffee grounds.", "grammar": "participle", "ja": "バリスタが慎重にコーヒーの粉にお湯を注いでいます。", "type": "gist", "points": 50},
+        {"text": "People are walking along the street, shielded by their umbrellas from the rain.", "grammar": "passive / participle", "ja": "人々が雨から傘で守られながら通りを歩いています。", "type": "detail", "points": 50},
+        {"text": "The cherry blossoms outside create a beautiful contrast with the cafe's cozy interior.", "grammar": "S+V+O", "ja": "外の桜が、カフェの居心地の良い内装と美しいコントラストを生み出しています。", "type": "inference", "points": 50},
+        {"text": "It looks like a peaceful moment amidst the busy city life.", "grammar": "It looks like", "ja": "忙しい都会の生活の中での、穏やかな瞬間に見えます。", "type": "inference", "points": 50},
+        {"text": "The combination of coffee and cherry blossoms evokes a sense of calm.", "grammar": "S+V+O", "ja": "コーヒーと桜の組み合わせが、静けさを呼び起こします。", "type": "inference", "points": 50}
+      ]
+    }
+  },
+  "pins": {
+    "barista": { "x": 70, "y": 50 },
+    "coffee_drip": { "x": 58, "y": 65 },
+    "apron": { "x": 73, "y": 70 },
+    "scale": { "x": 60, "y": 80 },
+    "sign": { "x": 55, "y": 25 },
+    "grinder": { "x": 90, "y": 55 },
+    "espresso_machine": { "x": 97, "y": 55 },
+    "plant": { "x": 42, "y": 60 },
+    "window": { "x": 30, "y": 50 },
+    "sakura_tree": { "x": 10, "y": 20 },
+    "umbrella_1": { "x": 10, "y": 45 },
+    "woman_walking": { "x": 10, "y": 60 },
+    "man_walking": { "x": 32, "y": 55 },
+    "street": { "x": 20, "y": 70 },
+    "server": { "x": 58, "y": 75 }
+  }
+}
