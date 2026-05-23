@@ -730,16 +730,21 @@ document.addEventListener('click', (e) => {
     // 🎮 ★★★ 追加したモードボタンの処理 ★★★
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
+        // 1. まず全てのボタンから「選択中の強調」を外し、「未選択状態（半透明）」にする
+        // 【重要】ここで bg-white を追加しないことで、パステルカラーを維持します！
         document.querySelectorAll('.mode-btn').forEach(b => {
-            b.classList.remove('ring-4', 'ring-pink-400', 'bg-pink-50', 'border-pink-300');
-            b.classList.add('bg-white', 'border-gray-200');
+            b.classList.remove('ring-4', 'ring-pink-400', 'ring-white', 'scale-105', 'shadow-xl', 'opacity-100', 'bg-white');
+            b.classList.add('opacity-50', 'scale-100'); // 50%の透明度で色はしっかり残す
         });
         
-        modeBtn.classList.remove('bg-white', 'border-gray-200');
-        modeBtn.classList.add('ring-4', 'ring-pink-400', 'bg-pink-50', 'border-pink-300');
+        // 2. クリックされたボタンだけを100%の色にし、少し大きくしてリングで強調する
+        modeBtn.classList.remove('opacity-50', 'scale-100');
+        modeBtn.classList.add('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100');
         
+        // 3. 選択されたモードをアプリに記憶させる
         window.appState.selectedMode = modeBtn.getAttribute('data-mode');
         
+        // 4. SELECT IMAGE ボタンを光らせて押せるようにする
         const btnSelect = document.getElementById('btn-goto-select');
         if (btnSelect) {
             btnSelect.classList.remove('opacity-40', 'pointer-events-none');
