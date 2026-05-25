@@ -1,0 +1,423 @@
+{
+  "id": "detective_010",
+  "imageSrc": "assets/images/detective/dete010.webp",
+  "description": "ネパールの街角の風景",
+  "descriptionEn": "Street scene in Nepal",
+  "totalDifferences": 18,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "左端の女性が赤いトマトではなく緑の野菜を持っている",
+      "keywords": {
+        "target": ["vegetable", "tomato", "cucumber", "woman", "customer"],
+        "state": ["green", "hold", "change"]
+      },
+      "coordinates": { "x": 14, "y": 75, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The vegetable is green.", "ja": "野菜が緑色です。" },
+          { "text": "She has a green vegetable.", "ja": "彼女は緑色の野菜を持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is holding a green vegetable.", "ja": "女性は緑色の野菜を持っています。" },
+          { "text": "She changed the tomato to a green vegetable.", "ja": "彼女はトマトを緑色の野菜に変えました。" }
+        ],
+        "high_school": [
+          { "text": "The female customer is holding a green vegetable instead of a red tomato.", "ja": "女性客は赤いトマトの代わりに緑色の野菜を持っています。" },
+          { "text": "The produce in the woman's hand has changed from red to green.", "ja": "女性の手に持っている農産物が赤から緑に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "左端の女性のトートバッグが青色になっている",
+      "keywords": {
+        "target": ["bag", "tote", "woman"],
+        "state": ["blue", "change", "carry"]
+      },
+      "coordinates": { "x": 21, "y": 85, "width": 6, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her bag is blue.", "ja": "彼女のバッグは青色です。" },
+          { "text": "The woman carries a blue bag.", "ja": "女性は青いバッグを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The white bag changed to a blue tote bag.", "ja": "白いバッグが青いトートバッグに変わりました。" },
+          { "text": "She is carrying a blue bag on her shoulder.", "ja": "彼女は肩に青いバッグを提げています。" }
+        ],
+        "high_school": [
+          { "text": "The reusable shopping bag carried by the woman has changed its color to blue.", "ja": "女性が持っているエコバッグの色が青に変わっています。" },
+          { "text": "She is holding a blue tote bag rather than a beige one.", "ja": "彼女はベージュ色ではなく青いトートバッグを持っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "屋台の屋根（日よけ）が赤色になっている",
+      "keywords": {
+        "target": ["awning", "roof", "stall", "shop"],
+        "state": ["red", "change"]
+      },
+      "coordinates": { "x": 36, "y": 55, "width": 20, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof is red.", "ja": "屋根が赤色です。" },
+          { "text": "The shop has a red awning.", "ja": "お店には赤い日よけがあります。" }
+        ],
+        "junior_high": [
+          { "text": "The green awning changed to red.", "ja": "緑の日よけが赤色に変わりました。" },
+          { "text": "The color of the roof is red now.", "ja": "屋根の色は今、赤色です。" }
+        ],
+        "high_school": [
+          { "text": "The canopy shading the tea stall has been changed from green to red.", "ja": "ティースタンドを覆う日よけが緑から赤に変更されています。" },
+          { "text": "The storefront awning now features a solid red color.", "ja": "店頭のひさしは現在、無地の赤色になっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "屋台の看板の文字と山の絵に変わっている",
+      "keywords": {
+        "target": ["sign", "board", "picture", "mountain"],
+        "state": ["change", "different", "draw"]
+      },
+      "coordinates": { "x": 36, "y": 57, "width": 15, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The sign is different.", "ja": "看板が違います。" },
+          { "text": "There is a mountain.", "ja": "山があります。" }
+        ],
+        "junior_high": [
+          { "text": "The picture on the sign changed to a mountain.", "ja": "看板の絵が山に変わりました。" },
+          { "text": "The text on the board is different.", "ja": "ボードの文字が違います。" }
+        ],
+        "high_school": [
+          { "text": "The signboard above the stall has been updated with a mountain illustration and different text.", "ja": "屋台の上の看板は、山のイラストと異なる文字に更新されています。" },
+          { "text": "The tea stall's logo has changed from a teacup to a snowy mountain peak.", "ja": "ティースタンドのロゴが、ティーカップから雪山の山頂に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "屋台の店主がやかんからお茶を注いでいる",
+      "keywords": {
+        "target": ["vendor", "man", "tea", "kettle"],
+        "state": ["pour", "serve", "change"]
+      },
+      "coordinates": { "x": 32, "y": 69, "width": 8, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is pouring tea.", "ja": "彼はお茶を注いでいます。" },
+          { "text": "The man has a kettle.", "ja": "男性はやかんを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The vendor is pouring tea from a kettle.", "ja": "店主はやかんからお茶を注いでいます。" },
+          { "text": "He is making tea for the boy.", "ja": "彼は男の子のためにお茶を作っています。" }
+        ],
+        "high_school": [
+          { "text": "The stall owner is now pouring hot tea into a cup from an aluminum kettle.", "ja": "屋台の店主は現在、アルミのやかんからカップに熱いお茶を注いでいます。" },
+          { "text": "Instead of handing over a prepared cup, the vendor is in the middle of pouring the beverage.", "ja": "準備されたカップを手渡す代わりに、店主は飲み物を注いでいる最中です。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "屋台の右側のメニュー看板が「HOT MOMO」になっている",
+      "keywords": {
+        "target": ["menu", "board", "sign"],
+        "state": ["white", "change", "red"]
+      },
+      "coordinates": { "x": 47, "y": 78, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The menu is white.", "ja": "メニューが白色です。" },
+          { "text": "The board changed.", "ja": "ボードが変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The menu board changed to white with red letters.", "ja": "メニューボードが赤い文字の白いものに変わりました。" },
+          { "text": "It says 'HOT MOMO' on the sign.", "ja": "看板には「HOT MOMO」と書いてあります。" }
+        ],
+        "high_school": [
+          { "text": "The green menu board has been replaced with a white sign displaying the text 'HOT MOMO'.", "ja": "緑色のメニューボードが、「HOT MOMO」という文字が表示された白い看板に置き換えられています。" },
+          { "text": "The side panel advertisement has been updated with a new momo design.", "ja": "サイドパネルの広告が新しいモモのデザインに更新されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "屋台の前の鉢植えにピンクの花が咲いている",
+      "keywords": {
+        "target": ["flower", "plant", "pot"],
+        "state": ["pink", "bloom", "change"]
+      },
+      "coordinates": { "x": 27, "y": 89, "width": 6, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flowers are pink.", "ja": "花がピンク色です。" },
+          { "text": "There are flowers in the pot.", "ja": "鉢に花があります。" }
+        ],
+        "junior_high": [
+          { "text": "Pink flowers bloomed in the pot.", "ja": "鉢にピンクの花が咲きました。" },
+          { "text": "The green plant has pink flowers now.", "ja": "緑の植物には今、ピンクの花があります。" }
+        ],
+        "high_school": [
+          { "text": "The potted plant sitting in front of the stall is now blooming with pink flowers.", "ja": "屋台の前に置かれている鉢植えには、現在ピンクの花が咲いています。" },
+          { "text": "The leafy plant in the wooden planter has sprouted vibrant pink blossoms.", "ja": "木製のプランターにある葉の多い植物から、鮮やかなピンクの花が咲いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "しゃがんでいる男の子のパーカーが青色になっている",
+      "keywords": {
+        "target": ["hoodie", "clothes", "boy"],
+        "state": ["blue", "change", "wear"]
+      },
+      "coordinates": { "x": 51, "y": 85, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His hoodie is blue.", "ja": "彼のパーカーは青色です。" },
+          { "text": "The boy wears blue.", "ja": "男の子は青い服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy's yellow hoodie changed to blue.", "ja": "男の子の黄色いパーカーが青色に変わりました。" },
+          { "text": "He is wearing a blue hoodie now.", "ja": "彼は今、青いパーカーを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The boy squatting to feed the birds has changed into a blue hoodie.", "ja": "鳥に餌をやるためにしゃがんでいる男の子は、青いパーカーに着替えています。" },
+          { "text": "The color of his outerwear has shifted from yellow to a bright blue.", "ja": "彼の上着の色が黄色から明るい青色に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "ハトの数が2羽に減っている",
+      "keywords": {
+        "target": ["pigeon", "bird", "animal"],
+        "state": ["disappear", "miss", "decrease"]
+      },
+      "coordinates": { "x": 58, "y": 91, "width": 10, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There are two birds.", "ja": "鳥が2羽います。" },
+          { "text": "One pigeon is gone.", "ja": "ハトが1羽いなくなりました。" }
+        ],
+        "junior_high": [
+          { "text": "The number of pigeons decreased to two.", "ja": "ハトの数が2羽に減りました。" },
+          { "text": "One of the birds disappeared from the street.", "ja": "通りから鳥が1羽消えました。" }
+        ],
+        "high_school": [
+          { "text": "The flock of pigeons eating seeds has been reduced from three to two.", "ja": "種を食べているハトの群れが3羽から2羽に減っています。" },
+          { "text": "One of the birds has flown away, leaving only two pigeons pecking at the ground.", "ja": "鳥の1羽が飛び去り、地面をつつくハトは2羽だけになりました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "歩いている女性のセーターが紫色になっている",
+      "keywords": {
+        "target": ["sweater", "clothes", "woman"],
+        "state": ["purple", "change", "wear"]
+      },
+      "coordinates": { "x": 66, "y": 73, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her sweater is purple.", "ja": "彼女のセーターは紫色です。" },
+          { "text": "She wears purple clothes.", "ja": "彼女は紫色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman's pink sweater changed to purple.", "ja": "女性のピンクのセーターが紫色に変わりました。" },
+          { "text": "She is wearing a purple sweater now.", "ja": "彼女は今、紫色のセーターを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The woman strolling down the street is dressed in a purple knit sweater.", "ja": "通りを散歩している女性は、紫色のニットセーターを着ています。" },
+          { "text": "The color of her top has transitioned from pink to a deeper purple hue.", "ja": "彼女のトップスの色がピンクから深みのある紫色に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "歩いている女性が右手を挙げて手を振っている",
+      "keywords": {
+        "target": ["woman", "hand", "arm"],
+        "state": ["wave", "raise", "change"]
+      },
+      "coordinates": { "x": 64, "y": 67, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The woman is waving.", "ja": "女性が手を振っています。" },
+          { "text": "She raises her hand.", "ja": "彼女は手を挙げています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is waving her right hand.", "ja": "女性は右手を振っています。" },
+          { "text": "She raised her hand to greet someone.", "ja": "彼女は誰かに挨拶するために手を挙げました。" }
+        ],
+        "high_school": [
+          { "text": "The woman walking on the right has raised her hand to wave a greeting.", "ja": "右側を歩いている女性は、挨拶のために手を挙げて手を振っています。" },
+          { "text": "Instead of keeping her arms down, she is making a friendly waving gesture.", "ja": "腕を下ろしたままにするのではなく、彼女は親しげに手を振る仕草をしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "歩いている女性が黄色のショルダーバッグを提げている",
+      "keywords": {
+        "target": ["bag", "shoulder", "woman"],
+        "state": ["yellow", "carry", "appear"]
+      },
+      "coordinates": { "x": 65, "y": 76, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a yellow bag.", "ja": "彼女は黄色いバッグを持っています。" },
+          { "text": "The bag is yellow.", "ja": "バッグが黄色です。" }
+        ],
+        "junior_high": [
+          { "text": "A yellow bag appeared on her shoulder.", "ja": "彼女の肩に黄色いバッグが現れました。" },
+          { "text": "The woman is carrying a yellow shoulder bag.", "ja": "女性は黄色いショルダーバッグを提げています。" }
+        ],
+        "high_school": [
+          { "text": "A yellow shoulder bag has been added to the woman's outfit.", "ja": "黄色いショルダーバッグが女性の服装に追加されています。" },
+          { "text": "She is now accessorizing her look with a bright yellow handbag.", "ja": "彼女は現在、鮮やかな黄色のハンドバッグで装いを引き立てています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "スクーターが赤色になっている",
+      "keywords": {
+        "target": ["scooter", "motorcycle", "bike"],
+        "state": ["red", "change", "park"]
+      },
+      "coordinates": { "x": 78, "y": 77, "width": 12, "height": 16 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The scooter is red.", "ja": "スクーターが赤色です。" },
+          { "text": "The bike changed color.", "ja": "バイクの色が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The parked scooter changed from blue to red.", "ja": "駐車されているスクーターが青から赤に変わりました。" },
+          { "text": "There is a red scooter on the street.", "ja": "通りに赤いスクーターがあります。" }
+        ],
+        "high_school": [
+          { "text": "The motor scooter parked next to the building has been painted red.", "ja": "建物の隣に停められているスクーターが赤く塗られています。" },
+          { "text": "The vintage-style scooter has changed its color scheme from blue to red.", "ja": "ヴィンテージ風のスクーターの配色が青から赤に変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "自転車のフレームが緑色になっている",
+      "keywords": {
+        "target": ["bicycle", "bike", "frame"],
+        "state": ["green", "change", "park"]
+      },
+      "coordinates": { "x": 90, "y": 79, "width": 14, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The bicycle is green.", "ja": "自転車が緑色です。" },
+          { "text": "The bike's color is different.", "ja": "自転車の色が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The blue bicycle changed to green.", "ja": "青い自転車が緑色に変わりました。" },
+          { "text": "You can see a green bicycle parked here.", "ja": "ここに緑色の自転車が停まっているのが見えます。" }
+        ],
+        "high_school": [
+          { "text": "The frame of the bicycle parked against the wall has changed its color to green.", "ja": "壁に立てかけられている自転車のフレームの色が緑に変わっています。" },
+          { "text": "The dark blue bicycle has been replaced with a teal green one.", "ja": "濃い青の自転車が青緑色のものに置き換えられています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "右下の鉢植えの花がピンク色になっている",
+      "keywords": {
+        "target": ["flower", "plant", "pot"],
+        "state": ["pink", "change", "bloom"]
+      },
+      "coordinates": { "x": 92, "y": 91, "width": 8, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flowers are pink.", "ja": "花がピンク色です。" },
+          { "text": "The plant is different.", "ja": "植物が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The yellow flowers changed to pink.", "ja": "黄色い花がピンク色に変わりました。" },
+          { "text": "There are pink flowers in the pot.", "ja": "鉢の中にピンク色の花があります。" }
+        ],
+        "high_school": [
+          { "text": "The potted plant in the bottom right corner is now blooming with pink flowers.", "ja": "右下の隅にある鉢植えには、現在ピンクの花が咲いています。" },
+          { "text": "The vibrant yellow blossoms have been swapped out for pink ones.", "ja": "鮮やかな黄色の花がピンクのものに交換されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "右側の建物の1階の窓が開いている",
+      "keywords": {
+        "target": ["window", "shutter", "building"],
+        "state": ["open", "change"]
+      },
+      "coordinates": { "x": 93, "y": 73, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The window is open.", "ja": "窓が開いています。" },
+          { "text": "The window downstairs is open.", "ja": "階下の窓が開いています。" }
+        ],
+        "junior_high": [
+          { "text": "The ground floor window of the right building opened.", "ja": "右側の建物の1階の窓が開きました。" },
+          { "text": "The wooden window is not closed anymore.", "ja": "木の窓はもう閉まっていません。" }
+        ],
+        "high_school": [
+          { "text": "The lattice-style shutter on the ground floor window of the right-hand building has been opened.", "ja": "右側の建物の1階の窓にある格子状の雨戸が開いています。" },
+          { "text": "Access through the ground floor window seems possible now, as the shutter is up.", "ja": "雨戸が上がっているので、1階の窓から出入りできそうです。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "空にかかる旗（タルチョ）の一番左の色が赤色になっている",
+      "keywords": {
+        "target": ["flag", "banner", "sky"],
+        "state": ["red", "change", "hang"]
+      },
+      "coordinates": { "x": 55, "y": 54, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flag is red.", "ja": "旗が赤色です。" },
+          { "text": "The first flag changed color.", "ja": "最初の旗の色が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the leftmost flag changed to red.", "ja": "一番左の旗の色が赤色に変わりました。" },
+          { "text": "The blue flag became a red flag.", "ja": "青い旗が赤い旗になりました。" }
+        ],
+        "high_school": [
+          { "text": "The first prayer flag on the left side of the string has changed from blue to red.", "ja": "紐の左側にある最初の祈祷旗が青から赤に変わっています。" },
+          { "text": "The color sequence of the traditional bunting suspended across the street has been altered.", "ja": "通りを横切って吊るされた伝統的な旗の色の順序が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_18",
+      "nameJa": "一番左側の果物台の色が緑色になっている",
+      "keywords": {
+        "target": ["stand", "table", "fruit stand"],
+        "state": ["green", "change", "color"]
+      },
+      "coordinates": { "x": 15, "y": 87, "width": 15, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The table is green.", "ja": "テーブルが緑色です。" },
+          { "text": "The fruit stand has a new color.", "ja": "果物台が新しい色になりました。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the stand with bananas changed from blue to green.", "ja": "バナナがのった台の色が青から緑に変わりました。" },
+          { "text": "The large blue fruit stand became green.", "ja": "大きな青い果物台が緑色になりました。" }
+        ],
+        "high_school": [
+          { "text": "The large wooden stand holding bananas and other fruits on the far left has been painted green.", "ja": "一番左にあるバナナなどの果物をのせた大きな木の台が緑色に塗られています。" },
+          { "text": "The color scheme of the main produce display has changed from blue to green.", "ja": "主要な農産物ディスプレイの配色が青から緑に変わりました。" }
+        ]
+      }
+    }
+  ]
+}

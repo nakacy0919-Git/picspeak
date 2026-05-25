@@ -1,0 +1,469 @@
+{
+  "id": "detective_005",
+  "imageSrc": "assets/images/detective/dete005.webp",
+  "description": "カフェの店内風景",
+  "descriptionEn": "Inside a cafe",
+  "totalDifferences": 20,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "左端のカウンター上の植物が変わっている",
+      "keywords": {
+        "target": ["plant", "pot", "counter"],
+        "state": ["change", "different", "leaf"]
+      },
+      "coordinates": { "x": 5, "y": 70, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The plant is different.", "ja": "植物が違います。" },
+          { "text": "It is a new plant.", "ja": "新しい植物です。" }
+        ],
+        "junior_high": [
+          { "text": "The plant on the counter changed to a different kind.", "ja": "カウンターの上の植物が違う種類に変わりました。" },
+          { "text": "The plant has sharp leaves now.", "ja": "その植物は今、尖った葉を持っています。" }
+        ],
+        "high_school": [
+          { "text": "The potted plant sitting on the left counter has been replaced with a different species.", "ja": "左のカウンターに置かれている鉢植えが、違う種類の植物に置き換えられています。" },
+          { "text": "Instead of a broad-leaf plant, there is now a plant with spiky leaves.", "ja": "広葉植物の代わりに、今は尖った葉を持つ植物が置かれています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "左側の壁の絵がシダ植物になっている",
+      "keywords": {
+        "target": ["picture", "frame", "wall", "art"],
+        "state": ["fern", "change", "leaf"]
+      },
+      "coordinates": { "x": 12, "y": 62, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The picture is different.", "ja": "絵が違います。" },
+          { "text": "It is a green leaf.", "ja": "緑色の葉っぱです。" }
+        ],
+        "junior_high": [
+          { "text": "The picture on the wall changed to a fern.", "ja": "壁の絵がシダ植物に変わりました。" },
+          { "text": "There are many leaves in the picture.", "ja": "絵の中にはたくさんの葉があります。" }
+        ],
+        "high_school": [
+          { "text": "The framed artwork on the left wall now displays a fern leaf instead of a single broad leaf.", "ja": "左側の壁の額装されたアートは、1枚の広葉ではなくシダの葉を表示するようになっています。" },
+          { "text": "The botanical illustration in the frame has been changed to a different design.", "ja": "額縁の中の植物のイラストが異なるデザインに変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "バリスタがコーヒーにミルクを注いでいる",
+      "keywords": {
+        "target": ["barista", "man", "coffee", "milk"],
+        "state": ["pour", "make", "change"]
+      },
+      "coordinates": { "x": 14, "y": 70, "width": 8, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is making coffee.", "ja": "彼はコーヒーを作っています。" },
+          { "text": "The man is pouring milk.", "ja": "男性がミルクを注いでいます。" }
+        ],
+        "junior_high": [
+          { "text": "The barista is pouring milk into a cup.", "ja": "バリスタがカップにミルクを注いでいます。" },
+          { "text": "He is not handing the cup to the woman anymore.", "ja": "彼はもう女性にカップを渡していません。" }
+        ],
+        "high_school": [
+          { "text": "The male barista is carefully pouring milk into a white cup to create latte art.", "ja": "男性のバリスタはラテアートを作るため、白いカップに丁寧にミルクを注いでいます。" },
+          { "text": "Instead of handing over a finished drink, he is currently focused on preparing a beverage.", "ja": "完成した飲み物を渡す代わりに、彼は現在飲み物の準備に集中しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "メニューボードに「New!」と赤い飲み物の絵が追加されている",
+      "keywords": {
+        "target": ["menu", "board", "smoothie"],
+        "state": ["new", "add", "appear"]
+      },
+      "coordinates": { "x": 40, "y": 60, "width": 8, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a new drink.", "ja": "新しい飲み物があります。" },
+          { "text": "A red cup is on the menu.", "ja": "赤いカップがメニューにあります。" }
+        ],
+        "junior_high": [
+          { "text": "A picture of a red drink was added to the menu.", "ja": "赤い飲み物の絵がメニューに追加されました。" },
+          { "text": "You can see the word 'New!' on the board.", "ja": "ボードに「New!」という言葉が見えます。" }
+        ],
+        "high_school": [
+          { "text": "The word 'New!' and an illustration of a red beverage have been added next to the smoothie option.", "ja": "「New!」という文字と赤い飲み物のイラストが、スムージーの選択肢の横に追加されています。" },
+          { "text": "The menu board has been updated to feature a new promotional drink.", "ja": "メニューボードが更新され、新しいプロモーションドリンクが特集されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "ショーケースの上に吊るし植物が追加されている",
+      "keywords": {
+        "target": ["plant", "ceiling", "hanger"],
+        "state": ["hang", "appear", "add"]
+      },
+      "coordinates": { "x": 50, "y": 58, "width": 5, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a hanging plant.", "ja": "吊るされている植物があります。" },
+          { "text": "A plant is above the case.", "ja": "植物がケースの上にあります。" }
+        ],
+        "junior_high": [
+          { "text": "A hanging plant appeared from the ceiling.", "ja": "天井から吊るし植物が現れました。" },
+          { "text": "There is a new plant hanging above the showcase.", "ja": "ショーケースの上に新しい植物が吊るされています。" }
+        ],
+        "high_school": [
+          { "text": "A potted plant has been added, hanging from the ceiling directly above the display case.", "ja": "鉢植えの植物が追加され、ショーケースの真上の天井から吊るされています。" },
+          { "text": "The interior design has been enhanced with a suspended macrame plant hanger.", "ja": "吊り下げ式のマクラメプラントハンガーによって、インテリアデザインが向上しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "ショーケースの上段がケーキとクロワッサンになっている",
+      "keywords": {
+        "target": ["cake", "croissant", "showcase", "shelf"],
+        "state": ["change", "display"]
+      },
+      "coordinates": { "x": 46, "y": 69, "width": 8, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a cake.", "ja": "ケーキがあります。" },
+          { "text": "The food is different.", "ja": "食べ物が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The muffins on the top shelf changed to a cake and croissants.", "ja": "一番上の棚のマフィンがケーキとクロワッサンに変わりました。" },
+          { "text": "You can see a strawberry cake in the showcase.", "ja": "ショーケースの中にイチゴのケーキが見えます。" }
+        ],
+        "high_school": [
+          { "text": "The top shelf of the display case now features a slice of strawberry shortcake and some croissants instead of muffins.", "ja": "ショーケースの最上段には、マフィンの代わりにイチゴのショートケーキのカットとクロワッサンが置かれています。" },
+          { "text": "The bakery items displayed on the upper tier have been entirely replaced.", "ja": "上段に陳列されているベーカリーの商品が完全に入れ替わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "ショーケースの中段がドーナツになっている",
+      "keywords": {
+        "target": ["donut", "showcase", "shelf"],
+        "state": ["change", "display"]
+      },
+      "coordinates": { "x": 46, "y": 74, "width": 8, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There are donuts.", "ja": "ドーナツがあります。" },
+          { "text": "The muffins changed to donuts.", "ja": "マフィンがドーナツに変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The chocolate muffins changed to donuts.", "ja": "チョコレートマフィンがドーナツに変わりました。" },
+          { "text": "The middle shelf of the display case is filled with donuts.", "ja": "ショーケースの中段はドーナツでいっぱいです。" }
+        ],
+        "high_school": [
+          { "text": "The chocolate muffins that were previously on the middle shelf have been substituted with various types of donuts.", "ja": "以前中段にあったチョコレートマフィンが、様々な種類のドーナツに置き換えられています。" },
+          { "text": "An assortment of donuts, including a pink frosted one, is now displayed in the middle section.", "ja": "ピンクのアイシングがかかったものを含むドーナツの詰め合わせが、現在中間セクションに展示されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "手前の男性がスマートフォンを見ている",
+      "keywords": {
+        "target": ["man", "smartphone", "phone", "laptop"],
+        "state": ["look", "use", "close"]
+      },
+      "coordinates": { "x": 37, "y": 86, "width": 8, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is looking at his phone.", "ja": "彼は電話を見ています。" },
+          { "text": "The computer is closed.", "ja": "コンピューターは閉じられています。" }
+        ],
+        "junior_high": [
+          { "text": "The man closed his laptop and is using a smartphone.", "ja": "男性はパソコンを閉じてスマートフォンを使っています。" },
+          { "text": "He is typing on his phone instead of his computer.", "ja": "彼はコンピューターの代わりに電話で文字を打っています。" }
+        ],
+        "high_school": [
+          { "text": "The man in the green hoodie has closed his laptop and is now intently looking at his smartphone screen.", "ja": "緑のパーカーを着た男性はノートパソコンを閉じ、今は熱心にスマートフォンの画面を見ています。" },
+          { "text": "Having finished his work on the computer, he has switched to using his mobile device.", "ja": "コンピューターでの作業を終え、彼はモバイル端末の使用に切り替えました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "手前の女性がサンドイッチを食べている",
+      "keywords": {
+        "target": ["woman", "sandwich", "food"],
+        "state": ["eat", "hold", "change"]
+      },
+      "coordinates": { "x": 51, "y": 86, "width": 7, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She is eating a sandwich.", "ja": "彼女はサンドイッチを食べています。" },
+          { "text": "The woman holds food.", "ja": "女性は食べ物を持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is holding a sandwich in her hands.", "ja": "女性は手にサンドイッチを持っています。" },
+          { "text": "She started eating a sandwich while talking.", "ja": "彼女は話しながらサンドイッチを食べ始めました。" }
+        ],
+        "high_school": [
+          { "text": "The woman in the yellow sweater is now holding and preparing to take a bite of a sandwich.", "ja": "黄色いセーターを着た女性は現在、サンドイッチを持ち、一口食べようとしています。" },
+          { "text": "Instead of just gesturing with her hands, she is occupied with eating her meal.", "ja": "ただ身振り手振りをする代わりに、彼女は食事をとることに専念しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "手前のテーブルの鉢植えがしま模様になっている",
+      "keywords": {
+        "target": ["pot", "plant", "table"],
+        "state": ["stripe", "pattern", "change"]
+      },
+      "coordinates": { "x": 47, "y": 95, "width": 4, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The pot is striped.", "ja": "鉢はしま模様です。" },
+          { "text": "The pot changed.", "ja": "鉢が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The pot on the table has green and white stripes.", "ja": "テーブルの上の鉢は緑と白のしま模様になっています。" },
+          { "text": "The brown pot changed to a striped one.", "ja": "茶色い鉢がしま模様のものに変わりました。" }
+        ],
+        "high_school": [
+          { "text": "The small plant pot on the foreground table has changed to one with a white and green striped pattern.", "ja": "手前のテーブルにある小さな植木鉢が、白と緑のストライプ模様のものに変わっています。" },
+          { "text": "The plain brown planter has been replaced by a decorative striped container.", "ja": "無地の茶色いプランターが、装飾的なストライプの容器に置き換えられています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "右側の壁の絵がモンステラの葉になっている",
+      "keywords": {
+        "target": ["picture", "frame", "wall", "leaf"],
+        "state": ["monstera", "change", "green"]
+      },
+      "coordinates": { "x": 72, "y": 62, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The picture is a big leaf.", "ja": "絵は大きな葉っぱです。" },
+          { "text": "The picture changed.", "ja": "絵が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The picture on the wall changed to a green leaf.", "ja": "壁の絵が緑の葉っぱに変わりました。" },
+          { "text": "There is a picture of a monstera leaf on the right wall.", "ja": "右の壁にモンステラの葉の絵があります。" }
+        ],
+        "high_school": [
+          { "text": "The framed picture hanging on the wall above the round table has been changed to a monstera leaf design.", "ja": "円卓の上の壁に掛かっている額装された絵が、モンステラの葉のデザインに変更されています。" },
+          { "text": "The artwork featuring two autumnal leaves is gone, replaced by a single tropical leaf.", "ja": "秋の葉が2枚描かれたアートワークはなくなり、1枚の熱帯の葉に置き換えられています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "奥の男性が緑色の本を読んでいる",
+      "keywords": {
+        "target": ["boy", "book", "notebook"],
+        "state": ["read", "hold", "green"]
+      },
+      "coordinates": { "x": 59, "y": 74, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is reading a book.", "ja": "彼は本を読んでいます。" },
+          { "text": "The boy has a green book.", "ja": "男の子は緑色の本を持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy in the back is reading a green book.", "ja": "奥にいる男の子は緑色の本を読んでいます。" },
+          { "text": "He stopped writing and started reading.", "ja": "彼は書くのをやめて読み始めました。" }
+        ],
+        "high_school": [
+          { "text": "The boy sitting at the back table is now reading a green book rather than writing in his notebook.", "ja": "奥のテーブルに座っている男の子は、ノートに文字を書くのではなく、今は緑色の本を読んでいます。" },
+          { "text": "Instead of focusing on his studies with a pen, he is engrossed in reading a hardcover book.", "ja": "ペンを使って勉強に集中する代わりに、彼はハードカバーの本を読むことに夢中になっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "女の子がクッキーを食べている",
+      "keywords": {
+        "target": ["girl", "child", "cookie", "muffin"],
+        "state": ["eat", "point", "change"]
+      },
+      "coordinates": { "x": 68, "y": 85, "width": 6, "height": 9 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a cookie.", "ja": "彼女はクッキーを持っています。" },
+          { "text": "The girl points at the cookie.", "ja": "女の子がクッキーを指差しています。" }
+        ],
+        "junior_high": [
+          { "text": "The girl has a cookie on her plate instead of a muffin.", "ja": "女の子のお皿にはマフィンではなくクッキーがあります。" },
+          { "text": "The little girl is pointing at a chocolate chip cookie.", "ja": "小さな女の子はチョコチップクッキーを指差しています。" }
+        ],
+        "high_school": [
+          { "text": "The baked good in front of the little girl has been switched from a muffin to a chocolate chip cookie.", "ja": "小さな女の子の前にある焼き菓子が、マフィンからチョコチップクッキーに変更されています。" },
+          { "text": "The child is enthusiastically pointing at the large cookie placed on her plate.", "ja": "子供は自分のお皿に置かれた大きなクッキーを熱心に指差しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "右側の女性が緑色のマグカップを持っている",
+      "keywords": {
+        "target": ["woman", "cup", "mug"],
+        "state": ["green", "hold", "change"]
+      },
+      "coordinates": { "x": 75, "y": 90, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a green cup.", "ja": "彼女は緑のカップを持っています。" },
+          { "text": "The cup is different.", "ja": "カップが違います。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is holding a dark green mug.", "ja": "女性は深緑色のマグカップを持っています。" },
+          { "text": "She changed her white cup to a green mug.", "ja": "彼女は白いカップを緑のマグカップに変えました。" }
+        ],
+        "high_school": [
+          { "text": "The woman with a striped shirt is holding a dark green ceramic mug instead of a white paper cup.", "ja": "縞模様のシャツを着た女性は、白い紙コップの代わりに深緑色の陶器のマグカップを持っています。" },
+          { "text": "The beverage container in her hand has been upgraded to a reusable green mug.", "ja": "彼女の手にあった飲み物の容器は、再利用可能な緑のマグカップにアップグレードされています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "窓際の男性が外を向いて飲み物を持っている",
+      "keywords": {
+        "target": ["man", "window", "cup", "book"],
+        "state": ["look", "hold", "turn"]
+      },
+      "coordinates": { "x": 84, "y": 72, "width": 6, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is looking outside.", "ja": "彼は外を見ています。" },
+          { "text": "The man holds a cup.", "ja": "男性はカップを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The man is holding a cup instead of reading a book.", "ja": "男性は本を読む代わりにカップを持っています。" },
+          { "text": "He turned his head to look out the window.", "ja": "彼は窓の外を見るために顔を向けました。" }
+        ],
+        "high_school": [
+          { "text": "The man sitting by the window has put down his book and is holding a paper cup while gazing outside.", "ja": "窓際に座っている男性は本を置き、紙コップを持ちながら外を眺めています。" },
+          { "text": "He has shifted his attention from reading to enjoying the view outside with a beverage in hand.", "ja": "彼は読書から、飲み物を片手に外の景色を楽しむことへと注意を向けています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "右手前の椅子の背もたれと座面が緑色になっている",
+      "keywords": {
+        "target": ["chair", "seat"],
+        "state": ["green", "change", "color"]
+      },
+      "coordinates": { "x": 93, "y": 88, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The chair is green.", "ja": "椅子が緑色です。" },
+          { "text": "The color changed.", "ja": "色が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the chair changed to green.", "ja": "椅子の色が緑色に変わりました。" },
+          { "text": "There is a green chair in the corner.", "ja": "隅に緑色の椅子があります。" }
+        ],
+        "high_school": [
+          { "text": "The wooden chair in the bottom right corner has been replaced with one featuring a green seat and backrest.", "ja": "右下の隅にある木製の椅子が、緑色の座面と背もたれを持つものに置き換えられています。" },
+          { "text": "The upholstery on the chair next to the window has changed from plain wood to green fabric.", "ja": "窓の隣にある椅子の張地が、無地の木から緑の生地に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "レジの前の女性の髪の色と表情が変わっている",
+      "keywords": {
+        "target": ["woman", "customer", "hair", "face", "expression"],
+        "state": ["change", "different"]
+      },
+      "coordinates": { "x": 25, "y": 72, "width": 8, "height": 20 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The woman's hair is different.", "ja": "女性の髪が違います。" },
+          { "text": "Her face is different.", "ja": "彼女の顔が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The woman's hair color and expression changed.", "ja": "女性の髪の色と表情が変わりました。" },
+          { "text": "The customer looks different now.", "ja": "お客さんは今、違うように見えます。" }
+        ],
+        "high_school": [
+          { "text": "The customer standing at the counter has a different hair color and facial expression.", "ja": "カウンターに立っている客の髪の色と表情が異なります。" },
+          { "text": "Her hairstyle and the look on her face have been subtly altered.", "ja": "彼女の髪型と顔の表情が微妙に変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_18",
+      "nameJa": "手前の男性の近くにあるコーヒーカップが緑色になっている",
+      "keywords": {
+        "target": ["cup", "mug", "coffee", "table"],
+        "state": ["green", "change"]
+      },
+      "coordinates": { "x": 40, "y": 95, "width": 4, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The cup is green.", "ja": "カップが緑色です。" },
+          { "text": "The cup changed.", "ja": "カップが変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The coffee cup on the table changed to green.", "ja": "テーブルの上のコーヒーカップが緑色に変わりました。" },
+          { "text": "There is a dark green cup near the man.", "ja": "男性の近くに深緑色のカップがあります。" }
+        ],
+        "high_school": [
+          { "text": "The white mug next to the man has been replaced with a dark green one.", "ja": "男性の隣にある白いマグカップが深緑色のものに置き換えられています。" },
+          { "text": "The color of the beverage cup placed on the foreground table has been changed.", "ja": "手前のテーブルに置かれた飲み物のカップの色が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_19",
+      "nameJa": "奥の男性の隣にある紙コップのデザインが変わっている",
+      "keywords": {
+        "target": ["cup", "paper cup", "drink"],
+        "state": ["change", "different", "sleeve"]
+      },
+      "coordinates": { "x": 65, "y": 77, "width": 3, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The cup is different.", "ja": "カップが違います。" },
+          { "text": "The design changed.", "ja": "デザインが変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The design of the paper cup changed.", "ja": "紙コップのデザインが変わりました。" },
+          { "text": "The cup has a brown sleeve now.", "ja": "カップには今、茶色いスリーブがついています。" }
+        ],
+        "high_school": [
+          { "text": "The takeaway cup next to the boy now has a brown cardboard sleeve.", "ja": "男の子の隣にあるテイクアウト用のカップには、茶色い段ボールのスリーブがついています。" },
+          { "text": "The appearance of the paper cup placed on the table has been altered.", "ja": "テーブルに置かれた紙コップの外観が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_20",
+      "nameJa": "窓際の植物の鉢が縦縞模様のデザインになっている",
+      "keywords": {
+        "target": ["pot", "plant", "planter", "window"],
+        "state": ["change", "design", "stripe"]
+      },
+      "coordinates": { "x": 96, "y": 76, "width": 4, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The pot is different.", "ja": "鉢が違います。" },
+          { "text": "It has lines.", "ja": "線が入っています。" }
+        ],
+        "junior_high": [
+          { "text": "The design of the plant pot by the window changed.", "ja": "窓際の植物の鉢のデザインが変わりました。" },
+          { "text": "The white pot has vertical stripes.", "ja": "白い鉢には縦縞模様があります。" }
+        ],
+        "high_school": [
+          { "text": "The smooth white planter by the window has changed to a ribbed design.", "ja": "窓際の滑らかな白いプランターが、リブ編みのようなデザインに変わっています。" },
+          { "text": "The surface of the plant pot on the counter now features vertical lines.", "ja": "カウンターの上の植木鉢の表面には、現在縦線が入っています。" }
+        ]
+      }
+    }
+  ]
+}

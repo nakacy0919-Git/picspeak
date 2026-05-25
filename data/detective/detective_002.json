@@ -1,0 +1,400 @@
+{
+  "id": "detective_002",
+  "imageSrc": "assets/images/detective/dete002.webp",
+  "description": "街角の風景、パン屋と横断歩道",
+  "descriptionEn": "A street scene with a bakery and a crosswalk",
+  "totalDifferences": 17,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "パン屋の屋根（日よけ）が赤色になっている",
+      "keywords": {
+        "target": ["awning", "roof", "tent", "bakery"],
+        "state": ["red", "change", "become"]
+      },
+      "coordinates": { "x": 22, "y": 57, "width": 32, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof is red.", "ja": "屋根が赤いです。" },
+          { "text": "The bakery has a red awning.", "ja": "パン屋さんは赤い日よけをつけています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the awning changed to red.", "ja": "日よけの色が赤に変わりました。" },
+          { "text": "The awning of the bakery is red now.", "ja": "パン屋の日よけは今、赤色です。" }
+        ],
+        "high_school": [
+          { "text": "The green awning of the bakery has been changed to a red one.", "ja": "パン屋の緑色の日よけが、赤色のものに変更されています。" },
+          { "text": "The awning above the bakery window is painted red instead of green.", "ja": "パン屋の窓の上の日よけが、緑ではなく赤に塗られています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "パン屋のドアが青色になっている",
+      "keywords": {
+        "target": ["door", "entrance", "bakery"],
+        "state": ["blue", "change", "paint"]
+      },
+      "coordinates": { "x": 11, "y": 68, "width": 12, "height": 22 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The door is blue.", "ja": "ドアが青いです。" },
+          { "text": "It is a blue door.", "ja": "それは青いドアです。" }
+        ],
+        "junior_high": [
+          { "text": "The brown door changed to blue.", "ja": "茶色いドアが青色に変わりました。" },
+          { "text": "The bakery's door is now blue.", "ja": "パン屋のドアは今、青色になっています。" }
+        ],
+        "high_school": [
+          { "text": "The wooden door of the bakery has been painted blue.", "ja": "パン屋の木製のドアが青く塗られています。" },
+          { "text": "The entrance door shifted its color from brown to blue.", "ja": "入り口のドアの色が茶色から青に変わりました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "ドアの横の植物がピンクの花のプランターになっている",
+      "keywords": {
+        "target": ["plant", "flower", "pot", "planter"],
+        "state": ["pink", "white", "change", "bloom"]
+      },
+      "coordinates": { "x": 5, "y": 63, "width": 6, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There are pink flowers.", "ja": "ピンクの花があります。" },
+          { "text": "The pot is white.", "ja": "鉢は白色です。" }
+        ],
+        "junior_high": [
+          { "text": "The hanging plant changed to pink flowers.", "ja": "吊るされている植物がピンクの花に変わりました。" },
+          { "text": "There is a white planter with pink flowers.", "ja": "ピンクの花が咲いている白いプランターがあります。" }
+        ],
+        "high_school": [
+          { "text": "The hanging foliage plant has been replaced by a white wall planter with pink flowers.", "ja": "吊るされた観葉植物が、ピンクの花が咲く白い壁掛けプランターに置き換わっています。" },
+          { "text": "Pink flowers are blooming in a white pot beside the door.", "ja": "ドアの横の白い鉢でピンクの花が咲いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "女性のスカートが青色になっている",
+      "keywords": {
+        "target": ["skirt", "clothes", "woman", "lady"],
+        "state": ["blue", "change", "wear"]
+      },
+      "coordinates": { "x": 21, "y": 82, "width": 10, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The woman's skirt is blue.", "ja": "女性のスカートは青いです。" },
+          { "text": "She is wearing a blue skirt.", "ja": "彼女は青いスカートを穿いています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of her skirt changed to blue.", "ja": "彼女のスカートの色が青色に変わりました。" },
+          { "text": "She is wearing a blue skirt instead of a purple one.", "ja": "彼女は紫の代わりに青いスカートを穿いています。" }
+        ],
+        "high_school": [
+          { "text": "The skirt the woman is wearing has changed its color from purple to blue.", "ja": "女性が穿いているスカートの色が、紫色から青色に変化しています。" },
+          { "text": "The woman walking the dog is dressed in a blue skirt.", "ja": "犬の散歩をしている女性は青いスカートを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "女性のバッグが白色になっている",
+      "keywords": {
+        "target": ["bag", "purse", "tote", "woman"],
+        "state": ["white", "change", "carry"]
+      },
+      "coordinates": { "x": 19, "y": 77, "width": 6, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her bag is white.", "ja": "彼女のバッグは白色です。" },
+          { "text": "She has a white bag.", "ja": "彼女は白いバッグを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The brown bag changed to white.", "ja": "茶色いバッグが白色に変わりました。" },
+          { "text": "The woman is carrying a white tote bag.", "ja": "女性は白いトートバッグを持っています。" }
+        ],
+        "high_school": [
+          { "text": "The color of the shoulder bag carried by the woman has changed to white.", "ja": "女性が提げているショルダーバッグの色が白に変わっています。" },
+          { "text": "She is holding a white handbag on her right shoulder.", "ja": "彼女は右肩に白いハンドバッグを掛けています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "犬が柴犬になっている",
+      "keywords": {
+        "target": ["dog", "pet", "animal", "shiba"],
+        "state": ["change", "different", "walk"]
+      },
+      "coordinates": { "x": 32, "y": 89, "width": 12, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The dog is different.", "ja": "犬が違います。" },
+          { "text": "It is a Shiba dog.", "ja": "それは柴犬です。" }
+        ],
+        "junior_high": [
+          { "text": "The poodle changed into a different breed of dog.", "ja": "プードルが違う種類の犬に変わりました。" },
+          { "text": "The woman is walking a Shiba Inu.", "ja": "女性は柴犬を散歩させています。" }
+        ],
+        "high_school": [
+          { "text": "The dog being walked by the woman has changed from a poodle to a Shiba Inu.", "ja": "女性に散歩されている犬が、プードルから柴犬に変わっています。" },
+          { "text": "A Shiba Inu has taken the place of the brown poodle.", "ja": "茶色いプードルの代わりに柴犬がいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "男性のスーツがグレーになっている",
+      "keywords": {
+        "target": ["suit", "clothes", "jacket", "man"],
+        "state": ["grey", "gray", "change", "wear"]
+      },
+      "coordinates": { "x": 42, "y": 74, "width": 10, "height": 28 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The man's suit is grey.", "ja": "男性のスーツはグレーです。" },
+          { "text": "He is wearing grey clothes.", "ja": "彼はグレーの服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of his suit changed to grey.", "ja": "彼のスーツの色がグレーに変わりました。" },
+          { "text": "The man is wearing a grey suit.", "ja": "男性はグレーのスーツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The businessman's suit color has shifted from dark blue to grey.", "ja": "ビジネスマンのスーツの色が紺色からグレーに変わっています。" },
+          { "text": "The man checking his watch is dressed in a light grey suit.", "ja": "時計を確認している男性は明るいグレーのスーツを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "男性のネクタイが赤色になっている",
+      "keywords": {
+        "target": ["tie", "necktie", "man"],
+        "state": ["red", "change", "wear"]
+      },
+      "coordinates": { "x": 42, "y": 68, "width": 3, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His tie is red.", "ja": "彼のネクタイは赤色です。" },
+          { "text": "The man wears a red tie.", "ja": "男性は赤いネクタイをつけています。" }
+        ],
+        "junior_high": [
+          { "text": "His blue tie changed to red.", "ja": "彼の青いネクタイが赤に変わりました。" },
+          { "text": "The man is wearing a red necktie now.", "ja": "男性は今、赤いネクタイを締めています。" }
+        ],
+        "high_school": [
+          { "text": "The color of the necktie the man is wearing has been altered to red.", "ja": "男性が締めているネクタイの色が赤に変更されています。" },
+          { "text": "He has paired his suit with a red tie.", "ja": "彼はスーツに赤いネクタイを合わせています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "郵便ポストが青色になっている",
+      "keywords": {
+        "target": ["postbox", "mailbox", "box"],
+        "state": ["blue", "change", "stand"]
+      },
+      "coordinates": { "x": 54, "y": 68, "width": 4, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The mailbox is blue.", "ja": "郵便ポストが青色です。" },
+          { "text": "The postbox changed to blue.", "ja": "郵便ポストが青に変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The red postbox changed to blue.", "ja": "赤い郵便ポストが青色に変わりました。" },
+          { "text": "There is a blue mailbox on the street.", "ja": "通りに青い郵便ポストがあります。" }
+        ],
+        "high_school": [
+          { "text": "The traditional red Japanese postbox has been recolored to blue.", "ja": "日本の伝統的な赤い郵便ポストが青く塗り直されています。" },
+          { "text": "A blue mailbox stands on the sidewalk in the background.", "ja": "背景の歩道には青い郵便ポストが立っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "走っている男の子のシャツが緑色になっている",
+      "keywords": {
+        "target": ["shirt", "clothes", "boy", "child"],
+        "state": ["green", "change", "wear", "run"]
+      },
+      "coordinates": { "x": 63, "y": 82, "width": 8, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The boy's shirt is green.", "ja": "男の子のシャツは緑色です。" },
+          { "text": "He wears a green shirt.", "ja": "彼は緑色のシャツを着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy's yellow shirt changed to green.", "ja": "男の子の黄色いシャツが緑に変わりました。" },
+          { "text": "The running boy is wearing a green shirt.", "ja": "走っている男の子は緑色のシャツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The t-shirt of the boy running across the crosswalk has turned green.", "ja": "横断歩道を走っている男の子のTシャツが緑色に変わっています。" },
+          { "text": "The boy dashing across the street is dressed in a green top.", "ja": "道を駆け抜ける男の子は緑色の上着を着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "男の子の靴が緑色になっている",
+      "keywords": {
+        "target": ["shoes", "sneakers", "boy", "feet"],
+        "state": ["green", "change", "wear"]
+      },
+      "coordinates": { "x": 63, "y": 91, "width": 9, "height": 7 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His shoes are green.", "ja": "彼の靴は緑色です。" },
+          { "text": "The boy has green shoes.", "ja": "男の子は緑色の靴を履いています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of his sneakers changed to green.", "ja": "彼のスニーカーの色が緑色に変わりました。" },
+          { "text": "The boy is wearing green shoes.", "ja": "男の子は緑色の靴を履いています。" }
+        ],
+        "high_school": [
+          { "text": "The sneakers worn by the running boy have changed from blue to green.", "ja": "走っている男の子が履いているスニーカーが青から緑に変わっています。" },
+          { "text": "He is wearing green running shoes matching his shirt.", "ja": "彼はシャツに合わせた緑色のランニングシューズを履いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "停まっている車が水色になっている",
+      "keywords": {
+        "target": ["car", "vehicle", "automobile"],
+        "state": ["blue", "change", "stop"]
+      },
+      "coordinates": { "x": 74, "y": 68, "width": 16, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The car is blue.", "ja": "車が青いです。" },
+          { "text": "The stopped car is blue.", "ja": "停まっている車は青いです。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the car changed to blue.", "ja": "車の色が青色に変わりました。" },
+          { "text": "A light blue car is waiting at the crosswalk.", "ja": "水色の車が横断歩道で待っています。" }
+        ],
+        "high_school": [
+          { "text": "The vehicle stopped at the pedestrian crossing has changed its color to light blue.", "ja": "横断歩道で停まっている車の色が水色に変わっています。" },
+          { "text": "The beige compact car has been transformed into a light blue one.", "ja": "ベージュの小型車が水色のものに変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "自転車に乗っている人のヘルメットが青色になっている",
+      "keywords": {
+        "target": ["helmet", "hat", "cyclist", "woman"],
+        "state": ["blue", "change", "wear"]
+      },
+      "coordinates": { "x": 91, "y": 63, "width": 6, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her helmet is blue.", "ja": "彼女のヘルメットは青いです。" },
+          { "text": "The helmet is blue.", "ja": "ヘルメットが青いです。" }
+        ],
+        "junior_high": [
+          { "text": "The purple helmet changed to blue.", "ja": "紫色のヘルメットが青色に変わりました。" },
+          { "text": "The cyclist is wearing a blue helmet.", "ja": "自転車に乗っている人は青いヘルメットをかぶっています。" }
+        ],
+        "high_school": [
+          { "text": "The safety helmet worn by the bicycle rider has changed its color to blue.", "ja": "自転車の乗り手が着用している安全ヘルメットの色が青に変わっています。" },
+          { "text": "She protects her head with a blue helmet instead of a purple one.", "ja": "彼女は紫の代わりに青いヘルメットで頭を保護しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "自転車に乗っている人の上着がピンク色になっている",
+      "keywords": {
+        "target": ["jacket", "hoodie", "clothes", "cyclist"],
+        "state": ["pink", "change", "wear"]
+      },
+      "coordinates": { "x": 91, "y": 72, "width": 8, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her jacket is pink.", "ja": "彼女の上着はピンク色です。" },
+          { "text": "The woman wears a pink hoodie.", "ja": "女性はピンクのパーカーを着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The light green jacket changed to pink.", "ja": "薄緑色の上着がピンクに変わりました。" },
+          { "text": "The cyclist is wearing a pink top.", "ja": "自転車に乗っている人はピンクの服を着ています。" }
+        ],
+        "high_school": [
+          { "text": "The outerwear of the person riding the bicycle has transitioned from green to pink.", "ja": "自転車に乗っている人の上着が緑からピンクに変化しています。" },
+          { "text": "The woman cycling on the road is dressed in a pink jacket.", "ja": "道路を自転車で走っている女性はピンクのジャケットを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "自転車のフレームが青色になっている",
+      "keywords": {
+        "target": ["bicycle", "bike", "cycle"],
+        "state": ["blue", "change", "ride"]
+      },
+      "coordinates": { "x": 90, "y": 85, "width": 16, "height": 18 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The bike is blue.", "ja": "自転車が青いです。" },
+          { "text": "She is riding a blue bicycle.", "ja": "彼女は青い自転車に乗っています。" }
+        ],
+        "junior_high": [
+          { "text": "The red bicycle changed to blue.", "ja": "赤い自転車が青色に変わりました。" },
+          { "text": "The color of the bike is now blue.", "ja": "自転車の色は今、青色です。" }
+        ],
+        "high_school": [
+          { "text": "The frame of the bicycle she is riding has been painted blue.", "ja": "彼女が乗っている自転車のフレームが青く塗られています。" },
+          { "text": "The cyclist is pedaling a blue bicycle towards the crosswalk.", "ja": "自転車の乗り手は横断歩道に向かって青い自転車のペダルをこいでいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "右奥の建物の日よけがオレンジ色になっている",
+      "keywords": {
+        "target": ["awning", "roof", "tent", "store", "building"],
+        "state": ["orange", "change"]
+      },
+      "coordinates": { "x": 92, "y": 57, "width": 16, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof is orange.", "ja": "屋根がオレンジ色です。" },
+          { "text": "The awning is orange.", "ja": "日よけがオレンジ色です。" }
+        ],
+        "junior_high": [
+          { "text": "The blue awning changed to orange.", "ja": "青い日よけがオレンジ色に変わりました。" },
+          { "text": "The store on the right has an orange awning.", "ja": "右側のお店にはオレンジ色の日よけがあります。" }
+        ],
+        "high_school": [
+          { "text": "The awning of the building on the right side has changed from blue to orange.", "ja": "右側の建物の日よけが、青からオレンジに変わっています。" },
+          { "text": "An orange canopy is installed over the window of the far-right building.", "ja": "一番右の建物の窓の上にオレンジ色のひさしが設置されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "信号機の緑色の歩行者マークが消えている",
+      "keywords": {
+        "target": ["traffic light", "signal", "light", "pedestrian"],
+        "state": ["disappear", "turn off", "miss", "gone"]
+      },
+      "coordinates": { "x": 51, "y": 57, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The green light is gone.", "ja": "緑の信号がありません。" },
+          { "text": "There is no green signal.", "ja": "緑の信号がありません。" }
+        ],
+        "junior_high": [
+          { "text": "The green walking signal disappeared.", "ja": "歩行者用の緑の信号が消えました。" },
+          { "text": "The traffic light only shows red now.", "ja": "信号機は今、赤だけを示しています。" }
+        ],
+        "high_school": [
+          { "text": "The green pedestrian signal has disappeared from the traffic light.", "ja": "歩行者用の緑の信号が信号機から消えています。" },
+          { "text": "The traffic light is missing the green walking symbol.", "ja": "信号機には歩行者用の緑のマークが欠けています。" }
+        ]
+      }
+    }
+  ]
+}

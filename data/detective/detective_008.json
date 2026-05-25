@@ -1,0 +1,170 @@
+{
+  "id": "detective_008",
+  "imageSrc": "assets/images/detective/dete008.webp",
+  "description": "清水寺のようなお寺の前の観光風景",
+  "descriptionEn": "Tourists in front of a temple like Kiyomizu-dera",
+  "totalDifferences": 7,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "案内板の文字が「マップ」になっている",
+      "keywords": {
+        "target": ["sign", "board", "map", "text", "guide"],
+        "state": ["change", "different"]
+      },
+      "coordinates": { "x": 10, "y": 64, "width": 12, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The map is different.", "ja": "地図が違います。" },
+          { "text": "The words changed.", "ja": "言葉が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The text on the sign changed.", "ja": "看板の文字が変わりました。" },
+          { "text": "It says \"Map\" in katakana now.", "ja": "今はカタカナで「マップ」と書いてあります。" }
+        ],
+        "high_school": [
+          { "text": "The Japanese characters on the signboard have been altered.", "ja": "看板の日本語の文字が変更されています。" },
+          { "text": "The title of the guide map has been replaced with a different word.", "ja": "案内図のタイトルが別の言葉に置き換えられています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "おじいさんの帽子が水色になっている",
+      "keywords": {
+        "target": ["hat", "cap", "man", "tourist"],
+        "state": ["blue", "change", "wear"]
+      },
+      "coordinates": { "x": 21, "y": 73, "width": 7, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His hat is blue.", "ja": "彼の帽子は青いです。" },
+          { "text": "The old man wears a blue hat.", "ja": "おじいさんは青い帽子をかぶっています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of his hat changed to light blue.", "ja": "彼の帽子の色が水色に変わりました。" },
+          { "text": "The man is wearing a blue hat now.", "ja": "男性は今、青い帽子をかぶっています。" }
+        ],
+        "high_school": [
+          { "text": "The hat worn by the elderly man has changed from beige to light blue.", "ja": "年配の男性がかぶっている帽子が、ベージュから水色に変わっています。" },
+          { "text": "The senior tourist is sporting a different colored bucket hat.", "ja": "シニアの観光客は違う色のバケットハットをかぶっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "お寺の提灯が白色になっている",
+      "keywords": {
+        "target": ["lantern", "light", "temple"],
+        "state": ["white", "change", "hang"]
+      },
+      "coordinates": { "x": 67, "y": 68, "width": 5, "height": 7 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The lanterns are white.", "ja": "提灯が白色です。" },
+          { "text": "The temple has white lanterns.", "ja": "お寺には白い提灯があります。" }
+        ],
+        "junior_high": [
+          { "text": "The red lanterns changed to white.", "ja": "赤い提灯が白色に変わりました。" },
+          { "text": "The color of the lanterns is white now.", "ja": "提灯の色は今、白色です。" }
+        ],
+        "high_school": [
+          { "text": "The large paper lanterns hanging at the temple entrance have turned white.", "ja": "お寺の入り口に吊るされている大きな紙提灯が白くなっています。" },
+          { "text": "The traditional lanterns have been swapped from red to white ones.", "ja": "伝統的な提灯が赤から白のものに交換されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "屋根の中央に金色の装飾が追加されている",
+      "keywords": {
+        "target": ["roof", "temple", "emblem", "crest"],
+        "state": ["gold", "appear", "add"]
+      },
+      "coordinates": { "x": 53, "y": 53, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof has a gold mark.", "ja": "屋根に金色のマークがあります。" },
+          { "text": "There is a gold crest.", "ja": "金色の紋章があります。" }
+        ],
+        "junior_high": [
+          { "text": "A gold emblem appeared on the roof.", "ja": "金色のエンブレムが屋根に現れました。" },
+          { "text": "The temple roof has a new decoration.", "ja": "お寺の屋根には新しい装飾があります。" }
+        ],
+        "high_school": [
+          { "text": "A golden crest has been added to the center of the temple roof.", "ja": "お寺の屋根の中央に金色の紋章が追加されています。" },
+          { "text": "An ornate golden emblem now adorns the ridge of the traditional roof.", "ja": "華やかな金色のエンブレムが現在、伝統的な屋根の棟を飾っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "奥に塔（五重塔）が追加されている",
+      "keywords": {
+        "target": ["pagoda", "tower", "building", "background"],
+        "state": ["appear", "add", "stand"]
+      },
+      "coordinates": { "x": 76, "y": 65, "width": 5, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a tall building.", "ja": "高い建物があります。" },
+          { "text": "A tower appeared.", "ja": "塔が現れました。" }
+        ],
+        "junior_high": [
+          { "text": "A stone pagoda appeared in the background.", "ja": "背景に石塔が現れました。" },
+          { "text": "You can see a new tower now.", "ja": "今、新しい塔が見えます。" }
+        ],
+        "high_school": [
+          { "text": "A multi-story stone pagoda has been added to the scenery in the background.", "ja": "背景の景色に多層の石塔が追加されています。" },
+          { "text": "A traditional Japanese pagoda has appeared behind the stone lantern.", "ja": "石灯籠の後ろに伝統的な日本の塔が現れました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "右奥の花が白色になっている",
+      "keywords": {
+        "target": ["flower", "plant", "bush"],
+        "state": ["white", "change", "bloom"]
+      },
+      "coordinates": { "x": 84, "y": 76, "width": 6, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flowers are white.", "ja": "花が白色です。" },
+          { "text": "The plant is different.", "ja": "植物が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The pink flowers changed to white.", "ja": "ピンク色の花が白色に変わりました。" },
+          { "text": "The color of the blooming flowers is white.", "ja": "咲いている花の色は白色です。" }
+        ],
+        "high_school": [
+          { "text": "The blossoms on the bush behind the girls have changed their color to white.", "ja": "女の子たちの後ろにある茂みの花の色が白に変わっています。" },
+          { "text": "The flowering plant on the right side now features white petals instead of pink.", "ja": "右側にある顕花植物は現在、ピンクの代わりに白い花びらをつけています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "ハトが1羽減っている",
+      "keywords": {
+        "target": ["pigeon", "bird", "animal"],
+        "state": ["disappear", "miss", "gone"]
+      },
+      "coordinates": { "x": 85, "y": 94, "width": 5, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "One bird is gone.", "ja": "鳥が1羽いなくなりました。" },
+          { "text": "There is only one pigeon.", "ja": "ハトが1羽しかいません。" }
+        ],
+        "junior_high": [
+          { "text": "One of the pigeons disappeared.", "ja": "ハトのうちの1羽が消えました。" },
+          { "text": "There is only one bird on the ground now.", "ja": "地面には今、鳥が1羽しかいません。" }
+        ],
+        "high_school": [
+          { "text": "One of the pigeons that was resting on the ground has flown away.", "ja": "地面で休んでいたハトのうちの1羽が飛び去ってしまいました。" },
+          { "text": "The number of birds near the stone wall has decreased to just one.", "ja": "石垣の近くにいる鳥の数がたった1羽に減っています。" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,446 @@
+{
+  "id": "detective_009",
+  "imageSrc": "assets/images/detective/dete009.webp",
+  "description": "パリの街角のカフェとパン屋",
+  "descriptionEn": "A cafe and a bakery on a street corner in Paris",
+  "totalDifferences": 19,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "左上の建物の番地が「16」になっている",
+      "keywords": {
+        "target": ["number", "plate", "sign", "wall"],
+        "state": ["sixteen", "change", "different"]
+      },
+      "coordinates": { "x": 4, "y": 55, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The number is sixteen.", "ja": "番号は16です。" },
+          { "text": "The number changed.", "ja": "番号が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The number on the wall changed to sixteen.", "ja": "壁の番号が16に変わりました。" },
+          { "text": "The blue sign shows 16 now.", "ja": "青い看板は今、16を示しています。" }
+        ],
+        "high_school": [
+          { "text": "The address plate on the building has been updated to number sixteen.", "ja": "建物の番地プレートが16番に更新されています。" },
+          { "text": "The number displayed on the blue plaque at the top left has changed.", "ja": "左上の青いプレートに表示されている数字が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "カフェの屋根（日よけ）が緑色のストライプになっている",
+      "keywords": {
+        "target": ["awning", "roof", "cafe"],
+        "state": ["green", "change", "stripe"]
+      },
+      "coordinates": { "x": 23, "y": 55, "width": 30, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof is green.", "ja": "屋根が緑色です。" },
+          { "text": "The cafe has a green awning.", "ja": "カフェには緑色の日よけがあります。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the awning changed to green.", "ja": "日よけの色が緑色に変わりました。" },
+          { "text": "The red stripes became green stripes.", "ja": "赤いストライプが緑のストライプになりました。" }
+        ],
+        "high_school": [
+          { "text": "The striped awning of the cafe has been changed from red to green.", "ja": "カフェのストライプ柄の日よけが、赤から緑に変更されています。" },
+          { "text": "The canopy shading the outdoor seating area now features green stripes.", "ja": "屋外席を覆うひさしは現在、緑色のストライプになっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "左端の鉢植えの花が紫色になっている",
+      "keywords": {
+        "target": ["flower", "plant", "pot"],
+        "state": ["purple", "change", "bloom"]
+      },
+      "coordinates": { "x": 4, "y": 80, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flowers are purple.", "ja": "花が紫色です。" },
+          { "text": "The plant is different.", "ja": "植物が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The pink flowers changed to purple.", "ja": "ピンク色の花が紫色に変わりました。" },
+          { "text": "There are purple flowers in the pot.", "ja": "鉢の中に紫色の花があります。" }
+        ],
+        "high_school": [
+          { "text": "The potted plant on the far left now has purple flowers instead of pink ones.", "ja": "一番左の鉢植えは、ピンクの代わりに紫色の花を咲かせています。" },
+          { "text": "The blooming flowers in the planter have shifted their color to purple.", "ja": "プランターに咲いている花の色が紫色に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "カフェの女性がメニューを持っている",
+      "keywords": {
+        "target": ["woman", "menu", "customer"],
+        "state": ["hold", "read", "look"]
+      },
+      "coordinates": { "x": 12, "y": 79, "width": 6, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a menu.", "ja": "彼女はメニューを持っています。" },
+          { "text": "The woman is reading.", "ja": "女性は読んでいます。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is holding a menu.", "ja": "女性はメニューを持っています。" },
+          { "text": "She picked up a menu to read.", "ja": "彼女は読むためにメニューを手に取りました。" }
+        ],
+        "high_school": [
+          { "text": "The female customer at the table is now holding and reading a menu.", "ja": "テーブルにいる女性客は現在、メニューを手に持って読んでいます。" },
+          { "text": "Instead of resting her hands on the table, she is browsing the menu.", "ja": "テーブルに手を置く代わりに、彼女はメニューを眺めています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "テーブルの上にクロワッサンが置かれている",
+      "keywords": {
+        "target": ["croissant", "table", "plate", "food"],
+        "state": ["appear", "put", "change"]
+      },
+      "coordinates": { "x": 18, "y": 81, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a croissant.", "ja": "クロワッサンがあります。" },
+          { "text": "The table has food.", "ja": "テーブルに食べ物があります。" }
+        ],
+        "junior_high": [
+          { "text": "The flowers changed to a croissant.", "ja": "花がクロワッサンに変わりました。" },
+          { "text": "There is a croissant on the table now.", "ja": "今、テーブルの上にクロワッサンがあります。" }
+        ],
+        "high_school": [
+          { "text": "A croissant on a plate has replaced the vase of flowers on the table.", "ja": "テーブルの上の花瓶が、お皿に乗ったクロワッサンに置き換えられています。" },
+          { "text": "The decorative centerpiece has been swapped for a freshly baked croissant.", "ja": "装飾的なセンターピースが、焼きたてのクロワッサンと入れ替わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "カフェの男性の服が緑色になっている",
+      "keywords": {
+        "target": ["man", "shirt", "sweater"],
+        "state": ["green", "wear", "change"]
+      },
+      "coordinates": { "x": 22, "y": 78, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His sweater is green.", "ja": "彼のセーターは緑色です。" },
+          { "text": "The man wears green.", "ja": "男性は緑色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The man's blue sweater changed to green.", "ja": "男性の青いセーターが緑色に変わりました。" },
+          { "text": "He is wearing a green shirt now.", "ja": "彼は今、緑色のシャツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The male customer sitting at the cafe is now wearing a dark green sweater.", "ja": "カフェに座っている男性客は、現在ダークグリーンのセーターを着ています。" },
+          { "text": "The color of his top has transitioned from navy blue to olive green.", "ja": "彼のトップスの色が紺色からオリーブグリーンに変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "ウェイターがコーヒーをテーブルに置いている",
+      "keywords": {
+        "target": ["waiter", "man", "coffee", "cup"],
+        "state": ["serve", "put", "change"]
+      },
+      "coordinates": { "x": 30, "y": 76, "width": 8, "height": 18 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The waiter is serving.", "ja": "ウェイターがサービスをしています。" },
+          { "text": "He puts the cup down.", "ja": "彼はカップを置いています。" }
+        ],
+        "junior_high": [
+          { "text": "The waiter is putting the cup on the table.", "ja": "ウェイターはテーブルにカップを置いています。" },
+          { "text": "He is leaning forward to serve the coffee.", "ja": "彼はコーヒーを出すために前かがみになっています。" }
+        ],
+        "high_school": [
+          { "text": "The waiter is leaning forward to serve a cup of coffee to the customer.", "ja": "ウェイターは客にコーヒーを出すため、前かがみになっています。" },
+          { "text": "Instead of holding a tray, the waiter is now setting the drink down on the table.", "ja": "お盆を持つ代わりに、ウェイターは今、飲み物をテーブルに置いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "奥の建物の窓辺に赤い花が咲いている",
+      "keywords": {
+        "target": ["flower", "balcony", "window", "building"],
+        "state": ["red", "appear", "bloom"]
+      },
+      "coordinates": { "x": 42, "y": 62, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There are red flowers.", "ja": "赤い花があります。" },
+          { "text": "The building has flowers.", "ja": "建物に花があります。" }
+        ],
+        "junior_high": [
+          { "text": "Red flowers appeared on the balcony.", "ja": "バルコニーに赤い花が現れました。" },
+          { "text": "You can see flowers in the background.", "ja": "背景に花が見えます。" }
+        ],
+        "high_school": [
+          { "text": "A window box filled with red flowers has been added to the building in the background.", "ja": "背景にある建物の窓辺に、赤い花でいっぱいのフラワーボックスが追加されています。" },
+          { "text": "Vibrant red blossoms are now visible on the balcony of the distant apartment.", "ja": "遠くのアパートのバルコニーに、鮮やかな赤い花が見えるようになっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "自転車に乗っている男性が手を振っている",
+      "keywords": {
+        "target": ["cyclist", "man", "hand"],
+        "state": ["wave", "raise", "change"]
+      },
+      "coordinates": { "x": 42, "y": 73, "width": 6, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The man is waving.", "ja": "男性が手を振っています。" },
+          { "text": "He raises his hand.", "ja": "彼は手を挙げています。" }
+        ],
+        "junior_high": [
+          { "text": "The cyclist is waving his hand.", "ja": "自転車に乗っている人が手を振っています。" },
+          { "text": "He took his right hand off the handlebar.", "ja": "彼は右手でハンドルから手を離しました。" }
+        ],
+        "high_school": [
+          { "text": "The man riding the bicycle has raised his right hand to wave.", "ja": "自転車に乗っている男性が、右手を挙げて手を振っています。" },
+          { "text": "Instead of holding both handles, the cyclist is making a friendly gesture.", "ja": "両方のハンドルを握る代わりに、サイクリストは親しげなジェスチャーをしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "自転車のフレームが赤色になっている",
+      "keywords": {
+        "target": ["bicycle", "bike", "cyclist"],
+        "state": ["red", "change", "ride"]
+      },
+      "coordinates": { "x": 44, "y": 87, "width": 12, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The bike is red.", "ja": "自転車が赤色です。" },
+          { "text": "He rides a red bike.", "ja": "彼は赤い自転車に乗っています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the bicycle changed to red.", "ja": "自転車の色が赤色に変わりました。" },
+          { "text": "The man is riding a red bicycle now.", "ja": "男性は今、赤い自転車に乗っています。" }
+        ],
+        "high_school": [
+          { "text": "The frame of the bicycle he is riding has been painted red instead of blue.", "ja": "彼が乗っている自転車のフレームが、青ではなく赤に塗られています。" },
+          { "text": "The cyclist is pedaling down the street on a bright red bicycle.", "ja": "サイクリストは鮮やかな赤い自転車で通りをペダルを漕いで進んでいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "歩道の立て看板の絵がパンになっている",
+      "keywords": {
+        "target": ["sign", "board", "bread"],
+        "state": ["change", "draw", "different"]
+      },
+      "coordinates": { "x": 65, "y": 86, "width": 5, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The sign has bread.", "ja": "看板にパンが描かれています。" },
+          { "text": "The picture changed.", "ja": "絵が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The picture on the sign changed to bread.", "ja": "看板の絵がパンに変わりました。" },
+          { "text": "The board shows a loaf of bread now.", "ja": "ボードには今、パンの塊が描かれています。" }
+        ],
+        "high_school": [
+          { "text": "The standing signboard now displays a picture of bread and says 'BOULANGERIE'.", "ja": "立て看板には現在、パンの絵と「BOULANGERIE」という文字が表示されています。" },
+          { "text": "The chalk illustration on the A-frame sign has been switched from a cupcake to a baguette.", "ja": "A型看板のチョークのイラストが、カップケーキからバゲットに切り替えられています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "男の子がパンを持って食べている",
+      "keywords": {
+        "target": ["boy", "child", "bread", "croissant"],
+        "state": ["hold", "eat", "stop"]
+      },
+      "coordinates": { "x": 71, "y": 81, "width": 5, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The boy has bread.", "ja": "男の子はパンを持っています。" },
+          { "text": "He is not pointing.", "ja": "彼は指を差していません。" }
+        ],
+        "junior_high": [
+          { "text": "The boy is holding bread instead of pointing.", "ja": "男の子は指を差す代わりにパンを持っています。" },
+          { "text": "He stopped pointing at the window.", "ja": "彼は窓を指差すのをやめました。" }
+        ],
+        "high_school": [
+          { "text": "The little boy has stopped pointing at the window and is now holding a piece of bread.", "ja": "小さな男の子は窓を指差すのをやめ、今はパンを手に持っています。" },
+          { "text": "Instead of gesturing towards the shop, the child is preparing to eat a croissant.", "ja": "お店に向かって身振りをする代わりに、子供はクロワッサンを食べようとしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "右側の店舗の名前が「BOULANGERIE」になっている",
+      "keywords": {
+        "target": ["sign", "store", "name"],
+        "state": ["change", "different"]
+      },
+      "coordinates": { "x": 88, "y": 55, "width": 20, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The shop name is different.", "ja": "お店の名前が違います。" },
+          { "text": "It is a bakery.", "ja": "それはパン屋さんです。" }
+        ],
+        "junior_high": [
+          { "text": "The sign above the shop changed.", "ja": "お店の上の看板が変わりました。" },
+          { "text": "The store is a Boulangerie now.", "ja": "お店は今、ブーランジェリー（パン屋）です。" }
+        ],
+        "high_school": [
+          { "text": "The sign above the shop has been updated from 'PATISSERIE' to 'BOULANGERIE'.", "ja": "お店の上の看板が「PATISSERIE」から「BOULANGERIE」に更新されています。" },
+          { "text": "The establishment on the right is now operating as a bakery rather than a pastry shop.", "ja": "右側のお店は現在、洋菓子店ではなくパン屋として営業しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "ショーウィンドウの中段のケーキのデコレーションが変わっている",
+      "keywords": {
+        "target": ["cake", "showcase", "decoration"],
+        "state": ["change", "different"]
+      },
+      "coordinates": { "x": 86, "y": 74, "width": 8, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The cake is different.", "ja": "ケーキが違います。" },
+          { "text": "The decoration changed.", "ja": "飾りが変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The decoration of the cake in the middle changed.", "ja": "真ん中のケーキの飾りが変わりました。" },
+          { "text": "The cake looks different now.", "ja": "ケーキは今、違って見えます。" }
+        ],
+        "high_school": [
+          { "text": "The decoration on the cake displayed on the middle shelf has been altered.", "ja": "中段に展示されているケーキの装飾が変更されています。" },
+          { "text": "The pastry in the center of the showcase features a different design.", "ja": "ショーケースの中央にあるペストリーは、異なるデザインになっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "犬の散歩をしている男性がジャケットを脱いでいる",
+      "keywords": {
+        "target": ["man", "jacket", "shirt"],
+        "state": ["stripe", "take off", "change"]
+      },
+      "coordinates": { "x": 93, "y": 77, "width": 7, "height": 20 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He wears a striped shirt.", "ja": "彼は縞模様のシャツを着ています。" },
+          { "text": "The man has no jacket.", "ja": "男性はジャケットを着ていません。" }
+        ],
+        "junior_high": [
+          { "text": "The man took off his green jacket.", "ja": "男性は緑色のジャケットを脱ぎました。" },
+          { "text": "He is wearing only a striped shirt now.", "ja": "彼は今、縞模様のシャツだけを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The man walking the dog has removed his green jacket and is just wearing a striped shirt.", "ja": "犬の散歩をしている男性は緑のジャケットを脱ぎ、ストライプのシャツだけを着ています。" },
+          { "text": "He decided to walk without his outerwear, revealing his blue and white striped long-sleeve shirt.", "ja": "彼は上着なしで歩くことにし、青と白のストライプの長袖シャツを見せています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "犬の首輪の色が変わっている",
+      "keywords": {
+        "target": ["collar", "dog", "pet"],
+        "state": ["color", "change"]
+      },
+      "coordinates": { "x": 80, "y": 92, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The dog's collar is different.", "ja": "犬の首輪が違います。" },
+          { "text": "The collar changed color.", "ja": "首輪の色が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the dog's collar changed.", "ja": "犬の首輪の色が変わりました。" },
+          { "text": "The dog is wearing a different collar.", "ja": "犬は違う首輪をつけています。" }
+        ],
+        "high_school": [
+          { "text": "The collar worn by the small dog has changed its color.", "ja": "小型犬がつけている首輪の色が変わっています。" },
+          { "text": "The pet's collar is a different shade than before.", "ja": "ペットの首輪は以前とは違う色合いになっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "スクーターの色が変わっている",
+      "keywords": {
+        "target": ["scooter", "motorcycle", "bike"],
+        "state": ["color", "change"]
+      },
+      "coordinates": { "x": 58, "y": 80, "width": 6, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The scooter is different.", "ja": "スクーターが違います。" },
+          { "text": "The color changed.", "ja": "色が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the parked scooter changed.", "ja": "停まっているスクーターの色が変わりました。" },
+          { "text": "The scooter has a different color now.", "ja": "スクーターは今、違う色になっています。" }
+        ],
+        "high_school": [
+          { "text": "The motor scooter parked on the street has changed its paint color.", "ja": "通りに停められているスクーターの塗装色が変わっています。" },
+          { "text": "The parked vehicle is now a different shade.", "ja": "駐車されている乗り物は現在違う色合いになっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_18",
+      "nameJa": "街灯の先端のデザインが変わっている",
+      "keywords": {
+        "target": ["streetlight", "lamp", "post"],
+        "state": ["design", "top", "change"]
+      },
+      "coordinates": { "x": 62, "y": 55, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The street light is different.", "ja": "街灯が違います。" },
+          { "text": "The top changed.", "ja": "先端が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The design of the streetlight changed.", "ja": "街灯のデザインが変わりました。" },
+          { "text": "The top of the lamp is different.", "ja": "ランプの先端が違います。" }
+        ],
+        "high_school": [
+          { "text": "The decorative finial on top of the street lamp has been altered.", "ja": "街灯の上の装飾的な飾りが変更されています。" },
+          { "text": "The design of the street lighting fixture has changed.", "ja": "街灯の器具のデザインが変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_19",
+      "nameJa": "マンションの窓際にオレンジ色の花が飾られている",
+      "keywords": {
+        "target": ["flower", "window", "apartment", "balcony"],
+        "state": ["orange", "appear", "decorate"]
+      },
+      "coordinates": { "x": 40, "y": 64, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There are orange flowers.", "ja": "オレンジ色の花があります。" },
+          { "text": "The window has flowers.", "ja": "窓に花があります。" }
+        ],
+        "junior_high": [
+          { "text": "Orange flowers appeared at the apartment window.", "ja": "マンションの窓にオレンジ色の花が現れました。" },
+          { "text": "There are orange flowers on the balcony.", "ja": "バルコニーにオレンジ色の花があります。" }
+        ],
+        "high_school": [
+          { "text": "Orange flowers are now decorating the window sill of the apartment building.", "ja": "マンションの窓辺には現在、オレンジ色の花が飾られています。" },
+          { "text": "Potted orange flowers have been placed by the window of the residential building.", "ja": "住宅の建物の窓際に、鉢植えのオレンジ色の花が置かれています。" }
+        ]
+      }
+    }
+  ]
+}

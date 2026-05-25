@@ -248,12 +248,14 @@
                                <span class="text-xs md:text-sm font-bold text-pink-800 z-10">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
                             </button>
 
-                            <button class="btn-stitch bg-gray-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
-                                <div class="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-20 flex items-center justify-center">
-                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
+                            <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100 relative" data-mode="detective">
+    
+                                <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">
+                                     NEW!
                                 </div>
+
                                 <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">DETECTIVE</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-600 z-10">2枚の写真の違いを見つけ出せ<br><span class="text-[11px] md:text-xs">（比較・論理的描写力！）</span></span>
+                                <span class="text-xs md:text-sm font-bold text-blue-800 z-10">2枚の絵の間違いを<br>英語で指摘せよ！<span class="text-[11px] md:text-xs">（主語＋動詞の特訓）</span></span>
                             </button>
                         </div>
                       </div>
@@ -693,6 +695,8 @@
     <script src="js/game.js"></script>  
     <script src="js/ngword_game.js"></script>
     <script src="js/mosaic_game.js"></script>
+    <script src="js/detective_game.js"></script>
+    <script src="js/detective_result.js"></script> 
     <script src="js/main.js"></script>  
 </body>
 </html>

@@ -1,0 +1,446 @@
+{
+  "id": "detective_006",
+  "imageSrc": "assets/images/detective/dete006.webp",
+  "description": "ファストフード店の店内",
+  "descriptionEn": "Inside a fast food restaurant",
+  "totalDifferences": 19,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "窓の外の車が赤色になっている",
+      "keywords": {
+        "target": ["car", "vehicle", "window"],
+        "state": ["red", "change", "park"]
+      },
+      "coordinates": { "x": 19, "y": 66, "width": 6, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The car is red.", "ja": "車が赤色です。" },
+          { "text": "A red car is outside.", "ja": "外に赤い車があります。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the car changed to red.", "ja": "車の色が赤色に変わりました。" },
+          { "text": "There is a red car outside the window.", "ja": "窓の外に赤い車があります。" }
+        ],
+        "high_school": [
+          { "text": "The vehicle parked outside the window has changed its color to red.", "ja": "窓の外に停まっている車の色が赤に変わっています。" },
+          { "text": "A red car can be seen through the glass window.", "ja": "ガラス窓越しに赤い車が見えます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "左側の男性のパーカーが緑色になっている",
+      "keywords": {
+        "target": ["hoodie", "clothes", "man"],
+        "state": ["green", "wear", "change"]
+      },
+      "coordinates": { "x": 13, "y": 76, "width": 7, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His hoodie is green.", "ja": "彼のパーカーは緑色です。" },
+          { "text": "The man wears green.", "ja": "男性は緑色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The man's blue hoodie changed to green.", "ja": "男性の青いパーカーが緑色に変わりました。" },
+          { "text": "He is wearing a green hoodie now.", "ja": "彼は今、緑色のパーカーを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The man sitting on the left is dressed in a green hoodie.", "ja": "左側に座っている男性は緑色のパーカーを着ています。" },
+          { "text": "The outerwear of the man near the window has transitioned to green.", "ja": "窓の近くにいる男性の上着が緑色に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "左側の男性がノートパソコンを使っている",
+      "keywords": {
+        "target": ["laptop", "computer", "man"],
+        "state": ["use", "type", "appear"]
+      },
+      "coordinates": { "x": 5, "y": 77, "width": 6, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is using a computer.", "ja": "彼はコンピューターを使っています。" },
+          { "text": "There is a laptop.", "ja": "ノートパソコンがあります。" }
+        ],
+        "junior_high": [
+          { "text": "The man is typing on a laptop.", "ja": "男性はノートパソコンで文字を打っています。" },
+          { "text": "He is working on his computer now.", "ja": "彼は今、コンピューターで作業をしています。" }
+        ],
+        "high_school": [
+          { "text": "The man has opened a laptop and is typing on the keyboard.", "ja": "男性はノートパソコンを開き、キーボードを打っています。" },
+          { "text": "Instead of just relaxing, he is now operating a laptop computer.", "ja": "ただくつろぐのではなく、彼は現在ノートパソコンを操作しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "左手前の女性のセーターが黄色になっている",
+      "keywords": {
+        "target": ["sweater", "clothes", "woman"],
+        "state": ["yellow", "change", "wear"]
+      },
+      "coordinates": { "x": 24, "y": 82, "width": 8, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her sweater is yellow.", "ja": "彼女のセーターは黄色です。" },
+          { "text": "The woman wears yellow.", "ja": "女性は黄色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman's purple sweater changed to yellow.", "ja": "女性の紫色のセーターが黄色に変わりました。" },
+          { "text": "She is wearing a yellow top now.", "ja": "彼女は今、黄色のトップスを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The woman sitting at the front table has changed her sweater to a yellow one.", "ja": "手前のテーブルに座っている女性は、セーターを黄色のものに変えています。" },
+          { "text": "The female customer is dressed in a bright yellow knit sweater.", "ja": "女性客は鮮やかな黄色のニットセーターを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "左手前の女性がハンバーガーではなくドリンクを持っている",
+      "keywords": {
+        "target": ["cup", "drink", "woman", "hand"],
+        "state": ["hold", "drink", "change"]
+      },
+      "coordinates": { "x": 29, "y": 84, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a cup.", "ja": "彼女はカップを持っています。" },
+          { "text": "The woman is holding a drink.", "ja": "女性は飲み物を持っています。" }
+        ],
+        "junior_high": [
+          { "text": "She is holding a cup instead of a burger.", "ja": "彼女はハンバーガーの代わりにカップを持っています。" },
+          { "text": "The woman changed her food to a drink.", "ja": "女性は食べ物を飲み物に変えました。" }
+        ],
+        "high_school": [
+          { "text": "The woman has put down her hamburger and is now holding a paper cup.", "ja": "女性はハンバーガーを置き、今は紙コップを持っています。" },
+          { "text": "She is grasping a drink cup with both hands instead of a burger.", "ja": "彼女はハンバーガーではなく、ドリンクのカップを両手で握っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "テーブルの上のトレイに赤い箱が置かれている",
+      "keywords": {
+        "target": ["box", "tray", "table", "package"],
+        "state": ["red", "close", "change"]
+      },
+      "coordinates": { "x": 28, "y": 94, "width": 12, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a red box.", "ja": "赤い箱があります。" },
+          { "text": "The tray has a box.", "ja": "トレイに箱が乗っています。" }
+        ],
+        "junior_high": [
+          { "text": "The food on the tray changed to a red box.", "ja": "トレイの上の食べ物が赤い箱に変わりました。" },
+          { "text": "There is a closed red box on the table.", "ja": "テーブルの上に閉じられた赤い箱があります。" }
+        ],
+        "high_school": [
+          { "text": "The items on the tray have been replaced by a single, closed red box.", "ja": "トレイの上の品物が、1つの閉じられた赤い箱に置き換えられています。" },
+          { "text": "The scattered food items are gone, and a red carton sits on the tray.", "ja": "散らばっていた食べ物はなくなり、トレイの上には赤い紙箱が置かれています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "手前の男の子のシャツが青色になっている",
+      "keywords": {
+        "target": ["shirt", "clothes", "boy"],
+        "state": ["blue", "change", "wear"]
+      },
+      "coordinates": { "x": 43, "y": 92, "width": 7, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His shirt is blue.", "ja": "彼のシャツは青色です。" },
+          { "text": "The boy wears blue.", "ja": "男の子は青い服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy's green shirt changed to blue.", "ja": "男の子の緑色のシャツが青色に変わりました。" },
+          { "text": "He is wearing a blue shirt now.", "ja": "彼は今、青いシャツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The young boy sitting with his mother is now dressed in a blue long-sleeved shirt.", "ja": "母親と一緒に座っている幼い男の子は、今は青い長袖のシャツを着ています。" },
+          { "text": "The color of the boy's top has changed from green to blue.", "ja": "男の子のトップスの色が緑から青に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "手前の男の子がハンバーガーを持っている",
+      "keywords": {
+        "target": ["burger", "hamburger", "boy", "hand"],
+        "state": ["hold", "eat", "change"]
+      },
+      "coordinates": { "x": 38, "y": 88, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He is eating a burger.", "ja": "彼はハンバーガーを食べています。" },
+          { "text": "The boy has a hamburger.", "ja": "男の子はハンバーガーを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy is holding a hamburger now.", "ja": "男の子は今、ハンバーガーを持っています。" },
+          { "text": "He is eating a burger instead of a nugget.", "ja": "彼はナゲットの代わりにハンバーガーを食べています。" }
+        ],
+        "high_school": [
+          { "text": "The child is happily holding a hamburger in both hands, getting ready to eat it.", "ja": "子供は嬉しそうに両手でハンバーガーを持ち、食べようとしています。" },
+          { "text": "Instead of pointing, the boy is now holding a burger to his mouth.", "ja": "指を差す代わりに、男の子は今ハンバーガーを口元に持っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "レジ前の女性の服がボーダーシャツになっている",
+      "keywords": {
+        "target": ["shirt", "clothes", "woman", "customer"],
+        "state": ["stripe", "wear", "change"]
+      },
+      "coordinates": { "x": 47, "y": 71, "width": 6, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her shirt is striped.", "ja": "彼女のシャツは縞模様です。" },
+          { "text": "She wears a striped shirt.", "ja": "彼女は縞模様のシャツを着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman's beige coat changed to a striped shirt.", "ja": "女性のベージュのコートがボーダーシャツに変わりました。" },
+          { "text": "She is wearing a striped shirt now.", "ja": "彼女は今、ボーダーシャツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The female customer at the counter is wearing a blue and white striped shirt.", "ja": "レジにいる女性客は青と白のボーダーシャツを着ています。" },
+          { "text": "Her outerwear has changed from a solid coat to a casually striped top.", "ja": "彼女の上着は無地のコートからカジュアルなボーダーのトップスに変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "レジ前の女性のバッグが白いトートバッグになっている",
+      "keywords": {
+        "target": ["bag", "tote", "shoulder"],
+        "state": ["white", "beige", "carry", "change"]
+      },
+      "coordinates": { "x": 48, "y": 75, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her bag is white.", "ja": "彼女のバッグは白色です。" },
+          { "text": "She has a white tote bag.", "ja": "彼女は白いトートバッグを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The brown bag changed to a white tote bag.", "ja": "茶色いバッグが白いトートバッグに変わりました。" },
+          { "text": "She is carrying a white bag on her shoulder.", "ja": "彼女は肩に白いバッグを提げています。" }
+        ],
+        "high_school": [
+          { "text": "The shoulder bag carried by the woman has been replaced with a white canvas tote.", "ja": "女性が提げているショルダーバッグが、白いキャンバストートに置き換えられています。" },
+          { "text": "She has switched her leather bag for a simple beige tote bag.", "ja": "彼女は革のバッグからシンプルなベージュのトートバッグに変えています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "店員が渡しているのが紙袋からドリンクカップになっている",
+      "keywords": {
+        "target": ["cup", "drink", "staff", "customer"],
+        "state": ["hand", "give", "receive", "change"]
+      },
+      "coordinates": { "x": 53, "y": 68, "width": 3, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "It is a cup.", "ja": "それはカップです。" },
+          { "text": "The staff gives a cup.", "ja": "店員がカップを渡しています。" }
+        ],
+        "junior_high": [
+          { "text": "The staff is handing a cup instead of a paper bag.", "ja": "店員は紙袋の代わりにカップを渡しています。" },
+          { "text": "The woman is receiving a drink.", "ja": "女性は飲み物を受け取っています。" }
+        ],
+        "high_school": [
+          { "text": "The cashier is handing over a drink cup rather than a brown paper takeout bag.", "ja": "レジ係は茶色い持ち帰り用紙袋の代わりに、ドリンクのカップを手渡しています。" },
+          { "text": "The item being exchanged across the counter has changed to a paper cup.", "ja": "カウンター越しにやり取りされている品物が紙コップに変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "店員のユニフォームのシャツが青色になっている",
+      "keywords": {
+        "target": ["shirt", "uniform", "staff", "clerk"],
+        "state": ["blue", "wear", "change"]
+      },
+      "coordinates": { "x": 58, "y": 68, "width": 5, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His shirt is blue.", "ja": "彼のシャツは青色です。" },
+          { "text": "The staff wears blue.", "ja": "店員は青い服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The cashier's red shirt changed to blue.", "ja": "レジ係の赤いシャツが青色に変わりました。" },
+          { "text": "The staff is wearing a blue uniform.", "ja": "店員は青いユニフォームを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The uniform polo shirt of the restaurant employee has changed from red to blue.", "ja": "飲食店の従業員のポロシャツのユニフォームが、赤から青に変わっています。" },
+          { "text": "The female cashier is now dressed in a blue short-sleeved uniform.", "ja": "女性のレジ係は現在、青い半袖のユニフォームを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "メニューボードの絵がハンバーガーからチキンナゲットになっている",
+      "keywords": {
+        "target": ["menu", "board", "picture", "nugget"],
+        "state": ["change", "show"]
+      },
+      "coordinates": { "x": 65, "y": 56, "width": 5, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The picture is different.", "ja": "絵が違います。" },
+          { "text": "There are chicken nuggets.", "ja": "チキンナゲットがあります。" }
+        ],
+        "junior_high": [
+          { "text": "The menu picture changed to chicken nuggets.", "ja": "メニューの絵がチキンナゲットに変わりました。" },
+          { "text": "You can see nuggets on the menu board.", "ja": "メニューボードにナゲットが見えます。" }
+        ],
+        "high_school": [
+          { "text": "The display panel on the menu board has been updated to show chicken nuggets.", "ja": "メニューボードの表示パネルが更新され、チキンナゲットが表示されています。" },
+          { "text": "The advertisement for a burger has been swapped with one for nuggets.", "ja": "ハンバーガーの広告がナゲットのものと入れ替わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "一番右のメニューボードのドリンクが紫色になっている",
+      "keywords": {
+        "target": ["menu", "drink", "picture", "board"],
+        "state": ["purple", "change", "show"]
+      },
+      "coordinates": { "x": 82, "y": 55, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The drink is purple.", "ja": "飲み物が紫色です。" },
+          { "text": "The menu has a purple drink.", "ja": "メニューに紫色の飲み物があります。" }
+        ],
+        "junior_high": [
+          { "text": "The drink on the menu changed to purple.", "ja": "メニューの飲み物が紫色に変わりました。" },
+          { "text": "The right menu shows a purple drink.", "ja": "右のメニューは紫色の飲み物を示しています。" }
+        ],
+        "high_school": [
+          { "text": "The beverage displayed on the far-right menu screen has changed its color to purple.", "ja": "一番右のメニュー画面に表示されている飲み物の色が紫色に変わっています。" },
+          { "text": "The promotional image now features a purple iced drink instead of a brown one.", "ja": "プロモーション画像には、茶色ではなく紫色の冷たい飲み物が描かれています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "右側の男性のジャケットが緑色になっている",
+      "keywords": {
+        "target": ["jacket", "shirt", "clothes", "man"],
+        "state": ["green", "wear", "change"]
+      },
+      "coordinates": { "x": 71, "y": 70, "width": 7, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His jacket is green.", "ja": "彼のジャケットは緑色です。" },
+          { "text": "The man wears green.", "ja": "男性は緑色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The man's blue jacket changed to green.", "ja": "男性の青いジャケットが緑色に変わりました。" },
+          { "text": "He is wearing a green jacket now.", "ja": "彼は今、緑色のジャケットを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The man standing at the counter has changed his blue jacket for a green one.", "ja": "カウンターに立っている男性は、青いジャケットを緑色のものに着替えています。" },
+          { "text": "The upper garment of the male customer on the right is now olive green.", "ja": "右側の男性客の上着は現在オリーブグリーンです。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "右側の男性のズボンが焦げ茶色になっている",
+      "keywords": {
+        "target": ["pants", "trousers", "man"],
+        "state": ["dark", "grey", "brown", "change"]
+      },
+      "coordinates": { "x": 71, "y": 82, "width": 6, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His pants are dark.", "ja": "彼のズボンは暗い色です。" },
+          { "text": "The man wears dark pants.", "ja": "男性は暗い色のズボンを穿いています。" }
+        ],
+        "junior_high": [
+          { "text": "His beige pants changed to dark pants.", "ja": "彼のベージュのズボンが暗い色のズボンに変わりました。" },
+          { "text": "He is wearing dark brown trousers.", "ja": "彼は焦げ茶色のズボンを穿いています。" }
+        ],
+        "high_school": [
+          { "text": "The trousers worn by the man at the counter have changed from a light to a dark color.", "ja": "カウンターの男性が穿いているズボンが明るい色から暗い色に変わっています。" },
+          { "text": "He has coordinated his green jacket with dark greyish-brown pants.", "ja": "彼は緑のジャケットにダークグレーがかった茶色のズボンを合わせています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "右側の女の子のパーカーが黄色になっている",
+      "keywords": {
+        "target": ["hoodie", "clothes", "girl"],
+        "state": ["yellow", "change", "wear"]
+      },
+      "coordinates": { "x": 79, "y": 77, "width": 5, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her hoodie is yellow.", "ja": "彼女のパーカーは黄色です。" },
+          { "text": "The girl wears yellow.", "ja": "女の子は黄色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The girl's pink hoodie changed to yellow.", "ja": "女の子のピンクのパーカーが黄色に変わりました。" },
+          { "text": "She is wearing a yellow hoodie now.", "ja": "彼女は今、黄色のパーカーを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The young girl standing next to the man is dressed in a bright yellow hoodie.", "ja": "男性の隣に立っている幼い女の子は、明るい黄色のパーカーを着ています。" },
+          { "text": "The child's outerwear has transitioned from pink to a vibrant yellow.", "ja": "子供の上着がピンクから鮮やかな黄色に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_18",
+      "nameJa": "注文用端末の画面がフライドポテトになっている",
+      "keywords": {
+        "target": ["screen", "kiosk", "display", "machine"],
+        "state": ["fries", "change", "show"]
+      },
+      "coordinates": { "x": 93, "y": 68, "width": 5, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The screen shows fries.", "ja": "画面にポテトが映っています。" },
+          { "text": "The picture is french fries.", "ja": "絵はフライドポテトです。" }
+        ],
+        "junior_high": [
+          { "text": "The screen of the machine changed to french fries.", "ja": "機械の画面がフライドポテトに変わりました。" },
+          { "text": "You can see fries on the display.", "ja": "ディスプレイにポテトが見えます。" }
+        ],
+        "high_school": [
+          { "text": "The digital ordering kiosk is now displaying a large portion of french fries.", "ja": "デジタルの注文端末は現在、大きなフライドポテトを表示しています。" },
+          { "text": "The interactive screen's promotional image has switched from a hamburger to fries.", "ja": "対話型画面のプロモーション画像がハンバーガーからポテトに切り替わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_19",
+      "nameJa": "右側の女の子の靴が紫色になっている",
+      "keywords": {
+        "target": ["shoes", "footwear", "girl"],
+        "state": ["purple", "change", "wear"]
+      },
+      "coordinates": { "x": 78, "y": 88, "width": 3, "height": 3 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her shoes are purple.", "ja": "彼女の靴は紫色です。" },
+          { "text": "The girl wears purple shoes.", "ja": "女の子は紫色の靴を履いています。" }
+        ],
+        "junior_high": [
+          { "text": "The girl's pink shoes changed to purple.", "ja": "女の子のピンク色の靴が紫色に変わりました。" },
+          { "text": "She is wearing purple shoes now.", "ja": "彼女は今、紫色の靴を履いています。" }
+        ],
+        "high_school": [
+          { "text": "The young girl's footwear has changed its color from pink to purple.", "ja": "幼い女の子の靴の色がピンクから紫に変わっています。" },
+          { "text": "She is now sporting a pair of purple sneakers.", "ja": "彼女は現在、紫色のスニーカーを履いています。" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+{
+  "id": "detective_001",
+  "imageSrc": "assets/images/detective/dete001.webp",
+  "description": "公園の間違い探し",
+  "descriptionEn": "Find the differences in the park",
+  "totalDifferences": 8,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "中央下の女の子が黄色のTシャツを着ている",
+      "keywords": {
+        "target": ["girl", "kid", "child", "top"],
+        "state": ["yellow", "shirt", "t-shirt", "wear", "wearing", "change", "changed"]
+      },
+      "coordinates": { "x": 32, "y": 83, "width": 14, "height": 16 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The girl is wearing a yellow shirt.", "ja": "女の子が黄色のシャツを着ています。" },
+          { "text": "Her shirt is yellow now.", "ja": "彼女のシャツは今、黄色です。" }
+        ],
+        "junior_high": [
+          { "text": "The girl changed her shirt to yellow.", "ja": "女の子はシャツを黄色に着替えました。" },
+          { "text": "Her T-shirt was purple, but now it's yellow.", "ja": "彼女のTシャツは紫色でしたが、今は黄色です。" }
+        ],
+        "high_school": [
+          { "text": "Instead of purple, the girl is now wearing a bright yellow T-shirt.", "ja": "紫色の代わりに、女の子は今明るい黄色のTシャツを着ています。" },
+          { "text": "The girl sitting on the grass has changed into a yellow shirt.", "ja": "芝生に座っている女の子は黄色のシャツに着替えました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "左上の男性が青い帽子を被り、新聞を読んでいる",
+      "keywords": {
+        "target": ["man", "guy", "person", "gentleman"],
+        "state": ["bench", "read", "reading", "newspaper", "paper", "news", "hat", "cap", "blue", "change"]
+      },
+      "coordinates": { "x": 26, "y": 68, "width": 14, "height": 22 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The man is wearing a blue cap and reading a newspaper.", "ja": "男性は青い帽子を被り、新聞を読んでいます。" },
+          { "text": "He is reading the news.", "ja": "彼はニュースを読んでいます。" }
+        ],
+        "junior_high": [
+          { "text": "The man on the bench is wearing a blue cap and reading a newspaper.", "ja": "ベンチの男性は青い帽子を被り、新聞を読んでいます。" },
+          { "text": "He is reading a newspaper instead of a book.", "ja": "彼は本の代わりに新聞を読んでいます。" }
+        ],
+        "high_school": [
+          { "text": "The man sitting on the bench has put on a blue cap and switched from reading a book to a newspaper.", "ja": "ベンチに座っている男性は青い帽子を被り、本を読むことから新聞に切り替えました。" },
+          { "text": "Instead of holding a red book, the man is now engrossed in a newspaper, wearing a blue cap.", "ja": "赤い本を持つ代わりに、男性は青い帽子を被り、新聞に夢中になっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "中央の犬の首輪が青色になっている",
+      "keywords": {
+        "target": ["dog", "puppy", "pet", "animal"],
+        "state": ["collar", "neck", "blue", "wear", "wearing", "change", "changed"]
+      },
+      "coordinates": { "x": 44, "y": 88, "width": 8, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The dog has a blue collar.", "ja": "犬は青い首輪をしています。" },
+          { "text": "The dog's collar is blue.", "ja": "犬の首輪は青色です。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the dog's collar changed to blue.", "ja": "犬の首輪の色が青色に変わりました。" },
+          { "text": "The dog's collar is blue, not red.", "ja": "犬の首輪は赤ではなく青です。" }
+        ],
+        "high_school": [
+          { "text": "The dog in the center is now wearing a blue collar instead of a red one.", "ja": "中央の犬は、赤い首輪の代わりに青い首輪をしています。" },
+          { "text": "Notice the dog's collar; it has changed from red to a light blue.", "ja": "犬の首輪に注目してください。赤から水色に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "中央の花壇横の看板がハートの絵",
+      "keywords": {
+        "target": ["sign", "board", "signboard"],
+        "state": ["heart", "shape", "love", "picture", "drawing", "illustration", "change", "changed"]
+      },
+      "coordinates": { "x": 52, "y": 72, "width": 8, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The sign has a heart.", "ja": "看板にはハートがあります。" },
+          { "text": "I see a heart on the sign.", "ja": "看板にハートが見えます。" }
+        ],
+        "junior_high": [
+          { "text": "The picture on the sign changed to a heart.", "ja": "看板の絵がハートに変わりました。" },
+          { "text": "There is a heart mark on the wooden sign.", "ja": "木の看板にハートマークがあります。" }
+        ],
+        "high_school": [
+          { "text": "The illustration on the signboard has changed from flowers to a heart shape.", "ja": "看板のイラストが花からハート型に変わりました。" },
+          { "text": "Instead of flowers, the wooden sign now features a painted heart.", "ja": "花の代わりに、木の看板にはハートが描かれています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "花壇の女性が植えている花がピンク色になっている",
+      "keywords": {
+        "target": ["flower", "flowers", "woman", "lady"],
+        "state": ["pink", "color", "plant", "planting", "change", "changed"]
+      },
+      "coordinates": { "x": 12, "y": 92, "width": 14, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flowers are pink.", "ja": "花はピンク色です。" },
+          { "text": "She is planting pink flowers.", "ja": "彼女はピンクの花を植えています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is planting pink flowers instead of yellow ones.", "ja": "女性は黄色の花の代わりにピンクの花を植えています。" },
+          { "text": "The color of the flowers changed to pink.", "ja": "花の色がピンク色に変わりました。" }
+        ],
+        "high_school": [
+          { "text": "The flowers the woman is planting have changed from yellow to pink.", "ja": "女性が植えている花が黄色からピンクに変わりました。" },
+          { "text": "The woman tending to the flowerbed is now handling pink flowers.", "ja": "花壇の手入れをしている女性は、今ピンクの花を扱っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "歩いている女性のバッグがピンク色になっている",
+      "keywords": {
+        "target": ["bag", "purse", "shoulder bag", "woman", "lady"],
+        "state": ["pink", "carry", "carrying", "walk", "walking", "color", "change"]
+      },
+      "coordinates": { "x": 81, "y": 76, "width": 10, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The woman has a pink bag.", "ja": "女性はピンクのバッグを持っています。" },
+          { "text": "She is carrying a pink bag.", "ja": "彼女はピンクのバッグを運んでいます。" }
+        ],
+        "junior_high": [
+          { "text": "The woman walking is carrying a pink bag.", "ja": "歩いている女性はピンク of バッグを持っています。" },
+          { "text": "She has a pink shoulder bag now.", "ja": "彼女は今、ピンクのショルダーバッグを持っています。" }
+        ],
+        "high_school": [
+          { "text": "The woman walking on the right is now carrying a pink shoulder bag instead of a yellow one.", "ja": "右側を歩いている女性は、黄色の代わりにピンクのショルダーバッグを持っています。" },
+          { "text": "The bag slung over the woman's shoulder has changed its color to pink.", "ja": "女性の肩に掛けられたバッグの色がピンクに変わりました。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "奥の滑り台が緑色になっている",
+      "keywords": {
+        "target": ["slide", "playground", "equipment"],
+        "state": ["green", "color", "change", "changed"]
+      },
+      "coordinates": { "x": 74, "y": 65, "width": 10, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The slide is green.", "ja": "滑り台は緑色です。" },
+          { "text": "The park has a green slide.", "ja": "公園には緑色の滑り台があります。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the slide changed to green.", "ja": "滑り台の色が緑色に変わりました。" },
+          { "text": "There is a green slide, not a blue one.", "ja": "青色ではなく、緑色の滑り台があります。" }
+        ],
+        "high_school": [
+          { "text": "The slide in the background has changed its color from blue to green.", "ja": "背景にある滑り台の色が青から緑に変わりました。" },
+          { "text": "The playground equipment, specifically the slide, is now painted green.", "ja": "遊具、特に滑り台が緑色に塗られています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "右下の池に黄色いアヒルが追加されている",
+      "keywords": {
+        "target": ["duck", "duckling", "bird"],
+        "state": ["yellow", "pond", "water", "swim", "swimming", "appear", "add", "added"]
+      },
+      "coordinates": { "x": 96, "y": 91, "width": 6, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a yellow duck.", "ja": "黄色いアヒルがいます。" },
+          { "text": "A yellow duck is in the water.", "ja": "黄色いアヒルが水の中にいます。" }
+        ],
+        "junior_high": [
+          { "text": "There is a yellow duck swimming in the pond.", "ja": "池で泳いでいる黄色いアヒルがいます。" },
+          { "text": "A yellow duck appeared in the water.", "ja": "黄色いアヒルが水の中に現れました。" }
+        ],
+        "high_school": [
+          { "text": "A small yellow duck has appeared in the pond along with the other ducks.", "ja": "他のカモと一緒に、小さな黄色いアヒルが池に現れました。" },
+          { "text": "In the bottom right corner, a yellow duckling was added to the pond.", "ja": "右下隅の池に、黄色いアヒルの子が追加されました。" }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,400 @@
+{
+  "id": "detective_004",
+  "imageSrc": "assets/images/detective/dete004.webp",
+  "description": "駅の改札口とコンコースの風景",
+  "descriptionEn": "Scenery of a station ticket gate and concourse",
+  "totalDifferences": 17,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "左側のポスターが夏のひまわりのデザインになっている",
+      "keywords": {
+        "target": ["poster", "picture", "sign"],
+        "state": ["change", "summer", "sunflower"]
+      },
+      "coordinates": { "x": 18, "y": 64, "width": 7, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The poster is different.", "ja": "ポスターが違います。" },
+          { "text": "There are sunflowers.", "ja": "ひまわりがあります。" }
+        ],
+        "junior_high": [
+          { "text": "The poster on the wall changed to a summer picture.", "ja": "壁のポスターが夏の絵に変わりました。" },
+          { "text": "The picture shows sunflowers instead of cherry blossoms.", "ja": "絵は桜の代わりにひまわりを示しています。" }
+        ],
+        "high_school": [
+          { "text": "The poster on the wall has been replaced with one featuring a summer sunflower design.", "ja": "壁のポスターは、夏のひまわりがデザインされたものに貼り替えられています。" },
+          { "text": "The seasonal advertisement has changed from spring to summer.", "ja": "季節の広告が春から夏に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "ベンチに座っている男性がジャケットを脱いでシャツ姿になっている",
+      "keywords": {
+        "target": ["man", "clothes", "shirt"],
+        "state": ["white", "change", "wear"]
+      },
+      "coordinates": { "x": 16, "y": 79, "width": 7, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The man wears a white shirt.", "ja": "男性は白いシャツを着ています。" },
+          { "text": "His clothes are different.", "ja": "彼の服が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The man on the bench took off his jacket.", "ja": "ベンチの男性はジャケットを脱ぎました。" },
+          { "text": "He is wearing a white shirt now.", "ja": "彼は今、白いシャツを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The man sitting on the bench is now in his shirt sleeves.", "ja": "ベンチに座っている男性は今、シャツ姿になっています。" },
+          { "text": "He has taken off his suit jacket and is wearing only a white shirt.", "ja": "彼はスーツのジャケットを脱ぎ、白いシャツだけを着ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "ベンチに座っている男性がスマートフォンの画面を見ている",
+      "keywords": {
+        "target": ["man", "smartphone", "phone", "newspaper"],
+        "state": ["look", "read", "change"]
+      },
+      "coordinates": { "x": 18, "y": 79, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He has a smartphone.", "ja": "彼はスマートフォンを持っています。" },
+          { "text": "The man is looking at his phone.", "ja": "男性は電話を見ています。" }
+        ],
+        "junior_high": [
+          { "text": "The man is using his smartphone instead of reading a newspaper.", "ja": "男性は新聞を読む代わりにスマートフォンを使っています。" },
+          { "text": "He stopped reading the newspaper.", "ja": "彼は新聞を読むのをやめました。" }
+        ],
+        "high_school": [
+          { "text": "The man on the bench has switched from reading a newspaper to checking his smartphone.", "ja": "ベンチの男性は、新聞を読むことからスマートフォンを確認することに切り替えました。" },
+          { "text": "He is absorbed in looking at the screen of his mobile device.", "ja": "彼はモバイル端末の画面を見ることに夢中になっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "ベンチの左側に黒いバッグが置かれている",
+      "keywords": {
+        "target": ["bag", "backpack", "bench"],
+        "state": ["appear", "black", "put"]
+      },
+      "coordinates": { "x": 10, "y": 84, "width": 6, "height": 7 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a black bag.", "ja": "黒いバッグがあります。" },
+          { "text": "A bag is on the bench.", "ja": "バッグがベンチの上にあります。" }
+        ],
+        "junior_high": [
+          { "text": "A black bag appeared on the bench.", "ja": "黒いバッグがベンチに現れました。" },
+          { "text": "There is a black backpack next to the man.", "ja": "男性の隣に黒いリュックサックがあります。" }
+        ],
+        "high_school": [
+          { "text": "A black bag has been placed on the unoccupied side of the bench.", "ja": "ベンチの空いている側に黒いバッグが置かれています。" },
+          { "text": "You can see a dark backpack resting on the wooden bench.", "ja": "木製のベンチに暗い色のバックパックが置かれているのが見えます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "駅員さんがお辞儀をしている",
+      "keywords": {
+        "target": ["station attendant", "staff", "man"],
+        "state": ["bow", "change", "pose"]
+      },
+      "coordinates": { "x": 27, "y": 73, "width": 6, "height": 16 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The station staff is bowing.", "ja": "駅員さんがお辞儀をしています。" },
+          { "text": "His pose is different.", "ja": "彼のポーズが違います。" }
+        ],
+        "junior_high": [
+          { "text": "The station attendant is bowing to the passengers.", "ja": "駅員さんは乗客にお辞儀をしています。" },
+          { "text": "He changed his pose and bowed.", "ja": "彼はポーズを変えてお辞儀をしました。" }
+        ],
+        "high_school": [
+          { "text": "The station attendant standing by the ticket gates is bowing politely.", "ja": "改札のそばに立っている駅員が丁寧にお辞儀をしています。" },
+          { "text": "Instead of raising his hand, the attendant is bending forward in a bow.", "ja": "駅員は手を挙げる代わりに、前かがみになってお辞儀をしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "頭上の案内板の右側が京浜東北線（水色）になっている",
+      "keywords": {
+        "target": ["sign", "board", "display"],
+        "state": ["blue", "change", "different"]
+      },
+      "coordinates": { "x": 50, "y": 53, "width": 11, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The sign is blue.", "ja": "案内板が青色です。" },
+          { "text": "The line name is different.", "ja": "路線の名前が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The overhead sign changed to the Keihin-Tohoku Line.", "ja": "頭上の案内板が京浜東北線に変わりました。" },
+          { "text": "The orange sign turned light blue.", "ja": "オレンジ色の案内板が水色になりました。" }
+        ],
+        "high_school": [
+          { "text": "The sign indicating platforms 3 and 4 now shows the Keihin-Tohoku Line instead of the Chuo Line.", "ja": "3・4番線を示す案内板が、中央線ではなく京浜東北線を表示しています。" },
+          { "text": "The color and the text on the right side of the directional sign have been altered.", "ja": "方向案内板の右側の色と文字が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "電光掲示板の時刻や番線の表示が変わっている",
+      "keywords": {
+        "target": ["display", "screen", "time", "board"],
+        "state": ["change", "different"]
+      },
+      "coordinates": { "x": 43, "y": 60, "width": 12, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The times are different.", "ja": "時間が違います。" },
+          { "text": "The electronic board changed.", "ja": "電光掲示板が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The times shown on the departure board have changed.", "ja": "出発案内板に表示されている時刻が変わりました。" },
+          { "text": "The numbers on the digital display are different.", "ja": "デジタル表示の数字が違います。" }
+        ],
+        "high_school": [
+          { "text": "The departure times and track numbers on the electronic bulletin board have been updated.", "ja": "電光掲示板の出発時刻と発着番線が更新されています。" },
+          { "text": "The schedule displayed on the monitor above the ticket gates is slightly different.", "ja": "改札上のモニターに表示されているスケジュールがわずかに異なります。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "改札に向かう男性がスーツケースを引いている",
+      "keywords": {
+        "target": ["man", "suitcase", "baggage", "luggage"],
+        "state": ["pull", "carry", "change"]
+      },
+      "coordinates": { "x": 48, "y": 84, "width": 5, "height": 11 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He has a suitcase.", "ja": "彼はスーツケースを持っています。" },
+          { "text": "The man is pulling a bag.", "ja": "男性はカバンを引いています。" }
+        ],
+        "junior_high": [
+          { "text": "The businessman is pulling a suitcase now.", "ja": "ビジネスマンは今、スーツケースを引いています。" },
+          { "text": "His bag changed to a suitcase.", "ja": "彼のカバンがスーツケースに変わりました。" }
+        ],
+        "high_school": [
+          { "text": "The man walking towards the ticket gates is now pulling a wheeled suitcase.", "ja": "改札に向かって歩いている男性は、車輪付きのスーツケースを引いています。" },
+          { "text": "Instead of carrying a briefcase, he is rolling a piece of luggage behind him.", "ja": "彼はブリーフケースを持つ代わりに、後ろに荷物を転がしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "きっぷうりばの看板が青色になっている",
+      "keywords": {
+        "target": ["sign", "ticket office", "board"],
+        "state": ["blue", "change"]
+      },
+      "coordinates": { "x": 71, "y": 57, "width": 8, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The sign is blue.", "ja": "看板が青色です。" },
+          { "text": "The ticket sign changed.", "ja": "切符の看板が変わりました。" }
+        ],
+        "junior_high": [
+          { "text": "The sign for the ticket machines changed to blue.", "ja": "券売機の看板が青色に変わりました。" },
+          { "text": "The green sign became a blue sign.", "ja": "緑の看板が青い看板になりました。" }
+        ],
+        "high_school": [
+          { "text": "The overhead sign indicating the ticket office has changed its background color to blue.", "ja": "きっぷ売り場を示す頭上の看板の背景色が青に変わっています。" },
+          { "text": "The color of the signage above the ticket vending machines has been altered.", "ja": "自動券売機の上のサインの色が変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "券売機の前の男性が緑色の上着を着ている",
+      "keywords": {
+        "target": ["man", "clothes", "jacket"],
+        "state": ["green", "change", "wear"]
+      },
+      "coordinates": { "x": 72, "y": 71, "width": 5, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His jacket is green.", "ja": "彼の上着は緑色です。" },
+          { "text": "The man wears green clothes.", "ja": "男性は緑色の服を着ています。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the man's clothes changed to green.", "ja": "男性の服の色が緑色に変わりました。" },
+          { "text": "The man buying a ticket is wearing a green jacket.", "ja": "切符を買っている男性は緑のジャケットを着ています。" }
+        ],
+        "high_school": [
+          { "text": "The man standing in front of the ticket machine is dressed in an olive green jacket.", "ja": "券売機の前に立っている男性は、オリーブグリーンのジャケットを着ています。" },
+          { "text": "The outerwear of the passenger purchasing a ticket has changed from navy to green.", "ja": "切符を購入している乗客の上着が紺色から緑色に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "右側の女性が紙のコーヒーカップを持っている",
+      "keywords": {
+        "target": ["woman", "drink", "cup", "coffee"],
+        "state": ["hold", "change"]
+      },
+      "coordinates": { "x": 79, "y": 73, "width": 3, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She has a coffee cup.", "ja": "彼女はコーヒーカップを持っています。" },
+          { "text": "The drink is different.", "ja": "飲み物が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is holding a paper coffee cup.", "ja": "女性は紙のコーヒーカップを持っています。" },
+          { "text": "She changed her drink from a can to a cup.", "ja": "彼女は飲み物を缶からカップに変えました。" }
+        ],
+        "high_school": [
+          { "text": "The woman in the purple top is holding a paper coffee cup in her right hand.", "ja": "紫のトップスを着た女性は、右手に紙製のコーヒーカップを持っています。" },
+          { "text": "Instead of a green can, she is now carrying a takeaway coffee.", "ja": "緑色の缶の代わりに、彼女は今テイクアウトのコーヒーを持っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "右側の女性のバッグが黄色になっている",
+      "keywords": {
+        "target": ["bag", "tote", "woman"],
+        "state": ["yellow", "change", "carry"]
+      },
+      "coordinates": { "x": 76, "y": 77, "width": 5, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her bag is yellow.", "ja": "彼女のバッグは黄色です。" },
+          { "text": "She has a yellow bag.", "ja": "彼女は黄色いバッグを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The white bag changed to a yellow one.", "ja": "白いバッグが黄色いものに変わりました。" },
+          { "text": "The woman is carrying a yellow tote bag on her arm.", "ja": "女性は腕に黄色いトートバッグを提げています。" }
+        ],
+        "high_school": [
+          { "text": "The tote bag hanging from the woman's arm has changed its color to yellow.", "ja": "女性の腕に掛かっているトートバッグの色が黄色に変わっています。" },
+          { "text": "She is carrying a brightly colored yellow bag instead of a white one.", "ja": "彼女は白ではなく、鮮やかな黄色のバッグを持ち歩いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_13",
+      "nameJa": "女の子が手ぶらで指を差している",
+      "keywords": {
+        "target": ["girl", "child", "finger"],
+        "state": ["point", "change"]
+      },
+      "coordinates": { "x": 85, "y": 80, "width": 6, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The girl is pointing.", "ja": "女の子が指を差しています。" },
+          { "text": "She has no ticket.", "ja": "彼女は切符を持っていません。" }
+        ],
+        "junior_high": [
+          { "text": "The little girl is pointing at something.", "ja": "小さな女の子が何かを指差しています。" },
+          { "text": "She is not holding a ticket anymore.", "ja": "彼女はもう切符を持っていません。" }
+        ],
+        "high_school": [
+          { "text": "The young girl has raised her arm and is pointing towards the ticket gates.", "ja": "幼い女の子は腕を上げ、改札口の方を指差しています。" },
+          { "text": "The ticket she was holding is gone, and she is making a pointing gesture instead.", "ja": "持っていた切符はなくなり、代わりに指を差すしぐさをしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "右上のKIOSKの看板が緑色になっている",
+      "keywords": {
+        "target": ["sign", "kiosk", "store"],
+        "state": ["green", "change"]
+      },
+      "coordinates": { "x": 90, "y": 53, "width": 16, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The KIOSK sign is green.", "ja": "キオスクの看板が緑色です。" },
+          { "text": "The sign's color is different.", "ja": "看板の色が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The blue KIOSK sign changed to green.", "ja": "青いKIOSKの看板が緑色に変わりました。" },
+          { "text": "The store on the right has a green sign.", "ja": "右側のお店には緑色の看板があります。" }
+        ],
+        "high_school": [
+          { "text": "The signboard above the station convenience store has been repainted in green.", "ja": "駅のコンビニエンスストアの上の看板が緑色に塗り直されています。" },
+          { "text": "The color scheme of the KIOSK sign has transitioned from blue to green.", "ja": "KIOSKの看板の配色が青から緑に変化しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "右端の男性が地図を持たずにスーツケースを引いて歩いている",
+      "keywords": {
+        "target": ["man", "suitcase", "map", "luggage"],
+        "state": ["walk", "pull", "change"]
+      },
+      "coordinates": { "x": 91, "y": 80, "width": 10, "height": 18 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The man is walking.", "ja": "男性が歩いています。" },
+          { "text": "He pulls a suitcase.", "ja": "彼はスーツケースを引いています。" }
+        ],
+        "junior_high": [
+          { "text": "The older man is pulling a suitcase and walking away.", "ja": "年配の男性はスーツケースを引いて歩き去っています。" },
+          { "text": "He is not looking at the map anymore.", "ja": "彼はもう地図を見ていません。" }
+        ],
+        "high_school": [
+          { "text": "The elderly gentleman has put away his map and is now walking with his suitcase.", "ja": "初老の紳士は地図をしまい、スーツケースを引いて歩いています。" },
+          { "text": "Instead of standing still to read, the man on the right is proceeding with his luggage.", "ja": "右側の男性は立ち止まって読むのではなく、荷物を持って進んでいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "券売機の前の男性のカバンがベージュ色になっている",
+      "keywords": {
+        "target": ["bag", "backpack", "man"],
+        "state": ["beige", "brown", "change", "color"]
+      },
+      "coordinates": { "x": 72, "y": 74, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His bag is beige.", "ja": "彼のカバンはベージュ色です。" },
+          { "text": "The color of the bag is different.", "ja": "カバンの色が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The man's black backpack changed to beige.", "ja": "男性の黒いリュックサックがベージュに変わりました。" },
+          { "text": "He is wearing a beige backpack now.", "ja": "彼は今、ベージュ色のリュックサックを背負っています。" }
+        ],
+        "high_school": [
+          { "text": "The backpack worn by the man at the ticket machine has changed its color from black to beige.", "ja": "券売機にいる男性が背負っているバックパックの色が黒からベージュに変わっています。" },
+          { "text": "The man purchasing a ticket is carrying a beige backpack.", "ja": "切符を購入している男性は、ベージュのバックパックを背負っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_17",
+      "nameJa": "自動販売機の下部にある広告のデザインが変わっている",
+      "keywords": {
+        "target": ["advertisement", "ad", "vending machine", "panel"],
+        "state": ["change", "different", "picture"]
+      },
+      "coordinates": { "x": 5, "y": 78, "width": 7, "height": 7 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The picture is different.", "ja": "絵が違います。" },
+          { "text": "The vending machine has a different ad.", "ja": "自動販売機の広告が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The advertisement on the vending machine changed.", "ja": "自動販売機の広告が変わりました。" },
+          { "text": "The picture at the bottom is different.", "ja": "下にある絵が違います。" }
+        ],
+        "high_school": [
+          { "text": "The advertisement panel at the bottom of the vending machine displays a different image.", "ja": "自動販売機の下部にある広告パネルが違う画像を表示しています。" },
+          { "text": "The scenery pictured on the lower part of the vending machine has been altered.", "ja": "自動販売機の下部に描かれた風景が変更されています。" }
+        ]
+      }
+    }
+  ]
+}

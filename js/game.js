@@ -167,6 +167,37 @@ window.handleSpeechResult = function(finalText, interimText) {
             }
         }
     }
+    // ★追加: DETECTIVEモードの進行
+    if (window.appState && window.appState.selectedMode === 'detective') {
+        if (typeof window.DetectiveGame !== 'undefined') {
+            const foundDiffs = window.DetectiveGame.checkSpeech(currentTempText);
+            if (foundDiffs && foundDiffs.length > 0) {
+                // 見つけた瞬間に「ピコン！」と音を鳴らす
+                if (typeof playSound === 'function') playSound('match');
+            }
+        }
+    }
+
+    // ★修正: DETECTIVE以外のモードなら、従来の採点を走らせる
+    if (window.appState.selectedMode !== 'detective' && currentTempText.trim().length > 0 && window.currentTheme) {
+        const result = calculateScore(currentTempText, window.currentTheme, window.appState.selectedLevel);
+        if (result && result.addedPoints > 0) {
+            // (従来のスコア更新やピン落としの処理がそのまま入ります)
+            if(scoreDisplay) scoreDisplay.textContent = result.score;
+            const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
+            if(liveCompletionBar && liveCompletionText) {
+                liveCompletionBar.style.width = `${stats.completionRate}%`; 
+                liveCompletionText.textContent = `${stats.completionRate}%`;
+            }
+            if (result.newWords && result.newWords.length > 0) result.newWords.forEach(word => { window.dropPin(word, window.currentTheme); });
+            
+            if (typeof playSound === 'function') {
+                if (result.isPerfect) { playSound('perfect'); window.showPerfectAnimation(result.addedPoints); }
+                else if (parseFloat(result.multiplier) > 1.0) { playSound('combo'); window.showComboAnimation(result.multiplier, result.addedPoints); }
+                else { playSound('match'); }
+            }
+        }
+    }
     
     let highlightedHTML = window.highlightGlobalText(currentTempText);
     if(transcriptBox) {

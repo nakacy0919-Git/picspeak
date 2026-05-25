@@ -1,0 +1,331 @@
+{
+  "id": "detective_003",
+  "imageSrc": "assets/images/detective/dete003.webp",
+  "description": "学校の校庭で遊ぶ子供たち",
+  "descriptionEn": "Children playing in the schoolyard",
+  "totalDifferences": 14,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "先生が青いバインダーを持っている",
+      "keywords": {
+        "target": ["teacher", "woman", "clipboard", "binder"],
+        "state": ["hold", "carry", "blue", "change"]
+      },
+      "coordinates": { "x": 17, "y": 71, "width": 8, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The teacher has a blue clipboard.", "ja": "先生は青いバインダーを持っています。" },
+          { "text": "She is holding a clipboard.", "ja": "彼女はバインダーを持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The teacher is holding a blue clipboard instead of an ID card.", "ja": "先生はIDカードの代わりに青いバインダーを持っています。" },
+          { "text": "The woman changed what she is holding.", "ja": "女性は持っているものを変えました。" }
+        ],
+        "high_school": [
+          { "text": "The teacher standing on the left is holding a blue clipboard in her hands.", "ja": "左に立っている先生は、両手で青いバインダーを持っています。" },
+          { "text": "Instead of wearing a name tag, the teacher is now carrying a blue clipboard.", "ja": "名札を下げる代わりに、先生は今、青いバインダーを持っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "学校の屋根が緑色になっている",
+      "keywords": {
+        "target": ["roof", "school", "building"],
+        "state": ["green", "change", "become"]
+      },
+      "coordinates": { "x": 33, "y": 54, "width": 30, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The roof is green.", "ja": "屋根が緑色です。" },
+          { "text": "The school has a green roof.", "ja": "学校の屋根は緑色です。" }
+        ],
+        "junior_high": [
+          { "text": "The color of the school roof changed to green.", "ja": "学校の屋根の色が緑色に変わりました。" },
+          { "text": "The red roof became a green roof.", "ja": "赤い屋根が緑色の屋根になりました。" }
+        ],
+        "high_school": [
+          { "text": "The roof of the school building in the background has been painted green.", "ja": "背景にある学校の建物の屋根が緑色に塗られています。" },
+          { "text": "The school building now features a green roof instead of a red one.", "ja": "学校の建物は現在、赤ではなく緑の屋根になっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "学校の時計が12時を指している",
+      "keywords": {
+        "target": ["clock", "time", "school"],
+        "state": ["change", "show", "twelve"]
+      },
+      "coordinates": { "x": 37, "y": 55, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The clock shows twelve.", "ja": "時計は12時を指しています。" },
+          { "text": "The time is different.", "ja": "時間が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The clock on the school shows twelve o'clock.", "ja": "学校の時計は12時を指しています。" },
+          { "text": "The time on the clock changed.", "ja": "時計の時間が変わりました。" }
+        ],
+        "high_school": [
+          { "text": "The clock mounted on the school building is pointing exactly to twelve o'clock.", "ja": "学校の建物に設置された時計は、ちょうど12時を指しています。" },
+          { "text": "The time displayed on the school's clock has advanced to noon.", "ja": "学校の時計に表示されている時間は正午に進んでいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "空に青い鳥が飛んでいる",
+      "keywords": {
+        "target": ["bird", "sky", "animal"],
+        "state": ["blue", "fly", "appear"]
+      },
+      "coordinates": { "x": 45, "y": 53, "width": 4, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "There is a blue bird.", "ja": "青い鳥がいます。" },
+          { "text": "A bird is flying.", "ja": "鳥が飛んでいます。" }
+        ],
+        "junior_high": [
+          { "text": "A blue bird appeared in the sky.", "ja": "空に青い鳥が現れました。" },
+          { "text": "You can see a blue bird flying near the school.", "ja": "学校の近くを飛んでいる青い鳥が見えます。" }
+        ],
+        "high_school": [
+          { "text": "A small blue bird has appeared, flying above the school building.", "ja": "小さな青い鳥が現れ、学校の建物の少し上を飛んでいます。" },
+          { "text": "There is a blue bird soaring through the sky that wasn't there before.", "ja": "以前はいなかった青い鳥が空を舞っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "緑色の服の男の子がボールを蹴っている",
+      "keywords": {
+        "target": ["boy", "ball", "soccer"],
+        "state": ["green", "kick", "change"]
+      },
+      "coordinates": { "x": 35, "y": 82, "width": 18, "height": 14 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The boy in green is kicking the ball.", "ja": "緑色の服の男の子がボールを蹴っています。" },
+          { "text": "He kicks the soccer ball.", "ja": "彼がサッカーボールを蹴ります。" }
+        ],
+        "junior_high": [
+          { "text": "The boy wearing a green shirt is kicking the ball now.", "ja": "今は緑色のシャツを着た男の子がボールを蹴っています。" },
+          { "text": "The position of the soccer ball changed.", "ja": "サッカーボールの位置が変わりました。" }
+        ],
+        "high_school": [
+          { "text": "The boy dressed in green has taken over kicking the soccer ball.", "ja": "緑色の服を着た男の子が、サッカーボールを蹴るのを代わっています。" },
+          { "text": "Instead of the boy in blue, the boy in the green shirt is about to kick the ball.", "ja": "青い服の男の子ではなく、緑のシャツの男の子がボールを蹴ろうとしています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "中央の大きな時計の時間が10時5分になっている",
+      "keywords": {
+        "target": ["clock", "time"],
+        "state": ["change", "show", "ten"]
+      },
+      "coordinates": { "x": 54, "y": 56, "width": 7, "height": 8 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The big clock is different.", "ja": "大きな時計が違います。" },
+          { "text": "It is ten five.", "ja": "時間は10時5分です。" }
+        ],
+        "junior_high": [
+          { "text": "The time on the big clock changed.", "ja": "大きな時計の時間が変わりました。" },
+          { "text": "The big clock shows five past ten.", "ja": "大きな時計は10時5分を指しています。" }
+        ],
+        "high_school": [
+          { "text": "The large clock on the pole indicates that it is five minutes past ten.", "ja": "ポールにある大きな時計は、10時5分であることを示しています。" },
+          { "text": "The hands of the large playground clock have moved to show a different time.", "ja": "校庭の大きな時計の針が動き、違う時間を示しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "空の雲が1つ消えている",
+      "keywords": {
+        "target": ["cloud", "sky"],
+        "state": ["disappear", "miss", "gone"]
+      },
+      "coordinates": { "x": 63, "y": 54, "width": 8, "height": 5 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "A cloud is gone.", "ja": "雲がなくなりました。" },
+          { "text": "There is no cloud here.", "ja": "ここに雲はありません。" }
+        ],
+        "junior_high": [
+          { "text": "One of the clouds in the sky disappeared.", "ja": "空の雲の1つが消えました。" },
+          { "text": "The cloud above the slide is missing.", "ja": "すべり台の上の雲がありません。" }
+        ],
+        "high_school": [
+          { "text": "The white cloud that was floating near the center of the sky has completely disappeared.", "ja": "空の中央付近に浮かんでいた白い雲が完全に消えています。" },
+          { "text": "Looking at the sky, there is one less cloud than before.", "ja": "空を見ると、以前より雲が1つ減っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "女の子が縄跳びを地面に置いて立っている",
+      "keywords": {
+        "target": ["girl", "rope", "jump rope"],
+        "state": ["stand", "stop", "ground"]
+      },
+      "coordinates": { "x": 53, "y": 83, "width": 10, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The girl is standing.", "ja": "女の子は立っています。" },
+          { "text": "The rope is on the ground.", "ja": "縄が地面にあります。" }
+        ],
+        "junior_high": [
+          { "text": "The girl stopped jumping rope.", "ja": "女の子は縄跳びをやめました。" },
+          { "text": "She is standing with her jump rope on the ground.", "ja": "彼女は縄跳びを地面に置いて立っています。" }
+        ],
+        "high_school": [
+          { "text": "The girl has stopped jumping and is standing still with the rope resting on the ground.", "ja": "女の子は跳ぶのをやめ、縄を地面に置いたままじっと立っています。" },
+          { "text": "Instead of jumping, she is now simply holding the handles of the jump rope.", "ja": "彼女は跳ぶ代わりに、今はただ縄跳びの持ち手を握っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_10",
+      "nameJa": "すべり台が黄色になっている",
+      "keywords": {
+        "target": ["slide", "playground"],
+        "state": ["yellow", "change"]
+      },
+      "coordinates": { "x": 67, "y": 68, "width": 12, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The slide is yellow.", "ja": "すべり台が黄色です。" },
+          { "text": "It is a yellow slide.", "ja": "それは黄色いすべり台です。" }
+        ],
+        "junior_high": [
+          { "text": "The blue slide changed to yellow.", "ja": "青いすべり台が黄色に変わりました。" },
+          { "text": "The color of the slide is yellow now.", "ja": "すべり台の色は今、黄色です。" }
+        ],
+        "high_school": [
+          { "text": "The slide in the playground has been repainted from blue to yellow.", "ja": "遊び場のすべり台が青から黄色に塗り直されています。" },
+          { "text": "The main part of the slide has changed its color to a bright yellow.", "ja": "すべり台のメイン部分の色が明るい黄色に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_11",
+      "nameJa": "女の子の水筒が白色になっている",
+      "keywords": {
+        "target": ["bottle", "water bottle", "girl"],
+        "state": ["white", "change", "hold"]
+      },
+      "coordinates": { "x": 67, "y": 84, "width": 4, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "Her bottle is white.", "ja": "彼女の水筒は白色です。" },
+          { "text": "She has a white bottle.", "ja": "彼女は白い水筒を持っています。" }
+        ],
+        "junior_high": [
+          { "text": "The girl's water bottle changed to white.", "ja": "女の子の水筒が白色に変わりました。" },
+          { "text": "She is holding a white bottle instead of a pink one.", "ja": "彼女はピンクの代わりに白い水筒を持っています。" }
+        ],
+        "high_school": [
+          { "text": "The water bottle held by the girl has changed its color from pink to white.", "ja": "女の子が持っている水筒の色がピンクから白に変わっています。" },
+          { "text": "The girl with brown hair is carrying a white water bottle with a yellow strap.", "ja": "茶色い髪の女の子は、黄色いストラップのついた白い水筒を持っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_12",
+      "nameJa": "男の子が水筒の水を飲んでいる",
+      "keywords": {
+        "target": ["boy", "bottle", "water"],
+        "state": ["drink", "change"]
+      },
+      "coordinates": { "x": 75, "y": 80, "width": 8, "height": 16 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The boy is drinking water.", "ja": "男の子が水を飲んでいます。" },
+          { "text": "He drinks from his bottle.", "ja": "彼は水筒から飲みます。" }
+        ],
+        "junior_high": [
+          { "text": "The boy started drinking water from his bottle.", "ja": "男の子は水筒の水を飲み始めました。" },
+          { "text": "He is drinking water now.", "ja": "彼は今、水を飲んでいます。" }
+        ],
+        "high_school": [
+          { "text": "The boy wearing the light blue shirt is currently drinking from his water bottle.", "ja": "水色のシャツを着た男の子は現在、自分の水筒から水を飲んでいます。" },
+          { "text": "Instead of just holding the bottle, the boy has raised it to drink.", "ja": "男の子はただ水筒を持っているだけでなく、飲むために持ち上げています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_14",
+      "nameJa": "ブランコの座面が青色になっている",
+      "keywords": {
+        "target": ["swing", "seat", "board"],
+        "state": ["blue", "change"]
+      },
+      "coordinates": { "x": 86, "y": 69, "width": 6, "height": 4 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The swing is blue.", "ja": "ブランコが青色です。" },
+          { "text": "The seat is blue.", "ja": "座る場所が青色です。" }
+        ],
+        "junior_high": [
+          { "text": "The seat of the swing changed to blue.", "ja": "ブランコの座面が青色に変わりました。" },
+          { "text": "The girl is sitting on a blue swing.", "ja": "女の子は青いブランコに座っています。" }
+        ],
+        "high_school": [
+          { "text": "The wooden seat of the swing has been replaced with a blue one.", "ja": "ブランコの木製の座面が青いものに置き換えられています。" },
+          { "text": "The color of the swing seat she is riding has changed from brown to blue.", "ja": "彼女が乗っているブランコの座面の色が茶色から青に変わっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_15",
+      "nameJa": "花壇の一番左の花が黄色になっている",
+      "keywords": {
+        "target": ["flower", "flowerbed"],
+        "state": ["yellow", "change", "color"]
+      },
+      "coordinates": { "x": 86, "y": 92, "width": 15, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The flower is yellow.", "ja": "花が黄色です。" },
+          { "text": "The colors are different.", "ja": "色が違います。" }
+        ],
+        "junior_high": [
+          { "text": "The flower on the left changed to yellow.", "ja": "左側の花が黄色に変わりました。" },
+          { "text": "The colors of the flowers in the bed are different.", "ja": "花壇の花の色が違います。" }
+        ],
+        "high_school": [
+          { "text": "The leftmost flower in the rectangular flower bed has bloomed in yellow instead of red.", "ja": "長方形の花壇の一番左にある花が、赤ではなく黄色に咲いています。" },
+          { "text": "The arrangement of the flower colors in the planter has been altered.", "ja": "プランターに植えられている花の色合いが変更されています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_16",
+      "nameJa": "右端の男の子が緑色のリュックを背負って手を振っている",
+      "keywords": {
+        "target": ["boy", "backpack", "bag"],
+        "state": ["green", "wear", "wave"]
+      },
+      "coordinates": { "x": 94, "y": 80, "width": 8, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He has a green backpack.", "ja": "彼は緑色のリュックを持っています。" },
+          { "text": "The boy is waving.", "ja": "男の子が手を振っています。" }
+        ],
+        "junior_high": [
+          { "text": "The boy is wearing a green backpack and waving his hand.", "ja": "男の子は緑のリュックを背負って手を振っています。" },
+          { "text": "He changed his blue bag to a green backpack.", "ja": "彼は青いバッグを緑のリュックに変えました。" }
+        ],
+        "high_school": [
+          { "text": "The boy on the right is now wearing a green backpack and waving to someone.", "ja": "右側の男の子は緑色のバックパックを背負い、誰かに手を振っています。" },
+          { "text": "Instead of carrying a blue handbag, the boy is equipped with a green backpack.", "ja": "男の子は青い手提げカバンを持つ代わりに、緑色のバックパックを背負っています。" }
+        ]
+      }
+    }
+  ]
+}

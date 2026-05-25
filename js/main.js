@@ -102,18 +102,45 @@ async function initApp() {
     } catch (error) { console.error("テーマリスト読み込み失敗:", error); }
 }
 
+// --- ▼ ここから上書き ▼ ---
+// --- ▼ ここから上書き ▼ ---
 window.renderThemeGrid = async function() {
+    const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
     themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10 text-xl md:text-2xl">Loading Images...</div>';
+    
+    // =========================================================
+    // ★ 修正：画面に戻ってきたとき、必ずUIを「再表示」する
+    // =========================================================
+    // 1. ターゲットレベル (step-level) を強制表示
+    const stepLevel = document.getElementById('step-level');
+    if (stepLevel) {
+        stepLevel.style.display = '';
+        stepLevel.classList.remove('hidden');
+    }
+
+    // 2. Supportモードのコンテナを強制表示（親のdivを探して表示）
+    const supportToggle = document.getElementById('support-toggle');
+    if (supportToggle) {
+        const supportContainer = supportToggle.closest('.max-w-5xl.bg-white.flex');
+        if (supportContainer) {
+            supportContainer.style.display = '';
+            supportContainer.classList.remove('hidden');
+        }
+    }
+    // =========================================================
+
     try {
         let results = [];
-        
-        // MOSAICモードの場合は専用のリストを読み込む
+        let isDetective = (window.appState && window.appState.selectedMode === 'detective');
+
         if (window.appState.selectedMode === 'mosaic') {
             const res = await fetch('data/mosaic_list.json?t=' + new Date().getTime());
             results = await res.json();
+        } else if (isDetective) {
+            const res = await fetch('data/detective_list.json?t=' + new Date().getTime());
+            results = await res.json();
         } else {
-            // 従来の処理
             const fetchPromises = window.themeList.map(id => 
                 fetch(`data/themes/${id}.json?t=${new Date().getTime()}`)
                 .then(res => res.json())
@@ -124,6 +151,27 @@ window.renderThemeGrid = async function() {
         }
 
         let html = '';
+
+        // DETECTIVE専用 チュートリアル表示
+        if (isDetective) {
+            html += `
+            <div class="col-span-full bg-yellow-50/80 rounded-3xl p-5 md:p-8 shadow-sm border border-yellow-200 mb-6 relative overflow-hidden">
+                <h3 class="text-xl md:text-2xl font-black text-yellow-700 mb-2 flex items-center gap-2">
+                    <span>🕵️‍♂️</span> 遊び方（タップして体験！）
+                </h3>
+                <p class="text-sm md:text-base text-yellow-800 font-bold mb-4 leading-relaxed">
+                    下の絵(B)を上の絵(A)と見比べて、違うところを英語で声に出してみよう！<br>
+                    試しに、下のサンプルの<span class="text-pink-500 underline decoration-pink-300 decoration-2 underline-offset-4">「B」の絵（下半分）の中にある間違っている部分</span>を直接クリック（タップ）してみてね。
+                </p>
+                
+                <div class="relative w-full rounded-2xl overflow-hidden border-4 border-yellow-300 bg-white shadow-inner cursor-pointer" onclick="handleTutorialClick(event)">
+                    <img src="assets/images/detective/sample.webp" class="w-full h-auto object-contain pointer-events-none">
+                    <div id="tutorial-overlay" class="absolute inset-0 pointer-events-none"></div>
+                </div>
+            </div>
+            `;
+        }
+
         results.forEach(item => {
             if(!item || !item.data) return;
             
@@ -133,29 +181,129 @@ window.renderThemeGrid = async function() {
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
                 titleText = "??? (Secret Image)";
+            } else if (isDetective) {
+                imageFilterClass = "!h-[200%] object-top"; 
             }
             
-            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-md border-4 border-transparent hover:border-pink-400 hover:shadow-xl transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
-                <div class="relative w-full aspect-video bg-gray-100 shrink-0 pointer-events-none overflow-hidden">
-                    <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover pointer-events-none transition-all duration-500 ${imageFilterClass}">
+            let badgeHtml = '';
+            if (isDetective) {
+                badgeHtml = `
+                <div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">
+                    NEW!
+                </div>`;
+            }
+            
+            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
+                ${badgeHtml}
+                <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
+                    <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
-                <div class="p-3 md:p-4 text-center text-xs md:text-sm lg:text-base font-black text-gray-700 line-clamp-2 border-t border-gray-100 flex-1 flex items-center justify-center leading-tight bg-white pointer-events-none">${titleText}</div>
+                <div class="p-3 md:p-4 text-center text-xs md:text-sm lg:text-base font-black text-gray-700 line-clamp-2 border-t border-gray-50 flex-1 flex items-center justify-center leading-tight bg-white pointer-events-none">${titleText}</div>
             </div>`;
         });
         themeGrid.innerHTML = html;
-    } catch(e) { themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; }
+    } catch(e) { 
+        themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
+    }
 }
+// --- ▲ ここまで上書き ▲ ---
+
+window.handleTutorialClick = async function(e) {
+    if (!window.tutorialData) {
+        try {
+            const res = await fetch('data/detective/detective_sample.json?t=' + new Date().getTime());
+            window.tutorialData = await res.json();
+        } catch (err) {
+            console.error("Tutorial data not found");
+            return;
+        }
+    }
+
+    const rect = e.currentTarget.getBoundingClientRect();
+    const clickX = e.clientX - rect.left;
+    const clickY = e.clientY - rect.top;
+    const xPercent = (clickX / rect.width) * 100;
+    const yPercent = (clickY / rect.height) * 100;
+
+    let hitDiff = null;
+    for (let diff of window.tutorialData.differences) {
+        const dx = Math.abs(xPercent - diff.coordinates.x);
+        const dy = Math.abs(yPercent - diff.coordinates.y);
+        
+        if (dx <= (diff.coordinates.width / 2) + 5 && dy <= (diff.coordinates.height / 2) + 5) {
+            hitDiff = diff;
+            break;
+        }
+    }
+
+    if (hitDiff) {
+        showTutorialPopup(hitDiff);
+    }
+}
+
+window.showTutorialPopup = function(diff) {
+    const overlay = document.getElementById('tutorial-overlay');
+    if (!overlay) return;
+
+    overlay.innerHTML = '';
+    overlay.classList.remove('pointer-events-none'); 
+
+    const mark = document.createElement('div');
+    mark.className = 'absolute border-[4px] border-red-500 bg-red-500/30 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.9)] animate-pop pointer-events-none z-10';
+    mark.style.width = `${diff.coordinates.width}%`;
+    mark.style.height = `${diff.coordinates.height}%`;
+    mark.style.left = `${diff.coordinates.x - diff.coordinates.width / 2}%`;
+    mark.style.top = `${diff.coordinates.y - diff.coordinates.height / 2}%`;
+    overlay.appendChild(mark);
+
+    let expressionsHtml = '';
+    const createLevelHtml = (levelObj, levelName, color) => {
+        if (!levelObj || levelObj.length === 0) return '';
+        return `
+            <div class="mb-2 p-2 bg-white rounded border border-gray-100">
+                <span class="text-[10px] font-bold bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded">${levelName}</span>
+                <p class="font-bold text-gray-800 text-sm mt-1">${levelObj[0].text}</p>
+                <p class="text-[10px] text-gray-500">${levelObj[0].ja}</p>
+            </div>
+        `;
+    };
+    expressionsHtml += createLevelHtml(diff.modelExpressions.elementary, '小学生', 'green');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.junior_high, '中学生', 'blue');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.high_school, '高校生', 'pink');
+
+    const popup = document.createElement('div');
+    popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-md rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] border-2 border-pink-300 p-5 md:p-6 z-[100] w-[90%] max-w-sm animate-fade-in-up flex flex-col';
+    
+    popup.innerHTML = `
+        <button class="absolute top-3 right-4 text-gray-300 hover:text-gray-600 font-black text-2xl transition-colors" onclick="document.getElementById('tutorial-overlay').innerHTML=''; document.getElementById('tutorial-overlay').classList.add('pointer-events-none');">×</button>
+        <h4 class="font-black text-pink-500 border-b-2 border-pink-50 pb-2 mb-3 pr-6 text-lg">🎯 ${diff.nameJa}</h4>
+        <div class="space-y-1 mb-4">
+            ${expressionsHtml}
+        </div>
+        <p class="text-xs text-gray-400 font-bold text-center bg-gray-50 p-2 rounded-lg">本番では、マイクに向かってこのように英語で発話します！🎙️</p>
+    `;
+
+    const backdrop = document.createElement('div');
+    backdrop.className = 'fixed inset-0 bg-black/10 z-[99] transition-opacity';
+    backdrop.onclick = () => { overlay.innerHTML = ''; overlay.classList.add('pointer-events-none'); };
+    
+    overlay.appendChild(backdrop);
+    overlay.appendChild(popup);
+    
+    try { if (typeof playSound === 'function') playSound('match'); } catch(e) {}
+}
+// --- ▲ ここまで上書き ▲ ---
 
 window.startGameWithTheme = async function(id) {
     try {
-        // ★大修正: リスト用の浅いデータではなく、必ず個別JSON(深い採点データ)を読み込む
-        // MOSAICモードなら 'data/mosaic'、それ以外なら 'data/themes' を見に行く
-        const folderPath = window.appState.selectedMode === 'mosaic' ? 'data/mosaic' : 'data/themes';
+        // ★修正: detective モードの場合は 'data/detective' を見に行く
+        let folderPath = 'data/themes';
+        if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
+        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective'; // ← 追加
         
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
         
-        // 読み込んだ個別データを currentTheme にセット（これで scoringData や pins が入る！）
         window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
         
     } catch (e) { 
@@ -165,21 +313,43 @@ window.startGameWithTheme = async function(id) {
     
     const promptImage = document.getElementById('prompt-image');
     if (window.currentTheme && window.currentTheme.imageSrc && promptImage) {
-        promptImage.src = window.currentTheme.imageSrc;
+        // ここは一旦Aの画像（ベース画像）を入れる
+        promptImage.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
         
-        // MOSAICモードなら、一瞬たりとも見せないように強制モザイク
         if (window.appState.selectedMode === 'mosaic') {
             promptImage.classList.remove('blur-none', 'blur-md');
             promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
             promptImage.style.transform = 'scale(1.1)';
+        } else if (window.appState.selectedMode === 'detective') {
+            if (typeof window.DetectiveGame !== 'undefined') {
+                window.DetectiveGame.init(window.currentTheme);
+            }
         } else {
-            // 他のモードのデフォルト
+            // 他のモードのデフォルト（★ここでCSSマジックをリセット）
             promptImage.style.filter = '';
             promptImage.style.transform = '';
+            promptImage.style.height = '';       
+            promptImage.style.objectFit = '';    
+            promptImage.style.objectPosition = '';
+            promptImage.style.top = '';          
+            promptImage.style.bottom = '';
+            promptImage.classList.remove('w-1/2');
+            promptImage.classList.add('w-full');
+            
+            const promptImageB = document.getElementById('prompt-image-b');
+            if (promptImageB) {
+                promptImageB.classList.add('hidden');
+                promptImageB.style.height = '';
+                promptImageB.style.objectFit = '';
+                promptImageB.style.objectPosition = '';
+                promptImageB.style.bottom = '';
+            }
+            
             promptImage.classList.remove('blur-none');
             promptImage.classList.add('blur-md'); 
         }
     }
+    // ... (以下略、そのまま)
     
     window.timeLeft = window.appState.customTimeLimit || 30; 
     const timerText = document.getElementById('timer-text');
@@ -291,7 +461,16 @@ window.finishGameAndShowResult = function() {
         const recIndicator = document.getElementById('recording-indicator');
         if(recIndicator) recIndicator.classList.add('hidden');
         
-        window.renderSnapshotResult();
+        // ★★★ 修正：モードによって呼び出すリザルト描画処理を変える ★★★
+        if (window.appState.selectedMode === 'detective') {
+            // DETECTIVE専用のリザルト描画（データと見つけたIDのリストを渡す）
+            if (typeof window.DetectiveResult !== 'undefined') {
+                window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
+            }
+        } else {
+            // SNAPSHOT, MOSAICなどの従来のリザルト描画
+            window.renderSnapshotResult();
+        }
         
         const viewResultEl = document.getElementById('view-result');
         if (typeof showView === 'function') {

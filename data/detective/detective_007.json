@@ -1,0 +1,216 @@
+{
+  "id": "detective_007",
+  "imageSrc": "assets/images/detective/dete007.webp",
+  "description": "大学のゼミでのディスカッション風景",
+  "descriptionEn": "Discussion scene in a university seminar",
+  "totalDifferences": 9,
+  "differences": [
+    {
+      "id": "diff_1",
+      "nameJa": "先生が左端に移動している",
+      "keywords": {
+        "target": ["teacher", "man", "instructor"],
+        "state": ["stand", "move", "left"]
+      },
+      "coordinates": { "x": 8, "y": 70, "width": 10, "height": 25 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The teacher is on the left.", "ja": "先生が左にいます。" },
+          { "text": "He is standing on the left.", "ja": "彼は左側に立っています。" }
+        ],
+        "junior_high": [
+          { "text": "The teacher moved to the left side.", "ja": "先生は左側に移動しました。" },
+          { "text": "He is standing in front of the window now.", "ja": "彼は今、窓の前に立っています。" }
+        ],
+        "high_school": [
+          { "text": "The teacher presenting the material has relocated to the far left of the whiteboard.", "ja": "資料を提示している先生は、ホワイトボードの一番左に移動しています。" },
+          { "text": "Instead of standing in the center, the instructor is now on the left side.", "ja": "中央に立つ代わりに、講師は現在左側にいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_2",
+      "nameJa": "教壇とノートパソコンがなくなっている",
+      "keywords": {
+        "target": ["podium", "laptop", "desk"],
+        "state": ["missing", "disappear", "gone"]
+      },
+      "coordinates": { "x": 48, "y": 63, "width": 10, "height": 10 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The desk is gone.", "ja": "机がなくなりました。" },
+          { "text": "The computer is missing.", "ja": "コンピューターがありません。" }
+        ],
+        "junior_high": [
+          { "text": "The podium and the laptop disappeared.", "ja": "教壇とノートパソコンが消えました。" },
+          { "text": "There is no computer in the front anymore.", "ja": "もう前方にコンピューターはありません。" }
+        ],
+        "high_school": [
+          { "text": "The presenter's podium and laptop have been entirely removed from the front.", "ja": "発表者の教壇とノートパソコンが前方から完全に取り除かれています。" },
+          { "text": "The stand that was in front of the whiteboard is missing.", "ja": "ホワイトボードの前にあった台がなくなっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_3",
+      "nameJa": "ホワイトボードの「マーケティング」の下線が短くなっている",
+      "keywords": {
+        "target": ["underline", "line", "word"],
+        "state": ["short", "change", "disappear"]
+      },
+      "coordinates": { "x": 19, "y": 56, "width": 10, "height": 3 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The line is short.", "ja": "線が短いです。" },
+          { "text": "The underline is shorter.", "ja": "下線が短くなっています。" }
+        ],
+        "junior_high": [
+          { "text": "The underline became shorter.", "ja": "下線が短くなりました。" },
+          { "text": "Part of the line disappeared.", "ja": "線の一部が消えました。" }
+        ],
+        "high_school": [
+          { "text": "The underline beneath the word has been shortened.", "ja": "単語の下のアンダーラインが短くされています。" },
+          { "text": "The straight line emphasizing the title is now shorter than before.", "ja": "タイトルを強調する直線が、以前よりも短くなっています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_4",
+      "nameJa": "左側の緑の服の男性が腕を組んでいる",
+      "keywords": {
+        "target": ["man", "arms", "student"],
+        "state": ["cross", "fold", "sit"]
+      },
+      "coordinates": { "x": 12, "y": 85, "width": 12, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He crosses his arms.", "ja": "彼は腕を組んでいます。" },
+          { "text": "The man is not writing.", "ja": "男性は書いていません。" }
+        ],
+        "junior_high": [
+          { "text": "The man in green crossed his arms.", "ja": "緑の服の男性は腕を組みました。" },
+          { "text": "He stopped writing in his notebook.", "ja": "彼はノートに書くのをやめました。" }
+        ],
+        "high_school": [
+          { "text": "The man wearing the green hoodie is now sitting with his arms folded.", "ja": "緑のパーカーを着た男性は、腕を組んで座っています。" },
+          { "text": "Instead of taking notes, the man on the left has crossed his arms.", "ja": "メモを取る代わりに、左側の男性は腕を組んでいます。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_5",
+      "nameJa": "緑の服の男性の机に開いた教科書がある",
+      "keywords": {
+        "target": ["textbook", "book", "desk"],
+        "state": ["open", "appear", "place"]
+      },
+      "coordinates": { "x": 25, "y": 94, "width": 10, "height": 6 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "A book is open.", "ja": "本が開いています。" },
+          { "text": "There is a textbook.", "ja": "教科書があります。" }
+        ],
+        "junior_high": [
+          { "text": "An open textbook appeared on the table.", "ja": "テーブルの上に開いた教科書が現れました。" },
+          { "text": "The man has an open book now.", "ja": "男性は今、開いた本を持っています。" }
+        ],
+        "high_school": [
+          { "text": "A colorful, open textbook has been placed on the table in front of him.", "ja": "彼の前のテーブルに、カラフルで開かれた教科書が置かれています。" },
+          { "text": "The student on the left now has an open reference book beside his notes.", "ja": "左側の学生は、ノートの横に開いた参考書を置いています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_6",
+      "nameJa": "中央の女性が両手でジェスチャーをして話している",
+      "keywords": {
+        "target": ["woman", "hands", "gesture"],
+        "state": ["talk", "speak", "move"]
+      },
+      "coordinates": { "x": 41, "y": 80, "width": 12, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "The woman is talking.", "ja": "女性が話しています。" },
+          { "text": "She moves her hands.", "ja": "彼女は手を動かしています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman is talking with her hands.", "ja": "女性は身振り手振りで話しています。" },
+          { "text": "She is not typing anymore.", "ja": "彼女はもうタイピングしていません。" }
+        ],
+        "high_school": [
+          { "text": "The woman in the beige sweater is actively gesturing with both hands as she speaks.", "ja": "ベージュのセーターを着た女性は、話しながら両手で活発にジェスチャーをしています。" },
+          { "text": "She has taken her hands off the laptop to explain something to the group.", "ja": "グループに何かを説明するため、彼女はノートパソコンから手を離しています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_7",
+      "nameJa": "青い服の男性が左を向いている",
+      "keywords": {
+        "target": ["man", "head", "face"],
+        "state": ["turn", "look", "left"]
+      },
+      "coordinates": { "x": 61, "y": 75, "width": 8, "height": 12 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "He looks left.", "ja": "彼は左を見ています。" },
+          { "text": "The man turned his head.", "ja": "男性は顔を向けました。" }
+        ],
+        "junior_high": [
+          { "text": "The man in blue turned to look at the woman.", "ja": "青い服の男性は女性を見るために振り向きました。" },
+          { "text": "He is not looking at the whiteboard.", "ja": "彼はホワイトボードを見ていません。" }
+        ],
+        "high_school": [
+          { "text": "The man wearing the blue hoodie has turned his attention towards the woman speaking.", "ja": "青いパーカーを着た男性は、話している女性に注意を向けています。" },
+          { "text": "Instead of facing the front, he is looking to his left.", "ja": "前を向く代わりに、彼は左側を見ています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_8",
+      "nameJa": "ピンクの服の女性がノートに文字を書いている",
+      "keywords": {
+        "target": ["woman", "hand", "notebook"],
+        "state": ["write", "lower", "change"]
+      },
+      "coordinates": { "x": 78, "y": 83, "width": 10, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "She is writing.", "ja": "彼女は書いています。" },
+          { "text": "Her hand is down.", "ja": "彼女の手は下がっています。" }
+        ],
+        "junior_high": [
+          { "text": "The woman stopped raising her hand and started writing.", "ja": "女性は手を挙げるのをやめて書き始めました。" },
+          { "text": "She is taking notes now.", "ja": "彼女は今メモを取っています。" }
+        ],
+        "high_school": [
+          { "text": "The woman in pink has lowered her hand and is now focused on writing in her notebook.", "ja": "ピンクの服の女性は手を下ろし、今はノートに書き込むことに集中しています。" },
+          { "text": "Instead of asking a question, she is diligently taking notes.", "ja": "質問する代わりに、彼女は熱心にメモを取っています。" }
+        ]
+      }
+    },
+    {
+      "id": "diff_9",
+      "nameJa": "右端の男性が手をテーブルの上に置いている",
+      "keywords": {
+        "target": ["man", "hand", "arm"],
+        "state": ["rest", "lower", "table"]
+      },
+      "coordinates": { "x": 92, "y": 78, "width": 8, "height": 15 },
+      "modelExpressions": {
+        "elementary": [
+          { "text": "His hand is down.", "ja": "彼の手は下がっています。" },
+          { "text": "He touches the table.", "ja": "彼はテーブルを触っています。" }
+        ],
+        "junior_high": [
+          { "text": "He put his hand on the table.", "ja": "彼は手をテーブルの上に置きました。" },
+          { "text": "His hand is not on his chin anymore.", "ja": "彼の手はもう顎にはありません。" }
+        ],
+        "high_school": [
+          { "text": "The man on the far right has lowered his hand from his chin to rest it on the table.", "ja": "右端の男性は手を顎から下ろし、テーブルの上に置いています。" },
+          { "text": "He has changed his posture and is now keeping his hand down.", "ja": "彼は姿勢を変え、今は手を下げています。" }
+        ]
+      }
+    }
+  ]
+}

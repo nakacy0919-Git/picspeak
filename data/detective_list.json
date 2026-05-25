@@ -1,0 +1,12 @@
+[
+  { "id": "detective_001", "data": { "imageSrc": "assets/images/detective/dete001.webp", "titleJa": "Case 01: Secret Detective", "level": "all" } },
+  { "id": "detective_002", "data": { "imageSrc": "assets/images/detective/dete002.webp", "titleJa": "Case 02: Secret Detective", "level": "all" } },
+  { "id": "detective_003", "data": { "imageSrc": "assets/images/detective/dete003.webp", "titleJa": "Case 03: Secret Detective", "level": "all" } },
+  { "id": "detective_004", "data": { "imageSrc": "assets/images/detective/dete004.webp", "titleJa": "Case 04: Secret Detective", "level": "all" } },
+  { "id": "detective_005", "data": { "imageSrc": "assets/images/detective/dete005.webp", "titleJa": "Case 05: Secret Detective", "level": "all" } },
+  { "id": "detective_006", "data": { "imageSrc": "assets/images/detective/dete006.webp", "titleJa": "Case 06: Secret Detective", "level": "all" } },
+  { "id": "detective_007", "data": { "imageSrc": "assets/images/detective/dete007.webp", "titleJa": "Case 07: Secret Detective", "level": "all" } },
+  { "id": "detective_008", "data": { "imageSrc": "assets/images/detective/dete008.webp", "titleJa": "Case 08: Secret Detective", "level": "all" } },
+  { "id": "detective_009", "data": { "imageSrc": "assets/images/detective/dete009.webp", "titleJa": "Case 09: Secret Detective", "level": "all" } },
+  { "id": "detective_010", "data": { "imageSrc": "assets/images/detective/dete010.webp", "titleJa": "Case 10: Secret Detective", "level": "all" } }
+]
