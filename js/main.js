@@ -103,32 +103,10 @@ async function initApp() {
 }
 
 // --- ▼ ここから上書き ▼ ---
-// --- ▼ ここから上書き ▼ ---
 window.renderThemeGrid = async function() {
     const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
     themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10 text-xl md:text-2xl">Loading Images...</div>';
-    
-    // =========================================================
-    // ★ 修正：画面に戻ってきたとき、必ずUIを「再表示」する
-    // =========================================================
-    // 1. ターゲットレベル (step-level) を強制表示
-    const stepLevel = document.getElementById('step-level');
-    if (stepLevel) {
-        stepLevel.style.display = '';
-        stepLevel.classList.remove('hidden');
-    }
-
-    // 2. Supportモードのコンテナを強制表示（親のdivを探して表示）
-    const supportToggle = document.getElementById('support-toggle');
-    if (supportToggle) {
-        const supportContainer = supportToggle.closest('.max-w-5xl.bg-white.flex');
-        if (supportContainer) {
-            supportContainer.style.display = '';
-            supportContainer.classList.remove('hidden');
-        }
-    }
-    // =========================================================
 
     try {
         let results = [];

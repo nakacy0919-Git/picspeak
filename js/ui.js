@@ -11,10 +11,56 @@ window.showView = function(viewElement) {
         document.getElementById('view-result'),
         document.getElementById('view-about')
     ];
+    
+    // 全画面を一旦隠す
     views.forEach(v => { if(v) v.classList.add('hidden'); });
+    
     if(viewElement) {
+        // 対象の画面を表示
         viewElement.classList.remove('hidden');
         viewElement.classList.add('fade-in');
+
+        // ★ 追加：画像選択画面（view-select）が表示されたときの「完全復元」処理
+        if (viewElement.id === 'view-select') {
+            const stepLevel = document.getElementById('step-level');
+            const supportToggle = document.getElementById('support-toggle');
+            
+            // Detectiveモードの時だけUIを確実に表示させる
+            if (window.appState && window.appState.selectedMode === 'detective') {
+                if (stepLevel) {
+                    stepLevel.style.display = '';
+                    stepLevel.classList.remove('hidden');
+                }
+                if (supportToggle) {
+                    const supportContainer = supportToggle.closest('.max-w-5xl.bg-white.flex');
+                    if (supportContainer) {
+                        supportContainer.style.display = '';
+                        supportContainer.classList.remove('hidden');
+                    }
+                }
+            }
+
+            // Target Level のラジオボタン（または専用の選択ボタン）の見た目を復元
+            if (window.appState && window.appState.targetLevel) {
+                // UI側に合わせ、ラジオボタンまたはカスタムボタンをアクティブにする
+                const checkedRadio = document.querySelector(`input[name="det-level"][value="${window.appState.targetLevel}"]`);
+                if (checkedRadio) checkedRadio.checked = true;
+
+                // もしボタン形式（.level-btn）を使っている場合の復元処理
+                const levelBtns = document.querySelectorAll('.level-btn');
+                if (levelBtns.length > 0) {
+                    levelBtns.forEach(b => { 
+                        b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
+                        b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+                    });
+                    const targetBtn = document.querySelector(`.level-btn[data-level="${window.appState.targetLevel}"]`);
+                    if (targetBtn) {
+                        targetBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+                        targetBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+                    }
+                }
+            }
+        }
     }
 };
 

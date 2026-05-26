@@ -1,6 +1,6 @@
 // js/detective_game.js
 // ==========================================
-// DETECTIVEモード専用ロジック (完全版：UI復帰＆Support描画タイミング修正)
+// DETECTIVEモード専用ロジック (完全版：UI破壊バグ修正済)
 // ==========================================
 
 window.DetectiveGame = {
@@ -27,8 +27,10 @@ window.DetectiveGame = {
             if (imgB) imgB.classList.add('hidden'); 
         }
 
-        const statsGrid = document.querySelector('.grid.grid-cols-3');
+        // ★★★ 修正箇所：ターゲットレベルの枠を誤爆しないよう、id="view-play" の中だけを探す ★★★
+        const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
         if (statsGrid) statsGrid.style.display = 'none';
+        
         const compBar = document.getElementById('live-completion-text');
         if (compBar) compBar.closest('.bg-white').style.display = 'none';
 
@@ -66,10 +68,8 @@ window.DetectiveGame = {
             }
         }, 100);
 
-        // ★ 修正：Supportモードのイベント紐付けと、確実な描画遅延処理
         const supportToggle = document.getElementById('support-toggle');
         if (supportToggle) {
-            // スイッチを切り替えた時の動作（重複を避けるため一度消してから再登録）
             supportToggle.removeEventListener('change', window._detSupportToggle);
             window._detSupportToggle = (e) => {
                 if (this.isActive) {
@@ -79,7 +79,6 @@ window.DetectiveGame = {
             };
             supportToggle.addEventListener('change', window._detSupportToggle);
 
-            // ゲーム開始時の初期描画（画面レイアウト完了を待つために300ms遅らせる）
             if (supportToggle.checked) {
                 const tryDraw = () => {
                     setTimeout(() => {
@@ -106,7 +105,8 @@ window.DetectiveGame = {
             'junior_high': 3,
             'high_school': 4
         };
-        const currentLevel = window.appState && window.appState.targetLevel ? window.appState.targetLevel : 'elementary';
+        // ★★★ 修正箇所：先生のアプリ仕様に合わせて selectedLevel から取得 ★★★
+        const currentLevel = window.appState && window.appState.selectedLevel ? window.appState.selectedLevel : 'elementary';
         const requiredCount = requiredWordCounts[currentLevel];
 
         const stopWords = ['a', 'an', 'the', 'is', 'am', 'are', 'was', 'were', 'to', 'of', 'in', 'on', 'at', 'it', 'has', 'have', 'and', 'now'];
@@ -419,8 +419,11 @@ window.DetectiveGame = {
         if (this.timerInterval) clearInterval(this.timerInterval);
         const detUi = document.getElementById('detective-ui');
         if (detUi) detUi.style.display = 'none';
-        const statsGrid = document.querySelector('.grid.grid-cols-3');
+        
+        // ★★★ 修正箇所：ここでも id="view-play" の中だけを探す ★★★
+        const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
         if (statsGrid) statsGrid.style.display = 'grid';
+        
         const compBar = document.getElementById('live-completion-text');
         if (compBar) compBar.closest('.bg-white').style.display = 'block';
     },
