@@ -149,13 +149,24 @@
                 </div>
             </div>
 
-            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex gap-3 md:gap-4 z-20">
-                <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
-                <button id="btn-open-trouble" class="text-red-500 hover:text-red-600 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Troubleshooting"><span class="text-xl md:text-2xl leading-none">🆘</span></button>
-                <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
-                <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
-                    <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex flex-col items-end gap-2 md:gap-3 z-20">
+                <!-- 上段：目立つSOSボタン（文字入り・パルスアニメーション付き） -->
+                <button id="btn-open-trouble" class="text-red-600 hover:bg-red-50 transition-all bg-white/95 px-3 py-2 md:px-4 md:py-2.5 rounded-full backdrop-blur-sm shadow-md border-2 border-red-300 flex items-center justify-center gap-2 animate-pulse hover:animate-none" title="Troubleshooting">
+                    <span class="text-xl md:text-2xl leading-none">🆘</span>
+                    <div class="flex flex-col text-left">
+                        <span class="text-[11px] md:text-xs font-black leading-tight">音声トラブル時はこちら</span>
+                        <span class="text-[9px] md:text-[10px] font-bold text-gray-500 leading-tight">（iPad・iPhone用）</span>
+                    </div>
                 </button>
+                
+                <!-- 下段：その他の設定・ログボタン群 -->
+                <div class="flex gap-2 md:gap-3">
+                    <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
+                    <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
+                    <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
+                        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
+                    </button>
+                </div>
             </div>
 
             <div id="settings-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
