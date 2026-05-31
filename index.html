@@ -550,7 +550,47 @@
     </div>
 
 <main id="picspeak-story" class="w-full bg-white relative z-0 border-t border-gray-200">
+        <main id="picspeak-story" class="w-full bg-white relative z-0 border-t border-gray-200">
         
+        <div class="max-w-6xl mx-auto px-6 md:px-12 lg:px-20 pt-12 md:pt-16 pb-8">
+            <div class="flex items-center gap-3 mb-6 justify-center md:justify-start pl-2">
+                <span class="bg-gray-800 text-white p-1.5 rounded-lg shadow-sm">
+                    <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7"></path></svg>
+                </span>
+                <h3 class="text-xl md:text-2xl font-black text-gray-900 tracking-tight">Table of Contents</h3>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 md:gap-6">
+                <a href="#methodology" class="group flex items-center p-4 md:p-5 bg-white rounded-3xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(236,72,153,0.15)] hover:border-pink-200 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-pink-50 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-pink-100 transition-colors duration-300 z-0"></div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-pink-100 text-pink-500 flex items-center justify-center text-2xl md:text-3xl shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 z-10 shadow-inner">📸</div>
+                    <div class="ml-4 text-left z-10">
+                        <div class="text-[10px] md:text-xs font-black text-pink-400 uppercase tracking-widest mb-1">Methodology</div>
+                        <div class="text-sm md:text-base font-black text-gray-800 group-hover:text-pink-600 transition-colors leading-tight">Picture Description<br>に行き着いた理由</div>
+                    </div>
+                </a>
+
+                <a href="#founder-journey" class="group flex items-center p-4 md:p-5 bg-white rounded-3xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(59,130,246,0.15)] hover:border-blue-200 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-blue-50 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-blue-100 transition-colors duration-300 z-0"></div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-blue-100 text-blue-500 flex items-center justify-center text-2xl md:text-3xl shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 z-10 shadow-inner">🎓</div>
+                    <div class="ml-4 text-left z-10">
+                        <div class="text-[10px] md:text-xs font-black text-blue-400 uppercase tracking-widest mb-1">Journey Part.1</div>
+                        <div class="text-sm md:text-base font-black text-gray-800 group-hover:text-blue-600 transition-colors leading-tight">UoPeople M.Ed.<br>挑戦記</div>
+                    </div>
+                </a>
+
+                <a href="#global-classroom" class="group flex items-center p-4 md:p-5 bg-white rounded-3xl border border-gray-100 shadow-[0_4px_20px_rgba(0,0,0,0.04)] hover:shadow-[0_8px_30px_rgba(16,185,129,0.15)] hover:border-emerald-200 transition-all duration-300 hover:-translate-y-1.5 cursor-pointer relative overflow-hidden">
+                    <div class="absolute right-0 top-0 w-24 h-24 bg-emerald-50 rounded-full blur-2xl -mr-10 -mt-10 group-hover:bg-emerald-100 transition-colors duration-300 z-0"></div>
+                    <div class="w-14 h-14 md:w-16 md:h-16 rounded-2xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl md:text-3xl shrink-0 group-hover:scale-110 group-hover:rotate-3 transition-transform duration-300 z-10 shadow-inner">🌍</div>
+                    <div class="ml-4 text-left z-10">
+                        <div class="text-[10px] md:text-xs font-black text-emerald-400 uppercase tracking-widest mb-1">Journey Part.2</div>
+                        <div class="text-sm md:text-base font-black text-gray-800 group-hover:text-emerald-600 transition-colors leading-tight">Global Classroom<br>について</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        ```
+        <section id="methodology" class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-12 md:py-16">
         <section class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24">
             <div class="text-center mb-16">
                 <span class="bg-pink-100 text-pink-700 text-xs md:text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-widest mb-4 inline-block shadow-sm">Methodology</span>
@@ -1438,7 +1478,9 @@
             <button onclick="closeIosPrompt()" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full w-7 h-7 flex items-center justify-center font-bold transition-colors">&times;</button>
         </div>
     </div>
-
+　　<button id="floating-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-gray-900/80 hover:bg-gray-900 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl backdrop-blur-sm transition-all duration-300 transform translate-y-20 opacity-0 z-50 cursor-pointer">
+        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
+    </button>
     <script>
         // iOSプロンプトの表示ロジック
         function showIosPrompt() {
@@ -1475,7 +1517,14 @@
         }
 
         // 画面読み込み時にチェックを実行
-        window.addEventListener('load', showIosPrompt);
+        window.addEventListener('scroll', function() {
+            const topBtn = document.getElementById('floating-top-btn');
+            if (window.scrollY > 500) {
+                topBtn.classList.remove('translate-y-20', 'opacity-0');
+            } else {
+                topBtn.classList.add('translate-y-20', 'opacity-0');
+            }
+        });
     </script>
     
     <script src="js/speech.js"></script>
