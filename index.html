@@ -208,7 +208,7 @@
                     <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
                 </div>
                 
-                <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem]">
+                <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
                     
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
@@ -266,9 +266,9 @@
                     </div>
 
                     <div class="text-center mt-4 md:mt-6 flex flex-col items-center gap-3">
-                        <button id="btn-goto-about" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5">
+                        <a href="#picspeak-story" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5 cursor-pointer">
                             <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
-                        </button>
+                        </a>
                         
                         <a href="guide.html" target="_blank" rel="noopener noreferrer" 
                            class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-2.5 md:p-3 transition-all transform hover:scale-[1.02] shadow-md mt-1"
@@ -288,41 +288,43 @@
                             </div>
                         </a>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div id="news-updates" class="w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl mx-auto mt-8 mb-4 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] p-6 md:p-8 border border-gray-100 relative z-20">
-                    <div class="flex items-center gap-3 mb-6">
-                        <span class="bg-blue-600 text-white p-2 rounded-lg shadow-sm">
-                            <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
-                        </span>
-                        <h2 class="text-xl md:text-2xl font-black text-gray-900 tracking-tight">News & Updates</h2>
+
+                    <hr class="w-full border-gray-200 my-8 md:my-10">
+                    
+                    <div id="news-updates" class="w-full text-left">
+                        <div class="flex items-center gap-3 mb-5">
+                            <span class="bg-blue-600 text-white p-1.5 md:p-2 rounded-lg shadow-sm">
+                                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
+                            </span>
+                            <h2 class="text-lg md:text-xl font-black text-gray-900 tracking-tight">News & Updates</h2>
+                        </div>
+                        <div class="bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
+                            <ul class="space-y-3 md:space-y-4 text-sm md:text-base text-left m-0 p-0 list-none">
+                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
+                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.31</span>
+                                    <span class="text-gray-800 font-medium leading-relaxed">
+                                        <span class="bg-green-100 text-green-700 text-[10px] md:text-xs font-black px-2 py-0.5 rounded mr-2 inline-block shadow-sm align-middle">New</span>
+                                        Founder's Journey（UoPeople編・Global Classroom編）の全編を公開しました。教育への想いと軌跡をご覧ください。
+                                    </span>
+                                </li>
+                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
+                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.25</span>
+                                    <span class="text-gray-800 font-medium leading-relaxed">
+                                        新ゲームモード「Mosaic（モザイク）」、「Detective（間違い探し）」を搭載しました。
+                                    </span>
+                                </li>
+                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
+                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.22</span>
+                                    <span class="text-gray-800 font-medium leading-relaxed">
+                                        PicSpeak（ピックスピーク）のロゴデザインが新しくなりました！
+                                    </span>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-200 shadow-inner">
-                        <ul class="space-y-4 text-sm md:text-base text-left m-0 p-0 list-none">
-                            <li class="flex flex-col md:flex-row gap-1 md:gap-6 border-b border-gray-200 pb-4 last:border-0 last:pb-0">
-                                <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-1">2026.05.31</span>
-                                <span class="text-gray-800 font-medium leading-relaxed">
-                                    <span class="bg-green-100 text-green-700 text-xs font-black px-2 py-0.5 rounded mr-2 inline-block shadow-sm">New</span>
-                                    Founder's Journey（UoPeople編・Global Classroom編）の全編を公開しました。教育への想いと軌跡をご覧ください。
-                                </span>
-                            </li>
-                            <li class="flex flex-col md:flex-row gap-1 md:gap-6 border-b border-gray-200 pb-4 last:border-0 last:pb-0">
-                                <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-1">2026.05.25</span>
-                                <span class="text-gray-800 font-medium leading-relaxed">
-                                    新ゲームモード「Mosaic（モザイク）」、「Detective（間違い探し）」を搭載しました。
-                                </span>
-                            </li>
-                            <li class="flex flex-col md:flex-row gap-1 md:gap-6 border-b border-gray-200 pb-4 last:border-0 last:pb-0">
-                                <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-1">2026.05.22</span>
-                                <span class="text-gray-800 font-medium leading-relaxed">
-                                    PicSpeak（ピックスピーク）のロゴデザインが新しくなりました！
-                                </span>
-                            </li>
-                        </ul>
-                    </div>
                 </div>
-                ```
+
+       
         <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
             <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
                 <div class="flex items-center gap-3 md:gap-4">
@@ -547,7 +549,7 @@
 
     </div>
 
-<main class="w-full bg-white relative z-0 border-t border-gray-200">
+<main id="picspeak-story" class="w-full bg-white relative z-0 border-t border-gray-200">
         
         <section class="max-w-7xl mx-auto px-6 md:px-12 lg:px-20 py-16 md:py-24">
             <div class="text-center mb-16">
