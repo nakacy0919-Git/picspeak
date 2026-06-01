@@ -273,11 +273,37 @@ window.showTutorialPopup = function(diff) {
 // --- ▲ ここまで上書き ▲ ---
 
 window.startGameWithTheme = async function(id) {
+    // ==========================================
+    // ★ ゾンビ化したDetectiveモードを完全に破壊する（核ボタン）
+    // ==========================================
+    const detUi = document.getElementById('detective-ui');
+    if (detUi) detUi.remove(); // 隠すのではなくHTMLごと完全に消し去る
+    
+    if (typeof window.DetectiveGame !== 'undefined') {
+        window.DetectiveGame.isActive = false; // 裏で動いている判定を強制停止
+        if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); // ゾンビタイマーを破壊
+    }
+    
+    const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
+    if (statsGrid) {
+        statsGrid.style.display = '';
+        statsGrid.classList.remove('hidden');
+    }
+    
+    const compBar = document.getElementById('live-completion-text');
+    if (compBar) {
+        const compBarContainer = compBar.closest('.bg-white');
+        if (compBarContainer) {
+            compBarContainer.style.display = '';
+            compBarContainer.classList.remove('hidden');
+        }
+    }
+    // ==========================================
+
     try {
-        // ★修正: detective モードの場合は 'data/detective' を見に行く
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
-        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective'; // ← 追加
+        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
         
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
@@ -291,7 +317,6 @@ window.startGameWithTheme = async function(id) {
     
     const promptImage = document.getElementById('prompt-image');
     if (window.currentTheme && window.currentTheme.imageSrc && promptImage) {
-        // ここは一旦Aの画像（ベース画像）を入れる
         promptImage.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
         
         if (window.appState.selectedMode === 'mosaic') {
@@ -303,7 +328,6 @@ window.startGameWithTheme = async function(id) {
                 window.DetectiveGame.init(window.currentTheme);
             }
         } else {
-            // 他のモードのデフォルト（★ここでCSSマジックをリセット）
             promptImage.style.filter = '';
             promptImage.style.transform = '';
             promptImage.style.height = '';       
@@ -327,7 +351,6 @@ window.startGameWithTheme = async function(id) {
             promptImage.classList.add('blur-md'); 
         }
     }
-    // ... (以下略、そのまま)
     
     window.timeLeft = window.appState.customTimeLimit || 30; 
     const timerText = document.getElementById('timer-text');
@@ -338,7 +361,6 @@ window.startGameWithTheme = async function(id) {
     window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
     
-    // UIのリセット
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
     if(document.getElementById('wordCountDisplay')) document.getElementById('wordCountDisplay').textContent = "0";
     if(document.getElementById('liveWpmDisplay')) document.getElementById('liveWpmDisplay').textContent = "0";
@@ -353,7 +375,6 @@ window.startGameWithTheme = async function(id) {
         ngWordGame.cleanup();
     }
 
-    // ヒントパネルの処理
     const transcriptBox = document.getElementById('transcript-box');
     const existingHint = document.getElementById('mosaic-hint-panel');
     if (existingHint) existingHint.remove();

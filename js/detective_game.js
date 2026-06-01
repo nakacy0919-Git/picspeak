@@ -417,15 +417,21 @@ window.DetectiveGame = {
 
     cleanup: function() {
         if (this.timerInterval) clearInterval(this.timerInterval);
+        
+        // Detective専用のUIを隠す
         const detUi = document.getElementById('detective-ui');
         if (detUi) detUi.style.display = 'none';
         
-        // ★★★ 修正箇所：ここでも id="view-play" の中だけを探す ★★★
+        // WPM・スコアの枠（3つの箱）の非表示設定を解除し、元の表示に戻す
         const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
-        if (statsGrid) statsGrid.style.display = 'grid';
+        if (statsGrid) statsGrid.style.display = ''; 
         
+        // Completion Rate のバーの非表示設定を解除し、元の表示に戻す
         const compBar = document.getElementById('live-completion-text');
-        if (compBar) compBar.closest('.bg-white').style.display = 'block';
+        if (compBar) {
+            const compBarContainer = compBar.closest('.bg-white');
+            if (compBarContainer) compBarContainer.style.display = '';
+        }
     },
 
     onClear: function() {
