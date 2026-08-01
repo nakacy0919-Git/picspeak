@@ -9,29 +9,30 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="apple-mobile-web-app-title" content="PicSpeak">
     <link rel="apple-touch-icon" href="assets/images/icon.png">
-    <title>PicSpeak - Picture Description</title>
+    <link rel="stylesheet" href="css/portal.css">
+    <title>PicSpeak & EduTools</title>
 
-    <meta name="description" content="PicSpeak（ピックスピーク）は、写真や画像を英語で描写（Picture Description）してスピーキング力を鍛える無料の英語学習Webアプリです。音声認識で発話の流暢さ（WPM）や正確さをリアルタイム判定します。">
+    <meta name="description" content="PicSpeakをはじめとする、英語スピーキング判定や授業効率化のための教育ICTツールポータルサイトです。">
     <link rel="canonical" href="https://www.pic-speak-story.com/">
     
-    <meta property="og:title" content="PicSpeak - 写真描写で鍛える英語スピーキングアプリ">
-    <meta property="og:description" content="写真や画像を英語で描写してスピーキング力を鍛える無料の英語学習Webアプリ。音声認識で発音や流暢さ(WPM)をリアルタイム判定！">
+    <meta property="og:title" content="PicSpeak & EduTools - 教育ICTツールポータル">
+    <meta property="og:description" content="写真描写スピーキング判定や音読練習、授業の効率化ツールなど、現場から生まれた教育Webアプリ群。">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.pic-speak-story.com/">
-    <meta property="og:site_name" content="PicSpeak">
+    <meta property="og:site_name" content="PicSpeak & EduTools">
     
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebApplication",
-      "name": "PicSpeak",
+      "name": "PicSpeak & EduTools",
       "url": "https://www.pic-speak-story.com/",
-      "description": "写真や画像を英語で描写（Picture Description）して、即興的なスピーキング力や瞬発力を鍛える無料の教育用Webアプリです。小学生から高校生までレベル別に学習可能。音声認識を活用し、リアルタイムでターゲット表現の一致率や流暢さ（WPM）を判定します。",
+      "description": "教育現場から生まれたICTツールポータル",
       "applicationCategory": "EducationalApplication",
       "operatingSystem": "All",
       "author": {
         "@type": "Person",
-        "name": "Kohei Nakashima"
+        "name": "中島浩平"
       },
       "offers": {
         "@type": "Offer",
@@ -56,713 +57,634 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <style>
-        @keyframes dynamicPulse {
-            0% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0.7); transform: scale(1); }
-            70% { box-shadow: 0 0 0 15px rgba(236, 72, 153, 0); transform: scale(1.02); }
-            100% { box-shadow: 0 0 0 0 rgba(236, 72, 153, 0); transform: scale(1); }
+        /* ふわふわ浮遊アニメーション */
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-15px); }
         }
-        .guide-banner-pulse {
-            animation: dynamicPulse 2.5s infinite;
+        .animate-float {
+            animation: float 3s ease-in-out infinite;
         }
-
-        /* ★ パステル＆白ステッチボタン用 CSS */
-        .btn-stitch {
-            position: relative;
-            border: none !important; 
-        }
-        .btn-stitch::after {
-            content: '';
-            position: absolute;
-            top: 6px;
-            left: 6px;
-            right: 6px;
-            bottom: 6px;
-            border: 2px dashed rgba(255, 255, 255, 0.8);
-            border-radius: 1.1rem;
-            pointer-events: none;
+        /* 言語切り替えのフェード効果 */
+        .lang-fade {
+            transition: opacity 0.3s ease-in-out;
         }
     </style>
 
     <script>
         tailwind.config = { theme: { extend: { backgroundImage: { 'sns-gradient': 'linear-gradient(45deg, #c13584, #f56040, #fcaf45)' } } } }
     </script>
-    <link rel="stylesheet" href="css/style.css">
-   
-    <style>
-        @keyframes float {
-            0%, 100% { transform: translateY(0); }
-            50% { transform: translateY(-12px); }
-        }
-        .animate-float {
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes pop {
-            0% { transform: scale(0.8); opacity: 0; }
-            100% { transform: scale(1); opacity: 1; }
-        }
-        .animate-pop {
-            animation: pop 0.2s ease-out forwards;
-        }
-    </style>
 </head>
-<body class="text-gray-900 bg-white overflow-hidden">
 
-    <div id="practice-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
-        <button id="btn-close-practice" class="absolute top-6 left-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
-        <div class="flex-1 flex flex-col items-center justify-center p-6 w-full max-w-7xl mx-auto">
-            <h3 class="text-sm md:text-xl font-extrabold text-pink-500 uppercase tracking-widest mb-2 border-b-2 border-pink-200 pb-1">Pronunciation Practice</h3>
-            <div id="practice-target" class="text-3xl md:text-6xl lg:text-7xl font-black text-gray-900 mb-4 text-center leading-tight"></div>
-            <div id="practice-ja" class="text-lg md:text-3xl font-bold text-gray-500 mb-10 text-center"></div>
-            <div class="w-full bg-gray-50 rounded-3xl p-6 md:p-12 border border-gray-200 shadow-inner mb-8 min-h-[160px] md:min-h-[250px] flex items-center justify-center relative">
-                <p id="practice-transcript" class="text-2xl md:text-5xl font-medium text-gray-400 italic text-center leading-relaxed">Tap START and speak...</p>
-            </div>
-            <div id="practice-feedback" class="h-20 flex items-center justify-center mb-8"></div>
-            <button id="btn-start-practice" class="w-full md:w-auto min-w-[320px] sns-btn bg-sns-gradient text-white font-black text-3xl md:text-5xl py-6 px-16 rounded-full shadow-xl hover:scale-[1.02] flex items-center justify-center gap-4 tracking-widest uppercase">
-                <span class="text-4xl md:text-6xl">🎙️</span> START
-            </button>
-        </div>
-    </div>
+<body class="bg-[#f4f7fb] text-slate-800 font-sans selection:bg-pink-200 selection:text-pink-900 overflow-x-hidden">
+    
+    <!-- 🌟 装飾用バックグラウンド -->
+    <div class="fixed top-[-10%] left-[-10%] w-[40%] h-[40%] bg-pink-400/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
+    <div class="fixed bottom-[-10%] right-[-10%] w-[40%] h-[40%] bg-blue-400/20 rounded-full blur-[120px] pointer-events-none -z-10"></div>
 
-    <div id="transcript-modal" class="fixed inset-0 z-[100] bg-white flex flex-col hidden fade-in overflow-hidden">
-        <button id="btn-close-transcript" class="absolute top-6 right-6 text-gray-400 hover:text-gray-900 transition-colors p-2 bg-gray-100 rounded-full w-12 h-12 flex items-center justify-center font-bold text-2xl shadow-sm z-10">&times;</button>
-        <div class="flex-1 flex flex-col p-6 md:p-12 w-full max-w-7xl mx-auto mt-12 md:mt-16">
-            <h3 class="text-2xl md:text-3xl font-black text-gray-800 mb-4 border-b-2 border-gray-200 pb-3 flex items-center gap-3">📝 Your Full Transcript</h3>
-            <div id="full-transcript-content" class="flex-1 overflow-y-auto text-xl md:text-3xl leading-relaxed font-medium text-gray-700 p-6 md:p-8 bg-gray-50 rounded-3xl border border-gray-200 shadow-inner"></div>
-        </div>
-    </div>
-
-    <div class="app-container h-[100dvh] w-screen flex flex-col overflow-hidden relative">
-
-        <div id="view-start" class="flex-1 overflow-y-auto w-full z-10 relative fade-in bg-canvas">
-            
-            <div class="absolute top-4 left-4 md:top-6 md:left-6 z-30">
-                <div id="rabbit-char" class="text-6xl md:text-7xl cursor-pointer animate-float drop-shadow-md hover:scale-110 transition-transform origin-bottom">🐰</div>
-                
-                <div id="rabbit-bubble" class="hidden absolute top-16 left-6 md:top-20 md:left-12 bg-white p-4 md:p-5 rounded-2xl shadow-xl border-2 border-pink-200 w-[280px] md:w-[320px] z-40 origin-top-left animate-pop">
-                    <button id="btn-close-bubble" class="absolute top-2 right-2 text-gray-400 hover:text-gray-800 font-bold text-xl leading-none">&times;</button>
-                    <h4 class="font-black text-pink-500 mb-2 text-sm md:text-base">PicSpeakってどんなアプリ？</h4>
-                    <p class="text-xs md:text-sm text-gray-700 font-bold leading-relaxed">
-                        ピックスピークは、目の前の写真を英語で描写して遊ぶ、新しいスピーキング学習アプリです！<br>
-                        正しい英語を言うと画面が光ってポイントGET！ゲーム感覚で英語を話せるようになるよ！
-                    </p>
-                    <div class="absolute -top-3 left-6 w-5 h-5 bg-white border-t-2 border-l-2 border-pink-200 transform rotate-45"></div>
+    <!-- 🌟 ヘッダー -->
+    <header class="bg-white/70 backdrop-blur-xl shadow-[0_2px_20px_rgba(0,0,0,0.02)] border-b border-white sticky top-0 z-50 transition-all duration-300">
+        <div class="max-w-[1500px] mx-auto px-4 lg:px-12 h-16 md:h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3 md:gap-4 cursor-pointer hover:opacity-80 transition-opacity" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+                <div class="w-10 h-10 md:w-12 md:h-12 bg-gradient-to-br from-white to-slate-100 rounded-2xl shadow-sm border border-white flex items-center justify-center p-1 relative overflow-hidden group">
+                    <img src="assets/picspeaklogo.png" alt="Logo" class="w-full h-full object-cover rounded-xl group-hover:scale-110 transition-transform duration-500">
                 </div>
+                <span class="font-extrabold text-lg md:text-2xl tracking-tight text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-rose-400 to-orange-400">
+                    PicSpeak & EduTools
+                </span>
             </div>
-
-            <div class="absolute top-4 right-4 md:top-6 md:right-6 flex flex-col items-end gap-2 md:gap-3 z-20">
-                <!-- 上段：目立つSOSボタン（文字入り・パルスアニメーション付き） -->
-                <button id="btn-open-trouble" class="text-red-600 hover:bg-red-50 transition-all bg-white/95 px-3 py-2 md:px-4 md:py-2.5 rounded-full backdrop-blur-sm shadow-md border-2 border-red-300 flex items-center justify-center gap-2 animate-pulse hover:animate-none" title="Troubleshooting">
-                    <span class="text-xl md:text-2xl leading-none">🆘</span>
-                    <div class="flex flex-col text-left">
-                        <span class="text-[11px] md:text-xs font-black leading-tight">音声トラブル時はこちら</span>
-                        <span class="text-[9px] md:text-[10px] font-bold text-gray-500 leading-tight">（iPad・iPhone用）</span>
-                    </div>
+            
+            <div class="flex items-center gap-8">
+                <nav class="hidden lg:flex gap-8 font-bold text-[14px] text-slate-500">
+                    <a href="#core-apps" class="hover:text-pink-500 transition-colors">
+                        <span class="lang-ja lang-fade">メイン教材</span><span class="lang-en lang-fade hidden">Core Platforms</span>
+                    </a>
+                    <a href="#games" class="hover:text-emerald-500 transition-colors">
+                        <span class="lang-ja lang-fade">アクティビティ</span><span class="lang-en lang-fade hidden">Activities</span>
+                    </a>
+                    <a href="#utilities" class="hover:text-blue-500 transition-colors">
+                        <span class="lang-ja lang-fade">教員用ツール</span><span class="lang-en lang-fade hidden">Teacher Tools</span>
+                    </a>
+                    <a href="#philosophy" class="hover:text-orange-500 transition-colors">
+                        <span class="lang-ja lang-fade">コンセプト</span><span class="lang-en lang-fade hidden">Concept</span>
+                    </a>
+                </nav>
+                
+                <!-- 🌟 言語切り替えトグルボタン -->
+                <button id="lang-toggle-btn" class="flex items-center bg-white border border-slate-200 rounded-full p-1 shadow-sm hover:shadow-md transition-all cursor-pointer">
+                    <div id="btn-ja" class="px-3 py-1 rounded-full bg-slate-800 text-white text-xs font-black transition-all">JP</div>
+                    <div id="btn-en" class="px-3 py-1 rounded-full text-slate-400 text-xs font-black transition-all">EN</div>
                 </button>
-                
-                <!-- 下段：その他の設定・ログボタン群 -->
-                <div class="flex gap-2 md:gap-3">
-                    <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
-                    <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
-                    <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
-                        <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
-                    </button>
-                </div>
             </div>
+        </div>
+    </header>
 
-            <div id="settings-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
-                <div class="bg-white p-8 rounded-2xl shadow-2xl w-11/12 max-w-sm border border-gray-100">
-                    <h3 class="text-2xl font-black mb-6 text-gray-900 text-center tracking-tight">Speaking Time ⏰</h3>
-                    <div class="grid grid-cols-5 gap-2 mb-8">
-                        <button class="time-btn sns-btn bg-gray-100 text-gray-700 border border-gray-200 py-3 transition-all" data-time="20">20s</button>
-                        <button class="time-btn sns-btn bg-sns-gradient text-white shadow-lg py-3 transition-all selected-time-btn" data-time="30">30s</button>
-                        <button class="time-btn sns-btn bg-gray-100 text-gray-700 border border-gray-200 py-3 transition-all" data-time="40">40s</button>
-                        <button class="time-btn sns-btn bg-gray-100 text-gray-700 border border-gray-200 py-3 transition-all" data-time="50">50s</button>
-                        <button class="time-btn sns-btn bg-gray-100 text-gray-700 border border-gray-200 py-3 transition-all" data-time="60">60s</button>
-                    </div>
-                    <button id="btn-close-settings" class="w-full sns-btn bg-gray-900 text-white font-black text-2xl py-4 transition-all tracking-widest">DONE!</button>
-                </div>
-            </div>
-
-            <div id="tutorial-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
-                <div class="bg-white p-8 md:p-10 rounded-2xl shadow-2xl w-11/12 max-w-2xl border border-gray-100 text-left">
-                    <h3 class="text-2xl font-black mb-6 text-gray-900 border-b pb-3">📖 How to Play</h3>
-                    <ul class="space-y-4 text-gray-700 font-medium mb-8 text-base md:text-lg">
-                        <li class="flex items-start gap-3"><span class="text-xl">1️⃣</span><p>モードとレベルを選んで画像を選択します。</p></li>
-                        <li class="flex items-start gap-3"><span class="text-xl">2️⃣</span><p>STARTを押すとマイクがオンになります。画像に映っているモノや状況を<b>英語でどんどん描写</b>しましょう！</p></li>
-                        <li class="flex items-start gap-3"><span class="text-xl">3️⃣</span><p>ターゲット表現を言うと、リアルタイムで青色に光ってポイントGET！</p></li>
-                        <li class="flex items-start gap-3"><span class="text-xl">💯</span><p>終了後、言えなかった表現は「発音練習モード(🎤)」で反復練習できます！</p></li>
-                    </ul>
-                    <button id="btn-close-tutorial" class="w-full sns-btn bg-gray-900 text-white font-black text-xl py-4 transition-all tracking-widest">GOT IT!</button>
-                </div>
-            </div>
-
-            <div id="history-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
-                <div class="bg-white p-6 md:p-8 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 flex flex-col max-h-[80vh]">
-                    <h3 class="text-2xl font-black mb-4 text-gray-900 border-b pb-3 text-center">📊 Learning Logs</h3>
-                    <div id="history-list" class="flex-1 overflow-y-auto space-y-4 mb-6 pr-3"></div>
-                    <button id="btn-close-history" class="w-full sns-btn bg-gray-900 text-white font-black text-xl py-4 transition-all tracking-widest shrink-0">CLOSE</button>
-                </div>
-            </div>
-
-            <div id="trouble-modal" class="absolute inset-0 z-50 bg-black/60 backdrop-blur-md flex flex-col items-center justify-center hidden">
-                <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl w-11/12 max-w-3xl border border-gray-100 relative flex flex-col max-h-[90vh]">
-                    <button id="btn-close-trouble" class="absolute top-4 right-4 md:top-6 md:right-6 text-gray-400 hover:text-gray-800 font-bold text-3xl md:text-4xl">&times;</button>
-                    <h3 class="text-xl md:text-2xl font-black mb-4 md:mb-6 text-gray-900 border-b pb-3 text-center flex items-center justify-center gap-2"><span class="text-2xl md:text-3xl">🆘</span> 音声認識トラブル対応</h3>
-                    
-                    <div id="trouble-slides" class="relative w-full flex-1 min-h-[350px] md:min-h-[500px]">
-                        
-                        <div class="trouble-slide absolute inset-0 flex flex-col items-center justify-start opacity-100 z-10 transition-opacity duration-300">
-                            <img src="assets/images/ipad1.webp" class="h-56 md:h-[380px] w-full object-contain mb-4 rounded-xl shadow-sm border border-gray-200 bg-gray-50">
-                            <h4 class="font-black text-red-600 text-lg md:text-2xl mb-2">STEP 1: iPadOSを最新にする</h4>
-                            <p class="text-sm md:text-base text-gray-700 font-medium text-center px-2">「設定」＞「一般」＞「ソフトウェアアップデート」を確認。システムが古いとマイクが反応しないことがあります。</p>
-                        </div>
-                        
-                        <div class="trouble-slide absolute inset-0 flex flex-col items-center justify-start opacity-0 z-0 pointer-events-none transition-opacity duration-300">
-                            <img src="assets/images/ipad2.webp" class="h-56 md:h-[380px] w-full object-contain mb-4 rounded-xl shadow-sm border border-gray-200 bg-gray-50">
-                            <h4 class="font-black text-red-600 text-lg md:text-2xl mb-2">STEP 2: プライバシー設定を開く</h4>
-                            <p class="text-sm md:text-base text-gray-700 font-medium text-center px-2">iPadの「設定」アプリから、左メニューを下へスクロールして「プライバシーとセキュリティ」をタップします。</p>
-                        </div>
-
-                        <div class="trouble-slide absolute inset-0 flex flex-col items-center justify-start opacity-0 z-0 pointer-events-none transition-opacity duration-300">
-                            <img src="assets/images/ipad3.webp" class="h-56 md:h-[380px] w-full object-contain mb-4 rounded-xl shadow-sm border border-gray-200 bg-gray-50">
-                            <h4 class="font-black text-red-600 text-lg md:text-2xl mb-2">STEP 3: 音声認識をタップ</h4>
-                            <p class="text-sm md:text-base text-gray-700 font-medium text-center px-2">右側に表示されるメニューの中から、「音声認識」を探してタップします。<br><span class="text-xs md:text-sm text-gray-500">※「マイク」の項目も合わせて確認してください。</span></p>
-                        </div>
-
-                        <div class="trouble-slide absolute inset-0 flex flex-col items-center justify-start opacity-0 z-0 pointer-events-none transition-opacity duration-300">
-                            <img src="assets/images/ipad4.webp" class="h-56 md:h-[380px] w-full object-contain mb-4 rounded-xl shadow-sm border border-gray-200 bg-gray-50">
-                            <h4 class="font-black text-red-600 text-lg md:text-2xl mb-2">STEP 4: ブラウザの許可を「オン」</h4>
-                            <p class="text-sm md:text-base text-gray-700 font-medium text-center px-2">普段使っているブラウザ（SafariやChrome）の右側のスイッチが<strong>「オン（緑色）」</strong>になっているか確認してください。</p>
-                        </div>
-
-                        <div class="trouble-slide absolute inset-0 flex flex-col items-center justify-start opacity-0 z-0 pointer-events-none transition-opacity duration-300">
-                            <img src="assets/images/ipad5.webp" class="h-56 md:h-[380px] w-full object-contain mb-4 rounded-xl shadow-sm border border-gray-200 bg-gray-50">
-                            <h4 class="font-black text-red-600 text-lg md:text-2xl mb-2">STEP 5: ダメなら「再起動」！</h4>
-                            <p class="text-sm md:text-base text-gray-700 font-medium text-center px-2">💡 <strong>魔法の解決策：</strong>これでも反応しない場合は、<strong>一度iPadの電源を完全に切り、再起動</strong>してみてください。多くの場合これで直ります！</p>
-                        </div>
-                    </div>
-                    
-                    <div class="flex justify-between w-full mt-4 md:mt-6 shrink-0">
-                        <button id="btn-prev-trouble" class="bg-gray-200 hover:bg-gray-300 text-gray-700 px-6 md:px-10 py-3 md:py-4 rounded-full font-bold transition-colors md:text-lg">戻る</button>
-                        <button id="btn-next-trouble" class="bg-blue-600 hover:bg-blue-700 text-white px-6 md:px-10 py-3 md:py-4 rounded-full font-bold transition-colors shadow-md md:text-lg">次へ</button>
-                    </div>
-                </div>
-            </div>
+    <main class="max-w-[1500px] mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-16">
+        
+        <!-- 🌟 メインビジュアル（Hero Section） -->
+        <div class="bg-white/60 backdrop-blur-lg rounded-[2.5rem] shadow-[0_8px_40px_rgb(0,0,0,0.02)] border border-white overflow-hidden mb-24 relative flex flex-col lg:flex-row items-center ring-1 ring-slate-900/5">
+            <div class="absolute inset-0 animate-aurora opacity-40 pointer-events-none mix-blend-multiply"></div>
             
-            <div class="flex flex-col items-center justify-center min-h-full w-full px-4 md:px-8 pt-24 pb-8">
-                
-                <div class="mb-6 md:mb-8 text-center shrink-0 relative z-20 flex flex-col items-center">
-                    <div class="flex items-center justify-center gap-3 md:gap-5 mb-1 pt-2 pb-1">
-                        <img src="assets/picspeaklogo.png" alt="PicSpeak Logo" class="w-14 h-14 md:w-20 md:h-20 rounded-full shadow-[0_0_15px_rgba(236,72,153,0.4)] border-2 border-white/50">
-                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold drop-shadow-md tracking-wide" style="font-family: 'Georgia', 'Times New Roman', 'Lora', serif;">
-                            <span style="color: #ec4899;">Pic</span><span style="color: #f43f5e;">Sp</span><span style="color: #f97316;">eak</span>
-                        </h1>
-                    </div>
-                    
-                    <p class="text-pink-500 font-bold text-[10px] md:text-xs tracking-[0.25em] uppercase opacity-90 mb-3">English Speaking Platform</p>
-                    
-                    <p class="text-gray-900 text-sm md:text-base font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
-                    <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
+            <div class="w-full lg:w-3/5 p-8 md:p-16 lg:p-20 relative z-10 text-left">
+                <div class="flex flex-wrap gap-2 mb-6">
+                    <span class="bg-slate-900 text-white text-[10px] md:text-xs font-black px-4 py-1.5 rounded-full tracking-widest uppercase shadow-md">
+                        <span class="lang-ja lang-fade">教育ICTツール群</span><span class="lang-en lang-fade hidden">EduTools Suite</span>
+                    </span>
                 </div>
-                
-                <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
-                    
-                    <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
-                        <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
-                        
-                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
-                            
-                            <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="snapshot">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">SNAPSHOT</span>
-                                <span class="text-xs md:text-sm font-bold text-blue-800 z-10">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
-                            </button>
-                            
-                            <button class="mode-btn btn-stitch bg-emerald-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="story">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">STORY</span>
-                                <span class="text-xs md:text-sm font-bold text-emerald-800 z-10">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
-                            </button>
-
-                            <button class="mode-btn btn-stitch bg-purple-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" onclick="window.location.href='picflash.html'">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">PIC FLASH</span>
-                                <span class="text-xs md:text-sm font-bold text-purple-800 z-10">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
-                            </button>
-
-                            <button class="btn-stitch bg-gray-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center relative overflow-hidden cursor-not-allowed opacity-80" disabled>
-                                <div class="absolute inset-0 bg-white/30 backdrop-blur-[1px] z-20 flex items-center justify-center">
-                                    <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full tracking-widest transform -rotate-12 shadow-lg border border-gray-600">COMING SOON</span>
-                                </div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">NG WORD</span>
-                                <span class="text-xs md:text-sm font-bold text-gray-600 z-10">NGワードを避けて説明しろ<br><span class="text-[11px] md:text-xs">（言い換え力を極限まで鍛える！）</span></span>
-                            </button>
-
-                            <button class="mode-btn btn-stitch bg-pink-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="mosaic">
-    
-                               <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">
-                                    NEW!
-                               </div>
-
-                               <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">MOSAIC</span>
-                               <span class="text-xs md:text-sm font-bold text-pink-800 z-10">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
-                            </button>
-
-                            <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100 relative" data-mode="detective">
-    
-                                <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">
-                                     NEW!
-                                </div>
-
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">DETECTIVE</span>
-                                <span class="text-xs md:text-sm font-bold text-blue-800 z-10">2枚の絵の間違いを<br>英語で指摘せよ！<span class="text-[11px] md:text-xs">（主語＋動詞の特訓）</span></span>
-                            </button>
-                        </div>
-                      </div>
-                    <div class="relative flex justify-center mb-2">
-                        <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-xl md:text-2xl py-3 md:py-4 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
-                            SELECT IMAGE
-                        </button>
-                    </div>
-
-                    <div class="text-center mt-4 md:mt-6 flex flex-col items-center gap-3">
-                        <a href="#picspeak-story" class="text-gray-500 font-bold hover:text-pink-500 transition-colors text-xs md:text-sm inline-flex items-center gap-1.5 cursor-pointer">
-                            <span>ℹ️</span> PicSpeakについて（特長・開発の想い）
-                        </a>
-                        
-                        <a href="guide.html" target="_blank" rel="noopener noreferrer" 
-                           class="guide-banner-pulse block relative w-full max-w-sm md:max-w-md rounded-2xl p-2.5 md:p-3 transition-all transform hover:scale-[1.02] shadow-md mt-1"
-                           style="background: linear-gradient(135deg, #fbcfe8 0%, #ec4899 50%, #f97316 100%);">
-                            
-                            <div class="flex items-center gap-3">
-                                <div class="flex-shrink-0 bg-white/90 p-2 md:p-2.5 rounded-full shadow-inner relative">
-                                    <span class="text-xl md:text-2xl relative z-10">💡</span>
-                                    <div class="absolute inset-0 bg-pink-200 rounded-full animate-ping opacity-60"></div>
-                                </div>
-                                
-                                <div class="flex-grow text-left">
-                                    <p class="text-[9px] md:text-[10px] font-bold text-pink-100 mb-0.5 tracking-wider uppercase">For Teachers & Students</p>
-                                    <h2 class="text-sm md:text-base font-black text-white leading-tight tracking-tight mb-0.5">PicSpeak 完全活用ガイド</h2>
-                                    <p class="text-[9px] md:text-[10px] text-white/90 font-bold">スピーキング力UPのコツと授業アイデア！</p>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
-
-                    <hr class="w-full border-gray-200 my-8 md:my-10">
-                    
-                    <div id="news-updates" class="w-full text-left">
-                        <div class="flex items-center gap-3 mb-5">
-                            <span class="bg-blue-600 text-white p-1.5 md:p-2 rounded-lg shadow-sm">
-                                <svg class="w-4 h-4 md:w-5 md:h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9"></path></svg>
-                            </span>
-                            <h2 class="text-lg md:text-xl font-black text-gray-900 tracking-tight">News & Updates</h2>
-                        </div>
-                        <div class="bg-gray-50 rounded-2xl p-4 md:p-6 border border-gray-100 shadow-inner">
-                            <ul class="space-y-3 md:space-y-4 text-sm md:text-base text-left m-0 p-0 list-none">
-                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
-                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.31</span>
-                                    <span class="text-gray-800 font-medium leading-relaxed">
-                                        <span class="bg-green-100 text-green-700 text-[10px] md:text-xs font-black px-2 py-0.5 rounded mr-2 inline-block shadow-sm align-middle">New</span>
-                                        Founder's Journey（UoPeople編・Global Classroom編）の全編を公開しました。教育への想いと軌跡をご覧ください。
-                                    </span>
-                                </li>
-                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
-                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.25</span>
-                                    <span class="text-gray-800 font-medium leading-relaxed">
-                                        新ゲームモード「Mosaic（モザイク）」、「Detective（間違い探し）」を搭載しました。
-                                    </span>
-                                </li>
-                                <li class="flex flex-col md:flex-row gap-1 md:gap-4 border-b border-gray-200 pb-3 md:pb-4 last:border-0 last:pb-0">
-                                    <span class="text-gray-500 font-black tracking-wider whitespace-nowrap mt-0.5 text-xs md:text-sm">2026.05.22</span>
-                                    <span class="text-gray-800 font-medium leading-relaxed">
-                                        PicSpeak（ピックスピーク）のロゴデザインが新しくなりました！
-                                    </span>
-                                </li>
-                           </ul>
-                        </div>
-                    </div>
-                    
-                    <div id="picspeak-story" class="w-full bg-white rounded-3xl shadow-xl border border-gray-200 mt-10 overflow-hidden shrink-0">
-                        <div class="max-w-7xl mx-auto px-6 md:px-10 py-12">
-                            
-                            <div class="text-center mb-10">
-                                <span class="bg-gray-800 text-white text-xs md:text-sm font-black px-4 py-1.5 rounded-full uppercase tracking-widest shadow-sm">Founder's Journey</span>
-                                <h2 class="text-2xl md:text-4xl font-black text-gray-900 mt-4 tracking-tight">教室の壁を越える、学びの実践録</h2>
-                                <p class="text-gray-500 font-bold mt-2 text-sm md:text-base">PicSpeak開発、UoPeopleでの探求、Global Classroomへの歩み</p>
-                            </div>
-
-                            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
-                                <a href="methodology.html" class="group bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg border border-gray-100 hover:border-pink-300 transition-all duration-300 flex flex-col h-full">
-                                    <div class="w-12 h-12 rounded-xl bg-pink-100 text-pink-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform shadow-inner">📸</div>
-                                    <h3 class="text-lg font-black text-gray-900 mb-2 group-hover:text-pink-600 transition-colors leading-tight">Picture Descriptionに行き着いた理由</h3>
-                                    <p class="text-xs md:text-sm text-gray-600 font-medium leading-relaxed flex-1">日本の英語教育に不足している「その場で使う」練習。知識を呼吸する言葉へ変えるためのトレーニングの全貌とは。</p>
-                                    <span class="text-pink-500 font-bold text-xs md:text-sm mt-4 flex items-center gap-1">続きを読む <span class="group-hover:translate-x-1 transition-transform">➔</span></span>
-                                </a>
-
-                                <a href="journey-uopeople.html" class="group bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg border border-gray-100 hover:border-blue-300 transition-all duration-300 flex flex-col h-full">
-                                    <div class="w-12 h-12 rounded-xl bg-blue-100 text-blue-500 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform shadow-inner">🎓</div>
-                                    <h3 class="text-lg font-black text-gray-900 mb-2 group-hover:text-blue-600 transition-colors leading-tight">UoPeople M.Ed. 挑戦記</h3>
-                                    <p class="text-xs md:text-sm text-gray-600 font-medium leading-relaxed flex-1">愛知県の公立高校から世界基準の教育へ。2年間の学び、絶望的な課題量、そして「評価」の真髄に気づくまでの軌跡。</p>
-                                    <span class="text-blue-500 font-bold text-xs md:text-sm mt-4 flex items-center gap-1">続きを読む <span class="group-hover:translate-x-1 transition-transform">➔</span></span>
-                                </a>
-
-                                <a href="journey-global-classroom.html" class="group bg-gray-50 rounded-2xl p-6 shadow-sm hover:shadow-lg border border-gray-100 hover:border-emerald-300 transition-all duration-300 flex flex-col h-full">
-                                    <div class="w-12 h-12 rounded-xl bg-emerald-100 text-emerald-600 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition-transform shadow-inner">🌍</div>
-                                    <h3 class="text-lg font-black text-gray-900 mb-2 group-hover:text-emerald-600 transition-colors leading-tight">Global Classroomについて</h3>
-                                    <p class="text-xs md:text-sm text-gray-600 font-medium leading-relaxed flex-1">パンデミックが奪った交流から生まれた、世界をひとつの教室にする挑戦。国境を越えた友情を生み出す実践録。</p>
-                                    <span class="text-emerald-500 font-bold text-xs md:text-sm mt-4 flex items-center gap-1">続きを読む <span class="group-hover:translate-x-1 transition-transform">➔</span></span>
-                                </a>
-                            </div>
-
-                            <div class="bg-gray-50 rounded-2xl p-6 md:p-8 border border-gray-200 relative overflow-hidden">
-                                <div class="absolute top-0 right-0 bg-sns-gradient text-white text-[10px] font-black px-3 py-1 rounded-bl-lg tracking-widest uppercase">Creator</div>
-                                <div class="flex flex-col md:flex-row gap-6 items-center md:items-start">
-                                    <img src="assets/picspeaklogo.png" alt="PicSpeak Logo" class="w-20 h-20 rounded-full shadow-md border-2 border-white">
-                                    <div>
-                                        <p class="text-sm md:text-base text-gray-700 leading-relaxed font-medium mb-4">
-                                            <strong>中島 浩平（Kohei Nakashima）</strong><br>
-                                            現役の英語教員（Microsoft Certified Educator）。「生徒がもっと気軽に、ゲーム感覚で英語の発話量を最大化できるツールが欲しい」という強い課題感からPicSpeakを独自開発。<br>
-                                            University of the Peopleにて教育学修士（M.Ed.）を取得し、オンライン国際交流コミュニティ「Global Classroom」のFounderとして新しい言語学習の形を追求し続けている。
-                                        </p>
-                                        <div class="flex flex-wrap gap-3">
-                                            <a href="guide.html" class="text-xs md:text-sm font-bold text-white bg-gray-900 px-6 py-2.5 rounded-full hover:bg-gray-800 transition-colors shadow-sm">活用ガイドを見る</a>
-                                            <a href="https://sites.google.com/view/koheinakashima/bio" target="_blank" class="text-xs md:text-sm font-bold text-gray-700 bg-white px-6 py-2.5 rounded-full hover:bg-gray-100 transition-colors border border-gray-200 shadow-sm">プロフィール詳細</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    </div>
-            </div>
-        </div>
-
-        <div id="view-about" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in">
-            <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
-                <div class="flex items-center gap-3 md:gap-4">
-                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
-                    <div class="flex items-center gap-1.5 md:gap-2">
-                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
-                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
-                    </div>
-                </div>
-                <div class="text-sm md:text-base font-bold text-gray-400">About</div>
-            </div>
-            
-            <div class="flex-1 overflow-y-auto p-6 md:p-12 w-full max-w-7xl mx-auto space-y-10 md:space-y-14 pb-20">
-                <section class="bg-white rounded-3xl p-8 shadow-sm border border-gray-100">
-                    <h2 class="text-xl md:text-3xl font-black text-gray-900 mb-4 border-b-4 border-pink-200 pb-2 inline-block">英語スピーキングの壁を打ち破る。<br>新感覚スピーキング学習アプリ</h2>
-                    <p class="text-sm md:text-lg text-gray-700 leading-relaxed font-medium mt-2">
-                        日本の英語教育において、圧倒的に不足しているのは「アウトプット（話す）量」です。PicSpeak（ピックスピーク）は、目の前に提示された写真や画像を英語で描写する「Picture Description」のタスクを通じて、学習者の即興的なスピーキング力を飛躍的に高めるために開発されました。<br><br>
-                        音声認識機能を活用し、学習者が発した英語をリアルタイムでテキスト化。正しい単語やフレーズ（チャンク）、例文を言い当てると画面が鮮やかに反応し、ゲーム感覚で「英語を口に出す楽しさ」を体験できます。
-                    </p>
-                </section>
-
-                <section class="space-y-6">
-                    <h2 class="text-xl md:text-3xl font-black text-center text-transparent bg-clip-text bg-sns-gradient tracking-tight">3つの革新的な学習システム</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                        <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
-                            <div class="text-4xl mb-3">🎯</div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">リアルタイム判定 & WPM計測</h3>
-                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">発話内容は瞬時に解析され、目標となるターゲット表現との「一致率」を表示します。さらに、1分間あたりの発話単語数である「WPM」をリアルタイムで計測し、流暢さをフィードバックします。</p>
-                        </div>
-                        <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
-                            <div class="text-4xl mb-3">🛟</div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">ZPDに基づく「サポートモード」</h3>
-                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">スピーキングへの心理的ハードルを下げるため、「足場かけ」を提供します。サポートモードをオンにすると、まだ言えていない表現が画像上にフェードイン表示され、学習者の発話を優しく誘導します。</p>
-                        </div>
-                        <div class="bg-white rounded-3xl p-6 shadow-md border border-gray-100">
-                            <div class="text-4xl mb-3">🎤</div>
-                            <h3 class="text-lg font-bold text-gray-900 mb-2">徹底的な「発音練習」と振り返り</h3>
-                            <p class="text-xs md:text-sm text-gray-600 leading-relaxed">終了後のリザルト画面では、ネイティブ発音の確認機能に加え、言えなかったフレーズだけをピンポイントで練習できる「Practiceモード」を搭載。間違えた単語が紫にハイライトされ定着を促します。</p>
-                        </div>
-                    </div>
-                </section>
-
-                <section class="bg-gray-100 rounded-3xl p-8 shadow-inner border border-gray-200">
-                    <h2 class="text-xl md:text-2xl font-black text-gray-900 mb-6">発達段階に合わせた3つのレベル設定</h2>
-                    <ul class="space-y-6">
-                        <li class="flex gap-4 items-start"><span class="bg-green-100 text-green-700 font-black px-3 py-1 rounded-lg text-sm shrink-0">小学生</span><p class="text-sm md:text-base text-gray-700 font-medium">目に見える基本的な名詞や色、"I see ~" や "This is ~" といったシンプルな現在形を用いて、英語を口に出すことへの抵抗感をなくします。</p></li>
-                        <li class="flex gap-4 items-start"><span class="bg-blue-100 text-blue-700 font-black px-3 py-1 rounded-lg text-sm shrink-0">中学生</span><p class="text-sm md:text-base text-gray-700 font-medium">現在進行形や場所を表す前置詞句、There is/are 構文などの中学文法を駆使し、写真の中の動作や位置関係を正確に描写する力を養います。</p></li>
-                        <li class="flex gap-4 items-start"><span class="bg-pink-100 text-pink-700 font-black px-3 py-1 rounded-lg text-sm shrink-0">高校生</span><p class="text-sm md:text-base text-gray-700 font-medium">関係代名詞や接続詞を用いた複雑な文構成、より豊かで具体的な類義語を使いこなし、詳細で深みのある状況描写を目指します。</p></li>
-                    </ul>
-                </section>
-
-                <section class="bg-white rounded-3xl p-8 shadow-lg border border-gray-100 relative overflow-hidden">
-                    <h2 class="text-lg md:text-xl font-black text-gray-900 mb-4 relative z-10">開発者について (About the Creator)</h2>
-                    <p class="text-sm md:text-base text-gray-700 leading-relaxed font-medium relative z-10 mb-5">
-                        <strong>中島 浩平（Kohei Nakashima）</strong><br><br>
-                        現役の英語教員として教育現場に立つ中で、「生徒がもっと気軽に、そしてゲーム感覚で英語の発話量を最大化できるツールが欲しい」という強い課題感から独自開発しました。<br>
-                        オンライン国際交流コミュニティ「Global Classroom」の創設者として、テクノロジーと教育を掛け合わせた新しい言語学習の形を追求し続けています。
-                    </p>
-                    <a href="https://sites.google.com/view/koheinakashima/bio" target="_blank" class="inline-flex items-center gap-1 text-pink-500 font-bold hover:text-pink-600 transition-colors text-sm md:text-base">▶ プロフィール詳細を見る</a>
-                </section>
-            </div>
-        </div>
-
-        <div id="view-select" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative fade-in bg-canvas">
-            <div class="bg-white/90 backdrop-blur-md px-4 md:px-8 py-3 md:py-4 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
-                <div class="flex items-center gap-3 md:gap-4">
-                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
-                    <div class="flex items-center gap-1.5 md:gap-2">
-                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
-                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
-                    </div>
-                </div>
-                <div class="text-sm md:text-base font-bold text-gray-400">Select Image</div>
-            </div>
-            <div class="flex-1 overflow-y-auto p-4 md:p-8 flex flex-col items-center">
-                <div id="step-level" class="w-full max-w-7xl bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 mb-4 shadow-sm border border-gray-200 text-center">
-                    <h2 class="text-sm md:text-base lg:text-lg font-black text-gray-900 mb-4 uppercase tracking-wider">Target Level</h2>
-                    <div class="grid grid-cols-3 gap-2 md:gap-4 lg:gap-6">
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="elementary">小学生</button>
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="junior_high">中学生</button>
-                        <button class="level-btn sns-btn bg-gray-50 border border-gray-200 text-gray-700 py-2.5 md:py-3 lg:text-lg transition-all" data-level="high_school">高校生</button>
-                    </div>
-                </div>
-                <div class="w-full max-w-7xl bg-white rounded-2xl md:rounded-3xl p-4 md:p-6 mb-6 md:mb-8 shadow-sm border border-gray-200 flex items-center justify-between">
-                    <div>
-                        <h3 class="text-lg md:text-2xl font-black text-gray-800 flex items-center gap-2">🛟 Support Mode</h3>
-                        <p class="text-xs md:text-sm font-medium text-gray-500 mt-1">オンにすると、言葉のヒントが画像上に浮かび上がります。</p>
-                    </div>
-                    <label class="relative inline-flex items-center cursor-pointer transform scale-100 md:scale-125 origin-right">
-                      <input type="checkbox" id="support-toggle" class="sr-only peer">
-                      <div class="w-14 h-7 bg-gray-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-6 after:w-6 after:transition-all peer-checked:bg-pink-500 shadow-inner"></div>
-                    </label>
-                </div>
-                <div id="theme-grid" class="w-full max-w-7xl grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6"></div>
-            </div>
-        </div>
-
-        <div id="view-play" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative">
-            <div class="bg-white/90 backdrop-blur-md px-4 md:px-6 md:px-12 lg:px-20 py-2 md:py-3 flex justify-between items-center shadow-sm z-10 shrink-0 border-b border-gray-200 sticky top-0">
-                <div class="flex items-center gap-3 md:gap-4">
-                    <div class="clean-title text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
-                    <div class="flex items-center gap-1.5 md:gap-2">
-                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
-                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
-                    </div>
-                </div>
-                <div class="flex items-center gap-2 md:gap-3 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-gray-200 shadow-inner">
-                    <span class="text-xl md:text-2xl">⏱️</span>
-                    <span id="timer-text" class="text-2xl md:text-3xl font-black text-gray-900 w-12 md:w-16 text-right">30s</span>
-                </div>
-            </div>
-            <div class="w-full bg-gray-200 h-1.5 md:h-2 shrink-0"><div id="timer-bar" class="h-full bg-sns-gradient w-full timer-transition"></div></div>
-            <div class="flex-1 flex flex-col md:flex-row overflow-hidden relative w-full h-full">
-                <div id="image-panel" class="relative w-full md:w-1/2 h-48 md:h-full bg-white shrink-0 overflow-hidden flex flex-row items-center justify-center border-b md:border-b-0 md:border-r border-gray-200 shadow-inner md:shadow-none">
-                    
-                    <img id="prompt-image" src="" alt="Prompt" class="absolute inset-0 w-full h-full object-contain filter transition-all duration-300">
-                    
-                    <img id="prompt-image-b" src="" alt="Prompt B" class="absolute inset-0 w-1/2 h-full right-0 object-contain filter transition-all duration-300 hidden border-l-4 border-dashed border-blue-400">
-
-                    <div id="ng-word-panel" class="absolute top-4 right-4 bg-black/80 backdrop-blur-md rounded-xl p-3 border-2 border-red-500 hidden z-30 shadow-2xl transform rotate-2">
-                        <div class="text-red-400 font-black text-xs uppercase tracking-widest text-center mb-1">⚠️ DO NOT SAY</div>
-                        <ul id="ng-word-list" class="text-white font-bold text-sm space-y-1 text-center"></ul>
-                    </div>
-
-                    <div id="ng-alert-overlay" class="absolute inset-0 bg-red-600/60 flex items-center justify-center pointer-events-none hidden z-40 transition-opacity">
-                        <span class="text-6xl md:text-8xl font-black text-white drop-shadow-2xl uppercase tracking-tighter transform scale-150">NG!!</span>
-                    </div>
-                    <div id="pin-container" class="absolute inset-0 pointer-events-none z-20 overflow-hidden"></div>
-                    <div id="support-text-container" class="absolute inset-0 pointer-events-none z-[25] overflow-hidden"></div>
-                    <div id="combo-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-black/50 backdrop-blur-sm z-30"><div class="text-center" id="combo-content"></div></div>
-                    <div id="perfect-overlay" class="absolute inset-0 flex items-center justify-center pointer-events-none hidden bg-white/70 backdrop-blur-md z-40"><div class="text-center" id="perfect-content"></div></div>
-                </div>
-                <div id="resizer-vertical" class="h-6 bg-gray-200 flex flex-col items-center justify-center cursor-ns-resize md:hidden shrink-0 touch-none w-full shadow-inner z-20 border-y border-gray-300">
-                    <div class="w-16 h-1 bg-gray-400 rounded-full mb-0.5"></div><div class="w-16 h-1 bg-gray-400 rounded-full"></div>
-                </div>
-                <div id="resizer-horizontal" class="hidden md:flex w-3 lg:w-4 bg-gray-200 flex-col items-center justify-center cursor-ew-resize shrink-0 touch-none shadow-inner z-20 border-x border-gray-300 hover:bg-gray-300 transition-colors">
-                    <div class="w-1 h-6 bg-gray-400 rounded-full mb-1"></div><div class="w-1 h-6 bg-gray-400 rounded-full"></div>
-                </div>
-                <div class="flex-1 flex flex-col overflow-hidden bg-gray-50 relative">
-                    <div class="flex-1 p-3 md:p-4 lg:p-5 flex flex-col overflow-hidden relative">
-                        <div class="mb-2 md:mb-3 shrink-0 bg-white p-3 md:p-4 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
-                            <div class="flex justify-between items-end mb-1 md:mb-2 relative z-10">
-                                <span class="text-xs md:text-sm font-black text-gray-500 uppercase tracking-widest">Completion Rate</span>
-                                <span id="live-completion-text" class="text-2xl md:text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-sns-gradient leading-none">0%</span>
-                            </div>
-                            <div class="w-full bg-gray-100 rounded-full h-2.5 md:h-3 overflow-hidden shadow-inner relative z-10">
-                                <div id="live-completion-bar" class="bg-sns-gradient h-full rounded-full transition-all duration-500" style="width: 0%"></div>
-                            </div>
-                        </div>
-                        <div class="grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3 shrink-0">
-                            <div class="bg-white rounded-xl p-2 md:p-3 shadow-sm border border-gray-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-0.5">Words</span><span id="wordCountDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-gray-800">0</span>
-                            </div>
-                            <div class="bg-blue-50 rounded-xl p-2 md:p-3 shadow-sm border border-blue-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-blue-400 uppercase tracking-wider mb-0.5">WPM</span><span id="liveWpmDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-blue-600">0</span>
-                            </div>
-                            <div class="bg-orange-50 rounded-xl p-2 md:p-3 shadow-sm border border-orange-100 flex flex-col justify-center items-center">
-                                <span class="text-[10px] md:text-xs font-extrabold text-orange-400 uppercase tracking-wider mb-0.5">Score</span><span id="scoreDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-orange-600">0</span>
-                            </div>
-                        </div>
-                        <div class="flex justify-between items-end mb-1 md:mb-2 shrink-0 px-2">
-                            <div class="text-xs md:text-sm font-extrabold text-gray-400 uppercase tracking-widest">Transcript:</div>
-                            <div id="current-level-badge" class="text-[10px] md:text-xs font-extrabold text-white bg-gray-400 px-3 py-1 rounded-full shadow-sm">小学生レベル</div>
-                        </div>
-                        <div class="flex-1 bg-white border border-gray-200 rounded-2xl md:rounded-3xl p-3 md:p-5 overflow-y-auto shadow-inner text-lg md:text-2xl lg:text-3xl leading-relaxed relative font-medium text-gray-800" id="transcript-box">
-                            <p id="transcript-text" class="text-gray-400 font-bold">Press START and speak loudly.<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して、大きな声で話しましょう）</span></p>
-                        </div>
-                    </div>
-                    <div class="p-3 md:p-4 bg-white border-t border-gray-200 shrink-0 shadow-[0_-10px_20px_rgba(0,0,0,0.03)] z-20">
-                        <div class="flex justify-center mb-1.5 md:mb-2 h-4 md:h-5"><span id="status-text" class="text-xs md:text-sm font-extrabold text-gray-400 uppercase tracking-wider">Ready</span></div>
-                        <button id="btn-start-turn" class="w-full sns-btn bg-sns-gradient text-white font-black text-2xl md:text-3xl py-4 md:py-5 transition-all flex items-center justify-center gap-3 uppercase shadow-xl hover:scale-[1.02] animate-attention">
-                            <span class="text-3xl md:text-4xl">🎙️</span> START
-                        </button>
-                        <div id="recording-indicator" class="hidden w-full sns-btn bg-gray-100 text-pink-600 font-black text-2xl md:text-3xl py-4 md:py-5 rounded-full border-2 border-pink-200 flex items-center justify-center gap-3 recording-pulse cursor-pointer shadow-inner">
-                            <span class="text-3xl md:text-4xl">🎤</span> LISTENING...
-                        </div>
-                        <button id="btn-finish-turn" class="w-full sns-btn bg-gray-800 text-white font-black text-2xl md:text-3xl py-4 md:py-5 transition-all hidden flex items-center justify-center gap-3 uppercase shadow-xl hover:scale-[1.02]">
-                            <span class="text-3xl md:text-4xl">🏁</span> FINISH
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="view-result" class="flex-1 flex flex-col hidden h-full bg-gray-50 z-10 relative overflow-hidden">
-            <div class="bg-white/90 backdrop-blur-md px-4 py-3 md:px-8 md:py-4 shadow-sm shrink-0 border-b border-gray-200 flex items-center justify-between relative z-30 sticky top-0">
-                <div class="flex items-center gap-3 md:gap-4">
-                    <div class="clean-title hidden sm:block text-2xl md:text-3xl tracking-tighter text-transparent bg-clip-text bg-sns-gradient leading-none mt-1">PicSpeak</div>
-                    <div class="flex items-center gap-1.5 md:gap-2">
-                        <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
-                        <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
-                    </div>
-                    <div class="ml-2 border-l-2 border-gray-200 pl-4 hidden md:block">
-                        <h2 class="text-xl md:text-2xl font-black mb-0 text-gray-800 tracking-tighter leading-none">RESULTS</h2>
-                    </div>
-                </div>
-                <div class="w-32 md:w-48">
-                    <button id="btn-play-again" class="w-full sns-btn bg-sns-gradient text-white font-black text-xs md:text-base py-2.5 md:py-3 rounded-full shadow-lg hover:scale-[1.05] transition-transform flex items-center justify-center gap-1 tracking-wider uppercase relative overflow-hidden group">
-                        <span class="relative z-10">PLAY AGAIN</span>
-                        <div class="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer z-0 skew-x-[-15deg]"></div>
-                    </button>
-                </div>
-            </div>
-            
-            <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
-                <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
-                </div>
-            </div>
-       </div>
-       
-       <footer id="app-footer" class="bg-white border-t border-gray-200 py-3 shrink-0 z-10 w-full mt-auto">
-            <div class="flex flex-wrap justify-center gap-x-4 gap-y-2 px-2 text-[10px] md:text-xs font-bold text-gray-400">
-                <a href="guide.html" class="text-pink-500 font-black hover:text-pink-700 transition-colors" target="_blank">💡 活用ガイド（学習のコツ）</a>
-                <a href="privacy.html" class="hover:text-pink-500 transition-colors" target="_blank">プライバシーポリシー</a>
-                <a href="terms.html" class="hover:text-pink-500 transition-colors" target="_blank">利用規約</a>
-                <a href="https://sites.google.com/view/koheinakashima/bio" class="hover:text-pink-500 transition-colors" target="_blank">作成者について</a>
-                <a href="https://forms.gle/z8LupwnWJ6CK5VbV9" class="hover:text-pink-500 transition-colors" target="_blank">お問い合わせ</a>
-                <a href="blog.html" class="hover:text-pink-500 transition-colors" target="_blank">📝 公式ブログ</a>
-            </div>
-            <p class="text-center text-[9px] text-gray-300 mt-2">&copy; 2026 Kohei Nakashima / Global Classroom. All rights reserved.</p>
-        </footer>
-
-    </div>
-
-    <div id="ios-prompt" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white rounded-2xl shadow-2xl p-4 z-50 transform translate-y-full transition-transform duration-500 hidden border border-gray-200">
-        <div class="flex items-start gap-4">
-            <img src="assets/images/icon.png" alt="PicSpeak" class="w-12 h-12 rounded-xl shadow-sm border border-gray-100">
-            <div class="flex-1">
-                <p class="text-sm font-black text-gray-800 mb-1">ホーム画面に追加</p>
-                <p class="text-[11px] text-gray-500 leading-relaxed font-bold">
-                    全画面で快適にプレイできます。<br>下部の <svg class="inline w-4 h-4 text-blue-500 mb-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-8l-4-4m0 0L8 8m4-4v12"></path></svg> （共有ボタン）をタップし、<br><span class="text-gray-700 bg-gray-100 px-1 rounded">「ホーム画面に追加」</span> を選択してください。
+                <h1 class="text-3xl md:text-5xl lg:text-6xl font-black text-slate-800 mb-6 tracking-tighter leading-[1.2]">
+                    <span class="lang-ja lang-fade">教室の可能性を<br><span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">無限大</span>に広げる。</span>
+                    <span class="lang-en lang-fade hidden">Expand the Possibilities<br>of Your Classroom <span class="text-transparent bg-clip-text bg-gradient-to-r from-pink-500 to-orange-400">Infinitely.</span></span>
+                </h1>
+                <p class="text-slate-500 font-medium text-sm md:text-lg leading-relaxed mb-10 max-w-xl">
+                    <span class="lang-ja lang-fade">スピーキング判定から、グループ分け、白熱するQRコードゲームまで。現場の「欲しい！」から生まれた革新的なICTツールが、あなたの授業を劇的にアップデートします。</span>
+                    <span class="lang-en lang-fade hidden">From speaking assessment to group shuffling and exciting QR games. Innovative ICT tools born from teachers' real needs will dramatically update your classes.</span>
                 </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#core-apps" class="bg-slate-900 text-white font-bold text-sm md:text-base px-8 py-4 rounded-full shadow-[0_8px_20px_rgba(0,0,0,0.15)] hover:bg-slate-800 hover:-translate-y-1 transition-all duration-300">
+                        <span class="lang-ja lang-fade">メインアプリを見る</span><span class="lang-en lang-fade hidden">Explore Core Apps</span>
+                    </a>
+                </div>
             </div>
-            <button onclick="closeIosPrompt()" class="text-gray-400 hover:text-gray-600 bg-gray-100 hover:bg-gray-200 rounded-full w-7 h-7 flex items-center justify-center font-bold transition-colors">&times;</button>
+
+            <!-- 🌟 ロゴがフワフワ浮遊するギャラクシー空間 -->
+            <div class="hidden lg:flex w-2/5 h-full p-8 items-center justify-center relative bg-gradient-to-br from-white/40 to-slate-50/40 rounded-l-[4rem] border-l border-white/60 overflow-visible">
+                <div class="relative w-full aspect-square max-w-[420px]">
+                    <!-- 中央：PicSpeak -->
+                    <a href="play.html" class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-30 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 4.2s;">
+                        <img src="assets/picspeaklogo.png" class="w-32 h-32 rounded-3xl shadow-2xl" alt="PicSpeak">
+                    </a>
+                    <!-- 内側の軌道 -->
+                    <a href="https://copeak.pic-speak-story.com/" target="_blank" class="absolute top-[15%] left-[15%] z-20 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 5.5s; animation-delay: 0.5s;">
+                        <img src="assets/images/copeaklogo.png" class="w-24 h-24 rounded-[2rem] shadow-xl" alt="Copeak">
+                    </a>
+                    <a href="https://timepalette.pic-speak-story.com/" target="_blank" class="absolute bottom-[20%] right-[10%] z-20 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 6.1s; animation-delay: 1.2s;">
+                        <img src="assets/images/timelogo.png" class="w-24 h-24 rounded-[2rem] shadow-xl" alt="TimePalette">
+                    </a>
+                    <a href="https://scannect.pic-speak-story.com" target="_blank" class="absolute top-[25%] right-[5%] z-20 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 4.8s; animation-delay: 0.8s;">
+                        <img src="assets/images/scannectlogo.png" class="w-20 h-20 rounded-2xl shadow-lg" alt="Scannect">
+                    </a>
+                    <a href="https://groupshuffle.pic-speak-story.com/" target="_blank" class="absolute bottom-[25%] left-[5%] z-20 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 5.8s; animation-delay: 1.5s;">
+                        <img src="assets/images/shufflelogo.png" class="w-20 h-20 rounded-2xl shadow-lg" alt="GroupShuffle">
+                    </a>
+                    <!-- ClassPin (新規追加) -->
+                    <a href="https://classpin.pic-speak-story.com/" target="_blank" class="absolute top-[20%] left-[-5%] z-20 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 5.7s; animation-delay: 0.9s;">
+                        <img src="assets/images/classpinlogo.png" class="w-16 h-16 rounded-2xl shadow-lg" alt="ClassPin">
+                    </a>
+                    <!-- 外側の軌道 -->
+                    <a href="https://copeak.pic-speak-story.com/japeak-top.html" target="_blank" class="absolute top-[-5%] left-[45%] z-10 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 4.5s; animation-delay: 0.2s;">
+                        <img src="assets/images/japeaklog.png" class="w-20 h-20 rounded-2xl shadow-md" alt="Japeak">
+                    </a>
+                    <a href="https://pacemark.pic-speak-story.com/" target="_blank" class="absolute bottom-[0%] left-[45%] z-10 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 5.2s; animation-delay: 1.8s;">
+                        <img src="assets/images/pacemarklogo.png" class="w-20 h-20 rounded-2xl shadow-md" alt="PaceMark">
+                    </a>
+                    <a href="https://talkgacha.pic-speak-story.com/" target="_blank" class="absolute top-[45%] left-[-10%] z-10 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 6.5s; animation-delay: 2.1s;">
+                        <img src="assets/images/talkgachalogo.png" class="w-20 h-20 rounded-2xl shadow-md" alt="TalkGacha">
+                    </a>
+                    <a href="https://textleveler.pic-speak-story.com/" target="_blank" class="absolute top-[50%] right-[-10%] z-10 animate-float hover:scale-110 transition-all duration-300" style="animation-duration: 5.9s; animation-delay: 0.7s;">
+                        <img src="assets/images/levelerlogo.png" class="w-20 h-20 rounded-2xl shadow-md" alt="TextLeveler">
+                    </a>
+                    <!-- 遠くの軌道 -->
+                    <a href="https://mosaic.pic-speak-story.com/" target="_blank" class="absolute top-[10%] right-[25%] z-0 blur-[1px] opacity-80 animate-float hover:blur-none hover:opacity-100 hover:scale-110 hover:z-40 transition-all duration-300" style="animation-duration: 7s; animation-delay: 0.4s;">
+                        <img src="assets/images/mosaiclogo.png" class="w-16 h-16 rounded-2xl shadow-sm" alt="QuickMosaic">
+                    </a>
+                    <a href="https://talkturn.pic-speak-story.com/" target="_blank" class="absolute bottom-[10%] left-[20%] z-0 blur-[1px] opacity-80 animate-float hover:blur-none hover:opacity-100 hover:scale-110 hover:z-40 transition-all duration-300" style="animation-duration: 6.2s; animation-delay: 1.9s;">
+                        <img src="assets/images/talkturnlogo.png" class="w-16 h-16 rounded-2xl shadow-sm" alt="TalkTurn">
+                    </a>
+                    <a href="https://scribe.pic-speak-story.com" target="_blank" class="absolute bottom-[35%] right-[15%] z-0 blur-[2px] opacity-60 animate-float hover:blur-none hover:opacity-100 hover:scale-110 hover:z-40 transition-all duration-300" style="animation-duration: 8s; animation-delay: 1.1s;">
+                        <img src="assets/images/picscribe.png" class="w-20 h-20 rounded-2xl shadow-sm" alt="PicScribe">
+                    </a>
+                    <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-gradient-to-tr from-pink-300/30 via-orange-200/30 to-blue-300/30 rounded-full blur-3xl z-0 pointer-events-none"></div>
+                </div>
+            </div>
         </div>
-    </div>
-　　<button id="floating-top-btn" onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="fixed bottom-6 right-6 md:bottom-10 md:right-10 bg-gray-900/80 hover:bg-gray-900 text-white w-12 h-12 md:w-14 md:h-14 rounded-full flex items-center justify-center shadow-2xl backdrop-blur-sm transition-all duration-300 transform translate-y-20 opacity-0 z-50 cursor-pointer">
-        <svg class="w-6 h-6 md:w-7 md:h-7" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M5 15l7-7 7 7"></path></svg>
-    </button>
-    <script>
-        // iOSプロンプトの表示ロジック
-        function showIosPrompt() {
-            // iPhoneかiPadかを判定
-            const isIos = () => {
-                const userAgent = window.navigator.userAgent.toLowerCase();
-                return /iphone|ipad|ipod/.test(userAgent);
-            };
-            // すでに全画面（ホーム画面から起動）か判定
-            const isStandalone = window.navigator.standalone === true;
-            // 過去に「×」ボタンを押して閉じたか判定
-            const hasPromptBeenClosed = localStorage.getItem('iosPromptClosed');
 
-            // iOSで、かつブラウザから開いていて、まだ閉じていない場合だけ表示
-            if (isIos() && !isStandalone && !hasPromptBeenClosed) {
-                const prompt = document.getElementById('ios-prompt');
-                prompt.classList.remove('hidden');
-                // ページを開いてから2秒後にスッと下から出てくる
-                setTimeout(() => {
-                    prompt.classList.remove('translate-y-full');
-                }, 2000);
-            }
-        }
-
-        function closeIosPrompt() {
-            const prompt = document.getElementById('ios-prompt');
-            prompt.classList.add('translate-y-full'); 
-            setTimeout(() => {
-                prompt.classList.add('hidden');
-            }, 500);
-            localStorage.setItem('iosPromptClosed', 'true');
-        }
-
-        window.addEventListener('load', showIosPrompt);
-
-        // 音声認識トラブル対応モーダルの制御
-        const troubleModal = document.getElementById('trouble-modal');
-        const troubleSlides = document.querySelectorAll('.trouble-slide');
-        let currentTroubleSlide = 0;
-
-        document.getElementById('btn-open-trouble').addEventListener('click', () => {
-            troubleModal.classList.remove('hidden');
-            showTroubleSlide(0);
-        });
-
-        document.getElementById('btn-close-trouble').addEventListener('click', () => {
-            troubleModal.classList.add('hidden');
-        });
-
-        function showTroubleSlide(index) {
-            troubleSlides.forEach((s, i) => {
-                if (i === index) {
-                    s.classList.remove('opacity-0', 'pointer-events-none');
-                    s.classList.add('opacity-100', 'z-10');
-                } else {
-                    s.classList.remove('opacity-100', 'z-10');
-                    s.classList.add('opacity-0', 'pointer-events-none');
-                }
-            });
-            currentTroubleSlide = index;
+        <!-- 🌟 カテゴリー1: Core Platforms -->
+        <section id="core-apps" class="mb-24 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-pink-400 to-rose-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-pink-500/30">🚀</span>
+                <div>
+                    <h2 class="text-2xl md:text-4xl font-black text-slate-800 tracking-tight">Core Platforms</h2>
+                    <p class="text-sm font-bold text-slate-400 mt-1">
+                        <span class="lang-ja lang-fade">スピーキング・音読・ライティングのメイン教材</span>
+                        <span class="lang-en lang-fade hidden">Main platforms for Speaking, Reading, and Writing</span>
+                    </p>
+                </div>
+            </div>
             
-            document.getElementById('btn-prev-trouble').style.visibility = index === 0 ? 'hidden' : 'visible';
-            document.getElementById('btn-next-trouble').innerText = index === troubleSlides.length - 1 ? '閉じる' : '次へ';
-        }
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
+                
+                <!-- PicSpeak -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(236,72,153,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-pink-500 to-orange-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 md:p-10 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="absolute top-6 right-6 px-4 py-1.5 bg-pink-50 text-pink-600 text-[10px] md:text-xs font-black rounded-full uppercase tracking-widest border border-pink-100">AI Scoring</div>
+                        <div class="w-24 h-24 md:w-32 md:h-32 bg-slate-50 rounded-[2rem] flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-6">
+                            <img src="assets/picspeaklogo.png" alt="PicSpeak" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl object-cover">
+                        </div>
+                        <h3 class="text-3xl font-black text-slate-800 mb-2 tracking-tight">PicSpeak</h3>
+                        <p class="text-sm font-bold text-slate-400 mb-6">
+                            <span class="lang-ja lang-fade">写真描写スピーキング判定アプリ</span>
+                            <span class="lang-en lang-fade hidden">Picture Description Speaking Assessment App</span>
+                        </p>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 flex-1 text-sm md:text-base">
+                            <span class="lang-ja lang-fade">WPMやターゲット表現の一致率をリアルタイムで判定。生徒の「即興で英語を話す力」をゲーム感覚で極限まで引き出します。</span>
+                            <span class="lang-en lang-fade hidden">Real-time assessment of WPM and target expression accuracy. Maximizes students' impromptu speaking skills through gamification.</span>
+                        </p>
+                        <a href="play.html" class="w-full md:w-auto px-8 bg-slate-900 text-white font-bold text-center py-4 md:py-5 rounded-2xl shadow-md hover:bg-pink-500 transition-colors text-lg">
+                            <span class="lang-ja lang-fade">アプリを起動 ➔</span><span class="lang-en lang-fade hidden">Launch App ➔</span>
+                        </a>
+                    </div>
+                </div>
 
-        document.getElementById('btn-next-trouble').addEventListener('click', () => {
-            if (currentTroubleSlide < troubleSlides.length - 1) {
-                showTroubleSlide(currentTroubleSlide + 1);
-            } else {
-                troubleModal.classList.add('hidden'); // 最後は閉じる
-            }
-        });
+                <!-- Copeak -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-500 to-indigo-500 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 md:p-10 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="absolute top-6 right-6 px-4 py-1.5 bg-blue-50 text-blue-600 text-[10px] md:text-xs font-black rounded-full uppercase tracking-widest border border-blue-100">Multi-Language</div>
+                        <div class="w-24 h-24 md:w-32 md:h-32 bg-slate-50 rounded-[2rem] flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-6">
+                            <img src="assets/images/copeaklogo.png" alt="Copeak" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl object-cover">
+                        </div>
+                        <h3 class="text-3xl font-black text-slate-800 mb-2 tracking-tight">Copeak</h3>
+                        <p class="text-sm font-bold text-slate-400 mb-6">
+                            <span class="lang-ja lang-fade">多言語対応 音読・シャドーイングプラットフォーム</span>
+                            <span class="lang-en lang-fade hidden">Multi-language Reading & Shadowing Platform</span>
+                        </p>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 flex-1 text-sm md:text-base">
+                            <span class="lang-ja lang-fade">複数言語に対応する音読練習アプリ。Accuracy・WPM・理解度を精密に判定。テキストを貼るだけでオリジナル教材が完成し、Questモードも搭載。</span>
+                            <span class="lang-en lang-fade hidden">A reading app supporting multiple languages. Precisely measures Accuracy, WPM, and comprehension. Easily create original materials just by pasting text.</span>
+                        </p>
+                        <a href="https://copeak.pic-speak-story.com/" target="_blank" class="w-full md:w-auto px-8 bg-slate-900 text-white font-bold text-center py-4 md:py-5 rounded-2xl shadow-md hover:bg-blue-500 transition-colors text-lg">
+                            <span class="lang-ja lang-fade">アプリを起動 ➔</span><span class="lang-en lang-fade hidden">Launch App ➔</span>
+                        </a>
+                    </div>
+                </div>
 
-        document.getElementById('btn-prev-trouble').addEventListener('click', () => {
-            if (currentTroubleSlide > 0) showTroubleSlide(currentTroubleSlide - 1);
+                <!-- Japeak -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-500 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 md:p-10 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="absolute top-6 right-6 px-4 py-1.5 bg-emerald-50 text-emerald-600 text-[10px] md:text-xs font-black rounded-full uppercase tracking-widest border border-emerald-100">For Japanese</div>
+                        <div class="w-24 h-24 md:w-32 md:h-32 bg-slate-50 rounded-[2rem] flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-6">
+                            <img src="assets/images/japeaklog.png" alt="Japeak" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl object-cover">
+                        </div>
+                        <h3 class="text-3xl font-black text-slate-800 mb-2 tracking-tight">Japeak</h3>
+                        <p class="text-sm font-bold text-slate-400 mb-6">
+                            <span class="lang-ja lang-fade">日本語音読・状況学習アプリ</span>
+                            <span class="lang-en lang-fade hidden">Japanese Reading & Situational Learning</span>
+                        </p>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 flex-1 text-sm md:text-base">
+                            <span class="lang-ja lang-fade">日常や職場で使う日本語フレーズを音読判定。19カ国語で意味と使用状況を解説し、外国語モードに切り替えればその言語での音読練習も可能。</span>
+                            <span class="lang-en lang-fade hidden">Read and assess everyday Japanese phrases. Explanations available in 19 languages. Switch modes to practice reading in those foreign languages as well.</span>
+                        </p>
+                        <a href="https://copeak.pic-speak-story.com/japeak-top.html" target="_blank" class="w-full md:w-auto px-8 bg-slate-900 text-white font-bold text-center py-4 md:py-5 rounded-2xl shadow-md hover:bg-emerald-500 transition-colors text-lg">
+                            <span class="lang-ja lang-fade">アプリを起動 ➔</span><span class="lang-en lang-fade hidden">Launch App ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PicScribe -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(168,85,247,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-500 to-indigo-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 md:p-10 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="absolute top-6 right-6 px-4 py-1.5 bg-purple-50 text-purple-600 text-[10px] md:text-xs font-black rounded-full uppercase tracking-widest border border-purple-100">Beta Version</div>
+                        <div class="w-24 h-24 md:w-32 md:h-32 bg-slate-50 rounded-[2rem] flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-6">
+                            <img src="assets/images/picscribe.png" alt="PicScribe" class="w-16 h-16 md:w-24 md:h-24 rounded-2xl object-cover">
+                        </div>
+                        <h3 class="text-3xl font-black text-slate-800 mb-2 tracking-tight">PicScribe</h3>
+                        <p class="text-sm font-bold text-slate-400 mb-6">
+                            <span class="lang-ja lang-fade">写真描写 Writing 練習アプリ</span>
+                            <span class="lang-en lang-fade hidden">Picture Description Writing App</span>
+                        </p>
+                        <p class="text-slate-600 font-medium leading-relaxed mb-8 flex-1 text-sm md:text-base">
+                            <span class="lang-ja lang-fade">PicSpeakのライティング版。絵を見てじっくりと英文をタイピングし、さらに書いた文章を音読する「書いて・話す」の往復トレーニングに最適化。</span>
+                            <span class="lang-en lang-fade hidden">The writing version of PicSpeak. Type descriptions carefully and read them aloud. Optimized for the "write-and-speak" training cycle.</span>
+                        </p>
+                        <a href="https://scribe.pic-speak-story.com" target="_blank" class="w-full md:w-auto px-8 bg-slate-900 text-white font-bold text-center py-4 md:py-5 rounded-2xl shadow-md hover:bg-purple-500 transition-colors text-lg">
+                            <span class="lang-ja lang-fade">アプリを起動 ➔</span><span class="lang-en lang-fade hidden">Launch App ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 🌟 カテゴリー2: Activities & Games -->
+        <section id="games" class="mb-24 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-emerald-400 to-teal-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-emerald-500/30">🎲</span>
+                <div>
+                    <h2 class="text-2xl md:text-4xl font-black text-slate-800 tracking-tight">Activities & Games</h2>
+                    <p class="text-sm font-bold text-slate-400 mt-1">
+                        <span class="lang-ja lang-fade">教室が熱狂するインタラクティブな活動</span>
+                        <span class="lang-en lang-fade hidden">Interactive activities that excite the classroom</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                <!-- Scannect -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(16,185,129,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-emerald-400 to-teal-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/scannectlogo.png" class="w-14 h-14 rounded-xl" alt="Scannect">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">Scannect</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">課題と解決策のカードを組み合わせQRコードを生成。端末で読み取り、表示された課題をチームでクリアしていく問題解決型カードゲーム！</span>
+                            <span class="lang-en lang-fade hidden">Combine task and solution cards to generate QR codes. Scan them to reveal challenges for teams to solve in this exciting card game!</span>
+                        </p>
+                        <a href="https://scannect.pic-speak-story.com" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-emerald-500 hover:text-white hover:border-emerald-500 transition-colors">Play Now ➔</a>
+                    </div>
+                </div>
+
+                <!-- TalkGacha -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(249,115,22,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/talkgachalogo.png" class="w-14 h-14 rounded-xl" alt="TalkGacha">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">TalkGacha</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">Small Talkのお題がバーチャルガチャポンでランダム出現！ペアでもグループでも、日本語・英語問わず会話の導入を楽しく演出します。</span>
+                            <span class="lang-en lang-fade hidden">Small talk topics pop out randomly from a virtual gachapon! Makes introducing conversations fun in both Japanese and English.</span>
+                        </p>
+                        <a href="https://talkgacha.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-orange-500 hover:text-white hover:border-orange-500 transition-colors">Play Now ➔</a>
+                    </div>
+                </div>
+
+                <!-- TalkTurn -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(168,85,247,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-purple-400 to-fuchsia-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/talkturnlogo.png" class="w-14 h-14 rounded-xl" alt="TalkTurn">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">TalkTurn</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">机の真ん中に置いてボタンを押すだけ！ルーレット式で楽しく順番を決定。じゃんけんの手間を省く、おしゃれなパステルカラーアプリ。</span>
+                            <span class="lang-en lang-fade hidden">Just place it on the desk and press the button! A fun roulette app to decide turns instantly. Saves time with a stylish pastel design.</span>
+                        </p>
+                        <a href="https://talkturn.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-purple-500 hover:text-white hover:border-purple-500 transition-colors">Play Now ➔</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 カテゴリー3: Teacher Tools -->
+        <section id="utilities" class="mb-24 scroll-mt-24">
+            <div class="flex items-center gap-4 mb-10">
+                <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-blue-400 to-indigo-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-blue-500/30">🛠️</span>
+                <div>
+                    <h2 class="text-2xl md:text-4xl font-black text-slate-800 tracking-tight">Teacher Utilities</h2>
+                    <p class="text-sm font-bold text-slate-400 mt-1">
+                        <span class="lang-ja lang-fade">授業準備と進行をスマートにする便利ツール群</span>
+                        <span class="lang-en lang-fade hidden">Smart utility tools for class preparation and management</span>
+                    </p>
+                </div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8">
+                
+                <!-- Group Shuffle -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/shufflelogo.png" class="w-14 h-14 rounded-xl" alt="Shuffle">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">Group Shuffle</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">名簿コピペで瞬時にグループ・リーダーを自動生成。欠席者の除外もワンクリックで完了します。</span>
+                            <span class="lang-en lang-fade hidden">Instantly generate groups and leaders by pasting a roster. Easily exclude absent students with a single click.</span>
+                        </p>
+                        <a href="https://groupshuffle.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- PaceMark -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/pacemarklogo.png" class="w-14 h-14 rounded-xl" alt="PaceMark">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">PaceMark</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">生徒の課題進捗とSOSをリアルタイムで手元に可視化。教室内での机間巡視を圧倒的に効率化します。</span>
+                            <span class="lang-en lang-fade hidden">Visualize students' task progress and SOS signals in real-time. Dramatically streamlines classroom monitoring.</span>
+                        </p>
+                        <a href="https://pacemark.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TimePalette -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/timelogo.png" class="w-14 h-14 rounded-xl" alt="TimePalette">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">TimePalette</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">プロジェクター投影用の美しい巨大タイマーや、時差・国情報が学べる世界時計をひとつに統合。</span>
+                            <span class="lang-en lang-fade hidden">Combines beautiful large timers for projection and a world clock featuring time zones and country facts.</span>
+                        </p>
+                        <a href="https://timepalette.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- QuickMosaic -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/mosaiclogo.png" class="w-14 h-14 rounded-xl" alt="Mosaic">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">QuickMosaic</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">生徒の顔隠しやテストの穴埋め画像作成に。画像データが外部サーバーに送信されない安全なモザイク加工ツール。</span>
+                            <span class="lang-en lang-fade hidden">A secure mosaic tool that runs locally in your browser. Perfect for blurring student faces or creating fill-in-the-blank tests.</span>
+                        </p>
+                        <a href="https://mosaic.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TextLeveler -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/levelerlogo.png" class="w-14 h-14 rounded-xl" alt="Leveler">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">TextLeveler</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">自作プリントや長文素材の英文を貼り付けるだけで、CEFRレベルと語彙レベルを一瞬で解析・判定します。</span>
+                            <span class="lang-en lang-fade hidden">Instantly analyze and determine the CEFR level and vocabulary difficulty by simply pasting your English text.</span>
+                        </p>
+                        <a href="https://textleveler.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- ClassPin (新規追加) -->
+                <div class="group relative bg-white rounded-[2rem] p-1 shadow-[0_4px_20px_rgba(0,0,0,0.03)] hover:shadow-[0_20px_40px_rgba(59,130,246,0.15)] hover:-translate-y-2 transition-all duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-r from-blue-400 to-cyan-400 rounded-[2rem] opacity-0 group-hover:opacity-100 transition-opacity duration-500 blur-[2px]"></div>
+                    <div class="relative bg-white rounded-[1.9rem] p-8 h-full flex flex-col items-start text-left glass-card z-10">
+                        <div class="w-20 h-20 bg-slate-50 rounded-2xl flex items-center justify-center border border-slate-100 shadow-inner group-hover:scale-110 transition-transform duration-500 mb-5">
+                            <img src="assets/images/classpinlogo.png" class="w-14 h-14 rounded-xl" alt="ClassPin">
+                        </div>
+                        <h3 class="text-2xl font-black text-slate-800 mb-4">ClassPin</h3>
+                        <p class="text-sm text-slate-500 font-medium leading-relaxed mb-6 flex-1">
+                            <span class="lang-ja lang-fade">Web上で簡単にルーレットが楽しめるくじ引きアプリ。名簿や項目をコピペするだけで自動反映され、過去の履歴を保存して何度も使える便利機能を搭載しています。</span>
+                            <span class="lang-en lang-fade hidden">A web-based roulette app for easy random selections. Just copy and paste your roster or items to auto-generate the wheel. Features a history save function for repeated use.</span>
+                        </p>
+                        <a href="https://classpin.pic-speak-story.com/" target="_blank" class="w-full bg-slate-50 text-slate-800 font-bold text-center py-3.5 rounded-xl border border-slate-200 hover:bg-blue-500 hover:text-white hover:border-blue-500 transition-colors">
+                            <span class="lang-ja lang-fade">ツールを開く ➔</span><span class="lang-en lang-fade hidden">Open Tool ➔</span>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- 🌟 コンセプト＆開発の想い（AdSense審査対策のテキストエリア） -->
+        <section id="philosophy" class="mb-24 scroll-mt-24">
+            <div class="bg-white/80 backdrop-blur-md rounded-[2.5rem] p-8 md:p-16 border border-slate-100 shadow-[0_8px_30px_rgba(0,0,0,0.03)] glass-card relative overflow-hidden">
+                <div class="absolute top-0 right-0 w-64 h-64 bg-pink-100 rounded-bl-full opacity-50 -z-10 mix-blend-multiply"></div>
+                <div class="absolute bottom-0 left-0 w-64 h-64 bg-blue-100 rounded-tr-full opacity-50 -z-10 mix-blend-multiply"></div>
+                
+                <h2 class="text-3xl md:text-4xl font-black text-slate-800 tracking-tight mb-8">
+                    <span class="lang-ja lang-fade">現場の「欲しい」から生まれた、授業アップデートの軌跡</span>
+                    <span class="lang-en lang-fade hidden">The Journey of Classroom Updates Born from Teachers' Needs</span>
+                </h2>
+                
+                <div class="prose prose-slate prose-lg md:prose-xl max-w-none text-slate-600 font-medium leading-relaxed">
+                    <div class="lang-ja lang-fade">
+                        <p>
+                            教室の可能性を無限大に広げ、世界と繋がる学びを。公立校での指導経験を経て、新たな教育現場へと歩みを進める中で、私が常に直面してきたのは「いかにして生徒の自発的な発話（アウトプット）を引き出し、その成長を正確に評価するか」という課題でした。
+                        </p>
+                        <p>
+                            言語習得において、知識を「知っている」状態から「使える」状態へと昇華させるためには、即興的な発話機会の確保が不可欠です。しかし、大人数の教室環境において、教員一人で数十人の生徒のスピーキング量（WPM）や正確性をリアルタイムで把握し、フィードバックを与えることには物理的な限界が存在します。
+                        </p>
+                        <p>
+                            この課題をテクノロジーの力で解決すべく開発したのが、写真描写スピーキング判定アプリ「PicSpeak」をはじめとする独自の教育ICTツール群です。University of the Peopleでの教育学修士（M.Ed.）課程を通じて得たルーブリック評価の知見や、オンライン国際交流コミュニティ「Global Classroom」の運営で培ったインタラクティブな学びの手法を、ブラウザ上で直感的に操作できるWebアプリケーションとして実装しました。
+                        </p>
+                        <p>
+                            ここに集めたPicSpeakや便利ツール群は、単なるデジタル化（デジタイゼーション）を目指して作ったものではありません。生徒がゲーム感覚で熱狂しながら英語を口に出し、教員がより付加価値の高い「生徒との対話」に時間を注げるようになること。教育の質そのものを変革するデジタルトランスフォーメーション（DX）の実現こそが、このポータルサイトの真の目的です。
+                        </p>
+                    </div>
+                    <div class="lang-en lang-fade hidden">
+                        <p>
+                            Expanding the possibilities of the classroom infinitely and connecting learning to the world. Through my teaching experience at public schools and stepping into new educational environments, the challenge I have constantly faced is "how to encourage spontaneous student output and accurately evaluate their growth."
+                        </p>
+                        <p>
+                            In language acquisition, securing opportunities for impromptu speaking is essential to elevate knowledge from simply "knowing" to "using." However, in a large classroom setting, it is physically impossible for a single teacher to grasp the speaking volume (WPM) and accuracy of dozens of students in real-time and provide immediate feedback.
+                        </p>
+                        <p>
+                            To solve this challenge using technology, I developed a suite of unique educational ICT tools, starting with the picture description speaking assessment app "PicSpeak". I implemented the knowledge of rubric assessment gained through my Master of Education (M.Ed.) program at the University of the People, and the interactive learning methods cultivated through managing the online international exchange community "Global Classroom", into intuitive web applications.
+                        </p>
+                        <p>
+                            The PicSpeak and utility tools gathered here are not just for mere digitization. The true purpose of this portal site is to realize Digital Transformation (DX) that revolutionizes the quality of education itself—allowing students to enthusiastically speak English through gamification, while enabling teachers to dedicate their time to more high-value "dialogues with students."
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 🌟 教育コラム・実践録 -->
+        <section id="blog" class="mb-10 scroll-mt-24">
+            <div class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-10">
+                <div class="flex items-center gap-4">
+                    <span class="w-12 h-12 rounded-2xl bg-gradient-to-br from-orange-400 to-amber-500 text-white flex items-center justify-center text-2xl shadow-lg shadow-orange-500/30">📝</span>
+                    <div>
+                        <h2 class="text-2xl md:text-4xl font-black text-slate-800 tracking-tight">Education Blog</h2>
+                        <p class="text-sm font-bold text-slate-400 mt-1">
+                            <span class="lang-ja lang-fade">実践から得たメソッドと開発の軌跡</span>
+                            <span class="lang-en lang-fade hidden">Methods and development journey from practice</span>
+                        </p>
+                    </div>
+                </div>
+                <!-- PC用ブログ一覧ボタン -->
+                <a href="blog.html" class="hidden md:flex items-center gap-2 text-sm font-black text-orange-500 hover:text-orange-600 transition-colors bg-orange-50 hover:bg-orange-100 px-6 py-3 rounded-full border border-orange-100 shadow-sm">
+                    <span class="lang-ja lang-fade">すべての記事を読む ➔</span><span class="lang-en lang-fade hidden">Read All Articles ➔</span>
+                </a>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 lg:gap-8">
+                <a href="methodology.html" class="group bg-white/80 rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-[0_15px_35px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start text-left h-full relative overflow-hidden glass-card">
+                    <span class="text-[10px] md:text-xs font-black text-pink-500 uppercase tracking-widest mb-3 block relative z-20">Methodology</span>
+                    <h3 class="text-lg md:text-xl font-black text-slate-800 mb-3 leading-tight group-hover:text-pink-600 transition-colors relative z-20">
+                        <span class="lang-ja lang-fade">Picture Descriptionに行き着いた理由</span>
+                        <span class="lang-en lang-fade hidden">Why I Arrived at Picture Description</span>
+                    </h3>
+                    <p class="text-xs md:text-sm text-slate-500 font-medium leading-relaxed flex-1 relative z-20">
+                        <span class="lang-ja lang-fade">日本の英語教育に不足している「その場で使う」練習。知識を呼吸する言葉へ変えるためのトレーニングの全貌とは。</span>
+                        <span class="lang-en lang-fade hidden">The lack of "using it on the spot" practice in English education. The complete training method to turn knowledge into living words.</span>
+                    </p>
+                    <span class="text-pink-500 font-bold text-xs md:text-sm mt-6 flex items-center gap-1 relative z-20">
+                        <span class="lang-ja lang-fade">続きを読む <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                        <span class="lang-en lang-fade hidden">Read More <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                    </span>
+                </a>
+                
+                <a href="journey-uopeople.html" class="group bg-white/80 rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-[0_15px_35px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start text-left h-full relative overflow-hidden glass-card">
+                    <span class="text-[10px] md:text-xs font-black text-blue-500 uppercase tracking-widest mb-3 block relative z-20">UoPeople M.Ed.</span>
+                    <h3 class="text-lg md:text-xl font-black text-slate-800 mb-3 leading-tight group-hover:text-blue-600 transition-colors relative z-20">
+                        <span class="lang-ja lang-fade">米国大学院での学びと「評価」の真髄</span>
+                        <span class="lang-en lang-fade hidden">Learning in US Grad School & The Essence of Evaluation</span>
+                    </h3>
+                    <p class="text-xs md:text-sm text-slate-500 font-medium leading-relaxed flex-1 relative z-20">
+                        <span class="lang-ja lang-fade">世界基準の教育から得た知見。ルーブリック評価のあり方と、生徒の成長を促すフィードバックの仕組みについて。</span>
+                        <span class="lang-en lang-fade hidden">Insights from global standard education. How rubric evaluation and feedback systems can encourage student growth.</span>
+                    </p>
+                    <span class="text-blue-500 font-bold text-xs md:text-sm mt-6 flex items-center gap-1 relative z-20">
+                        <span class="lang-ja lang-fade">続きを読む <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                        <span class="lang-en lang-fade hidden">Read More <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                    </span>
+                </a>
+                
+                <a href="journey-global-classroom.html" class="group bg-white/80 rounded-3xl p-8 border border-slate-100 shadow-sm hover:shadow-[0_15px_35px_rgba(0,0,0,0.06)] hover:-translate-y-1 transition-all duration-300 flex flex-col items-start text-left h-full relative overflow-hidden glass-card">
+                    <span class="text-[10px] md:text-xs font-black text-emerald-500 uppercase tracking-widest mb-3 block relative z-20">Global Classroom</span>
+                    <h3 class="text-lg md:text-xl font-black text-slate-800 mb-3 leading-tight group-hover:text-emerald-600 transition-colors relative z-20">
+                        <span class="lang-ja lang-fade">世界をひとつの教室にする実践録</span>
+                        <span class="lang-en lang-fade hidden">Turning the World into One Classroom</span>
+                    </h3>
+                    <p class="text-xs md:text-sm text-slate-500 font-medium leading-relaxed flex-1 relative z-20">
+                        <span class="lang-ja lang-fade">オンライン国際交流コミュニティの運営を通して見えた、国境を越えた対話が生み出す生徒の劇的な変化。</span>
+                        <span class="lang-en lang-fade hidden">The dramatic changes in students brought about by cross-border dialogues seen through managing an online international community.</span>
+                    </p>
+                    <span class="text-emerald-500 font-bold text-xs md:text-sm mt-6 flex items-center gap-1 relative z-20">
+                        <span class="lang-ja lang-fade">続きを読む <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                        <span class="lang-en lang-fade hidden">Read More <span class="group-hover:translate-x-1 transition-transform inline-block">➔</span></span>
+                    </span>
+                </a>
+            </div>
+
+            <!-- スマホ用ブログ一覧ボタン -->
+            <div class="mt-8 text-center md:hidden">
+                <a href="blog.html" class="inline-flex items-center gap-2 text-sm font-black text-orange-500 hover:text-orange-600 transition-colors bg-orange-50 hover:bg-orange-100 px-8 py-4 rounded-full border border-orange-100 w-full justify-center shadow-sm">
+                    <span class="lang-ja lang-fade">すべての記事を読む ➔</span><span class="lang-en lang-fade hidden">Read All Articles ➔</span>
+                </a>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- 🌟 フッター -->
+    <footer class="bg-white/80 backdrop-blur-md border-t border-slate-100 py-12 mt-10 relative z-10">
+        <div class="max-w-[1500px] mx-auto px-6 text-center">
+            <div class="w-12 h-12 bg-slate-50 rounded-2xl flex items-center justify-center mx-auto mb-4 border border-slate-100">
+                <img src="assets/picspeaklogo.png" alt="Logo" class="w-8 h-8 rounded-lg grayscale opacity-50">
+            </div>
+            <p class="text-sm font-black text-slate-400 mb-6 tracking-widest uppercase">Developed by Kohei Nakashima</p>
+            <div class="flex flex-wrap justify-center gap-6 text-xs md:text-sm font-bold text-slate-400">
+                <a href="privacy.html" class="hover:text-pink-500 transition-colors">
+                    <span class="lang-ja lang-fade">プライバシーポリシー</span><span class="lang-en lang-fade hidden">Privacy Policy</span>
+                </a>
+                <a href="terms.html" class="hover:text-pink-500 transition-colors">
+                    <span class="lang-ja lang-fade">利用規約</span><span class="lang-en lang-fade hidden">Terms of Service</span>
+                </a>
+                <a href="https://sites.google.com/view/koheinakashima/bio" target="_blank" class="hover:text-pink-500 transition-colors">
+                    <span class="lang-ja lang-fade">作成者プロフィール</span><span class="lang-en lang-fade hidden">Creator Profile</span>
+                </a>
+            </div>
+            <p class="text-[10px] text-slate-300 mt-8">&copy; 2026 Kohei Nakashima. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- 🌟 言語切り替え用 JavaScript -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const toggleBtn = document.getElementById('lang-toggle-btn');
+            const btnJa = document.getElementById('btn-ja');
+            const btnEn = document.getElementById('btn-en');
+            let currentLang = 'ja';
+
+            toggleBtn.addEventListener('click', () => {
+                currentLang = currentLang === 'ja' ? 'en' : 'ja';
+                
+                // トグルボタンのUI切り替え
+                if(currentLang === 'en') {
+                    btnJa.classList.replace('bg-slate-800', 'bg-transparent');
+                    btnJa.classList.replace('text-white', 'text-slate-400');
+                    btnEn.classList.replace('text-slate-400', 'text-white');
+                    btnEn.classList.replace('bg-transparent', 'bg-slate-800');
+                } else {
+                    btnEn.classList.replace('bg-slate-800', 'bg-transparent');
+                    btnEn.classList.replace('text-white', 'text-slate-400');
+                    btnJa.classList.replace('text-slate-400', 'text-white');
+                    btnJa.classList.replace('bg-transparent', 'bg-slate-800');
+                }
+
+                // テキストの切り替え（フェード効果付き）
+                document.querySelectorAll('.lang-ja').forEach(el => {
+                    if(currentLang === 'en') {
+                        el.classList.add('hidden');
+                    } else {
+                        el.classList.remove('hidden');
+                    }
+                });
+                
+                document.querySelectorAll('.lang-en').forEach(el => {
+                    if(currentLang === 'ja') {
+                        el.classList.add('hidden');
+                    } else {
+                        el.classList.remove('hidden');
+                    }
+                });
+            });
         });
     </script>
-    
-    <script src="js/speech.js"></script>
-    <script src="js/splash.js"></script>
-    <script src="js/scoring.js"></script>
-    <script src="js/audio.js"></script>   
-    <script src="js/storage.js"></script> 
-    <script src="js/ui.js"></script>   
-    <script src="js/game.js"></script>  
-    <script src="js/ngword_game.js"></script>
-    <script src="js/mosaic_game.js"></script>
-    <script src="js/detective_game.js"></script>
-    <script src="js/detective_result.js"></script> 
-    <script src="js/main.js"></script>  
 </body>
 </html>

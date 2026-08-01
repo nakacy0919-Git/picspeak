@@ -1,0 +1,109 @@
+@charset "UTF-8";
+
+/* ==========================================================================
+   EduConnect Portal - Premium Graphic CSS
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. エレガントなカスタムスクロールバー
+   -------------------------------------------------------------------------- */
+::-webkit-scrollbar {
+    width: 14px;
+}
+::-webkit-scrollbar-track {
+    background: #f4f7fb;
+}
+::-webkit-scrollbar-thumb {
+    background: #cbd5e1;
+    border-radius: 10px;
+    border: 3px solid #f4f7fb; /* 余白を作って細く見せる上品なテクニック */
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #f472b6; /* ホバーでPicSpeakカラーに */
+}
+
+/* --------------------------------------------------------------------------
+   2. 息を呑むオーロラ・メッシュグラデーション (背景用)
+   -------------------------------------------------------------------------- */
+@keyframes auroraBg {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+.animate-aurora {
+    /* 6色を複雑に混ぜ合わせた動くグラデーション */
+    background: linear-gradient(-45deg, #ff9a9e, #fecfef, #f6d365, #fda085, #a18cd1, #fbc2eb);
+    background-size: 300% 300%;
+    animation: auroraBg 20s ease infinite;
+    filter: blur(25px); /* 色を柔らかく溶け込ませてグラフィック化 */
+}
+
+/* --------------------------------------------------------------------------
+   3. プレミアム・グラスモーフィズム (ガラスのフチと光の反射)
+   -------------------------------------------------------------------------- */
+.glass-card {
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.85);
+    /* ★超重要：ガラスの立体感を出すためのハイライトエッジ（左と上だけ白線を引く） */
+    border-top: 1px solid rgba(255, 255, 255, 1) !important;
+    border-left: 1px solid rgba(255, 255, 255, 0.8) !important;
+    border-right: 1px solid rgba(255, 255, 255, 0.3) !important;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3) !important;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.03), inset 0 1px 0 rgba(255,255,255,0.6);
+    /* 物理法則に基づいた滑らかな浮遊アニメーション */
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.5s ease;
+}
+
+/* ホバー時にフワッと浮き上がる3D効果 */
+.glass-card:hover {
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.08), inset 0 1px 0 rgba(255,255,255,0.9);
+}
+
+/* 光が斜めに走り抜けるフラッシュエフェクト */
+.glass-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 50%;
+    height: 100%;
+    /* まばゆい光のグラデーション */
+    background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.7) 50%, rgba(255, 255, 255, 0) 100%);
+    transform: skewX(-25deg);
+    transition: all 0.7s ease;
+    z-index: 10;
+    pointer-events: none;
+}
+
+.glass-card:hover::before {
+    left: 150%; /* マウスを乗せた瞬間に光が駆け抜ける */
+}
+
+/* --------------------------------------------------------------------------
+   4. 画像アイコンのアニメーション強化
+   -------------------------------------------------------------------------- */
+/* アイコンを囲む枠に後光（グロー）を放たせる */
+.glass-card img {
+    transition: transform 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease;
+}
+.glass-card:hover img {
+    transform: scale(1.15) rotate(-3deg);
+    filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
+}
+
+/* --------------------------------------------------------------------------
+   5. テキストグラデーションの動的アニメーション
+   -------------------------------------------------------------------------- */
+@keyframes textShimmer {
+    0% { background-position: 0% 50%; }
+    100% { background-position: 100% 50%; }
+}
+.bg-clip-text {
+    background-size: 200% auto;
+    animation: textShimmer 4s linear infinite;
+}
