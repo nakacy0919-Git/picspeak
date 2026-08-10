@@ -103,6 +103,8 @@ async function initApp() {
 }
 
 // --- ▼ ここから上書き ▼ ---
+// --- js/main.js の一部 ---
+
 window.renderThemeGrid = async function() {
     const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
@@ -111,11 +113,22 @@ window.renderThemeGrid = async function() {
     try {
         let results = [];
         let isDetective = (window.appState && window.appState.selectedMode === 'detective');
-
-        if (window.appState.selectedMode === 'mosaic') {
+        
+        // ★ ここから追加・修正 ★
+        if (window.appState.selectedMode === 'oralquest') {
+            const res = await fetch('data/oralquest_list.json?t=' + new Date().getTime());
+            results = await res.json();
+            // oralquest_list.json は {id, imageSrc, description} の配列なので、
+            // 他のモードの形式 {id, data: {...}} に合わせるための処理
+            results = results.map(item => ({
+                id: item.id,
+                data: item
+            }));
+        } else if (window.appState.selectedMode === 'mosaic') {
             const res = await fetch('data/mosaic_list.json?t=' + new Date().getTime());
             results = await res.json();
         } else if (isDetective) {
+        // ★ ここまで ★
             const res = await fetch('data/detective_list.json?t=' + new Date().getTime());
             results = await res.json();
         } else {
@@ -127,6 +140,7 @@ window.renderThemeGrid = async function() {
             );
             results = await Promise.all(fetchPromises);
         }
+// ... (以下略) ...
 
         let html = '';
 
@@ -304,7 +318,8 @@ window.startGameWithTheme = async function(id) {
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
-        
+        if (window.appState.selectedMode === 'oralquest') folderPath = 'data/oralquest'; // ★追加: ORAL QUEST用のフォルダを指定
+
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
         
@@ -422,7 +437,23 @@ window.startGameWithTheme = async function(id) {
         btnStartTurn.classList.add('animate-attention');
     }
     
-    if (typeof showView === 'function') showView(document.getElementById('view-play'));
+    // ★追加: ORAL QUESTモードなら専用画面へ遷移、それ以外は通常のPLAY画面へ
+    if (window.appState.selectedMode === 'oralquest') {
+        if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
+        
+        // ORAL QUEST用の初期化処理（後でjs/oralquest_game.jsにまとめますが、とりあえずUIリセット）
+        document.getElementById('oq-stage-1').classList.remove('hidden');
+        document.getElementById('oq-stage-2').classList.add('hidden');
+        document.getElementById('oq-stage-3').classList.add('hidden');
+        document.getElementById('oq-progress-bar').style.width = '10%';
+        document.getElementById('btn-oq-start').classList.remove('hidden');
+        document.getElementById('btn-oq-next').classList.add('hidden');
+        document.getElementById('oq-reading-result').classList.add('hidden');
+        document.getElementById('oq-status-text').textContent = "Tap START to read";
+        
+    } else {
+        if (typeof showView === 'function') showView(document.getElementById('view-play'));
+    }
 };
 
 window.playResultTTS = function(text) {
@@ -1099,5 +1130,63 @@ document.addEventListener('click', (e) => {
     }
 });
 
+// ==========================================
+// ★ ORAL QUEST ボタンイベント
+// ==========================================
+document.addEventListener('click', (e) => {
+    // STARTボタン
+    const btnOqStart = e.target.closest('#btn-oq-start');
+    if (btnOqStart) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.startRecording();
+            window.isRecording = true;
+        }
+    }
+
+    // LISTENINGインジケーター（タップで手動停止）
+    const oqIndicator = e.target.closest('#oq-recording-indicator');
+    if (oqIndicator) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.stopRecording();
+        }
+    }
+
+    // NEXT STAGEボタン
+    // ▼▼ 以前追加したイベントデレゲーション内の NEXT STAGE ボタン部分を書き換え ▼▼
+    const btnOqNext = e.target.closest('#btn-oq-next');
+    if (btnOqNext) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            // 直接 updateUIForStage を呼ぶのではなく、フロー管理関数に任せる
+            window.OralQuestGame.handleNextButton();
+        }
+    }
+});
+
 // ★ 最後のカッコのエラーも修正済みです
 window.addEventListener('DOMContentLoaded', window.initApp);
+
+// ==========================================
+// ★ ORAL QUEST 開発中パスワードロック ★
+// ==========================================
+function setupOqPasswordLock() {
+    const oqBtn = document.querySelector('.mode-btn[data-mode="oralquest"]');
+    if (oqBtn) {
+        oqBtn.addEventListener('click', (e) => {
+            const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
+            if (pass !== "9999") {
+                // パスワードが違う場合、既存のモード選択処理を強制的にブロック
+                e.stopImmediatePropagation(); 
+                e.preventDefault();
+                alert("パスワードが違います。");
+            }
+        }, true); // true (キャプチャフェーズ) を指定することで、他のクリック処理より必ず「一番最初」に実行させます
+    }
+}
+
+// DOMの読み込みが完了しているか確認してから実行
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
+} else {
+    setupOqPasswordLock();
+}
+// ==========================================

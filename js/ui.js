@@ -9,7 +9,8 @@ window.showView = function(viewElement) {
         document.getElementById('view-select'),
         document.getElementById('view-play'),
         document.getElementById('view-result'),
-        document.getElementById('view-about')
+        document.getElementById('view-about'),
+        document.getElementById('view-oralquest') // ★これを追加
     ];
     
     // 全画面を一旦隠す

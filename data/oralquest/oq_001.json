@@ -1,0 +1,407 @@
+[
+  {
+    "id": "oq_001",
+    "imageSrc": "assets/images/oralquest/oq001.webp",
+    "description": "公共図書館で、女の子がカウンターで司書に本を渡し、男の子がテーブルで本を読んでいる場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Many people visit public libraries on weekends. They can read books, study quietly, or use computers there. Also, some people borrow CDs and DVDs to enjoy music and movies at home.",
+      "q1": {
+        "text": "Why do some people borrow CDs and DVDs?",
+        "keywords": ["enjoy", "music", "movie", "home"],
+        "modelAnswers": [
+          "Because they want to enjoy music and movies at home.",
+          "To enjoy music and movies at home."
+        ]
+      }
+    },
+
+    "stage3": {
+      "questions": [
+        {
+          "text": "Do you often go to the library?",
+          "keywords": ["yes", "no", "often", "sometimes", "read", "study", "book", "borrow"],
+          "modelAnswers": [
+            "Yes, I often go there to study.",
+            "No, I usually read books at home."
+          ]
+        },
+        {
+          "text": "What kind of books do you like to read?",
+          "keywords": ["like", "read", "comic", "novel", "history", "science", "fantasy", "interesting"],
+          "modelAnswers": [
+            "I like reading comic books.",
+            "I like to read fantasy novels because they are exciting."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 10},
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 10},
+          {"text": "woman", "ja": "女性", "type": "object", "points": 10},
+          {"text": "book", "ja": "本", "type": "object", "points": 10},
+          {"text": "library", "ja": "図書館", "type": "detail", "points": 15},
+          {"text": "table", "ja": "テーブル", "type": "object", "points": 10},
+          {"text": "chair", "ja": "いす", "type": "object", "points": 10},
+          {"text": "desk", "ja": "カウンター・机", "type": "object", "points": 10},
+          {"text": "poster", "ja": "ポスター", "type": "object", "points": 10},
+          {"text": "bookshelf", "ja": "本棚", "type": "object", "points": 15},
+          {"text": "computer", "ja": "コンピューター", "type": "object", "points": 10},
+          {"text": "read", "ja": "読む", "type": "gist", "points": 15},
+          {"text": "give", "ja": "渡す", "type": "gist", "points": 15},
+          {"text": "sit", "ja": "座る", "type": "gist", "points": 10},
+          {"text": "two", "ja": "2つの", "type": "attribute", "points": 10},
+          {"text": "pink", "ja": "ピンク色の", "type": "attribute", "points": 10},
+          {"text": "blue", "ja": "青色の", "type": "attribute", "points": 10},
+          {"text": "green", "ja": "緑色の", "type": "attribute", "points": 10}
+        ],
+        "chunks": [
+          {"text": "a girl with a book", "ja": "本を持った女の子", "type": "detail", "points": 15},
+          {"text": "reading a book", "ja": "本を読んでいる", "type": "gist", "points": 20},
+          {"text": "sitting at a table", "ja": "テーブルに座っている", "type": "detail", "points": 20},
+          {"text": "giving a book", "ja": "本を渡している", "type": "gist", "points": 20},
+          {"text": "at the library", "ja": "図書館で", "type": "detail", "points": 15},
+          {"text": "behind the counter", "ja": "カウンターの後ろに", "type": "detail", "points": 20},
+          {"text": "two posters", "ja": "2枚のポスター", "type": "detail", "points": 15},
+          {"text": "on the wall", "ja": "壁に", "type": "detail", "points": 15},
+          {"text": "many books", "ja": "たくさんの本", "type": "detail", "points": 15}
+        ],
+        "sentences": [
+          {
+            "text": "A girl is holding a book.",
+            "grammar": "現在進行形",
+            "ja": "女の子が本を持っています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "A boy is reading a book.",
+            "grammar": "現在進行形",
+            "ja": "男の子が本を読んでいます。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The boy is sitting at a table.",
+            "grammar": "現在進行形",
+            "ja": "男の子はテーブルに座っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The girl is giving a book to the woman.",
+            "grammar": "現在進行形・give A to B",
+            "ja": "女の子は女性に本を渡しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are two posters on the wall.",
+            "grammar": "There are構文",
+            "ja": "壁には2枚のポスターがあります。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "They are in a library.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らは図書館にいます。",
+            "type": "detail",
+            "points": 25
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {"text": "girl", "ja": "女の子", "type": "object", "points": 10},
+          {"text": "boy", "ja": "男の子", "type": "object", "points": 10},
+          {"text": "librarian", "ja": "司書", "type": "object", "points": 20},
+          {"text": "library", "ja": "図書館", "type": "detail", "points": 15},
+          {"text": "counter", "ja": "カウンター", "type": "object", "points": 15},
+          {"text": "book", "ja": "本", "type": "object", "points": 10},
+          {"text": "bookshelf", "ja": "本棚", "type": "object", "points": 15},
+          {"text": "poster", "ja": "ポスター", "type": "object", "points": 10},
+          {"text": "computer", "ja": "コンピューター", "type": "object", "points": 10},
+          {"text": "borrow", "ja": "借りる", "type": "gist", "points": 20},
+          {"text": "read", "ja": "読む", "type": "gist", "points": 15},
+          {"text": "hand", "ja": "手渡す", "type": "gist", "points": 20},
+          {"text": "sit", "ja": "座る", "type": "gist", "points": 10},
+          {"text": "smile", "ja": "ほほえむ", "type": "attribute", "points": 15},
+          {"text": "wall", "ja": "壁", "type": "detail", "points": 10},
+          {"text": "foreground", "ja": "前景", "type": "detail", "points": 25},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 20},
+          {"text": "quiet", "ja": "静かな", "type": "inference", "points": 20}
+        ],
+        "chunks": [
+          {
+            "text": "handing a book to the librarian",
+            "ja": "司書に本を手渡している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "reading a book at the table",
+            "ja": "テーブルで本を読んでいる",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "at the circulation counter",
+            "ja": "貸出カウンターで",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "behind the counter",
+            "ja": "カウンターの後ろで",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "two posters on the wall",
+            "ja": "壁にある2枚のポスター",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "books on the shelves",
+            "ja": "本棚にある本",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "wearing a pink hoodie",
+            "ja": "ピンク色のパーカーを着ている",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "sitting by himself",
+            "ja": "一人で座っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "checking out a book",
+            "ja": "本を借りる手続きをしている",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A girl is handing a book to the librarian.",
+            "grammar": "現在進行形・hand A to B",
+            "ja": "女の子が司書に本を手渡しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A boy is sitting at a table and reading a book.",
+            "grammar": "現在進行形・andによる動作の接続",
+            "ja": "男の子がテーブルに座って本を読んでいます。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are two posters on the wall behind them.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "彼らの後ろの壁には2枚のポスターがあります。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "The librarian is standing behind the counter.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "司書はカウンターの後ろに立っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The girl looks like she is going to borrow the book.",
+            "grammar": "look like節・be going to",
+            "ja": "女の子はその本を借りようとしているように見えます。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Many books are arranged on the shelves.",
+            "grammar": "受動態",
+            "ja": "たくさんの本が棚に並べられています。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The library looks quiet and comfortable.",
+            "grammar": "look＋形容詞",
+            "ja": "図書館は静かで快適そうに見えます。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {"text": "librarian", "ja": "司書", "type": "object", "points": 15},
+          {"text": "circulation", "ja": "図書の貸出・返却業務", "type": "detail", "points": 25},
+          {"text": "counter", "ja": "カウンター", "type": "object", "points": 15},
+          {"text": "patron", "ja": "図書館利用者", "type": "object", "points": 30},
+          {"text": "bookshelf", "ja": "本棚", "type": "object", "points": 15},
+          {"text": "poster", "ja": "ポスター", "type": "object", "points": 10},
+          {"text": "monitor", "ja": "モニター", "type": "object", "points": 15},
+          {"text": "borrow", "ja": "借りる", "type": "gist", "points": 15},
+          {"text": "checkout", "ja": "貸出手続き", "type": "gist", "points": 25},
+          {"text": "hand", "ja": "手渡す", "type": "gist", "points": 20},
+          {"text": "browse", "ja": "本などを拾い読みする", "type": "gist", "points": 25},
+          {"text": "foreground", "ja": "前景", "type": "detail", "points": 20},
+          {"text": "background", "ja": "背景", "type": "detail", "points": 20},
+          {"text": "organized", "ja": "整理された", "type": "attribute", "points": 20},
+          {"text": "spacious", "ja": "広々とした", "type": "inference", "points": 25},
+          {"text": "quiet", "ja": "静かな", "type": "inference", "points": 15},
+          {"text": "welcoming", "ja": "親しみやすい・居心地のよい", "type": "inference", "points": 30},
+          {"text": "interaction", "ja": "やり取り", "type": "gist", "points": 30}
+        ],
+        "chunks": [
+          {
+            "text": "checking out a library book",
+            "ja": "図書館の本を借りる手続きをしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "handing the book across the counter",
+            "ja": "カウンター越しに本を手渡している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "a librarian assisting a patron",
+            "ja": "利用者を手伝っている司書",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "reading quietly at a table",
+            "ja": "テーブルで静かに本を読んでいる",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "in the foreground",
+            "ja": "前景に",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "in the background",
+            "ja": "背景に",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "lined with bookshelves",
+            "ja": "本棚が並んでいる",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "two posters hanging on the wall",
+            "ja": "壁に掛けられた2枚のポスター",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "a calm and welcoming atmosphere",
+            "ja": "落ち着いて親しみやすい雰囲気",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "appears to be borrowing a book",
+            "ja": "本を借りようとしているように見える",
+            "type": "inference",
+            "points": 35
+          }
+        ],
+        "sentences": [
+          {
+            "text": "In the foreground, a girl is handing a book to a librarian across the circulation counter.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "前景では、女の子が貸出カウンター越しに司書へ本を手渡しています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "The girl appears to be checking out a book from the library.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "女の子は図書館の本を借りる手続きをしているように見えます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, a boy who is sitting at a table is quietly reading a book.",
+            "grammar": "関係代名詞who・現在進行形・副詞",
+            "ja": "一方、テーブルに座っている男の子は静かに本を読んでいます。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Behind the people, there are several bookshelves filled with books.",
+            "grammar": "There are構文・過去分詞による後置修飾",
+            "ja": "人々の後ろには、本でいっぱいの本棚がいくつかあります。",
+            "type": "detail",
+            "points": 40
+          },
+          {
+            "text": "Two posters are displayed on the wall above the reading area.",
+            "grammar": "受動態・場所を表す前置詞句",
+            "ja": "読書スペースの上の壁には2枚のポスターが掲示されています。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The librarian is smiling as she reaches out to take the book from the girl.",
+            "grammar": "現在進行形・as節・to不定詞",
+            "ja": "司書はほほえみながら、女の子から本を受け取ろうと手を伸ばしています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The scene suggests that the library is a quiet and welcoming place where people can read and borrow books.",
+            "grammar": "suggest that節・関係副詞where・助動詞can",
+            "ja": "この場面から、その図書館は人々が本を読んだり借りたりできる、静かで親しみやすい場所だと考えられます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Although several objects are visible, the main focus of the scene is the interaction between the girl and the librarian.",
+            "grammar": "Althoughを用いた譲歩節・受動態・be動詞",
+            "ja": "いくつかの物が見えますが、この場面の中心は女の子と司書のやり取りです。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "boy": {"x": 15, "y": 51},
+      "boy_book": {"x": 11, "y": 51},
+      "reading_table": {"x": 12, "y": 61},
+      "girl": {"x": 47, "y": 59},
+      "girl_book": {"x": 58, "y": 52},
+      "librarian": {"x": 77, "y": 39},
+      "circulation_counter": {"x": 71, "y": 69},
+      "computer_monitor": {"x": 89, "y": 54},
+      "left_poster": {"x": 25, "y": 17},
+      "right_poster": {"x": 41, "y": 17},
+      "left_bookshelf": {"x": 6, "y": 34},
+      "right_bookshelves": {"x": 73, "y": 31},
+      "circulation_sign": {"x": 68, "y": 79},
+      "small_counter_sign": {"x": 86, "y": 65},
+      "potted_plant": {"x": 96, "y": 66}
+    }
+  }
+]
