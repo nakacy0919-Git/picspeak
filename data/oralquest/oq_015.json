@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_015",
+    "imageSrc": "assets/images/oralquest/oq015.webp",
+    "description": "ホテルのフロントで、海外からの旅行者が予約を確認しながらチェックインをしており、受付スタッフがルームキーを渡している。近くでは別の宿泊客が用紙に記入し、スーツケースが置かれている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Checking into a hotel can be an important part of traveling. Guests usually show identification, confirm their reservation, and receive a room key at the front desk. Clear information from hotel staff can make the process easier.",
+      "q1": {
+        "text": "What do guests usually do when they check into a hotel?",
+        "keywords": [
+          "show identification",
+          "confirm reservation",
+          "receive room key",
+          "front desk"
+        ],
+        "modelAnswers": [
+          "They usually show identification, confirm their reservation, and receive a room key.",
+          "Guests usually confirm their reservation and get a room key at the front desk."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "Have you ever stayed at a hotel? What did you like about it?",
+          "keywords": [
+            "hotel",
+            "stay",
+            "room",
+            "comfortable",
+            "breakfast",
+            "staff",
+            "service",
+            "clean",
+            "travel",
+            "family"
+          ],
+          "modelAnswers": [
+            "Yes, I have. I stayed at a hotel with my family, and I liked the comfortable room.",
+            "I have stayed at several hotels. I especially like hotels with good breakfast and friendly staff.",
+            "Yes. I liked the hotel because the room was clean and the service was very good."
+          ]
+        },
+        {
+          "text": "What services do you think are important at a good hotel?",
+          "keywords": [
+            "service",
+            "staff",
+            "clean",
+            "Wi-Fi",
+            "breakfast",
+            "information",
+            "luggage",
+            "security",
+            "comfortable",
+            "help"
+          ],
+          "modelAnswers": [
+            "I think clean rooms and helpful staff are the most important things at a good hotel.",
+            "Free Wi-Fi, breakfast, and good customer service are important for travelers.",
+            "I think hotels should provide clear information and help guests with their luggage or travel plans."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "man",
+            "ja": "男性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "guest",
+            "ja": "宿泊客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "staff",
+            "ja": "スタッフ",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "hotel",
+            "ja": "ホテル",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "key",
+            "ja": "鍵・ルームキー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "bag",
+            "ja": "かばん",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "suitcase",
+            "ja": "スーツケース",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "desk",
+            "ja": "フロント・机",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "paper",
+            "ja": "紙・用紙",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "passport",
+            "ja": "パスポート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "give",
+            "ja": "渡す",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "write",
+            "ja": "書く",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "stay",
+            "ja": "泊まる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "smile",
+            "ja": "ほほえむ",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "lobby",
+            "ja": "ロビー",
+            "type": "detail",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the hotel",
+            "ja": "ホテルで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "at the front desk",
+            "ja": "フロントで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "checking in",
+            "ja": "チェックインしている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "showing a passport",
+            "ja": "パスポートを見せている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "giving a room key",
+            "ja": "ルームキーを渡している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "carrying a suitcase",
+            "ja": "スーツケースを持っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "writing on a form",
+            "ja": "用紙に記入している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a hotel worker",
+            "ja": "ホテルのスタッフ",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "staying at a hotel",
+            "ja": "ホテルに泊まっている",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A guest is standing at the front desk.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "宿泊客がフロントに立っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "He is showing his passport to the staff member.",
+            "grammar": "現在進行形・show A to B",
+            "ja": "彼はスタッフにパスポートを見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The staff member is giving him a room key.",
+            "grammar": "現在進行形・give A B",
+            "ja": "スタッフが彼にルームキーを渡しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "Another guest is writing on a form.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "別の宿泊客が用紙に記入しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are some suitcases near the desk.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "フロントの近くにいくつかのスーツケースがあります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The guest is going to stay at the hotel.",
+            "grammar": "be going to",
+            "ja": "その宿泊客はホテルに泊まる予定です。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "traveler",
+            "ja": "旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "receptionist",
+            "ja": "受付係",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "reservation",
+            "ja": "予約",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "passport",
+            "ja": "パスポート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "identification",
+            "ja": "身分証明書",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "room key",
+            "ja": "ルームキー",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "registration form",
+            "ja": "宿泊者登録用紙",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "luggage",
+            "ja": "荷物",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "confirm",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "check in",
+            "ja": "チェックインする",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "register",
+            "ja": "登録する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "sign",
+            "ja": "署名する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "welcome",
+            "ja": "歓迎する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "helpful",
+            "ja": "親切な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "comfortable",
+            "ja": "快適な",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "checking into the hotel",
+            "ja": "ホテルにチェックインしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "confirming a reservation",
+            "ja": "予約を確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "showing identification",
+            "ja": "身分証明書を見せている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "receiving a room key",
+            "ja": "ルームキーを受け取っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "speaking with the receptionist",
+            "ja": "受付係と話している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "filling out a registration form",
+            "ja": "宿泊者登録用紙に記入している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "waiting near the front desk",
+            "ja": "フロントの近くで待っている",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "carrying travel luggage",
+            "ja": "旅行用の荷物を持っている",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "preparing to stay overnight",
+            "ja": "宿泊する準備をしている",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A traveler is checking into a hotel at the front desk.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "旅行者がフロントでホテルのチェックインをしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He is showing his passport to the receptionist.",
+            "grammar": "現在進行形・show A to B",
+            "ja": "彼は受付係にパスポートを見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The receptionist appears to be confirming his reservation.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "受付係は彼の予約を確認しているようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "The receptionist is handing a room key to the guest.",
+            "grammar": "現在進行形・hand A to B",
+            "ja": "受付係が宿泊客にルームキーを手渡しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "Another guest is filling out a registration form nearby.",
+            "grammar": "現在進行形・fill out",
+            "ja": "近くでは別の宿泊客が宿泊者登録用紙に記入しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "Several pieces of luggage are placed beside the front desk.",
+            "grammar": "受動態・場所を表す前置詞",
+            "ja": "いくつかの荷物がフロントの横に置かれています。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The traveler may have just arrived after a long journey.",
+            "grammar": "助動詞may＋現在完了形",
+            "ja": "旅行者は長い移動を終えて到着したばかりなのかもしれません。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "international traveler",
+            "ja": "海外からの旅行者",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "receptionist",
+            "ja": "ホテル受付係",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "front desk",
+            "ja": "フロント",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "reservation",
+            "ja": "予約",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "identification",
+            "ja": "身分証明書",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "registration",
+            "ja": "宿泊者登録",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "accommodation",
+            "ja": "宿泊施設",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "luggage",
+            "ja": "旅行荷物",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "verify",
+            "ja": "確認する・照合する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "register",
+            "ja": "登録する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "issue",
+            "ja": "発行する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "assist",
+            "ja": "手助けする",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "hospitality",
+            "ja": "接客・おもてなし",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "efficient",
+            "ja": "効率的な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "welcoming",
+            "ja": "歓迎的な・親しみやすい",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "completing the hotel check-in process",
+            "ja": "ホテルのチェックイン手続きを行っている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "confirming an existing reservation",
+            "ja": "既存の予約を確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "presenting identification to the receptionist",
+            "ja": "受付係に身分証明書を提示している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "issuing a room key to the guest",
+            "ja": "宿泊客にルームキーを発行している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "completing a guest registration form",
+            "ja": "宿泊者登録用紙への記入を完了している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "providing information about the hotel",
+            "ja": "ホテルについての情報を提供している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "arriving with several pieces of luggage",
+            "ja": "いくつかの荷物を持って到着している",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "receiving assistance from hotel staff",
+            "ja": "ホテルスタッフから支援を受けている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "preparing for an overnight stay",
+            "ja": "宿泊の準備をしている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "providing a welcoming guest experience",
+            "ja": "宿泊客に歓迎的な体験を提供している",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the front desk, an international traveler is completing the hotel check-in process with a receptionist.",
+            "grammar": "現在進行形・withを用いた前置詞句",
+            "ja": "フロントで、海外からの旅行者が受付係とホテルのチェックイン手続きを行っています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The traveler is presenting his passport so that the receptionist can verify his identity and reservation.",
+            "grammar": "現在進行形・so that構文・助動詞can",
+            "ja": "旅行者は、受付係が本人確認と予約確認を行えるようパスポートを提示しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "After confirming the reservation, the receptionist appears to be issuing a room key and explaining basic hotel information.",
+            "grammar": "After＋動名詞・appear to不定詞・現在進行形",
+            "ja": "予約を確認した後、受付係はルームキーを渡し、ホテルの基本情報を説明しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, another guest is completing a registration form while waiting near the reception area.",
+            "grammar": "現在進行形・while＋現在分詞",
+            "ja": "一方、別の宿泊客は受付エリアの近くで待ちながら宿泊者登録用紙に記入しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Several suitcases beside the guests suggest that they may have recently arrived from another city or country.",
+            "grammar": "suggest that節・助動詞may＋現在完了形",
+            "ja": "宿泊客の横にあるいくつかのスーツケースから、彼らが別の都市や国から到着したばかりである可能性がうかがえます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "A clear and efficient check-in process can help travelers feel more comfortable after a long journey.",
+            "grammar": "助動詞can・help O do・比較級",
+            "ja": "分かりやすく効率的なチェックイン手続きは、長い移動の後の旅行者をより安心させることができます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Helpful hotel staff can also provide information about facilities, transportation, and nearby attractions.",
+            "grammar": "助動詞can・provide information about",
+            "ja": "親切なホテルスタッフは、設備、交通、近隣の観光地についての情報も提供できます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how good hospitality can make the beginning of a guest's stay smoother and more welcoming.",
+            "grammar": "間接疑問を含むhow節・助動詞can・make O C・比較級",
+            "ja": "この場面は、良い接客によって宿泊客の滞在の始まりをよりスムーズで歓迎的なものにできることを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "international_traveler": {
+        "x": 34,
+        "y": 55
+      },
+      "traveler_passport": {
+        "x": 42,
+        "y": 52
+      },
+      "receptionist": {
+        "x": 57,
+        "y": 44
+      },
+      "room_key": {
+        "x": 49,
+        "y": 53
+      },
+      "front_desk": {
+        "x": 48,
+        "y": 64
+      },
+      "computer_screen": {
+        "x": 58,
+        "y": 51
+      },
+      "second_guest": {
+        "x": 76,
+        "y": 55
+      },
+      "registration_form": {
+        "x": 72,
+        "y": 57
+      },
+      "writing_area": {
+        "x": 74,
+        "y": 64
+      },
+      "traveler_suitcase": {
+        "x": 27,
+        "y": 70
+      },
+      "second_suitcase": {
+        "x": 82,
+        "y": 70
+      },
+      "reception_sign": {
+        "x": 50,
+        "y": 20
+      },
+      "hotel_information_board": {
+        "x": 20,
+        "y": 31
+      },
+      "lobby_seating": {
+        "x": 87,
+        "y": 39
+      },
+      "hotel_lobby": {
+        "x": 50,
+        "y": 84
+      }
+    }
+  }
+]

@@ -441,15 +441,12 @@ window.startGameWithTheme = async function(id) {
     if (window.appState.selectedMode === 'oralquest') {
         if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
         
-        // ORAL QUEST用の初期化処理（後でjs/oralquest_game.jsにまとめますが、とりあえずUIリセット）
-        document.getElementById('oq-stage-1').classList.remove('hidden');
-        document.getElementById('oq-stage-2').classList.add('hidden');
-        document.getElementById('oq-stage-3').classList.add('hidden');
-        document.getElementById('oq-progress-bar').style.width = '10%';
-        document.getElementById('btn-oq-start').classList.remove('hidden');
-        document.getElementById('btn-oq-next').classList.add('hidden');
-        document.getElementById('oq-reading-result').classList.add('hidden');
-        document.getElementById('oq-status-text').textContent = "Tap START to read";
+        // ★大修正：古いUIリセットを消し、OralQuestGame の init() を呼び出してスタートさせる！
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.init();
+        } else {
+            console.error("OralQuestGameが見つかりません。js/oralquest_game.jsが読み込まれているか確認してください。");
+        }
         
     } else {
         if (typeof showView === 'function') showView(document.getElementById('view-play'));

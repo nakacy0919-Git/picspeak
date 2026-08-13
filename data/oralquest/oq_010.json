@@ -1,0 +1,741 @@
+[
+{
+"id": "oq_010",
+"imageSrc": "assets/images/oralquest/oq010.webp",
+"description": "日本を初めて訪れた海外からの旅行者が、たくさん並んだカプセルトイの機械に興味を持ち、夢中になってガチャガチャを回している場面。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Some visitors enjoy trying capsule toy machines when they travel in Japan. These machines offer many kinds of small toys, and the surprise of not knowing which item will come out makes the experience exciting.",
+"q1": {
+"text": "Why do some visitors find capsule toy machines exciting?",
+"keywords": [
+"surprise",
+"small toys",
+"not knowing",
+"which item"
+],
+"modelAnswers": [
+"Because they do not know which toy will come out of the machine.",
+"They find them exciting because the surprise of getting an unknown item makes the experience fun."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "Have you ever tried a capsule toy machine? What did you get?",
+"keywords": [
+"capsule",
+"toy",
+"machine",
+"coin",
+"character",
+"figure",
+"keychain",
+"cute",
+"surprise",
+"collect"
+],
+"modelAnswers": [
+"Yes, I have. I got a small character figure from a capsule toy machine.",
+"I sometimes play capsule toy machines when I see something cute.",
+"No, I have never tried one, but I would like to get a Japanese character toy."
+]
+},
+{
+"text": "What Japanese things or experiences do you think are interesting for visitors from other countries?",
+"keywords": [
+"Japan",
+"culture",
+"food",
+"anime",
+"temple",
+"train",
+"festival",
+"technology",
+"traditional",
+"interesting"
+],
+"modelAnswers": [
+"I think Japanese food and traditional festivals are interesting for visitors from other countries.",
+"Anime, capsule toys, and Japanese technology may be interesting because they are different from things in other countries.",
+"I think visitors should experience both traditional places such as temples and modern Japanese culture."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "man",
+"ja": "男性",
+"type": "object",
+"points": 10
+},
+{
+"text": "tourist",
+"ja": "旅行者",
+"type": "object",
+"points": 15
+},
+{
+"text": "toy",
+"ja": "おもちゃ",
+"type": "object",
+"points": 10
+},
+{
+"text": "machine",
+"ja": "機械",
+"type": "object",
+"points": 10
+},
+{
+"text": "capsule",
+"ja": "カプセル",
+"type": "object",
+"points": 15
+},
+{
+"text": "coin",
+"ja": "硬貨",
+"type": "object",
+"points": 10
+},
+{
+"text": "handle",
+"ja": "ハンドル",
+"type": "object",
+"points": 10
+},
+{
+"text": "bag",
+"ja": "かばん",
+"type": "object",
+"points": 10
+},
+{
+"text": "turn",
+"ja": "回す",
+"type": "gist",
+"points": 15
+},
+{
+"text": "play",
+"ja": "遊ぶ",
+"type": "gist",
+"points": 10
+},
+{
+"text": "look",
+"ja": "見る",
+"type": "gist",
+"points": 10
+},
+{
+"text": "smile",
+"ja": "笑う・ほほえむ",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "colorful",
+"ja": "カラフルな",
+"type": "attribute",
+"points": 15
+},
+{
+"text": "excited",
+"ja": "わくわくした",
+"type": "inference",
+"points": 15
+},
+{
+"text": "Japan",
+"ja": "日本",
+"type": "detail",
+"points": 10
+}
+],
+"chunks": [
+{
+"text": "a capsule toy machine",
+"ja": "カプセルトイの機械",
+"type": "object",
+"points": 15
+},
+{
+"text": "turning the handle",
+"ja": "ハンドルを回している",
+"type": "gist",
+"points": 20
+},
+{
+"text": "putting in a coin",
+"ja": "硬貨を入れている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "many toy machines",
+"ja": "たくさんのおもちゃの機械",
+"type": "detail",
+"points": 15
+},
+{
+"text": "looking at the toys",
+"ja": "おもちゃを見ている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a colorful shop",
+"ja": "カラフルなお店",
+"type": "detail",
+"points": 15
+},
+{
+"text": "visiting Japan",
+"ja": "日本を訪れている",
+"type": "detail",
+"points": 20
+},
+{
+"text": "getting a capsule",
+"ja": "カプセルを手に入れている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "very excited",
+"ja": "とてもわくわくしている",
+"type": "inference",
+"points": 20
+}
+],
+"sentences": [
+{
+"text": "A tourist is looking at many toy machines.",
+"grammar": "現在進行形・look at",
+"ja": "旅行者がたくさんのおもちゃの機械を見ています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "He is putting a coin into the machine.",
+"grammar": "現在進行形・put A into B",
+"ja": "彼は機械に硬貨を入れています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "He is turning the handle.",
+"grammar": "現在進行形",
+"ja": "彼はハンドルを回しています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "There are many capsule toy machines.",
+"grammar": "There are構文",
+"ja": "たくさんのカプセルトイの機械があります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The machines are very colorful.",
+"grammar": "be動詞・副詞very・形容詞",
+"ja": "その機械はとてもカラフルです。",
+"type": "attribute",
+"points": 20
+},
+{
+"text": "The tourist looks very excited.",
+"grammar": "look＋形容詞",
+"ja": "旅行者はとてもわくわくしているように見えます。",
+"type": "inference",
+"points": 30
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "tourist",
+"ja": "旅行者",
+"type": "object",
+"points": 15
+},
+{
+"text": "visitor",
+"ja": "訪問者",
+"type": "object",
+"points": 15
+},
+{
+"text": "capsule",
+"ja": "カプセル",
+"type": "object",
+"points": 15
+},
+{
+"text": "figure",
+"ja": "フィギュア",
+"type": "object",
+"points": 15
+},
+{
+"text": "machine",
+"ja": "機械",
+"type": "object",
+"points": 10
+},
+{
+"text": "coin",
+"ja": "硬貨",
+"type": "object",
+"points": 10
+},
+{
+"text": "handle",
+"ja": "ハンドル",
+"type": "object",
+"points": 10
+},
+{
+"text": "display",
+"ja": "商品見本・表示",
+"type": "detail",
+"points": 20
+},
+{
+"text": "choose",
+"ja": "選ぶ",
+"type": "gist",
+"points": 20
+},
+{
+"text": "insert",
+"ja": "差し込む・入れる",
+"type": "gist",
+"points": 25
+},
+{
+"text": "collect",
+"ja": "集める",
+"type": "gist",
+"points": 20
+},
+{
+"text": "discover",
+"ja": "見つける",
+"type": "gist",
+"points": 20
+},
+{
+"text": "surprised",
+"ja": "驚いた",
+"type": "inference",
+"points": 20
+},
+{
+"text": "fascinated",
+"ja": "夢中になった",
+"type": "inference",
+"points": 25
+},
+{
+"text": "unique",
+"ja": "独特な",
+"type": "attribute",
+"points": 20
+}
+],
+"chunks": [
+{
+"text": "trying a capsule toy machine",
+"ja": "カプセルトイの機械を試している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "inserting a coin into the machine",
+"ja": "機械に硬貨を入れている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "turning the handle",
+"ja": "ハンドルを回している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "looking at the displays",
+"ja": "商品見本を見ている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "rows of capsule toy machines",
+"ja": "何列も並んだカプセルトイの機械",
+"type": "detail",
+"points": 25
+},
+{
+"text": "visiting Japan for the first time",
+"ja": "初めて日本を訪れている",
+"type": "detail",
+"points": 30
+},
+{
+"text": "excited about the capsule toys",
+"ja": "カプセルトイにわくわくしている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "choosing which machine to try",
+"ja": "どの機械を試すか選んでいる",
+"type": "inference",
+"points": 30
+},
+{
+"text": "interested in Japanese culture",
+"ja": "日本文化に興味を持っている",
+"type": "inference",
+"points": 30
+}
+],
+"sentences": [
+{
+"text": "A tourist is trying a capsule toy machine for the first time.",
+"grammar": "現在進行形・for the first time",
+"ja": "旅行者が初めてカプセルトイの機械を試しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "He is inserting a coin and turning the handle.",
+"grammar": "現在進行形・andによる動作の接続",
+"ja": "彼は硬貨を入れてハンドルを回しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "There are dozens of colorful machines lined up along the wall.",
+"grammar": "There are構文・過去分詞による後置修飾",
+"ja": "壁沿いには何十台ものカラフルな機械が並んでいます。",
+"type": "detail",
+"points": 35
+},
+{
+"text": "The tourist seems fascinated by the large variety of capsule toys.",
+"grammar": "seem＋形容詞・受動的表現be fascinated by",
+"ja": "旅行者は豊富な種類のカプセルトイに夢中になっているようです。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "He may be trying to decide which machine to use next.",
+"grammar": "助動詞may・try to不定詞・疑問詞which",
+"ja": "彼は次にどの機械を使うか決めようとしているのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "He looks excited because he has never seen so many capsule toy machines before.",
+"grammar": "look＋形容詞・because節・現在完了形",
+"ja": "これほど多くのカプセルトイの機械を見たことがないため、彼はわくわくしているように見えます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Capsule toys seem to be an interesting part of his experience in Japan.",
+"grammar": "seem to不定詞・be動詞",
+"ja": "カプセルトイは彼の日本での体験の興味深い一部になっているようです。",
+"type": "inference",
+"points": 35
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "overseas visitor",
+"ja": "海外からの旅行者",
+"type": "object",
+"points": 25
+},
+{
+"text": "capsule toy",
+"ja": "カプセルトイ",
+"type": "object",
+"points": 20
+},
+{
+"text": "vending machine",
+"ja": "自動販売機",
+"type": "object",
+"points": 20
+},
+{
+"text": "collectible",
+"ja": "収集品",
+"type": "object",
+"points": 30
+},
+{
+"text": "miniature",
+"ja": "ミニチュア",
+"type": "object",
+"points": 25
+},
+{
+"text": "selection",
+"ja": "品ぞろえ",
+"type": "detail",
+"points": 20
+},
+{
+"text": "display",
+"ja": "商品見本",
+"type": "detail",
+"points": 20
+},
+{
+"text": "insert",
+"ja": "投入する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "rotate",
+"ja": "回転させる",
+"type": "gist",
+"points": 25
+},
+{
+"text": "collect",
+"ja": "収集する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "fascinated",
+"ja": "魅了された",
+"type": "inference",
+"points": 30
+},
+{
+"text": "immersed",
+"ja": "夢中になった",
+"type": "inference",
+"points": 30
+},
+{
+"text": "novel",
+"ja": "目新しい",
+"type": "attribute",
+"points": 30
+},
+{
+"text": "distinctive",
+"ja": "独特な",
+"type": "attribute",
+"points": 30
+},
+{
+"text": "pop culture",
+"ja": "大衆文化・ポップカルチャー",
+"type": "inference",
+"points": 30
+}
+],
+"chunks": [
+{
+"text": "experiencing Japanese capsule toy culture",
+"ja": "日本のカプセルトイ文化を体験している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "surrounded by rows of capsule toy machines",
+"ja": "何列ものカプセルトイ機に囲まれている",
+"type": "detail",
+"points": 35
+},
+{
+"text": "inserting a coin and rotating the handle",
+"ja": "硬貨を入れてハンドルを回している",
+"type": "gist",
+"points": 35
+},
+{
+"text": "examining the available collectibles",
+"ja": "購入可能な収集品を見比べている",
+"type": "gist",
+"points": 35
+},
+{
+"text": "completely absorbed in the experience",
+"ja": "その体験に完全に夢中になっている",
+"type": "inference",
+"points": 35
+},
+{
+"text": "discovering something unique to Japan",
+"ja": "日本ならではのものを発見している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "choosing from a wide variety of designs",
+"ja": "豊富な種類のデザインから選んでいる",
+"type": "detail",
+"points": 35
+},
+{
+"text": "an unexpected part of his travel experience",
+"ja": "予想外の旅行体験の一部",
+"type": "inference",
+"points": 35
+},
+{
+"text": "a distinctive form of Japanese pop culture",
+"ja": "日本の特徴的なポップカルチャーの一形態",
+"type": "inference",
+"points": 40
+},
+{
+"text": "eager to try another machine",
+"ja": "別の機械も試したくてたまらない",
+"type": "inference",
+"points": 35
+}
+],
+"sentences": [
+{
+"text": "An overseas visitor is enthusiastically trying a capsule toy machine during his first trip to Japan.",
+"grammar": "現在進行形・duringを用いた前置詞句",
+"ja": "海外からの旅行者が初めての日本旅行中に、楽しそうにカプセルトイの機械を試しています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "He is surrounded by rows of machines containing a wide variety of miniature toys and collectibles.",
+"grammar": "受動態・現在分詞による後置修飾",
+"ja": "彼の周囲には、さまざまなミニチュア玩具や収集品が入った機械が何列も並んでいます。",
+"type": "detail",
+"points": 40
+},
+{
+"text": "After inserting a coin, he is rotating the handle while eagerly waiting to see which toy he will receive.",
+"grammar": "After＋動名詞・現在進行形・while節・間接疑問文which",
+"ja": "硬貨を入れた後、彼はどのおもちゃが出てくるのか楽しみに待ちながらハンドルを回しています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "His expression suggests that he is fascinated by both the variety of the machines and the surprise of not knowing what he will get.",
+"grammar": "suggest that節・both A and B・動名詞・間接疑問を含むwhat節",
+"ja": "彼の表情から、機械の種類の豊富さと、何が出るかわからない驚きの両方に魅了されていることがうかがえます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Since this is his first visit to Japan, the capsule toy area may feel especially novel and distinctive to him.",
+"grammar": "Sinceを用いた理由節・助動詞may・feel＋形容詞",
+"ja": "彼にとって初めての日本訪問なので、カプセルトイ売り場は特に目新しく独特に感じられるのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The scene illustrates how an ordinary form of entertainment can become a memorable cultural experience for an international visitor.",
+"grammar": "間接疑問を含むhow節・助動詞can・become＋補語",
+"ja": "この場面は、日常的な娯楽が海外からの旅行者にとって思い出深い文化体験になり得ることを示しています。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Although each capsule toy is inexpensive, visitors may spend more than they expect because they want to try several different machines.",
+"grammar": "Althoughを用いた譲歩節・比較表現more than・because節",
+"ja": "一つ一つのカプセルトイは安価ですが、さまざまな機械を試したくなり、旅行者は予想以上にお金を使うことがあるかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Experiences like this can help visitors discover aspects of modern Japanese culture that they might not have planned to explore.",
+"grammar": "動名詞主語・help O do・関係代名詞that・might＋現在完了形",
+"ja": "このような体験は、旅行者がもともと予定していなかった現代日本文化の一面を発見するきっかけになり得ます。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"tourist": {
+"x": 46,
+"y": 57
+},
+"tourist_face": {
+"x": 45,
+"y": 38
+},
+"coin": {
+"x": 49,
+"y": 52
+},
+"hand_on_handle": {
+"x": 53,
+"y": 57
+},
+"selected_machine": {
+"x": 57,
+"y": 51
+},
+"machine_handle": {
+"x": 57,
+"y": 57
+},
+"capsule_slot": {
+"x": 57,
+"y": 66
+},
+"capsule": {
+"x": 58,
+"y": 67
+},
+"left_machine_row": {
+"x": 22,
+"y": 52
+},
+"right_machine_row": {
+"x": 80,
+"y": 51
+},
+"toy_display": {
+"x": 58,
+"y": 39
+},
+"backpack": {
+"x": 38,
+"y": 59
+},
+"capsule_toy_shop": {
+"x": 50,
+"y": 24
+},
+"machine_rows": {
+"x": 50,
+"y": 49
+},
+"shop_floor": {
+"x": 50,
+"y": 88
+}
+}
+}
+]

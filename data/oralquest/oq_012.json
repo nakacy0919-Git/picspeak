@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_012",
+    "imageSrc": "assets/images/oralquest/oq012.webp",
+    "description": "コンビニのレジで、若い女性がスマートフォンをかざしてキャッシュレス決済をしており、店員が端末を操作している。近くでは別の客もカードを使って支払いをしている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Nowadays, cashless payments are becoming more common in everyday life. People can use smartphones or cards to pay quickly without carrying cash, and many stores offer several digital payment options to make shopping easier and more convenient.",
+      "q1": {
+        "text": "Why are cashless payments convenient for shoppers?",
+        "keywords": [
+          "pay quickly",
+          "without carrying cash",
+          "smartphones or cards",
+          "easier"
+        ],
+        "modelAnswers": [
+          "They are convenient because people can pay quickly without carrying cash.",
+          "Because shoppers can use smartphones or cards to make payments easily and quickly."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "Which do you usually use, cash or cashless payment? Why?",
+          "keywords": [
+            "cash",
+            "cashless",
+            "smartphone",
+            "card",
+            "convenient",
+            "quick",
+            "easy",
+            "usually",
+            "payment",
+            "money"
+          ],
+          "modelAnswers": [
+            "I usually use cashless payment because it is quick and convenient.",
+            "I often pay with my smartphone because I do not need to carry many coins.",
+            "I usually use cash because it helps me understand how much money I am spending."
+          ]
+        },
+        {
+          "text": "What are the advantages and disadvantages of cashless payments?",
+          "keywords": [
+            "convenient",
+            "fast",
+            "cash",
+            "security",
+            "battery",
+            "internet",
+            "spend",
+            "record",
+            "easy",
+            "problem"
+          ],
+          "modelAnswers": [
+            "Cashless payments are fast and convenient, but they may not work if your phone battery is dead.",
+            "One advantage is that you can easily check your payment history. However, some people may spend too much money.",
+            "They are convenient because people do not need cash, but security and technical problems can be disadvantages."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "cashier",
+            "ja": "レジ係",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "phone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "card",
+            "ja": "カード",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "money",
+            "ja": "お金",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "store",
+            "ja": "店",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "counter",
+            "ja": "レジカウンター",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "screen",
+            "ja": "画面",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "pay",
+            "ja": "支払う",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "use",
+            "ja": "使う",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "buy",
+            "ja": "買う",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "quick",
+            "ja": "速い",
+            "type": "attribute",
+            "points": 15
+          },
+          {
+            "text": "easy",
+            "ja": "簡単な",
+            "type": "attribute",
+            "points": 15
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "paying with a phone",
+            "ja": "スマートフォンで支払っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "using a card",
+            "ja": "カードを使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "at the counter",
+            "ja": "レジカウンターで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "at a convenience store",
+            "ja": "コンビニで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "a payment machine",
+            "ja": "決済端末",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "buying some food",
+            "ja": "食べ物を買っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "looking at the screen",
+            "ja": "画面を見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "without using cash",
+            "ja": "現金を使わずに",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "a quick payment",
+            "ja": "素早い支払い",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is paying with her smartphone.",
+            "grammar": "現在進行形・withを用いた手段の表現",
+            "ja": "女性がスマートフォンで支払っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The cashier is looking at the payment screen.",
+            "grammar": "現在進行形・look at",
+            "ja": "店員が決済画面を見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Another customer is using a card.",
+            "grammar": "現在進行形",
+            "ja": "別の客がカードを使っています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "They are in a convenience store.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らはコンビニにいます。",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "There is a payment machine on the counter.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "カウンターの上に決済端末があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The woman does not need any cash.",
+            "grammar": "一般動詞の否定文",
+            "ja": "女性は現金を必要としていません。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "cashless",
+            "ja": "現金を使わない",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "payment",
+            "ja": "支払い",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "smartphone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "cashier",
+            "ja": "レジ係",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "terminal",
+            "ja": "端末",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "card",
+            "ja": "カード",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "receipt",
+            "ja": "レシート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "scan",
+            "ja": "読み取る",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "tap",
+            "ja": "かざす・軽く触れる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "confirm",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "popular",
+            "ja": "普及している・人気の",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "digital",
+            "ja": "デジタルの",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "purchase",
+            "ja": "購入",
+            "type": "gist",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "making a cashless payment",
+            "ja": "キャッシュレス決済をしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "paying with a smartphone",
+            "ja": "スマートフォンで支払っている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "tapping a payment terminal",
+            "ja": "決済端末にかざしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "using a credit card",
+            "ja": "クレジットカードを使っている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "checking the payment screen",
+            "ja": "決済画面を確認している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "without carrying cash",
+            "ja": "現金を持ち歩かずに",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "a digital payment system",
+            "ja": "デジタル決済システム",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "a convenient way to pay",
+            "ja": "便利な支払い方法",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "becoming more common",
+            "ja": "より一般的になっている",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is making a cashless payment with her smartphone.",
+            "grammar": "現在進行形・withを用いた手段の表現",
+            "ja": "女性がスマートフォンでキャッシュレス決済をしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The cashier is checking whether the payment has been completed.",
+            "grammar": "現在進行形・whether節・現在完了受動態",
+            "ja": "店員は支払いが完了したか確認しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Another customer is paying by card at the next register.",
+            "grammar": "現在進行形・byを用いた手段の表現",
+            "ja": "別の客は隣のレジでカード払いをしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are several cashless payment options near the register.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "レジの近くにはいくつかのキャッシュレス決済方法が表示されています。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "The woman seems to find cashless payment quick and convenient.",
+            "grammar": "seem to不定詞・find O C",
+            "ja": "女性はキャッシュレス決済を素早く便利だと感じているようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "She can complete her purchase without taking any coins out of her wallet.",
+            "grammar": "助動詞can・without＋動名詞",
+            "ja": "彼女は財布から硬貨を取り出すことなく買い物を済ませることができます。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Cashless payments are becoming more common in everyday life.",
+            "grammar": "現在進行形・比較級more common",
+            "ja": "キャッシュレス決済は日常生活でより一般的になっています。",
+            "type": "inference",
+            "points": 35
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "cashless transaction",
+            "ja": "キャッシュレス取引",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "contactless",
+            "ja": "非接触型の",
+            "type": "attribute",
+            "points": 30
+          },
+          {
+            "text": "digital wallet",
+            "ja": "デジタルウォレット",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "payment terminal",
+            "ja": "決済端末",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "transaction",
+            "ja": "取引・決済",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "consumer",
+            "ja": "消費者",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "merchant",
+            "ja": "販売店・事業者",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "scan",
+            "ja": "読み取る",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "verify",
+            "ja": "確認・認証する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "process",
+            "ja": "処理する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "efficient",
+            "ja": "効率的な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "security",
+            "ja": "安全性・セキュリティ",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "convenience",
+            "ja": "利便性",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "widespread",
+            "ja": "広く普及した",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "infrastructure",
+            "ja": "インフラ・基盤",
+            "type": "detail",
+            "points": 35
+          }
+        ],
+        "chunks": [
+          {
+            "text": "completing a contactless transaction",
+            "ja": "非接触型の決済を完了している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "using a smartphone as a digital wallet",
+            "ja": "スマートフォンをデジタルウォレットとして使っている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "holding the phone near the payment terminal",
+            "ja": "スマートフォンを決済端末にかざしている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "processing an electronic payment",
+            "ja": "電子決済を処理している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "reducing the need to carry cash",
+            "ja": "現金を持ち歩く必要性を減らしている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "a growing preference for cashless payments",
+            "ja": "高まりつつあるキャッシュレス決済への選好",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "a variety of digital payment methods",
+            "ja": "さまざまなデジタル決済方法",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "making everyday transactions more efficient",
+            "ja": "日常の決済をより効率的にしている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "depending on digital technology",
+            "ja": "デジタル技術に依存している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "the widespread adoption of cashless payment",
+            "ja": "キャッシュレス決済の広範な普及",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the checkout counter, a customer is completing a contactless transaction by holding her smartphone near the payment terminal.",
+            "grammar": "現在進行形・by＋動名詞",
+            "ja": "レジカウンターで、客がスマートフォンを決済端末にかざして非接触型決済をしています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The cashier appears to be verifying that the electronic payment has been successfully processed.",
+            "grammar": "appear to不定詞・that節・現在完了受動態",
+            "ja": "店員は電子決済が正常に処理されたことを確認しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, another customer is using a payment card, suggesting that several cashless options are available in the store.",
+            "grammar": "現在進行形・現在分詞による結果の付加・that節",
+            "ja": "一方、別の客はカードで支払っており、この店では複数のキャッシュレス決済方法が利用できることがうかがえます。",
+            "type": "detail",
+            "points": 40
+          },
+          {
+            "text": "The scene reflects the growing tendency for consumers to use smartphones and cards instead of physical cash.",
+            "grammar": "tendency for A to do・instead of＋名詞",
+            "ja": "この場面は、消費者が現金の代わりにスマートフォンやカードを使う傾向が高まっていることを表しています。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Although cashless payments can make transactions faster and more convenient, users also need to consider security and technical problems.",
+            "grammar": "Althoughを用いた譲歩節・助動詞can・make O C・比較級",
+            "ja": "キャッシュレス決済は取引をより速く便利にできますが、利用者はセキュリティや技術的な問題についても考える必要があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "People who rely heavily on smartphone payments may face difficulties if their devices run out of battery or lose network access.",
+            "grammar": "関係代名詞who・助動詞may・ifを用いた条件節",
+            "ja": "スマートフォン決済に大きく依存する人は、端末の充電が切れたり通信が使えなくなったりすると困る可能性があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "As digital payment infrastructure continues to develop, cashless transactions are likely to become an even more common part of everyday life.",
+            "grammar": "Asを用いた変化・continue to不定詞・be likely to・比較級",
+            "ja": "デジタル決済のインフラが発展し続けるにつれて、キャッシュレス取引は日常生活のさらに一般的な一部になる可能性があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The spread of cashless payment shows how digital technology is changing not only the way people shop but also the way businesses serve their customers.",
+            "grammar": "間接疑問を含むhow節・not only A but also B・関係詞節",
+            "ja": "キャッシュレス決済の普及は、デジタル技術が人々の買い物方法だけでなく、企業が顧客にサービスを提供する方法も変えていることを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "woman": {
+        "x": 37,
+        "y": 55
+      },
+      "smartphone": {
+        "x": 44,
+        "y": 53
+      },
+      "payment_terminal": {
+        "x": 50,
+        "y": 55
+      },
+      "cashier": {
+        "x": 59,
+        "y": 44
+      },
+      "register_screen": {
+        "x": 57,
+        "y": 51
+      },
+      "shopping_items": {
+        "x": 38,
+        "y": 63
+      },
+      "cashless_payment_sign": {
+        "x": 49,
+        "y": 27
+      },
+      "second_customer": {
+        "x": 77,
+        "y": 56
+      },
+      "payment_card": {
+        "x": 73,
+        "y": 53
+      },
+      "second_terminal": {
+        "x": 70,
+        "y": 57
+      },
+      "checkout_counter": {
+        "x": 53,
+        "y": 65
+      },
+      "receipt": {
+        "x": 61,
+        "y": 59
+      },
+      "store_shelves": {
+        "x": 18,
+        "y": 39
+      },
+      "convenience_store": {
+        "x": 50,
+        "y": 24
+      },
+      "store_floor": {
+        "x": 50,
+        "y": 87
+      }
+    }
+  }
+]

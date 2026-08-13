@@ -1,0 +1,730 @@
+[
+{
+"id": "oq_003",
+"imageSrc": "assets/images/oralquest/oq003.webp",
+"description": "スーパーマーケットで、女性がレジで商品を購入しており、近くでは男の子が果物売り場でリンゴを選んでいる場面。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Many people visit supermarkets to buy food and daily necessities. Supermarkets usually offer fresh fruit, vegetables, drinks, and other products in one place. Shoppers can compare items and prices before paying at the checkout counter.",
+"q1": {
+"text": "What can shoppers do before paying at the checkout counter?",
+"keywords": [
+"compare",
+"items",
+"prices",
+"before paying"
+],
+"modelAnswers": [
+"They can compare items and prices before paying.",
+"Shoppers can compare different items and their prices before they pay."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "How often do you go to a supermarket, and what do you usually buy there?",
+"keywords": [
+"supermarket",
+"often",
+"week",
+"food",
+"drinks",
+"fruit",
+"vegetables",
+"snacks",
+"buy",
+"family"
+],
+"modelAnswers": [
+"I go to a supermarket about once a week. I usually buy fruit, drinks, and snacks.",
+"My family goes shopping several times a week, and we usually buy food and vegetables.",
+"I sometimes go to the supermarket after school to buy drinks or snacks."
+]
+},
+{
+"text": "Do you think people should use reusable shopping bags? Why or why not?",
+"keywords": [
+"reusable",
+"bag",
+"plastic",
+"environment",
+"waste",
+"reduce",
+"use",
+"important",
+"help",
+"eco-friendly"
+],
+"modelAnswers": [
+"Yes, I think people should use reusable bags because they can reduce plastic waste.",
+"Yes. Reusable bags are better for the environment than using new plastic bags every time.",
+"I think reusable shopping bags are important because we can use them many times."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "woman",
+"ja": "女性",
+"type": "object",
+"points": 10
+},
+{
+"text": "boy",
+"ja": "男の子",
+"type": "object",
+"points": 10
+},
+{
+"text": "cashier",
+"ja": "レジ係",
+"type": "object",
+"points": 15
+},
+{
+"text": "apple",
+"ja": "リンゴ",
+"type": "object",
+"points": 10
+},
+{
+"text": "fruit",
+"ja": "果物",
+"type": "object",
+"points": 10
+},
+{
+"text": "basket",
+"ja": "買い物かご",
+"type": "object",
+"points": 10
+},
+{
+"text": "bag",
+"ja": "袋",
+"type": "object",
+"points": 10
+},
+{
+"text": "store",
+"ja": "店",
+"type": "detail",
+"points": 10
+},
+{
+"text": "supermarket",
+"ja": "スーパーマーケット",
+"type": "detail",
+"points": 15
+},
+{
+"text": "buy",
+"ja": "買う",
+"type": "gist",
+"points": 15
+},
+{
+"text": "choose",
+"ja": "選ぶ",
+"type": "gist",
+"points": 15
+},
+{
+"text": "scan",
+"ja": "スキャンする",
+"type": "gist",
+"points": 15
+},
+{
+"text": "red",
+"ja": "赤い",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "green",
+"ja": "緑色の",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "many",
+"ja": "たくさんの",
+"type": "attribute",
+"points": 10
+}
+],
+"chunks": [
+{
+"text": "at the supermarket",
+"ja": "スーパーマーケットで",
+"type": "detail",
+"points": 15
+},
+{
+"text": "buying some food",
+"ja": "食べ物を買っている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "scanning the food",
+"ja": "食べ物をスキャンしている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "choosing an apple",
+"ja": "リンゴを選んでいる",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a shopping basket",
+"ja": "買い物かご",
+"type": "object",
+"points": 15
+},
+{
+"text": "at the checkout",
+"ja": "レジで",
+"type": "detail",
+"points": 20
+},
+{
+"text": "some red apples",
+"ja": "いくつかの赤いリンゴ",
+"type": "detail",
+"points": 15
+},
+{
+"text": "in the basket",
+"ja": "かごの中に",
+"type": "detail",
+"points": 15
+},
+{
+"text": "near the fruit section",
+"ja": "果物売り場の近くで",
+"type": "detail",
+"points": 20
+}
+],
+"sentences": [
+{
+"text": "A woman is buying some food.",
+"grammar": "現在進行形",
+"ja": "女性が食べ物を買っています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "A cashier is scanning the food.",
+"grammar": "現在進行形",
+"ja": "レジ係が食べ物をスキャンしています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A boy is choosing an apple.",
+"grammar": "現在進行形",
+"ja": "男の子がリンゴを選んでいます。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "There are many apples on the shelf.",
+"grammar": "There are構文・場所を表す前置詞",
+"ja": "棚にはたくさんのリンゴがあります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The woman has a shopping basket.",
+"grammar": "一般動詞have",
+"ja": "女性は買い物かごを持っています。",
+"type": "detail",
+"points": 20
+},
+{
+"text": "They are in a supermarket.",
+"grammar": "be動詞・場所を表す前置詞",
+"ja": "彼らはスーパーマーケットにいます。",
+"type": "detail",
+"points": 25
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "customer",
+"ja": "客",
+"type": "object",
+"points": 15
+},
+{
+"text": "cashier",
+"ja": "レジ係",
+"type": "object",
+"points": 15
+},
+{
+"text": "checkout",
+"ja": "レジ",
+"type": "detail",
+"points": 20
+},
+{
+"text": "groceries",
+"ja": "食料品",
+"type": "object",
+"points": 20
+},
+{
+"text": "basket",
+"ja": "買い物かご",
+"type": "object",
+"points": 10
+},
+{
+"text": "apple",
+"ja": "リンゴ",
+"type": "object",
+"points": 10
+},
+{
+"text": "produce",
+"ja": "青果物",
+"type": "object",
+"points": 25
+},
+{
+"text": "scanner",
+"ja": "スキャナー",
+"type": "object",
+"points": 20
+},
+{
+"text": "select",
+"ja": "選ぶ",
+"type": "gist",
+"points": 20
+},
+{
+"text": "scan",
+"ja": "スキャンする",
+"type": "gist",
+"points": 15
+},
+{
+"text": "purchase",
+"ja": "購入する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "pay",
+"ja": "支払う",
+"type": "gist",
+"points": 15
+},
+{
+"text": "fresh",
+"ja": "新鮮な",
+"type": "attribute",
+"points": 15
+},
+{
+"text": "reusable",
+"ja": "再利用できる",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "display",
+"ja": "陳列",
+"type": "detail",
+"points": 20
+}
+],
+"chunks": [
+{
+"text": "shopping for groceries",
+"ja": "食料品を買い物している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "scanning the groceries",
+"ja": "食料品をスキャンしている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "at the checkout counter",
+"ja": "レジカウンターで",
+"type": "detail",
+"points": 20
+},
+{
+"text": "choosing a fresh apple",
+"ja": "新鮮なリンゴを選んでいる",
+"type": "gist",
+"points": 25
+},
+{
+"text": "in the fruit section",
+"ja": "果物売り場で",
+"type": "detail",
+"points": 20
+},
+{
+"text": "carrying a shopping basket",
+"ja": "買い物かごを持っている",
+"type": "detail",
+"points": 20
+},
+{
+"text": "several items in the basket",
+"ja": "かごの中のいくつかの商品",
+"type": "detail",
+"points": 20
+},
+{
+"text": "paying for her groceries",
+"ja": "食料品の代金を支払っている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "a reusable shopping bag",
+"ja": "再利用できる買い物袋",
+"type": "detail",
+"points": 25
+}
+],
+"sentences": [
+{
+"text": "A cashier is scanning the woman's groceries at the checkout counter.",
+"grammar": "現在進行形・場所を表す前置詞",
+"ja": "レジ係がレジカウンターで女性の食料品をスキャンしています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "The woman is standing in front of the cashier.",
+"grammar": "現在進行形・in front of",
+"ja": "女性はレジ係の前に立っています。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "A boy is choosing an apple from the fruit display.",
+"grammar": "現在進行形・fromを用いた前置詞句",
+"ja": "男の子が果物売り場からリンゴを選んでいます。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "There are several kinds of fruit near the boy.",
+"grammar": "There are構文・場所を表す前置詞",
+"ja": "男の子の近くには数種類の果物があります。",
+"type": "detail",
+"points": 30
+},
+{
+"text": "The woman looks like she is going to pay for her groceries.",
+"grammar": "look like節・be going to",
+"ja": "女性は食料品の代金を支払おうとしているように見えます。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "The boy may be looking for a good apple.",
+"grammar": "助動詞may・現在進行形",
+"ja": "男の子は良いリンゴを探しているのかもしれません。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "The supermarket looks clean and well organized.",
+"grammar": "look＋形容詞・過去分詞",
+"ja": "そのスーパーマーケットは清潔でよく整理されているように見えます。",
+"type": "inference",
+"points": 35
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "customer",
+"ja": "顧客",
+"type": "object",
+"points": 15
+},
+{
+"text": "cashier",
+"ja": "レジ係",
+"type": "object",
+"points": 15
+},
+{
+"text": "checkout",
+"ja": "会計場所",
+"type": "detail",
+"points": 20
+},
+{
+"text": "groceries",
+"ja": "食料品",
+"type": "object",
+"points": 20
+},
+{
+"text": "produce",
+"ja": "青果物",
+"type": "object",
+"points": 25
+},
+{
+"text": "merchandise",
+"ja": "商品",
+"type": "object",
+"points": 30
+},
+{
+"text": "transaction",
+"ja": "会計・取引",
+"type": "gist",
+"points": 30
+},
+{
+"text": "scanner",
+"ja": "スキャナー",
+"type": "object",
+"points": 20
+},
+{
+"text": "purchase",
+"ja": "購入する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "select",
+"ja": "選ぶ",
+"type": "gist",
+"points": 20
+},
+{
+"text": "inspect",
+"ja": "よく見て確認する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "display",
+"ja": "陳列棚",
+"type": "detail",
+"points": 20
+},
+{
+"text": "reusable",
+"ja": "再利用可能な",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "organized",
+"ja": "整理された",
+"type": "attribute",
+"points": 20
+},
+{
+"text": "routine",
+"ja": "日常的な",
+"type": "inference",
+"points": 25
+}
+],
+"chunks": [
+{
+"text": "completing a grocery purchase",
+"ja": "食料品の購入を済ませている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "scanning items at the checkout",
+"ja": "レジで商品をスキャンしている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "selecting fresh produce",
+"ja": "新鮮な青果物を選んでいる",
+"type": "gist",
+"points": 30
+},
+{
+"text": "examining an apple carefully",
+"ja": "リンゴを注意深く確認している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "standing at the checkout counter",
+"ja": "レジカウンターに立っている",
+"type": "detail",
+"points": 25
+},
+{
+"text": "a basket filled with groceries",
+"ja": "食料品の入った買い物かご",
+"type": "detail",
+"points": 30
+},
+{
+"text": "a neatly arranged fruit display",
+"ja": "きれいに並べられた果物売り場",
+"type": "detail",
+"points": 30
+},
+{
+"text": "using a reusable shopping bag",
+"ja": "再利用可能な買い物袋を使っている",
+"type": "detail",
+"points": 30
+},
+{
+"text": "a typical grocery shopping scene",
+"ja": "典型的な食料品の買い物場面",
+"type": "inference",
+"points": 35
+},
+{
+"text": "appears to be comparing the apples",
+"ja": "リンゴを比較しているように見える",
+"type": "inference",
+"points": 35
+}
+],
+"sentences": [
+{
+"text": "In the foreground, a cashier is scanning groceries for a woman at the checkout counter.",
+"grammar": "現在進行形・場所を表す前置詞句",
+"ja": "前景では、レジ係がレジカウンターで女性の食料品をスキャンしています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The woman appears to be completing her purchase while holding a reusable shopping bag.",
+"grammar": "appear to不定詞・while＋現在分詞",
+"ja": "女性は再利用可能な買い物袋を持ちながら、会計を済ませているように見えます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Meanwhile, a boy is examining an apple that he has picked up from the fruit display.",
+"grammar": "現在進行形・関係代名詞that・現在完了形",
+"ja": "一方、男の子は果物売り場から手に取ったリンゴをよく見ています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "Several kinds of fresh produce are neatly arranged behind the boy.",
+"grammar": "受動態・副詞による修飾",
+"ja": "男の子の後ろには数種類の新鮮な青果物がきれいに並べられています。",
+"type": "detail",
+"points": 40
+},
+{
+"text": "The boy may be comparing the apples before deciding which one to buy.",
+"grammar": "助動詞may・before＋動名詞・間接疑問文",
+"ja": "男の子はどのリンゴを買うか決める前に、リンゴを比較しているのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The supermarket seems to be clean, organized, and comfortable for customers.",
+"grammar": "seem to不定詞・形容詞の並列",
+"ja": "そのスーパーマーケットは清潔で整理されており、客にとって快適そうに見えます。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "The scene shows an ordinary shopping situation in which people are purchasing and selecting food.",
+"grammar": "関係詞in which・現在進行形",
+"ja": "この場面は、人々が食べ物を購入したり選んだりしている日常的な買い物の状況を表しています。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"woman": {
+"x": 38,
+"y": 56
+},
+"cashier": {
+"x": 20,
+"y": 48
+},
+"checkout_counter": {
+"x": 28,
+"y": 65
+},
+"scanner": {
+"x": 25,
+"y": 55
+},
+"shopping_basket": {
+"x": 42,
+"y": 70
+},
+"reusable_bag": {
+"x": 47,
+"y": 62
+},
+"boy": {
+"x": 72,
+"y": 56
+},
+"apple_in_hand": {
+"x": 69,
+"y": 49
+},
+"apple_display": {
+"x": 84,
+"y": 51
+},
+"fruit_section": {
+"x": 82,
+"y": 39
+},
+"vegetable_display": {
+"x": 91,
+"y": 61
+},
+"checkout_sign": {
+"x": 20,
+"y": 19
+},
+"price_display": {
+"x": 31,
+"y": 39
+},
+"supermarket_shelves": {
+"x": 54,
+"y": 30
+}
+}
+}
+]

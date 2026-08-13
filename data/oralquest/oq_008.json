@@ -1,0 +1,741 @@
+[
+{
+"id": "oq_008",
+"imageSrc": "assets/images/oralquest/oq008.webp",
+"description": "郵便局の窓口で、女性が荷物を発送するために職員へ小包を渡しており、近くでは男性が宛名ラベルを書き、別の客が封筒をポストに入れている場面。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Using a post office is still important when people need to send letters, documents, or packages. Postal services can deliver items to different places, and customers often prepare addresses and pay postage before their mail is sent.",
+"q1": {
+"text": "What do customers often do before their mail is sent?",
+"keywords": [
+"prepare addresses",
+"pay postage",
+"mail",
+"before sending"
+],
+"modelAnswers": [
+"They often prepare addresses and pay postage before their mail is sent.",
+"Customers usually write the address and pay the postage before sending their mail."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "Have you ever sent a package or a letter? What did you send?",
+"keywords": [
+"package",
+"letter",
+"send",
+"friend",
+"family",
+"gift",
+"post office",
+"birthday",
+"card",
+"mail"
+],
+"modelAnswers": [
+"Yes, I have. I sent a birthday present to my friend.",
+"I once mailed a letter and a small gift to my grandparents.",
+"No, I have never sent a package by myself, but I have gone to the post office with my family."
+]
+},
+{
+"text": "Do you think people will still use post offices in the future? Why or why not?",
+"keywords": [
+"future",
+"post office",
+"package",
+"online",
+"shopping",
+"delivery",
+"letter",
+"important",
+"service",
+"internet"
+],
+"modelAnswers": [
+"Yes, I think post offices will still be important because people need to send packages.",
+"People may send fewer letters, but online shopping will probably increase package delivery.",
+"I think post offices will remain useful because not everything can be sent through the internet."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "woman",
+"ja": "女性",
+"type": "object",
+"points": 10
+},
+{
+"text": "man",
+"ja": "男性",
+"type": "object",
+"points": 10
+},
+{
+"text": "worker",
+"ja": "職員",
+"type": "object",
+"points": 10
+},
+{
+"text": "box",
+"ja": "箱",
+"type": "object",
+"points": 10
+},
+{
+"text": "package",
+"ja": "小包",
+"type": "object",
+"points": 15
+},
+{
+"text": "letter",
+"ja": "手紙",
+"type": "object",
+"points": 10
+},
+{
+"text": "envelope",
+"ja": "封筒",
+"type": "object",
+"points": 10
+},
+{
+"text": "pen",
+"ja": "ペン",
+"type": "object",
+"points": 10
+},
+{
+"text": "counter",
+"ja": "窓口",
+"type": "object",
+"points": 10
+},
+{
+"text": "post office",
+"ja": "郵便局",
+"type": "detail",
+"points": 15
+},
+{
+"text": "send",
+"ja": "送る",
+"type": "gist",
+"points": 15
+},
+{
+"text": "write",
+"ja": "書く",
+"type": "gist",
+"points": 15
+},
+{
+"text": "give",
+"ja": "渡す",
+"type": "gist",
+"points": 15
+},
+{
+"text": "mail",
+"ja": "郵送する",
+"type": "gist",
+"points": 15
+},
+{
+"text": "red",
+"ja": "赤い",
+"type": "attribute",
+"points": 10
+}
+],
+"chunks": [
+{
+"text": "at the post office",
+"ja": "郵便局で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "sending a package",
+"ja": "小包を送っている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "giving a box",
+"ja": "箱を渡している",
+"type": "gist",
+"points": 20
+},
+{
+"text": "writing an address",
+"ja": "住所を書いている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a postal worker",
+"ja": "郵便局員",
+"type": "object",
+"points": 20
+},
+{
+"text": "at the counter",
+"ja": "窓口で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "a shipping label",
+"ja": "配送ラベル",
+"type": "object",
+"points": 20
+},
+{
+"text": "putting in a letter",
+"ja": "手紙を入れている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a red mailbox",
+"ja": "赤い郵便ポスト",
+"type": "detail",
+"points": 15
+}
+],
+"sentences": [
+{
+"text": "A woman is giving a package to a worker.",
+"grammar": "現在進行形・give A to B",
+"ja": "女性が職員に小包を渡しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A man is writing an address.",
+"grammar": "現在進行形",
+"ja": "男性が住所を書いています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "Another customer is mailing a letter.",
+"grammar": "現在進行形",
+"ja": "別の客が手紙を郵送しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "They are at a post office.",
+"grammar": "be動詞・場所を表す前置詞",
+"ja": "彼らは郵便局にいます。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "There are some boxes near the counter.",
+"grammar": "There are構文・場所を表す前置詞",
+"ja": "窓口の近くにいくつかの箱があります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The woman is going to send the box.",
+"grammar": "be going to",
+"ja": "女性はその箱を送ろうとしています。",
+"type": "inference",
+"points": 30
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "customer",
+"ja": "客",
+"type": "object",
+"points": 15
+},
+{
+"text": "postal worker",
+"ja": "郵便局員",
+"type": "object",
+"points": 20
+},
+{
+"text": "package",
+"ja": "小包",
+"type": "object",
+"points": 15
+},
+{
+"text": "parcel",
+"ja": "小包",
+"type": "object",
+"points": 20
+},
+{
+"text": "envelope",
+"ja": "封筒",
+"type": "object",
+"points": 15
+},
+{
+"text": "label",
+"ja": "ラベル",
+"type": "object",
+"points": 15
+},
+{
+"text": "address",
+"ja": "住所",
+"type": "detail",
+"points": 15
+},
+{
+"text": "mailbox",
+"ja": "郵便ポスト",
+"type": "object",
+"points": 15
+},
+{
+"text": "weigh",
+"ja": "重さを量る",
+"type": "gist",
+"points": 25
+},
+{
+"text": "send",
+"ja": "送る",
+"type": "gist",
+"points": 15
+},
+{
+"text": "deliver",
+"ja": "配達する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "fill out",
+"ja": "記入する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "postage",
+"ja": "郵送料",
+"type": "detail",
+"points": 25
+},
+{
+"text": "destination",
+"ja": "送り先",
+"type": "detail",
+"points": 25
+},
+{
+"text": "carefully",
+"ja": "注意深く",
+"type": "attribute",
+"points": 20
+}
+],
+"chunks": [
+{
+"text": "sending a package to a friend",
+"ja": "友人に小包を送っている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "handing the parcel to the worker",
+"ja": "職員に小包を手渡している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "filling out a shipping label",
+"ja": "配送ラベルに記入している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "writing the destination address",
+"ja": "送り先の住所を書いている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "weighing the package",
+"ja": "小包の重さを量っている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "at the service counter",
+"ja": "受付窓口で",
+"type": "detail",
+"points": 20
+},
+{
+"text": "putting a letter into the mailbox",
+"ja": "手紙をポストに入れている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "paying for postage",
+"ja": "郵送料を支払っている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "preparing a package for delivery",
+"ja": "配達のために小包を準備している",
+"type": "inference",
+"points": 30
+}
+],
+"sentences": [
+{
+"text": "A woman is handing a package to a postal worker.",
+"grammar": "現在進行形・hand A to B",
+"ja": "女性が郵便局員に小包を手渡しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "The worker is probably going to weigh the package.",
+"grammar": "be going to・副詞probably",
+"ja": "職員はおそらく小包の重さを量ろうとしています。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "A man is filling out a shipping label at a table.",
+"grammar": "現在進行形・fill out",
+"ja": "男性がテーブルで配送ラベルに記入しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "Another customer is putting an envelope into a mailbox.",
+"grammar": "現在進行形・put A into B",
+"ja": "別の客が封筒を郵便ポストに入れています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "There are several signs showing different postal services.",
+"grammar": "There are構文・現在分詞による後置修飾",
+"ja": "さまざまな郵便サービスを示す案内表示がいくつかあります。",
+"type": "detail",
+"points": 35
+},
+{
+"text": "The woman may be sending the package to someone who lives far away.",
+"grammar": "助動詞may・現在進行形・関係代名詞who",
+"ja": "女性は遠くに住んでいる人へ小包を送っているのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The post office looks organized and easy to use.",
+"grammar": "look＋形容詞・to不定詞",
+"ja": "郵便局は整理されていて利用しやすそうに見えます。",
+"type": "inference",
+"points": 35
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "postal clerk",
+"ja": "郵便窓口職員",
+"type": "object",
+"points": 20
+},
+{
+"text": "parcel",
+"ja": "小包",
+"type": "object",
+"points": 20
+},
+{
+"text": "shipment",
+"ja": "発送物",
+"type": "object",
+"points": 25
+},
+{
+"text": "recipient",
+"ja": "受取人",
+"type": "detail",
+"points": 25
+},
+{
+"text": "sender",
+"ja": "差出人",
+"type": "object",
+"points": 25
+},
+{
+"text": "destination",
+"ja": "配送先",
+"type": "detail",
+"points": 20
+},
+{
+"text": "postage",
+"ja": "郵送料",
+"type": "detail",
+"points": 25
+},
+{
+"text": "shipping label",
+"ja": "配送ラベル",
+"type": "object",
+"points": 25
+},
+{
+"text": "weigh",
+"ja": "重さを量る",
+"type": "gist",
+"points": 25
+},
+{
+"text": "dispatch",
+"ja": "発送する",
+"type": "gist",
+"points": 30
+},
+{
+"text": "process",
+"ja": "手続きをする",
+"type": "gist",
+"points": 25
+},
+{
+"text": "calculate",
+"ja": "計算する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "domestic",
+"ja": "国内の",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "international",
+"ja": "国際的な・海外への",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "efficient",
+"ja": "効率的な",
+"type": "inference",
+"points": 25
+}
+],
+"chunks": [
+{
+"text": "sending a parcel through the post office",
+"ja": "郵便局を通して小包を発送している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "handing the shipment to a postal clerk",
+"ja": "発送物を郵便局員に手渡している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "weighing the parcel on a scale",
+"ja": "はかりで小包の重さを量っている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "calculating the postage fee",
+"ja": "郵送料を計算している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "completing a shipping label",
+"ja": "配送ラベルに必要事項を記入している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "addressing a parcel to the recipient",
+"ja": "受取人宛てに小包の住所を書いている",
+"type": "gist",
+"points": 35
+},
+{
+"text": "using a self-service mailbox",
+"ja": "郵便ポストを利用している",
+"type": "detail",
+"points": 30
+},
+{
+"text": "preparing the parcel for shipment",
+"ja": "発送のために小包を準備している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "providing postal services to customers",
+"ja": "客に郵便サービスを提供している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "arranging a domestic or international delivery",
+"ja": "国内または海外への配送手続きをしている",
+"type": "inference",
+"points": 40
+}
+],
+"sentences": [
+{
+"text": "At the service counter, a woman is handing a parcel to a postal clerk so that it can be sent to its destination.",
+"grammar": "現在進行形・so that構文・助動詞can・受動態",
+"ja": "受付窓口で、女性が目的地へ発送してもらうために小包を郵便局員へ手渡しています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "The clerk appears to be preparing to weigh the parcel and calculate the required postage.",
+"grammar": "appear to不定詞・prepare to不定詞",
+"ja": "職員は小包の重さを量り、必要な郵送料を計算する準備をしているようです。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Meanwhile, a man is completing a shipping label that contains the recipient's address.",
+"grammar": "現在進行形・関係代名詞that",
+"ja": "一方、男性は受取人の住所が記載された配送ラベルに記入しています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "Another customer is placing an envelope into a mailbox without speaking to a clerk.",
+"grammar": "現在進行形・without＋動名詞",
+"ja": "別の客は職員と話すことなく封筒を郵便ポストに入れています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The woman may be sending the parcel to someone who is unable to receive it in person.",
+"grammar": "助動詞may・現在進行形・関係代名詞who・be unable to",
+"ja": "女性は直接受け取ることのできない誰かへ小包を送っているのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Several signs explain which services are available for domestic and international shipments.",
+"grammar": "間接疑問文which・be available for",
+"ja": "いくつかの案内表示が、国内および海外への発送に利用できるサービスを説明しています。",
+"type": "detail",
+"points": 40
+},
+{
+"text": "The scene illustrates how traditional postal services continue to play an important role despite the growth of digital communication.",
+"grammar": "間接疑問を含むhow節・despite＋名詞",
+"ja": "この場面は、デジタル通信が発達しているにもかかわらず、従来の郵便サービスが今も重要な役割を果たしていることを示しています。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "As online shopping becomes more common, reliable delivery services are likely to become even more important.",
+"grammar": "Asを用いた変化・比較級・be likely to",
+"ja": "オンラインショッピングがより一般的になるにつれて、信頼できる配送サービスはさらに重要になる可能性があります。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"woman": {
+"x": 34,
+"y": 54
+},
+"package": {
+"x": 44,
+"y": 55
+},
+"postal_worker": {
+"x": 55,
+"y": 44
+},
+"service_counter": {
+"x": 47,
+"y": 65
+},
+"scale": {
+"x": 51,
+"y": 57
+},
+"man_writing": {
+"x": 72,
+"y": 54
+},
+"writing_table": {
+"x": 72,
+"y": 65
+},
+"shipping_label": {
+"x": 70,
+"y": 56
+},
+"customer_with_letter": {
+"x": 16,
+"y": 56
+},
+"envelope": {
+"x": 19,
+"y": 52
+},
+"mailbox": {
+"x": 15,
+"y": 68
+},
+"postal_service_sign": {
+"x": 48,
+"y": 18
+},
+"package_display": {
+"x": 84,
+"y": 36
+},
+"number_display": {
+"x": 59,
+"y": 20
+},
+"post_office_lobby": {
+"x": 50,
+"y": 86
+}
+}
+}
+]

@@ -1,0 +1,734 @@
+[
+  {
+    "id": "oq_007",
+    "imageSrc": "assets/images/oralquest/oq007.webp",
+    "description": "ファストフード店のカウンターで、女の子が店員に注文をしており、近くでは別の客が席でハンバーガーを食べている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "These days, fast food restaurants are popular because they offer meals quickly and at reasonable prices. Customers can choose from different menus, order at the counter, and enjoy a convenient meal when they do not have much time.",
+      "q1": {
+        "text": "Why are fast food restaurants popular?",
+        "keywords": [
+          "quickly",
+          "reasonable prices",
+          "convenient",
+          "little time"
+        ],
+        "modelAnswers": [
+          "They are popular because they offer meals quickly and at reasonable prices.",
+          "Because people can get a convenient meal when they do not have much time."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "What do you usually order at a fast food restaurant?",
+          "keywords": [
+            "hamburger",
+            "fries",
+            "drink",
+            "chicken",
+            "set",
+            "usually",
+            "sometimes",
+            "order",
+            "favorite",
+            "restaurant"
+          ],
+          "modelAnswers": [
+            "I usually order a hamburger set with fries and a drink.",
+            "Sometimes I order fried chicken or a cheeseburger because I like salty food.",
+            "My favorite fast food meal is a burger, French fries, and cola."
+          ]
+        },
+        {
+          "text": "Do you think fast food is convenient? Why or why not?",
+          "keywords": [
+            "convenient",
+            "fast",
+            "cheap",
+            "busy",
+            "healthy",
+            "restaurant",
+            "time",
+            "easy",
+            "meal",
+            "sometimes"
+          ],
+          "modelAnswers": [
+            "Yes, I think fast food is convenient because it is quick and easy to buy when I am busy.",
+            "It is convenient and usually not too expensive, but it may not be very healthy.",
+            "I think fast food is useful sometimes because people can get a meal in a short time."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "girl",
+            "ja": "女の子",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "clerk",
+            "ja": "店員",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "hamburger",
+            "ja": "ハンバーガー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "fries",
+            "ja": "フライドポテト",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "drink",
+            "ja": "飲み物",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "tray",
+            "ja": "トレー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "counter",
+            "ja": "カウンター",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "restaurant",
+            "ja": "レストラン・店",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "order",
+            "ja": "注文する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "eat",
+            "ja": "食べる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "sit",
+            "ja": "座る",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "red",
+            "ja": "赤い",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "busy",
+            "ja": "にぎやかな",
+            "type": "attribute",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "ordering food",
+            "ja": "食べ物を注文している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "at the counter",
+            "ja": "カウンターで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "a hamburger set",
+            "ja": "ハンバーガーセット",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "eating a hamburger",
+            "ja": "ハンバーガーを食べている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "sitting at a table",
+            "ja": "テーブルに座っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "a fast food restaurant",
+            "ja": "ファストフード店",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "looking at the menu",
+            "ja": "メニューを見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a cup of drink",
+            "ja": "飲み物の入ったカップ",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "near the window",
+            "ja": "窓の近くで",
+            "type": "detail",
+            "points": 15
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A girl is ordering food at the counter.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "女の子がカウンターで食べ物を注文しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A clerk is talking to the girl.",
+            "grammar": "現在進行形・talk to",
+            "ja": "店員が女の子と話しています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Another customer is eating a hamburger.",
+            "grammar": "現在進行形",
+            "ja": "別の客がハンバーガーを食べています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The customer is sitting at a table.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "その客はテーブルに座っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "There is a menu above the counter.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "カウンターの上にはメニューがあります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "They are in a fast food restaurant.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らはファストフード店にいます。",
+            "type": "detail",
+            "points": 25
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "cashier",
+            "ja": "レジ係",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "counter",
+            "ja": "注文カウンター",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "menu board",
+            "ja": "メニューボード",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "combo meal",
+            "ja": "セットメニュー",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "hamburger",
+            "ja": "ハンバーガー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "French fries",
+            "ja": "フライドポテト",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "soft drink",
+            "ja": "清涼飲料",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "order",
+            "ja": "注文する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "serve",
+            "ja": "出す・提供する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "eat",
+            "ja": "食べる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "choose",
+            "ja": "選ぶ",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "crowded",
+            "ja": "混んでいる",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "window seat",
+            "ja": "窓側の席",
+            "type": "detail",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "ordering a combo meal",
+            "ja": "セットメニューを注文している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "talking to the cashier",
+            "ja": "レジ係と話している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "looking at the menu board",
+            "ja": "メニューボードを見ている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "eating at a table",
+            "ja": "テーブルで食事をしている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "a tray with fries and a drink",
+            "ja": "ポテトと飲み物がのったトレー",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "near the window",
+            "ja": "窓の近くで",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "inside a fast food restaurant",
+            "ja": "ファストフード店の中で",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "waiting for her order",
+            "ja": "注文した品を待っている",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "having a quick meal",
+            "ja": "手早く食事をしている",
+            "type": "inference",
+            "points": 25
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A girl is ordering a hamburger set at the counter.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "女の子がカウンターでハンバーガーセットを注文しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The cashier is listening to her order.",
+            "grammar": "現在進行形・listen to",
+            "ja": "レジ係が彼女の注文を聞いています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Another customer is eating a meal at a table near the window.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "別の客が窓の近くのテーブルで食事をしています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "There is a large menu board above the counter.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "カウンターの上には大きなメニューボードがあります。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "The girl may be choosing what drink to have with her meal.",
+            "grammar": "助動詞may・疑問詞＋to不定詞",
+            "ja": "女の子は食事と一緒にどの飲み物にするか選んでいるのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "The customer at the table seems to be enjoying his food.",
+            "grammar": "seem to不定詞・現在進行形",
+            "ja": "テーブルの客は食事を楽しんでいるようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Fast food restaurants are popular because people can get meals quickly.",
+            "grammar": "because節・助動詞can",
+            "ja": "人々が素早く食事を受け取れるため、ファストフード店は人気があります。",
+            "type": "inference",
+            "points": 35
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "cashier",
+            "ja": "レジ係",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "menu board",
+            "ja": "メニューボード",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "combo meal",
+            "ja": "セットメニュー",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "receipt",
+            "ja": "レシート",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "tray",
+            "ja": "トレー",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "order",
+            "ja": "注文する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "serve",
+            "ja": "提供する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "select",
+            "ja": "選ぶ",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "consume",
+            "ja": "食べる・消費する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "efficient",
+            "ja": "効率的な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "crowded",
+            "ja": "混雑した",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "casual",
+            "ja": "気軽な",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "quick-service restaurant",
+            "ja": "ファストフード店",
+            "type": "detail",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "placing an order at the counter",
+            "ja": "カウンターで注文している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "speaking with the cashier",
+            "ja": "レジ係と話している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "selecting a combo meal",
+            "ja": "セットメニューを選んでいる",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "eating a meal by the window",
+            "ja": "窓際で食事をしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "a tray containing fries and a drink",
+            "ja": "ポテトと飲み物が載ったトレー",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "inside a crowded fast food restaurant",
+            "ja": "混雑したファストフード店の中で",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "waiting for food to be prepared",
+            "ja": "料理が準備されるのを待っている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "having a quick and casual meal",
+            "ja": "手早く気軽な食事をしている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "using a convenient dining service",
+            "ja": "便利な飲食サービスを利用している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "ordering from a clearly displayed menu",
+            "ja": "見やすく表示されたメニューから注文している",
+            "type": "detail",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the counter, a girl is placing an order for a hamburger set while speaking with the cashier.",
+            "grammar": "現在進行形・whileを用いた同時進行",
+            "ja": "カウンターで、女の子がレジ係と話しながらハンバーガーセットを注文しています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "The cashier appears to be listening carefully and preparing to enter the order.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "レジ係は注意深く話を聞き、注文を入力しようとしているように見えます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, another customer is sitting at a table near the window and eating a hamburger.",
+            "grammar": "現在進行形・andによる動作の接続・場所を表す前置詞句",
+            "ja": "一方、別の客は窓の近くのテーブルに座ってハンバーガーを食べています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "A large menu board above the counter shows a variety of meals and drinks.",
+            "grammar": "一般動詞・場所を表す前置詞句",
+            "ja": "カウンターの上の大きなメニューボードには、さまざまな食事や飲み物が表示されています。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The girl may be deciding which side dish or drink she wants with her combo meal.",
+            "grammar": "助動詞may・疑問詞which・目的語節",
+            "ja": "女の子はセットメニューに付けるサイドメニューや飲み物をどれにするか決めているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene suggests that fast food restaurants are popular because they provide meals quickly and conveniently.",
+            "grammar": "suggest that節・because節・provide A B",
+            "ja": "この場面から、ファストフード店は食事を素早く便利に提供するため人気があることがうかがえます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Although fast food is convenient, people may also need to think about nutrition and healthy eating habits.",
+            "grammar": "Althoughを用いた譲歩節・助動詞may・need to",
+            "ja": "ファストフードは便利ですが、人々は栄養や健康的な食習慣についても考える必要があるかもしれません。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "girl": {
+        "x": 32,
+        "y": 56
+      },
+      "cashier": {
+        "x": 56,
+        "y": 43
+      },
+      "counter": {
+        "x": 48,
+        "y": 64
+      },
+      "menu_board": {
+        "x": 51,
+        "y": 16
+      },
+      "hamburger_set_image": {
+        "x": 57,
+        "y": 19
+      },
+      "customer_eating": {
+        "x": 81,
+        "y": 56
+      },
+      "table": {
+        "x": 82,
+        "y": 69
+      },
+      "tray": {
+        "x": 79,
+        "y": 63
+      },
+      "hamburger": {
+        "x": 80,
+        "y": 53
+      },
+      "fries": {
+        "x": 84,
+        "y": 63
+      },
+      "drink": {
+        "x": 76,
+        "y": 61
+      },
+      "window": {
+        "x": 90,
+        "y": 34
+      },
+      "register": {
+        "x": 60,
+        "y": 52
+      },
+      "restaurant_sign": {
+        "x": 18,
+        "y": 14
+      },
+      "floor": {
+        "x": 50,
+        "y": 90
+      }
+    }
+  }
+]

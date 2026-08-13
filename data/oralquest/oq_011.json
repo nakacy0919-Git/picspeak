@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_011",
+    "imageSrc": "assets/images/oralquest/oq011.webp",
+    "description": "大阪の大きな駅構内で、海外からの旅行者が、たこ焼き、うどん、寿司、カレーなどの魅力的な日本料理店を見比べながら、どの店で食べるか迷っている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "There are many places where travelers can enjoy local food while visiting Japan. Stations often have restaurants serving different dishes, so visitors can compare menus and try regional specialties without traveling far from the station.",
+      "q1": {
+        "text": "What can visitors do at stations in Japan?",
+        "keywords": [
+          "compare menus",
+          "try regional specialties",
+          "local food",
+          "restaurants"
+        ],
+        "modelAnswers": [
+          "They can compare menus and try regional specialties at station restaurants.",
+          "Visitors can enjoy local food and choose from different dishes without traveling far from the station."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "What Japanese food would you recommend to a visitor from another country?",
+          "keywords": [
+            "recommend",
+            "Japanese food",
+            "sushi",
+            "ramen",
+            "takoyaki",
+            "udon",
+            "delicious",
+            "popular",
+            "try",
+            "visitor"
+          ],
+          "modelAnswers": [
+            "I would recommend takoyaki because it is popular in Osaka and is fun to try.",
+            "I would recommend sushi because it is one of the most famous Japanese foods.",
+            "I think visitors should try ramen or udon because there are many different kinds in Japan."
+          ]
+        },
+        {
+          "text": "When there are many restaurants to choose from, how do you decide where to eat?",
+          "keywords": [
+            "restaurant",
+            "menu",
+            "price",
+            "reviews",
+            "photos",
+            "choose",
+            "popular",
+            "crowded",
+            "recommendation",
+            "delicious"
+          ],
+          "modelAnswers": [
+            "I usually look at the menu and prices before choosing a restaurant.",
+            "I often check online reviews and photos to find a good place.",
+            "If I am traveling, I like to choose a restaurant that serves local food."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "man",
+            "ja": "男性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "tourist",
+            "ja": "旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "station",
+            "ja": "駅",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "restaurant",
+            "ja": "レストラン・飲食店",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "food",
+            "ja": "食べ物",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "takoyaki",
+            "ja": "たこ焼き",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "sushi",
+            "ja": "寿司",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "udon",
+            "ja": "うどん",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "curry",
+            "ja": "カレー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "look",
+            "ja": "見る",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "choose",
+            "ja": "選ぶ",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "eat",
+            "ja": "食べる",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "hungry",
+            "ja": "お腹が空いた",
+            "type": "inference",
+            "points": 15
+          },
+          {
+            "text": "delicious",
+            "ja": "おいしそうな",
+            "type": "inference",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the station",
+            "ja": "駅で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "looking at the food",
+            "ja": "料理を見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "many food shops",
+            "ja": "たくさんの飲食店",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "a bowl of udon",
+            "ja": "一杯のうどん",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "a plate of sushi",
+            "ja": "一皿の寿司",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "looking at the menu",
+            "ja": "メニューを見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "choosing a restaurant",
+            "ja": "レストランを選んでいる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "Japanese food",
+            "ja": "日本料理",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "very hungry",
+            "ja": "とてもお腹が空いている",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A tourist is looking at several restaurants.",
+            "grammar": "現在進行形・look at",
+            "ja": "旅行者がいくつかの飲食店を見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There are many food shops in the station.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "駅の中にはたくさんの飲食店があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "One shop sells takoyaki.",
+            "grammar": "一般動詞・三人称単数現在",
+            "ja": "ある店ではたこ焼きを売っています。",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "He is looking at a food menu.",
+            "grammar": "現在進行形・look at",
+            "ja": "彼は料理のメニューを見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The food looks delicious.",
+            "grammar": "look＋形容詞",
+            "ja": "料理はおいしそうに見えます。",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "He does not know what to eat.",
+            "grammar": "疑問詞what＋to不定詞",
+            "ja": "彼は何を食べるか決められません。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "traveler",
+            "ja": "旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "food stall",
+            "ja": "飲食店・屋台",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "takoyaki",
+            "ja": "たこ焼き",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "udon",
+            "ja": "うどん",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "sushi",
+            "ja": "寿司",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "curry",
+            "ja": "カレー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "local",
+            "ja": "地元の",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "decide",
+            "ja": "決める",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "compare",
+            "ja": "比較する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "recommend",
+            "ja": "勧める",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "tempting",
+            "ja": "食欲をそそる",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "crowded",
+            "ja": "混雑した",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "confused",
+            "ja": "迷っている",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "Osaka",
+            "ja": "大阪",
+            "type": "detail",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "looking at several food shops",
+            "ja": "いくつかの飲食店を見ている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "deciding what to eat",
+            "ja": "何を食べるか決めている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "comparing different menus",
+            "ja": "異なるメニューを比較している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "traditional Japanese food",
+            "ja": "日本の伝統的な料理",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "a takoyaki shop",
+            "ja": "たこ焼き店",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "an udon restaurant",
+            "ja": "うどん店",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "inside a busy station",
+            "ja": "混雑した駅構内で",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "unable to make a choice",
+            "ja": "選択を決められない",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "everything looks delicious",
+            "ja": "どれもおいしそうに見える",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A foreign traveler is looking at several Japanese food shops inside the station.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "海外からの旅行者が駅構内にあるいくつかの日本料理店を見ています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He is comparing menus for takoyaki, sushi, udon, and curry.",
+            "grammar": "現在進行形・compareを用いた表現",
+            "ja": "彼はたこ焼き、寿司、うどん、カレーのメニューを比較しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are many restaurants lined up along the station concourse.",
+            "grammar": "There are構文・過去分詞による後置修飾",
+            "ja": "駅のコンコース沿いにはたくさんの飲食店が並んでいます。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The traveler seems unable to decide what he wants to eat.",
+            "grammar": "seem＋形容詞・疑問詞whatを用いた節",
+            "ja": "旅行者は何を食べたいのか決められないようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "He may be interested in trying some local Osaka food.",
+            "grammar": "助動詞may・be interested in＋動名詞",
+            "ja": "彼は大阪の地元料理を試してみたいのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "All of the dishes look so delicious that choosing only one is difficult.",
+            "grammar": "so...that構文・動名詞主語",
+            "ja": "どの料理もとてもおいしそうなので、一つだけ選ぶのが難しそうです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Trying local food can be an enjoyable part of traveling.",
+            "grammar": "動名詞主語・助動詞can",
+            "ja": "地元の料理を食べることは旅行の楽しい部分になり得ます。",
+            "type": "inference",
+            "points": 35
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "international traveler",
+            "ja": "海外からの旅行者",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "station concourse",
+            "ja": "駅のコンコース",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "specialty",
+            "ja": "名物料理",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "cuisine",
+            "ja": "料理・食文化",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "display",
+            "ja": "料理の展示・見本",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "selection",
+            "ja": "選択肢",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "compare",
+            "ja": "比較する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "hesitate",
+            "ja": "迷う",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "decide",
+            "ja": "決める",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "sample",
+            "ja": "試食する・味わう",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "appetizing",
+            "ja": "食欲をそそる",
+            "type": "attribute",
+            "points": 30
+          },
+          {
+            "text": "overwhelmed",
+            "ja": "選択肢が多く圧倒された",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "authentic",
+            "ja": "本場の",
+            "type": "attribute",
+            "points": 30
+          },
+          {
+            "text": "local specialty",
+            "ja": "地元の名物",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "culinary",
+            "ja": "食文化・料理に関する",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "surrounded by tempting food choices",
+            "ja": "魅力的な食べ物の選択肢に囲まれている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "comparing several Japanese specialties",
+            "ja": "いくつかの日本の名物料理を比較している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "hesitating over what to order",
+            "ja": "何を注文するか迷っている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "rows of restaurants along the concourse",
+            "ja": "コンコース沿いに並ぶ飲食店",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "appetizing displays of Japanese cuisine",
+            "ja": "食欲をそそる日本料理の展示",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "trying an authentic Osaka specialty",
+            "ja": "本場の大阪名物を試している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "overwhelmed by the number of choices",
+            "ja": "選択肢の多さに圧倒されている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "experiencing Japan through its food culture",
+            "ja": "食文化を通して日本を体験している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "unable to settle on just one dish",
+            "ja": "一つの料理に決められない",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "looking for a memorable local meal",
+            "ja": "思い出に残る地元の食事を探している",
+            "type": "inference",
+            "points": 35
+          }
+        ],
+        "sentences": [
+          {
+            "text": "An international traveler is walking through an Osaka station concourse lined with a variety of Japanese restaurants.",
+            "grammar": "現在進行形・過去分詞による後置修飾",
+            "ja": "海外からの旅行者が、さまざまな日本料理店が並ぶ大阪の駅コンコースを歩いています。",
+            "type": "detail",
+            "points": 40
+          },
+          {
+            "text": "He is comparing displays of takoyaki, udon, sushi, and Japanese curry while trying to decide where to have lunch.",
+            "grammar": "現在進行形・while＋現在分詞・疑問詞where＋to不定詞",
+            "ja": "彼は昼食をどこで食べるか考えながら、たこ焼き、うどん、寿司、日本のカレーを見比べています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "His expression suggests that he is overwhelmed by the wide range of appetizing choices.",
+            "grammar": "suggest that節・受動表現be overwhelmed by",
+            "ja": "彼の表情から、食欲をそそる豊富な選択肢に圧倒されていることがうかがえます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Since several restaurants serve local specialties, he may be trying to choose a dish that he cannot easily find in his home country.",
+            "grammar": "Sinceを用いた理由節・助動詞may・関係代名詞that",
+            "ja": "いくつかの店が地元の名物を提供しているため、彼は母国では簡単に食べられない料理を選ぼうとしているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Although he appears hungry, he seems reluctant to make a quick decision because every dish looks appealing.",
+            "grammar": "Althoughを用いた譲歩節・appear＋形容詞・because節",
+            "ja": "彼はお腹が空いているようですが、どの料理も魅力的に見えるため、すぐには決めたくないようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how food can become an important part of discovering a new culture while traveling.",
+            "grammar": "間接疑問を含むhow節・助動詞can・while＋動名詞",
+            "ja": "この場面は、旅行中に新しい文化を発見するうえで、食が重要な体験になり得ることを示しています。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Having too many attractive options can sometimes make a simple decision more difficult than expected.",
+            "grammar": "動名詞主語・make O C・比較級more...than",
+            "ja": "魅力的な選択肢が多すぎると、単純な決断でさえ予想以上に難しくなることがあります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "If he chooses a local Osaka specialty, the meal could become one of the most memorable experiences of his trip.",
+            "grammar": "Ifを用いた条件文・助動詞could・最上級",
+            "ja": "もし大阪の地元名物を選べば、その食事は旅行で最も思い出に残る体験の一つになるかもしれません。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "tourist": {
+        "x": 48,
+        "y": 58
+      },
+      "tourist_face": {
+        "x": 48,
+        "y": 38
+      },
+      "takoyaki_shop": {
+        "x": 17,
+        "y": 42
+      },
+      "takoyaki_display": {
+        "x": 20,
+        "y": 55
+      },
+      "udon_shop": {
+        "x": 34,
+        "y": 38
+      },
+      "udon_display": {
+        "x": 35,
+        "y": 52
+      },
+      "sushi_shop": {
+        "x": 68,
+        "y": 38
+      },
+      "sushi_display": {
+        "x": 68,
+        "y": 52
+      },
+      "curry_shop": {
+        "x": 84,
+        "y": 42
+      },
+      "curry_display": {
+        "x": 82,
+        "y": 55
+      },
+      "station_food_area": {
+        "x": 50,
+        "y": 27
+      },
+      "restaurant_signs": {
+        "x": 50,
+        "y": 20
+      },
+      "menu_board": {
+        "x": 57,
+        "y": 44
+      },
+      "station_concourse": {
+        "x": 50,
+        "y": 82
+      },
+      "travel_backpack": {
+        "x": 43,
+        "y": 60
+      }
+    }
+  }
+]

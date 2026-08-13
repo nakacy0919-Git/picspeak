@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_016",
+    "imageSrc": "assets/images/oralquest/oq016.webp",
+    "description": "薬局のカウンターで、体調の悪そうな女性が薬剤師に症状を説明し、薬剤師が市販薬の箱を見せながら服用方法を説明している。近くでは別の客が棚の商品を見比べている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "It is important for people to choose medicine carefully when they feel sick. Pharmacists can explain how to use medicine safely, answer questions about possible problems, and help customers find products that are suitable for their symptoms.",
+      "q1": {
+        "text": "How can pharmacists help customers who need medicine?",
+        "keywords": [
+          "explain medicine",
+          "answer questions",
+          "find products",
+          "symptoms"
+        ],
+        "modelAnswers": [
+          "They can explain how to use medicine, answer questions, and help customers find suitable products.",
+          "Pharmacists can help people choose medicine that is suitable for their symptoms and explain how to use it safely."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "What do you usually do when you have a cold or do not feel well?",
+          "keywords": [
+            "cold",
+            "medicine",
+            "rest",
+            "sleep",
+            "doctor",
+            "pharmacy",
+            "water",
+            "temperature",
+            "home",
+            "recover"
+          ],
+          "modelAnswers": [
+            "When I have a cold, I usually take some medicine and get plenty of rest.",
+            "I drink a lot of water and go to bed early when I do not feel well.",
+            "If I have a high fever or feel very sick, I usually go to a doctor."
+          ]
+        },
+        {
+          "text": "Do you think it is important to ask a pharmacist before taking unfamiliar medicine? Why?",
+          "keywords": [
+            "pharmacist",
+            "medicine",
+            "safe",
+            "question",
+            "advice",
+            "instructions",
+            "side effect",
+            "health",
+            "correct",
+            "important"
+          ],
+          "modelAnswers": [
+            "Yes, because a pharmacist can explain how to take the medicine safely.",
+            "I think it is important because some medicines may have side effects or may not be suitable for everyone.",
+            "Yes. Asking a pharmacist can help people use medicine correctly and avoid problems."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "pharmacist",
+            "ja": "薬剤師",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "medicine",
+            "ja": "薬",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "box",
+            "ja": "箱",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "shelf",
+            "ja": "棚",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "counter",
+            "ja": "カウンター",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "pharmacy",
+            "ja": "薬局",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "mask",
+            "ja": "マスク",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "bottle",
+            "ja": "ボトル",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "talk",
+            "ja": "話す",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "show",
+            "ja": "見せる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "buy",
+            "ja": "買う",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "sick",
+            "ja": "具合が悪い",
+            "type": "inference",
+            "points": 15
+          },
+          {
+            "text": "help",
+            "ja": "助ける",
+            "type": "gist",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the pharmacy",
+            "ja": "薬局で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "talking to the pharmacist",
+            "ja": "薬剤師と話している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "showing some medicine",
+            "ja": "薬を見せている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a box of medicine",
+            "ja": "薬の箱",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "standing at the counter",
+            "ja": "カウンターに立っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "looking at the shelves",
+            "ja": "棚を見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "choosing some medicine",
+            "ja": "薬を選んでいる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "wearing a mask",
+            "ja": "マスクをしている",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "feeling sick",
+            "ja": "具合が悪そうである",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is talking to a pharmacist.",
+            "grammar": "現在進行形・talk to",
+            "ja": "女性が薬剤師と話しています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The pharmacist is showing her some medicine.",
+            "grammar": "現在進行形・show A B",
+            "ja": "薬剤師が女性に薬を見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The woman is wearing a mask.",
+            "grammar": "現在進行形",
+            "ja": "女性はマスクをしています。",
+            "type": "attribute",
+            "points": 25
+          },
+          {
+            "text": "Another customer is looking at the shelves.",
+            "grammar": "現在進行形・look at",
+            "ja": "別の客が棚を見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There are many kinds of medicine on the shelves.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "棚にはたくさんの種類の薬があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The woman may have a cold.",
+            "grammar": "助動詞may・一般動詞have",
+            "ja": "女性は風邪をひいているのかもしれません。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "pharmacist",
+            "ja": "薬剤師",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "medicine",
+            "ja": "薬",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "symptom",
+            "ja": "症状",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "tablet",
+            "ja": "錠剤",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "package",
+            "ja": "薬のパッケージ",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "instructions",
+            "ja": "使用方法・説明",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "cough",
+            "ja": "せき",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "recommend",
+            "ja": "勧める",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "explain",
+            "ja": "説明する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "choose",
+            "ja": "選ぶ",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "take",
+            "ja": "薬を服用する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "safe",
+            "ja": "安全な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "suitable",
+            "ja": "適した",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "carefully",
+            "ja": "注意深く",
+            "type": "attribute",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "explaining her symptoms",
+            "ja": "自分の症状を説明している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "asking the pharmacist for advice",
+            "ja": "薬剤師に助言を求めている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "recommending some medicine",
+            "ja": "薬を勧めている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "explaining how to take it",
+            "ja": "服用方法を説明している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "reading the medicine package",
+            "ja": "薬のパッケージを読んでいる",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "looking for cold medicine",
+            "ja": "風邪薬を探している",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "comparing different products",
+            "ja": "異なる商品を比較している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "at the pharmacy counter",
+            "ja": "薬局のカウンターで",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "choosing a suitable medicine",
+            "ja": "適切な薬を選んでいる",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is explaining her symptoms to a pharmacist.",
+            "grammar": "現在進行形・explain A to B",
+            "ja": "女性が薬剤師に自分の症状を説明しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The pharmacist is showing her a box of medicine.",
+            "grammar": "現在進行形・show A B",
+            "ja": "薬剤師が女性に薬の箱を見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He appears to be explaining how she should take the medicine.",
+            "grammar": "appear to不定詞・疑問詞howを含む節・助動詞should",
+            "ja": "薬剤師は女性に薬の服用方法を説明しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Another customer is comparing several products on a shelf.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "別の客が棚にあるいくつかの商品を比較しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The woman may be looking for medicine because she has a cold.",
+            "grammar": "助動詞may・現在進行形・because節",
+            "ja": "女性は風邪をひいているため、薬を探しているのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "There are many different health products available in the pharmacy.",
+            "grammar": "There are構文・形容詞available",
+            "ja": "薬局にはさまざまな健康関連商品があります。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "Asking a pharmacist can help customers choose medicine safely.",
+            "grammar": "動名詞主語・助動詞can・help O do",
+            "ja": "薬剤師に相談することで、客は安全に薬を選ぶことができます。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "pharmacist",
+            "ja": "薬剤師",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "customer",
+            "ja": "利用者・客",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "medication",
+            "ja": "医薬品",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "symptom",
+            "ja": "症状",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "dosage",
+            "ja": "服用量",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "instruction",
+            "ja": "服用上の指示",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "side effect",
+            "ja": "副作用",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "over-the-counter medicine",
+            "ja": "市販薬",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "recommend",
+            "ja": "推奨する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "consult",
+            "ja": "相談する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "advise",
+            "ja": "助言する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "select",
+            "ja": "選択する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "appropriate",
+            "ja": "適切な",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "effective",
+            "ja": "効果的な",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "healthcare",
+            "ja": "医療・健康管理",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "consulting a pharmacist about her symptoms",
+            "ja": "自分の症状について薬剤師に相談している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "recommending an over-the-counter medication",
+            "ja": "市販薬を勧めている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "explaining the recommended dosage",
+            "ja": "推奨される服用量を説明している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "giving instructions for safe use",
+            "ja": "安全な使用方法を説明している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "selecting an appropriate medication",
+            "ja": "適切な医薬品を選んでいる",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "comparing several healthcare products",
+            "ja": "複数の健康関連商品を比較している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "considering possible side effects",
+            "ja": "起こり得る副作用を考慮している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "receiving professional advice",
+            "ja": "専門的な助言を受けている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "making an informed choice",
+            "ja": "十分な情報を得た上で選択している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "using medicine safely and effectively",
+            "ja": "薬を安全かつ効果的に使用している",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the pharmacy counter, a customer is describing her symptoms while consulting a pharmacist.",
+            "grammar": "現在進行形・while＋現在分詞",
+            "ja": "薬局のカウンターで、客が薬剤師に相談しながら自分の症状を説明しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The pharmacist appears to be recommending an over-the-counter medication that may help relieve her symptoms.",
+            "grammar": "appear to不定詞・現在進行形・関係代名詞that・助動詞may",
+            "ja": "薬剤師は彼女の症状を和らげる可能性のある市販薬を勧めているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "He is pointing to the package while explaining how often the medication should be taken.",
+            "grammar": "現在進行形・while＋現在分詞・間接疑問文how often・受動態",
+            "ja": "薬剤師はパッケージを指しながら、その薬をどのくらいの頻度で服用すべきか説明しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, another customer is comparing several products before deciding which one to purchase.",
+            "grammar": "現在進行形・before＋動名詞・疑問詞which",
+            "ja": "一方、別の客はどの商品を購入するか決める前に、いくつかの商品を比較しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The pharmacist may also be warning the customer about possible side effects or situations in which the medicine should not be used.",
+            "grammar": "助動詞may・現在進行形・関係副詞in which・受動態",
+            "ja": "薬剤師は起こり得る副作用や、その薬を使用すべきでない状況についても注意しているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Professional advice can help customers choose medication that is appropriate for their symptoms and health conditions.",
+            "grammar": "助動詞can・help O do・関係代名詞that",
+            "ja": "専門的な助言は、客が自分の症状や健康状態に適した薬を選ぶ助けになります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Reading labels carefully is also important because incorrect use of medicine can sometimes cause health problems.",
+            "grammar": "動名詞主語・because節・助動詞can",
+            "ja": "薬の誤った使用は健康上の問題を引き起こすことがあるため、表示を注意深く読むことも重要です。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how pharmacists support people in making safer and more informed decisions about their health.",
+            "grammar": "間接疑問を含むhow節・support A in＋動名詞・比較級",
+            "ja": "この場面は、薬剤師が人々の健康について、より安全で十分な情報に基づいた判断をすることをどのように支えているかを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "female_customer": {
+        "x": 34,
+        "y": 54
+      },
+      "customer_face": {
+        "x": 34,
+        "y": 39
+      },
+      "face_mask": {
+        "x": 35,
+        "y": 43
+      },
+      "pharmacist": {
+        "x": 56,
+        "y": 45
+      },
+      "medicine_box": {
+        "x": 48,
+        "y": 53
+      },
+      "pharmacy_counter": {
+        "x": 47,
+        "y": 65
+      },
+      "pharmacist_pointing_hand": {
+        "x": 50,
+        "y": 54
+      },
+      "medicine_instructions": {
+        "x": 53,
+        "y": 56
+      },
+      "second_customer": {
+        "x": 78,
+        "y": 53
+      },
+      "medicine_shelves": {
+        "x": 83,
+        "y": 40
+      },
+      "health_products": {
+        "x": 82,
+        "y": 52
+      },
+      "pharmacy_sign": {
+        "x": 50,
+        "y": 19
+      },
+      "cold_medicine_section": {
+        "x": 18,
+        "y": 34
+      },
+      "information_sign": {
+        "x": 63,
+        "y": 29
+      },
+      "pharmacy_floor": {
+        "x": 50,
+        "y": 86
+      }
+    }
+  }
+]

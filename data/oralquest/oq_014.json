@@ -1,0 +1,728 @@
+[
+  {
+    "id": "oq_013",
+    "imageSrc": "assets/images/oralquest/oq013.webp",
+    "description": "街中のシェアサイクル乗り場で、若い男性がスマートフォンを使って自転車を借りようとしており、近くでは女性が利用を終えた自転車を返却している場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Recently, bike-sharing services have become a convenient way to travel short distances in cities. People can use smartphone apps to find and unlock bicycles, and these services may help reduce traffic and make urban transportation more environmentally friendly.",
+      "q1": {
+        "text": "What can people use smartphone apps to do when using bike-sharing services?",
+        "keywords": [
+          "find bicycles",
+          "unlock bicycles",
+          "smartphone apps",
+          "bike-sharing"
+        ],
+        "modelAnswers": [
+          "They can use smartphone apps to find and unlock bicycles.",
+          "People can use the apps to find available bicycles and unlock them."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "Do you often ride a bicycle? Where do you usually go by bicycle?",
+          "keywords": [
+            "bicycle",
+            "ride",
+            "school",
+            "station",
+            "shopping",
+            "park",
+            "weekend",
+            "exercise",
+            "usually",
+            "sometimes"
+          ],
+          "modelAnswers": [
+            "Yes, I often ride my bicycle to school and the train station.",
+            "I sometimes ride a bicycle to go shopping or visit a nearby park.",
+            "I do not ride very often, but I enjoy cycling on weekends."
+          ]
+        },
+        {
+          "text": "Do you think shared bicycles are good for cities? Why or why not?",
+          "keywords": [
+            "shared",
+            "bicycle",
+            "city",
+            "environment",
+            "traffic",
+            "convenient",
+            "pollution",
+            "transportation",
+            "healthy",
+            "station"
+          ],
+          "modelAnswers": [
+            "Yes, shared bicycles are good because they are convenient and can reduce traffic.",
+            "I think they are useful because people can travel short distances without using cars.",
+            "Yes. They are environmentally friendly and also give people a chance to exercise."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "man",
+            "ja": "男性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "bicycle",
+            "ja": "自転車",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "phone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "helmet",
+            "ja": "ヘルメット",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "station",
+            "ja": "自転車乗り場",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "map",
+            "ja": "地図",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "road",
+            "ja": "道路",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "ride",
+            "ja": "乗る",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "use",
+            "ja": "使う",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "return",
+            "ja": "返す",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "rent",
+            "ja": "借りる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "green",
+            "ja": "緑色の",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "clean",
+            "ja": "きれいな",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "city",
+            "ja": "街",
+            "type": "detail",
+            "points": 10
+          }
+        ],
+        "chunks": [
+          {
+            "text": "riding a bicycle",
+            "ja": "自転車に乗っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "using a smartphone",
+            "ja": "スマートフォンを使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "renting a bicycle",
+            "ja": "自転車を借りている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "returning a bicycle",
+            "ja": "自転車を返却している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a bicycle station",
+            "ja": "自転車の貸出場所",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "looking at his phone",
+            "ja": "スマートフォンを見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "many bicycles",
+            "ja": "たくさんの自転車",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "in the city",
+            "ja": "街の中で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "wearing a helmet",
+            "ja": "ヘルメットをかぶっている",
+            "type": "attribute",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A man is looking at his smartphone.",
+            "grammar": "現在進行形・look at",
+            "ja": "男性がスマートフォンを見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "He is going to ride a bicycle.",
+            "grammar": "be going to",
+            "ja": "彼は自転車に乗ろうとしています。",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "A woman is returning a bicycle.",
+            "grammar": "現在進行形",
+            "ja": "女性が自転車を返却しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are many bicycles at the station.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "乗り場にはたくさんの自転車があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The woman is wearing a helmet.",
+            "grammar": "現在進行形",
+            "ja": "女性はヘルメットをかぶっています。",
+            "type": "attribute",
+            "points": 25
+          },
+          {
+            "text": "They are in a city.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らは街の中にいます。",
+            "type": "detail",
+            "points": 20
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "cyclist",
+            "ja": "自転車利用者",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "bicycle",
+            "ja": "自転車",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "smartphone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "application",
+            "ja": "アプリ",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "dock",
+            "ja": "自転車返却設備",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "helmet",
+            "ja": "ヘルメット",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "route",
+            "ja": "経路",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "rent",
+            "ja": "借りる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "unlock",
+            "ja": "ロックを解除する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "return",
+            "ja": "返却する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "scan",
+            "ja": "読み取る",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "transportation",
+            "ja": "交通手段",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "eco-friendly",
+            "ja": "環境にやさしい",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "available",
+            "ja": "利用可能な",
+            "type": "attribute",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "renting a shared bicycle",
+            "ja": "シェアサイクルを借りている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "using a bicycle-sharing app",
+            "ja": "シェアサイクルのアプリを使っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "unlocking the bicycle",
+            "ja": "自転車のロックを解除している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "returning the bicycle to the dock",
+            "ja": "自転車をドックに返却している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "checking the route on his phone",
+            "ja": "スマートフォンで経路を確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "at a bicycle-sharing station",
+            "ja": "シェアサイクル乗り場で",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "traveling a short distance",
+            "ja": "短い距離を移動している",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "an environmentally friendly option",
+            "ja": "環境にやさしい選択肢",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "a convenient way to travel",
+            "ja": "便利な移動方法",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A man is using an app to rent a shared bicycle.",
+            "grammar": "現在進行形・目的を表すto不定詞",
+            "ja": "男性がシェアサイクルを借りるためにアプリを使っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He may be scanning a code to unlock the bicycle.",
+            "grammar": "助動詞may・現在進行形・目的を表すto不定詞",
+            "ja": "彼は自転車のロックを解除するためにコードを読み取っているのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "A woman is returning another bicycle to the station.",
+            "grammar": "現在進行形・return A to B",
+            "ja": "女性が別の自転車を乗り場に返却しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "There are several bicycles available for people to use.",
+            "grammar": "There are構文・形容詞available・for A to do",
+            "ja": "人々が利用できる自転車が何台かあります。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The man seems to be checking his route before starting his trip.",
+            "grammar": "seem to不定詞・before＋動名詞",
+            "ja": "男性は出発する前に経路を確認しているようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Shared bicycles can be useful for traveling short distances.",
+            "grammar": "助動詞can・for＋動名詞",
+            "ja": "シェアサイクルは短距離の移動に役立ちます。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "They are also an environmentally friendly alternative to cars.",
+            "grammar": "be動詞・alternative to",
+            "ja": "シェアサイクルは自動車に代わる環境にやさしい交通手段でもあります。",
+            "type": "inference",
+            "points": 35
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "bike-sharing",
+            "ja": "自転車共有サービス",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "commuter",
+            "ja": "通勤・通学者",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "docking station",
+            "ja": "自転車貸出・返却拠点",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "mobile application",
+            "ja": "モバイルアプリ",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "QR code",
+            "ja": "QRコード",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "availability",
+            "ja": "利用可能状況",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "unlock",
+            "ja": "ロックを解除する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "reserve",
+            "ja": "予約する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "navigate",
+            "ja": "経路をたどる",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "return",
+            "ja": "返却する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "sustainable",
+            "ja": "持続可能な",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "mobility",
+            "ja": "移動手段・移動性",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "congestion",
+            "ja": "交通渋滞",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "emission",
+            "ja": "排出物・排出量",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "infrastructure",
+            "ja": "都市インフラ",
+            "type": "detail",
+            "points": 35
+          }
+        ],
+        "chunks": [
+          {
+            "text": "accessing a bike-sharing service",
+            "ja": "シェアサイクルサービスを利用している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "unlocking a bicycle through a mobile app",
+            "ja": "モバイルアプリを使って自転車のロックを解除している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "returning a bicycle to a docking station",
+            "ja": "自転車をドッキングステーションへ返却している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "checking bicycle availability in real time",
+            "ja": "自転車の利用可能状況をリアルタイムで確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "a sustainable form of urban transportation",
+            "ja": "持続可能な都市交通手段",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "reducing dependence on private cars",
+            "ja": "自家用車への依存を減らしている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "helping reduce traffic congestion",
+            "ja": "交通渋滞の軽減に役立っている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "providing flexible urban mobility",
+            "ja": "柔軟な都市の移動手段を提供している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "integrating technology with transportation",
+            "ja": "テクノロジーと交通を融合している",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A man is accessing a bike-sharing service through a mobile application at a docking station.",
+            "grammar": "現在進行形・throughを用いた手段の表現・場所を表す前置詞句",
+            "ja": "男性がドッキングステーションでモバイルアプリを通してシェアサイクルサービスを利用しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "He appears to be scanning a QR code in order to unlock one of the available bicycles.",
+            "grammar": "appear to不定詞・現在進行形・in order to",
+            "ja": "彼は利用可能な自転車の一台を解錠するためにQRコードを読み取っているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, a woman who has finished her journey is returning a bicycle to an empty dock.",
+            "grammar": "関係代名詞who・現在完了形・現在進行形",
+            "ja": "一方、移動を終えた女性が自転車を空いているドックに返却しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The digital system allows users to check bicycle availability and locate nearby stations in real time.",
+            "grammar": "allow A to do・andによる動詞の並列",
+            "ja": "このデジタルシステムによって、利用者は自転車の利用可能状況や近くの乗り場をリアルタイムで確認できます。",
+            "type": "detail",
+            "points": 40
+          },
+          {
+            "text": "Bike-sharing programs can provide a convenient alternative for people who need to travel relatively short distances.",
+            "grammar": "助動詞can・関係代名詞who・need to",
+            "ja": "シェアサイクルは、比較的短い距離を移動する必要がある人に便利な代替交通手段を提供できます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "By encouraging people to cycle instead of driving, cities may be able to reduce both traffic congestion and carbon emissions.",
+            "grammar": "By＋動名詞・instead of＋動名詞・may be able to・both A and B",
+            "ja": "自動車ではなく自転車の利用を促すことで、都市は交通渋滞と二酸化炭素排出量の両方を減らせる可能性があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how digital technology can be integrated into transportation systems to make urban mobility more flexible and sustainable.",
+            "grammar": "間接疑問を含むhow節・助動詞can・受動態・目的を表すto不定詞・make O C",
+            "ja": "この場面は、都市の移動をより柔軟で持続可能にするために、デジタル技術を交通システムへどのように組み込めるかを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "man": {
+        "x": 37,
+        "y": 55
+      },
+      "smartphone": {
+        "x": 42,
+        "y": 50
+      },
+      "selected_bicycle": {
+        "x": 49,
+        "y": 59
+      },
+      "qr_code": {
+        "x": 47,
+        "y": 52
+      },
+      "bicycle_lock": {
+        "x": 49,
+        "y": 63
+      },
+      "woman": {
+        "x": 72,
+        "y": 53
+      },
+      "returned_bicycle": {
+        "x": 76,
+        "y": 63
+      },
+      "helmet": {
+        "x": 72,
+        "y": 38
+      },
+      "docking_station": {
+        "x": 58,
+        "y": 66
+      },
+      "bicycle_row": {
+        "x": 58,
+        "y": 58
+      },
+      "bike_share_sign": {
+        "x": 50,
+        "y": 22
+      },
+      "route_map": {
+        "x": 21,
+        "y": 36
+      },
+      "bike_lane": {
+        "x": 83,
+        "y": 80
+      },
+      "city_buildings": {
+        "x": 79,
+        "y": 24
+      },
+      "street": {
+        "x": 50,
+        "y": 88
+      }
+    }
+  }
+]

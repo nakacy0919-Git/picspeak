@@ -1,0 +1,741 @@
+[
+{
+"id": "oq_004",
+"imageSrc": "assets/images/oralquest/oq004.webp",
+"description": "住宅街のリサイクル回収場所で、女性がペットボトルを分別用ボックスに入れ、男性が古新聞を運び、子どもが空き缶を回収箱に入れている日常風景。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Many communities encourage people to recycle household waste such as plastic bottles, cans, paper, and cardboard. Separating these materials correctly can reduce the amount of garbage, save useful resources, and help keep local neighborhoods clean.",
+"q1": {
+"text": "Why do many communities encourage people to separate and recycle household waste?",
+"keywords": [
+"reduce garbage",
+"save resources",
+"keep neighborhoods clean",
+"recycle"
+],
+"modelAnswers": [
+"Because recycling can reduce garbage, save resources, and help keep neighborhoods clean.",
+"They encourage recycling because it helps reduce waste and save useful resources."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "What do you do at home to reduce waste?",
+"keywords": [
+"recycle",
+"separate",
+"plastic",
+"bottles",
+"cans",
+"paper",
+"reuse",
+"bag",
+"food",
+"waste"
+],
+"modelAnswers": [
+"At home, I separate plastic bottles, cans, and paper for recycling.",
+"I try to reduce waste by using reusable bags and bottles.",
+"My family separates our garbage and tries not to waste food."
+]
+},
+{
+"text": "Do you think recycling should be required in every community? Why or why not?",
+"keywords": [
+"recycling",
+"community",
+"environment",
+"important",
+"waste",
+"reduce",
+"resources",
+"protect",
+"rules",
+"future"
+],
+"modelAnswers": [
+"Yes, I think recycling should be required because it helps reduce waste and protect the environment.",
+"Yes. If everyone separates their garbage, communities can recycle more materials and save resources.",
+"I think recycling rules are important because they encourage people to think about the environment."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "woman",
+"ja": "女性",
+"type": "object",
+"points": 10
+},
+{
+"text": "man",
+"ja": "男性",
+"type": "object",
+"points": 10
+},
+{
+"text": "child",
+"ja": "子ども",
+"type": "object",
+"points": 10
+},
+{
+"text": "bottle",
+"ja": "ボトル",
+"type": "object",
+"points": 10
+},
+{
+"text": "can",
+"ja": "缶",
+"type": "object",
+"points": 10
+},
+{
+"text": "paper",
+"ja": "紙",
+"type": "object",
+"points": 10
+},
+{
+"text": "box",
+"ja": "箱",
+"type": "object",
+"points": 10
+},
+{
+"text": "bin",
+"ja": "回収箱",
+"type": "object",
+"points": 15
+},
+{
+"text": "recycle",
+"ja": "リサイクルする",
+"type": "gist",
+"points": 15
+},
+{
+"text": "put",
+"ja": "入れる",
+"type": "gist",
+"points": 10
+},
+{
+"text": "carry",
+"ja": "運ぶ",
+"type": "gist",
+"points": 10
+},
+{
+"text": "green",
+"ja": "緑色の",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "blue",
+"ja": "青色の",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "clean",
+"ja": "きれいな",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "street",
+"ja": "通り",
+"type": "detail",
+"points": 10
+}
+],
+"chunks": [
+{
+"text": "recycling plastic bottles",
+"ja": "ペットボトルをリサイクルしている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "putting cans in a bin",
+"ja": "缶を回収箱に入れている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "carrying old newspapers",
+"ja": "古新聞を運んでいる",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a recycling bin",
+"ja": "リサイクル回収箱",
+"type": "object",
+"points": 15
+},
+{
+"text": "plastic bottles",
+"ja": "ペットボトル",
+"type": "object",
+"points": 15
+},
+{
+"text": "empty cans",
+"ja": "空き缶",
+"type": "object",
+"points": 15
+},
+{
+"text": "old newspapers",
+"ja": "古新聞",
+"type": "object",
+"points": 15
+},
+{
+"text": "near their homes",
+"ja": "家の近くで",
+"type": "detail",
+"points": 15
+},
+{
+"text": "keeping the area clean",
+"ja": "地域をきれいにしている",
+"type": "inference",
+"points": 20
+}
+],
+"sentences": [
+{
+"text": "A woman is recycling plastic bottles.",
+"grammar": "現在進行形",
+"ja": "女性がペットボトルをリサイクルしています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A child is putting a can in a bin.",
+"grammar": "現在進行形・場所を表す前置詞",
+"ja": "子どもが缶を回収箱に入れています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A man is carrying some newspapers.",
+"grammar": "現在進行形",
+"ja": "男性が新聞を運んでいます。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "There are several recycling bins.",
+"grammar": "There are構文",
+"ja": "いくつかのリサイクル回収箱があります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The bins have different colors.",
+"grammar": "一般動詞have・形容詞",
+"ja": "回収箱はそれぞれ違う色をしています。",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "The people are keeping their neighborhood clean.",
+"grammar": "現在進行形",
+"ja": "人々は地域をきれいにしています。",
+"type": "inference",
+"points": 30
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "resident",
+"ja": "住民",
+"type": "object",
+"points": 20
+},
+{
+"text": "recycling",
+"ja": "リサイクル",
+"type": "gist",
+"points": 15
+},
+{
+"text": "container",
+"ja": "回収容器",
+"type": "object",
+"points": 15
+},
+{
+"text": "plastic",
+"ja": "プラスチック",
+"type": "object",
+"points": 15
+},
+{
+"text": "newspaper",
+"ja": "新聞",
+"type": "object",
+"points": 10
+},
+{
+"text": "cardboard",
+"ja": "段ボール",
+"type": "object",
+"points": 20
+},
+{
+"text": "can",
+"ja": "缶",
+"type": "object",
+"points": 10
+},
+{
+"text": "waste",
+"ja": "ごみ・廃棄物",
+"type": "detail",
+"points": 20
+},
+{
+"text": "separate",
+"ja": "分別する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "sort",
+"ja": "分類する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "collect",
+"ja": "回収する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "reuse",
+"ja": "再利用する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "environment",
+"ja": "環境",
+"type": "inference",
+"points": 20
+},
+{
+"text": "organized",
+"ja": "整理された",
+"type": "attribute",
+"points": 20
+},
+{
+"text": "responsible",
+"ja": "責任感のある",
+"type": "inference",
+"points": 25
+}
+],
+"chunks": [
+{
+"text": "separating recyclable waste",
+"ja": "リサイクル可能なごみを分別している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "putting bottles into a recycling bin",
+"ja": "ボトルをリサイクル箱に入れている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "carrying a pile of newspapers",
+"ja": "新聞の束を運んでいる",
+"type": "gist",
+"points": 25
+},
+{
+"text": "sorting empty cans",
+"ja": "空き缶を分別している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "different recycling containers",
+"ja": "種類の異なるリサイクル回収箱",
+"type": "detail",
+"points": 20
+},
+{
+"text": "a neighborhood recycling station",
+"ja": "地域のリサイクル回収場所",
+"type": "detail",
+"points": 25
+},
+{
+"text": "reducing household waste",
+"ja": "家庭ごみを減らしている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "protecting the environment",
+"ja": "環境を守っている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "following recycling rules",
+"ja": "リサイクルのルールを守っている",
+"type": "inference",
+"points": 30
+}
+],
+"sentences": [
+{
+"text": "A woman is separating plastic bottles from other waste.",
+"grammar": "現在進行形・separate A from B",
+"ja": "女性がペットボトルを他のごみから分別しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A man is carrying a pile of old newspapers to the recycling area.",
+"grammar": "現在進行形・方向を表すto",
+"ja": "男性が古新聞の束をリサイクル場所へ運んでいます。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A child is putting empty cans into the correct container.",
+"grammar": "現在進行形・intoを用いた前置詞句",
+"ja": "子どもが空き缶を正しい回収箱に入れています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "There are different bins for different kinds of waste.",
+"grammar": "There are構文・forを用いた前置詞句",
+"ja": "ごみの種類ごとに異なる回収箱があります。",
+"type": "detail",
+"points": 30
+},
+{
+"text": "The residents seem to understand how to separate their garbage.",
+"grammar": "seem to不定詞・疑問詞how＋to不定詞",
+"ja": "住民たちはごみの分別方法を理解しているようです。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "They are probably recycling these materials to reduce waste.",
+"grammar": "現在進行形・目的を表すto不定詞",
+"ja": "彼らはおそらくごみを減らすためにこれらの資源をリサイクルしています。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "Recycling helps keep the neighborhood clean.",
+"grammar": "動名詞主語・help＋動詞の原形",
+"ja": "リサイクルは地域をきれいに保つのに役立ちます。",
+"type": "inference",
+"points": 35
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "resident",
+"ja": "地域住民",
+"type": "object",
+"points": 15
+},
+{
+"text": "recyclable",
+"ja": "リサイクル可能な",
+"type": "attribute",
+"points": 20
+},
+{
+"text": "household waste",
+"ja": "家庭ごみ",
+"type": "detail",
+"points": 25
+},
+{
+"text": "container",
+"ja": "回収容器",
+"type": "object",
+"points": 15
+},
+{
+"text": "cardboard",
+"ja": "段ボール",
+"type": "object",
+"points": 20
+},
+{
+"text": "newspaper",
+"ja": "新聞",
+"type": "object",
+"points": 10
+},
+{
+"text": "sort",
+"ja": "分別する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "dispose",
+"ja": "処分する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "reduce",
+"ja": "減らす",
+"type": "gist",
+"points": 20
+},
+{
+"text": "reuse",
+"ja": "再利用する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "conserve",
+"ja": "節約・保全する",
+"type": "gist",
+"points": 30
+},
+{
+"text": "resource",
+"ja": "資源",
+"type": "detail",
+"points": 20
+},
+{
+"text": "sustainable",
+"ja": "持続可能な",
+"type": "inference",
+"points": 30
+},
+{
+"text": "environmentally conscious",
+"ja": "環境意識の高い",
+"type": "inference",
+"points": 35
+},
+{
+"text": "responsibility",
+"ja": "責任",
+"type": "inference",
+"points": 30
+}
+],
+"chunks": [
+{
+"text": "sorting recyclable materials",
+"ja": "リサイクル可能な資源を分別している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "disposing of waste properly",
+"ja": "ごみを適切に処分している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "separating waste by category",
+"ja": "ごみを種類別に分別している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "reducing the amount of household waste",
+"ja": "家庭ごみの量を減らしている",
+"type": "inference",
+"points": 35
+},
+{
+"text": "conserving valuable resources",
+"ja": "貴重な資源を節約している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "an environmentally conscious lifestyle",
+"ja": "環境に配慮した生活様式",
+"type": "inference",
+"points": 35
+},
+{
+"text": "a community recycling station",
+"ja": "地域のリサイクル回収場所",
+"type": "detail",
+"points": 25
+},
+{
+"text": "following local recycling guidelines",
+"ja": "地域のリサイクル指針に従っている",
+"type": "inference",
+"points": 35
+},
+{
+"text": "contributing to a cleaner community",
+"ja": "よりきれいな地域づくりに貢献している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "making recycling part of everyday life",
+"ja": "リサイクルを日常生活の一部にしている",
+"type": "inference",
+"points": 40
+}
+],
+"sentences": [
+{
+"text": "Several residents are sorting recyclable materials at a community collection point.",
+"grammar": "現在進行形・場所を表す前置詞句",
+"ja": "数人の住民が地域の回収場所でリサイクル可能な資源を分別しています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "A woman is placing plastic bottles into a container designated for plastic waste.",
+"grammar": "現在進行形・過去分詞による後置修飾",
+"ja": "女性がプラスチックごみ用に指定された回収箱へペットボトルを入れています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "Meanwhile, a man carrying a bundle of newspapers is approaching the paper recycling area.",
+"grammar": "現在分詞による後置修飾・現在進行形",
+"ja": "一方、新聞の束を持った男性が紙類のリサイクル場所へ向かっています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "A child is carefully putting empty cans into the appropriate recycling container.",
+"grammar": "現在進行形・副詞による修飾",
+"ja": "子どもが空き缶を適切なリサイクル回収箱へ注意深く入れています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The different containers appear to have been designed to make waste separation easier.",
+"grammar": "appear to不定詞・現在完了受動態・make O C",
+"ja": "異なる回収箱は、ごみの分別をより簡単にするために設計されているようです。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "By separating their household waste, the residents can help conserve resources and reduce the amount of garbage that is thrown away.",
+"grammar": "By＋動名詞・助動詞can・関係代名詞that・受動態",
+"ja": "家庭ごみを分別することで、住民は資源を節約し、捨てられるごみの量を減らすことができます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The scene suggests that recycling has become a normal part of everyday life in this community.",
+"grammar": "suggest that節・現在完了形",
+"ja": "この場面から、この地域ではリサイクルが日常生活の普通の一部になっていることがうかがえます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "If more people adopted similar habits, communities could reduce waste and become more environmentally sustainable.",
+"grammar": "仮定法過去・比較級",
+"ja": "より多くの人が同じような習慣を取り入れれば、地域はごみを減らし、より環境的に持続可能になるでしょう。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"woman": {
+"x": 28,
+"y": 53
+},
+"plastic_bottle": {
+"x": 33,
+"y": 53
+},
+"plastic_recycling_bin": {
+"x": 39,
+"y": 63
+},
+"man": {
+"x": 65,
+"y": 50
+},
+"newspapers": {
+"x": 60,
+"y": 51
+},
+"paper_recycling_bin": {
+"x": 71,
+"y": 65
+},
+"child": {
+"x": 83,
+"y": 57
+},
+"empty_can": {
+"x": 80,
+"y": 55
+},
+"can_recycling_bin": {
+"x": 88,
+"y": 66
+},
+"recycling_sign": {
+"x": 50,
+"y": 20
+},
+"cardboard_boxes": {
+"x": 52,
+"y": 69
+},
+"recycling_area": {
+"x": 55,
+"y": 60
+},
+"houses": {
+"x": 19,
+"y": 25
+},
+"trees": {
+"x": 84,
+"y": 25
+},
+"street": {
+"x": 50,
+"y": 88
+}
+}
+}
+]

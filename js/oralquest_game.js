@@ -11,6 +11,11 @@ window.OralQuestGame = {
     timerInterval: null,
     timeElapsed: 0,
     
+    // 動的にJSONから読み込むための変数
+    targetPassage: "",
+    q1Text: "",
+    q1Keywords: [],
+    q1ModelAnswers: [],
     currentQ2: null,
 
     init: function() {
@@ -20,20 +25,33 @@ window.OralQuestGame = {
         this.interimTranscript = "";
         this.timeElapsed = 0;
 
-        // JSONデータからStage 1のデータを読み込む
-        let passageText = "";
-        let q1Text = "";
+        // ★修正：JSONデータ（window.currentTheme）からStage 1のデータを読み込む
+        // データが存在しない場合のデフォルトテキストを設定
+        let passageText = "Passage data not found.";
+        let q1Text = "Question data not found.";
+        
         if (window.currentTheme && window.currentTheme.stage1) {
-            passageText = window.currentTheme.stage1.passage || "";
-            q1Text = window.currentTheme.stage1.q1.text || "";
+            // パッセージテキストを取得
+            passageText = window.currentTheme.stage1.passage || passageText;
+            
+            // Q1のデータを取得
+            if (window.currentTheme.stage1.q1) {
+                q1Text = window.currentTheme.stage1.q1.text || q1Text;
+                this.q1Keywords = window.currentTheme.stage1.q1.keywords || [];
+                this.q1ModelAnswers = window.currentTheme.stage1.q1.modelAnswers || [];
+            }
         }
 
-        // HTMLの画面にパッセージと質問をセットする
+        // ★重要：HTMLの中にある箱（oq-passage-text）を探して文字を書き込む処理
         const passageEl = document.getElementById('oq-passage-text');
-        if (passageEl && passageText) passageEl.textContent = passageText;
+        if (passageEl) {
+            passageEl.textContent = passageText; // 文字を書き込む
+        }
         
         const q1TextEl = document.getElementById('oq-q1-text');
-        if (q1TextEl && q1Text) q1TextEl.textContent = q1Text;
+        if (q1TextEl) {
+            q1TextEl.textContent = q1Text; // 質問の文字を書き込む
+        }
 
         this.updateUIForStage(1);
     },
@@ -110,6 +128,7 @@ window.OralQuestGame = {
     },
 
     replayQ1Audio: function() {
+        // 現在画面に表示されている質問テキストを取得
         let q1Text = document.getElementById('oq-q1-text').textContent || "Please answer the question.";
         if (typeof window.playResultTTS === 'function') {
             window.playResultTTS("Please look at the passage. " + q1Text);
@@ -117,10 +136,12 @@ window.OralQuestGame = {
     },
 
     setupQA2: function() {
+        // 面接官画像を1〜10の中でランダムに切り替え
         const randomImgNum = Math.floor(Math.random() * 10) + 1;
         const imgEl = document.getElementById('oq-interviewer-img');
         if (imgEl) imgEl.src = `assets/images/oralquest/interviewer_${randomImgNum}.webp`;
 
+        // JSONデータからそのテーマ専用のStage 3の質問をランダムに取得
         if (window.currentTheme && window.currentTheme.stage3 && window.currentTheme.stage3.questions) {
             const qPool = window.currentTheme.stage3.questions;
             const randomQIndex = Math.floor(Math.random() * qPool.length);
@@ -129,6 +150,7 @@ window.OralQuestGame = {
             this.currentQ2 = { text: "No question data found.", keywords: [], modelAnswers: [] };
         }
         
+        // 選ばれた質問テキストを画面にセット
         document.getElementById('oq-q2-text').textContent = this.currentQ2.text;
 
         document.getElementById('btn-oq-next').classList.add('hidden');
@@ -239,6 +261,7 @@ window.OralQuestGame = {
         } else if (this.currentStage === 2) {
             this.calculatePictureResult();
         } else if (this.currentStage === 3) {
+            // Stage 3 終了時はボタンの文字を「FINISH TEST」に変える
             nextBtn.innerHTML = 'FINISH TEST <span class="text-2xl">🏁</span>';
             nextBtn.classList.replace('bg-gray-800', 'bg-pink-600');
             this.calculateQ2Result();
@@ -292,7 +315,7 @@ window.OralQuestGame = {
         const fullText = (this.transcript + " " + this.interimTranscript).trim();
         const spokenWords = fullText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
-        // ★ 修正：画面に表示されている英文を直接取得して採点基準にする（読み込みズレ防止）
+        // ★修正：画面に表示されている英文を直接取得して採点基準にする（読み込みズレ防止）
         const passageText = document.getElementById('oq-passage-text').textContent || "";
         const targetWords = passageText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
@@ -354,7 +377,7 @@ window.OralQuestGame = {
         if (matchCount >= 3) {
             starsHtml = "⭐⭐⭐"; feedbackText = "Excellent! 完璧に理由を答えられました！";
         } else if (matchCount >= 1) {
-            starsHtml = "⭐⭐☆"; feedbackText = "Good! キーワードが含まれています。";
+            starsHtml = "⭐⭐☆"; feedbackText = "Good! キーキーワードが含まれています。";
         } else {
             starsHtml = "⭐☆☆"; feedbackText = "もう少し！模範解答を確認しよう。";
         }

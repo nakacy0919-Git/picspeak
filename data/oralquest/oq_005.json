@@ -1,0 +1,741 @@
+[
+{
+"id": "oq_005",
+"imageSrc": "assets/images/oralquest/oq005.webp",
+"description": "市役所の窓口で、女性が職員に申請書を渡しており、近くでは男性が記入台で書類を書き、別の市民が番号札を持って順番を待っている場面。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Many people visit city hall when they need official documents or public services. Residents may fill out application forms, wait for their number, and speak with staff members who help them complete important procedures correctly.",
+"q1": {
+"text": "What may residents do when they visit city hall?",
+"keywords": [
+"fill out forms",
+"wait for their number",
+"speak with staff",
+"public services"
+],
+"modelAnswers": [
+"They may fill out application forms, wait for their number, and speak with staff members.",
+"Residents may complete forms and talk with staff members to receive public services."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "Have you ever been to a city hall or public office? What did you do there?",
+"keywords": [
+"city hall",
+"office",
+"document",
+"form",
+"apply",
+"certificate",
+"address",
+"family",
+"visit",
+"staff"
+],
+"modelAnswers": [
+"Yes, I have. I went to city hall with my family to get an official document.",
+"I have been there to change my address and fill out some forms.",
+"No, I have not been there by myself, but I have visited city hall with my parents."
+]
+},
+{
+"text": "What public services do you think are important for people in a community?",
+"keywords": [
+"public",
+"service",
+"community",
+"health",
+"school",
+"garbage",
+"safety",
+"support",
+"information",
+"important"
+],
+"modelAnswers": [
+"I think health care and garbage collection are important because everyone needs them.",
+"Public information and support services are important because they help people when they have problems.",
+"I think schools, hospitals, and safety services are especially important for a community."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "woman",
+"ja": "女性",
+"type": "object",
+"points": 10
+},
+{
+"text": "man",
+"ja": "男性",
+"type": "object",
+"points": 10
+},
+{
+"text": "staff",
+"ja": "職員",
+"type": "object",
+"points": 15
+},
+{
+"text": "desk",
+"ja": "窓口・机",
+"type": "object",
+"points": 10
+},
+{
+"text": "paper",
+"ja": "紙・書類",
+"type": "object",
+"points": 10
+},
+{
+"text": "form",
+"ja": "用紙・申請書",
+"type": "object",
+"points": 15
+},
+{
+"text": "pen",
+"ja": "ペン",
+"type": "object",
+"points": 10
+},
+{
+"text": "chair",
+"ja": "いす",
+"type": "object",
+"points": 10
+},
+{
+"text": "number",
+"ja": "番号",
+"type": "detail",
+"points": 10
+},
+{
+"text": "write",
+"ja": "書く",
+"type": "gist",
+"points": 15
+},
+{
+"text": "give",
+"ja": "渡す",
+"type": "gist",
+"points": 15
+},
+{
+"text": "wait",
+"ja": "待つ",
+"type": "gist",
+"points": 15
+},
+{
+"text": "sit",
+"ja": "座る",
+"type": "gist",
+"points": 10
+},
+{
+"text": "city hall",
+"ja": "市役所",
+"type": "detail",
+"points": 15
+},
+{
+"text": "busy",
+"ja": "忙しい・人の多い",
+"type": "attribute",
+"points": 15
+}
+],
+"chunks": [
+{
+"text": "at city hall",
+"ja": "市役所で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "giving a form",
+"ja": "書類を渡している",
+"type": "gist",
+"points": 20
+},
+{
+"text": "writing on a form",
+"ja": "用紙に書いている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "waiting for his turn",
+"ja": "自分の順番を待っている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "a city hall worker",
+"ja": "市役所の職員",
+"type": "object",
+"points": 20
+},
+{
+"text": "at the counter",
+"ja": "窓口で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "holding a number ticket",
+"ja": "番号札を持っている",
+"type": "detail",
+"points": 20
+},
+{
+"text": "filling out a form",
+"ja": "用紙に記入している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "some chairs",
+"ja": "いくつかのいす",
+"type": "detail",
+"points": 15
+}
+],
+"sentences": [
+{
+"text": "A woman is giving a form to a staff member.",
+"grammar": "現在進行形・give A to B",
+"ja": "女性が職員に書類を渡しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A man is writing on a form.",
+"grammar": "現在進行形",
+"ja": "男性が用紙に記入しています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "Another man is waiting for his turn.",
+"grammar": "現在進行形・wait for",
+"ja": "別の男性が自分の順番を待っています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "They are at city hall.",
+"grammar": "be動詞・場所を表す前置詞",
+"ja": "彼らは市役所にいます。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "There are some chairs near the counter.",
+"grammar": "There are構文・場所を表す前置詞",
+"ja": "窓口の近くにはいくつかのいすがあります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The staff member is helping the woman.",
+"grammar": "現在進行形",
+"ja": "職員が女性を手伝っています。",
+"type": "gist",
+"points": 30
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "resident",
+"ja": "住民",
+"type": "object",
+"points": 20
+},
+{
+"text": "clerk",
+"ja": "窓口職員",
+"type": "object",
+"points": 20
+},
+{
+"text": "counter",
+"ja": "窓口",
+"type": "object",
+"points": 15
+},
+{
+"text": "application",
+"ja": "申請書",
+"type": "object",
+"points": 20
+},
+{
+"text": "document",
+"ja": "書類",
+"type": "object",
+"points": 15
+},
+{
+"text": "certificate",
+"ja": "証明書",
+"type": "object",
+"points": 25
+},
+{
+"text": "ticket",
+"ja": "番号札",
+"type": "object",
+"points": 15
+},
+{
+"text": "notice",
+"ja": "案内・掲示",
+"type": "detail",
+"points": 15
+},
+{
+"text": "apply",
+"ja": "申請する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "submit",
+"ja": "提出する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "complete",
+"ja": "記入を完成させる",
+"type": "gist",
+"points": 20
+},
+{
+"text": "wait",
+"ja": "待つ",
+"type": "gist",
+"points": 15
+},
+{
+"text": "service",
+"ja": "行政サービス",
+"type": "detail",
+"points": 20
+},
+{
+"text": "official",
+"ja": "公的な",
+"type": "attribute",
+"points": 20
+},
+{
+"text": "helpful",
+"ja": "親切な・役立つ",
+"type": "inference",
+"points": 20
+}
+],
+"chunks": [
+{
+"text": "submitting an application form",
+"ja": "申請書を提出している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "filling out a document",
+"ja": "書類に記入している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "speaking with a city hall clerk",
+"ja": "市役所の職員と話している",
+"type": "gist",
+"points": 25
+},
+{
+"text": "waiting for his number",
+"ja": "自分の番号が呼ばれるのを待っている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "holding a number ticket",
+"ja": "番号札を持っている",
+"type": "detail",
+"points": 20
+},
+{
+"text": "at the service counter",
+"ja": "受付窓口で",
+"type": "detail",
+"points": 20
+},
+{
+"text": "an official document",
+"ja": "公的な書類",
+"type": "object",
+"points": 20
+},
+{
+"text": "asking for assistance",
+"ja": "助けを求めている",
+"type": "inference",
+"points": 25
+},
+{
+"text": "receiving public services",
+"ja": "行政サービスを受けている",
+"type": "inference",
+"points": 30
+}
+],
+"sentences": [
+{
+"text": "A woman is submitting an application form at the service counter.",
+"grammar": "現在進行形・場所を表す前置詞",
+"ja": "女性が受付窓口で申請書を提出しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "A city hall clerk is talking with the woman.",
+"grammar": "現在進行形・talk with",
+"ja": "市役所の職員が女性と話しています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "A man is filling out a form at a writing table.",
+"grammar": "現在進行形・fill out",
+"ja": "男性が記入台で用紙に記入しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "Another visitor is waiting while holding a number ticket.",
+"grammar": "現在進行形・while＋現在分詞",
+"ja": "別の来庁者が番号札を持ちながら待っています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The woman may be applying for an official certificate.",
+"grammar": "助動詞may・現在進行形",
+"ja": "女性は公的な証明書を申請しているのかもしれません。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "There are signs that show visitors where to go.",
+"grammar": "There are構文・関係代名詞that・疑問詞where＋to不定詞",
+"ja": "来庁者にどこへ行けばよいか示す案内表示があります。",
+"type": "detail",
+"points": 40
+},
+{
+"text": "The staff members seem to be helping local residents.",
+"grammar": "seem to不定詞・現在進行形",
+"ja": "職員たちは地域住民を手助けしているようです。",
+"type": "inference",
+"points": 35
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "municipality",
+"ja": "地方自治体",
+"type": "detail",
+"points": 30
+},
+{
+"text": "resident",
+"ja": "住民",
+"type": "object",
+"points": 15
+},
+{
+"text": "municipal employee",
+"ja": "市役所職員",
+"type": "object",
+"points": 25
+},
+{
+"text": "application",
+"ja": "申請",
+"type": "object",
+"points": 20
+},
+{
+"text": "certificate",
+"ja": "証明書",
+"type": "object",
+"points": 20
+},
+{
+"text": "documentation",
+"ja": "必要書類",
+"type": "object",
+"points": 30
+},
+{
+"text": "procedure",
+"ja": "手続き",
+"type": "detail",
+"points": 25
+},
+{
+"text": "service counter",
+"ja": "行政サービス窓口",
+"type": "detail",
+"points": 25
+},
+{
+"text": "submit",
+"ja": "提出する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "process",
+"ja": "処理する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "issue",
+"ja": "発行する",
+"type": "gist",
+"points": 30
+},
+{
+"text": "verify",
+"ja": "確認する",
+"type": "gist",
+"points": 30
+},
+{
+"text": "administrative",
+"ja": "行政上の",
+"type": "attribute",
+"points": 30
+},
+{
+"text": "efficient",
+"ja": "効率的な",
+"type": "inference",
+"points": 25
+},
+{
+"text": "accessible",
+"ja": "利用しやすい",
+"type": "inference",
+"points": 30
+}
+],
+"chunks": [
+{
+"text": "submitting official documentation",
+"ja": "公的な必要書類を提出している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "completing an application form",
+"ja": "申請書に記入している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "consulting a municipal employee",
+"ja": "市役所職員に相談している",
+"type": "gist",
+"points": 35
+},
+{
+"text": "waiting to be served",
+"ja": "順番を待っている",
+"type": "gist",
+"points": 25
+},
+{
+"text": "carrying out an administrative procedure",
+"ja": "行政手続きを行っている",
+"type": "inference",
+"points": 35
+},
+{
+"text": "applying for an official certificate",
+"ja": "公的証明書を申請している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "providing assistance to residents",
+"ja": "住民に支援を提供している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "a clearly organized service area",
+"ja": "分かりやすく整理された窓口エリア",
+"type": "detail",
+"points": 30
+},
+{
+"text": "accessing local government services",
+"ja": "地方自治体のサービスを利用している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "following the required procedure",
+"ja": "必要な手順に従っている",
+"type": "inference",
+"points": 35
+}
+],
+"sentences": [
+{
+"text": "At the service counter, a woman is submitting an application form to a municipal employee.",
+"grammar": "現在進行形・場所を表す前置詞句・submit A to B",
+"ja": "受付窓口で、女性が市役所職員に申請書を提出しています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The employee appears to be checking the documents that the woman has provided.",
+"grammar": "appear to不定詞・現在進行形・関係代名詞that・現在完了形",
+"ja": "職員は女性が提出した書類を確認しているように見えます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Meanwhile, a man is completing a form at a table provided for visitors.",
+"grammar": "現在進行形・過去分詞による後置修飾",
+"ja": "一方、男性が来庁者用に設置された記入台で用紙に記入しています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "Another resident is holding a number ticket while waiting to be called.",
+"grammar": "現在進行形・while＋現在分詞・受動態",
+"ja": "別の住民は、呼ばれるのを待ちながら番号札を持っています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "The woman may be applying for a certificate that she needs for an administrative procedure.",
+"grammar": "助動詞may・現在進行形・関係代名詞that",
+"ja": "女性は行政手続きに必要な証明書を申請しているのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Several signs have been placed around the room so that visitors can find the correct service counter.",
+"grammar": "現在完了受動態・so that構文・助動詞can",
+"ja": "来庁者が正しい窓口を見つけられるよう、室内にはいくつかの案内表示が設置されています。",
+"type": "detail",
+"points": 40
+},
+{
+"text": "The scene illustrates how local government offices provide essential administrative services to residents.",
+"grammar": "間接疑問を含むhow節・provide A to B",
+"ja": "この場面は、地方自治体の窓口が住民に必要な行政サービスをどのように提供しているかを示しています。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "If public services are clearly organized, residents can complete necessary procedures more efficiently.",
+"grammar": "Ifを用いた条件文・受動態・比較級",
+"ja": "公共サービスが分かりやすく整理されていれば、住民は必要な手続きをより効率的に行うことができます。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"woman": {
+"x": 34,
+"y": 53
+},
+"application_form": {
+"x": 43,
+"y": 52
+},
+"city_hall_clerk": {
+"x": 54,
+"y": 43
+},
+"service_counter": {
+"x": 47,
+"y": 62
+},
+"man_writing": {
+"x": 72,
+"y": 55
+},
+"writing_table": {
+"x": 72,
+"y": 65
+},
+"form_on_table": {
+"x": 70,
+"y": 56
+},
+"waiting_visitor": {
+"x": 18,
+"y": 58
+},
+"number_ticket": {
+"x": 20,
+"y": 53
+},
+"waiting_chairs": {
+"x": 15,
+"y": 70
+},
+"number_display": {
+"x": 48,
+"y": 20
+},
+"information_sign": {
+"x": 27,
+"y": 24
+},
+"service_counter_sign": {
+"x": 52,
+"y": 29
+},
+"document_rack": {
+"x": 83,
+"y": 38
+},
+"city_hall_lobby": {
+"x": 50,
+"y": 82
+}
+}
+}
+]

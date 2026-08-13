@@ -1,0 +1,741 @@
+[
+{
+"id": "oq_006",
+"imageSrc": "assets/images/oralquest/oq006.webp",
+"description": "自宅の玄関前で、女性がスマートフォンの配達アプリを確認しながら、配達員から注文した食事を受け取っている場面。",
+"timeLimit": 30,
+"stage1": {
+"passage": "Recently, food delivery services have become popular because people can order meals from restaurants by using smartphone apps. These services are especially useful for busy people who want to enjoy food at home without cooking or going out.",
+"q1": {
+"text": "Why have food delivery services become popular?",
+"keywords": [
+"order meals",
+"smartphone apps",
+"busy people",
+"food at home"
+],
+"modelAnswers": [
+"Because people can order meals from restaurants by using smartphone apps.",
+"They are popular because they are useful for busy people who want to enjoy food at home."
+]
+}
+},
+"stage3": {
+"questions": [
+{
+"text": "Have you ever used a food delivery service? What did you order?",
+"keywords": [
+"delivery",
+"food",
+"order",
+"pizza",
+"hamburger",
+"restaurant",
+"app",
+"home",
+"convenient",
+"sometimes"
+],
+"modelAnswers": [
+"Yes, I have. I used a delivery app to order pizza for my family.",
+"I sometimes order hamburgers or Japanese food when I am busy.",
+"No, I have never used one, but I would like to try a food delivery service someday."
+]
+},
+{
+"text": "What are the advantages and disadvantages of food delivery services?",
+"keywords": [
+"convenient",
+"fast",
+"busy",
+"expensive",
+"fee",
+"delivery",
+"restaurant",
+"choice",
+"traffic",
+"environment"
+],
+"modelAnswers": [
+"Food delivery services are convenient because people can order meals without leaving home, but delivery fees can be expensive.",
+"They are useful for busy people, but sometimes the food takes a long time to arrive.",
+"One advantage is that we can choose food from many restaurants. However, delivery can create more packaging waste."
+]
+}
+]
+},
+"scoringData": {
+"elementary": {
+"words": [
+{
+"text": "woman",
+"ja": "女性",
+"type": "object",
+"points": 10
+},
+{
+"text": "man",
+"ja": "男性",
+"type": "object",
+"points": 10
+},
+{
+"text": "food",
+"ja": "食べ物",
+"type": "object",
+"points": 10
+},
+{
+"text": "bag",
+"ja": "袋",
+"type": "object",
+"points": 10
+},
+{
+"text": "phone",
+"ja": "スマートフォン",
+"type": "object",
+"points": 10
+},
+{
+"text": "door",
+"ja": "ドア",
+"type": "object",
+"points": 10
+},
+{
+"text": "house",
+"ja": "家",
+"type": "detail",
+"points": 10
+},
+{
+"text": "bike",
+"ja": "自転車",
+"type": "object",
+"points": 10
+},
+{
+"text": "give",
+"ja": "渡す",
+"type": "gist",
+"points": 15
+},
+{
+"text": "take",
+"ja": "受け取る",
+"type": "gist",
+"points": 15
+},
+{
+"text": "order",
+"ja": "注文する",
+"type": "gist",
+"points": 15
+},
+{
+"text": "look",
+"ja": "見る",
+"type": "gist",
+"points": 10
+},
+{
+"text": "green",
+"ja": "緑色の",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "black",
+"ja": "黒い",
+"type": "attribute",
+"points": 10
+},
+{
+"text": "home",
+"ja": "自宅",
+"type": "detail",
+"points": 10
+}
+],
+"chunks": [
+{
+"text": "a delivery worker",
+"ja": "配達員",
+"type": "object",
+"points": 20
+},
+{
+"text": "a bag of food",
+"ja": "食べ物の入った袋",
+"type": "object",
+"points": 15
+},
+{
+"text": "giving her the food",
+"ja": "女性に食べ物を渡している",
+"type": "gist",
+"points": 20
+},
+{
+"text": "taking the bag",
+"ja": "袋を受け取っている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "looking at her phone",
+"ja": "スマートフォンを見ている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "at the front door",
+"ja": "玄関で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "in front of the house",
+"ja": "家の前で",
+"type": "detail",
+"points": 15
+},
+{
+"text": "a delivery bag",
+"ja": "配達用バッグ",
+"type": "object",
+"points": 15
+},
+{
+"text": "ordering dinner",
+"ja": "夕食を注文している",
+"type": "inference",
+"points": 20
+}
+],
+"sentences": [
+{
+"text": "A delivery worker is holding a bag of food.",
+"grammar": "現在進行形",
+"ja": "配達員が食べ物の入った袋を持っています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "The man is giving the food to the woman.",
+"grammar": "現在進行形・give A to B",
+"ja": "男性が女性に食べ物を渡しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "The woman is looking at her phone.",
+"grammar": "現在進行形・look at",
+"ja": "女性がスマートフォンを見ています。",
+"type": "gist",
+"points": 25
+},
+{
+"text": "They are standing at the front door.",
+"grammar": "現在進行形・場所を表す前置詞",
+"ja": "2人は玄関に立っています。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "There is a bicycle near the delivery worker.",
+"grammar": "There is構文・場所を表す前置詞",
+"ja": "配達員の近くに自転車があります。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "The woman is going to eat the food.",
+"grammar": "be going to",
+"ja": "女性はその食べ物を食べる予定です。",
+"type": "inference",
+"points": 30
+}
+]
+},
+"junior_high": {
+"words": [
+{
+"text": "customer",
+"ja": "利用客",
+"type": "object",
+"points": 15
+},
+{
+"text": "delivery worker",
+"ja": "配達員",
+"type": "object",
+"points": 20
+},
+{
+"text": "smartphone",
+"ja": "スマートフォン",
+"type": "object",
+"points": 15
+},
+{
+"text": "application",
+"ja": "アプリ",
+"type": "object",
+"points": 20
+},
+{
+"text": "order",
+"ja": "注文",
+"type": "object",
+"points": 15
+},
+{
+"text": "meal",
+"ja": "食事",
+"type": "object",
+"points": 15
+},
+{
+"text": "package",
+"ja": "包み・容器",
+"type": "object",
+"points": 20
+},
+{
+"text": "bicycle",
+"ja": "自転車",
+"type": "object",
+"points": 15
+},
+{
+"text": "deliver",
+"ja": "配達する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "receive",
+"ja": "受け取る",
+"type": "gist",
+"points": 20
+},
+{
+"text": "confirm",
+"ja": "確認する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "order",
+"ja": "注文する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "convenient",
+"ja": "便利な",
+"type": "inference",
+"points": 20
+},
+{
+"text": "busy",
+"ja": "忙しい",
+"type": "inference",
+"points": 20
+},
+{
+"text": "entrance",
+"ja": "玄関・入口",
+"type": "detail",
+"points": 20
+}
+],
+"chunks": [
+{
+"text": "delivering a food order",
+"ja": "食事の注文を配達している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "receiving a bag of food",
+"ja": "食べ物の袋を受け取っている",
+"type": "gist",
+"points": 30
+},
+{
+"text": "checking the delivery app",
+"ja": "配達アプリを確認している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "standing at the entrance",
+"ja": "玄関に立っている",
+"type": "detail",
+"points": 20
+},
+{
+"text": "carrying an insulated bag",
+"ja": "保温バッグを持っている",
+"type": "detail",
+"points": 25
+},
+{
+"text": "using a smartphone",
+"ja": "スマートフォンを使っている",
+"type": "gist",
+"points": 20
+},
+{
+"text": "ordering food online",
+"ja": "オンラインで食事を注文している",
+"type": "inference",
+"points": 25
+},
+{
+"text": "paying through an app",
+"ja": "アプリを通して支払っている",
+"type": "inference",
+"points": 30
+},
+{
+"text": "a convenient delivery service",
+"ja": "便利な配達サービス",
+"type": "inference",
+"points": 30
+}
+],
+"sentences": [
+{
+"text": "A delivery worker is handing a bag of food to a customer.",
+"grammar": "現在進行形・hand A to B",
+"ja": "配達員が利用客に食べ物の袋を手渡しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "The woman is checking her order on a smartphone.",
+"grammar": "現在進行形・場所を表すon",
+"ja": "女性がスマートフォンで注文内容を確認しています。",
+"type": "gist",
+"points": 30
+},
+{
+"text": "The delivery worker has a large insulated bag.",
+"grammar": "一般動詞have・形容詞による修飾",
+"ja": "配達員は大きな保温バッグを持っています。",
+"type": "detail",
+"points": 25
+},
+{
+"text": "There is a bicycle parked near the entrance.",
+"grammar": "There is構文・過去分詞による後置修飾",
+"ja": "玄関の近くに自転車が停められています。",
+"type": "detail",
+"points": 35
+},
+{
+"text": "The woman probably ordered the meal through a delivery app.",
+"grammar": "過去形・副詞probably",
+"ja": "女性はおそらく配達アプリを通して食事を注文しました。",
+"type": "inference",
+"points": 35
+},
+{
+"text": "She may have ordered food because she was too busy to cook.",
+"grammar": "助動詞may・現在完了形・because節・too...to構文",
+"ja": "彼女は料理をするには忙しすぎたため、食事を注文したのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Food delivery services make it easy to get meals at home.",
+"grammar": "make it＋形容詞＋to不定詞",
+"ja": "フードデリバリーサービスによって、自宅で簡単に食事を受け取ることができます。",
+"type": "inference",
+"points": 40
+}
+]
+},
+"high_school": {
+"words": [
+{
+"text": "courier",
+"ja": "配達員",
+"type": "object",
+"points": 25
+},
+{
+"text": "customer",
+"ja": "利用客",
+"type": "object",
+"points": 15
+},
+{
+"text": "delivery platform",
+"ja": "配達プラットフォーム",
+"type": "detail",
+"points": 30
+},
+{
+"text": "smartphone",
+"ja": "スマートフォン",
+"type": "object",
+"points": 15
+},
+{
+"text": "notification",
+"ja": "通知",
+"type": "object",
+"points": 25
+},
+{
+"text": "transaction",
+"ja": "取引・決済",
+"type": "detail",
+"points": 30
+},
+{
+"text": "packaging",
+"ja": "包装・容器",
+"type": "object",
+"points": 25
+},
+{
+"text": "insulated",
+"ja": "保温された",
+"type": "attribute",
+"points": 25
+},
+{
+"text": "deliver",
+"ja": "配達する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "confirm",
+"ja": "確認する",
+"type": "gist",
+"points": 20
+},
+{
+"text": "track",
+"ja": "追跡する",
+"type": "gist",
+"points": 25
+},
+{
+"text": "convenient",
+"ja": "便利な",
+"type": "inference",
+"points": 20
+},
+{
+"text": "on-demand",
+"ja": "必要な時に利用できる",
+"type": "attribute",
+"points": 30
+},
+{
+"text": "efficient",
+"ja": "効率的な",
+"type": "inference",
+"points": 25
+},
+{
+"text": "contactless",
+"ja": "非接触の",
+"type": "attribute",
+"points": 30
+}
+],
+"chunks": [
+{
+"text": "using an on-demand delivery service",
+"ja": "オンデマンド型の配達サービスを利用している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "handing over a food order",
+"ja": "注文された食事を手渡している",
+"type": "gist",
+"points": 30
+},
+{
+"text": "confirming the order on a smartphone",
+"ja": "スマートフォンで注文を確認している",
+"type": "gist",
+"points": 35
+},
+{
+"text": "carrying an insulated delivery bag",
+"ja": "保温配達バッグを持っている",
+"type": "detail",
+"points": 30
+},
+{
+"text": "completing a digital transaction",
+"ja": "デジタル決済を完了している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "tracking the delivery in real time",
+"ja": "配達状況をリアルタイムで追跡している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "providing door-to-door service",
+"ja": "戸別配達サービスを提供している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "a convenient alternative to cooking",
+"ja": "料理をする代わりとなる便利な選択肢",
+"type": "inference",
+"points": 35
+},
+{
+"text": "relying on a mobile application",
+"ja": "モバイルアプリを利用している",
+"type": "inference",
+"points": 35
+},
+{
+"text": "generating additional packaging waste",
+"ja": "追加の包装ごみを生み出している",
+"type": "inference",
+"points": 40
+}
+],
+"sentences": [
+{
+"text": "At the entrance to her apartment, a woman is receiving a food order from a delivery courier.",
+"grammar": "現在進行形・場所を表す前置詞句",
+"ja": "アパートの玄関で、女性が配達員から注文した食事を受け取っています。",
+"type": "gist",
+"points": 35
+},
+{
+"text": "The courier is handing over the meal while the customer checks the order on her smartphone.",
+"grammar": "現在進行形・whileを用いた同時進行",
+"ja": "利用客がスマートフォンで注文内容を確認している間、配達員が食事を手渡しています。",
+"type": "gist",
+"points": 40
+},
+{
+"text": "A bicycle parked nearby suggests that the courier may have used it to make the delivery.",
+"grammar": "過去分詞による後置修飾・suggest that節・助動詞may・現在完了形",
+"ja": "近くに停められた自転車から、配達員がそれを使って配達した可能性がうかがえます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The woman may have chosen a delivery service because she did not have enough time to prepare dinner herself.",
+"grammar": "助動詞may＋現在完了形・because節・enough＋名詞＋to不定詞",
+"ja": "女性は自分で夕食を準備する十分な時間がなかったため、配達サービスを選んだのかもしれません。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Mobile delivery platforms allow customers to order meals from restaurants without leaving their homes.",
+"grammar": "allow A to do・without＋動名詞",
+"ja": "モバイル配達プラットフォームによって、利用客は自宅を出ることなくレストランの食事を注文できます。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "Although app-based delivery services are convenient, customers often have to pay additional delivery fees.",
+"grammar": "Althoughを用いた譲歩節・have to",
+"ja": "アプリ型の配達サービスは便利ですが、利用客は追加の配達料金を支払わなければならないことがよくあります。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "The scene illustrates how digital technology has changed the way people purchase and receive meals.",
+"grammar": "間接疑問を含むhow節・現在完了形・関係詞節",
+"ja": "この場面は、デジタル技術が人々の食事の購入方法や受け取り方法をどのように変えたかを示しています。",
+"type": "inference",
+"points": 40
+},
+{
+"text": "If delivery services continue to expand, society may need to consider their impact on traffic and packaging waste.",
+"grammar": "Ifを用いた条件文・助動詞may・need to",
+"ja": "配達サービスがさらに拡大すれば、社会は交通や包装ごみへの影響を考える必要が出てくるかもしれません。",
+"type": "inference",
+"points": 40
+}
+]
+}
+},
+"pins": {
+"woman": {
+"x": 33,
+"y": 52
+},
+"smartphone": {
+"x": 37,
+"y": 48
+},
+"delivery_worker": {
+"x": 62,
+"y": 49
+},
+"food_bag": {
+"x": 50,
+"y": 53
+},
+"delivery_backpack": {
+"x": 69,
+"y": 48
+},
+"front_door": {
+"x": 20,
+"y": 42
+},
+"apartment_entrance": {
+"x": 27,
+"y": 62
+},
+"bicycle": {
+"x": 81,
+"y": 68
+},
+"bicycle_basket": {
+"x": 85,
+"y": 60
+},
+"food_container": {
+"x": 50,
+"y": 50
+},
+"delivery_app_screen": {
+"x": 37,
+"y": 45
+},
+"doorbell": {
+"x": 17,
+"y": 47
+},
+"house_number": {
+"x": 21,
+"y": 30
+},
+"street": {
+"x": 75,
+"y": 86
+},
+"apartment_building": {
+"x": 47,
+"y": 20
+}
+}
+}
+]

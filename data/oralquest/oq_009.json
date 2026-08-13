@@ -1,0 +1,737 @@
+[
+  {
+    "id": "oq_009",
+    "imageSrc": "assets/images/oralquest/oq009.webp",
+    "description": "学校の休み時間に、一人の生徒がスマートフォンに夢中になって周囲に気づかず、近くの生徒たちがその様子を見て笑ったり指をさしたりしている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "It is important for students to use smartphones responsibly at school. Spending too much time looking at a screen can reduce face-to-face communication, while treating classmates with kindness helps create a safer and more positive school environment.",
+      "q1": {
+        "text": "What can help create a safer and more positive school environment?",
+        "keywords": [
+          "treating classmates",
+          "kindness",
+          "safer",
+          "positive environment"
+        ],
+        "modelAnswers": [
+          "Treating classmates with kindness can help create a safer and more positive school environment.",
+          "Students can create a better school environment by being kind to their classmates."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "How much time do you usually spend on your smartphone each day?",
+          "keywords": [
+            "smartphone",
+            "hours",
+            "day",
+            "social media",
+            "games",
+            "messages",
+            "videos",
+            "study",
+            "often",
+            "screen time"
+          ],
+          "modelAnswers": [
+            "I use my smartphone for about two or three hours a day, mainly for messages and videos.",
+            "I spend quite a lot of time on my phone because I use it for social media, games, and studying.",
+            "I try to keep my screen time under two hours when I do not need my phone for schoolwork."
+          ]
+        },
+        {
+          "text": "What should people do if they see someone being laughed at or bullied?",
+          "keywords": [
+            "help",
+            "bullying",
+            "laugh",
+            "stop",
+            "friend",
+            "teacher",
+            "support",
+            "kind",
+            "speak",
+            "ignore"
+          ],
+          "modelAnswers": [
+            "I think they should help the person and tell the others to stop.",
+            "They should support the student and talk to a teacher if the bullying continues.",
+            "People should not join in. They should be kind and make sure the person is okay."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "boy",
+            "ja": "男の子",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "student",
+            "ja": "生徒",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "friend",
+            "ja": "友達",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "phone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "school",
+            "ja": "学校",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "screen",
+            "ja": "画面",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "look",
+            "ja": "見る",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "laugh",
+            "ja": "笑う",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "point",
+            "ja": "指をさす",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "sit",
+            "ja": "座る",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "alone",
+            "ja": "一人で",
+            "type": "attribute",
+            "points": 15
+          },
+          {
+            "text": "busy",
+            "ja": "夢中な",
+            "type": "attribute",
+            "points": 15
+          },
+          {
+            "text": "sad",
+            "ja": "悲しい",
+            "type": "inference",
+            "points": 15
+          },
+          {
+            "text": "classroom",
+            "ja": "教室",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "desk",
+            "ja": "机",
+            "type": "object",
+            "points": 10
+          }
+        ],
+        "chunks": [
+          {
+            "text": "looking at his phone",
+            "ja": "スマートフォンを見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "using a smartphone",
+            "ja": "スマートフォンを使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "laughing at him",
+            "ja": "彼を笑っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "pointing at the boy",
+            "ja": "男の子を指さしている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "during the break",
+            "ja": "休み時間に",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "at school",
+            "ja": "学校で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "sitting alone",
+            "ja": "一人で座っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "two classmates",
+            "ja": "2人のクラスメート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "focused on the screen",
+            "ja": "画面に集中している",
+            "type": "inference",
+            "points": 25
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A boy is looking at his smartphone.",
+            "grammar": "現在進行形・look at",
+            "ja": "男の子がスマートフォンを見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Two students are laughing at him.",
+            "grammar": "現在進行形・laugh at",
+            "ja": "2人の生徒が彼を笑っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "One student is pointing at the boy.",
+            "grammar": "現在進行形・point at",
+            "ja": "一人の生徒が男の子を指さしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The boy is sitting alone.",
+            "grammar": "現在進行形",
+            "ja": "男の子は一人で座っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "They are at school.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らは学校にいます。",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "The boy is very focused on his phone.",
+            "grammar": "be動詞・副詞very",
+            "ja": "男の子はスマートフォンにとても集中しています。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "classmate",
+            "ja": "クラスメート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "smartphone",
+            "ja": "スマートフォン",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "screen",
+            "ja": "画面",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "break",
+            "ja": "休み時間",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "attention",
+            "ja": "注意・意識",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "focus",
+            "ja": "集中する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "ignore",
+            "ja": "無視する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "tease",
+            "ja": "からかう",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "point",
+            "ja": "指をさす",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "laugh",
+            "ja": "笑う",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "addicted",
+            "ja": "依存している",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "distracted",
+            "ja": "気を取られた",
+            "type": "attribute",
+            "points": 25
+          },
+          {
+            "text": "uncomfortable",
+            "ja": "居心地が悪い",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "bullying",
+            "ja": "いじめ",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "surroundings",
+            "ja": "周囲",
+            "type": "detail",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "staring at his smartphone",
+            "ja": "スマートフォンをじっと見ている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "completely focused on the screen",
+            "ja": "画面に完全に集中している",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "ignoring his surroundings",
+            "ja": "周囲に気づいていない",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "laughing at their classmate",
+            "ja": "クラスメートを笑っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "pointing at the student",
+            "ja": "その生徒を指さしている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "during the school break",
+            "ja": "学校の休み時間に",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "spending too much time online",
+            "ja": "オンラインに時間を使いすぎている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "making fun of him",
+            "ja": "彼をからかっている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "unaware of the other students",
+            "ja": "他の生徒に気づいていない",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A student is staring at his smartphone during the school break.",
+            "grammar": "現在進行形・場所／時間を表す前置詞",
+            "ja": "一人の生徒が学校の休み時間にスマートフォンをじっと見ています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He seems to be completely focused on the screen.",
+            "grammar": "seem to不定詞・現在進行形",
+            "ja": "彼は画面に完全に集中しているようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Two classmates are laughing and pointing at him.",
+            "grammar": "現在進行形・andによる動作の接続",
+            "ja": "2人のクラスメートが笑いながら彼を指さしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The student does not seem to notice what is happening around him.",
+            "grammar": "seem to不定詞・間接疑問を含むwhat節",
+            "ja": "その生徒は周りで起きていることに気づいていないようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The other students may be making fun of him because he uses his phone too much.",
+            "grammar": "助動詞may・現在進行形・because節・too much",
+            "ja": "他の生徒たちは、彼がスマートフォンを使いすぎているため、からかっているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Their behavior could make the student feel uncomfortable.",
+            "grammar": "助動詞could・make O C",
+            "ja": "彼らの行動は、その生徒を居心地の悪い気持ちにさせる可能性があります。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Using a smartphone too much can make it difficult to pay attention to people nearby.",
+            "grammar": "動名詞主語・助動詞can・make it＋形容詞＋to不定詞",
+            "ja": "スマートフォンを使いすぎると、近くの人に注意を向けることが難しくなることがあります。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "smartphone dependency",
+            "ja": "スマートフォン依存",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "screen time",
+            "ja": "画面を見る時間",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "peer",
+            "ja": "同年代の仲間",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "distraction",
+            "ja": "気を散らすもの",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "interaction",
+            "ja": "交流",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "isolation",
+            "ja": "孤立",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "tease",
+            "ja": "からかう",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "mock",
+            "ja": "ばかにする",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "exclude",
+            "ja": "仲間外れにする",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "concentrate",
+            "ja": "集中する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "withdrawn",
+            "ja": "周囲との関わりが少ない",
+            "type": "attribute",
+            "points": 30
+          },
+          {
+            "text": "unaware",
+            "ja": "気づいていない",
+            "type": "attribute",
+            "points": 25
+          },
+          {
+            "text": "inappropriate",
+            "ja": "不適切な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "harassment",
+            "ja": "嫌がらせ",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "well-being",
+            "ja": "心身の健全さ",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "showing signs of smartphone dependency",
+            "ja": "スマートフォン依存の兆候を示している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "absorbed in the smartphone screen",
+            "ja": "スマートフォンの画面に夢中になっている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "unaware of his surroundings",
+            "ja": "周囲の状況に気づいていない",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "mocking another student",
+            "ja": "別の生徒をばかにしている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "pointing and laughing at him",
+            "ja": "彼を指さして笑っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "socially isolated from his classmates",
+            "ja": "クラスメートから社会的に孤立している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "excessive smartphone use",
+            "ja": "過度なスマートフォン利用",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "inappropriate peer behavior",
+            "ja": "不適切な仲間の行動",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "a lack of face-to-face interaction",
+            "ja": "対面での交流の不足",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "affecting the student's well-being",
+            "ja": "生徒の心身の健全さに影響している",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "One student appears to be completely absorbed in his smartphone while his classmates interact nearby.",
+            "grammar": "appear to不定詞・whileを用いた対比",
+            "ja": "一人の生徒は、近くでクラスメートが交流している間もスマートフォンに完全に夢中になっているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "He seems so focused on the screen that he is unaware of what is happening around him.",
+            "grammar": "so...that構文・間接疑問を含むwhat節",
+            "ja": "彼は画面に集中しすぎて、周囲で何が起きているのか気づいていないようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, two classmates are pointing at him and appear to be mocking his behavior.",
+            "grammar": "現在進行形・appear to不定詞",
+            "ja": "一方、2人のクラスメートは彼を指さし、その行動をばかにしているように見えます。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Although excessive smartphone use can interfere with social interaction, making fun of someone is not an appropriate response.",
+            "grammar": "Althoughを用いた譲歩節・助動詞can・動名詞主語",
+            "ja": "過度なスマートフォン利用は人との交流を妨げることがありますが、誰かをからかうことは適切な対応ではありません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The student may be becoming socially isolated because he spends more time on his phone than interacting with his classmates.",
+            "grammar": "助動詞may・現在進行形・because節・比較表現more...than",
+            "ja": "その生徒はクラスメートと交流するよりスマートフォンに多くの時間を使っているため、社会的に孤立しつつあるのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The classmates' behavior could also be considered a form of bullying if they repeatedly mock or exclude him.",
+            "grammar": "助動詞could・受動態・Ifを用いた条件文",
+            "ja": "クラスメートが繰り返し彼をばかにしたり仲間外れにしたりする場合、その行動はいじめの一種と考えられる可能性もあります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene suggests that both excessive screen time and a lack of empathy can negatively affect relationships among students.",
+            "grammar": "suggest that節・助動詞can・both A and B",
+            "ja": "この場面は、過度なスクリーンタイムと共感の欠如の両方が、生徒同士の人間関係に悪影響を与える可能性を示しています。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "If students learned to use technology responsibly and support one another, the classroom environment could become healthier and more inclusive.",
+            "grammar": "仮定法過去・比較級",
+            "ja": "生徒がテクノロジーを責任を持って使い、お互いを支えることを学べば、学校の環境はより健全で包摂的なものになるでしょう。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "smartphone_student": {
+        "x": 41,
+        "y": 57
+      },
+      "smartphone": {
+        "x": 43,
+        "y": 52
+      },
+      "phone_screen": {
+        "x": 44,
+        "y": 51
+      },
+      "student_seat": {
+        "x": 40,
+        "y": 70
+      },
+      "laughing_student_1": {
+        "x": 68,
+        "y": 49
+      },
+      "laughing_student_2": {
+        "x": 81,
+        "y": 51
+      },
+      "pointing_hand": {
+        "x": 70,
+        "y": 52
+      },
+      "classroom_desk": {
+        "x": 42,
+        "y": 64
+      },
+      "school_bag": {
+        "x": 33,
+        "y": 72
+      },
+      "classroom_window": {
+        "x": 15,
+        "y": 31
+      },
+      "classroom_board": {
+        "x": 55,
+        "y": 22
+      },
+      "clock": {
+        "x": 86,
+        "y": 17
+      },
+      "other_students": {
+        "x": 20,
+        "y": 52
+      },
+      "classroom": {
+        "x": 50,
+        "y": 82
+      }
+    }
+  }
+]

@@ -1,0 +1,730 @@
+[
+  {
+    "id": "oq_002",
+    "imageSrc": "assets/images/oralquest/oq002.webp",
+    "description": "駅の切符売り場で、女性が券売機を使って切符を買おうとしており、近くでは男の子が時刻表を見ている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Many people use trains to travel between cities in Japan. Before getting on a train, passengers often buy tickets and check departure times or platform information. Ticket machines and station signs help travelers prepare for their journeys.",
+      "q1": {
+        "text": "What do passengers often do before getting on a train?",
+        "keywords": [
+          "buy tickets",
+          "check departure times",
+          "platform information",
+          "train"
+        ],
+        "modelAnswers": [
+          "They often buy tickets and check departure times or platform information.",
+          "Passengers usually buy their tickets and check train information before getting on a train."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "How often do you travel by train?",
+          "keywords": [
+            "train",
+            "often",
+            "sometimes",
+            "usually",
+            "weekend",
+            "school",
+            "work",
+            "travel",
+            "station",
+            "month"
+          ],
+          "modelAnswers": [
+            "I usually travel by train several times a week because I use it to go to school.",
+            "I sometimes take a train on weekends when I go shopping or visit my friends.",
+            "I do not travel by train very often because I usually go places by car."
+          ]
+        },
+        {
+          "text": "Which do you prefer, traveling by train or by car? Why?",
+          "keywords": [
+            "train",
+            "car",
+            "prefer",
+            "comfortable",
+            "convenient",
+            "fast",
+            "traffic",
+            "relax",
+            "drive",
+            "environment"
+          ],
+          "modelAnswers": [
+            "I prefer traveling by train because I can relax and do not have to worry about traffic.",
+            "I prefer traveling by car because it is convenient and I can go wherever I want.",
+            "I like trains better because they are comfortable and better for the environment."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "boy",
+            "ja": "男の子",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "train",
+            "ja": "電車",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "station",
+            "ja": "駅",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "ticket",
+            "ja": "切符",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "machine",
+            "ja": "機械",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "bag",
+            "ja": "かばん",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "suitcase",
+            "ja": "スーツケース",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "clock",
+            "ja": "時計",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "sign",
+            "ja": "案内表示",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "buy",
+            "ja": "買う",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "look",
+            "ja": "見る",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "stand",
+            "ja": "立つ",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "blue",
+            "ja": "青い",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "yellow",
+            "ja": "黄色い",
+            "type": "attribute",
+            "points": 10
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the station",
+            "ja": "駅で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "buying a ticket",
+            "ja": "切符を買っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "using a machine",
+            "ja": "機械を使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "looking at a sign",
+            "ja": "案内表示を見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "holding a suitcase",
+            "ja": "スーツケースを持っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "a train ticket",
+            "ja": "電車の切符",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "near the machine",
+            "ja": "券売機の近くに",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "on the wall",
+            "ja": "壁に",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "a big clock",
+            "ja": "大きな時計",
+            "type": "detail",
+            "points": 15
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is using a ticket machine.",
+            "grammar": "現在進行形",
+            "ja": "女性が券売機を使っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A boy is looking at the train schedule.",
+            "grammar": "現在進行形・look at",
+            "ja": "男の子が電車の時刻表を見ています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The boy has a suitcase.",
+            "grammar": "一般動詞have",
+            "ja": "男の子はスーツケースを持っています。",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "They are at a train station.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼らは駅にいます。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "There is a clock on the wall.",
+            "grammar": "There is構文",
+            "ja": "壁に時計があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The woman is going to buy a ticket.",
+            "grammar": "be going to",
+            "ja": "女性は切符を買おうとしています。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "passenger",
+            "ja": "乗客",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "station",
+            "ja": "駅",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "ticket",
+            "ja": "切符",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "machine",
+            "ja": "券売機",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "schedule",
+            "ja": "時刻表",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "suitcase",
+            "ja": "スーツケース",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "platform",
+            "ja": "ホーム",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "destination",
+            "ja": "目的地",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "purchase",
+            "ja": "購入する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "travel",
+            "ja": "旅行する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "check",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "wait",
+            "ja": "待つ",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "departure",
+            "ja": "出発",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "busy",
+            "ja": "混雑した",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "information",
+            "ja": "案内・情報",
+            "type": "detail",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "using a ticket machine",
+            "ja": "券売機を使っている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "buying a train ticket",
+            "ja": "電車の切符を買っている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "checking the train schedule",
+            "ja": "電車の時刻表を確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "holding a small suitcase",
+            "ja": "小さなスーツケースを持っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "standing near the machine",
+            "ja": "券売機の近くに立っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "at the train station",
+            "ja": "駅で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "looking for information",
+            "ja": "情報を探している",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "waiting for a train",
+            "ja": "電車を待っている",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "traveling to another city",
+            "ja": "別の街へ旅行する",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is using a machine to buy a train ticket.",
+            "grammar": "現在進行形・目的を表すto不定詞",
+            "ja": "女性は電車の切符を買うために券売機を使っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A boy is looking at the train schedule.",
+            "grammar": "現在進行形・look at",
+            "ja": "男の子が電車の時刻表を見ています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The boy is holding a suitcase in his hand.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "男の子は手にスーツケースを持っています。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "There is a large clock above the ticket machines.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "券売機の上には大きな時計があります。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "The woman is probably going to travel by train.",
+            "grammar": "be going to・副詞probably",
+            "ja": "その女性はおそらく電車で旅行するところです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "The boy may be checking what time his train leaves.",
+            "grammar": "助動詞may・間接疑問文",
+            "ja": "男の子は自分の電車が何時に出発するか確認しているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Both people seem to be preparing for a train journey.",
+            "grammar": "seem to不定詞・現在進行形",
+            "ja": "2人とも電車での移動の準備をしているようです。",
+            "type": "inference",
+            "points": 35
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "passenger",
+            "ja": "乗客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "commuter",
+            "ja": "通勤・通学客",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "ticketing",
+            "ja": "発券・切符購入",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "itinerary",
+            "ja": "旅程",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "departure",
+            "ja": "出発",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "destination",
+            "ja": "目的地",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "schedule",
+            "ja": "時刻表",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "platform",
+            "ja": "ホーム",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "luggage",
+            "ja": "荷物",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "purchase",
+            "ja": "購入する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "operate",
+            "ja": "操作する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "consult",
+            "ja": "確認・参照する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "navigate",
+            "ja": "移動する・道を見つける",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "departure board",
+            "ja": "出発案内板",
+            "type": "object",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "operating a ticket machine",
+            "ja": "券売機を操作している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "purchasing a train ticket",
+            "ja": "電車の切符を購入している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "consulting the train schedule",
+            "ja": "電車の時刻表を確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "carrying a piece of luggage",
+            "ja": "荷物を1つ持っている",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "preparing for a journey",
+            "ja": "旅の準備をしている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "checking the departure time",
+            "ja": "出発時刻を確認している",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "in the ticketing area",
+            "ja": "切符売り場で",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "traveling to another destination",
+            "ja": "別の目的地へ移動する",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "appears to be in a hurry",
+            "ja": "急いでいるように見える",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "public transportation facilities",
+            "ja": "公共交通機関の設備",
+            "type": "detail",
+            "points": 35
+          }
+        ],
+        "sentences": [
+          {
+            "text": "In the foreground, a woman is operating a ticket machine to purchase a train ticket.",
+            "grammar": "現在進行形・目的を表すto不定詞",
+            "ja": "前景では、女性が電車の切符を購入するために券売機を操作しています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "Nearby, a boy carrying a suitcase is consulting the train schedule.",
+            "grammar": "現在分詞による後置修飾・現在進行形",
+            "ja": "近くでは、スーツケースを持った男の子が電車の時刻表を確認しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The woman appears to be preparing for a journey to another city.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "女性は別の街への旅行の準備をしているように見えます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The boy may be trying to find out which train he should take.",
+            "grammar": "助動詞may・try to不定詞・間接疑問文",
+            "ja": "男の子はどの電車に乗るべきか確認しようとしているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "A large clock and several signs are displayed above the ticketing area.",
+            "grammar": "受動態・場所を表す前置詞",
+            "ja": "切符売り場の上には、大きな時計といくつかの案内表示があります。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "Since both people are checking travel information, they are probably about to take a train.",
+            "grammar": "Sinceを用いた理由節・be about to",
+            "ja": "2人とも旅行情報を確認しているので、おそらくこれから電車に乗るところです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how passengers use public transportation facilities before beginning their journeys.",
+            "grammar": "間接疑問を含むhow節・before＋動名詞",
+            "ja": "この場面は、乗客が旅を始める前に公共交通機関の設備をどのように利用するかを表しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "woman": {
+        "x": 31,
+        "y": 55
+      },
+      "ticket_machine": {
+        "x": 20,
+        "y": 51
+      },
+      "ticket_screen": {
+        "x": 18,
+        "y": 42
+      },
+      "ticket": {
+        "x": 24,
+        "y": 59
+      },
+      "boy": {
+        "x": 68,
+        "y": 54
+      },
+      "suitcase": {
+        "x": 75,
+        "y": 72
+      },
+      "train_schedule": {
+        "x": 69,
+        "y": 31
+      },
+      "clock": {
+        "x": 49,
+        "y": 16
+      },
+      "station_sign": {
+        "x": 49,
+        "y": 28
+      },
+      "platform_sign": {
+        "x": 87,
+        "y": 24
+      },
+      "ticket_area": {
+        "x": 25,
+        "y": 36
+      },
+      "information_board": {
+        "x": 65,
+        "y": 22
+      },
+      "train_symbol": {
+        "x": 89,
+        "y": 42
+      },
+      "floor": {
+        "x": 51,
+        "y": 88
+      }
+    }
+  }
+]

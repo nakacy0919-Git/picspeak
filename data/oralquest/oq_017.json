@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_017",
+    "imageSrc": "assets/images/oralquest/oq017.webp",
+    "description": "空港のチェックインカウンターで、海外旅行に出発する男性が航空会社のスタッフにパスポートを見せ、スーツケースの重さを量ってもらっている。近くでは別の旅行者がセルフチェックイン機を操作している場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Going through airport check-in is an important step before taking a flight. Passengers usually show their passports, check their luggage, and receive boarding passes. Arriving early can give travelers enough time to complete these procedures safely.",
+      "q1": {
+        "text": "What do passengers usually do during airport check-in?",
+        "keywords": [
+          "show passports",
+          "check luggage",
+          "receive boarding passes",
+          "airport check-in"
+        ],
+        "modelAnswers": [
+          "They usually show their passports, check their luggage, and receive boarding passes.",
+          "Passengers usually present their passports, leave their luggage, and get boarding passes."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "Have you ever traveled by airplane? Where did you go?",
+          "keywords": [
+            "airplane",
+            "flight",
+            "airport",
+            "travel",
+            "Japan",
+            "overseas",
+            "family",
+            "trip",
+            "country",
+            "vacation"
+          ],
+          "modelAnswers": [
+            "Yes, I have. I traveled by airplane to Hokkaido with my family.",
+            "I have taken several flights, and I once traveled overseas for a vacation.",
+            "Yes. I went to another country by plane, and the trip was very exciting."
+          ]
+        },
+        {
+          "text": "What should travelers prepare before going to an airport?",
+          "keywords": [
+            "passport",
+            "ticket",
+            "luggage",
+            "boarding pass",
+            "time",
+            "money",
+            "phone",
+            "reservation",
+            "check",
+            "prepare"
+          ],
+          "modelAnswers": [
+            "Travelers should prepare their passports, tickets, and luggage before going to the airport.",
+            "I think people should check their flight time and make sure they have their passport and other important documents.",
+            "They should prepare their luggage carefully and arrive at the airport early."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "man",
+            "ja": "男性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "traveler",
+            "ja": "旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "staff",
+            "ja": "スタッフ",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "airport",
+            "ja": "空港",
+            "type": "detail",
+            "points": 10
+          },
+          {
+            "text": "passport",
+            "ja": "パスポート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "suitcase",
+            "ja": "スーツケース",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "bag",
+            "ja": "かばん",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "counter",
+            "ja": "カウンター",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "screen",
+            "ja": "画面",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "ticket",
+            "ja": "航空券",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "show",
+            "ja": "見せる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "check",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "weigh",
+            "ja": "重さを量る",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "travel",
+            "ja": "旅行する",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "heavy",
+            "ja": "重い",
+            "type": "attribute",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the airport",
+            "ja": "空港で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "at the check-in counter",
+            "ja": "チェックインカウンターで",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "showing a passport",
+            "ja": "パスポートを見せている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "checking in",
+            "ja": "チェックインしている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "weighing a suitcase",
+            "ja": "スーツケースの重さを量っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a boarding pass",
+            "ja": "搭乗券",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "using a machine",
+            "ja": "機械を使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "carrying luggage",
+            "ja": "荷物を持っている",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "taking a flight",
+            "ja": "飛行機に乗る",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A man is showing his passport to the staff member.",
+            "grammar": "現在進行形・show A to B",
+            "ja": "男性がスタッフにパスポートを見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The staff member is checking his information.",
+            "grammar": "現在進行形",
+            "ja": "スタッフが男性の情報を確認しています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "His suitcase is on a scale.",
+            "grammar": "be動詞・場所を表す前置詞",
+            "ja": "彼のスーツケースがはかりの上にあります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "Another traveler is using a machine.",
+            "grammar": "現在進行形",
+            "ja": "別の旅行者が機械を使っています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There are several suitcases near the counter.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "カウンターの近くにいくつかのスーツケースがあります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The man is going to take a flight.",
+            "grammar": "be going to",
+            "ja": "男性は飛行機に乗る予定です。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "passenger",
+            "ja": "乗客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "airline staff",
+            "ja": "航空会社のスタッフ",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "passport",
+            "ja": "パスポート",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "boarding pass",
+            "ja": "搭乗券",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "luggage",
+            "ja": "荷物",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "scale",
+            "ja": "はかり",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "kiosk",
+            "ja": "セルフチェックイン機",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "flight",
+            "ja": "飛行便",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "destination",
+            "ja": "目的地",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "check in",
+            "ja": "チェックインする",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "weigh",
+            "ja": "重さを量る",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "confirm",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "print",
+            "ja": "印刷する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "international",
+            "ja": "国際的な・海外への",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "overweight",
+            "ja": "重量超過の",
+            "type": "inference",
+            "points": 25
+          }
+        ],
+        "chunks": [
+          {
+            "text": "checking in for a flight",
+            "ja": "飛行機のチェックインをしている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "showing his passport",
+            "ja": "パスポートを見せている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "confirming the flight information",
+            "ja": "便の情報を確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "weighing the checked luggage",
+            "ja": "預け荷物の重さを量っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "receiving a boarding pass",
+            "ja": "搭乗券を受け取っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "using a self-service kiosk",
+            "ja": "セルフサービス機を使っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "checking the luggage weight",
+            "ja": "荷物の重量を確認している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "preparing for an international flight",
+            "ja": "国際線への搭乗準備をしている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "waiting near the check-in area",
+            "ja": "チェックインエリアの近くで待っている",
+            "type": "detail",
+            "points": 25
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A passenger is checking in for a flight at the airline counter.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "乗客が航空会社のカウンターで飛行機のチェックインをしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "He is showing his passport to an airline staff member.",
+            "grammar": "現在進行形・show A to B",
+            "ja": "彼は航空会社のスタッフにパスポートを見せています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The staff member appears to be confirming his flight information.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "スタッフは彼の便の情報を確認しているようです。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "His suitcase is being weighed before it is checked in.",
+            "grammar": "現在進行形の受動態・before節",
+            "ja": "彼のスーツケースは預けられる前に重さを量られています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Another passenger is using a self-service check-in kiosk.",
+            "grammar": "現在進行形",
+            "ja": "別の乗客がセルフチェックイン機を使っています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The passenger may be traveling to another country.",
+            "grammar": "助動詞may・現在進行形",
+            "ja": "その乗客は海外へ旅行するところなのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Checking in early can give travelers more time before boarding.",
+            "grammar": "動名詞主語・助動詞can・比較級more",
+            "ja": "早めにチェックインすることで、旅行者は搭乗前により多くの時間を確保できます。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "international passenger",
+            "ja": "国際線の乗客",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "airline representative",
+            "ja": "航空会社の係員",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "check-in counter",
+            "ja": "チェックインカウンター",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "boarding pass",
+            "ja": "搭乗券",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "checked baggage",
+            "ja": "預け手荷物",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "baggage allowance",
+            "ja": "手荷物許容量",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "self-service kiosk",
+            "ja": "セルフサービス端末",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "identification",
+            "ja": "身分証明書",
+            "type": "object",
+            "points": 25
+          },
+          {
+            "text": "verify",
+            "ja": "確認・照合する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "weigh",
+            "ja": "計量する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "issue",
+            "ja": "発行する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "process",
+            "ja": "手続きを処理する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "departure",
+            "ja": "出発",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "efficient",
+            "ja": "効率的な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "security",
+            "ja": "安全・保安",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "completing the airline check-in process",
+            "ja": "航空会社のチェックイン手続きを行っている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "presenting a passport for verification",
+            "ja": "確認のためにパスポートを提示している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "confirming the passenger's reservation",
+            "ja": "乗客の予約を確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "weighing the checked baggage",
+            "ja": "預け手荷物を計量している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "checking the baggage allowance",
+            "ja": "手荷物許容量を確認している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "issuing a boarding pass",
+            "ja": "搭乗券を発行している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "using an automated check-in kiosk",
+            "ja": "自動チェックイン端末を利用している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "preparing for an international departure",
+            "ja": "国際線の出発準備をしている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "following airport security procedures",
+            "ja": "空港の保安手続きに従っている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "making the departure process more efficient",
+            "ja": "出発手続きをより効率的にしている",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the check-in counter, an international passenger is presenting his passport to an airline representative.",
+            "grammar": "現在進行形・present A to B・場所を表す前置詞句",
+            "ja": "チェックインカウンターで、国際線の乗客が航空会社の係員にパスポートを提示しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The representative appears to be verifying the passenger's identity, reservation, and flight details.",
+            "grammar": "appear to不定詞・現在進行形",
+            "ja": "係員は乗客の本人確認、予約、便の詳細を確認しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, the passenger's suitcase is being weighed to determine whether it is within the airline's baggage allowance.",
+            "grammar": "現在進行形の受動態・目的を表すto不定詞・whether節",
+            "ja": "一方、乗客のスーツケースは航空会社の手荷物許容量内かどうかを確認するために計量されています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "After the check-in procedure is completed, the staff member will likely issue a boarding pass and attach a baggage tag.",
+            "grammar": "After節・受動態・未来表現will・副詞likely",
+            "ja": "チェックイン手続きが完了すると、スタッフはおそらく搭乗券を発行し、手荷物タグを付けます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Another traveler is using a self-service kiosk, which allows passengers to complete part of the process independently.",
+            "grammar": "現在進行形・関係代名詞which・allow A to do",
+            "ja": "別の旅行者はセルフサービス端末を使っており、乗客は手続きの一部を自分で行うことができます。",
+            "type": "detail",
+            "points": 40
+          },
+          {
+            "text": "Arriving at the airport early can reduce stress and provide enough time for check-in, security screening, and boarding.",
+            "grammar": "動名詞主語・助動詞can・provide A for B",
+            "ja": "空港に早めに到着することで、ストレスを減らし、チェックイン、保安検査、搭乗に十分な時間を確保できます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Automated services can make airport procedures more efficient, although airline staff are still important when passengers need assistance.",
+            "grammar": "助動詞can・make O C・although節・when節",
+            "ja": "自動化されたサービスは空港での手続きをより効率的にできますが、乗客が助けを必要とするときには航空会社のスタッフも依然として重要です。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how both technology and human assistance help travelers prepare safely and efficiently for their flights.",
+            "grammar": "間接疑問を含むhow節・both A and B・help O do",
+            "ja": "この場面は、テクノロジーと人による支援の両方が、旅行者の安全で効率的な搭乗準備をどのように助けているかを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "international_traveler": {
+        "x": 34,
+        "y": 54
+      },
+      "traveler_passport": {
+        "x": 42,
+        "y": 51
+      },
+      "airline_staff": {
+        "x": 56,
+        "y": 44
+      },
+      "check_in_counter": {
+        "x": 47,
+        "y": 64
+      },
+      "computer_screen": {
+        "x": 57,
+        "y": 51
+      },
+      "traveler_suitcase": {
+        "x": 39,
+        "y": 67
+      },
+      "baggage_scale": {
+        "x": 45,
+        "y": 61
+      },
+      "boarding_pass": {
+        "x": 50,
+        "y": 54
+      },
+      "second_traveler": {
+        "x": 77,
+        "y": 54
+      },
+      "self_service_kiosk": {
+        "x": 82,
+        "y": 49
+      },
+      "second_suitcase": {
+        "x": 78,
+        "y": 70
+      },
+      "check_in_sign": {
+        "x": 49,
+        "y": 19
+      },
+      "flight_information_board": {
+        "x": 74,
+        "y": 23
+      },
+      "airport_departure_area": {
+        "x": 20,
+        "y": 33
+      },
+      "airport_floor": {
+        "x": 50,
+        "y": 86
+      }
+    }
+  }
+]
