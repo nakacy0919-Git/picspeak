@@ -924,7 +924,8 @@ window.openPractice = function(text, ja) {
     modal.classList.remove('hidden');
 };
 
-// ==========================================
+
+    // ==========================================
 // ★ イベントデリゲーション (完全版)
 // ==========================================
 document.addEventListener('click', (e) => {
@@ -933,29 +934,53 @@ document.addEventListener('click', (e) => {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // 🎮 ★★★ 追加したモードボタンの処理 ★★★
+    // 🎮 ★★★ モードボタンの処理（ワンクリックで即時遷移！） ★★★
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
-        // 1. まず全てのボタンから「選択中の強調」を外し、「未選択状態（半透明）」にする
-        // 【重要】ここで bg-white を追加しないことで、パステルカラーを維持します！
-        document.querySelectorAll('.mode-btn').forEach(b => {
-            b.classList.remove('ring-4', 'ring-pink-400', 'ring-white', 'scale-105', 'shadow-xl', 'opacity-100', 'bg-white');
-            b.classList.add('opacity-50', 'scale-100'); // 50%の透明度で色はしっかり残す
-        });
+        const selectedMode = modeBtn.getAttribute('data-mode');
         
-        // 2. クリックされたボタンだけを100%の色にし、少し大きくしてリングで強調する
-        modeBtn.classList.remove('opacity-50', 'scale-100');
-        modeBtn.classList.add('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100');
+        // data-modeがない場合（PIC FLASHなど、直接リンクで飛ぶボタン）はJSでの遷移をスキップ
+        if (!selectedMode) return; 
         
-        // 3. 選択されたモードをアプリに記憶させる
-        window.appState.selectedMode = modeBtn.getAttribute('data-mode');
+        // 選択されたモードをアプリに記憶させる
+        window.appState.selectedMode = selectedMode;
         
-        // 4. SELECT IMAGE ボタンを光らせて押せるようにする
-        const btnSelect = document.getElementById('btn-goto-select');
-        if (btnSelect) {
-            btnSelect.classList.remove('opacity-40', 'pointer-events-none');
-            btnSelect.classList.add('animate-pulse-slow');
+        // STORYモードの場合は別ページへ
+        if (selectedMode === 'story') {
+            window.location.href = 'story.html';
+            return;
         }
+        
+        // ーーー 以下、画像選択画面（view-select）への即時遷移処理 ーーー
+        
+        // フルスクリーン化（ブラウザ制限で弾かれる場合があるためtry-catch）
+        try {
+            const elem = document.documentElement;
+            if (!document.fullscreenElement) {
+                if (elem.requestFullscreen) elem.requestFullscreen().catch(err=>err);
+                else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
+            }
+        } catch (err) {}
+        
+        // オーディオコンテキストの起動（音声再生エラーを防ぐため）
+        if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
+        if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
+        
+        // レベルをデフォルト(小学生)にリセット
+        const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
+        if (elementaryBtn) {
+            document.querySelectorAll('.level-btn').forEach(b => { 
+                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+            });
+            elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            window.appState.selectedLevel = 'elementary';
+        }
+        
+        // 即座に画像選択画面へ遷移してリストを描画
+        if (typeof showView === 'function') showView(document.getElementById('view-select')); 
+        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
@@ -988,41 +1013,6 @@ document.addEventListener('click', (e) => {
                 if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
             }
         }
-        return;
-    }
-
-    // 🎯 SELECT IMAGE ボタン
-    const btnGotoSelect = e.target.closest('#btn-goto-select');
-    if (btnGotoSelect && !btnGotoSelect.disabled) {
-        if(!window.appState.selectedMode) return; 
-        
-        if (window.appState.selectedMode === 'story') {
-            window.location.href = 'story.html';
-            return;
-        }
-        try {
-            const elem = document.documentElement;
-            if (!document.fullscreenElement) {
-                if (elem.requestFullscreen) elem.requestFullscreen().catch(err=>err);
-                else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
-            }
-        } catch (err) {}
-        if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
-        
-        const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
-        if (elementaryBtn) {
-            document.querySelectorAll('.level-btn').forEach(b => { 
-                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
-                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
-            });
-            elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
-            elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            window.appState.selectedLevel = 'elementary';
-        }
-        
-        if (typeof showView === 'function') showView(document.getElementById('view-select')); 
-        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 

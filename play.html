@@ -290,11 +290,7 @@
                             </button>
                         </div>
                       </div>
-                    <div class="relative flex justify-center mb-2">
-                        <button id="btn-goto-select" class="w-[85%] md:w-[60%] lg:w-[50%] bg-sns-gradient text-white font-black text-xl md:text-2xl py-3 md:py-4 rounded-full transition-all tracking-widest uppercase shadow-xl opacity-40 pointer-events-none duration-500">
-                            SELECT IMAGE
-                        </button>
-                    </div>
+                    
                 </div>
             </div>
         </div>
@@ -421,8 +417,20 @@
             <!-- ヘッダー＆ステージ進行インジケーター -->
             <div class="bg-white/90 backdrop-blur-md px-4 py-3 shadow-sm shrink-0 border-b border-gray-200 sticky top-0 z-20">
                 <div class="max-w-5xl mx-auto w-full">
+                    <!-- ★ここを上書き：戻るボタンとタイトルを横並びに配置 -->
                     <div class="flex items-center justify-between mb-4">
-                        <div class="clean-title text-xl md:text-2xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 leading-none">ORAL QUEST</div>
+                        <div class="flex items-center gap-2 md:gap-3">
+                            <!-- 戻るボタン -->
+                            <button onclick="if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech(); window.isRecording = false; if(window.OralQuestGame && window.OralQuestGame.timerInterval) clearInterval(window.OralQuestGame.timerInterval); document.getElementById('view-oralquest').classList.add('hidden'); document.getElementById('view-select').classList.remove('hidden');" class="w-8 h-8 md:w-10 md:h-10 bg-gray-50 hover:bg-gray-200 text-gray-500 rounded-full flex items-center justify-center transition-colors shadow-sm border border-gray-200" title="画像選択に戻る">
+                                <svg class="w-4 h-4 md:w-5 md:h-5 pr-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M15 19l-7-7 7-7"></path></svg>
+                            </button>
+                            <!-- ホームボタン -->
+                            <button onclick="if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech(); window.isRecording = false; if(window.OralQuestGame && window.OralQuestGame.timerInterval) clearInterval(window.OralQuestGame.timerInterval); document.getElementById('view-oralquest').classList.add('hidden'); document.getElementById('view-start').classList.remove('hidden');" class="w-8 h-8 md:w-10 md:h-10 bg-gray-50 hover:bg-gray-200 text-gray-500 rounded-full flex items-center justify-center transition-colors shadow-sm border border-gray-200 text-sm md:text-base" title="ホームに戻る">
+                                🏠
+                            </button>
+                            
+                            <div class="clean-title text-xl md:text-2xl tracking-tighter text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-orange-500 leading-none ml-1 md:ml-2">ORAL QUEST</div>
+                        </div>
                         <div class="text-xs md:text-sm font-black text-gray-400 bg-gray-100 px-3 py-1 rounded-full">Level 3</div>
                     </div>
                     
