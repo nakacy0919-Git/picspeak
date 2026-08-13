@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_018",
+    "imageSrc": "assets/images/oralquest/oq018.webp",
+    "description": "街中のコインランドリーで、女性が洗濯機に衣類を入れており、近くでは男性が乾燥を終えた服をたたんでいる。別の利用者が洗濯機の表示を確認しながら待っている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Using a coin laundry can be useful for people who do not have a washing machine at home. Customers can wash and dry large amounts of clothing, and some machines can finish the work in a short time.",
+      "q1": {
+        "text": "Why can a coin laundry be useful for some people?",
+        "keywords": [
+          "no washing machine",
+          "wash clothing",
+          "dry clothing",
+          "short time"
+        ],
+        "modelAnswers": [
+          "It can be useful because people can wash and dry their clothes even if they do not have a washing machine at home.",
+          "People can wash and dry large amounts of clothing in a relatively short time."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "How often do you do laundry at home, and who usually does it?",
+          "keywords": [
+            "laundry",
+            "wash",
+            "clothes",
+            "home",
+            "family",
+            "week",
+            "usually",
+            "machine",
+            "help",
+            "weekend"
+          ],
+          "modelAnswers": [
+            "I usually do laundry two or three times a week at home.",
+            "My family usually does the laundry, but I sometimes help on weekends.",
+            "I wash my own clothes several times a week because I want to help my family."
+          ]
+        },
+        {
+          "text": "When do you think using a coin laundry is especially useful?",
+          "keywords": [
+            "coin laundry",
+            "rainy",
+            "travel",
+            "large",
+            "blanket",
+            "dryer",
+            "washing machine",
+            "quick",
+            "convenient",
+            "clothes"
+          ],
+          "modelAnswers": [
+            "I think it is useful on rainy days because people can use large dryers.",
+            "A coin laundry is useful when people need to wash blankets or many clothes at one time.",
+            "It can also be convenient for travelers or people who do not have a washing machine at home."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "man",
+            "ja": "男性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "clothes",
+            "ja": "衣類",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "shirt",
+            "ja": "シャツ",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "basket",
+            "ja": "洗濯かご",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "machine",
+            "ja": "機械",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "washer",
+            "ja": "洗濯機",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "dryer",
+            "ja": "乾燥機",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "laundry",
+            "ja": "洗濯",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "wash",
+            "ja": "洗う",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "dry",
+            "ja": "乾かす",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "fold",
+            "ja": "たたむ",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "wait",
+            "ja": "待つ",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "clean",
+            "ja": "きれいな",
+            "type": "attribute",
+            "points": 10
+          },
+          {
+            "text": "coin",
+            "ja": "硬貨",
+            "type": "object",
+            "points": 10
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at the coin laundry",
+            "ja": "コインランドリーで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "putting clothes into the washer",
+            "ja": "洗濯機に衣類を入れている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "washing some clothes",
+            "ja": "衣類を洗っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "folding clean clothes",
+            "ja": "きれいな衣類をたたんでいる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "using a dryer",
+            "ja": "乾燥機を使っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a laundry basket",
+            "ja": "洗濯かご",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "waiting for the laundry",
+            "ja": "洗濯が終わるのを待っている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "looking at the machine",
+            "ja": "機械を見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "many washing machines",
+            "ja": "たくさんの洗濯機",
+            "type": "detail",
+            "points": 15
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is putting clothes into a washing machine.",
+            "grammar": "現在進行形・put A into B",
+            "ja": "女性が洗濯機に衣類を入れています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A man is folding some clothes.",
+            "grammar": "現在進行形",
+            "ja": "男性が衣類をたたんでいます。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Another customer is looking at a machine.",
+            "grammar": "現在進行形・look at",
+            "ja": "別の利用者が機械を見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There are several washing machines in the room.",
+            "grammar": "There are構文・場所を表す前置詞",
+            "ja": "室内にはいくつかの洗濯機があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "There is a basket on the table.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "テーブルの上に洗濯かごがあります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The clothes may be clean and dry.",
+            "grammar": "助動詞may・be動詞",
+            "ja": "その衣類はきれいで乾いているのかもしれません。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "customer",
+            "ja": "利用者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "washing machine",
+            "ja": "洗濯機",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "dryer",
+            "ja": "乾燥機",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "laundry basket",
+            "ja": "洗濯かご",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "detergent",
+            "ja": "洗剤",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "clothing",
+            "ja": "衣類",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "timer",
+            "ja": "タイマー",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "cycle",
+            "ja": "運転コース",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "load",
+            "ja": "入れる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "fold",
+            "ja": "たたむ",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "select",
+            "ja": "選ぶ",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "operate",
+            "ja": "操作する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "available",
+            "ja": "利用可能な",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "automatic",
+            "ja": "自動の",
+            "type": "attribute",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "loading clothes into a washing machine",
+            "ja": "洗濯機に衣類を入れている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "folding clothes on a table",
+            "ja": "テーブルで衣類をたたんでいる",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "checking the remaining time",
+            "ja": "残り時間を確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "using a coin-operated machine",
+            "ja": "コイン式の機械を使っている",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "choosing a washing cycle",
+            "ja": "洗濯コースを選んでいる",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "waiting for the washing to finish",
+            "ja": "洗濯が終わるのを待っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "a row of large dryers",
+            "ja": "一列に並んだ大型乾燥機",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "a convenient laundry service",
+            "ja": "便利な洗濯サービス",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "washing a large amount of clothing",
+            "ja": "大量の衣類を洗っている",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is loading her clothes into a large washing machine.",
+            "grammar": "現在進行形・load A into B",
+            "ja": "女性が大型の洗濯機に衣類を入れています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A man is folding clothes that have already been dried.",
+            "grammar": "現在進行形・関係代名詞that・現在完了受動態",
+            "ja": "男性がすでに乾燥された衣類をたたんでいます。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Another customer is checking how much time is left on the machine.",
+            "grammar": "現在進行形・間接疑問文how much",
+            "ja": "別の利用者が機械の残り時間を確認しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "There are several washers and dryers lined up along the wall.",
+            "grammar": "There are構文・過去分詞による後置修飾",
+            "ja": "壁に沿っていくつかの洗濯機と乾燥機が並んでいます。",
+            "type": "detail",
+            "points": 35
+          },
+          {
+            "text": "The woman may be using the coin laundry because she has a lot of clothes to wash.",
+            "grammar": "助動詞may・現在進行形・because節",
+            "ja": "女性は洗う衣類がたくさんあるため、コインランドリーを利用しているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Large dryers can be especially useful when the weather is rainy.",
+            "grammar": "助動詞can・when節",
+            "ja": "大型乾燥機は雨の日には特に役立ちます。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Coin laundries allow people to wash and dry their clothes without owning large machines at home.",
+            "grammar": "allow A to do・without＋動名詞",
+            "ja": "コインランドリーでは、自宅に大型の機械を持っていなくても衣類を洗濯・乾燥できます。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "laundromat",
+            "ja": "コインランドリー",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "customer",
+            "ja": "利用者",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "commercial washer",
+            "ja": "業務用洗濯機",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "tumble dryer",
+            "ja": "回転式乾燥機",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "detergent",
+            "ja": "洗剤",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "laundry cycle",
+            "ja": "洗濯コース",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "capacity",
+            "ja": "容量",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "timer",
+            "ja": "タイマー",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "operate",
+            "ja": "操作する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "load",
+            "ja": "投入する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "transfer",
+            "ja": "移し替える",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "efficient",
+            "ja": "効率的な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "convenient",
+            "ja": "便利な",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "self-service",
+            "ja": "セルフサービスの",
+            "type": "attribute",
+            "points": 30
+          },
+          {
+            "text": "household",
+            "ja": "家庭の",
+            "type": "attribute",
+            "points": 25
+          }
+        ],
+        "chunks": [
+          {
+            "text": "using a self-service laundromat",
+            "ja": "セルフサービスのコインランドリーを利用している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "loading clothing into a commercial washer",
+            "ja": "業務用洗濯機に衣類を入れている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "folding freshly dried laundry",
+            "ja": "乾燥したばかりの衣類をたたんでいる",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "monitoring the remaining cycle time",
+            "ja": "洗濯コースの残り時間を確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "handling a large volume of laundry",
+            "ja": "大量の洗濯物を処理している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "taking advantage of high-capacity machines",
+            "ja": "大容量の機械を活用している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "providing a convenient household service",
+            "ja": "便利な生活サービスを提供している",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "reducing the time needed for laundry",
+            "ja": "洗濯に必要な時間を短縮している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "using equipment unavailable at home",
+            "ja": "自宅にはない設備を利用している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "completing several loads efficiently",
+            "ja": "複数回分の洗濯を効率よく行っている",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the laundromat, a customer is loading a large amount of clothing into a commercial washing machine.",
+            "grammar": "現在進行形・load A into B・場所を表す前置詞句",
+            "ja": "コインランドリーで、利用者が大量の衣類を業務用洗濯機に入れています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Nearby, a man is folding clothes that appear to have just been removed from a tumble dryer.",
+            "grammar": "現在進行形・関係代名詞that・appear to＋完了形",
+            "ja": "近くでは、男性が乾燥機から取り出されたばかりと思われる衣類をたたんでいます。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Another customer is monitoring the machine display to see how much time remains in the washing cycle.",
+            "grammar": "現在進行形・目的を表すto不定詞・間接疑問文how much",
+            "ja": "別の利用者は洗濯コースの残り時間を確認するため、機械の表示を見ています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The high-capacity machines allow customers to wash items that may be difficult to handle with ordinary household equipment.",
+            "grammar": "allow A to do・関係代名詞that・助動詞may",
+            "ja": "大容量の機械によって、通常の家庭用設備では扱いにくい衣類などを洗うことができます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "People may choose a laundromat when they need to wash blankets, large amounts of clothing, or several loads at the same time.",
+            "grammar": "助動詞may・when節・need to",
+            "ja": "毛布や大量の衣類、複数回分の洗濯物を同時に洗う必要があるとき、人々はコインランドリーを利用することがあります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Using powerful dryers can also be helpful during rainy periods when it is difficult to dry clothes outdoors.",
+            "grammar": "動名詞主語・助動詞can・when節・形式主語it",
+            "ja": "屋外で衣類を乾かしにくい雨の時期には、強力な乾燥機を利用することも役立ちます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Because several machines can operate at the same time, customers may be able to complete their laundry more efficiently than at home.",
+            "grammar": "because節・助動詞can・may be able to・比較級more...than",
+            "ja": "複数の機械を同時に使用できるため、利用者は自宅よりも効率よく洗濯を終えられる場合があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how self-service facilities can provide practical support for people's everyday household needs.",
+            "grammar": "間接疑問を含むhow節・助動詞can・provide A for B",
+            "ja": "この場面は、セルフサービス施設が人々の日常生活のニーズをどのように実用的に支えているかを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "female_customer": {
+        "x": 31,
+        "y": 54
+      },
+      "clothes_in_hand": {
+        "x": 38,
+        "y": 55
+      },
+      "washing_machine": {
+        "x": 43,
+        "y": 58
+      },
+      "washer_door": {
+        "x": 44,
+        "y": 60
+      },
+      "laundry_basket": {
+        "x": 27,
+        "y": 68
+      },
+      "male_customer": {
+        "x": 64,
+        "y": 54
+      },
+      "folded_clothes": {
+        "x": 62,
+        "y": 60
+      },
+      "folding_table": {
+        "x": 62,
+        "y": 67
+      },
+      "waiting_customer": {
+        "x": 82,
+        "y": 53
+      },
+      "machine_display": {
+        "x": 77,
+        "y": 47
+      },
+      "dryer_row": {
+        "x": 76,
+        "y": 34
+      },
+      "washer_row": {
+        "x": 27,
+        "y": 35
+      },
+      "laundry_sign": {
+        "x": 50,
+        "y": 18
+      },
+      "detergent_machine": {
+        "x": 15,
+        "y": 48
+      },
+      "laundromat_floor": {
+        "x": 50,
+        "y": 87
+      }
+    }
+  }
+]

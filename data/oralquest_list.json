@@ -83,5 +83,20 @@
     "id": "oq_017",
     "imageSrc": "assets/images/oralquest/oq017.webp",
     "description": "Level 3: Airport Check-In"
+  },
+  {
+    "id": "oq_018",
+    "imageSrc": "assets/images/oralquest/oq018.webp",
+    "description": "Level 3: Coin Laundry"
+  },
+  {
+    "id": "oq_019",
+    "imageSrc": "assets/images/oralquest/oq019.webp",
+    "description": "Level 3: Police Box"
+  },
+  {
+    "id": "oq_020",
+    "imageSrc": "assets/images/oralquest/oq020.webp",
+    "description": "Level 3: Food Allergies at a Restaurant"
   }
 ]

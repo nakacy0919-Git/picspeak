@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_020",
+    "imageSrc": "assets/images/oralquest/oq020.webp",
+    "description": "レストランで、女性客が食物アレルギーについて店員に伝え、店員がメニューを指しながら安全に食べられる料理を説明している。近くでは別の客が料理を食べ、厨房ではスタッフが食事を準備している場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "It is a good idea to tell restaurant staff about food allergies before ordering a meal. Staff can explain which dishes are safe, check ingredients, and suggest other choices so customers can enjoy their food with less worry.",
+      "q1": {
+        "text": "How can restaurant staff help customers with food allergies?",
+        "keywords": [
+          "explain safe dishes",
+          "check ingredients",
+          "suggest choices",
+          "food allergies"
+        ],
+        "modelAnswers": [
+          "They can explain which dishes are safe, check ingredients, and suggest other choices.",
+          "Restaurant staff can check the ingredients and help customers choose food that is safe for them."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "What do you usually check when you choose food at a restaurant?",
+          "keywords": [
+            "menu",
+            "price",
+            "ingredients",
+            "photo",
+            "healthy",
+            "favorite",
+            "recommendation",
+            "portion",
+            "spicy",
+            "choose"
+          ],
+          "modelAnswers": [
+            "I usually check the menu, prices, and photos before choosing my food.",
+            "I often look at the ingredients because I want to know what is in the dish.",
+            "I usually choose something that looks delicious and is not too expensive."
+          ]
+        },
+        {
+          "text": "Do you think restaurants should clearly show information about food allergies? Why?",
+          "keywords": [
+            "allergy",
+            "restaurant",
+            "information",
+            "safe",
+            "ingredient",
+            "menu",
+            "customer",
+            "important",
+            "health",
+            "clear"
+          ],
+          "modelAnswers": [
+            "Yes, because clear allergy information can help customers choose food safely.",
+            "I think restaurants should show the ingredients because some food allergies can be serious.",
+            "Yes. It makes customers feel safer and helps them avoid food that may cause health problems."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "waiter",
+            "ja": "店員",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "food",
+            "ja": "食べ物",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "dish",
+            "ja": "料理",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "table",
+            "ja": "テーブル",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "restaurant",
+            "ja": "レストラン",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "kitchen",
+            "ja": "厨房",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "talk",
+            "ja": "話す",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "point",
+            "ja": "指さす",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "eat",
+            "ja": "食べる",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "cook",
+            "ja": "料理する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "safe",
+            "ja": "安全な",
+            "type": "inference",
+            "points": 15
+          },
+          {
+            "text": "allergy",
+            "ja": "アレルギー",
+            "type": "detail",
+            "points": 20
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at a restaurant",
+            "ja": "レストランで",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "looking at the menu",
+            "ja": "メニューを見ている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "talking to a waiter",
+            "ja": "店員と話している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "pointing at the menu",
+            "ja": "メニューを指さしている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "choosing some food",
+            "ja": "食べ物を選んでいる",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "eating a meal",
+            "ja": "食事をしている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "cooking in the kitchen",
+            "ja": "厨房で料理している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a food allergy",
+            "ja": "食物アレルギー",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "safe food",
+            "ja": "安全に食べられる料理",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is talking to a waiter.",
+            "grammar": "現在進行形・talk to",
+            "ja": "女性が店員と話しています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The waiter is pointing at the menu.",
+            "grammar": "現在進行形・point at",
+            "ja": "店員がメニューを指さしています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The woman is looking at the menu.",
+            "grammar": "現在進行形・look at",
+            "ja": "女性がメニューを見ています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "Another customer is eating a meal.",
+            "grammar": "現在進行形",
+            "ja": "別の客が食事をしています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There is a cook in the kitchen.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "厨房に料理人がいます。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The woman may have a food allergy.",
+            "grammar": "助動詞may・一般動詞have",
+            "ja": "女性には食物アレルギーがあるのかもしれません。",
+            "type": "inference",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "server",
+            "ja": "接客スタッフ",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "ingredient",
+            "ja": "材料・原材料",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "allergy",
+            "ja": "アレルギー",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "dish",
+            "ja": "料理",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "chef",
+            "ja": "料理人",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "order",
+            "ja": "注文",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "explain",
+            "ja": "説明する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "recommend",
+            "ja": "勧める",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "check",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "avoid",
+            "ja": "避ける",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "suitable",
+            "ja": "適した",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "careful",
+            "ja": "注意深い",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "allergic",
+            "ja": "アレルギーのある",
+            "type": "attribute",
+            "points": 25
+          }
+        ],
+        "chunks": [
+          {
+            "text": "explaining a food allergy",
+            "ja": "食物アレルギーについて説明している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "asking about the ingredients",
+            "ja": "原材料について尋ねている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "checking the menu carefully",
+            "ja": "メニューを注意深く確認している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "recommending a safe dish",
+            "ja": "安全な料理を勧めている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "pointing to an allergy symbol",
+            "ja": "アレルギー表示を指さしている",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "avoiding certain ingredients",
+            "ja": "特定の原材料を避けている",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "preparing food in the kitchen",
+            "ja": "厨房で料理を準備している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "eating at another table",
+            "ja": "別のテーブルで食事をしている",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "choosing a suitable meal",
+            "ja": "適切な食事を選んでいる",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A customer is explaining her food allergy to a restaurant server.",
+            "grammar": "現在進行形・explain A to B",
+            "ja": "客がレストランの店員に自分の食物アレルギーについて説明しています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "The server is showing her which dishes may be safe for her.",
+            "grammar": "現在進行形・間接疑問文which・助動詞may",
+            "ja": "店員は彼女にどの料理なら安全かもしれないかを示しています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "He appears to be checking the ingredients listed on the menu.",
+            "grammar": "appear to不定詞・現在進行形・過去分詞による後置修飾",
+            "ja": "店員はメニューに記載された原材料を確認しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Another customer is eating a meal at a nearby table.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "別の客が近くのテーブルで食事をしています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "A chef is preparing food in the kitchen behind the counter.",
+            "grammar": "現在進行形・場所を表す前置詞句",
+            "ja": "料理人がカウンターの奥の厨房で料理を準備しています。",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "The woman may need to avoid some ingredients because of her allergy.",
+            "grammar": "助動詞may・need to・because of",
+            "ja": "女性はアレルギーのため、いくつかの原材料を避ける必要があるのかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Clear information can help customers choose meals more safely.",
+            "grammar": "助動詞can・help O do・比較級more",
+            "ja": "分かりやすい情報は、客がより安全に食事を選ぶ助けになります。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "food allergy",
+            "ja": "食物アレルギー",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "allergen",
+            "ja": "アレルゲン",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "ingredient",
+            "ja": "原材料",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "restaurant staff",
+            "ja": "レストランスタッフ",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "customer",
+            "ja": "客",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "chef",
+            "ja": "料理人",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "menu",
+            "ja": "メニュー",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "dietary requirement",
+            "ja": "食事上の制限・要件",
+            "type": "detail",
+            "points": 30
+          },
+          {
+            "text": "confirm",
+            "ja": "確認する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "recommend",
+            "ja": "推奨する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "substitute",
+            "ja": "代用する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "avoid",
+            "ja": "避ける",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "appropriate",
+            "ja": "適切な",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "potential",
+            "ja": "潜在的な・起こり得る",
+            "type": "attribute",
+            "points": 25
+          },
+          {
+            "text": "cross-contamination",
+            "ja": "交差汚染",
+            "type": "inference",
+            "points": 35
+          }
+        ],
+        "chunks": [
+          {
+            "text": "informing the server about a food allergy",
+            "ja": "食物アレルギーについて店員に伝えている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "checking the ingredients of a dish",
+            "ja": "料理の原材料を確認している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "identifying potential allergens",
+            "ja": "潜在的なアレルゲンを確認している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "recommending an appropriate alternative",
+            "ja": "適切な代替料理を勧めている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "meeting a customer's dietary requirements",
+            "ja": "客の食事上の要件に対応している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "avoiding ingredients that may cause a reaction",
+            "ja": "アレルギー反応を起こす可能性のある原材料を避けている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "communicating the request to the kitchen",
+            "ja": "要望を厨房に伝えている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "reducing the risk of an allergic reaction",
+            "ja": "アレルギー反応の危険を減らしている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "providing clear allergen information",
+            "ja": "明確なアレルゲン情報を提供している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "creating a safer dining experience",
+            "ja": "より安全な食事体験を作っている",
+            "type": "inference",
+            "points": 40
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At the restaurant, a customer is informing a server that she has a food allergy before placing her order.",
+            "grammar": "現在進行形・inform A that節・before＋動名詞",
+            "ja": "レストランで、客が注文する前に食物アレルギーがあることを店員に伝えています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The server appears to be checking the menu to identify which dishes do not contain the ingredient she needs to avoid.",
+            "grammar": "appear to不定詞・目的を表すto不定詞・間接疑問文which・関係代名詞省略",
+            "ja": "店員は、彼女が避ける必要のある原材料を含まない料理を確認するためにメニューを見ているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "He may be recommending another dish or suggesting that an ingredient be removed from the original meal.",
+            "grammar": "助動詞may・現在進行形・suggest that＋仮定法現在・受動態",
+            "ja": "店員は別の料理を勧めたり、元の料理から原材料を取り除くよう提案したりしているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, a chef in the kitchen is preparing food while another customer is enjoying a meal at a nearby table.",
+            "grammar": "現在進行形・while節",
+            "ja": "一方、厨房では料理人が食事を準備しており、近くのテーブルでは別の客が食事を楽しんでいます。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Restaurant staff need to communicate carefully with the kitchen so that potentially dangerous ingredients are not included by mistake.",
+            "grammar": "need to・so that構文・受動態",
+            "ja": "危険な可能性のある原材料が誤って含まれないよう、レストランスタッフは厨房と注意深く情報共有する必要があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "In some cases, staff must also consider the risk of cross-contamination when food is prepared using shared equipment.",
+            "grammar": "must・when節・受動態・現在分詞",
+            "ja": "場合によっては、共通の調理器具を使って料理を準備する際の交差汚染の危険についても考える必要があります。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Clearly displaying allergen information can allow customers to make safer and more informed choices before ordering.",
+            "grammar": "動名詞主語・allow A to do・比較級・before＋動名詞",
+            "ja": "アレルゲン情報を分かりやすく表示することで、客は注文前により安全で十分な情報に基づいた選択ができます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how good communication between customers and restaurant staff can create a safer and more comfortable dining experience.",
+            "grammar": "間接疑問を含むhow節・助動詞can・比較級",
+            "ja": "この場面は、客とレストランスタッフの良いコミュニケーションが、より安全で快適な食事体験につながることを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "female_customer": {
+        "x": 33,
+        "y": 54
+      },
+      "customer_face": {
+        "x": 33,
+        "y": 39
+      },
+      "menu": {
+        "x": 42,
+        "y": 55
+      },
+      "allergy_information": {
+        "x": 43,
+        "y": 49
+      },
+      "restaurant_server": {
+        "x": 55,
+        "y": 45
+      },
+      "server_pointing_hand": {
+        "x": 49,
+        "y": 53
+      },
+      "customer_table": {
+        "x": 40,
+        "y": 66
+      },
+      "second_customer": {
+        "x": 76,
+        "y": 54
+      },
+      "second_customer_meal": {
+        "x": 74,
+        "y": 62
+      },
+      "second_table": {
+        "x": 76,
+        "y": 67
+      },
+      "chef": {
+        "x": 84,
+        "y": 41
+      },
+      "kitchen": {
+        "x": 84,
+        "y": 30
+      },
+      "allergen_notice": {
+        "x": 20,
+        "y": 30
+      },
+      "restaurant_sign": {
+        "x": 50,
+        "y": 18
+      },
+      "restaurant_floor": {
+        "x": 50,
+        "y": 87
+      }
+    }
+  }
+]

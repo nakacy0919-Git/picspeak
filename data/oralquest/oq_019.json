@@ -1,0 +1,741 @@
+[
+  {
+    "id": "oq_019",
+    "imageSrc": "assets/images/oralquest/oq019.webp",
+    "description": "街中の交番で、旅行者の女性が紛失した財布について警察官に相談しており、警察官が内容をメモしている。近くでは別の旅行者が地図を見せながら道を尋ねている場面。",
+    "timeLimit": 30,
+    "stage1": {
+      "passage": "Going to a police box can be helpful when people lose something or need directions. Police officers can listen to problems, record information, and help visitors find lost property or the correct way to their destination.",
+      "q1": {
+        "text": "How can police officers help people at a police box?",
+        "keywords": [
+          "listen to problems",
+          "record information",
+          "find lost property",
+          "give directions"
+        ],
+        "modelAnswers": [
+          "They can listen to problems, record information, and help people find lost property or directions.",
+          "Police officers can help people who lose something or need help finding their destination."
+        ]
+      }
+    },
+    "stage3": {
+      "questions": [
+        {
+          "text": "Have you ever lost something important? What did you do?",
+          "keywords": [
+            "lost",
+            "wallet",
+            "phone",
+            "bag",
+            "look for",
+            "police",
+            "station",
+            "ask",
+            "find",
+            "important"
+          ],
+          "modelAnswers": [
+            "Yes, I once lost my wallet, so I went back to the places I had visited and looked for it.",
+            "I lost my phone once. I asked the staff at the station for help, and they found it.",
+            "I have not lost anything very important, but I would contact the police if I lost my wallet."
+          ]
+        },
+        {
+          "text": "What should travelers do when they have a problem in an unfamiliar city?",
+          "keywords": [
+            "traveler",
+            "problem",
+            "ask",
+            "help",
+            "police",
+            "map",
+            "information",
+            "smartphone",
+            "safe",
+            "directions"
+          ],
+          "modelAnswers": [
+            "They should ask a police officer or staff member for help if they have a serious problem.",
+            "Travelers can use a map or smartphone first and ask someone for directions if they are still confused.",
+            "I think travelers should stay calm, go to a safe place, and ask a reliable person for help."
+          ]
+        }
+      ]
+    },
+    "scoringData": {
+      "elementary": {
+        "words": [
+          {
+            "text": "woman",
+            "ja": "女性",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "traveler",
+            "ja": "旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "police officer",
+            "ja": "警察官",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "wallet",
+            "ja": "財布",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "map",
+            "ja": "地図",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "desk",
+            "ja": "机",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "paper",
+            "ja": "紙・書類",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "pen",
+            "ja": "ペン",
+            "type": "object",
+            "points": 10
+          },
+          {
+            "text": "police box",
+            "ja": "交番",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "talk",
+            "ja": "話す",
+            "type": "gist",
+            "points": 10
+          },
+          {
+            "text": "ask",
+            "ja": "尋ねる",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "write",
+            "ja": "書く",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "help",
+            "ja": "助ける",
+            "type": "gist",
+            "points": 15
+          },
+          {
+            "text": "lost",
+            "ja": "なくした・道に迷った",
+            "type": "inference",
+            "points": 15
+          },
+          {
+            "text": "worried",
+            "ja": "心配した",
+            "type": "inference",
+            "points": 15
+          }
+        ],
+        "chunks": [
+          {
+            "text": "at a police box",
+            "ja": "交番で",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "talking to a police officer",
+            "ja": "警察官と話している",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "looking for her wallet",
+            "ja": "財布を探している",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "writing on a form",
+            "ja": "用紙に書いている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "asking for help",
+            "ja": "助けを求めている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "showing a map",
+            "ja": "地図を見せている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "asking for directions",
+            "ja": "道を尋ねている",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "a lost wallet",
+            "ja": "なくした財布",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "a helpful police officer",
+            "ja": "親切な警察官",
+            "type": "inference",
+            "points": 20
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A woman is talking to a police officer.",
+            "grammar": "現在進行形・talk to",
+            "ja": "女性が警察官と話しています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The police officer is writing on a form.",
+            "grammar": "現在進行形・場所を表す前置詞",
+            "ja": "警察官が用紙に書いています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "The woman may have lost her wallet.",
+            "grammar": "助動詞may＋現在完了形",
+            "ja": "女性は財布をなくしたのかもしれません。",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "Another traveler is showing a map.",
+            "grammar": "現在進行形",
+            "ja": "別の旅行者が地図を見せています。",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "There is a map on the wall.",
+            "grammar": "There is構文・場所を表す前置詞",
+            "ja": "壁に地図があります。",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "The police officer is helping the travelers.",
+            "grammar": "現在進行形",
+            "ja": "警察官が旅行者たちを助けています。",
+            "type": "gist",
+            "points": 30
+          }
+        ]
+      },
+      "junior_high": {
+        "words": [
+          {
+            "text": "police officer",
+            "ja": "警察官",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "visitor",
+            "ja": "訪問者・旅行者",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "wallet",
+            "ja": "財布",
+            "type": "object",
+            "points": 15
+          },
+          {
+            "text": "report",
+            "ja": "届け出・報告",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "information",
+            "ja": "情報",
+            "type": "detail",
+            "points": 15
+          },
+          {
+            "text": "direction",
+            "ja": "道順",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "location",
+            "ja": "場所",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "property",
+            "ja": "持ち物",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "report",
+            "ja": "届け出る",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "describe",
+            "ja": "説明する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "record",
+            "ja": "記録する",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "explain",
+            "ja": "説明する",
+            "type": "gist",
+            "points": 20
+          },
+          {
+            "text": "missing",
+            "ja": "なくなった",
+            "type": "attribute",
+            "points": 20
+          },
+          {
+            "text": "helpful",
+            "ja": "親切な・役に立つ",
+            "type": "inference",
+            "points": 20
+          },
+          {
+            "text": "concerned",
+            "ja": "心配している",
+            "type": "inference",
+            "points": 25
+          }
+        ],
+        "chunks": [
+          {
+            "text": "reporting a lost wallet",
+            "ja": "なくした財布を届け出ている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "describing the missing item",
+            "ja": "なくした物について説明している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "taking notes about the problem",
+            "ja": "問題についてメモを取っている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "asking a police officer for help",
+            "ja": "警察官に助けを求めている",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "showing where she lost it",
+            "ja": "どこでなくしたか示している",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "asking for directions",
+            "ja": "道順を尋ねている",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "pointing at a city map",
+            "ja": "街の地図を指している",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "inside a small police box",
+            "ja": "小さな交番の中で",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "trying to recover lost property",
+            "ja": "紛失物を取り戻そうとしている",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "sentences": [
+          {
+            "text": "A traveler is reporting a lost wallet to a police officer.",
+            "grammar": "現在進行形・report A to B",
+            "ja": "旅行者が警察官になくした財布を届け出ています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "She is explaining when and where she last saw it.",
+            "grammar": "現在進行形・間接疑問文when and where",
+            "ja": "彼女は最後にいつどこで財布を見たか説明しています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "The officer is writing down information about the missing wallet.",
+            "grammar": "現在進行形・write down",
+            "ja": "警察官はなくした財布についての情報を書き留めています。",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "Another visitor is showing a map while asking for directions.",
+            "grammar": "現在進行形・while＋現在分詞",
+            "ja": "別の訪問者が道を尋ねながら地図を見せています。",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "The woman seems worried that somebody may find her wallet before the police do.",
+            "grammar": "seem＋形容詞・that節・助動詞may",
+            "ja": "女性は警察より先に誰かが財布を見つけることを心配しているようです。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The officer may ask her to describe the color and size of the wallet.",
+            "grammar": "助動詞may・ask A to do",
+            "ja": "警察官は女性に財布の色や大きさを説明するよう求めるかもしれません。",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "Police boxes can be useful places for people who need help in an unfamiliar area.",
+            "grammar": "助動詞can・関係代名詞who・need＋名詞",
+            "ja": "交番は、不慣れな場所で助けを必要とする人にとって役立つ場所です。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      },
+      "high_school": {
+        "words": [
+          {
+            "text": "police officer",
+            "ja": "警察官",
+            "type": "object",
+            "points": 20
+          },
+          {
+            "text": "lost property",
+            "ja": "遺失物・紛失物",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "incident report",
+            "ja": "届出書・報告書",
+            "type": "object",
+            "points": 30
+          },
+          {
+            "text": "identification",
+            "ja": "身分証明",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "description",
+            "ja": "特徴の説明",
+            "type": "detail",
+            "points": 25
+          },
+          {
+            "text": "location",
+            "ja": "場所",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "directions",
+            "ja": "道順",
+            "type": "detail",
+            "points": 20
+          },
+          {
+            "text": "assistance",
+            "ja": "支援・助け",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "report",
+            "ja": "届け出る",
+            "type": "gist",
+            "points": 25
+          },
+          {
+            "text": "document",
+            "ja": "記録する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "identify",
+            "ja": "特定する",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "recover",
+            "ja": "取り戻す",
+            "type": "gist",
+            "points": 30
+          },
+          {
+            "text": "concerned",
+            "ja": "心配している",
+            "type": "inference",
+            "points": 25
+          },
+          {
+            "text": "reassuring",
+            "ja": "安心させる",
+            "type": "inference",
+            "points": 30
+          },
+          {
+            "text": "accessible",
+            "ja": "利用しやすい",
+            "type": "inference",
+            "points": 30
+          }
+        ],
+        "chunks": [
+          {
+            "text": "filing a lost property report",
+            "ja": "遺失物届を出している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "providing details about the missing wallet",
+            "ja": "なくした財布について詳細を伝えている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "documenting the circumstances of the loss",
+            "ja": "紛失した状況を記録している",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "trying to recover lost property",
+            "ja": "紛失物を取り戻そうとしている",
+            "type": "inference",
+            "points": 35
+          },
+          {
+            "text": "seeking assistance from a police officer",
+            "ja": "警察官に助けを求めている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "providing directions to a visitor",
+            "ja": "訪問者に道案内をしている",
+            "type": "gist",
+            "points": 35
+          },
+          {
+            "text": "identifying the last known location",
+            "ja": "最後に確認した場所を特定している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "offering practical assistance to travelers",
+            "ja": "旅行者に実用的な支援を提供している",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "making public safety services accessible",
+            "ja": "公共安全サービスを利用しやすくしている",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "helping someone in an unfamiliar area",
+            "ja": "不慣れな場所にいる人を助けている",
+            "type": "inference",
+            "points": 35
+          }
+        ],
+        "sentences": [
+          {
+            "text": "At a local police box, a traveler is filing a report after realizing that her wallet is missing.",
+            "grammar": "現在進行形・after＋動名詞・that節",
+            "ja": "地域の交番で、旅行者が財布をなくしたことに気づき、遺失物届を出しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The police officer is documenting the information she provides about when and where the wallet was last seen.",
+            "grammar": "現在進行形・関係代名詞省略・間接疑問文when and where・受動態",
+            "ja": "警察官は、財布が最後にいつどこで確認されたかについて彼女が提供する情報を記録しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "The traveler may also be describing the wallet's appearance so that it can be identified if someone turns it in.",
+            "grammar": "助動詞may・現在進行形・so that構文・受動態・if節",
+            "ja": "誰かが財布を届けた場合に特定できるよう、旅行者は財布の外見についても説明しているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Meanwhile, another visitor is consulting a city map while asking an officer how to reach a nearby destination.",
+            "grammar": "現在進行形・while＋現在分詞・疑問詞how＋to不定詞",
+            "ja": "一方、別の訪問者は近くの目的地への行き方を警察官に尋ねながら、街の地図を確認しています。",
+            "type": "gist",
+            "points": 40
+          },
+          {
+            "text": "Because the traveler appears concerned, the officer may be trying to reassure her while explaining what will happen if the wallet is found.",
+            "grammar": "because節・appear＋形容詞・助動詞may・while＋現在分詞・what節・if節",
+            "ja": "旅行者が心配しているようなので、警察官は財布が見つかった場合の流れを説明しながら、彼女を安心させようとしているのかもしれません。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Local police boxes can provide immediate assistance to residents and visitors who face problems ranging from lost property to getting lost.",
+            "grammar": "助動詞can・provide A to B・関係代名詞who・range from A to B",
+            "ja": "地域の交番は、遺失物から道に迷うことまで、さまざまな問題に直面した住民や訪問者にすぐに支援を提供できます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "Having an easily accessible place to ask for help can make people feel safer when they are traveling in an unfamiliar city.",
+            "grammar": "動名詞主語・助動詞can・make O C・when節",
+            "ja": "気軽に助けを求められる場所があることで、不慣れな街を旅行している人々はより安心できます。",
+            "type": "inference",
+            "points": 40
+          },
+          {
+            "text": "The scene illustrates how police officers support the community not only by responding to emergencies but also by helping with everyday problems.",
+            "grammar": "間接疑問を含むhow節・not only A but also B・by＋動名詞",
+            "ja": "この場面は、警察官が緊急事態への対応だけでなく、日常的な問題への支援によっても地域社会を支えていることを示しています。",
+            "type": "inference",
+            "points": 40
+          }
+        ]
+      }
+    },
+    "pins": {
+      "female_traveler": {
+        "x": 34,
+        "y": 55
+      },
+      "traveler_face": {
+        "x": 34,
+        "y": 39
+      },
+      "lost_wallet_picture": {
+        "x": 41,
+        "y": 53
+      },
+      "police_officer": {
+        "x": 55,
+        "y": 45
+      },
+      "report_form": {
+        "x": 49,
+        "y": 57
+      },
+      "police_desk": {
+        "x": 47,
+        "y": 65
+      },
+      "officer_pen": {
+        "x": 51,
+        "y": 54
+      },
+      "second_traveler": {
+        "x": 78,
+        "y": 54
+      },
+      "traveler_map": {
+        "x": 72,
+        "y": 53
+      },
+      "city_map": {
+        "x": 81,
+        "y": 31
+      },
+      "police_box_sign": {
+        "x": 50,
+        "y": 18
+      },
+      "lost_and_found_sign": {
+        "x": 20,
+        "y": 31
+      },
+      "information_board": {
+        "x": 65,
+        "y": 28
+      },
+      "entrance": {
+        "x": 88,
+        "y": 51
+      },
+      "police_box_floor": {
+        "x": 50,
+        "y": 86
+      }
+    }
+  }
+]
