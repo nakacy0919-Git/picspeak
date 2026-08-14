@@ -24,19 +24,26 @@
         .animate-practice-success { animation: practiceSuccess 1.5s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
 
         .card-level-1 { border-color: #86efac !important; box-shadow: 0 0 20px rgba(134, 239, 172, 0.3); }
-        .card-level-2 { border-color: #93c5fd !important; box-shadow: 0 0 20px rgba(147, 197, 253, 0.3); }
-        .card-level-3 { border-color: #d8b4fe !important; box-shadow: 0 0 20px rgba(216, 180, 254, 0.3); }
 
-        /* ★ 追加：正解チェックマークのアニメーション */
         @keyframes popCheck {
             0% { transform: scale(0.3); opacity: 0; }
             40% { transform: scale(1.2); opacity: 1; }
             70% { transform: scale(1.0); opacity: 1; }
             100% { transform: scale(1.0); opacity: 0; }
         }
-        .animate-pop-check {
-            animation: popCheck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards;
+        .animate-pop-check { animation: popCheck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+
+        /* ★ 追加：コンボ演出アニメーション */
+        @keyframes comboFire {
+            0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
+            20% { transform: scale(1.2) rotate(5deg); opacity: 1; filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.8)); }
+            80% { transform: scale(1.0) rotate(0deg); opacity: 1; filter: drop-shadow(0 0 10px rgba(239, 68, 68, 0.5)); }
+            100% { transform: scale(1.5) translateY(-50px); opacity: 0; }
         }
+        .animate-combo-fire { animation: comboFire 1.2s ease-out forwards; }
+        
+        /* ヒントの文字がポワッと出るアニメーション */
+        .hint-char-reveal { animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
     </style>
 </head>
 <body class="bg-pink-50 text-gray-800 overflow-x-hidden w-full h-full relative selection:bg-pink-200">
@@ -50,6 +57,7 @@
                 <div class="w-12 md:w-16"></div>
             </div>
 
+            <!-- 1. モード選択 -->
             <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">1. モードを選ぶ</h3></div>
             <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
                 <button class="pf-mode-btn bg-white border-4 border-transparent hover:border-pink-300 text-gray-700 py-6 md:py-8 rounded-3xl flex flex-col items-center justify-center transition-all shadow-sm group" data-mode="practice">
@@ -64,27 +72,58 @@
                 </button>
             </div>
 
-            <div id="section-level-select" class="hidden w-full transition-all duration-300">
-                <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">2. 出題レベルを選ぶ</h3></div>
-                <div class="w-full bg-white p-3 md:p-4 rounded-3xl shadow-sm border border-gray-200 mb-8 grid grid-cols-2 md:grid-cols-4 gap-2 md:gap-4">
-                    <button class="pf-level-btn py-3 md:py-4 rounded-2xl font-black text-sm md:text-base transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-level="1">Level 1</button>
-                    <button class="pf-level-btn py-3 md:py-4 rounded-2xl font-black text-sm md:text-base transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-level="2">Level 2</button>
-                    <button class="pf-level-btn py-3 md:py-4 rounded-2xl font-black text-sm md:text-base transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-level="3">Level 3</button>
-                    <button class="pf-level-btn py-3 md:py-4 rounded-2xl font-black text-sm md:text-base transition-all bg-gradient-to-br from-pink-400 to-rose-400 text-white shadow-md transform scale-105" data-level="all">All Levels</button>
+            <!-- 2. 言語選択 -->
+            <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">2. 話す言語を選ぶ (Language)</h3></div>
+            <div class="w-full bg-white p-3 md:p-5 rounded-3xl shadow-sm border border-gray-200 mb-8 flex items-center justify-center">
+                <span class="text-3xl mr-3">🌍</span>
+                <select id="pf-lang-select" class="w-full md:w-2/3 bg-gray-50 border-2 border-gray-200 text-gray-800 text-lg md:text-xl font-bold rounded-2xl focus:ring-pink-500 focus:border-pink-500 block p-3 md:p-4 outline-none appearance-none cursor-pointer">
+                    <option value="en-US" selected>🇺🇸 English (英語)</option>
+                    <option value="ja-JP">🇯🇵 日本語 (Japanese)</option>
+                    <option value="pt-BR">🇧🇷 Português (ポルトガル語)</option>
+                    <option value="vi-VN">🇻🇳 Tiếng Việt (ベトナム語)</option>
+                    <option value="tl-PH">🇵🇭 Tagalog (タガログ語)</option>
+                    <option value="es-ES">🇪🇸 Español (スペイン語)</option>
+                    <option value="zh-CN">🇨🇳 中文 (中国語)</option>
+                    <option value="ko-KR">🇰🇷 한국어 (韓国語)</option>
+                    <option value="id-ID">🇮🇩 Bahasa Indonesia (インドネシア語)</option>
+                    <option value="ne-NP">🇳🇵 नेपाली (ネパール語)</option>
+                    <option value="th-TH">🇹🇭 ไทย (タイ語)</option>
+                    <option value="hi-IN">🇮🇳 हिन्दी (ヒンディー語)</option>
+                    <option value="ru-RU">🇷🇺 Русский (ロシア語)</option>
+                    <option value="fr-FR">🇫🇷 Français (フランス語)</option>
+                    <option value="de-DE">🇩🇪 Deutsch (ドイツ語)</option>
+                    <option value="it-IT">🇮🇹 Italiano (イタリア語)</option>
+                    <option value="ar-SA">🇸🇦 العربية (アラビア語)</option>
+                    <option value="tr-TR">🇹🇷 Türkçe (トルコ語)</option>
+                    <option value="my-MM">🇲🇲 ဗမာ (ビルマ語)</option>
+                </select>
+            </div>
+
+            <!-- 難易度・問題数・制限時間 -->
+            <div id="section-trial-settings" class="hidden w-full transition-all duration-300">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-8">
+                    <div>
+                        <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">3. 問題数</h3></div>
+                        <div class="w-full bg-white p-3 rounded-3xl shadow-sm border border-gray-200 flex gap-2">
+                            <button class="pf-count-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-xl transition-all bg-gradient-to-br from-pink-400 to-rose-400 text-white shadow-md transform scale-105" data-count="10">10</button>
+                            <button class="pf-count-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-xl transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-count="20">20</button>
+                            <button class="pf-count-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-xl transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-count="ALL">ALL</button>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">4. 1問の制限時間</h3></div>
+                        <div class="w-full bg-white p-3 rounded-3xl shadow-sm border border-gray-200 flex gap-2">
+                            <button class="pf-time-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-lg transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-time="3">3秒</button>
+                            <button class="pf-time-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-lg transition-all bg-gradient-to-br from-purple-400 to-indigo-400 text-white shadow-md transform scale-105" data-time="5">5秒</button>
+                            <button class="pf-time-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-base md:text-lg transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-time="10">10秒</button>
+                            <button class="pf-time-btn flex-1 py-3 md:py-4 rounded-2xl font-black text-xs md:text-sm transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-time="none">無制限</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
-            <div id="section-count-select" class="hidden w-full transition-all duration-300">
-                <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">3. 問題数を選ぶ</h3></div>
-                <div class="w-full bg-white p-3 md:p-4 rounded-3xl shadow-sm border border-gray-200 mb-8 flex gap-2 md:gap-4">
-                    <button class="pf-count-btn flex-1 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl transition-all bg-gradient-to-br from-pink-400 to-rose-400 text-white shadow-md transform scale-105" data-count="5">5</button>
-                    <button class="pf-count-btn flex-1 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-count="10">10</button>
-                    <button class="pf-count-btn flex-1 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-count="20">20</button>
-                    <button class="pf-count-btn flex-1 py-4 md:py-5 rounded-2xl font-black text-lg md:text-xl transition-all bg-gray-50 text-gray-400 border-2 border-transparent" data-count="ALL">ALL</button>
-                </div>
-            </div>
-
-            <div class="w-full mb-3 pl-2"><h3 id="title-category-select" class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">2. ジャンルを選ぶ</h3></div>
+            <!-- カテゴリ選択 -->
+            <div class="w-full mb-3 pl-2"><h3 id="title-category-select" class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">5. ジャンルを選ぶ</h3></div>
             <div id="pf-category-grid" class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12"></div>
 
             <button id="btn-pf-start" disabled class="w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gray-300 text-white font-black text-3xl md:text-4xl shadow-none transition-all tracking-widest cursor-not-allowed">
@@ -98,53 +137,73 @@
                 <h2 class="text-2xl md:text-3xl lg:text-4xl font-black text-gray-700 tracking-widest">📖 学習モード (一覧)</h2>
                 <div class="w-12 md:w-16"></div>
             </div>
-            
-            <div id="pf-practice-grid" class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 pb-10">
-                </div>
+            <div id="pf-practice-grid" class="w-full grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 md:gap-6 pb-10"></div>
         </div>
 
-        <div id="view-picflash-play" class="hidden flex flex-col items-center justify-start h-[100dvh] w-full px-4 md:px-8 pt-4 pb-6 relative max-w-5xl mx-auto overflow-hidden">
+        <div id="view-picflash-play" class="hidden flex flex-col items-center justify-start h-[100dvh] w-full px-4 md:px-8 pt-4 pb-6 relative max-w-7xl mx-auto overflow-hidden">
             
-            <div class="w-full flex items-center justify-between bg-white px-4 md:px-8 py-3 rounded-full shadow-sm mb-3 border border-gray-200 shrink-0">
-                <div class="font-black text-gray-400 text-xl md:text-2xl tracking-widest"><span id="pf-card-count" class="text-gray-700">1</span> / <span id="pf-total-count">10</span></div>
-                <div class="font-black text-3xl md:text-5xl text-gray-800 tabular-nums"><span id="pf-timer">00.00</span><span class="text-lg text-gray-400 ml-1">s</span></div>
-                <button id="btn-pf-quit" class="w-10 h-10 md:w-14 md:h-14 bg-gray-100 rounded-full flex items-center justify-center font-black text-gray-500 hover:bg-red-50 hover:text-red-500 text-xl transition-colors">✖</button>
-            </div>
-
-            <div id="pf-level-badge" class="px-6 py-1.5 md:px-8 md:py-2 rounded-full font-black text-white text-sm md:text-lg tracking-widest mb-3 bg-green-400 shadow-md transition-colors duration-300 shrink-0">
-                🟩 LEVEL 1 (Base)
-            </div>
-
-            <div class="relative w-full flex-1 min-h-[150px] bg-gray-100 rounded-[2rem] shadow-xl border-4 md:border-8 overflow-hidden mb-3 transform transition-all duration-300 card-level-1" id="pf-card">
-                <img id="pf-image" src="" class="absolute inset-0 w-full h-full object-contain p-2 md:p-4">
-                <div id="pf-overlay-correct" class="hidden absolute inset-0 bg-white/50 backdrop-blur-sm flex items-center justify-center z-10"><span class="text-8xl md:text-[12rem] transform scale-150 animate-pop">⭕️</span></div>
-                <div id="pf-overlay-skip" class="hidden absolute inset-0 bg-red-500/20 backdrop-blur-sm flex flex-col items-center justify-center z-10"><span class="text-6xl md:text-9xl transform animate-pop mb-2">⏭️</span><span class="font-black text-3xl md:text-5xl text-white drop-shadow-lg text-red-500 tracking-widest">SKIP</span></div>
-                
-                <div id="correct-answer-anim" class="hidden absolute inset-0 z-[100] flex items-center justify-center pointer-events-none">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl">
-                        <circle cx="50" cy="50" r="45" fill="#22c55e" />
-                        <path d="M30 50 L45 65 L70 30" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                </div>
-            </div>
-
-            <div class="w-full bg-white p-3 md:p-4 rounded-2xl md:rounded-3xl shadow-sm border border-gray-200 mb-3 text-center shrink-0">
-                <div class="text-xs md:text-sm font-bold text-gray-400 mb-1">💡 HINT</div>
-                <div id="pf-hint-text" class="text-xl md:text-3xl font-black text-gray-700 leading-tight"></div>
-            </div>
-
-            <div class="flex flex-col items-center gap-3 w-full shrink-0">
-                
-                <div class="w-full max-w-2xl bg-gray-50 border-2 border-pink-200 rounded-2xl p-3 md:p-4 flex items-center gap-3 shadow-inner">
-                    <div class="relative flex h-6 w-6 md:h-8 md:w-8 shrink-0">
-                        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
-                        <span class="relative inline-flex rounded-full h-full w-full bg-pink-500 items-center justify-center text-white text-xs md:text-sm">🎙</span>
+            <!-- 上部ヘッダー：進捗ランプ ＆ タイマー -->
+            <div class="w-full flex items-center justify-between bg-white px-4 md:px-8 py-3 rounded-full shadow-sm mb-4 border border-gray-200 shrink-0 z-20">
+                <div class="flex flex-col gap-1 flex-1">
+                    <div class="font-black text-gray-400 text-xs md:text-sm tracking-widest leading-none flex items-center gap-2">
+                        <span id="pf-card-count" class="text-gray-700 font-black text-lg md:text-xl">1</span> / <span id="pf-total-count">10</span>
+                        <span class="bg-gray-100 px-2 py-0.5 rounded text-[10px]">PROGRESS</span>
                     </div>
-                    <div class="font-bold text-gray-600 text-base md:text-xl truncate w-full text-left" id="pf-status-text">Listening...</div>
+                    <div id="pf-progress-lamps" class="flex flex-wrap gap-1 md:gap-1.5 mt-1"></div>
+                </div>
+                <div class="font-black text-3xl md:text-5xl text-gray-800 tabular-nums leading-none mx-4 text-center"><span id="pf-timer">00.00</span><span class="text-lg text-gray-400 ml-1">s</span></div>
+                <button id="btn-pf-quit" class="w-10 h-10 md:w-14 md:h-14 bg-gray-100 rounded-full flex items-center justify-center font-black text-gray-500 hover:bg-red-50 hover:text-red-500 text-xl transition-colors shrink-0">✖</button>
+            </div>
+
+            <div id="pf-card-timer-container" class="w-full bg-gray-200 h-2 rounded-full mb-4 overflow-hidden shadow-inner shrink-0 hidden">
+                <div id="pf-card-timer-bar" class="h-full bg-gradient-to-r from-purple-400 to-pink-500 w-full transition-all ease-linear"></div>
+            </div>
+
+            <!-- 2段組コンテナ -->
+            <div class="w-full flex flex-col md:flex-row gap-4 md:gap-6 flex-1 overflow-hidden">
+                
+                <!-- 左側：イラスト -->
+                <div class="relative w-full md:w-3/5 lg:w-1/2 flex-1 bg-white rounded-[2rem] shadow-xl border-4 md:border-8 overflow-hidden transform transition-all duration-300 card-level-1 z-10 flex items-center justify-center" id="pf-card">
+                    <img id="pf-image" src="" class="absolute inset-0 w-full h-full object-contain p-4 md:p-8 drop-shadow-md">
+                    
+                    <div id="pf-overlay-correct" class="hidden absolute inset-0 bg-white/50 backdrop-blur-sm flex items-center justify-center z-10"><span class="text-8xl md:text-[12rem] transform scale-150 animate-pop">⭕️</span></div>
+                    <div id="pf-overlay-skip" class="hidden absolute inset-0 bg-red-500/20 backdrop-blur-sm flex flex-col items-center justify-center z-10"><span class="text-6xl md:text-9xl transform animate-pop mb-2">⏭️</span><span class="font-black text-3xl md:text-5xl text-white drop-shadow-lg text-red-500 tracking-widest">SKIP</span></div>
+                    
+                    <!-- コンボ演出用コンテナ -->
+                    <div id="pf-combo-anim" class="hidden absolute inset-0 z-20 flex flex-col items-center justify-center pointer-events-none">
+                        <span id="pf-combo-text" class="text-5xl md:text-7xl font-black text-red-500 tracking-tighter uppercase drop-shadow-2xl"></span>
+                    </div>
+
+                    <div id="correct-answer-anim" class="hidden absolute inset-0 z-[100] flex items-center justify-center pointer-events-none">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="w-32 h-32 md:w-48 md:h-48 drop-shadow-2xl">
+                            <circle cx="50" cy="50" r="45" fill="#22c55e" />
+                            <path d="M30 50 L45 65 L70 30" fill="none" stroke="white" stroke-width="8" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </div>
                 </div>
 
-                <div class="text-xs md:text-sm font-bold text-pink-400">💡 わからない時は「Skip」と言うとパスできます（+2秒ペナルティ）</div>
-                <button id="btn-pf-skip" class="px-8 py-3 md:py-4 bg-white text-gray-600 font-black text-lg md:text-xl rounded-full shadow-sm hover:bg-gray-50 border border-gray-200 w-full max-w-sm">Skip ⏭️</button>
+                <!-- 右側：ヒント ＆ 文字起こし -->
+                <div class="w-full md:w-2/5 lg:w-1/2 flex flex-col gap-4 z-20 h-full overflow-y-auto pb-4 custom-scrollbar">
+                    <div class="bg-white border border-pink-100 rounded-3xl p-5 md:p-8 shadow-sm flex flex-col justify-center items-center shrink-0 min-h-[160px]">
+                        <div class="text-xs md:text-sm font-bold text-gray-400 mb-2 uppercase tracking-widest">💡 HINT</div>
+                        <div id="pf-hint-meaning" class="text-xl md:text-2xl lg:text-3xl font-black text-gray-700 mb-4 text-center"></div>
+                        <div id="pf-hint-squares" class="flex flex-wrap justify-center gap-1.5 md:gap-2"></div>
+                    </div>
+
+                    <div class="w-full bg-gray-50 border-2 border-pink-200 rounded-3xl p-5 md:p-8 flex flex-col items-center justify-center shadow-inner flex-1 min-h-[140px]">
+                        <div class="relative flex h-8 w-8 md:h-10 md:w-10 shrink-0 mb-3">
+                            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
+                            <span class="relative inline-flex rounded-full h-full w-full bg-pink-500 items-center justify-center text-white text-lg md:text-xl">🎙</span>
+                        </div>
+                        <div class="font-bold text-gray-600 text-xl md:text-3xl text-center break-words w-full" id="pf-status-text">Listening...</div>
+                    </div>
+
+                    <div class="shrink-0 flex flex-col items-center">
+                        <div class="text-xs md:text-sm font-bold text-pink-400 mb-2">💡 わからない時は「Skip」でパス（+2秒ペナルティ）</div>
+                        <button id="btn-pf-skip" class="py-4 md:py-5 bg-white text-gray-500 font-black text-xl rounded-2xl shadow-sm hover:bg-gray-50 border border-gray-200 w-full transition-transform active:scale-95">Skip ⏭️</button>
+                    </div>
+                </div>
+
             </div>
         </div>
 
@@ -164,14 +223,14 @@
                 <h3 class="text-sm font-black text-gray-400 uppercase tracking-widest mb-4 border-b border-gray-100 pb-2 flex items-center justify-between">
                     <span>⏱️ あなたの記録 (直近)</span>
                 </h3>
-                <div id="pf-history-list" class="flex flex-col gap-1 max-h-48 overflow-y-auto custom-scrollbar pr-2">
-                    </div>
+                <div id="pf-history-list" class="flex flex-col gap-1 max-h-48 overflow-y-auto custom-scrollbar pr-2"></div>
             </div>
 
             <button onclick="showPfView('view-picflash-select')" class="w-full max-w-md py-5 md:py-6 rounded-3xl bg-white text-gray-700 font-black text-xl md:text-2xl shadow-sm border border-gray-200 hover:bg-gray-50 transition-colors">トップに戻る</button>
         </div>
     </div>
 
+    <!-- Practiceモーダル -->
     <div id="pf-practice-modal" class="hidden fixed inset-0 z-[100] flex items-start justify-center bg-gray-900/60 backdrop-blur-sm p-2 md:p-6 overflow-y-auto custom-scrollbar">
         <div class="bg-white rounded-[2rem] w-full max-w-5xl relative shadow-2xl p-6 md:p-8 border border-gray-100 transform transition-all mt-0 mb-10">
             <button onclick="closePracticeModal()" class="absolute top-4 right-4 md:top-6 md:right-6 w-10 h-10 md:w-12 md:h-12 bg-gray-100 rounded-full flex items-center justify-center font-black text-gray-500 hover:bg-pink-100 hover:text-pink-500 transition-colors z-[110] text-xl shadow-sm">✖</button>

@@ -1,6 +1,82 @@
 [
-    { "id": "food", "title": "Food", "icon": "🍔" },
-    { "id": "animal", "title": "Animal", "icon": "🦁" },
-    { "id": "items", "title": "Items", "icon": "🎒" },
-    { "id": "months", "title": "Months", "icon": "🗓️" }
+  {
+    "id": "animals_and_bugs",
+    "title": "Animals & Bugs",
+    "icon": "🦁"
+  },
+  {
+    "id": "sea_animals",
+    "title": "Sea Animals",
+    "icon": "🐬"
+  },
+  {
+    "id": "fruits_and_vegetables",
+    "title": "Fruits & Veggies",
+    "icon": "🍎"
+  },
+  {
+    "id": "foods_drinks_and_tastes",
+    "title": "Foods & Drinks",
+    "icon": "🍔"
+  },
+  {
+    "id": "colors_and_shapes",
+    "title": "Colors & Shapes",
+    "icon": "🎨"
+  },
+  {
+    "id": "body_parts_and_clothes",
+    "title": "Body & Clothes",
+    "icon": "👕"
+  },
+  {
+    "id": "jobs_and_people",
+    "title": "Jobs & People",
+    "icon": "👨‍🍳"
+  },
+  {
+    "id": "family_and_pronouns",
+    "title": "Family",
+    "icon": "👨‍👩‍👧‍👦"
+  },
+  {
+    "id": "school_subjects_and_stationery",
+    "title": "School & Subjects",
+    "icon": "🏫"
+  },
+  {
+    "id": "school_clubs_and_events",
+    "title": "Clubs & Events",
+    "icon": "🏃‍♂️"
+  },
+  {
+    "id": "sports_and_hobbies",
+    "title": "Sports & Hobbies",
+    "icon": "⚽️"
+  },
+  {
+    "id": "places_town_and_countries",
+    "title": "Places & Countries",
+    "icon": "🌍"
+  },
+  {
+    "id": "nature_weather_and_environment",
+    "title": "Nature & Weather",
+    "icon": "☀️"
+  },
+  {
+    "id": "daily_actions",
+    "title": "Daily Actions",
+    "icon": "🏃‍♀️"
+  },
+  {
+    "id": "feelings_and_adjectives",
+    "title": "Feelings",
+    "icon": "😊"
+  },
+  {
+    "id": "time_events_and_misc",
+    "title": "Time & Events",
+    "icon": "⏰"
+  }
 ]
