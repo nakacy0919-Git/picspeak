@@ -16,7 +16,7 @@ const pfState = {
     timerId: null,
     isPlaying: false,
     hasAnswered: false,
-    comboCount: 0 // ★ 追加: 連続正解カウント
+    comboCount: 0 // 連続正解カウント
 };
 
 window.CATEGORIES_DATA = [];
@@ -119,17 +119,6 @@ function showPfView(viewId) {
     document.getElementById(viewId).classList.remove('hidden');
 }
 
-function updateStartButtonState() {
-    const startBtn = document.getElementById('btn-pf-start');
-    if (pfState.category !== '') {
-        startBtn.disabled = false;
-        startBtn.className = "w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gradient-to-r from-pink-500 to-purple-500 text-white font-black text-3xl md:text-4xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all tracking-widest";
-    } else {
-        startBtn.disabled = true;
-        startBtn.className = "w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gray-300 text-white font-black text-3xl md:text-4xl shadow-none transition-all tracking-widest cursor-not-allowed";
-    }
-}
-
 function renderPracticeGrid() {
     const gridEl = document.getElementById('pf-practice-grid');
     gridEl.innerHTML = '';
@@ -161,9 +150,6 @@ function renderPracticeGrid() {
 // ------------------------------------------
 async function startPfGame() {
     if (!pfState.category) return;
-    const startBtn = document.getElementById('btn-pf-start');
-    startBtn.disabled = true;
-    startBtn.classList.add('opacity-50');
 
     if (pfRec) pfRec.lang = pfState.language;
 
@@ -183,25 +169,21 @@ async function startPfGame() {
                 qCount = Math.min(shuffled.length, parseInt(pfState.questionCount));
             }
             pfState.cards = shuffled.slice(0, qCount); 
-            startTrialMode();
+            startTrialMode(); // タイマー開始ではなく待機画面への遷移
         }
     } catch (error) {
         alert("エラー: JSONデータが見つかりません。");
-    } finally {
-        if (!pfState.isPlaying) {
-            startBtn.classList.remove('opacity-50');
-            updateStartButtonState();
-        }
     }
 }
 
+// タイムアタックの「待機状態」を作る
 function startTrialMode() {
     pfState.currentIndex = 0;
-    pfState.isPlaying = true;
     pfState.penalty = 0; 
     pfState.comboCount = 0;
+    pfState.isPlaying = false; // まだタイマーは動かさない
     
-    // ★ 上部ランプの生成
+    // ランプの生成
     const lampsContainer = document.getElementById('pf-progress-lamps');
     if (lampsContainer) {
         lampsContainer.innerHTML = '';
@@ -211,7 +193,8 @@ function startTrialMode() {
     }
 
     document.getElementById('pf-total-count').innerText = pfState.cards.length;
-    document.getElementById('pf-status-text').innerText = 'Listening...';
+    document.getElementById('pf-status-text').innerText = 'Ready...';
+    document.getElementById('pf-timer').innerText = '0.00';
 
     const timerContainer = document.getElementById('pf-card-timer-container');
     if (pfState.timePerCard !== 'none') timerContainer.classList.remove('hidden');
@@ -219,17 +202,30 @@ function startTrialMode() {
 
     showPfView('view-picflash-play');
     
+    // 裏で最初のカードの画像とヒント枠だけ描画しておく
+    loadPfCard(true);
+
+    // ★ スタートのオーバーレイを表示
+    document.getElementById('pf-start-overlay').classList.remove('hidden');
+}
+
+// ★ 実際のプレイ（タイマーと音声認識）開始
+document.getElementById('btn-pf-real-start').addEventListener('click', () => {
+    document.getElementById('pf-start-overlay').classList.add('hidden');
+    
+    pfState.isPlaying = true;
     pfState.startTime = Date.now();
+    pfState.cardStartTime = Date.now();
+    
     if (pfState.timerId) clearInterval(pfState.timerId);
     
     pfState.timerId = setInterval(() => {
         const current = (Date.now() - pfState.startTime) / 1000 + pfState.penalty;
         document.getElementById('pf-timer').innerText = current.toFixed(2);
 
-        // ★ 経過時間に応じたヒントの自動開示
         const cardElapsed = (Date.now() - pfState.cardStartTime) / 1000;
         
-        // 3秒経過で1文字目、6秒経過で2文字目を開ける（時間制限がない場合も作動）
+        // ヒントの自動開示 (3秒で1文字目、6秒で2文字目...)
         if (cardElapsed > 3.0) revealHintChar(0);
         if (cardElapsed > 6.0) revealHintChar(1);
         if (cardElapsed > 9.0) revealHintChar(2);
@@ -252,14 +248,15 @@ function startTrialMode() {
         }
     }, 50);
 
-    loadPfCard(true);
+    document.getElementById('pf-status-text').innerText = 'Listening...';
     try { if (pfRec) pfRec.start(); } catch(e){}
-}
+});
 
 function loadPfCard(isNewImage) {
     setTimeout(() => { pfState.hasAnswered = false; }, 100);
 
-    pfState.cardStartTime = Date.now();
+    // タイマーバーのリセット（実際にプレイ中のみ時間を再取得）
+    if (pfState.isPlaying) pfState.cardStartTime = Date.now();
     const bar = document.getElementById('pf-card-timer-bar');
     if (bar) {
         bar.style.transition = 'none';
@@ -272,7 +269,6 @@ function loadPfCard(isNewImage) {
     const card = pfState.cards[pfState.currentIndex];
     document.getElementById('pf-card-count').innerText = (pfState.currentIndex + 1);
 
-    // ★ 言語に応じたヒントの表示設定
     let targetWord = card.targets && card.targets[pfState.language] ? card.targets[pfState.language][0] : "";
     let hintMeaning = "";
     
@@ -284,7 +280,7 @@ function loadPfCard(isNewImage) {
     }
     document.getElementById('pf-hint-meaning').innerText = hintMeaning;
 
-    // ★ 四角形の生成
+    // 四角形の生成
     const squaresContainer = document.getElementById('pf-hint-squares');
     if (squaresContainer) {
         squaresContainer.innerHTML = '';
@@ -293,7 +289,6 @@ function loadPfCard(isNewImage) {
             if (char === ' ') {
                 squaresContainer.innerHTML += `<div class="w-3 md:w-4"></div>`;
             } else {
-                // カスタムデータ属性に正解の文字を忍ばせておく
                 squaresContainer.innerHTML += `<div id="hint-sq-${i}" data-char="${char}" class="w-8 h-10 md:w-10 md:h-12 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center border border-gray-200 text-lg md:text-2xl font-black text-pink-500 uppercase"></div>`;
             }
         }
@@ -307,7 +302,6 @@ function loadPfCard(isNewImage) {
     document.getElementById('pf-card').classList.remove('scale-95');
 }
 
-// 時間経過で呼ばれる、ヒントの文字を浮かび上がらせる関数
 function revealHintChar(index) {
     const sq = document.getElementById(`hint-sq-${index}`);
     if (sq && sq.innerHTML === '') {
@@ -323,7 +317,6 @@ function handleCorrect() {
     pfState.hasAnswered = true;
     pfState.comboCount++;
 
-    // ランプを緑に
     const lamp = document.getElementById(`lamp-${pfState.currentIndex}`);
     if (lamp) lamp.classList.replace('bg-gray-200', 'bg-green-400');
 
@@ -340,7 +333,7 @@ function handleCorrect() {
         }, 600); 
     }
 
-    // ★ コンボ演出 (2連続以上で発動)
+    // コンボ演出 (2連続以上)
     if (pfState.comboCount >= 2) {
         const comboEl = document.getElementById('pf-combo-anim');
         const comboText = document.getElementById('pf-combo-text');
@@ -360,15 +353,14 @@ function handleCorrect() {
         pfState.currentIndex++;
         if (pfState.currentIndex >= pfState.cards.length) endPfGame();
         else { try { pfRec.abort(); } catch(e){} loadPfCard(true); }
-    }, 400); // 演出を見せるために少しだけ待機時間を延長
+    }, 400); 
 }
 
 function handleSkip() {
     if (pfState.hasAnswered) return; 
     pfState.hasAnswered = true;
-    pfState.comboCount = 0; // スキップでコンボが途切れる
+    pfState.comboCount = 0; 
     
-    // ランプを赤に
     const lamp = document.getElementById(`lamp-${pfState.currentIndex}`);
     if (lamp) lamp.classList.replace('bg-gray-200', 'bg-red-400');
 
@@ -409,7 +401,6 @@ function saveAndRenderHistory(finalTime) {
     const now = new Date();
     const dateStr = `${now.getFullYear()}/${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getDate().toString().padStart(2,'0')} ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
     
-    // 履歴データに言語情報(language)を追加して保存
     const newRecord = {
         date: dateStr,
         time: finalTime.toFixed(2),
@@ -455,12 +446,10 @@ function endPfGame() {
     const finalTime = (Date.now() - pfState.startTime) / 1000 + pfState.penalty;
     document.getElementById('pf-final-time').innerText = finalTime.toFixed(2);
     
-    const isPB = saveAndRenderHistory(finalTime); 
-    
     const pbBadge = document.getElementById('pf-pb-badge');
     const resultBox = document.getElementById('pf-result-box');
     
-    if (isPB) {
+    if (saveAndRenderHistory(finalTime)) {
         pbBadge.classList.remove('hidden');
         resultBox.classList.remove('from-pink-500', 'to-rose-400');
         resultBox.classList.add('from-yellow-400', 'via-yellow-500', 'to-yellow-600', 'animate-pulse'); 
@@ -490,17 +479,10 @@ async function initPicFlashCategories() {
             btn.className = "pf-cat-btn bg-white text-gray-700 p-4 md:p-6 rounded-3xl shadow-sm border-4 border-transparent hover:border-pink-300 transition-all flex flex-col items-center gap-2";
             btn.innerHTML = `<span class="text-4xl md:text-5xl mb-1">${cat.icon}</span><span class="font-black capitalize text-base md:text-lg">${cat.title}</span>`;
             
+            // ★ カテゴリクリック時に即座にゲームを開始
             btn.onclick = () => {
                 pfState.category = cat.id;
-                document.querySelectorAll('.pf-cat-btn').forEach(b => {
-                    b.classList.remove('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
-                    b.classList.add('bg-white', 'text-gray-700');
-                });
-                
-                btn.classList.remove('bg-white', 'text-gray-700');
-                btn.classList.add('bg-gradient-to-br', 'from-pink-400', 'to-rose-400', 'text-white', 'shadow-md', 'scale-105');
-                
-                updateStartButtonState(); 
+                startPfGame(); 
             };
             grid.appendChild(btn);
         });
@@ -605,12 +587,11 @@ document.addEventListener('DOMContentLoaded', () => {
             
             if (pfState.mode === 'trial') {
                 trialSection.classList.remove('hidden');
-                catTitle.innerText = "5. ジャンルを選ぶ";
+                catTitle.innerText = "3. ジャンルを選ぶ"; // 番号修正
             } else {
                 trialSection.classList.add('hidden');
-                catTitle.innerText = "3. ジャンルを選ぶ";
+                catTitle.innerText = "3. ジャンルを選ぶ"; // 番号修正
             }
-            updateStartButtonState();
         });
     });
 
@@ -643,7 +624,6 @@ document.addEventListener('DOMContentLoaded', () => {
     document.querySelector('.pf-mode-btn[data-mode="practice"]').click();
     initPicFlashCategories();
 
-    document.getElementById('btn-pf-start').addEventListener('click', startPfGame);
     document.getElementById('btn-pf-skip').addEventListener('click', handleSkip);
     
     document.getElementById('btn-pf-quit').addEventListener('click', () => {
@@ -651,6 +631,5 @@ document.addEventListener('DOMContentLoaded', () => {
         clearInterval(pfState.timerId);
         try { pfRec.abort(); } catch(e){}
         showPfView('view-picflash-select');
-        updateStartButtonState(); 
     });
 });

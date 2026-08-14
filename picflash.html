@@ -33,7 +33,6 @@
         }
         .animate-pop-check { animation: popCheck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
 
-        /* ★ 追加：コンボ演出アニメーション */
         @keyframes comboFire {
             0% { transform: scale(0.5) rotate(-10deg); opacity: 0; }
             20% { transform: scale(1.2) rotate(5deg); opacity: 1; filter: drop-shadow(0 0 20px rgba(239, 68, 68, 0.8)); }
@@ -42,7 +41,6 @@
         }
         .animate-combo-fire { animation: comboFire 1.2s ease-out forwards; }
         
-        /* ヒントの文字がポワッと出るアニメーション */
         .hint-char-reveal { animation: pop 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
     </style>
 </head>
@@ -57,23 +55,8 @@
                 <div class="w-12 md:w-16"></div>
             </div>
 
-            <!-- 1. モード選択 -->
-            <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">1. モードを選ぶ</h3></div>
-            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-                <button class="pf-mode-btn bg-white border-4 border-transparent hover:border-pink-300 text-gray-700 py-6 md:py-8 rounded-3xl flex flex-col items-center justify-center transition-all shadow-sm group" data-mode="practice">
-                    <span class="text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">📖</span>
-                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-wider">学習モード</span>
-                    <span class="text-sm md:text-base font-bold text-gray-500 mt-2">発音と意味をじっくり確認</span>
-                </button>
-                <button class="pf-mode-btn bg-white border-4 border-transparent hover:border-pink-300 text-gray-700 py-6 md:py-8 rounded-3xl flex flex-col items-center justify-center transition-all shadow-sm group" data-mode="trial">
-                    <span class="text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">⏱️</span>
-                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-wider">タイムアタック</span>
-                    <span class="text-sm md:text-base font-bold text-gray-500 mt-2">声に出して最速クリアを目指せ</span>
-                </button>
-            </div>
-
-            <!-- 2. 言語選択 -->
-            <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">2. 話す言語を選ぶ (Language)</h3></div>
+            <!-- ★1. 言語選択を一番上に移動 -->
+            <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">1. 話す言語を選ぶ (Language)</h3></div>
             <div class="w-full bg-white p-3 md:p-5 rounded-3xl shadow-sm border border-gray-200 mb-8 flex items-center justify-center">
                 <span class="text-3xl mr-3">🌍</span>
                 <select id="pf-lang-select" class="w-full md:w-2/3 bg-gray-50 border-2 border-gray-200 text-gray-800 text-lg md:text-xl font-bold rounded-2xl focus:ring-pink-500 focus:border-pink-500 block p-3 md:p-4 outline-none appearance-none cursor-pointer">
@@ -99,7 +82,22 @@
                 </select>
             </div>
 
-            <!-- 難易度・問題数・制限時間 -->
+            <!-- 2. モード選択 -->
+            <div class="w-full mb-3 pl-2"><h3 class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">2. モードを選ぶ</h3></div>
+            <div class="w-full grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
+                <button class="pf-mode-btn bg-white border-4 border-transparent hover:border-pink-300 text-gray-700 py-6 md:py-8 rounded-3xl flex flex-col items-center justify-center transition-all shadow-sm group" data-mode="practice">
+                    <span class="text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">📖</span>
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-wider">学習モード</span>
+                    <span class="text-sm md:text-base font-bold text-gray-500 mt-2">発音と意味をじっくり確認</span>
+                </button>
+                <button class="pf-mode-btn bg-white border-4 border-transparent hover:border-pink-300 text-gray-700 py-6 md:py-8 rounded-3xl flex flex-col items-center justify-center transition-all shadow-sm group" data-mode="trial">
+                    <span class="text-4xl md:text-5xl mb-2 group-hover:scale-110 transition-transform">⏱️</span>
+                    <span class="text-xl md:text-2xl lg:text-3xl font-black tracking-wider">タイムアタック</span>
+                    <span class="text-sm md:text-base font-bold text-gray-500 mt-2">声に出して最速クリアを目指せ</span>
+                </button>
+            </div>
+
+            <!-- 3&4. 難易度・問題数・制限時間 -->
             <div id="section-trial-settings" class="hidden w-full transition-all duration-300">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6 w-full mb-8">
                     <div>
@@ -122,13 +120,11 @@
                 </div>
             </div>
 
-            <!-- カテゴリ選択 -->
-            <div class="w-full mb-3 pl-2"><h3 id="title-category-select" class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">5. ジャンルを選ぶ</h3></div>
+            <!-- 5. カテゴリ選択（選んだ瞬間にゲーム画面へ遷移！） -->
+            <div class="w-full mb-3 pl-2"><h3 id="title-category-select" class="text-base md:text-lg lg:text-xl font-black text-gray-600 uppercase tracking-widest">3. ジャンルを選ぶ</h3></div>
             <div id="pf-category-grid" class="w-full grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6 mb-12"></div>
 
-            <button id="btn-pf-start" disabled class="w-full max-w-lg py-6 md:py-8 rounded-[2rem] bg-gray-300 text-white font-black text-3xl md:text-4xl shadow-none transition-all tracking-widest cursor-not-allowed">
-                START 🚀
-            </button>
+            <!-- ★ STARTボタンは削除し、UIをスッキリさせました -->
         </div>
 
         <div id="view-picflash-practice" class="hidden flex flex-col items-center justify-start min-h-screen w-full px-4 md:px-8 pt-8 pb-20 relative max-w-6xl mx-auto">
@@ -142,6 +138,14 @@
 
         <div id="view-picflash-play" class="hidden flex flex-col items-center justify-start h-[100dvh] w-full px-4 md:px-8 pt-4 pb-6 relative max-w-7xl mx-auto overflow-hidden">
             
+            <!-- ★ プレイ開始前の START オーバーレイ -->
+            <div id="pf-start-overlay" class="absolute inset-0 z-[150] bg-white/95 backdrop-blur-md flex flex-col items-center justify-center">
+                <h3 class="text-3xl md:text-5xl font-black text-gray-700 mb-8 tracking-widest">ARE YOU READY?</h3>
+                <button id="btn-pf-real-start" class="w-[80%] max-w-md py-6 md:py-8 rounded-[2rem] bg-gradient-to-r from-pink-500 to-purple-500 text-white font-black text-3xl md:text-4xl shadow-xl hover:shadow-2xl transform hover:-translate-y-1 transition-all tracking-widest">
+                    START 🚀
+                </button>
+            </div>
+
             <!-- 上部ヘッダー：進捗ランプ ＆ タイマー -->
             <div class="w-full flex items-center justify-between bg-white px-4 md:px-8 py-3 rounded-full shadow-sm mb-4 border border-gray-200 shrink-0 z-20">
                 <div class="flex flex-col gap-1 flex-1">
@@ -195,7 +199,7 @@
                             <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-pink-400 opacity-75"></span>
                             <span class="relative inline-flex rounded-full h-full w-full bg-pink-500 items-center justify-center text-white text-lg md:text-xl">🎙</span>
                         </div>
-                        <div class="font-bold text-gray-600 text-xl md:text-3xl text-center break-words w-full" id="pf-status-text">Listening...</div>
+                        <div class="font-bold text-gray-600 text-xl md:text-3xl text-center break-words w-full" id="pf-status-text">Ready...</div>
                     </div>
 
                     <div class="shrink-0 flex flex-col items-center">
@@ -207,6 +211,7 @@
             </div>
         </div>
 
+        <!-- Result画面 -->
         <div id="view-picflash-result" class="hidden flex flex-col items-center justify-center min-h-screen w-full px-4 pt-10 pb-20 relative max-w-4xl mx-auto">
             <h2 class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-400 tracking-widest uppercase mb-6">Result</h2>
             
