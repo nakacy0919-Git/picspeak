@@ -26,7 +26,7 @@ window.audioCtx = null;
 // 練習モーダル用変数
 window.isPracticeRecording = false;
 window.practiceRec = null;
-window.practiceSuccess = false; // リアルタイム成功判定フラグ
+window.practiceSuccess = false; 
 
 const viewStart = document.getElementById('view-start');
 const viewSelect = document.getElementById('view-select'); 
@@ -102,9 +102,6 @@ async function initApp() {
     } catch (error) { console.error("テーマリスト読み込み失敗:", error); }
 }
 
-// --- ▼ ここから上書き ▼ ---
-// --- js/main.js の一部 ---
-
 window.renderThemeGrid = async function() {
     const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
@@ -114,12 +111,9 @@ window.renderThemeGrid = async function() {
         let results = [];
         let isDetective = (window.appState && window.appState.selectedMode === 'detective');
         
-        // ★ ここから追加・修正 ★
         if (window.appState.selectedMode === 'oralquest') {
             const res = await fetch('data/oralquest_list.json?t=' + new Date().getTime());
             results = await res.json();
-            // oralquest_list.json は {id, imageSrc, description} の配列なので、
-            // 他のモードの形式 {id, data: {...}} に合わせるための処理
             results = results.map(item => ({
                 id: item.id,
                 data: item
@@ -128,7 +122,6 @@ window.renderThemeGrid = async function() {
             const res = await fetch('data/mosaic_list.json?t=' + new Date().getTime());
             results = await res.json();
         } else if (isDetective) {
-        // ★ ここまで ★
             const res = await fetch('data/detective_list.json?t=' + new Date().getTime());
             results = await res.json();
         } else {
@@ -140,11 +133,9 @@ window.renderThemeGrid = async function() {
             );
             results = await Promise.all(fetchPromises);
         }
-// ... (以下略) ...
 
         let html = '';
 
-        // DETECTIVE専用 チュートリアル表示
         if (isDetective) {
             html += `
             <div class="col-span-full bg-yellow-50/80 rounded-3xl p-5 md:p-8 shadow-sm border border-yellow-200 mb-6 relative overflow-hidden">
@@ -198,7 +189,6 @@ window.renderThemeGrid = async function() {
         themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
     }
 }
-// --- ▲ ここまで上書き ▲ ---
 
 window.handleTutorialClick = async function(e) {
     if (!window.tutorialData) {
@@ -229,7 +219,7 @@ window.handleTutorialClick = async function(e) {
     }
 
     if (hitDiff) {
-        showTutorialPopup(hitDiff);
+        window.showTutorialPopup(hitDiff);
     }
 }
 
@@ -284,18 +274,14 @@ window.showTutorialPopup = function(diff) {
     
     try { if (typeof playSound === 'function') playSound('match'); } catch(e) {}
 }
-// --- ▲ ここまで上書き ▲ ---
 
 window.startGameWithTheme = async function(id) {
-    // ==========================================
-    // ★ ゾンビ化したDetectiveモードを完全に破壊する（核ボタン）
-    // ==========================================
     const detUi = document.getElementById('detective-ui');
-    if (detUi) detUi.remove(); // 隠すのではなくHTMLごと完全に消し去る
+    if (detUi) detUi.remove(); 
     
     if (typeof window.DetectiveGame !== 'undefined') {
-        window.DetectiveGame.isActive = false; // 裏で動いている判定を強制停止
-        if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); // ゾンビタイマーを破壊
+        window.DetectiveGame.isActive = false; 
+        if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); 
     }
     
     const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
@@ -312,13 +298,12 @@ window.startGameWithTheme = async function(id) {
             compBarContainer.classList.remove('hidden');
         }
     }
-    // ==========================================
 
     try {
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
-        if (window.appState.selectedMode === 'oralquest') folderPath = 'data/oralquest'; // ★追加: ORAL QUEST用のフォルダを指定
+        if (window.appState.selectedMode === 'oralquest') folderPath = 'data/oralquest'; 
 
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
@@ -374,7 +359,9 @@ window.startGameWithTheme = async function(id) {
     window.timeElapsed = 0; 
     window.rawTranscriptForCounting = ""; 
     window.accumulatedTranscript = ""; 
-    if(typeof resetScore === 'function') resetScore(); 
+    
+    // ★ 大幅修正: 変数とUIを完全にリセットする
+    if(typeof window.resetScore === 'function') window.resetScore(); 
     
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
     if(document.getElementById('wordCountDisplay')) document.getElementById('wordCountDisplay').textContent = "0";
@@ -431,17 +418,25 @@ window.startGameWithTheme = async function(id) {
         }
     }
 
+    // ★ 大幅修正: 2回目以降のバグを防ぐため、ボタンUIを完全に初期状態に強制リセット
     const btnStartTurn = document.getElementById('btn-start-turn');
+    const btnFinishTurn = document.getElementById('btn-finish-turn');
+    const recIndicator = document.getElementById('recording-indicator');
+    
     if(btnStartTurn) {
         btnStartTurn.classList.remove('hidden');
         btnStartTurn.classList.add('animate-attention');
     }
+    if(btnFinishTurn) {
+        btnFinishTurn.classList.add('hidden'); // Finishボタンを強制的に隠す
+    }
+    if(recIndicator) {
+        recIndicator.classList.add('hidden'); // 録音中マークを強制的に隠す
+    }
     
-    // ★追加: ORAL QUESTモードなら専用画面へ遷移、それ以外は通常のPLAY画面へ
     if (window.appState.selectedMode === 'oralquest') {
         if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
         
-        // ★大修正：古いUIリセットを消し、OralQuestGame の init() を呼び出してスタートさせる！
         if (typeof window.OralQuestGame !== 'undefined') {
             window.OralQuestGame.init();
         } else {
@@ -488,14 +483,11 @@ window.finishGameAndShowResult = function() {
         const recIndicator = document.getElementById('recording-indicator');
         if(recIndicator) recIndicator.classList.add('hidden');
         
-        // ★★★ 修正：モードによって呼び出すリザルト描画処理を変える ★★★
         if (window.appState.selectedMode === 'detective') {
-            // DETECTIVE専用のリザルト描画（データと見つけたIDのリストを渡す）
             if (typeof window.DetectiveResult !== 'undefined') {
                 window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
             }
         } else {
-            // SNAPSHOT, MOSAICなどの従来のリザルト描画
             window.renderSnapshotResult();
         }
         
@@ -515,8 +507,8 @@ window.finishGameAndShowResult = function() {
 
 window.renderSnapshotResult = function() {
     let stats = null;
-    if(typeof getCompletionStats === 'function') {
-        stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
+    if(typeof window.getCompletionStats === 'function') {
+        stats = window.getCompletionStats(window.currentTheme, window.appState.selectedLevel);
     }
     
     const box = document.getElementById('transcript-box');
@@ -924,8 +916,7 @@ window.openPractice = function(text, ja) {
     modal.classList.remove('hidden');
 };
 
-
-    // ==========================================
+// ==========================================
 // ★ イベントデリゲーション (完全版)
 // ==========================================
 document.addEventListener('click', (e) => {
@@ -934,26 +925,19 @@ document.addEventListener('click', (e) => {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // 🎮 ★★★ モードボタンの処理（ワンクリックで即時遷移！） ★★★
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
         const selectedMode = modeBtn.getAttribute('data-mode');
         
-        // data-modeがない場合（PIC FLASHなど、直接リンクで飛ぶボタン）はJSでの遷移をスキップ
         if (!selectedMode) return; 
         
-        // 選択されたモードをアプリに記憶させる
         window.appState.selectedMode = selectedMode;
         
-        // STORYモードの場合は別ページへ
         if (selectedMode === 'story') {
             window.location.href = 'story.html';
             return;
         }
         
-        // ーーー 以下、画像選択画面（view-select）への即時遷移処理 ーーー
-        
-        // フルスクリーン化（ブラウザ制限で弾かれる場合があるためtry-catch）
         try {
             const elem = document.documentElement;
             if (!document.fullscreenElement) {
@@ -962,11 +946,9 @@ document.addEventListener('click', (e) => {
             }
         } catch (err) {}
         
-        // オーディオコンテキストの起動（音声再生エラーを防ぐため）
         if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
         if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
         
-        // レベルをデフォルト(小学生)にリセット
         const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
         if (elementaryBtn) {
             document.querySelectorAll('.level-btn').forEach(b => { 
@@ -978,13 +960,11 @@ document.addEventListener('click', (e) => {
             window.appState.selectedLevel = 'elementary';
         }
         
-        // 即座に画像選択画面へ遷移してリストを描画
         if (typeof showView === 'function') showView(document.getElementById('view-select')); 
         if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
-    // 🏠 ホームボタン
     const btnHome = e.target.closest('.action-btn-home');
     if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -996,7 +976,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ◀ 戻るボタン
     const btnBack = e.target.closest('.action-btn-back');
     if (btnBack) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -1016,7 +995,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🖼️ 画像選択時の処理
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
@@ -1024,7 +1002,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🎙️ PLAY画面：STARTボタン
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
@@ -1039,8 +1016,8 @@ document.addEventListener('click', (e) => {
         if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
         const supportToggle = document.getElementById('support-toggle');
         if (window.timeElapsed === 0 && supportToggle && supportToggle.checked) {
-            if(typeof getAggregatedData === 'function') {
-                const targetData = getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+            if(typeof window.getAggregatedData === 'function') {
+                const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
                 if(typeof window.dropPin === 'function') {
                     targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
                 }
@@ -1051,7 +1028,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🛑 PLAY画面：録音中インジケーター
     const recIndicator = e.target.closest('#recording-indicator');
     if (recIndicator) {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -1059,14 +1035,12 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🏁 PLAY画面：FINISHボタン
     const btnFinishTurn = e.target.closest('#btn-finish-turn');
     if (btnFinishTurn) {
         window.finishGameAndShowResult();
         return;
     }
 
-    // 🔄 RESULT画面：PLAY AGAIN
     const btnPlayAgain = e.target.closest('#btn-play-again');
     if (btnPlayAgain) {
         const finishBtn = document.getElementById('btn-finish-turn');
@@ -1079,7 +1053,6 @@ document.addEventListener('click', (e) => {
         if(sText) sText.textContent = "Ready";
         const pImage = document.getElementById('prompt-image');
         if (pImage) {
-            // ★修正：MOSAICモードなら強烈なモザイクをかけ直す
             if (window.appState.selectedMode === 'mosaic') {
                 pImage.classList.remove('blur-none', 'blur-md');
                 pImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
@@ -1096,7 +1069,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 🎤 発音練習関連
     const practiceStartBtn = e.target.closest('#btn-start-practice');
     if (practiceStartBtn) {
         window.togglePracticeRecording();
@@ -1109,7 +1081,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ℹ️ About画面へ
     const btnGotoAbout = e.target.closest('#btn-goto-about');
     if (btnGotoAbout) {
         if (typeof showView === 'function') showView(document.getElementById('view-about'));
@@ -1121,7 +1092,6 @@ document.addEventListener('click', (e) => {
 // ★ ORAL QUEST ボタンイベント
 // ==========================================
 document.addEventListener('click', (e) => {
-    // STARTボタン
     const btnOqStart = e.target.closest('#btn-oq-start');
     if (btnOqStart) {
         if (typeof window.OralQuestGame !== 'undefined') {
@@ -1130,7 +1100,6 @@ document.addEventListener('click', (e) => {
         }
     }
 
-    // LISTENINGインジケーター（タップで手動停止）
     const oqIndicator = e.target.closest('#oq-recording-indicator');
     if (oqIndicator) {
         if (typeof window.OralQuestGame !== 'undefined') {
@@ -1138,18 +1107,14 @@ document.addEventListener('click', (e) => {
         }
     }
 
-    // NEXT STAGEボタン
-    // ▼▼ 以前追加したイベントデレゲーション内の NEXT STAGE ボタン部分を書き換え ▼▼
     const btnOqNext = e.target.closest('#btn-oq-next');
     if (btnOqNext) {
         if (typeof window.OralQuestGame !== 'undefined') {
-            // 直接 updateUIForStage を呼ぶのではなく、フロー管理関数に任せる
             window.OralQuestGame.handleNextButton();
         }
     }
 });
 
-// ★ 最後のカッコのエラーも修正済みです
 window.addEventListener('DOMContentLoaded', window.initApp);
 
 // ==========================================
@@ -1161,19 +1126,16 @@ function setupOqPasswordLock() {
         oqBtn.addEventListener('click', (e) => {
             const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
             if (pass !== "9999") {
-                // パスワードが違う場合、既存のモード選択処理を強制的にブロック
                 e.stopImmediatePropagation(); 
                 e.preventDefault();
                 alert("パスワードが違います。");
             }
-        }, true); // true (キャプチャフェーズ) を指定することで、他のクリック処理より必ず「一番最初」に実行させます
+        }, true); 
     }
 }
 
-// DOMの読み込みが完了しているか確認してから実行
 if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
 } else {
     setupOqPasswordLock();
 }
-// ==========================================

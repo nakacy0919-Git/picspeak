@@ -3,18 +3,19 @@
 // スコアリングおよび達成率計算システム (厳格＆誤認識防止版)
 // ==========================================
 
-let currentScore = 0;
-let foundWordsSet = new Set();
-let foundChunksSet = new Set();
-let foundSentencesSet = new Set();
+// ★ 修正：他のファイル（game.jsなど）から確実にアクセス・リセットできるように window オブジェクトに紐付け
+window.currentScore = 0;
+window.foundWordsSet = new Set();
+window.foundChunksSet = new Set();
+window.foundSentencesSet = new Set();
 
-const STOP_WORDS = new Set([
+window.STOP_WORDS = new Set([
     'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
     'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
     'with', 'for', 'there', 'some'
 ]);
 
-function getAggregatedData(theme, level) {
+window.getAggregatedData = function(theme, level) {
     const data = { words: [], chunks: [], sentences: [] };
     if (!theme || !theme.scoringData) return data;
 
@@ -31,13 +32,21 @@ function getAggregatedData(theme, level) {
         }
     });
     return data;
-}
+};
 
-function flexibleMatch(targetText, spokenWordsArray) {
+// ★ 修正：第3引数に itemType (word / chunk / sentence) を追加し、文章の時は STOP_WORDS を除外しないように変更
+window.flexibleMatch = function(targetText, spokenWordsArray, itemType) {
     if (!targetText) return false;
     const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
-    const coreWords = targetWords.filter(w => !STOP_WORDS.has(w) && w.length > 0);
-    const wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
+    
+    let wordsToMatch = targetWords;
+    
+    // 単語(word)の判定の時だけ、a や the などの冠詞やbe動詞を無視して「核となる単語」で判定する
+    if (itemType === 'word') {
+        const coreWords = targetWords.filter(w => !window.STOP_WORDS.has(w) && w.length > 0);
+        wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
+    }
+
     if (wordsToMatch.length === 0) return false;
 
     let matchCount = 0;
@@ -53,45 +62,45 @@ function flexibleMatch(targetText, spokenWordsArray) {
 
     const requiredRate = wordsToMatch.length <= 2 ? 1.0 : 0.8;
     return (matchCount / wordsToMatch.length) >= requiredRate;
-}
+};
 
-function calculateScore(transcript, theme, selectedLevel) {
+window.calculateScore = function(transcript, theme, selectedLevel) {
     if (!transcript || !theme || !theme.scoringData) return null;
 
-    // ▼▼ 追加：NG WORDモード時の強制ゲームオーバー判定 ▼▼
-    if (window.appState && window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
-        if (ngWordGame.checkNgWord(transcript)) {
-            return null; // NGワードを踏んだら即座にスコア計算を停止
+    if (window.appState && window.appState.selectedMode === 'ngword' && typeof window.ngWordGame !== 'undefined') {
+        if (window.ngWordGame.checkNgWord(transcript)) {
+            return null; 
         }
     }
 
     const spokenWordsArray = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
-    const targetData = getAggregatedData(theme, selectedLevel);
+    const targetData = window.getAggregatedData(theme, selectedLevel);
 
     let newWords = [];
     let newChunks = [];
     let newSentences = [];
     let pointsToAdd = 0;
 
+    // それぞれの判定時に 'word', 'chunk', 'sentence' とタイプを渡して判定の厳しさを分ける
     targetData.words.forEach(wordObj => {
-        if (!foundWordsSet.has(wordObj.text) && flexibleMatch(wordObj.text, spokenWordsArray)) {
-            foundWordsSet.add(wordObj.text);
+        if (!window.foundWordsSet.has(wordObj.text) && window.flexibleMatch(wordObj.text, spokenWordsArray, 'word')) {
+            window.foundWordsSet.add(wordObj.text);
             newWords.push(wordObj.text);
             pointsToAdd += (wordObj.points || 10);
         }
     });
 
     targetData.chunks.forEach(chunkObj => {
-        if (!foundChunksSet.has(chunkObj.text) && flexibleMatch(chunkObj.text, spokenWordsArray)) {
-            foundChunksSet.add(chunkObj.text);
+        if (!window.foundChunksSet.has(chunkObj.text) && window.flexibleMatch(chunkObj.text, spokenWordsArray, 'chunk')) {
+            window.foundChunksSet.add(chunkObj.text);
             newChunks.push(chunkObj.text);
             pointsToAdd += (chunkObj.points || 50);
         }
     });
 
     targetData.sentences.forEach(sentenceObj => {
-        if (!foundSentencesSet.has(sentenceObj.text) && flexibleMatch(sentenceObj.text, spokenWordsArray)) {
-            foundSentencesSet.add(sentenceObj.text);
+        if (!window.foundSentencesSet.has(sentenceObj.text) && window.flexibleMatch(sentenceObj.text, spokenWordsArray, 'sentence')) {
+            window.foundSentencesSet.add(sentenceObj.text);
             newSentences.push(sentenceObj);
             pointsToAdd += (sentenceObj.points || 200);
         }
@@ -99,33 +108,35 @@ function calculateScore(transcript, theme, selectedLevel) {
 
     const newHitsCount = newWords.length + newChunks.length + newSentences.length;
     if (newHitsCount > 0) {
-        const chunkCombo = foundChunksSet.size * 0.2;
-        const sentenceCombo = foundSentencesSet.size * 0.5;
+        const chunkCombo = window.foundChunksSet.size * 0.2;
+        const sentenceCombo = window.foundSentencesSet.size * 0.5;
         const totalMultiplier = 1.0 + chunkCombo + sentenceCombo;
         const finalPoints = Math.floor(pointsToAdd * totalMultiplier);
-        currentScore += finalPoints;
+        window.currentScore += finalPoints;
 
         return {
-            score: currentScore, addedPoints: finalPoints, multiplier: totalMultiplier.toFixed(1),
-            newWords, allFoundWords: Array.from(foundWordsSet), allFoundChunks: Array.from(foundChunksSet),
-            allFoundSentences: Array.from(foundSentencesSet), isPerfect: newSentences.length > 0 
+            score: window.currentScore, addedPoints: finalPoints, multiplier: totalMultiplier.toFixed(1),
+            newWords, allFoundWords: Array.from(window.foundWordsSet), allFoundChunks: Array.from(window.foundChunksSet),
+            allFoundSentences: Array.from(window.foundSentencesSet), isPerfect: newSentences.length > 0 
         };
     }
     return null; 
-}
+};
 
-function resetScore() {
-    currentScore = 0; foundWordsSet.clear(); foundChunksSet.clear(); foundSentencesSet.clear();
-}
+// ★ 修正：外部ファイルから必ずアクセスできるように window に紐付け
+window.resetScore = function() {
+    window.currentScore = 0; 
+    window.foundWordsSet.clear(); 
+    window.foundChunksSet.clear(); 
+    window.foundSentencesSet.clear();
+};
 
-// ★ 大幅修正: 固定の天井を廃止し、全体とカテゴリーを厳密に計算するロジック
-function getCompletionStats(theme, selectedLevel) {
-    const targetData = getAggregatedData(theme, selectedLevel);
+window.getCompletionStats = function(theme, selectedLevel) {
+    const targetData = window.getAggregatedData(theme, selectedLevel);
     
     let totalEarnedPoints = 0;
-    let maxPossiblePoints = 0; // そのレベルで獲得できる理論上の「満点」
+    let maxPossiblePoints = 0; 
     
-    // カテゴリーの初期化 (earned:獲得点, max:そのカテゴリの満点)
     const categoryStats = {
         "object": { label: "Object (物体・人物)", earned: 0, max: 0, cleared: [], missed: [] },
         "attribute": { label: "Attribute (属性・状態)", earned: 0, max: 0, cleared: [], missed: [] },
@@ -144,7 +155,6 @@ function getCompletionStats(theme, selectedLevel) {
                 categoryStats[categoryName] = { label: categoryName, earned: 0, max: 0, cleared: [], missed: [] };
             }
 
-            // 全体の満点と、各カテゴリーの満点を加算
             maxPossiblePoints += pts;
             categoryStats[categoryName].max += pts;
 
@@ -158,18 +168,15 @@ function getCompletionStats(theme, selectedLevel) {
         });
     };
 
-    // ポイント配分：単語10点、チャンク20点、文40点
-    processItems(targetData.words, foundWordsSet, 10);
-    processItems(targetData.chunks, foundChunksSet, 20);
-    processItems(targetData.sentences, foundSentencesSet, 40);
+    processItems(targetData.words, window.foundWordsSet, 10);
+    processItems(targetData.chunks, window.foundChunksSet, 20);
+    processItems(targetData.sentences, window.foundSentencesSet, 40);
 
-    // ★ 総合達成率（固定の天井ではなく、獲得ポイント ÷ 全問題の総ポイントで厳密計算）
     let completionRate = 0;
     if (maxPossiblePoints > 0) {
         completionRate = Math.min(100, Math.floor((totalEarnedPoints / maxPossiblePoints) * 100));
     }
     
-    // ★ 各カテゴリーの達成率（アイテム数ではなく、カテゴリー内の獲得ポイントベースで厳密計算）
     Object.keys(categoryStats).forEach(key => {
         const cat = categoryStats[key];
         if (cat.max > 0) {
@@ -181,12 +188,12 @@ function getCompletionStats(theme, selectedLevel) {
 
     return {
         completionRate,
-        missedWords: targetData.words.filter(w => !foundWordsSet.has(w.text)),
-        missedChunks: targetData.chunks.filter(c => !foundChunksSet.has(c.text)),
-        missedSentences: targetData.sentences.filter(s => !foundSentencesSet.has(s.text)),
-        clearedWords: targetData.words.filter(w => foundWordsSet.has(w.text)),
-        clearedChunks: targetData.chunks.filter(c => foundChunksSet.has(c.text)),
-        clearedSentences: targetData.sentences.filter(s => foundSentencesSet.has(s.text)),
+        missedWords: targetData.words.filter(w => !window.foundWordsSet.has(w.text)),
+        missedChunks: targetData.chunks.filter(c => !window.foundChunksSet.has(c.text)),
+        missedSentences: targetData.sentences.filter(s => !window.foundSentencesSet.has(s.text)),
+        clearedWords: targetData.words.filter(w => window.foundWordsSet.has(w.text)),
+        clearedChunks: targetData.chunks.filter(c => window.foundChunksSet.has(c.text)),
+        clearedSentences: targetData.sentences.filter(s => window.foundSentencesSet.has(s.text)),
         categories: categoryStats 
     };
-}
+};
