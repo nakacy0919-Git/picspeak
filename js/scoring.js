@@ -1,9 +1,8 @@
 // js/scoring.js
 // ==========================================
-// スコアリングおよび達成率計算システム (厳格＆誤認識防止版)
+// スコアリングおよび達成率計算システム (厳格＆バケツ方式版)
 // ==========================================
 
-// ★ 修正：他のファイル（game.jsなど）から確実にアクセス・リセットできるように window オブジェクトに紐付け
 window.currentScore = 0;
 window.foundWordsSet = new Set();
 window.foundChunksSet = new Set();
@@ -34,14 +33,12 @@ window.getAggregatedData = function(theme, level) {
     return data;
 };
 
-// ★ 修正：第3引数に itemType (word / chunk / sentence) を追加し、文章の時は STOP_WORDS を除外しないように変更
 window.flexibleMatch = function(targetText, spokenWordsArray, itemType) {
     if (!targetText) return false;
     const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
     
     let wordsToMatch = targetWords;
     
-    // 単語(word)の判定の時だけ、a や the などの冠詞やbe動詞を無視して「核となる単語」で判定する
     if (itemType === 'word') {
         const coreWords = targetWords.filter(w => !window.STOP_WORDS.has(w) && w.length > 0);
         wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
@@ -81,7 +78,6 @@ window.calculateScore = function(transcript, theme, selectedLevel) {
     let newSentences = [];
     let pointsToAdd = 0;
 
-    // それぞれの判定時に 'word', 'chunk', 'sentence' とタイプを渡して判定の厳しさを分ける
     targetData.words.forEach(wordObj => {
         if (!window.foundWordsSet.has(wordObj.text) && window.flexibleMatch(wordObj.text, spokenWordsArray, 'word')) {
             window.foundWordsSet.add(wordObj.text);
@@ -123,7 +119,6 @@ window.calculateScore = function(transcript, theme, selectedLevel) {
     return null; 
 };
 
-// ★ 修正：外部ファイルから必ずアクセスできるように window に紐付け
 window.resetScore = function() {
     window.currentScore = 0; 
     window.foundWordsSet.clear(); 
@@ -134,57 +129,82 @@ window.resetScore = function() {
 window.getCompletionStats = function(theme, selectedLevel) {
     const targetData = window.getAggregatedData(theme, selectedLevel);
     
-    let totalEarnedPoints = 0;
-    let maxPossiblePoints = 0; 
-    
+    // ★ 各要素の評価ウェイト（合計100%）と、それを満たすための「目標ポイント」
+    const CATEGORY_TARGETS = {
+        object: { target: 40, weight: 20 },     // 40pt分言えれば20%獲得
+        attribute: { target: 40, weight: 20 },  // 40pt分言えれば20%獲得
+        detail: { target: 40, weight: 20 },     // 40pt分言えれば20%獲得
+        gist: { target: 60, weight: 40 }        // 60pt分（文章など）言えれば40%獲得
+    };
+
     const categoryStats = {
         "object": { label: "Object (物体・人物)", earned: 0, max: 0, cleared: [], missed: [] },
         "attribute": { label: "Attribute (属性・状態)", earned: 0, max: 0, cleared: [], missed: [] },
         "detail": { label: "Detail (詳細・背景)", earned: 0, max: 0, cleared: [], missed: [] },
-        "gist": { label: "Gist (要点・動作)", earned: 0, max: 0, cleared: [], missed: [] },
-        "inference": { label: "Inference (推測・雰囲気)", earned: 0, max: 0, cleared: [], missed: [] },
+        "gist": { label: "Gist (要点・推測)", earned: 0, max: 0, cleared: [], missed: [] },
         "other": { label: "Others (その他)", earned: 0, max: 0, cleared: [], missed: [] }
     };
 
     const processItems = (items, foundSet, fallbackPoints) => {
         items.forEach(item => {
             const pts = item.points || fallbackPoints;
-            const categoryName = item.category || item.type || "other";
+            let rawCategory = item.category || item.type || "other";
             
-            if (!categoryStats[categoryName]) {
-                categoryStats[categoryName] = { label: categoryName, earned: 0, max: 0, cleared: [], missed: [] };
-            }
+            // 高度な情報である inference は gist（要点）の枠で高く評価する
+            if (rawCategory === 'inference') rawCategory = 'gist';
+            if (!categoryStats[rawCategory]) rawCategory = 'other';
 
-            maxPossiblePoints += pts;
-            categoryStats[categoryName].max += pts;
+            categoryStats[rawCategory].max += pts;
 
             if (foundSet.has(item.text)) {
-                totalEarnedPoints += pts;
-                categoryStats[categoryName].earned += pts;
-                categoryStats[categoryName].cleared.push(item);
+                categoryStats[rawCategory].earned += pts;
+                categoryStats[rawCategory].cleared.push(item);
             } else {
-                categoryStats[categoryName].missed.push(item);
+                categoryStats[rawCategory].missed.push(item);
             }
         });
     };
 
+    // 理論上のポイントは 単語10pt、チャンク20pt、文章40pt をベースとする
     processItems(targetData.words, window.foundWordsSet, 10);
     processItems(targetData.chunks, window.foundChunksSet, 20);
     processItems(targetData.sentences, window.foundSentencesSet, 40);
 
     let completionRate = 0;
-    if (maxPossiblePoints > 0) {
-        completionRate = Math.min(100, Math.floor((totalEarnedPoints / maxPossiblePoints) * 100));
-    }
+    let totalValidWeight = 0;
+
+    // 写真によっては特定のカテゴリー（例：detailがない等）が存在しない場合の救済処理
+    Object.keys(CATEGORY_TARGETS).forEach(key => {
+        if (categoryStats[key].max > 0) {
+            totalValidWeight += CATEGORY_TARGETS[key].weight;
+        }
+    });
+    const weightMultiplier = totalValidWeight > 0 ? (100 / totalValidWeight) : 1;
     
-    Object.keys(categoryStats).forEach(key => {
+    // バケツ方式で各カテゴリの達成率を計算
+    Object.keys(CATEGORY_TARGETS).forEach(key => {
         const cat = categoryStats[key];
-        if (cat.max > 0) {
-            cat.matchRate = Math.min(100, Math.floor((cat.earned / cat.max) * 100));
+        const target = CATEGORY_TARGETS[key].target;
+        const weight = CATEGORY_TARGETS[key].weight * weightMultiplier;
+        
+        // そのカテゴリーの問題数が少なく、目標ポイントに満たない場合は、ある分だけで満点とする
+        const actualTarget = Math.min(target, cat.max > 0 ? cat.max : target);
+        
+        if (actualTarget > 0 && cat.max > 0) {
+            const rate = Math.min(1.0, cat.earned / actualTarget);
+            completionRate += rate * weight;
+            cat.matchRate = Math.floor(rate * 100); 
         } else {
             cat.matchRate = 0;
         }
     });
+
+    // other（その他）の表示用計算
+    if (categoryStats.other.max > 0) {
+        categoryStats.other.matchRate = Math.min(100, Math.floor((categoryStats.other.earned / categoryStats.other.max) * 100));
+    }
+
+    completionRate = Math.min(100, Math.floor(completionRate));
 
     return {
         completionRate,
