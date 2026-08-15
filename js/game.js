@@ -41,7 +41,6 @@ window.triggerSupportHint = function() {
 };
 
 window.startTimer = function() {
-    // ★追加: MOSAICモードならゲーム開始（ぼかし設定など）処理を呼ぶ
     if (window.appState && window.appState.selectedMode === 'mosaic') {
         window.MosaicGame.start();
     }
@@ -134,14 +133,12 @@ window.handleSpeechResult = function(finalText, interimText) {
         return;
     }
 
-    // ▼▼ ここを追加：ORAL QUESTモードの時は専用ロジックに音声を渡して終了 ▼▼
     if (window.appState && window.appState.selectedMode === 'oralquest') {
         if (typeof window.OralQuestGame !== 'undefined') {
             window.OralQuestGame.handleSpeech(finalText, interimText);
         }
         return; 
     }
-    // ▲▲ ここまで ▲▲
 
     if (finalText.trim().length > 0) window.rawTranscriptForCounting += finalText + " ";
     const currentTempText = window.rawTranscriptForCounting + interimText;
@@ -266,11 +263,9 @@ window.showPerfectAnimation = function(points) {
     setTimeout(() => { perfectOverlay.classList.add('hidden'); }, 2000);
 };
 
-// ★NEW: 洗練されたSVGアイコンとスマホ表示制限(3つ)の実装
 window.createFeedbackSection = function(title, items, type, isCleared) {
     if(items.length === 0) return '';
     
-    // スマホ(<768px)は3個、タブレット以上は6個まで表示
     const isMobile = window.innerWidth < 768;
     const limit = isMobile ? 3 : 6; 
     
@@ -279,7 +274,6 @@ window.createFeedbackSection = function(title, items, type, isCleared) {
     let textColor = isCleared ? 'text-blue-800' : 'text-gray-700';
     let subTextColor = isCleared ? 'text-blue-500' : 'text-gray-400';
     
-    // SVG Icons
     const svgSpeaker = `<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072M18.364 5.636a9 9 0 010 12.728M11 5L6 9H2v6h4l5 4V5z"></path></svg>`;
     const svgMic = `<svg class="w-5 h-5 md:w-6 md:h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z"></path></svg>`;
 
@@ -322,7 +316,6 @@ window.finishGameAndShowResult = function() {
     clearInterval(window.gameTimer);
     if(window.supportInterval) clearInterval(window.supportInterval);
     
-    // ★追加: MOSAICモードならシステムを停止する
     if (window.appState && window.appState.selectedMode === 'mosaic') {
         window.MosaicGame.stop();
     }
@@ -333,7 +326,6 @@ window.finishGameAndShowResult = function() {
     let wpm = window.timeElapsed > 0 ? Math.round(finalWordCount / (window.timeElapsed / 60)) : 0;
     const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
 
-    // ★NEW: 過去スコア比較の処理
     let prevScore = "-", prevComp = "-", prevWords = "-", prevWpm = "-";
     try {
         const logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
@@ -356,6 +348,19 @@ window.finishGameAndShowResult = function() {
             words: finalWordCount, 
             wpm: wpm 
         });
+    }
+
+    // ★ 修正箇所：次回のゲーム開始時にUIと変数がバグらないように完全に初期化（リセット）する
+    window.isRecording = false; 
+    window.rawTranscriptForCounting = ""; 
+    const btnStartTurn = document.getElementById('btn-start-turn');
+    const btnFinishTurn = document.getElementById('btn-finish-turn');
+    if (btnStartTurn) { 
+        btnStartTurn.classList.remove('hidden'); 
+        btnStartTurn.classList.remove('animate-attention'); 
+    }
+    if (btnFinishTurn) { 
+        btnFinishTurn.classList.add('hidden'); 
     }
 
     const rankingContainer = document.getElementById('ranking-container');
