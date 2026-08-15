@@ -2,10 +2,38 @@
 // Pic Flash 専用ロジック (js/picflash.js)
 // ==========================================
 
+const LANG_INFO = {
+    "en-US": { cc: "us", name: "English", hintLang: "ja-JP" },
+    "ja-JP": { cc: "jp", name: "日本語", hintLang: "en-US" },
+    "pt-BR": { cc: "br", name: "Português", hintLang: "en-US" },
+    "vi-VN": { cc: "vn", name: "Tiếng Việt", hintLang: "en-US" },
+    "tl-PH": { cc: "ph", name: "Tagalog", hintLang: "en-US" },
+    "es-ES": { cc: "es", name: "Español", hintLang: "en-US" },
+    "zh-CN": { cc: "cn", name: "中文", hintLang: "en-US" },
+    "ko-KR": { cc: "kr", name: "한국어", hintLang: "en-US" },
+    "id-ID": { cc: "id", name: "Indonesia", hintLang: "en-US" },
+    "ne-NP": { cc: "np", name: "ネパール語", hintLang: "en-US" },
+    "th-TH": { cc: "th", name: "タイ語", hintLang: "en-US" },
+    "hi-IN": { cc: "in", name: "ヒンディー", hintLang: "en-US" },
+    "ru-RU": { cc: "ru", name: "ロシア語", hintLang: "en-US" },
+    "fr-FR": { cc: "fr", name: "Français", hintLang: "en-US" },
+    "de-DE": { cc: "de", name: "Deutsch", hintLang: "en-US" },
+    "it-IT": { cc: "it", name: "Italiano", hintLang: "en-US" },
+    "ar-SA": { cc: "sa", name: "العربية", hintLang: "en-US" },
+    "tr-TR": { cc: "tr", name: "Türkçe", hintLang: "en-US" },
+    "my-MM": { cc: "mm", name: "ビルマ語", hintLang: "en-US" }
+};
+
+function getFlagHtml(cc, classes = "w-5 h-auto inline-block rounded-sm shadow-sm") {
+    if (!cc || cc === "un") return "🌍"; 
+    return `<img src="https://flagcdn.com/w40/${cc}.png" class="${classes} object-contain" alt="flag">`;
+}
+
 const pfState = {
     mode: 'practice', 
     category: '',
-    language: 'en-US',   
+    languages: ['en-US'], 
+    currentLangIndex: 0,  
     timePerCard: 5,      
     questionCount: 10,   
     cards: [],
@@ -16,19 +44,20 @@ const pfState = {
     timerId: null,
     isPlaying: false,
     hasAnswered: false,
-    comboCount: 0 // 連続正解カウント
+    isTransitioning: false, 
+    comboCount: 0 
 };
 
 window.CATEGORIES_DATA = [];
 
 const correctAudio = new Audio('assets/sounds/correct.mp3');
+const partialCorrectAudio = new Audio('assets/sounds/correct.mp3');
 
 function unlockAudio() {
-    correctAudio.volume = 0;
+    correctAudio.volume = 0; partialCorrectAudio.volume = 0;
     correctAudio.play().then(() => {
-        correctAudio.pause();
-        correctAudio.volume = 1;
-        correctAudio.currentTime = 0;
+        correctAudio.pause(); correctAudio.volume = 1; correctAudio.currentTime = 0;
+        partialCorrectAudio.pause(); partialCorrectAudio.volume = 1; partialCorrectAudio.currentTime = 0;
     }).catch(e => console.log("Unlock failed, but will retry:", e));
     document.removeEventListener('touchstart', unlockAudio);
     document.removeEventListener('click', unlockAudio);
@@ -37,9 +66,12 @@ document.addEventListener('touchstart', unlockAudio, {once: true});
 document.addEventListener('click', unlockAudio, {once: true});
 
 function playPfSound(type) {
-    if (type === 'correct' || type === 'levelUp' || type === 'practiceCorrect') {
+    if (type === 'correct') {
         correctAudio.currentTime = 0;
-        correctAudio.play().catch(e => console.log("音声再生エラー:", e));
+        correctAudio.play().catch(e => {});
+    } else if (type === 'stepCorrect' || type === 'practiceCorrect') {
+        partialCorrectAudio.currentTime = 0;
+        partialCorrectAudio.play().catch(e => {});
     } else if (type === 'skip') {
         try {
             const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -55,12 +87,18 @@ function playPfSound(type) {
     }
 }
 
-function checkIsCorrect(card, transcript) {
+function getTargetWordForLang(card, langCode) {
+    let targetWord = card.targets && card.targets[langCode] ? card.targets[langCode][0] : "";
+    if (!targetWord && langCode === 'en-US' && card.level1) targetWord = card.level1.words[0];
+    return targetWord;
+}
+
+function checkIsCorrect(card, transcript, targetLang) {
     let targetWordsArray = [];
-    if (card.targets && card.targets[pfState.language]) {
-        targetWordsArray = card.targets[pfState.language];
-    } else if (card.level1 && card.level1.words) {
-        targetWordsArray = card.level1.words;
+    if (card.targets && card.targets[targetLang]) {
+        targetWordsArray = card.targets[targetLang];
+    } else if (targetLang === 'en-US' && card.level1 && card.level1.words) {
+        targetWordsArray = card.level1.words; 
     }
 
     if (!targetWordsArray || targetWordsArray.length === 0) return false;
@@ -76,7 +114,6 @@ let pfRec = null;
 
 if (SpeechRec) {
     pfRec = new SpeechRec();
-    pfRec.lang = 'en-US'; 
     pfRec.interimResults = true;
     pfRec.continuous = true;
     
@@ -92,22 +129,44 @@ if (SpeechRec) {
             if (statusTextEl) statusTextEl.innerText = currentTranscript || 'Listening...';
         }
 
-        if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.hasAnswered) {
+        if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.hasAnswered && !pfState.isTransitioning) {
             if (cleanTranscript.includes("skip") || cleanTranscript.includes("スキップ")) {
                 handleSkip();
                 return;
             }
 
             const card = pfState.cards[pfState.currentIndex];
-            if (checkIsCorrect(card, cleanTranscript)) {
-                handleCorrect();
+            const currentLang = pfState.languages[pfState.currentLangIndex];
+
+            if (checkIsCorrect(card, cleanTranscript, currentLang)) {
+                pfState.currentLangIndex++;
+                revealAllHints('step'); 
+                
+                if (pfState.currentLangIndex >= pfState.languages.length) {
+                    handleCorrect(); 
+                } else {
+                    pfState.isTransitioning = true;
+                    playPfSound('stepCorrect');
+                    updateTrialLangUI();
+                    
+                    setTimeout(() => {
+                        updateHintUI();
+                        pfState.cardStartTime = Date.now(); 
+                        pfState.isTransitioning = false;
+                        
+                        try { pfRec.abort(); } catch(err){}
+                        pfRec.lang = pfState.languages[pfState.currentLangIndex];
+                        document.getElementById('pf-status-text').innerText = 'Ready...';
+                        setTimeout(() => { try { pfRec.start(); } catch(err){} }, 100);
+                    }, 600); 
+                }
             }
         }
     };
 
     pfRec.onend = () => {
         if (pfState.isPlaying && pfState.mode === 'trial') {
-            try { pfRec.start(); } catch(err){}
+            setTimeout(() => { try { pfRec.start(); } catch(err){} }, 200);
         }
     };
 }
@@ -119,25 +178,51 @@ function showPfView(viewId) {
     document.getElementById(viewId).classList.remove('hidden');
 }
 
+function initLangCheckboxes() {
+    const container = document.getElementById('pf-lang-checkboxes');
+    if(!container) return;
+    container.innerHTML = '';
+    
+    Object.entries(LANG_INFO).forEach(([code, info]) => {
+        const isChecked = code === 'en-US' ? 'checked' : '';
+        container.innerHTML += `
+            <label class="flex items-center space-x-2 p-3 bg-gray-50 rounded-xl border border-gray-200 cursor-pointer hover:bg-pink-50 hover:border-pink-200 transition-colors">
+                <input type="checkbox" value="${code}" class="pf-lang-cb w-5 h-5 text-pink-500 rounded focus:ring-pink-500" ${isChecked}>
+                <span class="font-bold text-gray-700 text-sm md:text-base flex items-center gap-1.5">${getFlagHtml(info.cc)} ${info.name}</span>
+            </label>
+        `;
+    });
+
+    document.querySelectorAll('.pf-lang-cb').forEach(cb => {
+        cb.addEventListener('change', () => {
+            const checked = Array.from(document.querySelectorAll('.pf-lang-cb:checked')).map(el => el.value);
+            if (checked.length === 0) {
+                alert("少なくとも1つの言語を選んでください！");
+                cb.checked = true;
+                return;
+            }
+            pfState.languages = checked;
+        });
+    });
+}
+
 function renderPracticeGrid() {
     const gridEl = document.getElementById('pf-practice-grid');
     gridEl.innerHTML = '';
 
     pfState.cards.forEach((card, cardIdx) => {
-        let targetWord = "???";
-        if (card.targets && card.targets[pfState.language]) {
-            targetWord = card.targets[pfState.language][0];
-        } else if (card.level1 && card.level1.words) {
-            targetWord = card.level1.words[0];
-        }
+        const primaryLang = pfState.languages[0];
+        let targetWord = getTargetWordForLang(card, primaryLang) || "???";
         const fileName = card.img.split('/').pop();
+        const info = LANG_INFO[primaryLang];
 
         gridEl.innerHTML += `
             <div onclick="openPracticeModal(${cardIdx})" class="bg-white rounded-3xl shadow-sm border border-gray-200 overflow-hidden cursor-pointer transform hover:-translate-y-2 transition-all hover:shadow-lg hover:border-pink-300 group flex flex-col">
                 <div class="w-full aspect-[4/3] bg-gray-50 relative p-3 md:p-4 flex items-center justify-center shrink-0">
                     <img src="assets/images/picflash/${fileName}" class="w-full h-full object-contain group-hover:scale-105 transition-transform duration-500">
                 </div>
-                <div class="p-3 md:p-4 text-center bg-white border-t border-gray-100 flex-1 flex items-center justify-center">
+                <div class="p-3 md:p-4 text-center bg-white border-t border-gray-100 flex-1 flex items-center justify-center flex-col">
+                    <div class="text-[10px] text-gray-400 font-bold mb-1 flex items-center justify-center gap-1">${getFlagHtml(info.cc, "w-3 h-auto")} ${info.name}</div>
                     <div class="font-black text-gray-800 text-xl md:text-2xl lg:text-3xl break-words leading-tight w-full px-1 line-clamp-2">${targetWord}</div>
                 </div>
             </div>
@@ -150,8 +235,6 @@ function renderPracticeGrid() {
 // ------------------------------------------
 async function startPfGame() {
     if (!pfState.category) return;
-
-    if (pfRec) pfRec.lang = pfState.language;
 
     try {
         const res = await fetch(`data/picflash/${pfState.category}.json?t=${new Date().getTime()}`);
@@ -169,21 +252,20 @@ async function startPfGame() {
                 qCount = Math.min(shuffled.length, parseInt(pfState.questionCount));
             }
             pfState.cards = shuffled.slice(0, qCount); 
-            startTrialMode(); // タイマー開始ではなく待機画面への遷移
+            startTrialMode(); 
         }
     } catch (error) {
         alert("エラー: JSONデータが見つかりません。");
     }
 }
 
-// タイムアタックの「待機状態」を作る
 function startTrialMode() {
     pfState.currentIndex = 0;
     pfState.penalty = 0; 
     pfState.comboCount = 0;
-    pfState.isPlaying = false; // まだタイマーは動かさない
+    pfState.isPlaying = false; 
+    pfState.isTransitioning = false;
     
-    // ランプの生成
     const lampsContainer = document.getElementById('pf-progress-lamps');
     if (lampsContainer) {
         lampsContainer.innerHTML = '';
@@ -194,7 +276,13 @@ function startTrialMode() {
 
     document.getElementById('pf-total-count').innerText = pfState.cards.length;
     document.getElementById('pf-status-text').innerText = 'Ready...';
-    document.getElementById('pf-timer').innerText = '0.00';
+    
+    // ★ 待機画面のタイマー表示初期化
+    if (pfState.timePerCard !== 'none') {
+        document.getElementById('pf-timer').innerText = pfState.timePerCard.toFixed(2);
+    } else {
+        document.getElementById('pf-timer').innerText = '0.00';
+    }
 
     const timerContainer = document.getElementById('pf-card-timer-container');
     if (pfState.timePerCard !== 'none') timerContainer.classList.remove('hidden');
@@ -202,14 +290,12 @@ function startTrialMode() {
 
     showPfView('view-picflash-play');
     
-    // 裏で最初のカードの画像とヒント枠だけ描画しておく
+    pfState.currentLangIndex = 0;
     loadPfCard(true);
 
-    // ★ スタートのオーバーレイを表示
     document.getElementById('pf-start-overlay').classList.remove('hidden');
 }
 
-// ★ 実際のプレイ（タイマーと音声認識）開始
 document.getElementById('btn-pf-real-start').addEventListener('click', () => {
     document.getElementById('pf-start-overlay').classList.add('hidden');
     
@@ -220,43 +306,68 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
     if (pfState.timerId) clearInterval(pfState.timerId);
     
     pfState.timerId = setInterval(() => {
-        const current = (Date.now() - pfState.startTime) / 1000 + pfState.penalty;
-        document.getElementById('pf-timer').innerText = current.toFixed(2);
+        // 解答後や画面遷移中はタイマーをストップさせる
+        if (pfState.hasAnswered || pfState.isTransitioning) return;
 
         const cardElapsed = (Date.now() - pfState.cardStartTime) / 1000;
-        
-        // ヒントの自動開示 (3秒で1文字目、6秒で2文字目...)
-        if (cardElapsed > 3.0) revealHintChar(0);
-        if (cardElapsed > 6.0) revealHintChar(1);
-        if (cardElapsed > 9.0) revealHintChar(2);
 
-        if (pfState.timePerCard !== 'none' && !pfState.hasAnswered) {
-            const remaining = pfState.timePerCard - cardElapsed;
-            const bar = document.getElementById('pf-card-timer-bar');
-            
-            if (remaining > 0) {
-                const percent = (remaining / pfState.timePerCard) * 100;
-                bar.style.width = `${percent}%`;
-                if (percent < 30) {
-                    bar.classList.replace('from-purple-400', 'from-red-500');
-                    bar.classList.replace('to-pink-500', 'to-red-600');
-                }
+        // ★ 制限時間ありの場合（カウントダウン）
+        if (pfState.timePerCard !== 'none') {
+            let remaining = pfState.timePerCard - cardElapsed;
+            if (remaining <= 0) {
+                remaining = 0;
+                document.getElementById('pf-timer').innerText = '0.00';
+                handleSkip(); // 時間切れでスキップ
             } else {
-                bar.style.width = `0%`;
-                handleSkip();
+                document.getElementById('pf-timer').innerText = remaining.toFixed(2);
+                
+                let hintInterval = pfState.timePerCard / 4;
+                if (cardElapsed > hintInterval) revealHintChar(0);
+                if (cardElapsed > hintInterval * 2) revealHintChar(1);
+                if (cardElapsed > hintInterval * 3) revealHintChar(2);
+
+                const bar = document.getElementById('pf-card-timer-bar');
+                if (bar) {
+                    const percent = (remaining / pfState.timePerCard) * 100;
+                    bar.style.width = `${percent}%`;
+                    if (percent < 30) {
+                        bar.classList.replace('from-purple-400', 'from-red-500');
+                        bar.classList.replace('to-pink-500', 'to-red-600');
+                    }
+                }
             }
+        } 
+        // ★ 制限時間なし（無制限）の場合（カウントアップ）
+        else {
+            document.getElementById('pf-timer').innerText = cardElapsed.toFixed(2);
+            
+            if (cardElapsed > 3.0) revealHintChar(0);
+            if (cardElapsed > 6.0) revealHintChar(1);
+            if (cardElapsed > 9.0) revealHintChar(2);
         }
     }, 50);
 
     document.getElementById('pf-status-text').innerText = 'Listening...';
-    try { if (pfRec) pfRec.start(); } catch(e){}
+    
+    if (pfRec) {
+        pfRec.lang = pfState.languages[pfState.currentLangIndex];
+        try { pfRec.start(); } catch(e){}
+    }
 });
 
 function loadPfCard(isNewImage) {
-    setTimeout(() => { pfState.hasAnswered = false; }, 100);
+    setTimeout(() => { pfState.hasAnswered = false; pfState.isTransitioning = false; }, 100);
 
-    // タイマーバーのリセット（実際にプレイ中のみ時間を再取得）
     if (pfState.isPlaying) pfState.cardStartTime = Date.now();
+    pfState.currentLangIndex = 0; 
+
+    // 新しいカード切り替え時にタイマー表示をリセット
+    if (pfState.timePerCard !== 'none') {
+        document.getElementById('pf-timer').innerText = pfState.timePerCard.toFixed(2);
+    } else {
+        document.getElementById('pf-timer').innerText = '0.00';
+    }
+
     const bar = document.getElementById('pf-card-timer-bar');
     if (bar) {
         bar.style.transition = 'none';
@@ -269,37 +380,69 @@ function loadPfCard(isNewImage) {
     const card = pfState.cards[pfState.currentIndex];
     document.getElementById('pf-card-count').innerText = (pfState.currentIndex + 1);
 
-    let targetWord = card.targets && card.targets[pfState.language] ? card.targets[pfState.language][0] : "";
-    let hintMeaning = "";
-    
-    // 選択言語が英語なら日本語ヒント、それ以外なら英語ヒント
-    if (pfState.language.startsWith('en')) {
-        hintMeaning = card.targets && card.targets['ja-JP'] ? card.targets['ja-JP'][0] : "";
-    } else {
-        hintMeaning = card.targets && card.targets['en-US'] ? card.targets['en-US'][0] : "";
-    }
-    document.getElementById('pf-hint-meaning').innerText = hintMeaning;
-
-    // 四角形の生成
-    const squaresContainer = document.getElementById('pf-hint-squares');
-    if (squaresContainer) {
-        squaresContainer.innerHTML = '';
-        for (let i = 0; i < targetWord.length; i++) {
-            let char = targetWord[i];
-            if (char === ' ') {
-                squaresContainer.innerHTML += `<div class="w-3 md:w-4"></div>`;
-            } else {
-                squaresContainer.innerHTML += `<div id="hint-sq-${i}" data-char="${char}" class="w-8 h-10 md:w-10 md:h-12 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center border border-gray-200 text-lg md:text-2xl font-black text-pink-500 uppercase"></div>`;
-            }
-        }
-    }
-
     const fileName = card.img.split('/').pop();
     document.getElementById('pf-image').src = `assets/images/picflash/${fileName}`;
 
     document.getElementById('pf-overlay-correct').classList.add('hidden');
     document.getElementById('pf-overlay-skip').classList.add('hidden');
     document.getElementById('pf-card').classList.remove('scale-95');
+
+    updateTrialLangUI();
+    updateHintUI();
+}
+
+function updateTrialLangUI() {
+    const stepsEl = document.getElementById('pf-trial-steps');
+    if (!stepsEl) return;
+    stepsEl.innerHTML = '';
+    
+    pfState.languages.forEach((langCode, i) => {
+        const info = LANG_INFO[langCode] || { cc: "un", name: langCode };
+        let statusHtml = "";
+        let borderClass = "border-gray-100 bg-gray-50 text-gray-400 opacity-50"; 
+        
+        if (i < pfState.currentLangIndex) {
+            statusHtml = "✅";
+            borderClass = "border-green-200 bg-green-50 text-green-600";
+        } else if (i === pfState.currentLangIndex) {
+            statusHtml = "🎙";
+            borderClass = "border-pink-400 bg-white text-pink-600 shadow-md transform scale-[1.02] animate-pulse-slow";
+        }
+        
+        stepsEl.innerHTML += `
+            <div class="flex items-center justify-between p-2 md:p-3 rounded-xl border-2 transition-all duration-300 ${borderClass}">
+                <div class="font-black text-sm md:text-base flex items-center gap-1.5">${getFlagHtml(info.cc)} ${info.name}</div>
+                <div class="text-lg md:text-xl">${statusHtml}</div>
+            </div>
+        `;
+    });
+}
+
+function updateHintUI() {
+    const card = pfState.cards[pfState.currentIndex];
+    const currentLang = pfState.languages[pfState.currentLangIndex];
+    const info = LANG_INFO[currentLang] || { hintLang: 'en-US' };
+    
+    let targetWord = getTargetWordForLang(card, currentLang);
+    
+    let hintMeaning = "";
+    if (currentLang.startsWith('en')) hintMeaning = getTargetWordForLang(card, 'ja-JP');
+    else hintMeaning = getTargetWordForLang(card, 'en-US');
+    
+    document.getElementById('pf-hint-meaning').innerText = hintMeaning || "???";
+
+    const squaresContainer = document.getElementById('pf-hint-squares');
+    if (squaresContainer) {
+        squaresContainer.innerHTML = '';
+        for (let i = 0; i < targetWord.length; i++) {
+            let char = targetWord[i];
+            if (char === ' ') {
+                squaresContainer.innerHTML += `<div class="w-2 md:w-3"></div>`;
+            } else {
+                squaresContainer.innerHTML += `<div id="hint-sq-${i}" data-char="${char}" class="w-6 h-8 md:w-8 md:h-10 bg-gray-100 rounded-lg shadow-inner flex items-center justify-center border border-gray-200 text-sm md:text-xl font-black text-pink-500 uppercase"></div>`;
+            }
+        }
+    }
 }
 
 function revealHintChar(index) {
@@ -312,9 +455,37 @@ function revealHintChar(index) {
     }
 }
 
+function revealAllHints(status) {
+    const card = pfState.cards[pfState.currentIndex];
+    let targetLangIndex = pfState.currentLangIndex;
+    if (status === 'correct') targetLangIndex = pfState.languages.length - 1; 
+
+    const currentLang = pfState.languages[targetLangIndex];
+    const targetWord = getTargetWordForLang(card, currentLang);
+    
+    let sqIndex = 0;
+    for (let i = 0; i < targetWord.length; i++) {
+        if (targetWord[i] === ' ') continue;
+        const sq = document.getElementById(`hint-sq-${sqIndex}`);
+        if (sq) {
+            sq.innerHTML = sq.getAttribute('data-char');
+            sq.classList.remove('bg-gray-100', 'border-gray-200', 'text-pink-500', 'bg-pink-50', 'border-pink-200');
+            
+            if (status === 'correct' || status === 'step') {
+                sq.classList.add('bg-green-50', 'border-green-300', 'text-green-600');
+            } else if (status === 'skip') {
+                sq.classList.add('bg-red-50', 'border-red-300', 'text-red-600');
+            }
+            sq.classList.add('hint-char-reveal');
+        }
+        sqIndex++;
+    }
+}
+
 function handleCorrect() {
-    if (pfState.hasAnswered) return;
+    if (pfState.hasAnswered || pfState.isTransitioning) return;
     pfState.hasAnswered = true;
+    pfState.isTransitioning = true;
     pfState.comboCount++;
 
     const lamp = document.getElementById(`lamp-${pfState.currentIndex}`);
@@ -333,7 +504,8 @@ function handleCorrect() {
         }, 600); 
     }
 
-    // コンボ演出 (2連続以上)
+    revealAllHints('correct');
+
     if (pfState.comboCount >= 2) {
         const comboEl = document.getElementById('pf-combo-anim');
         const comboText = document.getElementById('pf-combo-text');
@@ -351,14 +523,22 @@ function handleCorrect() {
     playPfSound('correct');
     setTimeout(() => {
         pfState.currentIndex++;
+        pfState.isTransitioning = false;
         if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { try { pfRec.abort(); } catch(e){} loadPfCard(true); }
-    }, 400); 
+        else { 
+            try { pfRec.abort(); } catch(e){} 
+            pfState.currentLangIndex = 0; 
+            if (pfRec) pfRec.lang = pfState.languages[0]; 
+            loadPfCard(true); 
+            setTimeout(() => { try { pfRec.start(); } catch(e){} }, 100);
+        }
+    }, 1200); 
 }
 
 function handleSkip() {
-    if (pfState.hasAnswered) return; 
+    if (pfState.hasAnswered || pfState.isTransitioning) return; 
     pfState.hasAnswered = true;
+    pfState.isTransitioning = true;
     pfState.comboCount = 0; 
     
     const lamp = document.getElementById(`lamp-${pfState.currentIndex}`);
@@ -369,13 +549,32 @@ function handleSkip() {
 
     const cardEl = document.getElementById('pf-card');
     cardEl.classList.add('scale-95');
-    document.getElementById('pf-overlay-skip').classList.remove('hidden');
+    
+    const ans = getTargetWordForLang(pfState.cards[pfState.currentIndex], pfState.languages[pfState.currentLangIndex]);
+    const skipOverlay = document.getElementById('pf-overlay-skip');
+    skipOverlay.innerHTML = `
+        <span class="text-5xl md:text-7xl transform animate-pop mb-2">⏭️</span>
+        <span class="font-black text-2xl md:text-4xl text-white drop-shadow-lg text-red-500 tracking-widest mb-4">SKIP</span>
+        <div class="bg-white px-6 py-3 rounded-2xl shadow-xl animate-pop flex flex-col items-center border-4 border-red-200">
+            <span class="text-sm font-black text-red-400 mb-1">ANSWER</span>
+            <span class="text-3xl md:text-5xl font-black text-gray-800">${ans}</span>
+        </div>
+    `;
+    skipOverlay.classList.remove('hidden');
+    revealAllHints('skip');
     
     setTimeout(() => {
         pfState.currentIndex++;
+        pfState.isTransitioning = false;
         if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { try { pfRec.abort(); } catch(e){} loadPfCard(true); }
-    }, 400);
+        else { 
+            try { pfRec.abort(); } catch(e){} 
+            pfState.currentLangIndex = 0; 
+            if (pfRec) pfRec.lang = pfState.languages[0]; 
+            loadPfCard(true); 
+            setTimeout(() => { try { pfRec.start(); } catch(e){} }, 100);
+        }
+    }, 1500); 
 }
 
 // ------------------------------------------
@@ -388,7 +587,8 @@ function saveAndRenderHistory(finalTime) {
     const catObj = window.CATEGORIES_DATA.find(c => c.id === pfState.category);
     const catName = catObj ? catObj.title : pfState.category;
     
-    const sameConditionHistory = history.filter(r => r.category === catName && r.count === pfState.questionCount && r.language === pfState.language);
+    const langsJoined = pfState.languages.join(',');
+    const sameConditionHistory = history.filter(r => r.category === catName && r.count === pfState.questionCount && r.language === langsJoined);
     let isNewBest = false;
     
     if (sameConditionHistory.length > 0) {
@@ -398,6 +598,7 @@ function saveAndRenderHistory(finalTime) {
         isNewBest = true; 
     }
 
+    // トータル最終計算は裏側のstartTimeを利用（1問ごとのカウントダウンとは独立しています）
     const now = new Date();
     const dateStr = `${now.getFullYear()}/${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getDate().toString().padStart(2,'0')} ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
     
@@ -406,7 +607,7 @@ function saveAndRenderHistory(finalTime) {
         time: finalTime.toFixed(2),
         category: catName,
         count: pfState.questionCount,
-        language: pfState.language
+        language: langsJoined
     };
     
     history.unshift(newRecord); 
@@ -418,17 +619,23 @@ function saveAndRenderHistory(finalTime) {
     history.forEach((rec, idx) => {
         const bgClass = idx === 0 ? "bg-pink-50 rounded-xl px-2" : "";
         const countStr = rec.count === 'ALL' ? 'ALL' : `${rec.count} sets`;
-        const langStr = rec.language ? rec.language.split('-')[0].toUpperCase() : 'EN';
         
+        const langArr = rec.language ? rec.language.split(',') : ['en-US'];
+        let langBadges = langArr.slice(0, 3).map(l => {
+            const info = LANG_INFO[l];
+            return info ? `<span class="bg-blue-50 px-1 py-0.5 rounded border border-blue-100 flex items-center justify-center shadow-sm">${getFlagHtml(info.cc, "w-4 h-auto")}</span>` : '';
+        }).join('');
+        if (langArr.length > 3) langBadges += '<span class="text-xs text-gray-400">...</span>';
+
         listEl.innerHTML += `
             <div class="flex justify-between items-center py-3 border-b border-gray-100 last:border-0 ${bgClass}">
                 <div class="flex flex-col">
-                    <span class="text-sm md:text-base font-bold text-gray-700">
+                    <span class="text-sm md:text-base font-bold text-gray-700 flex items-center gap-1.5">
                         ${rec.category} 
-                        <span class="text-xs text-blue-500 bg-blue-50 px-2 py-0.5 rounded-full ml-1 border border-blue-100">${langStr}</span>
-                        <span class="text-xs text-gray-400 bg-white px-2 py-0.5 rounded-full ml-1 border border-gray-200">${countStr}</span>
+                        <span class="flex gap-0.5 ml-1">${langBadges}</span>
+                        <span class="text-xs text-gray-400 bg-white px-2 py-0.5 rounded-full border border-gray-200 ml-1">${countStr}</span>
                     </span>
-                    <span class="text-xs text-gray-400 mt-0.5">${rec.date}</span>
+                    <span class="text-xs text-gray-400 mt-1">${rec.date}</span>
                 </div>
                 <div class="font-black text-xl md:text-2xl text-pink-500 tabular-nums">${rec.time}<span class="text-sm text-pink-300 ml-0.5">s</span></div>
             </div>
@@ -462,9 +669,6 @@ function endPfGame() {
     showPfView('view-picflash-result');
 }
 
-// ------------------------------------------
-// 初期化とUIイベントの設定
-// ------------------------------------------
 async function initPicFlashCategories() {
     try {
         const res = await fetch(`data/picflash/categories.json?t=${new Date().getTime()}`);
@@ -479,7 +683,6 @@ async function initPicFlashCategories() {
             btn.className = "pf-cat-btn bg-white text-gray-700 p-4 md:p-6 rounded-3xl shadow-sm border-4 border-transparent hover:border-pink-300 transition-all flex flex-col items-center gap-2";
             btn.innerHTML = `<span class="text-4xl md:text-5xl mb-1">${cat.icon}</span><span class="font-black capitalize text-base md:text-lg">${cat.title}</span>`;
             
-            // ★ カテゴリクリック時に即座にゲームを開始
             btn.onclick = () => {
                 pfState.category = cat.id;
                 startPfGame(); 
@@ -495,39 +698,44 @@ async function initPicFlashCategories() {
 window.openPracticeModal = function(cardIdx) {
     const card = pfState.cards[cardIdx];
     const contentEl = document.getElementById('pf-practice-modal-content');
-    
-    let enWord = card.targets && card.targets["en-US"] ? card.targets["en-US"][0] : "???";
-    let targetWord = card.targets && card.targets[pfState.language] ? card.targets[pfState.language][0] : enWord;
-
-    const statusId = 'prac-status-modal';
     const fileName = card.img.split('/').pop();
 
+    let langBlocksHtml = "";
+    pfState.languages.forEach((lang, i) => {
+        let targetWord = getTargetWordForLang(card, lang) || "???";
+        const info = LANG_INFO[lang];
+        const statusId = `prac-status-modal-${i}`;
+
+        langBlocksHtml += `
+            <div class="p-3 md:p-4 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between">
+                <div>
+                    <div class="text-xs md:text-sm font-bold text-gray-500 mb-1 flex items-center gap-2">${getFlagHtml(info.cc, "w-4 h-auto")} ${info.name}</div>
+                    <div class="text-2xl md:text-3xl font-black text-gray-800 mb-3 leading-tight">${targetWord}</div>
+                </div>
+                <div class="flex items-center justify-between mt-auto pt-3 border-t border-gray-100">
+                    <div class="flex gap-2 relative z-10 shrink-0">
+                        <button onclick="playPfTTS(${cardIdx}, '${lang}')" class="px-3 py-2 bg-gray-50 border border-gray-200 rounded-xl shadow-sm text-gray-600 hover:bg-gray-100 font-black text-xs flex items-center gap-1 transition-colors whitespace-nowrap">
+                            🔊 聞く
+                        </button>
+                        <button onclick="startPracticeRec(${cardIdx}, '${lang}', '${statusId}')" class="px-3 py-2 bg-pink-50 text-pink-600 border border-pink-200 rounded-xl shadow-sm hover:bg-pink-100 font-black text-xs flex items-center gap-1 transition-colors whitespace-nowrap">
+                            🎙 話す
+                        </button>
+                    </div>
+                    <div id="${statusId}" class="text-xs font-black text-gray-400 relative z-10 text-right ml-2 leading-tight"></div>
+                </div>
+            </div>
+        `;
+    });
+
     let html = `
-        <div class="flex flex-col md:flex-row gap-4 md:gap-8 w-full items-stretch">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-6 w-full items-stretch">
             <div class="w-full md:w-2/5 flex flex-col justify-center">
                 <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-50 relative flex items-center justify-center p-4 border border-gray-100 shadow-inner">
                     <img src="assets/images/picflash/${fileName}" class="w-full h-full object-contain drop-shadow-md">
                 </div>
             </div>
-            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-center">
-                <div class="p-4 md:p-5 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between">
-                    <div>
-                        <div class="text-xs md:text-sm font-bold text-pink-500 mb-1 uppercase tracking-widest">🌍 Target Language</div>
-                        <div class="text-3xl md:text-4xl lg:text-5xl font-black text-gray-800 mb-3 leading-tight">${targetWord}</div>
-                        <div class="text-sm md:text-base font-bold text-gray-400 bg-gray-50 inline-block px-3 py-1 rounded-lg border border-gray-100">🇺🇸 English: ${enWord}</div>
-                    </div>
-                    <div class="flex items-center justify-between mt-6 pt-4 border-t border-gray-100">
-                        <div class="flex gap-2 relative z-10 shrink-0">
-                            <button onclick="playPfTTS(${cardIdx})" class="px-4 py-2.5 bg-gray-50 border border-gray-200 rounded-xl shadow-sm text-gray-600 hover:bg-gray-100 font-black text-sm flex items-center gap-2 transition-colors whitespace-nowrap">
-                                🔊 音声を聞く
-                            </button>
-                            <button onclick="startPracticeRec(${cardIdx}, '${statusId}')" class="px-4 py-2.5 bg-pink-50 text-pink-600 border border-pink-200 rounded-xl shadow-sm hover:bg-pink-100 font-black text-sm flex items-center gap-2 transition-colors whitespace-nowrap">
-                                🎙 声に出す
-                            </button>
-                        </div>
-                        <div id="${statusId}" class="text-xs md:text-sm font-black text-gray-400 relative z-10 text-right ml-2 leading-tight"></div>
-                    </div>
-                </div>
+            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-center max-h-[50vh] overflow-y-auto custom-scrollbar pr-2">
+                ${langBlocksHtml}
             </div>
         </div>
     `;
@@ -543,36 +751,35 @@ window.closePracticeModal = function() {
     window.practiceTargetWords = null;
 }
 
-window.playPfTTS = function(cardIdx) {
+window.playPfTTS = function(cardIdx, lang) {
     speechSynthesis.cancel();
     const card = pfState.cards[cardIdx];
-    let textToSpeak = card.targets && card.targets[pfState.language] ? card.targets[pfState.language][0] : "???";
+    let textToSpeak = getTargetWordForLang(card, lang) || "???";
     
     const u = new SpeechSynthesisUtterance(textToSpeak);
-    u.lang = pfState.language; 
+    u.lang = lang; 
     u.rate = 0.9;
     speechSynthesis.speak(u);
 };
 
-window.startPracticeRec = function(cardIdx, statusId) {
+window.startPracticeRec = function(cardIdx, lang, statusId) {
     if (!pfRec) return alert("音声認識に非対応のブラウザです");
     const card = pfState.cards[cardIdx];
-    window.practiceTargetWords = card.targets && card.targets[pfState.language] ? card.targets[pfState.language] : []; 
+    
+    let targets = card.targets && card.targets[lang] ? card.targets[lang] : [];
+    if (targets.length === 0 && lang === 'en-US' && card.level1) targets = card.level1.words;
+    
+    window.practiceTargetWords = targets; 
     window.practiceStatusId = statusId;
     
-    pfRec.lang = pfState.language; 
+    pfRec.lang = lang; 
     
     document.getElementById(statusId).innerHTML = `<span class="text-pink-500 animate-pulse">Listening...🎙</span>`;
     try { pfRec.abort(); setTimeout(() => pfRec.start(), 100); } catch(e) {}
 };
 
 document.addEventListener('DOMContentLoaded', () => {
-    const langSelect = document.getElementById('pf-lang-select');
-    if (langSelect) {
-        langSelect.addEventListener('change', (e) => {
-            pfState.language = e.target.value;
-        });
-    }
+    initLangCheckboxes();
 
     document.querySelectorAll('.pf-mode-btn').forEach(btn => {
         btn.addEventListener('click', (e) => {
@@ -583,14 +790,11 @@ document.addEventListener('DOMContentLoaded', () => {
             target.classList.add('bg-gradient-to-br', 'from-pink-100', 'to-white', 'border-pink-300');
 
             const trialSection = document.getElementById('section-trial-settings');
-            const catTitle = document.getElementById('title-category-select');
             
             if (pfState.mode === 'trial') {
                 trialSection.classList.remove('hidden');
-                catTitle.innerText = "3. ジャンルを選ぶ"; // 番号修正
             } else {
                 trialSection.classList.add('hidden');
-                catTitle.innerText = "3. ジャンルを選ぶ"; // 番号修正
             }
         });
     });
