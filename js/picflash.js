@@ -32,7 +32,7 @@ function getFlagHtml(cc, classes = "w-5 h-auto inline-block rounded-sm shadow-sm
 const pfState = {
     mode: 'practice', 
     category: '',
-    languages: ['en-US'], 
+    languages: [], 
     currentLangIndex: 0,  
     timePerCard: 5,      
     questionCount: 10,   
@@ -45,19 +45,18 @@ const pfState = {
     isPlaying: false,
     hasAnswered: false,
     isTransitioning: false, 
+    isSwitchingMic: false, // ★追加: マイク競合バグを防ぐ安全装置
     comboCount: 0 
 };
 
 window.CATEGORIES_DATA = [];
 
 const correctAudio = new Audio('assets/sounds/correct.mp3');
-const partialCorrectAudio = new Audio('assets/sounds/correct.mp3');
 
 function unlockAudio() {
-    correctAudio.volume = 0; partialCorrectAudio.volume = 0;
+    correctAudio.volume = 0;
     correctAudio.play().then(() => {
         correctAudio.pause(); correctAudio.volume = 1; correctAudio.currentTime = 0;
-        partialCorrectAudio.pause(); partialCorrectAudio.volume = 1; partialCorrectAudio.currentTime = 0;
     }).catch(e => console.log("Unlock failed, but will retry:", e));
     document.removeEventListener('touchstart', unlockAudio);
     document.removeEventListener('click', unlockAudio);
@@ -66,12 +65,10 @@ document.addEventListener('touchstart', unlockAudio, {once: true});
 document.addEventListener('click', unlockAudio, {once: true});
 
 function playPfSound(type) {
-    if (type === 'correct') {
+    if (type === 'correct' || type === 'stepCorrect' || type === 'practiceCorrect') {
+        // ステップクリア時も通常の「正解音」を鳴らして爽快感を出す
         correctAudio.currentTime = 0;
         correctAudio.play().catch(e => {});
-    } else if (type === 'stepCorrect' || type === 'practiceCorrect') {
-        partialCorrectAudio.currentTime = 0;
-        partialCorrectAudio.play().catch(e => {});
     } else if (type === 'skip') {
         try {
             const ctx = new (window.AudioContext || window.webkitAudioContext)();
@@ -93,6 +90,7 @@ function getTargetWordForLang(card, langCode) {
     return targetWord;
 }
 
+// ★ 大幅強化：日本語のひらがな・カタカナ揺れ吸収と、英語の単語境界チェック
 function checkIsCorrect(card, transcript, targetLang) {
     let targetWordsArray = [];
     if (card.targets && card.targets[targetLang]) {
@@ -103,9 +101,23 @@ function checkIsCorrect(card, transcript, targetLang) {
 
     if (!targetWordsArray || targetWordsArray.length === 0) return false;
 
+    // カタカナをひらがなに変換する関数
+    const toHiragana = (str) => str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
+    
+    const normalizedTranscript = toHiragana(transcript.toLowerCase());
+    const transcriptNoSpace = normalizedTranscript.replace(/\s+/g, '');
+
     return targetWordsArray.some(targetPhrase => {
-        const words = targetPhrase.toLowerCase().replace(/[.,!?]/g, '').trim().split(/\s+/);
-        return words.every(w => transcript.includes(w));
+        if (targetLang === 'ja-JP' || targetLang === 'zh-CN') {
+            // 日本語・中国語の場合はスペースを消して、ひらがなに統一してから一致判定
+            const phraseNoSpace = toHiragana(targetPhrase.toLowerCase()).replace(/\s+/g, '');
+            return transcriptNoSpace.includes(phraseNoSpace);
+        } else {
+            // 英語などは「pineapple」の中に「apple」が含まれて正解にならないよう、単語単位で厳密にチェック
+            const words = targetPhrase.toLowerCase().replace(/[.,!?]/g, '').trim().split(/\s+/);
+            const paddedTranscript = ' ' + transcript.toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' ') + ' ';
+            return words.every(w => paddedTranscript.includes(' ' + w + ' '));
+        }
     });
 }
 
@@ -139,25 +151,48 @@ if (SpeechRec) {
             const currentLang = pfState.languages[pfState.currentLangIndex];
 
             if (checkIsCorrect(card, cleanTranscript, currentLang)) {
+                // ★ 修正：クリアした直後のインデックスを保持しておく
+                const completedLangIndex = pfState.currentLangIndex;
                 pfState.currentLangIndex++;
-                revealAllHints('step'); 
+                
+                revealAllHints('step', completedLangIndex); 
                 
                 if (pfState.currentLangIndex >= pfState.languages.length) {
-                    handleCorrect(); 
+                    handleCorrect(); // 最後の言語なら完全クリア処理へ
                 } else {
+                    // ★ 途中ステップのクリア処理（大きな⭕️と音を出す！）
                     pfState.isTransitioning = true;
                     playPfSound('stepCorrect');
+                    
+                    const checkAnimEl = document.getElementById('correct-answer-anim');
+                    if (checkAnimEl) {
+                        checkAnimEl.classList.remove('hidden');
+                        checkAnimEl.classList.add('animate-pop-check');
+                        setTimeout(() => {
+                            checkAnimEl.classList.remove('animate-pop-check');
+                            checkAnimEl.classList.add('hidden');
+                        }, 600); 
+                    }
+
                     updateTrialLangUI();
                     
                     setTimeout(() => {
                         updateHintUI();
                         pfState.cardStartTime = Date.now(); 
                         pfState.isTransitioning = false;
+                        document.getElementById('pf-status-text').innerText = 'Ready...';
                         
+                        // マイク競合を防ぐための安全な切り替え
+                        pfState.isSwitchingMic = true;
                         try { pfRec.abort(); } catch(err){}
                         pfRec.lang = pfState.languages[pfState.currentLangIndex];
-                        document.getElementById('pf-status-text').innerText = 'Ready...';
-                        setTimeout(() => { try { pfRec.start(); } catch(err){} }, 100);
+                        setTimeout(() => { 
+                            pfState.isSwitchingMic = false;
+                            if (pfState.isPlaying) {
+                                try { pfRec.start(); } catch(err){} 
+                            }
+                        }, 200);
+
                     }, 600); 
                 }
             }
@@ -165,8 +200,13 @@ if (SpeechRec) {
     };
 
     pfRec.onend = () => {
-        if (pfState.isPlaying && pfState.mode === 'trial') {
-            setTimeout(() => { try { pfRec.start(); } catch(err){} }, 200);
+        // ★ マイクが不意に切れても、手動切り替え中じゃなければ再起動する
+        if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.isSwitchingMic) {
+            setTimeout(() => { 
+                if (pfState.isPlaying && !pfState.isSwitchingMic) {
+                    try { pfRec.start(); } catch(err){} 
+                }
+            }, 200);
         }
     };
 }
@@ -184,7 +224,7 @@ function initLangCheckboxes() {
     container.innerHTML = '';
     
     Object.entries(LANG_INFO).forEach(([code, info]) => {
-        const isChecked = code === 'en-US' ? 'checked' : '';
+        const isChecked = '';
         container.innerHTML += `
             <label class="flex items-center space-x-2 p-3 bg-gray-50 rounded-xl border border-gray-200 cursor-pointer hover:bg-pink-50 hover:border-pink-200 transition-colors">
                 <input type="checkbox" value="${code}" class="pf-lang-cb w-5 h-5 text-pink-500 rounded focus:ring-pink-500" ${isChecked}>
@@ -196,11 +236,6 @@ function initLangCheckboxes() {
     document.querySelectorAll('.pf-lang-cb').forEach(cb => {
         cb.addEventListener('change', () => {
             const checked = Array.from(document.querySelectorAll('.pf-lang-cb:checked')).map(el => el.value);
-            if (checked.length === 0) {
-                alert("少なくとも1つの言語を選んでください！");
-                cb.checked = true;
-                return;
-            }
             pfState.languages = checked;
         });
     });
@@ -234,6 +269,11 @@ function renderPracticeGrid() {
 // ★ ゲームフローとタイマー・ヒント演出
 // ------------------------------------------
 async function startPfGame() {
+    if (pfState.languages.length === 0) {
+        alert("少なくとも1つの言語を選んでください！");
+        return;
+    }
+
     if (!pfState.category) return;
 
     try {
@@ -277,7 +317,6 @@ function startTrialMode() {
     document.getElementById('pf-total-count').innerText = pfState.cards.length;
     document.getElementById('pf-status-text').innerText = 'Ready...';
     
-    // ★ 待機画面のタイマー表示初期化
     if (pfState.timePerCard !== 'none') {
         document.getElementById('pf-timer').innerText = pfState.timePerCard.toFixed(2);
     } else {
@@ -306,18 +345,16 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
     if (pfState.timerId) clearInterval(pfState.timerId);
     
     pfState.timerId = setInterval(() => {
-        // 解答後や画面遷移中はタイマーをストップさせる
         if (pfState.hasAnswered || pfState.isTransitioning) return;
 
         const cardElapsed = (Date.now() - pfState.cardStartTime) / 1000;
 
-        // ★ 制限時間ありの場合（カウントダウン）
         if (pfState.timePerCard !== 'none') {
             let remaining = pfState.timePerCard - cardElapsed;
             if (remaining <= 0) {
                 remaining = 0;
                 document.getElementById('pf-timer').innerText = '0.00';
-                handleSkip(); // 時間切れでスキップ
+                handleSkip(); 
             } else {
                 document.getElementById('pf-timer').innerText = remaining.toFixed(2);
                 
@@ -337,7 +374,6 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
                 }
             }
         } 
-        // ★ 制限時間なし（無制限）の場合（カウントアップ）
         else {
             document.getElementById('pf-timer').innerText = cardElapsed.toFixed(2);
             
@@ -349,10 +385,15 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
 
     document.getElementById('pf-status-text').innerText = 'Listening...';
     
-    if (pfRec) {
-        pfRec.lang = pfState.languages[pfState.currentLangIndex];
-        try { pfRec.start(); } catch(e){}
-    }
+    pfState.isSwitchingMic = true;
+    try { pfRec.abort(); } catch(e){}
+    if (pfRec) pfRec.lang = pfState.languages[pfState.currentLangIndex];
+    setTimeout(() => {
+        pfState.isSwitchingMic = false;
+        if (pfState.isPlaying) {
+            try { pfRec.start(); } catch(e){}
+        }
+    }, 200);
 });
 
 function loadPfCard(isNewImage) {
@@ -361,7 +402,6 @@ function loadPfCard(isNewImage) {
     if (pfState.isPlaying) pfState.cardStartTime = Date.now();
     pfState.currentLangIndex = 0; 
 
-    // 新しいカード切り替え時にタイマー表示をリセット
     if (pfState.timePerCard !== 'none') {
         document.getElementById('pf-timer').innerText = pfState.timePerCard.toFixed(2);
     } else {
@@ -455,9 +495,10 @@ function revealHintChar(index) {
     }
 }
 
-function revealAllHints(status) {
+// ★ 修正：開示する言語を引数で正確に受け取るようにしました
+function revealAllHints(status, targetIndex = null) {
     const card = pfState.cards[pfState.currentIndex];
-    let targetLangIndex = pfState.currentLangIndex;
+    let targetLangIndex = targetIndex !== null ? targetIndex : pfState.currentLangIndex;
     if (status === 'correct') targetLangIndex = pfState.languages.length - 1; 
 
     const currentLang = pfState.languages[targetLangIndex];
@@ -526,11 +567,17 @@ function handleCorrect() {
         pfState.isTransitioning = false;
         if (pfState.currentIndex >= pfState.cards.length) endPfGame();
         else { 
+            pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
-            setTimeout(() => { try { pfRec.start(); } catch(e){} }, 100);
+            setTimeout(() => { 
+                pfState.isSwitchingMic = false;
+                if (pfState.isPlaying) {
+                    try { pfRec.start(); } catch(e){} 
+                }
+            }, 200);
         }
     }, 1200); 
 }
@@ -568,11 +615,17 @@ function handleSkip() {
         pfState.isTransitioning = false;
         if (pfState.currentIndex >= pfState.cards.length) endPfGame();
         else { 
+            pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
-            setTimeout(() => { try { pfRec.start(); } catch(e){} }, 100);
+            setTimeout(() => { 
+                pfState.isSwitchingMic = false;
+                if (pfState.isPlaying) {
+                    try { pfRec.start(); } catch(e){} 
+                }
+            }, 200);
         }
     }, 1500); 
 }
@@ -598,7 +651,6 @@ function saveAndRenderHistory(finalTime) {
         isNewBest = true; 
     }
 
-    // トータル最終計算は裏側のstartTimeを利用（1問ごとのカウントダウンとは独立しています）
     const now = new Date();
     const dateStr = `${now.getFullYear()}/${(now.getMonth()+1).toString().padStart(2,'0')}/${now.getDate().toString().padStart(2,'0')} ${now.getHours().toString().padStart(2,'0')}:${now.getMinutes().toString().padStart(2,'0')}`;
     
