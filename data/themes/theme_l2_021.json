@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_021",
+  "imageSrc": "assets/images/l2_021.webp",
+  "titleEn": "Aquarium Discovery",
+  "titleJa": "水族館を探検",
+  "description": "休日の大型水族館で、3人の高校生が巨大な水槽を見学している。中央では男子生徒が水槽の案内パネルを見ながら魚の種類を調べ、ノートに気づいたことを書いている。左側の女子生徒はスマートフォンで大きなエイと魚の群れを撮影している。右側の女子生徒は水槽の近くにあるデジタル展示画面を操作し、海洋生物の生息環境について調べている。巨大水槽にはエイ、ウミガメ、色鮮やかな魚の群れが泳ぎ、岩、サンゴ、水草なども見える。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students visiting a large modern aquarium in Japan. Do not include any additional visible people. The atmosphere should be calm, fascinating, educational, and positive. The main visual feature must be a huge floor-to-ceiling aquarium tank filled with clear blue water. Inside the tank, show one large stingray swimming gracefully near the center, one sea turtle moving through the middle distance, and a clearly visible school of colorful tropical fish. Include rocks, coral, aquatic plants, bubbles, and soft underwater light rays. In the center foreground, a teenage boy wearing casual clothes and a small backpack is standing beside an aquarium information panel. He is reading the panel carefully and writing observations in a small notebook with a pen. On the left side, a teenage girl is holding a smartphone horizontally and taking a photograph of the large stingray and the school of fish. She should look impressed and excited by the view. On the right side, another teenage girl is using a touchscreen educational display beside the aquarium tank. The display should show simple visual icons of the ocean, coral reef, fish, temperature, and habitat, without important readable text. She is pointing at the screen and appears to be learning about marine habitats. Make the three activities visually distinct and easy to describe: one student reading and taking notes, one photographing sea life, and one using an interactive educational display. Include a notebook, pen, smartphone, backpack, information panel, interactive touchscreen, aquarium rail, blue ambient lighting, and reflections from the water. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no speech bubbles, no brand logos, no copyrighted characters, and no text required to understand the scene. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "aquarium",
+          "ja": "水族館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "fish",
+          "ja": "魚",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "turtle",
+          "ja": "カメ",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "ray",
+          "ja": "エイ",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "notebook",
+          "ja": "ノート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "touch",
+          "ja": "触る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "わくわくした",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the fish",
+          "ja": "魚を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write in a notebook",
+          "ja": "ノートに書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a screen",
+          "ja": "画面を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a big ray",
+          "ja": "大きなエイ",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "a sea turtle",
+          "ja": "ウミガメ",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "many colorful fish",
+          "ja": "たくさんの色鮮やかな魚",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "visit the aquarium",
+          "ja": "水族館を訪れる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are visiting an aquarium.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が水族館を訪れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is looking at a sign.",
+          "grammar": "現在進行形",
+          "ja": "男の子が案内板を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is writing in a notebook.",
+          "grammar": "現在進行形",
+          "ja": "彼はノートに書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is taking a picture.",
+          "grammar": "現在進行形",
+          "ja": "女の子が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is using a screen.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が画面を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A big ray is swimming in the tank.",
+          "grammar": "現在進行形",
+          "ja": "大きなエイが水槽の中を泳いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many colorful fish.",
+          "grammar": "There are",
+          "ja": "色鮮やかな魚がたくさんいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students look excited.",
+          "grammar": "look＋形容詞",
+          "ja": "生徒たちはわくわくしているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "exhibit",
+          "ja": "展示",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "marine",
+          "ja": "海の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息地",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "species",
+          "ja": "種",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "coral",
+          "ja": "サンゴ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "identify",
+          "ja": "特定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explore",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interested",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "impressed",
+          "ja": "感動した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "curious",
+          "ja": "好奇心を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "interactive",
+          "ja": "操作できる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "underwater",
+          "ja": "水中の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "observe marine animals",
+          "ja": "海洋生物を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify different species",
+          "ja": "異なる種類を見分ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record his observations",
+          "ja": "観察内容を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the stingray",
+          "ja": "エイを撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use an interactive display",
+          "ja": "体験型画面を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about marine habitats",
+          "ja": "海洋生物の生息環境について学ぶ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "watch a school of fish",
+          "ja": "魚の群れを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explore the aquarium",
+          "ja": "水族館を見学する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are exploring a large aquarium exhibit.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が大型水族館の展示を見学しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is reading an information panel to identify the animals in the tank.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "男子生徒は水槽の生き物を特定するために案内板を読んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is recording his observations in a notebook.",
+          "grammar": "現在進行形",
+          "ja": "彼は観察したことをノートに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is photographing a large stingray swimming past the glass.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "一人の女子生徒はガラスの前を泳ぐ大きなエイを撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks impressed by the size of the animal.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女はその生き物の大きさに感動しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The other girl is using an interactive display to learn about marine habitats.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "もう一人の女子生徒は海洋生物の生息環境について学ぶために体験型画面を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A sea turtle and a school of colorful fish are swimming behind them.",
+          "grammar": "現在進行形",
+          "ja": "ウミガメと色鮮やかな魚の群れが彼らの後ろを泳いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students seem curious about the different forms of marine life.",
+          "grammar": "seem＋形容詞",
+          "ja": "生徒たちはさまざまな海洋生物に興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "marine ecosystem",
+          "ja": "海洋生態系",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "biodiversity",
+          "ja": "生物多様性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "specimen",
+          "ja": "観察対象・標本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "conservation",
+          "ja": "保全",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "capture",
+          "ja": "写真に収める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "investigate",
+          "ja": "詳しく調査する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "captivated",
+          "ja": "魅了された",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "intrigued",
+          "ja": "強く興味を引かれた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "immersive",
+          "ja": "没入感のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "diverse",
+          "ja": "多様な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "educational",
+          "ja": "教育的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "examine marine biodiversity",
+          "ja": "海洋生物の多様性を観察する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "consult an information panel",
+          "ja": "案内パネルを参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document his observations",
+          "ja": "観察内容を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "capture the stingray in motion",
+          "ja": "泳いでいるエイを撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "investigate marine habitats",
+          "ja": "海洋の生息環境を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explore an interactive exhibit",
+          "ja": "体験型展示を詳しく見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe a diverse ecosystem",
+          "ja": "多様な生態系を観察する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "appear captivated by the marine life",
+          "ja": "海洋生物に魅了されているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "develop an awareness of conservation",
+          "ja": "環境保全への意識を高める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are exploring an immersive aquarium exhibit that illustrates the biodiversity of a marine ecosystem.",
+          "grammar": "関係代名詞that",
+          "ja": "3人の生徒は海洋生態系の生物多様性を示す没入型の水族館展示を見学しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is consulting an information panel while documenting his observations in a notebook.",
+          "grammar": "while＋現在分詞",
+          "ja": "男子生徒は案内パネルを参照しながら、観察した内容をノートに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be identifying and categorizing some of the species visible in the tank.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼は水槽内に見える生き物の種類を特定し、分類しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his companions is using her smartphone to capture a large stingray as it glides past the viewing window.",
+          "grammar": "as節 / to不定詞",
+          "ja": "同行者の一人は、大きなエイが観察窓の前を滑るように泳ぐ様子をスマートフォンで撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her expression suggests that she is captivated by the scale and graceful movement of the animal.",
+          "grammar": "suggest that",
+          "ja": "彼女の表情から、その生き物の大きさと優雅な動きに魅了されていることがうかがえます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is investigating marine habitats through an interactive educational display.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の生徒は体験型の教育展示を使って海洋生物の生息環境を調べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sea turtle, stingray, and large school of fish demonstrate the diversity of species occupying the simulated habitat.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "ウミガメ、エイ、大きな魚の群れが、再現された生息環境に暮らす生物の多様性を示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The combination of direct observation and digital information allows the students to investigate the ecosystem from several perspectives.",
+          "grammar": "allow＋O＋to不定詞",
+          "ja": "直接観察とデジタル情報を組み合わせることで、生徒たちは複数の視点から生態系を調べることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how a recreational visit can also provide opportunities to learn about biodiversity, habitats, and marine conservation.",
+          "grammar": "how節 / provide opportunities to",
+          "ja": "この場面は、レジャーとしての訪問でも、生物多様性、生息環境、海洋保全について学ぶ機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 46,
+      "y": 57
+    },
+    "information_panel": {
+      "x": 38,
+      "y": 61
+    },
+    "notebook": {
+      "x": 49,
+      "y": 65
+    },
+    "photographer_girl": {
+      "x": 22,
+      "y": 55
+    },
+    "smartphone": {
+      "x": 24,
+      "y": 47
+    },
+    "touchscreen_girl": {
+      "x": 77,
+      "y": 57
+    },
+    "interactive_display": {
+      "x": 84,
+      "y": 49
+    },
+    "stingray": {
+      "x": 48,
+      "y": 25
+    },
+    "sea_turtle": {
+      "x": 67,
+      "y": 36
+    },
+    "school_of_fish": {
+      "x": 34,
+      "y": 34
+    }
+  }
+}

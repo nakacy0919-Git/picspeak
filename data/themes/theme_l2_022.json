@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_022",
+  "imageSrc": "assets/images/l2_022.webp",
+  "titleEn": "Grocery Shopping Day",
+  "titleJa": "夕食の買い出し",
+  "description": "休日の明るいスーパーマーケットで、父親と2人の子どもが夕食の材料を買っている。中央では父親がスマートフォンの買い物リストを確認しながら、ショッピングカートの中の商品と見比べている。左側では高校生の娘が野菜売り場で2種類のトマトを手に持ち、品質や値段を比較している。右側では中学生の息子が冷蔵棚から牛乳を取り出し、ショッピングカートに入れようとしている。カートにはパン、卵、パスタ、野菜などが入り、周囲には果物、野菜、乳製品、価格表示などが整理されている。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three people shopping together inside a bright, clean, modern Japanese supermarket: one father, one teenage daughter, and one teenage or middle-school-aged son. Do not include any additional visible customers or employees. The atmosphere should be ordinary, positive, practical, organized, and easy to understand. In the center foreground, the father is standing beside a shopping cart and checking a grocery list on his smartphone. He is comparing the list with the groceries already inside the cart. The cart should clearly contain bread, eggs, pasta, carrots, lettuce, onions, and several other dinner ingredients. On the left side, the teenage daughter is standing in the fresh produce section. She is holding two different packs or types of tomatoes, one in each hand, and carefully comparing their appearance and price labels before deciding which one to buy. She should look thoughtful and focused. On the right side, the son is standing beside a refrigerated dairy shelf. He is taking a carton of milk from the shelf and reaching toward the family shopping cart as if he is about to place it inside. Make the three actions visually distinct and easy to describe: the father checking the shopping list, the daughter comparing tomatoes, and the son selecting milk. Include organized displays of vegetables, fruit, milk, yogurt, eggs, bread, pasta, reusable shopping bags, price tags with simple numbers but no important readable text, shopping cart, smartphone, and supermarket aisle signs using simple icons. The store should look spacious and realistic without appearing crowded. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "store",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "cart",
+          "ja": "カート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tomato",
+          "ja": "トマト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "milk",
+          "ja": "牛乳",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bread",
+          "ja": "パン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "egg",
+          "ja": "卵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "buy",
+          "ja": "買う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "choose",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "put",
+          "ja": "入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "go shopping",
+          "ja": "買い物に行く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look at his phone",
+          "ja": "スマートフォンを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the list",
+          "ja": "リストを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose tomatoes",
+          "ja": "トマトを選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up some milk",
+          "ja": "牛乳を取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put it in the cart",
+          "ja": "それをカートに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fresh vegetables",
+          "ja": "新鮮な野菜",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "shopping cart",
+          "ja": "ショッピングカート",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is shopping for food.",
+          "grammar": "現在進行形",
+          "ja": "家族が食べ物を買っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is looking at his phone.",
+          "grammar": "現在進行形",
+          "ja": "父親がスマートフォンを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is checking a shopping list.",
+          "grammar": "現在進行形",
+          "ja": "彼は買い物リストを確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is looking at tomatoes.",
+          "grammar": "現在進行形",
+          "ja": "女の子がトマトを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is choosing some vegetables.",
+          "grammar": "現在進行形",
+          "ja": "彼女は野菜を選んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is holding some milk.",
+          "grammar": "現在進行形",
+          "ja": "男の子が牛乳を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is food in the cart.",
+          "grammar": "There is",
+          "ja": "カートの中に食べ物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are shopping together.",
+          "grammar": "現在進行形",
+          "ja": "3人は一緒に買い物をしています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "supermarket",
+          "ja": "スーパーマーケット",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "grocery",
+          "ja": "食料品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "produce",
+          "ja": "農産物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "price",
+          "ja": "値段",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ingredient",
+          "ja": "材料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "select",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "purchase",
+          "ja": "購入する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fresh",
+          "ja": "新鮮な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "practical",
+          "ja": "実用的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "shop for dinner ingredients",
+          "ja": "夕食の材料を買う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "check the grocery list",
+          "ja": "食料品リストを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare two kinds of tomatoes",
+          "ja": "2種類のトマトを比べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the price",
+          "ja": "値段を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "select fresh vegetables",
+          "ja": "新鮮な野菜を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take milk from the shelf",
+          "ja": "棚から牛乳を取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "place it in the cart",
+          "ja": "それをカートに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for dinner",
+          "ja": "夕食の準備をする",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is shopping for ingredients to prepare dinner.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "家族は夕食を作るための材料を買っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is checking a grocery list on his smartphone.",
+          "grammar": "現在進行形",
+          "ja": "父親はスマートフォンで食料品リストを確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is comparing the list with the items already in the shopping cart.",
+          "grammar": "compare A with B",
+          "ja": "彼はリストとすでにカートに入っている商品を見比べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The daughter is comparing two different kinds of tomatoes.",
+          "grammar": "現在進行形",
+          "ja": "娘は2種類のトマトを比較しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be checking both their quality and price.",
+          "grammar": "appear to be / both A and B",
+          "ja": "彼女は品質と値段の両方を確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The boy is taking a carton of milk from the refrigerated shelf.",
+          "grammar": "現在進行形",
+          "ja": "男の子は冷蔵棚から牛乳パックを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is about to put the milk into the family shopping cart.",
+          "grammar": "be about to＋動詞",
+          "ja": "彼は牛乳を家族のショッピングカートに入れようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The three family members seem to be sharing the shopping tasks.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "3人の家族は買い物の役割を分担しているようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "consumer",
+          "ja": "消費者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "produce",
+          "ja": "農産物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "quality",
+          "ja": "品質",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "budget",
+          "ja": "予算",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "necessity",
+          "ja": "必要品",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "assess",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prioritize",
+          "ja": "優先する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較検討する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "select",
+          "ja": "選択する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "verify",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discerning",
+          "ja": "よく吟味する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cost-effective",
+          "ja": "費用対効果の高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nutritious",
+          "ja": "栄養価の高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "purchase household groceries",
+          "ja": "家庭用の食料品を購入する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "verify the shopping list",
+          "ja": "買い物リストを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assess the remaining necessities",
+          "ja": "残りの必要品を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare price and quality",
+          "ja": "価格と品質を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "select fresh produce",
+          "ja": "新鮮な農産物を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve a refrigerated product",
+          "ja": "冷蔵商品を取り出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make a considered purchase",
+          "ja": "よく考えて商品を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "divide household responsibilities",
+          "ja": "家庭の役割を分担する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "prepare a nutritious evening meal",
+          "ja": "栄養のある夕食を準備する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three family members are purchasing groceries in preparation for an evening meal.",
+          "grammar": "in preparation for",
+          "ja": "3人の家族は夕食の準備として食料品を購入しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is methodically verifying the shopping list against the items already placed in the cart.",
+          "grammar": "compare / verify A against B",
+          "ja": "父親は買い物リストとすでにカートへ入れた商品を手順立てて照合しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be assessing which household necessities still need to be purchased.",
+          "grammar": "appear to be＋現在分詞 / 間接疑問",
+          "ja": "彼はまだ購入する必要がある家庭用品が何か確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "His daughter is carefully comparing two varieties of tomatoes in terms of both quality and price.",
+          "grammar": "in terms of / both A and B",
+          "ja": "娘は2種類のトマトを品質と価格の両面から注意深く比較しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her behavior suggests that she is making a considered choice rather than simply selecting the first product available.",
+          "grammar": "suggest that / rather than",
+          "ja": "彼女の行動から、最初に目についた商品を選ぶのではなく、よく考えて選択していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the son is retrieving a carton of milk from the refrigerated section and preparing to place it in the cart.",
+          "grammar": "現在進行形 / prepare to",
+          "ja": "その一方で、息子は冷蔵コーナーから牛乳を取り出し、カートへ入れようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The selection of vegetables, eggs, bread, pasta, and dairy products suggests that the family is planning a reasonably balanced meal.",
+          "grammar": "suggest that",
+          "ja": "野菜、卵、パン、パスタ、乳製品を選んでいることから、家族が比較的バランスのよい食事を計画していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Each person is handling a different part of the task, indicating that the household responsibilities are being shared.",
+          "grammar": "分詞構文 / 現在進行受動態",
+          "ja": "それぞれが異なる作業を担当しており、家庭内の役割が分担されていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary shopping trip can involve planning, comparison, decision-making, and cooperation.",
+          "grammar": "how節 / combine列挙",
+          "ja": "この場面は、日常的な買い物にも計画、比較、意思決定、協力が含まれることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "father": {
+      "x": 48,
+      "y": 53
+    },
+    "smartphone": {
+      "x": 47,
+      "y": 46
+    },
+    "shopping_cart": {
+      "x": 51,
+      "y": 69
+    },
+    "daughter": {
+      "x": 23,
+      "y": 53
+    },
+    "tomatoes": {
+      "x": 25,
+      "y": 47
+    },
+    "produce_section": {
+      "x": 15,
+      "y": 39
+    },
+    "son": {
+      "x": 76,
+      "y": 54
+    },
+    "milk": {
+      "x": 79,
+      "y": 49
+    },
+    "dairy_shelf": {
+      "x": 87,
+      "y": 38
+    },
+    "groceries": {
+      "x": 52,
+      "y": 66
+    }
+  }
+}

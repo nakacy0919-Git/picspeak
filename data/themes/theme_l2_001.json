@@ -1,0 +1,652 @@
+{
+  "id": "theme_l2_001",
+  "imageSrc": "assets/images/l2_001.webp",
+  "titleEn": "Missing Wallet",
+  "titleJa": "財布がない！",
+  "description": "混雑した駅のコンコースで、女子学生がバッグの中を探しながら財布がないことに気づき、不安そうな表情をしている。友人が床を指さしており、少し離れたベンチの近くには落とした財布が見えている。背景では、駅員が大きなスーツケースを持った高齢者を案内し、別の男性はこぼしたコーヒーを慌てて拭いている。また、急いでいる少年が電車に間に合おうと走っており、掲示板を確認している旅行者もいる。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a busy modern Japanese train station concourse in a clear, colorful, realistic educational illustration style. The main event is in the foreground: a teenage schoolgirl wearing a school uniform looks worried and searches inside her shoulder bag because she cannot find her wallet. Her facial expression clearly shows anxiety and confusion. Her female friend stands beside her and points toward the floor. A small wallet is visible on the floor near a bench several meters behind them, creating a visual clue that the girl has dropped it. Include several clear background sub-stories. On the left, a station employee is politely helping an elderly traveler who is carrying a large suitcase and looking at a station map. On the right, a man has accidentally spilled a cup of coffee and is bending down to clean the floor with tissues while looking embarrassed. In the middle background, a young boy with a backpack is running quickly toward the train gates because he appears to be late. Near a large electronic departure board, two tourists are studying the information and discussing which platform to use. Include ticket gates, a bench, signs, luggage, a station map, a departure board, and several passengers. Make every action visually distinct and easy to describe. The composition should contain a clear foreground, middle ground, and background, with approximately 8 to 12 visible people. No speech bubbles, no captions, no brand logos, no copyrighted characters, no text that is necessary to understand the scene. Landscape 16:9 composition, detailed but uncluttered, suitable for English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "wallet",
+          "ja": "財布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "かばん",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "station",
+          "ja": "駅",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bench",
+          "ja": "ベンチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "train",
+          "ja": "電車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "coffee",
+          "ja": "コーヒー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look for her wallet",
+          "ja": "財布を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside her bag",
+          "ja": "かばんの中に",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "on the floor",
+          "ja": "床の上に",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "point at the wallet",
+          "ja": "財布を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help an old man",
+          "ja": "高齢の男性を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spill some coffee",
+          "ja": "コーヒーをこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run to the train",
+          "ja": "電車へ走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A girl is looking for her wallet.",
+          "grammar": "現在進行形",
+          "ja": "女の子が財布を探しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She looks very worried.",
+          "grammar": "look + 形容詞",
+          "ja": "彼女はとても心配そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is pointing at the floor.",
+          "grammar": "現在進行形",
+          "ja": "彼女の友達が床を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A wallet is near the bench.",
+          "grammar": "be動詞＋場所",
+          "ja": "財布がベンチの近くにあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is cleaning up some coffee.",
+          "grammar": "現在進行形",
+          "ja": "男性がこぼれたコーヒーを片づけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is running to the train.",
+          "grammar": "現在進行形",
+          "ja": "男の子が電車へ向かって走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A station worker is helping an old man.",
+          "grammar": "現在進行形",
+          "ja": "駅員が高齢の男性を助けています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "passenger",
+          "ja": "乗客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "wallet",
+          "ja": "財布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "luggage",
+          "ja": "荷物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "platform",
+          "ja": "ホーム",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "employee",
+          "ja": "従業員・駅員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "traveler",
+          "ja": "旅行者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spill",
+          "ja": "こぼす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hurry",
+          "ja": "急ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "nervous",
+          "ja": "不安な",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "embarrassed",
+          "ja": "恥ずかしい・きまりの悪い",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "search through her bag",
+          "ja": "かばんの中を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "realize her wallet is missing",
+          "ja": "財布がないことに気づく",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "point toward the floor",
+          "ja": "床の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop her wallet",
+          "ja": "財布を落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help an elderly traveler",
+          "ja": "高齢の旅行者を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean up spilled coffee",
+          "ja": "こぼれたコーヒーを片づける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hurry toward the gate",
+          "ja": "改札へ急ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the departure board",
+          "ja": "出発案内板を確認する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The student is searching through her bag because she cannot find her wallet.",
+          "grammar": "becauseを用いた理由説明",
+          "ja": "その生徒は財布が見つからないので、かばんの中を探しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She seems nervous after realizing that her wallet is missing.",
+          "grammar": "seem＋形容詞 / after＋動名詞",
+          "ja": "財布がないことに気づいて、彼女は不安そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is pointing toward a wallet lying near the bench.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "友達はベンチの近くに落ちている財布を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A station employee is helping an elderly traveler with his luggage.",
+          "grammar": "help A with B",
+          "ja": "駅員が高齢の旅行者の荷物を手伝っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man looks embarrassed because he has spilled his coffee.",
+          "grammar": "現在完了形＋because",
+          "ja": "コーヒーをこぼしてしまったため、男性はきまりが悪そうです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is hurrying toward the gate because he may miss his train.",
+          "grammar": "may＋動詞",
+          "ja": "電車に乗り遅れるかもしれないため、男の子が改札へ急いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two travelers are checking the departure board to find their platform.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "2人の旅行者がホームを確認するために出発案内板を見ています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "commuter",
+          "ja": "通勤・通学客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "concourse",
+          "ja": "駅などの中央広間・コンコース",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "belongings",
+          "ja": "所持品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "possession",
+          "ja": "所持品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "departure",
+          "ja": "出発",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "misplace",
+          "ja": "置き忘れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "取り戻す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gesture",
+          "ja": "身振りで示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assist",
+          "ja": "手助けする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rush",
+          "ja": "急いで向かう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "anxious",
+          "ja": "不安な",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "distressed",
+          "ja": "動揺した・困惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "preoccupied",
+          "ja": "何かに気を取られた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "congested",
+          "ja": "非常に混雑した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "frantically search her belongings",
+          "ja": "必死に所持品を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear visibly distressed",
+          "ja": "明らかに動揺しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "misplace a personal possession",
+          "ja": "私物を置き忘れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "gesture toward the missing wallet",
+          "ja": "なくした財布の方を身振りで示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assist an elderly passenger",
+          "ja": "高齢の乗客を手助けする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wipe up the spilled beverage",
+          "ja": "こぼれた飲み物を拭き取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rush to catch the train",
+          "ja": "電車に間に合うよう急ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consult the departure board",
+          "ja": "出発案内板を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be oblivious to what is happening",
+          "ja": "起きていることに気づいていない",
+          "type": "detail",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The student appears visibly distressed as she frantically searches her belongings for a missing wallet.",
+          "grammar": "appear＋補語 / as節",
+          "ja": "その生徒は、なくした財布を求めて必死に所持品を探しており、明らかに動揺しているように見えます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She seems to have misplaced her wallet somewhere in the crowded station concourse.",
+          "grammar": "seem to have＋過去分詞",
+          "ja": "彼女は混雑した駅のコンコースのどこかで財布を置き忘れたようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Her companion is gesturing toward the wallet, which is lying unnoticed beside a nearby bench.",
+          "grammar": "非制限用法の関係代名詞",
+          "ja": "同行している友人は、近くのベンチのそばに気づかれずに落ちている財布の方を指しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, a station employee is assisting an elderly passenger who appears confused by the station map.",
+          "grammar": "関係代名詞who",
+          "ja": "その一方で、駅員は駅の地図に戸惑っているように見える高齢の乗客を手助けしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another passenger looks flustered after accidentally spilling his drink in the middle of the concourse.",
+          "grammar": "after＋動名詞",
+          "ja": "別の乗客はコンコースの中央で誤って飲み物をこぼし、慌てているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is rushing toward the ticket gates, presumably because he is at risk of missing his train.",
+          "grammar": "presumably / be at risk of",
+          "ja": "少年は、おそらく電車に乗り遅れそうなため、改札に向かって急いでいます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "In the background, two travelers are consulting the departure board while remaining oblivious to the confusion nearby.",
+          "grammar": "while＋現在分詞",
+          "ja": "背景では2人の旅行者が、近くの混乱には気づかないまま出発案内板を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene conveys the sense of confusion and urgency that can arise when several problems occur simultaneously in a crowded public place.",
+          "grammar": "関係代名詞that / 抽象的状況説明",
+          "ja": "この場面は、混雑した公共の場所で複数の問題が同時に起こった際の混乱と切迫感を表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "girl": {
+      "x": 36,
+      "y": 52
+    },
+    "bag": {
+      "x": 39,
+      "y": 63
+    },
+    "wallet": {
+      "x": 57,
+      "y": 72
+    },
+    "bench": {
+      "x": 63,
+      "y": 60
+    },
+    "station_employee": {
+      "x": 18,
+      "y": 48
+    },
+    "suitcase": {
+      "x": 13,
+      "y": 69
+    },
+    "spilled_coffee": {
+      "x": 82,
+      "y": 72
+    },
+    "running_boy": {
+      "x": 68,
+      "y": 43
+    },
+    "departure_board": {
+      "x": 70,
+      "y": 17
+    },
+    "ticket_gates": {
+      "x": 53,
+      "y": 35
+    }
+  }
+}

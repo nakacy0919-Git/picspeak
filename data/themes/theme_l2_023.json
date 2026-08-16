@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_023",
+  "imageSrc": "assets/images/l2_023.webp",
+  "titleEn": "After-School Band Practice",
+  "titleJa": "放課後のバンド練習",
+  "description": "放課後の高校の音楽室で、3人の生徒が文化祭に向けてバンド練習をしている。中央では男子生徒がアコースティックギターを弾きながら楽譜を確認している。左側の女子生徒は電子キーボードを演奏し、譜面台に置かれた楽譜を見ながら音を合わせている。右側の女子生徒はマイクの前で歌いながら、片手でリズムを取っている。周囲にはギターケース、譜面台、メトロノーム、アンプ、楽譜、音楽ポスターなどがあり、3人が互いの音を聞きながら文化祭の発表に向けて練習している。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students practicing music together in a bright modern Japanese high school music room after school. Do not include any additional visible people. The atmosphere should be energetic, focused, creative, cooperative, and positive. The main activity is band practice for an upcoming school festival. In the center foreground, a teenage boy wearing a school uniform with his jacket removed is sitting or standing with an acoustic guitar. He is strumming the guitar while glancing at a music sheet placed on a nearby music stand. His fingers should clearly be positioned on the guitar neck as if forming chords. On the left side, a teenage girl wearing a school uniform is playing an electronic keyboard. She is looking at sheet music on a music stand and appears to be carefully matching the rhythm and melody with the guitarist. On the right side, another teenage girl is standing in front of a microphone on a stand. She is singing while lightly keeping the beat with one hand and looking toward the other two students. Make the three activities visually distinct and easy to describe: one student playing guitar, one playing keyboard, and one singing into a microphone. Include a guitar case, electronic keyboard, microphone stand, sheet music, music stands, metronome, small amplifier, cables arranged safely, a stool, notebook, pencils, wall clock, simple music posters, acoustic panels, and large windows with warm late-afternoon sunlight. A small whiteboard in the background may show simple musical notes and a rehearsal schedule using nonessential text, but the image must be understandable without reading it. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "music",
+          "ja": "音楽",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "guitar",
+          "ja": "ギター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "piano",
+          "ja": "ピアノ・キーボード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "microphone",
+          "ja": "マイク",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "song",
+          "ja": "歌",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "paper",
+          "ja": "楽譜・紙",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "台",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "clock",
+          "ja": "時計",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "play",
+          "ja": "演奏する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sing",
+          "ja": "歌う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "play the guitar",
+          "ja": "ギターを弾く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "play the keyboard",
+          "ja": "キーボードを弾く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sing a song",
+          "ja": "歌を歌う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the music",
+          "ja": "楽譜を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a microphone",
+          "ja": "マイクを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice music",
+          "ja": "音楽を練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "after school",
+          "ja": "放課後",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are practicing music.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が音楽を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is playing the guitar.",
+          "grammar": "現在進行形",
+          "ja": "男の子がギターを弾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is looking at the music.",
+          "grammar": "現在進行形",
+          "ja": "彼は楽譜を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is playing the keyboard.",
+          "grammar": "現在進行形",
+          "ja": "女の子がキーボードを弾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is singing.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が歌っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is using a microphone.",
+          "grammar": "現在進行形",
+          "ja": "彼女はマイクを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are music stands in the room.",
+          "grammar": "There are",
+          "ja": "部屋には譜面台があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "instrument",
+          "ja": "楽器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "keyboard",
+          "ja": "キーボード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "melody",
+          "ja": "メロディー",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rhythm",
+          "ja": "リズム",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rehearsal",
+          "ja": "リハーサル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "perform",
+          "ja": "演奏する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "practice",
+          "ja": "練習する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "follow",
+          "ja": "合わせる・従う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "adjust",
+          "ja": "調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "合わせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "confident",
+          "ja": "自信のある",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "energetic",
+          "ja": "活気のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "musical",
+          "ja": "音楽の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cooperative",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice for the school festival",
+          "ja": "文化祭に向けて練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "strum the guitar",
+          "ja": "ギターをかき鳴らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow the sheet music",
+          "ja": "楽譜を見ながら演奏する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "play the melody",
+          "ja": "メロディーを演奏する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "keep the rhythm",
+          "ja": "リズムを取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sing into the microphone",
+          "ja": "マイクに向かって歌う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to each other",
+          "ja": "お互いの音を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rehearse a song",
+          "ja": "曲を練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are rehearsing a song for the school festival.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒は文化祭に向けて曲を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is strumming an acoustic guitar while following the sheet music.",
+          "grammar": "while＋現在分詞",
+          "ja": "男子生徒は楽譜を見ながらアコースティックギターを弾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl at the keyboard is carefully playing the melody.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "キーボードの女子生徒は注意深くメロディーを弾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be listening to the guitarist so that they can stay together.",
+          "grammar": "appear to be / so that",
+          "ja": "彼女は演奏を合わせるためにギターの音を聞いているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The other girl is singing into a microphone.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒はマイクに向かって歌っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is keeping the rhythm with one hand while singing.",
+          "grammar": "while＋動名詞",
+          "ja": "彼女は歌いながら片手でリズムを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The instruments and music stands suggest that they are having a serious rehearsal.",
+          "grammar": "suggest that",
+          "ja": "楽器や譜面台から、3人が本格的な練習をしていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The students seem focused on improving their performance.",
+          "grammar": "seem＋形容詞 / focus on",
+          "ja": "生徒たちは演奏をより良くすることに集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "ensemble",
+          "ja": "合奏・アンサンブル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "tempo",
+          "ja": "テンポ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "harmony",
+          "ja": "ハーモニー",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "arrangement",
+          "ja": "編曲・構成",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rehearsal",
+          "ja": "リハーサル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "synchronize",
+          "ja": "同期させる・合わせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interpret",
+          "ja": "表現する・解釈する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "refine",
+          "ja": "洗練する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "maintain",
+          "ja": "維持する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "調整する・合わせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "absorbed",
+          "ja": "没頭した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "engaged",
+          "ja": "熱心に取り組んでいる",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "expressive",
+          "ja": "表現力豊かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cohesive",
+          "ja": "まとまりのある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "collaborative",
+          "ja": "協働的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "participate in an ensemble rehearsal",
+          "ja": "アンサンブル練習に参加する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "maintain a steady tempo",
+          "ja": "安定したテンポを保つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "synchronize with the keyboard",
+          "ja": "キーボードと演奏を合わせる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "interpret the musical arrangement",
+          "ja": "楽曲の構成を表現する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine the vocal performance",
+          "ja": "歌唱を洗練する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate rhythm and melody",
+          "ja": "リズムとメロディーを調和させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "respond to musical cues",
+          "ja": "音楽的な合図に反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop a cohesive performance",
+          "ja": "まとまりのある演奏を作る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "prepare for a live performance",
+          "ja": "ライブ演奏に備える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are participating in an ensemble rehearsal in preparation for a live performance at the school festival.",
+          "grammar": "in preparation for",
+          "ja": "3人の生徒は文化祭でのライブ演奏に備えてアンサンブル練習をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The guitarist is strumming a sequence of chords while consulting the sheet music positioned beside him.",
+          "grammar": "while＋現在分詞 / 過去分詞修飾",
+          "ja": "ギター担当の生徒は、そばに置かれた楽譜を確認しながらコード進行を演奏しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His concentration suggests that he is attempting to maintain a steady tempo and synchronize with the keyboard.",
+          "grammar": "suggest that / attempt to",
+          "ja": "彼の集中した様子から、安定したテンポを保ちながらキーボードと演奏を合わせようとしていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The keyboard player is carefully interpreting the arrangement while listening closely to the guitarist.",
+          "grammar": "while＋現在分詞",
+          "ja": "キーボード担当の生徒はギターの音を注意深く聞きながら、楽曲の構成を表現しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her role appears to involve supporting both the melody and the overall harmony of the ensemble.",
+          "grammar": "appear to / both A and B",
+          "ja": "彼女の役割は、メロディーとアンサンブル全体のハーモニーの両方を支えることのようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the vocalist is singing into the microphone and using subtle hand movements to maintain the rhythm.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "その一方で、ボーカル担当はマイクに向かって歌いながら、細かな手の動きでリズムを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears highly engaged as she responds to the musical cues provided by the other performers.",
+          "grammar": "as節 / 過去分詞修飾",
+          "ja": "彼女は他の演奏者からの音楽的な合図に反応しながら、非常に熱心に取り組んでいるようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The metronome, sheet music, and carefully arranged equipment indicate that the students are approaching the rehearsal in a methodical manner.",
+          "grammar": "indicate that",
+          "ja": "メトロノーム、楽譜、整えられた機材から、生徒たちが手順立てて練習に取り組んでいることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how a successful musical performance depends on individual skill, attentive listening, and close coordination among performers.",
+          "grammar": "how節 / depend on",
+          "ja": "この場面は、よい音楽演奏には個人の技術、注意深く聞くこと、演奏者同士の密接な連携が必要であることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "guitar_boy": {
+      "x": 46,
+      "y": 54
+    },
+    "acoustic_guitar": {
+      "x": 47,
+      "y": 63
+    },
+    "guitar_sheet_music": {
+      "x": 39,
+      "y": 47
+    },
+    "keyboard_girl": {
+      "x": 23,
+      "y": 56
+    },
+    "keyboard": {
+      "x": 24,
+      "y": 67
+    },
+    "singer_girl": {
+      "x": 75,
+      "y": 52
+    },
+    "microphone": {
+      "x": 72,
+      "y": 45
+    },
+    "music_stand": {
+      "x": 34,
+      "y": 59
+    },
+    "metronome": {
+      "x": 57,
+      "y": 70
+    },
+    "amplifier": {
+      "x": 86,
+      "y": 67
+    }
+  }
+}

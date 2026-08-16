@@ -1,0 +1,687 @@
+{
+  "id": "theme_l2_006",
+  "imageSrc": "assets/images/l2_006.webp",
+  "titleEn": "Cafe Accident",
+  "titleJa": "カフェの大失敗",
+  "description": "混雑したカフェで、若い男性客が人とぶつかってトレーを落としてしまい、飲み物や食べ物が床に散らばっている。男性は驚き、店員が急いでモップと布を持って片づけようとしている。近くの女性客は椅子を動かして通路を空け、別の客が落ちた財布を拾って男性に渡そうとしている。背景では、子どもがアイスクリームを服に落として泣きそうになり、別の女性は注文した飲み物を取り違えて困っている。さらに、ノートパソコンで作業していた男性がこぼれた飲み物からパソコンを守ろうと慌てて持ち上げ、入口付近では高齢者が重いドアを開けるのに苦労している。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a busy modern cafe during a crowded afternoon. The main event must be very clear in the foreground: a young male customer has accidentally collided with another person while carrying a tray, causing the tray, two drinks, a sandwich, napkins, and a small plate to fall onto the floor. One paper cup has tipped over and liquid is spreading across the floor. The young man looks shocked, embarrassed, and apologetic. A cafe employee is approaching quickly with a mop and cleaning cloth to deal with the spill. A female customer nearby is moving her chair out of the way to create more space. Another customer has noticed that the young man's wallet fell from his pocket and is bending down to pick it up and return it to him. Include several clear background sub-stories. On the left, a small child has accidentally dropped ice cream onto the front of his clothes and looks close to tears while a parent tries to help him. At the counter, a confused woman is holding a drink and comparing it with her receipt because she appears to have received the wrong order. At a nearby table, a man who was working on a laptop is urgently lifting the computer away from the edge of the table because spilled liquid is getting close to it. Near the entrance, an elderly customer carrying a shopping bag is struggling to open a heavy glass door, while another person is moving toward him to help. Include tables, chairs, coffee cups, trays, sandwiches, a cafe counter, menu boards with simple unreadable markings, a laptop, shopping bags, napkins, a mop, and several customers. Make every action visually distinct and easy to describe. Show clear foreground, middle ground, and background, approximately 10 to 13 visible people. No speech bubbles, no captions, no readable brand names, no copyrighted logos or characters. Landscape 16:9 composition, colorful clean educational illustration style, detailed but uncluttered, expressive faces and body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "cafe",
+          "ja": "カフェ",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "worker",
+          "ja": "店員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "tray",
+          "ja": "トレー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲み物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "food",
+          "ja": "食べ物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wallet",
+          "ja": "財布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "computer",
+          "ja": "パソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ice cream",
+          "ja": "アイスクリーム",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drop",
+          "ja": "落とす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "掃除する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "drop the tray",
+          "ja": "トレーを落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spill a drink",
+          "ja": "飲み物をこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean the floor",
+          "ja": "床を掃除する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up the wallet",
+          "ja": "財布を拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "move the chair",
+          "ja": "椅子を動かす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop his ice cream",
+          "ja": "アイスクリームを落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold the computer",
+          "ja": "パソコンを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "open the door",
+          "ja": "ドアを開ける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A man dropped his tray.",
+          "grammar": "過去形",
+          "ja": "男性がトレーを落としました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He looks very surprised.",
+          "grammar": "look＋形容詞",
+          "ja": "彼はとても驚いているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "A worker is cleaning the floor.",
+          "grammar": "現在進行形",
+          "ja": "店員が床を掃除しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is moving her chair.",
+          "grammar": "現在進行形",
+          "ja": "女性が椅子を動かしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A customer is picking up a wallet.",
+          "grammar": "現在進行形",
+          "ja": "客が財布を拾っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child has ice cream on his clothes.",
+          "grammar": "have＋名詞",
+          "ja": "子どもの服にアイスクリームがついています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is holding his computer.",
+          "grammar": "現在進行形",
+          "ja": "男性がパソコンを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An old man is trying to open the door.",
+          "grammar": "try to＋動詞",
+          "ja": "高齢の男性がドアを開けようとしています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "customer",
+          "ja": "客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "employee",
+          "ja": "従業員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "counter",
+          "ja": "カウンター",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "receipt",
+          "ja": "レシート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "laptop",
+          "ja": "ノートパソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "collide",
+          "ja": "ぶつかる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spill",
+          "ja": "こぼす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "return",
+          "ja": "返す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "embarrassed",
+          "ja": "恥ずかしい・きまりが悪い",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "confused",
+          "ja": "困惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "動揺した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "slippery",
+          "ja": "滑りやすい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "accidentally drop a tray",
+          "ja": "誤ってトレーを落とす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "spill drinks on the floor",
+          "ja": "床に飲み物をこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean up the mess",
+          "ja": "散らかったものを片づける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make room for the employee",
+          "ja": "店員のために場所を空ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "return a lost wallet",
+          "ja": "落とした財布を返す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "receive the wrong order",
+          "ja": "間違った注文品を受け取る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "protect his laptop",
+          "ja": "ノートパソコンを守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle to open the door",
+          "ja": "ドアを開けるのに苦労する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The young man accidentally dropped his tray after bumping into another customer.",
+          "grammar": "after＋動名詞",
+          "ja": "若い男性は別の客とぶつかり、誤ってトレーを落としてしまいました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He looks embarrassed because food and drinks are scattered across the floor.",
+          "grammar": "because＋受動的状態",
+          "ja": "食べ物や飲み物が床に散らばっているため、彼は恥ずかしそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "A cafe employee is rushing over to clean up the spilled drink.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "カフェの店員がこぼれた飲み物を片づけるために急いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is moving her chair so that the employee has enough space to clean.",
+          "grammar": "so that＋節",
+          "ja": "店員が掃除できるように、女性が椅子を動かしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another customer has noticed the man's wallet and is trying to return it to him.",
+          "grammar": "現在完了形 / try to",
+          "ja": "別の客が男性の財布に気づき、彼に返そうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child looks upset because he has dropped ice cream on his clothes.",
+          "grammar": "because＋現在完了形",
+          "ja": "服にアイスクリームを落としてしまったため、子どもは悲しそうです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman at the counter seems confused because she may have received the wrong drink.",
+          "grammar": "may have＋過去分詞",
+          "ja": "カウンターの女性は間違った飲み物を受け取った可能性があり、困惑しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A man is quickly lifting his laptop to protect it from the spilled liquid.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "男性はこぼれた液体からノートパソコンを守るため、急いで持ち上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An elderly man is struggling to open the heavy door while carrying a shopping bag.",
+          "grammar": "struggle to / while＋現在分詞",
+          "ja": "高齢の男性は買い物袋を持ちながら重いドアを開けるのに苦労しています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "mishap",
+          "ja": "思いがけないトラブル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "collision",
+          "ja": "衝突",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "spillage",
+          "ja": "こぼれた液体",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "belongings",
+          "ja": "所持品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "beverage",
+          "ja": "飲料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stumble",
+          "ja": "つまずく・よろめく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "拾い上げる・回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assist",
+          "ja": "手助けする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "safeguard",
+          "ja": "保護する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rectify",
+          "ja": "問題を正す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mortified",
+          "ja": "非常に恥ずかしい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "bewildered",
+          "ja": "当惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "distressed",
+          "ja": "動揺した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "congested",
+          "ja": "非常に混雑した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an accidental collision",
+          "ja": "偶発的な衝突",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "send the contents of the tray flying",
+          "ja": "トレーの中身を飛び散らせる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear visibly mortified",
+          "ja": "明らかに非常に恥ずかしそうに見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "deal with the spillage",
+          "ja": "こぼれた液体に対処する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve a dropped possession",
+          "ja": "落とした所持品を拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rectify an incorrect order",
+          "ja": "間違った注文を訂正する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "safeguard electronic equipment",
+          "ja": "電子機器を保護する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "come to someone's assistance",
+          "ja": "人を助けに行く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cope with simultaneous mishaps",
+          "ja": "同時に起こる複数のトラブルに対処する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An accidental collision has caused the young customer to drop his tray, sending food and beverages across the cafe floor.",
+          "grammar": "現在完了形 / 分詞構文",
+          "ja": "偶発的な衝突によって若い客がトレーを落とし、食べ物や飲み物がカフェの床に飛び散っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He appears visibly mortified by the disruption he has caused in the middle of the crowded cafe.",
+          "grammar": "appear＋補語 / 関係節省略",
+          "ja": "彼は混雑したカフェの中央で騒ぎを起こしてしまい、非常に恥ずかしそうに見えます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "A cafe employee is approaching rapidly in an attempt to contain the spillage before anyone slips on the wet floor.",
+          "grammar": "in an attempt to / before節",
+          "ja": "誰かが濡れた床で滑る前にこぼれた液体を処理しようと、店員が急いで近づいています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One customer is deliberately moving her chair aside to give the employee sufficient room to deal with the mess.",
+          "grammar": "give A B / to不定詞",
+          "ja": "一人の客は、店員が散らかったものを片づける十分な場所を確保できるよう、椅子を横に動かしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another customer has retrieved a wallet that apparently fell from the embarrassed man's pocket during the collision.",
+          "grammar": "現在完了形 / 関係代名詞that / apparently",
+          "ja": "別の客は、衝突した際にその男性のポケットから落ちたと思われる財布を拾っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "At the counter, a bewildered customer appears to be attempting to rectify an incorrect order by comparing her drink with the receipt.",
+          "grammar": "appear to be＋現在分詞 / by＋動名詞",
+          "ja": "カウンターでは、困惑した客が飲み物とレシートを比較し、間違った注文を訂正しようとしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Nearby, a laptop user is hastily safeguarding his computer from the spreading liquid by lifting it away from the edge of the table.",
+          "grammar": "by＋動名詞",
+          "ja": "近くでは、ノートパソコンを使っていた男性が、広がる液体から守るためにパソコンを急いでテーブルの端から持ち上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A distressed child is staring at the ice cream smeared across his clothes while his parent attempts to comfort him.",
+          "grammar": "過去分詞による後置修飾 / while",
+          "ja": "動揺した子どもは服についたアイスクリームを見つめ、親が彼を慰めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Near the entrance, another customer is moving to assist an elderly man who is struggling with the heavy door and his shopping bag.",
+          "grammar": "関係代名詞who / struggle with",
+          "ja": "入口付近では、別の客が重いドアと買い物袋に苦労している高齢男性を助けようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how several minor mishaps can occur simultaneously in a congested public space and require cooperation from the people nearby.",
+          "grammar": "how節 / require＋名詞",
+          "ja": "この場面は、混雑した公共の場所では複数の小さなトラブルが同時に起こり、周囲の人々の協力が必要になることを表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "young_man": {
+      "x": 40,
+      "y": 48
+    },
+    "fallen_tray": {
+      "x": 43,
+      "y": 73
+    },
+    "spilled_drink": {
+      "x": 50,
+      "y": 76
+    },
+    "cafe_employee": {
+      "x": 60,
+      "y": 51
+    },
+    "wallet": {
+      "x": 31,
+      "y": 70
+    },
+    "child": {
+      "x": 14,
+      "y": 53
+    },
+    "wrong_order_customer": {
+      "x": 73,
+      "y": 32
+    },
+    "laptop": {
+      "x": 82,
+      "y": 58
+    },
+    "elderly_man": {
+      "x": 91,
+      "y": 48
+    },
+    "entrance_door": {
+      "x": 94,
+      "y": 33
+    }
+  }
+}

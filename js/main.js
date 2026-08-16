@@ -159,11 +159,15 @@ window.renderThemeGrid = async function() {
             if(!item || !item.data) return;
             
             let imageFilterClass = "";
-            let titleText = item.data.description || item.data.titleJa || '名称未設定';
+            let category = item.data.category || 'other'; 
+            
+            let titleEn = item.data.titleEn || 'Select Image';
+            let titleJa = item.data.titleJa || item.data.description || '名称未設定';
             
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
-                titleText = "??? (Secret Image)";
+                titleEn = "Secret Image";
+                titleJa = "秘密の画像";
             } else if (isDetective) {
                 imageFilterClass = "!h-[200%] object-top"; 
             }
@@ -176,15 +180,50 @@ window.renderThemeGrid = async function() {
                 </div>`;
             }
             
-            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
+            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
                     <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
-                <div class="p-3 md:p-4 text-center text-xs md:text-sm lg:text-base font-black text-gray-700 line-clamp-2 border-t border-gray-50 flex-1 flex items-center justify-center leading-tight bg-white pointer-events-none">${titleText}</div>
+                <div class="p-3 md:p-4 text-center border-t border-gray-50 flex-1 flex flex-col items-center justify-center leading-tight bg-white pointer-events-none">
+                    <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${titleEn}</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-400 line-clamp-1">${titleJa}</span>
+                </div>
             </div>`;
         });
         themeGrid.innerHTML = html;
+
+        // ★ フィルターUIの表示/非表示と「初期化（新シリーズのみ表示）」制御
+        const filters = document.getElementById('theme-filters');
+        if (filters) {
+            if (window.appState.selectedMode === 'mosaic' || isDetective || window.appState.selectedMode === 'oralquest') {
+                filters.classList.add('hidden');
+            } else {
+                filters.classList.remove('hidden');
+                
+                // 1. 全てのフィルターボタンの見た目をリセットし、「すべて (新シリーズ)」だけを選択状態にする
+                document.querySelectorAll('.theme-filter-btn').forEach(b => {
+                    if (b.getAttribute('data-filter') === 'all') {
+                        b.classList.remove('bg-white', 'text-gray-500');
+                        b.classList.add('bg-gray-800', 'text-white', 'shadow-md');
+                    } else {
+                        b.classList.remove('bg-gray-800', 'text-white', 'shadow-md');
+                        b.classList.add('bg-white', 'text-gray-500');
+                    }
+                });
+                
+                // 2. 「category: other」の旧教材（300番台）を最初から非表示にする
+                document.querySelectorAll('.theme-card').forEach(card => {
+                    const cardCat = card.getAttribute('data-category');
+                    if (cardCat === 'other') {
+                        card.style.display = 'none'; // 旧教材は隠す
+                    } else {
+                        card.style.display = ''; // 新シリーズだけ表示
+                    }
+                });
+            }
+        }
+
     } catch(e) { 
         themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
     }
@@ -360,7 +399,6 @@ window.startGameWithTheme = async function(id) {
     window.rawTranscriptForCounting = ""; 
     window.accumulatedTranscript = ""; 
     
-    // ★ 大幅修正: 変数とUIを完全にリセットする
     if(typeof window.resetScore === 'function') window.resetScore(); 
     
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
@@ -418,7 +456,6 @@ window.startGameWithTheme = async function(id) {
         }
     }
 
-    // ★ 大幅修正: 2回目以降のバグを防ぐため、ボタンUIを完全に初期状態に強制リセット
     const btnStartTurn = document.getElementById('btn-start-turn');
     const btnFinishTurn = document.getElementById('btn-finish-turn');
     const recIndicator = document.getElementById('recording-indicator');
@@ -428,10 +465,10 @@ window.startGameWithTheme = async function(id) {
         btnStartTurn.classList.add('animate-attention');
     }
     if(btnFinishTurn) {
-        btnFinishTurn.classList.add('hidden'); // Finishボタンを強制的に隠す
+        btnFinishTurn.classList.add('hidden'); 
     }
     if(recIndicator) {
-        recIndicator.classList.add('hidden'); // 録音中マークを強制的に隠す
+        recIndicator.classList.add('hidden'); 
     }
     
     if (window.appState.selectedMode === 'oralquest') {
@@ -917,12 +954,39 @@ window.openPractice = function(text, ja) {
 };
 
 // ==========================================
-// ★ イベントデリゲーション (完全版)
+// ★ イベントデリゲーション内の追加部分
 // ==========================================
 document.addEventListener('click', (e) => {
     
-    if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home')) {
-        if(typeof window.playTapSound === 'function') window.playTapSound();
+    // （ここには既存の mode-btn 等の処理がそのまま残ります）
+    
+    // ▼▼ ここから下の部分を、既存のクリックイベント内に追加してください ▼▼
+
+    // ★ 事前練習モード：レベルタブ切り替え
+    const preLevelBtn = e.target.closest('.pre-level-btn');
+    if (preLevelBtn) {
+        window.appState.selectedLevel = preLevelBtn.getAttribute('data-level');
+        window.renderPrePracticeList();
+        
+        // メイン画面(view-select)のレベルボタンの見た目も同期しておく
+        document.querySelectorAll('.level-btn').forEach(b => { 
+            if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+                b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+                b.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            } else {
+                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
+            }
+        });
+        return;
+    }
+
+    // ★ 事前練習モード：タイプ(Words/Chunks/Sentences)タブ切り替え
+    const preTypeBtn = e.target.closest('.pre-type-btn');
+    if (preTypeBtn) {
+        window.prePracticeCurrentType = preTypeBtn.getAttribute('data-type');
+        window.renderPrePracticeList();
+        return;
     }
 
     const modeBtn = e.target.closest('.mode-btn');
@@ -998,7 +1062,40 @@ document.addEventListener('click', (e) => {
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
-        if (themeId) window.startGameWithTheme(themeId);
+        if (themeId) {
+            window.tempSelectedThemeId = themeId; // IDを一時保存
+            document.getElementById('mode-select-modal').classList.remove('hidden'); // ポップアップを表示！
+        }
+        return;
+    }
+
+    // ★ モード選択ポップアップの「事前練習モード」ボタン
+    const btnChoosePractice = e.target.closest('#btn-choose-practice');
+    if (btnChoosePractice) {
+        document.getElementById('mode-select-modal').classList.add('hidden');
+        if (window.tempSelectedThemeId) {
+            window.startPrePracticeWithTheme(window.tempSelectedThemeId);
+        }
+        return;
+    }
+
+    // ★ モード選択ポップアップの「本番モード」ボタン
+    const btnChooseChallenge = e.target.closest('#btn-choose-challenge');
+    if (btnChooseChallenge) {
+        document.getElementById('mode-select-modal').classList.add('hidden');
+        if (window.tempSelectedThemeId) {
+            window.startGameWithTheme(window.tempSelectedThemeId);
+        }
+        return;
+    }
+
+    // ★ 事前練習画面からの「本番へ進む」ボタン
+    const btnStartFromPractice = e.target.closest('#btn-start-from-practice');
+    if (btnStartFromPractice) {
+        document.getElementById('view-pre-practice').classList.add('hidden');
+        if (window.tempSelectedThemeId) {
+            window.startGameWithTheme(window.tempSelectedThemeId);
+        }
         return;
     }
 
@@ -1139,3 +1236,106 @@ if (document.readyState === 'loading') {
 } else {
     setupOqPasswordLock();
 }
+// ==========================================
+// ★ 事前練習モード (Pre-Practice) ロジック (タブ対応版)
+// ==========================================
+window.tempSelectedThemeId = null;
+window.prePracticeCurrentType = 'words'; // 初期値は 'words'
+
+window.startPrePracticeWithTheme = async function(id) {
+    try {
+        let folderPath = 'data/themes';
+        if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
+        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
+
+        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+        const fetchedData = await res.json();
+        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+    } catch (e) { 
+        alert(`データの読み込みに失敗しました。`); 
+        return; 
+    }
+
+    // 画像のセット
+    document.getElementById('pre-practice-image').src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+
+    // 初期化とリスト描画
+    window.prePracticeCurrentType = 'words';
+    window.renderPrePracticeList();
+
+    // 画面の切り替え
+    document.querySelectorAll('.app-container > div:not(.hidden)[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    document.getElementById('view-pre-practice').classList.remove('hidden');
+};
+
+window.renderPrePracticeList = function() {
+    if (!window.currentTheme) return;
+
+    // 1. レベルタブの見た目更新
+    document.querySelectorAll('.pre-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+            b.classList.remove('text-gray-500', 'hover:bg-gray-100');
+            b.classList.add('bg-pink-500', 'text-white', 'shadow-sm');
+        } else {
+            b.classList.add('text-gray-500', 'hover:bg-gray-100');
+            b.classList.remove('bg-pink-500', 'text-white', 'shadow-sm');
+        }
+    });
+
+    // 2. 種類(Words/Chunks/Sentences)タブの見た目更新
+    document.querySelectorAll('.pre-type-btn').forEach(b => {
+        if (b.getAttribute('data-type') === window.prePracticeCurrentType) {
+            b.classList.add('text-blue-600', 'border-blue-500', 'bg-blue-50/50');
+            b.classList.remove('text-gray-400', 'border-transparent', 'bg-white');
+            b.querySelector('span').classList.add('bg-blue-100', 'text-blue-600');
+            b.querySelector('span').classList.remove('bg-gray-100', 'text-gray-500');
+        } else {
+            b.classList.add('text-gray-400', 'border-transparent', 'bg-white');
+            b.classList.remove('text-blue-600', 'border-blue-500', 'bg-blue-50/50');
+            b.querySelector('span').classList.remove('bg-blue-100', 'text-blue-600');
+            b.querySelector('span').classList.add('bg-gray-100', 'text-gray-500');
+        }
+    });
+
+    // 3. データ取得と件数バッジの更新
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    
+    document.getElementById('count-words').innerText = targetData.words ? targetData.words.length : 0;
+    document.getElementById('count-chunks').innerText = targetData.chunks ? targetData.chunks.length : 0;
+    document.getElementById('count-sentences').innerText = targetData.sentences ? targetData.sentences.length : 0;
+
+    // 4. リストのHTML生成関数
+    const createItemsHtml = (items, isSentence) => {
+        if (!items || items.length === 0) return '<p class="text-center text-gray-400 font-bold py-10 mt-10">このレベルのデータはありません。</p>';
+        let html = '';
+        items.forEach(item => {
+            const escapedText = item.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+            const escapedJa = (item.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+            const titleClass = isSentence ? "text-base md:text-lg" : "text-sm md:text-base";
+            
+            html += `
+                <div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col xl:flex-row xl:items-center justify-between gap-3 hover:border-blue-200 transition-colors animate-pop">
+                    <div class="flex-1 pr-2">
+                        <div class="font-black text-gray-800 ${titleClass} leading-tight">${item.text}</div>
+                        <div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${item.ja || ""}</div>
+                    </div>
+                    <div class="flex items-center gap-2 shrink-0">
+                        <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 transition-colors shadow-sm">🔊 聞く</button>
+                        <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-2 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs md:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
+                    </div>
+                </div>
+            `;
+        });
+        return html;
+    };
+
+    // 5. 選択中のタブに応じてリストを切り替えて表示
+    const listContainer = document.getElementById('pre-practice-list');
+    if (window.prePracticeCurrentType === 'words') {
+        listContainer.innerHTML = createItemsHtml(targetData.words, false);
+    } else if (window.prePracticeCurrentType === 'chunks') {
+        listContainer.innerHTML = createItemsHtml(targetData.chunks, false);
+    } else if (window.prePracticeCurrentType === 'sentences') {
+        listContainer.innerHTML = createItemsHtml(targetData.sentences, true);
+    }
+};

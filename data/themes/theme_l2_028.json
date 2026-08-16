@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_028",
+  "imageSrc": "assets/images/l2_028.webp",
+  "titleEn": "Baseball Club Practice",
+  "titleJa": "野球部の放課後",
+  "description": "放課後の高校の野球場で、野球部の3人の生徒がそれぞれ異なる基礎練習に取り組んでいる。中央では男子生徒がマウンドから投球練習用ネットのストライクゾーンを狙ってボールを投げている。左側では別の男子生徒がバッティングティーに置かれたボールをバットで打つ瞬間で、安全ネットの方向へボールが飛び出している。右側では女子生徒がグローブを低く構え、転がってくるゴロを捕球しようとしている。グラウンドにはボールかご、ヘルメット、予備のバット、ベース、水筒、タオル、スポーツバッグなどが整理され、バックネットには簡単な練習メニューが掲示されている。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three Japanese high school baseball club members practicing on a school baseball field after school. Do not include any additional visible players, coaches, spectators, or other people. The atmosphere should be energetic, disciplined, athletic, cooperative, and positive. All three students should wear matching clean Japanese high school baseball practice uniforms, baseball caps, belts, long baseball socks, and cleats. Divide the field visually into three clear training areas so that each student's activity is immediately understandable. In the center middle ground, a teenage boy is practicing pitching from a small dirt mound. Show him in a realistic pitching motion with one leg planted, his throwing arm extended forward after releasing one baseball, and his body leaning naturally toward the target. The baseball should be clearly visible traveling toward a rectangular pitching practice net with a marked strike-zone target. On the left side, another teenage boy wearing a batting helmet is practicing batting from a batting tee. Capture the exact moment after his bat has contacted the baseball: the bat is following through naturally, the tee remains standing, and one clearly visible baseball is traveling toward a large protective practice net. His stance, hands, bat, helmet, tee, and ball must all look anatomically and physically natural. On the right side, a teenage girl is practicing fielding. She is wearing a baseball glove on her left hand, bending her knees, lowering the glove close to the ground, and preparing to catch one clearly visible ground ball rolling toward her. Make the three actions visually distinct and spatially separated: one pitcher throwing toward a target net, one batter hitting from a tee into a safety net, and one fielder preparing to collect a ground ball. Include a dirt infield, green outfield grass, white foul lines, bases, home plate, pitching mound, two training nets, batting tee, baseball glove, aluminum bats, batting helmet, ball basket containing spare baseballs, equipment bag, three reusable water bottles, towels, stopwatch, rake, and a small practice board attached near the backstop showing simple nonessential icons for pitching, batting, fielding, and running. Equipment that is not being used should be neatly organized near a bench. Show the school building and green trees beyond the outfield fence, with warm late-afternoon sunlight and long soft shadows across the field. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural athletic body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "baseball",
+          "ja": "野球",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bat",
+          "ja": "バット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "グローブ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "グラウンド",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "net",
+          "ja": "ネット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "base",
+          "ja": "ベース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "throw",
+          "ja": "投げる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hit",
+          "ja": "打つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "catch",
+          "ja": "捕る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "practice",
+          "ja": "練習する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ready",
+          "ja": "準備ができた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "play baseball",
+          "ja": "野球をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "throw the ball",
+          "ja": "ボールを投げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hit the ball",
+          "ja": "ボールを打つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a bat",
+          "ja": "バットを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a glove",
+          "ja": "グローブを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catch the ball",
+          "ja": "ボールを捕る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice after school",
+          "ja": "放課後に練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are practicing baseball.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が野球を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is throwing a baseball.",
+          "grammar": "現在進行形",
+          "ja": "男の子が野球ボールを投げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is throwing the ball at a net.",
+          "grammar": "現在進行形",
+          "ja": "彼はネットに向かってボールを投げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another boy is hitting a ball.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の男の子がボールを打っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is wearing a helmet.",
+          "grammar": "現在進行形",
+          "ja": "彼はヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is holding a glove.",
+          "grammar": "現在進行形",
+          "ja": "女の子がグローブを構えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is trying to catch the ball.",
+          "grammar": "try to＋動詞",
+          "ja": "彼女はボールを捕ろうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are practicing after school.",
+          "grammar": "現在進行形",
+          "ja": "3人は放課後に練習しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "pitcher",
+          "ja": "投手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "batter",
+          "ja": "打者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "fielder",
+          "ja": "野手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mound",
+          "ja": "マウンド",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "用具",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pitch",
+          "ja": "投球する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "swing",
+          "ja": "バットを振る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "打球を処理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "aim",
+          "ja": "狙う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "control",
+          "ja": "コントロールする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "accurate",
+          "ja": "正確な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "quick",
+          "ja": "素早い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "athletic",
+          "ja": "運動能力の高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice with the baseball club",
+          "ja": "野球部で練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "practice his pitching",
+          "ja": "投球練習をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "aim at the strike zone",
+          "ja": "ストライクゾーンを狙う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice his swing",
+          "ja": "スイングを練習する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hit a ball from a tee",
+          "ja": "ティーに置かれたボールを打つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice fielding",
+          "ja": "守備練習をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catch a ground ball",
+          "ja": "ゴロを捕る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve their baseball skills",
+          "ja": "野球の技術を向上させる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are practicing different baseball skills after school.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が放課後に異なる野球技術を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The pitcher is throwing a baseball toward a practice net.",
+          "grammar": "現在進行形",
+          "ja": "投手は練習用ネットに向かってボールを投げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be aiming at the strike zone.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼はストライクゾーンを狙っているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Another player is hitting a ball from a batting tee.",
+          "grammar": "現在進行形",
+          "ja": "別の選手はバッティングティーのボールを打っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is following through after making contact with the ball.",
+          "grammar": "after＋動名詞",
+          "ja": "彼はボールを打った後、フォロースルーをしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is lowering her glove to catch a ground ball.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "女子生徒はゴロを捕るためにグローブを低く構えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks focused as the ball rolls toward her.",
+          "grammar": "look＋形容詞 / as節",
+          "ja": "ボールが転がってくる中、彼女は集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The training equipment suggests that the club members are practicing several basic skills.",
+          "grammar": "suggest that",
+          "ja": "練習用具から、部員たちがいくつかの基本技術を練習していることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "mechanics",
+          "ja": "動作の仕組み・フォーム",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "trajectory",
+          "ja": "軌道",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precision",
+          "ja": "正確さ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "coordination",
+          "ja": "身体の協調性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reflex",
+          "ja": "反射能力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "execute",
+          "ja": "正確に実行する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "release",
+          "ja": "ボールを放す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "generate",
+          "ja": "生み出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "anticipate",
+          "ja": "予測する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "捕球・回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disciplined",
+          "ja": "規律正しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "explosive",
+          "ja": "瞬発力のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "responsive",
+          "ja": "素早く反応できる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concentrated",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "engage in structured baseball training",
+          "ja": "計画的な野球練習に取り組む",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "refine his pitching mechanics",
+          "ja": "投球フォームを磨く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve pitching precision",
+          "ja": "投球の正確性を高める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "execute a controlled swing",
+          "ja": "安定したスイングを行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "generate power through rotation",
+          "ja": "体の回転によって力を生み出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "anticipate the ground ball",
+          "ja": "ゴロの動きを予測する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain a low fielding stance",
+          "ja": "低い守備姿勢を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop hand-eye coordination",
+          "ja": "目と手の協調性を高める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine fundamental techniques",
+          "ja": "基礎技術を磨く",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three baseball club members are engaged in a structured practice designed to refine different fundamental techniques.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "3人の野球部員は、それぞれ異なる基礎技術を磨くための計画的な練習に取り組んでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The pitcher is completing his throwing motion after releasing the ball toward a clearly marked strike-zone target.",
+          "grammar": "after＋動名詞",
+          "ja": "投手は明確に示されたストライクゾーンへボールを投げた後、投球動作を完了しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His balanced follow-through suggests that he is concentrating on both pitching mechanics and precision.",
+          "grammar": "suggest that / both A and B",
+          "ja": "バランスの取れたフォロースルーから、投球フォームと正確性の両方に集中していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The batter is executing a controlled swing and generating power through the rotation of his hips and upper body.",
+          "grammar": "現在進行形",
+          "ja": "打者は安定したスイングを行い、腰と上半身の回転によって力を生み出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ball traveling toward the protective net indicates that he has just made contact with it.",
+          "grammar": "現在分詞による後置修飾 / 現在完了形",
+          "ja": "防球ネットへ飛んでいるボールから、彼がたった今ボールを打ったことが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the fielder is maintaining a low stance while anticipating the trajectory of an approaching ground ball.",
+          "grammar": "while＋現在分詞",
+          "ja": "その一方で、野手は低い姿勢を保ちながら、近づいてくるゴロの軌道を予測しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her positioning suggests that she is developing quick reflexes and hand-eye coordination through repeated fielding drills.",
+          "grammar": "suggest that / through",
+          "ja": "彼女の構えから、反復的な守備練習を通して素早い反応と目と手の協調性を高めていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The training nets, batting tee, ball basket, and organized equipment indicate that this is a methodical club practice rather than a competitive game.",
+          "grammar": "indicate that / rather than",
+          "ja": "練習ネット、バッティングティー、ボールかご、整理された用具から、試合ではなく計画的な部活動練習であることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how repetitive sports training can develop precision, coordination, concentration, and physical technique.",
+          "grammar": "how節",
+          "ja": "この場面は、反復的なスポーツ練習によって正確性、協調性、集中力、身体技術を高められることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "pitcher": {
+      "x": 49,
+      "y": 50
+    },
+    "pitched_ball": {
+      "x": 57,
+      "y": 40
+    },
+    "pitching_net": {
+      "x": 68,
+      "y": 43
+    },
+    "batter": {
+      "x": 22,
+      "y": 54
+    },
+    "batting_tee": {
+      "x": 28,
+      "y": 68
+    },
+    "batting_net": {
+      "x": 13,
+      "y": 39
+    },
+    "fielder": {
+      "x": 78,
+      "y": 59
+    },
+    "ground_ball": {
+      "x": 69,
+      "y": 75
+    },
+    "ball_basket": {
+      "x": 88,
+      "y": 70
+    },
+    "practice_board": {
+      "x": 87,
+      "y": 31
+    }
+  }
+}

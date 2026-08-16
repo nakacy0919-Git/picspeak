@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_026",
+  "imageSrc": "assets/images/l2_026.webp",
+  "titleEn": "Greenhouse Research",
+  "titleJa": "温室で植物調査",
+  "description": "放課後、3人の高校生が学校の温室で植物の成長を調査している。中央の男子生徒は定規を使ってトマトの苗の高さを測り、記録用紙に数値を書き込んでいる。左側の女子生徒はじょうろでハーブの苗に水を与えながら葉の状態を確認している。右側の女子生徒はタブレットを使って植物の写真を撮り、成長記録を入力している。温室内にはトマト、ハーブ、花、苗、植物ラベル、温度計、園芸道具などが整理されており、3人が協力して植物の成長条件を調べている。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students conducting a plant-growth investigation inside a bright modern Japanese high school greenhouse after school. Do not include any additional visible people. The atmosphere should be educational, calm, cooperative, scientific, and positive. In the center foreground, a teenage boy wearing a school uniform with his sleeves rolled up is carefully measuring the height of a young tomato plant with a long ruler. He is holding a clipboard with a simple data sheet and writing down the measurement with a pencil. The ruler, tomato plant, clipboard, and measuring action must all be clearly visible. On the left side, a teenage girl wearing a school uniform and a simple gardening apron is watering several small herb seedlings with a watering can. At the same time, she is leaning slightly toward one plant and examining its leaves for color and condition. On the right side, another teenage girl is holding a tablet correctly with the screen facing her. She is taking a photograph of a row of plants and entering growth observations into a simple digital chart. The three activities must be visually distinct and easy to describe: one student measuring plant height and recording data, one student watering and examining leaves, and one student photographing plants and entering information on a tablet. Surround them with visually rich but organized greenhouse details: rows of tomato plants supported by stakes, basil and mint seedlings, flowering plants, seedling trays, plant labels, pots, bags of soil, gardening gloves, a hand trowel, pruning scissors placed safely on a workbench, a spray bottle, a thermometer, a humidity gauge, a small fan, shelves, and transparent greenhouse walls and roof. Show warm late-afternoon sunlight coming through the glass and green school grounds outside. Include a simple experiment board with icons for sunlight, water, temperature, and plant growth, but no important readable text. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, realistic proportions, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "tomato",
+          "ja": "トマト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leaf",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ruler",
+          "ja": "定規",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "タブレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pot",
+          "ja": "植木鉢",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水をやる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "育つ",
+          "type": "action",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "measure a plant",
+          "ja": "植物を測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write the number",
+          "ja": "数字を書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "water the plants",
+          "ja": "植物に水をやる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the leaves",
+          "ja": "葉を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a tablet",
+          "ja": "タブレットを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many green plants",
+          "ja": "たくさんの緑の植物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are working with plants.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が植物の世話をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is measuring a tomato plant.",
+          "grammar": "現在進行形",
+          "ja": "男の子がトマトの苗を測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is writing on a clipboard.",
+          "grammar": "現在進行形",
+          "ja": "彼はクリップボードに書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is watering the plants.",
+          "grammar": "現在進行形",
+          "ja": "女の子が植物に水をやっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at the leaves.",
+          "grammar": "現在進行形",
+          "ja": "彼女は葉を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is using a tablet.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子がタブレットを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many plants in the greenhouse.",
+          "grammar": "There are",
+          "ja": "温室にはたくさんの植物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are studying the plants together.",
+          "grammar": "現在進行形",
+          "ja": "3人は一緒に植物を調べています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "greenhouse",
+          "ja": "温室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "seedling",
+          "ja": "苗",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "growth",
+          "ja": "成長",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "measurement",
+          "ja": "測定値",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "condition",
+          "ja": "状態・条件",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "healthy",
+          "ja": "健康な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "scientific",
+          "ja": "科学的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "study plant growth",
+          "ja": "植物の成長を調べる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "measure the plant height",
+          "ja": "植物の高さを測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record the measurement",
+          "ja": "測定値を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "water the seedlings",
+          "ja": "苗に水をやる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine the leaves",
+          "ja": "葉の状態を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take photographs of the plants",
+          "ja": "植物の写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enter the results",
+          "ja": "結果を入力する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare growing conditions",
+          "ja": "生育条件を比較する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are studying plant growth in the school greenhouse.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が学校の温室で植物の成長を調べています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is measuring the height of a tomato plant with a ruler.",
+          "grammar": "現在進行形 / with",
+          "ja": "男子生徒は定規でトマトの苗の高さを測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is recording the measurement on a clipboard.",
+          "grammar": "現在進行形",
+          "ja": "彼は測定値をクリップボードに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is watering seedlings while examining their leaves.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の女子生徒は葉を観察しながら苗に水をやっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be checking whether the plants are healthy.",
+          "grammar": "appear to be / whether",
+          "ja": "彼女は植物が健康かどうか確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The other girl is photographing the plants with a tablet.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒はタブレットで植物を撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is also entering their observations into a digital chart.",
+          "grammar": "現在進行形",
+          "ja": "彼女は観察結果もデジタルの表に入力しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students seem to be comparing how different conditions affect plant growth.",
+          "grammar": "seem to be / how節",
+          "ja": "生徒たちは異なる条件が植物の成長にどう影響するか比較しているようです。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "cultivation",
+          "ja": "栽培",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "variable",
+          "ja": "変数・条件",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "specimen",
+          "ja": "観察対象",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "humidity",
+          "ja": "湿度",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "data",
+          "ja": "データ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "継続的に観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "quantify",
+          "ja": "数値化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assess",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thriving",
+          "ja": "順調に育っている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "controlled",
+          "ja": "管理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "collaborative",
+          "ja": "協働的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "conduct a plant-growth investigation",
+          "ja": "植物成長の調査を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "quantify changes in plant height",
+          "ja": "植物の高さの変化を数値化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document experimental data",
+          "ja": "実験データを記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor the condition of the foliage",
+          "ja": "葉の状態を継続観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain adequate moisture",
+          "ja": "適切な水分量を保つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a visual record",
+          "ja": "視覚的な記録を作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enter observations digitally",
+          "ja": "観察結果をデジタル入力する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare environmental variables",
+          "ja": "環境条件を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze cultivation conditions",
+          "ja": "栽培条件を分析する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are conducting a systematic investigation into plant growth under controlled greenhouse conditions.",
+          "grammar": "現在進行形 / under＋名詞",
+          "ja": "3人の生徒は管理された温室環境で植物の成長について体系的な調査を行っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is quantifying the height of a tomato specimen and documenting the measurement on a data sheet.",
+          "grammar": "現在進行形",
+          "ja": "男子生徒はトマトの苗の高さを数値化し、その測定値をデータシートに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His careful procedure suggests that the measurements are being collected systematically over a period of time.",
+          "grammar": "suggest that / 現在進行受動態",
+          "ja": "彼の慎重な手順から、測定値が一定期間にわたって体系的に収集されていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his classmates is maintaining adequate moisture while closely monitoring the condition of the foliage.",
+          "grammar": "while＋現在分詞",
+          "ja": "クラスメートの一人は、葉の状態を注意深く観察しながら適切な水分量を保っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be assessing whether the seedlings are thriving under the current growing conditions.",
+          "grammar": "appear to be / whether",
+          "ja": "彼女は現在の生育条件で苗が順調に育っているか評価しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is creating a visual record of the experiment and entering her observations on a tablet.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の生徒は実験の視覚記録を作り、観察結果をタブレットに入力しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The thermometer, humidity gauge, and labeled plants indicate that several environmental variables are being monitored.",
+          "grammar": "indicate that / 現在進行受動態",
+          "ja": "温度計、湿度計、ラベル付き植物から、複数の環境条件が観察されていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By combining measurements, photographs, and direct observations, the students can compare how different cultivation conditions affect development.",
+          "grammar": "By＋動名詞 / how節",
+          "ja": "測定、写真、直接観察を組み合わせることで、生徒たちは異なる栽培条件が成長にどう影響するか比較できます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how practical scientific research can develop observation, data-analysis, and collaborative problem-solving skills.",
+          "grammar": "how節",
+          "ja": "この場面は、実践的な科学研究によって観察力、データ分析力、協働的な問題解決力を育てられることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 47,
+      "y": 53
+    },
+    "ruler": {
+      "x": 45,
+      "y": 51
+    },
+    "tomato_plant": {
+      "x": 51,
+      "y": 58
+    },
+    "clipboard": {
+      "x": 42,
+      "y": 63
+    },
+    "watering_girl": {
+      "x": 23,
+      "y": 55
+    },
+    "watering_can": {
+      "x": 27,
+      "y": 63
+    },
+    "tablet_girl": {
+      "x": 76,
+      "y": 54
+    },
+    "tablet": {
+      "x": 75,
+      "y": 47
+    },
+    "thermometer": {
+      "x": 68,
+      "y": 25
+    },
+    "seedling_trays": {
+      "x": 63,
+      "y": 71
+    }
+  }
+}

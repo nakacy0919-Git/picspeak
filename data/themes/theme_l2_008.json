@@ -1,0 +1,687 @@
+{
+  "id": "theme_l2_008",
+  "imageSrc": "assets/images/l2_008.webp",
+  "titleEn": "Locked Out",
+  "titleJa": "家に入れない！",
+  "description": "雨の降る夕方、家族が自宅の玄関前で鍵が見つからず困っている。父親はポケットやバッグを必死に探し、母親はスマートフォンで家族に連絡しようとしている。娘は雨に濡れながら玄関マットの下を確認し、息子は買い物袋から転がり出た食料品を拾っている。背景では、強風で祖母の傘が裏返り、飼い犬が猫を見つけてリードを強く引っ張っている。隣人は予備の傘を持って助けに来ており、宅配員は濡れた荷物を雨から守りながら家族が中に入れるのを待っている。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show the entrance of a modern Japanese suburban house on a rainy and windy early evening. The main incident must be immediately understandable: a family has arrived home but cannot get inside because they appear to have lost or misplaced the house key. In the center foreground, the father looks frustrated and worried while urgently searching through his jacket pockets and an open shoulder bag for the missing key. The mother stands beside him under the small entrance roof, holding a smartphone and apparently calling another family member for help. Their teenage daughter is crouching near the front door and lifting the corner of the doormat to check whether a spare key is hidden underneath. The locked front door and keyhole should be clearly visible. Include several distinct background and side stories happening simultaneously. A younger boy has accidentally dropped a grocery bag, causing apples, a carton, and several packaged groceries to roll across the wet pavement, and he is bending down to collect them. An elderly grandmother is struggling with an umbrella that has been blown inside out by a strong gust of wind. On the right side, the family's excited dog has spotted a cat near a garden wall and is pulling hard on its leash while the person holding the leash struggles to restrain it. A friendly neighbor is approaching with a large spare umbrella and a concerned expression, apparently trying to help the family. Near the gate, a delivery worker is waiting with a parcel and protecting the cardboard box from the rain with a plastic cover or delivery bag. Show rain falling clearly, wet reflective pavement, a front gate, house number plate without readable personal information, plants, a bicycle under a small shelter, shopping bags, umbrellas, a smartphone, a doormat, groceries, a parcel, a dog, and a cat. Make all facial expressions and body language visually obvious. Clear foreground, middle ground, and background. Approximately 8 to 11 visible people plus one dog and one cat. No speech bubbles, no captions, no brand logos, no copyrighted characters, and no readable private information. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but visually organized and easy to describe.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "key",
+          "ja": "鍵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "door",
+          "ja": "ドア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "umbrella",
+          "ja": "傘",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rain",
+          "ja": "雨",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "袋・かばん",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "apple",
+          "ja": "リンゴ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "cat",
+          "ja": "猫",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "探す・見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look for the key",
+          "ja": "鍵を探す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "open the door",
+          "ja": "ドアを開ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use her phone",
+          "ja": "スマートフォンを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "under the mat",
+          "ja": "マットの下",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "drop the shopping bag",
+          "ja": "買い物袋を落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up the apples",
+          "ja": "リンゴを拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold an umbrella",
+          "ja": "傘を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pull the leash",
+          "ja": "リードを引っ張る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family cannot open the door.",
+          "grammar": "cannot＋動詞",
+          "ja": "家族はドアを開けることができません。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is looking for the key.",
+          "grammar": "現在進行形",
+          "ja": "父親が鍵を探しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He looks worried.",
+          "grammar": "look＋形容詞",
+          "ja": "彼は心配そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The mother is using her phone.",
+          "grammar": "現在進行形",
+          "ja": "母親がスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is looking under the mat.",
+          "grammar": "現在進行形",
+          "ja": "女の子がマットの下を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is picking up some apples.",
+          "grammar": "現在進行形",
+          "ja": "男の子がリンゴを拾っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is pulling the leash.",
+          "grammar": "現在進行形",
+          "ja": "犬がリードを引っ張っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A neighbor is helping the family.",
+          "grammar": "現在進行形",
+          "ja": "近所の人が家族を助けています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "entrance",
+          "ja": "玄関",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "neighbor",
+          "ja": "近所の人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "delivery",
+          "ja": "配達",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "parcel",
+          "ja": "小包",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "groceries",
+          "ja": "食料品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leash",
+          "ja": "リード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "misplace",
+          "ja": "置き忘れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contact",
+          "ja": "連絡する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "collect",
+          "ja": "拾い集める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frustrated",
+          "ja": "いら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "soaked",
+          "ja": "びしょ濡れの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "windy",
+          "ja": "風の強い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "be locked out of the house",
+          "ja": "家に入れず締め出される",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "misplace the house key",
+          "ja": "家の鍵をなくす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "search through his bag",
+          "ja": "かばんの中を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "contact a family member",
+          "ja": "家族に連絡する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check under the doormat",
+          "ja": "玄関マットの下を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "collect the fallen groceries",
+          "ja": "落ちた食料品を拾い集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle with her umbrella",
+          "ja": "傘に苦労する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect the parcel from the rain",
+          "ja": "小包を雨から守る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family appears to be locked out because they cannot find the house key.",
+          "grammar": "appear to be / because",
+          "ja": "家の鍵が見つからないため、家族は家に入れなくなっているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is searching through his pockets and bag for the missing key.",
+          "grammar": "現在進行形",
+          "ja": "父親はなくした鍵を探してポケットやかばんの中を調べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He looks frustrated because the family is getting wet in the rain.",
+          "grammar": "becauseを用いた理由説明",
+          "ja": "家族が雨に濡れているため、彼はいら立っているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The mother seems to be contacting someone who may have a spare key.",
+          "grammar": "seem to be / 関係代名詞who / may",
+          "ja": "母親は予備の鍵を持っているかもしれない人に連絡しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their daughter is checking under the doormat to see if a spare key is hidden there.",
+          "grammar": "to see if",
+          "ja": "娘は予備の鍵が隠されていないか確認するため、玄関マットの下を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is collecting groceries that fell from a shopping bag.",
+          "grammar": "関係代名詞that",
+          "ja": "男の子が買い物袋から落ちた食料品を拾い集めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is struggling with her umbrella because of the strong wind.",
+          "grammar": "because of＋名詞",
+          "ja": "祖母は強い風のため、傘を扱うのに苦労しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is pulling hard on its leash after noticing a cat nearby.",
+          "grammar": "after＋動名詞",
+          "ja": "犬は近くの猫に気づき、リードを強く引っ張っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A delivery worker is trying to keep a parcel dry while waiting outside.",
+          "grammar": "try to / while＋現在分詞",
+          "ja": "宅配員は外で待ちながら小包が濡れないようにしています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "residence",
+          "ja": "住宅・住居",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "access",
+          "ja": "立ち入り・利用する権利",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "whereabouts",
+          "ja": "所在",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "downpour",
+          "ja": "激しい雨",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "courier",
+          "ja": "宅配員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "misplace",
+          "ja": "置き忘れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rummage",
+          "ja": "かき回して探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "抑える・制止する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shield",
+          "ja": "保護する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exasperated",
+          "ja": "ひどくいら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "apprehensive",
+          "ja": "不安を感じている",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "inconvenienced",
+          "ja": "不便を強いられた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "windswept",
+          "ja": "強風にさらされた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "be denied access to their residence",
+          "ja": "自宅に入れない状態になる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "misplace the only available key",
+          "ja": "唯一使える鍵をなくす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "frantically rummage through his belongings",
+          "ja": "必死に所持品をかき回して探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "determine the whereabouts of the key",
+          "ja": "鍵の所在を突き止める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "search for an emergency spare",
+          "ja": "緊急用の予備鍵を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve scattered groceries",
+          "ja": "散らばった食料品を回収する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle against a powerful gust",
+          "ja": "強い突風に苦戦する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "restrain an excited dog",
+          "ja": "興奮した犬を抑える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shield a parcel from the downpour",
+          "ja": "小包を激しい雨から守る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family appears to have been denied access to their own residence after apparently misplacing the house key.",
+          "grammar": "appear to have been＋過去分詞 / after＋動名詞",
+          "ja": "家の鍵をなくしたらしく、家族は自宅に入れない状態になっているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The visibly exasperated father is frantically rummaging through his belongings in an attempt to locate the missing key.",
+          "grammar": "in an attempt to",
+          "ja": "明らかにいら立った父親は、なくした鍵を見つけようと必死に所持品を探しています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "His wife is using her smartphone, presumably trying to contact someone who might possess a spare key.",
+          "grammar": "presumably / 関係代名詞who / might",
+          "ja": "妻は、おそらく予備の鍵を持っているかもしれない人に連絡しようとスマートフォンを使っています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their daughter is inspecting the area beneath the doormat in the hope that an emergency spare has been left there.",
+          "grammar": "in the hope that / 現在完了受動態",
+          "ja": "娘は緊急用の予備鍵が置かれていることを期待して、玄関マットの下を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, a younger child is retrieving groceries that have scattered across the rain-soaked pavement.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "その一方で、小さな子どもは雨に濡れた地面に散らばった食料品を拾い集めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The elderly woman appears flustered as she struggles to control an umbrella that has been turned inside out by a powerful gust of wind.",
+          "grammar": "as節 / 現在完了受動態",
+          "ja": "高齢女性は、強い突風で裏返った傘を何とか扱おうとして慌てているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An excited dog is pulling forcefully toward a nearby cat, forcing its owner to struggle to restrain it.",
+          "grammar": "分詞構文 / force＋O＋to不定詞",
+          "ja": "興奮した犬が近くの猫に向かって強く引っ張っており、飼い主は必死に犬を抑えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A concerned neighbor is approaching with an additional umbrella, apparently intending to offer the stranded family some assistance.",
+          "grammar": "apparently / intend to",
+          "ja": "心配した近所の人が、家に入れず困っている家族を助けようと予備の傘を持って近づいています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Near the gate, a courier is shielding a parcel from the downpour while waiting for the unexpected situation to be resolved.",
+          "grammar": "while＋現在分詞 / wait for＋O＋to be",
+          "ja": "門の近くでは、宅配員が予期せぬ状況が解決するのを待ちながら、小包を激しい雨から守っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene demonstrates how a relatively minor mistake can become considerably more stressful when combined with severe weather and several simultaneous problems.",
+          "grammar": "how節 / when＋過去分詞",
+          "ja": "この場面は、小さなミスでも悪天候や複数のトラブルが同時に重なると、はるかに大きなストレスになり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "father": {
+      "x": 42,
+      "y": 48
+    },
+    "front_door": {
+      "x": 51,
+      "y": 32
+    },
+    "doormat": {
+      "x": 51,
+      "y": 71
+    },
+    "mother": {
+      "x": 62,
+      "y": 45
+    },
+    "daughter": {
+      "x": 51,
+      "y": 62
+    },
+    "groceries": {
+      "x": 26,
+      "y": 77
+    },
+    "broken_umbrella": {
+      "x": 16,
+      "y": 30
+    },
+    "dog": {
+      "x": 78,
+      "y": 65
+    },
+    "cat": {
+      "x": 91,
+      "y": 53
+    },
+    "delivery_worker": {
+      "x": 88,
+      "y": 38
+    }
+  }
+}

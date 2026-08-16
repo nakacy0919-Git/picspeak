@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_029",
+  "imageSrc": "assets/images/l2_029.webp",
+  "titleEn": "Track Club Training",
+  "titleJa": "陸上部の放課後",
+  "description": "放課後の高校の陸上競技場で、陸上部の3人の生徒がそれぞれ異なる種目の練習をしている。中央では男子生徒がスターティングブロックから勢いよく飛び出して短距離走のスタート練習をしている。左側では女子生徒がハードルを跳び越え、前方を見ながら次のハードルへ向かっている。右側では別の男子生徒が走り幅跳びの砂場へ着地する瞬間で、両足を前に出してバランスを取っている。トラック脇にはストップウォッチ、練習用コーン、水筒、タオル、スポーツバッグ、巻尺などが整理され、部活動として本格的に練習している様子が伝わる。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three Japanese high school track-and-field club members practicing after school on a modern school athletics field. Do not include any additional visible athletes, coaches, spectators, or other people. The atmosphere should be energetic, disciplined, athletic, focused, and positive. All three students should wear matching school track-and-field practice uniforms, running shoes or spikes, and appropriate sports clothing. Divide the scene visually into three clearly separated training activities. In the center foreground, a teenage boy is practicing a sprint start from a pair of starting blocks on a red running track. Capture the exact moment just after he has exploded out of the blocks: his body is leaning forward, one leg is driving powerfully behind him, both arms are pumping naturally, and his eyes are focused down the lane. The starting blocks and lane markings must be clearly visible. On the left side, a teenage girl is practicing hurdles. Show her in a realistic hurdle position as she clears one hurdle: her lead leg is extended forward, her trailing leg is bent naturally, her upper body is slightly leaned forward, and she is looking toward the next hurdle. Include exactly four visible hurdles arranged evenly along the lane so that her activity is unmistakable. On the right side, another teenage boy is practicing the long jump. Show him at the moment of landing in a sand pit, with both legs extended forward, arms balancing his body, and sand lightly spraying around his shoes. Include a clearly visible takeoff board and a measuring tape beside the sand pit. Make the three actions visually distinct and physically realistic: one student accelerating from starting blocks, one student clearing hurdles, and one student landing in the long-jump pit. Include a red running track, lane numbers, starting blocks, hurdles, long-jump runway, takeoff board, sand pit, measuring tape, training cones, stopwatch on a bench, three reusable water bottles, towels, sports bags, and a small whiteboard with simple nonessential icons for sprinting, hurdles, jumping, and stretching. In the background, show a school building, green trees, field lights, and warm late-afternoon sunlight. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, natural athletic body mechanics, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "track",
+          "ja": "陸上トラック",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "hurdle",
+          "ja": "ハードル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sand",
+          "ja": "砂",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shoes",
+          "ja": "シューズ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cone",
+          "ja": "コーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "towel",
+          "ja": "タオル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "jump",
+          "ja": "跳ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "start",
+          "ja": "スタートする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "land",
+          "ja": "着地する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fast",
+          "ja": "速い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "run on the track",
+          "ja": "トラックを走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "start a race",
+          "ja": "走り始める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "jump over a hurdle",
+          "ja": "ハードルを跳び越える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "jump into the sand",
+          "ja": "砂場へ跳ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run very fast",
+          "ja": "とても速く走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice after school",
+          "ja": "放課後に練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "wear running shoes",
+          "ja": "ランニングシューズを履く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "track club",
+          "ja": "陸上部",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are practicing track and field.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が陸上競技を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is starting to run.",
+          "grammar": "start to＋動詞",
+          "ja": "男の子が走り始めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is running very fast.",
+          "grammar": "現在進行形",
+          "ja": "彼はとても速く走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is jumping over a hurdle.",
+          "grammar": "現在進行形",
+          "ja": "女の子がハードルを跳び越えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another boy is jumping into the sand.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の男の子が砂場へ跳んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is landing on both feet.",
+          "grammar": "現在進行形",
+          "ja": "彼は両足で着地しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are four hurdles on the track.",
+          "grammar": "There are",
+          "ja": "トラックには4台のハードルがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are practicing after school.",
+          "grammar": "現在進行形",
+          "ja": "3人は放課後に練習しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "sprinter",
+          "ja": "短距離走者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "hurdler",
+          "ja": "ハードル選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "runway",
+          "ja": "助走路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "starting block",
+          "ja": "スターティングブロック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "distance",
+          "ja": "距離",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sprint",
+          "ja": "全力疾走する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accelerate",
+          "ja": "加速する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clear",
+          "ja": "跳び越える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "land",
+          "ja": "着地する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "powerful",
+          "ja": "力強い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "quick",
+          "ja": "素早い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "balanced",
+          "ja": "バランスの取れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "athletic",
+          "ja": "運動能力の高い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice a sprint start",
+          "ja": "短距離走のスタート練習をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push off the starting blocks",
+          "ja": "スターティングブロックを蹴って出る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accelerate down the track",
+          "ja": "トラックを加速する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clear a hurdle",
+          "ja": "ハードルを跳び越える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for the next hurdle",
+          "ja": "次のハードルに備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice the long jump",
+          "ja": "走り幅跳びを練習する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "land in the sand pit",
+          "ja": "砂場に着地する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve athletic skills",
+          "ja": "運動技能を向上させる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are practicing different track-and-field events after school.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が放課後に異なる陸上競技種目を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The sprinter is pushing off the starting blocks and accelerating down the track.",
+          "grammar": "現在進行形",
+          "ja": "短距離選手はスターティングブロックを蹴り、トラックを加速しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is leaning forward to build speed quickly.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "彼はすばやくスピードを上げるため前傾しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is clearing a hurdle while looking toward the next one.",
+          "grammar": "while＋現在分詞",
+          "ja": "女子生徒は次のハードルを見ながらハードルを跳び越えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her body position looks balanced and controlled.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女の体勢はバランスが取れていて安定しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The other boy is landing in the sand pit after a long jump.",
+          "grammar": "after＋名詞",
+          "ja": "もう一人の男子生徒は走り幅跳びの後、砂場に着地しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is extending both legs forward to make a good landing.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "彼は良い着地をするため両足を前に伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The equipment suggests that the students are training for several different events.",
+          "grammar": "suggest that",
+          "ja": "練習用具から、生徒たちが複数の種目を練習していることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "acceleration",
+          "ja": "加速",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "momentum",
+          "ja": "勢い・運動量",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stride",
+          "ja": "歩幅",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "takeoff",
+          "ja": "踏み切り",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "technique",
+          "ja": "技術・フォーム",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accelerate",
+          "ja": "加速する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "propel",
+          "ja": "勢いよく前進させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clear",
+          "ja": "障害を越える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "maintain",
+          "ja": "維持する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stabilize",
+          "ja": "安定させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explosive",
+          "ja": "瞬発力のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "aerodynamic",
+          "ja": "空気抵抗を抑えた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "coordinated",
+          "ja": "協調した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "disciplined",
+          "ja": "規律正しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concentrated",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "execute an explosive sprint start",
+          "ja": "瞬発的な短距離スタートを行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "generate rapid acceleration",
+          "ja": "急速な加速を生み出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain an efficient sprinting posture",
+          "ja": "効率的な走行姿勢を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clear the hurdle efficiently",
+          "ja": "効率よくハードルを越える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate her lead and trailing legs",
+          "ja": "前脚と後脚を連動させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry momentum into the jump",
+          "ja": "勢いを跳躍につなげる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stabilize the landing",
+          "ja": "着地を安定させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine event-specific technique",
+          "ja": "種目ごとの技術を磨く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "engage in disciplined athletic training",
+          "ja": "規律ある競技練習に取り組む",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three track-and-field club members are engaging in event-specific training designed to refine speed, coordination, and jumping technique.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "3人の陸上部員は、スピード、協調性、跳躍技術を磨くための種目別練習に取り組んでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The sprinter is executing an explosive start by driving forcefully away from the starting blocks.",
+          "grammar": "by＋動名詞",
+          "ja": "短距離選手はスターティングブロックを力強く蹴ることで、瞬発的なスタートを行っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His pronounced forward lean suggests that he is attempting to generate rapid acceleration during the opening phase of the sprint.",
+          "grammar": "suggest that / attempt to",
+          "ja": "大きな前傾姿勢から、短距離走の序盤で急速に加速しようとしていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The hurdler is coordinating her lead and trailing legs while maintaining forward momentum over the obstacle.",
+          "grammar": "while＋現在分詞",
+          "ja": "ハードル選手は前進する勢いを保ちながら、前脚と後脚を連動させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her streamlined posture indicates that she is trying to minimize the amount of time spent in the air.",
+          "grammar": "indicate that / try to",
+          "ja": "彼女の流れるような姿勢から、空中にいる時間を最小限にしようとしていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the long jumper is extending both legs forward and using his arms to stabilize his body during the landing.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "その一方で、走り幅跳びの選手は両足を前方に伸ばし、着地時に体を安定させるため腕を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The displaced sand around his feet suggests that he has just completed a forceful landing.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "足元に飛び散る砂から、彼がたった今力強く着地したことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The starting blocks, hurdles, measuring tape, and organized training equipment indicate a structured athletics practice rather than a casual exercise session.",
+          "grammar": "indicate / rather than",
+          "ja": "スターティングブロック、ハードル、巻尺、整理された用具から、単なる運動ではなく計画的な陸上部活動であることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how track-and-field training requires athletes to develop speed, explosive power, coordination, technical precision, and concentration.",
+          "grammar": "how節 / require＋O＋to",
+          "ja": "この場面は、陸上競技の練習にスピード、瞬発力、協調性、技術的な正確さ、集中力が必要であることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "sprinter": {
+      "x": 49,
+      "y": 54
+    },
+    "starting_blocks": {
+      "x": 43,
+      "y": 72
+    },
+    "hurdler": {
+      "x": 23,
+      "y": 48
+    },
+    "hurdles": {
+      "x": 19,
+      "y": 63
+    },
+    "long_jumper": {
+      "x": 77,
+      "y": 56
+    },
+    "sand_pit": {
+      "x": 79,
+      "y": 73
+    },
+    "takeoff_board": {
+      "x": 68,
+      "y": 69
+    },
+    "measuring_tape": {
+      "x": 88,
+      "y": 77
+    },
+    "training_cones": {
+      "x": 58,
+      "y": 75
+    },
+    "water_bottles": {
+      "x": 92,
+      "y": 70
+    }
+  }
+}

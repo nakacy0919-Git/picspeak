@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_004",
+  "imageSrc": "assets/images/l2_004.webp",
+  "titleEn": "Sudden Power Outage",
+  "titleJa": "突然の停電",
+  "description": "夕食中の家庭で突然停電が起こり、部屋が暗くなって家族が驚いている。父親は懐中電灯を探し、母親は怖がっている小さな娘を抱きしめて安心させている。兄はスマートフォンのライトを使って周囲を照らしている。背景では、停電の瞬間に祖父が飲み物をこぼし、弟は暗闇でおもちゃにつまずいて転びそうになっている。冷蔵庫の前では祖母が中の食べ物を心配そうに確認し、窓の外では近所の家々も暗くなっており、懐中電灯を持って外の様子を確認している住民も見える。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a modern family dining room and living room in the evening during a sudden neighborhood power outage. The scene should be dark enough to clearly suggest that the electricity has gone out, but all people, objects, facial expressions, and actions must remain easy to see through smartphone lights, flashlights, candles, moonlight, and soft ambient lighting. The main event is in the foreground: a family was having dinner when the lights suddenly went out. A young girl looks frightened and surprised, and her mother is gently holding and comforting her. The father is searching inside a drawer or cabinet for a flashlight. An older teenage brother is using the flashlight on his smartphone to illuminate the room. Include several clear background sub-stories happening at the same time. An elderly grandfather has accidentally knocked over a glass of water or juice during the confusion and is trying to stop the liquid from spreading across the table. A younger boy has almost tripped over a toy on the floor because he cannot see clearly and is trying to regain his balance. Near the refrigerator, a grandmother is opening the refrigerator slightly and looking concerned about the food inside because the power is off. A family member is carefully lighting a candle on the table. Through a large window, show several neighboring houses with their lights also off, suggesting a wider blackout, and one or two neighbors outside holding flashlights and looking around. Include dinner plates, chairs, a sofa, toys, a refrigerator, curtains, a clock, smartphones, flashlights, candles, and spilled liquid. Make the main incident and every background action visually distinct and easy to describe. Clear foreground, middle ground, and background. Approximately 7 to 10 visible people. No speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, detailed but uncluttered, with expressive body language and facial expressions.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "family",
+          "ja": "家族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "明かり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "candle",
+          "ja": "ろうそく",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "toy",
+          "ja": "おもちゃ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dark",
+          "ja": "暗い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る・探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scared",
+          "ja": "怖がった",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a dark room",
+          "ja": "暗い部屋",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "look for a flashlight",
+          "ja": "懐中電灯を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use his phone",
+          "ja": "スマートフォンを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help the girl",
+          "ja": "女の子を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spill some water",
+          "ja": "水をこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "trip over a toy",
+          "ja": "おもちゃにつまずく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "light a candle",
+          "ja": "ろうそくに火をつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look outside",
+          "ja": "外を見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The room is dark.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "部屋は暗いです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl looks scared.",
+          "grammar": "look＋形容詞",
+          "ja": "女の子は怖そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her mother is helping her.",
+          "grammar": "現在進行形",
+          "ja": "母親が彼女を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The father is looking for a flashlight.",
+          "grammar": "現在進行形",
+          "ja": "父親が懐中電灯を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is using his phone as a light.",
+          "grammar": "現在進行形 / as",
+          "ja": "男の子がスマートフォンを明かりとして使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandfather spilled some water.",
+          "grammar": "過去形",
+          "ja": "祖父が水をこぼしました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is falling over a toy.",
+          "grammar": "現在進行形",
+          "ja": "男の子がおもちゃにつまずいて転びそうです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The houses outside are dark too.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "外の家々も暗くなっています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "blackout",
+          "ja": "停電",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "electricity",
+          "ja": "電気",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "flashlight",
+          "ja": "懐中電灯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "refrigerator",
+          "ja": "冷蔵庫",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "neighbor",
+          "ja": "近所の人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "comfort",
+          "ja": "慰める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spill",
+          "ja": "こぼす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "trip",
+          "ja": "つまずく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frightened",
+          "ja": "怖がった",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "confused",
+          "ja": "困惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sudden",
+          "ja": "突然の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a sudden power outage",
+          "ja": "突然の停電",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "comfort her frightened daughter",
+          "ja": "怖がっている娘を慰める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "search for a flashlight",
+          "ja": "懐中電灯を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a smartphone light",
+          "ja": "スマートフォンのライトを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accidentally spill a drink",
+          "ja": "誤って飲み物をこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "trip over a toy",
+          "ja": "おもちゃにつまずく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "worry about the food",
+          "ja": "食べ物を心配する",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "check the neighborhood",
+          "ja": "近所の様子を確認する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is dealing with a sudden power outage during dinner.",
+          "grammar": "現在進行形 / deal with",
+          "ja": "家族は夕食中に起きた突然の停電に対応しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The young girl looks frightened because the room suddenly became dark.",
+          "grammar": "becauseを用いた理由説明",
+          "ja": "部屋が突然暗くなったため、小さな女の子は怖がっています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her mother is trying to comfort her while her father searches for a flashlight.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "父親が懐中電灯を探している間、母親は娘を安心させようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her brother is using his smartphone to provide some light.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "兄は周囲を照らすためにスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandfather is cleaning up a drink that he accidentally spilled.",
+          "grammar": "関係代名詞that",
+          "ja": "祖父は誤ってこぼした飲み物を片づけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A younger boy almost fell after tripping over a toy in the dark.",
+          "grammar": "after＋動名詞",
+          "ja": "小さな男の子は暗闇でおもちゃにつまずき、転びそうになりました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother seems worried that the food in the refrigerator may go bad.",
+          "grammar": "that節 / may",
+          "ja": "祖母は冷蔵庫の食べ物が傷むかもしれないと心配しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The dark houses outside suggest that the whole neighborhood has lost power.",
+          "grammar": "suggest that＋節",
+          "ja": "外の家々も暗いため、近所全体が停電しているようです。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "outage",
+          "ja": "供給停止・停電",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "disruption",
+          "ja": "中断・混乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "illumination",
+          "ja": "照明・明かり",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "perishable",
+          "ja": "腐りやすい食品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "household",
+          "ja": "家庭・世帯",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reassure",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "慎重に進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illuminate",
+          "ja": "照らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "preserve",
+          "ja": "保存する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disrupt",
+          "ja": "混乱させる・中断させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "alarmed",
+          "ja": "不安・恐怖を感じた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "apprehensive",
+          "ja": "不安に感じている",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "startled",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "disoriented",
+          "ja": "混乱して方向感覚を失った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "widespread",
+          "ja": "広範囲に及ぶ",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a widespread power outage",
+          "ja": "広範囲に及ぶ停電",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reassure the frightened child",
+          "ja": "怖がっている子どもを安心させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "seek an alternative light source",
+          "ja": "代わりの光源を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illuminate the surroundings",
+          "ja": "周囲を照らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "navigate through the darkness",
+          "ja": "暗闇の中を慎重に移動する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "deal with an accidental spill",
+          "ja": "誤ってこぼしたものに対処する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "preserve refrigerated food",
+          "ja": "冷蔵食品を保存する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cope with the disruption",
+          "ja": "混乱に対処する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "be plunged into darkness",
+          "ja": "突然暗闇に包まれる",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The household has been plunged into darkness by what appears to be a widespread power outage.",
+          "grammar": "現在完了受動態 / what節",
+          "ja": "その家庭は、広範囲の停電と思われる事態によって突然暗闇に包まれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The young girl appears visibly alarmed by the abrupt loss of electricity, while her mother attempts to reassure her.",
+          "grammar": "whileを用いた対比・同時進行",
+          "ja": "少女は突然電気が消えたことに明らかに怯えており、母親は彼女を安心させようとしています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her father is rummaging through a cabinet in search of an alternative source of illumination.",
+          "grammar": "in search of",
+          "ja": "父親は代わりの明かりを探して戸棚の中を探っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teenage son is using his smartphone to illuminate the surroundings so that the family can move around safely.",
+          "grammar": "so that＋節",
+          "ja": "10代の息子は、家族が安全に移動できるようスマートフォンで周囲を照らしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Apparently startled by the blackout, the grandfather has knocked over his drink and is attempting to contain the spill.",
+          "grammar": "過去分詞を用いた分詞構文",
+          "ja": "停電に驚いたらしく、祖父は飲み物を倒してしまい、こぼれた液体が広がるのを食い止めようとしています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A younger child is struggling to regain his balance after stumbling over a toy that he failed to notice in the darkness.",
+          "grammar": "after＋動名詞 / 関係代名詞that",
+          "ja": "小さな子どもは暗闇で気づかなかったおもちゃにつまずき、バランスを取り戻そうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother appears apprehensive about whether the perishable food in the refrigerator can remain safely preserved.",
+          "grammar": "whether節",
+          "ja": "祖母は、冷蔵庫の傷みやすい食品を安全に保存できるかどうか心配しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The fact that neighboring houses are also dark suggests that the disruption extends well beyond this single household.",
+          "grammar": "the fact that / suggest that",
+          "ja": "近隣の家々も暗くなっていることから、停電はこの家庭だけでなく広い範囲に及んでいると考えられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Despite the initial confusion, the family members are cooperating to cope with the unexpected disruption safely.",
+          "grammar": "despite / cooperate to",
+          "ja": "最初は混乱していたものの、家族は予期せぬ停電に安全に対処するため協力しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "frightened_girl": {
+      "x": 35,
+      "y": 52
+    },
+    "mother": {
+      "x": 27,
+      "y": 49
+    },
+    "father": {
+      "x": 64,
+      "y": 47
+    },
+    "smartphone_light": {
+      "x": 50,
+      "y": 36
+    },
+    "spilled_drink": {
+      "x": 18,
+      "y": 68
+    },
+    "toy": {
+      "x": 59,
+      "y": 76
+    },
+    "refrigerator": {
+      "x": 84,
+      "y": 42
+    },
+    "candle": {
+      "x": 44,
+      "y": 60
+    },
+    "window": {
+      "x": 76,
+      "y": 24
+    },
+    "dark_houses": {
+      "x": 85,
+      "y": 17
+    }
+  }
+}

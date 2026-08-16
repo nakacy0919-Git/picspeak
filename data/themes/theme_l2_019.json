@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_019",
+  "imageSrc": "assets/images/l2_019.webp",
+  "titleEn": "Coastal Cycling Break",
+  "titleJa": "海辺のサイクリング",
+  "description": "晴れた日の海沿いのサイクリングロードで、3人の高校生が自転車旅行の途中に休憩している。中央では男子生徒が自転車のハンドルに取り付けたサイクルコンピューターと紙のルートマップを見比べ、次の目的地を確認している。女子生徒の一人はベンチのそばで水筒から水を飲みながらヘルメットのストラップを調整している。もう一人の女子生徒は海を背景にスマートフォンで景色を撮影している。周囲には青い海、防波堤、サイクリング標識、休憩ベンチ、自転車3台、ヘルメット、バックパックなどがあり、3人が安全にサイクリングを続ける準備をしている。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students taking a short break during a cycling trip on a beautiful coastal bicycle path in Japan on a clear sunny day. Do not include any additional people. The atmosphere should be active, refreshing, safe, and positive. In the center foreground, a teenage boy wearing cycling clothes and a bicycle helmet is standing beside his bicycle. He is comparing a paper route map with a small bicycle computer or navigation device attached to the handlebars, clearly checking the next destination and route. His bicycle should have a small saddle bag and water bottle holder. On the left, a teenage girl wearing a helmet is standing beside a wooden rest bench. She is drinking water from a reusable sports bottle while using her other hand to adjust the strap of her bicycle helmet. Her bicycle is parked safely beside the bench. On the right, another teenage girl wearing cycling clothes and a helmet is holding a smartphone horizontally and taking a photograph of the ocean, coastline, and distant islands. Her bicycle is parked beside her. Include exactly three bicycles, one for each student. Surround them with rich but organized environmental details: a blue ocean, rocky shoreline, seawall, bicycle lane markings, a cycling route sign, wooden bench, three bicycles, helmets, backpacks, water bottles, a paper route map, bicycle computer, saddle bag, a small repair pouch, distant islands, green coastal hills, and a clear blue sky. The three actions must be visually distinct and easy to describe: one student checking the route, one drinking water and adjusting her helmet, and one photographing the scenery. Make bicycle safety equipment clearly visible. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no crowds, no animals, no speech bubbles, no captions required to understand the scene, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bike",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "sea",
+          "ja": "海",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bench",
+          "ja": "ベンチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "ride",
+          "ja": "乗る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ride a bike",
+          "ja": "自転車に乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drink some water",
+          "ja": "水を飲む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "beautiful sea",
+          "ja": "美しい海",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "three bikes",
+          "ja": "3台の自転車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "sit by the sea",
+          "ja": "海のそばで休む",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are riding bikes by the sea.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が海辺で自転車に乗っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is looking at a map.",
+          "grammar": "現在進行形",
+          "ja": "男の子が地図を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is standing beside his bike.",
+          "grammar": "現在進行形",
+          "ja": "彼は自転車のそばに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is drinking water.",
+          "grammar": "現在進行形",
+          "ja": "女の子が水を飲んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is wearing a helmet.",
+          "grammar": "現在進行形",
+          "ja": "彼女はヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is taking a picture.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are three bikes.",
+          "grammar": "There are",
+          "ja": "自転車が3台あります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "cyclist",
+          "ja": "自転車に乗る人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "coast",
+          "ja": "海岸",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "ルート",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scenery",
+          "ja": "景色",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "adjust",
+          "ja": "調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rest",
+          "ja": "休憩する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "refreshed",
+          "ja": "すっきりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "わくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "impressed",
+          "ja": "感動した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "coastal",
+          "ja": "海岸沿いの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "take a cycling break",
+          "ja": "サイクリングの休憩を取る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "check the cycling route",
+          "ja": "サイクリングルートを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare the map with the computer",
+          "ja": "地図とコンピューターを比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adjust her helmet",
+          "ja": "ヘルメットを調整する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drink from a bottle",
+          "ja": "ボトルから水を飲む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the coastline",
+          "ja": "海岸の景色を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the sea view",
+          "ja": "海の景色を楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "wear safety equipment",
+          "ja": "安全装備を身につける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are taking a break during a cycling trip along the coast.",
+          "grammar": "現在進行形 / during",
+          "ja": "3人の生徒が海岸沿いのサイクリングの途中で休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is comparing a paper map with the computer on his bicycle.",
+          "grammar": "現在進行形",
+          "ja": "男子生徒は紙の地図と自転車のコンピューターを見比べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be checking the route to their next destination.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼は次の目的地までのルートを確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One girl is drinking water while adjusting the strap of her helmet.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の女子生徒がヘルメットのストラップを調整しながら水を飲んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her bicycle is parked safely beside the bench.",
+          "grammar": "受動態",
+          "ja": "彼女の自転車はベンチのそばに安全に止められています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other girl is photographing the ocean and the distant islands.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒は海と遠くの島々を撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks impressed by the coastal scenery.",
+          "grammar": "look＋形容詞 / by",
+          "ja": "彼女は海岸の景色に感動しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "All three students are wearing helmets to stay safe while cycling.",
+          "grammar": "to不定詞 / while＋現在分詞",
+          "ja": "3人とも安全にサイクリングするためヘルメットを着用しています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "cyclist",
+          "ja": "サイクリスト",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "navigation",
+          "ja": "経路案内",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "shoreline",
+          "ja": "海岸線",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "hydration",
+          "ja": "水分補給",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "protective gear",
+          "ja": "保護装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "経路を判断する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replenish",
+          "ja": "補給する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fasten",
+          "ja": "しっかり留める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "capture",
+          "ja": "写真に収める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "invigorated",
+          "ja": "元気を取り戻した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "captivated",
+          "ja": "魅了された",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "picturesque",
+          "ja": "絵のように美しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "scenic",
+          "ja": "景色の美しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "recreational",
+          "ja": "レクリエーションの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "pause during a long-distance ride",
+          "ja": "長距離サイクリングの途中で休憩する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "consult a navigation device",
+          "ja": "ナビゲーション機器を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "verify the planned route",
+          "ja": "予定ルートを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "replenish her fluids",
+          "ja": "水分を補給する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fasten her protective helmet",
+          "ja": "ヘルメットをしっかり固定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "capture the picturesque shoreline",
+          "ja": "絵のように美しい海岸線を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear captivated by the scenery",
+          "ja": "景色に魅了されているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "use appropriate protective gear",
+          "ja": "適切な保護装備を使用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for the next stage of the ride",
+          "ja": "次の走行区間に備える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three cyclists have paused along a scenic coastal route before continuing the next stage of their journey.",
+          "grammar": "現在完了形 / before＋動名詞",
+          "ja": "3人のサイクリストは旅の次の区間を続ける前に、景色の美しい海岸ルートで休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is consulting both a paper map and a handlebar-mounted navigation device to verify the planned route.",
+          "grammar": "both A and B / to不定詞",
+          "ja": "男子生徒は予定ルートを確認するため、紙の地図とハンドルに取り付けたナビゲーション機器の両方を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His posture suggests that he is determining the most appropriate direction toward their next destination.",
+          "grammar": "suggest that",
+          "ja": "彼の様子から、次の目的地へ向かう最も適切な方向を判断していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his companions is replenishing her fluids while readjusting the strap of her protective helmet.",
+          "grammar": "while＋現在分詞",
+          "ja": "同行者の一人は保護用ヘルメットのストラップを再調整しながら水分補給をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The combination of hydration and safety checks indicates that she is preparing carefully before resuming the ride.",
+          "grammar": "indicate that / before＋動名詞",
+          "ja": "水分補給と安全確認をしていることから、彼女が走行を再開する前に慎重に準備していることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third cyclist is using her smartphone to capture the picturesque shoreline and distant islands.",
+          "grammar": "to不定詞",
+          "ja": "その一方で、3人目のサイクリストは絵のように美しい海岸線と遠くの島々をスマートフォンで撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears captivated by the expansive ocean view stretching beyond the seawall.",
+          "grammar": "appear＋補語 / 現在分詞による修飾",
+          "ja": "彼女は防波堤の向こうに広がる壮大な海の景色に魅了されているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "All three students are wearing appropriate protective gear, suggesting that they are approaching the recreational activity responsibly.",
+          "grammar": "分詞構文 / suggest that",
+          "ja": "3人とも適切な保護装備を着用しており、安全に配慮しながらレクリエーション活動を行っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how a cycling excursion can combine physical exercise, route planning, safety awareness, and appreciation of the natural landscape.",
+          "grammar": "how節 / combine A, B, C and D",
+          "ja": "この場面は、サイクリング旅行が運動、ルート計画、安全意識、自然景観を楽しむことを組み合わせられることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 44,
+      "y": 52
+    },
+    "paper_map": {
+      "x": 43,
+      "y": 58
+    },
+    "bike_computer": {
+      "x": 48,
+      "y": 53
+    },
+    "drinking_girl": {
+      "x": 24,
+      "y": 53
+    },
+    "water_bottle": {
+      "x": 26,
+      "y": 46
+    },
+    "photographer_girl": {
+      "x": 76,
+      "y": 50
+    },
+    "smartphone": {
+      "x": 78,
+      "y": 42
+    },
+    "three_bicycles": {
+      "x": 52,
+      "y": 70
+    },
+    "cycling_sign": {
+      "x": 17,
+      "y": 30
+    },
+    "ocean": {
+      "x": 69,
+      "y": 25
+    }
+  }
+}

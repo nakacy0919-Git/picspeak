@@ -1,0 +1,659 @@
+{
+  "id": "theme_l2_003",
+  "imageSrc": "assets/images/l2_003.webp",
+  "titleEn": "Lost at the Festival",
+  "titleJa": "お祭りで迷子",
+  "description": "夏祭りで、小さな男の子が家族とはぐれて泣きそうになっている。近くの女性警備員がしゃがんで優しく話しかけ、男の子を安心させようとしている。少し離れた場所では、母親が人混みの中を必死に探している。背景では、子どもがりんご飴を落とし、別の少年が金魚すくいの水をこぼしてしまい、浴衣姿の女性は壊れたサンダルを直している。さらに、屋台の店員が倒れそうになった商品を支え、花火を見上げている人々もいる。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a lively Japanese summer festival in the evening, filled with colorful lanterns, food stalls, festival games, families, and people wearing casual summer clothes and yukata. The main event should be clear in the foreground: a young boy around six years old is standing alone near a festival walkway, looking frightened and close to tears because he has become separated from his family. A female security staff member wearing a simple festival security vest is crouching down beside him and speaking gently to reassure him. The boy is holding a small festival bag and looking around nervously. In the middle distance, his worried mother is searching through the crowd, calling and looking in different directions, clearly trying to find him. Include several clear background sub-stories. On the left, a young child has accidentally dropped a red candy apple onto the ground and looks disappointed while a parent reacts with surprise. Nearby, a boy at a goldfish-scooping stall has accidentally knocked over a small container of water and is trying to stop the spill. On the right, a woman wearing a yukata is sitting on a bench trying to fix a broken sandal while her friend helps her. At another food stall, a vendor is quickly catching a stack of trays or boxes that is about to fall. In the far background, several visitors are looking up happily at fireworks in the night sky, while others continue walking through the crowded festival. Include lanterns, food stalls, festival games, benches, shopping bags, signs with simple decorative symbols, and colorful festival decorations. Make all actions and emotions visually distinct and easy to describe. Clear foreground, middle ground, and background, approximately 10 to 14 visible people. No speech bubbles, no captions, no logos, no copyrighted characters, no text required to understand the image. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but easy to read.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "festival",
+          "ja": "お祭り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "人混み",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "candy",
+          "ja": "飴",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sandal",
+          "ja": "サンダル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fireworks",
+          "ja": "花火",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lantern",
+          "ja": "ちょうちん",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cry",
+          "ja": "泣く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る・探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "scared",
+          "ja": "怖がった",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a lost boy",
+          "ja": "迷子の男の子",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "look for his mother",
+          "ja": "母親を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help the boy",
+          "ja": "男の子を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop a candy apple",
+          "ja": "りんご飴を落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spill some water",
+          "ja": "水をこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fix her sandal",
+          "ja": "サンダルを直す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the fireworks",
+          "ja": "花火を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many people",
+          "ja": "たくさんの人々",
+          "type": "detail",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A boy is crying at the festival.",
+          "grammar": "現在進行形",
+          "ja": "男の子がお祭りで泣いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He looks scared.",
+          "grammar": "look＋形容詞",
+          "ja": "彼は怖そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "A woman is helping the boy.",
+          "grammar": "現在進行形",
+          "ja": "女性が男の子を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His mother is looking for him.",
+          "grammar": "現在進行形",
+          "ja": "母親が彼を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child dropped a candy apple.",
+          "grammar": "過去形",
+          "ja": "子どもがりんご飴を落としました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is cleaning up some water.",
+          "grammar": "現在進行形",
+          "ja": "男の子がこぼれた水を片づけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are watching the fireworks.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が花火を見ています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "child",
+          "ja": "子ども",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "parent",
+          "ja": "親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "security",
+          "ja": "警備員・警備",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "来場者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "stall",
+          "ja": "屋台",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "人混み",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "離す・離れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reassure",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "repair",
+          "ja": "修理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frightened",
+          "ja": "怖がった",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "disappointed",
+          "ja": "がっかりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "be separated from his family",
+          "ja": "家族とはぐれる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look frightened and confused",
+          "ja": "怖がり困惑しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "reassure the lost child",
+          "ja": "迷子の子どもを安心させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "search through the crowd",
+          "ja": "人混みの中を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accidentally drop his candy",
+          "ja": "誤って飴を落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "knock over a container",
+          "ja": "容器を倒す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "repair a broken sandal",
+          "ja": "壊れたサンダルを直す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the fireworks",
+          "ja": "花火を楽しむ",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The young boy seems to have become separated from his family.",
+          "grammar": "seem to have＋過去分詞",
+          "ja": "その小さな男の子は家族とはぐれてしまったようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He looks frightened because he cannot find his mother.",
+          "grammar": "becauseを用いた理由説明",
+          "ja": "母親を見つけられないので、彼は怖がっているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "A security staff member is trying to reassure the lost child.",
+          "grammar": "try to＋動詞",
+          "ja": "警備員が迷子の子どもを安心させようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His mother is anxiously searching for him through the crowded festival.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "母親は混雑したお祭り会場で不安そうに彼を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child looks disappointed after dropping a candy apple.",
+          "grammar": "after＋動名詞",
+          "ja": "子どもはりんご飴を落として、がっかりしているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another boy is trying to clean up water that he spilled near a festival stall.",
+          "grammar": "関係代名詞that",
+          "ja": "別の男の子が屋台の近くで自分がこぼした水を片づけようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is repairing her sandal while her friend waits beside her.",
+          "grammar": "whileを使った同時進行",
+          "ja": "女性がサンダルを直している間、友人がそばで待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several visitors are enjoying the fireworks despite the trouble nearby.",
+          "grammar": "despite＋名詞",
+          "ja": "近くでトラブルが起きているにもかかわらず、何人かの来場者は花火を楽しんでいます。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "attendee",
+          "ja": "来場者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "guardian",
+          "ja": "保護者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "vendor",
+          "ja": "屋台の販売員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "festivity",
+          "ja": "祭り・祝祭",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "commotion",
+          "ja": "騒動・混乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "separation",
+          "ja": "離別・はぐれること",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "locate",
+          "ja": "見つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "console",
+          "ja": "慰める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scan",
+          "ja": "注意深く見渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "回収する・取り戻す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distressed",
+          "ja": "ひどく動揺した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "anxious",
+          "ja": "不安な",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "disheartened",
+          "ja": "落胆した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "bustling",
+          "ja": "活気に満ちた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "become separated from his guardian",
+          "ja": "保護者とはぐれる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "appear visibly distressed",
+          "ja": "明らかに動揺しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "console the frightened child",
+          "ja": "怖がっている子どもを慰める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "frantically scan the crowd",
+          "ja": "必死に人混みを見渡す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "lose sight of her son",
+          "ja": "息子を見失う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "deal with a minor mishap",
+          "ja": "ちょっとしたトラブルに対処する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "attempt to contain the spill",
+          "ja": "こぼれた水が広がるのを食い止めようとする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "repair damaged footwear",
+          "ja": "壊れた履物を直す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain oblivious to the commotion",
+          "ja": "騒動に気づかないままでいる",
+          "type": "detail",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The young boy appears visibly distressed after becoming separated from his guardian in the bustling festival crowd.",
+          "grammar": "after＋動名詞 / appear＋補語",
+          "ja": "その少年は、活気のある祭りの人混みで保護者とはぐれ、明らかに動揺しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A security staff member is crouching beside him in an attempt to console and reassure him.",
+          "grammar": "in an attempt to",
+          "ja": "警備員は彼を慰め安心させようとして、そばにしゃがんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, his mother is frantically scanning the crowd, apparently having lost sight of her son.",
+          "grammar": "分詞構文 / apparently",
+          "ja": "その一方で、母親は息子を見失ったようで、必死に人混みを見渡しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The situation illustrates how quickly a child can become separated from a parent in a densely crowded public event.",
+          "grammar": "how節 / 抽象的状況説明",
+          "ja": "この状況は、非常に混雑した公共イベントでは子どもが親とはぐれる可能性があることを示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Elsewhere, a disappointed child is staring at a candy apple that has fallen onto the ground.",
+          "grammar": "関係代名詞that＋現在完了形",
+          "ja": "別の場所では、がっかりした子どもが地面に落ちてしまったりんご飴を見つめています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another boy is attempting to contain a spill after accidentally knocking over a container at a festival game.",
+          "grammar": "attempt to / after＋動名詞",
+          "ja": "別の少年は祭りのゲームで誤って容器を倒し、こぼれた水が広がるのを食い止めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman appears slightly flustered as she tries to repair her damaged sandal with the assistance of a friend.",
+          "grammar": "as節 / with the assistance of",
+          "ja": "女性は友人に手伝ってもらいながら壊れたサンダルを直そうとしており、少し慌てているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "In contrast, several festival attendees remain oblivious to the commotion as they admire the fireworks overhead.",
+          "grammar": "in contrast / remain＋補語 / as節",
+          "ja": "対照的に、何人かの来場者は騒動に気づかず、頭上の花火を眺めています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "lost_boy": {
+      "x": 38,
+      "y": 57
+    },
+    "security_staff": {
+      "x": 26,
+      "y": 55
+    },
+    "mother": {
+      "x": 58,
+      "y": 42
+    },
+    "candy_apple": {
+      "x": 14,
+      "y": 73
+    },
+    "water_spill": {
+      "x": 72,
+      "y": 67
+    },
+    "festival_stall": {
+      "x": 76,
+      "y": 40
+    },
+    "broken_sandal": {
+      "x": 88,
+      "y": 70
+    },
+    "lanterns": {
+      "x": 45,
+      "y": 16
+    },
+    "fireworks": {
+      "x": 80,
+      "y": 12
+    },
+    "crowd": {
+      "x": 52,
+      "y": 45
+    }
+  }
+}

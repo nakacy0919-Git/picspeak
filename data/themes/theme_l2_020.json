@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_020",
+  "imageSrc": "assets/images/l2_020.webp",
+  "titleEn": "Library Research Time",
+  "titleJa": "図書室で調べ学習",
+  "description": "放課後の学校図書室で、3人の高校生が地域の環境問題について調べ学習をしている。中央では男子生徒がノートパソコンで資料を検索しながら重要な情報をノートにまとめている。左側の女子生徒は本棚から環境に関する本を取り出し、目次を確認している。右側の女子生徒は大きな机の上で複数の資料や付箋を整理しながら、プレゼンテーション用の構成案を作っている。机には本、ノート、タブレット、付箋、蛍光ペンなどが並び、ホワイトボードには調査テーマを整理した簡単な図がある。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students studying together in a quiet modern Japanese high school library after school. Do not include any additional people. The atmosphere should be academic, focused, calm, cooperative, and positive. The main activity is research for a school presentation about local environmental issues. In the center foreground, a teenage boy wearing a school uniform is sitting at a large wooden study table. He is using a laptop to research information while writing important points in a notebook beside the computer. Several printed charts and reference sheets should be visible near him. On the left side, a teenage girl wearing a school uniform is standing beside a tall bookshelf. She is taking a nonfiction book about the environment or local nature from the shelf and checking the table of contents. A few other relevant books are stacked nearby on a small cart or table. On the right side, another teenage girl is sitting at the same study table and organizing research materials. She is arranging colorful sticky notes into groups on a large sheet of paper and using a marker to create a simple presentation outline. A tablet and several open books are beside her. Include a small whiteboard in the background with a simple mind map using icons and short nonessential words about water, waste, transport, energy, and nature. Include bookshelves, reference books, notebooks, laptop, tablet, printed charts, sticky notes, highlighters, pencils, a ruler, bookmarks, desk lamps, a clock, school bags, and large windows showing late-afternoon sunlight. Make the three activities visually distinct and easy to describe: one student researching online and taking notes, one finding information in books, and one organizing ideas for a presentation. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "library",
+          "ja": "図書室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "book",
+          "ja": "本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "computer",
+          "ja": "コンピューター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "notebook",
+          "ja": "ノート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shelf",
+          "ja": "本棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paper",
+          "ja": "紙・資料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pen",
+          "ja": "ペン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "タブレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "read",
+          "ja": "読む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "study",
+          "ja": "勉強する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "busy",
+          "ja": "忙しい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "study in the library",
+          "ja": "図書室で勉強する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "use a computer",
+          "ja": "コンピューターを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write in a notebook",
+          "ja": "ノートに書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look for a book",
+          "ja": "本を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "read a book",
+          "ja": "本を読む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use sticky notes",
+          "ja": "付箋を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make a plan",
+          "ja": "計画を作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are studying in the library.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が図書室で勉強しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is using a computer.",
+          "grammar": "現在進行形",
+          "ja": "男の子がコンピューターを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is writing in a notebook.",
+          "grammar": "現在進行形",
+          "ja": "彼はノートに書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is looking for a book.",
+          "grammar": "現在進行形",
+          "ja": "女の子が本を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is standing by the bookshelf.",
+          "grammar": "現在進行形",
+          "ja": "彼女は本棚のそばに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is using sticky notes.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が付箋を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many books on the table.",
+          "grammar": "There are",
+          "ja": "机の上にはたくさんの本があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are working together.",
+          "grammar": "現在進行形",
+          "ja": "3人は一緒に作業しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "research",
+          "ja": "調査・研究",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "information",
+          "ja": "情報",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reference",
+          "ja": "参考資料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "environment",
+          "ja": "環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "presentation",
+          "ja": "発表",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "検索する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "organize",
+          "ja": "整理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "summarize",
+          "ja": "要約する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "select",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "useful",
+          "ja": "役に立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "academic",
+          "ja": "学問的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cooperative",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "do research",
+          "ja": "調査をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "search for information",
+          "ja": "情報を検索する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take important notes",
+          "ja": "重要なメモを取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "find a reference book",
+          "ja": "参考図書を見つける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the table of contents",
+          "ja": "目次を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "organize research materials",
+          "ja": "調査資料を整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare a presentation",
+          "ja": "発表を準備する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "group similar ideas",
+          "ja": "似た考えをまとめる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are doing research for a school presentation.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは学校の発表のために調査をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is searching online for information about environmental issues.",
+          "grammar": "現在進行形",
+          "ja": "男子生徒は環境問題についてオンラインで情報を検索しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is writing down the most important information in his notebook.",
+          "grammar": "現在進行形 / 最上級",
+          "ja": "彼は最も重要な情報をノートに書き留めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is looking for a useful reference book on the shelf.",
+          "grammar": "現在進行形",
+          "ja": "一人の女子生徒が本棚で役に立つ参考図書を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is checking the table of contents to find the information she needs.",
+          "grammar": "目的を表すto不定詞 / 関係節省略",
+          "ja": "彼女は必要な情報を見つけるために目次を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other girl is organizing their research materials with sticky notes.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒は付箋を使って調査資料を整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be preparing an outline for their presentation.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼女は発表の構成案を準備しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The three students seem focused on completing the project together.",
+          "grammar": "seem＋形容詞 / focus on",
+          "ja": "3人は一緒に課題を完成させることに集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "investigation",
+          "ja": "調査",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "source",
+          "ja": "情報源",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "credibility",
+          "ja": "信頼性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evidence",
+          "ja": "根拠",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "framework",
+          "ja": "構成・枠組み",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compile",
+          "ja": "集めてまとめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evaluate",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "synthesize",
+          "ja": "統合する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "absorbed",
+          "ja": "没頭した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relevant",
+          "ja": "関連性のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "reliable",
+          "ja": "信頼できる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "collaborative",
+          "ja": "協働的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "conduct an academic investigation",
+          "ja": "学術的な調査を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "consult multiple sources",
+          "ja": "複数の情報源を参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compile relevant evidence",
+          "ja": "関連する根拠を集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evaluate source credibility",
+          "ja": "情報源の信頼性を評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "extract key information",
+          "ja": "重要な情報を抜き出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "categorize research findings",
+          "ja": "調査結果を分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop a presentation framework",
+          "ja": "発表の構成を作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "synthesize information from different sources",
+          "ja": "異なる情報源の情報を統合する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "engage in collaborative research",
+          "ja": "協働的な調査に取り組む",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are conducting an academic investigation in preparation for a presentation on local environmental issues.",
+          "grammar": "in preparation for",
+          "ja": "3人の生徒は地域の環境問題についての発表に備えて学術的な調査を行っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is consulting an online source while compiling relevant evidence in his notebook.",
+          "grammar": "while＋現在分詞",
+          "ja": "男子生徒はオンラインの情報源を参照しながら、関連する根拠をノートにまとめています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be extracting key information from the material rather than simply copying everything he finds.",
+          "grammar": "appear to be / rather than",
+          "ja": "彼は見つけた内容をすべて写すのではなく、重要な情報を抜き出しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his companions is consulting a reference book and checking its contents for information relevant to their topic.",
+          "grammar": "現在進行形 / relevant to",
+          "ja": "同行している女子生徒の一人は参考図書を参照し、テーマに関連する情報がないか内容を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her use of both printed and digital materials suggests that the group is drawing on multiple sources.",
+          "grammar": "suggest that / draw on",
+          "ja": "紙とデジタルの両方の資料を利用していることから、グループが複数の情報源を活用していることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is methodically categorizing their findings with sticky notes and constructing a presentation framework.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "その一方で、3人目の生徒は付箋を使って調査結果を手順立てて分類し、発表の構成を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She seems to be synthesizing information from several sources in order to create a clear and logical structure.",
+          "grammar": "seem to be / in order to",
+          "ja": "彼女は明確で論理的な構成を作るため、複数の情報源から得た情報を統合しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The charts, books, electronic devices, and organized notes indicate that the students are approaching the project in a systematic manner.",
+          "grammar": "indicate that",
+          "ja": "グラフ、本、電子機器、整理されたメモから、生徒たちが体系的に課題へ取り組んでいることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how effective research requires not only gathering information but also evaluating, organizing, and synthesizing it.",
+          "grammar": "not only A but also B",
+          "ja": "この場面は、効果的な調査には情報を集めるだけでなく、それを評価し、整理し、統合することも必要であることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 47,
+      "y": 53
+    },
+    "laptop": {
+      "x": 48,
+      "y": 61
+    },
+    "notebook": {
+      "x": 42,
+      "y": 66
+    },
+    "book_girl": {
+      "x": 22,
+      "y": 49
+    },
+    "bookshelf": {
+      "x": 15,
+      "y": 37
+    },
+    "reference_book": {
+      "x": 25,
+      "y": 45
+    },
+    "organizing_girl": {
+      "x": 73,
+      "y": 56
+    },
+    "sticky_notes": {
+      "x": 70,
+      "y": 68
+    },
+    "tablet": {
+      "x": 80,
+      "y": 61
+    },
+    "whiteboard": {
+      "x": 72,
+      "y": 27
+    }
+  }
+}

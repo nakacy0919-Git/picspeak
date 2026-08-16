@@ -1,0 +1,686 @@
+{
+  "id": "theme_l2_011",
+  "imageSrc": "assets/images/l2_011.webp",
+  "titleEn": "Science Fair Day",
+  "titleJa": "科学発表会",
+  "description": "学校の体育館でサイエンスフェアが開かれている。中央では女子生徒が小型ロボットを来場者に実演し、男子生徒がポスターを指さしながら仕組みを説明している。教師がメモを取りながら発表を聞いている。背景では、生徒が顕微鏡で植物の細胞を観察し、別のグループが太陽系の模型を使って説明している。さらに、風力発電の模型を動かしている生徒や、植物の成長実験を紹介している生徒、タブレットで実験結果を記録している生徒もいる。来場した保護者や他の生徒たちが各展示を興味深そうに見ている。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a lively school science fair taking place inside a bright modern Japanese school gymnasium. The atmosphere should be positive, educational, energetic, and collaborative rather than chaotic. The main event must be immediately clear in the foreground: a teenage schoolgirl is demonstrating a small student-built robot on a display table while several visitors watch with interest. Beside her, a teenage boy is pointing at a large science poster and explaining how the robot works. A teacher holding a clipboard is listening carefully and taking notes while evaluating their presentation. The robot should be clearly visible and should have simple wheels, sensors, and a small mechanical arm. Include several distinct background sub-stories happening simultaneously. On the left, two students are observing plant cells through a microscope, with prepared slides and a simple biology poster nearby. In the middle background, another group is presenting a colorful model of the solar system while one student points to the planets and another visitor listens. On the right, students are demonstrating a small wind-turbine model, using a portable fan to make the blades rotate while another student records the results on a tablet. Nearby, another student is explaining a plant-growth experiment with several small plants of different heights arranged in pots under different light conditions. A student photographer is taking pictures of the displays for the school record. Parents, teachers, and students are walking between exhibition tables and examining the projects with curious expressions. Include school uniforms, presentation tables, posters, notebooks, clipboards, a microscope, plant samples, a solar-system model, a wind-turbine model, a portable fan, tablets, small plants, charts, and the small robot. Make every activity visually distinct and easy to describe. Clear foreground, middle ground, and background. Approximately 12 to 16 visible people. No speech bubbles, no captions that are necessary to understand the image, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but visually organized and uncluttered, expressive faces and gestures, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "school",
+          "ja": "学校",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "teacher",
+          "ja": "先生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "robot",
+          "ja": "ロボット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "poster",
+          "ja": "ポスター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "planet",
+          "ja": "惑星",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "computer",
+          "ja": "コンピューター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "見せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい・楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "show a robot",
+          "ja": "ロボットを見せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "talk about the robot",
+          "ja": "ロボットについて話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at a poster",
+          "ja": "ポスターを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a microscope",
+          "ja": "顕微鏡を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the planets",
+          "ja": "惑星を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the windmill",
+          "ja": "風車を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write on a tablet",
+          "ja": "タブレットに記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are having a science fair.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは科学発表会をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A girl is showing a robot.",
+          "grammar": "現在進行形",
+          "ja": "女の子がロボットを見せています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A boy is talking about the robot.",
+          "grammar": "現在進行形",
+          "ja": "男の子がロボットについて話しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is writing notes.",
+          "grammar": "現在進行形",
+          "ja": "先生がメモを書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are using a microscope.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が顕微鏡を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some students are looking at the planets.",
+          "grammar": "現在進行形",
+          "ja": "何人かの生徒が惑星を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A student is using a tablet.",
+          "grammar": "現在進行形",
+          "ja": "生徒がタブレットを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visitors look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "来場者たちは楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "exhibition",
+          "ja": "展示会",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "project",
+          "ja": "研究・プロジェクト",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "experiment",
+          "ja": "実験",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "microscope",
+          "ja": "顕微鏡",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "model",
+          "ja": "模型",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "result",
+          "ja": "結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "実演する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interested",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "curious",
+          "ja": "好奇心を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "proud",
+          "ja": "誇らしい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "educational",
+          "ja": "教育的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "demonstrate a robot",
+          "ja": "ロボットを実演する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explain the project",
+          "ja": "プロジェクトを説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take notes",
+          "ja": "メモを取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe plant cells",
+          "ja": "植物の細胞を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "present a solar-system model",
+          "ja": "太陽系の模型を発表する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "test a wind turbine",
+          "ja": "風力タービンを試す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record the results",
+          "ja": "結果を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare plant growth",
+          "ja": "植物の成長を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show interest in the projects",
+          "ja": "研究発表に興味を示す",
+          "type": "emotion",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are presenting their science projects at a school exhibition.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは学校の展示会で科学研究を発表しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A student is demonstrating a robot while her partner explains how it works.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "生徒がロボットを実演し、パートナーがその仕組みを説明しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The teacher is taking notes while listening to the presentation.",
+          "grammar": "while＋動名詞",
+          "ja": "先生は発表を聞きながらメモを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are observing plant cells through a microscope.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が顕微鏡で植物の細胞を観察しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another group is using a model to explain the solar system.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "別のグループは太陽系を説明するために模型を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some students are testing a wind turbine and recording the results on a tablet.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは風力タービンを試し、その結果をタブレットに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A student is comparing plants that were grown under different conditions.",
+          "grammar": "関係代名詞that / 受動態",
+          "ja": "生徒が異なる条件で育てられた植物を比較しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visitors seem interested in the different experiments.",
+          "grammar": "seem＋形容詞",
+          "ja": "来場者たちはさまざまな実験に興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "innovation",
+          "ja": "革新・新しい工夫",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "prototype",
+          "ja": "試作品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mechanism",
+          "ja": "仕組み・機構",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "specimen",
+          "ja": "標本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "renewable",
+          "ja": "再生可能な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "variable",
+          "ja": "変数・変化する要因",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "showcase",
+          "ja": "披露する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illustrate",
+          "ja": "分かりやすく示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evaluate",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "engaged",
+          "ja": "熱心に取り組んでいる",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "intrigued",
+          "ja": "強く興味を引かれた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "enthusiastic",
+          "ja": "熱意のある",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "collaborative",
+          "ja": "協働的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "showcase a robotic prototype",
+          "ja": "ロボットの試作品を披露する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illustrate the underlying mechanism",
+          "ja": "基本的な仕組みを分かりやすく示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evaluate the presentation",
+          "ja": "発表を評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine biological specimens",
+          "ja": "生物の標本を詳しく調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illustrate the structure of the solar system",
+          "ja": "太陽系の構造を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "demonstrate renewable energy",
+          "ja": "再生可能エネルギーを実演する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document experimental findings",
+          "ja": "実験結果を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare different variables",
+          "ja": "異なる変数を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear genuinely intrigued",
+          "ja": "心から興味を引かれているように見える",
+          "type": "emotion",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are showcasing a variety of scientific projects at a school exhibition.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは学校の展示会でさまざまな科学研究を披露しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A student is showcasing a robotic prototype while her partner illustrates the mechanism behind its operation.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "生徒がロボットの試作品を披露し、パートナーがその動作の仕組みを説明しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The teacher is carefully evaluating the presentation and documenting her observations on a clipboard.",
+          "grammar": "現在進行形",
+          "ja": "先生は発表を注意深く評価し、観察した内容をクリップボードに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are examining biological specimens through a microscope.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が顕微鏡で生物標本を詳しく観察しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another group is using a three-dimensional model to illustrate the structure of the solar system.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "別のグループは太陽系の構造を示すために立体模型を使用しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several students are demonstrating a renewable-energy system by operating a miniature wind turbine.",
+          "grammar": "by＋動名詞",
+          "ja": "数人の生徒が小型風力タービンを動かして再生可能エネルギーの仕組みを実演しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is documenting the experimental findings on a tablet while another monitors the equipment.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "一人の生徒がタブレットに実験結果を記録し、別の生徒が装置を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A plant-growth project enables the students to compare how different environmental variables affect development.",
+          "grammar": "enable＋O＋to不定詞 / how節",
+          "ja": "植物の成長実験によって、生徒たちは異なる環境要因が成長にどう影響するか比較できます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visitors appear genuinely intrigued by the range of innovative projects being presented.",
+          "grammar": "appear＋補語 / 現在分詞受動的修飾",
+          "ja": "来場者たちは発表されている多様で革新的な研究に強く興味を引かれているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The scene highlights a collaborative learning environment in which students apply scientific knowledge through practical experimentation.",
+          "grammar": "関係副詞in which",
+          "ja": "この場面は、生徒が実践的な実験を通して科学知識を応用する協働的な学習環境を表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "robot": {
+      "x": 43,
+      "y": 62
+    },
+    "presenting_girl": {
+      "x": 34,
+      "y": 49
+    },
+    "presenting_boy": {
+      "x": 52,
+      "y": 45
+    },
+    "teacher": {
+      "x": 62,
+      "y": 47
+    },
+    "microscope": {
+      "x": 16,
+      "y": 58
+    },
+    "solar_system_model": {
+      "x": 70,
+      "y": 35
+    },
+    "wind_turbine": {
+      "x": 84,
+      "y": 53
+    },
+    "tablet": {
+      "x": 78,
+      "y": 65
+    },
+    "plant_experiment": {
+      "x": 89,
+      "y": 69
+    },
+    "science_poster": {
+      "x": 49,
+      "y": 25
+    }
+  }
+}

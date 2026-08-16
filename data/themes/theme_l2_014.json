@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_014",
+  "imageSrc": "assets/images/l2_014.webp",
+  "titleEn": "Art Class Project",
+  "titleJa": "美術の共同制作",
+  "description": "放課後の美術室で、2人の高校生と美術教師の3人が大型ポスター制作に取り組んでいる。中央では女子生徒がキャンバスに街と自然を組み合わせた絵を描き、男子生徒がパレットで色を混ぜながら次に使う色を準備している。教師は少し離れた場所から作品を見て、スケッチブックを指さしながら構図についてアドバイスしている。机の上には絵の具、筆、色鉛筆、参考写真が並び、窓際には乾燥中の小さな作品が置かれている。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three people inside a bright modern Japanese high school art classroom after school: two teenage students and one art teacher. Do not include any additional people. The atmosphere should be creative, calm, positive, and collaborative. In the main foreground scene, a teenage schoolgirl wearing a school uniform with an art apron is standing in front of a large vertical canvas on an easel. She is carefully painting a colorful scene that combines a modern city, green trees, a river, and a blue sky. She is holding a paintbrush in one hand and concentrating on adding details to the painting. Beside her, a teenage boy wearing a school uniform and apron is standing at a worktable and mixing blue and green paint on a palette while comparing the colors with the large artwork. He should clearly be preparing colors for the shared project. A few steps behind them, an art teacher is holding an open sketchbook and pointing to a simple composition drawing while giving advice about where to place the main elements in the painting. The teacher should look encouraging and thoughtful. Include several visual details that create secondary descriptive opportunities without adding more people: jars of paintbrushes, watercolor paints, acrylic paint tubes, colored pencils, a cup of water, palettes, pieces of colored paper, reference photographs of buildings and nature, a desk lamp, a drying rack with several small student artworks, a classroom sink, shelves of art supplies, and large windows with warm late-afternoon sunlight. One small unfinished sketch should be clipped beside the main canvas. Make the three activities visually distinct and easy to describe: one student painting, one student mixing colors, and the teacher giving artistic guidance. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no animals, no speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "art",
+          "ja": "美術",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "teacher",
+          "ja": "先生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "絵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paint",
+          "ja": "絵の具",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "brush",
+          "ja": "筆",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "color",
+          "ja": "色",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paint",
+          "ja": "絵を描く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mix",
+          "ja": "混ぜる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "paint a picture",
+          "ja": "絵を描く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mix the colors",
+          "ja": "色を混ぜる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a brush",
+          "ja": "筆を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the picture",
+          "ja": "絵を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the sketch",
+          "ja": "スケッチを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many art tools",
+          "ja": "たくさんの画材",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "after school",
+          "ja": "放課後",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three people are in the art room.",
+          "grammar": "be動詞＋場所",
+          "ja": "3人が美術室にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl is painting a picture.",
+          "grammar": "現在進行形",
+          "ja": "女の子が絵を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is holding a brush.",
+          "grammar": "現在進行形",
+          "ja": "彼女は筆を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is mixing colors.",
+          "grammar": "現在進行形",
+          "ja": "男の子が色を混ぜています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is looking at the picture.",
+          "grammar": "現在進行形",
+          "ja": "先生が絵を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is pointing at a sketch.",
+          "grammar": "現在進行形",
+          "ja": "先生がスケッチを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many art tools on the table.",
+          "grammar": "There are",
+          "ja": "机の上にはたくさんの画材があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "artwork",
+          "ja": "作品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "canvas",
+          "ja": "キャンバス",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "palette",
+          "ja": "パレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sketch",
+          "ja": "下絵・スケッチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "design",
+          "ja": "デザイン",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "create",
+          "ja": "作る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "combine",
+          "ja": "組み合わせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "suggest",
+          "ja": "提案する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "creative",
+          "ja": "創造的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cooperative",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "create a large artwork",
+          "ja": "大きな作品を制作する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "paint on a canvas",
+          "ja": "キャンバスに描く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mix different colors",
+          "ja": "異なる色を混ぜる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare the paint",
+          "ja": "絵の具を準備する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give some advice",
+          "ja": "アドバイスをする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the sketchbook",
+          "ja": "スケッチブックを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare the colors",
+          "ja": "色を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work on a project",
+          "ja": "作品制作に取り組む",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are working together on an art project after school.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは放課後に共同で美術作品を制作しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl is carefully painting a large scene on the canvas.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "女子生徒はキャンバスに大きな絵を注意深く描いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her partner is mixing blue and green paint on a palette.",
+          "grammar": "現在進行形",
+          "ja": "パートナーはパレットで青と緑の絵の具を混ぜています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be preparing the next color for the painting.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼は絵に使う次の色を準備しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The teacher is giving the students advice about their design.",
+          "grammar": "give A B",
+          "ja": "先生は生徒たちにデザインについてアドバイスしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is pointing at a sketch while explaining the composition.",
+          "grammar": "while＋現在分詞",
+          "ja": "先生は構図を説明しながらスケッチを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several art supplies are arranged neatly on the worktable.",
+          "grammar": "受動態",
+          "ja": "いくつかの画材が作業机にきれいに並べられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students seem focused and interested in improving their artwork.",
+          "grammar": "seem＋形容詞 / be interested in",
+          "ja": "生徒たちは作品をより良くすることに集中し、興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "composition",
+          "ja": "構図",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "palette",
+          "ja": "色彩・パレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対比",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "perspective",
+          "ja": "遠近法",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "medium",
+          "ja": "画材・表現媒体",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "refine",
+          "ja": "洗練する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "blend",
+          "ja": "色を滑らかに混ぜる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evaluate",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "incorporate",
+          "ja": "取り入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illustrate",
+          "ja": "視覚的に表現する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "absorbed",
+          "ja": "夢中になった",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "engaged",
+          "ja": "熱心に取り組んでいる",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "imaginative",
+          "ja": "想像力豊かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "harmonious",
+          "ja": "調和の取れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "collaborative",
+          "ja": "協働的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "collaborate on a visual project",
+          "ja": "視覚作品を共同制作する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "refine the overall composition",
+          "ja": "全体の構図を洗練する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "blend complementary colors",
+          "ja": "相性のよい色を混ぜ合わせる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evaluate the color balance",
+          "ja": "色のバランスを評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "incorporate natural elements",
+          "ja": "自然の要素を取り入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "provide constructive feedback",
+          "ja": "建設的な助言をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refer to a preliminary sketch",
+          "ja": "下絵を参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear deeply absorbed",
+          "ja": "深く集中しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "develop an imaginative concept",
+          "ja": "想像力豊かな構想を発展させる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The students are collaborating on a large visual project that combines urban and natural elements.",
+          "grammar": "関係代名詞that",
+          "ja": "生徒たちは都市と自然の要素を組み合わせた大きな視覚作品を共同制作しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The female student appears deeply absorbed as she adds fine details to the canvas.",
+          "grammar": "appear＋補語 / as節",
+          "ja": "女子生徒はキャンバスに細かな描写を加えながら、深く集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her partner is blending blue and green pigments in an attempt to achieve a harmonious tone.",
+          "grammar": "in an attempt to",
+          "ja": "パートナーは調和の取れた色調を作るため、青と緑の顔料を混ぜています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is comparing the mixture with the existing colors before applying it to the artwork.",
+          "grammar": "before＋動名詞",
+          "ja": "彼は作品に色を塗る前に、混ぜた色と現在の色を比較しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is providing constructive feedback while referring to a preliminary sketch in the notebook.",
+          "grammar": "while＋現在分詞",
+          "ja": "先生はノートの下絵を参照しながら、建設的な助言をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher appears to be encouraging the students to refine the balance and perspective of the composition.",
+          "grammar": "appear to be＋現在分詞 / encourage＋O＋to",
+          "ja": "先生は構図のバランスや遠近感をより洗練するよう、生徒たちに促しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A range of artistic materials has been arranged across the worktable, suggesting that the students are experimenting with several techniques.",
+          "grammar": "現在完了受動態 / suggest that",
+          "ja": "さまざまな画材が机に並べられており、生徒たちが複数の技法を試していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The late-afternoon light entering through the windows creates a calm and productive atmosphere in the classroom.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "窓から差し込む夕方の光が、美術室に落ち着いて創作に集中できる雰囲気を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how artistic education can encourage creativity, cooperation, and the thoughtful exchange of ideas.",
+          "grammar": "how節",
+          "ja": "この場面は、美術教育が創造性や協力、考えを丁寧に交換する力を促すことを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "painting_girl": {
+      "x": 36,
+      "y": 52
+    },
+    "canvas": {
+      "x": 45,
+      "y": 42
+    },
+    "paintbrush": {
+      "x": 39,
+      "y": 51
+    },
+    "boy": {
+      "x": 62,
+      "y": 54
+    },
+    "palette": {
+      "x": 60,
+      "y": 62
+    },
+    "teacher": {
+      "x": 76,
+      "y": 47
+    },
+    "sketchbook": {
+      "x": 72,
+      "y": 55
+    },
+    "art_supplies": {
+      "x": 57,
+      "y": 72
+    },
+    "drying_rack": {
+      "x": 87,
+      "y": 40
+    },
+    "windows": {
+      "x": 24,
+      "y": 20
+    }
+  }
+}

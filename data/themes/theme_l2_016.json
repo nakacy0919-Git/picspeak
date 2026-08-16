@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_016",
+  "imageSrc": "assets/images/l2_016.webp",
+  "titleEn": "Lake Kayak Adventure",
+  "titleJa": "湖のカヤック体験",
+  "description": "晴れた日の静かな湖で、3人の高校生がカヤックを楽しんでいる。中央では男子生徒が赤いカヤックに乗り、パドルを使って湖面を進んでいる。岸辺では女子生徒が黄色いカヤックを水に押し出しながら乗る準備をしている。もう一人の女子生徒は木製の桟橋に立ち、スマートフォンで友人と湖の景色を撮影している。3人ともライフジャケットを着用しており、周囲には山、森林、桟橋、水鳥、浮き輪型の安全ブイなどが見える。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage students enjoying a kayaking activity on a beautiful calm lake in Japan on a clear sunny day. Do not include any additional people. The atmosphere should be adventurous, peaceful, safe, and positive. In the main foreground and middle-ground scene, a teenage boy wearing a properly fastened life jacket is sitting in a red single-person kayak a short distance from the shore. He is holding a double-bladed paddle correctly and paddling across the calm water. Small ripples should be visible around the kayak, making his movement easy to understand. Near the shore, a teenage girl wearing a life jacket is carefully pushing a yellow kayak into the shallow water while holding its side, clearly preparing to get into it. A paddle is resting safely inside or beside the kayak. On a small wooden dock nearby, a second teenage girl wearing outdoor clothes and a life jacket is holding a smartphone horizontally and taking a photograph of her friends and the beautiful lake scenery. She should look excited and impressed by the view. Include visually rich environmental details without adding more people: clear blue lake water, forest-covered mountains, green trees, rocks along the shore, a wooden dock, two kayaks, several paddles, life jackets, a waterproof bag, a reusable water bottle, a small safety sign with simple symbols, floating safety buoys, and a few distant water birds. The three activities must be visually distinct and easy to describe: one student paddling, one student launching a kayak, and one student taking photographs. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no crowds, no speech bubbles, no captions required for understanding, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "lake",
+          "ja": "湖",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "kayak",
+          "ja": "カヤック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paddle",
+          "ja": "パドル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "jacket",
+          "ja": "ジャケット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ride",
+          "ja": "乗る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "push",
+          "ja": "押す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ride a kayak",
+          "ja": "カヤックに乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "paddle on the lake",
+          "ja": "湖でパドルをこぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push the kayak",
+          "ja": "カヤックを押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a life jacket",
+          "ja": "ライフジャケットを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "beautiful lake",
+          "ja": "美しい湖",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "green mountains",
+          "ja": "緑の山々",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "wooden dock",
+          "ja": "木製の桟橋",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are enjoying the lake.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が湖で楽しんでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is riding a kayak.",
+          "grammar": "現在進行形",
+          "ja": "男の子がカヤックに乗っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is using a paddle.",
+          "grammar": "現在進行形",
+          "ja": "彼はパドルを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is pushing a yellow kayak.",
+          "grammar": "現在進行形",
+          "ja": "女の子が黄色いカヤックを押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is taking a picture.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are wearing life jackets.",
+          "grammar": "現在進行形",
+          "ja": "3人はライフジャケットを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are mountains behind the lake.",
+          "grammar": "There are",
+          "ja": "湖の後ろには山々があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "kayaking",
+          "ja": "カヤック",
+          "type": "activity",
+          "points": 10
+        },
+        {
+          "text": "shore",
+          "ja": "岸",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "dock",
+          "ja": "桟橋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "life jacket",
+          "ja": "ライフジャケット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scenery",
+          "ja": "景色",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "paddle",
+          "ja": "パドルをこぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "launch",
+          "ja": "水に出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explore",
+          "ja": "探索する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "わくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "relaxed",
+          "ja": "くつろいだ",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "impressed",
+          "ja": "感動した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "calm",
+          "ja": "穏やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "go kayaking",
+          "ja": "カヤックをする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "paddle across the lake",
+          "ja": "湖をパドルで進む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "launch a kayak",
+          "ja": "カヤックを水に出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare to get in",
+          "ja": "乗る準備をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a life jacket",
+          "ja": "ライフジャケットを着用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph her friends",
+          "ja": "友達を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the scenery",
+          "ja": "景色を楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stand on the dock",
+          "ja": "桟橋に立つ",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are enjoying a kayaking activity at a mountain lake.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が山の湖でカヤックを楽しんでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is paddling across the calm lake in a red kayak.",
+          "grammar": "現在進行形",
+          "ja": "男子生徒は赤いカヤックで穏やかな湖を進んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is wearing a life jacket to stay safe on the water.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "彼は水上で安全に過ごすためライフジャケットを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is pushing a yellow kayak into the shallow water.",
+          "grammar": "現在進行形",
+          "ja": "一人の女子生徒は黄色いカヤックを浅い水の中へ押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be preparing to start kayaking.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼女はカヤックを始める準備をしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The other girl is standing on the dock and taking photographs.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒は桟橋に立って写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks impressed by the beautiful mountain scenery.",
+          "grammar": "look＋形容詞 / by",
+          "ja": "彼女は美しい山の景色に感動しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The calm water and safety equipment suggest that the students are enjoying the activity responsibly.",
+          "grammar": "suggest that",
+          "ja": "穏やかな湖と安全装備から、生徒たちが安全に活動を楽しんでいることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "watercraft",
+          "ja": "小型船舶",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shoreline",
+          "ja": "湖岸",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "buoyancy",
+          "ja": "浮力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "landscape",
+          "ja": "景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "maneuver",
+          "ja": "巧みに操る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "propel",
+          "ja": "前進させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "launch",
+          "ja": "進水させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "capture",
+          "ja": "写真に収める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "進路を取りながら進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exhilarated",
+          "ja": "爽快でわくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "captivated",
+          "ja": "魅了された",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "tranquil",
+          "ja": "穏やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "picturesque",
+          "ja": "絵のように美しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "recreational",
+          "ja": "レクリエーションの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "participate in a recreational activity",
+          "ja": "レクリエーション活動に参加する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "propel the kayak forward",
+          "ja": "カヤックを前進させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maneuver the watercraft",
+          "ja": "カヤックを巧みに操る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "launch the kayak from the shoreline",
+          "ja": "湖岸からカヤックを進水させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear appropriate safety equipment",
+          "ja": "適切な安全装備を着用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "capture the picturesque landscape",
+          "ja": "絵のように美しい景観を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear captivated by the view",
+          "ja": "景色に魅了されているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "navigate across tranquil water",
+          "ja": "穏やかな湖面を進む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "engage in outdoor recreation",
+          "ja": "屋外レクリエーションを楽しむ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are participating in a recreational kayaking activity in a picturesque mountain setting.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒は絵のように美しい山の環境でカヤック活動に参加しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is using a double-bladed paddle to propel his kayak across the tranquil water.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "男子生徒は両側にブレードのあるパドルを使い、穏やかな湖面でカヤックを前進させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears confident as he maneuvers the watercraft a short distance from the shoreline.",
+          "grammar": "appear＋補語 / as節",
+          "ja": "彼は湖岸から少し離れた場所でカヤックを操り、自信があるように見えます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "One of his companions is carefully launching another kayak from the shallow water near the shore.",
+          "grammar": "現在進行形",
+          "ja": "同行している女子生徒の一人は、岸近くの浅瀬から別のカヤックを注意深く進水させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her posture suggests that she is preparing to board the kayak and join her friend on the lake.",
+          "grammar": "suggest that / prepare to",
+          "ja": "彼女の姿勢から、カヤックに乗り、湖上の友人に加わる準備をしていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is standing on the wooden dock and using her smartphone to capture the surrounding landscape.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "その一方で、3人目の生徒は木製の桟橋に立ち、周囲の景観をスマートフォンで撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears captivated by the forest-covered mountains and the calm surface of the lake.",
+          "grammar": "appear＋補語",
+          "ja": "彼女は森林に覆われた山々と穏やかな湖面に魅了されているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "All three students are wearing appropriate safety equipment, indicating that they are taking reasonable precautions while participating in the activity.",
+          "grammar": "分詞構文 / while＋現在分詞",
+          "ja": "3人全員が適切な安全装備を着用しており、活動中に十分な安全対策を取っていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how outdoor recreation can combine physical exercise, exploration, photography, and an appreciation of the natural environment.",
+          "grammar": "how節 / combine A, B, C and D",
+          "ja": "この場面は、屋外レクリエーションが運動、探索、写真撮影、自然環境を楽しむことを組み合わせられることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 46,
+      "y": 52
+    },
+    "red_kayak": {
+      "x": 48,
+      "y": 67
+    },
+    "paddle": {
+      "x": 47,
+      "y": 54
+    },
+    "launching_girl": {
+      "x": 25,
+      "y": 60
+    },
+    "yellow_kayak": {
+      "x": 27,
+      "y": 71
+    },
+    "photographer_girl": {
+      "x": 75,
+      "y": 48
+    },
+    "smartphone": {
+      "x": 76,
+      "y": 41
+    },
+    "wooden_dock": {
+      "x": 73,
+      "y": 67
+    },
+    "mountains": {
+      "x": 56,
+      "y": 18
+    },
+    "safety_buoys": {
+      "x": 63,
+      "y": 69
+    }
+  }
+}

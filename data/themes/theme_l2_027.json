@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_027",
+  "imageSrc": "assets/images/l2_027.webp",
+  "titleEn": "Basketball Club Practice",
+  "titleJa": "バスケ部の放課後",
+  "description": "放課後の高校体育館で、バスケットボール部の3人の生徒が自主練習をしている。中央では男子生徒がジャンプシュートを打っており、ボールはゴールへ向かって飛んでいる。左側の女子生徒はカラーコーンの間をジグザグにドリブルしながらボールコントロールの練習をしている。右側の男子生徒はリバウンド練習のためゴール下で構えながら、壁のホワイトボードに書かれた練習メニューも確認している。体育館にはバスケットゴール、ボールラック、カラーコーン、水筒、タオル、スポーツバッグ、ストップウォッチなどがあり、本格的な部活動の雰囲気が伝わる。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three Japanese high school students practicing with their basketball club inside a bright school gymnasium after school. Do not include any additional visible people. The atmosphere should be energetic, disciplined, athletic, cooperative, and positive. All three students should wear matching school basketball practice uniforms and indoor basketball shoes. In the center foreground, a teenage boy is performing a jump shot. He is clearly airborne with both arms extended upward after releasing the basketball, and the ball is visibly traveling in a natural arc toward the basketball hoop. On the left side, a teenage girl is practicing ball-handling by dribbling a second basketball in a clear zigzag course through five colorful training cones. Her body should be slightly lowered in an athletic stance, her eyes looking forward, and one hand controlling the ball. On the right side, another teenage boy is standing underneath and slightly beside the basket in a ready position for a rebound drill, with his knees bent and both hands raised. He is watching the ball that the central player has just shot. Make the three roles visually clear: one player taking a jump shot, one player practicing dribbling through cones, and one player preparing to collect the rebound. Include exactly two basketballs in active use: one flying toward the hoop and one being dribbled. Additional basketballs may be neatly stored on a ball rack in the background. Include one basketball hoop with backboard and net, court lines, five training cones, a ball rack, three reusable water bottles, towels, sports bags, a stopwatch resting on a bench, and a small whiteboard showing a simple practice plan with nonessential icons such as shooting, dribbling, passing, and conditioning. Large gym windows should show warm late-afternoon sunlight entering the gym. Add polished wooden flooring with realistic reflections and clear court markings. The scene must look like organized Japanese high school club practice rather than a professional match. Exactly three visible people. No coach, no spectators, no additional players, no animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style, realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "basketball",
+          "ja": "バスケットボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "gym",
+          "ja": "体育館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "basket",
+          "ja": "ゴール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cone",
+          "ja": "コーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shoes",
+          "ja": "シューズ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "towel",
+          "ja": "タオル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shoot",
+          "ja": "シュートする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "jump",
+          "ja": "跳ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dribble",
+          "ja": "ドリブルする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ready",
+          "ja": "準備ができた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "play basketball",
+          "ja": "バスケットボールをする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "shoot the ball",
+          "ja": "ボールをシュートする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "jump in the air",
+          "ja": "空中にジャンプする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dribble the ball",
+          "ja": "ボールをドリブルする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run around the cones",
+          "ja": "コーンの間を走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand under the basket",
+          "ja": "ゴールの下に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "practice after school",
+          "ja": "放課後に練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "basketball club",
+          "ja": "バスケットボール部",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are practicing basketball.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒がバスケットボールを練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is shooting the ball.",
+          "grammar": "現在進行形",
+          "ja": "男の子がボールをシュートしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is jumping in the air.",
+          "grammar": "現在進行形",
+          "ja": "彼は空中にジャンプしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is dribbling a basketball.",
+          "grammar": "現在進行形",
+          "ja": "女の子がバスケットボールをドリブルしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is moving around the cones.",
+          "grammar": "現在進行形",
+          "ja": "彼女はコーンの間を動いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another boy is standing under the basket.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の男の子がゴールの下に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is waiting for the ball.",
+          "grammar": "現在進行形",
+          "ja": "彼はボールを待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are practicing after school.",
+          "grammar": "現在進行形",
+          "ja": "3人は放課後に練習しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "practice",
+          "ja": "練習",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "teammate",
+          "ja": "チームメート",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "court",
+          "ja": "コート",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "hoop",
+          "ja": "バスケットゴール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rebound",
+          "ja": "リバウンド",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "aim",
+          "ja": "狙う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dribble",
+          "ja": "ドリブルする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "control",
+          "ja": "コントロールする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "collect",
+          "ja": "拾う・取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "improve",
+          "ja": "向上させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "active",
+          "ja": "活発な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "quick",
+          "ja": "素早い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "athletic",
+          "ja": "運動能力の高い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice with the basketball club",
+          "ja": "バスケットボール部で練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "take a jump shot",
+          "ja": "ジャンプシュートを打つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "aim at the basket",
+          "ja": "ゴールを狙う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dribble through the cones",
+          "ja": "コーンの間をドリブルする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve ball control",
+          "ja": "ボールコントロールを向上させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for a rebound",
+          "ja": "リバウンドに備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the ball carefully",
+          "ja": "ボールを注意深く見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow the practice plan",
+          "ja": "練習メニューに従う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are practicing with their basketball club after school.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒は放課後にバスケットボール部で練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The central player is taking a jump shot toward the basket.",
+          "grammar": "現在進行形",
+          "ja": "中央の選手がゴールに向かってジャンプシュートを打っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The basketball is flying through the air toward the hoop.",
+          "grammar": "現在進行形",
+          "ja": "バスケットボールがゴールに向かって飛んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is dribbling through several cones to improve her ball control.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "女子生徒はボールコントロールを向上させるため、複数のコーンの間をドリブルしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks focused while moving through the course.",
+          "grammar": "look＋形容詞 / while",
+          "ja": "彼女はコースを進みながら集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The other boy is preparing to catch the rebound.",
+          "grammar": "prepare to＋動詞",
+          "ja": "もう一人の男子生徒はリバウンドを取る準備をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is watching the ball carefully with both hands raised.",
+          "grammar": "with＋O＋過去分詞",
+          "ja": "彼は両手を上げてボールを注意深く見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The training equipment suggests that they are working on several different basketball skills.",
+          "grammar": "suggest that",
+          "ja": "練習用具から、3人がさまざまなバスケットボール技術を練習していることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "coordination",
+          "ja": "身体の協調性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "agility",
+          "ja": "敏捷性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accuracy",
+          "ja": "正確性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "technique",
+          "ja": "技術",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "repetition",
+          "ja": "反復練習",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "execute",
+          "ja": "正確に実行する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "maneuver",
+          "ja": "巧みに動く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "anticipate",
+          "ja": "予測する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "refine",
+          "ja": "磨きをかける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disciplined",
+          "ja": "規律正しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concentrated",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "agile",
+          "ja": "敏捷な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "consistent",
+          "ja": "安定した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "competitive",
+          "ja": "競技的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "participate in structured club practice",
+          "ja": "計画的な部活動練習に参加する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "execute a jump shot",
+          "ja": "ジャンプシュートを決める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine shooting accuracy",
+          "ja": "シュート精度を高める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maneuver through training cones",
+          "ja": "練習用コーンの間を巧みに進む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop agility and coordination",
+          "ja": "敏捷性と協調性を高める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "anticipate the rebound",
+          "ja": "リバウンドを予測する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain a ready stance",
+          "ja": "準備姿勢を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine individual techniques",
+          "ja": "個人技術を磨く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "follow a disciplined training routine",
+          "ja": "規律ある練習メニューに取り組む",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three club members are participating in a structured basketball practice designed to refine different individual techniques.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "3人の部員は、それぞれ異なる個人技術を磨くための計画的なバスケットボール練習に取り組んでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The central player is executing a jump shot while maintaining a balanced shooting posture.",
+          "grammar": "while＋現在分詞",
+          "ja": "中央の選手はバランスの取れたシュート姿勢を保ちながらジャンプシュートを打っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The trajectory of the ball suggests that he is concentrating on both accuracy and shooting technique.",
+          "grammar": "suggest that / both A and B",
+          "ja": "ボールの軌道から、彼がシュートの正確性と技術の両方に集中していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The female player is maneuvering through a series of cones in order to develop greater agility and ball-handling control.",
+          "grammar": "in order to",
+          "ja": "女子選手は敏捷性とボールコントロールを高めるため、一連のコーンの間をドリブルしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her lowered stance and forward gaze indicate that she is concentrating on maintaining control while moving quickly.",
+          "grammar": "indicate that / while＋現在分詞",
+          "ja": "低い姿勢と前方を見る視線から、素早く動きながらボールをコントロールすることに集中していると分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third player is anticipating the rebound and maintaining a ready stance beneath the basket.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の選手はゴール下で準備姿勢を取りながらリバウンドを予測しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His raised hands and bent knees suggest that he is prepared to retrieve the ball immediately after the shot.",
+          "grammar": "suggest that / be prepared to",
+          "ja": "上げた両手と曲げた膝から、シュート後すぐにボールを回収する準備ができていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The cones, ball rack, stopwatch, and practice board indicate a disciplined training routine rather than an informal game.",
+          "grammar": "rather than",
+          "ja": "コーン、ボールラック、ストップウォッチ、練習ボードから、単なる遊びではなく規律ある練習であることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how school club activities can develop athletic ability, concentration, persistence, and teamwork through repeated practice.",
+          "grammar": "how節",
+          "ja": "この場面は、学校の部活動が反復練習を通して運動能力、集中力、粘り強さ、チームワークを育てることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "shooter": {
+      "x": 48,
+      "y": 48
+    },
+    "flying_basketball": {
+      "x": 54,
+      "y": 24
+    },
+    "basketball_hoop": {
+      "x": 71,
+      "y": 22
+    },
+    "dribbling_girl": {
+      "x": 23,
+      "y": 57
+    },
+    "dribbling_ball": {
+      "x": 27,
+      "y": 73
+    },
+    "training_cones": {
+      "x": 17,
+      "y": 73
+    },
+    "rebound_player": {
+      "x": 72,
+      "y": 52
+    },
+    "ball_rack": {
+      "x": 89,
+      "y": 58
+    },
+    "practice_board": {
+      "x": 85,
+      "y": 30
+    },
+    "water_bottles": {
+      "x": 83,
+      "y": 77
+    }
+  }
+}

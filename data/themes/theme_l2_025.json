@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_025",
+  "imageSrc": "assets/images/l2_025.webp",
+  "titleEn": "Garden Trail Break",
+  "titleJa": "木陰でひと休み",
+  "description": "緑豊かな庭園を散策している2人の友人が、大きな木の下にある小さなテーブルで休憩している。左側の男性はベンチに座り、広げた園内マップを見ながら次に歩くルートを確認している。右側の女性は椅子に座り、スマートフォンで先ほど撮影した庭園の写真を確認している。テーブルには水筒、カメラ、小さな双眼鏡が置かれている。周囲には大きく枝を広げた木々、芝生、石造りの小道、遠くの小川、案内標識などがあり、静かで涼しい自然の中で散策を楽しんでいる様子が伝わる。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test, inspired by a peaceful photograph of two people resting beneath large green trees. Show exactly two adult friends taking a break during a walk through a beautiful Japanese garden or forest park on a bright summer afternoon. Do not include any additional visible people. The setting must feature enormous mature trees with wide spreading branches and dense green leaves forming a natural canopy over the scene. Soft sunlight should filter through the leaves and create patches of light and shadow on the grass. In the center foreground, place a small wooden outdoor table with two simple wooden chairs. On the left, an adult man wearing casual outdoor clothes is sitting comfortably and holding an unfolded garden map or walking-route brochure. He is looking down at the map and pointing to one route with his finger, clearly checking where they should walk next. On the right, an adult woman wearing comfortable casual clothes is sitting beside the table and holding a smartphone correctly in both hands with the screen facing toward her. She is reviewing photographs that she took earlier during their walk, and the phone screen may show simple images of trees, flowers, and a stream. She should look relaxed and pleased. On the table, place two reusable water bottles, a compact camera, and a small pair of binoculars. Nearby, include a small backpack resting beside one chair. In the background, show a quiet garden path, moss-covered stones, a shallow stream partly visible through the trees, a simple wooden direction sign, bushes, ferns, wildflowers, and thick vegetation. The two activities must be visually distinct and easy to describe: the man checking the walking route and the woman reviewing nature photographs. The environment itself should provide additional speaking-test details through the large trees, shade, grass, pathway, stream, and outdoor equipment. Exactly two visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but uncluttered, peaceful natural atmosphere, expressive and natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "park",
+          "ja": "公園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "grass",
+          "ja": "芝生",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rest",
+          "ja": "休む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "sit under a tree",
+          "ja": "木の下に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at a map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at her phone",
+          "ja": "スマートフォンを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a break",
+          "ja": "休憩する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "walk in the park",
+          "ja": "公園を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "big green trees",
+          "ja": "大きな緑の木々",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "two water bottles",
+          "ja": "2本の水筒",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "small wooden table",
+          "ja": "小さな木のテーブル",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two people are resting in a park.",
+          "grammar": "現在進行形",
+          "ja": "2人が公園で休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is looking at a map.",
+          "grammar": "現在進行形",
+          "ja": "男性が地図を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is sitting under a big tree.",
+          "grammar": "現在進行形",
+          "ja": "彼は大きな木の下に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is looking at her phone.",
+          "grammar": "現在進行形",
+          "ja": "女性がスマートフォンを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a table between them.",
+          "grammar": "There is",
+          "ja": "2人の間にテーブルがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many green trees.",
+          "grammar": "There are",
+          "ja": "緑の木がたくさんあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They have some water.",
+          "grammar": "have＋名詞",
+          "ja": "2人は水を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look relaxed.",
+          "grammar": "look＋形容詞",
+          "ja": "2人はリラックスしているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "garden",
+          "ja": "庭園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "path",
+          "ja": "小道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "stream",
+          "ja": "小川",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "ルート",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "camera",
+          "ja": "カメラ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shade",
+          "ja": "木陰",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "review",
+          "ja": "見直す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explore",
+          "ja": "散策する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "relaxed",
+          "ja": "リラックスした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "refreshed",
+          "ja": "気分がすっきりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "peaceful",
+          "ja": "穏やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "shady",
+          "ja": "日陰の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "natural",
+          "ja": "自然の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "take a break from walking",
+          "ja": "散策の途中で休憩する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "check the walking route",
+          "ja": "散策ルートを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the map",
+          "ja": "地図を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "review her photographs",
+          "ja": "撮った写真を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the shade",
+          "ja": "木陰で涼む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explore the garden",
+          "ja": "庭園を散策する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "sit beside a stream",
+          "ja": "小川のそばに座る",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "enjoy the natural scenery",
+          "ja": "自然の景色を楽しむ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two friends are taking a break during a walk through the garden.",
+          "grammar": "現在進行形 / during",
+          "ja": "2人の友人は庭園散策の途中で休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is checking a map to decide where they should go next.",
+          "grammar": "to不定詞 / 間接疑問",
+          "ja": "男性は次にどこへ行くか決めるために地図を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is pointing at one of the walking routes.",
+          "grammar": "現在進行形",
+          "ja": "彼は散策ルートの一つを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is reviewing photographs on her smartphone.",
+          "grammar": "現在進行形",
+          "ja": "女性はスマートフォンで写真を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be looking at pictures that she took earlier.",
+          "grammar": "appear to be / 関係代名詞that",
+          "ja": "彼女は先ほど撮った写真を見ているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their water bottles and camera are on the table.",
+          "grammar": "be動詞＋場所",
+          "ja": "水筒とカメラがテーブルの上にあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The large trees provide plenty of shade around the seating area.",
+          "grammar": "現在形",
+          "ja": "大きな木々が休憩場所にたくさんの木陰を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two friends seem relaxed after walking through the park.",
+          "grammar": "seem＋形容詞 / after＋動名詞",
+          "ja": "2人は公園を歩いた後、リラックスしているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "canopy",
+          "ja": "樹冠・木々の覆い",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vegetation",
+          "ja": "植生",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "tranquility",
+          "ja": "静けさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "itinerary",
+          "ja": "行程",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "footpath",
+          "ja": "散策路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "道を判断して進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "review",
+          "ja": "見直す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "capture",
+          "ja": "写真に収める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replenish",
+          "ja": "回復させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "serene",
+          "ja": "穏やかで静かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "secluded",
+          "ja": "人里離れた静かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "lush",
+          "ja": "青々と茂った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "refreshed",
+          "ja": "元気を取り戻した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "contemplative",
+          "ja": "考えにふけった",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "pause beneath a dense tree canopy",
+          "ja": "深い木々の覆いの下で休憩する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "consult a detailed garden map",
+          "ja": "詳しい庭園地図を参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "plan the next stage of the walk",
+          "ja": "次の散策ルートを計画する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "review recently captured photographs",
+          "ja": "最近撮影した写真を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appreciate the lush vegetation",
+          "ja": "青々とした植生を楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "rest in a secluded setting",
+          "ja": "静かな場所で休憩する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "replenish their energy",
+          "ja": "体力を回復する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the surrounding tranquility",
+          "ja": "周囲の静けさを楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "combine recreation with nature appreciation",
+          "ja": "レジャーと自然観察を組み合わせる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two visitors have paused beneath a dense tree canopy while exploring a tranquil garden.",
+          "grammar": "現在完了形 / while＋現在分詞",
+          "ja": "2人の訪問者は静かな庭園を散策する途中、深い木陰で休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is consulting a detailed map in order to determine the next stage of their walking itinerary.",
+          "grammar": "in order to",
+          "ja": "男性は次の散策行程を決めるため、詳しい地図を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His gesture suggests that he is comparing several possible routes through the garden.",
+          "grammar": "suggest that",
+          "ja": "彼のしぐさから、庭園内の複数のルートを比較していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, his companion is reviewing photographs that she captured earlier in the day.",
+          "grammar": "関係代名詞that",
+          "ja": "その一方で、同行者はその日に先ほど撮影した写真を見直しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears pleased with the images of the surrounding vegetation and natural scenery.",
+          "grammar": "appear＋補語",
+          "ja": "彼女は周囲の植物や自然景観を撮影した写真に満足しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The water bottles, camera, and binoculars on the table indicate that the pair are spending an extended period exploring the outdoors.",
+          "grammar": "indicate that",
+          "ja": "テーブル上の水筒、カメラ、双眼鏡から、2人が長い時間をかけて屋外を散策していることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The enormous branches overhead create a shaded and secluded resting area surrounded by lush vegetation.",
+          "grammar": "過去分詞修飾",
+          "ja": "頭上に広がる巨大な枝が、青々とした植物に囲まれた静かな木陰の休憩場所を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The pair may be using the break to replenish their energy before continuing along the garden footpath.",
+          "grammar": "may be＋現在分詞 / before＋動名詞",
+          "ja": "2人は庭園の散策路を歩き続ける前に、休憩して体力を回復しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an outdoor excursion can provide opportunities for physical activity, relaxation, navigation, and appreciation of nature.",
+          "grammar": "how節 / provide opportunities for",
+          "ja": "この場面は、屋外へのお出かけが運動、休息、道の確認、自然を楽しむ機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man": {
+      "x": 45,
+      "y": 61
+    },
+    "garden_map": {
+      "x": 45,
+      "y": 67
+    },
+    "woman": {
+      "x": 66,
+      "y": 61
+    },
+    "smartphone": {
+      "x": 64,
+      "y": 65
+    },
+    "wooden_table": {
+      "x": 55,
+      "y": 70
+    },
+    "water_bottles": {
+      "x": 54,
+      "y": 67
+    },
+    "large_tree": {
+      "x": 72,
+      "y": 24
+    },
+    "tree_canopy": {
+      "x": 50,
+      "y": 12
+    },
+    "garden_path": {
+      "x": 23,
+      "y": 76
+    },
+    "stream": {
+      "x": 82,
+      "y": 70
+    }
+  }
+}

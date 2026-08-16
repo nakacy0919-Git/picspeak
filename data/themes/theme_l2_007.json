@@ -1,0 +1,680 @@
+{
+  "id": "theme_l2_007",
+  "imageSrc": "assets/images/l2_007.webp",
+  "titleEn": "Missed the Bus",
+  "titleJa": "バスに乗り遅れた！",
+  "description": "混雑したバスターミナルで、女子学生が発車したばかりのバスを見ながらショックを受けている。彼女はスマートフォンと乗車券を手に持ち、友人が時刻表を指さしながら次のバスを確認している。背景では、高齢男性のスーツケースの車輪が壊れ、近くの男性が持ち上げるのを手伝っている。別の女性は買い物袋を落として果物を地面に散らし、子どもが転がったリンゴを拾っている。さらに、突然の雨で傘を持っていない親子が屋根の下へ走り、ベンチでは男性が眠ってしまい自分のバスに気づいていない。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a busy modern bus terminal in a Japanese city during the late afternoon. The main event must be very clear in the foreground: a teenage schoolgirl has just missed her bus. A city bus is pulling away from the platform in the middle distance. The girl is standing near the bus stop with a shocked, disappointed, and frustrated expression, holding a smartphone in one hand and a bus ticket in the other. She is looking toward the departing bus. Her teenage friend is standing beside her and pointing at a timetable, apparently checking when the next bus will arrive. Include several clear background sub-stories happening at the same time. On the left, the wheel of an elderly man's large suitcase has broken, and a younger man is helping him lift the heavy suitcase. Nearby, a woman has accidentally dropped a shopping bag, causing several apples and oranges to roll across the pavement, while a child is bending down to pick up one of the apples. On the right, light rain has suddenly started, and a parent and child without umbrellas are running toward the covered waiting area while trying to protect themselves from the rain. Near a bench, a tired businessman has fallen asleep and does not notice that another bus is arriving at his stop. A nearby passenger is looking at him as if wondering whether to wake him up. Include buses, bus-stop signs, a timetable, benches, luggage, shopping bags, umbrellas, smartphones, tickets, road markings, and several waiting passengers. Make every action, object, and facial expression visually distinct and easy to describe. Clear foreground, middle ground, and background. Approximately 10 to 13 visible people. No speech bubbles, no captions, no readable brand names, no copyrighted logos or characters. Landscape 16:9 composition, colorful clean educational illustration style, highly detailed but uncluttered, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bus",
+          "ja": "バス",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ticket",
+          "ja": "切符",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "袋・かばん",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "apple",
+          "ja": "リンゴ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "suitcase",
+          "ja": "スーツケース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rain",
+          "ja": "雨",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "umbrella",
+          "ja": "傘",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sleep",
+          "ja": "眠る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "miss the bus",
+          "ja": "バスに乗り遅れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look at the bus",
+          "ja": "バスを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the timetable",
+          "ja": "時刻表を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a suitcase",
+          "ja": "スーツケースを運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop a bag",
+          "ja": "袋を落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up an apple",
+          "ja": "リンゴを拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run from the rain",
+          "ja": "雨から逃げるように走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sleep on a bench",
+          "ja": "ベンチで眠る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The girl missed her bus.",
+          "grammar": "過去形",
+          "ja": "女の子はバスに乗り遅れました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She looks very sad.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女はとても悲しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is looking at the timetable.",
+          "grammar": "現在進行形",
+          "ja": "友達が時刻表を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is helping an old man.",
+          "grammar": "現在進行形",
+          "ja": "男性が高齢の男性を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman dropped her shopping bag.",
+          "grammar": "過去形",
+          "ja": "女性が買い物袋を落としました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child is picking up an apple.",
+          "grammar": "現在進行形",
+          "ja": "子どもがリンゴを拾っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two people are running in the rain.",
+          "grammar": "現在進行形",
+          "ja": "2人が雨の中を走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is sleeping on a bench.",
+          "grammar": "現在進行形",
+          "ja": "男性がベンチで眠っています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "passenger",
+          "ja": "乗客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "terminal",
+          "ja": "ターミナル",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "timetable",
+          "ja": "時刻表",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "luggage",
+          "ja": "荷物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wheel",
+          "ja": "車輪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "depart",
+          "ja": "出発する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "miss",
+          "ja": "乗り遅れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scatter",
+          "ja": "散らばる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shelter",
+          "ja": "雨宿りする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wake",
+          "ja": "起こす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disappointed",
+          "ja": "がっかりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "frustrated",
+          "ja": "いら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "broken",
+          "ja": "壊れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "miss the last bus",
+          "ja": "バスに乗り遅れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "watch the bus leave",
+          "ja": "バスが出発するのを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the next departure",
+          "ja": "次の出発時刻を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "have a broken suitcase wheel",
+          "ja": "スーツケースの車輪が壊れている",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "scatter fruit on the ground",
+          "ja": "果物を地面に散らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up the fallen fruit",
+          "ja": "落ちた果物を拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run for shelter",
+          "ja": "雨宿りできる場所へ走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fall asleep on the bench",
+          "ja": "ベンチで眠ってしまう",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The student has missed her bus and is watching it leave the terminal.",
+          "grammar": "現在完了形 / 現在進行形",
+          "ja": "その生徒はバスに乗り遅れ、ターミナルから出ていくバスを見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She looks disappointed because she arrived at the bus stop too late.",
+          "grammar": "because＋過去形",
+          "ja": "バス停に着くのが遅すぎたため、彼女はがっかりしているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is checking the timetable to find out when the next bus will arrive.",
+          "grammar": "to不定詞 / 間接疑問",
+          "ja": "友達は次のバスがいつ到着するか確認するために時刻表を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A younger man is helping an elderly passenger whose suitcase wheel has broken.",
+          "grammar": "関係代名詞whose",
+          "ja": "若い男性がスーツケースの車輪が壊れた高齢の乗客を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman's fruit has scattered across the pavement after she dropped her shopping bag.",
+          "grammar": "現在完了形 / after節",
+          "ja": "女性が買い物袋を落としたため、果物が歩道に散らばっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child is helping her by picking up an apple that rolled away.",
+          "grammar": "by＋動名詞 / 関係代名詞that",
+          "ja": "子どもが転がっていったリンゴを拾って女性を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A parent and child are running toward the covered area because it has started to rain.",
+          "grammar": "because＋現在完了形",
+          "ja": "雨が降り始めたため、親子が屋根のある場所へ走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A tired passenger may miss his bus because he has fallen asleep on the bench.",
+          "grammar": "may＋動詞 / because＋現在完了形",
+          "ja": "疲れた乗客はベンチで眠ってしまったため、バスに乗り遅れるかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "commuter",
+          "ja": "通勤・通学客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "departure",
+          "ja": "出発",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "schedule",
+          "ja": "運行予定",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "baggage",
+          "ja": "手荷物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shelter",
+          "ja": "避難場所・雨宿り場所",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "strand",
+          "ja": "足止めする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "拾い集める・回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assist",
+          "ja": "援助する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "doze",
+          "ja": "うたた寝する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dismayed",
+          "ja": "落胆した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "exasperated",
+          "ja": "ひどくいら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "oblivious",
+          "ja": "気づいていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inconvenient",
+          "ja": "不都合な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "miss the scheduled departure",
+          "ja": "予定された便に乗り遅れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "appear visibly dismayed",
+          "ja": "明らかに落胆しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "consult the bus schedule",
+          "ja": "バスの運行表を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cope with damaged luggage",
+          "ja": "壊れた荷物に対処する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve scattered groceries",
+          "ja": "散らばった食料品を拾い集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "seek shelter from the rain",
+          "ja": "雨を避ける場所を求める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain oblivious to the arriving bus",
+          "ja": "到着するバスに気づかないままでいる",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "risk missing his departure",
+          "ja": "出発便に乗り遅れる恐れがある",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "deal with multiple setbacks",
+          "ja": "複数のトラブルに対処する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The student appears visibly dismayed after narrowly missing her scheduled bus departure.",
+          "grammar": "appear＋補語 / after＋動名詞",
+          "ja": "その生徒は予定していたバスにわずかな差で乗り遅れ、明らかに落胆しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is staring helplessly at the vehicle as it pulls away from the terminal.",
+          "grammar": "asを用いた同時進行",
+          "ja": "彼女はバスがターミナルから離れていくのを、どうすることもできず見つめています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her companion is consulting the timetable in an effort to determine how long they will have to wait for the next service.",
+          "grammar": "in an effort to / 間接疑問",
+          "ja": "友人は次の便までどのくらい待つ必要があるのか確認するため、時刻表を調べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Nearby, an elderly passenger is struggling with a suitcase whose damaged wheel has made it extremely difficult to move.",
+          "grammar": "関係代名詞whose / make＋O＋C",
+          "ja": "近くでは、高齢の乗客が壊れた車輪のため非常に動かしにくくなったスーツケースに苦労しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A younger commuter has come to his assistance and is attempting to lift the heavy baggage.",
+          "grammar": "現在完了形 / attempt to",
+          "ja": "若い通勤客が彼を助けに来て、重い荷物を持ち上げようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Elsewhere, a flustered shopper is watching her groceries scatter across the pavement after her bag has torn open.",
+          "grammar": "watch＋O＋原形 / after節",
+          "ja": "別の場所では、慌てた買い物客が袋が破れて食料品が歩道に散らばるのを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A nearby child is retrieving the fallen fruit, demonstrating a willingness to assist a stranger in difficulty.",
+          "grammar": "分詞構文 / demonstrate＋名詞",
+          "ja": "近くの子どもは落ちた果物を拾い、困っている知らない人を助けようとしています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "As the weather suddenly deteriorates, a parent and child are rushing to seek shelter beneath the terminal roof.",
+          "grammar": "as節 / seek＋名詞",
+          "ja": "天候が突然悪化する中、親子はターミナルの屋根の下へ雨宿りするため急いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, a passenger who has dozed off on a bench remains completely oblivious to the bus arriving at his stop.",
+          "grammar": "関係代名詞who / remain＋補語",
+          "ja": "その一方で、ベンチでうたた寝している乗客は、自分のバスが到着していることにまったく気づいていません。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary journey can be disrupted by several unexpected setbacks occurring simultaneously.",
+          "grammar": "how節 / 受動態 / 現在分詞",
+          "ja": "この場面は、いくつもの予想外のトラブルが同時に発生することで、普通の移動がどのように妨げられるかを表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "schoolgirl": {
+      "x": 34,
+      "y": 52
+    },
+    "departing_bus": {
+      "x": 48,
+      "y": 31
+    },
+    "timetable": {
+      "x": 24,
+      "y": 35
+    },
+    "broken_suitcase": {
+      "x": 15,
+      "y": 68
+    },
+    "scattered_fruit": {
+      "x": 64,
+      "y": 75
+    },
+    "shopping_bag": {
+      "x": 68,
+      "y": 63
+    },
+    "running_parent_child": {
+      "x": 82,
+      "y": 50
+    },
+    "sleeping_man": {
+      "x": 88,
+      "y": 66
+    },
+    "bench": {
+      "x": 88,
+      "y": 72
+    },
+    "bus_stop": {
+      "x": 45,
+      "y": 20
+    }
+  }
+}

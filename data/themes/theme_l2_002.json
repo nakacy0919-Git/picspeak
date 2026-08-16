@@ -1,0 +1,652 @@
+{
+  "id": "theme_l2_002",
+  "imageSrc": "assets/images/l2_002.webp",
+  "titleEn": "Birthday Disaster",
+  "titleJa": "誕生日の大事件",
+  "description": "家族で誕生日パーティーの準備をしているリビングで、飼い犬がテーブルにぶつかったため誕生日ケーキが床に落ちてしまい、誕生日を迎えた女の子がショックを受けている。母親は女の子を慰め、父親は床に落ちたケーキを片づけようとしている。背景では、弟が風船を割って驚き、別の子どもがジュースをテーブルにこぼしている。祖母は新しいケーキを作れないかスマートフォンで店を調べており、家族が予想外のトラブルに対応している。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a lively family birthday party taking place in a comfortable modern living room. The main event should be very clear in the foreground: a birthday cake has just fallen from a low table onto the floor after a playful family dog accidentally bumped into the table. The cake is damaged, with cream and decorations scattered on the floor. A young birthday girl wearing a small party hat stands nearby looking shocked, upset, and close to tears. Her mother is gently comforting her with one hand on her shoulder. Her father is kneeling beside the fallen cake and trying to clean up the mess with paper towels. The dog stands nearby looking confused and slightly guilty. Include several clear background sub-stories. On the left side, a younger boy is startled because a balloon has just popped, and he is covering his ears. On the right side, another child has accidentally knocked over a glass of orange juice on the table and is trying to stop it from spreading with a napkin. In the background, an elderly grandmother is looking at a smartphone, apparently searching for a nearby cake shop or replacement cake. Another family member is holding a gift box and looking surprised by the commotion. Include birthday decorations, colorful balloons, wrapped presents, paper plates, party hats, a sofa, a dining table, and family photos. Make the emotions and actions visually obvious and easy to describe. The picture should have one strong central incident plus multiple smaller simultaneous incidents. Clear foreground, middle ground, and background. Approximately 7 to 10 visible people plus one dog. No speech bubbles, no captions, no logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but not cluttered.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "cake",
+          "ja": "ケーキ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "balloon",
+          "ja": "風船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "juice",
+          "ja": "ジュース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "gift",
+          "ja": "プレゼント",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "落ちる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cry",
+          "ja": "泣く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "掃除する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "birthday cake",
+          "ja": "誕生日ケーキ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "fall on the floor",
+          "ja": "床に落ちる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look very sad",
+          "ja": "とても悲しそうに見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "help the girl",
+          "ja": "女の子を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean the floor",
+          "ja": "床を掃除する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pop a balloon",
+          "ja": "風船を割る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spill some juice",
+          "ja": "ジュースをこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at her phone",
+          "ja": "スマートフォンを見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The birthday cake is on the floor.",
+          "grammar": "be動詞＋場所",
+          "ja": "誕生日ケーキが床にあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl looks very sad.",
+          "grammar": "look＋形容詞",
+          "ja": "女の子はとても悲しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her mother is helping her.",
+          "grammar": "現在進行形",
+          "ja": "母親が彼女を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her father is cleaning the floor.",
+          "grammar": "現在進行形",
+          "ja": "父親が床を掃除しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A dog is standing near the cake.",
+          "grammar": "現在進行形",
+          "ja": "犬がケーキの近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is surprised by a balloon.",
+          "grammar": "受動態",
+          "ja": "男の子が風船に驚いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another child is cleaning up some juice.",
+          "grammar": "現在進行形",
+          "ja": "別の子どもがこぼれたジュースを片づけています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "celebration",
+          "ja": "お祝い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "birthday",
+          "ja": "誕生日",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "decoration",
+          "ja": "飾り",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "relative",
+          "ja": "親族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "accident",
+          "ja": "事故・失敗",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "傷つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drop",
+          "ja": "落とす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spill",
+          "ja": "こぼす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "comfort",
+          "ja": "慰める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replace",
+          "ja": "取り替える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "動揺した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "shocked",
+          "ja": "ショックを受けた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "guilty",
+          "ja": "申し訳なさそうな",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "messy",
+          "ja": "散らかった",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "knock over the cake",
+          "ja": "ケーキを倒す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "have an accident",
+          "ja": "失敗・事故を起こす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "comfort the birthday girl",
+          "ja": "誕生日の女の子を慰める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean up the mess",
+          "ja": "散らかったものを片づける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look shocked and upset",
+          "ja": "ショックを受けて動揺しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "accidentally spill juice",
+          "ja": "誤ってジュースをこぼす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be startled by the noise",
+          "ja": "音に驚く",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "look for another cake",
+          "ja": "別のケーキを探す",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The birthday cake has fallen onto the floor after the dog bumped into the table.",
+          "grammar": "現在完了形＋after",
+          "ja": "犬がテーブルにぶつかった後、誕生日ケーキが床に落ちてしまいました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The birthday girl looks shocked because her cake has been ruined.",
+          "grammar": "because＋現在完了受動態",
+          "ja": "ケーキが台無しになったため、誕生日の女の子はショックを受けています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her mother is trying to comfort her while her father cleans up the mess.",
+          "grammar": "whileを使った同時進行",
+          "ja": "父親が片づけている間、母親は女の子を慰めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog appears to be confused about what happened.",
+          "grammar": "appear to be",
+          "ja": "犬は何が起きたのか分からず困惑しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A younger boy is covering his ears because a balloon has suddenly popped.",
+          "grammar": "because＋現在完了形",
+          "ja": "風船が突然割れたため、小さな男の子は耳をふさいでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another child is trying to stop the spilled juice from spreading across the table.",
+          "grammar": "try to＋動詞 / stop A from ～ing",
+          "ja": "別の子どもは、こぼれたジュースがテーブルに広がるのを止めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother seems to be searching for a replacement cake on her smartphone.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "祖母はスマートフォンで代わりのケーキを探しているようです。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "mishap",
+          "ja": "思いがけない災難・失敗",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "commotion",
+          "ja": "騒動・混乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "celebration",
+          "ja": "祝賀・お祝い",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "confection",
+          "ja": "菓子・ケーキ類",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "refreshment",
+          "ja": "飲食物・飲み物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "topple",
+          "ja": "倒す・倒れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scatter",
+          "ja": "散らばる・散らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "console",
+          "ja": "慰める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "salvage",
+          "ja": "何とか救う・立て直す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remedy",
+          "ja": "問題を改善する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distraught",
+          "ja": "ひどく取り乱した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "disheartened",
+          "ja": "落胆した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "startled",
+          "ja": "びっくりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "remorseful",
+          "ja": "後悔している・申し訳なさそうな",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "chaotic",
+          "ja": "混乱した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an unexpected mishap",
+          "ja": "予想外のトラブル",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "topple the birthday cake",
+          "ja": "誕生日ケーキを倒す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear utterly distraught",
+          "ja": "ひどく取り乱しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "console the disappointed child",
+          "ja": "落胆した子どもを慰める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "deal with the aftermath",
+          "ja": "トラブルの後始末をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accidentally knock over a drink",
+          "ja": "誤って飲み物を倒す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be startled by a sudden bang",
+          "ja": "突然の破裂音に驚く",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "seek an immediate replacement",
+          "ja": "すぐに代替品を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "salvage the celebration",
+          "ja": "お祝いを何とか立て直す",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The celebration has descended into chaos after the family dog accidentally toppled the birthday cake onto the floor.",
+          "grammar": "現在完了形 / descend into",
+          "ja": "飼い犬が誤って誕生日ケーキを床に倒したことで、お祝いの場は混乱状態になっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The birthday girl appears utterly distraught as she stares at the ruined cake scattered across the floor.",
+          "grammar": "appear＋補語 / as節 / 過去分詞修飾",
+          "ja": "誕生日の女の子は、床に散らばった台無しのケーキを見つめ、ひどく取り乱しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her mother is attempting to console her, whereas her father is dealing with the aftermath of the accident.",
+          "grammar": "whereasを使った対比",
+          "ja": "母親が彼女を慰めようとしている一方で、父親は事故の後始末をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog appears somewhat remorseful, although it is unlikely to understand the consequences of what it has done.",
+          "grammar": "although節 / be unlikely to",
+          "ja": "犬は少し申し訳なさそうですが、自分の行動の結果を理解しているとは考えにくいです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, a young boy has been startled by a balloon bursting unexpectedly behind him.",
+          "grammar": "現在完了受動態 / 動名詞",
+          "ja": "その一方で、少年は背後で突然風船が割れたことに驚いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another child is frantically trying to contain a spilled drink before it spreads across the entire table.",
+          "grammar": "before節 / try to",
+          "ja": "別の子どもは、こぼれた飲み物がテーブル全体に広がる前に必死で食い止めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother appears to be searching online for a replacement cake in an effort to salvage the celebration.",
+          "grammar": "appear to be＋現在分詞 / in an effort to",
+          "ja": "祖母は、お祝いを何とか立て直すためにオンラインで代わりのケーキを探しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Despite the series of mishaps, the family seems determined to remedy the situation and prevent the birthday from being completely ruined.",
+          "grammar": "despite / prevent A from ～ing",
+          "ja": "次々とトラブルが起きているにもかかわらず、家族は状況を立て直し、誕生日が完全に台無しになるのを防ごうとしているようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "birthday_girl": {
+      "x": 38,
+      "y": 47
+    },
+    "fallen_cake": {
+      "x": 49,
+      "y": 74
+    },
+    "dog": {
+      "x": 59,
+      "y": 61
+    },
+    "mother": {
+      "x": 29,
+      "y": 48
+    },
+    "father": {
+      "x": 57,
+      "y": 72
+    },
+    "popped_balloon": {
+      "x": 17,
+      "y": 25
+    },
+    "younger_boy": {
+      "x": 17,
+      "y": 48
+    },
+    "spilled_juice": {
+      "x": 80,
+      "y": 58
+    },
+    "grandmother": {
+      "x": 75,
+      "y": 34
+    },
+    "gifts": {
+      "x": 88,
+      "y": 75
+    }
+  }
+}

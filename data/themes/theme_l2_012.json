@@ -1,0 +1,693 @@
+{
+  "id": "theme_l2_012",
+  "imageSrc": "assets/images/l2_012.webp",
+  "titleEn": "Family Cooking Night",
+  "titleJa": "家族で夕食作り",
+  "description": "夕方の家庭のキッチンで、家族が協力して夕食を作っている。中央では父親がフライパンで野菜を炒め、母親がまな板の上で野菜を切っている。高校生の娘はレシピをタブレットで確認しながら料理の手順を説明し、小さな息子はサラダ用の野菜をボウルに入れている。背景では祖母がテーブルに皿や箸を並べ、祖父が冷蔵庫から飲み物を取り出している。別の家族はパン生地をこね、幼い子どもがクッキーの型を使って生地を形作っている。飼い犬は床に座り、料理を興味深そうに見ている。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a warm, bright, modern Japanese family kitchen and dining area in the early evening. The atmosphere should be positive, cooperative, lively, and comfortable. The main event must be immediately clear in the foreground: several members of a family are preparing dinner together. In the center, the father is cooking colorful vegetables in a frying pan on the stove while carefully stirring them with a wooden spatula. Beside him, the mother is chopping carrots and other vegetables on a cutting board. Their teenage daughter is standing nearby with a tablet showing a simple recipe layout, and she is pointing at the screen while explaining the next cooking step to the family. A young boy is placing lettuce, tomatoes, and cucumber into a large salad bowl. Include several clear background sub-stories happening simultaneously. On the left, an elderly grandmother is setting the dining table with plates, bowls, chopsticks, and drinking glasses. Near the refrigerator, the grandfather is taking bottles of water and juice from the refrigerator and placing them on the counter. On another section of the kitchen counter, an older sibling or relative is kneading bread dough while a small child uses cookie cutters to make simple shapes from another piece of dough. Another family member is washing vegetables at the sink. The family's dog is sitting patiently on the floor, watching the cooking with interest but not causing trouble. Include a stove, frying pan, cutting board, knives used safely, vegetables, salad bowl, tablet, recipe screen without important readable text, refrigerator, sink, plates, glasses, chopsticks, bread dough, cookie cutters, kitchen towels, dining table, chairs, and one dog. Make all actions, objects, and facial expressions visually distinct and easy to describe. Clear foreground, middle ground, and background. Approximately 9 to 12 visible people plus one dog. No speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but visually organized and uncluttered, expressive gestures and natural family interaction, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "family",
+          "ja": "家族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "kitchen",
+          "ja": "キッチン",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "vegetable",
+          "ja": "野菜",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "salad",
+          "ja": "サラダ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bowl",
+          "ja": "ボウル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plate",
+          "ja": "皿",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "cook",
+          "ja": "料理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cut",
+          "ja": "切る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wash",
+          "ja": "洗う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "eat",
+          "ja": "食べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "cook dinner",
+          "ja": "夕食を作る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "cut vegetables",
+          "ja": "野菜を切る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make a salad",
+          "ja": "サラダを作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the tablet",
+          "ja": "タブレットを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "set the table",
+          "ja": "食卓を準備する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take out drinks",
+          "ja": "飲み物を取り出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make bread",
+          "ja": "パンを作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wash the vegetables",
+          "ja": "野菜を洗う",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is cooking dinner.",
+          "grammar": "現在進行形",
+          "ja": "家族が夕食を作っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is cooking vegetables.",
+          "grammar": "現在進行形",
+          "ja": "父親が野菜を料理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mother is cutting carrots.",
+          "grammar": "現在進行形",
+          "ja": "母親がニンジンを切っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is looking at a tablet.",
+          "grammar": "現在進行形",
+          "ja": "女の子がタブレットを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is making a salad.",
+          "grammar": "現在進行形",
+          "ja": "男の子がサラダを作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is setting the table.",
+          "grammar": "現在進行形",
+          "ja": "祖母が食卓を準備しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandfather is taking drinks from the refrigerator.",
+          "grammar": "現在進行形",
+          "ja": "祖父が冷蔵庫から飲み物を取り出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is watching the family.",
+          "grammar": "現在進行形",
+          "ja": "犬が家族を見ています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "ingredient",
+          "ja": "材料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "recipe",
+          "ja": "レシピ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "frying pan",
+          "ja": "フライパン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cutting board",
+          "ja": "まな板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "refrigerator",
+          "ja": "冷蔵庫",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "chop",
+          "ja": "細かく切る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stir",
+          "ja": "かき混ぜる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "knead",
+          "ja": "こねる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "arrange",
+          "ja": "並べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cooperate",
+          "ja": "協力する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cheerful",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "helpful",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "homemade",
+          "ja": "手作りの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "prepare dinner together",
+          "ja": "一緒に夕食を準備する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stir the vegetables",
+          "ja": "野菜をかき混ぜる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "chop the ingredients",
+          "ja": "材料を切る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow a recipe",
+          "ja": "レシピに従う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare a fresh salad",
+          "ja": "新鮮なサラダを作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "arrange the dishes",
+          "ja": "食器を並べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "knead the dough",
+          "ja": "生地をこねる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wash fresh vegetables",
+          "ja": "新鮮な野菜を洗う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "協力して作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is working together to prepare dinner.",
+          "grammar": "to不定詞",
+          "ja": "家族は夕食を準備するために協力しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is stirring vegetables in a frying pan.",
+          "grammar": "現在進行形",
+          "ja": "父親がフライパンで野菜をかき混ぜています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mother is chopping vegetables on a cutting board.",
+          "grammar": "現在進行形",
+          "ja": "母親がまな板の上で野菜を切っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their daughter is checking a recipe on a tablet while explaining the next step.",
+          "grammar": "while＋現在分詞",
+          "ja": "娘は次の手順を説明しながらタブレットでレシピを確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The young boy is putting vegetables into a bowl to make a salad.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "男の子はサラダを作るために野菜をボウルへ入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is arranging plates and chopsticks on the dining table.",
+          "grammar": "現在進行形",
+          "ja": "祖母は食卓に皿や箸を並べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandfather is taking drinks out of the refrigerator.",
+          "grammar": "現在進行形",
+          "ja": "祖父は冷蔵庫から飲み物を取り出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another family member is kneading dough while a small child makes different shapes.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "別の家族が生地をこねている間、小さな子どもがいろいろな形を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Everyone seems cheerful because they are preparing the meal together.",
+          "grammar": "seem＋形容詞 / because",
+          "ja": "みんなで食事を準備しているので、全員楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "culinary",
+          "ja": "料理の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "preparation",
+          "ja": "準備",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ingredient",
+          "ja": "食材",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "utensil",
+          "ja": "調理器具",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dough",
+          "ja": "生地",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sauté",
+          "ja": "炒める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dice",
+          "ja": "さいの目に切る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assemble",
+          "ja": "組み合わせて作る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "連携する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "collaborate",
+          "ja": "協力する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "engaged",
+          "ja": "熱心に取り組んでいる",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "content",
+          "ja": "満足した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cooperative",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "collaborate on meal preparation",
+          "ja": "食事の準備を協力して行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "sauté fresh vegetables",
+          "ja": "新鮮な野菜を炒める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dice the ingredients",
+          "ja": "食材をさいの目に切る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consult a digital recipe",
+          "ja": "デジタルレシピを参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assemble a fresh salad",
+          "ja": "新鮮なサラダを作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "set the dining table",
+          "ja": "食卓を整える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "knead homemade bread dough",
+          "ja": "手作りパンの生地をこねる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate different tasks",
+          "ja": "異なる作業を連携して行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a cooperative atmosphere",
+          "ja": "協力的な雰囲気を作る",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is collaboratively preparing an evening meal, with each person taking responsibility for a different task.",
+          "grammar": "with＋O＋現在分詞",
+          "ja": "家族はそれぞれ異なる役割を担当しながら、協力して夕食を準備しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is sautéing fresh vegetables while carefully monitoring the frying pan.",
+          "grammar": "while＋現在分詞",
+          "ja": "父親はフライパンの様子を注意深く確認しながら、新鮮な野菜を炒めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Beside him, the mother is dicing several ingredients on a cutting board in preparation for the main dish.",
+          "grammar": "in preparation for",
+          "ja": "その隣では、母親が主菜の準備として複数の食材をまな板の上で切っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their teenage daughter is consulting a digital recipe and appears to be coordinating the sequence of cooking tasks.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "10代の娘はデジタルレシピを確認し、調理作業の順番を調整しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A younger child is assembling a fresh salad by combining several vegetables in a large bowl.",
+          "grammar": "by＋動名詞",
+          "ja": "小さな子どもは、大きなボウルに複数の野菜を入れて新鮮なサラダを作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is setting the dining table, ensuring that the necessary dishes and utensils are ready for the meal.",
+          "grammar": "分詞構文",
+          "ja": "祖母は必要な食器や道具がそろうよう確認しながら食卓を整えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the grandfather is retrieving beverages from the refrigerator so that they can be served with dinner.",
+          "grammar": "so that＋受動態",
+          "ja": "その一方で、祖父は夕食と一緒に出せるよう冷蔵庫から飲み物を取り出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another family member is kneading homemade bread dough while a young child uses cutters to create different shapes.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "別の家族が手作りパンの生地をこねる一方で、小さな子どもは型を使ってさまざまな形を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The family members appear highly engaged, suggesting that preparing food together is both a practical task and an enjoyable social activity.",
+          "grammar": "分詞構文 / suggest that",
+          "ja": "家族は熱心に取り組んでおり、一緒に料理することが実用的な作業であると同時に楽しい交流の時間でもあることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how ordinary household routines can provide opportunities for cooperation, communication, and shared responsibility.",
+          "grammar": "how節",
+          "ja": "この場面は、日常的な家事が協力やコミュニケーション、責任の共有につながる機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "father": {
+      "x": 44,
+      "y": 48
+    },
+    "frying_pan": {
+      "x": 47,
+      "y": 60
+    },
+    "mother": {
+      "x": 30,
+      "y": 49
+    },
+    "cutting_board": {
+      "x": 30,
+      "y": 65
+    },
+    "tablet": {
+      "x": 60,
+      "y": 45
+    },
+    "salad_bowl": {
+      "x": 67,
+      "y": 65
+    },
+    "dining_table": {
+      "x": 15,
+      "y": 61
+    },
+    "refrigerator": {
+      "x": 84,
+      "y": 35
+    },
+    "bread_dough": {
+      "x": 76,
+      "y": 68
+    },
+    "dog": {
+      "x": 88,
+      "y": 75
+    }
+  }
+}

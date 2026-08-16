@@ -1,0 +1,687 @@
+{
+  "id": "theme_l2_009",
+  "imageSrc": "assets/images/l2_009.webp",
+  "titleEn": "Laundry Disaster",
+  "titleJa": "洗濯機の大惨事",
+  "description": "家庭のランドリールームで洗濯機の排水ホースが外れ、水が床一面に広がっている。母親は驚きながら洗濯機を止めようとし、父親はモップで水を片づけている。高校生の娘は濡れそうな洗濯物のかごを持ち上げ、小さな男の子は床に落ちたぬいぐるみを水から救おうとしている。背景では、祖父がバケツを持ってきて水を受け、祖母はタオルを床に並べている。さらに、飼い犬が靴下をくわえて走り回り、棚から洗剤のボトルが倒れそうになっている。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a bright modern Japanese family laundry room connected to a hallway or utility area. The main incident must be immediately clear: a washing machine drain hose has accidentally come loose, causing a large amount of water to pour onto the floor and spread across the laundry room. The detached hose should be clearly visible behind or beside the washing machine, with water flowing from it. In the foreground, the mother looks shocked and worried while reaching toward the washing machine controls to stop the machine. The father is using a mop to push the water toward a drain or collect it from the floor. Their teenage daughter is urgently lifting a laundry basket full of clean clothes onto a higher surface to prevent the clothes from getting wet. A young boy is crouching down and reaching for a stuffed toy that has fallen near the spreading water. Include several distinct background sub-stories happening simultaneously. An elderly grandfather is carrying a large bucket toward the leaking hose to catch the water. An elderly grandmother is placing several towels across the wet floor to absorb the water. On the right side, the family's playful dog is running away with a sock in its mouth while a family member looks surprised. On a shelf above the laundry area, a detergent bottle has been knocked sideways and appears about to fall, while another person reaches up to catch it. Include a washing machine, detached drain hose, puddles of water, mop, bucket, towels, laundry baskets, hanging clothes, detergent bottles, shelves, slippers, a stuffed toy, socks, and one dog. Make all actions, causes, emotions, and objects visually distinct and easy to describe. The water leak must clearly be the central problem, with multiple smaller simultaneous incidents around it. Clear foreground, middle ground, and background. Approximately 8 to 10 visible people plus one dog. No speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, detailed but visually organized, expressive facial expressions and body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "washing machine",
+          "ja": "洗濯機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "father",
+          "ja": "父親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "bucket",
+          "ja": "バケツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "towel",
+          "ja": "タオル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sock",
+          "ja": "靴下",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "toy",
+          "ja": "おもちゃ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wet",
+          "ja": "濡れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "掃除する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "carry",
+          "ja": "運ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "water on the floor",
+          "ja": "床の上の水",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stop the washing machine",
+          "ja": "洗濯機を止める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean the floor",
+          "ja": "床を掃除する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a laundry basket",
+          "ja": "洗濯かごを運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick up the toy",
+          "ja": "おもちゃを拾う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "bring a bucket",
+          "ja": "バケツを持ってくる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put down towels",
+          "ja": "タオルを敷く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run with a sock",
+          "ja": "靴下をくわえて走る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Water is coming from the washing machine.",
+          "grammar": "現在進行形",
+          "ja": "洗濯機から水が出ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother looks worried.",
+          "grammar": "look＋形容詞",
+          "ja": "母親は心配そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The father is cleaning the floor.",
+          "grammar": "現在進行形",
+          "ja": "父親が床を掃除しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is carrying a laundry basket.",
+          "grammar": "現在進行形",
+          "ja": "女の子が洗濯かごを運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is picking up his toy.",
+          "grammar": "現在進行形",
+          "ja": "男の子がおもちゃを拾っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An old man is carrying a bucket.",
+          "grammar": "現在進行形",
+          "ja": "高齢の男性がバケツを運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An old woman is putting towels on the floor.",
+          "grammar": "現在進行形",
+          "ja": "高齢の女性が床にタオルを置いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is running with a sock.",
+          "grammar": "現在進行形",
+          "ja": "犬が靴下をくわえて走っています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "laundry",
+          "ja": "洗濯物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hose",
+          "ja": "ホース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "puddle",
+          "ja": "水たまり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "detergent",
+          "ja": "洗剤",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shelf",
+          "ja": "棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leak",
+          "ja": "漏れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disconnect",
+          "ja": "外れる・切り離す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "absorb",
+          "ja": "吸収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prevent",
+          "ja": "防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rescue",
+          "ja": "救う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shocked",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "panicked",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "soaked",
+          "ja": "びしょ濡れの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "slippery",
+          "ja": "滑りやすい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a leaking washing machine",
+          "ja": "水漏れしている洗濯機",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a disconnected drain hose",
+          "ja": "外れた排水ホース",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stop the water from spreading",
+          "ja": "水が広がるのを止める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect the clean laundry",
+          "ja": "きれいな洗濯物を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rescue a stuffed toy",
+          "ja": "ぬいぐるみを救う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catch the leaking water",
+          "ja": "漏れている水を受ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "absorb water with towels",
+          "ja": "タオルで水を吸い取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "knock over a detergent bottle",
+          "ja": "洗剤のボトルを倒す",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The washing machine is leaking because the drain hose has come loose.",
+          "grammar": "because / 現在完了形",
+          "ja": "排水ホースが外れたため、洗濯機から水が漏れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother looks shocked and is trying to stop the washing machine.",
+          "grammar": "look＋形容詞 / try to",
+          "ja": "母親は驚き、洗濯機を止めようとしています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The father is using a mop to stop the water from spreading.",
+          "grammar": "to不定詞 / stop A from ～ing",
+          "ja": "父親は水が広がるのを防ぐためにモップを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their daughter is moving the laundry basket so that the clothes do not get wet.",
+          "grammar": "so that＋節",
+          "ja": "娘は服が濡れないように洗濯かごを移動させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A young boy is trying to rescue his stuffed toy before the water reaches it.",
+          "grammar": "before＋節 / try to",
+          "ja": "男の子は水が届く前にぬいぐるみを救おうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandfather is bringing a bucket to catch the water coming from the hose.",
+          "grammar": "to不定詞 / 現在分詞修飾",
+          "ja": "祖父はホースから出ている水を受けるためにバケツを持ってきています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is placing towels on the floor to absorb the water.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "祖母は水を吸い取るために床へタオルを敷いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is running around with a sock while everyone else is dealing with the leak.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "他のみんなが水漏れに対処している間、犬は靴下をくわえて走り回っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A detergent bottle may fall from the shelf if nobody catches it.",
+          "grammar": "may / if節",
+          "ja": "誰も受け止めなければ、洗剤のボトルが棚から落ちるかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "malfunction",
+          "ja": "故障",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "drainage",
+          "ja": "排水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "overflow",
+          "ja": "あふれ出すこと",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "appliance",
+          "ja": "家庭用電化製品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "absorbent",
+          "ja": "吸水性のある物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "detach",
+          "ja": "外れる・取り外す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contain",
+          "ja": "広がるのを食い止める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "salvage",
+          "ja": "被害から救い出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mitigate",
+          "ja": "被害を軽減する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "alarmed",
+          "ja": "慌てた・不安になった",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "frantic",
+          "ja": "必死の",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "動揺して慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "hazardous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "waterlogged",
+          "ja": "水浸しになった",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "experience an unexpected appliance malfunction",
+          "ja": "予期せぬ家電の故障に見舞われる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "have the drainage hose detach",
+          "ja": "排水ホースが外れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "contain the spreading water",
+          "ja": "広がる水を食い止める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent further water damage",
+          "ja": "さらなる水害を防ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "salvage the clean laundry",
+          "ja": "きれいな洗濯物を被害から救う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve a vulnerable possession",
+          "ja": "濡れそうな持ち物を回収する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use absorbent towels",
+          "ja": "吸水性のあるタオルを使用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mitigate the damage",
+          "ja": "被害を軽減する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "create an additional hazard",
+          "ja": "さらなる危険を生じさせる",
+          "type": "inference",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The household is dealing with an unexpected appliance malfunction after the washing machine's drainage hose became detached.",
+          "grammar": "after＋節 / deal with",
+          "ja": "洗濯機の排水ホースが外れたため、家族は予期せぬ家電トラブルに対処しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Water is rapidly spreading across the floor, creating an increasingly hazardous situation for everyone in the room.",
+          "grammar": "分詞構文",
+          "ja": "水が急速に床へ広がり、部屋にいる人々にとってますます危険な状況になっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The visibly alarmed mother is attempting to shut down the appliance before any more water escapes from the detached hose.",
+          "grammar": "attempt to / before節",
+          "ja": "明らかに慌てている母親は、外れたホースからさらに水が出る前に洗濯機を停止しようとしています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her husband is frantically mopping the floor in an effort to contain the water and mitigate further damage.",
+          "grammar": "in an effort to",
+          "ja": "夫は水が広がるのを食い止め、さらなる被害を軽減するために必死で床をモップがけしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their teenage daughter is salvaging a basket of clean laundry by moving it away from the expanding puddle.",
+          "grammar": "by＋動名詞",
+          "ja": "10代の娘は、広がる水たまりから洗濯かごを移動させ、きれいな洗濯物を守っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A younger child is attempting to retrieve a stuffed toy that is in danger of becoming completely soaked.",
+          "grammar": "関係代名詞that / be in danger of",
+          "ja": "小さな子どもは完全に水浸しになりそうなぬいぐるみを回収しようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the grandfather is positioning a bucket beneath the leaking hose in order to collect as much water as possible.",
+          "grammar": "in order to / as much as possible",
+          "ja": "その一方で、祖父はできるだけ多くの水を受けるため、漏れているホースの下にバケツを置こうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is spreading absorbent towels across the floor, which should help prevent the water from reaching the hallway.",
+          "grammar": "非制限用法which / prevent A from ～ing",
+          "ja": "祖母は床に吸水性のあるタオルを広げており、それによって水が廊下まで達するのを防げそうです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Adding to the confusion, the family dog is running around with a sock while a detergent bottle is on the verge of falling from a shelf.",
+          "grammar": "分詞構文 / be on the verge of",
+          "ja": "さらに混乱を増すように、犬が靴下をくわえて走り回り、洗剤のボトルも棚から落ちそうになっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene demonstrates how a relatively minor mechanical failure can quickly escalate when several secondary problems arise simultaneously.",
+          "grammar": "how節 / when節",
+          "ja": "この場面は、複数の二次的な問題が同時に発生すると、小さな機械的故障でも急速に大きなトラブルへ発展することを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "washing_machine": {
+      "x": 43,
+      "y": 40
+    },
+    "detached_hose": {
+      "x": 48,
+      "y": 57
+    },
+    "water_leak": {
+      "x": 48,
+      "y": 72
+    },
+    "mother": {
+      "x": 34,
+      "y": 46
+    },
+    "father": {
+      "x": 60,
+      "y": 61
+    },
+    "laundry_basket": {
+      "x": 23,
+      "y": 54
+    },
+    "stuffed_toy": {
+      "x": 37,
+      "y": 76
+    },
+    "bucket": {
+      "x": 69,
+      "y": 68
+    },
+    "dog": {
+      "x": 84,
+      "y": 65
+    },
+    "detergent_bottle": {
+      "x": 78,
+      "y": 25
+    }
+  }
+}

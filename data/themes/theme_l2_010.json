@@ -1,0 +1,693 @@
+{
+  "id": "theme_l2_010",
+  "imageSrc": "assets/images/l2_010.webp",
+  "titleEn": "Picnic in Trouble",
+  "titleJa": "大荒れのピクニック",
+  "description": "家族や友人が公園でピクニックをしている最中に突然強い風が吹き、食べ物や紙皿、ナプキンなどが飛ばされて大混乱になっている。中央では父親が飛ばされそうなピクニックシートを必死に押さえ、母親が倒れそうな飲み物をつかもうとしている。高校生の娘は風で飛ばされた帽子を追いかけ、小さな男の子は地面に落ちたサンドイッチを見て悲しそうにしている。背景では祖母の傘が裏返り、犬が飛んでいく紙袋を追いかけて飼い主を引っ張っている。さらに、木の枝に凧が絡まり、別の家族が急いで荷物を片づけている。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a large green urban park during a family picnic on a bright but suddenly very windy afternoon. The main incident must be immediately understandable: a powerful unexpected gust of wind has disrupted the picnic and is blowing lightweight objects in different directions. In the center foreground, a father is kneeling and desperately holding down the corner of a large picnic blanket that is lifting into the air. Paper plates, napkins, paper cups, and food wrappers are being blown away around him. Beside him, the mother looks startled and is reaching forward to catch a plastic drink bottle and two cups that are about to fall over on a low picnic table. Their teenage daughter is running after her hat, which has been blown several meters away by the wind. A young boy is sitting near the picnic blanket and looking extremely disappointed at a sandwich that has fallen face-down onto the grass. Include several distinct background sub-stories happening simultaneously. On the left, an elderly grandmother is struggling with an umbrella that has been blown completely inside out by the strong wind, while another family member tries to help her. On the right, the family's excited dog is pulling hard on its leash while chasing a lightweight paper bag that is blowing across the grass, forcing its owner to lean backward and struggle to control it. In the middle background, a child's kite has become tangled high in the branches of a tree, and the child is pointing upward while an adult looks concerned. Farther back, another family is hurriedly packing food, folding chairs, and bags into a picnic basket before more items blow away. One person is chasing a rolling water bottle. Show trees bending slightly in the wind, leaves flying through the air, picnic baskets, sandwiches, fruit, bottles, paper plates, cups, folding chairs, backpacks, a picnic blanket, an overturned umbrella, a dog, a kite, and several families. All actions, objects, causes, and emotions must be visually clear and easy to describe. The sudden wind must clearly be the cause of the multiple simultaneous problems. Clear foreground, middle ground, and background. Approximately 10 to 13 visible people plus one dog. No speech bubbles, no captions, no readable brand names, no copyrighted logos or characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but visually organized and uncluttered, expressive facial expressions and body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "wind",
+          "ja": "風",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "park",
+          "ja": "公園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "family",
+          "ja": "家族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "blanket",
+          "ja": "敷物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sandwich",
+          "ja": "サンドイッチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "umbrella",
+          "ja": "傘",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "kite",
+          "ja": "凧",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "押さえる・持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "落ちる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "strong wind",
+          "ja": "強い風",
+          "type": "weather",
+          "points": 20
+        },
+        {
+          "text": "hold the blanket",
+          "ja": "敷物を押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catch the cups",
+          "ja": "コップをつかむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "run after her hat",
+          "ja": "帽子を追いかける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop a sandwich",
+          "ja": "サンドイッチを落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "broken umbrella",
+          "ja": "壊れた傘",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "pull the leash",
+          "ja": "リードを引っ張る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "kite in the tree",
+          "ja": "木に引っかかった凧",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The wind is very strong.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "風がとても強いです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is holding the picnic blanket.",
+          "grammar": "現在進行形",
+          "ja": "父親がピクニックシートを押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mother is trying to catch the cups.",
+          "grammar": "try to＋動詞",
+          "ja": "母親がコップをつかもうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is running after her hat.",
+          "grammar": "現在進行形",
+          "ja": "女の子が帽子を追いかけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy looks sad.",
+          "grammar": "look＋形容詞",
+          "ja": "男の子は悲しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "An old woman is holding a broken umbrella.",
+          "grammar": "現在進行形",
+          "ja": "高齢の女性が壊れた傘を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is pulling its owner.",
+          "grammar": "現在進行形",
+          "ja": "犬が飼い主を引っ張っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The kite is in the tree.",
+          "grammar": "be動詞＋場所",
+          "ja": "凧が木に引っかかっています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "picnic",
+          "ja": "ピクニック",
+          "type": "event",
+          "points": 10
+        },
+        {
+          "text": "gust",
+          "ja": "突風",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "napkin",
+          "ja": "ナプキン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leash",
+          "ja": "リード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "branch",
+          "ja": "木の枝",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "blow",
+          "ja": "吹き飛ばす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "chase",
+          "ja": "追いかける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "control",
+          "ja": "制御する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tangle",
+          "ja": "絡まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pack",
+          "ja": "荷物をまとめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frustrated",
+          "ja": "いら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "disappointed",
+          "ja": "がっかりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "unexpected",
+          "ja": "予想外の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "windy",
+          "ja": "風の強い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a sudden gust of wind",
+          "ja": "突然の突風",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "blow the picnic things away",
+          "ja": "ピクニック用品を吹き飛ばす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold down the blanket",
+          "ja": "シートを押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "chase after her hat",
+          "ja": "帽子を追いかける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look disappointed",
+          "ja": "がっかりしているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "struggle with the umbrella",
+          "ja": "傘に苦労する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle to control the dog",
+          "ja": "犬を制御するのに苦労する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "get tangled in a tree",
+          "ja": "木に絡まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pack up the picnic",
+          "ja": "ピクニック用品を片づける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A sudden gust of wind is causing trouble for several families in the park.",
+          "grammar": "現在進行形 / cause＋名詞",
+          "ja": "突然の突風が公園にいる何組かの家族にトラブルを起こしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is trying to stop the picnic blanket from blowing away.",
+          "grammar": "stop A from ～ing",
+          "ja": "父親はピクニックシートが飛んでいくのを止めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mother is reaching for the cups before they fall off the table.",
+          "grammar": "before＋節",
+          "ja": "母親はコップがテーブルから落ちる前につかもうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their daughter is chasing after a hat that has been blown away by the wind.",
+          "grammar": "関係代名詞that / 現在完了受動態",
+          "ja": "娘は風に飛ばされた帽子を追いかけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The young boy looks disappointed because his sandwich has fallen onto the grass.",
+          "grammar": "because＋現在完了形",
+          "ja": "サンドイッチが芝生に落ちてしまったため、男の子はがっかりしているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The grandmother is struggling with an umbrella that has turned inside out.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "祖母は裏返ってしまった傘に苦労しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A dog is pulling hard on its leash because it wants to chase a flying paper bag.",
+          "grammar": "because＋節 / want to",
+          "ja": "犬は飛んでいる紙袋を追いかけたいため、リードを強く引っ張っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child's kite has become tangled in the branches of a tree.",
+          "grammar": "現在完了形",
+          "ja": "子どもの凧が木の枝に絡まってしまいました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another family is quickly packing their things before more items blow away.",
+          "grammar": "before＋節",
+          "ja": "別の家族はさらに物が飛ばされる前に急いで荷物を片づけています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "turbulence",
+          "ja": "激しい乱れ・混乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "gust",
+          "ja": "突風",
+          "type": "weather",
+          "points": 10
+        },
+        {
+          "text": "belongings",
+          "ja": "所持品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "canopy",
+          "ja": "傘・覆い",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "飛び散った物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scatter",
+          "ja": "まき散らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "secure",
+          "ja": "しっかり固定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "抑える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "entangle",
+          "ja": "絡ませる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exasperated",
+          "ja": "ひどくいら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "dismayed",
+          "ja": "落胆した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "chaotic",
+          "ja": "混乱した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "windswept",
+          "ja": "強風にさらされた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "be caught off guard by a powerful gust",
+          "ja": "強い突風に不意を突かれる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "scatter lightweight belongings",
+          "ja": "軽い所持品を吹き散らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "secure the picnic blanket",
+          "ja": "ピクニックシートをしっかり押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve a windblown hat",
+          "ja": "風で飛ばされた帽子を取り戻す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear visibly dismayed",
+          "ja": "明らかに落胆しているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "struggle against the gust",
+          "ja": "突風に苦戦する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "restrain an excited dog",
+          "ja": "興奮した犬を抑える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "become entangled in the branches",
+          "ja": "枝に絡まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "salvage the remaining picnic supplies",
+          "ja": "残ったピクニック用品を回収する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The families have been caught off guard by a powerful gust of wind that has transformed an ordinary picnic into a chaotic situation.",
+          "grammar": "現在完了受動態 / 関係代名詞that",
+          "ja": "家族たちは強い突風に不意を突かれ、普通のピクニックが混乱した状況に変わってしまっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The father is desperately attempting to secure the picnic blanket before it is completely lifted off the ground.",
+          "grammar": "attempt to / before＋受動態",
+          "ja": "父親はシートが完全に地面から吹き上げられる前に、必死で押さえようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His wife is reaching for several unstable drinks in an effort to prevent them from being knocked over.",
+          "grammar": "in an effort to / prevent A from ～ing",
+          "ja": "妻は飲み物が倒れるのを防ごうと、不安定になった複数の飲み物に手を伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their teenage daughter is sprinting across the grass to retrieve a hat that has been carried away by the wind.",
+          "grammar": "to不定詞 / 現在完了受動態",
+          "ja": "10代の娘は、風に飛ばされた帽子を取り戻すため芝生の上を全力で走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The younger child appears visibly dismayed as he stares at a sandwich that has landed face-down on the grass.",
+          "grammar": "as節 / 関係代名詞that / 現在完了形",
+          "ja": "小さな子どもは芝生に裏返しで落ちたサンドイッチを見つめ、明らかに落胆しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Nearby, the grandmother is struggling against the gust while attempting to control an umbrella that has been blown inside out.",
+          "grammar": "while＋現在分詞 / 現在完了受動態",
+          "ja": "近くでは祖母が、裏返った傘を何とか制御しようと突風に苦戦しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An excited dog is lunging toward a windblown paper bag, forcing its owner to lean backward in an effort to restrain it.",
+          "grammar": "分詞構文 / force＋O＋to不定詞",
+          "ja": "興奮した犬が風で飛ぶ紙袋へ飛びつこうとし、飼い主は犬を抑えるため後ろに体を反らしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "In the background, a child's kite has become entangled high in the branches, leaving both the child and the accompanying adult visibly concerned.",
+          "grammar": "現在完了形 / 分詞構文",
+          "ja": "背景では子どもの凧が高い木の枝に絡まり、子どもと付き添いの大人は明らかに心配しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another family is hurriedly gathering its belongings in an attempt to salvage the remaining food and equipment before the wind causes further damage.",
+          "grammar": "in an attempt to / before節",
+          "ja": "別の家族は、風がさらに被害を与える前に残った食べ物や道具を守ろうと、急いで所持品を集めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene demonstrates how a sudden change in weather can rapidly disrupt a peaceful outdoor activity and create several simultaneous problems.",
+          "grammar": "how節 / can＋動詞",
+          "ja": "この場面は、突然の天候変化によって穏やかな屋外活動が急に妨げられ、複数の問題が同時に発生する様子を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "father": {
+      "x": 43,
+      "y": 56
+    },
+    "picnic_blanket": {
+      "x": 45,
+      "y": 72
+    },
+    "mother": {
+      "x": 55,
+      "y": 50
+    },
+    "flying_hat": {
+      "x": 71,
+      "y": 31
+    },
+    "fallen_sandwich": {
+      "x": 34,
+      "y": 75
+    },
+    "broken_umbrella": {
+      "x": 15,
+      "y": 33
+    },
+    "dog": {
+      "x": 82,
+      "y": 63
+    },
+    "paper_bag": {
+      "x": 91,
+      "y": 49
+    },
+    "tangled_kite": {
+      "x": 68,
+      "y": 15
+    },
+    "picnic_basket": {
+      "x": 23,
+      "y": 67
+    }
+  }
+}

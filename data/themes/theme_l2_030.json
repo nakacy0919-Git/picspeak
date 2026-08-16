@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_030",
+  "imageSrc": "assets/images/l2_030.webp",
+  "titleEn": "Rhythmic Club Practice",
+  "titleJa": "新体操部の練習",
+  "description": "放課後の高校の体育館で、新体操部の3人の女子生徒がそれぞれ異なる手具の練習をしている。中央では女子生徒が長いリボンを大きく波のように動かしながら、片足を上げて美しくポーズを取っている。左側では別の女子生徒がフープを両手で操りながら、体の横で回転させる練習をしている。右側ではもう一人の女子生徒が新体操用のボールを片手に乗せ、つま先立ちでバランスを取りながら優雅な姿勢を保っている。体育館には鏡、バー、マット、音楽用スピーカー、水筒、タオル、スポーツバッグなどが整然と置かれており、部活動として本格的に練習している様子が伝わる。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three Japanese high school rhythmic gymnastics club members practicing after school inside a bright school gymnasium or dance studio area. Do not include any additional visible students, coaches, spectators, or other people. The atmosphere should be elegant, disciplined, athletic, graceful, and focused. All three students should wear matching rhythmic-gymnastics practice outfits suitable for high school club activity, such as fitted sleeveless leotards or club practice uniforms with shorts or skirts, and soft gymnastics shoes or bare feet appropriate for rhythmic gymnastics practice. Divide the scene clearly into three distinct practice activities. In the center foreground, a teenage girl is practicing with a long ribbon attached to a stick. She is standing on one leg in a graceful balanced pose with the other leg lifted behind her, while moving the ribbon in a large flowing wave that creates clearly visible loops and curves through the air. Her expression should look concentrated yet calm. On the left side, another teenage girl is practicing with a hoop. She is holding a rhythmic-gymnastics hoop and guiding it in a controlled circular motion beside her body, with one leg slightly extended and her posture upright and elegant. On the right side, a third teenage girl is practicing with a rhythmic-gymnastics ball. She is standing lightly on her toes, balancing the ball on one hand at shoulder height while extending her other arm outward in a graceful pose, as if practicing balance and body control. Make the three actions visually distinct and easy to describe: one student creating ribbon waves, one student controlling a hoop, and one student balancing with a ball. Include a polished wooden floor, large wall mirrors, a ballet barre along one wall, folded practice mats, a small bench, a portable speaker for music, a towel, three reusable water bottles, sports bags, a practice notebook, and a simple whiteboard showing nonessential icons for ribbon, hoop, ball, stretching, and performance order. Warm late-afternoon sunlight should enter through high gym windows. The space should look tidy and clearly like a Japanese school club practice room. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "gym",
+          "ja": "体育館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ribbon",
+          "ja": "リボン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hoop",
+          "ja": "フープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mirror",
+          "ja": "鏡",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "music",
+          "ja": "音楽",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "practice",
+          "ja": "練習する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "balance",
+          "ja": "バランスを取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "beautiful",
+          "ja": "美しい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice rhythmic gymnastics",
+          "ja": "新体操を練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "move a ribbon",
+          "ja": "リボンを動かす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a hoop",
+          "ja": "フープを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a ball",
+          "ja": "ボールを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on one foot",
+          "ja": "片足で立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice after school",
+          "ja": "放課後に練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look in the mirror",
+          "ja": "鏡を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "graceful pose",
+          "ja": "優雅なポーズ",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three girls are practicing rhythmic gymnastics.",
+          "grammar": "現在進行形",
+          "ja": "3人の女子生徒が新体操を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl in the center is using a ribbon.",
+          "grammar": "現在進行形",
+          "ja": "中央の女の子がリボンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is standing on one foot.",
+          "grammar": "現在進行形",
+          "ja": "彼女は片足で立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl on the left is holding a hoop.",
+          "grammar": "現在進行形",
+          "ja": "左の女の子がフープを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl on the right is holding a ball.",
+          "grammar": "現在進行形",
+          "ja": "右の女の子がボールを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are mirrors in the room.",
+          "grammar": "There are",
+          "ja": "部屋には鏡があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are water bottles and bags on the floor.",
+          "grammar": "There are",
+          "ja": "床には水筒とバッグがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are practicing after school.",
+          "grammar": "現在進行形",
+          "ja": "3人は放課後に練習しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "routine",
+          "ja": "演技",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "movement",
+          "ja": "動き",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "balance",
+          "ja": "バランス",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "posture",
+          "ja": "姿勢",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "用具",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "swing",
+          "ja": "振る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spin",
+          "ja": "回す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "balance",
+          "ja": "バランスを保つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stretch",
+          "ja": "伸ばす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "perform",
+          "ja": "演技する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "graceful",
+          "ja": "優雅な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "flexible",
+          "ja": "柔軟な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "elegant",
+          "ja": "上品な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "practice a ribbon routine",
+          "ja": "リボンの演技を練習する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create large ribbon waves",
+          "ja": "大きなリボンの波を作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "control the hoop",
+          "ja": "フープをコントロールする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "keep a graceful posture",
+          "ja": "優雅な姿勢を保つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "balance the ball on one hand",
+          "ja": "片手でボールのバランスを取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice body control",
+          "ja": "身体のコントロールを練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "use the mirror for practice",
+          "ja": "練習に鏡を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve their performance",
+          "ja": "演技を向上させる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are practicing different rhythmic gymnastics skills after school.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が放課後に異なる新体操の技術を練習しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl in the center is creating large waves with her ribbon.",
+          "grammar": "現在進行形",
+          "ja": "中央の女子生徒はリボンで大きな波を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is balancing on one leg while moving the ribbon.",
+          "grammar": "while＋現在分詞",
+          "ja": "彼女はリボンを動かしながら片足でバランスを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl on the left is controlling a hoop beside her body.",
+          "grammar": "現在進行形",
+          "ja": "左の女子生徒は体の横でフープをコントロールしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be practicing a graceful movement.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼女は優雅な動きを練習しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The girl on the right is balancing a ball on one hand.",
+          "grammar": "現在進行形",
+          "ja": "右の女子生徒は片手にボールを乗せてバランスを取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her body posture looks careful and controlled.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女の姿勢は注意深く安定しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The mirrors and equipment suggest that this is a serious club practice.",
+          "grammar": "suggest that",
+          "ja": "鏡や用具から、これが本格的な部活動練習であることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "apparatus",
+          "ja": "手具",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "coordination",
+          "ja": "協調性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precision",
+          "ja": "正確さ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "flexibility",
+          "ja": "柔軟性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "routine",
+          "ja": "演技構成",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "manipulate",
+          "ja": "巧みに操作する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "maintain",
+          "ja": "維持する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stabilize",
+          "ja": "安定させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "調和させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "refine",
+          "ja": "磨きをかける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disciplined",
+          "ja": "規律正しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "poised",
+          "ja": "落ち着いた姿勢の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fluid",
+          "ja": "流れるような",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "elegant",
+          "ja": "優雅な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concentrated",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "engage in rhythmic-gymnastics training",
+          "ja": "新体操の練習に取り組む",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "manipulate the ribbon with precision",
+          "ja": "リボンを正確に操る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain a balanced pose",
+          "ja": "安定した姿勢を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate body movement with the hoop",
+          "ja": "体の動きとフープを調和させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stabilize the ball during a balance exercise",
+          "ja": "バランス練習中にボールを安定させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refine event-specific technique",
+          "ja": "種目ごとの技術を磨く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "develop flexibility and coordination",
+          "ja": "柔軟性と協調性を高める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "practice in front of the mirror",
+          "ja": "鏡の前で練習する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for a formal routine",
+          "ja": "本番の演技に備える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three rhythmic-gymnastics club members are engaged in apparatus-specific training designed to refine elegance, coordination, and body control.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "3人の新体操部員は、優雅さ、協調性、身体コントロールを磨くための手具別練習に取り組んでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The central performer is manipulating the ribbon in wide, fluid waves while maintaining a balanced one-legged pose.",
+          "grammar": "while＋現在分詞",
+          "ja": "中央の選手は、片足でバランスを保ちながら、流れるような大きな波でリボンを操っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her posture suggests that she is concentrating on both precision and graceful extension.",
+          "grammar": "suggest that / both A and B",
+          "ja": "彼女の姿勢から、正確さと優雅な伸びの両方に集中していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The student on the left is coordinating her body movement with the controlled rotation of the hoop.",
+          "grammar": "現在進行形",
+          "ja": "左の生徒は、フープの制御された回転と体の動きを調和させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her upright stance indicates that she is trying to maintain stability while performing an elegant motion.",
+          "grammar": "indicate that / try to",
+          "ja": "彼女のまっすぐな姿勢から、優雅な動きをしながら安定性を保とうとしていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is balancing a ball on one hand and using the rest of her body to stabilize the pose.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "その一方で、3人目の生徒は片手にボールを乗せ、体全体を使ってその姿勢を安定させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her raised posture and controlled expression suggest that balance, concentration, and fine control are essential to the exercise.",
+          "grammar": "suggest that",
+          "ja": "彼女の姿勢と落ち着いた表情から、この練習にバランス、集中力、細かなコントロールが重要であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The mirrors, barre, speaker, and neatly arranged equipment indicate a disciplined club practice rather than a casual activity.",
+          "grammar": "indicate / rather than",
+          "ja": "鏡、バー、スピーカー、整然とした用具から、気軽な活動ではなく規律ある部活動練習であることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how rhythmic gymnastics requires athletes to combine flexibility, elegance, coordination, technical precision, and concentration.",
+          "grammar": "how節 / require＋O＋to",
+          "ja": "この場面は、新体操に柔軟性、優雅さ、協調性、技術的正確さ、集中力を組み合わせることが必要であることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "ribbon_girl": {
+      "x": 49,
+      "y": 53
+    },
+    "ribbon": {
+      "x": 56,
+      "y": 34
+    },
+    "hoop_girl": {
+      "x": 24,
+      "y": 55
+    },
+    "hoop": {
+      "x": 20,
+      "y": 48
+    },
+    "ball_girl": {
+      "x": 77,
+      "y": 55
+    },
+    "ball": {
+      "x": 80,
+      "y": 42
+    },
+    "mirror": {
+      "x": 14,
+      "y": 28
+    },
+    "barre": {
+      "x": 18,
+      "y": 67
+    },
+    "speaker": {
+      "x": 88,
+      "y": 69
+    },
+    "water_bottles": {
+      "x": 70,
+      "y": 78
+    }
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_018",
+  "imageSrc": "assets/images/l2_018.webp",
+  "titleEn": "Room Makeover Day",
+  "titleJa": "部屋の模様替え",
+  "description": "休日の明るいリビングで、母親と2人の子どもが協力して部屋の模様替えと整理をしている。中央では母親が観葉植物を新しい場所に移しながら部屋全体の配置を確認している。高校生の娘は本棚の前で本を種類ごとに分け、収納ボックスへ整理している。中学生の息子は壁に飾る写真やポスターの位置を測り、メジャーと鉛筆を使って取り付け場所を確認している。床には収納ボックス、クッション、額縁、本、掃除道具などが並び、家具の配置が変わっていく様子が分かる。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three people in a bright, modern Japanese family living room on a sunny weekend afternoon: one mother, one teenage daughter, and one teenage or middle-school-aged son. Do not include any additional people or animals. The atmosphere should be positive, practical, cooperative, and calm. The main activity is reorganizing and redecorating the living room together. In the center foreground, the mother is carefully moving a medium-sized indoor plant in a ceramic pot to a new position beside the window. She is slightly lifting the pot and looking around the room as if deciding where it should go. On the left side, the teenage daughter is sitting or kneeling in front of a bookshelf and sorting books into different groups. Some books are being placed neatly back onto the shelf while others are going into labeled-looking storage boxes with simple color markings but no important readable text. She should look focused and organized. On the right side, the son is standing near a wall and using a tape measure to check the position for several framed photographs and simple decorative posters. He is holding a pencil or small removable marker in the other hand and carefully checking the height before hanging the frames. Make the three activities visually distinct and easy to describe: the mother rearranging furniture and plants, the daughter organizing books and storage, and the son measuring the wall for decorations. Include a sofa, coffee table, bookshelf, storage boxes, cushions, framed pictures, simple posters, indoor plants, a floor lamp, tape measure, pencil, cleaning cloth, small vacuum cleaner, stacked books, a rug, and large windows with warm daylight. Show a few objects temporarily placed on the floor to make it clear that the room is being reorganized, but keep the scene tidy enough to read visually. Clear foreground, middle ground, and background. Exactly three visible people. No additional people, no animals, no speech bubbles, no captions required to understand the scene, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "room",
+          "ja": "部屋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "book",
+          "ja": "本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "box",
+          "ja": "箱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "写真・絵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wall",
+          "ja": "壁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shelf",
+          "ja": "棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "move",
+          "ja": "動かす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "put",
+          "ja": "置く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "片づける・掃除する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "busy",
+          "ja": "忙しい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "clean the room",
+          "ja": "部屋を片づける",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "move the plant",
+          "ja": "植物を動かす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put away books",
+          "ja": "本を片づける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a box",
+          "ja": "箱を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "measure the wall",
+          "ja": "壁を測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hang a picture",
+          "ja": "写真を飾る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many books",
+          "ja": "たくさんの本",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is cleaning the room.",
+          "grammar": "現在進行形",
+          "ja": "家族が部屋を片づけています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is moving a plant.",
+          "grammar": "現在進行形",
+          "ja": "母親が植物を動かしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is putting away books.",
+          "grammar": "現在進行形",
+          "ja": "女の子が本を片づけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is using some boxes.",
+          "grammar": "現在進行形",
+          "ja": "彼女はいくつかの箱を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is measuring the wall.",
+          "grammar": "現在進行形",
+          "ja": "男の子が壁を測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are pictures on the floor.",
+          "grammar": "There are",
+          "ja": "床に写真があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a bookshelf in the room.",
+          "grammar": "There is",
+          "ja": "部屋には本棚があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are working together.",
+          "grammar": "現在進行形",
+          "ja": "3人は一緒に作業しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "furniture",
+          "ja": "家具",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bookshelf",
+          "ja": "本棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "storage",
+          "ja": "収納",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "decoration",
+          "ja": "飾り",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "額縁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "organize",
+          "ja": "整理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sort",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rearrange",
+          "ja": "配置を変える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "decorate",
+          "ja": "飾る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "comfortable",
+          "ja": "快適な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "neat",
+          "ja": "きちんとした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cooperative",
+          "ja": "協力的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "rearrange the living room",
+          "ja": "リビングの配置を変える",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "move an indoor plant",
+          "ja": "観葉植物を移動させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sort the books",
+          "ja": "本を分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "organize the bookshelf",
+          "ja": "本棚を整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use storage boxes",
+          "ja": "収納ボックスを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "measure the height",
+          "ja": "高さを測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hang framed pictures",
+          "ja": "額入り写真を飾る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "decorate the wall",
+          "ja": "壁を飾る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is reorganizing their living room on the weekend.",
+          "grammar": "現在進行形",
+          "ja": "家族は週末にリビングを整理し直しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is moving an indoor plant to a different place.",
+          "grammar": "現在進行形",
+          "ja": "母親は観葉植物を別の場所へ移動させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be deciding where the plant should go.",
+          "grammar": "appear to be / 間接疑問",
+          "ja": "彼女は植物をどこに置くべきか考えているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The daughter is sorting books into different groups.",
+          "grammar": "現在進行形",
+          "ja": "娘は本をいくつかのグループに分けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is placing some books on the shelf and others in storage boxes.",
+          "grammar": "現在進行形 / some ... others",
+          "ja": "彼女は何冊かを棚に置き、別の本を収納ボックスへ入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is using a tape measure to check the height of the pictures.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "男の子は写真の高さを確認するためにメジャーを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is preparing to decorate the wall with several frames.",
+          "grammar": "prepare to＋動詞",
+          "ja": "彼はいくつかの額縁で壁を飾る準備をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The room is becoming more organized as they work together.",
+          "grammar": "as節",
+          "ja": "3人が協力するにつれて、部屋はより整理されてきています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "interior",
+          "ja": "室内・インテリア",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "layout",
+          "ja": "配置",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "storage",
+          "ja": "収納",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "aesthetic",
+          "ja": "美的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "arrangement",
+          "ja": "配置・整理",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reposition",
+          "ja": "位置を変える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "declutter",
+          "ja": "不要な物を整理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "align",
+          "ja": "位置をそろえる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "optimize",
+          "ja": "最適化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "functional",
+          "ja": "機能的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "satisfied",
+          "ja": "満足した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "reorganize the interior space",
+          "ja": "室内空間を再整理する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reposition the indoor plant",
+          "ja": "観葉植物の位置を変える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evaluate the room layout",
+          "ja": "部屋の配置を検討する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "categorize the book collection",
+          "ja": "蔵書を分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "declutter the bookshelf",
+          "ja": "本棚を整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make efficient use of storage",
+          "ja": "収納を効率的に活用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "measure the wall precisely",
+          "ja": "壁を正確に測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "align the framed photographs",
+          "ja": "額入り写真の位置をそろえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a more functional environment",
+          "ja": "より機能的な環境を作る",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three family members are reorganizing the living room in an effort to create a more functional and visually appealing space.",
+          "grammar": "in an effort to",
+          "ja": "3人の家族は、より機能的で見た目にも快適な空間を作るため、リビングを整理し直しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is repositioning an indoor plant while evaluating how it fits into the overall room layout.",
+          "grammar": "while＋現在分詞 / how節",
+          "ja": "母親は観葉植物の位置を変えながら、それが部屋全体の配置にどう合うか検討しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her posture suggests that she is considering both the appearance of the room and the amount of natural light available.",
+          "grammar": "suggest that / both A and B",
+          "ja": "彼女の様子から、部屋の見た目と利用できる自然光の両方を考えていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The daughter is methodically categorizing the family's book collection and placing the items into appropriate storage areas.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "娘は家族の本を手順立てて分類し、それぞれ適切な収納場所へ整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be decluttering the bookshelf while making more efficient use of the available storage space.",
+          "grammar": "appear to be / while＋現在分詞",
+          "ja": "彼女は利用できる収納スペースをより効率的に使いながら、本棚を整理しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the son is measuring the wall precisely before deciding where the framed photographs should be positioned.",
+          "grammar": "before＋動名詞 / 間接疑問",
+          "ja": "その一方で、息子は額入り写真をどこに配置するか決める前に壁を正確に測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He seems intent on aligning the decorations carefully so that the finished arrangement will appear balanced.",
+          "grammar": "seem＋形容詞 / so that",
+          "ja": "彼は完成した配置がバランスよく見えるよう、飾りの位置を丁寧にそろえようとしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The storage boxes, temporarily displaced cushions, and framed pictures indicate that the room is in the middle of a larger reorganization.",
+          "grammar": "indicate that",
+          "ja": "収納ボックスや一時的に移動されたクッション、額縁から、部屋全体の模様替えの途中であることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary household task can involve planning, cooperation, and careful attention to both practicality and appearance.",
+          "grammar": "how節 / both A and B",
+          "ja": "この場面は、日常的な家事にも計画、協力、実用性と見た目の両方への注意が必要になることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "mother": {
+      "x": 43,
+      "y": 51
+    },
+    "indoor_plant": {
+      "x": 47,
+      "y": 61
+    },
+    "daughter": {
+      "x": 24,
+      "y": 57
+    },
+    "bookshelf": {
+      "x": 17,
+      "y": 40
+    },
+    "storage_boxes": {
+      "x": 29,
+      "y": 73
+    },
+    "son": {
+      "x": 73,
+      "y": 52
+    },
+    "tape_measure": {
+      "x": 75,
+      "y": 46
+    },
+    "framed_pictures": {
+      "x": 82,
+      "y": 30
+    },
+    "sofa": {
+      "x": 53,
+      "y": 68
+    },
+    "window": {
+      "x": 52,
+      "y": 21
+    }
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_013",
+  "imageSrc": "assets/images/l2_013.webp",
+  "titleEn": "Mountain Trail Adventure",
+  "titleJa": "山道の冒険",
+  "description": "晴れた日の山道で、3人の高校生がハイキングを楽しんでいる。中央では男子生徒が分かれ道にある案内板を指さしながら紙の地図を確認している。隣の女子生徒は遠くに見える滝と山の景色をスマートフォンで撮影している。少し後ろでは別の女子生徒がベンチのそばで水筒に水を補給しながらバックパックを整えている。周囲には木々、野生の花、小川、木製の橋、登山道の標識があり、3人が景色を楽しみながら次の目的地へ向かう準備をしている。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three teenage hikers on a beautiful mountain trail in Japan on a clear sunny day. Do not include any other people. The atmosphere should be adventurous, peaceful, positive, and visually rich. In the main foreground scene, a teenage boy wearing hiking clothes and a backpack is standing at a fork in the trail. He is holding an unfolded paper hiking map in one hand and pointing toward a wooden trail sign with the other hand, apparently deciding which route the group should take. Beside him, a teenage girl with a small backpack is holding a smartphone horizontally and taking a photograph of a scenic waterfall and distant mountains. She looks impressed and excited by the view. In the middle background, a second teenage girl is standing beside a simple wooden bench and adjusting her backpack while refilling a reusable water bottle from a safe public mountain water fountain. Around the three hikers, show a clear mountain environment with tall green trees, wildflowers, rocks, a shallow stream, a small wooden footbridge, distant mountains, a visible waterfall, hiking trail markers, a wooden direction sign, the bench, backpacks, trekking shoes, a paper map, smartphone, and reusable water bottle. The three people's activities must be clearly different and easy to describe: one checking the route, one photographing the scenery, and one preparing her equipment and water. Create clear foreground, middle ground, and background despite having only three people. No additional people, no crowds, no animals, no speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "標識",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "リュック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bridge",
+          "ja": "橋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "waterfall",
+          "ja": "滝",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the sign",
+          "ja": "標識を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "beautiful waterfall",
+          "ja": "美しい滝",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "carry a backpack",
+          "ja": "リュックを背負う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fill a bottle",
+          "ja": "ボトルに水を入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "walk in the mountains",
+          "ja": "山を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wooden bridge",
+          "ja": "木の橋",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are hiking in the mountains.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が山をハイキングしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is looking at a map.",
+          "grammar": "現在進行形",
+          "ja": "男の子が地図を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is pointing at a sign.",
+          "grammar": "現在進行形",
+          "ja": "彼は標識を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is taking a picture.",
+          "grammar": "現在進行形",
+          "ja": "女の子が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at the waterfall.",
+          "grammar": "現在進行形",
+          "ja": "彼女は滝を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is filling her water bottle.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が水筒に水を入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She has a large backpack.",
+          "grammar": "have＋名詞",
+          "ja": "彼女は大きなリュックを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "彼らは楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "hiker",
+          "ja": "ハイカー・登山者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "trail",
+          "ja": "登山道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "道順",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "scenery",
+          "ja": "景色",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "waterfall",
+          "ja": "滝",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "バックパック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "direction",
+          "ja": "方向",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "choose",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "refill",
+          "ja": "再び満たす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "adjust",
+          "ja": "調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "わくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "impressed",
+          "ja": "感動した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "peaceful",
+          "ja": "穏やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "check the hiking map",
+          "ja": "登山地図を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose the correct route",
+          "ja": "正しい道を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the trail",
+          "ja": "登山道の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the scenery",
+          "ja": "景色を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "admire the waterfall",
+          "ja": "滝を眺める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "refill her water bottle",
+          "ja": "水筒に水を補給する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adjust her backpack",
+          "ja": "バックパックを調整する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy the mountain view",
+          "ja": "山の景色を楽しむ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are taking a break during a mountain hike.",
+          "grammar": "現在進行形 / during",
+          "ja": "3人の生徒が登山の途中で休憩しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is checking the map to decide which trail they should follow.",
+          "grammar": "to不定詞 / 間接疑問",
+          "ja": "男子生徒はどの登山道を進むべきか決めるために地図を確認しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is pointing toward one of the routes on the sign.",
+          "grammar": "現在進行形",
+          "ja": "彼は標識に示されている道の一つを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is taking a photograph of the waterfall and mountains.",
+          "grammar": "現在進行形",
+          "ja": "一人の女子生徒が滝と山の写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks impressed by the beautiful scenery.",
+          "grammar": "look＋形容詞 / by",
+          "ja": "彼女は美しい景色に感動しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The other girl is refilling her water bottle near a bench.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒はベンチの近くで水筒に水を補給しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is also adjusting her backpack before they continue walking.",
+          "grammar": "before＋節",
+          "ja": "彼女は歩き続ける前にバックパックも調整しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The group seems to be enjoying the peaceful mountain environment.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "3人は穏やかな山の環境を楽しんでいるようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "terrain",
+          "ja": "地形",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "junction",
+          "ja": "分岐点",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "landscape",
+          "ja": "景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vantage point",
+          "ja": "見晴らしのよい地点",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "provisions",
+          "ja": "携行品・食料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "道を判断して進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "capture",
+          "ja": "写真に収める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replenish",
+          "ja": "補充する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "readjust",
+          "ja": "再調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exhilarated",
+          "ja": "爽快でわくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "captivated",
+          "ja": "魅了された",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "refreshed",
+          "ja": "気分がすっきりした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "picturesque",
+          "ja": "絵のように美しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "remote",
+          "ja": "人里離れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "navigate unfamiliar terrain",
+          "ja": "不慣れな地形で道を判断する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consult a detailed trail map",
+          "ja": "詳しい登山地図を参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "determine the appropriate route",
+          "ja": "適切なルートを判断する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "capture the picturesque landscape",
+          "ja": "絵のように美しい景観を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear captivated by the scenery",
+          "ja": "景色に魅了されているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "replenish her water supply",
+          "ja": "水を補給する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "readjust her hiking equipment",
+          "ja": "登山装備を再調整する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pause at a trail junction",
+          "ja": "登山道の分岐点で立ち止まる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "appreciate the surrounding wilderness",
+          "ja": "周囲の自然を味わう",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three hikers have paused at a trail junction to determine which route they should take next.",
+          "grammar": "現在完了形 / to不定詞 / 間接疑問",
+          "ja": "3人のハイカーは次にどのルートを進むべきか判断するため、登山道の分岐点で立ち止まっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is consulting a detailed map while comparing it with the directions displayed on the wooden sign.",
+          "grammar": "while＋現在分詞",
+          "ja": "男子生徒は詳しい地図を確認しながら、木製の標識に示された方向と比較しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be navigating the unfamiliar terrain and determining the most appropriate route for the group.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼は不慣れな地形で道を判断し、グループに最も適したルートを決めているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his companions is using her smartphone to capture the picturesque waterfall and mountainous landscape.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "同行している女子生徒の一人は、絵のように美しい滝と山の景観を写真に収めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears genuinely captivated by the scenery stretching into the distance.",
+          "grammar": "appear＋補語 / 現在分詞による修飾",
+          "ja": "彼女は遠くまで広がる景色に心から魅了されているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third hiker is replenishing her water supply at a fountain beside a wooden bench.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目のハイカーは木製ベンチのそばにある給水場所で水を補給しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is also readjusting her backpack, presumably in preparation for the next stage of their hike.",
+          "grammar": "presumably / in preparation for",
+          "ja": "彼女はおそらく次の登山区間に備えてバックパックも調整しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The surrounding footbridge, stream, waterfall, and dense vegetation emphasize the remote and scenic nature of the trail.",
+          "grammar": "抽象的状況描写",
+          "ja": "周囲の木製橋、小川、滝、豊かな植物が、この登山道の人里離れた美しい自然環境を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how outdoor activities can combine physical exercise, navigation, photography, and an appreciation of nature.",
+          "grammar": "how節 / combine A, B, C and D",
+          "ja": "この場面は、アウトドア活動が運動、道の判断、写真撮影、自然を楽しむことを同時に含み得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "boy": {
+      "x": 38,
+      "y": 49
+    },
+    "trail_map": {
+      "x": 41,
+      "y": 54
+    },
+    "trail_sign": {
+      "x": 51,
+      "y": 35
+    },
+    "photographer_girl": {
+      "x": 60,
+      "y": 50
+    },
+    "smartphone": {
+      "x": 63,
+      "y": 44
+    },
+    "water_girl": {
+      "x": 77,
+      "y": 59
+    },
+    "water_bottle": {
+      "x": 79,
+      "y": 65
+    },
+    "waterfall": {
+      "x": 78,
+      "y": 23
+    },
+    "wooden_bridge": {
+      "x": 20,
+      "y": 67
+    },
+    "stream": {
+      "x": 26,
+      "y": 77
+    }
+  }
+}

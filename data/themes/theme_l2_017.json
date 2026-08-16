@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_017",
+  "imageSrc": "assets/images/l2_017.webp",
+  "titleEn": "Science Lab Challenge",
+  "titleJa": "理科室で実験",
+  "description": "放課後の高校の理科室で、3人の生徒が化学実験に取り組んでいる。中央の男子生徒はメスシリンダーを使って青い液体の量を慎重に測り、ビーカーへ注ごうとしている。左側の女子生徒は試験管の中で起きている泡の反応を観察しながらストップウォッチで時間を測っている。右側の女子生徒はタブレットと記録用紙を使って実験結果を整理し、簡単なグラフにまとめている。机にはビーカー、試験管、スポイト、温度計、保護メガネなどが整理され、安全に実験している様子が分かる。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three Japanese high school students conducting a chemistry experiment in a bright modern school science laboratory after school. Do not include any additional visible students, teachers, or other people. All three students should wear school uniforms, white laboratory coats, and protective safety goggles. The atmosphere should be scientific, focused, cooperative, safe, and positive. In the center foreground, a teenage boy is carefully measuring blue-colored laboratory liquid in a graduated cylinder. He is holding the graduated cylinder at eye level to check the measurement and is preparing to pour the liquid into a clear glass beaker on the laboratory table. The graduated cylinder, blue liquid, beaker, and measurement markings must be clearly visible. On the left side, a teenage girl is observing a chemical reaction inside a test tube held securely in a test-tube rack. Small harmless bubbles are forming inside the test tube. She is holding a digital stopwatch in one hand and watching the reaction carefully, clearly timing how long it takes. On the right side, another teenage girl is recording the results. She has a tablet correctly positioned with the screen facing her, a paper data sheet, and a pencil. She is comparing the experimental measurements and creating a simple graph or table on the tablet. Make the three roles visually distinct and easy to describe: one student measuring and pouring liquid, one observing and timing a bubbling reaction, and one recording and organizing experimental data. Include a laboratory table, several clean beakers, test tubes in a rack, graduated cylinders, droppers, a thermometer, digital stopwatch, tablet, clipboard, pencils, safety goggles, disposable gloves, wash bottle, laboratory sink, shelves containing scientific glassware, and a simple experiment diagram on a whiteboard showing icons for liquid, temperature, time, and results without important readable text. Keep all chemical reactions small, controlled, and completely safe: no explosions, no dangerous smoke, no fire, and no broken glass. Warm late-afternoon sunlight should enter through classroom windows. Exactly three visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "science",
+          "ja": "理科",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "液体・水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glass",
+          "ja": "ガラス容器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tube",
+          "ja": "試験管",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bottle",
+          "ja": "ボトル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "タブレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glasses",
+          "ja": "保護メガネ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pour",
+          "ja": "注ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "do a science experiment",
+          "ja": "理科の実験をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "measure the liquid",
+          "ja": "液体を測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pour the liquid",
+          "ja": "液体を注ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the test tube",
+          "ja": "試験管を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a stopwatch",
+          "ja": "ストップウォッチを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write the results",
+          "ja": "結果を書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a tablet",
+          "ja": "タブレットを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear safety glasses",
+          "ja": "保護メガネをかける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three students are doing a science experiment.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が理科の実験をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is measuring blue liquid.",
+          "grammar": "現在進行形",
+          "ja": "男の子が青い液体を測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is holding a glass container.",
+          "grammar": "現在進行形",
+          "ja": "彼はガラス容器を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is looking at a test tube.",
+          "grammar": "現在進行形",
+          "ja": "女の子が試験管を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is using a stopwatch.",
+          "grammar": "現在進行形",
+          "ja": "彼女はストップウォッチを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another girl is writing the results.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女の子が結果を書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is using a tablet.",
+          "grammar": "現在進行形",
+          "ja": "彼女はタブレットを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are wearing safety glasses.",
+          "grammar": "現在進行形",
+          "ja": "3人は保護メガネをかけています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "experiment",
+          "ja": "実験",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "laboratory",
+          "ja": "実験室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "reaction",
+          "ja": "反応",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "measurement",
+          "ja": "測定値",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "result",
+          "ja": "結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "time",
+          "ja": "時間を測る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "focused",
+          "ja": "集中した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "accurate",
+          "ja": "正確な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "scientific",
+          "ja": "科学的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "conduct an experiment",
+          "ja": "実験を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "measure the amount of liquid",
+          "ja": "液体の量を測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pour it into a beaker",
+          "ja": "ビーカーへ注ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe a chemical reaction",
+          "ja": "化学反応を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "time the reaction",
+          "ja": "反応時間を測る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record the results",
+          "ja": "結果を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a simple graph",
+          "ja": "簡単なグラフを作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work safely in the laboratory",
+          "ja": "実験室で安全に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are conducting a chemistry experiment in the school laboratory.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が学校の実験室で化学実験をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is measuring the amount of blue liquid in a graduated cylinder.",
+          "grammar": "現在進行形",
+          "ja": "男子生徒はメスシリンダーの青い液体の量を測っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be checking the measurement before pouring the liquid.",
+          "grammar": "appear to be / before＋動名詞",
+          "ja": "彼は液体を注ぐ前に測定値を確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One girl is observing bubbles forming inside a test tube.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "一人の女子生徒は試験管の中にできている泡を観察しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is using a stopwatch to measure how long the reaction takes.",
+          "grammar": "to不定詞 / how節",
+          "ja": "彼女は反応にどのくらい時間がかかるか測るためにストップウォッチを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other girl is recording the experimental results on a tablet.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の女子生徒はタブレットに実験結果を記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be organizing the information into a simple graph.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼女は情報を簡単なグラフにまとめているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their safety goggles suggest that they are following laboratory safety rules.",
+          "grammar": "suggest that",
+          "ja": "保護メガネを着用していることから、実験室の安全ルールを守っていることが分かります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "procedure",
+          "ja": "実験手順",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "observation",
+          "ja": "観察結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "variable",
+          "ja": "変数",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precision",
+          "ja": "精密さ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "data",
+          "ja": "データ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "quantify",
+          "ja": "数値化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "継続的に観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interpret",
+          "ja": "解釈する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "precise",
+          "ja": "精密な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "controlled",
+          "ja": "制御された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "systematic",
+          "ja": "体系的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "carry out a controlled experiment",
+          "ja": "管理された実験を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "quantify the volume of liquid",
+          "ja": "液体の体積を数値化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow a precise laboratory procedure",
+          "ja": "正確な実験手順に従う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor the chemical reaction",
+          "ja": "化学反応を継続的に観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "measure the reaction time",
+          "ja": "反応時間を測定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document experimental observations",
+          "ja": "実験の観察結果を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "organize quantitative data",
+          "ja": "数値データを整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "interpret the experimental results",
+          "ja": "実験結果を解釈する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "apply scientific methodology",
+          "ja": "科学的な方法を適用する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The three students are carrying out a controlled chemistry experiment in which each member is responsible for a different stage of the procedure.",
+          "grammar": "関係詞in which",
+          "ja": "3人の生徒は、それぞれが異なる実験工程を担当しながら管理された化学実験を行っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is carefully quantifying the volume of a blue solution before transferring it into a beaker.",
+          "grammar": "before＋動名詞",
+          "ja": "男子生徒は青い溶液をビーカーへ移す前に、その体積を注意深く測定しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Holding the graduated cylinder at eye level suggests that he is attempting to obtain a precise measurement.",
+          "grammar": "動名詞主語 / suggest that",
+          "ja": "メスシリンダーを目の高さに合わせていることから、正確な測定値を得ようとしていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One of his classmates is monitoring a bubbling reaction while using a stopwatch to quantify its duration.",
+          "grammar": "while＋現在分詞 / to不定詞",
+          "ja": "クラスメートの一人は、ストップウォッチで反応時間を測定しながら泡の発生する反応を観察しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her focused expression indicates that the timing of the reaction is an important experimental variable.",
+          "grammar": "indicate that",
+          "ja": "彼女の集中した表情から、反応時間が重要な実験変数であることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the third student is documenting their observations and organizing the quantitative data on a tablet.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の生徒は観察結果を記録し、数値データをタブレット上で整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be converting the collected measurements into a graph so that the results can be compared more easily.",
+          "grammar": "appear to be / so that",
+          "ja": "彼女は結果をより簡単に比較できるよう、収集した測定値をグラフに変換しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The protective goggles, organized glassware, and controlled reaction indicate that the students are following appropriate laboratory safety procedures.",
+          "grammar": "indicate that",
+          "ja": "保護メガネ、整理された実験器具、制御された反応から、生徒たちが適切な実験室の安全手順に従っていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how scientific investigation requires precise measurement, careful observation, systematic documentation, and interpretation of evidence.",
+          "grammar": "how節 / require＋名詞列挙",
+          "ja": "この場面は、科学的な調査には正確な測定、注意深い観察、体系的な記録、そして証拠の解釈が必要であることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "measuring_boy": {
+      "x": 48,
+      "y": 51
+    },
+    "graduated_cylinder": {
+      "x": 48,
+      "y": 43
+    },
+    "beaker": {
+      "x": 51,
+      "y": 66
+    },
+    "reaction_girl": {
+      "x": 23,
+      "y": 54
+    },
+    "test_tube": {
+      "x": 27,
+      "y": 51
+    },
+    "stopwatch": {
+      "x": 20,
+      "y": 61
+    },
+    "recording_girl": {
+      "x": 76,
+      "y": 54
+    },
+    "tablet": {
+      "x": 75,
+      "y": 48
+    },
+    "test_tube_rack": {
+      "x": 31,
+      "y": 67
+    },
+    "safety_goggles": {
+      "x": 48,
+      "y": 35
+    }
+  }
+}

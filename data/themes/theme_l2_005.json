@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_005",
+  "imageSrc": "assets/images/l2_005.webp",
+  "titleEn": "Bike Trouble",
+  "titleJa": "自転車トラブル",
+  "description": "公園近くの自転車道で、女子学生の自転車のチェーンが外れてしまい、彼女が困った表情で自転車を見ている。友人の男子学生がしゃがんでチェーンを直そうとしており、別の友人はスマートフォンで修理方法を調べている。背景では、子どもが自転車で水たまりに入り服を濡らし、ジョギング中の男性が落としたイヤホンを探している。さらに、犬がリードを引っ張って飼い主を困らせ、ベンチでは高齢の男性が転んだ少年の膝にばんそうこうを貼っている。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show a busy bicycle path beside a green urban park on a bright weekend afternoon. The main event should be very clear in the foreground: a teenage schoolgirl is standing beside her bicycle with a worried and frustrated expression because the bicycle chain has come off the gears. The loose chain should be clearly visible. A teenage boy, her friend, is crouching beside the rear wheel and carefully trying to put the chain back on. Another teenage friend is standing nearby and using a smartphone, apparently searching online for instructions on how to repair the bicycle. Include several clear background sub-stories happening at the same time. On the left, a young child has ridden a bicycle through a large puddle and splashed muddy water onto his clothes while his surprised parent reacts nearby. In the middle background, a male jogger has stopped and is looking around the ground because he has dropped one of his wireless earphones. On the right, an excited dog is pulling strongly on its leash while its owner leans backward and struggles to control it. Near a park bench, a young boy with a scraped knee is sitting down while an elderly man carefully puts a bandage on the injury. Include bicycles, bicycle helmets, a water bottle, park benches, trees, a walking path, a puddle, a small repair tool, smartphones, runners, families, and park visitors. Make all facial expressions and actions visually distinct and easy to describe. Clear foreground, middle ground, and background, approximately 9 to 12 visible people plus one dog. No speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, detailed but uncluttered and suitable for an English speaking test.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bike",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "park",
+          "ja": "公園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bench",
+          "ja": "ベンチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "knee",
+          "ja": "ひざ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fix",
+          "ja": "直す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る・探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "run",
+          "ja": "走る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "hurt",
+          "ja": "けがをした・痛い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a broken bike",
+          "ja": "壊れた自転車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "fix the bike",
+          "ja": "自転車を直す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a phone",
+          "ja": "スマートフォンを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "ride through water",
+          "ja": "水の中を自転車で走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look for something",
+          "ja": "何かを探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pull the leash",
+          "ja": "リードを引っ張る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hurt his knee",
+          "ja": "ひざをけがする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help the boy",
+          "ja": "男の子を助ける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The girl's bike is broken.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "女の子の自転車が壊れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She looks worried.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女は心配そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is fixing the bike.",
+          "grammar": "現在進行形",
+          "ja": "友達が自転車を直しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another friend is using a phone.",
+          "grammar": "現在進行形",
+          "ja": "別の友達がスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child is riding through a puddle.",
+          "grammar": "現在進行形",
+          "ja": "子どもが水たまりの中を自転車で走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is looking for his earphone.",
+          "grammar": "現在進行形",
+          "ja": "男性がイヤホンを探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A dog is pulling its owner.",
+          "grammar": "現在進行形",
+          "ja": "犬が飼い主を引っ張っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An old man is helping a boy.",
+          "grammar": "現在進行形",
+          "ja": "高齢の男性が男の子を助けています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "bicycle",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chain",
+          "ja": "チェーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wheel",
+          "ja": "車輪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "puddle",
+          "ja": "水たまり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "earphone",
+          "ja": "イヤホン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bandage",
+          "ja": "ばんそうこう・包帯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "repair",
+          "ja": "修理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drop",
+          "ja": "落とす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "control",
+          "ja": "制御する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frustrated",
+          "ja": "いら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配している",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "surprised",
+          "ja": "驚いた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "injured",
+          "ja": "けがをした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "muddy",
+          "ja": "泥で汚れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "the bicycle chain came off",
+          "ja": "自転車のチェーンが外れた",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "try to repair the bicycle",
+          "ja": "自転車を修理しようとする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "search for repair instructions",
+          "ja": "修理方法を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "ride through a puddle",
+          "ja": "水たまりの中を自転車で走る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drop an earphone",
+          "ja": "イヤホンを落とす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle to control the dog",
+          "ja": "犬を制御するのに苦労する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scrape his knee",
+          "ja": "ひざをすりむく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put on a bandage",
+          "ja": "ばんそうこうを貼る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The girl's bicycle chain has come off, so she cannot continue riding.",
+          "grammar": "現在完了形 / so",
+          "ja": "女の子の自転車のチェーンが外れたため、彼女は走り続けることができません。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She looks frustrated because her bicycle suddenly stopped working.",
+          "grammar": "becauseを用いた理由説明",
+          "ja": "自転車が突然動かなくなったため、彼女はいら立っているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Her friend is trying to put the chain back on the bicycle.",
+          "grammar": "try to＋動詞",
+          "ja": "友達が自転車のチェーンを元に戻そうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another student is searching online for instructions on how to repair it.",
+          "grammar": "how to＋動詞",
+          "ja": "別の生徒は自転車の直し方をオンラインで調べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A child has splashed muddy water onto his clothes after riding through a puddle.",
+          "grammar": "現在完了形 / after＋動名詞",
+          "ja": "子どもは水たまりを自転車で走り、服に泥水をはねてしまいました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A jogger is searching for an earphone that he dropped somewhere on the path.",
+          "grammar": "関係代名詞that",
+          "ja": "ジョギング中の男性が道のどこかに落としたイヤホンを探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is struggling to control her dog because it keeps pulling on the leash.",
+          "grammar": "struggle to / keep＋動名詞",
+          "ja": "犬がリードを引っ張り続けるため、女性は犬を制御するのに苦労しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An elderly man is helping a boy who has scraped his knee.",
+          "grammar": "関係代名詞who / 現在完了形",
+          "ja": "高齢の男性がひざをすりむいた男の子を助けています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "malfunction",
+          "ja": "故障",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mechanism",
+          "ja": "機構・仕組み",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "gear",
+          "ja": "歯車・ギア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "maintenance",
+          "ja": "整備・保守",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "abrasion",
+          "ja": "擦り傷",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dislodge",
+          "ja": "外れる・外す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restore",
+          "ja": "元の状態に戻す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "探し出して回収する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "抑える・制止する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tend",
+          "ja": "手当てする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exasperated",
+          "ja": "ひどくいら立った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "perplexed",
+          "ja": "困惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "慌てた",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "relieved",
+          "ja": "ほっとした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "inconvenient",
+          "ja": "不便な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "experience a mechanical malfunction",
+          "ja": "機械的な故障に見舞われる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "have the chain dislodged",
+          "ja": "チェーンが外れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "restore the chain to the gears",
+          "ja": "チェーンをギアに戻す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consult online repair instructions",
+          "ja": "オンラインの修理方法を参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "splash muddy water over himself",
+          "ja": "自分に泥水をはねる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve a misplaced earphone",
+          "ja": "落としたイヤホンを探し出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "struggle to restrain the dog",
+          "ja": "犬を抑えるのに苦労する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "tend to a minor injury",
+          "ja": "軽いけがを手当てする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cope with an unexpected setback",
+          "ja": "予想外のトラブルに対処する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The cyclist appears exasperated after experiencing a mechanical malfunction that has brought her journey to an abrupt halt.",
+          "grammar": "after＋動名詞 / 関係代名詞that",
+          "ja": "その女子学生は、移動を突然中断させる機械的な故障に見舞われ、かなりいら立っているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The bicycle chain has become dislodged from the gears, making it impossible for her to continue riding.",
+          "grammar": "現在完了形 / 分詞構文",
+          "ja": "自転車のチェーンがギアから外れており、彼女は走り続けることができなくなっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One of her companions is attempting to restore the chain to its proper position while examining the rear wheel.",
+          "grammar": "while＋現在分詞 / attempt to",
+          "ja": "友人の一人が後輪を確認しながら、チェーンを正しい位置に戻そうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another friend is consulting online instructions, presumably in an effort to determine how the mechanism can be repaired.",
+          "grammar": "presumably / in an effort to / 間接疑問",
+          "ja": "別の友人は、おそらく修理方法を判断するためにオンラインの説明を確認しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "In the background, a child appears startled after splashing muddy water over himself while cycling through a puddle.",
+          "grammar": "after＋動名詞 / while＋動名詞",
+          "ja": "背景では、子どもが水たまりを自転車で走って自分に泥水をはね、驚いているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A jogger is carefully scanning the path in an attempt to retrieve an earphone that he appears to have misplaced.",
+          "grammar": "in an attempt to / appear to have＋過去分詞",
+          "ja": "ジョギング中の男性は、落としたと思われるイヤホンを探し出そうと道を注意深く見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Nearby, a dog owner is struggling to restrain her energetic pet, which is pulling forcefully on its leash.",
+          "grammar": "非制限用法which",
+          "ja": "近くでは、犬が強くリードを引っ張っており、飼い主が元気な犬を抑えるのに苦労しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An elderly man is tending to a child's minor knee injury by carefully applying a bandage to the abrasion.",
+          "grammar": "by＋動名詞",
+          "ja": "高齢の男性は、擦り傷にばんそうこうを貼って子どもの軽いひざのけがを手当てしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how people respond to several unexpected setbacks while carrying out ordinary activities in a public space.",
+          "grammar": "how節 / while＋動名詞",
+          "ja": "この場面は、公共の場所で日常的な活動をしている最中に起きる複数の予想外のトラブルに、人々がどのように対応するかを表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "schoolgirl": {
+      "x": 33,
+      "y": 49
+    },
+    "bicycle": {
+      "x": 42,
+      "y": 65
+    },
+    "chain": {
+      "x": 47,
+      "y": 70
+    },
+    "repairing_friend": {
+      "x": 50,
+      "y": 59
+    },
+    "smartphone_friend": {
+      "x": 61,
+      "y": 39
+    },
+    "puddle": {
+      "x": 17,
+      "y": 72
+    },
+    "jogger": {
+      "x": 72,
+      "y": 42
+    },
+    "dog": {
+      "x": 86,
+      "y": 56
+    },
+    "injured_boy": {
+      "x": 73,
+      "y": 72
+    },
+    "park_bench": {
+      "x": 80,
+      "y": 66
+    }
+  }
+}

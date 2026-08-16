@@ -1,0 +1,680 @@
+{
+  "id": "theme_l2_015",
+  "imageSrc": "assets/images/l2_015.webp",
+  "titleEn": "Balcony Garden Morning",
+  "titleJa": "ベランダ菜園の朝",
+  "description": "晴れた休日の朝、母親と2人の子どもがマンションの広いベランダで家庭菜園の世話をしている。中央では母親がハーブの苗を大きな植木鉢に植え替えている。高校生の娘はじょうろでトマトや花に水をやりながら葉の状態を確認している。小学生の弟は赤く熟したミニトマトを収穫し、小さなかごに入れている。周囲にはさまざまな鉢植え、園芸用具、土の袋、植物ラベル、ハーブ、花、トマトが並び、ベランダの向こうには住宅街と青空が見えている。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly three people on a spacious balcony of a modern Japanese apartment on a bright sunny weekend morning: one mother, one teenage daughter, and one young boy. Do not include any additional people. The atmosphere should be calm, cheerful, healthy, and cooperative. The main activity is family gardening. In the center foreground, the mother is kneeling beside a large planter and carefully transplanting a small herb plant from a temporary plastic pot into fresh soil. She is wearing simple gardening gloves and using a small hand trowel. Beside her, the teenage daughter is watering several tomato plants and colorful flowers with a green watering can. She is also examining one of the leaves closely, showing that she is checking the condition of the plants. On the other side, the young boy is happily picking ripe red cherry tomatoes from a plant and placing them into a small wicker basket. Make his harvested tomatoes clearly visible. Surround them with visually rich but organized gardening details: several pots of different sizes, tomato plants supported by stakes, basil and mint, flowering plants, a bag of potting soil, gardening gloves, a hand trowel, plant labels, a spray bottle, a small stool, a watering can, and a basket containing harvested tomatoes. Include a small outdoor table with a notebook and seed packets, but no additional people. In the background, show the balcony railing, neighboring apartment buildings, distant houses, green trees, and a clear blue sky. The three actions must be visually distinct and easy to describe: the mother transplanting herbs, the daughter watering and checking plants, and the boy harvesting tomatoes. Clear foreground, middle ground, and background. Exactly three visible people. No animals, no speech bubbles, no captions, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style, highly detailed but uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "mother",
+          "ja": "母親",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tomato",
+          "ja": "トマト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pot",
+          "ja": "植木鉢",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "basket",
+          "ja": "かご",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "soil",
+          "ja": "土",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水をやる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pick",
+          "ja": "摘む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "plant a flower",
+          "ja": "植物を植える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "water the plants",
+          "ja": "植物に水をやる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick tomatoes",
+          "ja": "トマトを収穫する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "red tomatoes",
+          "ja": "赤いトマト",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "put them in a basket",
+          "ja": "それらをかごに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the leaves",
+          "ja": "葉を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many flower pots",
+          "ja": "たくさんの植木鉢",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "on the balcony",
+          "ja": "ベランダで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three people are working in the garden.",
+          "grammar": "現在進行形",
+          "ja": "3人が家庭菜園の世話をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is planting a small plant.",
+          "grammar": "現在進行形",
+          "ja": "母親が小さな植物を植えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is watering the plants.",
+          "grammar": "現在進行形",
+          "ja": "女の子が植物に水をやっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at the leaves.",
+          "grammar": "現在進行形",
+          "ja": "彼女は葉を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boy is picking tomatoes.",
+          "grammar": "現在進行形",
+          "ja": "男の子がトマトを収穫しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is putting them in a basket.",
+          "grammar": "現在進行形",
+          "ja": "彼はトマトをかごに入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many plants on the balcony.",
+          "grammar": "There are",
+          "ja": "ベランダにはたくさんの植物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "balcony",
+          "ja": "ベランダ",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "garden",
+          "ja": "菜園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "herb",
+          "ja": "ハーブ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "seedling",
+          "ja": "苗",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "watering can",
+          "ja": "じょうろ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "gardening",
+          "ja": "園芸",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "transplant",
+          "ja": "植え替える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "harvest",
+          "ja": "収穫する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "よく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "育てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ripe",
+          "ja": "熟した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "healthy",
+          "ja": "健康な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fresh",
+          "ja": "新鮮な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cheerful",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "take care of the garden",
+          "ja": "菜園の世話をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "transplant a herb",
+          "ja": "ハーブを植え替える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "add fresh soil",
+          "ja": "新しい土を入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "water the tomato plants",
+          "ja": "トマトの苗に水をやる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine the leaves",
+          "ja": "葉をよく観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "harvest ripe tomatoes",
+          "ja": "熟したトマトを収穫する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "place them in a basket",
+          "ja": "それらをかごに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "grow vegetables at home",
+          "ja": "家で野菜を育てる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is taking care of a small garden on their balcony.",
+          "grammar": "現在進行形",
+          "ja": "家族はベランダにある小さな菜園の世話をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is transplanting a herb into a larger pot.",
+          "grammar": "現在進行形",
+          "ja": "母親はハーブを大きな植木鉢に植え替えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is adding fresh soil around the plant.",
+          "grammar": "現在進行形",
+          "ja": "彼女は植物の周りに新しい土を入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teenage girl is watering the tomatoes while examining their leaves.",
+          "grammar": "while＋現在分詞",
+          "ja": "10代の女の子は葉を観察しながらトマトに水をやっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She seems to be checking whether the plants are healthy.",
+          "grammar": "seem to be / whether",
+          "ja": "彼女は植物が元気かどうか確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The young boy is harvesting ripe cherry tomatoes.",
+          "grammar": "現在進行形",
+          "ja": "小さな男の子が熟したミニトマトを収穫しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is carefully placing the tomatoes into a small basket.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "彼はトマトを小さなかごへ注意深く入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The balcony contains several kinds of vegetables, herbs, and flowers.",
+          "grammar": "現在形",
+          "ja": "ベランダには数種類の野菜、ハーブ、花があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The three family members seem to enjoy gardening together.",
+          "grammar": "seem to＋動詞",
+          "ja": "3人の家族は一緒に園芸を楽しんでいるようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "cultivation",
+          "ja": "栽培",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vegetation",
+          "ja": "植物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "seedling",
+          "ja": "苗",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "produce",
+          "ja": "農産物・収穫物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "foliage",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "transplant",
+          "ja": "植え替える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cultivate",
+          "ja": "栽培する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replenish",
+          "ja": "補充する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "詳しく点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "harvest",
+          "ja": "収穫する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "thriving",
+          "ja": "よく育っている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "mature",
+          "ja": "十分に熟した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sustainable",
+          "ja": "持続可能な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "satisfied",
+          "ja": "満足した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "engage in small-scale cultivation",
+          "ja": "小規模な栽培を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "transplant a young seedling",
+          "ja": "若い苗を植え替える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "replenish the potting soil",
+          "ja": "鉢植え用の土を補充する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inspect the foliage",
+          "ja": "葉の状態を詳しく確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain healthy vegetation",
+          "ja": "植物を健康に保つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "harvest mature produce",
+          "ja": "十分に熟した作物を収穫する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "collect freshly picked tomatoes",
+          "ja": "採れたてのトマトを集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice sustainable gardening",
+          "ja": "持続可能な園芸を実践する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "make efficient use of limited space",
+          "ja": "限られた空間を効率的に活用する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The family is engaging in small-scale vegetable cultivation on the balcony of their apartment.",
+          "grammar": "現在進行形",
+          "ja": "家族はマンションのベランダで小規模な野菜栽培を行っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The mother is carefully transplanting a young herb seedling into a larger container filled with fresh soil.",
+          "grammar": "現在進行形 / 過去分詞修飾",
+          "ja": "母親は若いハーブの苗を新しい土の入った大きな鉢へ注意深く植え替えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her daughter is watering the vegetation while closely inspecting the foliage for signs of poor health.",
+          "grammar": "while＋現在分詞 / for signs of",
+          "ja": "娘は植物に水をやりながら、健康状態に問題がないか葉を詳しく確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears to be monitoring the plants in order to ensure that they continue to thrive.",
+          "grammar": "appear to be＋現在分詞 / in order to",
+          "ja": "植物が順調に育ち続けるよう、彼女は状態を確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the young boy is harvesting mature cherry tomatoes and placing the freshly picked produce into a basket.",
+          "grammar": "現在進行形 / 過去分詞修飾",
+          "ja": "その一方で、男の子は熟したミニトマトを収穫し、採れたての作物をかごへ入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The variety of herbs, vegetables, and flowering plants suggests that the family has made efficient use of the limited balcony space.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "さまざまなハーブ、野菜、花があることから、家族が限られたベランダの空間を効率的に活用していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The gardening tools and labeled containers indicate that the plants are being maintained in an organized and attentive manner.",
+          "grammar": "indicate that / 現在進行受動態",
+          "ja": "園芸道具やラベル付きの鉢から、植物が整理された丁寧な方法で管理されていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "All three family members appear engaged in different stages of the cultivation process.",
+          "grammar": "appear＋補語",
+          "ja": "3人の家族はそれぞれ栽培の異なる作業に熱心に取り組んでいるようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how urban residents can practice sustainable gardening even when they have only a limited amount of outdoor space.",
+          "grammar": "how節 / even when",
+          "ja": "この場面は、屋外スペースが限られていても都市の住民が持続可能な園芸を実践できることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "mother": {
+      "x": 40,
+      "y": 53
+    },
+    "herb_seedling": {
+      "x": 43,
+      "y": 65
+    },
+    "plant_pot": {
+      "x": 45,
+      "y": 71
+    },
+    "daughter": {
+      "x": 63,
+      "y": 49
+    },
+    "watering_can": {
+      "x": 61,
+      "y": 61
+    },
+    "tomato_plants": {
+      "x": 70,
+      "y": 48
+    },
+    "boy": {
+      "x": 79,
+      "y": 61
+    },
+    "tomato_basket": {
+      "x": 82,
+      "y": 72
+    },
+    "soil_bag": {
+      "x": 25,
+      "y": 73
+    },
+    "balcony_railing": {
+      "x": 55,
+      "y": 28
+    }
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_024",
+  "imageSrc": "assets/images/l2_024.webp",
+  "titleEn": "Cafe Catch-Up",
+  "titleJa": "カフェで久しぶり",
+  "description": "夕方の落ち着いたカフェで、2人の友人が並んで座り、久しぶりの再会を楽しんでいる。左側の男性はスマートフォンに保存した旅行写真を見せながら笑顔で話し、右側の女性は写真を見ながら楽しそうに話を聞いている。テーブルには飲み終わりかけのコーヒー、デザートを食べ終えた皿、ナプキン、テーブル番号の札が置かれている。背景には大きな窓、街の景色、観葉植物、花や写真立てが並ぶ棚があり、暖かく落ち着いたカフェの雰囲気が感じられる。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test, inspired by a cozy modern cafe photograph. Show exactly two adult friends sitting closely beside each other at a small round cafe table in the early evening. Do not include any additional visible people. The atmosphere should be warm, relaxed, friendly, comfortable, and natural. On the left, an adult man with short dark hair is sitting casually on a wooden chair. He is smiling and holding a smartphone slightly toward his friend, showing her several travel photographs on the screen while talking about them. On the right, an adult woman wearing glasses is sitting beside him with a relaxed posture. She is smiling warmly, looking at the smartphone, and listening with interest. Make their interaction clearly look like two friends catching up after not seeing each other for some time. On the small round table in front of them, place two partly finished drinks, one coffee cup and one glass, two small dessert plates with only a few crumbs remaining, folded napkins, a spoon, and a clearly visible simple table-number card marked 7. Include a modern cafe interior inspired by the reference photograph: warm wooden flooring, elegant hanging pendant lights, a large street-facing window, decorative shelving with small plants, dried flowers, framed pictures, pottery, and simple ornaments. Through the window, show an evening street with shops and trees, but do not include clearly visible pedestrians. The main story should be the two friends sharing travel photos and enjoying conversation, while the finished drinks and dessert plates suggest that they have been talking for some time. Exactly two visible people. No additional people, no animals, no speech bubbles, no brand logos, no copyrighted characters. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but uncluttered, expressive natural facial expressions and body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "cafe",
+          "ja": "カフェ",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coffee",
+          "ja": "コーヒー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plate",
+          "ja": "皿",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "見せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "笑う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "sit in a cafe",
+          "ja": "カフェに座る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "talk with a friend",
+          "ja": "友達と話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show some pictures",
+          "ja": "写真を見せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the phone",
+          "ja": "スマートフォンを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drink coffee",
+          "ja": "コーヒーを飲む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "small round table",
+          "ja": "小さな丸いテーブル",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "empty plates",
+          "ja": "食べ終わった皿",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "smile at each other",
+          "ja": "お互いに笑顔を見せる",
+          "type": "emotion",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two friends are sitting in a cafe.",
+          "grammar": "現在進行形",
+          "ja": "2人の友達がカフェに座っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is showing some pictures.",
+          "grammar": "現在進行形",
+          "ja": "男性が写真を見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is holding a smartphone.",
+          "grammar": "現在進行形",
+          "ja": "彼はスマートフォンを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is looking at the phone.",
+          "grammar": "現在進行形",
+          "ja": "女性がスマートフォンを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are talking together.",
+          "grammar": "現在進行形",
+          "ja": "2人は一緒に話しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There are drinks on the table.",
+          "grammar": "There are",
+          "ja": "テーブルには飲み物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two small plates.",
+          "grammar": "There are",
+          "ja": "小さな皿が2枚あります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look very happy.",
+          "grammar": "look＋形容詞",
+          "ja": "2人はとても楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "conversation",
+          "ja": "会話",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dessert",
+          "ja": "デザート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "decoration",
+          "ja": "飾り",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shelf",
+          "ja": "棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "share",
+          "ja": "共有する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "chat",
+          "ja": "おしゃべりする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remember",
+          "ja": "思い出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "describe",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "relaxed",
+          "ja": "くつろいだ",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "interested",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "friendly",
+          "ja": "親しみやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "comfortable",
+          "ja": "心地よい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cozy",
+          "ja": "居心地のよい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "catch up with a friend",
+          "ja": "友達と久しぶりに近況を話す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "share travel photographs",
+          "ja": "旅行写真を見せ合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "describe his trip",
+          "ja": "旅行について説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen with interest",
+          "ja": "興味深そうに聞く",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "have a conversation",
+          "ja": "会話をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "finish their desserts",
+          "ja": "デザートを食べ終える",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "spend time together",
+          "ja": "一緒に時間を過ごす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "relax in a cozy cafe",
+          "ja": "居心地のよいカフェでくつろぐ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two friends are catching up in a cozy cafe.",
+          "grammar": "現在進行形 / catch up",
+          "ja": "2人の友達は居心地のよいカフェで久しぶりに話をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is showing his friend some travel photographs on his smartphone.",
+          "grammar": "show＋人＋物",
+          "ja": "男性はスマートフォンで友達に旅行写真を見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be describing something that happened during his trip.",
+          "grammar": "appear to be / 関係代名詞that",
+          "ja": "彼は旅行中に起こったことについて説明しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The woman is listening to him with interest while looking at the photographs.",
+          "grammar": "while＋現在分詞",
+          "ja": "女性は写真を見ながら興味深そうに彼の話を聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They both look relaxed and pleased to be spending time together.",
+          "grammar": "look＋形容詞 / be pleased to",
+          "ja": "2人ともリラックスしており、一緒に過ごせることを喜んでいるようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The almost empty plates suggest that they have already finished their desserts.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "ほとんど空になった皿から、2人がすでにデザートを食べ終えたことが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their drinks are still on the table, so they may stay at the cafe a little longer.",
+          "grammar": "so / may",
+          "ja": "飲み物がまだテーブルにあるので、もう少しカフェにいるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The warm lighting makes the cafe look comfortable and welcoming.",
+          "grammar": "make＋O＋C",
+          "ja": "暖かい照明によって、カフェは心地よく親しみやすく見えます。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "reunion",
+          "ja": "再会",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "companionship",
+          "ja": "親しい交友関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reminiscence",
+          "ja": "思い出話",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ambience",
+          "ja": "雰囲気",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "interior",
+          "ja": "室内・内装",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reconnect",
+          "ja": "再び交流を深める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reminisce",
+          "ja": "思い出を語る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "recount",
+          "ja": "詳しく語る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "engage",
+          "ja": "熱心に関わる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "linger",
+          "ja": "長くその場にとどまる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "delighted",
+          "ja": "とても喜んだ",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深く聞いている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convivial",
+          "ja": "打ち解けた楽しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inviting",
+          "ja": "居心地がよく魅力的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nostalgic",
+          "ja": "懐かしさを感じる",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "reconnect with an old friend",
+          "ja": "久しぶりの友人と交流を深める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "recount his recent travels",
+          "ja": "最近の旅行について詳しく語る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "share photographs from his journey",
+          "ja": "旅の写真を見せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen attentively to his story",
+          "ja": "彼の話を注意深く聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "engage in a relaxed conversation",
+          "ja": "くつろいだ会話を楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reminisce about shared experiences",
+          "ja": "共通の思い出について語る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "linger over their drinks",
+          "ja": "飲み物を楽しみながら長く過ごす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create an inviting ambience",
+          "ja": "居心地のよい雰囲気を作る",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "value personal companionship",
+          "ja": "人とのつながりを大切にする",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two friends appear to be reconnecting over drinks in a relaxed and inviting cafe.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "2人の友人は、居心地のよいカフェで飲み物を楽しみながら久しぶりの交流を深めているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is showing his companion photographs on his smartphone, presumably while recounting a recent journey.",
+          "grammar": "presumably / while＋現在分詞",
+          "ja": "男性は、おそらく最近の旅行について話しながら友人にスマートフォンの写真を見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His animated expression suggests that he is enthusiastic about sharing the experience with her.",
+          "grammar": "suggest that",
+          "ja": "彼の生き生きとした表情から、その経験を彼女と共有することを楽しんでいることがうかがえます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The woman is listening attentively and appears genuinely engaged in the conversation.",
+          "grammar": "appear＋補語",
+          "ja": "女性は注意深く話を聞き、会話に心から興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Their relaxed posture and warm smiles indicate a comfortable sense of companionship.",
+          "grammar": "indicate＋名詞",
+          "ja": "リラックスした姿勢と温かな笑顔から、2人の親しい関係が感じられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The nearly empty dessert plates imply that they have already spent a considerable amount of time talking.",
+          "grammar": "imply that / 現在完了形",
+          "ja": "ほぼ空になったデザート皿から、2人がすでにかなりの時間を話して過ごしていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "They may be lingering over their drinks because neither of them appears eager to end the conversation.",
+          "grammar": "may / because / appear＋補語",
+          "ja": "どちらも会話を終えたそうには見えないため、飲み物を楽しみながらゆっくり過ごしているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The decorative shelving, plants, pendant lighting, and street-facing window contribute to the cafe's sophisticated yet inviting ambience.",
+          "grammar": "contribute to",
+          "ja": "飾り棚、植物、ペンダント照明、通りに面した窓が、洗練されながらも居心地のよいカフェの雰囲気を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary meeting over coffee can provide an opportunity to reconnect, exchange experiences, and strengthen a personal relationship.",
+          "grammar": "how節 / provide an opportunity to",
+          "ja": "この場面は、カフェでの何気ない再会が、交流を深め、経験を共有し、人間関係を強める機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man": {
+      "x": 39,
+      "y": 56
+    },
+    "woman": {
+      "x": 59,
+      "y": 55
+    },
+    "smartphone": {
+      "x": 48,
+      "y": 58
+    },
+    "round_table": {
+      "x": 73,
+      "y": 69
+    },
+    "coffee_cup": {
+      "x": 81,
+      "y": 61
+    },
+    "dessert_plates": {
+      "x": 70,
+      "y": 65
+    },
+    "table_number": {
+      "x": 70,
+      "y": 54
+    },
+    "decorative_shelf": {
+      "x": 76,
+      "y": 24
+    },
+    "large_window": {
+      "x": 30,
+      "y": 30
+    },
+    "pendant_light": {
+      "x": 40,
+      "y": 15
+    }
+  }
+}
