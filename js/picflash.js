@@ -24,7 +24,6 @@ const LANG_INFO = {
     "my-MM": { cc: "mm", name: "ビルマ語", hintLang: "en-US" }
 };
 
-// ★ 音声認識精度を高めるためのストップワード
 const STOP_WORDS = new Set([
     'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
     'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
@@ -96,18 +95,16 @@ function getTargetWordForLang(card, langCode) {
     return targetWord;
 }
 
-// ★ 大幅強化：日本語・中国語の揺れ吸収 ＆ 英語などの柔軟なマッチング
 function checkIsCorrect(card, transcript, targetLang) {
     let targetWordsArray = [];
     if (card.targets && card.targets[targetLang]) {
         targetWordsArray = card.targets[targetLang];
     } else if (targetLang === 'en-US' && card.level1 && card.level1.words) {
-        targetWordsArray = card.level1.words.map(w => w.text || w); // Level 1のオブジェクト対応
+        targetWordsArray = card.level1.words.map(w => w.text || w);
     }
 
     if (!targetWordsArray || targetWordsArray.length === 0) return false;
 
-    // カタカナをひらがなに変換する関数
     const toHiragana = (str) => str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
     
     return targetWordsArray.some(targetPhrase => {
@@ -116,7 +113,6 @@ function checkIsCorrect(card, transcript, targetLang) {
             const phraseNoSpace = toHiragana(targetPhrase.toLowerCase()).replace(/\s+/g, '');
             return transcriptNoSpace.includes(phraseNoSpace);
         } else {
-            // 英語などは、冠詞を抜いて、複数形や過去形の違いを許容する
             const targetWords = targetPhrase.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => !STOP_WORDS.has(w) && w.length > 0);
             const spokenWords = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => w.length > 0);
             
@@ -126,7 +122,6 @@ function checkIsCorrect(card, transcript, targetLang) {
             targetWords.forEach(tw => {
                 const isMatch = spokenWords.some(sw => {
                     if (sw === tw) return true;
-                    // 単語の語尾変化を吸収 (s, es, ing, ed, d)
                     if (sw === tw + 's' || sw === tw + 'es' || sw === tw + 'ing' || sw === tw + 'ed' || sw === tw + 'd') return true;
                     if (tw === sw + 's' || tw === sw + 'es' || tw === sw + 'ing' || tw === sw + 'ed' || tw === sw + 'd') return true;
                     return false;
@@ -134,7 +129,6 @@ function checkIsCorrect(card, transcript, targetLang) {
                 if (isMatch) matchCount++;
             });
 
-            // 1〜2単語なら100%一致、長いフレーズなら80%一致で正解とする
             const requiredRate = targetWords.length <= 2 ? 1.0 : 0.8;
             return (matchCount / targetWords.length) >= requiredRate;
         }
@@ -148,10 +142,12 @@ if (SpeechRec) {
     pfRec = new SpeechRec();
     pfRec.interimResults = true;
     pfRec.continuous = true;
-    pfRec.maxAlternatives = 3; // ★ 強化: 発音の第3候補まで取得して判定精度を向上
+    pfRec.maxAlternatives = 3; 
     
     pfRec.onresult = (e) => {
-        // 全ての候補（最大3つ）の文章を組み立てる
+        // ★ ここが最重要：切り替え中や解答済みの時は、過去の音声を拾っても【完全に無視】する
+        if (pfState.isTransitioning || pfState.isSwitchingMic || pfState.hasAnswered) return;
+
         let transcripts = ['', '', ''];
         for (let i = 0; i < e.results.length; ++i) {
             transcripts[0] += e.results[i][0].transcript.toLowerCase() + ' ';
@@ -164,63 +160,64 @@ if (SpeechRec) {
         // --- 本番モード(Trial) の処理 ---
         if (pfState.isPlaying && pfState.mode === 'trial') {
             const statusTextEl = document.getElementById('pf-status-text');
+            // 切り替え中でない時だけUIを更新する
             if (statusTextEl) statusTextEl.innerText = mainTranscript || 'Listening...';
 
-            if (!pfState.hasAnswered && !pfState.isTransitioning) {
-                // スキップ判定
-                if (mainTranscript.includes("skip") || mainTranscript.includes("スキップ")) {
-                    handleSkip();
-                    return;
-                }
+            if (mainTranscript.includes("skip") || mainTranscript.includes("スキップ")) {
+                handleSkip();
+                return;
+            }
 
-                const card = pfState.cards[pfState.currentIndex];
-                const currentLang = pfState.languages[pfState.currentLangIndex];
+            const card = pfState.cards[pfState.currentIndex];
+            const currentLang = pfState.languages[pfState.currentLangIndex];
 
-                // 3つの発音候補すべてで正解チェックを行う
-                for (let t of transcripts) {
-                    if (checkIsCorrect(card, t, currentLang)) {
-                        const completedLangIndex = pfState.currentLangIndex;
-                        pfState.currentLangIndex++;
+            for (let t of transcripts) {
+                if (checkIsCorrect(card, t, currentLang)) {
+                    const completedLangIndex = pfState.currentLangIndex;
+                    pfState.currentLangIndex++;
+                    
+                    revealAllHints('step', completedLangIndex); 
+                    
+                    if (pfState.currentLangIndex >= pfState.languages.length) {
+                        handleCorrect();
+                    } else {
+                        pfState.hasAnswered = true;
+                        pfState.isTransitioning = true;
+                        playPfSound('stepCorrect');
                         
-                        revealAllHints('step', completedLangIndex); 
-                        
-                        if (pfState.currentLangIndex >= pfState.languages.length) {
-                            handleCorrect();
-                        } else {
-                            pfState.isTransitioning = true;
-                            playPfSound('stepCorrect');
-                            
-                            const checkAnimEl = document.getElementById('correct-answer-anim');
-                            if (checkAnimEl) {
-                                checkAnimEl.classList.remove('hidden');
-                                checkAnimEl.classList.add('animate-pop-check');
-                                setTimeout(() => {
-                                    checkAnimEl.classList.remove('animate-pop-check');
-                                    checkAnimEl.classList.add('hidden');
-                                }, 600); 
-                            }
-
-                            updateTrialLangUI();
-                            
+                        const checkAnimEl = document.getElementById('correct-answer-anim');
+                        if (checkAnimEl) {
+                            checkAnimEl.classList.remove('hidden');
+                            checkAnimEl.classList.add('animate-pop-check');
                             setTimeout(() => {
-                                updateHintUI();
-                                pfState.cardStartTime = Date.now(); 
-                                pfState.isTransitioning = false;
-                                document.getElementById('pf-status-text').innerText = 'Ready...';
-                                
-                                pfState.isSwitchingMic = true;
-                                try { pfRec.abort(); } catch(err){}
-                                pfRec.lang = pfState.languages[pfState.currentLangIndex];
-                                setTimeout(() => { 
-                                    pfState.isSwitchingMic = false;
-                                    if (pfState.isPlaying) {
-                                        try { pfRec.start(); } catch(err){} 
-                                    }
-                                }, 200);
+                                checkAnimEl.classList.remove('animate-pop-check');
+                                checkAnimEl.classList.add('hidden');
                             }, 600); 
                         }
-                        return; // 正解したら抜ける
+
+                        updateTrialLangUI();
+                        
+                        setTimeout(() => {
+                            updateHintUI();
+                            pfState.cardStartTime = Date.now(); 
+                            document.getElementById('pf-status-text').innerText = 'Ready...';
+                            
+                            pfState.isSwitchingMic = true;
+                            try { pfRec.abort(); } catch(err){}
+                            pfRec.lang = pfState.languages[pfState.currentLangIndex];
+                            
+                            // ★ バッファを完全に消すために待機時間を400msに延長
+                            setTimeout(() => { 
+                                pfState.isSwitchingMic = false;
+                                pfState.isTransitioning = false;
+                                pfState.hasAnswered = false; // ここで初めて次の解答を許可
+                                if (pfState.isPlaying) {
+                                    try { pfRec.start(); } catch(err){} 
+                                }
+                            }, 400);
+                        }, 600); 
                     }
+                    return; 
                 }
             }
         } 
@@ -228,8 +225,6 @@ if (SpeechRec) {
         else if (pfState.mode === 'practice' && window.practiceTargetWords) {
             const statusEl = document.getElementById(window.practiceStatusId);
             let isMatch = false;
-            
-            // ターゲット配列を仮のカード構造にして checkIsCorrect に投げる
             const mockCard = { targets: { [pfRec.lang]: window.practiceTargetWords } };
             
             for (let t of transcripts) {
@@ -363,6 +358,7 @@ function startTrialMode() {
     pfState.penalty = 0; 
     pfState.comboCount = 0;
     pfState.isPlaying = false; 
+    pfState.hasAnswered = false;
     pfState.isTransitioning = false;
     
     const lampsContainer = document.getElementById('pf-progress-lamps');
@@ -444,6 +440,8 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
 
     document.getElementById('pf-status-text').innerText = 'Listening...';
     
+    pfState.hasAnswered = false;
+    pfState.isTransitioning = false;
     pfState.isSwitchingMic = true;
     try { pfRec.abort(); } catch(e){}
     if (pfRec) pfRec.lang = pfState.languages[pfState.currentLangIndex];
@@ -452,12 +450,10 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
         if (pfState.isPlaying) {
             try { pfRec.start(); } catch(e){}
         }
-    }, 200);
+    }, 400); // 余裕を持たせる
 });
 
 function loadPfCard(isNewImage) {
-    setTimeout(() => { pfState.hasAnswered = false; pfState.isTransitioning = false; }, 100);
-
     if (pfState.isPlaying) pfState.cardStartTime = Date.now();
     pfState.currentLangIndex = 0; 
 
@@ -485,6 +481,9 @@ function loadPfCard(isNewImage) {
     document.getElementById('pf-overlay-correct').classList.add('hidden');
     document.getElementById('pf-overlay-skip').classList.add('hidden');
     document.getElementById('pf-card').classList.remove('scale-95');
+
+    // ★ 表示を強制的にリセット
+    document.getElementById('pf-status-text').innerText = 'Ready...';
 
     updateTrialLangUI();
     updateHintUI();
@@ -622,20 +621,25 @@ function handleCorrect() {
     playPfSound('correct');
     setTimeout(() => {
         pfState.currentIndex++;
-        pfState.isTransitioning = false;
-        if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { 
+        if (pfState.currentIndex >= pfState.cards.length) {
+            pfState.isTransitioning = false;
+            endPfGame();
+        } else { 
             pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
+
+            // ★ 新しいカードが出てから、バッファを完全にクリアして再始動
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
+                pfState.isTransitioning = false;
+                pfState.hasAnswered = false; // ここで初めて解答可能になる
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 200);
+            }, 400); // 余裕を持たせた400ms
         }
     }, 1200); 
 }
@@ -670,20 +674,25 @@ function handleSkip() {
     
     setTimeout(() => {
         pfState.currentIndex++;
-        pfState.isTransitioning = false;
-        if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { 
+        if (pfState.currentIndex >= pfState.cards.length) {
+            pfState.isTransitioning = false;
+            endPfGame();
+        } else { 
             pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
+            
+            // ★ 新しいカードが出てから、バッファを完全にクリアして再始動
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
+                pfState.isTransitioning = false;
+                pfState.hasAnswered = false; // ここで初めて解答可能になる
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 200);
+            }, 400); // 余裕を持たせた400ms
         }
     }, 1500); 
 }
