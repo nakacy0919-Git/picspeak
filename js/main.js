@@ -954,19 +954,18 @@ window.openPractice = function(text, ja) {
 };
 
 // ==========================================
-// ★ イベントデリゲーション (完全版：フィルター＆事前練習対応)
+// ★ イベントデリゲーション (完全統合版：すべてのボタンをここで管理)
 // ==========================================
 document.addEventListener('click', (e) => {
     
     // 1. タップ音の再生
-    if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home') || e.target.closest('.theme-filter-btn') || e.target.closest('.pre-type-btn') || e.target.closest('.pre-level-btn')) {
+    if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home') || e.target.closest('.theme-filter-btn') || e.target.closest('.pre-type-btn') || e.target.closest('.pre-level-btn') || e.target.closest('#btn-enter-classroom') || e.target.closest('.class-level-btn')) {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // 2. ★ フィルターボタンの処理（ここが消えていたため復元しました）
+    // 2. フィルターボタンの処理
     const filterBtn = e.target.closest('.theme-filter-btn');
     if (filterBtn) {
-        // ボタンの見た目切り替え
         document.querySelectorAll('.theme-filter-btn').forEach(b => {
             b.classList.remove('bg-gray-800', 'text-white', 'shadow-md');
             b.classList.add('bg-white', 'text-gray-500');
@@ -974,19 +973,17 @@ document.addEventListener('click', (e) => {
         filterBtn.classList.remove('bg-white', 'text-gray-500');
         filterBtn.classList.add('bg-gray-800', 'text-white', 'shadow-md');
 
-        // 画像の絞り込み
         const selectedFilter = filterBtn.getAttribute('data-filter');
         document.querySelectorAll('.theme-card').forEach(card => {
             const cardCat = card.getAttribute('data-category');
-            
             if (selectedFilter === 'all') {
-                if (cardCat === 'other') card.style.display = 'none'; // 新シリーズのみ表示
+                if (cardCat === 'other') card.style.display = 'none'; 
                 else card.style.display = '';
             } else if (selectedFilter === 'level1') {
-                if (cardCat === 'other') card.style.display = ''; // 過去の教材のみ表示
+                if (cardCat === 'other') card.style.display = ''; 
                 else card.style.display = 'none';
             } else {
-                if (cardCat === selectedFilter) card.style.display = ''; // 選択したカテゴリを表示
+                if (cardCat === selectedFilter) card.style.display = ''; 
                 else card.style.display = 'none';
             }
         });
@@ -998,8 +995,6 @@ document.addEventListener('click', (e) => {
     if (preLevelBtn) {
         window.appState.selectedLevel = preLevelBtn.getAttribute('data-level');
         window.renderPrePracticeList();
-        
-        // メイン画面のレベルボタンと同期
         document.querySelectorAll('.level-btn').forEach(b => { 
             if (b.getAttribute('data-level') === window.appState.selectedLevel) {
                 b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
@@ -1012,7 +1007,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 4. 事前練習モード：タイプ(Words/Chunks/Sentences)タブ切り替え
+    // 4. 事前練習モード：タイプ(Words/Chunks/Sentences)切り替え
     const preTypeBtn = e.target.closest('.pre-type-btn');
     if (preTypeBtn) {
         window.prePracticeCurrentType = preTypeBtn.getAttribute('data-type');
@@ -1090,7 +1085,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 7. 画像（テーマ）選択 -> ポップアップ表示
+    // 7. 画像選択 -> ポップアップ表示
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
@@ -1131,7 +1126,33 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // 11. ゲームプレイ関連
+    // 11. ★ 授業モードへ入るボタン
+    const btnEnterClassroom = e.target.closest('#btn-enter-classroom');
+    if (btnEnterClassroom) {
+        window.openClassroomMode();
+        return;
+    }
+
+    // 12. ★ 授業モードを閉じるボタン
+    const btnExitClassroom = e.target.closest('#btn-exit-classroom');
+    if (btnExitClassroom) {
+        if (window.currentClassroomAudio) {
+            window.currentClassroomAudio.pause();
+        }
+        document.getElementById('view-classroom').classList.add('hidden');
+        document.getElementById('view-pre-practice').classList.remove('hidden');
+        return;
+    }
+
+    // 13. ★ 授業モード内のレベル切り替え
+    const classLevelBtn = e.target.closest('.class-level-btn');
+    if (classLevelBtn) {
+        window.appState.selectedLevel = classLevelBtn.getAttribute('data-level');
+        window.renderClassroomList();
+        return;
+    }
+
+    // 14. ゲームプレイ関連 (START, FINISH, PLAY AGAIN)
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
@@ -1199,6 +1220,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 15. 練習ポップアップ処理
     const practiceStartBtn = e.target.closest('#btn-start-practice');
     if (practiceStartBtn) {
         window.togglePracticeRecording();
@@ -1210,18 +1232,15 @@ document.addEventListener('click', (e) => {
         window.closePracticeModal();
         return;
     }
-});
 
-// ==========================================
-// ★ ORAL QUEST ボタンイベント
-// ==========================================
-document.addEventListener('click', (e) => {
+    // 16. ORAL QUEST 関連
     const btnOqStart = e.target.closest('#btn-oq-start');
     if (btnOqStart) {
         if (typeof window.OralQuestGame !== 'undefined') {
             window.OralQuestGame.startRecording();
             window.isRecording = true;
         }
+        return;
     }
 
     const oqIndicator = e.target.closest('#oq-recording-indicator');
@@ -1229,6 +1248,7 @@ document.addEventListener('click', (e) => {
         if (typeof window.OralQuestGame !== 'undefined') {
             window.OralQuestGame.stopRecording();
         }
+        return;
     }
 
     const btnOqNext = e.target.closest('#btn-oq-next');
@@ -1236,38 +1256,118 @@ document.addEventListener('click', (e) => {
         if (typeof window.OralQuestGame !== 'undefined') {
             window.OralQuestGame.handleNextButton();
         }
+        return;
     }
 });
 
-window.addEventListener('DOMContentLoaded', window.initApp);
 
 // ==========================================
-// ★ ORAL QUEST 開発中パスワードロック ★
+// ★ 授業モード（Classroom Mode）ロジック
 // ==========================================
-function setupOqPasswordLock() {
-    const oqBtn = document.querySelector('.mode-btn[data-mode="oralquest"]');
-    if (oqBtn) {
-        oqBtn.addEventListener('click', (e) => {
-            const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
-            if (pass !== "9999") {
-                e.stopImmediatePropagation(); 
-                e.preventDefault();
-                alert("パスワードが違います。");
-            }
-        }, true); 
+window.currentClassroomAudio = null;
+
+window.openClassroomMode = function() {
+    const classroomView = document.getElementById('view-classroom');
+    
+    // 【安全装置】もしHTMLが見つからない場合はアラートで教える
+    if (!classroomView) {
+        alert("【エラー】授業モードの画面が見つかりません。\nplay.html の一番下（<div id=\"ios-prompt\">の直前）に、指定したHTMLコードが正しく貼り付けられているか確認してください！");
+        return;
     }
-}
+    
+    if (!window.currentTheme) return;
+    
+    // 画面の切り替え
+    document.querySelectorAll('.app-container > div:not(.hidden)[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    classroomView.classList.remove('hidden');
+    
+    // 画像のセット
+    const imgEl = document.getElementById('classroom-image');
+    if (imgEl) {
+        imgEl.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+    }
+    
+    window.renderClassroomList();
+};
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
-} else {
-    setupOqPasswordLock();
-}
+window.renderClassroomList = function() {
+    // レベルボタンの見た目更新
+    document.querySelectorAll('.class-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+            b.classList.add('bg-pink-500', 'text-white');
+            b.classList.remove('text-gray-400');
+        } else {
+            b.classList.remove('bg-pink-500', 'text-white');
+            b.classList.add('text-gray-400');
+        }
+    });
+
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    const listContainer = document.getElementById('classroom-sentence-list');
+    if (!listContainer) return;
+    
+    listContainer.innerHTML = '';
+
+    if (!targetData.sentences || targetData.sentences.length === 0) {
+        listContainer.innerHTML = '<p class="text-gray-500 text-center mt-10">データがありません。</p>';
+        return;
+    }
+
+    targetData.sentences.forEach((sentence, index) => {
+        const escapedText = sentence.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const escapedJa = (sentence.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const audioSrc = sentence.audioSrc || ''; // JSONにaudioSrcが定義されている想定
+
+        // ★ 音声先行・文字後出しのUI（最初は文字が隠れている）
+        listContainer.innerHTML += `
+            <div class="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-gray-500 transition-colors">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-gray-400 font-bold text-sm">Sentence ${index + 1}</span>
+                    <button onclick="window.playClassroomAudio('${audioSrc}', '${escapedText}')" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+                        <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                </div>
+                <!-- テキスト部分（初期状態は伏せ字/非表示） -->
+                <div class="classroom-text-reveal cursor-pointer group" onclick="this.classList.toggle('revealed')">
+                    <div class="text-gray-500 text-sm font-bold border-2 border-dashed border-gray-600 rounded-xl p-3 text-center group-[.revealed]:hidden hover:bg-gray-600/30 transition-colors">
+                        👀 クリックして英文を表示
+                    </div>
+                    <div class="hidden group-[.revealed]:block">
+                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${sentence.text}</p>
+                        <p class="text-gray-400 text-sm font-bold">${sentence.ja}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+};
+
+window.playClassroomAudio = function(audioSrc, fallbackText) {
+    if (window.currentClassroomAudio) {
+        window.currentClassroomAudio.pause();
+        window.currentClassroomAudio.currentTime = 0;
+    }
+
+    if (audioSrc) {
+        // ネイティブ音声ファイルがある場合
+        window.currentClassroomAudio = new Audio(audioSrc);
+        window.currentClassroomAudio.play().catch(e => {
+            console.warn("音声ファイルの再生に失敗しました:", e);
+            // 失敗したらTTS（ブラウザ合成音声）で代用
+            window.playResultTTS(fallbackText);
+        });
+    } else {
+        // 音声ファイルがない場合はTTSを使用
+        window.playResultTTS(fallbackText);
+    }
+};
+
+
 // ==========================================
-// ★ 事前練習モード (Pre-Practice) ロジック (タブ対応版)
+// ★ 事前練習モード (Pre-Practice) ロジック
 // ==========================================
 window.tempSelectedThemeId = null;
-window.prePracticeCurrentType = 'words'; // 初期値は 'words'
+window.prePracticeCurrentType = 'words';
 
 window.startPrePracticeWithTheme = async function(id) {
     try {
@@ -1283,14 +1383,12 @@ window.startPrePracticeWithTheme = async function(id) {
         return; 
     }
 
-    // 画像のセット
-    document.getElementById('pre-practice-image').src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+    const preImg = document.getElementById('pre-practice-image');
+    if(preImg) preImg.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
 
-    // 初期化とリスト描画
     window.prePracticeCurrentType = 'words';
     window.renderPrePracticeList();
 
-    // 画面の切り替え
     document.querySelectorAll('.app-container > div:not(.hidden)[id^="view-"]').forEach(v => v.classList.add('hidden'));
     document.getElementById('view-pre-practice').classList.remove('hidden');
 };
@@ -1298,7 +1396,6 @@ window.startPrePracticeWithTheme = async function(id) {
 window.renderPrePracticeList = function() {
     if (!window.currentTheme) return;
 
-    // 1. レベルタブの見た目更新
     document.querySelectorAll('.pre-level-btn').forEach(b => {
         if (b.getAttribute('data-level') === window.appState.selectedLevel) {
             b.classList.remove('text-gray-500', 'hover:bg-gray-100');
@@ -1309,7 +1406,6 @@ window.renderPrePracticeList = function() {
         }
     });
 
-    // 2. 種類(Words/Chunks/Sentences)タブの見た目更新
     document.querySelectorAll('.pre-type-btn').forEach(b => {
         if (b.getAttribute('data-type') === window.prePracticeCurrentType) {
             b.classList.add('text-blue-600', 'border-blue-500', 'bg-blue-50/50');
@@ -1324,14 +1420,12 @@ window.renderPrePracticeList = function() {
         }
     });
 
-    // 3. データ取得と件数バッジの更新
     const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
     
     document.getElementById('count-words').innerText = targetData.words ? targetData.words.length : 0;
     document.getElementById('count-chunks').innerText = targetData.chunks ? targetData.chunks.length : 0;
     document.getElementById('count-sentences').innerText = targetData.sentences ? targetData.sentences.length : 0;
 
-    // 4. リストのHTML生成関数
     const createItemsHtml = (items, isSentence) => {
         if (!items || items.length === 0) return '<p class="text-center text-gray-400 font-bold py-10 mt-10">このレベルのデータはありません。</p>';
         let html = '';
@@ -1356,7 +1450,6 @@ window.renderPrePracticeList = function() {
         return html;
     };
 
-    // 5. 選択中のタブに応じてリストを切り替えて表示
     const listContainer = document.getElementById('pre-practice-list');
     if (window.prePracticeCurrentType === 'words') {
         listContainer.innerHTML = createItemsHtml(targetData.words, false);
@@ -1366,3 +1459,28 @@ window.renderPrePracticeList = function() {
         listContainer.innerHTML = createItemsHtml(targetData.sentences, true);
     }
 };
+
+// ==========================================
+// ★ ORAL QUEST 開発中パスワードロック ★
+// ==========================================
+function setupOqPasswordLock() {
+    const oqBtn = document.querySelector('.mode-btn[data-mode="oralquest"]');
+    if (oqBtn) {
+        oqBtn.addEventListener('click', (e) => {
+            const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
+            if (pass !== "9999") {
+                e.stopImmediatePropagation(); 
+                e.preventDefault();
+                alert("パスワードが違います。");
+            }
+        }, true); 
+    }
+}
+
+window.addEventListener('DOMContentLoaded', window.initApp);
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
+} else {
+    setupOqPasswordLock();
+}

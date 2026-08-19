@@ -138,9 +138,14 @@
                     📖 PRE-PRACTICE
                 </h2>
             </div>
-            <button id="btn-start-from-practice" class="sns-btn bg-sns-gradient text-white font-black text-xs md:text-sm px-4 py-2 md:px-6 md:py-2.5 rounded-full shadow-md hover:scale-[1.05] transition-transform flex items-center gap-1">
-                🔥 本番へ進む
-            </button>
+            <div class="flex items-center gap-2 md:gap-4">
+                <button id="btn-enter-classroom" class="sns-btn bg-gray-800 text-white font-black text-xs md:text-sm px-4 py-2 md:px-6 md:py-2.5 rounded-full shadow-md hover:scale-[1.05] transition-transform flex items-center gap-1 border border-gray-700">
+                    🏫 授業モード
+                </button>
+                <button id="btn-start-from-practice" class="sns-btn bg-sns-gradient text-white font-black text-xs md:text-sm px-4 py-2 md:px-6 md:py-2.5 rounded-full shadow-md hover:scale-[1.05] transition-transform flex items-center gap-1">
+                    🔥 本番へ進む
+                </button>
+            </div>
         </div>
         
         <!-- コンテンツエリア（左：画像、右：模範解答リスト） -->
@@ -732,7 +737,40 @@
        </div>
        
     </div>
+　　<!-- ★ 授業モード（Classroom Mode）専用ビュー ★ -->
+        <div id="view-classroom" class="flex-1 flex flex-col hidden h-[100dvh] w-screen bg-gray-900 z-[100] relative overflow-hidden fixed inset-0">
+            <!-- ヘッダー -->
+            <div class="bg-black/40 px-6 py-4 flex justify-between items-center z-10">
+                <div class="flex items-center gap-4">
+                    <button id="btn-exit-classroom" class="w-10 h-10 bg-gray-800 hover:bg-gray-700 text-white rounded-full flex items-center justify-center transition-colors text-xl font-bold">×</button>
+                    <span class="text-gray-300 font-black tracking-widest text-sm md:text-base">CLASSROOM MODE</span>
+                </div>
+                <!-- 授業モード専用のレベル切り替え -->
+                <div class="flex gap-2 bg-gray-800 p-1 rounded-full border border-gray-700">
+                    <button class="class-level-btn px-4 py-1.5 rounded-full text-xs font-bold text-gray-400 hover:text-white transition-all" data-level="elementary">小</button>
+                    <button class="class-level-btn px-4 py-1.5 rounded-full text-xs font-bold text-gray-400 hover:text-white transition-all" data-level="junior_high">中</button>
+                    <button class="class-level-btn px-4 py-1.5 rounded-full text-xs font-bold text-gray-400 hover:text-white transition-all" data-level="high_school">高</button>
+                </div>
+            </div>
 
+            <!-- メインコンテンツ -->
+            <div class="flex-1 flex flex-col lg:flex-row p-4 md:p-8 gap-6 md:gap-10 overflow-hidden">
+                <!-- 左：巨大画像 -->
+                <div class="w-full lg:w-[65%] h-full flex items-center justify-center shrink-0">
+                    <img id="classroom-image" src="" class="max-w-full max-h-full object-contain rounded-2xl shadow-2xl bg-gray-800/50">
+                </div>
+                
+                <!-- 右：ネイティブ音声＆文表示リスト -->
+                <div class="w-full lg:w-[35%] flex flex-col h-full bg-gray-800/80 rounded-3xl p-6 border border-gray-700 shadow-xl overflow-hidden">
+                    <h3 class="text-white font-black text-xl mb-4 flex items-center gap-2 border-b border-gray-700 pb-3">
+                        <span>🎧</span> Model Audio
+                    </h3>
+                    <div id="classroom-sentence-list" class="flex-1 overflow-y-auto space-y-4 custom-scrollbar pr-2">
+                        <!-- JSで動的に追加 -->
+                    </div>
+                </div>
+            </div>
+        </div>
     <div id="ios-prompt" class="fixed bottom-4 left-4 right-4 md:left-auto md:right-4 md:w-80 bg-white rounded-2xl shadow-2xl p-4 z-50 transform translate-y-full transition-transform duration-500 hidden border border-gray-200">
         <div class="flex items-start gap-4">
             <img src="assets/images/icon.png" alt="PicSpeak" class="w-12 h-12 rounded-xl shadow-sm border border-gray-100">
