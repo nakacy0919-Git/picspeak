@@ -954,21 +954,52 @@ window.openPractice = function(text, ja) {
 };
 
 // ==========================================
-// ★ イベントデリゲーション内の追加部分
+// ★ イベントデリゲーション (完全版：フィルター＆事前練習対応)
 // ==========================================
 document.addEventListener('click', (e) => {
     
-    // （ここには既存の mode-btn 等の処理がそのまま残ります）
-    
-    // ▼▼ ここから下の部分を、既存のクリックイベント内に追加してください ▼▼
+    // 1. タップ音の再生
+    if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home') || e.target.closest('.theme-filter-btn') || e.target.closest('.pre-type-btn') || e.target.closest('.pre-level-btn')) {
+        if(typeof window.playTapSound === 'function') window.playTapSound();
+    }
 
-    // ★ 事前練習モード：レベルタブ切り替え
+    // 2. ★ フィルターボタンの処理（ここが消えていたため復元しました）
+    const filterBtn = e.target.closest('.theme-filter-btn');
+    if (filterBtn) {
+        // ボタンの見た目切り替え
+        document.querySelectorAll('.theme-filter-btn').forEach(b => {
+            b.classList.remove('bg-gray-800', 'text-white', 'shadow-md');
+            b.classList.add('bg-white', 'text-gray-500');
+        });
+        filterBtn.classList.remove('bg-white', 'text-gray-500');
+        filterBtn.classList.add('bg-gray-800', 'text-white', 'shadow-md');
+
+        // 画像の絞り込み
+        const selectedFilter = filterBtn.getAttribute('data-filter');
+        document.querySelectorAll('.theme-card').forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            
+            if (selectedFilter === 'all') {
+                if (cardCat === 'other') card.style.display = 'none'; // 新シリーズのみ表示
+                else card.style.display = '';
+            } else if (selectedFilter === 'level1') {
+                if (cardCat === 'other') card.style.display = ''; // 過去の教材のみ表示
+                else card.style.display = 'none';
+            } else {
+                if (cardCat === selectedFilter) card.style.display = ''; // 選択したカテゴリを表示
+                else card.style.display = 'none';
+            }
+        });
+        return;
+    }
+
+    // 3. 事前練習モード：レベルタブ切り替え
     const preLevelBtn = e.target.closest('.pre-level-btn');
     if (preLevelBtn) {
         window.appState.selectedLevel = preLevelBtn.getAttribute('data-level');
         window.renderPrePracticeList();
         
-        // メイン画面(view-select)のレベルボタンの見た目も同期しておく
+        // メイン画面のレベルボタンと同期
         document.querySelectorAll('.level-btn').forEach(b => { 
             if (b.getAttribute('data-level') === window.appState.selectedLevel) {
                 b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
@@ -981,7 +1012,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ 事前練習モード：タイプ(Words/Chunks/Sentences)タブ切り替え
+    // 4. 事前練習モード：タイプ(Words/Chunks/Sentences)タブ切り替え
     const preTypeBtn = e.target.closest('.pre-type-btn');
     if (preTypeBtn) {
         window.prePracticeCurrentType = preTypeBtn.getAttribute('data-type');
@@ -989,12 +1020,11 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 5. モード選択（SNAPSHOT等）
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
         const selectedMode = modeBtn.getAttribute('data-mode');
-        
         if (!selectedMode) return; 
-        
         window.appState.selectedMode = selectedMode;
         
         if (selectedMode === 'story') {
@@ -1029,6 +1059,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 6. ホーム / 戻るボタン
     const btnHome = e.target.closest('.action-btn-home');
     if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
@@ -1051,7 +1082,7 @@ document.addEventListener('click', (e) => {
         if (currentView) {
             if (currentView.id === 'view-about' || currentView.id === 'view-select') {
                 if (typeof showView === 'function') showView(document.getElementById('view-start'));
-            } else if (currentView.id === 'view-play' || currentView.id === 'view-result') {
+            } else if (currentView.id === 'view-play' || currentView.id === 'view-result' || currentView.id === 'view-pre-practice') {
                 if (typeof showView === 'function') showView(document.getElementById('view-select'));
                 if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
             }
@@ -1059,17 +1090,18 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 7. 画像（テーマ）選択 -> ポップアップ表示
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
         if (themeId) {
-            window.tempSelectedThemeId = themeId; // IDを一時保存
-            document.getElementById('mode-select-modal').classList.remove('hidden'); // ポップアップを表示！
+            window.tempSelectedThemeId = themeId;
+            document.getElementById('mode-select-modal').classList.remove('hidden');
         }
         return;
     }
 
-    // ★ モード選択ポップアップの「事前練習モード」ボタン
+    // 8. ポップアップ：「事前練習モード」へ
     const btnChoosePractice = e.target.closest('#btn-choose-practice');
     if (btnChoosePractice) {
         document.getElementById('mode-select-modal').classList.add('hidden');
@@ -1079,7 +1111,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ モード選択ポップアップの「本番モード」ボタン
+    // 9. ポップアップ：「本番モード」へ
     const btnChooseChallenge = e.target.closest('#btn-choose-challenge');
     if (btnChooseChallenge) {
         document.getElementById('mode-select-modal').classList.add('hidden');
@@ -1089,7 +1121,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ 事前練習画面からの「本番へ進む」ボタン
+    // 10. 事前練習画面：「本番へ進む」ボタン
     const btnStartFromPractice = e.target.closest('#btn-start-from-practice');
     if (btnStartFromPractice) {
         document.getElementById('view-pre-practice').classList.add('hidden');
@@ -1099,6 +1131,7 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // 11. ゲームプレイ関連
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
@@ -1175,12 +1208,6 @@ document.addEventListener('click', (e) => {
     const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('button[onclick*="closePractice"]');
     if (practiceCloseBtn) {
         window.closePracticeModal();
-        return;
-    }
-
-    const btnGotoAbout = e.target.closest('#btn-goto-about');
-    if (btnGotoAbout) {
-        if (typeof showView === 'function') showView(document.getElementById('view-about'));
         return;
     }
 });
