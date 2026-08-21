@@ -1,6 +1,6 @@
 // js/main.js
 // ==========================================
-// アプリケーションの司令塔 (機能・UI 完全統合版)
+// アプリケーションの司令塔 (機能・UI 完全統合＆バグ修正版)
 // ==========================================
 
 window.appState = { 
@@ -23,6 +23,7 @@ window.accumulatedTranscript = "";
 window.rawTranscriptForCounting = ""; 
 window.audioCtx = null;
 
+// 練習モーダル用変数
 window.isPracticeRecording = false;
 window.practiceRec = null;
 window.practiceSuccess = false; 
@@ -37,24 +38,72 @@ const themeGrid = document.getElementById('theme-grid');
 (function injectSpecialEffectsCSS() {
     const style = document.createElement('style');
     style.innerHTML = `
-        .confetti-piece { position: fixed; width: 10px; height: 10px; top: -10px; z-index: 9999; opacity: 0.8; border-radius: 2px; animation: confetti-fall 3s ease-out forwards; pointer-events: none; }
-        @keyframes confetti-fall { 0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(100vh) translateX(var(--x-end)) rotate(var(--rot-end)); opacity: 0; } }
-        .excellent-prompt { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); font-family: 'Arial Black', 'Helvetica Bold', sans-serif; font-size: 10vw; font-weight: 900; color: #ffffff; text-shadow: 0 0 20px rgba(74, 222, 128, 0.8), 0 0 40px #22c55e; background: linear-gradient(to bottom right, #4ade80, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; z-index: 10000; opacity: 0; pointer-events: none; letter-spacing: -0.05em; animation: excellent-pop 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
-        @keyframes excellent-pop { 0% { transform: translate(-50%, -50%) scale(0) rotate(-10deg); opacity: 0; } 15% { transform: translate(-50%, -50%) scale(1.1) rotate(5deg); opacity: 1; } 25% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; } 80% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(0.8) rotate(0deg); opacity: 0; } }
+        .confetti-piece {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            z-index: 9999;
+            opacity: 0.8;
+            border-radius: 2px;
+            animation: confetti-fall 3s ease-out forwards;
+            pointer-events: none;
+        }
+        @keyframes confetti-fall {
+            0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(100vh) translateX(var(--x-end)) rotate(var(--rot-end)); opacity: 0; }
+        }
+
+        .excellent-prompt {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%) scale(0);
+            font-family: 'Arial Black', 'Helvetica Bold', sans-serif;
+            font-size: 10vw;
+            font-weight: 900;
+            color: #ffffff;
+            text-shadow: 0 0 20px rgba(74, 222, 128, 0.8), 0 0 40px #22c55e;
+            background: linear-gradient(to bottom right, #4ade80, #22c55e);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            z-index: 10000;
+            opacity: 0;
+            pointer-events: none;
+            letter-spacing: -0.05em;
+            animation: excellent-pop 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
+        }
+        @keyframes excellent-pop {
+            0% { transform: translate(-50%, -50%) scale(0) rotate(-10deg); opacity: 0; }
+            15% { transform: translate(-50%, -50%) scale(1.1) rotate(5deg); opacity: 1; }
+            25% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+            80% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(0.8) rotate(0deg); opacity: 0; }
+        }
     `;
     document.head.appendChild(style);
 })();
 
 async function initApp() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) { alert("【重要】お使いのブラウザは音声認識に非対応です。Google Chromeをご利用ください。"); return; }
-    if (typeof window.initSpeechRecognition === 'function') window.initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
+    if (!SpeechRecognition) {
+        alert("【重要】お使いのブラウザは音声認識に非対応です。Google Chromeをご利用ください。");
+        return; 
+    }
+    if (typeof window.initSpeechRecognition === 'function') {
+        window.initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
+    }
     try {
         const response = await fetch('data/theme_list.json?t=' + new Date().getTime());
         window.themeList = await response.json();
-    } catch (error) { console.error("テーマリスト読み込み失敗:", error); }
+    } catch (error) {
+        console.error("テーマリスト読み込み失敗:", error);
+    }
 }
 
+// ==========================================
+// ★ テーマグリッド描画（画像選択画面）
+// ==========================================
 window.renderThemeGrid = async function() {
     const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
@@ -89,7 +138,9 @@ window.renderThemeGrid = async function() {
         if (isDetective) {
             html += `
             <div class="col-span-full bg-yellow-50/80 rounded-3xl p-5 md:p-8 shadow-sm border border-yellow-200 mb-6 relative overflow-hidden">
-                <h3 class="text-xl md:text-2xl font-black text-yellow-700 mb-2 flex items-center gap-2"><span>🕵️‍♂️</span> 遊び方（タップして体験！）</h3>
+                <h3 class="text-xl md:text-2xl font-black text-yellow-700 mb-2 flex items-center gap-2">
+                    <span>🕵️‍♂️</span> 遊び方（タップして体験！）
+                </h3>
                 <p class="text-sm md:text-base text-yellow-800 font-bold mb-4 leading-relaxed">
                     下の絵(B)を上の絵(A)と見比べて、違うところを英語で声に出してみよう！<br>
                     試しに、下のサンプルの<span class="text-pink-500 underline decoration-pink-300 decoration-2 underline-offset-4">「B」の絵（下半分）の中にある間違っている部分</span>を直接クリック（タップ）してみてね。
@@ -104,7 +155,6 @@ window.renderThemeGrid = async function() {
         results.forEach(item => {
             if(!item || !item.data) return;
             
-            // ★ カテゴリーとタイトルの取得
             let imageFilterClass = "";
             let category = item.data.category || 'other'; 
             let titleEn = item.data.titleEn || 'No Title';
@@ -112,13 +162,19 @@ window.renderThemeGrid = async function() {
             
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
-                titleEn = "Secret Image"; titleJa = "???";
-            } else if (isDetective) { imageFilterClass = "!h-[200%] object-top"; }
+                titleEn = "Secret Image";
+                titleJa = "???";
+            } else if (isDetective) {
+                imageFilterClass = "!h-[200%] object-top"; 
+            }
             
-            let badgeHtml = isDetective ? `<div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">NEW!</div>` : '';
+            let badgeHtml = '';
+            if (isDetective) {
+                badgeHtml = `<div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">NEW!</div>`;
+            }
             
-            // ★ カード内にカテゴリー情報を付与し、タイトルを英日2段表示に
-            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
+            html += `
+            <div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
                     <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
@@ -131,7 +187,7 @@ window.renderThemeGrid = async function() {
         });
         themeGrid.innerHTML = html;
 
-        // ★ フィルターの表示制御
+        // フィルター表示の制御
         const filters = document.getElementById('theme-filters');
         if (filters) {
             if (window.appState.selectedMode === 'mosaic' || isDetective || window.appState.selectedMode === 'oralquest') {
@@ -139,70 +195,323 @@ window.renderThemeGrid = async function() {
             } else {
                 filters.classList.remove('hidden');
                 document.querySelectorAll('.theme-filter-btn').forEach(b => {
-                    if (b.getAttribute('data-filter') === 'all') { b.classList.remove('bg-white', 'text-gray-500'); b.classList.add('bg-gray-800', 'text-white', 'shadow-md'); }
-                    else { b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); b.classList.add('bg-white', 'text-gray-500'); }
+                    if (b.getAttribute('data-filter') === 'all') { 
+                        b.classList.remove('bg-white', 'text-gray-500'); 
+                        b.classList.add('bg-gray-800', 'text-white', 'shadow-md'); 
+                    } else { 
+                        b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); 
+                        b.classList.add('bg-white', 'text-gray-500'); 
+                    }
                 });
                 document.querySelectorAll('.theme-card').forEach(card => {
                     const cardCat = card.getAttribute('data-category');
-                    if (cardCat === 'other') card.style.display = 'none'; else card.style.display = '';
+                    if (cardCat === 'other') card.style.display = 'none'; 
+                    else card.style.display = '';
                 });
             }
         }
-    } catch(e) { themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; }
+    } catch(e) { 
+        themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
+    }
 }
 
+// ==========================================
+// ★ チュートリアルポップアップ処理
+// ==========================================
 window.handleTutorialClick = async function(e) {
     if (!window.tutorialData) {
         try {
             const res = await fetch('data/detective/detective_sample.json?t=' + new Date().getTime());
             window.tutorialData = await res.json();
-        } catch (err) { return; }
+        } catch (err) {
+            return;
+        }
     }
+
     const rect = e.currentTarget.getBoundingClientRect();
-    const clickX = e.clientX - rect.left; const clickY = e.clientY - rect.top;
-    const xPercent = (clickX / rect.width) * 100; const yPercent = (clickY / rect.height) * 100;
+    const clickX = e.clientX - rect.left;
+    const clickY = e.clientY - rect.top;
+    const xPercent = (clickX / rect.width) * 100;
+    const yPercent = (clickY / rect.height) * 100;
 
     let hitDiff = null;
     for (let diff of window.tutorialData.differences) {
-        if (Math.abs(xPercent - diff.coordinates.x) <= (diff.coordinates.width / 2) + 5 && Math.abs(yPercent - diff.coordinates.y) <= (diff.coordinates.height / 2) + 5) {
-            hitDiff = diff; break;
+        const dx = Math.abs(xPercent - diff.coordinates.x);
+        const dy = Math.abs(yPercent - diff.coordinates.y);
+        
+        if (dx <= (diff.coordinates.width / 2) + 5 && dy <= (diff.coordinates.height / 2) + 5) {
+            hitDiff = diff;
+            break;
         }
     }
-    if (hitDiff) showTutorialPopup(hitDiff);
+
+    if (hitDiff) {
+        showTutorialPopup(hitDiff);
+    }
 }
 
 window.showTutorialPopup = function(diff) {
-    const overlay = document.getElementById('tutorial-overlay'); if (!overlay) return;
-    overlay.innerHTML = ''; overlay.classList.remove('pointer-events-none'); 
+    const overlay = document.getElementById('tutorial-overlay');
+    if (!overlay) return;
+
+    overlay.innerHTML = '';
+    overlay.classList.remove('pointer-events-none'); 
 
     const mark = document.createElement('div');
     mark.className = 'absolute border-[4px] border-red-500 bg-red-500/30 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.9)] animate-pop pointer-events-none z-10';
-    mark.style.width = `${diff.coordinates.width}%`; mark.style.height = `${diff.coordinates.height}%`; mark.style.left = `${diff.coordinates.x - diff.coordinates.width / 2}%`; mark.style.top = `${diff.coordinates.y - diff.coordinates.height / 2}%`;
+    mark.style.width = `${diff.coordinates.width}%`;
+    mark.style.height = `${diff.coordinates.height}%`;
+    mark.style.left = `${diff.coordinates.x - diff.coordinates.width / 2}%`;
+    mark.style.top = `${diff.coordinates.y - diff.coordinates.height / 2}%`;
     overlay.appendChild(mark);
 
     let expressionsHtml = '';
     const createLevelHtml = (levelObj, levelName, color) => {
         if (!levelObj || levelObj.length === 0) return '';
-        return `<div class="mb-2 p-2 bg-white rounded border border-gray-100"><span class="text-[10px] font-bold bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded">${levelName}</span><p class="font-bold text-gray-800 text-sm mt-1">${levelObj[0].text}</p><p class="text-[10px] text-gray-500">${levelObj[0].ja}</p></div>`;
+        return `
+            <div class="mb-2 p-2 bg-white rounded border border-gray-100">
+                <span class="text-[10px] font-bold bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded">${levelName}</span>
+                <p class="font-bold text-gray-800 text-sm mt-1">${levelObj[0].text}</p>
+                <p class="text-[10px] text-gray-500">${levelObj[0].ja}</p>
+            </div>
+        `;
     };
-    expressionsHtml += createLevelHtml(diff.modelExpressions.elementary, '小学生', 'green') + createLevelHtml(diff.modelExpressions.junior_high, '中学生', 'blue') + createLevelHtml(diff.modelExpressions.high_school, '高校生', 'pink');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.elementary, '小学生', 'green');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.junior_high, '中学生', 'blue');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.high_school, '高校生', 'pink');
 
     const popup = document.createElement('div');
     popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-md rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] border-2 border-pink-300 p-5 md:p-6 z-[100] w-[90%] max-w-sm animate-fade-in-up flex flex-col';
-    popup.innerHTML = `<button class="absolute top-3 right-4 text-gray-300 hover:text-gray-600 font-black text-2xl transition-colors" onclick="document.getElementById('tutorial-overlay').innerHTML=''; document.getElementById('tutorial-overlay').classList.add('pointer-events-none');">×</button><h4 class="font-black text-pink-500 border-b-2 border-pink-50 pb-2 mb-3 pr-6 text-lg">🎯 ${diff.nameJa}</h4><div class="space-y-1 mb-4">${expressionsHtml}</div><p class="text-xs text-gray-400 font-bold text-center bg-gray-50 p-2 rounded-lg">本番では、マイクに向かってこのように英語で発話します！🎙️</p>`;
+    
+    popup.innerHTML = `
+        <button class="absolute top-3 right-4 text-gray-300 hover:text-gray-600 font-black text-2xl transition-colors" onclick="document.getElementById('tutorial-overlay').innerHTML=''; document.getElementById('tutorial-overlay').classList.add('pointer-events-none');">×</button>
+        <h4 class="font-black text-pink-500 border-b-2 border-pink-50 pb-2 mb-3 pr-6 text-lg">🎯 ${diff.nameJa}</h4>
+        <div class="space-y-1 mb-4">
+            ${expressionsHtml}
+        </div>
+        <p class="text-xs text-gray-400 font-bold text-center bg-gray-50 p-2 rounded-lg">本番では、マイクに向かってこのように英語で発話します！🎙️</p>
+    `;
 
     const backdrop = document.createElement('div');
     backdrop.className = 'fixed inset-0 bg-black/10 z-[99] transition-opacity';
     backdrop.onclick = () => { overlay.innerHTML = ''; overlay.classList.add('pointer-events-none'); };
-    overlay.appendChild(backdrop); overlay.appendChild(popup);
+    
+    overlay.appendChild(backdrop);
+    overlay.appendChild(popup);
+    
     try { if (typeof playSound === 'function') playSound('match'); } catch(e) {}
 }
 
+// ==========================================
+// ★ 事前練習モード (Pre-Practice) ロジック ★
+// ==========================================
+window.tempSelectedThemeId = null;
+window.prePracticeCurrentType = 'words';
+
+window.startPrePracticeWithTheme = async function(id) {
+    try {
+        let folderPath = 'data/themes';
+        if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
+        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
+        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+        const fetchedData = await res.json();
+        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+    } catch (e) {
+        alert(`データの読み込みに失敗しました。`);
+        return;
+    }
+
+    const preImg = document.getElementById('pre-practice-image');
+    if(preImg) {
+        preImg.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+    }
+
+    window.prePracticeCurrentType = 'words';
+    if(typeof window.renderPrePracticeList === 'function') {
+        window.renderPrePracticeList();
+    }
+
+    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    const preView = document.getElementById('view-pre-practice');
+    if(preView) {
+        preView.classList.remove('hidden');
+    }
+};
+
+window.renderPrePracticeList = function() {
+    if (!window.currentTheme) return;
+    
+    document.querySelectorAll('.pre-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+            b.classList.add('bg-pink-500', 'text-white');
+            b.classList.remove('text-gray-500');
+        } else {
+            b.classList.add('text-gray-500');
+            b.classList.remove('bg-pink-500', 'text-white');
+        }
+    });
+
+    document.querySelectorAll('.pre-type-btn').forEach(b => {
+        if (b.getAttribute('data-type') === window.prePracticeCurrentType) {
+            b.classList.add('text-blue-600', 'border-blue-500');
+            b.classList.remove('text-gray-400');
+        } else {
+            b.classList.add('text-gray-400');
+            b.classList.remove('text-blue-600', 'border-blue-500');
+        }
+    });
+
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    
+    document.getElementById('count-words').innerText = targetData.words ? targetData.words.length : 0;
+    document.getElementById('count-chunks').innerText = targetData.chunks ? targetData.chunks.length : 0;
+    document.getElementById('count-sentences').innerText = targetData.sentences ? targetData.sentences.length : 0;
+
+    const listContainer = document.getElementById('pre-practice-list');
+    if (!listContainer) return;
+    
+    listContainer.innerHTML = '';
+    
+    let items = [];
+    if (window.prePracticeCurrentType === 'words') items = targetData.words;
+    else if (window.prePracticeCurrentType === 'chunks') items = targetData.chunks;
+    else if (window.prePracticeCurrentType === 'sentences') items = targetData.sentences;
+
+    if (!items || items.length === 0) {
+        listContainer.innerHTML = '<p class="text-center text-gray-400 font-bold py-10 mt-10">このレベルのデータはありません。</p>';
+        return;
+    }
+
+    items.forEach(item => {
+        const escapedText = item.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const escapedJa = (item.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        listContainer.innerHTML += `
+            <div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col xl:flex-row xl:items-center justify-between gap-3 mb-3">
+                <div class="flex-1 pr-2">
+                    <div class="font-black text-gray-800 text-base md:text-lg leading-tight">${item.text}</div>
+                    <div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${item.ja || ""}</div>
+                </div>
+                <div class="flex items-center gap-2 shrink-0">
+                    <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 shadow-sm">🔊 聞く</button>
+                    <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-xs md:text-sm font-bold shadow-sm">🎤 練習</button>
+                </div>
+            </div>`;
+    });
+};
+
+// ==========================================
+// ★ 授業モード（Classroom Mode）ロジック ★
+// ==========================================
+window.currentClassroomAudio = null;
+
+window.openClassroomMode = function() {
+    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    
+    const classroomView = document.getElementById('view-classroom');
+    if (classroomView) {
+        classroomView.classList.remove('hidden');
+    }
+    
+    if (window.currentTheme) {
+        const imgEl = document.getElementById('classroom-image');
+        if(imgEl) {
+            imgEl.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+        }
+        if(typeof window.renderClassroomList === 'function') {
+            window.renderClassroomList();
+        }
+    }
+};
+
+window.renderClassroomList = function() {
+    document.querySelectorAll('.class-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+            b.classList.add('bg-pink-500', 'text-white');
+            b.classList.remove('text-gray-400');
+        } else {
+            b.classList.remove('bg-pink-500', 'text-white');
+            b.classList.add('text-gray-400');
+        }
+    });
+
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    const listContainer = document.getElementById('classroom-sentence-list');
+    if (!listContainer) return;
+    
+    listContainer.innerHTML = '';
+
+    if (!targetData.sentences || targetData.sentences.length === 0) {
+        listContainer.innerHTML = '<p class="text-gray-500 text-center mt-10">データがありません。</p>';
+        return;
+    }
+
+    targetData.sentences.forEach((sentence, index) => {
+        const escapedText = sentence.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const escapedJa = (sentence.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const audioSrc = sentence.audioSrc || ''; 
+
+        listContainer.innerHTML += `
+            <div class="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-gray-500 transition-colors mb-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-gray-400 font-bold text-sm">Sentence ${index + 1}</span>
+                    <button onclick="window.playClassroomAudio('${audioSrc}', '${escapedText}')" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+                        <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
+                    </button>
+                </div>
+                <div class="classroom-text-reveal cursor-pointer group" onclick="this.classList.toggle('revealed')">
+                    <div class="text-gray-500 text-sm font-bold border-2 border-dashed border-gray-600 rounded-xl p-3 text-center group-[.revealed]:hidden hover:bg-gray-600/30">👀 クリックして英文を表示</div>
+                    <div class="hidden group-[.revealed]:block">
+                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${sentence.text}</p>
+                        <p class="text-gray-400 text-sm font-bold">${sentence.ja}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+};
+
+window.playClassroomAudio = function(audioSrc, fallbackText) {
+    if (window.currentClassroomAudio) {
+        window.currentClassroomAudio.pause();
+        window.currentClassroomAudio.currentTime = 0;
+    }
+    
+    if (audioSrc) {
+        window.currentClassroomAudio = new Audio(audioSrc);
+        window.currentClassroomAudio.play().catch(e => {
+            window.playResultTTS(fallbackText);
+        });
+    } else {
+        window.playResultTTS(fallbackText);
+    }
+};
+
+// ==========================================
+// ★ メインゲーム起動ロジック
+// ==========================================
 window.startGameWithTheme = async function(id) {
-    const detUi = document.getElementById('detective-ui'); if (detUi) detUi.remove(); 
-    if (typeof window.DetectiveGame !== 'undefined') { window.DetectiveGame.isActive = false; if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); }
-    const statsGrid = document.querySelector('#view-play .grid.grid-cols-3'); if (statsGrid) { statsGrid.style.display = ''; statsGrid.classList.remove('hidden'); }
-    const compBar = document.getElementById('live-completion-text'); if (compBar) { const compBarContainer = compBar.closest('.bg-white'); if (compBarContainer) { compBarContainer.style.display = ''; compBarContainer.classList.remove('hidden'); } }
+    const detUi = document.getElementById('detective-ui');
+    if (detUi) detUi.remove(); 
+    
+    if (typeof window.DetectiveGame !== 'undefined') {
+        window.DetectiveGame.isActive = false;
+        if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval);
+    }
+    
+    const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
+    if (statsGrid) {
+        statsGrid.style.display = '';
+        statsGrid.classList.remove('hidden');
+    }
+    
+    const compBar = document.getElementById('live-completion-text');
+    if (compBar) {
+        const compBarContainer = compBar.closest('.bg-white');
+        if (compBarContainer) {
+            compBarContainer.style.display = '';
+            compBarContainer.classList.remove('hidden');
+        }
+    }
 
     try {
         let folderPath = 'data/themes';
@@ -212,26 +521,51 @@ window.startGameWithTheme = async function(id) {
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
         window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-    } catch (e) { alert(`データの読み込みに失敗しました。`); return; }
+    } catch (e) {
+        alert(`データの読み込みに失敗しました。`);
+        return;
+    }
     
     const promptImage = document.getElementById('prompt-image');
     if (window.currentTheme && window.currentTheme.imageSrc && promptImage) {
         promptImage.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+        
         if (window.appState.selectedMode === 'mosaic') {
-            promptImage.classList.remove('blur-none', 'blur-md'); promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`; promptImage.style.transform = 'scale(1.1)';
+            promptImage.classList.remove('blur-none', 'blur-md');
+            promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
+            promptImage.style.transform = 'scale(1.1)';
         } else if (window.appState.selectedMode === 'detective') {
             if (typeof window.DetectiveGame !== 'undefined') window.DetectiveGame.init(window.currentTheme);
         } else {
-            promptImage.style.filter = ''; promptImage.style.transform = ''; promptImage.style.height = ''; promptImage.style.objectFit = ''; promptImage.style.objectPosition = ''; promptImage.style.top = ''; promptImage.style.bottom = '';
-            promptImage.classList.remove('w-1/2'); promptImage.classList.add('w-full');
-            const promptImageB = document.getElementById('prompt-image-b'); if (promptImageB) { promptImageB.classList.add('hidden'); promptImageB.style.height = ''; promptImageB.style.objectFit = ''; promptImageB.style.objectPosition = ''; promptImageB.style.bottom = ''; }
-            promptImage.classList.remove('blur-none'); promptImage.classList.add('blur-md'); 
+            promptImage.style.filter = '';
+            promptImage.style.transform = '';
+            promptImage.style.height = '';
+            promptImage.style.objectFit = '';
+            promptImage.style.objectPosition = '';
+            promptImage.style.top = '';
+            promptImage.style.bottom = '';
+            promptImage.classList.remove('w-1/2');
+            promptImage.classList.add('w-full');
+            const promptImageB = document.getElementById('prompt-image-b');
+            if (promptImageB) {
+                promptImageB.classList.add('hidden');
+                promptImageB.style.height = '';
+                promptImageB.style.objectFit = '';
+                promptImageB.style.objectPosition = '';
+                promptImageB.style.bottom = '';
+            }
+            promptImage.classList.remove('blur-none');
+            promptImage.classList.add('blur-md'); 
         }
     }
     
     window.timeLeft = window.appState.customTimeLimit || 30; 
-    const timerText = document.getElementById('timer-text'); if(timerText) timerText.textContent = `${window.timeLeft}s`; 
-    window.timeElapsed = 0; window.rawTranscriptForCounting = ""; window.accumulatedTranscript = ""; 
+    const timerText = document.getElementById('timer-text');
+    if(timerText) timerText.textContent = `${window.timeLeft}s`; 
+    
+    window.timeElapsed = 0;
+    window.rawTranscriptForCounting = "";
+    window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
     
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
@@ -242,8 +576,11 @@ window.startGameWithTheme = async function(id) {
     if(document.getElementById('pin-container')) document.getElementById('pin-container').innerHTML = ''; 
     if(document.getElementById('support-text-container')) document.getElementById('support-text-container').innerHTML = '';
     
-    if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') ngWordGame.init(window.currentTheme);
-    else if (typeof ngWordGame !== 'undefined') ngWordGame.cleanup();
+    if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
+        ngWordGame.init(window.currentTheme);
+    } else if (typeof ngWordGame !== 'undefined') {
+        ngWordGame.cleanup();
+    }
 
     const transcriptBox = document.getElementById('transcript-box');
     const existingHint = document.getElementById('mosaic-hint-panel');
@@ -277,14 +614,22 @@ window.startGameWithTheme = async function(id) {
     }
 
     const btnStartTurn = document.getElementById('btn-start-turn');
-    if(btnStartTurn) { btnStartTurn.classList.remove('hidden'); btnStartTurn.classList.add('animate-attention'); }
+    if(btnStartTurn) {
+        btnStartTurn.classList.remove('hidden');
+        btnStartTurn.classList.add('animate-attention');
+    }
     
     if (window.appState.selectedMode === 'oralquest') {
         if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
-        document.getElementById('oq-stage-1').classList.remove('hidden'); document.getElementById('oq-stage-2').classList.add('hidden'); document.getElementById('oq-stage-3').classList.add('hidden');
+        
+        document.getElementById('oq-stage-1').classList.remove('hidden');
+        document.getElementById('oq-stage-2').classList.add('hidden');
+        document.getElementById('oq-stage-3').classList.add('hidden');
         document.getElementById('oq-progress-bar').style.width = '10%';
-        document.getElementById('btn-oq-start').classList.remove('hidden'); document.getElementById('btn-oq-next').classList.add('hidden');
-        document.getElementById('oq-reading-result').classList.add('hidden'); document.getElementById('oq-status-text').textContent = "Tap START to read";
+        document.getElementById('btn-oq-start').classList.remove('hidden');
+        document.getElementById('btn-oq-next').classList.add('hidden');
+        document.getElementById('oq-reading-result').classList.add('hidden');
+        document.getElementById('oq-status-text').textContent = "Tap START to read";
     } else {
         if (typeof showView === 'function') showView(document.getElementById('view-play'));
     }
@@ -293,7 +638,8 @@ window.startGameWithTheme = async function(id) {
 window.playResultTTS = function(text) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'en-US'; u.rate = 0.8; 
+    u.lang = 'en-US';
+    u.rate = 0.8; 
     const voices = speechSynthesis.getVoices();
     const bestVoice = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Premium'))) || voices.find(v => v.lang === 'en-US' && v.name.includes('Siri')) || voices.find(v => v.lang.startsWith('en'));
     if (bestVoice) u.voice = bestVoice;
@@ -301,23 +647,35 @@ window.playResultTTS = function(text) {
 };
 
 window.changeTranscriptSize = function(delta) {
-    const el = document.getElementById('final-transcript-text'); if (!el) return;
+    const el = document.getElementById('final-transcript-text');
+    if (!el) return;
     let currentSize = parseInt(window.getComputedStyle(el).fontSize);
     let newSize = currentSize + (delta * 4); 
-    if (newSize >= 12 && newSize <= 48) { el.style.fontSize = newSize + 'px'; el.style.lineHeight = '1.6'; }
+    if (newSize >= 12 && newSize <= 48) {
+        el.style.fontSize = newSize + 'px';
+        el.style.lineHeight = '1.6';
+    }
 };
 
 window.finishGameAndShowResult = function() {
     try {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
-        if (typeof ngWordGame !== 'undefined') ngWordGame.cleanup();
+        
+        if (typeof ngWordGame !== 'undefined') {
+            ngWordGame.cleanup();
+        }
 
-        const btnFinishTurn = document.getElementById('btn-finish-turn'); if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
-        const recIndicator = document.getElementById('recording-indicator'); if(recIndicator) recIndicator.classList.add('hidden');
+        const btnFinishTurn = document.getElementById('btn-finish-turn');
+        if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
+        
+        const recIndicator = document.getElementById('recording-indicator');
+        if(recIndicator) recIndicator.classList.add('hidden');
         
         if (window.appState.selectedMode === 'detective') {
-            if (typeof window.DetectiveResult !== 'undefined') window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
+            if (typeof window.DetectiveResult !== 'undefined') {
+                window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
+            }
         } else {
             window.renderSnapshotResult();
         }
@@ -326,12 +684,14 @@ window.finishGameAndShowResult = function() {
         if (typeof showView === 'function') {
             showView(viewResultEl);
         } else {
-            document.querySelectorAll('body > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+            document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
             if(viewResultEl) viewResultEl.classList.remove('hidden');
         }
     } catch (error) {
-        document.querySelectorAll('body > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
-        document.getElementById('view-result').classList.remove('hidden');
+        console.error("Result画面への遷移中にエラーが発生:", error);
+        document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+        const fallback = document.getElementById('view-result');
+        if (fallback) fallback.classList.remove('hidden');
     }
 };
 
@@ -347,10 +707,11 @@ window.renderSnapshotResult = function() {
     const container = document.getElementById('ranking-container');
     if (!container) return;
 
+    // ★ 修正：リザルト画面の強引な固定設定を解除し、.hidden が機能するようにする
     let currentEl = container.parentElement;
     while (currentEl && currentEl.tagName !== 'BODY') {
         if (currentEl.id === 'view-result') {
-            currentEl.style.setProperty('display', 'flex', 'important');
+            currentEl.style.removeProperty('display'); // !!! ここが一番重要な修正箇所 !!!
             currentEl.style.setProperty('flex-direction', 'column', 'important');
             currentEl.style.setProperty('height', '100dvh', 'important');
             currentEl.style.setProperty('overflow', 'hidden', 'important');
@@ -488,6 +849,7 @@ window.renderSnapshotResult = function() {
 
     let html = `
         <div class="flex flex-col lg:flex-row gap-4 sm:gap-6 h-full w-full max-w-[120rem] mx-auto px-3 sm:px-5 xl:px-8 pb-4 pt-2 overflow-hidden">
+            
             <div class="w-full lg:w-[280px] xl:w-[360px] flex flex-col gap-3 sm:gap-4 shrink-0 h-full overflow-y-auto custom-scrollbar pr-2 pb-6">
                 <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col items-center shadow-xl text-white relative overflow-hidden shrink-0">
                     <div class="absolute -right-4 -top-4 opacity-10 text-8xl sm:text-9xl">📸</div>
@@ -516,6 +878,7 @@ window.renderSnapshotResult = function() {
                     <div id="final-transcript-text" class="font-medium text-gray-700 italic flex-1 overflow-y-auto pr-2 custom-scrollbar" style="font-size: 0.95rem; line-height: 1.5;">"${finalTranscript || 'No speech recorded.'}"</div>
                 </div>
             </div>
+
             <div class="w-full flex-1 flex flex-col h-full overflow-hidden">
                 <div class="mb-2 sm:mb-3 pl-1 shrink-0">
                     <h3 class="text-xs sm:text-sm font-black text-gray-500 uppercase tracking-widest flex items-center gap-2 mb-1">
@@ -527,6 +890,7 @@ window.renderSnapshotResult = function() {
                     ${categoryHtml}
                 </div>
             </div>
+
         </div>
     `;
     container.innerHTML = html;
@@ -537,6 +901,9 @@ window.renderSnapshotResult = function() {
     }
 };
 
+// ==========================================
+// ★ 音声・エフェクト関連
+// ==========================================
 window.playSuccessChime = function() {
     try {
         const ctx = window.audioCtx || new (window.AudioContext || window.webkitAudioContext)();
@@ -713,7 +1080,6 @@ window.openPractice = function(text, ja) {
 // ==========================================
 document.addEventListener('click', (e) => {
     
-    // ★ フィルターボタン機能
     const filterBtn = e.target.closest('.theme-filter-btn');
     if (filterBtn) {
         document.querySelectorAll('.theme-filter-btn').forEach(b => { 
@@ -722,12 +1088,17 @@ document.addEventListener('click', (e) => {
         });
         filterBtn.classList.remove('bg-white', 'text-gray-500'); 
         filterBtn.classList.add('bg-gray-800', 'text-white', 'shadow-md');
+        
         const selectedFilter = filterBtn.getAttribute('data-filter');
         document.querySelectorAll('.theme-card').forEach(card => {
             const cardCat = card.getAttribute('data-category');
-            if (selectedFilter === 'all') card.style.display = (cardCat === 'other') ? 'none' : '';
-            else if (selectedFilter === 'level1') card.style.display = (cardCat === 'other') ? '' : 'none';
-            else card.style.display = (cardCat === selectedFilter) ? '' : 'none';
+            if (selectedFilter === 'all') {
+                card.style.display = (cardCat === 'other') ? 'none' : '';
+            } else if (selectedFilter === 'level1') {
+                card.style.display = (cardCat === 'other') ? '' : 'none';
+            } else {
+                card.style.display = (cardCat === selectedFilter) ? '' : 'none';
+            }
         });
         return;
     }
@@ -736,7 +1107,6 @@ document.addEventListener('click', (e) => {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // ★ モードボタン（パステルカラーと即時遷移）機能
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
         document.querySelectorAll('.mode-btn').forEach(b => { 
@@ -747,15 +1117,22 @@ document.addEventListener('click', (e) => {
         modeBtn.classList.add('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100');
         window.appState.selectedMode = modeBtn.getAttribute('data-mode');
         
-        if (window.appState.selectedMode === 'story') { window.location.href = 'story.html'; return; }
+        if (window.appState.selectedMode === 'story') {
+            window.location.href = 'story.html';
+            return;
+        }
         
         const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
         if (elementaryBtn) {
-            document.querySelectorAll('.level-btn').forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
+            document.querySelectorAll('.level-btn').forEach(b => {
+                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            });
             elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
             elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
             window.appState.selectedLevel = 'elementary';
         }
+        
         if (typeof showView === 'function') showView(document.getElementById('view-select')); 
         if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
@@ -764,8 +1141,15 @@ document.addEventListener('click', (e) => {
     const btnHome = e.target.closest('.action-btn-home');
     if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
-        window.isRecording = false; clearInterval(window.gameTimer); if(window.supportInterval) clearInterval(window.supportInterval);
+        window.isRecording = false;
+        clearInterval(window.gameTimer);
+        if(window.supportInterval) clearInterval(window.supportInterval);
         window.closePracticeModal();
+        
+        // ★ 修正：リザルト画面の固定を確実に解除して隠す
+        const vr = document.getElementById('view-result');
+        if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
+        
         if (typeof showView === 'function') showView(document.getElementById('view-start'));
         return;
     }
@@ -773,7 +1157,14 @@ document.addEventListener('click', (e) => {
     const btnBack = e.target.closest('.action-btn-back');
     if (btnBack) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
-        window.isRecording = false; clearInterval(window.gameTimer); if(window.supportInterval) clearInterval(window.supportInterval);
+        window.isRecording = false;
+        clearInterval(window.gameTimer);
+        if(window.supportInterval) clearInterval(window.supportInterval);
+        
+        // ★ 修正：リザルト画面の固定を確実に解除して隠す
+        const vr = document.getElementById('view-result');
+        if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
+
         const currentView = document.querySelector('.app-container > div:not(.hidden)[id^="view-"]');
         if (currentView) {
             if (currentView.id === 'view-about' || currentView.id === 'view-select') {
@@ -786,7 +1177,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ テーマ（画像）クリック時の即時遷移ではなく、モーダル表示機能
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
@@ -797,7 +1187,6 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ 事前学習モード起動ボタン機能
     const btnChoosePractice = e.target.closest('#btn-choose-practice');
     if (btnChoosePractice) {
         document.getElementById('mode-select-modal').classList.add('hidden');
@@ -807,24 +1196,25 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ 本番モード起動ボタン機能
     const btnChooseChallenge = e.target.closest('#btn-choose-challenge');
     if (btnChooseChallenge) {
         document.getElementById('mode-select-modal').classList.add('hidden');
-        if (window.tempSelectedThemeId) window.startGameWithTheme(window.tempSelectedThemeId);
+        if (window.tempSelectedThemeId) {
+            window.startGameWithTheme(window.tempSelectedThemeId);
+        }
         return;
     }
 
-    // ★ 事前学習から本番への遷移ボタン機能
     const btnStartFromPractice = e.target.closest('#btn-start-from-practice');
     if (btnStartFromPractice) {
         const preView = document.getElementById('view-pre-practice');
         if(preView) preView.classList.add('hidden');
-        if (window.tempSelectedThemeId) window.startGameWithTheme(window.tempSelectedThemeId);
+        if (window.tempSelectedThemeId) {
+            window.startGameWithTheme(window.tempSelectedThemeId);
+        }
         return;
     }
 
-    // ★ 授業モード起動ボタン機能
     const btnEnterClassroom = e.target.closest('#btn-enter-classroom');
     if (btnEnterClassroom) { 
         if(typeof window.openClassroomMode === 'function') window.openClassroomMode(); 
@@ -853,8 +1243,13 @@ document.addEventListener('click', (e) => {
         window.appState.selectedLevel = preLevelBtn.getAttribute('data-level'); 
         if(typeof window.renderPrePracticeList === 'function') window.renderPrePracticeList();
         document.querySelectorAll('.level-btn').forEach(b => { 
-            if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700'); b.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); } 
-            else { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); }
+            if (b.getAttribute('data-level') === window.appState.selectedLevel) {
+                b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+                b.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            } else {
+                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            }
         });
         return;
     }
@@ -870,27 +1265,49 @@ document.addEventListener('click', (e) => {
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
         window.isRecording = true;
-        btnStartTurn.classList.remove('animate-attention'); btnStartTurn.classList.add('hidden');
-        const recIndicator = document.getElementById('recording-indicator'); if(recIndicator) recIndicator.classList.remove('hidden');
-        const statusText = document.getElementById('status-text'); if(statusText) statusText.textContent = "Speak Now!";
-        const promptImage = document.getElementById('prompt-image'); if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
+        btnStartTurn.classList.remove('animate-attention');
+        btnStartTurn.classList.add('hidden');
+        
+        const recIndicator = document.getElementById('recording-indicator');
+        if(recIndicator) recIndicator.classList.remove('hidden');
+        
+        const statusText = document.getElementById('status-text');
+        if(statusText) statusText.textContent = "Speak Now!";
+        
+        const promptImage = document.getElementById('prompt-image');
+        if(promptImage) {
+            promptImage.classList.remove('blur-md');
+            promptImage.classList.add('blur-none');
+        }
+        
         const supportToggle = document.getElementById('support-toggle');
         if (window.timeElapsed === 0 && supportToggle && supportToggle.checked) {
             if(typeof getAggregatedData === 'function') {
                 const targetData = getAggregatedData(window.currentTheme, window.appState.selectedLevel);
-                if(typeof window.dropPin === 'function') targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
+                if(typeof window.dropPin === 'function') {
+                    targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
+                }
             }
             window.supportInterval = setInterval(window.triggerSupportHint, 6000);
         }
-        if (window.timeElapsed === 0 && typeof window.startTimer === 'function') window.startTimer();
+        if (window.timeElapsed === 0 && typeof window.startTimer === 'function') {
+            window.startTimer();
+        }
         return;
     }
 
     const recIndicator = e.target.closest('#recording-indicator');
-    if (recIndicator) { if(typeof window.stopSpeech === 'function') window.stopSpeech(); window.isRecording = false; return; }
+    if (recIndicator) {
+        if(typeof window.stopSpeech === 'function') window.stopSpeech();
+        window.isRecording = false;
+        return;
+    }
 
     const btnFinishTurn = e.target.closest('#btn-finish-turn');
-    if (btnFinishTurn) { window.finishGameAndShowResult(); return; }
+    if (btnFinishTurn) {
+        window.finishGameAndShowResult();
+        return;
+    }
 
     const btnPlayAgain = e.target.closest('#btn-play-again');
     if (btnPlayAgain) {
@@ -906,28 +1323,61 @@ document.addEventListener('click', (e) => {
                 pImage.style.transform = 'scale(1.1)';
             } else { pImage.style.filter = ''; pImage.style.transform = ''; pImage.classList.remove('blur-none'); pImage.classList.add('blur-md'); }
         }
-        if (typeof showView === 'function') showView(document.getElementById('view-select'));
-        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
+
+        // ★ 修正：リザルト画面の固定を確実に解除して隠す
+        const vr = document.getElementById('view-result');
+        if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
+
+        if (window.tempSelectedThemeId) {
+            window.startGameWithTheme(window.tempSelectedThemeId);
+        } else {
+            if (typeof showView === 'function') showView(document.getElementById('view-select'));
+            if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
+        }
         return;
     }
 
     const practiceStartBtn = e.target.closest('#btn-start-practice');
-    if (practiceStartBtn) { window.togglePracticeRecording(); return; }
+    if (practiceStartBtn) {
+        window.togglePracticeRecording();
+        return;
+    }
 
     const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('button[onclick*="closePractice"]');
-    if (practiceCloseBtn) { window.closePracticeModal(); return; }
+    if (practiceCloseBtn) {
+        window.closePracticeModal();
+        return;
+    }
 
     const btnGotoAbout = e.target.closest('#btn-goto-about');
-    if (btnGotoAbout) { if (typeof showView === 'function') showView(document.getElementById('view-about')); return; }
+    if (btnGotoAbout) {
+        if (typeof showView === 'function') showView(document.getElementById('view-about'));
+        return;
+    }
 });
 
 document.addEventListener('click', (e) => {
     const btnOqStart = e.target.closest('#btn-oq-start');
-    if (btnOqStart) { if (typeof window.OralQuestGame !== 'undefined') { window.OralQuestGame.startRecording(); window.isRecording = true; } }
+    if (btnOqStart) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.startRecording();
+            window.isRecording = true;
+        }
+    }
+
     const oqIndicator = e.target.closest('#oq-recording-indicator');
-    if (oqIndicator) { if (typeof window.OralQuestGame !== 'undefined') window.OralQuestGame.stopRecording(); }
+    if (oqIndicator) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.stopRecording();
+        }
+    }
+
     const btnOqNext = e.target.closest('#btn-oq-next');
-    if (btnOqNext) { if (typeof window.OralQuestGame !== 'undefined') window.OralQuestGame.handleNextButton(); }
+    if (btnOqNext) {
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.handleNextButton();
+        }
+    }
 });
 
 window.addEventListener('DOMContentLoaded', window.initApp);
@@ -937,12 +1387,20 @@ function setupOqPasswordLock() {
     if (oqBtn) {
         oqBtn.addEventListener('click', (e) => {
             const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
-            if (pass !== "9999") { e.stopImmediatePropagation(); e.preventDefault(); alert("パスワードが違います。"); }
+            if (pass !== "9999") {
+                e.stopImmediatePropagation();
+                e.preventDefault();
+                alert("パスワードが違います。");
+            }
         }, true); 
     }
 }
 
-if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupOqPasswordLock); } else { setupOqPasswordLock(); }
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
+} else {
+    setupOqPasswordLock();
+}
 
 window.checkUrlParameters = function() {
     const urlParams = new URLSearchParams(window.location.search);
@@ -969,7 +1427,10 @@ window.checkUrlParameters = function() {
                 const sNumber = document.getElementById('input-student-number').value.trim();
                 const sName = document.getElementById('input-student-name').value.trim();
                 
-                if (!sClass || !sNumber || !sName) { alert("クラス、出席番号、名前をすべて入力してください！"); return; }
+                if (!sClass || !sNumber || !sName) {
+                    alert("クラス、出席番号、名前をすべて入力してください！");
+                    return;
+                }
                 
                 localStorage.setItem('picSpeakStudentClass', sClass);
                 localStorage.setItem('picSpeakStudentNumber', sNumber);
@@ -980,6 +1441,7 @@ window.checkUrlParameters = function() {
                 let playCount = parseInt(localStorage.getItem(playKey) || '0');
                 localStorage.setItem(playKey, playCount);
 
+                window.tempSelectedThemeId = themeId;
                 window.startGameWithTheme(themeId);
             };
         }
@@ -1016,8 +1478,11 @@ window.setupSubmitButton = function(score) {
 
             const url = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
 
-            fetch(url, { method: 'POST', mode: 'no-cors', body: formData })
-            .then(() => {
+            fetch(url, {
+                method: 'POST',
+                mode: 'no-cors',
+                body: formData
+            }).then(() => {
                 submitBtn.innerHTML = '✅ 提出完了！';
                 submitBtn.classList.replace('from-green-400', 'from-gray-300');
                 submitBtn.classList.replace('to-emerald-500', 'to-gray-400');
@@ -1033,129 +1498,9 @@ window.setupSubmitButton = function(score) {
 };
 
 window.addEventListener('load', () => {
-    setTimeout(() => { if (typeof window.checkUrlParameters === 'function') window.checkUrlParameters(); }, 500);
+    setTimeout(() => {
+        if (typeof window.checkUrlParameters === 'function') {
+            window.checkUrlParameters();
+        }
+    }, 500);
 });
-
-// ==========================================
-// ★ 事前練習モード (Pre-Practice) ロジック ★
-// ==========================================
-window.tempSelectedThemeId = null;
-window.prePracticeCurrentType = 'words';
-
-window.startPrePracticeWithTheme = async function(id) {
-    try {
-        let folderPath = 'data/themes';
-        if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
-        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
-        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
-        const fetchedData = await res.json();
-        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-    } catch (e) { alert(`データの読み込みに失敗しました。`); return; }
-
-    const preImg = document.getElementById('pre-practice-image');
-    if(preImg) preImg.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
-
-    window.prePracticeCurrentType = 'words';
-    if(typeof window.renderPrePracticeList === 'function') window.renderPrePracticeList();
-
-    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
-    const preView = document.getElementById('view-pre-practice');
-    if(preView) preView.classList.remove('hidden');
-};
-
-window.renderPrePracticeList = function() {
-    if (!window.currentTheme) return;
-    document.querySelectorAll('.pre-level-btn').forEach(b => {
-        if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.add('bg-pink-500', 'text-white'); b.classList.remove('text-gray-500'); }
-        else { b.classList.add('text-gray-500'); b.classList.remove('bg-pink-500', 'text-white'); }
-    });
-    document.querySelectorAll('.pre-type-btn').forEach(b => {
-        if (b.getAttribute('data-type') === window.prePracticeCurrentType) { b.classList.add('text-blue-600', 'border-blue-500'); b.classList.remove('text-gray-400'); }
-        else { b.classList.add('text-gray-400'); b.classList.remove('text-blue-600', 'border-blue-500'); }
-    });
-
-    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
-    document.getElementById('count-words').innerText = targetData.words ? targetData.words.length : 0;
-    document.getElementById('count-chunks').innerText = targetData.chunks ? targetData.chunks.length : 0;
-    document.getElementById('count-sentences').innerText = targetData.sentences ? targetData.sentences.length : 0;
-
-    const listContainer = document.getElementById('pre-practice-list');
-    if (!listContainer) return;
-    listContainer.innerHTML = '';
-    
-    let items = [];
-    if (window.prePracticeCurrentType === 'words') items = targetData.words;
-    else if (window.prePracticeCurrentType === 'chunks') items = targetData.chunks;
-    else if (window.prePracticeCurrentType === 'sentences') items = targetData.sentences;
-
-    if (!items || items.length === 0) { listContainer.innerHTML = '<p class="text-center text-gray-400 font-bold py-10 mt-10">このレベルのデータはありません。</p>'; return; }
-
-    items.forEach(item => {
-        const escapedText = item.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        const escapedJa = (item.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        listContainer.innerHTML += `<div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col xl:flex-row xl:items-center justify-between gap-3 mb-3"><div class="flex-1 pr-2"><div class="font-black text-gray-800 text-base md:text-lg leading-tight">${item.text}</div><div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${item.ja || ""}</div></div><div class="flex items-center gap-2 shrink-0"><button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 shadow-sm">🔊 聞く</button><button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-xs md:text-sm font-bold shadow-sm">🎤 練習</button></div></div>`;
-    });
-};
-
-// ==========================================
-// ★ 授業モード（Classroom Mode）ロジック ★
-// ==========================================
-window.currentClassroomAudio = null;
-
-window.openClassroomMode = function() {
-    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
-    const classroomView = document.getElementById('view-classroom');
-    if (classroomView) { classroomView.classList.remove('hidden'); }
-    if (window.currentTheme) {
-        const imgEl = document.getElementById('classroom-image');
-        if(imgEl) imgEl.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
-        if(typeof window.renderClassroomList === 'function') window.renderClassroomList();
-    }
-};
-
-window.renderClassroomList = function() {
-    document.querySelectorAll('.class-level-btn').forEach(b => {
-        if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.add('bg-pink-500', 'text-white'); b.classList.remove('text-gray-400'); }
-        else { b.classList.remove('bg-pink-500', 'text-white'); b.classList.add('text-gray-400'); }
-    });
-
-    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
-    const listContainer = document.getElementById('classroom-sentence-list');
-    if (!listContainer) return;
-    listContainer.innerHTML = '';
-
-    if (!targetData.sentences || targetData.sentences.length === 0) {
-        listContainer.innerHTML = '<p class="text-gray-500 text-center mt-10">データがありません。</p>';
-        return;
-    }
-
-    targetData.sentences.forEach((sentence, index) => {
-        const escapedText = sentence.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        const escapedJa = (sentence.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        const audioSrc = sentence.audioSrc || ''; 
-
-        listContainer.innerHTML += `
-            <div class="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-gray-500 transition-colors mb-4">
-                <div class="flex items-center justify-between mb-3">
-                    <span class="text-gray-400 font-bold text-sm">Sentence ${index + 1}</span>
-                    <button onclick="window.playClassroomAudio('${audioSrc}', '${escapedText}')" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110"><svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg></button>
-                </div>
-                <div class="classroom-text-reveal cursor-pointer group" onclick="this.classList.toggle('revealed')">
-                    <div class="text-gray-500 text-sm font-bold border-2 border-dashed border-gray-600 rounded-xl p-3 text-center group-[.revealed]:hidden hover:bg-gray-600/30">👀 クリックして英文を表示</div>
-                    <div class="hidden group-[.revealed]:block">
-                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${sentence.text}</p>
-                        <p class="text-gray-400 text-sm font-bold">${sentence.ja}</p>
-                    </div>
-                </div>
-            </div>
-        `;
-    });
-};
-
-window.playClassroomAudio = function(audioSrc, fallbackText) {
-    if (window.currentClassroomAudio) { window.currentClassroomAudio.pause(); window.currentClassroomAudio.currentTime = 0; }
-    if (audioSrc) {
-        window.currentClassroomAudio = new Audio(audioSrc);
-        window.currentClassroomAudio.play().catch(e => { window.playResultTTS(fallbackText); });
-    } else window.playResultTTS(fallbackText);
-};
