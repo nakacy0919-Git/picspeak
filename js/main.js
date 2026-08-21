@@ -41,61 +41,18 @@ const themeGrid = document.getElementById('theme-grid');
 (function injectSpecialEffectsCSS() {
     const style = document.createElement('style');
     style.innerHTML = `
-        .confetti-piece {
-            position: fixed;
-            width: 10px;
-            height: 10px;
-            top: -10px;
-            z-index: 9999;
-            opacity: 0.8;
-            border-radius: 2px;
-            animation: confetti-fall 3s ease-out forwards;
-            pointer-events: none;
-        }
-        @keyframes confetti-fall {
-            0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; }
-            100% { transform: translateY(100vh) translateX(var(--x-end)) rotate(var(--rot-end)); opacity: 0; }
-        }
-
-        .excellent-prompt {
-            position: fixed;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%) scale(0);
-            font-family: 'Arial Black', 'Helvetica Bold', sans-serif;
-            font-size: 10vw;
-            font-weight: 900;
-            color: #ffffff;
-            text-shadow: 0 0 20px rgba(74, 222, 128, 0.8), 0 0 40px #22c55e;
-            background: linear-gradient(to bottom right, #4ade80, #22c55e);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            z-index: 10000;
-            opacity: 0;
-            pointer-events: none;
-            letter-spacing: -0.05em;
-            animation: excellent-pop 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards;
-        }
-        @keyframes excellent-pop {
-            0% { transform: translate(-50%, -50%) scale(0) rotate(-10deg); opacity: 0; }
-            15% { transform: translate(-50%, -50%) scale(1.1) rotate(5deg); opacity: 1; }
-            25% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
-            80% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; }
-            100% { transform: translate(-50%, -50%) scale(0.8) rotate(0deg); opacity: 0; }
-        }
+        .confetti-piece { position: fixed; width: 10px; height: 10px; top: -10px; z-index: 9999; opacity: 0.8; border-radius: 2px; animation: confetti-fall 3s ease-out forwards; pointer-events: none; }
+        @keyframes confetti-fall { 0% { transform: translateY(0) translateX(0) rotate(0deg); opacity: 1; } 100% { transform: translateY(100vh) translateX(var(--x-end)) rotate(var(--rot-end)); opacity: 0; } }
+        .excellent-prompt { position: fixed; top: 50%; left: 50%; transform: translate(-50%, -50%) scale(0); font-family: 'Arial Black', 'Helvetica Bold', sans-serif; font-size: 10vw; font-weight: 900; color: #ffffff; text-shadow: 0 0 20px rgba(74, 222, 128, 0.8), 0 0 40px #22c55e; background: linear-gradient(to bottom right, #4ade80, #22c55e); -webkit-background-clip: text; -webkit-text-fill-color: transparent; z-index: 10000; opacity: 0; pointer-events: none; letter-spacing: -0.05em; animation: excellent-pop 1.5s cubic-bezier(0.23, 1, 0.32, 1) forwards; }
+        @keyframes excellent-pop { 0% { transform: translate(-50%, -50%) scale(0) rotate(-10deg); opacity: 0; } 15% { transform: translate(-50%, -50%) scale(1.1) rotate(5deg); opacity: 1; } 25% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; } 80% { transform: translate(-50%, -50%) scale(1) rotate(0deg); opacity: 1; } 100% { transform: translate(-50%, -50%) scale(0.8) rotate(0deg); opacity: 0; } }
     `;
     document.head.appendChild(style);
 })();
 
 async function initApp() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
-    if (!SpeechRecognition) {
-        alert("【重要】お使いのブラウザは音声認識に非対応です。Google Chromeをご利用ください。");
-        return; 
-    }
-    if (typeof window.initSpeechRecognition === 'function') {
-        window.initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
-    }
+    if (!SpeechRecognition) { alert("【重要】お使いのブラウザは音声認識に非対応です。Google Chromeをご利用ください。"); return; }
+    if (typeof window.initSpeechRecognition === 'function') window.initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
     try {
         const response = await fetch('data/theme_list.json?t=' + new Date().getTime());
         window.themeList = await response.json();
@@ -133,56 +90,80 @@ window.renderThemeGrid = async function() {
 
         let html = '';
 
-        // DETECTIVE専用 チュートリアル表示
         if (isDetective) {
             html += `
             <div class="col-span-full bg-yellow-50/80 rounded-3xl p-5 md:p-8 shadow-sm border border-yellow-200 mb-6 relative overflow-hidden">
-                <h3 class="text-xl md:text-2xl font-black text-yellow-700 mb-2 flex items-center gap-2">
-                    <span>🕵️‍♂️</span> 遊び方（タップして体験！）
-                </h3>
+                <h3 class="text-xl md:text-2xl font-black text-yellow-700 mb-2 flex items-center gap-2"><span>🕵️‍♂️</span> 遊び方（タップして体験！）</h3>
                 <p class="text-sm md:text-base text-yellow-800 font-bold mb-4 leading-relaxed">
                     下の絵(B)を上の絵(A)と見比べて、違うところを英語で声に出してみよう！<br>
                     試しに、下のサンプルの<span class="text-pink-500 underline decoration-pink-300 decoration-2 underline-offset-4">「B」の絵（下半分）の中にある間違っている部分</span>を直接クリック（タップ）してみてね。
                 </p>
-                
                 <div class="relative w-full rounded-2xl overflow-hidden border-4 border-yellow-300 bg-white shadow-inner cursor-pointer" onclick="handleTutorialClick(event)">
                     <img src="assets/images/detective/sample.webp" class="w-full h-auto object-contain pointer-events-none">
                     <div id="tutorial-overlay" class="absolute inset-0 pointer-events-none"></div>
                 </div>
-            </div>
-            `;
+            </div>`;
         }
 
         results.forEach(item => {
             if(!item || !item.data) return;
             
             let imageFilterClass = "";
-            let titleText = item.data.description || item.data.titleJa || '名称未設定';
+            let category = item.data.category || 'other'; 
+            
+            // ★ 修正箇所：英語(titleEn)と日本語(titleJa)を別々に取得し、説明文(description)を出さないように変更
+            let titleEn = item.data.titleEn || 'No Title';
+            let titleJa = item.data.titleJa || '名称未設定';
             
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
-                titleText = "??? (Secret Image)";
+                titleEn = "Secret Image";
+                titleJa = "???";
             } else if (isDetective) {
                 imageFilterClass = "!h-[200%] object-top"; 
             }
             
             let badgeHtml = '';
             if (isDetective) {
-                badgeHtml = `
-                <div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">
-                    NEW!
-                </div>`;
+                badgeHtml = `<div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">NEW!</div>`;
             }
             
-            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}">
+            // ★ 修正箇所：タイトルを上下に2段（英・日）で表示するようにHTMLタグを変更
+            html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
                     <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
-                <div class="p-3 md:p-4 text-center text-xs md:text-sm lg:text-base font-black text-gray-700 line-clamp-2 border-t border-gray-50 flex-1 flex items-center justify-center leading-tight bg-white pointer-events-none">${titleText}</div>
+                <div class="p-3 md:p-4 text-center border-t border-gray-50 flex-1 flex flex-col items-center justify-center leading-tight bg-white pointer-events-none">
+                    <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${titleEn}</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-400 line-clamp-1">${titleJa}</span>
+                </div>
             </div>`;
         });
         themeGrid.innerHTML = html;
+
+        const filters = document.getElementById('theme-filters');
+        if (filters) {
+            if (window.appState.selectedMode === 'mosaic' || isDetective || window.appState.selectedMode === 'oralquest') {
+                filters.classList.add('hidden');
+            } else {
+                filters.classList.remove('hidden');
+                document.querySelectorAll('.theme-filter-btn').forEach(b => {
+                    if (b.getAttribute('data-filter') === 'all') { 
+                        b.classList.remove('bg-white', 'text-gray-500'); 
+                        b.classList.add('bg-gray-800', 'text-white', 'shadow-md'); 
+                    } else { 
+                        b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); 
+                        b.classList.add('bg-white', 'text-gray-500'); 
+                    }
+                });
+                document.querySelectorAll('.theme-card').forEach(card => {
+                    const cardCat = card.getAttribute('data-category');
+                    if (cardCat === 'other') card.style.display = 'none';
+                    else card.style.display = '';
+                });
+            }
+        }
     } catch(e) { 
         themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
     }
@@ -193,12 +174,8 @@ window.handleTutorialClick = async function(e) {
         try {
             const res = await fetch('data/detective/detective_sample.json?t=' + new Date().getTime());
             window.tutorialData = await res.json();
-        } catch (err) {
-            console.error("Tutorial data not found");
-            return;
-        }
+        } catch (err) { return; }
     }
-
     const rect = e.currentTarget.getBoundingClientRect();
     const clickX = e.clientX - rect.left;
     const clickY = e.clientY - rect.top;
@@ -209,16 +186,11 @@ window.handleTutorialClick = async function(e) {
     for (let diff of window.tutorialData.differences) {
         const dx = Math.abs(xPercent - diff.coordinates.x);
         const dy = Math.abs(yPercent - diff.coordinates.y);
-        
         if (dx <= (diff.coordinates.width / 2) + 5 && dy <= (diff.coordinates.height / 2) + 5) {
-            hitDiff = diff;
-            break;
+            hitDiff = diff; break;
         }
     }
-
-    if (hitDiff) {
-        showTutorialPopup(hitDiff);
-    }
+    if (hitDiff) showTutorialPopup(hitDiff);
 }
 
 window.showTutorialPopup = function(diff) {
@@ -230,133 +202,62 @@ window.showTutorialPopup = function(diff) {
 
     const mark = document.createElement('div');
     mark.className = 'absolute border-[4px] border-red-500 bg-red-500/30 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.9)] animate-pop pointer-events-none z-10';
-    mark.style.width = `${diff.coordinates.width}%`;
-    mark.style.height = `${diff.coordinates.height}%`;
-    mark.style.left = `${diff.coordinates.x - diff.coordinates.width / 2}%`;
-    mark.style.top = `${diff.coordinates.y - diff.coordinates.height / 2}%`;
+    mark.style.width = `${diff.coordinates.width}%`; mark.style.height = `${diff.coordinates.height}%`; mark.style.left = `${diff.coordinates.x - diff.coordinates.width / 2}%`; mark.style.top = `${diff.coordinates.y - diff.coordinates.height / 2}%`;
     overlay.appendChild(mark);
 
     let expressionsHtml = '';
     const createLevelHtml = (levelObj, levelName, color) => {
         if (!levelObj || levelObj.length === 0) return '';
-        return `
-            <div class="mb-2 p-2 bg-white rounded border border-gray-100">
-                <span class="text-[10px] font-bold bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded">${levelName}</span>
-                <p class="font-bold text-gray-800 text-sm mt-1">${levelObj[0].text}</p>
-                <p class="text-[10px] text-gray-500">${levelObj[0].ja}</p>
-            </div>
-        `;
+        return `<div class="mb-2 p-2 bg-white rounded border border-gray-100"><span class="text-[10px] font-bold bg-${color}-100 text-${color}-700 px-2 py-0.5 rounded">${levelName}</span><p class="font-bold text-gray-800 text-sm mt-1">${levelObj[0].text}</p><p class="text-[10px] text-gray-500">${levelObj[0].ja}</p></div>`;
     };
-    expressionsHtml += createLevelHtml(diff.modelExpressions.elementary, '小学生', 'green');
-    expressionsHtml += createLevelHtml(diff.modelExpressions.junior_high, '中学生', 'blue');
-    expressionsHtml += createLevelHtml(diff.modelExpressions.high_school, '高校生', 'pink');
+    expressionsHtml += createLevelHtml(diff.modelExpressions.elementary, '小学生', 'green') + createLevelHtml(diff.modelExpressions.junior_high, '中学生', 'blue') + createLevelHtml(diff.modelExpressions.high_school, '高校生', 'pink');
 
     const popup = document.createElement('div');
     popup.className = 'fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white/95 backdrop-blur-md rounded-2xl shadow-[0_20px_60px_rgba(0,0,0,0.3)] border-2 border-pink-300 p-5 md:p-6 z-[100] w-[90%] max-w-sm animate-fade-in-up flex flex-col';
-    
-    popup.innerHTML = `
-        <button class="absolute top-3 right-4 text-gray-300 hover:text-gray-600 font-black text-2xl transition-colors" onclick="document.getElementById('tutorial-overlay').innerHTML=''; document.getElementById('tutorial-overlay').classList.add('pointer-events-none');">×</button>
-        <h4 class="font-black text-pink-500 border-b-2 border-pink-50 pb-2 mb-3 pr-6 text-lg">🎯 ${diff.nameJa}</h4>
-        <div class="space-y-1 mb-4">
-            ${expressionsHtml}
-        </div>
-        <p class="text-xs text-gray-400 font-bold text-center bg-gray-50 p-2 rounded-lg">本番では、マイクに向かってこのように英語で発話します！🎙️</p>
-    `;
+    popup.innerHTML = `<button class="absolute top-3 right-4 text-gray-300 hover:text-gray-600 font-black text-2xl transition-colors" onclick="document.getElementById('tutorial-overlay').innerHTML=''; document.getElementById('tutorial-overlay').classList.add('pointer-events-none');">×</button><h4 class="font-black text-pink-500 border-b-2 border-pink-50 pb-2 mb-3 pr-6 text-lg">🎯 ${diff.nameJa}</h4><div class="space-y-1 mb-4">${expressionsHtml}</div><p class="text-xs text-gray-400 font-bold text-center bg-gray-50 p-2 rounded-lg">本番では、マイクに向かってこのように英語で発話します！🎙️</p>`;
 
     const backdrop = document.createElement('div');
     backdrop.className = 'fixed inset-0 bg-black/10 z-[99] transition-opacity';
     backdrop.onclick = () => { overlay.innerHTML = ''; overlay.classList.add('pointer-events-none'); };
     
-    overlay.appendChild(backdrop);
-    overlay.appendChild(popup);
-    
+    overlay.appendChild(backdrop); overlay.appendChild(popup);
     try { if (typeof playSound === 'function') playSound('match'); } catch(e) {}
 }
 
 window.startGameWithTheme = async function(id) {
-    const detUi = document.getElementById('detective-ui');
-    if (detUi) detUi.remove(); 
-    
-    if (typeof window.DetectiveGame !== 'undefined') {
-        window.DetectiveGame.isActive = false; 
-        if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); 
-    }
-    
-    const statsGrid = document.querySelector('#view-play .grid.grid-cols-3');
-    if (statsGrid) {
-        statsGrid.style.display = '';
-        statsGrid.classList.remove('hidden');
-    }
-    
-    const compBar = document.getElementById('live-completion-text');
-    if (compBar) {
-        const compBarContainer = compBar.closest('.bg-white');
-        if (compBarContainer) {
-            compBarContainer.style.display = '';
-            compBarContainer.classList.remove('hidden');
-        }
-    }
+    const detUi = document.getElementById('detective-ui'); if (detUi) detUi.remove(); 
+    if (typeof window.DetectiveGame !== 'undefined') { window.DetectiveGame.isActive = false; if (window.DetectiveGame.timerInterval) clearInterval(window.DetectiveGame.timerInterval); }
+    const statsGrid = document.querySelector('#view-play .grid.grid-cols-3'); if (statsGrid) { statsGrid.style.display = ''; statsGrid.classList.remove('hidden'); }
+    const compBar = document.getElementById('live-completion-text'); if (compBar) { const compBarContainer = compBar.closest('.bg-white'); if (compBarContainer) { compBarContainer.style.display = ''; compBarContainer.classList.remove('hidden'); } }
 
     try {
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
         if (window.appState.selectedMode === 'oralquest') folderPath = 'data/oralquest'; 
-
         const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
         const fetchedData = await res.json();
-        
         window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
-        
-    } catch (e) { 
-        alert(`データの読み込みに失敗しました。`); 
-        return; 
-    }
+    } catch (e) { alert(`データの読み込みに失敗しました。`); return; }
     
     const promptImage = document.getElementById('prompt-image');
     if (window.currentTheme && window.currentTheme.imageSrc && promptImage) {
         promptImage.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
-        
         if (window.appState.selectedMode === 'mosaic') {
-            promptImage.classList.remove('blur-none', 'blur-md');
-            promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
-            promptImage.style.transform = 'scale(1.1)';
+            promptImage.classList.remove('blur-none', 'blur-md'); promptImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`; promptImage.style.transform = 'scale(1.1)';
         } else if (window.appState.selectedMode === 'detective') {
-            if (typeof window.DetectiveGame !== 'undefined') {
-                window.DetectiveGame.init(window.currentTheme);
-            }
+            if (typeof window.DetectiveGame !== 'undefined') window.DetectiveGame.init(window.currentTheme);
         } else {
-            promptImage.style.filter = '';
-            promptImage.style.transform = '';
-            promptImage.style.height = '';       
-            promptImage.style.objectFit = '';    
-            promptImage.style.objectPosition = '';
-            promptImage.style.top = '';          
-            promptImage.style.bottom = '';
-            promptImage.classList.remove('w-1/2');
-            promptImage.classList.add('w-full');
-            
-            const promptImageB = document.getElementById('prompt-image-b');
-            if (promptImageB) {
-                promptImageB.classList.add('hidden');
-                promptImageB.style.height = '';
-                promptImageB.style.objectFit = '';
-                promptImageB.style.objectPosition = '';
-                promptImageB.style.bottom = '';
-            }
-            
-            promptImage.classList.remove('blur-none');
-            promptImage.classList.add('blur-md'); 
+            promptImage.style.filter = ''; promptImage.style.transform = ''; promptImage.style.height = ''; promptImage.style.objectFit = ''; promptImage.style.objectPosition = ''; promptImage.style.top = ''; promptImage.style.bottom = '';
+            promptImage.classList.remove('w-1/2'); promptImage.classList.add('w-full');
+            const promptImageB = document.getElementById('prompt-image-b'); if (promptImageB) { promptImageB.classList.add('hidden'); promptImageB.style.height = ''; promptImageB.style.objectFit = ''; promptImageB.style.objectPosition = ''; promptImageB.style.bottom = ''; }
+            promptImage.classList.remove('blur-none'); promptImage.classList.add('blur-md'); 
         }
     }
     
     window.timeLeft = window.appState.customTimeLimit || 30; 
-    const timerText = document.getElementById('timer-text');
-    if(timerText) timerText.textContent = `${window.timeLeft}s`; 
-    
-    window.timeElapsed = 0; 
-    window.rawTranscriptForCounting = ""; 
-    window.accumulatedTranscript = ""; 
+    const timerText = document.getElementById('timer-text'); if(timerText) timerText.textContent = `${window.timeLeft}s`; 
+    window.timeElapsed = 0; window.rawTranscriptForCounting = ""; window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
     
     if(document.getElementById('scoreDisplay')) document.getElementById('scoreDisplay').textContent = "0"; 
@@ -367,11 +268,8 @@ window.startGameWithTheme = async function(id) {
     if(document.getElementById('pin-container')) document.getElementById('pin-container').innerHTML = ''; 
     if(document.getElementById('support-text-container')) document.getElementById('support-text-container').innerHTML = '';
     
-    if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') {
-        ngWordGame.init(window.currentTheme);
-    } else if (typeof ngWordGame !== 'undefined') {
-        ngWordGame.cleanup();
-    }
+    if (window.appState.selectedMode === 'ngword' && typeof ngWordGame !== 'undefined') ngWordGame.init(window.currentTheme);
+    else if (typeof ngWordGame !== 'undefined') ngWordGame.cleanup();
 
     const transcriptBox = document.getElementById('transcript-box');
     const existingHint = document.getElementById('mosaic-hint-panel');
@@ -382,7 +280,6 @@ window.startGameWithTheme = async function(id) {
             const hintPanel = document.createElement('div');
             hintPanel.id = 'mosaic-hint-panel';
             hintPanel.className = 'mb-2 md:mb-3 bg-pink-50 border border-pink-100 rounded-xl p-2 md:p-3 shadow-sm shrink-0 z-10';
-            
             hintPanel.innerHTML = `
                 <span class="text-pink-500 font-black mb-2 block tracking-wider text-xs md:text-sm">💡 言葉に詰まったら使ってみよう！</span>
                 <div class="space-y-2">
@@ -405,8 +302,7 @@ window.startGameWithTheme = async function(id) {
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">On the right / left, ~</span> <span class="text-gray-500">(右/左に)</span></span>
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">In the background, ~</span> <span class="text-gray-500">(奥のほうに)</span></span>
                     </div>
-                </div>
-            `;
+                </div>`;
             transcriptBox.parentNode.insertBefore(hintPanel, transcriptBox);
             transcriptBox.innerHTML = `<p class="text-gray-400 font-bold">Press START and guess the picture!<br><span class="text-sm md:text-lg font-medium text-gray-400">（STARTを押して推測してみよう）</span></p>`;
         } else {
@@ -415,23 +311,14 @@ window.startGameWithTheme = async function(id) {
     }
 
     const btnStartTurn = document.getElementById('btn-start-turn');
-    if(btnStartTurn) {
-        btnStartTurn.classList.remove('hidden');
-        btnStartTurn.classList.add('animate-attention');
-    }
+    if(btnStartTurn) { btnStartTurn.classList.remove('hidden'); btnStartTurn.classList.add('animate-attention'); }
     
     if (window.appState.selectedMode === 'oralquest') {
         if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
-        
-        document.getElementById('oq-stage-1').classList.remove('hidden');
-        document.getElementById('oq-stage-2').classList.add('hidden');
-        document.getElementById('oq-stage-3').classList.add('hidden');
+        document.getElementById('oq-stage-1').classList.remove('hidden'); document.getElementById('oq-stage-2').classList.add('hidden'); document.getElementById('oq-stage-3').classList.add('hidden');
         document.getElementById('oq-progress-bar').style.width = '10%';
-        document.getElementById('btn-oq-start').classList.remove('hidden');
-        document.getElementById('btn-oq-next').classList.add('hidden');
-        document.getElementById('oq-reading-result').classList.add('hidden');
-        document.getElementById('oq-status-text').textContent = "Tap START to read";
-        
+        document.getElementById('btn-oq-start').classList.remove('hidden'); document.getElementById('btn-oq-next').classList.add('hidden');
+        document.getElementById('oq-reading-result').classList.add('hidden'); document.getElementById('oq-status-text').textContent = "Tap START to read";
     } else {
         if (typeof showView === 'function') showView(document.getElementById('view-play'));
     }
@@ -440,19 +327,15 @@ window.startGameWithTheme = async function(id) {
 window.playResultTTS = function(text) {
     speechSynthesis.cancel();
     const u = new SpeechSynthesisUtterance(text);
-    u.lang = 'en-US';
-    u.rate = 0.8; 
+    u.lang = 'en-US'; u.rate = 0.8; 
     const voices = speechSynthesis.getVoices();
-    const bestVoice = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Premium')))
-                   || voices.find(v => v.lang === 'en-US' && v.name.includes('Siri'))
-                   || voices.find(v => v.lang.startsWith('en'));
+    const bestVoice = voices.find(v => v.lang === 'en-US' && (v.name.includes('Google') || v.name.includes('Natural') || v.name.includes('Premium'))) || voices.find(v => v.lang === 'en-US' && v.name.includes('Siri')) || voices.find(v => v.lang.startsWith('en'));
     if (bestVoice) u.voice = bestVoice;
     speechSynthesis.speak(u);
 };
 
 window.changeTranscriptSize = function(delta) {
-    const el = document.getElementById('final-transcript-text');
-    if (!el) return;
+    const el = document.getElementById('final-transcript-text'); if (!el) return;
     let currentSize = parseInt(window.getComputedStyle(el).fontSize);
     let newSize = currentSize + (delta * 4); 
     if (newSize >= 12 && newSize <= 48) { el.style.fontSize = newSize + 'px'; el.style.lineHeight = '1.6'; }
@@ -462,20 +345,13 @@ window.finishGameAndShowResult = function() {
     try {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
-        
-        if (typeof ngWordGame !== 'undefined') {
-            ngWordGame.cleanup();
-        }
+        if (typeof ngWordGame !== 'undefined') ngWordGame.cleanup();
 
-        const btnFinishTurn = document.getElementById('btn-finish-turn');
-        if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
-        const recIndicator = document.getElementById('recording-indicator');
-        if(recIndicator) recIndicator.classList.add('hidden');
+        const btnFinishTurn = document.getElementById('btn-finish-turn'); if(btnFinishTurn) btnFinishTurn.classList.add('hidden');
+        const recIndicator = document.getElementById('recording-indicator'); if(recIndicator) recIndicator.classList.add('hidden');
         
         if (window.appState.selectedMode === 'detective') {
-            if (typeof window.DetectiveResult !== 'undefined') {
-                window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
-            }
+            if (typeof window.DetectiveResult !== 'undefined') window.DetectiveResult.render(window.currentTheme, window.DetectiveGame.foundIds);
         } else {
             window.renderSnapshotResult();
         }
@@ -488,7 +364,6 @@ window.finishGameAndShowResult = function() {
             if(viewResultEl) viewResultEl.classList.remove('hidden');
         }
     } catch (error) {
-        console.error("Result画面への遷移中にエラーが発生:", error);
         document.querySelectorAll('body > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
         document.getElementById('view-result').classList.remove('hidden');
     }
@@ -506,38 +381,28 @@ window.renderSnapshotResult = function() {
     const container = document.getElementById('ranking-container');
     if (!container) return;
 
-    // ==========================================
-    // ★ 超強力レイアウト強制リセット（ヘッダー上部配置 ＆ スクロール対応）
-    // ==========================================
-    // 1. ranking-container の親要素たちを辿り、すべて「縦並び」「画面ピッタリ」に強制する
+    // ★ 修正：レイアウト強制リセットによるヘッダーの左寄せとスクロールの不具合を解消
     let currentEl = container.parentElement;
     while (currentEl && currentEl.tagName !== 'BODY') {
-        currentEl.style.setProperty('display', 'flex', 'important');
-        currentEl.style.setProperty('flex-direction', 'column', 'important');
-        currentEl.style.setProperty('width', '100%', 'important');
-        currentEl.style.setProperty('flex', '1', 'important');
-        currentEl.style.setProperty('min-height', '0', 'important');
-        // 悪さをする横並びクラスを剥奪
-        currentEl.classList.remove('flex-row', 'lg:flex-row', 'md:flex-row', 'sm:flex-row', 'items-center', 'justify-center');
-        
         if (currentEl.id === 'view-result') {
+            currentEl.style.setProperty('display', 'flex', 'important');
+            currentEl.style.setProperty('flex-direction', 'column', 'important');
             currentEl.style.setProperty('height', '100dvh', 'important');
             currentEl.style.setProperty('overflow', 'hidden', 'important');
-            currentEl.style.setProperty('justify-content', 'flex-start', 'important');
-            break; // view-result まで直したらストップ
+            currentEl.classList.remove('flex-row', 'lg:flex-row', 'md:flex-row', 'sm:flex-row', 'items-center', 'justify-center');
+            break;
         }
         currentEl = currentEl.parentElement;
     }
 
-    // 2. ヘッダー（ranking-containerの兄弟要素）を「画面上部に横長配置」に強制修正
     if (container.parentElement) {
         Array.from(container.parentElement.children).forEach(sibling => {
             if (sibling !== container) {
                 sibling.style.setProperty('width', '100%', 'important');
                 sibling.style.setProperty('flex-shrink', '0', 'important');
                 sibling.style.setProperty('display', 'flex', 'important');
-                sibling.style.setProperty('flex-direction', 'row', 'important'); // ★横並びに！
-                sibling.style.setProperty('justify-content', 'space-between', 'important'); // ★左右に散らす！
+                sibling.style.setProperty('flex-direction', 'row', 'important');
+                sibling.style.setProperty('justify-content', 'space-between', 'important');
                 sibling.style.setProperty('align-items', 'center', 'important');
                 sibling.style.setProperty('padding', '15px 30px', 'important');
                 sibling.style.setProperty('background', '#ffffff', 'important');
@@ -548,14 +413,12 @@ window.renderSnapshotResult = function() {
         });
     }
 
-    // 3. container 自体の設定
     container.style.setProperty('flex', '1', 'important');
     container.style.setProperty('min-height', '0', 'important');
     container.style.setProperty('width', '100%', 'important');
     container.style.setProperty('display', 'flex', 'important');
     container.style.setProperty('flex-direction', 'column', 'important');
     container.style.setProperty('overflow', 'hidden', 'important');
-    // ==========================================
 
     let categoryHtml = "";
     const catDict = {
@@ -659,10 +522,9 @@ window.renderSnapshotResult = function() {
     const wpm = window.appState.customTimeLimit > 0 ? Math.round(totalWords / (window.appState.customTimeLimit / 60)) : 0;
 
     let html = `
-        <div class="flex flex-col lg:flex-row gap-4 sm:gap-6 w-full max-w-[120rem] mx-auto px-3 sm:px-5 xl:px-8 pb-6 pt-4" style="flex: 1; min-height: 0; overflow: hidden;">
+        <div class="flex flex-col lg:flex-row gap-4 sm:gap-6 h-full w-full max-w-[120rem] mx-auto px-3 sm:px-5 xl:px-8 pb-4 pt-2 overflow-hidden">
             
-            <!-- 左側：スコアとトランスクリプト (枠内でスクロール可) -->
-            <div class="w-full lg:w-[280px] xl:w-[360px] flex flex-col gap-3 sm:gap-4 shrink-0" style="height: 100%; overflow-y: auto; padding-right: 8px;">
+            <div class="w-full lg:w-[280px] xl:w-[360px] flex flex-col gap-3 sm:gap-4 shrink-0 h-full overflow-y-auto custom-scrollbar pr-2 pb-6">
                 <div class="bg-gradient-to-br from-teal-500 to-emerald-600 rounded-2xl sm:rounded-3xl p-5 sm:p-6 flex flex-col items-center shadow-xl text-white relative overflow-hidden shrink-0">
                     <div class="absolute -right-4 -top-4 opacity-10 text-8xl sm:text-9xl">📸</div>
                     <span class="text-white/90 font-extrabold text-xs tracking-widest mb-1 uppercase">総合達成度</span>
@@ -691,15 +553,14 @@ window.renderSnapshotResult = function() {
                 </div>
             </div>
 
-            <!-- 右側：ターゲット分析 (枠内で独立して下までスクロール可) -->
-            <div class="w-full flex flex-col" style="flex: 1; min-height: 0; height: 100%;">
+            <div class="w-full flex-1 flex flex-col h-full overflow-hidden">
                 <div class="mb-2 sm:mb-3 pl-1 shrink-0">
                     <h3 class="text-xs sm:text-sm font-black text-gray-500 uppercase tracking-widest flex items-center gap-2 mb-1">
                         <span class="w-2.5 h-2.5 rounded-full bg-blue-500 inline-block"></span>
                         次へのステップアップ
                     </h3>
                 </div>
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 custom-scrollbar content-start" style="flex: 1; overflow-y: auto; padding-right: 8px; padding-bottom: 40px;">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-3 sm:gap-4 overflow-y-auto h-full pb-20 pr-2 custom-scrollbar content-start">
                     ${categoryHtml}
                 </div>
             </div>
@@ -708,7 +569,6 @@ window.renderSnapshotResult = function() {
     `;
     container.innerHTML = html;
 
-    // ★ 提出ボタンのセットアップ
     if (typeof window.setupSubmitButton === 'function') {
         const finalScoreToSubmit = stats ? stats.completionRate : 0;
         window.setupSubmitButton(finalScoreToSubmit);
@@ -728,12 +588,8 @@ window.playSuccessChime = function() {
         const osc2 = ctx.createOscillator();
         const gainNode = ctx.createGain();
 
-        osc1.type = 'sine';
-        osc2.type = 'triangle';
-
-        osc1.connect(gainNode);
-        osc2.connect(gainNode);
-        gainNode.connect(ctx.destination);
+        osc1.type = 'sine'; osc2.type = 'triangle';
+        osc1.connect(gainNode); osc2.connect(gainNode); gainNode.connect(ctx.destination);
 
         const now = ctx.currentTime;
         gainNode.gain.setValueAtTime(0, now);
@@ -742,14 +598,11 @@ window.playSuccessChime = function() {
 
         osc1.frequency.setValueAtTime(987.77, now);
         osc1.frequency.setValueAtTime(1318.51, now + 0.1);
-        
         osc2.frequency.setValueAtTime(987.77, now);
         osc2.frequency.setValueAtTime(1318.51, now + 0.1);
 
-        osc1.start(now);
-        osc2.start(now);
-        osc1.stop(now + 0.6);
-        osc2.stop(now + 0.6);
+        osc1.start(now); osc2.start(now);
+        osc1.stop(now + 0.6); osc2.stop(now + 0.6);
     } catch (e) { console.error("Audio play failed", e); }
 };
 
@@ -770,18 +623,14 @@ window.playTapSound = function() {
         gainNode.gain.linearRampToValueAtTime(0.15, ctx.currentTime + 0.01); 
         gainNode.gain.exponentialRampToValueAtTime(0.01, ctx.currentTime + 0.1); 
 
-        osc.connect(gainNode);
-        gainNode.connect(ctx.destination);
-
-        osc.start(ctx.currentTime);
-        osc.stop(ctx.currentTime + 0.1);
+        osc.connect(gainNode); gainNode.connect(ctx.destination);
+        osc.start(ctx.currentTime); osc.stop(ctx.currentTime + 0.1);
     } catch (e) { console.error("Tap sound failed", e); }
 };
 
 window.createConfetti = function() {
     const colors = ['#4ade80', '#60a5fa', '#facc15', '#f87171', '#a78bfa', '#fb923c'];
-    const confettiCount = 100;
-    for (let i = 0; i < confettiCount; i++) {
+    for (let i = 0; i < 100; i++) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti-piece';
         confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
@@ -789,7 +638,6 @@ window.createConfetti = function() {
         confetti.style.setProperty('--x-end', (Math.random() - 0.5) * 40 + 'vw'); 
         confetti.style.setProperty('--rot-end', (Math.random() - 0.5) * 720 + 'deg'); 
         confetti.style.animationDelay = Math.random() * 0.5 + 's';
-        
         document.body.appendChild(confetti);
         confetti.addEventListener('animationend', () => { confetti.remove(); });
     }
@@ -808,9 +656,7 @@ window.showExcellentPrompt = function() {
 // ==========================================
 window.closePracticeModal = function() {
     window.appState.isPracticeMode = false;
-    if (window.isPracticeRecording && window.practiceRec) {
-        try { window.practiceRec.stop(); } catch(e){}
-    }
+    if (window.isPracticeRecording && window.practiceRec) { try { window.practiceRec.stop(); } catch(e){} }
     window.isPracticeRecording = false;
     const modal = document.getElementById('practice-modal');
     if (modal) modal.classList.add('hidden');
@@ -830,18 +676,13 @@ window.togglePracticeRecording = function() {
     if (!window.practiceRec) {
         const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
         window.practiceRec = new SpeechRec();
-        window.practiceRec.lang = 'en-US';
-        window.practiceRec.interimResults = true;
-        window.practiceRec.continuous = true; 
+        window.practiceRec.lang = 'en-US'; window.practiceRec.interimResults = true; window.practiceRec.continuous = true; 
         
         window.practiceRec.onresult = (e) => {
             let text = '';
             for(let i=0; i<e.results.length; i++) text += e.results[i][0].transcript;
             
-            if(transcriptEl) {
-                transcriptEl.innerText = text;
-                transcriptEl.style.color = "#ef4444"; 
-            }
+            if(transcriptEl) { transcriptEl.innerText = text; transcriptEl.style.color = "#ef4444"; }
             window.appState.practiceRawTranscript = text;
 
             const spoken = text.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>w);
@@ -854,33 +695,17 @@ window.togglePracticeRecording = function() {
             const rate = targetWords.length > 0 ? (match / targetWords.length) : 0;
 
             if (rate >= 0.8 && window.isPracticeRecording) {
-                window.isPracticeRecording = false;
-                window.practiceSuccess = true; 
+                window.isPracticeRecording = false; window.practiceSuccess = true; 
                 try { window.practiceRec.stop(); } catch(err){}
-                
-                window.playSuccessChime(); 
-                window.createConfetti();   
-                window.showExcellentPrompt(); 
-
-                if(transcriptEl) {
-                    transcriptEl.style.color = "#22c55e"; 
-                }
-                
-                if(feedbackEl) {
-                    feedbackEl.classList.remove('hidden');
-                    feedbackEl.innerHTML = "✨ Excellent! ばっちり言えました！";
-                    feedbackEl.style.color = "#16a34a"; 
-                }
-
-                if(btn) {
-                    btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
-                }
+                window.playSuccessChime(); window.createConfetti(); window.showExcellentPrompt(); 
+                if(transcriptEl) transcriptEl.style.color = "#22c55e"; 
+                if(feedbackEl) { feedbackEl.classList.remove('hidden'); feedbackEl.innerHTML = "✨ Excellent! ばっちり言えました！"; feedbackEl.style.color = "#16a34a"; }
+                if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
             }
         };
         
         window.practiceRec.onend = () => {
             if(window.practiceSuccess) return;
-
             if(!window.isPracticeRecording) {
                 const spoken = window.appState.practiceRawTranscript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>w);
                 const targetWords = window.appState.practiceTargetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>!['a','an','the','is','are','in','on','at'].includes(w));
@@ -892,78 +717,38 @@ window.togglePracticeRecording = function() {
                 
                 if(feedbackEl) {
                     feedbackEl.classList.remove('hidden');
-                    if (rate >= 0.5) {
-                        feedbackEl.innerHTML = "👍 Good! あと少し！もう一度チャレンジ！";
-                        feedbackEl.style.color = "#ca8a04"; 
-                    } else {
-                        feedbackEl.innerHTML = "💪 Keep Trying! お手本を聞いてみよう！";
-                        feedbackEl.style.color = "#db2777"; 
-                    }
+                    if (rate >= 0.5) { feedbackEl.innerHTML = "👍 Good! あと少し！もう一度チャレンジ！"; feedbackEl.style.color = "#ca8a04"; } 
+                    else { feedbackEl.innerHTML = "💪 Keep Trying! お手本を聞いてみよう！"; feedbackEl.style.color = "#db2777"; }
                 }
-            } else {
-                try { window.practiceRec.start(); } catch(e){}
-            }
+            } else { try { window.practiceRec.start(); } catch(e){} }
         };
     }
 
     if (window.isPracticeRecording) {
         window.isPracticeRecording = false;
         try { window.practiceRec.stop(); } catch(e){}
-        if(btn) {
-            btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
-        }
+        if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
     } else {
-        window.appState.practiceRawTranscript = "";
-        window.practiceSuccess = false; 
-        
-        if(transcriptEl) {
-            transcriptEl.innerHTML = "Listening...";
-            transcriptEl.style.color = "#ef4444"; 
-        }
-        if(feedbackEl) {
-            feedbackEl.classList.add('hidden');
-            feedbackEl.innerHTML = ""; 
-        }
-        if(btn) {
-            btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🛑</span> STOP';
-        }
+        window.appState.practiceRawTranscript = ""; window.practiceSuccess = false; 
+        if(transcriptEl) { transcriptEl.innerHTML = "Listening..."; transcriptEl.style.color = "#ef4444"; }
+        if(feedbackEl) { feedbackEl.classList.add('hidden'); feedbackEl.innerHTML = ""; }
+        if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🛑</span> STOP';
         window.isPracticeRecording = true;
         try { window.practiceRec.start(); } catch(e){}
     }
 };
 
 window.openPractice = function(text, ja) {
-    window.appState.isPracticeMode = true;
-    window.appState.practiceTargetText = text;
-    window.appState.practiceRawTranscript = "";
-    window.practiceSuccess = false; 
-    
-    const modal = document.getElementById('practice-modal');
-    if (!modal) return;
-
-    const targetEl = document.getElementById('practice-target');
-    const jaEl = document.getElementById('practice-ja');
-    const transcriptEl = document.getElementById('practice-transcript');
-    const feedbackEl = document.getElementById('practice-feedback');
+    window.appState.isPracticeMode = true; window.appState.practiceTargetText = text; window.appState.practiceRawTranscript = ""; window.practiceSuccess = false; 
+    const modal = document.getElementById('practice-modal'); if (!modal) return;
+    const targetEl = document.getElementById('practice-target'); const jaEl = document.getElementById('practice-ja');
+    const transcriptEl = document.getElementById('practice-transcript'); const feedbackEl = document.getElementById('practice-feedback');
     const btn = document.getElementById('btn-start-practice');
 
-    if(targetEl) targetEl.textContent = text;
-    if(jaEl) jaEl.textContent = ja;
-    
-    if(transcriptEl) {
-        transcriptEl.innerHTML = "Tap START and speak...";
-        transcriptEl.style.color = ""; 
-    }
-    
-    if(feedbackEl) {
-        feedbackEl.classList.add('hidden');
-        feedbackEl.innerHTML = "";
-    }
-    
-    if(btn) {
-        btn.innerHTML = 'START'; 
-    }
-    
+    if(targetEl) targetEl.textContent = text; if(jaEl) jaEl.textContent = ja;
+    if(transcriptEl) { transcriptEl.innerHTML = "Tap START and speak..."; transcriptEl.style.color = ""; }
+    if(feedbackEl) { feedbackEl.classList.add('hidden'); feedbackEl.innerHTML = ""; }
+    if(btn) btn.innerHTML = 'START'; 
     modal.classList.remove('hidden');
 };
 
@@ -972,36 +757,59 @@ window.openPractice = function(text, ja) {
 // ==========================================
 document.addEventListener('click', (e) => {
     
+    // ★ 復元：フィルターボタンの処理
+    const filterBtn = e.target.closest('.theme-filter-btn');
+    if (filterBtn) {
+        document.querySelectorAll('.theme-filter-btn').forEach(b => { 
+            b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); 
+            b.classList.add('bg-white', 'text-gray-500'); 
+        });
+        filterBtn.classList.remove('bg-white', 'text-gray-500'); 
+        filterBtn.classList.add('bg-gray-800', 'text-white', 'shadow-md');
+        const selectedFilter = filterBtn.getAttribute('data-filter');
+        document.querySelectorAll('.theme-card').forEach(card => {
+            const cardCat = card.getAttribute('data-category');
+            if (selectedFilter === 'all') card.style.display = (cardCat === 'other') ? 'none' : '';
+            else if (selectedFilter === 'level1') card.style.display = (cardCat === 'other') ? '' : 'none';
+            else card.style.display = (cardCat === selectedFilter) ? '' : 'none';
+        });
+        return;
+    }
+
     if (e.target.closest('.sns-btn') || e.target.closest('.mode-btn') || e.target.closest('.level-btn') || e.target.closest('#rabbit-char') || e.target.closest('.action-btn-back') || e.target.closest('.action-btn-home')) {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
+    // ★ 復元：モードボタンが元のパステルカラーを維持する処理
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
-        document.querySelectorAll('.mode-btn').forEach(b => {
-            b.classList.remove('ring-4', 'ring-pink-400', 'ring-white', 'scale-105', 'shadow-xl', 'opacity-100', 'bg-white');
-            b.classList.add('opacity-50', 'scale-100');
+        document.querySelectorAll('.mode-btn').forEach(b => { 
+            b.classList.remove('ring-4', 'ring-pink-400', 'ring-white', 'scale-105', 'shadow-xl', 'opacity-100', 'bg-white'); 
+            b.classList.add('opacity-50', 'scale-100'); 
         });
-        
-        modeBtn.classList.remove('opacity-50', 'scale-100');
+        modeBtn.classList.remove('opacity-50', 'scale-100'); 
         modeBtn.classList.add('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100');
-        
         window.appState.selectedMode = modeBtn.getAttribute('data-mode');
         
-        const btnSelect = document.getElementById('btn-goto-select');
-        if (btnSelect) {
-            btnSelect.classList.remove('opacity-40', 'pointer-events-none');
-            btnSelect.classList.add('animate-pulse-slow');
+        // ★ 復元：ボタンを1回押したらすぐに画像選択画面へ遷移する
+        if (window.appState.selectedMode === 'story') { window.location.href = 'story.html'; return; }
+        
+        const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
+        if (elementaryBtn) {
+            document.querySelectorAll('.level-btn').forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
+            elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
+            elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
+            window.appState.selectedLevel = 'elementary';
         }
+        if (typeof showView === 'function') showView(document.getElementById('view-select')); 
+        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
     }
 
     const btnHome = e.target.closest('.action-btn-home');
     if (btnHome) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
-        window.isRecording = false;
-        clearInterval(window.gameTimer);
-        if(window.supportInterval) clearInterval(window.supportInterval);
+        window.isRecording = false; clearInterval(window.gameTimer); if(window.supportInterval) clearInterval(window.supportInterval);
         window.closePracticeModal();
         if (typeof showView === 'function') showView(document.getElementById('view-start'));
         return;
@@ -1010,10 +818,7 @@ document.addEventListener('click', (e) => {
     const btnBack = e.target.closest('.action-btn-back');
     if (btnBack) {
         if(window.isRecording && typeof window.stopSpeech === 'function') window.stopSpeech();
-        window.isRecording = false;
-        clearInterval(window.gameTimer);
-        if(window.supportInterval) clearInterval(window.supportInterval);
-        
+        window.isRecording = false; clearInterval(window.gameTimer); if(window.supportInterval) clearInterval(window.supportInterval);
         const currentView = document.querySelector('.app-container > div:not(.hidden)[id^="view-"]');
         if (currentView) {
             if (currentView.id === 'view-about' || currentView.id === 'view-select') {
@@ -1026,14 +831,11 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // ★ 復元：SELECT IMAGE (btn-goto-select) への遷移処理（安全のため残す）
     const btnGotoSelect = e.target.closest('#btn-goto-select');
     if (btnGotoSelect && !btnGotoSelect.disabled) {
         if(!window.appState.selectedMode) return; 
-        
-        if (window.appState.selectedMode === 'story') {
-            window.location.href = 'story.html';
-            return;
-        }
+        if (window.appState.selectedMode === 'story') { window.location.href = 'story.html'; return; }
         try {
             const elem = document.documentElement;
             if (!document.fullscreenElement) {
@@ -1046,15 +848,11 @@ document.addEventListener('click', (e) => {
         
         const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
         if (elementaryBtn) {
-            document.querySelectorAll('.level-btn').forEach(b => { 
-                b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); 
-                b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); 
-            });
+            document.querySelectorAll('.level-btn').forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
             elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
             elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
             window.appState.selectedLevel = 'elementary';
         }
-        
         if (typeof showView === 'function') showView(document.getElementById('view-select')); 
         if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
         return;
@@ -1071,21 +869,15 @@ document.addEventListener('click', (e) => {
     if (btnStartTurn) {
         if(typeof window.startSpeech === 'function') window.startSpeech(); 
         window.isRecording = true;
-        btnStartTurn.classList.remove('animate-attention'); 
-        btnStartTurn.classList.add('hidden');
-        const recIndicator = document.getElementById('recording-indicator');
-        if(recIndicator) recIndicator.classList.remove('hidden');
-        const statusText = document.getElementById('status-text');
-        if(statusText) statusText.textContent = "Speak Now!";
-        const promptImage = document.getElementById('prompt-image');
-        if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
+        btnStartTurn.classList.remove('animate-attention'); btnStartTurn.classList.add('hidden');
+        const recIndicator = document.getElementById('recording-indicator'); if(recIndicator) recIndicator.classList.remove('hidden');
+        const statusText = document.getElementById('status-text'); if(statusText) statusText.textContent = "Speak Now!";
+        const promptImage = document.getElementById('prompt-image'); if(promptImage) { promptImage.classList.remove('blur-md'); promptImage.classList.add('blur-none'); }
         const supportToggle = document.getElementById('support-toggle');
         if (window.timeElapsed === 0 && supportToggle && supportToggle.checked) {
             if(typeof getAggregatedData === 'function') {
                 const targetData = getAggregatedData(window.currentTheme, window.appState.selectedLevel);
-                if(typeof window.dropPin === 'function') {
-                    targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
-                }
+                if(typeof window.dropPin === 'function') targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
             }
             window.supportInterval = setInterval(window.triggerSupportHint, 6000);
         }
@@ -1094,40 +886,24 @@ document.addEventListener('click', (e) => {
     }
 
     const recIndicator = e.target.closest('#recording-indicator');
-    if (recIndicator) {
-        if(typeof window.stopSpeech === 'function') window.stopSpeech();
-        window.isRecording = false;
-        return;
-    }
+    if (recIndicator) { if(typeof window.stopSpeech === 'function') window.stopSpeech(); window.isRecording = false; return; }
 
     const btnFinishTurn = e.target.closest('#btn-finish-turn');
-    if (btnFinishTurn) {
-        window.finishGameAndShowResult();
-        return;
-    }
+    if (btnFinishTurn) { window.finishGameAndShowResult(); return; }
 
     const btnPlayAgain = e.target.closest('#btn-play-again');
     if (btnPlayAgain) {
-        const finishBtn = document.getElementById('btn-finish-turn');
-        if(finishBtn) finishBtn.classList.add('hidden');
-        const rInd = document.getElementById('recording-indicator');
-        if(rInd) rInd.classList.add('hidden');
-        const startBtn = document.getElementById('btn-start-turn');
-        if(startBtn) { startBtn.classList.remove('hidden'); startBtn.classList.add('animate-attention'); }
-        const sText = document.getElementById('status-text');
-        if(sText) sText.textContent = "Ready";
+        const finishBtn = document.getElementById('btn-finish-turn'); if(finishBtn) finishBtn.classList.add('hidden');
+        const rInd = document.getElementById('recording-indicator'); if(rInd) rInd.classList.add('hidden');
+        const startBtn = document.getElementById('btn-start-turn'); if(startBtn) { startBtn.classList.remove('hidden'); startBtn.classList.add('animate-attention'); }
+        const sText = document.getElementById('status-text'); if(sText) sText.textContent = "Ready";
         const pImage = document.getElementById('prompt-image');
         if (pImage) {
             if (window.appState.selectedMode === 'mosaic') {
                 pImage.classList.remove('blur-none', 'blur-md');
                 pImage.style.filter = `blur(${window.MosaicGame ? window.MosaicGame.maxBlur : 40}px)`;
                 pImage.style.transform = 'scale(1.1)';
-            } else {
-                pImage.style.filter = '';
-                pImage.style.transform = '';
-                pImage.classList.remove('blur-none');
-                pImage.classList.add('blur-md');
-            }
+            } else { pImage.style.filter = ''; pImage.style.transform = ''; pImage.classList.remove('blur-none'); pImage.classList.add('blur-md'); }
         }
         if (typeof showView === 'function') showView(document.getElementById('view-select'));
         if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
@@ -1135,75 +911,37 @@ document.addEventListener('click', (e) => {
     }
 
     const practiceStartBtn = e.target.closest('#btn-start-practice');
-    if (practiceStartBtn) {
-        window.togglePracticeRecording();
-        return;
-    }
+    if (practiceStartBtn) { window.togglePracticeRecording(); return; }
 
     const practiceCloseBtn = e.target.closest('#btn-close-practice') || e.target.closest('button[onclick*="closePractice"]');
-    if (practiceCloseBtn) {
-        window.closePracticeModal();
-        return;
-    }
+    if (practiceCloseBtn) { window.closePracticeModal(); return; }
 
     const btnGotoAbout = e.target.closest('#btn-goto-about');
-    if (btnGotoAbout) {
-        if (typeof showView === 'function') showView(document.getElementById('view-about'));
-        return;
-    }
+    if (btnGotoAbout) { if (typeof showView === 'function') showView(document.getElementById('view-about')); return; }
 });
 
-// ==========================================
-// ★ ORAL QUEST ボタンイベント
-// ==========================================
 document.addEventListener('click', (e) => {
     const btnOqStart = e.target.closest('#btn-oq-start');
-    if (btnOqStart) {
-        if (typeof window.OralQuestGame !== 'undefined') {
-            window.OralQuestGame.startRecording();
-            window.isRecording = true;
-        }
-    }
-
+    if (btnOqStart) { if (typeof window.OralQuestGame !== 'undefined') { window.OralQuestGame.startRecording(); window.isRecording = true; } }
     const oqIndicator = e.target.closest('#oq-recording-indicator');
-    if (oqIndicator) {
-        if (typeof window.OralQuestGame !== 'undefined') {
-            window.OralQuestGame.stopRecording();
-        }
-    }
-
+    if (oqIndicator) { if (typeof window.OralQuestGame !== 'undefined') window.OralQuestGame.stopRecording(); }
     const btnOqNext = e.target.closest('#btn-oq-next');
-    if (btnOqNext) {
-        if (typeof window.OralQuestGame !== 'undefined') {
-            window.OralQuestGame.handleNextButton();
-        }
-    }
+    if (btnOqNext) { if (typeof window.OralQuestGame !== 'undefined') window.OralQuestGame.handleNextButton(); }
 });
 
 window.addEventListener('DOMContentLoaded', window.initApp);
 
-// ==========================================
-// ★ ORAL QUEST 開発中パスワードロック ★
-// ==========================================
 function setupOqPasswordLock() {
     const oqBtn = document.querySelector('.mode-btn[data-mode="oralquest"]');
     if (oqBtn) {
         oqBtn.addEventListener('click', (e) => {
             const pass = prompt("ORAL QUESTは現在開発中です。テスト用パスワードを入力してください:");
-            if (pass !== "9999") {
-                e.stopImmediatePropagation(); 
-                e.preventDefault();
-                alert("パスワードが違います。");
-            }
+            if (pass !== "9999") { e.stopImmediatePropagation(); e.preventDefault(); alert("パスワードが違います。"); }
         }, true); 
     }
 }
 
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', setupOqPasswordLock);
-} else {
-    setupOqPasswordLock();
-}
+if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupOqPasswordLock); } else { setupOqPasswordLock(); }
 
 // ==========================================
 // ★ 課題URLからの自動遷移＆生徒登録ロジック ★
@@ -1233,15 +971,11 @@ window.checkUrlParameters = function() {
                 const sNumber = document.getElementById('input-student-number').value.trim();
                 const sName = document.getElementById('input-student-name').value.trim();
                 
-                if (!sClass || !sNumber || !sName) { 
-                    alert("クラス、出席番号、名前をすべて入力してください！"); 
-                    return; 
-                }
+                if (!sClass || !sNumber || !sName) { alert("クラス、出席番号、名前をすべて入力してください！"); return; }
                 
                 localStorage.setItem('picSpeakStudentClass', sClass);
                 localStorage.setItem('picSpeakStudentNumber', sNumber);
                 localStorage.setItem('picSpeakStudentName', sName);
-                
                 modal.classList.add('hidden');
                 
                 const playKey = `playCount_${themeId}`;
@@ -1284,11 +1018,8 @@ window.setupSubmitButton = function(score) {
 
             const url = `https://docs.google.com/forms/d/e/${formId}/formResponse`;
 
-            fetch(url, {
-                method: 'POST',
-                mode: 'no-cors',
-                body: formData
-            }).then(() => {
+            fetch(url, { method: 'POST', mode: 'no-cors', body: formData })
+            .then(() => {
                 submitBtn.innerHTML = '✅ 提出完了！';
                 submitBtn.classList.replace('from-green-400', 'from-gray-300');
                 submitBtn.classList.replace('to-emerald-500', 'to-gray-400');
@@ -1304,9 +1035,5 @@ window.setupSubmitButton = function(score) {
 };
 
 window.addEventListener('load', () => {
-    setTimeout(() => {
-        if (typeof window.checkUrlParameters === 'function') {
-            window.checkUrlParameters();
-        }
-    }, 500);
+    setTimeout(() => { if (typeof window.checkUrlParameters === 'function') window.checkUrlParameters(); }, 500);
 });
