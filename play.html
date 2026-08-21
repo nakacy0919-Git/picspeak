@@ -127,7 +127,38 @@
             </div>
         </div>
     </div>
+   <!-- ★ 追加: 生徒情報入力＆課題スタートモーダル ★ -->
+    <div id="student-auth-modal" class="fixed inset-0 z-[110] bg-black/80 backdrop-blur-sm flex flex-col items-center justify-center hidden fade-in">
+        <div class="bg-white p-6 md:p-10 rounded-3xl shadow-2xl w-11/12 max-w-md border border-gray-100 relative text-center">
+            <div class="mb-6">
+                <span class="text-5xl drop-shadow-md">📝</span>
+                <h3 class="text-xl md:text-2xl font-black mt-3 text-gray-900">課題に取り組む</h3>
+                <p class="text-xs md:text-sm font-bold text-gray-500 mt-1">クラスと名前を入力してスタートしてください。</p>
+            </div>
+            
+            <!-- ▼▼▼ 入力欄のブロックを差し替え ▼▼▼ -->
+            <div class="space-y-4 text-left">
+                <div>
+                    <label class="block text-xs font-black text-gray-400 mb-1 ml-1">クラス (Class)</label>
+                    <input type="text" id="input-student-class" placeholder="例: 1-A" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 font-bold text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                </div>
+                <div>
+                    <label class="block text-xs font-black text-gray-400 mb-1 ml-1">出席番号 (Number)</label>
+                    <input type="number" id="input-student-number" placeholder="例: 15" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 font-bold text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                </div>
+                <div>
+                    <label class="block text-xs font-black text-gray-400 mb-1 ml-1">名前 (Name)</label>
+                    <input type="text" id="input-student-name" placeholder="例: 山田 太郎" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 font-bold text-gray-700 focus:outline-none focus:ring-2 focus:ring-pink-300">
+                </div>
+            </div>
+            <!-- ▲▲▲ ここまで ▲▲▲ -->
 
+            <button id="btn-start-assignment" class="w-full mt-8 bg-sns-gradient text-white font-black text-lg py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+                課題をスタート！ 🚀
+            </button>
+            <p class="text-[10px] font-bold text-gray-400 mt-4">※入力した情報はブラウザに保存され、次回から自動入力されます。</p>
+        </div>
+    </div>
    <!-- ★ 追加②: 事前練習モードの専用ビュー (タブ＆レベル切替対応) -->
     <div id="view-pre-practice" class="flex-1 flex flex-col hidden h-[100dvh] w-screen bg-gray-50 z-[80] overflow-hidden fixed inset-0">
         <!-- ヘッダー -->
@@ -722,13 +753,19 @@
                         <h2 class="text-xl md:text-2xl font-black mb-0 text-gray-800 tracking-tighter leading-none">RESULTS</h2>
                     </div>
                 </div>
-                <div class="w-32 md:w-48">
+                <!-- ▼▼▼ ここから差し替え ▼▼▼ -->
+                <div class="w-32 md:w-48 flex flex-col gap-2">
                     <button id="btn-play-again" class="w-full sns-btn bg-sns-gradient text-white font-black text-xs md:text-base py-2.5 md:py-3 rounded-full shadow-lg hover:scale-[1.05] transition-transform flex items-center justify-center gap-1 tracking-wider uppercase relative overflow-hidden group">
                         <span class="relative z-10">PLAY AGAIN</span>
                         <div class="absolute inset-0 -translate-x-[150%] bg-gradient-to-r from-transparent via-white/50 to-transparent animate-shimmer z-0 skew-x-[-15deg]"></div>
                     </button>
+                    
+                    <!-- ★ 追加: 先生にスコアを提出するボタン (コンパクト版) ★ -->
+                    <button id="btn-submit-score" class="hidden w-full bg-gradient-to-r from-green-400 to-emerald-500 text-white font-black text-xs md:text-sm py-2 rounded-full shadow-md hover:scale-[1.05] transition-transform flex items-center justify-center">
+                        📤 先生に提出
+                    </button>
                 </div>
-            </div>
+                <!-- ▲▲▲ ここまで差し替え ▲▲▲ -->
             
             <div class="flex-1 overflow-y-auto w-full p-4 md:p-6" id="result-scroll-area">
                 <div class="max-w-[1800px] mx-auto w-full h-full flex flex-col" id="ranking-container">
