@@ -1,6 +1,6 @@
 // js/main.js
 // ==========================================
-// アプリケーションの司令塔
+// アプリケーションの司令塔 (アルティメット完全版)
 // ==========================================
 
 window.appState = { 
@@ -26,7 +26,7 @@ window.audioCtx = null;
 // 練習モーダル用変数
 window.isPracticeRecording = false;
 window.practiceRec = null;
-window.practiceSuccess = false; // リアルタイム成功判定フラグ
+window.practiceSuccess = false; 
 
 const viewStart = document.getElementById('view-start');
 const viewSelect = document.getElementById('view-select'); 
@@ -35,9 +35,6 @@ const viewResult = document.getElementById('view-result');
 const viewAbout = document.getElementById('view-about');
 const themeGrid = document.getElementById('theme-grid'); 
 
-// ==========================================
-// ★ 紙吹雪＆Excellentポップアップ用のCSSを動的に追加
-// ==========================================
 (function injectSpecialEffectsCSS() {
     const style = document.createElement('style');
     style.innerHTML = `
@@ -110,25 +107,16 @@ window.renderThemeGrid = async function() {
             
             let imageFilterClass = "";
             let category = item.data.category || 'other'; 
-            
-            // ★ 修正箇所：英語(titleEn)と日本語(titleJa)を別々に取得し、説明文(description)を出さないように変更
             let titleEn = item.data.titleEn || 'No Title';
             let titleJa = item.data.titleJa || '名称未設定';
             
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
-                titleEn = "Secret Image";
-                titleJa = "???";
-            } else if (isDetective) {
-                imageFilterClass = "!h-[200%] object-top"; 
-            }
+                titleEn = "Secret Image"; titleJa = "???";
+            } else if (isDetective) { imageFilterClass = "!h-[200%] object-top"; }
             
-            let badgeHtml = '';
-            if (isDetective) {
-                badgeHtml = `<div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">NEW!</div>`;
-            }
+            let badgeHtml = isDetective ? `<div class="absolute -top-2 -right-2 bg-pink-500 text-white text-[10px] font-black px-2 py-0.5 rounded-full shadow-lg animate-pulse z-20">NEW!</div>` : '';
             
-            // ★ 修正箇所：タイトルを上下に2段（英・日）で表示するようにHTMLタグを変更
             html += `<div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
@@ -149,24 +137,16 @@ window.renderThemeGrid = async function() {
             } else {
                 filters.classList.remove('hidden');
                 document.querySelectorAll('.theme-filter-btn').forEach(b => {
-                    if (b.getAttribute('data-filter') === 'all') { 
-                        b.classList.remove('bg-white', 'text-gray-500'); 
-                        b.classList.add('bg-gray-800', 'text-white', 'shadow-md'); 
-                    } else { 
-                        b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); 
-                        b.classList.add('bg-white', 'text-gray-500'); 
-                    }
+                    if (b.getAttribute('data-filter') === 'all') { b.classList.remove('bg-white', 'text-gray-500'); b.classList.add('bg-gray-800', 'text-white', 'shadow-md'); }
+                    else { b.classList.remove('bg-gray-800', 'text-white', 'shadow-md'); b.classList.add('bg-white', 'text-gray-500'); }
                 });
                 document.querySelectorAll('.theme-card').forEach(card => {
                     const cardCat = card.getAttribute('data-category');
-                    if (cardCat === 'other') card.style.display = 'none';
-                    else card.style.display = '';
+                    if (cardCat === 'other') card.style.display = 'none'; else card.style.display = '';
                 });
             }
         }
-    } catch(e) { 
-        themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; 
-    }
+    } catch(e) { themeGrid.innerHTML = '<div class="col-span-full text-center text-red-500 font-bold py-10">Error loading images</div>'; }
 }
 
 window.handleTutorialClick = async function(e) {
@@ -177,16 +157,12 @@ window.handleTutorialClick = async function(e) {
         } catch (err) { return; }
     }
     const rect = e.currentTarget.getBoundingClientRect();
-    const clickX = e.clientX - rect.left;
-    const clickY = e.clientY - rect.top;
-    const xPercent = (clickX / rect.width) * 100;
-    const yPercent = (clickY / rect.height) * 100;
+    const clickX = e.clientX - rect.left; const clickY = e.clientY - rect.top;
+    const xPercent = (clickX / rect.width) * 100; const yPercent = (clickY / rect.height) * 100;
 
     let hitDiff = null;
     for (let diff of window.tutorialData.differences) {
-        const dx = Math.abs(xPercent - diff.coordinates.x);
-        const dy = Math.abs(yPercent - diff.coordinates.y);
-        if (dx <= (diff.coordinates.width / 2) + 5 && dy <= (diff.coordinates.height / 2) + 5) {
+        if (Math.abs(xPercent - diff.coordinates.x) <= (diff.coordinates.width / 2) + 5 && Math.abs(yPercent - diff.coordinates.y) <= (diff.coordinates.height / 2) + 5) {
             hitDiff = diff; break;
         }
     }
@@ -194,11 +170,8 @@ window.handleTutorialClick = async function(e) {
 }
 
 window.showTutorialPopup = function(diff) {
-    const overlay = document.getElementById('tutorial-overlay');
-    if (!overlay) return;
-
-    overlay.innerHTML = '';
-    overlay.classList.remove('pointer-events-none'); 
+    const overlay = document.getElementById('tutorial-overlay'); if (!overlay) return;
+    overlay.innerHTML = ''; overlay.classList.remove('pointer-events-none'); 
 
     const mark = document.createElement('div');
     mark.className = 'absolute border-[4px] border-red-500 bg-red-500/30 rounded-full shadow-[0_0_15px_rgba(239,68,68,0.9)] animate-pop pointer-events-none z-10';
@@ -219,10 +192,134 @@ window.showTutorialPopup = function(diff) {
     const backdrop = document.createElement('div');
     backdrop.className = 'fixed inset-0 bg-black/10 z-[99] transition-opacity';
     backdrop.onclick = () => { overlay.innerHTML = ''; overlay.classList.add('pointer-events-none'); };
-    
     overlay.appendChild(backdrop); overlay.appendChild(popup);
     try { if (typeof playSound === 'function') playSound('match'); } catch(e) {}
 }
+
+// ==========================================
+// ★ 事前練習モード (Pre-Practice) ロジック ★
+// ==========================================
+window.tempSelectedThemeId = null;
+window.prePracticeCurrentType = 'words';
+
+window.startPrePracticeWithTheme = async function(id) {
+    try {
+        let folderPath = 'data/themes';
+        if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
+        if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
+        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+        const fetchedData = await res.json();
+        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+    } catch (e) { alert(`データの読み込みに失敗しました。`); return; }
+
+    const preImg = document.getElementById('pre-practice-image');
+    if(preImg) preImg.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+
+    window.prePracticeCurrentType = 'words';
+    window.renderPrePracticeList();
+
+    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    document.getElementById('view-pre-practice').classList.remove('hidden');
+};
+
+window.renderPrePracticeList = function() {
+    if (!window.currentTheme) return;
+    document.querySelectorAll('.pre-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.add('bg-pink-500', 'text-white'); b.classList.remove('text-gray-500'); }
+        else { b.classList.add('text-gray-500'); b.classList.remove('bg-pink-500', 'text-white'); }
+    });
+    document.querySelectorAll('.pre-type-btn').forEach(b => {
+        if (b.getAttribute('data-type') === window.prePracticeCurrentType) { b.classList.add('text-blue-600', 'border-blue-500'); b.classList.remove('text-gray-400'); }
+        else { b.classList.add('text-gray-400'); b.classList.remove('text-blue-600', 'border-blue-500'); }
+    });
+
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    document.getElementById('count-words').innerText = targetData.words ? targetData.words.length : 0;
+    document.getElementById('count-chunks').innerText = targetData.chunks ? targetData.chunks.length : 0;
+    document.getElementById('count-sentences').innerText = targetData.sentences ? targetData.sentences.length : 0;
+
+    const listContainer = document.getElementById('pre-practice-list');
+    if (!listContainer) return;
+    listContainer.innerHTML = '';
+    
+    let items = [];
+    if (window.prePracticeCurrentType === 'words') items = targetData.words;
+    else if (window.prePracticeCurrentType === 'chunks') items = targetData.chunks;
+    else if (window.prePracticeCurrentType === 'sentences') items = targetData.sentences;
+
+    if (!items || items.length === 0) { listContainer.innerHTML = '<p class="text-center text-gray-400 font-bold py-10 mt-10">このレベルのデータはありません。</p>'; return; }
+
+    items.forEach(item => {
+        const escapedText = item.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const escapedJa = (item.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        listContainer.innerHTML += `<div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col xl:flex-row xl:items-center justify-between gap-3 mb-3"><div class="flex-1 pr-2"><div class="font-black text-gray-800 text-base md:text-lg leading-tight">${item.text}</div><div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${item.ja || ""}</div></div><div class="flex items-center gap-2 shrink-0"><button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 shadow-sm">🔊 聞く</button><button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-xs md:text-sm font-bold shadow-sm">🎤 練習</button></div></div>`;
+    });
+};
+
+// ==========================================
+// ★ 授業モード（Classroom Mode）ロジック ★
+// ==========================================
+window.currentClassroomAudio = null;
+
+window.openClassroomMode = function() {
+    document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
+    const classroomView = document.getElementById('view-classroom');
+    if (classroomView) { classroomView.classList.remove('hidden'); }
+    if (window.currentTheme) {
+        const imgEl = document.getElementById('classroom-image');
+        if(imgEl) imgEl.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+        window.renderClassroomList();
+    }
+};
+
+window.renderClassroomList = function() {
+    document.querySelectorAll('.class-level-btn').forEach(b => {
+        if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.add('bg-pink-500', 'text-white'); b.classList.remove('text-gray-400'); }
+        else { b.classList.remove('bg-pink-500', 'text-white'); b.classList.add('text-gray-400'); }
+    });
+
+    const targetData = window.getAggregatedData(window.currentTheme, window.appState.selectedLevel);
+    const listContainer = document.getElementById('classroom-sentence-list');
+    if (!listContainer) return;
+    listContainer.innerHTML = '';
+
+    if (!targetData.sentences || targetData.sentences.length === 0) {
+        listContainer.innerHTML = '<p class="text-gray-500 text-center mt-10">データがありません。</p>';
+        return;
+    }
+
+    targetData.sentences.forEach((sentence, index) => {
+        const escapedText = sentence.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const escapedJa = (sentence.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const audioSrc = sentence.audioSrc || ''; 
+
+        listContainer.innerHTML += `
+            <div class="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-gray-500 transition-colors mb-4">
+                <div class="flex items-center justify-between mb-3">
+                    <span class="text-gray-400 font-bold text-sm">Sentence ${index + 1}</span>
+                    <button onclick="window.playClassroomAudio('${audioSrc}', '${escapedText}')" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110"><svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg></button>
+                </div>
+                <div class="classroom-text-reveal cursor-pointer group" onclick="this.classList.toggle('revealed')">
+                    <div class="text-gray-500 text-sm font-bold border-2 border-dashed border-gray-600 rounded-xl p-3 text-center group-[.revealed]:hidden hover:bg-gray-600/30">👀 クリックして英文を表示</div>
+                    <div class="hidden group-[.revealed]:block">
+                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${sentence.text}</p>
+                        <p class="text-gray-400 text-sm font-bold">${sentence.ja}</p>
+                    </div>
+                </div>
+            </div>
+        `;
+    });
+};
+
+window.playClassroomAudio = function(audioSrc, fallbackText) {
+    if (window.currentClassroomAudio) { window.currentClassroomAudio.pause(); window.currentClassroomAudio.currentTime = 0; }
+    if (audioSrc) {
+        window.currentClassroomAudio = new Audio(audioSrc);
+        window.currentClassroomAudio.play().catch(e => { window.playResultTTS(fallbackText); });
+    } else window.playResultTTS(fallbackText);
+};
+
+// ==========================================
 
 window.startGameWithTheme = async function(id) {
     const detUi = document.getElementById('detective-ui'); if (detUi) detUi.remove(); 
@@ -288,19 +385,11 @@ window.startGameWithTheme = async function(id) {
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">It looks like ~</span> <span class="text-gray-500">(〜に見える)</span></span>
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">Maybe it's ~</span> <span class="text-gray-500">(たぶん〜)</span></span>
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I think this is ~</span> <span class="text-gray-500">(〜だと思う)</span></span>
-                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I'm not sure, but ~</span> <span class="text-gray-500">(よくわからないけど)</span></span>
                     </div>
                     <div class="flex flex-wrap gap-1.5 items-center">
                         <span class="text-[10px] md:text-xs font-black text-blue-400 border border-blue-200 bg-white px-1.5 py-0.5 rounded uppercase tracking-wider">描写</span>
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">I can see ~</span> <span class="text-gray-500">(〜が見える)</span></span>
                         <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">There is / are ~</span> <span class="text-gray-500">(〜がある)</span></span>
-                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">It has a [色] color</span> <span class="text-gray-500">([色]をしている)</span></span>
-                    </div>
-                    <div class="flex flex-wrap gap-1.5 items-center">
-                        <span class="text-[10px] md:text-xs font-black text-emerald-400 border border-emerald-200 bg-white px-1.5 py-0.5 rounded uppercase tracking-wider">場所</span>
-                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">In the center, ~</span> <span class="text-gray-500">(真ん中に)</span></span>
-                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">On the right / left, ~</span> <span class="text-gray-500">(右/左に)</span></span>
-                        <span class="bg-white px-2 py-1 rounded-md border border-gray-200 shadow-sm text-[10px] md:text-xs"><span class="font-bold text-gray-800">In the background, ~</span> <span class="text-gray-500">(奥のほうに)</span></span>
                     </div>
                 </div>`;
             transcriptBox.parentNode.insertBefore(hintPanel, transcriptBox);
@@ -381,7 +470,6 @@ window.renderSnapshotResult = function() {
     const container = document.getElementById('ranking-container');
     if (!container) return;
 
-    // ★ 修正：レイアウト強制リセットによるヘッダーの左寄せとスクロールの不具合を解消
     let currentEl = container.parentElement;
     while (currentEl && currentEl.tagName !== 'BODY') {
         if (currentEl.id === 'view-result') {
@@ -575,9 +663,6 @@ window.renderSnapshotResult = function() {
     }
 };
 
-// ==========================================
-// ★ 音声・エフェクト関連
-// ==========================================
 window.playSuccessChime = function() {
     try {
         const ctx = window.audioCtx || new (window.AudioContext || window.webkitAudioContext)();
@@ -651,9 +736,6 @@ window.showExcellentPrompt = function() {
     prompt.addEventListener('animationend', () => { prompt.remove(); });
 };
 
-// ==========================================
-// ★ 練習ポップアップ処理
-// ==========================================
 window.closePracticeModal = function() {
     window.appState.isPracticeMode = false;
     if (window.isPracticeRecording && window.practiceRec) { try { window.practiceRec.stop(); } catch(e){} }
@@ -757,7 +839,7 @@ window.openPractice = function(text, ja) {
 // ==========================================
 document.addEventListener('click', (e) => {
     
-    // ★ 復元：フィルターボタンの処理
+    // ★ 復元：フィルターボタン
     const filterBtn = e.target.closest('.theme-filter-btn');
     if (filterBtn) {
         document.querySelectorAll('.theme-filter-btn').forEach(b => { 
@@ -780,18 +862,17 @@ document.addEventListener('click', (e) => {
         if(typeof window.playTapSound === 'function') window.playTapSound();
     }
 
-    // ★ 復元：モードボタンが元のパステルカラーを維持する処理
+    // ★ 復元：モードボタン（パステルカラーと即時遷移）
     const modeBtn = e.target.closest('.mode-btn');
     if (modeBtn) {
         document.querySelectorAll('.mode-btn').forEach(b => { 
-            b.classList.remove('ring-4', 'ring-pink-400', 'ring-white', 'scale-105', 'shadow-xl', 'opacity-100', 'bg-white'); 
-            b.classList.add('opacity-50', 'scale-100'); 
+            b.classList.remove('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100'); 
+            b.classList.add('opacity-80', 'scale-100'); 
         });
-        modeBtn.classList.remove('opacity-50', 'scale-100'); 
+        modeBtn.classList.remove('opacity-80', 'scale-100'); 
         modeBtn.classList.add('ring-4', 'ring-pink-400', 'scale-105', 'shadow-xl', 'opacity-100');
         window.appState.selectedMode = modeBtn.getAttribute('data-mode');
         
-        // ★ 復元：ボタンを1回押したらすぐに画像選択画面へ遷移する
         if (window.appState.selectedMode === 'story') { window.location.href = 'story.html'; return; }
         
         const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
@@ -831,39 +912,69 @@ document.addEventListener('click', (e) => {
         return;
     }
 
-    // ★ 復元：SELECT IMAGE (btn-goto-select) への遷移処理（安全のため残す）
-    const btnGotoSelect = e.target.closest('#btn-goto-select');
-    if (btnGotoSelect && !btnGotoSelect.disabled) {
-        if(!window.appState.selectedMode) return; 
-        if (window.appState.selectedMode === 'story') { window.location.href = 'story.html'; return; }
-        try {
-            const elem = document.documentElement;
-            if (!document.fullscreenElement) {
-                if (elem.requestFullscreen) elem.requestFullscreen().catch(err=>err);
-                else if (elem.webkitRequestFullscreen) elem.webkitRequestFullscreen();
-            }
-        } catch (err) {}
-        if (!window.audioCtx) window.audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-        if (window.audioCtx.state === 'suspended') window.audioCtx.resume();
-        
-        const elementaryBtn = document.querySelector('.level-btn[data-level="elementary"]');
-        if (elementaryBtn) {
-            document.querySelectorAll('.level-btn').forEach(b => { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); });
-            elementaryBtn.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700');
-            elementaryBtn.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg');
-            window.appState.selectedLevel = 'elementary';
-        }
-        if (typeof showView === 'function') showView(document.getElementById('view-select')); 
-        if (typeof window.renderThemeGrid === 'function') window.renderThemeGrid();
-        return;
-    }
-
+    // ★ 復元：画像クリックでのモーダル表示（いきなり遷移しない）
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
-        if (themeId) window.startGameWithTheme(themeId);
+        if (themeId) { 
+            window.tempSelectedThemeId = themeId; 
+            document.getElementById('mode-select-modal').classList.remove('hidden'); 
+        }
         return;
     }
+
+    // ★ 復元：モード選択ポップアップからの分岐
+    const btnChoosePractice = e.target.closest('#btn-choose-practice');
+    if (btnChoosePractice) {
+        document.getElementById('mode-select-modal').classList.add('hidden');
+        if (window.tempSelectedThemeId) window.startPrePracticeWithTheme(window.tempSelectedThemeId);
+        return;
+    }
+
+    const btnChooseChallenge = e.target.closest('#btn-choose-challenge');
+    if (btnChooseChallenge) {
+        document.getElementById('mode-select-modal').classList.add('hidden');
+        if (window.tempSelectedThemeId) window.startGameWithTheme(window.tempSelectedThemeId);
+        return;
+    }
+
+    const btnStartFromPractice = e.target.closest('#btn-start-from-practice');
+    if (btnStartFromPractice) {
+        document.getElementById('view-pre-practice').classList.add('hidden');
+        if (window.tempSelectedThemeId) window.startGameWithTheme(window.tempSelectedThemeId);
+        return;
+    }
+
+    // ★ 復元：授業モード
+    const btnEnterClassroom = e.target.closest('#btn-enter-classroom');
+    if (btnEnterClassroom) { window.openClassroomMode(); return; }
+
+    const btnExitClassroom = e.target.closest('#btn-exit-classroom');
+    if (btnExitClassroom) {
+        if (window.currentClassroomAudio) window.currentClassroomAudio.pause();
+        document.getElementById('view-classroom').classList.add('hidden');
+        document.getElementById('view-pre-practice').classList.remove('hidden');
+        return;
+    }
+
+    const classLevelBtn = e.target.closest('.class-level-btn');
+    if (classLevelBtn) {
+        window.appState.selectedLevel = classLevelBtn.getAttribute('data-level');
+        window.renderClassroomList();
+        return;
+    }
+
+    const preLevelBtn = e.target.closest('.pre-level-btn');
+    if (preLevelBtn) {
+        window.appState.selectedLevel = preLevelBtn.getAttribute('data-level'); window.renderPrePracticeList();
+        document.querySelectorAll('.level-btn').forEach(b => { 
+            if (b.getAttribute('data-level') === window.appState.selectedLevel) { b.classList.remove('bg-gray-50', 'border-gray-200', 'text-gray-700'); b.classList.add('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); } 
+            else { b.classList.remove('selected-level-btn', 'bg-sns-gradient', 'text-white', 'shadow-lg'); b.classList.add('bg-gray-50', 'border-gray-200', 'text-gray-700'); }
+        });
+        return;
+    }
+    const preTypeBtn = e.target.closest('.pre-type-btn');
+    if (preTypeBtn) { window.prePracticeCurrentType = preTypeBtn.getAttribute('data-type'); window.renderPrePracticeList(); return; }
 
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
@@ -943,9 +1054,6 @@ function setupOqPasswordLock() {
 
 if (document.readyState === 'loading') { document.addEventListener('DOMContentLoaded', setupOqPasswordLock); } else { setupOqPasswordLock(); }
 
-// ==========================================
-// ★ 課題URLからの自動遷移＆生徒登録ロジック ★
-// ==========================================
 window.checkUrlParameters = function() {
     const urlParams = new URLSearchParams(window.location.search);
     const themeId = urlParams.get('theme');
