@@ -24,6 +24,33 @@ const LANG_INFO = {
     "my-MM": { cc: "mm", name: "ビルマ語", hintLang: "en-US" }
 };
 
+// ★ 漢字→ひらがな自動変換用辞書（頻出単語）
+const KANJI_TO_KANA_MAP = {
+    '熊':'くま', '犬':'いぬ', '猫':'ねこ', '鳥':'とり', '豚':'ぶた', 
+    '牛':'うし', '馬':'うま', '猿':'さる', '羊':'ひつじ', '象':'ぞう', 
+    '兎':'うさぎ', '狐':'きつね', '鹿':'しか', '蛙':'かえる', '蛇':'へび', 
+    '虫':'むし', '魚':'さかな', '蝶':'ちょう', '亀':'かめ', '虎':'とら', '鼠':'ねずみ',
+    '水':'みず', '木':'き', '花':'はな', '山':'やま', '空':'そら', '海':'うみ',
+    '太陽':'たいよう', '月':'つき', '星':'ほし', '車':'くるま', '電車':'でんしゃ',
+    '飛行機':'ひこうき', '船':'ふね', '自転車':'じてんしゃ',
+    '本':'ほん', '鞄':'かばん', '靴':'くつ', '傘':'かさ', '帽子':'ぼうし', '服':'ふく',
+    '机':'つくえ', '椅子':'いす', '時計':'とけい', '鉛筆':'えんぴつ',
+    '林檎':'りんご', '苺':'いちご', '葡萄':'ぶどう', '桃':'もも', '蜜柑':'みかん',
+    '男の子':'おとこのこ', '女の子':'おんなのこ', '男性':'だんせい', '女性':'じょせい',
+    '子供':'こども', '子ども':'こども', '家':'いえ', '学校':'がっこう', '公園':'こうえん'
+};
+
+function normalizeJapanese(str) {
+    // 1. カタカナをひらがなに変換
+    let res = str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
+    // 2. 辞書にある漢字をひらがなに変換
+    for (let kanji in KANJI_TO_KANA_MAP) {
+        const regex = new RegExp(kanji, 'g');
+        res = res.replace(regex, KANJI_TO_KANA_MAP[kanji]);
+    }
+    return res;
+}
+
 const STOP_WORDS = new Set([
     'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
     'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
@@ -58,6 +85,14 @@ const pfState = {
 window.CATEGORIES_DATA = [];
 
 const correctAudio = new Audio('assets/sounds/correct.mp3');
+
+// 音声リストをあらかじめ読み込んでおく
+if (typeof speechSynthesis !== 'undefined') {
+    speechSynthesis.onvoiceschanged = () => {
+        window.pfAvailableVoices = speechSynthesis.getVoices();
+    };
+    window.pfAvailableVoices = speechSynthesis.getVoices();
+}
 
 function unlockAudio() {
     correctAudio.volume = 0;
@@ -104,13 +139,16 @@ function checkIsCorrect(card, transcript, targetLang) {
     }
 
     if (!targetWordsArray || targetWordsArray.length === 0) return false;
-
-    const toHiragana = (str) => str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
     
     return targetWordsArray.some(targetPhrase => {
-        if (targetLang === 'ja-JP' || targetLang === 'zh-CN') {
-            const transcriptNoSpace = toHiragana(transcript.toLowerCase()).replace(/\s+/g, '');
-            const phraseNoSpace = toHiragana(targetPhrase.toLowerCase()).replace(/\s+/g, '');
+        if (targetLang === 'ja-JP') {
+            // ★ 日本語判定：漢字もカタカナもひらがなに統一して比較
+            const transcriptNoSpace = normalizeJapanese(transcript.toLowerCase()).replace(/\s+/g, '');
+            const phraseNoSpace = normalizeJapanese(targetPhrase.toLowerCase()).replace(/\s+/g, '');
+            return transcriptNoSpace.includes(phraseNoSpace);
+        } else if (targetLang === 'zh-CN') {
+            const transcriptNoSpace = transcript.toLowerCase().replace(/\s+/g, '');
+            const phraseNoSpace = targetPhrase.toLowerCase().replace(/\s+/g, '');
             return transcriptNoSpace.includes(phraseNoSpace);
         } else {
             const targetWords = targetPhrase.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => !STOP_WORDS.has(w) && w.length > 0);
@@ -145,7 +183,6 @@ if (SpeechRec) {
     pfRec.maxAlternatives = 3; 
     
     pfRec.onresult = (e) => {
-        // ★ ここが最重要：切り替え中や解答済みの時は、過去の音声を拾っても【完全に無視】する
         if (pfState.isTransitioning || pfState.isSwitchingMic || pfState.hasAnswered) return;
 
         let transcripts = ['', '', ''];
@@ -160,7 +197,6 @@ if (SpeechRec) {
         // --- 本番モード(Trial) の処理 ---
         if (pfState.isPlaying && pfState.mode === 'trial') {
             const statusTextEl = document.getElementById('pf-status-text');
-            // 切り替え中でない時だけUIを更新する
             if (statusTextEl) statusTextEl.innerText = mainTranscript || 'Listening...';
 
             if (mainTranscript.includes("skip") || mainTranscript.includes("スキップ")) {
@@ -206,11 +242,10 @@ if (SpeechRec) {
                             try { pfRec.abort(); } catch(err){}
                             pfRec.lang = pfState.languages[pfState.currentLangIndex];
                             
-                            // ★ バッファを完全に消すために待機時間を400msに延長
                             setTimeout(() => { 
                                 pfState.isSwitchingMic = false;
                                 pfState.isTransitioning = false;
-                                pfState.hasAnswered = false; // ここで初めて次の解答を許可
+                                pfState.hasAnswered = false; 
                                 if (pfState.isPlaying) {
                                     try { pfRec.start(); } catch(err){} 
                                 }
@@ -450,7 +485,7 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
         if (pfState.isPlaying) {
             try { pfRec.start(); } catch(e){}
         }
-    }, 400); // 余裕を持たせる
+    }, 400);
 });
 
 function loadPfCard(isNewImage) {
@@ -482,7 +517,6 @@ function loadPfCard(isNewImage) {
     document.getElementById('pf-overlay-skip').classList.add('hidden');
     document.getElementById('pf-card').classList.remove('scale-95');
 
-    // ★ 表示を強制的にリセット
     document.getElementById('pf-status-text').innerText = 'Ready...';
 
     updateTrialLangUI();
@@ -631,15 +665,14 @@ function handleCorrect() {
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
 
-            // ★ 新しいカードが出てから、バッファを完全にクリアして再始動
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
                 pfState.isTransitioning = false;
-                pfState.hasAnswered = false; // ここで初めて解答可能になる
+                pfState.hasAnswered = false; 
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 400); // 余裕を持たせた400ms
+            }, 400); 
         }
     }, 1200); 
 }
@@ -684,15 +717,14 @@ function handleSkip() {
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
             
-            // ★ 新しいカードが出てから、バッファを完全にクリアして再始動
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
                 pfState.isTransitioning = false;
-                pfState.hasAnswered = false; // ここで初めて解答可能になる
+                pfState.hasAnswered = false; 
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 400); // 余裕を持たせた400ms
+            }, 400); 
         }
     }, 1500); 
 }
@@ -826,7 +858,7 @@ window.openPracticeModal = function(cardIdx) {
         const statusId = `prac-status-modal-${i}`;
 
         langBlocksHtml += `
-            <div class="p-3 md:p-4 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-3 md:p-4 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between shrink-0">
                 <div>
                     <div class="text-xs md:text-sm font-bold text-gray-500 mb-1 flex items-center gap-2">${getFlagHtml(info.cc, "w-4 h-auto")} ${info.name}</div>
                     <div class="text-2xl md:text-3xl font-black text-gray-800 mb-3 leading-tight">${targetWord}</div>
@@ -846,14 +878,15 @@ window.openPracticeModal = function(cardIdx) {
         `;
     });
 
+    // ★ 修正：右側のリスト部分にのみ「max-height: 65vh;」を直接指定し、確実にスクロールさせる
     let html = `
-        <div class="flex flex-col md:flex-row gap-4 md:gap-6 w-full items-stretch">
-            <div class="w-full md:w-2/5 flex flex-col justify-center">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-6 w-full items-start">
+            <div class="w-full md:w-2/5 flex flex-col justify-center shrink-0 sticky top-0 z-10 bg-white pt-2 pb-2 md:pb-0 md:pt-0">
                 <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-50 relative flex items-center justify-center p-4 border border-gray-100 shadow-inner">
                     <img src="assets/images/picflash/${fileName}" class="w-full h-full object-contain drop-shadow-md">
                 </div>
             </div>
-            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-center max-h-[50vh] overflow-y-auto custom-scrollbar pr-2">
+            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-start overflow-y-auto custom-scrollbar pr-2 pb-6" style="max-height: 65vh;">
                 ${langBlocksHtml}
             </div>
         </div>
@@ -878,6 +911,32 @@ window.playPfTTS = function(cardIdx, lang) {
     const u = new SpeechSynthesisUtterance(textToSpeak);
     u.lang = lang; 
     u.rate = 0.9;
+    
+    // 最新の音声リストを取得
+    let voices = speechSynthesis.getVoices();
+    if (voices.length === 0 && window.pfAvailableVoices) {
+        voices = window.pfAvailableVoices;
+    }
+    
+    const shortLang = lang.split('-')[0];
+    
+    // ★ 修正：その言語の音声をすべて抽出し、「高品質な音声（Google, Siri, Premium等）」を優先的に選ぶ
+    let targetVoices = voices.filter(v => v.lang === lang || v.lang.replace('_', '-') === lang || v.lang.startsWith(shortLang));
+    
+    if (targetVoices.length > 0) {
+        let bestVoice = targetVoices.find(v => 
+            v.name.includes('Google') || 
+            v.name.includes('Premium') || 
+            v.name.includes('Natural') || 
+            v.name.includes('Siri')
+        );
+        
+        // 高品質な音声が見つからなければ、その言語の最初の音声をセット
+        if (!bestVoice) bestVoice = targetVoices[0];
+        
+        u.voice = bestVoice;
+    }
+
     speechSynthesis.speak(u);
 };
 
