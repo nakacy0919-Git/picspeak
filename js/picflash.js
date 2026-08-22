@@ -1020,3 +1020,29 @@ document.addEventListener('DOMContentLoaded', () => {
         showPfView('view-picflash-select');
     });
 });
+// ==========================================
+// ★ index.html への遷移を play.html (モード選択) に強制変更するコード
+// ==========================================
+document.addEventListener('click', (e) => {
+    // onclick="window.location.href='index.html'" を持っているボタンを捕まえる
+    const toIndexBtn = e.target.closest('[onclick*="index.html"]');
+    
+    if (toIndexBtn) {
+        // HTMLの直接リンクを強制的にキャンセル
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        
+        // 録音等の動作を安全に停止
+        if (typeof pfState !== 'undefined' && pfState.isPlaying) {
+            pfState.isPlaying = false;
+            if (pfState.timerId) clearInterval(pfState.timerId);
+            try { if (typeof pfRec !== 'undefined' && pfRec) pfRec.abort(); } catch(err){}
+        }
+        if (window.isRecording && typeof window.stopSpeech === 'function') {
+            window.stopSpeech();
+        }
+        
+        // ゲームモード選択画面 (play.html) へ強制ジャンプ！
+        window.location.href = 'play.html';
+    }
+}, true); // true = HTMLのonclickより先に実行（キャプチャフェーズ）
