@@ -1,0 +1,741 @@
+{
+  "id": "theme_l2_035",
+  "imageSrc": "assets/images/l2_035.webp",
+  "titleEn": "Tablet Ordering Culture",
+  "titleJa": "タブレット注文体験",
+  "description": "夕方の日本のファミリーレストランで、日本人の高校生と海外から来た若い女性が食事を注文している。中央のテーブルでは海外から来た女性がタブレット型の注文端末を見ながら料理を選ぼうとしており、画面に表示された料理やアイコンを指さしている。隣の日本人高校生は笑顔でタブレットを指さし、注文方法を説明している。背景では料理を運ぶ配膳ロボットがテーブルへ向かっており、左奥にはドリンクバー、コーヒーマシン、スープ設備がある。テーブルには水、カトラリー、呼び出しボタン、ナプキン、調味料が置かれている。バッグ、スマートフォン、財布も整理されており、日本の最近のファミリーレストランで見られるセルフサービスやデジタル化された注文方法を、異文化交流を通して学んでいる場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly two visible people inside a realistic modern Japanese family restaurant in the early evening. The restaurant layout should resemble a real contemporary family restaurant in Japan, with warm wooden booth seating, large windows facing a quiet Japanese residential street at dusk, a self-service drink bar along the back wall, a coffee machine, several colorful beverage dispensers, a soup dispenser, stacks of cups and dishes, a payment counter in the background, and a small autonomous food-delivery robot carrying plates of prepared meals. There must be exactly two visible human characters and no staff, customers, reflected people, posters containing people, or distant pedestrians. At the main booth table, show a young international female visitor wearing a cream-colored sweater sitting on the left. She is looking curiously at a large tabletop ordering tablet and pointing toward one of the menu choices. Her expression should show mild uncertainty but strong interest. On the right, show a Japanese high school girl wearing a realistic dark school uniform with a ribbon tie. She is smiling warmly and pointing at the ordering tablet as she explains how to use it. The tablet screen should face both students and clearly display photographs of several food choices such as pasta, a hamburger steak meal, and a Japanese-style set meal, together with simple colorful category icons and a globe or language icon. Avoid important readable text. The cultural-learning story must be visually obvious: an international visitor is learning how digital tablet ordering works in a modern Japanese family restaurant, while a Japanese student helps her. On the table, include two glasses of water, a basket containing napkins, a chopstick container, forks and spoons, condiment bottles, a soy-sauce-style bottle, and a tabletop customer call button. Near the front edge of the table, include a small basket containing a smartphone and wallet, plus a reusable tote bag beside the booth. Include a dessert menu card showing pictures of parfait, cake, and ice cream without brand names. In the background, the food-delivery robot should be clearly visible carrying two plates on shelves, providing a secondary story about restaurant automation. The drink bar should contain juice dispensers, coffee equipment, cups, soup equipment, and self-service utensils. A contactless payment symbol may be visible near the register. The evening street outside should show Japanese houses, utility poles, road markings, and warm sunset light, but absolutely no additional people. Exactly two visible people, no more and no less. No animals, no speech bubbles, no recognizable company logos, no copyrighted characters. Landscape 16:9 composition. Clean, colorful, polished Japanese educational illustration style, clearly illustrated rather than photographic, realistic proportions and realistic restaurant layout, information-dense but uncluttered, suitable for English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "restaurant",
+          "ja": "レストラン",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "タブレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "food",
+          "ja": "食べ物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "spoon",
+          "ja": "スプーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fork",
+          "ja": "フォーク",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "robot",
+          "ja": "ロボット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲み物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "choose",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "order",
+          "ja": "注文する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "eat at a restaurant",
+          "ja": "レストランで食事をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look at the tablet",
+          "ja": "タブレットを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose some food",
+          "ja": "食べ物を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the screen",
+          "ja": "画面を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "order some food",
+          "ja": "食べ物を注文する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "drink some water",
+          "ja": "水を飲む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry the food",
+          "ja": "料理を運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help her friend",
+          "ja": "友達を助ける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two people are sitting in a restaurant.",
+          "grammar": "現在進行形",
+          "ja": "2人がレストランに座っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is looking at a tablet.",
+          "grammar": "現在進行形",
+          "ja": "女性がタブレットを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is pointing at some food.",
+          "grammar": "現在進行形",
+          "ja": "彼女は食べ物を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is helping her.",
+          "grammar": "現在進行形",
+          "ja": "生徒が彼女を助けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two glasses of water on the table.",
+          "grammar": "There are",
+          "ja": "テーブルには水の入ったグラスが2つあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are spoons and forks on the table.",
+          "grammar": "There are",
+          "ja": "テーブルにはスプーンとフォークがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A robot is carrying food.",
+          "grammar": "現在進行形",
+          "ja": "ロボットが料理を運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "2人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "menu",
+          "ja": "メニュー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "customer",
+          "ja": "客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "order",
+          "ja": "注文",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drink bar",
+          "ja": "ドリンクバー",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "select",
+          "ja": "選択する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "operate",
+          "ja": "操作する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deliver",
+          "ja": "届ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "serve",
+          "ja": "提供する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "unfamiliar",
+          "ja": "不慣れな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convenient",
+          "ja": "便利な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "automatic",
+          "ja": "自動の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "curious",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "helpful",
+          "ja": "親切な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "use a tablet menu",
+          "ja": "タブレットメニューを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose a meal",
+          "ja": "料理を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "place an order",
+          "ja": "注文する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explain how to use it",
+          "ja": "使い方を説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use the drink bar",
+          "ja": "ドリンクバーを利用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "deliver meals by robot",
+          "ja": "ロボットで料理を運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "press the call button",
+          "ja": "呼び出しボタンを押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about Japanese restaurants",
+          "ja": "日本のレストランについて学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two people are using a tablet to order food at a Japanese family restaurant.",
+          "grammar": "to不定詞",
+          "ja": "2人は日本のファミリーレストランで料理を注文するためにタブレットを使っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The international visitor is looking through pictures of different meals.",
+          "grammar": "現在進行形",
+          "ja": "海外から来た女性はいろいろな料理の写真を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She appears unsure about how to use the ordering system.",
+          "grammar": "appear＋形容詞 / how to",
+          "ja": "彼女は注文システムの使い方が少し分からないようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student is pointing at the screen and explaining what to do.",
+          "grammar": "現在進行形 / what to",
+          "ja": "日本人の生徒は画面を指さし、何をすればよいか説明しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A delivery robot is carrying meals behind them.",
+          "grammar": "現在進行形",
+          "ja": "2人の後ろでは配膳ロボットが料理を運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Customers can get their own drinks from the drink bar.",
+          "grammar": "can＋動詞",
+          "ja": "客はドリンクバーから自分で飲み物を取ることができます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The call button allows customers to ask for assistance when necessary.",
+          "grammar": "allow＋O＋to / when",
+          "ja": "呼び出しボタンを使えば、必要な時に店員へ助けを求められます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visitor seems interested in experiencing a modern Japanese restaurant.",
+          "grammar": "seem＋形容詞 / be interested in",
+          "ja": "海外から来た女性は現代的な日本のレストランを体験することに興味を持っているようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "automation",
+          "ja": "自動化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "interface",
+          "ja": "操作画面",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "hospitality",
+          "ja": "接客・おもてなし",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "convention",
+          "ja": "慣習",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "self-service",
+          "ja": "セルフサービス",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "操作方法を理解して使う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "実演する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accommodate",
+          "ja": "対応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "facilitate",
+          "ja": "容易にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "automate",
+          "ja": "自動化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "intuitive",
+          "ja": "直感的に使える",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "efficient",
+          "ja": "効率的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unfamiliar",
+          "ja": "不慣れな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "autonomous",
+          "ja": "自律型の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intercultural",
+          "ja": "異文化間の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "navigate a digital ordering interface",
+          "ja": "デジタル注文画面を操作する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adapt to an unfamiliar ordering system",
+          "ja": "不慣れな注文システムに適応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "demonstrate the ordering procedure",
+          "ja": "注文手順を実演する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "operate a self-service drink station",
+          "ja": "セルフ式ドリンク設備を利用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use autonomous delivery technology",
+          "ja": "自律型配膳技術を利用する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reduce routine service tasks",
+          "ja": "日常的な接客業務を減らす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "experience contemporary Japanese dining culture",
+          "ja": "現代の日本の外食文化を体験する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "adapt to local dining conventions",
+          "ja": "現地の外食習慣に適応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "develop intercultural awareness",
+          "ja": "異文化理解を深める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two diners are experiencing a highly digitalized aspect of contemporary Japanese restaurant culture.",
+          "grammar": "現在進行形",
+          "ja": "2人はデジタル化が進んだ現代日本の外食文化を体験しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The international visitor is attempting to navigate an unfamiliar ordering interface by examining photographs and visual icons.",
+          "grammar": "attempt to / by＋動名詞",
+          "ja": "海外から来た女性は料理写真やアイコンを確認しながら、不慣れな注文画面を操作しようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her expression suggests that the system is relatively intuitive, although some guidance is still necessary.",
+          "grammar": "suggest that / although",
+          "ja": "彼女の表情から、比較的直感的に使えるものの、まだ多少の説明が必要であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student is facilitating the process by demonstrating which options should be selected on the tablet.",
+          "grammar": "by＋動名詞 / 間接疑問",
+          "ja": "日本人の生徒はタブレットでどの項目を選択すればよいか実演し、注文を手助けしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The autonomous delivery robot in the background illustrates how routine serving tasks are increasingly being automated.",
+          "grammar": "how節 / 現在進行受動態",
+          "ja": "背景の自律型配膳ロボットは、日常的な配膳業務が次第に自動化されていることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The drink bar further reflects a self-service convention in which customers are expected to collect beverages independently.",
+          "grammar": "関係詞in which / be expected to",
+          "ja": "ドリンクバーは、客が自分で飲み物を取りに行くセルフサービスの習慣をさらに表しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The call button, digital menu, and contactless payment equipment demonstrate how technology and traditional hospitality coexist in modern restaurants.",
+          "grammar": "how節",
+          "ja": "呼び出しボタン、デジタルメニュー、非接触決済設備は、現代のレストランで技術と従来の接客が共存していることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student's assistance helps the visitor adapt to local dining conventions without requiring extensive verbal explanation.",
+          "grammar": "help＋O＋動詞 / without＋動名詞",
+          "ja": "日本人の生徒の助けによって、海外から来た女性は多くの言葉による説明がなくても現地の外食習慣に適応できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary restaurant visit can provide an opportunity to experience technological change while developing intercultural awareness.",
+          "grammar": "how節 / while＋現在分詞",
+          "ja": "この場面は、日常的なレストラン利用が技術の変化を体験すると同時に異文化理解を深める機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "international_visitor": {
+      "x": 45,
+      "y": 45
+    },
+    "japanese_student": {
+      "x": 66,
+      "y": 43
+    },
+    "ordering_tablet": {
+      "x": 55,
+      "y": 59
+    },
+    "tablet_food_images": {
+      "x": 55,
+      "y": 52
+    },
+    "tablet_category_icons": {
+      "x": 55,
+      "y": 62
+    },
+    "delivery_robot": {
+      "x": 20,
+      "y": 46
+    },
+    "robot_meal_tray": {
+      "x": 20,
+      "y": 50
+    },
+    "drink_bar": {
+      "x": 14,
+      "y": 21
+    },
+    "coffee_machine": {
+      "x": 5,
+      "y": 20
+    },
+    "juice_dispensers": {
+      "x": 13,
+      "y": 21
+    },
+    "soup_dispenser": {
+      "x": 22,
+      "y": 21
+    },
+    "two_water_glasses": {
+      "x": 58,
+      "y": 68
+    },
+    "call_button": {
+      "x": 78,
+      "y": 76
+    },
+    "cutlery": {
+      "x": 54,
+      "y": 82
+    },
+    "napkin_basket": {
+      "x": 81,
+      "y": 62
+    },
+    "chopsticks": {
+      "x": 92,
+      "y": 61
+    },
+    "condiments": {
+      "x": 88,
+      "y": 69
+    },
+    "soy_sauce_bottle": {
+      "x": 91,
+      "y": 70
+    },
+    "dessert_menu": {
+      "x": 25,
+      "y": 66
+    },
+    "smartphone": {
+      "x": 36,
+      "y": 83
+    },
+    "wallet": {
+      "x": 29,
+      "y": 83
+    },
+    "personal_item_basket": {
+      "x": 32,
+      "y": 82
+    },
+    "tote_bag": {
+      "x": 18,
+      "y": 80
+    },
+    "payment_terminal": {
+      "x": 69,
+      "y": 22
+    },
+    "contactless_payment_sign": {
+      "x": 72,
+      "y": 27
+    },
+    "restaurant_window": {
+      "x": 88,
+      "y": 18
+    },
+    "evening_street": {
+      "x": 91,
+      "y": 25
+    }
+  }
+}

@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_032",
+  "imageSrc": "assets/images/l2_032.webp",
+  "titleEn": "Weekend Laundry Stop",
+  "titleJa": "週末のコインランドリー",
+  "description": "休日の明るいコインランドリーで、2人の若者が協力して洗濯をしている。左側の男性は白い服と色物を分けながら、衣類の洗濯表示を確認してドラム式洗濯機へ入れている。右側の女性は乾燥が終わったTシャツやタオルを大きな作業台の上で丁寧にたたみ、種類ごとに洗濯かごへ整理している。背景には回転している乾燥機、洗剤、自動精算機、ランドリーカート、空のハンガーなどがあり、2人が効率よく家事を分担している様子が分かる。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly two young adults doing laundry together inside a bright, clean, modern self-service laundromat in Japan on a weekend. There must be exactly two visible people in the entire image: one young man and one young woman. Do not include employees, other customers, reflected people in glass doors, silhouettes, posters containing people, or human-shaped advertisements. The atmosphere should be practical, calm, cooperative, organized, and positive. On the left side, the young man is standing in front of a large front-loading washing machine. He is sorting laundry into a light-colored pile and a dark-colored pile. He is holding the care label of one shirt close enough to examine it while using his other hand to place suitable clothes into the open washing machine. A laundry basket containing several remaining clothes should be beside him. The action must clearly communicate that he is checking clothing instructions and separating laundry before washing it. On the right side, the young woman is standing beside a large folding table. She is carefully folding a clean T-shirt while several neatly folded towels, shirts, and pants are arranged in small stacks beside her. She is placing the finished clothes into a second laundry basket according to type. Make her action clearly different from the man's activity. In the middle and background, show a row of large front-loading washing machines and dryers. One dryer should visibly contain clothes tumbling behind the glass door, creating a secondary story that another load is still drying. Include simple digital timer displays using nonessential numbers only. Add a bottle of liquid detergent, detergent pods in a plain container, fabric-softener bottle, two laundry baskets, rolling laundry cart, several empty hangers, reusable shopping bag, small bench, wall clock, coin or card payment machine, folding table, and a lost-sock notice board using only a simple sock icon and no important readable text. Include one single unmatched colorful sock resting on the corner of the folding table as a small visual sub-story. Make the two main activities visually distinct and easy to describe: the man sorting clothes and loading the washing machine, and the woman folding and organizing dry laundry. Exactly two visible people, no more and no less. No animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "laundry",
+          "ja": "洗濯物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "shirt",
+          "ja": "シャツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "towel",
+          "ja": "タオル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sock",
+          "ja": "靴下",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "basket",
+          "ja": "かご",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "machine",
+          "ja": "洗濯機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "detergent",
+          "ja": "洗剤",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wash",
+          "ja": "洗う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fold",
+          "ja": "たたむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "put",
+          "ja": "入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "きれいな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "do the laundry",
+          "ja": "洗濯をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "use a washing machine",
+          "ja": "洗濯機を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put clothes in the machine",
+          "ja": "服を洗濯機に入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the label",
+          "ja": "表示を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fold a shirt",
+          "ja": "シャツをたたむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fold clean towels",
+          "ja": "きれいなタオルをたたむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put clothes in a basket",
+          "ja": "服をかごに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two people are doing the laundry.",
+          "grammar": "現在進行形",
+          "ja": "2人が洗濯をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is looking at a shirt.",
+          "grammar": "現在進行形",
+          "ja": "男性がシャツを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is putting clothes in the washing machine.",
+          "grammar": "現在進行形",
+          "ja": "彼は服を洗濯機に入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is folding a T-shirt.",
+          "grammar": "現在進行形",
+          "ja": "女性がTシャツをたたんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are clean towels on the table.",
+          "grammar": "There are",
+          "ja": "テーブルにはきれいなタオルがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two laundry baskets.",
+          "grammar": "There are",
+          "ja": "洗濯かごが2つあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some clothes are in the dryer.",
+          "grammar": "be動詞＋場所",
+          "ja": "乾燥機の中に服があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are working together.",
+          "grammar": "現在進行形",
+          "ja": "2人は一緒に作業しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "laundromat",
+          "ja": "コインランドリー",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "dryer",
+          "ja": "乾燥機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "label",
+          "ja": "表示ラベル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "detergent",
+          "ja": "洗剤",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pile",
+          "ja": "衣類の山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sort",
+          "ja": "分ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "分別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "load",
+          "ja": "入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "organize",
+          "ja": "整理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dry",
+          "ja": "乾いた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "neat",
+          "ja": "きちんとした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "efficient",
+          "ja": "効率的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "sort the laundry",
+          "ja": "洗濯物を分ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "separate light and dark clothes",
+          "ja": "白物と色物を分ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the care label",
+          "ja": "洗濯表示を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "load the washing machine",
+          "ja": "洗濯機に衣類を入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fold the dry clothes",
+          "ja": "乾いた服をたたむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "organize the clothes",
+          "ja": "衣類を整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "place them in a basket",
+          "ja": "かごに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "share the household tasks",
+          "ja": "家事を分担する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two people are doing their laundry at a self-service laundromat.",
+          "grammar": "現在進行形",
+          "ja": "2人はコインランドリーで洗濯をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is separating light-colored clothes from dark ones.",
+          "grammar": "separate A from B",
+          "ja": "男性は白っぽい服と色の濃い服を分けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is checking a care label before putting the shirt into the washing machine.",
+          "grammar": "before＋動名詞",
+          "ja": "彼はシャツを洗濯機に入れる前に洗濯表示を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is folding clothes that have already been dried.",
+          "grammar": "関係代名詞that / 現在完了受動態",
+          "ja": "女性はすでに乾燥が終わった衣類をたたんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is organizing the clothes into several neat piles.",
+          "grammar": "現在進行形",
+          "ja": "彼女は服をいくつかのきれいな山に分けて整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another load of laundry appears to be drying in the machine behind them.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "後ろの乾燥機では別の洗濯物が乾燥しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A single sock has been left on the corner of the table.",
+          "grammar": "現在完了受動態",
+          "ja": "片方だけの靴下がテーブルの隅に残されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The pair seem to be sharing the household tasks efficiently.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "2人は効率よく家事を分担しているようです。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "garment",
+          "ja": "衣類",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fabric",
+          "ja": "生地",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "maintenance",
+          "ja": "手入れ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "household chore",
+          "ja": "家事",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "care instructions",
+          "ja": "お手入れ表示",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "詳しく確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "load",
+          "ja": "投入する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fold",
+          "ja": "折りたたむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "種類別に整理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "methodical",
+          "ja": "手順立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "efficient",
+          "ja": "効率的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "systematic",
+          "ja": "体系的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "domestic",
+          "ja": "家庭生活の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "carry out a household chore",
+          "ja": "家事を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "categorize garments by color",
+          "ja": "衣類を色別に分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inspect the care instructions",
+          "ja": "洗濯表示を詳しく確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent damage to the fabric",
+          "ja": "生地の傷みを防ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "load the front-loading washer",
+          "ja": "ドラム式洗濯機へ投入する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fold garments methodically",
+          "ja": "衣類を手順よくたたむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "organize laundry by category",
+          "ja": "洗濯物を種類別に整理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "divide domestic responsibilities",
+          "ja": "家事の役割を分担する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "complete the task efficiently",
+          "ja": "効率よく作業を終える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two individuals are carrying out different stages of a routine household chore at a self-service laundromat.",
+          "grammar": "現在進行形",
+          "ja": "2人はコインランドリーで日常的な家事の異なる工程を担当しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is methodically categorizing the garments according to color before loading the washing machine.",
+          "grammar": "according to / before＋動名詞",
+          "ja": "男性は洗濯機へ入れる前に、衣類を色に応じて手順よく分類しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be inspecting the care instructions in order to avoid damaging the fabric.",
+          "grammar": "appear to be / in order to",
+          "ja": "彼は生地を傷めないよう、お手入れ表示を確認しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the woman is folding the freshly dried garments and organizing them according to type.",
+          "grammar": "現在進行形 / according to",
+          "ja": "その一方で、女性は乾燥したばかりの衣類をたたみ、種類別に整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The neatly arranged stacks indicate that she is approaching the task in a systematic manner.",
+          "grammar": "indicate that",
+          "ja": "きれいに並べられた衣類の山から、彼女が体系的に作業していることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Clothes visible through one of the dryer doors suggest that another load is still being processed.",
+          "grammar": "suggest that / 現在進行受動態",
+          "ja": "乾燥機の扉越しに見える衣類から、別の洗濯物がまだ乾燥中であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The unmatched sock resting on the folding table provides a small indication that one item may have been temporarily misplaced.",
+          "grammar": "現在分詞による後置修飾 / may have＋過去分詞",
+          "ja": "作業台に残された片方だけの靴下から、一つの衣類が一時的に見当たらなくなっている可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their distinct roles suggest that the pair are dividing their domestic responsibilities in order to complete the laundry efficiently.",
+          "grammar": "suggest that / in order to",
+          "ja": "それぞれ異なる作業を担当していることから、効率よく洗濯を終えるため家事を分担していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how even an ordinary household chore can involve planning, organization, cooperation, and attention to detail.",
+          "grammar": "how節",
+          "ja": "この場面は、日常的な家事にも計画、整理、協力、細部への注意が必要になることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "sorting_man": {
+      "x": 27,
+      "y": 55
+    },
+    "care_label": {
+      "x": 31,
+      "y": 48
+    },
+    "washing_machine": {
+      "x": 18,
+      "y": 58
+    },
+    "laundry_basket_left": {
+      "x": 35,
+      "y": 73
+    },
+    "folding_woman": {
+      "x": 70,
+      "y": 53
+    },
+    "folded_clothes": {
+      "x": 69,
+      "y": 69
+    },
+    "laundry_basket_right": {
+      "x": 82,
+      "y": 72
+    },
+    "dryer": {
+      "x": 50,
+      "y": 30
+    },
+    "detergent": {
+      "x": 46,
+      "y": 68
+    },
+    "single_sock": {
+      "x": 58,
+      "y": 67
+    }
+  }
+}

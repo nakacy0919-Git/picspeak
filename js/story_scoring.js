@@ -9,7 +9,7 @@ function handleStorySpeechResult(finalText, interimText) {
     if(!window.storyState.currentStory) return;
     const levelData = window.storyState.currentStory.scenes[idx].levels[level];
 
-    // --- Retelling処理 (リアルタイム色付け) ---
+    // --- Retelling処理 (リアルタイム色付け & Accuracy/Score計算) ---
     if (window.storyState.phase === 'retelling') {
         if (finalText.trim().length > 0) window.storyState.retellingTranscripts[idx] += finalText + " ";
         const currentTempText = window.storyState.retellingTranscripts[idx] + interimText;
@@ -20,18 +20,42 @@ function handleStorySpeechResult(finalText, interimText) {
         }
         allText += interimText;
 
-        // ★新しいターゲット構造（keywords配列）からマッチ用リストを抽出
         let targetWords = [];
+        let sceneTargets = 0;
+        let sceneCleared = 0;
+        const spokenSetRaw = new Set(allText.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=>w));
+
         if(levelData.targets) {
             levelData.targets.forEach(t => {
-                if(t.keywords) {
+                sceneTargets++;
+                let isMatch = false;
+                
+                if(t.keywords && t.keywords.length > 0) {
                     t.keywords.forEach(kw => {
                         const words = kw.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
                         targetWords = targetWords.concat(words);
                     });
+                    isMatch = t.keywords.some(kw => spokenSetRaw.has(kw.toLowerCase()));
+                } else if (t.text) {
+                    // ★フォールバック: keywordsが設定されていなくても判定できるようにする
+                    const textWords = t.text.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=> w.length > 2);
+                    targetWords = targetWords.concat(textWords);
+                    isMatch = textWords.some(tw => spokenSetRaw.has(tw));
                 }
+                
+                if (isMatch) sceneCleared++;
             });
         }
+
+        // ★ 追加：リアルタイムの Accuracy と Score のUI更新
+        let acc = sceneTargets === 0 ? 0 : Math.floor((sceneCleared / sceneTargets) * 100);
+        
+        const accEl = document.getElementById('retelling-accuracy');
+        if(accEl) accEl.textContent = `${acc}%`;
+        
+        const scoreEl = document.getElementById('retelling-score');
+        if(scoreEl) scoreEl.textContent = Math.floor(acc * 2.0); // スコアの計算例
+
         const targetSet = new Set(targetWords);
         
         const htmlText = allText.split(/\s+/).map(w => {
@@ -70,7 +94,7 @@ function handleStorySpeechResult(finalText, interimText) {
                 window.perfectedSentences.add(sIdx);
                 if(typeof playSyntheticSound === 'function') playSyntheticSound('perfect');
                 const anim = document.getElementById('perfect-animation');
-                if (anim && window.pssSettings.effectsOn) {
+                if (anim && window.pssSettings && window.pssSettings.effectsOn) {
                     anim.classList.remove('hidden'); anim.classList.add('flex', 'animate-pop');
                     setTimeout(() => { anim.classList.remove('flex', 'animate-pop'); anim.classList.add('hidden'); }, 1500);
                 }
@@ -83,9 +107,14 @@ function handleStorySpeechResult(finalText, interimText) {
         
         let matchCount = 0;
         tWords.forEach(w => { if(sSet.has(w)) matchCount++; });
-        let acc = Math.min(100, Math.floor((matchCount / tWords.length) * 100));
+        let acc = tWords.length === 0 ? 0 : Math.min(100, Math.floor((matchCount / tWords.length) * 100));
+        
         const accEl = document.getElementById('reading-accuracy');
         if(accEl) accEl.textContent = `${acc}%`;
+
+        // ★ 追加：ReadingのリアルタイムScoreのUI更新
+        const scoreEl = document.getElementById('reading-score');
+        if(scoreEl) scoreEl.textContent = Math.floor(acc * 1.5);
 
         const tSetForMatch = new Set(tWords);
         const htmlTranscript = sWords.map(w => {
@@ -129,25 +158,30 @@ function finishStoryRetelling() {
                 sceneTargets++;
                 totalTargetCount++;
                 
-                // ★新しい判定ロジック：keywordsの中に1つでもマッチするものがあれば「意図が伝わった」とみなす
                 let isMatch = false;
-                if(t.keywords) {
+                if(t.keywords && t.keywords.length > 0) {
                     isMatch = t.keywords.some(kw => spokenSet.has(kw.toLowerCase()));
+                } else if (t.text) {
+                    // ★フォールバック処理
+                    const textWords = t.text.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=> w.length > 2);
+                    isMatch = textWords.some(tw => spokenSet.has(tw));
                 }
                 
                 // カテゴリーラベルの装飾
                 let catColor = "bg-gray-100 text-gray-600";
-                if(t.category.includes("Who") || t.category.includes("Subject")) catColor = "bg-blue-100 text-blue-700";
-                if(t.category.includes("What") || t.category.includes("Action")) catColor = "bg-orange-100 text-orange-700";
-                if(t.category.includes("Where") || t.category.includes("Context")) catColor = "bg-purple-100 text-purple-700";
-                if(t.category.includes("Result")) catColor = "bg-pink-100 text-pink-700";
+                if(t.category) {
+                    if(t.category.includes("Who") || t.category.includes("Subject")) catColor = "bg-blue-100 text-blue-700";
+                    if(t.category.includes("What") || t.category.includes("Action")) catColor = "bg-orange-100 text-orange-700";
+                    if(t.category.includes("Where") || t.category.includes("Context")) catColor = "bg-purple-100 text-purple-700";
+                    if(t.category.includes("Result")) catColor = "bg-pink-100 text-pink-700";
+                }
 
                 if (isMatch) {
                     sceneCleared++;
                     totalClearedCount++;
                     targetHtmlList += `
                         <div class="flex items-start gap-2 mb-2 bg-green-50 p-2 rounded-lg border border-green-100">
-                            <span class="text-[10px] font-black ${catColor} px-2 py-0.5 rounded shadow-sm shrink-0 mt-0.5">${t.category}</span>
+                            <span class="text-[10px] font-black ${catColor} px-2 py-0.5 rounded shadow-sm shrink-0 mt-0.5">${t.category || 'Target'}</span>
                             <span class="text-sm font-bold text-gray-800 flex-1">${t.text}</span>
                             <span class="text-green-500 font-black text-lg shrink-0">✅</span>
                         </div>
@@ -155,7 +189,7 @@ function finishStoryRetelling() {
                 } else {
                     targetHtmlList += `
                         <div class="flex items-start gap-2 mb-2 bg-red-50 p-2 rounded-lg border border-red-100 opacity-80">
-                            <span class="text-[10px] font-black ${catColor} px-2 py-0.5 rounded shadow-sm shrink-0 mt-0.5">${t.category}</span>
+                            <span class="text-[10px] font-black ${catColor} px-2 py-0.5 rounded shadow-sm shrink-0 mt-0.5">${t.category || 'Target'}</span>
                             <span class="text-sm font-bold text-gray-500 flex-1 line-through decoration-gray-400">${t.text}</span>
                             <span class="text-red-400 font-black text-lg shrink-0">❌</span>
                         </div>
@@ -193,7 +227,10 @@ function finishStoryRetelling() {
     });
 
     const completionRate = totalTargetCount === 0 ? 0 : Math.floor((totalClearedCount / totalTargetCount) * 100);
-    const wpm = Math.round(totalWordsSpoken / ( (window.pssSettings.retellingTime * 4) / 60) ); 
+    
+    // pssSettings が存在しない場合のエラー回避
+    const retryTime = (window.pssSettings && window.pssSettings.retellingTime) ? window.pssSettings.retellingTime : 30;
+    const wpm = Math.round(totalWordsSpoken / ( (retryTime * 4) / 60) ); 
 
     const container = document.getElementById('story-ranking-container');
     if (container) {

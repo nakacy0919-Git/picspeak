@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_033",
+  "imageSrc": "assets/images/l2_033.webp",
+  "titleEn": "Missing Wallet",
+  "titleJa": "財布がない！",
+  "description": "夕方の駅のコンコースで、2人の高校生が電車に乗ろうとしているが、男子生徒が財布を見つけられず困っている。左側の男子生徒は開いたバックパックの中を焦った表情で探し、ポケットにも手を入れて財布を確認している。右側の女子生徒は落ち着いて周囲を見回しながら、ベンチの下に落ちている財布を見つけて指さしている。背景には改札口、券売機、駅の時計、電光掲示板、ベンチ、傘、飲み物などがあり、時計から電車の発車時刻が近いことが分かる。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly two Japanese teenage students inside a clean modern railway station concourse in the early evening. There must be exactly two visible people in the entire image: one teenage boy and one teenage girl. Do not include station staff, other passengers, reflected people, silhouettes, advertisements containing human figures, or distant pedestrians. The main story is that the boy cannot find his wallet just before they need to catch a train. On the left side of the foreground, the teenage boy is wearing casual clothes and carrying a backpack. His backpack is open, and he is searching inside it with one hand while checking one of his pockets with the other hand. His facial expression should clearly show worry, confusion, and urgency. Several harmless personal items such as a notebook, earphones, and a small towel are visible inside the open backpack, but the wallet is not inside. On the right side, his teenage female friend is standing calmly beside him and looking around the area. She has just noticed the missing wallet lying partly underneath a nearby station bench. She is pointing clearly toward the wallet with one hand while looking toward the boy, as if trying to tell him that she has found it. The wallet must be clearly visible on the floor beneath the front edge of the bench and should look like the same kind of item the boy is searching for. Create a secondary sense of urgency using environmental details rather than additional people: show a large station clock indicating that departure time is approaching, an electronic departure board with simple train icons and nonessential numbers, closed automatic ticket gates, a ticket machine, railway route map, bench, umbrella stand, reusable drink bottle, and a small shopping bag. A train may be visible through glass or an opening in the distant background, but no driver or passengers should be visible. Make the two actions immediately understandable: the boy anxiously searching for his missing wallet and the girl discovering and pointing toward the wallet under the bench. The emotional contrast should also be clear: the boy looks worried while the girl looks relieved and helpful. Exactly two visible people, no more and no less. No animals, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "station",
+          "ja": "駅",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "wallet",
+          "ja": "財布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "かばん",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bench",
+          "ja": "ベンチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "train",
+          "ja": "電車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "clock",
+          "ja": "時計",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "gate",
+          "ja": "改札",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る・探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "open",
+          "ja": "開ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "find",
+          "ja": "見つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look for his wallet",
+          "ja": "財布を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "open his bag",
+          "ja": "かばんを開ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check his pocket",
+          "ja": "ポケットを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the wallet",
+          "ja": "財布を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "under the bench",
+          "ja": "ベンチの下",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "at the station",
+          "ja": "駅で",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "catch a train",
+          "ja": "電車に乗る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look very worried",
+          "ja": "とても心配そうに見える",
+          "type": "emotion",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two students are at a train station.",
+          "grammar": "be動詞＋場所",
+          "ja": "2人の生徒が駅にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is looking for his wallet.",
+          "grammar": "現在進行形",
+          "ja": "男の子が財布を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is looking inside his bag.",
+          "grammar": "現在進行形",
+          "ja": "彼はかばんの中を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He looks worried.",
+          "grammar": "look＋形容詞",
+          "ja": "彼は心配そうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The girl is pointing at the floor.",
+          "grammar": "現在進行形",
+          "ja": "女の子が床を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The wallet is under the bench.",
+          "grammar": "be動詞＋場所",
+          "ja": "財布はベンチの下にあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a clock in the station.",
+          "grammar": "There is",
+          "ja": "駅には時計があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They want to catch a train.",
+          "grammar": "want to＋動詞",
+          "ja": "2人は電車に乗ろうとしています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "concourse",
+          "ja": "駅のコンコース",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "wallet",
+          "ja": "財布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "departure",
+          "ja": "出発",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "platform",
+          "ja": "ホーム",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "search",
+          "ja": "探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discover",
+          "ja": "見つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hurry",
+          "ja": "急ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "anxious",
+          "ja": "不安な",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "relieved",
+          "ja": "安心した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "confused",
+          "ja": "困惑した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "helpful",
+          "ja": "親切な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "urgent",
+          "ja": "緊急の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "search through his backpack",
+          "ja": "リュックの中を探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check his pockets",
+          "ja": "ポケットを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "lose his wallet",
+          "ja": "財布をなくす",
+          "type": "trouble",
+          "points": 20
+        },
+        {
+          "text": "notice something under the bench",
+          "ja": "ベンチの下の物に気づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "find the missing wallet",
+          "ja": "なくした財布を見つける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the floor",
+          "ja": "床の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catch the next train",
+          "ja": "次の電車に乗る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "feel relieved",
+          "ja": "安心する",
+          "type": "emotion",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are preparing to catch a train when they have a problem.",
+          "grammar": "when節",
+          "ja": "2人の生徒は電車に乗ろうとしている時に問題が起きています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is searching through his backpack because he cannot find his wallet.",
+          "grammar": "because節",
+          "ja": "男子生徒は財布が見つからないためリュックの中を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is also checking his pockets and looks increasingly anxious.",
+          "grammar": "現在進行形 / look＋形容詞",
+          "ja": "彼はポケットも確認しており、だんだん不安そうになっています。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "His friend has noticed a wallet lying under a nearby bench.",
+          "grammar": "現在完了形 / 現在分詞修飾",
+          "ja": "友達は近くのベンチの下に財布が落ちていることに気づきました。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is pointing toward it so that the boy can see where it is.",
+          "grammar": "so that",
+          "ja": "彼女は男子生徒が場所に気づけるよう財布を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The wallet appears to have fallen out of his bag earlier.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "財布は先ほど彼のかばんから落ちたようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The station clock suggests that their train may leave soon.",
+          "grammar": "suggest that / may",
+          "ja": "駅の時計から、電車がまもなく出発する可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The girl looks relieved because she has found the missing wallet.",
+          "grammar": "現在完了形 / because",
+          "ja": "女子生徒はなくした財布を見つけたため安心しているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "belongings",
+          "ja": "所持品",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "possession",
+          "ja": "所持品",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "departure",
+          "ja": "出発",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "predicament",
+          "ja": "困った状況",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "urgency",
+          "ja": "切迫感",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rummage",
+          "ja": "かき回して探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "misplace",
+          "ja": "置き忘れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spot",
+          "ja": "見つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "retrieve",
+          "ja": "取り戻す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "indicate",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distressed",
+          "ja": "ひどく困った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "relieved",
+          "ja": "ほっとした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "frantic",
+          "ja": "必死の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "imminent",
+          "ja": "差し迫った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "attentive",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "rummage through his belongings",
+          "ja": "所持品をかき回して探す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "realize that his wallet is missing",
+          "ja": "財布がないことに気づく",
+          "type": "trouble",
+          "points": 20
+        },
+        {
+          "text": "appear increasingly distressed",
+          "ja": "ますます困っているように見える",
+          "type": "emotion",
+          "points": 20
+        },
+        {
+          "text": "spot the misplaced wallet",
+          "ja": "置き忘れた財布を見つける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "indicate its location",
+          "ja": "その場所を指し示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retrieve the missing possession",
+          "ja": "なくした所持品を取り戻す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face an imminent departure",
+          "ja": "差し迫った出発時刻を迎える",
+          "type": "trouble",
+          "points": 20
+        },
+        {
+          "text": "create a sense of urgency",
+          "ja": "切迫感を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "avoid a potentially serious problem",
+          "ja": "大きな問題になるのを避ける",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students appear to be facing an unexpected predicament shortly before their train is due to depart.",
+          "grammar": "appear to be / be due to",
+          "ja": "2人の生徒は電車の出発直前に予期しない問題に直面しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is frantically rummaging through his belongings after realizing that his wallet is missing.",
+          "grammar": "after＋動名詞 / realize that",
+          "ja": "男子生徒は財布がないことに気づき、必死に所持品の中を探しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His tense expression and hurried movements indicate that he is becoming increasingly distressed.",
+          "grammar": "indicate that / 比較級",
+          "ja": "緊張した表情と慌ただしい動きから、彼がますます焦っていることが分かります。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, his companion has spotted the missing wallet partially concealed beneath a nearby bench.",
+          "grammar": "現在完了形 / 過去分詞修飾",
+          "ja": "その一方で、同行者は近くのベンチの下に一部隠れている財布を見つけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is pointing toward the wallet in order to draw his attention to its location.",
+          "grammar": "in order to",
+          "ja": "彼女は財布の場所に彼の注意を向けるため、そこを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The position of the wallet suggests that it may have fallen out of his backpack without his noticing.",
+          "grammar": "suggest that / may have＋過去分詞 / without＋動名詞",
+          "ja": "財布の位置から、彼が気づかないうちにリュックから落ちた可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The prominent station clock and departure display create a sense of urgency because the students appear to have limited time before boarding.",
+          "grammar": "because節 / appear to have",
+          "ja": "目立つ駅の時計と発車表示によって、乗車まで時間が限られているという切迫感が生まれています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Her discovery may allow them to retrieve the missing possession without missing their train.",
+          "grammar": "may / allow＋O＋to / without＋動名詞",
+          "ja": "彼女が財布を発見したことで、電車に乗り遅れることなく所持品を取り戻せるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how staying calm and paying attention to one's surroundings can help resolve an unexpected problem efficiently.",
+          "grammar": "how節 / 動名詞主語",
+          "ja": "この場面は、冷静さを保ち周囲に注意を払うことが、予期しない問題を効率よく解決する助けになることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "searching_boy": {
+      "x": 31,
+      "y": 55
+    },
+    "open_backpack": {
+      "x": 32,
+      "y": 67
+    },
+    "helpful_girl": {
+      "x": 65,
+      "y": 54
+    },
+    "missing_wallet": {
+      "x": 72,
+      "y": 73
+    },
+    "bench": {
+      "x": 76,
+      "y": 63
+    },
+    "station_clock": {
+      "x": 54,
+      "y": 17
+    },
+    "departure_board": {
+      "x": 72,
+      "y": 23
+    },
+    "ticket_gates": {
+      "x": 50,
+      "y": 44
+    },
+    "ticket_machine": {
+      "x": 88,
+      "y": 47
+    },
+    "train": {
+      "x": 15,
+      "y": 35
+    }
+  }
+}

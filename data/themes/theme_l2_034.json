@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_034",
+  "imageSrc": "assets/images/l2_034.webp",
+  "titleEn": "Convenience Store Culture",
+  "titleJa": "日本のコンビニ体験",
+  "description": "夕方の日本のコンビニで、日本人の高校生と海外から来た交換留学生がセルフレジを利用している。中央では交換留学生がセルフレジでおにぎりをスキャンしながら、多言語表示の画面を確認している。支払い方法がいくつも表示されているため、どれを選べばよいか少し戸惑っている。隣の日本人高校生は交通系ICカードを読み取り機に近づけながら、キャッシュレスで支払えることを教えている。2人はマイバッグを持っており、レジ横には弁当、おにぎり、ペットボトルのお茶などがある。背景には電子レンジ、給湯器、傘立て、宅配ロッカー、多言語案内、ごみ分別ボックスなどがあり、現代の日本のコンビニ文化や生活習慣を自然に学べる場面になっている。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. The theme is modern everyday life in Japan and intercultural understanding. Show exactly two teenage students inside a bright, clean, modern Japanese convenience store in the early evening: one Japanese high school student and one international exchange student visiting or living in Japan. There must be exactly two visible people in the entire image. Do not include store clerks, customers, reflected people, posters containing people, silhouettes, or distant human figures. The main event takes place at a self-checkout counter. In the center foreground, the international exchange student is holding a packaged rice ball in one hand and scanning its barcode at the self-checkout. The student is looking carefully at the touchscreen, which shows clear visual icons for Japanese, English, cashless payment, a shopping bag, and payment methods, but no important readable text. The exchange student should look slightly puzzled but curious because several unfamiliar payment choices are displayed. Beside the student, the Japanese high school friend is calmly demonstrating how to make a cashless payment by holding a plain transportation IC card close to the card reader. The Japanese student is pointing gently toward the card reader with the other hand, clearly helping the exchange student understand the system. Both students should have reusable shopping bags, emphasizing a common modern habit of declining disposable plastic bags. On the checkout counter, clearly show several typical but unbranded Japanese convenience-store items: one rice ball, a bento box, bottled green tea, a sandwich, yogurt, and a small dessert. In the background, create several secondary details representing contemporary everyday life in Japan: a microwave-heating station for prepared meals, a hot-water dispenser for instant noodles, neatly arranged recycling and trash bins with visual icons separating plastic bottles, cans, and general waste, an umbrella stand near the entrance, an ATM, a compact parcel pickup locker, a photocopy and multifunction machine, shelves of rice balls and ready-made meals, bottled drinks in a refrigerator, and a small multilingual information sign using flag or language icons. Include a visible store clock and large windows showing an evening Japanese street outside, but absolutely no people outside. Make the cultural-learning story visually clear: the exchange student is learning how Japanese self-checkout and cashless payment work, while the Japanese student is providing friendly help. The environmental details should allow learners to describe modern Japanese practices such as self-service checkout, IC-card payment, reusable bags, convenience-store meals, reheating food, recycling, parcel pickup, and multilingual services. Exactly two visible people, no more and no less. No animals, no speech bubbles, no recognizable brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "store",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "card",
+          "ja": "カード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rice ball",
+          "ja": "おにぎり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tea",
+          "ja": "お茶",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "box",
+          "ja": "弁当箱・箱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "buy",
+          "ja": "買う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pay",
+          "ja": "支払う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scan",
+          "ja": "読み取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "見せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "confused",
+          "ja": "困った・戸惑った",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "buy some food",
+          "ja": "食べ物を買う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "scan a rice ball",
+          "ja": "おにぎりをスキャンする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the screen",
+          "ja": "画面を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pay with a card",
+          "ja": "カードで支払う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a shopping bag",
+          "ja": "買い物バッグを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "help a friend",
+          "ja": "友達を助ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "at a convenience store",
+          "ja": "コンビニで",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "many kinds of food",
+          "ja": "いろいろな食べ物",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two students are shopping at a convenience store.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒がコンビニで買い物をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One student is scanning a rice ball.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒がおにぎりをスキャンしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is looking at the screen.",
+          "grammar": "現在進行形",
+          "ja": "その生徒は画面を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is holding a card.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒はカードを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is showing how to pay.",
+          "grammar": "how to＋動詞",
+          "ja": "その生徒は支払い方を教えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a bento box on the counter.",
+          "grammar": "There is",
+          "ja": "カウンターに弁当があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are recycling boxes in the store.",
+          "grammar": "There are",
+          "ja": "店にはごみ分別ボックスがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two students are learning together.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒は一緒に学んでいます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "convenience store",
+          "ja": "コンビニエンスストア",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "exchange student",
+          "ja": "交換留学生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "checkout",
+          "ja": "レジ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "payment",
+          "ja": "支払い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "recycling",
+          "ja": "リサイクル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "scan",
+          "ja": "読み取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "select",
+          "ja": "選択する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "実演する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reheat",
+          "ja": "温め直す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "分別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "unfamiliar",
+          "ja": "慣れていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convenient",
+          "ja": "便利な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cashless",
+          "ja": "現金を使わない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multilingual",
+          "ja": "多言語対応の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "curious",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "use a self-checkout machine",
+          "ja": "セルフレジを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scan the barcode",
+          "ja": "バーコードを読み取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose a payment method",
+          "ja": "支払い方法を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make a cashless payment",
+          "ja": "キャッシュレスで支払う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a reusable bag",
+          "ja": "マイバッグを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reheat a prepared meal",
+          "ja": "調理済みの食事を温める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "separate the trash",
+          "ja": "ごみを分別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about Japanese daily life",
+          "ja": "日本の日常生活について学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are using a self-checkout machine at a Japanese convenience store.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒は日本のコンビニでセルフレジを使っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The exchange student is scanning the barcode on a rice ball.",
+          "grammar": "現在進行形",
+          "ja": "交換留学生はおにぎりのバーコードを読み取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student appears unsure about which payment method to choose.",
+          "grammar": "appear＋形容詞 / 疑問詞＋to",
+          "ja": "その生徒はどの支払い方法を選べばよいか戸惑っているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student is demonstrating how to use an IC card.",
+          "grammar": "how to＋動詞",
+          "ja": "日本人の生徒はICカードの使い方を実演しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Both students are carrying reusable shopping bags instead of taking plastic bags.",
+          "grammar": "instead of＋動名詞",
+          "ja": "2人ともレジ袋をもらう代わりにマイバッグを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A microwave is available for customers who want to reheat prepared meals.",
+          "grammar": "関係代名詞who / want to",
+          "ja": "調理済みの食事を温めたい人のために電子レンジがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several recycling bins show that customers are expected to separate their waste.",
+          "grammar": "show that / be expected to",
+          "ja": "複数の分別ボックスから、利用者がごみを分別することが求められていると分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The exchange student seems to be learning about modern Japanese shopping habits.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "交換留学生は現代の日本の買い物習慣について学んでいるようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "automation",
+          "ja": "自動化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "transaction",
+          "ja": "取引・決済",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "custom",
+          "ja": "習慣・慣習",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accessibility",
+          "ja": "利用しやすさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sustainability",
+          "ja": "持続可能性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "操作方法を理解して進める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "実演する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "adapt",
+          "ja": "適応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "facilitate",
+          "ja": "容易にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "categorize",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "intuitive",
+          "ja": "直感的に使える",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unfamiliar",
+          "ja": "不慣れな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "contactless",
+          "ja": "非接触式の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multilingual",
+          "ja": "多言語対応の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "environmentally conscious",
+          "ja": "環境への意識が高い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "navigate an unfamiliar self-checkout system",
+          "ja": "不慣れなセルフレジを操作する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "complete a contactless transaction",
+          "ja": "非接触型決済を完了する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "demonstrate the use of an IC card",
+          "ja": "ICカードの使い方を実演する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adapt to local shopping customs",
+          "ja": "現地の買い物習慣に適応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "facilitate communication through multilingual interfaces",
+          "ja": "多言語画面によって意思疎通を容易にする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reduce dependence on disposable bags",
+          "ja": "使い捨て袋への依存を減らす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "categorize waste for recycling",
+          "ja": "リサイクルのためにごみを分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "experience contemporary Japanese daily life",
+          "ja": "現代の日本の日常生活を体験する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "develop intercultural awareness",
+          "ja": "異文化への理解を深める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are experiencing a common aspect of contemporary Japanese daily life through a self-service convenience-store transaction.",
+          "grammar": "through＋名詞",
+          "ja": "2人の生徒はコンビニでのセルフサービス決済を通して、現代日本の日常生活の一面を体験しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The exchange student is attempting to navigate an unfamiliar checkout interface while scanning a packaged rice ball.",
+          "grammar": "attempt to / while＋現在分詞",
+          "ja": "交換留学生はおにぎりをスキャンしながら、不慣れなレジ画面を操作しようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student's hesitant expression suggests that the range of available payment methods is initially somewhat confusing.",
+          "grammar": "suggest that",
+          "ja": "戸惑った表情から、利用できる支払い方法の多さに最初は少し混乱していることがうかがえます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The Japanese friend is demonstrating a contactless transaction by positioning an IC card near the reader.",
+          "grammar": "by＋動名詞",
+          "ja": "日本人の友人はICカードを読み取り機に近づけることで、非接触決済を実演しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The multilingual interface appears designed to make the automated checkout process more accessible to international visitors.",
+          "grammar": "appear＋過去分詞 / make＋O＋C",
+          "ja": "多言語対応の画面は、海外からの利用者にも自動レジを使いやすくするために設計されているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their reusable bags reflect an environmentally conscious shift away from unnecessary disposable plastic bags.",
+          "grammar": "shift away from",
+          "ja": "2人のマイバッグは、不要な使い捨てレジ袋を減らそうとする環境意識の変化を表しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The microwave, parcel locker, ATM, and multifunction machine illustrate how convenience stores provide services extending well beyond the sale of food.",
+          "grammar": "how節 / 現在分詞修飾",
+          "ja": "電子レンジ、宅配ロッカー、ATM、多機能端末は、コンビニが食品販売を超えたサービスを提供していることを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The recycling station suggests that customers are expected to categorize certain types of waste rather than dispose of everything together.",
+          "grammar": "suggest that / rather than",
+          "ja": "分別ボックスから、利用者にはすべてを一緒に捨てるのではなく、特定のごみを分類することが求められていると分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how an ordinary shopping experience can become an opportunity to adapt to local customs and develop intercultural awareness.",
+          "grammar": "how節 / opportunity to",
+          "ja": "この場面は、何気ない買い物が現地の習慣に適応し、異文化理解を深める機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "exchange_student": {
+      "x": 43,
+      "y": 55
+    },
+    "japanese_student": {
+      "x": 65,
+      "y": 54
+    },
+    "self_checkout": {
+      "x": 51,
+      "y": 55
+    },
+    "touchscreen": {
+      "x": 51,
+      "y": 42
+    },
+    "barcode_scanner": {
+      "x": 48,
+      "y": 60
+    },
+    "rice_ball": {
+      "x": 43,
+      "y": 60
+    },
+    "ic_card": {
+      "x": 61,
+      "y": 55
+    },
+    "card_reader": {
+      "x": 57,
+      "y": 58
+    },
+    "reusable_bag": {
+      "x": 70,
+      "y": 69
+    },
+    "bento_box": {
+      "x": 54,
+      "y": 68
+    },
+    "bottled_tea": {
+      "x": 59,
+      "y": 68
+    },
+    "sandwich": {
+      "x": 49,
+      "y": 69
+    },
+    "microwave": {
+      "x": 77,
+      "y": 37
+    },
+    "hot_water_dispenser": {
+      "x": 86,
+      "y": 41
+    },
+    "recycling_bins": {
+      "x": 82,
+      "y": 70
+    },
+    "atm": {
+      "x": 13,
+      "y": 45
+    },
+    "parcel_locker": {
+      "x": 18,
+      "y": 66
+    },
+    "multifunction_machine": {
+      "x": 24,
+      "y": 46
+    },
+    "umbrella_stand": {
+      "x": 91,
+      "y": 66
+    },
+    "multilingual_sign": {
+      "x": 72,
+      "y": 23
+    }
+  }
+}

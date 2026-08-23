@@ -1,0 +1,745 @@
+{
+  "id": "theme_l2_036",
+  "imageSrc": "assets/images/l2_036.webp",
+  "titleEn": "Shared Bike Adventure",
+  "titleJa": "シェアサイクル体験",
+  "description": "晴れた休日の夕方、日本の住宅街にあるシェアサイクルポートで、日本人の高校生と海外から来た交換留学生が電動アシスト自転車を借りようとしている。左側の交換留学生はスマートフォンで自転車後部のQRコードを読み取り、ロックを解除しようとしている。スマートフォンには地図と自転車の利用画面が表示されている。右側の日本人高校生はヘルメットを着用し、道路に描かれた自転車レーンと進行方向を指さしながら、日本では自転車も基本的に道路の左側を走ることを身振りで説明している。2台の電動アシスト付きシェアサイクルには前かご、ライト、バッテリー、後輪ロックがあり、ポートには返却場所を示す白線と案内板がある。背景には日本の住宅、電柱、横断歩道、自動販売機、点字ブロック、道路標識などがあり、現代の日本の都市生活と交通習慣を学べる場面になっている。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration designed for an IELTS or Eiken English speaking picture-description test. The theme is contemporary everyday life in Japan, urban mobility, and intercultural understanding. Show exactly two teenage students at a realistic shared bicycle rental port in a modern Japanese residential neighborhood on a bright late-afternoon weekend. There must be exactly two visible people in the entire illustration: one international exchange student and one Japanese high school student. Do not include pedestrians, cyclists, shop staff, reflected people, silhouettes, people inside houses, or advertisements containing human figures. The physical layout should resemble a real contemporary Japanese urban shared-cycle port. In the left foreground, show an international teenage student wearing casual clothes and a small backpack. The student is standing beside a modern electric-assist shared bicycle and holding a smartphone naturally with the screen facing the student. The rear camera of the phone is aimed at a clearly visible QR-code-style rental label positioned near the bicycle's rear wheel lock. The student is scanning the code to unlock the bicycle and should look slightly uncertain but curious and interested. On the smartphone screen, show a simple bicycle-rental interface containing a small city map, a bicycle icon, battery indicator, route line, and unlock symbol, but no important readable text. On the right side, show a Japanese high school student wearing a neat school uniform and a bicycle helmet. The Japanese student is standing beside a second shared electric-assist bicycle and pointing clearly toward a blue bicycle lane marking on the road. The lane should contain a bicycle symbol and directional arrow showing the correct direction of travel. The student should use natural body language to explain local cycling behavior and how to leave the rental port safely. Make the cultural-learning story visually obvious: the international student is learning how to unlock and use a Japanese shared bicycle, while the Japanese student is explaining the local cycling system and road layout. Include exactly two shared electric-assist bicycles. Both bicycles should have realistic Japanese city-bike features: front baskets, integrated front lights, kickstands, rear wheel locks, small electric-assist batteries, reflectors, mudguards, and adjustable saddles. One bicycle should still be locked inside a clearly marked rental parking bay, while the second is ready to be used. Show painted rectangular parking bays on the ground and a shared-cycle information sign with QR, bicycle, smartphone, return, and parking icons but no company branding or important readable text. Include two bicycle helmets in total: one being worn by the Japanese student and one hanging from or resting inside the international student's bicycle basket ready to use. In the background, create a realistic Japanese neighborhood: detached houses with tiled or modern roofs, balconies, narrow sidewalks, utility poles, overhead electric cables, a small neighborhood vending machine, a pedestrian crossing, tactile paving near the crossing, convex traffic safety mirror, guardrail, drainage channel, traffic light, road markings, and a small planted roadside area. Include a blue bicycle lane or bicycle-direction marking along the left side of the roadway. Show a small designated bicycle parking sign and a simple map of nearby return ports. Add one reusable water bottle in a bicycle basket and a folded light jacket in the other basket. The background street should be quiet with no moving vehicles or additional people so the scene remains clear. Warm late-afternoon sunlight should create realistic but soft shadows. The two main actions must be immediately understandable: the international student scanning a QR code to unlock a shared bicycle, and the Japanese student explaining the bicycle lane and direction of travel. The secondary details should make it possible to discuss QR-based rentals, electric-assist bicycles, designated parking, helmets, local road layout, vending machines, tactile paving, and contemporary Japanese urban life. Exactly two visible people, no more and no less. No animals, no speech bubbles, no recognizable brand logos, no copyrighted characters, no important readable text. Landscape 16:9 composition. Clean colorful polished Japanese educational illustration style, clearly illustrated rather than photographic, realistic human proportions, realistic Japanese street layout, information-dense but visually organized and uncluttered, suitable for English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bike",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "basket",
+          "ja": "かご",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "標識",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "ライト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scan",
+          "ja": "読み取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ride",
+          "ja": "乗る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wear",
+          "ja": "身につける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ride a bike",
+          "ja": "自転車に乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a smartphone",
+          "ja": "スマートフォンを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scan the code",
+          "ja": "コードを読み取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the road",
+          "ja": "道路を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "two bicycles",
+          "ja": "2台の自転車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "help a friend",
+          "ja": "友達を助ける",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two students are getting bicycles.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が自転車を借りようとしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One student is using a smartphone.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒がスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is scanning a code.",
+          "grammar": "現在進行形",
+          "ja": "その生徒はコードを読み取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is wearing a helmet.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒はヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is pointing at the road.",
+          "grammar": "現在進行形",
+          "ja": "その生徒は道路を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two bicycles.",
+          "grammar": "There are",
+          "ja": "自転車が2台あります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a helmet in the basket.",
+          "grammar": "There is",
+          "ja": "かごの中にヘルメットがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are learning together.",
+          "grammar": "現在進行形",
+          "ja": "2人は一緒に学んでいます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "rental",
+          "ja": "レンタル",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "bicycle lane",
+          "ja": "自転車レーン",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "traffic",
+          "ja": "交通",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "battery",
+          "ja": "バッテリー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "parking area",
+          "ja": "駐輪場所",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "unlock",
+          "ja": "ロックを解除する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rent",
+          "ja": "借りる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "follow",
+          "ja": "従う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "return",
+          "ja": "返却する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "unfamiliar",
+          "ja": "不慣れな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "electric",
+          "ja": "電動の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convenient",
+          "ja": "便利な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "curious",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "rent a shared bicycle",
+          "ja": "シェアサイクルを借りる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scan a QR code",
+          "ja": "QRコードを読み取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "unlock the bicycle",
+          "ja": "自転車のロックを解除する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use an electric-assist bicycle",
+          "ja": "電動アシスト自転車を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow the bicycle lane",
+          "ja": "自転車レーンを進む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a bicycle helmet",
+          "ja": "自転車用ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "return the bike to a port",
+          "ja": "自転車をポートへ返却する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn local cycling habits",
+          "ja": "現地の自転車利用の習慣を学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are preparing to use shared bicycles in a Japanese neighborhood.",
+          "grammar": "prepare to＋動詞",
+          "ja": "2人の生徒は日本の住宅街でシェアサイクルを利用しようとしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The exchange student is scanning a QR code to unlock the bicycle.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "交換留学生は自転車のロックを解除するためQRコードを読み取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The smartphone screen shows a map and information about the bicycle.",
+          "grammar": "現在形",
+          "ja": "スマートフォンの画面には地図と自転車の情報が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student is pointing at the bicycle lane and explaining where to ride.",
+          "grammar": "現在進行形 / 疑問詞＋to",
+          "ja": "日本人の生徒は自転車レーンを指さし、どこを走ればよいか説明しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student is wearing a helmet before starting the ride.",
+          "grammar": "before＋動名詞",
+          "ja": "その生徒は走り始める前にヘルメットを着用しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The bicycles appear to have electric-assist batteries.",
+          "grammar": "appear to have",
+          "ja": "自転車には電動アシスト用バッテリーが付いているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The painted parking bays show where users should return the bicycles.",
+          "grammar": "where節",
+          "ja": "地面の駐輪枠から、利用者がどこへ自転車を返却すればよいか分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The exchange student seems to be learning about local transportation habits.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "交換留学生は地域の交通習慣について学んでいるようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "micromobility",
+          "ja": "小型移動手段",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "交通インフラ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "navigation",
+          "ja": "経路確認",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "etiquette",
+          "ja": "利用上のマナー",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accessibility",
+          "ja": "利用しやすさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "activate",
+          "ja": "作動させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "経路を確認して進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "orient",
+          "ja": "方向を把握する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "comply",
+          "ja": "従う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "integrate",
+          "ja": "組み込む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "designated",
+          "ja": "指定された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "contactless",
+          "ja": "非接触型の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "electric-assisted",
+          "ja": "電動アシスト式の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "efficient",
+          "ja": "効率的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intercultural",
+          "ja": "異文化間の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "access a shared micromobility service",
+          "ja": "シェア型の小型移動サービスを利用する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "activate the bicycle through a QR code",
+          "ja": "QRコードで自転車を作動させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "navigate an unfamiliar rental interface",
+          "ja": "不慣れなレンタル画面を操作する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow designated cycling infrastructure",
+          "ja": "指定された自転車用交通設備を利用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adapt to local cycling etiquette",
+          "ja": "地域の自転車マナーに適応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "return the bicycle to a designated port",
+          "ja": "指定ポートに自転車を返却する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "combine digital navigation with transportation",
+          "ja": "デジタル経路案内と交通手段を組み合わせる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "experience contemporary Japanese urban mobility",
+          "ja": "現代日本の都市型移動手段を体験する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "develop intercultural awareness",
+          "ja": "異文化理解を深める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are experiencing a form of app-based urban micromobility that has become increasingly visible in contemporary Japanese cities.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "2人の生徒は、現代の日本の都市で目にする機会が増えているアプリ型の小型移動サービスを体験しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The international student is attempting to activate an electric-assist bicycle by scanning the rental code with a smartphone.",
+          "grammar": "attempt to / by＋動名詞",
+          "ja": "海外から来た生徒はスマートフォンでレンタルコードを読み取り、電動アシスト自転車を利用しようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The map, battery indicator, and unlock icon suggest that multiple stages of the rental process are managed digitally.",
+          "grammar": "suggest that / 受動態",
+          "ja": "地図、バッテリー表示、解錠アイコンから、レンタル手続きの複数の段階がデジタルで管理されていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The Japanese student is orienting the visitor by pointing toward the designated bicycle lane and its directional marking.",
+          "grammar": "by＋動名詞",
+          "ja": "日本人の生徒は指定された自転車レーンと進行方向を指さし、訪問者に進み方を説明しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The explanation appears intended to help the visitor adapt to local road layouts and cycling etiquette before beginning the journey.",
+          "grammar": "appear＋過去分詞 / help＋O＋動詞",
+          "ja": "その説明は、走行を始める前に訪問者が地域の道路構造や自転車利用のマナーに慣れるのを助けるためのようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Features such as integrated batteries, wheel locks, lights, baskets, and digital access illustrate how conventional city bicycles have been combined with modern technology.",
+          "grammar": "how節 / 現在完了受動態",
+          "ja": "バッテリー、後輪ロック、ライト、かご、デジタル解錠などから、従来の街乗り自転車と現代技術が組み合わされていることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The painted parking bays indicate that the bicycles are expected to be returned to designated locations rather than left anywhere along the street.",
+          "grammar": "indicate that / rather than",
+          "ja": "地面の駐輪枠から、自転車は路上の好きな場所ではなく指定場所へ返却することが想定されていると分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The surrounding vending machine, tactile paving, utility poles, compact sidewalks, and residential buildings provide additional clues about everyday Japanese urban infrastructure.",
+          "grammar": "現在形",
+          "ja": "周囲の自動販売機、点字ブロック、電柱、コンパクトな歩道、住宅は、日本の日常的な都市インフラを示す追加の手がかりになっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how learning to use an ordinary transportation service can also involve adapting to local technology, infrastructure, and social conventions.",
+          "grammar": "how節 / 動名詞主語",
+          "ja": "この場面は、日常的な交通サービスの使い方を学ぶことが、地域の技術、インフラ、社会的な習慣への適応にもつながることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "exchange_student": {
+      "x": 28,
+      "y": 54
+    },
+    "japanese_student": {
+      "x": 69,
+      "y": 52
+    },
+    "smartphone": {
+      "x": 30,
+      "y": 48
+    },
+    "rental_app_screen": {
+      "x": 31,
+      "y": 45
+    },
+    "qr_code": {
+      "x": 39,
+      "y": 64
+    },
+    "rear_wheel_lock": {
+      "x": 40,
+      "y": 68
+    },
+    "first_shared_bicycle": {
+      "x": 35,
+      "y": 62
+    },
+    "second_shared_bicycle": {
+      "x": 66,
+      "y": 65
+    },
+    "first_front_basket": {
+      "x": 43,
+      "y": 55
+    },
+    "second_front_basket": {
+      "x": 76,
+      "y": 56
+    },
+    "spare_helmet": {
+      "x": 43,
+      "y": 53
+    },
+    "worn_helmet": {
+      "x": 69,
+      "y": 38
+    },
+    "electric_battery": {
+      "x": 62,
+      "y": 65
+    },
+    "bicycle_light": {
+      "x": 75,
+      "y": 61
+    },
+    "shared_cycle_sign": {
+      "x": 50,
+      "y": 28
+    },
+    "parking_bays": {
+      "x": 51,
+      "y": 77
+    },
+    "bicycle_lane": {
+      "x": 83,
+      "y": 72
+    },
+    "bicycle_lane_arrow": {
+      "x": 86,
+      "y": 68
+    },
+    "pedestrian_crossing": {
+      "x": 91,
+      "y": 47
+    },
+    "tactile_paving": {
+      "x": 89,
+      "y": 59
+    },
+    "traffic_light": {
+      "x": 94,
+      "y": 27
+    },
+    "safety_mirror": {
+      "x": 81,
+      "y": 27
+    },
+    "vending_machine": {
+      "x": 10,
+      "y": 49
+    },
+    "utility_pole": {
+      "x": 88,
+      "y": 18
+    },
+    "overhead_cables": {
+      "x": 72,
+      "y": 11
+    },
+    "japanese_houses": {
+      "x": 76,
+      "y": 25
+    },
+    "water_bottle": {
+      "x": 75,
+      "y": 54
+    },
+    "folded_jacket": {
+      "x": 42,
+      "y": 56
+    }
+  }
+}

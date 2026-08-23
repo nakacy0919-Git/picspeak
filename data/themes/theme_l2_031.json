@@ -1,0 +1,673 @@
+{
+  "id": "theme_l2_031",
+  "imageSrc": "assets/images/l2_031.webp",
+  "titleEn": "Zoo Adventure Day",
+  "titleJa": "動物園を探検",
+  "description": "晴れた休日、2人の高校生が動物園を訪れている。中央寄りでは男子生徒が園内マップを広げ、現在地と次に行く動物エリアを確認している。左側では女子生徒がスマートフォンを横向きに構え、高い木の葉を食べているキリンを撮影している。背景ではゾウが浅い池のそばで鼻を水に伸ばし、さらに2頭のシマウマが草を食べている。周囲には案内標識、ベンチ、木々、岩、池、花などがあり、2人が動物園を楽しみながら動物の行動を観察している。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality, detailed illustration designed for an IELTS or Eiken English speaking picture-description test. Show exactly two Japanese teenage students visiting a spacious modern zoo on a bright sunny weekend. There must be exactly two visible people in the entire image: one teenage boy and one teenage girl. Do not include any additional visitors, zoo staff, reflected people, silhouettes, distant pedestrians, or human figures in the background. The atmosphere should be adventurous, educational, cheerful, relaxed, and visually easy to understand. In the center foreground, the teenage boy is wearing casual weekend clothes and a small backpack. He is holding an unfolded zoo map with both hands, looking carefully at it and pointing with one finger to a colored route. The map should contain simple animal icons and colored paths rather than important readable text. His action must clearly communicate that he is deciding where they should go next. On the left side, the teenage girl is standing near a safe visitor railing and holding a smartphone horizontally in a physically natural position. The smartphone screen must face the girl, while the rear camera is naturally aimed toward a nearby giraffe. She is clearly taking a photograph of the giraffe and smiling with interest. Behind the safe barrier, show one tall giraffe stretching its long neck upward and eating green leaves from a high tree branch. In the middle-to-right background, show one elephant near a shallow pond. The elephant is extending its trunk toward the water as if drinking or spraying water. Farther behind it, show exactly two zebras peacefully grazing on grass. These animal actions should create secondary descriptive details even though there are only two human characters. Make the animal habitats spacious, green, naturalistic, and humane, with grass, large trees, rocks, logs, bushes, flowers, shade, and a shallow pond. Include a wooden zoo direction sign with simple pictograms for giraffes, elephants, zebras, restrooms, and a cafe, but no important readable text. Include a wooden bench, two reusable water bottles, a pair of binoculars resting on the bench, a brochure holder, recycling bins, railings, and a winding visitor path. Make the two human activities visually distinct and immediately understandable: the boy checking the zoo map and the girl photographing the giraffe. The background sub-story must also be clearly visible: the elephant interacting with the pond and two zebras grazing. Exactly two visible people, no more and no less. No staff, no crowds, no people reflected in glass, no human-shaped signs, no animals outside designated habitats, no dangerous interactions, no speech bubbles, no brand logos, no copyrighted characters, and no important readable text. Landscape 16:9 composition, clean colorful educational illustration style with realistic proportions, highly detailed but visually organized and uncluttered, expressive natural body language, suitable for an English speaking assessment.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "zoo",
+          "ja": "動物園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "giraffe",
+          "ja": "キリン",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "elephant",
+          "ja": "ゾウ",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "zebra",
+          "ja": "シマウマ",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "eat",
+          "ja": "食べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "楽しそうな",
+          "type": "emotion",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "visit the zoo",
+          "ja": "動物園を訪れる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look at the map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a tall giraffe",
+          "ja": "背の高いキリン",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "eat some leaves",
+          "ja": "葉を食べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an elephant by the water",
+          "ja": "水辺にいるゾウ",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "two zebras",
+          "ja": "2頭のシマウマ",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "walk around the zoo",
+          "ja": "動物園を見て回る",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two students are visiting a zoo.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が動物園を訪れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is looking at a map.",
+          "grammar": "現在進行形",
+          "ja": "男の子が地図を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is taking a picture of a giraffe.",
+          "grammar": "現在進行形",
+          "ja": "女の子がキリンの写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The giraffe is eating leaves.",
+          "grammar": "現在進行形",
+          "ja": "キリンが葉を食べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An elephant is standing near the water.",
+          "grammar": "現在進行形",
+          "ja": "ゾウが水辺に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The elephant is using its trunk.",
+          "grammar": "現在進行形",
+          "ja": "ゾウは鼻を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two zebras in the background.",
+          "grammar": "There are",
+          "ja": "背景には2頭のシマウマがいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "2人の生徒は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "visitor",
+          "ja": "来園者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "enclosure",
+          "ja": "飼育エリア",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "binoculars",
+          "ja": "双眼鏡",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "ルート",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explore",
+          "ja": "見て回る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "choose",
+          "ja": "選ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "graze",
+          "ja": "草を食べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "わくわくした",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "interested",
+          "ja": "興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "impressed",
+          "ja": "感動した",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "natural",
+          "ja": "自然な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "explore the zoo",
+          "ja": "動物園を見て回る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "check the zoo map",
+          "ja": "動物園の地図を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose the next area",
+          "ja": "次に行くエリアを選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the giraffe",
+          "ja": "キリンを撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stretch its long neck",
+          "ja": "長い首を伸ばす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand beside a pond",
+          "ja": "池のそばに立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "graze on the grass",
+          "ja": "草を食べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enjoy seeing the animals",
+          "ja": "動物を見るのを楽しむ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two students are exploring a large zoo on a sunny day.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒は晴れた日に大きな動物園を見て回っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The boy is checking the zoo map to decide where they should go next.",
+          "grammar": "to不定詞 / 間接疑問",
+          "ja": "男子生徒は次にどこへ行くか決めるため園内マップを確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears to be comparing several possible routes.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼はいくつかのルートを比較しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The girl is photographing a giraffe with her smartphone.",
+          "grammar": "現在進行形",
+          "ja": "女子生徒はスマートフォンでキリンを撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The giraffe is stretching its neck to reach leaves on a high branch.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "キリンは高い枝の葉に届くよう首を伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An elephant is standing beside a shallow pond and reaching toward the water with its trunk.",
+          "grammar": "現在進行形",
+          "ja": "ゾウが浅い池のそばに立ち、鼻を水へ伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two zebras are grazing quietly in the background.",
+          "grammar": "現在進行形＋副詞",
+          "ja": "背景では2頭のシマウマが静かに草を食べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students seem interested in observing the animals in different ways.",
+          "grammar": "seem＋形容詞 / be interested in",
+          "ja": "2人はさまざまな方法で動物を観察することに興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "wildlife",
+          "ja": "野生動物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vegetation",
+          "ja": "植生",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "observation",
+          "ja": "観察",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "conservation",
+          "ja": "保全",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "経路を判断して進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consult",
+          "ja": "参照する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "graze",
+          "ja": "草を食べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interact",
+          "ja": "相互作用する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "captivated",
+          "ja": "魅了された",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "intrigued",
+          "ja": "強く興味を持った",
+          "type": "emotion",
+          "points": 10
+        },
+        {
+          "text": "naturalistic",
+          "ja": "自然環境を再現した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "immersive",
+          "ja": "没入感のある",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "navigate around the zoo",
+          "ja": "園内の経路を確認して回る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consult a detailed visitor map",
+          "ja": "詳しい園内マップを参照する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "determine the next destination",
+          "ja": "次の目的地を決める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document the giraffe with a photograph",
+          "ja": "キリンを写真に収める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe natural animal behavior",
+          "ja": "自然な動物行動を観察する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "interact with the water",
+          "ja": "水と触れ合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "graze in a spacious enclosure",
+          "ja": "広い飼育エリアで草を食べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "resemble a natural habitat",
+          "ja": "自然の生息環境に似ている",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "develop an awareness of wildlife conservation",
+          "ja": "野生動物保全への意識を高める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two visitors are exploring the zoo while observing several examples of animal behavior.",
+          "grammar": "while＋現在分詞",
+          "ja": "2人の来園者は複数の動物行動を観察しながら動物園を見て回っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The male student is consulting a detailed visitor map in order to determine the most convenient route to their next destination.",
+          "grammar": "in order to",
+          "ja": "男子生徒は次の目的地への最も便利なルートを決めるため、詳しい園内マップを参照しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His gesture suggests that he is comparing several possible routes through the zoo.",
+          "grammar": "suggest that",
+          "ja": "彼のしぐさから、園内の複数のルートを比較していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "His companion is using her smartphone to document a giraffe as it feeds on leaves from a high branch.",
+          "grammar": "as節 / to不定詞",
+          "ja": "同行している女子生徒は、高い枝の葉を食べているキリンをスマートフォンで撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her expression suggests that she is captivated by the giraffe's unusual height and feeding behavior.",
+          "grammar": "suggest that",
+          "ja": "彼女の表情から、キリンの特徴的な高さと食事行動に魅了されていることがうかがえます。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, an elephant is interacting with the shallow pond by extending its trunk toward the water.",
+          "grammar": "by＋動名詞",
+          "ja": "その一方で、ゾウは鼻を水へ伸ばすことで浅い池と触れ合っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two zebras grazing in the background provide an additional example of natural animal behavior.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "背景で草を食べている2頭のシマウマも、自然な動物行動の一例となっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The spacious enclosure, dense vegetation, rocks, and water features appear designed to resemble a natural habitat.",
+          "grammar": "appear＋過去分詞 / to不定詞",
+          "ja": "広い飼育エリア、豊かな植物、岩、水辺は、自然の生息環境を再現するよう設計されているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how a recreational zoo visit can encourage curiosity, careful observation, and greater awareness of wildlife conservation.",
+          "grammar": "how節",
+          "ja": "この場面は、動物園へのお出かけが好奇心や注意深い観察を促し、野生動物保全への意識を高める機会になり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "map_boy": {
+      "x": 49,
+      "y": 58
+    },
+    "zoo_map": {
+      "x": 48,
+      "y": 65
+    },
+    "photographer_girl": {
+      "x": 25,
+      "y": 58
+    },
+    "smartphone": {
+      "x": 26,
+      "y": 48
+    },
+    "giraffe": {
+      "x": 13,
+      "y": 29
+    },
+    "elephant": {
+      "x": 81,
+      "y": 39
+    },
+    "pond": {
+      "x": 82,
+      "y": 60
+    },
+    "zebras": {
+      "x": 66,
+      "y": 43
+    },
+    "zoo_direction_sign": {
+      "x": 59,
+      "y": 28
+    },
+    "bench": {
+      "x": 72,
+      "y": 72
+    }
+  }
+}
