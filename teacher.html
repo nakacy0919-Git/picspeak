@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PicSpeak - For Teachers</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
+        .bg-sns-gradient { background: linear-gradient(45deg, #c13584, #f56040, #fcaf45); }
+        .text-sns-gradient { background: linear-gradient(45deg, #c13584, #f56040, #fcaf45); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    </style>
+</head>
+<body class="bg-gray-50 text-gray-800 font-sans min-h-screen pb-20">
+
+    <!-- ヘッダー -->
+    <header class="bg-white/90 backdrop-blur-md shadow-sm border-b border-gray-200 sticky top-0 z-50">
+        <div class="max-w-5xl mx-auto px-4 py-3 md:py-4 flex justify-between items-center">
+            <div class="flex items-center gap-2 md:gap-3">
+                <button onclick="window.location.href='index.html'" class="w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホームに戻る">🏠</button>
+                <h1 class="text-2xl md:text-3xl font-black text-sns-gradient tracking-tighter" style="font-family: 'Nunito', sans-serif;">PicSpeak</h1>
+                <span class="bg-gray-800 text-white text-[10px] md:text-xs font-bold px-2 py-0.5 rounded-md ml-1">For Teachers</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="max-w-3xl mx-auto px-4 mt-8 md:mt-10">
+        <div class="text-center mb-8 md:mb-10">
+            <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-2">課題リンク生成ツール 🔗</h2>
+            <p class="text-sm md:text-base text-gray-500 font-bold">生徒に取り組ませたい画像と提出先を設定して、専用URLを発行します。</p>
+        </div>
+
+        <div class="bg-white rounded-3xl shadow-md border border-gray-100 p-6 md:p-8 space-y-8">
+            
+            <!-- STEP 1 -->
+            <section>
+                <h3 class="text-lg md:text-xl font-black text-pink-500 mb-3 flex items-center gap-2">
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">1</span>
+                    成績回収用フォームの準備
+                </h3>
+                <p class="text-sm text-gray-600 font-medium mb-3">以下のボタンから、PicSpeak専用のGoogleフォームのひな形をご自身のGoogleドライブにコピーしてください。</p>
+                <a href="https://docs.google.com/forms/d/1XMtUzrAVord2REFEgf9tCUmFtvSJFLstF2xjFAPaslo/copy" target="_blank" class="inline-flex items-center gap-2 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-700 font-bold px-5 py-2.5 rounded-xl transition-colors shadow-sm text-sm">
+                    <span>📄</span> テンプレートをコピーする
+                </a>
+                <p class="text-[10px] text-gray-400 mt-2">※現在はダミーリンクです。後ほど本物のコピー用URLに差し替えます。</p>
+            </section>
+
+            <hr class="border-gray-100">
+
+            <!-- STEP 2 -->
+            <section>
+                <h3 class="text-lg md:text-xl font-black text-pink-500 mb-3 flex items-center gap-2">
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">2</span>
+                    提出先URLの登録
+                </h3>
+                <p class="text-sm text-gray-600 font-medium mb-3">STEP1でコピーしたご自身のGoogleフォームを開き、プレビュー画面（回答画面）のURLを貼り付けてください。</p>
+                <input type="text" id="input-form-url" placeholder="https://docs.google.com/forms/d/e/1FAIp.../viewform" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm focus:outline-none focus:ring-2 focus:ring-pink-300 focus:border-transparent transition-shadow">
+            </section>
+
+            <hr class="border-gray-100">
+
+            <!-- STEP 3 -->
+            <section>
+                <h3 class="text-lg md:text-xl font-black text-pink-500 mb-3 flex items-center gap-2">
+                    <span class="bg-pink-100 text-pink-600 w-8 h-8 rounded-full flex items-center justify-center text-sm">3</span>
+                    課題内容の設定
+                </h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    <!-- テーマ選択 -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 mb-1">取り組ませる画像 (Theme)</label>
+                        <select id="select-theme" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 appearance-none cursor-pointer">
+                            <option value="">読み込み中...</option>
+                        </select>
+                    </div>
+                    <!-- レベル選択 -->
+                    <div>
+                        <label class="block text-xs font-bold text-gray-500 mb-1">目標レベル (Level)</label>
+                        <select id="select-level" class="w-full bg-gray-50 border border-gray-200 rounded-xl px-4 py-3 text-sm font-medium focus:outline-none focus:ring-2 focus:ring-pink-300 appearance-none cursor-pointer">
+                            <option value="elementary">小学生 (Elementary)</option>
+                            <option value="junior_high">中学生 (Junior High)</option>
+                            <option value="high_school">高校生 (High School)</option>
+                        </select>
+                    </div>
+                </div>
+            </section>
+
+            <!-- STEP 4 (生成ボタン) -->
+            <section class="pt-4">
+                <button id="btn-generate" class="w-full bg-sns-gradient text-white font-black text-lg py-4 rounded-2xl shadow-lg hover:scale-[1.02] transition-transform flex items-center justify-center gap-2">
+                    <span>✨</span> 生徒用リンクを生成する
+                </button>
+            </section>
+
+            <!-- 結果表示エリア -->
+            <div id="result-area" class="hidden bg-green-50 border border-green-200 rounded-2xl p-5 mt-6 animate-fade-in-up">
+                <h4 class="font-black text-green-700 mb-2 flex items-center gap-1"><span>✅</span> リンク生成完了！</h4>
+                <p class="text-xs text-green-600 mb-3">このURLをGoogle Classroomやロイロノートで生徒に配信してください。</p>
+                <div class="flex items-center gap-2">
+                    <input type="text" id="output-url" readonly class="flex-1 bg-white border border-green-200 rounded-lg px-3 py-2 text-sm text-gray-600 focus:outline-none">
+                    <button id="btn-copy" class="bg-green-600 hover:bg-green-700 text-white font-bold px-4 py-2 rounded-lg text-sm transition-colors shrink-0 shadow-sm">
+                        コピー
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script>
+        // テーマ一覧を自動取得してセレクトボックスにセットする処理
+        async function loadThemes() {
+            const selectTheme = document.getElementById('select-theme');
+            try {
+                // theme_list.json からIDを取得
+                const res = await fetch('data/theme_list.json?t=' + new Date().getTime());
+                const themeIds = await res.json();
+                
+                selectTheme.innerHTML = '<option value="" disabled selected>画像を選択してください</option>';
+                
+                // 各テーマのタイトルを取得
+                for (const id of themeIds) {
+                    try {
+                        const dataRes = await fetch(`data/themes/${id}.json?t=${new Date().getTime()}`);
+                        const data = await dataRes.json();
+                        const themeData = Array.isArray(data) ? data[0] : data;
+                        
+                        // ★ undefined にならないように修正
+                        const titleJa = themeData.titleJa || '名称未設定';
+                        const titleEn = themeData.titleEn || id;
+
+                        // 旧教材（category: other）は除外するなどの条件が必要ならここで判定
+                        if(themeData.category !== 'other') {
+                            const option = document.createElement('option');
+                            option.value = id;
+                            option.textContent = `${titleJa} (${titleEn})`;
+                            selectTheme.appendChild(option);
+                        }
+                    } catch (err) {
+                        console.warn(`テーマ ${id} の読み込みスキップ`);
+                    }
+                }
+            } catch (error) {
+                selectTheme.innerHTML = '<option value="">テーマの読み込みに失敗しました</option>';
+            }
+        }
+
+        // リンク生成処理
+        document.getElementById('btn-generate').addEventListener('click', () => {
+            const formUrlInput = document.getElementById('input-form-url').value.trim();
+            const themeId = document.getElementById('select-theme').value;
+            const levelId = document.getElementById('select-level').value;
+
+            if (!formUrlInput) { alert("STEP2: フォームのURLを入力してください。"); return; }
+            if (!themeId) { alert("STEP3: 画像を選択してください。"); return; }
+
+            // フォームURLから「フォームID」を抽出する正規表現
+            // 例: https://docs.google.com/forms/d/e/1FAIpQLScXXXXXX/viewform -> 1FAIpQLScXXXXXX
+            const formIdMatch = formUrlInput.match(/\/d\/e\/([a-zA-Z0-9_-]+)\//);
+            let formId = "";
+            if (formIdMatch && formIdMatch[1]) {
+                formId = formIdMatch[1];
+            } else {
+                // 万が一うまく抽出できなかった場合はそのままIDとして扱う（直接IDを入力した場合など）
+                formId = formUrlInput;
+            }
+
+            // ベースとなるURL（開発中はLive ServerのURL、本番は実際のドメイン）
+            const baseUrl = window.location.href.replace('teacher.html', 'play.html');
+            
+            // パラメータを結合（トップ画面になるように調整）
+            const studentUrl = `${baseUrl}?mode=snapshot&theme=${themeId}&level=${levelId}&formId=${formId}`;
+
+            // 結果を表示
+            const resultArea = document.getElementById('result-area');
+            const outputUrl = document.getElementById('output-url');
+            outputUrl.value = studentUrl;
+            resultArea.classList.remove('hidden');
+        });
+
+        // コピーボタン処理
+        document.getElementById('btn-copy').addEventListener('click', () => {
+            const outputUrl = document.getElementById('output-url');
+            outputUrl.select();
+            document.execCommand('copy');
+            
+            const btnCopy = document.getElementById('btn-copy');
+            const originalText = btnCopy.innerText;
+            btnCopy.innerText = 'コピーしました！';
+            btnCopy.classList.replace('bg-green-600', 'bg-gray-800');
+            btnCopy.classList.replace('hover:bg-green-700', 'hover:bg-gray-900');
+            
+            setTimeout(() => {
+                btnCopy.innerText = originalText;
+                btnCopy.classList.replace('bg-gray-800', 'bg-green-600');
+                btnCopy.classList.replace('hover:bg-gray-900', 'hover:bg-green-700');
+            }, 2000);
+        });
+
+        // ページ読み込み時にテーマ一覧を取得
+        window.addEventListener('DOMContentLoaded', loadThemes);
+    </script>
+</body>
+</html>

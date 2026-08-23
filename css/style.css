@@ -43,13 +43,34 @@ body {
 .fade-in { animation: fadeIn 0.3s ease-in forwards; }
 @keyframes fadeIn { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
 
+/* 下から上にフワッと現れる (ポップアップ等) */
+.animate-fade-in-up { animation: fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) forwards; }
+@keyframes fadeInUp { from { opacity: 0; transform: translate(-50%, -40%); } to { opacity: 1; transform: translate(-50%, -50%); } }
+
+/* ポップするアニメーション (丸いチェックマーク等) */
+.animate-pop-check { animation: popCheck 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275) forwards; }
+@keyframes popCheck {
+    0% { transform: scale(0.5); opacity: 0; }
+    50% { transform: scale(1.2); opacity: 1; }
+    100% { transform: scale(1); opacity: 0; }
+}
+
+/* コンボ時の炎アニメーション (Pic Flash用) */
+.animate-combo-fire { animation: comboFire 1.2s ease-out forwards; }
+@keyframes comboFire {
+    0% { transform: translate(-50%, 20px) scale(0.8); opacity: 0; }
+    20% { transform: translate(-50%, -10px) scale(1.1); opacity: 1; text-shadow: 0 0 20px #ef4444; }
+    80% { transform: translate(-50%, -20px) scale(1); opacity: 1; text-shadow: 0 0 10px #f97316; }
+    100% { transform: translate(-50%, -40px) scale(0.9); opacity: 0; }
+}
+
 /* ★NEW: クリーンタイトル & アニメーション停止（若者は静止タイトルを好むため） */
 .clean-title {
     text-transform: capitalize; /* 大文字小文字そのまま */
     font-weight: 800;
 }
 
-/* ★NEW: コンボ時のクリーン＆モダンポップアップ */
+/* コンボ時のクリーン＆モダンポップアップ */
 @keyframes popCombo { 
     0% { transform: scale(0.5) rotate(-10deg) translateY(20px); opacity: 0; } 
     50% { transform: scale(1.2) rotate(5deg) translateY(-10px); opacity: 1; text-shadow: 0 0 10px rgba(193, 53, 132, 0.3), 0 0 20px rgba(193, 53, 132, 0.3); } 
@@ -127,8 +148,28 @@ body {
     box-shadow: 0 4px 6px rgba(14, 165, 233, 0.15);
 }
 
+/* ヒント文字の開示アニメーション (Pic Flash用) */
+.hint-char-reveal {
+    animation: popCheck 0.3s ease-out forwards;
+}
+
 /* タクシーメーター風タイマーバー -> SNS風クリーンバー */
 .timer-transition { transition: width 1s linear, background-color 0.5s ease; }
+
+/* カスタムスクロールバー (リストが長くなった時用) */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: rgba(200, 200, 200, 0.5);
+    border-radius: 10px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: rgba(150, 150, 150, 0.8);
+}
 
 /* =========================================
    都会的フレームとボタン（モノトーン＆立体感） -> SNS風カードと丸いボタン
@@ -162,6 +203,15 @@ body {
     box-shadow: 0 10px 15px -3px rgba(193, 53, 132, 0.3); /* ホバーで薄くグラデーション発光 */
 }
 
+/* ★ 重要：他のJS(Pic Flash等)による色消えバグを防ぐための強力なカラー固定 ★ */
+.mode-btn { background-image: none !important; }
+.mode-btn[data-mode="snapshot"] { background-color: #93c5fd !important; } /* blue-300 */
+.mode-btn[data-mode="story"] { background-color: #6ee7b7 !important; } /* emerald-300 */
+.mode-btn[onclick*="picflash"] { background-color: #d8b4fe !important; } /* purple-300 */
+.mode-btn[data-mode="oralquest"] { background-color: #facc15 !important; } /* yellow-400 */
+.mode-btn[data-mode="mosaic"] { background-color: #f9a8d4 !important; } /* pink-300 */
+.mode-btn[data-mode="detective"] { background-color: #93c5fd !important; } /* blue-300 */
+
 /* =========================================
    スマホ横向き（Landscape）防止ロック
    ========================================= */
@@ -169,7 +219,7 @@ body {
     #orientation-lock { display: flex !important; }
     .app-container { display: none !important; }
 }
-/* ★NEW: 「ここを押して！」と視線を誘導する優しい波打ちアニメーション */
+/* 「ここを押して！」と視線を誘導する優しい波打ちアニメーション */
 @keyframes attentionPulse {
     0% { transform: scale(1); box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1); }
     50% { transform: scale(1.03); box-shadow: 0 0 25px rgba(245, 96, 64, 0.6); }
@@ -178,7 +228,7 @@ body {
 .animate-attention {
     animation: attentionPulse 1.5s infinite ease-in-out;
 }
-/* ★NEW: サポートモードで文字がふわっと現れて消えるアニメーション */
+/* サポートモードで文字がふわっと現れて消えるアニメーション */
 @keyframes supportFloatFade {
     0% { opacity: 0; transform: translate(-50%, 15px) scale(0.95); }
     15% { opacity: 0.9; transform: translate(-50%, 0) scale(1); }
@@ -188,20 +238,26 @@ body {
 .support-text-float {
     animation: supportFloatFade 5s ease-in-out forwards;
 }
-/* ★NEW: キャンバス生地風の背景パターン */
+/* キャンバス生地風の背景パターン */
 .bg-canvas {
     background-color: #ffffff;
     background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.05'/%3E%3C/svg%3E");
 }
 
-/* ★NEW: 画像タイトルが長すぎるときに2行で「...」にする */
+/* 画像タイトルが長すぎるときに2行で「...」にする */
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 .line-clamp-2 {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-/* ★NEW: キラッと光るシマーエフェクト */
+/* キラッと光るシマーエフェクト */
 @keyframes shimmer {
     0% { transform: translateX(-150%) skewX(-15deg); }
     50% { transform: translateX(150%) skewX(-15deg); }

@@ -24,6 +24,39 @@ const LANG_INFO = {
     "my-MM": { cc: "mm", name: "ビルマ語", hintLang: "en-US" }
 };
 
+// ★ 漢字→ひらがな自動変換用辞書（頻出単語）
+const KANJI_TO_KANA_MAP = {
+    '熊':'くま', '犬':'いぬ', '猫':'ねこ', '鳥':'とり', '豚':'ぶた', 
+    '牛':'うし', '馬':'うま', '猿':'さる', '羊':'ひつじ', '象':'ぞう', 
+    '兎':'うさぎ', '狐':'きつね', '鹿':'しか', '蛙':'かえる', '蛇':'へび', 
+    '虫':'むし', '魚':'さかな', '蝶':'ちょう', '亀':'かめ', '虎':'とら', '鼠':'ねずみ',
+    '水':'みず', '木':'き', '花':'はな', '山':'やま', '空':'そら', '海':'うみ',
+    '太陽':'たいよう', '月':'つき', '星':'ほし', '車':'くるま', '電車':'でんしゃ',
+    '飛行機':'ひこうき', '船':'ふね', '自転車':'じてんしゃ',
+    '本':'ほん', '鞄':'かばん', '靴':'くつ', '傘':'かさ', '帽子':'ぼうし', '服':'ふく',
+    '机':'つくえ', '椅子':'いす', '時計':'とけい', '鉛筆':'えんぴつ',
+    '林檎':'りんご', '苺':'いちご', '葡萄':'ぶどう', '桃':'もも', '蜜柑':'みかん',
+    '男の子':'おとこのこ', '女の子':'おんなのこ', '男性':'だんせい', '女性':'じょせい',
+    '子供':'こども', '子ども':'こども', '家':'いえ', '学校':'がっこう', '公園':'こうえん'
+};
+
+function normalizeJapanese(str) {
+    // 1. カタカナをひらがなに変換
+    let res = str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
+    // 2. 辞書にある漢字をひらがなに変換
+    for (let kanji in KANJI_TO_KANA_MAP) {
+        const regex = new RegExp(kanji, 'g');
+        res = res.replace(regex, KANJI_TO_KANA_MAP[kanji]);
+    }
+    return res;
+}
+
+const STOP_WORDS = new Set([
+    'a', 'an', 'the', 'is', 'are', 'am', 'was', 'were', 
+    'in', 'on', 'at', 'to', 'of', 'and', 'it', 'he', 'she', 'they', 
+    'with', 'for', 'there', 'some'
+]);
+
 function getFlagHtml(cc, classes = "w-5 h-auto inline-block rounded-sm shadow-sm") {
     if (!cc || cc === "un") return "🌍"; 
     return `<img src="https://flagcdn.com/w40/${cc}.png" class="${classes} object-contain" alt="flag">`;
@@ -45,13 +78,21 @@ const pfState = {
     isPlaying: false,
     hasAnswered: false,
     isTransitioning: false, 
-    isSwitchingMic: false, // ★追加: マイク競合バグを防ぐ安全装置
+    isSwitchingMic: false,
     comboCount: 0 
 };
 
 window.CATEGORIES_DATA = [];
 
 const correctAudio = new Audio('assets/sounds/correct.mp3');
+
+// 音声リストをあらかじめ読み込んでおく
+if (typeof speechSynthesis !== 'undefined') {
+    speechSynthesis.onvoiceschanged = () => {
+        window.pfAvailableVoices = speechSynthesis.getVoices();
+    };
+    window.pfAvailableVoices = speechSynthesis.getVoices();
+}
 
 function unlockAudio() {
     correctAudio.volume = 0;
@@ -66,7 +107,6 @@ document.addEventListener('click', unlockAudio, {once: true});
 
 function playPfSound(type) {
     if (type === 'correct' || type === 'stepCorrect' || type === 'practiceCorrect') {
-        // ステップクリア時も通常の「正解音」を鳴らして爽快感を出す
         correctAudio.currentTime = 0;
         correctAudio.play().catch(e => {});
     } else if (type === 'skip') {
@@ -90,33 +130,45 @@ function getTargetWordForLang(card, langCode) {
     return targetWord;
 }
 
-// ★ 大幅強化：日本語のひらがな・カタカナ揺れ吸収と、英語の単語境界チェック
 function checkIsCorrect(card, transcript, targetLang) {
     let targetWordsArray = [];
     if (card.targets && card.targets[targetLang]) {
         targetWordsArray = card.targets[targetLang];
     } else if (targetLang === 'en-US' && card.level1 && card.level1.words) {
-        targetWordsArray = card.level1.words; 
+        targetWordsArray = card.level1.words.map(w => w.text || w);
     }
 
     if (!targetWordsArray || targetWordsArray.length === 0) return false;
-
-    // カタカナをひらがなに変換する関数
-    const toHiragana = (str) => str.replace(/[\u30a1-\u30f6]/g, match => String.fromCharCode(match.charCodeAt(0) - 0x60));
     
-    const normalizedTranscript = toHiragana(transcript.toLowerCase());
-    const transcriptNoSpace = normalizedTranscript.replace(/\s+/g, '');
-
     return targetWordsArray.some(targetPhrase => {
-        if (targetLang === 'ja-JP' || targetLang === 'zh-CN') {
-            // 日本語・中国語の場合はスペースを消して、ひらがなに統一してから一致判定
-            const phraseNoSpace = toHiragana(targetPhrase.toLowerCase()).replace(/\s+/g, '');
+        if (targetLang === 'ja-JP') {
+            // ★ 日本語判定：漢字もカタカナもひらがなに統一して比較
+            const transcriptNoSpace = normalizeJapanese(transcript.toLowerCase()).replace(/\s+/g, '');
+            const phraseNoSpace = normalizeJapanese(targetPhrase.toLowerCase()).replace(/\s+/g, '');
+            return transcriptNoSpace.includes(phraseNoSpace);
+        } else if (targetLang === 'zh-CN') {
+            const transcriptNoSpace = transcript.toLowerCase().replace(/\s+/g, '');
+            const phraseNoSpace = targetPhrase.toLowerCase().replace(/\s+/g, '');
             return transcriptNoSpace.includes(phraseNoSpace);
         } else {
-            // 英語などは「pineapple」の中に「apple」が含まれて正解にならないよう、単語単位で厳密にチェック
-            const words = targetPhrase.toLowerCase().replace(/[.,!?]/g, '').trim().split(/\s+/);
-            const paddedTranscript = ' ' + transcript.toLowerCase().replace(/[.,!?]/g, '').replace(/\s+/g, ' ') + ' ';
-            return words.every(w => paddedTranscript.includes(' ' + w + ' '));
+            const targetWords = targetPhrase.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => !STOP_WORDS.has(w) && w.length > 0);
+            const spokenWords = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => w.length > 0);
+            
+            if (targetWords.length === 0) return false;
+
+            let matchCount = 0;
+            targetWords.forEach(tw => {
+                const isMatch = spokenWords.some(sw => {
+                    if (sw === tw) return true;
+                    if (sw === tw + 's' || sw === tw + 'es' || sw === tw + 'ing' || sw === tw + 'ed' || sw === tw + 'd') return true;
+                    if (tw === sw + 's' || tw === sw + 'es' || tw === sw + 'ing' || tw === sw + 'ed' || tw === sw + 'd') return true;
+                    return false;
+                });
+                if (isMatch) matchCount++;
+            });
+
+            const requiredRate = targetWords.length <= 2 ? 1.0 : 0.8;
+            return (matchCount / targetWords.length) >= requiredRate;
         }
     });
 }
@@ -128,21 +180,26 @@ if (SpeechRec) {
     pfRec = new SpeechRec();
     pfRec.interimResults = true;
     pfRec.continuous = true;
+    pfRec.maxAlternatives = 3; 
     
     pfRec.onresult = (e) => {
-        let currentTranscript = '';
-        for (let i = e.resultIndex; i < e.results.length; ++i) {
-            currentTranscript += e.results[i][0].transcript.toLowerCase();
-        }
-        const cleanTranscript = currentTranscript.replace(/[.,!?]/g, '');
+        if (pfState.isTransitioning || pfState.isSwitchingMic || pfState.hasAnswered) return;
 
+        let transcripts = ['', '', ''];
+        for (let i = 0; i < e.results.length; ++i) {
+            transcripts[0] += e.results[i][0].transcript.toLowerCase() + ' ';
+            transcripts[1] += (e.results[i][1] ? e.results[i][1].transcript.toLowerCase() : e.results[i][0].transcript.toLowerCase()) + ' ';
+            transcripts[2] += (e.results[i][2] ? e.results[i][2].transcript.toLowerCase() : e.results[i][0].transcript.toLowerCase()) + ' ';
+        }
+
+        const mainTranscript = transcripts[0].trim();
+
+        // --- 本番モード(Trial) の処理 ---
         if (pfState.isPlaying && pfState.mode === 'trial') {
             const statusTextEl = document.getElementById('pf-status-text');
-            if (statusTextEl) statusTextEl.innerText = currentTranscript || 'Listening...';
-        }
+            if (statusTextEl) statusTextEl.innerText = mainTranscript || 'Listening...';
 
-        if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.hasAnswered && !pfState.isTransitioning) {
-            if (cleanTranscript.includes("skip") || cleanTranscript.includes("スキップ")) {
+            if (mainTranscript.includes("skip") || mainTranscript.includes("スキップ")) {
                 handleSkip();
                 return;
             }
@@ -150,60 +207,92 @@ if (SpeechRec) {
             const card = pfState.cards[pfState.currentIndex];
             const currentLang = pfState.languages[pfState.currentLangIndex];
 
-            if (checkIsCorrect(card, cleanTranscript, currentLang)) {
-                // ★ 修正：クリアした直後のインデックスを保持しておく
-                const completedLangIndex = pfState.currentLangIndex;
-                pfState.currentLangIndex++;
-                
-                revealAllHints('step', completedLangIndex); 
-                
-                if (pfState.currentLangIndex >= pfState.languages.length) {
-                    handleCorrect(); // 最後の言語なら完全クリア処理へ
-                } else {
-                    // ★ 途中ステップのクリア処理（大きな⭕️と音を出す！）
-                    pfState.isTransitioning = true;
-                    playPfSound('stepCorrect');
+            for (let t of transcripts) {
+                if (checkIsCorrect(card, t, currentLang)) {
+                    const completedLangIndex = pfState.currentLangIndex;
+                    pfState.currentLangIndex++;
                     
-                    const checkAnimEl = document.getElementById('correct-answer-anim');
-                    if (checkAnimEl) {
-                        checkAnimEl.classList.remove('hidden');
-                        checkAnimEl.classList.add('animate-pop-check');
+                    revealAllHints('step', completedLangIndex); 
+                    
+                    if (pfState.currentLangIndex >= pfState.languages.length) {
+                        handleCorrect();
+                    } else {
+                        pfState.hasAnswered = true;
+                        pfState.isTransitioning = true;
+                        playPfSound('stepCorrect');
+                        
+                        const checkAnimEl = document.getElementById('correct-answer-anim');
+                        if (checkAnimEl) {
+                            checkAnimEl.classList.remove('hidden');
+                            checkAnimEl.classList.add('animate-pop-check');
+                            setTimeout(() => {
+                                checkAnimEl.classList.remove('animate-pop-check');
+                                checkAnimEl.classList.add('hidden');
+                            }, 600); 
+                        }
+
+                        updateTrialLangUI();
+                        
                         setTimeout(() => {
-                            checkAnimEl.classList.remove('animate-pop-check');
-                            checkAnimEl.classList.add('hidden');
+                            updateHintUI();
+                            pfState.cardStartTime = Date.now(); 
+                            document.getElementById('pf-status-text').innerText = 'Ready...';
+                            
+                            pfState.isSwitchingMic = true;
+                            try { pfRec.abort(); } catch(err){}
+                            pfRec.lang = pfState.languages[pfState.currentLangIndex];
+                            
+                            setTimeout(() => { 
+                                pfState.isSwitchingMic = false;
+                                pfState.isTransitioning = false;
+                                pfState.hasAnswered = false; 
+                                if (pfState.isPlaying) {
+                                    try { pfRec.start(); } catch(err){} 
+                                }
+                            }, 400);
                         }, 600); 
                     }
+                    return; 
+                }
+            }
+        } 
+        // --- 練習モード(Practice) の処理 ---
+        else if (pfState.mode === 'practice' && window.practiceTargetWords) {
+            const statusEl = document.getElementById(window.practiceStatusId);
+            let isMatch = false;
+            const mockCard = { targets: { [pfRec.lang]: window.practiceTargetWords } };
+            
+            for (let t of transcripts) {
+                if (checkIsCorrect(mockCard, t, pfRec.lang)) {
+                    isMatch = true;
+                    break;
+                }
+            }
 
-                    updateTrialLangUI();
-                    
-                    setTimeout(() => {
-                        updateHintUI();
-                        pfState.cardStartTime = Date.now(); 
-                        pfState.isTransitioning = false;
-                        document.getElementById('pf-status-text').innerText = 'Ready...';
-                        
-                        // マイク競合を防ぐための安全な切り替え
-                        pfState.isSwitchingMic = true;
-                        try { pfRec.abort(); } catch(err){}
-                        pfRec.lang = pfState.languages[pfState.currentLangIndex];
-                        setTimeout(() => { 
-                            pfState.isSwitchingMic = false;
-                            if (pfState.isPlaying) {
-                                try { pfRec.start(); } catch(err){} 
-                            }
-                        }, 200);
-
-                    }, 600); 
+            if (isMatch) {
+                if(statusEl) statusEl.innerHTML = `<span class="text-green-500 font-black text-sm md:text-base">✨ Excellent!</span>`;
+                playPfSound('practiceCorrect');
+                if(typeof window.createConfetti === 'function') window.createConfetti();
+                window.practiceTargetWords = null; 
+                try { pfRec.stop(); } catch(err){}
+            } else {
+                if(statusEl && window.practiceTargetWords) {
+                    statusEl.innerHTML = `<span class="text-pink-500 animate-pulse">Listening...🎙</span><div class="text-gray-400 font-normal text-[10px] mt-1 w-full truncate max-w-[120px]">${mainTranscript}</div>`;
                 }
             }
         }
     };
 
     pfRec.onend = () => {
-        // ★ マイクが不意に切れても、手動切り替え中じゃなければ再起動する
         if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.isSwitchingMic) {
             setTimeout(() => { 
                 if (pfState.isPlaying && !pfState.isSwitchingMic) {
+                    try { pfRec.start(); } catch(err){} 
+                }
+            }, 200);
+        } else if (pfState.mode === 'practice' && window.practiceTargetWords && !pfState.isSwitchingMic) {
+            setTimeout(() => { 
+                if (window.practiceTargetWords && !pfState.isSwitchingMic) {
                     try { pfRec.start(); } catch(err){} 
                 }
             }, 200);
@@ -304,6 +393,7 @@ function startTrialMode() {
     pfState.penalty = 0; 
     pfState.comboCount = 0;
     pfState.isPlaying = false; 
+    pfState.hasAnswered = false;
     pfState.isTransitioning = false;
     
     const lampsContainer = document.getElementById('pf-progress-lamps');
@@ -385,6 +475,8 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
 
     document.getElementById('pf-status-text').innerText = 'Listening...';
     
+    pfState.hasAnswered = false;
+    pfState.isTransitioning = false;
     pfState.isSwitchingMic = true;
     try { pfRec.abort(); } catch(e){}
     if (pfRec) pfRec.lang = pfState.languages[pfState.currentLangIndex];
@@ -393,12 +485,10 @@ document.getElementById('btn-pf-real-start').addEventListener('click', () => {
         if (pfState.isPlaying) {
             try { pfRec.start(); } catch(e){}
         }
-    }, 200);
+    }, 400);
 });
 
 function loadPfCard(isNewImage) {
-    setTimeout(() => { pfState.hasAnswered = false; pfState.isTransitioning = false; }, 100);
-
     if (pfState.isPlaying) pfState.cardStartTime = Date.now();
     pfState.currentLangIndex = 0; 
 
@@ -426,6 +516,8 @@ function loadPfCard(isNewImage) {
     document.getElementById('pf-overlay-correct').classList.add('hidden');
     document.getElementById('pf-overlay-skip').classList.add('hidden');
     document.getElementById('pf-card').classList.remove('scale-95');
+
+    document.getElementById('pf-status-text').innerText = 'Ready...';
 
     updateTrialLangUI();
     updateHintUI();
@@ -495,7 +587,6 @@ function revealHintChar(index) {
     }
 }
 
-// ★ 修正：開示する言語を引数で正確に受け取るようにしました
 function revealAllHints(status, targetIndex = null) {
     const card = pfState.cards[pfState.currentIndex];
     let targetLangIndex = targetIndex !== null ? targetIndex : pfState.currentLangIndex;
@@ -564,20 +655,24 @@ function handleCorrect() {
     playPfSound('correct');
     setTimeout(() => {
         pfState.currentIndex++;
-        pfState.isTransitioning = false;
-        if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { 
+        if (pfState.currentIndex >= pfState.cards.length) {
+            pfState.isTransitioning = false;
+            endPfGame();
+        } else { 
             pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
+
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
+                pfState.isTransitioning = false;
+                pfState.hasAnswered = false; 
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 200);
+            }, 400); 
         }
     }, 1200); 
 }
@@ -612,20 +707,24 @@ function handleSkip() {
     
     setTimeout(() => {
         pfState.currentIndex++;
-        pfState.isTransitioning = false;
-        if (pfState.currentIndex >= pfState.cards.length) endPfGame();
-        else { 
+        if (pfState.currentIndex >= pfState.cards.length) {
+            pfState.isTransitioning = false;
+            endPfGame();
+        } else { 
             pfState.isSwitchingMic = true;
             try { pfRec.abort(); } catch(e){} 
             pfState.currentLangIndex = 0; 
             if (pfRec) pfRec.lang = pfState.languages[0]; 
             loadPfCard(true); 
+            
             setTimeout(() => { 
                 pfState.isSwitchingMic = false;
+                pfState.isTransitioning = false;
+                pfState.hasAnswered = false; 
                 if (pfState.isPlaying) {
                     try { pfRec.start(); } catch(e){} 
                 }
-            }, 200);
+            }, 400); 
         }
     }, 1500); 
 }
@@ -759,7 +858,7 @@ window.openPracticeModal = function(cardIdx) {
         const statusId = `prac-status-modal-${i}`;
 
         langBlocksHtml += `
-            <div class="p-3 md:p-4 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between">
+            <div class="p-3 md:p-4 rounded-2xl bg-white border border-gray-200 relative overflow-hidden shadow-sm flex flex-col justify-between shrink-0">
                 <div>
                     <div class="text-xs md:text-sm font-bold text-gray-500 mb-1 flex items-center gap-2">${getFlagHtml(info.cc, "w-4 h-auto")} ${info.name}</div>
                     <div class="text-2xl md:text-3xl font-black text-gray-800 mb-3 leading-tight">${targetWord}</div>
@@ -779,14 +878,15 @@ window.openPracticeModal = function(cardIdx) {
         `;
     });
 
+    // ★ 修正：右側のリスト部分にのみ「max-height: 65vh;」を直接指定し、確実にスクロールさせる
     let html = `
-        <div class="flex flex-col md:flex-row gap-4 md:gap-6 w-full items-stretch">
-            <div class="w-full md:w-2/5 flex flex-col justify-center">
+        <div class="flex flex-col md:flex-row gap-4 md:gap-6 w-full items-start">
+            <div class="w-full md:w-2/5 flex flex-col justify-center shrink-0 sticky top-0 z-10 bg-white pt-2 pb-2 md:pb-0 md:pt-0">
                 <div class="w-full aspect-[4/3] rounded-3xl overflow-hidden bg-gray-50 relative flex items-center justify-center p-4 border border-gray-100 shadow-inner">
                     <img src="assets/images/picflash/${fileName}" class="w-full h-full object-contain drop-shadow-md">
                 </div>
             </div>
-            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-center max-h-[50vh] overflow-y-auto custom-scrollbar pr-2">
+            <div class="w-full md:w-3/5 flex flex-col gap-3 justify-start overflow-y-auto custom-scrollbar pr-2 pb-6" style="max-height: 65vh;">
                 ${langBlocksHtml}
             </div>
         </div>
@@ -811,6 +911,32 @@ window.playPfTTS = function(cardIdx, lang) {
     const u = new SpeechSynthesisUtterance(textToSpeak);
     u.lang = lang; 
     u.rate = 0.9;
+    
+    // 最新の音声リストを取得
+    let voices = speechSynthesis.getVoices();
+    if (voices.length === 0 && window.pfAvailableVoices) {
+        voices = window.pfAvailableVoices;
+    }
+    
+    const shortLang = lang.split('-')[0];
+    
+    // ★ 修正：その言語の音声をすべて抽出し、「高品質な音声（Google, Siri, Premium等）」を優先的に選ぶ
+    let targetVoices = voices.filter(v => v.lang === lang || v.lang.replace('_', '-') === lang || v.lang.startsWith(shortLang));
+    
+    if (targetVoices.length > 0) {
+        let bestVoice = targetVoices.find(v => 
+            v.name.includes('Google') || 
+            v.name.includes('Premium') || 
+            v.name.includes('Natural') || 
+            v.name.includes('Siri')
+        );
+        
+        // 高品質な音声が見つからなければ、その言語の最初の音声をセット
+        if (!bestVoice) bestVoice = targetVoices[0];
+        
+        u.voice = bestVoice;
+    }
+
     speechSynthesis.speak(u);
 };
 
@@ -819,15 +945,20 @@ window.startPracticeRec = function(cardIdx, lang, statusId) {
     const card = pfState.cards[cardIdx];
     
     let targets = card.targets && card.targets[lang] ? card.targets[lang] : [];
-    if (targets.length === 0 && lang === 'en-US' && card.level1) targets = card.level1.words;
+    if (targets.length === 0 && lang === 'en-US' && card.level1) targets = card.level1.words.map(w => w.text || w);
     
     window.practiceTargetWords = targets; 
     window.practiceStatusId = statusId;
     
+    pfState.isSwitchingMic = true;
+    try { pfRec.abort(); } catch(e) {}
     pfRec.lang = lang; 
     
     document.getElementById(statusId).innerHTML = `<span class="text-pink-500 animate-pulse">Listening...🎙</span>`;
-    try { pfRec.abort(); setTimeout(() => pfRec.start(), 100); } catch(e) {}
+    setTimeout(() => { 
+        pfState.isSwitchingMic = false;
+        try { pfRec.start(); } catch(e) {} 
+    }, 100);
 };
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -889,3 +1020,29 @@ document.addEventListener('DOMContentLoaded', () => {
         showPfView('view-picflash-select');
     });
 });
+// ==========================================
+// ★ index.html への遷移を play.html (モード選択) に強制変更するコード
+// ==========================================
+document.addEventListener('click', (e) => {
+    // onclick="window.location.href='index.html'" を持っているボタンを捕まえる
+    const toIndexBtn = e.target.closest('[onclick*="index.html"]');
+    
+    if (toIndexBtn) {
+        // HTMLの直接リンクを強制的にキャンセル
+        e.preventDefault();
+        e.stopImmediatePropagation();
+        
+        // 録音等の動作を安全に停止
+        if (typeof pfState !== 'undefined' && pfState.isPlaying) {
+            pfState.isPlaying = false;
+            if (pfState.timerId) clearInterval(pfState.timerId);
+            try { if (typeof pfRec !== 'undefined' && pfRec) pfRec.abort(); } catch(err){}
+        }
+        if (window.isRecording && typeof window.stopSpeech === 'function') {
+            window.stopSpeech();
+        }
+        
+        // ゲームモード選択画面 (play.html) へ強制ジャンプ！
+        window.location.href = 'play.html';
+    }
+}, true); // true = HTMLのonclickより先に実行（キャプチャフェーズ）

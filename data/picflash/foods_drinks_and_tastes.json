@@ -826,14 +826,14 @@
   },
   {
     "id": "nh_elem_foods_drinks_and_tastes_034",
-    "img": "assets/images/picflash/omelet.webp",
+    "img": "assets/images/picflash/omelette.webp",
     "targets": {
-      "en-US": ["omelet", "an omelet", "omelette"],
+      "en-US": ["omelette", "an omelette", "omelettes"],
       "ja-JP": ["オムレツ", "おむれつ", "卵焼き"],
       "pt-BR": ["omelete", "uma omelete", "omelete de ovos"],
       "vi-VN": ["trứng tráng", "trứng chiên", "món trứng tráng"],
-      "tl-PH": ["omelet", "tortang itlog", "isang omelet"],
-      "es-ES": ["tortilla francesa", "omelet", "una tortilla"],
+      "tl-PH": ["omelette", "tortang itlog", "isang omelette"],
+      "es-ES": ["tortilla francesa", "omelette", "una tortilla"],
       "zh-CN": ["煎蛋卷", "欧姆蛋", "一个煎蛋卷"],
       "ko-KR": ["오믈렛", "오므라이스용 오믈렛", "계란 오믈렛"],
       "id-ID": ["omelet", "telur dadar", "sebuah omelet"],
