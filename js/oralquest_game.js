@@ -1,6 +1,6 @@
 // js/oralquest_game.js
 // ==========================================
-// ORAL QUEST モード専用ロジック
+// ORAL QUEST モード専用ロジック (自動初期化＆レベル追尾対応版)
 // ==========================================
 
 window.OralQuestGame = {
@@ -18,6 +18,23 @@ window.OralQuestGame = {
     q1ModelAnswers: [],
     currentQ2: null,
 
+    // ★追加：選択されたレベル(小学生/中学生など)のデータを正確に取り出すヘルパー関数
+    getTargetData: function() {
+        let targetData = window.currentTheme;
+        if (window.appState && targetData) {
+            let level = window.appState.selectedLevel || 'elementary';
+            // JSONの構造が { "elementary": { stage1: ... } } の場合
+            if (targetData[level]) {
+                return targetData[level];
+            } 
+            // JSONの構造が { "levels": { "elementary": { stage1: ... } } } の場合
+            else if (targetData.levels && targetData.levels[level]) {
+                return targetData.levels[level];
+            }
+        }
+        return targetData; // フォールバック
+    },
+
     init: function() {
         this.currentStage = 1;
         this.subStage = "reading";
@@ -25,33 +42,29 @@ window.OralQuestGame = {
         this.interimTranscript = "";
         this.timeElapsed = 0;
 
-        // ★修正：JSONデータ（window.currentTheme）からStage 1のデータを読み込む
-        // データが存在しない場合のデフォルトテキストを設定
         let passageText = "Passage data not found.";
         let q1Text = "Question data not found.";
         
-        if (window.currentTheme && window.currentTheme.stage1) {
+        // ★修正：レベルを考慮した正確なデータを取得
+        const targetData = this.getTargetData();
+
+        if (targetData && targetData.stage1) {
             // パッセージテキストを取得
-            passageText = window.currentTheme.stage1.passage || passageText;
+            passageText = targetData.stage1.passage || passageText;
             
             // Q1のデータを取得
-            if (window.currentTheme.stage1.q1) {
-                q1Text = window.currentTheme.stage1.q1.text || q1Text;
-                this.q1Keywords = window.currentTheme.stage1.q1.keywords || [];
-                this.q1ModelAnswers = window.currentTheme.stage1.q1.modelAnswers || [];
+            if (targetData.stage1.q1) {
+                q1Text = targetData.stage1.q1.text || q1Text;
+                this.q1Keywords = targetData.stage1.q1.keywords || [];
+                this.q1ModelAnswers = targetData.stage1.q1.modelAnswers || [];
             }
         }
 
-        // ★重要：HTMLの中にある箱（oq-passage-text）を探して文字を書き込む処理
         const passageEl = document.getElementById('oq-passage-text');
-        if (passageEl) {
-            passageEl.textContent = passageText; // 文字を書き込む
-        }
+        if (passageEl) passageEl.textContent = passageText;
         
         const q1TextEl = document.getElementById('oq-q1-text');
-        if (q1TextEl) {
-            q1TextEl.textContent = q1Text; // 質問の文字を書き込む
-        }
+        if (q1TextEl) q1TextEl.textContent = q1Text;
 
         this.updateUIForStage(1);
     },
@@ -91,7 +104,12 @@ window.OralQuestGame = {
             if (typeof resetScore === 'function') resetScore();
             document.getElementById('oq-s2-live-score').textContent = "0";
             document.getElementById('oq-s2-pin-container').innerHTML = "";
-            if (window.currentTheme && window.currentTheme.imageSrc) {
+            
+            // ★修正：レベル考慮で画像を取得
+            const targetData = this.getTargetData();
+            if (targetData && targetData.imageSrc) {
+                document.getElementById('oq-s2-image').src = targetData.imageSrc;
+            } else if (window.currentTheme && window.currentTheme.imageSrc) {
                 document.getElementById('oq-s2-image').src = window.currentTheme.imageSrc;
             }
         }
@@ -128,7 +146,6 @@ window.OralQuestGame = {
     },
 
     replayQ1Audio: function() {
-        // 現在画面に表示されている質問テキストを取得
         let q1Text = document.getElementById('oq-q1-text').textContent || "Please answer the question.";
         if (typeof window.playResultTTS === 'function') {
             window.playResultTTS("Please look at the passage. " + q1Text);
@@ -136,21 +153,20 @@ window.OralQuestGame = {
     },
 
     setupQA2: function() {
-        // 面接官画像を1〜10の中でランダムに切り替え
         const randomImgNum = Math.floor(Math.random() * 10) + 1;
         const imgEl = document.getElementById('oq-interviewer-img');
         if (imgEl) imgEl.src = `assets/images/oralquest/interviewer_${randomImgNum}.webp`;
 
-        // JSONデータからそのテーマ専用のStage 3の質問をランダムに取得
-        if (window.currentTheme && window.currentTheme.stage3 && window.currentTheme.stage3.questions) {
-            const qPool = window.currentTheme.stage3.questions;
+        // ★修正：レベル考慮でStage3の質問を取得
+        const targetData = this.getTargetData();
+        if (targetData && targetData.stage3 && targetData.stage3.questions) {
+            const qPool = targetData.stage3.questions;
             const randomQIndex = Math.floor(Math.random() * qPool.length);
             this.currentQ2 = qPool[randomQIndex];
         } else {
             this.currentQ2 = { text: "No question data found.", keywords: [], modelAnswers: [] };
         }
         
-        // 選ばれた質問テキストを画面にセット
         document.getElementById('oq-q2-text').textContent = this.currentQ2.text;
 
         document.getElementById('btn-oq-next').classList.add('hidden');
@@ -169,10 +185,13 @@ window.OralQuestGame = {
 
     dropOqPin: function(wordText, theme) {
         const container = document.getElementById('oq-s2-pin-container');
-        if (!container || !theme.pins) return;
+        const targetData = this.getTargetData();
+        const pins = (targetData && targetData.pins) ? targetData.pins : (theme && theme.pins ? theme.pins : null);
+        
+        if (!container || !pins) return;
 
         let pinData = null;
-        for (const [key, coords] of Object.entries(theme.pins)) {
+        for (const [key, coords] of Object.entries(pins)) {
             if (wordText.toLowerCase().includes(key.toLowerCase())) {
                 pinData = coords;
                 break;
@@ -226,7 +245,8 @@ window.OralQuestGame = {
         this.timerInterval = setInterval(() => { 
             this.timeElapsed++; 
             if (this.currentStage === 2) {
-                let tLimit = (window.currentTheme && window.currentTheme.timeLimit) ? window.currentTheme.timeLimit : 30;
+                const targetData = this.getTargetData();
+                let tLimit = (targetData && targetData.timeLimit) ? targetData.timeLimit : 30;
                 let timeLeft = tLimit - this.timeElapsed;
                 let percent = (timeLeft / tLimit) * 100;
                 
@@ -261,7 +281,6 @@ window.OralQuestGame = {
         } else if (this.currentStage === 2) {
             this.calculatePictureResult();
         } else if (this.currentStage === 3) {
-            // Stage 3 終了時はボタンの文字を「FINISH TEST」に変える
             nextBtn.innerHTML = 'FINISH TEST <span class="text-2xl">🏁</span>';
             nextBtn.classList.replace('bg-gray-800', 'bg-pink-600');
             this.calculateQ2Result();
@@ -315,7 +334,6 @@ window.OralQuestGame = {
         const fullText = (this.transcript + " " + this.interimTranscript).trim();
         const spokenWords = fullText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
-        // ★修正：画面に表示されている英文を直接取得して採点基準にする（読み込みズレ防止）
         const passageText = document.getElementById('oq-passage-text').textContent || "";
         const targetWords = passageText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
@@ -355,16 +373,8 @@ window.OralQuestGame = {
         const fullText = (this.transcript + " " + this.interimTranscript).trim();
         const spokenWords = fullText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
-        // JSONデータから直接キーワードを取得
-        let q1Keywords = [];
-        let q1ModelAnswers = [];
-        if (window.currentTheme && window.currentTheme.stage1 && window.currentTheme.stage1.q1) {
-            q1Keywords = window.currentTheme.stage1.q1.keywords || [];
-            q1ModelAnswers = window.currentTheme.stage1.q1.modelAnswers || [];
-        }
-        
         let matchCount = 0;
-        q1Keywords.forEach(kw => {
+        this.q1Keywords.forEach(kw => {
             if (spokenWords.some(spoken => 
                 spoken === kw || spoken === kw + 's' || spoken === kw + 'es' || spoken === kw + 'd' || spoken === kw + 'ed' || spoken === kw + 'ing'
             )) {
@@ -382,7 +392,7 @@ window.OralQuestGame = {
             starsHtml = "⭐☆☆"; feedbackText = "もう少し！模範解答を確認しよう。";
         }
 
-        const modelsHtml = q1ModelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-indigo-300">${ans}</div>`).join('');
+        const modelsHtml = this.q1ModelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-indigo-300">${ans}</div>`).join('');
 
         const resEl = document.getElementById('oq-q1-result');
         resEl.innerHTML = `
@@ -501,7 +511,6 @@ window.OralQuestGame = {
             rank = "B"; rankColor = "text-blue-500"; message = "Good! さらに語彙を増やして表現力を高めよう。";
         }
 
-        // ★修正：FINISHボタンを押すと画像選択画面（view-select）に直接戻るように設定
         document.getElementById('oq-stage-3').innerHTML = `
             <div class="bg-white w-full rounded-3xl shadow-lg border border-gray-200 p-6 md:p-10 text-center fade-in">
                 <h2 class="text-2xl md:text-3xl font-black text-gray-800 mb-6 tracking-widest uppercase border-b-2 border-gray-100 pb-4">
@@ -549,3 +558,19 @@ window.OralQuestGame = {
         if (typeof window.playSuccessChime === 'function') window.playSuccessChime();
     }
 };
+
+// ==========================================
+// ★ 魔法のフック (Auto-Init)
+// main.jsからOral Questが選ばれた瞬間に、自動でinit()を起動させる安全装置
+// ==========================================
+setTimeout(() => {
+    if (typeof window.startGameWithTheme === 'function') {
+        const originalStart = window.startGameWithTheme;
+        window.startGameWithTheme = async function(id) {
+            await originalStart(id); // 元のシステムでJSONデータを読み込む
+            if (window.appState && window.appState.selectedMode === 'oralquest') {
+                window.OralQuestGame.init(); // 読み込み直後に自動で起動スイッチをONにする！
+            }
+        };
+    }
+}, 500);
