@@ -1,6 +1,6 @@
 // js/oralquest_game.js
 // ==========================================
-// ORAL QUEST モード専用ロジック (自動初期化＆レベル追尾対応版)
+// ORAL QUEST モード専用ロジック (自動初期化＆データ自動切り替え対応版)
 // ==========================================
 
 window.OralQuestGame = {
@@ -45,7 +45,6 @@ window.OralQuestGame = {
         let passageText = "Passage data not found.";
         let q1Text = "Question data not found.";
         
-        // ★修正：レベルを考慮した正確なデータを取得
         const targetData = this.getTargetData();
 
         if (targetData && targetData.stage1) {
@@ -105,7 +104,6 @@ window.OralQuestGame = {
             document.getElementById('oq-s2-live-score').textContent = "0";
             document.getElementById('oq-s2-pin-container').innerHTML = "";
             
-            // ★修正：レベル考慮で画像を取得
             const targetData = this.getTargetData();
             if (targetData && targetData.imageSrc) {
                 document.getElementById('oq-s2-image').src = targetData.imageSrc;
@@ -157,7 +155,6 @@ window.OralQuestGame = {
         const imgEl = document.getElementById('oq-interviewer-img');
         if (imgEl) imgEl.src = `assets/images/oralquest/interviewer_${randomImgNum}.webp`;
 
-        // ★修正：レベル考慮でStage3の質問を取得
         const targetData = this.getTargetData();
         if (targetData && targetData.stage3 && targetData.stage3.questions) {
             const qPool = targetData.stage3.questions;
@@ -560,16 +557,48 @@ window.OralQuestGame = {
 };
 
 // ==========================================
-// ★ 魔法のフック (Auto-Init)
-// main.jsからOral Questが選ばれた瞬間に、自動でinit()を起動させる安全装置
+// ★ 魔法のフック (Auto-Init & エラー回避フォールバック)
+// main.jsが「data/oralquest」にデータを探しに行ってエラーになるのを防ぐため、
+// 独自に安全なフォルダ（data/themes）からデータを拾い上げる仕組み
 // ==========================================
 setTimeout(() => {
     if (typeof window.startGameWithTheme === 'function') {
         const originalStart = window.startGameWithTheme;
         window.startGameWithTheme = async function(id) {
-            await originalStart(id); // 元のシステムでJSONデータを読み込む
             if (window.appState && window.appState.selectedMode === 'oralquest') {
-                window.OralQuestGame.init(); // 読み込み直後に自動で起動スイッチをONにする！
+                try {
+                    // 1. まず専用フォルダを試す
+                    let res = await fetch(`data/oralquest/${id}.json?t=${new Date().getTime()}`);
+                    if (!res.ok) {
+                        // 2. なければ共通テーマフォルダから引っ張る（フォールバック）
+                        res = await fetch(`data/themes/${id}.json?t=${new Date().getTime()}`);
+                    }
+                    if (!res.ok) throw new Error("Data not found");
+                    
+                    const fetchedData = await res.json();
+                    window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+
+                    // UIリセット等の基本処理
+                    const promptImage = document.getElementById('prompt-image');
+                    if (promptImage && window.currentTheme.imageSrc) {
+                        promptImage.src = window.currentTheme.imageSrcA || window.currentTheme.imageSrc;
+                        promptImage.style.filter = ''; promptImage.style.transform = '';
+                        promptImage.classList.remove('blur-md', 'w-1/2'); 
+                        promptImage.classList.add('w-full', 'blur-none');
+                    }
+
+                    if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
+                    
+                    // 初期化スイッチをON！
+                    window.OralQuestGame.init();
+
+                } catch (e) {
+                    console.error(e);
+                    alert("データが見つかりませんでした。「data/themes」の中にJSONファイルがあるか確認してください。");
+                }
+            } else {
+                // 他のモードはそのまま元の処理を動かす
+                await originalStart(id);
             }
         };
     }
