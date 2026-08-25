@@ -1,6 +1,6 @@
 // js/main.js
 // ==========================================
-// アプリケーションの司令塔 (全機能・全モード完全統合＆チェック済版)
+// アプリケーションの司令塔 (全機能・全モード完全統合＆Oral Quest即スタート対応版)
 // ==========================================
 
 window.appState = { 
@@ -1180,12 +1180,19 @@ document.addEventListener('click', (e) => {
         return;
     }
 
+    // ★修正箇所：画像クリック時のイベント
     const themeCard = e.target.closest('.theme-card');
     if (themeCard) {
         const themeId = themeCard.getAttribute('data-id');
         if (themeId) { 
             window.tempSelectedThemeId = themeId; 
-            document.getElementById('mode-select-modal').classList.remove('hidden'); 
+            
+            // Oral Questモードの時は、事前練習ポップアップを出さずに即座に本番をスタートする
+            if (window.appState.selectedMode === 'oralquest') {
+                window.startGameWithTheme(themeId);
+            } else {
+                document.getElementById('mode-select-modal').classList.remove('hidden'); 
+            }
         }
         return;
     }
@@ -1507,9 +1514,6 @@ window.addEventListener('load', () => {
     }, 500);
 });
 
-// ==========================================
-// ★ index.html への遷移を play.html (モード選択) に強制変更するコード
-// ==========================================
 document.addEventListener('click', (e) => {
     const toIndexBtn = e.target.closest('[onclick*="index.html"]');
     
