@@ -1,6 +1,6 @@
 // js/main.js
 // ==========================================
-// アプリケーションの司令塔 (機能・UI 完全統合＆バグ修正版)
+// アプリケーションの司令塔 (全機能・全モード完全統合＆チェック済版)
 // ==========================================
 
 window.appState = { 
@@ -517,8 +517,19 @@ window.startGameWithTheme = async function(id) {
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
-        if (window.appState.selectedMode === 'oralquest') folderPath = 'data/oralquest'; 
-        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+        
+        let res;
+        if (window.appState.selectedMode === 'oralquest') {
+            res = await fetch(`data/oralquest/${id}.json?t=` + new Date().getTime());
+            if (!res.ok) {
+                res = await fetch(`data/themes/${id}.json?t=` + new Date().getTime());
+            }
+        } else {
+            res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+        }
+
+        if (!res.ok) throw new Error("Data not found");
+        
         const fetchedData = await res.json();
         window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
     } catch (e) {
@@ -622,14 +633,9 @@ window.startGameWithTheme = async function(id) {
     if (window.appState.selectedMode === 'oralquest') {
         if (typeof showView === 'function') showView(document.getElementById('view-oralquest'));
         
-        document.getElementById('oq-stage-1').classList.remove('hidden');
-        document.getElementById('oq-stage-2').classList.add('hidden');
-        document.getElementById('oq-stage-3').classList.add('hidden');
-        document.getElementById('oq-progress-bar').style.width = '10%';
-        document.getElementById('btn-oq-start').classList.remove('hidden');
-        document.getElementById('btn-oq-next').classList.add('hidden');
-        document.getElementById('oq-reading-result').classList.add('hidden');
-        document.getElementById('oq-status-text').textContent = "Tap START to read";
+        if (typeof window.OralQuestGame !== 'undefined') {
+            window.OralQuestGame.init();
+        }
     } else {
         if (typeof showView === 'function') showView(document.getElementById('view-play'));
     }
@@ -707,11 +713,10 @@ window.renderSnapshotResult = function() {
     const container = document.getElementById('ranking-container');
     if (!container) return;
 
-    // ★ 修正：リザルト画面の強引な固定設定を解除し、.hidden が機能するようにする
     let currentEl = container.parentElement;
     while (currentEl && currentEl.tagName !== 'BODY') {
         if (currentEl.id === 'view-result') {
-            currentEl.style.removeProperty('display'); // !!! ここが一番重要な修正箇所 !!!
+            currentEl.style.removeProperty('display'); 
             currentEl.style.setProperty('flex-direction', 'column', 'important');
             currentEl.style.setProperty('height', '100dvh', 'important');
             currentEl.style.setProperty('overflow', 'hidden', 'important');
@@ -1146,7 +1151,6 @@ document.addEventListener('click', (e) => {
         if(window.supportInterval) clearInterval(window.supportInterval);
         window.closePracticeModal();
         
-        // ★ 修正：リザルト画面の固定を確実に解除して隠す
         const vr = document.getElementById('view-result');
         if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
         
@@ -1161,7 +1165,6 @@ document.addEventListener('click', (e) => {
         clearInterval(window.gameTimer);
         if(window.supportInterval) clearInterval(window.supportInterval);
         
-        // ★ 修正：リザルト画面の固定を確実に解除して隠す
         const vr = document.getElementById('view-result');
         if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
 
@@ -1324,7 +1327,6 @@ document.addEventListener('click', (e) => {
             } else { pImage.style.filter = ''; pImage.style.transform = ''; pImage.classList.remove('blur-none'); pImage.classList.add('blur-md'); }
         }
 
-        // ★ 修正：リザルト画面の固定を確実に解除して隠す
         const vr = document.getElementById('view-result');
         if (vr) { vr.style.removeProperty('display'); vr.classList.add('hidden'); }
 
@@ -1504,19 +1506,17 @@ window.addEventListener('load', () => {
         }
     }, 500);
 });
+
 // ==========================================
 // ★ index.html への遷移を play.html (モード選択) に強制変更するコード
 // ==========================================
 document.addEventListener('click', (e) => {
-    // onclick="window.location.href='index.html'" を持っているボタンを捕まえる
     const toIndexBtn = e.target.closest('[onclick*="index.html"]');
     
     if (toIndexBtn) {
-        // HTMLの直接リンクを強制的にキャンセル
         e.preventDefault();
         e.stopImmediatePropagation();
         
-        // 録音等の動作を安全に停止
         if (typeof pfState !== 'undefined' && pfState.isPlaying) {
             pfState.isPlaying = false;
             if (pfState.timerId) clearInterval(pfState.timerId);
@@ -1526,7 +1526,6 @@ document.addEventListener('click', (e) => {
             window.stopSpeech();
         }
         
-        // ゲームモード選択画面 (play.html) へ強制ジャンプ！
         window.location.href = 'play.html';
     }
-}, true); // true = HTMLのonclickより先に実行（キャプチャフェーズ）
+}, true);
