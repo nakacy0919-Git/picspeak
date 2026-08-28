@@ -1,0 +1,753 @@
+{
+  "id": "theme_l2_037",
+  "imageSrc": "assets/images/l2_037.webp",
+  "titleEn": "Waterfront Cafe Walk",
+  "titleJa": "海辺のカフェ散策",
+  "description": "海辺の公園に建つ特徴的なカフェの前を、2人の若者が散策している。建物は黒に近い濃い色の外壁と大きく斜めに伸びた屋根が特徴で、正面にはオリジナルの円形エンブレムが掲げられている。左側には芝生の広場と木々があり、中央手前からカフェ入口へ向かって緩やかなスロープと黒い手すりが伸びている。店内は大きなガラス窓越しにカウンターや照明が見える。右奥には白い大型の建物があり、そのさらに向こうには海辺の施設が続いている。2人のうち一人はスロープを歩きながら建物を見上げ、もう一人は芝生側から海辺の景色を指さしている。建物、芝生、歩道、空、周辺施設の位置関係を描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall architecture and spatial composition closely on the provided reference photograph, but do not reproduce any real store name, recognizable commercial logo, or identifiable menu branding. The main purpose of the image is townscape and city-scene description practice. Show a distinctive modern waterfront cafe building occupying the center and right-center of the scene. The building should have a dramatic angular dark charcoal exterior, a tall sloping facade, geometric wall panels, and a large original circular emblem featuring a simple abstract coffee leaf and wave design. Do not use any recognizable real-world logo. Under the tall main section, include a lower flat-roofed entrance area with wide glass windows and doors. Through the glass, show a warm cafe interior with a counter, pendant lights, shelves, cups, and generic menu panels containing simple original food and drink illustrations such as coffee, citrus soda, soup, sandwiches, and salad. Do not include company names or proper nouns. In the foreground, show a broad grassy lawn extending across the lower left and center. A gently sloping accessibility ramp should begin near the lower center foreground and run diagonally upward toward the cafe entrance, bordered by realistic dark metal handrails on both sides. Include a second paved walkway near the lawn. On the far left, show a waterfront park area with a few trees, simple outdoor benches, low decorative posts, and white street lamps. On the far right background, show a large white multi-story waterfront building with horizontal balconies, partially cropped by the edge of the composition. Behind and around the cafe, include glimpses of harbor-side structures, trees, railings, and open public space. The sky should occupy a large part of the upper half of the image and contain a mixture of blue patches, bright clouds, and larger soft gray clouds, closely resembling a changeable coastal daytime sky. Show exactly two visible people and no others anywhere in the scene. Keep both people relatively small so the architecture remains the main focus. One young adult should be walking up the accessibility ramp toward the cafe while looking up at the unusual building facade. The second young adult should stand near the edge of the grass and point toward the waterfront area, as if discussing the scenery. Their actions should provide a simple outing story without dominating the scene. Include original generic cafe signage such as small icons for coffee, bread, cold drinks, and light meals, but avoid recognizable branding and avoid proper nouns. Make the physical layout realistic: grass in the foreground, diagonal ramp and railings leading toward the entrance, dark angular cafe in the center-right, waterfront park on the left, and large white building in the far right background. Exactly two visible people, no additional pedestrians, no staff visible through the windows, no reflected people, no animals, no speech bubbles, no copyrighted characters. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, clear depth from foreground to background, information-dense but visually organized, suitable for practicing descriptions of buildings, surroundings, position, direction, weather, and urban scenery.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "cafe",
+          "ja": "カフェ",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "grass",
+          "ja": "芝生",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "door",
+          "ja": "ドア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "通路・道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "rail",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "large",
+          "ja": "大きい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dark",
+          "ja": "暗い色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a large dark building",
+          "ja": "大きな濃い色の建物",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a green lawn",
+          "ja": "緑の芝生",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "walk up the ramp",
+          "ja": "スロープを上る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the building",
+          "ja": "建物を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the water",
+          "ja": "水辺を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many big windows",
+          "ja": "たくさんの大きな窓",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "under the cloudy sky",
+          "ja": "曇り空の下で",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "near the waterfront",
+          "ja": "水辺の近くに",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a large cafe near the water.",
+          "grammar": "There is",
+          "ja": "水辺の近くに大きなカフェがあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The building is dark and very tall.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "建物は濃い色でとても高いです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a green lawn in front of the cafe.",
+          "grammar": "There is",
+          "ja": "カフェの前に緑の芝生があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A person is walking up the ramp.",
+          "grammar": "現在進行形",
+          "ja": "一人がスロープを上っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another person is pointing toward the water.",
+          "grammar": "現在進行形",
+          "ja": "もう一人が水辺の方を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are large windows at the front.",
+          "grammar": "There are",
+          "ja": "正面には大きな窓があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A white building is on the right.",
+          "grammar": "be動詞＋場所",
+          "ja": "右側には白い建物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many clouds in the sky.",
+          "grammar": "There are",
+          "ja": "空にはたくさんの雲があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "waterfront",
+          "ja": "水辺",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "ramp",
+          "ja": "スロープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "railing",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lawn",
+          "ja": "芝生",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "facade",
+          "ja": "建物正面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "approach",
+          "ja": "近づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overlook",
+          "ja": "見渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "extend",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "angular",
+          "ja": "角張った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cloudy",
+          "ja": "雲の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distinctive",
+          "ja": "特徴的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a distinctive modern cafe",
+          "ja": "特徴的な現代風カフェ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an angular dark facade",
+          "ja": "角張った濃色の外観",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a gently sloping ramp",
+          "ja": "緩やかなスロープ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "lead to the entrance",
+          "ja": "入口へ続く",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "stand beside the lawn",
+          "ja": "芝生のそばに立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "overlook the waterfront",
+          "ja": "水辺を見渡す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "occupy the right side",
+          "ja": "右側を占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a partly cloudy sky",
+          "ja": "部分的に雲の多い空",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A distinctive modern cafe stands beside a broad waterfront lawn.",
+          "grammar": "現在形",
+          "ja": "特徴的な現代風カフェが広い水辺の芝生のそばに建っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The cafe has a tall angular facade covered with dark panels.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "カフェには濃い色のパネルで覆われた高く角張った外観があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A long ramp with metal railings leads from the foreground to the entrance.",
+          "grammar": "with＋名詞",
+          "ja": "金属製の手すりが付いた長いスロープが手前から入口まで続いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One visitor is walking toward the cafe while looking up at the building.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の訪問者は建物を見上げながらカフェへ向かっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other visitor is pointing toward the waterfront from the edge of the lawn.",
+          "grammar": "現在進行形",
+          "ja": "もう一人は芝生の端から水辺の方を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Large glass windows allow people to see part of the cafe interior.",
+          "grammar": "allow＋O＋to",
+          "ja": "大きなガラス窓からカフェ内部の一部を見ることができます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large white building can be seen in the far right background.",
+          "grammar": "助動詞＋受動態",
+          "ja": "右奥には大きな白い建物が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mixture of blue sky and thick clouds suggests changeable coastal weather.",
+          "grammar": "suggest＋名詞",
+          "ja": "青空と厚い雲が混ざっていることから、水辺特有の変わりやすい天候が感じられます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "architecture",
+          "ja": "建築",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "landscape",
+          "ja": "景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accessibility",
+          "ja": "利用しやすさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "promenade",
+          "ja": "遊歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "structure",
+          "ja": "構造物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "景観の中心を占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "integrate",
+          "ja": "調和させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "景観を構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overlook",
+          "ja": "見渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "geometric",
+          "ja": "幾何学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "contemporary",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "accessible",
+          "ja": "利用しやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "atmospheric",
+          "ja": "雰囲気のある",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "dominate the surrounding landscape",
+          "ja": "周囲の景観の中心を占める",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "feature a geometric facade",
+          "ja": "幾何学的な外観を備える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "contrast with the open lawn",
+          "ja": "開けた芝生と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "provide step-free access",
+          "ja": "段差のないアクセスを提供する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "extend diagonally across the foreground",
+          "ja": "前景を斜めに横切って伸びる",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "frame the waterfront setting",
+          "ja": "水辺の景観を構成する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create a strong visual contrast",
+          "ja": "強い視覚的対比を作る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "integrate commercial and public space",
+          "ja": "商業空間と公共空間を調和させる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "describe the spatial relationship",
+          "ja": "空間的な位置関係を描写する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The contemporary cafe dominates the waterfront landscape because of its unusually tall and geometric dark facade.",
+          "grammar": "because of",
+          "ja": "現代的なカフェは、非常に高く幾何学的な濃色の外観によって水辺の景観の中心となっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Its dramatic angular architecture contrasts sharply with the broad, relatively simple lawn surrounding the building.",
+          "grammar": "contrast with",
+          "ja": "大胆で角張った建築は、建物を囲む広く比較的シンプルな芝生と強い対照をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A lengthy accessibility ramp extends diagonally across the foreground before reaching the glass-fronted entrance.",
+          "grammar": "before＋動名詞",
+          "ja": "長いバリアフリー用スロープが前景を斜めに横切り、ガラス張りの入口へ続いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The repeated metal railings emphasize both the slope of the ground and the direction leading toward the cafe.",
+          "grammar": "both A and B",
+          "ja": "連続する金属製の手すりが、地面の傾斜とカフェへ向かう方向の両方を強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One visitor is approaching the entrance, whereas the other is directing attention toward the open waterfront area.",
+          "grammar": "whereas",
+          "ja": "一人は入口へ近づいている一方、もう一人は開けた水辺の方向へ注意を向けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The extensive glazing along the lower section visually connects the commercial interior with the surrounding public space.",
+          "grammar": "connect A with B",
+          "ja": "低層部分の広いガラス面が、商業施設の内部と周囲の公共空間を視覚的につないでいます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The large white structure in the distance creates a striking contrast in both color and scale with the dark cafe.",
+          "grammar": "both A and B",
+          "ja": "遠くの大きな白い建物は、濃色のカフェと色彩・規模の両面で目立つ対比を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The expansive sky, scattered clouds, grass, trees, and waterfront structures give the scene an open and atmospheric quality.",
+          "grammar": "give＋O＋C",
+          "ja": "広い空、散在する雲、芝生、木々、水辺の構造物が、景観に開放的で雰囲気のある印象を与えています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The scene provides useful practice in explaining how architecture, pedestrian routes, public space, and surrounding structures are positioned in relation to one another.",
+          "grammar": "how節 / in relation to",
+          "ja": "この場面は、建築物、歩行経路、公共空間、周辺施設が互いにどのような位置関係にあるか説明する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "main_cafe_building": {
+      "x": 62,
+      "y": 38
+    },
+    "tall_angular_facade": {
+      "x": 59,
+      "y": 26
+    },
+    "original_circular_emblem": {
+      "x": 60,
+      "y": 22
+    },
+    "dark_wall_panels": {
+      "x": 67,
+      "y": 36
+    },
+    "wooden_slats": {
+      "x": 76,
+      "y": 40
+    },
+    "lower_roof": {
+      "x": 31,
+      "y": 43
+    },
+    "glass_entrance": {
+      "x": 39,
+      "y": 54
+    },
+    "cafe_windows": {
+      "x": 34,
+      "y": 53
+    },
+    "interior_counter": {
+      "x": 42,
+      "y": 55
+    },
+    "grassy_lawn": {
+      "x": 26,
+      "y": 73
+    },
+    "accessibility_ramp": {
+      "x": 51,
+      "y": 76
+    },
+    "left_ramp_railing": {
+      "x": 43,
+      "y": 69
+    },
+    "right_ramp_railing": {
+      "x": 59,
+      "y": 70
+    },
+    "paved_walkway": {
+      "x": 38,
+      "y": 68
+    },
+    "walking_visitor": {
+      "x": 44,
+      "y": 62
+    },
+    "pointing_visitor": {
+      "x": 19,
+      "y": 67
+    },
+    "waterfront_park": {
+      "x": 10,
+      "y": 58
+    },
+    "park_trees": {
+      "x": 8,
+      "y": 52
+    },
+    "outdoor_bench": {
+      "x": 12,
+      "y": 65
+    },
+    "white_street_lamp": {
+      "x": 15,
+      "y": 55
+    },
+    "waterfront_railing": {
+      "x": 8,
+      "y": 64
+    },
+    "large_white_building": {
+      "x": 94,
+      "y": 43
+    },
+    "white_balconies": {
+      "x": 96,
+      "y": 38
+    },
+    "harbor_structures": {
+      "x": 89,
+      "y": 58
+    },
+    "blue_sky": {
+      "x": 72,
+      "y": 8
+    },
+    "gray_clouds": {
+      "x": 22,
+      "y": 12
+    },
+    "bright_clouds": {
+      "x": 77,
+      "y": 13
+    },
+    "roof_edge": {
+      "x": 71,
+      "y": 22
+    },
+    "entrance_path": {
+      "x": 45,
+      "y": 72
+    },
+    "small_ground_lights": {
+      "x": 33,
+      "y": 70
+    }
+  }
+}

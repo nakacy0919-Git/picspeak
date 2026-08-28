@@ -1,0 +1,753 @@
+{
+  "id": "theme_l2_038",
+  "imageSrc": "assets/images/l2_038.webp",
+  "titleEn": "City Street Corner",
+  "titleJa": "街角の交差点",
+  "description": "昼間の日本の都心部の交差点を描いた場面である。手前には大きな横断歩道があり、信号は赤になっているため、数台の車が道路上で止まっている。左側には白っぽい大きなオフィスビルが長く続き、右側には青と白のしま模様のひさしが並ぶ建物がある。歩道には点字ブロック、街路樹、街灯、車止めポールが見られ、現代的な日本の街並みが分かる。児童生徒が描写しやすいように、場面の中心となる要素を明確にし、人物は2人だけにしている。右手前の歩道では2人の生徒が信号待ちをしており、一人は横断歩道の向こう側を指さし、もう一人は赤信号を見ながら待っている。建物、道路、車、信号、歩道、空の位置関係を説明する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall street layout closely on the provided reference photograph, but replace any visible building names, banners, signs, and commercial text with original fictional or generic alternatives. Do not include proper nouns in the English scene. The main purpose is townscape and street-scene description practice for children and students, so the composition should be realistic, clear, and easy to describe. Show a modern Japanese city intersection in the daytime. In the foreground, place a wide zebra crossing stretching from the lower left toward the center. Above the road, show a traffic light displaying red. Several vehicles should be stopped at the intersection: a reddish-brown minivan on the left lane, a white van near the center, a dark sedan on the right lane, and a few additional light-colored cars farther back. On the left side, include a long white office building with many horizontal window bands extending deep into the background. In the middle distance, include several narrower buildings of different heights, including one wrapped or covered section and a few vertical banners with original generic text or abstract symbols only. On the right side, show a beige or light-colored building with a row of blue-and-white striped awnings and tall columns along the sidewalk. The right foreground sidewalk should contain tactile paving blocks, a curved curb, drainage covers, a bollard, street trees, and a brick-pattern pavement. Add overhead cables, a curved streetlight, utility poles, and a partly cloudy sky. Show exactly two visible people and no others anywhere in the scene. Place both people on the right foreground sidewalk near the corner so they are easy to notice but do not dominate the scene. One student should be pointing across the street toward the buildings ahead, while the other student is standing beside them and looking at the red traffic light as they wait to cross. Keep their actions simple and natural so young learners can describe them easily. Do not add crowds, cyclists, staff, or people in the windows. Preserve the realistic city layout: road in the center, tall buildings on both sides, zebra crossing in front, red traffic signal above, cars waiting on the road, and sidewalk details on the right. Exactly two visible people, no more and no less. No animals, no speech bubbles, no copyrighted characters, and no recognizable brand logos. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, clean and information-rich but visually organized, suitable for practicing descriptions of streets, traffic, buildings, sidewalks, positions, and daily urban scenery in Japan.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crosswalk",
+          "ja": "横断歩道",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "van",
+          "ja": "バン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "signal",
+          "ja": "信号",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sidewalk",
+          "ja": "歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wait",
+          "ja": "待つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stop",
+          "ja": "止まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "red",
+          "ja": "赤い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a busy street",
+          "ja": "にぎやかな通り",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a wide crosswalk",
+          "ja": "広い横断歩道",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a red traffic light",
+          "ja": "赤信号",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "many tall buildings",
+          "ja": "たくさんの高い建物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "cars are waiting",
+          "ja": "車が待っている",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on the sidewalk",
+          "ja": "歩道に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point across the street",
+          "ja": "通りの向こうを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wait to cross",
+          "ja": "渡るのを待つ",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This is a city street.",
+          "grammar": "be動詞",
+          "ja": "これは街の通りです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a wide crosswalk in front.",
+          "grammar": "There is",
+          "ja": "手前に広い横断歩道があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The traffic light is red.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "信号は赤です。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some cars are stopped on the road.",
+          "grammar": "現在進行形",
+          "ja": "何台かの車が道路で止まっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are tall buildings on both sides.",
+          "grammar": "There are",
+          "ja": "両側に高い建物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing on the sidewalk.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が歩道に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing across the street.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が通りの向こうを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is waiting for the light.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は信号を待っています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "intersection",
+          "ja": "交差点",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "office building",
+          "ja": "オフィスビル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "traffic light",
+          "ja": "信号機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lane",
+          "ja": "車線",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sidewalk",
+          "ja": "歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "awning",
+          "ja": "ひさし",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wait",
+          "ja": "待つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cross",
+          "ja": "渡る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stretch",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "urban",
+          "ja": "都市の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混み合った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "striped",
+          "ja": "しま模様の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cloudy",
+          "ja": "曇った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a modern city intersection",
+          "ja": "現代的な街の交差点",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a row of office buildings",
+          "ja": "並んだオフィスビル",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "cars are waiting at the light",
+          "ja": "車が信号待ちをしている",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a red traffic signal",
+          "ja": "赤い信号機",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "blue-and-white awnings",
+          "ja": "青と白のひさし",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stand near the corner",
+          "ja": "角の近くに立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "wait for the green light",
+          "ja": "青信号を待つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "describe the street scene",
+          "ja": "通りの様子を描写する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This scene shows a modern intersection in a Japanese city.",
+          "grammar": "現在形",
+          "ja": "この場面は日本の都市にある現代的な交差点を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A wide zebra crossing stretches across the front of the road.",
+          "grammar": "現在形",
+          "ja": "広い横断歩道が道路の手前に伸びています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several cars are waiting because the traffic light is red.",
+          "grammar": "because節",
+          "ja": "信号が赤なので、数台の車が待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Tall office buildings line the left side of the street.",
+          "grammar": "現在形",
+          "ja": "背の高いオフィスビルが通りの左側に並んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the right side, a building with striped awnings stands beside the sidewalk.",
+          "grammar": "前置詞句 / with＋名詞",
+          "ja": "右側には、しま模様のひさしがある建物が歩道の横に建っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing near the corner and waiting to cross the street.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が角の近くに立ち、通りを渡るのを待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing toward the buildings ahead.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が前方の建物を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene is easy to describe because the main objects are clearly arranged.",
+          "grammar": "because節 / 受動態",
+          "ja": "主なものが分かりやすく配置されているので、この場面は描写しやすいです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "streetscape",
+          "ja": "街路景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "intersection",
+          "ja": "交差点",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pedestrian crossing",
+          "ja": "横断歩道",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sidewalk",
+          "ja": "歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "facade",
+          "ja": "建物の正面外観",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "並ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "大きく占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "extend",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "indicate",
+          "ja": "示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "urban",
+          "ja": "都市の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "orderly",
+          "ja": "整然とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "practical",
+          "ja": "実用的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "descriptive",
+          "ja": "描写向きの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an orderly urban streetscape",
+          "ja": "整然とした都市景観",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "dominate the left side of the frame",
+          "ja": "画面左側を大きく占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "extend into the background",
+          "ja": "奥へと伸びる",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "wait at a red signal",
+          "ja": "赤信号で待つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "form a clear focal point",
+          "ja": "明確な注目点を作る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "frame the right sidewalk",
+          "ja": "右側の歩道を構成する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "indicate the direction of traffic",
+          "ja": "交通の流れを示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "practice positional description",
+          "ja": "位置関係の描写を練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "describe everyday city life",
+          "ja": "日常の都市生活を描写する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents an orderly urban streetscape centered on a city intersection in contemporary Japan.",
+          "grammar": "現在形",
+          "ja": "この画像は、現代日本の都市交差点を中心とした整然とした街路景観を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The wide pedestrian crossing in the foreground forms a clear focal point and leads the viewer's eye toward the waiting vehicles.",
+          "grammar": "lead＋O＋toward",
+          "ja": "前景の広い横断歩道が明確な注目点となり、見る人の視線を停車中の車へ導いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Because the traffic signal is red, several vehicles are temporarily stopped at the intersection.",
+          "grammar": "because節 / 受動態",
+          "ja": "信号が赤であるため、数台の車が交差点で一時的に停止しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The long office building on the left dominates that side of the frame and emphasizes the depth of the street.",
+          "grammar": "and / emphasize",
+          "ja": "左側の長いオフィスビルがその側を大きく占め、通りの奥行きを強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the right, the repeated striped awnings and columns help frame the sidewalk and create a recognizable architectural rhythm.",
+          "grammar": "help＋O＋動詞",
+          "ja": "右側では、繰り返されるしま模様のひさしと柱が歩道の景観を構成し、特徴的な建築のリズムを生み出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two students waiting near the corner provide a simple human element without distracting from the overall townscape.",
+          "grammar": "without＋動名詞",
+          "ja": "角の近くで待つ2人の生徒は、全体の街並みを損なうことなく、簡潔な人物要素を加えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One student's gesture directs attention across the street, which makes it easier to describe locations such as left, right, ahead, and across.",
+          "grammar": "make it＋形容詞＋to",
+          "ja": "一人の生徒のしぐさは通りの向こう側へ注意を向けさせるため、左・右・前方・向こう側といった位置表現を説明しやすくしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Details such as tactile paving, street trees, traffic equipment, and layered buildings make the scene especially useful for practicing descriptive English.",
+          "grammar": "such as",
+          "ja": "点字ブロック、街路樹、交通設備、重なって見える建物などの細部により、この場面は英語での描写練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene offers effective practice in explaining how roads, buildings, vehicles, and pedestrian spaces are positioned in relation to one another.",
+          "grammar": "how節 / in relation to",
+          "ja": "全体として、この場面は道路、建物、車両、歩行空間が互いにどのような位置関係にあるか説明する良い練習になります。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "zebra_crossing": {
+      "x": 18,
+      "y": 77
+    },
+    "red_traffic_light": {
+      "x": 27,
+      "y": 26
+    },
+    "traffic_signal_pole": {
+      "x": 19,
+      "y": 33
+    },
+    "reddish_minivan": {
+      "x": 23,
+      "y": 62
+    },
+    "white_van_center": {
+      "x": 52,
+      "y": 61
+    },
+    "black_sedan": {
+      "x": 64,
+      "y": 62
+    },
+    "light_colored_cars": {
+      "x": 58,
+      "y": 58
+    },
+    "left_office_building": {
+      "x": 16,
+      "y": 28
+    },
+    "left_building_windows": {
+      "x": 14,
+      "y": 21
+    },
+    "middle_narrow_buildings": {
+      "x": 53,
+      "y": 31
+    },
+    "center_wrapped_building": {
+      "x": 44,
+      "y": 20
+    },
+    "generic_vertical_banner": {
+      "x": 43,
+      "y": 14
+    },
+    "right_awning_building": {
+      "x": 90,
+      "y": 31
+    },
+    "blue_white_awnings": {
+      "x": 92,
+      "y": 18
+    },
+    "right_columns": {
+      "x": 88,
+      "y": 46
+    },
+    "right_sidewalk": {
+      "x": 84,
+      "y": 72
+    },
+    "brick_pavement": {
+      "x": 88,
+      "y": 78
+    },
+    "tactile_paving": {
+      "x": 83,
+      "y": 74
+    },
+    "curved_curb": {
+      "x": 71,
+      "y": 79
+    },
+    "drain_cover": {
+      "x": 69,
+      "y": 82
+    },
+    "bollard": {
+      "x": 79,
+      "y": 73
+    },
+    "street_tree_right": {
+      "x": 72,
+      "y": 43
+    },
+    "street_tree_center": {
+      "x": 37,
+      "y": 45
+    },
+    "curved_streetlight": {
+      "x": 72,
+      "y": 11
+    },
+    "overhead_cables": {
+      "x": 35,
+      "y": 9
+    },
+    "student_pointing": {
+      "x": 87,
+      "y": 67
+    },
+    "student_waiting": {
+      "x": 82,
+      "y": 68
+    },
+    "cloudy_sky": {
+      "x": 63,
+      "y": 8
+    },
+    "road_center": {
+      "x": 46,
+      "y": 70
+    },
+    "corner_sidewalk_edge": {
+      "x": 75,
+      "y": 76
+    }
+  }
+}

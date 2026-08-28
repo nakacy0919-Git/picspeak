@@ -1,0 +1,753 @@
+{
+  "id": "theme_l2_041",
+  "imageSrc": "assets/images/l2_041.webp",
+  "titleEn": "Red Pavilion Square",
+  "titleJa": "赤いあずまや広場",
+  "description": "昼間の日本の観光エリアにある広場を描いた場面である。画面の中央には、赤い柱と金色の屋根が目立つ東屋のような建物が立っており、その周りには飲食店や看板のあるにぎやかな通りが広がっている。左側には赤や茶色の建物、料理の写真が並ぶ店先、石の像があり、右側には黒っぽい建物、黄色いひさし、立て看板が見られる。地面は広く舗装されていて、街灯のような装飾柱や木もある。児童生徒が描写しやすいように、人物は2人だけにし、中央の赤い東屋、左右の建物、前景の広場、奥へ続く通りという位置関係が分かりやすい構図にする。2人の生徒は東屋の前に立っており、一人は上の屋根を見上げ、もう一人は左側の店並みを指さしている。建物の色、形、位置関係、広場の様子を英語で説明する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall layout closely on the provided reference photograph, but replace all visible shop names, menu text, posters, logos, signboards, and identifying writing with original fictional designs, simple symbols, or decorative lettering. Do not use proper nouns in the English scene. The main purpose is townscape description practice for students, so the scene should be realistic, visually clear, and easy to describe. Show a lively-looking but uncrowded pedestrian square in a Japanese tourist district during the daytime. In the exact center, place a decorative red pavilion with bright red pillars and layered golden roofs. The pavilion should have an octagonal or circular upper section, curved roof edges, and a hanging signboard with original decorative characters or abstract symbols. In front of the pavilion, show a low decorative sign or small display base, also using fictional text only. On the left side, show a row of reddish and beige low-rise buildings with many restaurant fronts, hanging signs, food-photo display boards, awnings, and a few decorative stone animal statues near the edge of the square. On the right side, show a darker building with tall windows, yellow awnings, menu boards, and an additional red signboard or notice stand. Add one decorative lantern-style street post on the right and another on the left. The foreground should be a broad paved pedestrian area with light gray stone tiles, allowing learners to describe open space clearly. In the midground and background, continue the narrow shopping street with more low-rise buildings, small signs, utility cables, and a flowering tree with pink blossoms. Show exactly two visible people and no others anywhere in the image. Place both people in the center foreground directly in front of the pavilion so they are easy to notice but do not block the architecture. One student should be standing slightly to the left and looking up at the pavilion roof with curiosity. The other student should be standing slightly to the right and pointing toward the restaurant fronts on the left side, as if talking about the area. Their clothes should be simple and casual. Do not add crowds, staff, cyclists, shoppers, or people in the background. Preserve the main positional relationships clearly: red-and-gold pavilion in the center, red and beige shop buildings on the left, darker building and yellow awnings on the right, broad stone plaza in front, shopping street extending into the background, and a pink flowering tree near the back. Exactly two visible people, no more and no less. No animals moving around, no speech bubbles, no copyrighted characters, and no recognizable brand logos. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, clean and information-rich but visually organized, suitable for practicing descriptions of buildings, colors, directions, positions, and everyday urban scenery.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "pavilion",
+          "ja": "あずまや・東屋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "square",
+          "ja": "広場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "shop",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "roof",
+          "ja": "屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "看板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "statue",
+          "ja": "像",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street lamp",
+          "ja": "街灯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "red",
+          "ja": "赤い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "golden",
+          "ja": "金色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a red pavilion",
+          "ja": "赤い東屋",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a golden roof",
+          "ja": "金色の屋根",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a wide square",
+          "ja": "広い広場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "many small shops",
+          "ja": "たくさんの小さな店",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stand in front of the pavilion",
+          "ja": "東屋の前に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "look up at the roof",
+          "ja": "屋根を見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point to the left side",
+          "ja": "左側を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shops on both sides",
+          "ja": "両側の店",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a red pavilion in the middle.",
+          "grammar": "There is",
+          "ja": "真ん中に赤い東屋があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The roof is golden and beautiful.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "屋根は金色できれいです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many shops around the square.",
+          "grammar": "There are",
+          "ja": "広場のまわりにたくさんの店があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing in front of the pavilion.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が東屋の前に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is looking up at the roof.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が屋根を見上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is pointing to the left.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は左を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a tree in the back.",
+          "grammar": "There is",
+          "ja": "奥に木があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The square is wide and open.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "広場は広くて開けています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "tourist area",
+          "ja": "観光エリア",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pavilion",
+          "ja": "東屋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pedestrian square",
+          "ja": "歩行者広場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "awning",
+          "ja": "ひさし",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "signboard",
+          "ja": "看板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stone statue",
+          "ja": "石の像",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stretch",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "admire",
+          "ja": "見とれる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "traditional",
+          "ja": "伝統風の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "decorative",
+          "ja": "装飾的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "busy-looking",
+          "ja": "にぎやかそうな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "open",
+          "ja": "開けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色彩豊かな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a decorative pavilion",
+          "ja": "装飾的な東屋",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a broad pedestrian square",
+          "ja": "広い歩行者広場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "shops on both sides",
+          "ja": "両側の店",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a shopping street in the background",
+          "ja": "背景の商店街",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "stand in front of the pavilion",
+          "ja": "東屋の前に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "look up with curiosity",
+          "ja": "興味をもって見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the restaurants",
+          "ja": "飲食店の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a flowering tree behind the pavilion",
+          "ja": "東屋の後ろの花の木",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This scene shows a pedestrian square in a Japanese tourist area.",
+          "grammar": "現在形",
+          "ja": "この場面は日本の観光エリアにある歩行者広場を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A decorative red pavilion stands in the center of the square.",
+          "grammar": "現在形",
+          "ja": "装飾的な赤い東屋が広場の中央に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The pavilion has layered golden roofs and bright red pillars.",
+          "grammar": "have＋名詞",
+          "ja": "その東屋には重なった金色の屋根と鮮やかな赤い柱があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many restaurants and signboards can be seen on both sides.",
+          "grammar": "助動詞＋受動態",
+          "ja": "両側にはたくさんの飲食店や看板が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing in front of the pavilion.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が東屋の前に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is looking up at the roof with interest.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が興味を持って屋根を見上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is pointing toward the restaurant area on the left.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は左側の飲食店エリアを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A flowering tree and more shops stretch into the background.",
+          "grammar": "現在形",
+          "ja": "花の咲いた木とさらに多くの店が背景へ伸びています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "landmark",
+          "ja": "ランドマーク",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "streetscape",
+          "ja": "街路景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pedestrian zone",
+          "ja": "歩行者空間",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pavilion",
+          "ja": "東屋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "facade",
+          "ja": "外観",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "中心を占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "景観を構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emphasize",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "guide",
+          "ja": "導く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ornate",
+          "ja": "華やかに装飾された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vibrant",
+          "ja": "活気のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "descriptive",
+          "ja": "描写向きの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an ornate central landmark",
+          "ja": "中央の華やかなランドマーク",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "dominate the middle of the square",
+          "ja": "広場の中央を大きく占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "frame the pedestrian zone",
+          "ja": "歩行者空間を構成する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create a strong color contrast",
+          "ja": "強い色の対比を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "guide the viewer's eye inward",
+          "ja": "視線を奥へ導く",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "restaurant fronts on the left",
+          "ja": "左側の飲食店の店先",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a darker facade on the right",
+          "ja": "右側のより暗い外観",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a flowering tree in the background",
+          "ja": "背景の花の木",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "practice positional description",
+          "ja": "位置関係の描写を練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a vibrant pedestrian streetscape centered on an ornate pavilion that functions as a visual landmark.",
+          "grammar": "現在形 / 関係代名詞that",
+          "ja": "この画像は、視覚的なランドマークとして機能する華やかな東屋を中心にした活気ある歩行者空間の景観を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The pavilion dominates the middle of the square with its bright red pillars, layered golden roofs, and decorative signboard.",
+          "grammar": "with＋名詞",
+          "ja": "その東屋は、鮮やかな赤い柱、重なった金色の屋根、装飾的な看板によって広場の中央を大きく占めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The restaurant fronts and signboards on the left create a busier visual impression than the darker building on the right.",
+          "grammar": "比較級",
+          "ja": "左側の飲食店の店先や看板は、右側のより暗い建物よりもにぎやかな印象を作り出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The wide tiled square in the foreground emphasizes the openness of the pedestrian zone and makes the central structure stand out.",
+          "grammar": "make＋O＋C",
+          "ja": "前景の広いタイル張りの広場は歩行者空間の開放感を強調し、中央の構造物をより目立たせています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The two students provide a simple human focus without distracting from the surrounding architecture and urban details.",
+          "grammar": "without＋動名詞",
+          "ja": "2人の生徒は、周囲の建築や都市的な細部を損なうことなく、簡潔な人物の焦点を与えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One student's upward gaze emphasizes the height and decorative complexity of the pavilion roof.",
+          "grammar": "現在形",
+          "ja": "一人の生徒の上向きの視線は、東屋の屋根の高さと装飾の複雑さを強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student's gesture guides the viewer's attention toward the row of restaurants and display boards on the left side.",
+          "grammar": "guide A toward B",
+          "ja": "もう一人の生徒のしぐさは、左側の飲食店や掲示板の並びへ視線を導いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Because the shopping street continues into the background, the scene offers useful practice in describing depth, direction, and spatial arrangement.",
+          "grammar": "because節",
+          "ja": "商店街が背景へ続いているため、この場面は奥行き、方向、空間配置を描写する練習に役立ちます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image is particularly suitable for explaining how a central landmark relates to surrounding buildings, open space, and commercial activity.",
+          "grammar": "how節 / relate to",
+          "ja": "全体として、この画像は中央のランドマークが周囲の建物、開けた空間、商業活動とどのように関係しているか説明するのに特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "central_pavilion": {
+      "x": 51,
+      "y": 28
+    },
+    "upper_golden_roof": {
+      "x": 51,
+      "y": 13
+    },
+    "lower_golden_roof": {
+      "x": 51,
+      "y": 23
+    },
+    "red_pillars": {
+      "x": 50,
+      "y": 42
+    },
+    "central_signboard": {
+      "x": 50,
+      "y": 31
+    },
+    "front_display_base": {
+      "x": 50,
+      "y": 64
+    },
+    "foreground_square": {
+      "x": 49,
+      "y": 83
+    },
+    "stone_tiles": {
+      "x": 51,
+      "y": 86
+    },
+    "student_looking_up": {
+      "x": 43,
+      "y": 67
+    },
+    "student_pointing_left": {
+      "x": 57,
+      "y": 67
+    },
+    "left_red_building": {
+      "x": 12,
+      "y": 30
+    },
+    "left_beige_building": {
+      "x": 24,
+      "y": 28
+    },
+    "left_restaurant_fronts": {
+      "x": 17,
+      "y": 51
+    },
+    "left_food_display_boards": {
+      "x": 13,
+      "y": 60
+    },
+    "left_hanging_signs": {
+      "x": 20,
+      "y": 43
+    },
+    "left_stone_statue": {
+      "x": 8,
+      "y": 58
+    },
+    "second_stone_statue": {
+      "x": 22,
+      "y": 57
+    },
+    "left_lantern_post": {
+      "x": 6,
+      "y": 32
+    },
+    "right_dark_building": {
+      "x": 84,
+      "y": 28
+    },
+    "right_tall_windows": {
+      "x": 80,
+      "y": 27
+    },
+    "right_yellow_awnings": {
+      "x": 86,
+      "y": 47
+    },
+    "right_menu_board": {
+      "x": 95,
+      "y": 58
+    },
+    "right_notice_sign": {
+      "x": 96,
+      "y": 69
+    },
+    "right_lantern_post": {
+      "x": 94,
+      "y": 34
+    },
+    "background_shopping_street": {
+      "x": 50,
+      "y": 46
+    },
+    "flowering_tree": {
+      "x": 69,
+      "y": 47
+    },
+    "utility_cables": {
+      "x": 67,
+      "y": 31
+    },
+    "midground_buildings": {
+      "x": 49,
+      "y": 38
+    },
+    "sidewalk_edge_left": {
+      "x": 15,
+      "y": 73
+    },
+    "sidewalk_edge_right": {
+      "x": 86,
+      "y": 72
+    }
+  }
+}

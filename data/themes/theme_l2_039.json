@@ -1,0 +1,753 @@
+{
+  "id": "theme_l2_039",
+  "imageSrc": "assets/images/l2_039.webp",
+  "titleEn": "Decorative Street Gate",
+  "titleJa": "飾り門のある通り",
+  "description": "昼間の日本の観光エリアにある特徴的な通りを描いた場面である。画面の中央には、大きな赤い屋根と細かな装飾が目立つ伝統風の門が立っており、その下からまっすぐ商店街の通りが奥へ伸びている。門は白い柱に支えられ、左右には赤や黒を基調とした建物が並んでいる。入口近くには看板、のれん、メニュー掲示板、街灯、道路標識などが見られ、にぎやかな商店街の雰囲気が感じられる。児童生徒が描写しやすいように、人物は2人だけにし、右と左の建物、中央の門、奥へ続く通り、手前の道路という位置関係が分かりやすい構図にする。門の手前には2人の生徒が立っており、一人は通りの奥を指さし、もう一人は門を見上げている。街の景観、建物の色、通りの方向、装飾的な建築物を描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall layout closely on the provided reference photograph, but replace all visible shop names, menu text, logos, and identifying signs with original fictional designs or generic symbols. Do not use proper nouns in the English scene. The main purpose is townscape description practice for students, so the image should be realistic, visually clear, and easy to describe. Show a lively-looking but uncrowded Japanese street entrance in the daytime. In the exact center, place a large traditional-style decorative gate spanning the street. The gate should have layered red roofs with curved edges, intricate painted details in blue, gold, and green, a large central signboard with original decorative characters or abstract symbols, and two tall pale stone pillars. Beneath the gate, a narrow shopping street should extend straight into the distance, creating clear depth. On the left side, show bright red buildings with shopfronts, awnings, menu boards, and display stands. On the right side, show a dark charcoal building with a black storefront, a large red emblem sign, and a simple fabric entrance curtain. Farther down the street, continue the row of colorful low-rise buildings with small signs, lantern-like decorations, and awnings, but do not include readable commercial names. The foreground should show a broad street surface in front of the gate with curved paving lines, manhole covers, and patterned sidewalk edges on both sides. Add simple urban details such as street signs, a lamp, drain covers, small stools near one storefront, a few poster frames, and decorative sidewalk paving. Show exactly two visible people and no others anywhere in the image. Place both people near the center foreground under or just in front of the gate so they are easy for learners to describe. One student should be pointing down the shopping street, as if showing the interesting area ahead. The other student should be looking up at the decorative gate with curiosity and admiration. Their clothing should be casual and simple, and their actions should be easy to describe. Do not add any extra pedestrians, shop staff, cyclists, or people in the distance. Preserve the main positional relationships clearly: the decorated gate in the center, red building on the left, dark building on the right, narrow street stretching into the background, and two students in front. Exactly two visible people, no more and no less. No animals, no speech bubbles, no copyrighted characters, and no recognizable brand logos. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, clean and information-rich but visually organized, suitable for practicing descriptions of architecture, colors, directions, positions, and everyday city scenery.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "gate",
+          "ja": "門",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "shop",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "roof",
+          "ja": "屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "看板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pillar",
+          "ja": "柱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "color",
+          "ja": "色",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "red",
+          "ja": "赤い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a big red gate",
+          "ja": "大きな赤い門",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a narrow street",
+          "ja": "細い通り",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "many small shops",
+          "ja": "たくさんの小さな店",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stand in front of the gate",
+          "ja": "門の前に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "point down the street",
+          "ja": "通りの奥を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look up at the gate",
+          "ja": "門を見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "on the left side",
+          "ja": "左側に",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "on the right side",
+          "ja": "右側に",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a big gate in the middle.",
+          "grammar": "There is",
+          "ja": "真ん中に大きな門があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The gate is red and very beautiful.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "その門は赤くてとてもきれいです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A street goes under the gate.",
+          "grammar": "現在形",
+          "ja": "通りが門の下を通っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are shops on both sides.",
+          "grammar": "There are",
+          "ja": "両側に店があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing in front of the gate.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が門の前に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing down the street.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が通りの奥を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is looking up at the gate.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は門を見上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The left building is red.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "左の建物は赤いです。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "shopping street",
+          "ja": "商店街",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pillar",
+          "ja": "柱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "decoration",
+          "ja": "装飾",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "awning",
+          "ja": "ひさし",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "signboard",
+          "ja": "看板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stretch",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "admire",
+          "ja": "見とれる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "traditional",
+          "ja": "伝統的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "decorative",
+          "ja": "装飾的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "narrow",
+          "ja": "狭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色彩豊かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowd-free",
+          "ja": "人混みのない",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a decorative street gate",
+          "ja": "装飾的な通りの門",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a narrow shopping street",
+          "ja": "細い商店街",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "stand under the gate",
+          "ja": "門の下に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "point toward the shops",
+          "ja": "店の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look up at the roof",
+          "ja": "屋根を見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "red buildings on the left",
+          "ja": "左側の赤い建物",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a dark building on the right",
+          "ja": "右側の暗い色の建物",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "stretch into the distance",
+          "ja": "遠くまで伸びる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This scene shows the entrance to a shopping street in a Japanese city.",
+          "grammar": "現在形",
+          "ja": "この場面は日本の都市にある商店街の入口を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A large decorative gate stands in the center of the picture.",
+          "grammar": "現在形",
+          "ja": "大きな装飾的な門が絵の中央に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The gate has red roofs and detailed designs.",
+          "grammar": "have＋名詞",
+          "ja": "その門には赤い屋根と細かな模様があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A narrow shopping street stretches behind the gate.",
+          "grammar": "現在形",
+          "ja": "細い商店街が門の奥へ伸びています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Red buildings line the left side of the street.",
+          "grammar": "現在形",
+          "ja": "赤い建物が通りの左側に並んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the right side, there is a dark building with a large sign.",
+          "grammar": "There is",
+          "ja": "右側には大きな看板のある暗い色の建物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing under the gate.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が門の下に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing ahead, and the other is looking up with interest.",
+          "grammar": "現在進行形 / and",
+          "ja": "一人の生徒は前方を指さし、もう一人は興味を持って見上げています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "landmark",
+          "ja": "ランドマーク",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "architecture",
+          "ja": "建築",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "streetscape",
+          "ja": "街路景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "facade",
+          "ja": "外観",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "signboard",
+          "ja": "看板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "景観を構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "大きく占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "extend",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emphasize",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ornate",
+          "ja": "華やかに装飾された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "traditional",
+          "ja": "伝統的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "narrow",
+          "ja": "狭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vibrant",
+          "ja": "活気のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distinctive",
+          "ja": "特徴的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a distinctive architectural landmark",
+          "ja": "特徴的な建築ランドマーク",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "dominate the center of the frame",
+          "ja": "画面中央を大きく占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "frame the entrance to the street",
+          "ja": "通りの入口を形作る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "extend into the background",
+          "ja": "背景へ伸びる",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "create a strong visual contrast",
+          "ja": "強い視覚的対比を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "red facades on the left",
+          "ja": "左側の赤い外観",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a dark storefront on the right",
+          "ja": "右側の暗い色の店構え",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "guide the viewer's eye inward",
+          "ja": "視線を奥へ導く",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "practice positional description",
+          "ja": "位置関係の描写を練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a distinctive streetscape centered on an ornate gate marking the entrance to a shopping street.",
+          "grammar": "現在形 / 現在分詞",
+          "ja": "この画像は、商店街の入口を示す華やかな門を中心とした特徴的な街路景観を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The gate dominates the center of the frame with its layered red roofs, painted details, and tall stone pillars.",
+          "grammar": "with＋名詞",
+          "ja": "その門は、重なった赤い屋根、彩色された細部、そして高い石の柱によって画面中央を大きく占めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The narrow street extending behind the gate creates strong depth and draws attention toward the distance.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "門の奥へ伸びる細い通りは、強い奥行きを生み出し、視線を遠方へ導いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The vivid red facades on the left contrast clearly with the darker storefront on the right.",
+          "grammar": "contrast with",
+          "ja": "左側の鮮やかな赤い外観は、右側のより暗い店構えとはっきり対照をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Menu boards, signs, and awnings add visual interest while also making the street appear commercial and lively.",
+          "grammar": "while also＋現在分詞",
+          "ja": "メニュー掲示板、看板、ひさしは視覚的な面白さを加えると同時に、この通りを商業的で活気あるものに見せています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The two students in the foreground provide a simple human focus without distracting from the overall architecture.",
+          "grammar": "without＋動名詞",
+          "ja": "前景の2人の生徒は、全体の建築景観を損なうことなく、簡潔な人物の焦点を与えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One student's gesture directs attention along the street, whereas the other student's upward gaze emphasizes the height and decoration of the gate.",
+          "grammar": "whereas",
+          "ja": "一人の生徒のしぐさは通りの奥へ注意を向けさせる一方、もう一人の上向きの視線は門の高さと装飾を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene is particularly useful for practicing how to describe left and right, foreground and background, and the relationship between a landmark and the surrounding buildings.",
+          "grammar": "how節 / between A and B",
+          "ja": "この場面は、左右、前景と背景、そしてランドマークと周囲の建物との関係をどのように描写するか練習するのに特に役立ちます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image offers an effective opportunity to explain architecture, color contrast, direction, and spatial arrangement in everyday urban scenery.",
+          "grammar": "to不定詞",
+          "ja": "全体として、この画像は日常的な都市景観の中で、建築、色の対比、方向、空間配置を説明するための効果的な機会を提供しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "main_gate": {
+      "x": 50,
+      "y": 24
+    },
+    "upper_red_roof": {
+      "x": 50,
+      "y": 10
+    },
+    "lower_red_roof": {
+      "x": 50,
+      "y": 22
+    },
+    "central_signboard": {
+      "x": 50,
+      "y": 30
+    },
+    "left_stone_pillar": {
+      "x": 37,
+      "y": 43
+    },
+    "right_stone_pillar": {
+      "x": 63,
+      "y": 43
+    },
+    "street_under_gate": {
+      "x": 50,
+      "y": 49
+    },
+    "shopping_street_background": {
+      "x": 52,
+      "y": 40
+    },
+    "left_red_building": {
+      "x": 21,
+      "y": 34
+    },
+    "left_shopfront": {
+      "x": 20,
+      "y": 53
+    },
+    "left_menu_boards": {
+      "x": 23,
+      "y": 61
+    },
+    "left_green_awning": {
+      "x": 18,
+      "y": 48
+    },
+    "right_dark_building": {
+      "x": 81,
+      "y": 32
+    },
+    "right_storefront": {
+      "x": 77,
+      "y": 54
+    },
+    "right_large_red_emblem": {
+      "x": 79,
+      "y": 45
+    },
+    "right_entrance_curtain": {
+      "x": 77,
+      "y": 60
+    },
+    "small_stools": {
+      "x": 84,
+      "y": 66
+    },
+    "foreground_road": {
+      "x": 49,
+      "y": 84
+    },
+    "left_sidewalk_pattern": {
+      "x": 16,
+      "y": 74
+    },
+    "right_sidewalk_pattern": {
+      "x": 85,
+      "y": 74
+    },
+    "manhole_left": {
+      "x": 10,
+      "y": 83
+    },
+    "manhole_center": {
+      "x": 59,
+      "y": 86
+    },
+    "student_pointing": {
+      "x": 46,
+      "y": 68
+    },
+    "student_looking_up": {
+      "x": 54,
+      "y": 68
+    },
+    "street_sign_right": {
+      "x": 67,
+      "y": 46
+    },
+    "lamp_or_pole_left": {
+      "x": 7,
+      "y": 47
+    },
+    "small_vertical_banners": {
+      "x": 43,
+      "y": 45
+    },
+    "shop_signs_in_distance": {
+      "x": 53,
+      "y": 48
+    },
+    "cloudy_sky": {
+      "x": 50,
+      "y": 5
+    },
+    "decorative_paving_edge": {
+      "x": 72,
+      "y": 78
+    }
+  }
+}

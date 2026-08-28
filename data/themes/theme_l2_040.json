@@ -1,0 +1,761 @@
+{
+  "id": "theme_l2_040",
+  "imageSrc": "assets/images/l2_040.webp",
+  "titleEn": "Harbor Tower Plaza",
+  "titleJa": "港のタワー広場",
+  "description": "昼間の港の広場を描いた場面である。画面中央には赤い格子状の高い展望タワーが立ち、周囲の建物よりも大きく目立っている。左側には大きな屋根のあるイベントスペースと大型スクリーンがあり、手前には広い舗装された広場が広がっている。右側には低層の施設、街路樹、白い街灯が並び、さらに奥には緑の山が見える。空には厚い雲が広がっているが、一部には青空も見える。2人の生徒が広場を歩いており、一人は中央の高いタワーを見上げ、もう一人は左側のイベントスペースを指さしている。高い建物、広い広場、空、山、イベント施設の位置関係を英語で説明する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall composition closely on the provided reference photograph, but remove all real place names, commercial logos, event names, and identifiable text. Replace any visible signs and screen graphics with original fictional designs, simple icons, or abstract lettering. Do not use proper nouns. The main purpose is townscape and waterfront scenery description practice for children and students. Show a spacious modern harbor plaza in Japan during the daytime under a dramatic partly cloudy sky. In the center-right of the composition, place a very tall red lattice observation tower with a narrow waist and a wider cylindrical observation section near the top. The tower should clearly dominate the skyline and be the main landmark, but it must not contain any real-world name or logo. On the left side, show a large open event structure with a wide pale canopy roof supported by tall white columns. Under the canopy, include a large rectangular digital screen displaying an original abstract event graphic with simple colors and shapes but no recognizable branding or readable proper nouns. In the foreground, show a very broad paved pedestrian plaza made of brown and gray paving stones, with clear open space so learners can easily describe foreground, middle ground, and background. Include metal railings and a gently sloping ramp on the far left. Near the center, place several white decorative street lamps and a row of small trees. On the right side, include low modern waterfront buildings, a covered walkway, planted areas, and several white lamp posts. In the far background, show a low green mountain ridge behind the buildings. Add a few modern mid-rise city buildings behind and beside the tower. The sky should occupy a large part of the upper half of the scene, with thick gray clouds, brighter white clouds, and a few patches of blue sky. Show exactly two visible people and no others anywhere in the image. Keep the two people relatively small so the landscape remains the main focus. Place them in the foreground-right or center foreground. One teenage student should be walking slowly while looking up at the tall red tower. The other teenage student should be pointing toward the large covered event area on the left, as if explaining what can be seen there. Their actions should be simple and easy to describe. Do not include crowds, tourists, staff, cyclists, people on the tower, or reflected people. Preserve the main spatial relationships clearly: broad plaza in front, event canopy and screen on the left, tall red observation tower in the center-right, modern buildings behind it, low waterfront facilities on the right, mountains in the far background, and dramatic clouds above. Exactly two visible people, no more and no less. No animals, no speech bubbles, no recognizable commercial logos, no copyrighted characters, and no proper nouns. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, visually clear, information-rich but uncluttered, suitable for practicing English descriptions of landmarks, height, position, weather, distance, and urban waterfront scenery.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "tower",
+          "ja": "タワー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plaza",
+          "ja": "広場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "roof",
+          "ja": "屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "スクリーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "街灯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tall",
+          "ja": "高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "wide",
+          "ja": "広い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a tall red tower",
+          "ja": "高い赤いタワー",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a wide plaza",
+          "ja": "広い広場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a large roof",
+          "ja": "大きな屋根",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a big screen",
+          "ja": "大きなスクリーン",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "look up at the tower",
+          "ja": "タワーを見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point to the left",
+          "ja": "左を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clouds in the sky",
+          "ja": "空の雲",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "mountains in the background",
+          "ja": "背景の山",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a tall red tower in the middle.",
+          "grammar": "There is",
+          "ja": "中央に高い赤いタワーがあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a large plaza in front of the tower.",
+          "grammar": "There is",
+          "ja": "タワーの前に大きな広場があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large roof is on the left.",
+          "grammar": "be動詞＋場所",
+          "ja": "左側に大きな屋根があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a big screen under the roof.",
+          "grammar": "There is",
+          "ja": "屋根の下に大きなスクリーンがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are walking in the plaza.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が広場を歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is looking up at the tower.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒がタワーを見上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is pointing to the left.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は左を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many clouds in the sky.",
+          "grammar": "There are",
+          "ja": "空にはたくさんの雲があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "landmark",
+          "ja": "ランドマーク",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "waterfront",
+          "ja": "水辺",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "observation tower",
+          "ja": "展望タワー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "canopy",
+          "ja": "大きな屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "event space",
+          "ja": "イベントスペース",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pavement",
+          "ja": "舗装",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "大きく目立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overlook",
+          "ja": "見渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cloudy",
+          "ja": "雲の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distant",
+          "ja": "遠くの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a prominent observation tower",
+          "ja": "目立つ展望タワー",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a spacious waterfront plaza",
+          "ja": "広々とした水辺の広場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a covered event space",
+          "ja": "屋根付きイベントスペース",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large digital screen",
+          "ja": "大型デジタルスクリーン",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stand above the surrounding buildings",
+          "ja": "周囲の建物より高く立つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "walk across the plaza",
+          "ja": "広場を横切って歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the event area",
+          "ja": "イベントエリアを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mountains in the distance",
+          "ja": "遠くの山々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A tall red observation tower dominates the center of the waterfront plaza.",
+          "grammar": "現在形",
+          "ja": "高い赤い展望タワーが水辺の広場の中央で大きく目立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The tower rises much higher than the buildings around it.",
+          "grammar": "比較級",
+          "ja": "そのタワーは周囲の建物よりずっと高くそびえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the left, a large canopy covers an event space.",
+          "grammar": "現在形",
+          "ja": "左側では大きな屋根がイベントスペースを覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large digital screen is located beneath the canopy.",
+          "grammar": "受動態",
+          "ja": "大きなデジタルスクリーンが屋根の下に設置されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are walking across the open plaza.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が開けた広場を歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is looking up at the tower while the other is pointing toward the covered area.",
+          "grammar": "while",
+          "ja": "一人はタワーを見上げ、もう一人は屋根付きのエリアを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several modern buildings and trees can be seen behind the plaza.",
+          "grammar": "助動詞＋受動態",
+          "ja": "広場の後ろにはいくつかの現代的な建物や木々が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The thick clouds and patches of blue sky create a dramatic atmosphere.",
+          "grammar": "現在形",
+          "ja": "厚い雲と青空の部分が印象的な雰囲気を作っています。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "landmark",
+          "ja": "ランドマーク",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "skyline",
+          "ja": "都市の輪郭",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "waterfront",
+          "ja": "ウォーターフロント",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "structure",
+          "ja": "構造物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "canopy",
+          "ja": "大型屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "景観の中心を占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "景観を構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overlook",
+          "ja": "見渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emphasize",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "非常に目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "expansive",
+          "ja": "広大な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "geometric",
+          "ja": "幾何学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "overcast",
+          "ja": "曇天の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "atmospheric",
+          "ja": "印象的な雰囲気の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "dominate the waterfront skyline",
+          "ja": "水辺のスカイラインの中心を占める",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "rise above the surrounding structures",
+          "ja": "周囲の建物より高くそびえる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an expansive paved plaza",
+          "ja": "広大な舗装広場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a geometric canopy structure",
+          "ja": "幾何学的な屋根構造",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create a clear focal point",
+          "ja": "明確な注目点を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "contrast with the cloudy sky",
+          "ja": "曇り空と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "frame the open public space",
+          "ja": "開放的な公共空間を構成する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "extend toward the distant mountains",
+          "ja": "遠くの山々へ向かって広がる",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "practice describing scale and distance",
+          "ja": "規模と距離の描写を練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The striking red observation tower dominates the waterfront skyline and serves as the main visual landmark in the scene.",
+          "grammar": "and",
+          "ja": "印象的な赤い展望タワーが水辺のスカイラインの中心を占め、この場面の主要なランドマークになっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Its narrow lattice structure rises dramatically above the surrounding mid-rise buildings.",
+          "grammar": "比較を伴う位置表現",
+          "ja": "細い格子状の構造が周囲の中層建築より大きく高くそびえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The expansive paved plaza in the foreground emphasizes the scale and height of the tower.",
+          "grammar": "現在形",
+          "ja": "前景の広大な舗装広場が、タワーの大きさと高さを強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "To the left, a broad geometric canopy supported by white columns defines a separate event space.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "左側では、白い柱に支えられた広い幾何学的な屋根が独立したイベント空間を形作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The large digital display beneath the canopy provides a secondary visual focal point without competing with the tower.",
+          "grammar": "without＋動名詞",
+          "ja": "屋根の下の大型デジタル表示は、タワーの存在感を損なうことなく第二の注目点となっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The two students are positioned relatively small in the foreground, which helps convey the impressive scale of the surrounding architecture.",
+          "grammar": "関係代名詞which",
+          "ja": "前景の2人の生徒が比較的小さく描かれているため、周囲の建築物の大きさがより強調されています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Modern buildings, white street lamps, trees, and low waterfront facilities frame the plaza on both sides.",
+          "grammar": "現在形",
+          "ja": "現代的な建物、白い街灯、木々、低層の水辺施設が広場の両側を構成しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The distant mountain ridge provides a natural backdrop that contrasts with the highly engineered urban structures in the foreground.",
+          "grammar": "関係代名詞that / contrast with",
+          "ja": "遠くの山並みは、前景の人工的な都市構造物とは対照的な自然の背景となっています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The combination of dark clouds, patches of blue sky, open space, and vertical architecture makes the scene particularly useful for describing scale, weather, position, and distance.",
+          "grammar": "make＋O＋C",
+          "ja": "暗い雲、青空、開けた空間、垂直方向に伸びる建築物の組み合わせにより、この場面は規模、天候、位置、距離を説明する練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "red_observation_tower": {
+      "x": 52,
+      "y": 35
+    },
+    "tower_top": {
+      "x": 52,
+      "y": 14
+    },
+    "tower_lattice": {
+      "x": 52,
+      "y": 39
+    },
+    "tower_base": {
+      "x": 52,
+      "y": 61
+    },
+    "large_event_canopy": {
+      "x": 30,
+      "y": 44
+    },
+    "canopy_roof": {
+      "x": 29,
+      "y": 38
+    },
+    "white_support_columns": {
+      "x": 29,
+      "y": 53
+    },
+    "digital_event_screen": {
+      "x": 20,
+      "y": 56
+    },
+    "foreground_plaza": {
+      "x": 51,
+      "y": 82
+    },
+    "paving_stones": {
+      "x": 47,
+      "y": 87
+    },
+    "student_looking_up": {
+      "x": 69,
+      "y": 72
+    },
+    "student_pointing_left": {
+      "x": 75,
+      "y": 73
+    },
+    "white_street_lamps": {
+      "x": 65,
+      "y": 62
+    },
+    "small_plaza_trees": {
+      "x": 67,
+      "y": 58
+    },
+    "left_ramp": {
+      "x": 7,
+      "y": 70
+    },
+    "left_metal_railing": {
+      "x": 9,
+      "y": 68
+    },
+    "midrise_building_left": {
+      "x": 34,
+      "y": 51
+    },
+    "building_behind_tower": {
+      "x": 58,
+      "y": 47
+    },
+    "white_midrise_building": {
+      "x": 61,
+      "y": 51
+    },
+    "right_waterfront_buildings": {
+      "x": 82,
+      "y": 60
+    },
+    "covered_walkway_right": {
+      "x": 86,
+      "y": 65
+    },
+    "right_planted_area": {
+      "x": 74,
+      "y": 64
+    },
+    "distant_mountain_ridge": {
+      "x": 76,
+      "y": 52
+    },
+    "thick_gray_clouds": {
+      "x": 23,
+      "y": 12
+    },
+    "bright_clouds": {
+      "x": 68,
+      "y": 12
+    },
+    "blue_sky_patch": {
+      "x": 29,
+      "y": 30
+    },
+    "open_sky_center": {
+      "x": 51,
+      "y": 7
+    },
+    "plaza_center_path": {
+      "x": 59,
+      "y": 74
+    },
+    "low_waterfront_facility": {
+      "x": 90,
+      "y": 62
+    },
+    "decorative_lamp_row": {
+      "x": 74,
+      "y": 63
+    },
+    "urban_background": {
+      "x": 44,
+      "y": 55
+    },
+    "event_area": {
+      "x": 25,
+      "y": 55
+    }
+  }
+}

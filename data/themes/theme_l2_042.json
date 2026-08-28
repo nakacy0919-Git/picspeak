@@ -1,0 +1,769 @@
+{
+  "id": "theme_l2_042",
+  "imageSrc": "assets/images/l2_042.webp",
+  "titleEn": "Hidden City Alley",
+  "titleJa": "街なかの細い路地",
+  "description": "昼間の日本の都市部にある細い裏路地を描いた場面である。左側には鮮やかなオレンジ色の建物があり、壁には太い換気ダクト、パイプ、室外機、掲示物などが取り付けられている。その下には2台の自転車とオレンジ色のカラーコーンが置かれている。右側には薄い紫色の建物が続き、室外機、植木鉢、小さな木、窓、配管などが並んでいる。細いアスファルトの道は中央から奥へまっすぐ伸び、遠くには白や灰色の建物が見える。頭上には電線や防犯カメラもあり、都市の裏路地らしい生活感が感じられる。2人の生徒が路地を歩いており、一人は左側の大きなオレンジ色の換気設備を指さし、もう一人は路地の奥を見ている。建物の左右の違い、設備の位置、道の奥行きなどを英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall architecture, alley layout, colors, and spatial composition closely on the provided reference photograph, while replacing all real notices, shop names, stickers, signs, labels, and identifying text with original fictional symbols, abstract marks, or generic nonessential lettering. Do not use proper nouns. The main purpose is practicing descriptions of an ordinary Japanese urban backstreet rather than a famous landmark. Show a very narrow paved alley running straight from the foreground into the distance between closely packed low-rise city buildings. On the entire left side, show a striking orange-red stucco wall extending from foreground to middle distance. Attach realistic urban utility equipment to this wall: several orange ventilation pipes, one very large round orange exhaust duct with a hood-like shape, a flexible pale yellow hose, vertical drain pipes, exposed utility pipes, electrical cables, and a rectangular outdoor air-conditioning unit mounted high on the wall. Include two small generic notice sheets on the wall with abstract shapes only and no readable business names. Near the lower left-middle area, place exactly two ordinary city bicycles parked close together beside the wall. Beside them, place one bright orange traffic cone. Add a black rectangular wall vent near ground level and a narrow concrete drainage strip along the base of the building. On the entire right side, show a pale mauve-gray tiled building with several rectangular windows, exposed cables, pipes, utility boxes, meters, and multiple outdoor air-conditioning units positioned at different heights. Near the right foreground, place several potted plants, including one slender small tree growing from a large pot and several smaller green plants around it. Add a small metal basket or utility container near the bottom-right corner, together with a generic parking or caution sign lying at an angle, using only simple symbols and no readable commercial text. Farther along the right wall, include a parked dark scooter or compact motorbike partially hidden behind the plants and equipment. Above the alley, show numerous utility cables stretching between the buildings, several pipes, and two small security cameras attached high on the walls and pointing down toward the passage. The narrow asphalt alley should occupy the center of the composition and create strong linear perspective as it becomes narrower toward the background. Include small drainage grates along the sides of the road. In the far background, show several light gray and white urban buildings, a narrow opening to another street, and a small red geometric structure or gate-like detail, but do not include any real building names or recognizable branding. The sky should be only partly visible between the tall walls above and should appear bright but slightly overcast. Show exactly two visible teenage students and absolutely no other people anywhere in the image. Keep both students relatively small so the alley and architectural details remain the main focus. Position them in the middle distance rather than close to the camera. One student should be pointing toward the large orange ventilation duct on the left wall with curiosity. The second student should be looking farther down the narrow alley, as if wondering where it leads. Their clothing should be simple casual clothes and their gestures should be natural and easy for children to describe. Do not add shop staff, residents, distant pedestrians, people visible through windows, reflected people, or human figures on signs. Preserve the main visual contrast of the reference: bright orange wall and industrial-looking ventilation equipment on the left, pale mauve-gray wall with plants and utility equipment on the right, and a narrow asphalt lane extending deeply through the center. Exactly two visible people, no more and no less. No animals, no speech bubbles, no copyrighted characters, no recognizable commercial logos, and no proper nouns. Landscape 16:9 composition, polished educational illustration rather than photography, realistic architecture, realistic utility equipment and perspective, information-rich but visually organized, suitable for practicing descriptions of narrow streets, buildings, pipes, bicycles, plants, foreground and background, left and right, and everyday urban scenery.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "alley",
+          "ja": "路地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wall",
+          "ja": "壁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bike",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pipe",
+          "ja": "パイプ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cone",
+          "ja": "カラーコーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "camera",
+          "ja": "カメラ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "narrow",
+          "ja": "狭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "orange",
+          "ja": "オレンジ色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a narrow alley",
+          "ja": "細い路地",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an orange wall",
+          "ja": "オレンジ色の壁",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "two bicycles",
+          "ja": "2台の自転車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large orange pipe",
+          "ja": "大きなオレンジ色のパイプ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "plants on the right",
+          "ja": "右側の植物",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "walk down the alley",
+          "ja": "路地を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the pipe",
+          "ja": "パイプを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look down the street",
+          "ja": "通りの奥を見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This is a narrow alley.",
+          "grammar": "be動詞",
+          "ja": "これは細い路地です。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is an orange building on the left.",
+          "grammar": "There is",
+          "ja": "左側にオレンジ色の建物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two bicycles by the wall.",
+          "grammar": "There are",
+          "ja": "壁のそばに2台の自転車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a large orange pipe on the wall.",
+          "grammar": "There is",
+          "ja": "壁には大きなオレンジ色のパイプがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are some plants on the right.",
+          "grammar": "There are",
+          "ja": "右側にはいくつかの植物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are walking in the alley.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が路地を歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing at the pipe.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒がパイプを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is looking ahead.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は前を見ています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "backstreet",
+          "ja": "裏通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "ventilation",
+          "ja": "換気設備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "air conditioner",
+          "ja": "エアコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "security camera",
+          "ja": "防犯カメラ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drain",
+          "ja": "排水口",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scooter",
+          "ja": "スクーター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "extend",
+          "ja": "伸びる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "attach",
+          "ja": "取り付ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "park",
+          "ja": "駐輪する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "narrow",
+          "ja": "狭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "urban",
+          "ja": "都市の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "物が密集した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "industrial",
+          "ja": "工業的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "ordinary",
+          "ja": "日常的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a narrow urban backstreet",
+          "ja": "細い都市の裏通り",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "ventilation equipment on the wall",
+          "ja": "壁の換気設備",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "air-conditioning units outside",
+          "ja": "屋外のエアコン室外機",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "bicycles parked beside the wall",
+          "ja": "壁の横に停められた自転車",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "potted plants along the building",
+          "ja": "建物沿いの鉢植え",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "cables above the alley",
+          "ja": "路地の上の配線",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "extend into the distance",
+          "ja": "奥へ伸びる",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "observe the unusual equipment",
+          "ja": "珍しい設備を観察する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This scene shows a narrow backstreet between several city buildings.",
+          "grammar": "between＋名詞",
+          "ja": "この場面は複数の都市建築の間にある細い裏通りを示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The bright orange building on the left has several pipes and ventilation units attached to its wall.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "左側の鮮やかなオレンジ色の建物には、壁にいくつものパイプや換気設備が取り付けられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two bicycles are parked beside the wall near an orange traffic cone.",
+          "grammar": "受動態",
+          "ja": "2台の自転車がオレンジ色のカラーコーンの近くの壁際に停められています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several air-conditioning units and potted plants line the building on the right.",
+          "grammar": "現在形",
+          "ja": "右側の建物にはいくつもの室外機と鉢植えが並んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Utility cables and security cameras can be seen above the alley.",
+          "grammar": "助動詞＋受動態",
+          "ja": "路地の上には配線や防犯カメラが見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The narrow road stretches straight into the distance.",
+          "grammar": "現在形",
+          "ja": "細い道がまっすぐ奥へ伸びています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing at the large ventilation pipe while the other is looking farther down the alley.",
+          "grammar": "while",
+          "ja": "一人の生徒が大きな換気パイプを指さし、もう一人は路地のさらに奥を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The many pipes, bicycles, plants, and utility boxes make the alley look like an ordinary part of city life.",
+          "grammar": "make＋O＋C",
+          "ja": "多くのパイプ、自転車、植物、設備箱によって、この路地は都市の日常生活の一部らしく見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "alleyway",
+          "ja": "路地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "インフラ設備",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ventilation duct",
+          "ja": "換気ダクト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "utility equipment",
+          "ja": "設備機器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "perspective",
+          "ja": "遠近感",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "converge",
+          "ja": "一点へ集まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clutter",
+          "ja": "物を密集させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "conceal",
+          "ja": "部分的に隠す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "characterize",
+          "ja": "特徴づける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "utilitarian",
+          "ja": "実用本位の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "confined",
+          "ja": "狭く囲まれた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "weathered",
+          "ja": "風雨にさらされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dense",
+          "ja": "密集した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unassuming",
+          "ja": "目立たない・何気ない",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a confined urban alleyway",
+          "ja": "狭く囲まれた都市の路地",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "exposed utility infrastructure",
+          "ja": "むき出しの都市設備",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a prominent ventilation duct",
+          "ja": "目立つ換気ダクト",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "contrast with the pale building opposite",
+          "ja": "向かい側の淡い建物と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create strong linear perspective",
+          "ja": "強い遠近感を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "converge toward the background",
+          "ja": "背景へ向かって収束する",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "characterize everyday urban infrastructure",
+          "ja": "日常的な都市インフラを特徴づける",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "occupy the edges of the alley",
+          "ja": "路地の両端を占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "describe spatial depth and contrast",
+          "ja": "空間の奥行きと対比を描写する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a confined urban alleyway characterized by exposed pipes, ventilation equipment, bicycles, and outdoor utility units.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "この画像は、むき出しの配管、換気設備、自転車、屋外設備によって特徴づけられた狭い都市の路地を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The vivid orange facade on the left creates a striking visual contrast with the pale mauve-gray building opposite it.",
+          "grammar": "contrast with",
+          "ja": "左側の鮮やかなオレンジ色の外壁は、向かい側の淡い紫灰色の建物と強い視覚的対比を生み出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A prominent ventilation duct and an extensive network of pipes emphasize the practical rather than decorative character of the space.",
+          "grammar": "rather than",
+          "ja": "目立つ換気ダクトと広がる配管網が、その空間の装飾性よりも実用性を強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The bicycles, cone, air-conditioning units, potted plants, and utility boxes occupy the edges of the alley without blocking the central passage.",
+          "grammar": "without＋動名詞",
+          "ja": "自転車、カラーコーン、室外機、鉢植え、設備箱は、中央の通路をふさぐことなく路地の端に配置されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The parallel building walls and narrow asphalt surface converge toward the background, creating a strong sense of depth.",
+          "grammar": "現在分詞",
+          "ja": "平行する建物の壁と細いアスファルト路面が背景へ向かって収束し、強い奥行きを生み出しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Security cameras and overhead cables add further evidence of the dense infrastructure found in an ordinary city environment.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "防犯カメラや頭上の配線は、一般的な都市環境に見られる密集したインフラを示す追加の要素になっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two students are deliberately kept small within the composition so that attention remains focused on the physical characteristics of the alley.",
+          "grammar": "so that",
+          "ja": "2人の生徒は構図の中で意図的に小さく配置され、路地そのものの物理的特徴に注意が向くようになっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One student's gesture directs attention toward the unusual ventilation equipment, whereas the other student's gaze reinforces the direction in which the alley extends.",
+          "grammar": "whereas / 関係詞",
+          "ja": "一人の生徒のしぐさは珍しい換気設備へ注意を向ける一方、もう一人の視線は路地が伸びている方向を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene is particularly useful for describing spatial depth, contrasting building surfaces, urban infrastructure, and the arrangement of objects along a narrow passage.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は空間の奥行き、対照的な建物表面、都市インフラ、細い通路沿いの物の配置を描写する練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "central_alley": {
+      "x": 53,
+      "y": 68
+    },
+    "alley_vanishing_point": {
+      "x": 53,
+      "y": 43
+    },
+    "left_orange_wall": {
+      "x": 16,
+      "y": 35
+    },
+    "large_orange_duct": {
+      "x": 24,
+      "y": 43
+    },
+    "orange_vertical_pipe": {
+      "x": 5,
+      "y": 28
+    },
+    "upper_ventilation_pipe": {
+      "x": 31,
+      "y": 16
+    },
+    "yellow_flexible_hose": {
+      "x": 22,
+      "y": 34
+    },
+    "left_air_conditioner": {
+      "x": 31,
+      "y": 23
+    },
+    "left_notice_sheets": {
+      "x": 12,
+      "y": 47
+    },
+    "first_bicycle": {
+      "x": 34,
+      "y": 65
+    },
+    "second_bicycle": {
+      "x": 38,
+      "y": 65
+    },
+    "orange_traffic_cone": {
+      "x": 42,
+      "y": 67
+    },
+    "black_wall_vent": {
+      "x": 25,
+      "y": 72
+    },
+    "left_drainage_strip": {
+      "x": 30,
+      "y": 78
+    },
+    "right_mauve_building": {
+      "x": 83,
+      "y": 35
+    },
+    "right_window": {
+      "x": 91,
+      "y": 28
+    },
+    "right_utility_meter": {
+      "x": 97,
+      "y": 21
+    },
+    "right_air_conditioners": {
+      "x": 67,
+      "y": 61
+    },
+    "small_tree": {
+      "x": 73,
+      "y": 46
+    },
+    "large_plant_pot": {
+      "x": 73,
+      "y": 70
+    },
+    "small_potted_plants": {
+      "x": 78,
+      "y": 72
+    },
+    "metal_utility_basket": {
+      "x": 88,
+      "y": 78
+    },
+    "generic_caution_sign": {
+      "x": 84,
+      "y": 72
+    },
+    "dark_scooter": {
+      "x": 64,
+      "y": 59
+    },
+    "security_camera_left": {
+      "x": 65,
+      "y": 15
+    },
+    "security_camera_right": {
+      "x": 70,
+      "y": 12
+    },
+    "overhead_cables": {
+      "x": 52,
+      "y": 24
+    },
+    "background_white_building": {
+      "x": 52,
+      "y": 24
+    },
+    "background_red_structure": {
+      "x": 51,
+      "y": 46
+    },
+    "student_pointing": {
+      "x": 46,
+      "y": 53
+    },
+    "student_looking_ahead": {
+      "x": 52,
+      "y": 54
+    },
+    "right_drainage_grate": {
+      "x": 61,
+      "y": 68
+    },
+    "bright_overcast_sky": {
+      "x": 50,
+      "y": 7
+    },
+    "utility_pipes_right": {
+      "x": 77,
+      "y": 29
+    }
+  }
+}
