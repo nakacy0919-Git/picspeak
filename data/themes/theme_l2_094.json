@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_094",
+  "imageSrc": "assets/images/l2_094.webp",
+  "titleEn": "Encountering an Epochal Juncture in Transportation",
+  "titleJa": "交通史の画期的な転換点を伝える蒸気機関車",
+  "description": "鉄道博物館の広い展示室で、7人の来館者が保存された大型の蒸気機関車を見学している場面である。中央には黒い車体、赤い車輪、大きな煙突を備えた歴史的な蒸気機関車が展示され、後方には複数の客車が連結されている。左側では男女2人が機関車を眺め、中央付近では少年と年配の男性が展示を観察している。右側にも女性や年配者を含む3人の来館者が立っている。展示室には説明板、ガラスケース、鉄道の歴史を描いた大型壁画などがあり、初期の鉄道技術が社会や移動手段を大きく変えた時代を紹介しているように見える。蒸気機関車の登場を交通史における画期的な転換点として捉え、技術革新、産業化、社会変化、歴史的意義を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of seven visitors viewing a preserved nineteenth-century steam locomotive inside a grand railway museum. Show a huge black engine with a tall smokestack, brass details, red wheels, red passenger cars, tracks, display cases, an information stand, historical railway murals, arched windows, and warm museum lighting. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "train",
+          "ja": "列車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "museum",
+          "ja": "博物館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "engine",
+          "ja": "機関車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wheel",
+          "ja": "車輪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "track",
+          "ja": "線路",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "来館者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "少年",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "絵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smokestack",
+          "ja": "煙突",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "visit",
+          "ja": "訪れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "learn",
+          "ja": "学ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "old",
+          "ja": "古い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the train",
+          "ja": "列車を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "visit a museum",
+          "ja": "博物館を訪れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an old train",
+          "ja": "古い列車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a steam engine",
+          "ja": "蒸気機関車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "large red wheels",
+          "ja": "大きな赤い車輪",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "stand beside the train",
+          "ja": "列車のそばに立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about trains",
+          "ja": "列車について学ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside the museum",
+          "ja": "博物館の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Seven people are looking at an old train.",
+          "grammar": "現在進行形",
+          "ja": "7人が古い列車を見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are standing inside a museum.",
+          "grammar": "現在進行形",
+          "ja": "彼らは博物館の中に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The train has large red wheels.",
+          "grammar": "have",
+          "ja": "その列車には大きな赤い車輪があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "It has a tall black smokestack.",
+          "grammar": "have",
+          "ja": "その列車には高い黒い煙突があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is standing near the engine.",
+          "grammar": "現在進行形",
+          "ja": "少年が機関車の近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are passenger cars behind the engine.",
+          "grammar": "There are",
+          "ja": "機関車の後ろには客車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are pictures on the museum walls.",
+          "grammar": "There are",
+          "ja": "博物館の壁には絵があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visitors may be learning about train history.",
+          "grammar": "may be＋現在分詞",
+          "ja": "来館者たちは鉄道の歴史について学んでいるのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "locomotive",
+          "ja": "機関車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "railway",
+          "ja": "鉄道",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "transportation",
+          "ja": "交通・輸送",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "technology",
+          "ja": "技術",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "history",
+          "ja": "歴史",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "exhibit",
+          "ja": "展示物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "展示する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "develop",
+          "ja": "発達する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "transform",
+          "ja": "大きく変える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "historic",
+          "ja": "歴史的に重要な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "industrial",
+          "ja": "産業の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "mechanical",
+          "ja": "機械の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "preserved",
+          "ja": "保存された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "important",
+          "ja": "重要な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a historic locomotive",
+          "ja": "歴史的な機関車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a railway museum",
+          "ja": "鉄道博物館",
+          "type": "place",
+          "points": 20
+        },
+        {
+          "text": "observe the exhibit",
+          "ja": "展示物を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "preserve an old locomotive",
+          "ja": "古い機関車を保存する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop new technology",
+          "ja": "新しい技術を発達させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "transform transportation",
+          "ja": "交通を大きく変える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about railway history",
+          "ja": "鉄道史について学ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an important invention",
+          "ja": "重要な発明",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Seven visitors are examining a preserved steam locomotive in a railway museum.",
+          "grammar": "現在進行形 / 過去分詞",
+          "ja": "7人の来館者が鉄道博物館で保存された蒸気機関車を見学しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The locomotive has a large boiler, a tall smokestack, and several red wheels.",
+          "grammar": "現在形 / 並列",
+          "ja": "その機関車には大きなボイラー、高い煙突、複数の赤い車輪があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several passenger cars are connected behind the engine.",
+          "grammar": "受動態",
+          "ja": "機関車の後ろには複数の客車が連結されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The museum appears to be showing how railway technology developed.",
+          "grammar": "appear to be＋現在分詞 / how節",
+          "ja": "この博物館は鉄道技術がどのように発達したかを紹介しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Large historical pictures on the walls show scenes from the early railway era.",
+          "grammar": "現在形",
+          "ja": "壁の大きな歴史画には初期の鉄道時代の様子が描かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Steam locomotives made it possible to transport people and goods over long distances.",
+          "grammar": "make it possible to",
+          "ja": "蒸気機関車によって人や物を長距離輸送することが可能になりました。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "This technology helped cities and industries grow more rapidly.",
+          "grammar": "help＋O＋動詞",
+          "ja": "この技術は都市や産業がより速く発展するのに役立ちました。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The exhibit shows how one invention can transform transportation and society.",
+          "grammar": "how節 / can",
+          "ja": "この展示は、1つの発明が交通や社会を大きく変えることがあると示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "juncture",
+          "ja": "重大な時点・転換点",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "industrialization",
+          "ja": "工業化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "innovation",
+          "ja": "革新",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mechanization",
+          "ja": "機械化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "社会基盤",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mobility",
+          "ja": "移動性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "revolutionize",
+          "ja": "革命的に変える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accelerate",
+          "ja": "加速させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "usher",
+          "ja": "到来させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "supplant",
+          "ja": "取って代わる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "epochal",
+          "ja": "画期的な・一時代を画する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "transformative",
+          "ja": "大変革をもたらす",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "pivotal",
+          "ja": "極めて重要な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "obsolete",
+          "ja": "時代遅れの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "revolutionary",
+          "ja": "革命的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an epochal juncture",
+          "ja": "一時代を画する転換点",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "revolutionize mass transportation",
+          "ja": "大量輸送を革命的に変える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "usher in a new era",
+          "ja": "新時代を到来させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accelerate industrialization",
+          "ja": "工業化を加速させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "expand transportation infrastructure",
+          "ja": "交通インフラを拡大する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enhance human mobility",
+          "ja": "人々の移動性を高める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a pivotal technological innovation",
+          "ja": "極めて重要な技術革新",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "transform economic activity",
+          "ja": "経済活動を変革する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mark a historical transition",
+          "ja": "歴史的な転換を画する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The preserved steam locomotive represents an epochal juncture in the history of transportation.",
+          "grammar": "represent / in the history of",
+          "ja": "保存された蒸気機関車は、交通史における一時代を画する転換点を象徴しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The emergence of steam-powered railways revolutionized the movement of both passengers and freight.",
+          "grammar": "動名詞的名詞句 / both A and B",
+          "ja": "蒸気鉄道の登場は、旅客と貨物の双方の移動を革命的に変えました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "By dramatically reducing travel time, railways enhanced mobility across regions that had previously been difficult to connect.",
+          "grammar": "By＋動名詞 / 関係代名詞that / 過去完了形",
+          "ja": "移動時間を大幅に短縮することで、鉄道は以前は結び付けることが困難だった地域間の移動性を高めました。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The locomotive therefore symbolizes a pivotal transition from traditional transportation to mechanized mass transit.",
+          "grammar": "symbolize / transition from A to B",
+          "ja": "したがって、この機関車は従来の交通から機械化された大量輸送への極めて重要な転換を象徴しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Railway expansion accelerated industrialization by allowing raw materials and manufactured goods to circulate more efficiently.",
+          "grammar": "by＋動名詞 / allow O to",
+          "ja": "鉄道網の拡大は、原材料や製品をより効率的に流通させることで工業化を加速させました。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "At this epochal juncture, technological innovation began reshaping patterns of commerce, settlement, employment, and everyday life.",
+          "grammar": "begin＋動名詞 / 並列",
+          "ja": "この画期的な転換点において、技術革新は商業、居住、雇用、日常生活のあり方を変え始めました。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The museum preserves the locomotive not merely as an obsolete machine but as evidence of a transformative period in social history.",
+          "grammar": "not merely A but B",
+          "ja": "博物館はこの機関車を単なる時代遅れの機械としてではなく、社会史の大変革期を示す証拠として保存しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The visitors are effectively confronting an artifact that once helped usher in an entirely new economic and technological era.",
+          "grammar": "関係代名詞that / help＋動詞",
+          "ja": "来館者たちは、かつて全く新しい経済・技術時代の到来に貢献した歴史的遺物と向き合っていると言えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing an epochal juncture, industrialization, mechanization, transportation infrastructure, technological innovation, mobility, historical transition, and social transformation.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は画期的な転換点、工業化、機械化、交通インフラ、技術革新、移動性、歴史的転換、社会変革を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "locomotive": {
+      "x": 48,
+      "y": 44
+    },
+    "smokestack": {
+      "x": 36,
+      "y": 15
+    },
+    "boiler": {
+      "x": 47,
+      "y": 39
+    },
+    "wheel": {
+      "x": 59,
+      "y": 62
+    },
+    "cowcatcher": {
+      "x": 25,
+      "y": 73
+    },
+    "carriage": {
+      "x": 80,
+      "y": 48
+    },
+    "track": {
+      "x": 48,
+      "y": 85
+    },
+    "visitor": {
+      "x": 70,
+      "y": 69
+    },
+    "boy": {
+      "x": 60,
+      "y": 72
+    },
+    "museum": {
+      "x": 50,
+      "y": 10
+    },
+    "display": {
+      "x": 51,
+      "y": 73
+    },
+    "mural": {
+      "x": 88,
+      "y": 23
+    },
+    "window": {
+      "x": 13,
+      "y": 19
+    },
+    "case": {
+      "x": 15,
+      "y": 55
+    },
+    "floor": {
+      "x": 71,
+      "y": 91
+    },
+    "railway": {
+      "x": 48,
+      "y": 84
+    },
+    "history": {
+      "x": 88,
+      "y": 24
+    },
+    "steam": {
+      "x": 45,
+      "y": 35
+    },
+    "innovation": {
+      "x": 48,
+      "y": 43
+    },
+    "juncture": {
+      "x": 48,
+      "y": 43
+    }
+  }
+}

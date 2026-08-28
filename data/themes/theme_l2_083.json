@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_083",
+  "imageSrc": "assets/images/l2_083.webp",
+  "titleEn": "Explaining the Injurious Repercussions of Smoking",
+  "titleJa": "喫煙がもたらす有害な影響を説明する医師",
+  "description": "診察室で、医師が男性患者に喫煙による健康への悪影響を説明している場面である。左側の医師は白衣と聴診器を身につけ、肺の模型を指しながら患者に話している。模型では、一方の肺は健康的なピンク色で、もう一方は黒く変色しており、喫煙による損傷を視覚的に比較できるようになっている。背後の大型モニターにも健康な肺と深刻に損傷した肺を比較する胸部画像が表示されている。右側の男性患者は医師の説明を聞きながら、手を口元に当てて深刻そうに考えている。壁には禁煙を示す標識があり、机の左側には多数の吸い殻が入った透明な容器が置かれている。喫煙、肺への損傷、健康リスク、禁煙、生活習慣による長期的影響を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a doctor explaining smoking-related lung damage to one male patient in a medical consultation room. The doctor points to a lung model showing one healthy pink lung and one severely darkened damaged lung. A large monitor behind them compares healthy and damaged lungs. Include a no-smoking sign and a container filled with cigarette butts on the desk. The patient listens seriously with one hand near his mouth. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "doctor",
+          "ja": "医師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "patient",
+          "ja": "患者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "lung",
+          "ja": "肺",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "model",
+          "ja": "模型",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cigarette",
+          "ja": "たばこ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "標識",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coat",
+          "ja": "白衣",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hospital",
+          "ja": "病院",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smoke",
+          "ja": "たばこを吸う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "black",
+          "ja": "黒い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "talk to a patient",
+          "ja": "患者と話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the lungs",
+          "ja": "肺を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a healthy lung",
+          "ja": "健康な肺",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a black lung",
+          "ja": "黒くなった肺",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "look at the model",
+          "ja": "模型を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to the doctor",
+          "ja": "医師の話を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stop smoking",
+          "ja": "喫煙をやめる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside a clinic",
+          "ja": "診察室の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A doctor is talking to a patient.",
+          "grammar": "現在進行形",
+          "ja": "医師が患者と話しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The doctor is pointing at a lung model.",
+          "grammar": "現在進行形",
+          "ja": "医師は肺の模型を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One lung is pink and the other is black.",
+          "grammar": "one ... the other ...",
+          "ja": "一方の肺はピンク色で、もう一方は黒色です。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are pictures of lungs on the screen.",
+          "grammar": "There are",
+          "ja": "画面には肺の画像があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The patient is listening carefully.",
+          "grammar": "現在進行形",
+          "ja": "患者は注意深く聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are cigarette butts on the desk.",
+          "grammar": "There are",
+          "ja": "机の上にはたばこの吸い殻があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a no-smoking sign on the wall.",
+          "grammar": "There is",
+          "ja": "壁には禁煙の標識があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Smoking can damage the lungs.",
+          "grammar": "can",
+          "ja": "喫煙は肺を傷つけることがあります。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "smoking",
+          "ja": "喫煙",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "損傷",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "disease",
+          "ja": "病気",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "health",
+          "ja": "健康",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "risk",
+          "ja": "危険性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "comparison",
+          "ja": "比較",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "傷つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "warn",
+          "ja": "警告する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "quit",
+          "ja": "やめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "healthy",
+          "ja": "健康な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "損傷した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "harmful",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "serious",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配している",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "damage the lungs",
+          "ja": "肺を傷つける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare healthy and damaged lungs",
+          "ja": "健康な肺と損傷した肺を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explain the health risks",
+          "ja": "健康上のリスクを説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "warn about smoking",
+          "ja": "喫煙について警告する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop lung disease",
+          "ja": "肺の病気になる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "quit smoking",
+          "ja": "喫煙をやめる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a serious health problem",
+          "ja": "深刻な健康問題",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "long-term health effects",
+          "ja": "長期的な健康への影響",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A doctor is explaining the harmful effects of smoking to a patient.",
+          "grammar": "現在進行形",
+          "ja": "医師が患者に喫煙の有害な影響を説明しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is using a model to compare a healthy lung with a damaged one.",
+          "grammar": "to不定詞 / compare A with B",
+          "ja": "彼は健康な肺と損傷した肺を比較するために模型を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The monitor also shows two very different images of the lungs.",
+          "grammar": "現在形",
+          "ja": "モニターにも大きく異なる2つの肺の画像が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The darkened lung appears to have been seriously damaged.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "黒くなった肺は深刻な損傷を受けているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The patient seems concerned as he listens to the doctor's explanation.",
+          "grammar": "seem＋形容詞 / as",
+          "ja": "患者は医師の説明を聞きながら心配しているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A container full of cigarette butts emphasizes the topic of smoking.",
+          "grammar": "現在形",
+          "ja": "吸い殻でいっぱいの容器が喫煙というテーマを強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The doctor may be encouraging the patient to quit smoking.",
+          "grammar": "may be＋現在分詞 / encourage O to",
+          "ja": "医師は患者に禁煙するよう勧めているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how smoking can lead to serious long-term health problems.",
+          "grammar": "how節 / can lead to",
+          "ja": "この場面は、喫煙がどのように深刻な長期的健康問題につながる可能性があるかを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "repercussion",
+          "ja": "重大な影響・結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "deterioration",
+          "ja": "悪化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pathology",
+          "ja": "病的状態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cessation",
+          "ja": "停止・禁煙",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "impairment",
+          "ja": "機能障害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "consequence",
+          "ja": "結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "exacerbate",
+          "ja": "悪化させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deteriorate",
+          "ja": "悪化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "impair",
+          "ja": "機能を損なう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discourage",
+          "ja": "思いとどまらせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "injurious",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "detrimental",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "irreversible",
+          "ja": "元に戻せない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "chronic",
+          "ja": "慢性的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "pulmonary",
+          "ja": "肺の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "injurious repercussions",
+          "ja": "有害な影響",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "suffer pulmonary deterioration",
+          "ja": "肺機能の悪化を経験する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "impair respiratory function",
+          "ja": "呼吸機能を損なう",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "exacerbate existing damage",
+          "ja": "既存の損傷を悪化させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illustrate pathological changes",
+          "ja": "病的変化を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "encourage smoking cessation",
+          "ja": "禁煙を促す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent irreversible damage",
+          "ja": "不可逆的な損傷を防ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "long-term detrimental effects",
+          "ja": "長期的な有害作用",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "confront the consequences",
+          "ja": "結果と向き合う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The physician appears to be explaining the injurious repercussions of prolonged smoking to his patient.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "医師は患者に長期間の喫煙がもたらす有害な影響を説明しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The contrasting lung model provides a striking visual representation of pulmonary deterioration.",
+          "grammar": "現在形 / of",
+          "ja": "対照的な肺の模型は、肺の悪化を視覚的に強く示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One side appears relatively healthy, whereas the other displays extensive dark discoloration associated with severe damage.",
+          "grammar": "whereas / 過去分詞",
+          "ja": "一方は比較的健康に見えるのに対し、もう一方には深刻な損傷を示す広範囲の黒い変色が見られます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The images displayed behind the doctor reinforce the comparison between healthy and severely compromised lung tissue.",
+          "grammar": "過去分詞 / between A and B",
+          "ja": "医師の背後に表示された画像は、健康な肺組織と深刻に損なわれた肺組織の違いをさらに強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The patient's contemplative posture suggests that he may be confronting the potential consequences of his smoking habit.",
+          "grammar": "suggest that / may be＋現在分詞",
+          "ja": "患者の考え込む姿勢から、自分の喫煙習慣がもたらす可能性のある結果と向き合っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Continued exposure to cigarette smoke can exacerbate pulmonary damage and impair respiratory function over time.",
+          "grammar": "can / 並列動詞",
+          "ja": "たばこの煙に継続的にさらされることで、時間とともに肺の損傷が悪化し、呼吸機能が損なわれる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By presenting tangible visual evidence, the physician may be attempting to encourage smoking cessation before further deterioration occurs.",
+          "grammar": "By＋動名詞 / may be attempting to / before",
+          "ja": "具体的な視覚資料を示すことで、医師はさらなる悪化が起こる前に患者へ禁煙を促そうとしているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The discarded cigarette butts and no-smoking symbol reinforce the message that smoking can have serious and potentially irreversible repercussions.",
+          "grammar": "that節 / can",
+          "ja": "多数の吸い殻と禁煙マークは、喫煙が深刻で場合によっては元に戻せない影響をもたらす可能性があるというメッセージを強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing injurious repercussions, pulmonary deterioration, chronic exposure, respiratory impairment, smoking cessation, and preventive health care.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は有害な影響、肺の悪化、慢性的な曝露、呼吸機能障害、禁煙、予防医療を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "doctor": {
+      "x": 27,
+      "y": 43
+    },
+    "patient": {
+      "x": 82,
+      "y": 50
+    },
+    "lungs": {
+      "x": 56,
+      "y": 61
+    },
+    "healthy": {
+      "x": 51,
+      "y": 61
+    },
+    "damaged": {
+      "x": 61,
+      "y": 61
+    },
+    "trachea": {
+      "x": 56,
+      "y": 50
+    },
+    "monitor": {
+      "x": 53,
+      "y": 26
+    },
+    "xray": {
+      "x": 53,
+      "y": 25
+    },
+    "stethoscope": {
+      "x": 30,
+      "y": 52
+    },
+    "coat": {
+      "x": 24,
+      "y": 64
+    },
+    "pen": {
+      "x": 46,
+      "y": 62
+    },
+    "hand": {
+      "x": 34,
+      "y": 67
+    },
+    "cigarettes": {
+      "x": 8,
+      "y": 76
+    },
+    "sign": {
+      "x": 94,
+      "y": 14
+    },
+    "clipboard": {
+      "x": 31,
+      "y": 86
+    },
+    "desk": {
+      "x": 50,
+      "y": 91
+    },
+    "plant": {
+      "x": 68,
+      "y": 58
+    },
+    "folders": {
+      "x": 5,
+      "y": 32
+    },
+    "poster": {
+      "x": 15,
+      "y": 17
+    },
+    "chair": {
+      "x": 3,
+      "y": 62
+    }
+  }
+}

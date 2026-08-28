@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_081",
+  "imageSrc": "assets/images/l2_081.webp",
+  "titleEn": "A Reformist Urban Mobility Project",
+  "titleJa": "自転車に優しい都市へ向けた改革",
+  "description": "晴れた日の都市中心部で、複数の人々が整備された自転車専用レーンを走っている場面である。右側には緑色に舗装された広い自転車レーンがあり、ヘルメットを着用した女性や男性を含む複数のサイクリストが同じ方向へ走っている。自転車レーンは車道からプランターやポールによって物理的に分離され、安全性が高められている。左側の車道には自動車が走り、歩道では歩行者が建物や店舗の前を歩いている。通り沿いには中層の集合住宅や店舗が並び、街路樹、花壇、植栽が多く配置されている。遠方には高層ビル群が見え、都市の中心部へ道路が続いている。自動車中心の道路空間を見直し、自転車、歩行者、公共空間、緑化を重視する都市改革の一例として描写できる場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a modern city street redesigned for safer cycling. Show several cyclists wearing helmets riding along a wide green protected bike lane separated from traffic by planters and black bollards. Cars travel on the adjacent road, pedestrians walk on sidewalks, and apartment buildings with ground-floor shops line the street. Include many trees, flowers, landscaped planters, and a distant downtown skyline. Bright sunny day, clean sustainable city, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bike",
+          "ja": "自転車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cyclist",
+          "ja": "自転車に乗る人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "lane",
+          "ja": "車線",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "city",
+          "ja": "都市",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "ride",
+          "ja": "乗る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drive",
+          "ja": "運転する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wear",
+          "ja": "身につける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "green",
+          "ja": "緑色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ride a bike",
+          "ja": "自転車に乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a green bike lane",
+          "ja": "緑色の自転車レーン",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "cars on the road",
+          "ja": "道路を走る車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "walk on the sidewalk",
+          "ja": "歩道を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "trees along the street",
+          "ja": "通り沿いの木々",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "tall city buildings",
+          "ja": "都市の高い建物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a sunny day",
+          "ja": "晴れた日",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Several people are riding bicycles.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が自転車に乗っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are riding in a green bike lane.",
+          "grammar": "現在進行形",
+          "ja": "彼らは緑色の自転車レーンを走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cyclists are wearing helmets.",
+          "grammar": "現在進行形",
+          "ja": "自転車に乗っている人たちはヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are cars on the road.",
+          "grammar": "There are",
+          "ja": "道路には車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many trees beside the street.",
+          "grammar": "There are",
+          "ja": "通りのそばにはたくさんの木があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are walking on the sidewalk.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が歩道を歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The bike lane is separated from the cars.",
+          "grammar": "受動態",
+          "ja": "自転車レーンは車から分離されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The city looks clean and green.",
+          "grammar": "look＋形容詞",
+          "ja": "その都市はきれいで緑が多く見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "transportation",
+          "ja": "交通",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "インフラ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pedestrian",
+          "ja": "歩行者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "traffic",
+          "ja": "交通",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "planter",
+          "ja": "植栽用プランター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "経路",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "分離する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "improve",
+          "ja": "改善する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "encourage",
+          "ja": "促す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "urban",
+          "ja": "都市の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "protected",
+          "ja": "保護された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convenient",
+          "ja": "便利な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sustainable",
+          "ja": "持続可能な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a protected bike lane",
+          "ja": "保護された自転車専用レーン",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "separate bikes from cars",
+          "ja": "自転車と車を分離する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve road safety",
+          "ja": "道路の安全性を改善する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "encourage bicycle use",
+          "ja": "自転車利用を促進する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reduce traffic problems",
+          "ja": "交通問題を減らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "plant trees along the street",
+          "ja": "通り沿いに木を植える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create safer streets",
+          "ja": "より安全な通りを作る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "sustainable urban transportation",
+          "ja": "持続可能な都市交通",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The city has created a protected lane for people who travel by bicycle.",
+          "grammar": "現在完了形 / 関係代名詞who",
+          "ja": "その都市は自転車で移動する人のために保護されたレーンを整備しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Planters and posts separate cyclists from moving vehicles.",
+          "grammar": "現在形",
+          "ja": "プランターやポールが自転車利用者と走行中の車を分離しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several cyclists are using the lane while cars continue along the main road.",
+          "grammar": "while",
+          "ja": "複数の自転車利用者がレーンを使う一方、車は主要道路を走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The physical separation may make cycling safer and more comfortable.",
+          "grammar": "may / make＋O＋C",
+          "ja": "物理的な分離によって、自転車移動がより安全で快適になる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Trees and flower planters make the street look greener and more attractive.",
+          "grammar": "make＋O＋C / 比較級",
+          "ja": "木々や花のプランターによって、通りはより緑豊かで魅力的に見えます。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Pedestrians have their own sidewalk beside the bicycle lane.",
+          "grammar": "現在形",
+          "ja": "歩行者には自転車レーンの横に専用の歩道があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The street design appears to encourage people to choose bicycles for short trips.",
+          "grammar": "appear to / encourage O to",
+          "ja": "この道路設計は、短距離移動に自転車を選ぶよう人々に促しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates one way cities can develop more sustainable transportation systems.",
+          "grammar": "関係詞省略 / can",
+          "ja": "この場面は、都市がより持続可能な交通システムを発展させる方法の一つを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "undertaking",
+          "ja": "事業・取り組み",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reformist",
+          "ja": "改革志向の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "mobility",
+          "ja": "移動性・交通",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "社会基盤",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "streetscape",
+          "ja": "街路景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "congestion",
+          "ja": "交通渋滞",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "revitalize",
+          "ja": "活性化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reallocate",
+          "ja": "再配分する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prioritize",
+          "ja": "優先する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "incentivize",
+          "ja": "促進する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pedestrianize",
+          "ja": "歩行者中心にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "progressive",
+          "ja": "進歩的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multimodal",
+          "ja": "複数の交通手段を組み合わせた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "livable",
+          "ja": "暮らしやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sustainable",
+          "ja": "持続可能な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a reformist undertaking",
+          "ja": "改革志向の取り組み",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reallocate road space",
+          "ja": "道路空間を再配分する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prioritize active mobility",
+          "ja": "徒歩や自転車などの移動を優先する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop cycling infrastructure",
+          "ja": "自転車インフラを整備する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reduce automobile dependence",
+          "ja": "自動車依存を減らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mitigate traffic congestion",
+          "ja": "交通渋滞を緩和する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "revitalize the streetscape",
+          "ja": "街路景観を活性化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "promote sustainable mobility",
+          "ja": "持続可能な交通を促進する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "create a more livable city",
+          "ja": "より暮らしやすい都市をつくる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The redesigned street appears to represent a reformist undertaking aimed at transforming urban mobility.",
+          "grammar": "appear to / 過去分詞 / aimed at＋動名詞",
+          "ja": "再設計されたこの道路は、都市交通を変革することを目的とした改革志向の取り組みを表しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A substantial portion of the roadway has been reallocated to a physically protected cycling lane.",
+          "grammar": "現在完了受動態",
+          "ja": "道路空間のかなりの部分が、物理的に保護された自転車レーンへ再配分されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Planters and bollards create a buffer between cyclists and motor vehicles, thereby reducing their direct exposure to traffic.",
+          "grammar": "thereby＋動名詞",
+          "ja": "プランターとポールが自転車利用者と自動車の間に緩衝帯をつくり、それによって交通への直接的な危険を減らしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The infrastructure seems designed to prioritize active mobility rather than allocating all available space to automobiles.",
+          "grammar": "seem＋過去分詞 / rather than＋動名詞",
+          "ja": "このインフラは、利用可能な空間をすべて自動車に割り当てるのではなく、徒歩や自転車による移動を優先するよう設計されているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By making cycling safer and more convenient, the city may incentivize residents to reduce their dependence on private vehicles.",
+          "grammar": "By＋動名詞 / may / incentivize O to",
+          "ja": "自転車利用をより安全で便利にすることで、都市は住民に自家用車への依存を減らすよう促すことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The extensive greenery not only improves the streetscape but may also make the corridor more pleasant for pedestrians and cyclists.",
+          "grammar": "not only A but also B / may",
+          "ja": "豊富な緑化は街路景観を改善するだけでなく、歩行者や自転車利用者にとって通りをより快適にする可能性もあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Such a multimodal design can help mitigate congestion while supporting healthier and more sustainable forms of transportation.",
+          "grammar": "can help / while＋動名詞",
+          "ja": "このような複数の交通手段を考慮した設計は、より健康的で持続可能な移動手段を支えながら交通渋滞を緩和する助けになります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The combination of housing, shops, sidewalks, cycling infrastructure, vegetation, and vehicle lanes suggests an attempt to create a more balanced urban environment.",
+          "grammar": "suggest＋名詞 / to不定詞",
+          "ja": "住宅、店舗、歩道、自転車インフラ、植栽、車道の組み合わせから、よりバランスの取れた都市環境をつくろうとする試みがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a reformist undertaking, urban mobility, cycling infrastructure, road-space reallocation, sustainability, congestion reduction, and livable-city planning.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は改革志向の取り組み、都市交通、自転車インフラ、道路空間の再配分、持続可能性、渋滞緩和、暮らしやすい都市計画を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 62,
+      "y": 55
+    },
+    "cyclist": {
+      "x": 74,
+      "y": 53
+    },
+    "helmet": {
+      "x": 61,
+      "y": 40
+    },
+    "bicycle": {
+      "x": 62,
+      "y": 73
+    },
+    "lane": {
+      "x": 73,
+      "y": 70
+    },
+    "bollard": {
+      "x": 45,
+      "y": 64
+    },
+    "planter": {
+      "x": 39,
+      "y": 75
+    },
+    "flowers": {
+      "x": 37,
+      "y": 72
+    },
+    "trees": {
+      "x": 53,
+      "y": 27
+    },
+    "car": {
+      "x": 29,
+      "y": 45
+    },
+    "road": {
+      "x": 39,
+      "y": 58
+    },
+    "sidewalk": {
+      "x": 91,
+      "y": 69
+    },
+    "pedestrian": {
+      "x": 11,
+      "y": 43
+    },
+    "shops": {
+      "x": 31,
+      "y": 37
+    },
+    "apartments": {
+      "x": 34,
+      "y": 17
+    },
+    "balcony": {
+      "x": 38,
+      "y": 14
+    },
+    "lamp": {
+      "x": 15,
+      "y": 30
+    },
+    "skyline": {
+      "x": 72,
+      "y": 18
+    },
+    "tower": {
+      "x": 67,
+      "y": 13
+    },
+    "sky": {
+      "x": 78,
+      "y": 8
+    }
+  }
+}

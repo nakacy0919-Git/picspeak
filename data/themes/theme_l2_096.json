@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_096",
+  "imageSrc": "assets/images/l2_096.webp",
+  "titleEn": "A Severe Storm Bearing Down on an Embattled District",
+  "titleJa": "被災地域に迫る猛烈な嵐",
+  "description": "すでに被害を受けた市街地で、住民たちがさらに接近する猛烈な嵐に備えて建物を補強している場面である。左手前では男性がはしごに上り、電動ドリルを使って窓に大きな合板を固定しており、下では女性が板を支えている。通り沿いでも複数の住民が窓や店舗を板で覆ったり、木材や工具を運んだりしている。右側では男性がピックアップトラックの荷台から資材を取り出している。道路は雨で濡れ、枝や木片などの残骸が散乱しており、この地区がすでに悪天候の影響を受けていることが分かる。上空には巨大な黒い積乱雲が広がり、遠方では激しい雨と落雷も見える。強風で木々や旗が大きくなびいている。すでに困難な状況にある地域へさらに危険な嵐が迫る様子を表す「bear down on the embattled district」を中心に、災害への備え、接近する脅威、地域住民の対応を描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of residents boarding up damaged shops and homes as a violent storm approaches an already battered city district. Show people using plywood, ladders, drills and tools, a pickup truck with supplies, wet streets covered with storm debris, trees bending in strong wind, dark towering clouds, heavy rain and distant lightning. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "storm",
+          "ja": "嵐",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rain",
+          "ja": "雨",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "lightning",
+          "ja": "雷",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "board",
+          "ja": "板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ladder",
+          "ja": "はしご",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drill",
+          "ja": "電動ドリル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "truck",
+          "ja": "トラック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "work",
+          "ja": "作業する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "carry",
+          "ja": "運ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cover",
+          "ja": "覆う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "備える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dark",
+          "ja": "暗い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "prepare for a storm",
+          "ja": "嵐に備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cover the window",
+          "ja": "窓を覆う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a drill",
+          "ja": "ドリルを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "climb a ladder",
+          "ja": "はしごに上る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry wooden boards",
+          "ja": "木の板を運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dark storm clouds",
+          "ja": "暗い嵐の雲",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a wet street",
+          "ja": "濡れた道路",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "strong wind",
+          "ja": "強い風",
+          "type": "concept",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A strong storm is coming toward the town.",
+          "grammar": "現在進行形",
+          "ja": "強い嵐が町に近づいています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "People are covering the windows with wooden boards.",
+          "grammar": "現在進行形 / with",
+          "ja": "人々が木の板で窓を覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is using a drill on a ladder.",
+          "grammar": "現在進行形",
+          "ja": "男性がはしごの上でドリルを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is holding the board below him.",
+          "grammar": "現在進行形",
+          "ja": "女性が彼の下で板を支えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Other people are carrying wood and tools.",
+          "grammar": "現在進行形",
+          "ja": "ほかの人々は木材や工具を運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The street is wet and covered with debris.",
+          "grammar": "be動詞 / 過去分詞",
+          "ja": "道路は濡れており、残骸で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is lightning in the distance.",
+          "grammar": "There is",
+          "ja": "遠くで雷が光っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people may be preparing for dangerous weather.",
+          "grammar": "may be＋現在分詞",
+          "ja": "人々は危険な天候に備えているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "resident",
+          "ja": "住民",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "district",
+          "ja": "地区",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "残骸",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "被害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "thunderstorm",
+          "ja": "雷雨",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "plywood",
+          "ja": "合板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "secure",
+          "ja": "固定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reinforce",
+          "ja": "補強する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "approach",
+          "ja": "接近する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "severe",
+          "ja": "激しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "被害を受けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "violent",
+          "ja": "猛烈な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "threatening",
+          "ja": "脅威を感じさせる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "board up the windows",
+          "ja": "窓を板で塞ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare for severe weather",
+          "ja": "悪天候に備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reinforce damaged buildings",
+          "ja": "被害を受けた建物を補強する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "secure a sheet of plywood",
+          "ja": "合板を固定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remove storm debris",
+          "ja": "嵐の残骸を片付ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an approaching thunderstorm",
+          "ja": "接近する雷雨",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "protect local buildings",
+          "ja": "地域の建物を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "strong winds and lightning",
+          "ja": "強風と雷",
+          "type": "detail",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Residents are reinforcing buildings as a severe storm approaches the district.",
+          "grammar": "現在進行形 / as",
+          "ja": "激しい嵐が地区に近づく中、住民たちは建物を補強しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several windows are being covered with large sheets of plywood.",
+          "grammar": "現在進行形の受動態",
+          "ja": "複数の窓が大きな合板で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One man is using a power drill while a woman supports the board.",
+          "grammar": "while",
+          "ja": "男性が電動ドリルを使い、その間女性が板を支えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Other residents are carrying supplies and preparing nearby buildings.",
+          "grammar": "現在進行形",
+          "ja": "ほかの住民たちは資材を運び、近くの建物を準備しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The wet road is already covered with branches and broken pieces of wood.",
+          "grammar": "受動態",
+          "ja": "濡れた道路にはすでに枝や壊れた木片が散乱しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Dark clouds, heavy rain, and lightning indicate that dangerous weather is approaching.",
+          "grammar": "indicate that",
+          "ja": "暗い雲、激しい雨、雷は危険な天候が接近していることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The area may already have suffered damage from an earlier storm.",
+          "grammar": "may have＋過去分詞",
+          "ja": "この地域はすでに以前の嵐で被害を受けている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The residents are working quickly to protect their homes and businesses before conditions worsen.",
+          "grammar": "to不定詞 / before",
+          "ja": "状況がさらに悪化する前に住宅や店舗を守るため、住民たちは急いで作業しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "embattled",
+          "ja": "苦境にある・攻撃や災害にさらされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "onslaught",
+          "ja": "猛攻・激しい襲来",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "tempest",
+          "ja": "大嵐",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "resilience",
+          "ja": "回復力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "fortification",
+          "ja": "補強・防備",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "adversity",
+          "ja": "逆境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "batter",
+          "ja": "激しく打ちつける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reinforce",
+          "ja": "補強する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "brace",
+          "ja": "備える・補強する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "threaten",
+          "ja": "脅かす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "impending",
+          "ja": "差し迫った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "beleaguered",
+          "ja": "苦境に陥った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relentless",
+          "ja": "容赦のない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "precarious",
+          "ja": "不安定で危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "formidable",
+          "ja": "手強い・恐るべき",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "bear down on the district",
+          "ja": "地区へ猛烈に迫る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "an embattled district",
+          "ja": "苦境にある地区",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "brace for the onslaught",
+          "ja": "猛威に備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reinforce vulnerable buildings",
+          "ja": "脆弱な建物を補強する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "withstand violent winds",
+          "ja": "猛烈な風に耐える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face an impending tempest",
+          "ja": "差し迫った大嵐に直面する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "demonstrate communal resilience",
+          "ja": "地域社会の回復力を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "secure exposed properties",
+          "ja": "危険にさらされた建物を保護する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "weather another assault",
+          "ja": "さらなる猛威を耐え抜く",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A formidable storm is bearing down on an embattled district whose residents are hurriedly reinforcing vulnerable buildings.",
+          "grammar": "bear down on / 関係代名詞whose / 現在進行形",
+          "ja": "恐るべき嵐が苦境にある地区へ猛烈に迫り、住民たちは脆弱な建物を急いで補強しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The expression \"bear down on\" conveys the sense of a powerful threat approaching rapidly and with increasing force.",
+          "grammar": "convey / 動名詞",
+          "ja": "「bear down on」は、強力な脅威が勢いを増しながら急速に迫ってくる感覚を表します。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The district appears embattled because debris already litters the roadway and several properties show signs of previous damage.",
+          "grammar": "appear＋形容詞 / because",
+          "ja": "道路にはすでに残骸が散乱し、複数の建物に以前の被害の跡が見られるため、この地区は苦境にあるように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Residents are boarding up windows in an attempt to prevent high winds and flying debris from causing further destruction.",
+          "grammar": "in an attempt to / prevent A from＋動名詞",
+          "ja": "住民たちは強風や飛来物によるさらなる被害を防ぐため、窓を板で塞いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Towering storm clouds and distant lightning suggest that the impending tempest could intensify within a short period.",
+          "grammar": "suggest that / could",
+          "ja": "巨大な嵐雲と遠方の雷から、差し迫った嵐が短時間でさらに激化する可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Having apparently endured earlier damage, the community is now bracing for yet another meteorological onslaught.",
+          "grammar": "完了分詞構文 / brace for",
+          "ja": "すでに以前の被害を経験したと思われる地域社会は、今また新たな気象災害の猛威に備えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The coordinated effort to secure homes, shops, and supplies demonstrates considerable communal resilience in the face of adversity.",
+          "grammar": "to不定詞 / in the face of",
+          "ja": "住宅、店舗、資材を守るための協力した取り組みは、逆境に直面する地域社会の高い回復力を示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If the storm continues to bear down on the area, structures that have already been weakened may become increasingly precarious.",
+          "grammar": "If / bear down on / 現在完了形の受動態 / may",
+          "ja": "もし嵐がこの地域へさらに迫り続ければ、すでに弱体化した建物は一層危険な状態になる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a storm bearing down on an embattled district, impending danger, emergency preparation, structural reinforcement, adversity, and communal resilience.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は苦境にある地区へ迫る嵐、差し迫った危険、緊急時の備え、建物の補強、逆境、地域社会の回復力を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "storm": {
+      "x": 69,
+      "y": 22
+    },
+    "clouds": {
+      "x": 70,
+      "y": 18
+    },
+    "lightning": {
+      "x": 86,
+      "y": 59
+    },
+    "rain": {
+      "x": 82,
+      "y": 55
+    },
+    "window": {
+      "x": 15,
+      "y": 35
+    },
+    "plywood": {
+      "x": 13,
+      "y": 28
+    },
+    "drill": {
+      "x": 10,
+      "y": 24
+    },
+    "ladder": {
+      "x": 16,
+      "y": 60
+    },
+    "woman": {
+      "x": 22,
+      "y": 66
+    },
+    "man": {
+      "x": 18,
+      "y": 37
+    },
+    "truck": {
+      "x": 92,
+      "y": 79
+    },
+    "tools": {
+      "x": 93,
+      "y": 79
+    },
+    "debris": {
+      "x": 66,
+      "y": 84
+    },
+    "street": {
+      "x": 72,
+      "y": 78
+    },
+    "tree": {
+      "x": 68,
+      "y": 53
+    },
+    "flag": {
+      "x": 59,
+      "y": 36
+    },
+    "buildings": {
+      "x": 48,
+      "y": 44
+    },
+    "district": {
+      "x": 65,
+      "y": 67
+    },
+    "damage": {
+      "x": 48,
+      "y": 77
+    },
+    "resilience": {
+      "x": 36,
+      "y": 67
+    }
+  }
+}

@@ -1,0 +1,733 @@
+{
+  "id": "theme_l2_053",
+  "imageSrc": "assets/images/l2_053.webp",
+  "titleEn": "Comfort at an Emergency Shelter",
+  "titleJa": "避難所で人々を励ます犬",
+  "description": "災害後の避難所として使われている体育館で、子どもたちが救助犬のような大型犬を囲んで触れ合っている場面である。手前中央には赤いハーネスをつけたゴールデンレトリバーが横になっており、4人の子どもたちが笑顔で頭や背中をなでている。背景には簡易ベッド、毛布、枕、飲料水、トイレットペーパー、保存食などの支援物資が並び、数人の避難者がベッド付近で休んでいる。右奥では緑色のベストを着た支援スタッフが毛布を運んでいる。体育館にはバスケットゴール、大きな窓、木製の床があり、緊急避難所らしい様子が分かる。災害後の生活、支援活動、動物との触れ合い、人々の感情を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a school gym being used as an emergency evacuation shelter. In the foreground, place a friendly golden retriever wearing a red rescue-style harness, surrounded by four smiling children who are gently petting its head and back. In the background, show several evacuees resting near folding cots with blankets and pillows. Add bottled water, toilet paper, food supplies, storage bins, and emergency equipment along the walls. On the right, show a female relief worker in a green vest carrying folded blankets. Include a basketball hoop, large gym windows, padded walls, and a polished wooden floor. Preserve the warm, comforting atmosphere of the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "child",
+          "ja": "子ども",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "gym",
+          "ja": "体育館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bed",
+          "ja": "ベッド",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "blanket",
+          "ja": "毛布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "box",
+          "ja": "箱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pet",
+          "ja": "なでる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "ほほえむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "carry",
+          "ja": "運ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "friendly",
+          "ja": "人なつこい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "pet the dog",
+          "ja": "犬をなでる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "four children",
+          "ja": "4人の子ども",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a friendly dog",
+          "ja": "人なつこい犬",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "sleep on a bed",
+          "ja": "ベッドで休む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry some blankets",
+          "ja": "毛布を運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "bottles of water",
+          "ja": "水のボトル",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "inside a gym",
+          "ja": "体育館の中",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "people in the background",
+          "ja": "背景の人々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four children are petting a dog.",
+          "grammar": "現在進行形",
+          "ja": "4人の子どもが犬をなでています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The dog is lying on the floor.",
+          "grammar": "現在進行形",
+          "ja": "犬は床に横になっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The children are smiling.",
+          "grammar": "現在進行形",
+          "ja": "子どもたちは笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many beds in the gym.",
+          "grammar": "There are",
+          "ja": "体育館にはたくさんのベッドがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are blankets on the beds.",
+          "grammar": "There are",
+          "ja": "ベッドの上には毛布があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are resting in the background.",
+          "grammar": "現在進行形",
+          "ja": "背景では何人かの人が休んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is carrying blankets.",
+          "grammar": "現在進行形",
+          "ja": "女性が毛布を運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog looks friendly and calm.",
+          "grammar": "look＋形容詞",
+          "ja": "犬は人なつこく落ち着いて見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "shelter",
+          "ja": "避難所",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "evacuee",
+          "ja": "避難者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "volunteer",
+          "ja": "支援スタッフ",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "cot",
+          "ja": "簡易ベッド",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "supply",
+          "ja": "支援物資",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "harness",
+          "ja": "ハーネス",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "comfort",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distribute",
+          "ja": "配る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rest",
+          "ja": "休む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interact",
+          "ja": "触れ合う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "temporary",
+          "ja": "一時的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "emergency",
+          "ja": "緊急の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relaxed",
+          "ja": "くつろいだ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "supportive",
+          "ja": "支援的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "stay at an emergency shelter",
+          "ja": "緊急避難所で過ごす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "interact with a friendly dog",
+          "ja": "人なつこい犬と触れ合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rest on temporary cots",
+          "ja": "簡易ベッドで休む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry relief supplies",
+          "ja": "支援物資を運ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "provide emotional comfort",
+          "ja": "精神的な安心を与える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "bottled water and food",
+          "ja": "飲料水と食料",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "blankets beside the beds",
+          "ja": "ベッドのそばの毛布",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a gym used as a shelter",
+          "ja": "避難所として使われる体育館",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The gym is being used as a temporary emergency shelter.",
+          "grammar": "現在進行形受動態",
+          "ja": "体育館は一時的な緊急避難所として使われています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Four children are happily interacting with a friendly golden retriever.",
+          "grammar": "現在進行形",
+          "ja": "4人の子どもが人なつこいゴールデンレトリバーと楽しそうに触れ合っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dog is wearing a red harness and lying calmly on the floor.",
+          "grammar": "現在進行形",
+          "ja": "犬は赤いハーネスをつけ、床に落ち着いて横になっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several evacuees are resting on cots in the background.",
+          "grammar": "現在進行形",
+          "ja": "背景では数人の避難者が簡易ベッドで休んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A relief worker is carrying folded blankets across the gym.",
+          "grammar": "現在進行形",
+          "ja": "支援スタッフが畳んだ毛布を体育館内で運んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Emergency supplies have been arranged along the wall.",
+          "grammar": "現在完了受動態",
+          "ja": "緊急支援物資が壁沿いに並べられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The children's smiles suggest that the dog is helping them relax.",
+          "grammar": "suggest that / help＋O＋動詞",
+          "ja": "子どもたちの笑顔から、犬が彼らを安心させていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The shelter provides both basic supplies and emotional support.",
+          "grammar": "both A and B",
+          "ja": "避難所では生活物資と精神的な支援の両方が提供されています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "evacuee",
+          "ja": "避難者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "displacement",
+          "ja": "避難・住居喪失",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rapport",
+          "ja": "親密な関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "relief",
+          "ja": "救援",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "respite",
+          "ja": "一時的な安らぎ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ingratiate",
+          "ja": "気に入られる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reassure",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "alleviate",
+          "ja": "和らげる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distribute",
+          "ja": "配布する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accommodate",
+          "ja": "受け入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "displaced",
+          "ja": "避難を余儀なくされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "reassuring",
+          "ja": "安心感を与える",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "temporary",
+          "ja": "一時的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "communal",
+          "ja": "共同の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "therapeutic",
+          "ja": "心を癒やす",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ingratiate itself with evacuees",
+          "ja": "避難者たちに気に入られる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "provide therapeutic companionship",
+          "ja": "心を癒やす触れ合いを提供する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "alleviate emotional distress",
+          "ja": "精神的苦痛を和らげる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop rapport with children",
+          "ja": "子どもたちと親密な関係を築く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "offer temporary respite",
+          "ja": "一時的な安らぎを与える",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "accommodate displaced residents",
+          "ja": "避難を余儀なくされた住民を受け入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "distribute essential supplies",
+          "ja": "必要な物資を配布する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a reassuring atmosphere",
+          "ja": "安心できる雰囲気を作る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cope with displacement",
+          "ja": "避難生活に対処する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The friendly dog appears to have ingratiated itself with the young evacuees gathered around it.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "人なつこい犬は、周囲に集まった若い避難者たちにすっかり気に入られたようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The children's relaxed expressions suggest that interacting with the animal is providing them with a welcome emotional respite.",
+          "grammar": "suggest that / 動名詞主語",
+          "ja": "子どもたちのくつろいだ表情から、動物との触れ合いが彼らに心の安らぎを与えていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The gymnasium has been converted into a communal shelter capable of accommodating displaced residents.",
+          "grammar": "現在完了受動態 / capable of",
+          "ja": "体育館は、避難を余儀なくされた住民を受け入れられる共同避難所へと転用されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Rows of temporary cots, blankets, water, food, and hygiene supplies indicate that the facility is supporting basic daily needs.",
+          "grammar": "indicate that",
+          "ja": "簡易ベッド、毛布、水、食料、衛生用品の並びから、この施設が日常生活に必要な基本的ニーズを支えていることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The relief worker carrying blankets illustrates the continuing effort to distribute essential supplies throughout the shelter.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "毛布を運ぶ支援スタッフは、避難所内で必要物資を継続的に配布する取り組みを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "While the cots and supplies address physical necessities, the dog may help alleviate anxiety and emotional distress.",
+          "grammar": "while / may",
+          "ja": "簡易ベッドや支援物資が身体的な必要を満たす一方、犬は不安や精神的な苦痛を和らげるのに役立っている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The contrast between the institutional gym setting and the affectionate interaction creates a notably reassuring atmosphere.",
+          "grammar": "contrast between",
+          "ja": "施設的な体育館の環境と温かな触れ合いとの対比が、非常に安心感のある雰囲気を生み出しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Animal companionship can offer evacuees a brief sense of normality during an otherwise stressful period of displacement.",
+          "grammar": "can",
+          "ja": "動物との触れ合いは、避難生活というストレスの多い時期に、避難者へ一時的な日常感を与えることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing disaster relief, emotional support, communal living, and positive human-animal interaction.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は災害救援、精神的支援、共同生活、人と動物の前向きな触れ合いを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "dog": {
+      "x": 51,
+      "y": 61
+    },
+    "harness": {
+      "x": 43,
+      "y": 72
+    },
+    "child1": {
+      "x": 25,
+      "y": 48
+    },
+    "child2": {
+      "x": 42,
+      "y": 44
+    },
+    "child3": {
+      "x": 58,
+      "y": 38
+    },
+    "child4": {
+      "x": 72,
+      "y": 50
+    },
+    "worker": {
+      "x": 83,
+      "y": 19
+    },
+    "blankets": {
+      "x": 81,
+      "y": 25
+    },
+    "evacuee1": {
+      "x": 4,
+      "y": 30
+    },
+    "evacuee2": {
+      "x": 13,
+      "y": 32
+    },
+    "evacuee3": {
+      "x": 20,
+      "y": 32
+    },
+    "cot1": {
+      "x": 12,
+      "y": 48
+    },
+    "cot2": {
+      "x": 88,
+      "y": 52
+    },
+    "cot3": {
+      "x": 94,
+      "y": 58
+    },
+    "water": {
+      "x": 91,
+      "y": 24
+    },
+    "paper": {
+      "x": 92,
+      "y": 29
+    },
+    "supplies": {
+      "x": 88,
+      "y": 31
+    },
+    "box": {
+      "x": 93,
+      "y": 41
+    },
+    "bin": {
+      "x": 96,
+      "y": 49
+    },
+    "bag": {
+      "x": 13,
+      "y": 67
+    },
+    "gym": {
+      "x": 51,
+      "y": 15
+    },
+    "hoop": {
+      "x": 19,
+      "y": 7
+    },
+    "window": {
+      "x": 31,
+      "y": 6
+    },
+    "floor": {
+      "x": 53,
+      "y": 91
+    },
+    "mats": {
+      "x": 78,
+      "y": 27
+    }
+  }
+}

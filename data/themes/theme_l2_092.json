@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_092",
+  "imageSrc": "assets/images/l2_092.webp",
+  "titleEn": "Documenting a Statutory Infringement",
+  "titleJa": "駐車規則違反を記録する警察官",
+  "description": "晴れた都市の道路で、駐車禁止区域に停められた青い乗用車を2人の警察官が確認している場面である。左側の警察官は車のフロントガラス付近に違反通知のような紙を置いている。右手前の警察官はスマートフォンを横向きに構え、違反車両の状態を証拠として撮影している。歩道には大きな駐車禁止標識があり、路面にも駐車禁止を示すマークが描かれている。車は赤く塗られた縁石沿いの規制区域に停車しており、駐車規則に違反していることが明確に示されている。背景には建物、街路樹、歩行者、走行中の車が見える。法律や規則への違反、駐車違反、証拠の記録、法令の執行、違反通知について英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of two police officers documenting an illegally parked blue sedan in a city no-parking zone. One officer places a parking ticket on the windshield while the other photographs the car with a smartphone. Include a no-parking sign, red curb, road marking, sidewalks, buildings, trees, traffic, and a few distant pedestrians. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "police",
+          "ja": "警察",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "officer",
+          "ja": "警察官",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "標識",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ticket",
+          "ja": "違反切符",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "curb",
+          "ja": "縁石",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "road",
+          "ja": "道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "park",
+          "ja": "駐車する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illegal",
+          "ja": "違法な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "park the car",
+          "ja": "車を駐車する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a photo",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give a ticket",
+          "ja": "違反切符を出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the car",
+          "ja": "車を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a police officer",
+          "ja": "警察官",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a no-parking sign",
+          "ja": "駐車禁止標識",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a blue car",
+          "ja": "青い車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "on the street",
+          "ja": "道路で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A blue car is parked on the street.",
+          "grammar": "受動態",
+          "ja": "青い車が道路に駐車されています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two police officers are checking the car.",
+          "grammar": "現在進行形",
+          "ja": "2人の警察官が車を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One officer is putting a ticket on the car.",
+          "grammar": "現在進行形",
+          "ja": "1人の警察官が車に違反切符を置いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another officer is taking a photo.",
+          "grammar": "現在進行形",
+          "ja": "もう1人の警察官が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a no-parking sign beside the car.",
+          "grammar": "There is",
+          "ja": "車のそばには駐車禁止標識があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The curb is painted red.",
+          "grammar": "受動態",
+          "ja": "縁石は赤く塗られています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The car may be parked in the wrong place.",
+          "grammar": "may be＋過去分詞",
+          "ja": "その車は駐車してはいけない場所に停められているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The driver may get a parking ticket.",
+          "grammar": "may",
+          "ja": "運転手は駐車違反切符を受けるかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "violation",
+          "ja": "違反",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "parking",
+          "ja": "駐車",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evidence",
+          "ja": "証拠",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "regulation",
+          "ja": "規則",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vehicle",
+          "ja": "車両",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "通知書",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "issue",
+          "ja": "発行する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "enforce",
+          "ja": "施行する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prohibited",
+          "ja": "禁止された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "restricted",
+          "ja": "制限された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "illegal",
+          "ja": "違法な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "official",
+          "ja": "公的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "visible",
+          "ja": "目に見える",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "commit a parking violation",
+          "ja": "駐車違反をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "issue a parking ticket",
+          "ja": "駐車違反切符を発行する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the vehicle",
+          "ja": "車両を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "collect photographic evidence",
+          "ja": "写真による証拠を集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "park in a restricted zone",
+          "ja": "駐車制限区域に停める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "ignore a traffic sign",
+          "ja": "交通標識を無視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enforce parking regulations",
+          "ja": "駐車規則を取り締まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an illegal parking space",
+          "ja": "駐車禁止場所",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two police officers are dealing with a car parked in a restricted area.",
+          "grammar": "現在進行形 / 過去分詞",
+          "ja": "2人の警察官が駐車制限区域に停められた車に対応しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One officer appears to be issuing a parking ticket.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "1人の警察官は駐車違反切符を発行しているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other officer is photographing the vehicle with a smartphone.",
+          "grammar": "現在進行形 / with",
+          "ja": "もう1人の警察官はスマートフォンで車両を撮影しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large sign clearly shows that parking is prohibited there.",
+          "grammar": "show that / 受動態",
+          "ja": "大きな標識は、その場所で駐車が禁止されていることを明確に示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The red curb and road marking also indicate that the area is restricted.",
+          "grammar": "indicate that",
+          "ja": "赤い縁石と路面標示も、その区域が規制されていることを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The photograph may be used as evidence of the parking violation.",
+          "grammar": "may be＋過去分詞",
+          "ja": "その写真は駐車違反の証拠として使用される可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The driver may have ignored the no-parking restriction.",
+          "grammar": "may have＋過去分詞",
+          "ja": "運転手は駐車禁止の規制を無視したのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how police officers enforce parking regulations.",
+          "grammar": "how節",
+          "ja": "この場面は警察官がどのように駐車規則を取り締まるかを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "infringement",
+          "ja": "違反・侵害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "statute",
+          "ja": "法令",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ordinance",
+          "ja": "条例",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infraction",
+          "ja": "規則違反",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "citation",
+          "ja": "違反通知・召喚状",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "enforcement",
+          "ja": "法令執行",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "contravene",
+          "ja": "法令に違反する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "penalize",
+          "ja": "罰する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "enforce",
+          "ja": "執行する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "statutory",
+          "ja": "法令上の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unauthorized",
+          "ja": "許可されていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prohibited",
+          "ja": "禁止された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "liable",
+          "ja": "法的責任を負う可能性がある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "evidentiary",
+          "ja": "証拠としての",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a statutory infringement",
+          "ja": "法令上の違反",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "contravene a parking ordinance",
+          "ja": "駐車条例に違反する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "issue an official citation",
+          "ja": "正式な違反通知を発行する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document the infringement",
+          "ja": "違反を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "gather evidentiary photographs",
+          "ja": "証拠写真を収集する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enforce statutory restrictions",
+          "ja": "法令上の規制を執行する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "park in a prohibited zone",
+          "ja": "駐車禁止区域に停める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be liable for a penalty",
+          "ja": "罰則の対象となる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "violate municipal regulations",
+          "ja": "自治体の規則に違反する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The vehicle appears to have been parked in direct contravention of a clearly marked parking restriction.",
+          "grammar": "appear to have been＋過去分詞 / in contravention of",
+          "ja": "その車両は、明確に表示された駐車規制に直接違反して駐車されているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One officer is issuing what appears to be an official citation for the statutory infringement.",
+          "grammar": "現在進行形 / what節 / appear to be",
+          "ja": "1人の警察官は、その法令違反に対する正式な違反通知と思われるものを発行しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the second officer is documenting the vehicle photographically in order to preserve evidence of the infraction.",
+          "grammar": "現在進行形 / in order to",
+          "ja": "一方、もう1人の警察官は違反の証拠を残すため、車両を写真で記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The prominent no-parking sign, red curb, and road marking provide multiple visual indications that parking is prohibited.",
+          "grammar": "同格的列挙 / indication that",
+          "ja": "目立つ駐車禁止標識、赤い縁石、路面標示は、駐車が禁止されていることを示す複数の視覚的証拠となっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "If the driver knowingly ignored these restrictions, the act could constitute a statutory or municipal infringement.",
+          "grammar": "If / could constitute",
+          "ja": "もし運転手がこれらの規制を認識しながら無視したのであれば、その行為は法令または自治体規則への違反に当たる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Photographic documentation can provide evidentiary support should the driver later dispute the citation.",
+          "grammar": "can / 仮定法倒置should",
+          "ja": "後に運転手が違反通知に異議を申し立てた場合、写真による記録は証拠として役立つ可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Statutory restrictions are enforceable only when authorities consistently identify, document, and penalize violations.",
+          "grammar": "受動態 / when / 並列動詞",
+          "ja": "法令上の規制は、当局が違反を継続的に確認、記録、処分することによって実効性を持ちます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The officers' actions illustrate how relatively minor infractions can still trigger formal enforcement procedures.",
+          "grammar": "how節 / can",
+          "ja": "警察官たちの行動は、比較的軽微な違反であっても正式な法執行手続きにつながり得ることを示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing statutory infringement, parking ordinances, citations, evidentiary documentation, regulatory enforcement, prohibited conduct, and legal penalties.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は法令違反、駐車条例、違反通知、証拠記録、規制の執行、禁止行為、法的罰則を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "officer": {
+      "x": 24,
+      "y": 34
+    },
+    "police": {
+      "x": 78,
+      "y": 47
+    },
+    "car": {
+      "x": 47,
+      "y": 54
+    },
+    "ticket": {
+      "x": 34,
+      "y": 38
+    },
+    "phone": {
+      "x": 70,
+      "y": 41
+    },
+    "sign": {
+      "x": 9,
+      "y": 13
+    },
+    "curb": {
+      "x": 28,
+      "y": 72
+    },
+    "marking": {
+      "x": 28,
+      "y": 84
+    },
+    "windshield": {
+      "x": 43,
+      "y": 38
+    },
+    "street": {
+      "x": 79,
+      "y": 64
+    },
+    "sidewalk": {
+      "x": 21,
+      "y": 55
+    },
+    "building": {
+      "x": 25,
+      "y": 17
+    },
+    "tree": {
+      "x": 53,
+      "y": 13
+    },
+    "traffic": {
+      "x": 84,
+      "y": 31
+    },
+    "vehicle": {
+      "x": 47,
+      "y": 54
+    },
+    "parking": {
+      "x": 20,
+      "y": 84
+    },
+    "evidence": {
+      "x": 70,
+      "y": 41
+    },
+    "citation": {
+      "x": 34,
+      "y": 38
+    },
+    "violation": {
+      "x": 27,
+      "y": 83
+    },
+    "infringement": {
+      "x": 47,
+      "y": 54
+    }
+  }
+}

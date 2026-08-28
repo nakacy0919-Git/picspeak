@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_076",
+  "imageSrc": "assets/images/l2_076.webp",
+  "titleEn": "A Town Devastated by a Catastrophic Flood",
+  "titleJa": "壊滅的な洪水に襲われた町",
+  "description": "大規模な洪水が過ぎた後の町の中心部を描いた場面である。道路一面が茶色い泥水と大量の瓦礫で覆われ、複数の車が流されて建物や道路脇に取り残されている。左側の青い車は泥に半分埋まり、中央左の白いSUVは壊れた建物の前で大きく傾いている。右側の黒い車も泥や瓦礫の中に乗り上げている。通りの両側には店舗や古い建物が並んでいるが、壁、窓、入口、ひさしなどが大きく損傷している。道路には木材、石、枝、泥などが散乱し、水がまだ一部を流れている。遠くには丘や木々が見え、青空が広がっているため、災害そのものはすでに収まりつつあるように見える。洪水、泥流、建物被害、流された車、災害後の町の様子を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a small town devastated by a severe flood. Show a muddy street filled with brown water, rocks, branches, broken wood, and debris. Several cars are stranded or partly buried in mud, including a tilted white SUV near a damaged shop. Buildings on both sides have broken storefronts, walls, doors, and awnings. Show flood damage extending into the distance with trees and green hills beyond the town. Daylight, blue sky, aftermath of a natural disaster, landscape 16:9, no people, no logos, no readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "flood",
+          "ja": "洪水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mud",
+          "ja": "泥",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shop",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "rock",
+          "ja": "石",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wood",
+          "ja": "木材",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "break",
+          "ja": "壊れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "flow",
+          "ja": "流れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "損傷する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cover",
+          "ja": "覆う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dirty",
+          "ja": "汚れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a flooded street",
+          "ja": "洪水に浸かった通り",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "brown muddy water",
+          "ja": "茶色い泥水",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "broken buildings",
+          "ja": "壊れた建物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "damaged cars",
+          "ja": "損傷した車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "rocks on the road",
+          "ja": "道路上の石",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "wood on the street",
+          "ja": "通りにある木材",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "covered with mud",
+          "ja": "泥で覆われている",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "after a flood",
+          "ja": "洪水の後",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The street is covered with mud.",
+          "grammar": "受動態",
+          "ja": "通りは泥で覆われています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There are several damaged cars.",
+          "grammar": "There are",
+          "ja": "損傷した車が何台かあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A blue car is partly under the mud.",
+          "grammar": "be動詞＋場所",
+          "ja": "青い車が一部泥に埋まっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A white car is leaning near a building.",
+          "grammar": "現在進行形",
+          "ja": "白い車が建物の近くで傾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are rocks and pieces of wood on the road.",
+          "grammar": "There are",
+          "ja": "道路には石や木材の破片があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some buildings are badly damaged.",
+          "grammar": "受動態",
+          "ja": "いくつかの建物がひどく損傷しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Muddy water is still flowing along the street.",
+          "grammar": "現在進行形",
+          "ja": "泥水がまだ通りを流れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The town looks badly damaged.",
+          "grammar": "look＋形容詞",
+          "ja": "町はひどく被害を受けているように見えます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "disaster",
+          "ja": "災害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "flood",
+          "ja": "洪水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "瓦礫",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "被害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "wreckage",
+          "ja": "残骸",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "destroy",
+          "ja": "破壊する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sweep",
+          "ja": "押し流す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "bury",
+          "ja": "埋める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "損傷させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remain",
+          "ja": "残る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "muddy",
+          "ja": "泥だらけの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "severe",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "stranded",
+          "ja": "立ち往生した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "損傷した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a severe flood",
+          "ja": "深刻な洪水",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "sweep cars away",
+          "ja": "車を押し流す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "bury the road in mud",
+          "ja": "道路を泥で埋める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "damage local buildings",
+          "ja": "地域の建物を損傷させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "leave debris everywhere",
+          "ja": "至る所に瓦礫を残す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stranded vehicles",
+          "ja": "立ち往生した車両",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "muddy floodwater",
+          "ja": "濁った洪水",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "the aftermath of a disaster",
+          "ja": "災害の直後の状況",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image shows the aftermath of a severe flood in a small town.",
+          "grammar": "現在形",
+          "ja": "この画像には小さな町を襲った深刻な洪水の後の様子が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Muddy floodwater has covered most of the street.",
+          "grammar": "現在完了形",
+          "ja": "泥を含んだ洪水が通りの大部分を覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several vehicles appear to have been swept away by the water.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "複数の車両が水によって押し流されたように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A white SUV has been pushed into the damaged front of a building.",
+          "grammar": "現在完了受動態",
+          "ja": "白いSUVが損傷した建物の前面に押し込まれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Broken wood, rocks, and other debris are scattered across the road.",
+          "grammar": "受動態",
+          "ja": "壊れた木材、石、その他の瓦礫が道路一面に散乱しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many shops along the street have been seriously damaged.",
+          "grammar": "現在完了受動態",
+          "ja": "通り沿いの多くの店舗が深刻な被害を受けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The force of the water may have carried debris through the center of the town.",
+          "grammar": "may have＋過去分詞",
+          "ja": "水の力によって瓦礫が町の中心部まで運ばれたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that rebuilding the town will require a great deal of work.",
+          "grammar": "suggest that / 動名詞主語",
+          "ja": "この場面から、町の復旧には非常に多くの作業が必要になることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "deluge",
+          "ja": "大洪水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "devastation",
+          "ja": "壊滅的被害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inundation",
+          "ja": "浸水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "wreckage",
+          "ja": "残骸",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "瓦礫",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ravage",
+          "ja": "壊滅的な被害を与える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inundate",
+          "ja": "水浸しにする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dislodge",
+          "ja": "元の位置から動かす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "engulf",
+          "ja": "のみ込む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "submerge",
+          "ja": "水没させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "catastrophic",
+          "ja": "壊滅的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "waterlogged",
+          "ja": "水浸しの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "impassable",
+          "ja": "通行不能な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "structural",
+          "ja": "構造上の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "widespread",
+          "ja": "広範囲に及ぶ",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a catastrophic deluge",
+          "ja": "壊滅的な大洪水",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "ravage an entire town",
+          "ja": "町全体に壊滅的被害を与える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inundate the main street",
+          "ja": "大通りを水浸しにする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dislodge parked vehicles",
+          "ja": "駐車車両を押し流す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "engulf buildings in mud",
+          "ja": "建物を泥でのみ込む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "leave widespread devastation",
+          "ja": "広範囲に壊滅的被害を残す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "strewn with wreckage",
+          "ja": "残骸が散乱した",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "sustain structural damage",
+          "ja": "構造的な損傷を受ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "render roads impassable",
+          "ja": "道路を通行不能にする",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image depicts the aftermath of a catastrophic deluge that has ravaged the center of a small town.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "この画像には、小さな町の中心部を壊滅させた大洪水の後の様子が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The main street has been inundated with mud, floodwater, rocks, timber, and other debris.",
+          "grammar": "現在完了受動態",
+          "ja": "大通りは泥、洪水、石、木材、その他の瓦礫で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several vehicles appear to have been dislodged and carried considerable distances by the force of the water.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "複数の車両が水の力によって元の場所から押し流され、かなりの距離を運ばれたように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One SUV has been forced against a damaged storefront, illustrating the destructive power of the flood.",
+          "grammar": "現在完了受動態 / 現在分詞",
+          "ja": "1台のSUVが損傷した店舗の前に押し付けられており、洪水の破壊力を物語っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The waterlogged buildings appear to have sustained substantial structural damage to their walls, entrances, and facades.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "水に浸かった建物は、壁、入口、外壁などに大きな構造的損傷を受けたように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Accumulated wreckage and deep mud have rendered much of the roadway virtually impassable.",
+          "grammar": "現在完了形 / render＋O＋C",
+          "ja": "積み重なった残骸と深い泥によって、道路の大部分が事実上通行不能になっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The extent of the devastation suggests that the floodwater surged through the town with extraordinary force.",
+          "grammar": "suggest that",
+          "ja": "被害の大きさから、洪水が非常に強い勢いで町を流れ抜けたことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the sky is now clear, extensive recovery and reconstruction would probably be required before normal life could resume.",
+          "grammar": "Although / would / before / could",
+          "ja": "現在は空が晴れているものの、通常の生活を再開するまでには大規模な復旧と再建が必要になると考えられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a catastrophic deluge, inundation, widespread devastation, dislodged vehicles, wreckage, structural damage, and disaster recovery.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は壊滅的な洪水、浸水、広範囲の被害、流された車両、残骸、構造的損傷、災害復旧を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "flood": {
+      "x": 50,
+      "y": 64
+    },
+    "mud": {
+      "x": 52,
+      "y": 79
+    },
+    "water": {
+      "x": 49,
+      "y": 66
+    },
+    "debris": {
+      "x": 66,
+      "y": 79
+    },
+    "rocks": {
+      "x": 56,
+      "y": 70
+    },
+    "timber": {
+      "x": 79,
+      "y": 80
+    },
+    "car": {
+      "x": 12,
+      "y": 56
+    },
+    "suv": {
+      "x": 38,
+      "y": 39
+    },
+    "vehicle": {
+      "x": 76,
+      "y": 51
+    },
+    "truck": {
+      "x": 58,
+      "y": 39
+    },
+    "street": {
+      "x": 51,
+      "y": 58
+    },
+    "shop": {
+      "x": 11,
+      "y": 30
+    },
+    "awning": {
+      "x": 12,
+      "y": 19
+    },
+    "building": {
+      "x": 29,
+      "y": 24
+    },
+    "damage": {
+      "x": 92,
+      "y": 36
+    },
+    "tree": {
+      "x": 84,
+      "y": 18
+    },
+    "lamp": {
+      "x": 64,
+      "y": 31
+    },
+    "hills": {
+      "x": 58,
+      "y": 21
+    },
+    "clouds": {
+      "x": 49,
+      "y": 7
+    },
+    "sky": {
+      "x": 43,
+      "y": 8
+    }
+  }
+}

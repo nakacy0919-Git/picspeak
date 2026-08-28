@@ -1,0 +1,741 @@
+{
+  "id": "theme_l2_050",
+  "imageSrc": "assets/images/l2_050.webp",
+  "titleEn": "Clearing Snow from the Roof",
+  "titleJa": "屋根の雪下ろし",
+  "description": "晴れた冬の日、山間部の木造小屋の屋根で男性が大量に積もった雪を下ろしている場面である。男性は濃い緑色の防寒ジャケット、ニット帽、手袋、冬用のズボンとブーツを身につけ、青い雪かきを使って屋根の雪を押し下ろしている。屋根の端からは大きな雪の塊が崩れ落ちている。小屋には石造りの煙突、緑色のドアと窓、木製のポーチがある。周囲には雪をかぶった針葉樹が広がり、背景には険しい雪山がそびえている。空は青く、白い雲が浮かんでいる。積雪、冬の作業、山の景観、屋根と地面の位置関係を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a man clearing deep snow from the sloping roof of a rustic wooden mountain cabin on a bright winter day. He wears a dark green winter jacket, navy knit cap, gloves, dark pants, and boots, and uses a blue snow shovel to push a large mass of snow toward the roof edge. Show chunks of snow falling dramatically from the eaves. Include a stone chimney, green door and windows, wooden porch, deep snow around the cabin, snow-covered evergreen trees, and tall rugged mountains in the background. Bright blue sky with soft white clouds. Preserve the realistic snowy mountain setting and strong action from the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "snow",
+          "ja": "雪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "roof",
+          "ja": "屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shovel",
+          "ja": "雪かき",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chimney",
+          "ja": "煙突",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "door",
+          "ja": "ドア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "push",
+          "ja": "押す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "落ちる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "work",
+          "ja": "作業する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cold",
+          "ja": "寒い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "white",
+          "ja": "白い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a snowy roof",
+          "ja": "雪の積もった屋根",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a wooden cabin",
+          "ja": "木造の小屋",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "use a snow shovel",
+          "ja": "雪かきを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push the snow",
+          "ja": "雪を押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "snow is falling",
+          "ja": "雪が落ちている",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on the roof",
+          "ja": "屋根の上に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "trees around the house",
+          "ja": "家の周りの木",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "mountains in the background",
+          "ja": "背景の山々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A man is standing on the roof.",
+          "grammar": "現在進行形",
+          "ja": "男性が屋根の上に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is using a snow shovel.",
+          "grammar": "現在進行形",
+          "ja": "彼は雪かきを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a lot of snow on the roof.",
+          "grammar": "There is",
+          "ja": "屋根にはたくさんの雪があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The snow is falling from the roof.",
+          "grammar": "現在進行形",
+          "ja": "雪が屋根から落ちています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cabin is made of wood.",
+          "grammar": "受動態",
+          "ja": "小屋は木でできています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many snowy trees.",
+          "grammar": "There are",
+          "ja": "雪をかぶった木がたくさんあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are high mountains behind the cabin.",
+          "grammar": "There are",
+          "ja": "小屋の後ろには高い山があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sky is blue and bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "空は青く明るいです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "cabin",
+          "ja": "山小屋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "snowfall",
+          "ja": "降雪",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rooftop",
+          "ja": "屋根",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "chimney",
+          "ja": "煙突",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "evergreen",
+          "ja": "常緑樹",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "snowbank",
+          "ja": "雪の山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shovel",
+          "ja": "雪かきをする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remove",
+          "ja": "取り除く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "slide",
+          "ja": "滑る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accumulate",
+          "ja": "積もる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "steep",
+          "ja": "急な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "snowy",
+          "ja": "雪の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rugged",
+          "ja": "険しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "heavy",
+          "ja": "重い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "wintry",
+          "ja": "冬らしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "remove snow from the roof",
+          "ja": "屋根から雪を取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a thick layer of snow",
+          "ja": "厚く積もった雪",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "push snow toward the edge",
+          "ja": "雪を端へ押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fall from the rooftop",
+          "ja": "屋根から落ちる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear warm winter clothes",
+          "ja": "暖かい冬服を着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "snow-covered evergreen trees",
+          "ja": "雪をかぶった常緑樹",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "rugged mountains in the distance",
+          "ja": "遠くの険しい山々",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "clear the roof after snowfall",
+          "ja": "降雪後に屋根の雪を除く",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The man is removing a thick layer of snow from the cabin roof.",
+          "grammar": "現在進行形",
+          "ja": "男性は小屋の屋根から厚く積もった雪を取り除いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is pushing the snow toward the edge with a large shovel.",
+          "grammar": "現在進行形 / with",
+          "ja": "彼は大きな雪かきで雪を屋根の端へ押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Large chunks of snow are falling to the ground.",
+          "grammar": "現在進行形",
+          "ja": "大きな雪の塊が地面へ落ちています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is wearing warm clothes because the weather is cold.",
+          "grammar": "because",
+          "ja": "寒いので、男性は暖かい服を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A stone chimney rises from the left side of the roof.",
+          "grammar": "現在形",
+          "ja": "石造りの煙突が屋根の左側から伸びています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Snow-covered evergreen trees surround the cabin.",
+          "grammar": "現在形",
+          "ja": "雪をかぶった常緑樹が小屋を囲んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "High mountains can be seen behind the forest.",
+          "grammar": "助動詞＋受動態",
+          "ja": "森の後ろには高い山々が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The heavy snow probably needs to be removed to protect the roof.",
+          "grammar": "need to be＋過去分詞",
+          "ja": "屋根を守るために、この重い雪を取り除く必要があると考えられます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "accumulation",
+          "ja": "堆積",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "eaves",
+          "ja": "軒先",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rooftop",
+          "ja": "屋根",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "load",
+          "ja": "荷重",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precipitation",
+          "ja": "降水・降雪",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accrete",
+          "ja": "徐々に堆積する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dislodge",
+          "ja": "取り外す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cascade",
+          "ja": "大量に流れ落ちる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "alleviate",
+          "ja": "軽減する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "withstand",
+          "ja": "耐える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "substantial",
+          "ja": "かなりの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "structural",
+          "ja": "構造上の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "alpine",
+          "ja": "高山の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "accumulated",
+          "ja": "堆積した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "hazardous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "accrete along rooftop eaves",
+          "ja": "屋根の軒先に徐々に堆積する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "remove accumulated snow",
+          "ja": "積もった雪を取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "alleviate the structural load",
+          "ja": "構造物への荷重を軽減する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dislodge a mass of snow",
+          "ja": "大量の雪を取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cascade over the roof edge",
+          "ja": "屋根の端から大量に流れ落ちる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "withstand heavy snowfall",
+          "ja": "大雪に耐える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "pose a structural hazard",
+          "ja": "構造上の危険をもたらす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a remote alpine setting",
+          "ja": "人里離れた高山の環境",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "prevent excessive accumulation",
+          "ja": "過度な積雪を防ぐ",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A substantial layer of snow has accumulated across the sloping roof of the mountain cabin.",
+          "grammar": "現在完了形",
+          "ja": "山小屋の傾斜した屋根全体にかなりの量の雪が積もっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is using a wide shovel to dislodge snow that has accreted along the rooftop eaves.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "男性は幅広い雪かきを使い、屋根の軒先に堆積した雪を取り除いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Large sections of snow are cascading over the edge as he pushes them forward.",
+          "grammar": "as節 / 現在進行形",
+          "ja": "彼が雪を前方へ押すにつれて、大きな雪の塊が屋根の端から流れ落ちています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Removing the accumulated snow may help alleviate the structural load placed on the cabin.",
+          "grammar": "動名詞主語 / may",
+          "ja": "積もった雪を取り除くことは、小屋にかかる構造上の荷重を軽減するのに役立つ可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The depth of the snow suggests that the area has experienced substantial winter precipitation.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "雪の深さから、この地域ではかなりの冬季降雪があったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The steep roof may be designed to help prevent excessive snow from remaining in place.",
+          "grammar": "受動態 / help＋動詞",
+          "ja": "急傾斜の屋根は、過度な雪がその場に残るのを防ぎやすくするために設計されている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Snow-covered evergreens and rugged peaks establish the scene as a remote alpine environment.",
+          "grammar": "establish A as B",
+          "ja": "雪をかぶった常緑樹と険しい山々によって、この場面が人里離れた高山環境であることが分かります。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Although clearing snow from a rooftop can be hazardous, it may be necessary after unusually heavy snowfall.",
+          "grammar": "although / may",
+          "ja": "屋根の雪下ろしは危険を伴うことがありますが、非常に多くの雪が降った後には必要になる場合があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing weather conditions, physical labor, structural maintenance, and cause-and-effect relationships.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は天候、肉体労働、建物の維持管理、原因と結果の関係を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man": {
+      "x": 31,
+      "y": 18
+    },
+    "shovel": {
+      "x": 41,
+      "y": 37
+    },
+    "snow": {
+      "x": 48,
+      "y": 42
+    },
+    "cascade": {
+      "x": 48,
+      "y": 66
+    },
+    "roof": {
+      "x": 36,
+      "y": 38
+    },
+    "eaves": {
+      "x": 51,
+      "y": 61
+    },
+    "chimney": {
+      "x": 10,
+      "y": 13
+    },
+    "jacket": {
+      "x": 29,
+      "y": 14
+    },
+    "hat": {
+      "x": 33,
+      "y": 6
+    },
+    "gloves": {
+      "x": 35,
+      "y": 22
+    },
+    "boots": {
+      "x": 28,
+      "y": 33
+    },
+    "cabin": {
+      "x": 29,
+      "y": 67
+    },
+    "door": {
+      "x": 29,
+      "y": 75
+    },
+    "window": {
+      "x": 10,
+      "y": 69
+    },
+    "porch": {
+      "x": 65,
+      "y": 74
+    },
+    "post": {
+      "x": 61,
+      "y": 66
+    },
+    "tree1": {
+      "x": 88,
+      "y": 37
+    },
+    "tree2": {
+      "x": 76,
+      "y": 43
+    },
+    "tree3": {
+      "x": 67,
+      "y": 40
+    },
+    "forest": {
+      "x": 81,
+      "y": 47
+    },
+    "mountain1": {
+      "x": 73,
+      "y": 18
+    },
+    "mountain2": {
+      "x": 91,
+      "y": 17
+    },
+    "sky": {
+      "x": 51,
+      "y": 6
+    },
+    "clouds": {
+      "x": 45,
+      "y": 8
+    },
+    "snowbank": {
+      "x": 81,
+      "y": 84
+    },
+    "ground": {
+      "x": 73,
+      "y": 91
+    },
+    "shadow": {
+      "x": 76,
+      "y": 80
+    }
+  }
+}

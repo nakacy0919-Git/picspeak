@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_066",
+  "imageSrc": "assets/images/l2_066.webp",
+  "titleEn": "Fertile Farmland Beside a River",
+  "titleJa": "川沿いに広がる豊かな農地",
+  "description": "晴れた日の川沿いに広がる農地で、2人の農家が緑豊かな野菜を育てている場面である。右手前の女性は麦わら帽子をかぶり、しゃがみながら葉物野菜を収穫して大きなかごに入れている。中央奥の男性は畑の列の間に立ち、くわを使って土を耕している。畑にはキャベツやレタスのような緑色の野菜が整然と何列も植えられている。左側には穏やかな川が流れ、その向こうには木々や山々が見える。右奥にはバナナの木や竹などの豊かな植物が広がり、遠くには小さな農作業小屋も見える。肥沃な農地、農作業、収穫、自然環境と農業の関係を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show two farmers working in lush vegetable fields beside a calm river. In the right foreground, a woman in a straw hat crouches and harvests leafy vegetables into a large wicker basket. Farther back, a man uses a hoe between neat rows of green crops. Include rich dark soil, cabbage and lettuce-like vegetables, banana plants, bamboo, trees, a small farm shelter, distant forested mountains, blue sky, and soft clouds. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "farmer",
+          "ja": "農家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "畑",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "river",
+          "ja": "川",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "vegetable",
+          "ja": "野菜",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "basket",
+          "ja": "かご",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hoe",
+          "ja": "くわ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "soil",
+          "ja": "土",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pick",
+          "ja": "摘む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "work",
+          "ja": "働く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "育つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "carry",
+          "ja": "運ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "green",
+          "ja": "緑色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "work in the field",
+          "ja": "畑で働く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pick fresh vegetables",
+          "ja": "新鮮な野菜を収穫する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "put them in a basket",
+          "ja": "それらをかごに入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a hoe",
+          "ja": "くわを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rows of vegetables",
+          "ja": "野菜の列",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "beside the river",
+          "ja": "川のそばで",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "green mountains",
+          "ja": "緑の山々",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a sunny day",
+          "ja": "晴れた日",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two farmers are working in a field.",
+          "grammar": "現在進行形",
+          "ja": "2人の農家が畑で働いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is picking vegetables.",
+          "grammar": "現在進行形",
+          "ja": "女性が野菜を収穫しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is putting them in a basket.",
+          "grammar": "現在進行形",
+          "ja": "彼女は野菜をかごに入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is using a hoe.",
+          "grammar": "現在進行形",
+          "ja": "男性はくわを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many green vegetables.",
+          "grammar": "There are",
+          "ja": "緑色の野菜がたくさんあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a river on the left.",
+          "grammar": "There is",
+          "ja": "左側に川があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are mountains in the background.",
+          "grammar": "There are",
+          "ja": "背景には山々があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The field looks green and healthy.",
+          "grammar": "look＋形容詞",
+          "ja": "畑は緑豊かで健康的に見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "farmland",
+          "ja": "農地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "harvest",
+          "ja": "収穫",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "crop",
+          "ja": "作物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "irrigation",
+          "ja": "灌漑",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "soil",
+          "ja": "土壌",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "produce",
+          "ja": "農産物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "harvest",
+          "ja": "収穫する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cultivate",
+          "ja": "耕作する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "maintain",
+          "ja": "手入れする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fertile",
+          "ja": "肥沃な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "productive",
+          "ja": "生産性の高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "lush",
+          "ja": "青々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rural",
+          "ja": "農村の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "abundant",
+          "ja": "豊富な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "harvest leafy vegetables",
+          "ja": "葉物野菜を収穫する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cultivate fertile soil",
+          "ja": "肥沃な土壌を耕す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "grow healthy crops",
+          "ja": "健康な作物を育てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work beside a river",
+          "ja": "川のそばで働く",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "rows of fresh produce",
+          "ja": "新鮮な農産物の列",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "maintain the farmland",
+          "ja": "農地を手入れする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a productive farming area",
+          "ja": "生産性の高い農業地域",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "lush tropical vegetation",
+          "ja": "青々とした熱帯植物",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two farmers are working on productive farmland beside a river.",
+          "grammar": "現在進行形",
+          "ja": "2人の農家が川沿いの生産性の高い農地で働いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is harvesting leafy vegetables and placing them in a basket.",
+          "grammar": "現在進行形",
+          "ja": "女性は葉物野菜を収穫し、かごに入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is using a hoe to cultivate the soil between the rows.",
+          "grammar": "to不定詞",
+          "ja": "男性は作物の列の間の土を耕すためにくわを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The crops have grown thick and green across the field.",
+          "grammar": "現在完了形",
+          "ja": "作物は畑一面に青々と茂っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The nearby river may provide water for the farmland.",
+          "grammar": "may",
+          "ja": "近くの川は農地に水を供給しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Banana plants and other trees grow behind the vegetable fields.",
+          "grammar": "現在形",
+          "ja": "野菜畑の後ろにはバナナの木やほかの木々が育っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The rich vegetation suggests that the area receives enough water and sunlight.",
+          "grammar": "suggest that",
+          "ja": "豊かな植生から、この地域には十分な水と日光があることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The farmers appear to be preparing fresh produce for harvest.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "農家の人々は新鮮な農産物を収穫しているように見えます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "acreage",
+          "ja": "農地・土地面積",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "fecundity",
+          "ja": "豊かな生産力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cultivation",
+          "ja": "耕作",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "yield",
+          "ja": "収穫量",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "irrigation",
+          "ja": "灌漑",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reap",
+          "ja": "収穫する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "till",
+          "ja": "耕す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cultivate",
+          "ja": "耕作する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "nurture",
+          "ja": "育てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "flourish",
+          "ja": "よく育つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fecund",
+          "ja": "肥沃で生産力の高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "arable",
+          "ja": "耕作に適した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "verdant",
+          "ja": "青々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "bountiful",
+          "ja": "豊富な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "agricultural",
+          "ja": "農業の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "fecund acreage",
+          "ja": "肥沃で生産力の高い農地",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "cultivate arable land",
+          "ja": "耕作に適した土地を耕す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reap a bountiful harvest",
+          "ja": "豊かな収穫を得る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "nurture productive crops",
+          "ja": "生産性の高い作物を育てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "till fertile soil",
+          "ja": "肥沃な土壌を耕す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "flourish beside the river",
+          "ja": "川沿いでよく育つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "sustain agricultural productivity",
+          "ja": "農業生産性を維持する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "maximize crop yield",
+          "ja": "作物の収穫量を最大化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "verdant rows of produce",
+          "ja": "青々とした農産物の列",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image depicts fecund acreage on which a wide variety of leafy crops are flourishing.",
+          "grammar": "関係詞on which / 現在進行形",
+          "ja": "この画像には、さまざまな葉物作物が青々と育つ肥沃で生産力の高い農地が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The dense rows of healthy vegetables suggest that the soil is highly suitable for intensive cultivation.",
+          "grammar": "suggest that",
+          "ja": "健康な野菜が密集して並んでいることから、この土壌が集約的な耕作に非常に適していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The woman is reaping mature produce by hand while placing the harvested leaves into a large basket.",
+          "grammar": "while＋現在分詞",
+          "ja": "女性は成熟した農産物を手作業で収穫しながら、採った葉を大きなかごに入れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Farther back, the male farmer is tilling the earth in order to maintain favorable growing conditions.",
+          "grammar": "in order to",
+          "ja": "さらに奥では、男性の農家が良好な生育条件を保つために土を耕しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The proximity of the river may contribute to the fecundity of the acreage by providing a reliable source of water.",
+          "grammar": "may / contribute to / by＋動名詞",
+          "ja": "川が近くにあることは、安定した水源を提供することで農地の豊かな生産力に寄与している可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The verdant crops and surrounding tropical vegetation indicate that plants can flourish under the local environmental conditions.",
+          "grammar": "indicate that",
+          "ja": "青々とした作物と周囲の熱帯植物は、この地域の環境条件のもとで植物がよく育つことを示しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Careful cultivation of the arable soil appears likely to produce a relatively bountiful agricultural yield.",
+          "grammar": "appear likely to",
+          "ja": "耕作に適した土壌を丁寧に管理することで、比較的豊かな農業収穫が期待できそうです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The orderly crop rows demonstrate how farmers organize acreage efficiently in order to facilitate cultivation and harvesting.",
+          "grammar": "how節 / in order to",
+          "ja": "整然とした作物の列は、農家が耕作や収穫をしやすくするために農地を効率的に利用していることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing fecund acreage, agricultural productivity, crop cultivation, harvesting, irrigation, and rural landscapes.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は肥沃な農地、農業生産性、作物栽培、収穫、灌漑、農村景観を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 82,
+      "y": 58
+    },
+    "man": {
+      "x": 65,
+      "y": 39
+    },
+    "hat1": {
+      "x": 81,
+      "y": 42
+    },
+    "hat2": {
+      "x": 63,
+      "y": 32
+    },
+    "basket": {
+      "x": 84,
+      "y": 72
+    },
+    "hoe": {
+      "x": 60,
+      "y": 47
+    },
+    "crops": {
+      "x": 54,
+      "y": 70
+    },
+    "lettuce": {
+      "x": 73,
+      "y": 73
+    },
+    "cabbage": {
+      "x": 31,
+      "y": 71
+    },
+    "soil": {
+      "x": 57,
+      "y": 77
+    },
+    "rows": {
+      "x": 47,
+      "y": 58
+    },
+    "river": {
+      "x": 16,
+      "y": 53
+    },
+    "bank": {
+      "x": 27,
+      "y": 62
+    },
+    "banana": {
+      "x": 80,
+      "y": 25
+    },
+    "bamboo": {
+      "x": 63,
+      "y": 18
+    },
+    "trees": {
+      "x": 30,
+      "y": 27
+    },
+    "shelter": {
+      "x": 38,
+      "y": 35
+    },
+    "mountains": {
+      "x": 39,
+      "y": 22
+    },
+    "sky": {
+      "x": 39,
+      "y": 8
+    },
+    "clouds": {
+      "x": 20,
+      "y": 13
+    }
+  }
+}

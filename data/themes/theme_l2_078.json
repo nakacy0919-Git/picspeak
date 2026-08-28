@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_078",
+  "imageSrc": "assets/images/l2_078.webp",
+  "titleEn": "Caring for a Preterm Newborn",
+  "titleJa": "保育器の中の早産児を見守る看護師",
+  "description": "新生児集中治療室のような医療環境で、看護師が保育器の中で眠っている小さな赤ちゃんを見守っている場面である。左側には透明な保育器があり、その中で赤ちゃんが柔らかい寝具の上に横になっている。赤ちゃんはニット帽をかぶり、鼻には細いチューブが装着され、胸や体には状態を確認するためのセンサーが付いている。右側の女性看護師は青い医療用スクラブと聴診器を身につけ、ベッドサイドモニターを操作しながら赤ちゃんの状態を確認している。モニターには複数の波形が表示されている。背景には医療機器、配線、棚などがあり、窓から暖かな光が差し込んでいる。新生児医療、保育器、看護、モニタリング、生命兆候、繊細な医療ケアを英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration of a neonatal care room. Show one small preterm newborn sleeping inside a transparent incubator on soft bedding, wearing a knit cap with a thin nasal tube and monitoring sensors. A female nurse in blue scrubs with a stethoscope stands beside the incubator and checks a bedside monitor displaying vital-sign waveforms. Include medical equipment, cables, warm sunlight, and a calm clean hospital environment. Landscape 16:9, realistic illustration, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "baby",
+          "ja": "赤ちゃん",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "nurse",
+          "ja": "看護師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "hospital",
+          "ja": "病院",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bed",
+          "ja": "ベッド",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "モニター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tube",
+          "ja": "チューブ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "blanket",
+          "ja": "毛布",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "incubator",
+          "ja": "保育器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sleep",
+          "ja": "眠る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "watch",
+          "ja": "見守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "touch",
+          "ja": "触れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "small",
+          "ja": "小さい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a small baby",
+          "ja": "小さな赤ちゃん",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "sleep in an incubator",
+          "ja": "保育器の中で眠る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a small hat",
+          "ja": "小さな帽子をかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the monitor",
+          "ja": "モニターを確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the baby",
+          "ja": "赤ちゃんを見守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear blue clothes",
+          "ja": "青い服を着る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "inside a hospital",
+          "ja": "病院の中で",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "medical equipment",
+          "ja": "医療機器",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A baby is sleeping in an incubator.",
+          "grammar": "現在進行形",
+          "ja": "赤ちゃんが保育器の中で眠っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The baby is wearing a small hat.",
+          "grammar": "現在進行形",
+          "ja": "赤ちゃんは小さな帽子をかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a tube near the baby's nose.",
+          "grammar": "There is",
+          "ja": "赤ちゃんの鼻の近くにチューブがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A nurse is standing beside the incubator.",
+          "grammar": "現在進行形",
+          "ja": "看護師が保育器のそばに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at a monitor.",
+          "grammar": "現在進行形",
+          "ja": "彼女はモニターを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The nurse is wearing blue clothes.",
+          "grammar": "現在進行形",
+          "ja": "看護師は青い服を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is medical equipment around the baby.",
+          "grammar": "There is",
+          "ja": "赤ちゃんの周りに医療機器があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The room looks quiet and warm.",
+          "grammar": "look＋形容詞",
+          "ja": "部屋は静かで暖かそうに見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "newborn",
+          "ja": "新生児",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "incubator",
+          "ja": "保育器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "nurse",
+          "ja": "看護師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "sensor",
+          "ja": "センサー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "heartbeat",
+          "ja": "心拍",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "oxygen",
+          "ja": "酸素",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "監視する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "support",
+          "ja": "支える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "premature",
+          "ja": "早産の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "medical",
+          "ja": "医療の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "delicate",
+          "ja": "繊細な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "stable",
+          "ja": "安定した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "care for a newborn",
+          "ja": "新生児をケアする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor vital signs",
+          "ja": "生命兆候を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the baby's condition",
+          "ja": "赤ちゃんの状態を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use an incubator",
+          "ja": "保育器を使用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear monitoring sensors",
+          "ja": "監視用センサーをつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "provide medical care",
+          "ja": "医療ケアを提供する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a premature newborn",
+          "ja": "早産の新生児",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a bedside monitor",
+          "ja": "ベッドサイドモニター",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A nurse is caring for a premature newborn in an incubator.",
+          "grammar": "現在進行形",
+          "ja": "看護師が保育器の中の早産児をケアしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The baby is sleeping on soft bedding inside the transparent incubator.",
+          "grammar": "現在進行形 / 前置詞",
+          "ja": "赤ちゃんは透明な保育器の中で柔らかい寝具の上に眠っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several sensors are attached to the baby's body.",
+          "grammar": "受動態",
+          "ja": "赤ちゃんの体には複数のセンサーが取り付けられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A thin tube is positioned near the baby's nose.",
+          "grammar": "受動態",
+          "ja": "細いチューブが赤ちゃんの鼻の近くに配置されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The nurse is checking information on the bedside monitor.",
+          "grammar": "現在進行形",
+          "ja": "看護師はベッドサイドモニターの情報を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The monitor appears to be displaying several vital-sign waveforms.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "モニターには複数の生命兆候の波形が表示されているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The incubator helps provide a controlled environment for the small newborn.",
+          "grammar": "help＋動詞",
+          "ja": "保育器は小さな新生児のために管理された環境を提供するのに役立ちます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how carefully newborn babies can be monitored in a hospital.",
+          "grammar": "how節 / 受動態",
+          "ja": "この場面は、病院で新生児がどれほど注意深く見守られているかを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "neonate",
+          "ja": "新生児",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "prematurity",
+          "ja": "早産",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "incubator",
+          "ja": "保育器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "monitoring",
+          "ja": "監視・モニタリング",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "respiration",
+          "ja": "呼吸",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "oxygenation",
+          "ja": "酸素化",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "regulate",
+          "ja": "調節する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stabilize",
+          "ja": "安定させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "継続的に監視する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "administer",
+          "ja": "施す・投与する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "preterm",
+          "ja": "早産の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "neonatal",
+          "ja": "新生児の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fragile",
+          "ja": "非常に繊細な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "continuous",
+          "ja": "継続的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intensive",
+          "ja": "集中的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a preterm neonate",
+          "ja": "早産の新生児",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "provide neonatal care",
+          "ja": "新生児医療を提供する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor vital parameters",
+          "ja": "生命兆候を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "support neonatal respiration",
+          "ja": "新生児の呼吸を支える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "regulate body temperature",
+          "ja": "体温を調節する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain a controlled environment",
+          "ja": "管理された環境を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "continuous physiological monitoring",
+          "ja": "継続的な生理学的モニタリング",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "specialized intensive care",
+          "ja": "専門的な集中ケア",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "observe respiratory patterns",
+          "ja": "呼吸パターンを観察する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image depicts a preterm neonate receiving specialized care inside a transparent incubator.",
+          "grammar": "現在分詞 / 過去分詞",
+          "ja": "この画像には、透明な保育器の中で専門的なケアを受けている早産児が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The incubator provides a controlled environment that can help regulate temperature and protect the fragile newborn.",
+          "grammar": "関係代名詞that / help＋動詞",
+          "ja": "保育器は、体温調節や繊細な新生児の保護に役立つ管理された環境を提供します。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Monitoring sensors attached to the infant allow physiological parameters to be observed continuously.",
+          "grammar": "過去分詞 / allow O to / 受動態",
+          "ja": "乳児に取り付けられたセンサーによって、生理学的な指標を継続的に観察することができます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A thin nasal tube suggests that some form of respiratory support may be being provided.",
+          "grammar": "suggest that / may be being＋過去分詞",
+          "ja": "細い鼻のチューブから、何らかの呼吸補助が行われている可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The bedside monitor displays several waveforms that may represent heart rate, respiration, or other vital parameters.",
+          "grammar": "関係代名詞that / may",
+          "ja": "ベッドサイドモニターには、心拍、呼吸、その他の生命兆候を示している可能性のある複数の波形が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The nurse is carefully reviewing the monitor while remaining close enough to respond to any change in the infant's condition.",
+          "grammar": "while＋現在分詞 / enough to",
+          "ja": "看護師はモニターを注意深く確認しながら、乳児の状態に変化があれば対応できる距離で見守っています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Preterm neonates may require intensive observation because several physiological systems are still developing.",
+          "grammar": "may require / because",
+          "ja": "早産児では複数の生理機能がまだ発達段階にあるため、集中的な観察が必要になることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The combination of technology and attentive nursing illustrates how neonatal care relies on both continuous monitoring and human observation.",
+          "grammar": "how節 / rely on",
+          "ja": "医療機器と注意深い看護の組み合わせは、新生児医療が継続的なモニタリングと人による観察の両方に支えられていることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing prematurity, neonatal intensive care, incubators, physiological monitoring, respiratory support, and attentive nursing.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は早産、新生児集中ケア、保育器、生理学的モニタリング、呼吸補助、注意深い看護を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "baby": {
+      "x": 38,
+      "y": 65
+    },
+    "nurse": {
+      "x": 86,
+      "y": 51
+    },
+    "incubator": {
+      "x": 34,
+      "y": 48
+    },
+    "monitor": {
+      "x": 68,
+      "y": 35
+    },
+    "waveform": {
+      "x": 66,
+      "y": 30
+    },
+    "hat": {
+      "x": 38,
+      "y": 59
+    },
+    "tube": {
+      "x": 37,
+      "y": 64
+    },
+    "sensor": {
+      "x": 34,
+      "y": 68
+    },
+    "blanket": {
+      "x": 41,
+      "y": 73
+    },
+    "glove": {
+      "x": 25,
+      "y": 50
+    },
+    "scrubs": {
+      "x": 84,
+      "y": 70
+    },
+    "stethoscope": {
+      "x": 79,
+      "y": 57
+    },
+    "screen": {
+      "x": 67,
+      "y": 33
+    },
+    "cables": {
+      "x": 69,
+      "y": 57
+    },
+    "equipment": {
+      "x": 90,
+      "y": 35
+    },
+    "window": {
+      "x": 10,
+      "y": 20
+    },
+    "sunlight": {
+      "x": 21,
+      "y": 14
+    },
+    "wall": {
+      "x": 57,
+      "y": 11
+    },
+    "cart": {
+      "x": 67,
+      "y": 76
+    },
+    "room": {
+      "x": 88,
+      "y": 15
+    }
+  }
+}

@@ -1,0 +1,689 @@
+{
+  "id": "theme_l2_071",
+  "imageSrc": "assets/images/l2_071.webp",
+  "titleEn": "Facing a Daunting Adversary",
+  "titleJa": "圧倒的な相手と向き合うボクサー",
+  "description": "満員の観客が見守るボクシング会場で、体格の大きく異なる2人のボクサーがリング中央で向かい合っている場面である。左側の赤いグローブと赤いトランクスを身につけた若いボクサーは、かなり背の高い相手を見上げながら真剣な表情をしている。右側の青いグローブと青いトランクスのボクサーは、非常に大柄で筋肉質な体格をしており、相手を見下ろしている。2人とも腕を下げた状態で至近距離に立ち、試合開始前またはラウンドの合間の緊張した対峙をしているように見える。周囲にはリングロープがあり、背景には大勢の観客と強いスポットライトが見える。体格差、緊張感、勇気、競争、圧倒的な相手に立ち向かう状況を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration based closely on the reference image. Show two male boxers standing face-to-face in the center of a boxing ring under bright arena spotlights. The boxer on the left is much shorter and leaner, wearing red gloves and red shorts, looking upward with a serious determined expression. The boxer on the right is exceptionally tall, muscular, and intimidating, wearing blue gloves and blue shorts, looking down at his smaller opponent. Include ring ropes and a large blurred crowd in a dark indoor arena. Emphasize the dramatic difference in size and the tense stare-down. Landscape 16:9, realistic illustration rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "boxer",
+          "ja": "ボクサー",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ring",
+          "ja": "リング",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "グローブ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shorts",
+          "ja": "ショートパンツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "観客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "照明",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rope",
+          "ja": "ロープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "fight",
+          "ja": "試合",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "arena",
+          "ja": "競技場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "face",
+          "ja": "向き合う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wear",
+          "ja": "身につける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tall",
+          "ja": "背が高い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "two boxers",
+          "ja": "2人のボクサー",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "stand face-to-face",
+          "ja": "向かい合って立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear boxing gloves",
+          "ja": "ボクシンググローブをつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look up",
+          "ja": "見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look down",
+          "ja": "見下ろす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a tall boxer",
+          "ja": "背の高いボクサー",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "inside the ring",
+          "ja": "リングの中で",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a large crowd",
+          "ja": "大勢の観客",
+          "type": "person",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two boxers are standing in a boxing ring.",
+          "grammar": "現在進行形",
+          "ja": "2人のボクサーがリングの中に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are standing very close together.",
+          "grammar": "現在進行形",
+          "ja": "2人はとても近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boxer on the left is wearing red gloves.",
+          "grammar": "現在進行形",
+          "ja": "左側のボクサーは赤いグローブをつけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boxer on the right is wearing blue gloves.",
+          "grammar": "現在進行形",
+          "ja": "右側のボクサーは青いグローブをつけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The boxer on the right is much taller.",
+          "grammar": "比較級",
+          "ja": "右側のボクサーの方がずっと背が高いです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The smaller boxer is looking up.",
+          "grammar": "現在進行形",
+          "ja": "小柄なボクサーは上を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many people behind them.",
+          "grammar": "There are",
+          "ja": "2人の後ろには大勢の人がいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Both boxers look serious.",
+          "grammar": "look＋形容詞",
+          "ja": "2人のボクサーは真剣な表情をしています。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "opponent",
+          "ja": "対戦相手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "match",
+          "ja": "試合",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "fighter",
+          "ja": "格闘家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "difference",
+          "ja": "違い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "muscle",
+          "ja": "筋肉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "challenge",
+          "ja": "挑戦",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "compete",
+          "ja": "競う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "confront",
+          "ja": "立ち向かう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stare",
+          "ja": "じっと見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "muscular",
+          "ja": "筋肉質な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "determined",
+          "ja": "決意した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intimidating",
+          "ja": "威圧的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nervous",
+          "ja": "緊張した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "powerful",
+          "ja": "力強い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "face a powerful opponent",
+          "ja": "強い相手と向き合う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "prepare for a match",
+          "ja": "試合に備える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stare at each other",
+          "ja": "互いをじっと見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a large difference in size",
+          "ja": "大きな体格差",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "look determined",
+          "ja": "決意しているように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a muscular fighter",
+          "ja": "筋肉質な選手",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "stand under bright lights",
+          "ja": "明るい照明の下に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "accept a difficult challenge",
+          "ja": "難しい挑戦を受け入れる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two boxers are confronting each other before or during a match.",
+          "grammar": "現在進行形",
+          "ja": "2人のボクサーが試合前または試合中に向かい合っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a large difference in height and size between the two fighters.",
+          "grammar": "There is / between A and B",
+          "ja": "2人の選手の間には身長と体格に大きな差があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The smaller boxer is looking directly into his opponent's eyes.",
+          "grammar": "現在進行形",
+          "ja": "小柄なボクサーは相手の目をまっすぐ見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The larger fighter appears extremely muscular and powerful.",
+          "grammar": "appear＋形容詞",
+          "ja": "大柄な選手は非常に筋肉質で力強く見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Although he is much smaller, the boxer in red does not appear to be backing away.",
+          "grammar": "Although / appear to be",
+          "ja": "赤いボクサーはかなり小柄ですが、後ずさりしているようには見えません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Both fighters seem focused on the challenge ahead.",
+          "grammar": "seem＋形容詞",
+          "ja": "2人ともこれからの勝負に集中しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Bright spotlights are shining down on the ring.",
+          "grammar": "現在進行形",
+          "ja": "明るいスポットライトがリングを照らしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The size difference makes the smaller boxer's challenge look especially difficult.",
+          "grammar": "make＋O＋C",
+          "ja": "体格差によって、小柄なボクサーの挑戦が特に困難に見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "adversary",
+          "ja": "強敵・対戦相手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "stature",
+          "ja": "体格・身長",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mismatch",
+          "ja": "力量や条件の不釣り合い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "resolve",
+          "ja": "決意",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "intimidation",
+          "ja": "威圧",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "confront",
+          "ja": "立ち向かう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "outweigh",
+          "ja": "より重い",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "outmatch",
+          "ja": "力量で上回る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "withstand",
+          "ja": "耐える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overcome",
+          "ja": "克服する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "daunting",
+          "ja": "ひるませるほど手ごわい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "formidable",
+          "ja": "手ごわい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "imposing",
+          "ja": "堂々として威圧感のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unequal",
+          "ja": "不均衡な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "undaunted",
+          "ja": "ひるまない",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a daunting adversary",
+          "ja": "ひるむほど手ごわい相手",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "confront a formidable opponent",
+          "ja": "手ごわい相手に立ち向かう",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "display unwavering resolve",
+          "ja": "揺るぎない決意を示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an imposing physical presence",
+          "ja": "威圧的な体格",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a striking disparity in stature",
+          "ja": "目立つほど大きな体格差",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "remain undaunted",
+          "ja": "ひるまずにいる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "overcome physical disadvantages",
+          "ja": "身体的な不利を克服する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "withstand psychological intimidation",
+          "ja": "心理的な威圧に耐える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appear severely outmatched",
+          "ja": "大幅に力量差があるように見える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The smaller boxer is confronting a daunting adversary whose imposing stature creates an immediate sense of imbalance.",
+          "grammar": "関係代名詞whose",
+          "ja": "小柄なボクサーは、その圧倒的な体格によって一目で不均衡さを感じさせる手ごわい相手に立ち向かっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a striking disparity in stature between the two competitors, with the fighter in blue towering over his opponent.",
+          "grammar": "There is / with＋O＋現在分詞",
+          "ja": "2人の選手には目立つほど大きな体格差があり、青い選手は相手を大きく見下ろすほど背が高いです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Despite facing such a formidable opponent, the smaller boxer appears remarkably undaunted.",
+          "grammar": "Despite＋動名詞 / appear＋形容詞",
+          "ja": "これほど手ごわい相手と向き合っているにもかかわらず、小柄なボクサーは驚くほどひるんでいないように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "His steady gaze and upright posture convey a sense of resolve rather than submission or fear.",
+          "grammar": "rather than",
+          "ja": "彼のまっすぐな視線と姿勢は、服従や恐怖ではなく強い決意を感じさせます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The larger fighter's muscular build and sheer size may exert considerable psychological intimidation before any punches are thrown.",
+          "grammar": "may / before",
+          "ja": "大柄な選手の筋肉質な体格と圧倒的な大きさは、パンチが交わされる前から大きな心理的威圧を与える可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the visual mismatch suggests that the smaller boxer may be physically outmatched, appearance alone does not determine the outcome of a contest.",
+          "grammar": "Although / suggest that",
+          "ja": "見た目の不釣り合いから小柄なボクサーが身体的に劣勢に見えますが、外見だけで試合の結果が決まるわけではありません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "To prevail, the smaller fighter may need to rely on speed, technique, endurance, and the ability to withstand intimidation.",
+          "grammar": "To不定詞 / may need to",
+          "ja": "勝つためには、小柄な選手はスピード、技術、持久力、そして威圧に耐える力に頼る必要があるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The intense stare-down illustrates how athletes can attempt to establish psychological dominance before direct competition begins.",
+          "grammar": "how節 / attempt to",
+          "ja": "緊迫したにらみ合いは、選手が直接的な競技が始まる前に心理的優位を築こうとする様子を示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a daunting adversary, physical disparity, intimidation, determination, courage, and competitive tension.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は手ごわい相手、体格差、威圧、決意、勇気、競技上の緊張感を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "challenger": {
+      "x": 37,
+      "y": 53
+    },
+    "adversary": {
+      "x": 61,
+      "y": 45
+    },
+    "gloves": {
+      "x": 55,
+      "y": 77
+    },
+    "shorts": {
+      "x": 63,
+      "y": 72
+    },
+    "stature": {
+      "x": 54,
+      "y": 42
+    },
+    "gaze": {
+      "x": 47,
+      "y": 27
+    },
+    "beard": {
+      "x": 54,
+      "y": 23
+    },
+    "muscles": {
+      "x": 66,
+      "y": 36
+    },
+    "ring": {
+      "x": 49,
+      "y": 88
+    },
+    "ropes": {
+      "x": 50,
+      "y": 67
+    },
+    "crowd": {
+      "x": 50,
+      "y": 57
+    },
+    "lights": {
+      "x": 50,
+      "y": 8
+    },
+    "arena": {
+      "x": 80,
+      "y": 20
+    },
+    "corner": {
+      "x": 10,
+      "y": 60
+    }
+  }
+}

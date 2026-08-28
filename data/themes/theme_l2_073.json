@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_073",
+  "imageSrc": "assets/images/l2_073.webp",
+  "titleEn": "Fireworks Over a Riverside Festival",
+  "titleJa": "川辺の祭りを彩る大規模な花火",
+  "description": "夜の川辺で、大勢の人々が色鮮やかな花火を見上げている場面である。画面上部の夜空には金色、赤、青、紫、緑など多数の花火が同時に打ち上がり、川面にはその光が鮮やかに反射している。左側にはアーチが連なる大きな石橋があり、多くの観客が橋の上に並んで花火を楽しんでいる。手前の川岸にも子どもから高齢者まで多くの人々が集まり、空を指さしたり家族と寄り添ったりしながら花火を見ている。右側の川には数隻の小舟が浮かび、船上から花火を見る人々もいる。対岸には明かりのともった建物や塔、ドーム状の建築物が並び、街全体が祝祭的な雰囲気に包まれている。花火、群衆、橋、川面の反射、夜景、地域の祭りや公共行事を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration based closely on the reference image. Show a huge nighttime fireworks celebration beside a wide river. Fill the sky with many colorful fireworks in gold, red, blue, green, and purple. Show a long illuminated stone bridge with multiple arches crowded with spectators, and a large crowd gathered along the riverbank in the foreground. Include families, adults, children, and elderly people watching and pointing at the fireworks. Several small boats with spectators float on the river. Across the water, show a warmly illuminated historic-style city skyline with towers and domed buildings. Strong colorful reflections shimmer across the river. Landscape 16:9, realistic detailed illustration rather than photography, no logos, no readable signs or text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "firework",
+          "ja": "花火",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "river",
+          "ja": "川",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bridge",
+          "ja": "橋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "群衆",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boat",
+          "ja": "船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "光",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "city",
+          "ja": "町",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "family",
+          "ja": "家族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "watch",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shine",
+          "ja": "輝く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gather",
+          "ja": "集まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "watch the fireworks",
+          "ja": "花火を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on the bridge",
+          "ja": "橋の上に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "gather by the river",
+          "ja": "川のそばに集まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the sky",
+          "ja": "空を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "ride in a boat",
+          "ja": "船に乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "colorful night sky",
+          "ja": "色鮮やかな夜空",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "lights on the water",
+          "ja": "水面の光",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large crowd",
+          "ja": "大勢の人々",
+          "type": "person",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Many people are watching fireworks.",
+          "grammar": "現在進行形",
+          "ja": "多くの人が花火を見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There are many colorful fireworks in the sky.",
+          "grammar": "There are",
+          "ja": "空には色鮮やかな花火がたくさんあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large crowd is standing near the river.",
+          "grammar": "現在進行形",
+          "ja": "大勢の人々が川の近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many people are standing on the bridge.",
+          "grammar": "現在進行形",
+          "ja": "多くの人が橋の上に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are pointing at the sky.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が空を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are several boats on the river.",
+          "grammar": "There are",
+          "ja": "川には数隻の船があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The lights are shining on the water.",
+          "grammar": "現在進行形",
+          "ja": "光が水面に輝いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The city looks bright and beautiful.",
+          "grammar": "look＋形容詞",
+          "ja": "町は明るく美しく見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "festival",
+          "ja": "祭り",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "spectator",
+          "ja": "観客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "reflection",
+          "ja": "反射",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "催し・展示",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "skyline",
+          "ja": "街並み",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "celebration",
+          "ja": "祝賀行事",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "explode",
+          "ja": "炸裂する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reflect",
+          "ja": "反射する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "celebrate",
+          "ja": "祝う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illuminate",
+          "ja": "照らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spectacular",
+          "ja": "壮観な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "historic",
+          "ja": "歴史的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "festive",
+          "ja": "祝祭的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vibrant",
+          "ja": "鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "enjoy a fireworks festival",
+          "ja": "花火大会を楽しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "watch a spectacular display",
+          "ja": "壮観な花火を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reflect on the river",
+          "ja": "川面に反射する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "crowd onto the bridge",
+          "ja": "橋に大勢集まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illuminate the night sky",
+          "ja": "夜空を照らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "celebrate beside the river",
+          "ja": "川辺で祝う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a brightly lit skyline",
+          "ja": "明るく照らされた街並み",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "watch from small boats",
+          "ja": "小舟から見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A huge crowd is enjoying a fireworks celebration beside a river.",
+          "grammar": "現在進行形",
+          "ja": "大勢の人々が川辺で花火の祝賀行事を楽しんでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Dozens of fireworks are exploding across the night sky.",
+          "grammar": "現在進行形",
+          "ja": "数多くの花火が夜空一面で炸裂しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The colorful lights are being reflected on the surface of the river.",
+          "grammar": "現在進行受動態",
+          "ja": "色鮮やかな光が川面に反射しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Hundreds of spectators have gathered on the bridge and along the riverbank.",
+          "grammar": "現在完了形",
+          "ja": "何百人もの観客が橋や川岸に集まっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several families are watching the display together in the foreground.",
+          "grammar": "現在進行形",
+          "ja": "手前では数組の家族が一緒に花火を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some spectators are watching the fireworks from boats on the river.",
+          "grammar": "現在進行形",
+          "ja": "川の船から花火を見ている観客もいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The illuminated buildings across the river make the scene look even more festive.",
+          "grammar": "make＋O＋C",
+          "ja": "川向こうのライトアップされた建物が、場面をさらに祝祭的に見せています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The large number of spectators suggests that this may be an important public celebration.",
+          "grammar": "suggest that / may",
+          "ja": "非常に多くの観客がいることから、これは大きな公共の祝賀行事なのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "pyrotechnics",
+          "ja": "花火・花火技術",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "spectacle",
+          "ja": "壮観な光景",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "festivity",
+          "ja": "祝祭",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "concourse",
+          "ja": "大勢の人の集まり",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "luminescence",
+          "ja": "発光・光",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cascade",
+          "ja": "滝のように広がる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illuminate",
+          "ja": "照らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reverberate",
+          "ja": "鳴り響く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "congregate",
+          "ja": "大勢集まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "commemorate",
+          "ja": "記念する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dazzling",
+          "ja": "まばゆい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "resplendent",
+          "ja": "華麗に輝く",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "panoramic",
+          "ja": "広々と見渡せる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "communal",
+          "ja": "地域共同体の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multicolored",
+          "ja": "多色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a dazzling pyrotechnic spectacle",
+          "ja": "まばゆい花火の壮観",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "congregate along the waterfront",
+          "ja": "川辺に大勢集まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cascade across the night sky",
+          "ja": "夜空に滝のように広がる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cast multicolored reflections",
+          "ja": "多色の反射を映し出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "illuminate a historic skyline",
+          "ja": "歴史的な街並みを照らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "draw an enormous concourse",
+          "ja": "非常に多くの人々を集める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "create a communal festivity",
+          "ja": "地域共同体の祝祭を生み出す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "observe from the riverbank",
+          "ja": "川岸から眺める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "transform the nocturnal landscape",
+          "ja": "夜の景観を一変させる",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The riverfront has been transformed into a dazzling pyrotechnic spectacle attended by an enormous concourse of spectators.",
+          "grammar": "現在完了受動態 / 過去分詞",
+          "ja": "川辺は、大勢の観客が集まるまばゆい花火の壮観な会場へと変わっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Multicolored fireworks are cascading across the sky while thousands of points of light are reflected on the dark water below.",
+          "grammar": "while / 現在進行形 / 受動態",
+          "ja": "多色の花火が夜空に広がる一方、無数の光が下の暗い川面に反射しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The long arched bridge serves as a panoramic viewing platform on which spectators have congregated shoulder to shoulder.",
+          "grammar": "関係詞on which / 現在完了形",
+          "ja": "長いアーチ橋は広々と見渡せる観覧場所となり、観客が肩を並べるように集まっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The brilliant luminescence of the fireworks is casting gold, pink, blue, and green reflections across the surface of the river.",
+          "grammar": "現在進行形",
+          "ja": "花火のまばゆい光が、金、ピンク、青、緑の反射を川面一帯に映し出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several small boats appear to have positioned themselves on the water so that their passengers can enjoy an unobstructed view.",
+          "grammar": "appear to have＋過去分詞 / so that",
+          "ja": "数隻の小舟は、乗客が遮られない景色を楽しめるよう川の上に位置を取っているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The illuminated towers and domed buildings on the opposite bank contribute to the resplendent atmosphere of the celebration.",
+          "grammar": "contribute to",
+          "ja": "対岸のライトアップされた塔やドーム状の建物が、祝祭の華麗な雰囲気をさらに高めています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Families and people of different generations have congregated in the same public space, suggesting a strongly communal event.",
+          "grammar": "現在完了形 / suggesting",
+          "ja": "さまざまな世代の家族や人々が同じ公共空間に集まっており、地域全体で楽しむ行事であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the specific occasion cannot be identified from the image alone, the scale of the festivities suggests that a significant event is being commemorated.",
+          "grammar": "Although / suggest that / 現在進行受動態",
+          "ja": "画像だけでは具体的な行事を特定できませんが、祝祭の規模から何らかの重要な出来事を記念していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing pyrotechnics, communal festivities, reflections, architectural scenery, crowd behavior, and a vibrant nocturnal landscape.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は花火、地域の祝祭、水面の反射、建築景観、群衆の行動、活気ある夜景を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "fireworks": {
+      "x": 62,
+      "y": 22
+    },
+    "crowd": {
+      "x": 53,
+      "y": 82
+    },
+    "bridge": {
+      "x": 31,
+      "y": 53
+    },
+    "arches": {
+      "x": 34,
+      "y": 57
+    },
+    "river": {
+      "x": 66,
+      "y": 66
+    },
+    "reflections": {
+      "x": 67,
+      "y": 62
+    },
+    "boats": {
+      "x": 89,
+      "y": 67
+    },
+    "skyline": {
+      "x": 75,
+      "y": 46
+    },
+    "domes": {
+      "x": 75,
+      "y": 43
+    },
+    "lamps": {
+      "x": 23,
+      "y": 47
+    },
+    "family": {
+      "x": 12,
+      "y": 64
+    },
+    "woman": {
+      "x": 24,
+      "y": 77
+    },
+    "child": {
+      "x": 17,
+      "y": 62
+    },
+    "man": {
+      "x": 31,
+      "y": 74
+    },
+    "pavilion": {
+      "x": 2,
+      "y": 31
+    },
+    "shore": {
+      "x": 91,
+      "y": 57
+    },
+    "steps": {
+      "x": 93,
+      "y": 56
+    },
+    "trees": {
+      "x": 89,
+      "y": 45
+    },
+    "smoke": {
+      "x": 84,
+      "y": 34
+    },
+    "sky": {
+      "x": 50,
+      "y": 7
+    }
+  }
+}

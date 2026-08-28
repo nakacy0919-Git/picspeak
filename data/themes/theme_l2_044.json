@@ -1,0 +1,765 @@
+{
+  "id": "theme_l2_044",
+  "imageSrc": "assets/images/l2_044.webp",
+  "titleEn": "Busy Restaurant Interior",
+  "titleJa": "にぎわうレストランの店内",
+  "description": "明るく現代的なレストランの店内を描いた場面である。手前には2人の若者が4人掛けのテーブルに座って食事をしている。左側の男性はスプーンを持ちながら皿の料理を食べようとしており、右側の女性はテーブルの向こう側に座り、飲み物の近くに手を置いている。テーブルにはご飯料理、飲み物、カップ、小皿、カトラリー、ナプキン、スマートフォン、緑色のメニューブックなどが並んでいる。左奥にはオープンキッチンがあり、カウンターの上には棚や小さな植物、食材容器などが見える。後ろの壁には4枚の大きな料理写真が縦長のフレームに入って並んでいる。店内には緑色のベンチシート、木と籐を組み合わせた椅子、白い柱、天井照明があり、温かみのある現代的な内装になっている。児童生徒が、前景・背景・左右・テーブルの上・壁の上などの位置関係を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the restaurant layout, furniture arrangement, lighting, and spatial composition closely on the provided reference photograph, but remove and replace every real restaurant name, logo, menu name, product label, commercial slogan, and identifying text with original fictional designs, simple icons, or nonessential decorative lettering. Do not use proper nouns. Show a bright, modern casual restaurant interior viewed from approximately seated eye level. Exactly two visible people must appear in the entire image, no more and no less. In the foreground center, show a rectangular white tabletop with a dark wooden edge and four chairs around it. Two young adults should be seated across or diagonally from each other. On the left foreground, show a young man wearing a simple red-and-navy short-sleeved shirt. He is holding a spoon naturally and is about to eat a rice-based meal from a white plate. He should look relaxed and cheerful. On the right side of the same table, show a young woman wearing a light blue loose shirt and a dark casual hat. She is seated upright and resting one hand near a drink while looking toward her companion with a calm friendly expression. Do not show a third diner. On the tabletop, clearly include one plate of rice with a cooked main dish, another white plate containing a different meal, one glass of iced coffee with a black straw, one tall clear citrus drink with ice and a straw, one white coffee cup and saucer, two small side dishes, spoons and forks, folded napkins, one dark smartphone lying flat near the right side, and one closed dark green menu folder near the center-right. Keep all table objects realistically arranged and easy to identify. Behind the diners, include a green upholstered bench seat separated from the background by a low wooden divider with vertical slats and translucent panels. On the left background, show an open kitchen and service counter. Include a light-colored counter front, dark countertop, shelves with small green potted plants, unbranded food containers, spice jars, cups, and kitchen equipment. No cooks, waiters, or customers may be visible anywhere. Above the kitchen shelving, show several small decorative digital panels containing original abstract food icons and fictional lettering only. In the center, include a wide white vertical structural column with narrow grooves. Across the back wall, show exactly four large framed food photographs or food illustrations in tall rounded rectangular frames. The four displays should depict clearly different dishes: a bowl of noodles, a rice-and-meat dish, a curry-like dish, and a colorful pasta or seafood dish. Each panel may contain a small original symbol but no real language or recognizable commercial name. Between the food panels, include warm round wall lights and decorative vertical wall molding. Use warm ceiling spotlights and thin linear ceiling lights to create a bright contemporary restaurant atmosphere. On the right background, show empty dark wooden chairs with woven cane backs and additional empty tables, but absolutely no additional people. Preserve the realistic layout of the reference photograph: open kitchen on the left, large central column, food panels along the rear wall, dining table with two people in the foreground, green bench seating behind them, and rows of chairs to the right. Exactly two visible human figures, no staff, no customers in the background, no reflections of people, and no human images on posters. No animals, no speech bubbles, no copyrighted characters, no recognizable logos, and no proper nouns. Landscape 16:9 composition, polished educational illustration rather than photography, realistic human proportions, realistic restaurant furniture and architecture, information-rich but visually organized and suitable for describing indoor space, meals, furniture, positions, foreground and background.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "restaurant",
+          "ja": "レストラン",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "food",
+          "ja": "食べ物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rice",
+          "ja": "ご飯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲み物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cup",
+          "ja": "カップ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "spoon",
+          "ja": "スプーン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "menu",
+          "ja": "メニュー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "picture",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "eat",
+          "ja": "食べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "bright",
+          "ja": "明るい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "green",
+          "ja": "緑色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "eat at a restaurant",
+          "ja": "レストランで食事をする",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "sit at a table",
+          "ja": "テーブルに座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a spoon",
+          "ja": "スプーンを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a glass of iced coffee",
+          "ja": "アイスコーヒーのグラス",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "food on the table",
+          "ja": "テーブルの上の料理",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a green menu",
+          "ja": "緑色のメニュー",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "pictures on the wall",
+          "ja": "壁の写真",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "chairs in the background",
+          "ja": "背景の椅子",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two people are eating at a restaurant.",
+          "grammar": "現在進行形",
+          "ja": "2人がレストランで食事をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is holding a spoon.",
+          "grammar": "現在進行形",
+          "ja": "男性はスプーンを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is some food in front of him.",
+          "grammar": "There is",
+          "ja": "彼の前には料理があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is sitting on the right.",
+          "grammar": "現在進行形",
+          "ja": "女性は右側に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are drinks on the table.",
+          "grammar": "There are",
+          "ja": "テーブルの上には飲み物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a green menu on the table.",
+          "grammar": "There is",
+          "ja": "テーブルには緑色のメニューがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are four food pictures on the back wall.",
+          "grammar": "There are",
+          "ja": "奥の壁には4枚の料理写真があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The restaurant is bright and clean.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "そのレストランは明るくてきれいです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "interior",
+          "ja": "店内",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "counter",
+          "ja": "カウンター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "kitchen",
+          "ja": "厨房",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "divider",
+          "ja": "仕切り",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bench",
+          "ja": "ベンチシート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "額縁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "order",
+          "ja": "注文する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "serve",
+          "ja": "提供する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "展示する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "arrange",
+          "ja": "配置する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "comfortable",
+          "ja": "快適な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "well-lit",
+          "ja": "明るく照らされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "casual",
+          "ja": "気軽な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "decorative",
+          "ja": "装飾的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a modern restaurant interior",
+          "ja": "現代的なレストラン店内",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an open kitchen on the left",
+          "ja": "左側のオープンキッチン",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "sit across from each other",
+          "ja": "向かい合って座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "several dishes on the table",
+          "ja": "テーブル上のいくつかの料理",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "large food pictures on the wall",
+          "ja": "壁の大きな料理写真",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a green bench behind them",
+          "ja": "2人の後ろの緑色のベンチ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "empty chairs on the right",
+          "ja": "右側の空いている椅子",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "enjoy a meal together",
+          "ja": "一緒に食事を楽しむ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two diners are enjoying a meal in a modern casual restaurant.",
+          "grammar": "現在進行形",
+          "ja": "2人は現代的なカジュアルレストランで食事を楽しんでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man is holding a spoon while sitting in front of a rice dish.",
+          "grammar": "while＋現在分詞",
+          "ja": "男性はご飯料理の前に座りながらスプーンを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is sitting on the opposite side of the table near a tall drink.",
+          "grammar": "現在進行形",
+          "ja": "女性は背の高い飲み物の近くでテーブルの反対側に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several dishes, drinks, and pieces of cutlery are arranged on the table.",
+          "grammar": "受動態",
+          "ja": "いくつかの料理、飲み物、カトラリーがテーブルの上に並べられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An open kitchen and service counter can be seen on the left.",
+          "grammar": "助動詞＋受動態",
+          "ja": "左側にはオープンキッチンとサービスカウンターが見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Four large food pictures are displayed along the back wall.",
+          "grammar": "受動態",
+          "ja": "奥の壁には4枚の大きな料理写真が展示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A green bench and a wooden divider separate the foreground table from the back of the restaurant.",
+          "grammar": "separate A from B",
+          "ja": "緑色のベンチと木製の仕切りが手前のテーブルと店の奥を分けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The warm lighting and wooden furniture make the restaurant look comfortable.",
+          "grammar": "make＋O＋C",
+          "ja": "温かみのある照明と木製家具によって、レストランは居心地がよさそうに見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "dining area",
+          "ja": "飲食スペース",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "open kitchen",
+          "ja": "オープンキッチン",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "partition",
+          "ja": "間仕切り",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "upholstery",
+          "ja": "布張り部分",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "interior design",
+          "ja": "内装デザイン",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "区切る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "展示する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emphasize",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contemporary",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inviting",
+          "ja": "入りやすく心地よい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "well-organized",
+          "ja": "整理された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "atmospheric",
+          "ja": "雰囲気のある",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a contemporary dining interior",
+          "ja": "現代的な飲食店の内装",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "occupy the foreground",
+          "ja": "前景を占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "an open kitchen along the left wall",
+          "ja": "左壁沿いのオープンキッチン",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a low partition behind the diners",
+          "ja": "食事客の後ろの低い仕切り",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "large framed food displays",
+          "ja": "大型の額入り料理展示",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "create visual depth",
+          "ja": "視覚的な奥行きを生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "contrast with the green seating",
+          "ja": "緑色の座席と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "frame the rear dining area",
+          "ja": "奥の飲食スペースを構成する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "practice describing indoor spatial relationships",
+          "ja": "屋内の位置関係を描写する練習をする",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a contemporary restaurant interior in which the foreground dining table serves as the main visual focus.",
+          "grammar": "関係詞in which",
+          "ja": "この画像は、前景の食卓が主な視覚的焦点となっている現代的なレストラン店内を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The two diners occupy the foreground, while the open kitchen, structural column, and framed food displays establish several layers of depth behind them.",
+          "grammar": "while",
+          "ja": "2人の食事客が前景を占め、その後ろにオープンキッチン、構造柱、額入りの料理写真が配置され、複数の奥行きが生まれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A variety of dishes, drinks, tableware, and personal items are arranged across the tabletop without making it appear excessively cluttered.",
+          "grammar": "without＋動名詞",
+          "ja": "さまざまな料理、飲み物、食器、私物が、過度に雑然と見えないようテーブル上に配置されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The open kitchen along the left side provides a clear contrast with the more relaxed dining area in the foreground.",
+          "grammar": "contrast with",
+          "ja": "左側のオープンキッチンは、前景のより落ち着いた飲食スペースとはっきり対照をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grooved central column visually divides the service area from the row of food displays on the rear wall.",
+          "grammar": "divide A from B",
+          "ja": "溝のある中央の柱が、サービスエリアと奥の壁に並ぶ料理展示を視覚的に分けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The four large framed dishes function as prominent decorative elements and make the restaurant's food-focused identity immediately clear.",
+          "grammar": "make＋O＋C",
+          "ja": "4枚の大きな料理展示が目立つ装飾として機能し、この場所が飲食店であることをすぐに分かるようにしています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Green upholstered seating, woven chair backs, wood trim, and warm lighting combine to create an inviting atmosphere.",
+          "grammar": "combine to",
+          "ja": "緑色の布張り座席、編み込みの椅子の背、木製の縁取り、温かみのある照明が組み合わさり、居心地のよい雰囲気を生み出しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The absence of additional diners keeps the visual structure simple enough for students to focus on furniture, objects, and positional language.",
+          "grammar": "形容詞＋enough＋to",
+          "ja": "他の食事客がいないことで、生徒が家具、物、位置表現に集中できる程度に視覚構造が簡潔に保たれています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene is particularly useful for practicing how to describe foreground and background, objects on a table, features along a wall, and the spatial relationship between dining and service areas.",
+          "grammar": "how節 / between A and B",
+          "ja": "全体として、この場面は前景と背景、テーブル上の物、壁沿いの特徴、飲食スペースとサービスエリアの位置関係を描写する練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "foreground_table": {
+      "x": 47,
+      "y": 76
+    },
+    "young_man": {
+      "x": 28,
+      "y": 61
+    },
+    "young_woman": {
+      "x": 63,
+      "y": 59
+    },
+    "rice_dish": {
+      "x": 38,
+      "y": 73
+    },
+    "second_meal_plate": {
+      "x": 57,
+      "y": 69
+    },
+    "iced_coffee": {
+      "x": 46,
+      "y": 69
+    },
+    "citrus_drink": {
+      "x": 48,
+      "y": 55
+    },
+    "coffee_cup": {
+      "x": 54,
+      "y": 62
+    },
+    "small_side_dish_left": {
+      "x": 41,
+      "y": 58
+    },
+    "small_side_dish_right": {
+      "x": 52,
+      "y": 60
+    },
+    "green_menu_folder": {
+      "x": 57,
+      "y": 72
+    },
+    "smartphone": {
+      "x": 59,
+      "y": 76
+    },
+    "cutlery": {
+      "x": 43,
+      "y": 73
+    },
+    "napkins": {
+      "x": 49,
+      "y": 67
+    },
+    "green_bench_seat": {
+      "x": 44,
+      "y": 50
+    },
+    "wooden_divider": {
+      "x": 50,
+      "y": 45
+    },
+    "open_kitchen": {
+      "x": 15,
+      "y": 33
+    },
+    "service_counter": {
+      "x": 15,
+      "y": 44
+    },
+    "kitchen_shelves": {
+      "x": 14,
+      "y": 15
+    },
+    "small_potted_plants": {
+      "x": 13,
+      "y": 13
+    },
+    "generic_digital_panels": {
+      "x": 15,
+      "y": 7
+    },
+    "central_grooved_column": {
+      "x": 48,
+      "y": 26
+    },
+    "food_panel_one": {
+      "x": 58,
+      "y": 27
+    },
+    "food_panel_two": {
+      "x": 66,
+      "y": 27
+    },
+    "food_panel_three": {
+      "x": 75,
+      "y": 27
+    },
+    "food_panel_four": {
+      "x": 86,
+      "y": 27
+    },
+    "round_wall_light_left": {
+      "x": 61,
+      "y": 33
+    },
+    "round_wall_light_center": {
+      "x": 72,
+      "y": 33
+    },
+    "round_wall_light_right": {
+      "x": 82,
+      "y": 33
+    },
+    "empty_chairs_right": {
+      "x": 88,
+      "y": 64
+    },
+    "woven_chair_back": {
+      "x": 71,
+      "y": 67
+    },
+    "ceiling_spotlights": {
+      "x": 73,
+      "y": 8
+    },
+    "linear_ceiling_light": {
+      "x": 68,
+      "y": 13
+    }
+  }
+}

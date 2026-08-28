@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_087",
+  "imageSrc": "assets/images/l2_087.webp",
+  "titleEn": "Reacting to Egregious Misconduct",
+  "titleJa": "重大な不正行為に激怒する経営者",
+  "description": "企業の会議室で、年配の男性経営者が激怒しながら書類を真っ二つに破っている場面である。中央の男性は立ち上がり、大声で怒鳴りながら両手で重要そうな書類を引き裂いている。周囲には4人の同僚や役員が座っており、突然の行動に驚いて口を開けたり、手を上げたりしている。会議用テーブルの上には書類、ファイル、ノートパソコン、グラス、会議用スピーカーなどが置かれている。人物たちの表情や姿勢から、会議中に重大な問題や不正行為が発覚し、強い怒りと緊張が生じた場面であることが推測できる。不正行為、職場での対立、怒り、責任、倫理、重大な違反を英語で描写する練習に適している。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a tense corporate board meeting. An angry older male executive stands at the center and tears an important document in half while shouting. Four shocked colleagues sit around the conference table reacting with surprise. Include folders, papers, a laptop, water glasses, and a conference speaker. Modern boardroom, dramatic expressions, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "paper",
+          "ja": "紙",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "laptop",
+          "ja": "ノートパソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glass",
+          "ja": "グラス",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "office",
+          "ja": "会社・オフィス",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "meeting",
+          "ja": "会議",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "folder",
+          "ja": "ファイル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tear",
+          "ja": "破る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shout",
+          "ja": "叫ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "angry",
+          "ja": "怒った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "tear the paper",
+          "ja": "紙を破る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shout at the meeting",
+          "ja": "会議で叫ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand by the table",
+          "ja": "テーブルのそばに立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look very angry",
+          "ja": "とても怒っているように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "look surprised",
+          "ja": "驚いているように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "sit around the table",
+          "ja": "テーブルを囲んで座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an office meeting",
+          "ja": "会社の会議",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "important papers",
+          "ja": "重要な書類",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five people are in a meeting room.",
+          "grammar": "be動詞＋場所",
+          "ja": "5人が会議室にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "An older man is standing in the middle.",
+          "grammar": "現在進行形",
+          "ja": "年配の男性が中央に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is tearing a piece of paper.",
+          "grammar": "現在進行形",
+          "ja": "彼は紙を破っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He looks very angry.",
+          "grammar": "look＋形容詞",
+          "ja": "彼はとても怒っているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Four people are sitting around the table.",
+          "grammar": "現在進行形",
+          "ja": "4人がテーブルを囲んで座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look surprised.",
+          "grammar": "look＋形容詞",
+          "ja": "彼らは驚いているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "There are papers and glasses on the table.",
+          "grammar": "There are",
+          "ja": "テーブルの上には書類やグラスがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Something serious may have happened.",
+          "grammar": "may have＋過去分詞",
+          "ja": "何か深刻なことが起きたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "executive",
+          "ja": "経営幹部",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "書類",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "conflict",
+          "ja": "対立",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "anger",
+          "ja": "怒り",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "problem",
+          "ja": "問題",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "behavior",
+          "ja": "行動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "destroy",
+          "ja": "壊す・破壊する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "argue",
+          "ja": "言い争う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "react",
+          "ja": "反応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accuse",
+          "ja": "非難する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "furious",
+          "ja": "激怒した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "shocked",
+          "ja": "衝撃を受けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "serious",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unacceptable",
+          "ja": "容認できない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tense",
+          "ja": "緊張した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "tear up a document",
+          "ja": "書類を破り捨てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be furious about something",
+          "ja": "何かに激怒する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "react with shock",
+          "ja": "驚いて反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cause a serious conflict",
+          "ja": "深刻な対立を引き起こす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "an unacceptable action",
+          "ja": "容認できない行動",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "raise his voice",
+          "ja": "声を荒らげる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shock the other executives",
+          "ja": "他の役員たちを驚かせる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a tense board meeting",
+          "ja": "緊張した役員会議",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An executive is angrily tearing a document in half during a meeting.",
+          "grammar": "現在進行形 / during",
+          "ja": "経営幹部が会議中に怒りながら書類を真っ二つに破っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He appears to be shouting at the other people in the room.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼は部屋にいる他の人々に向かって怒鳴っているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other executives look shocked by his sudden behavior.",
+          "grammar": "look＋形容詞 / by",
+          "ja": "他の役員たちは彼の突然の行動に驚いているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The torn document may be connected to a serious problem.",
+          "grammar": "may be＋過去分詞",
+          "ja": "破られた書類は重大な問題に関係しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Everyone's facial expression suggests that the situation is extremely tense.",
+          "grammar": "suggest that",
+          "ja": "全員の表情から、状況が非常に緊迫していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The man may have discovered behavior that he considers unacceptable.",
+          "grammar": "may have＋過去分詞 / 関係代名詞that",
+          "ja": "男性は容認できないと考える行為を発見したのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "His aggressive reaction has surprised everyone around the table.",
+          "grammar": "現在完了形",
+          "ja": "彼の激しい反応はテーブルを囲む全員を驚かせています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how serious misconduct can create conflict in a workplace.",
+          "grammar": "how節 / can",
+          "ja": "この場面は、重大な不正行為が職場で対立を生み出すことがある様子を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "misconduct",
+          "ja": "不正行為",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "breach",
+          "ja": "違反",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "integrity",
+          "ja": "誠実さ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accountability",
+          "ja": "説明責任",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "outrage",
+          "ja": "激しい怒り",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "violation",
+          "ja": "違反",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "denounce",
+          "ja": "公然と非難する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "condemn",
+          "ja": "強く非難する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reprimand",
+          "ja": "厳しく叱責する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "repudiate",
+          "ja": "拒絶する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "egregious",
+          "ja": "言語道断の・極めてひどい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unethical",
+          "ja": "非倫理的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "flagrant",
+          "ja": "目に余る",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "indefensible",
+          "ja": "弁護の余地がない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "irate",
+          "ja": "激怒した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "egregious misconduct",
+          "ja": "言語道断の不正行為",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "commit a flagrant violation",
+          "ja": "目に余る違反を犯す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "denounce unethical conduct",
+          "ja": "非倫理的な行為を公然と非難する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "express profound outrage",
+          "ja": "強い憤りを表す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "demand accountability",
+          "ja": "説明責任を求める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "breach professional ethics",
+          "ja": "職業倫理に違反する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reprimand those responsible",
+          "ja": "責任者を厳しく叱責する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "repudiate the agreement",
+          "ja": "合意を拒絶する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an indefensible breach",
+          "ja": "弁護の余地がない違反",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The irate executive appears to be reacting to what he regards as egregious misconduct.",
+          "grammar": "appear to be＋現在分詞 / what節 / regard A as B",
+          "ja": "激怒した経営幹部は、自分が言語道断の不正行為だと考える問題に反応しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "By tearing the document apart, he dramatically repudiates whatever agreement or decision it represents.",
+          "grammar": "By＋動名詞 / whatever節",
+          "ja": "書類を引き裂くことで、彼はその書類が表す合意や決定を劇的に拒絶しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His clenched hands, raised voice, and furious expression convey profound outrage.",
+          "grammar": "並列主語 / convey",
+          "ja": "握り締めた手、荒げた声、激怒した表情が強い憤りを表しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The stunned reactions of the surrounding executives suggest that his outburst was both sudden and severe.",
+          "grammar": "suggest that / both A and B",
+          "ja": "周囲の役員たちの驚いた反応から、彼の激しい感情の爆発が突然で深刻なものだったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Egregious misconduct may involve a flagrant breach of professional ethics, company rules, or legal obligations.",
+          "grammar": "may involve / 並列",
+          "ja": "言語道断の不正行為には、職業倫理、会社規則、法的義務への重大な違反が含まれる場合があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "If such misconduct had recently been uncovered, the executive's fury could reflect a demand for immediate accountability.",
+          "grammar": "仮定法過去完了 / could",
+          "ja": "もしそのような不正行為が最近発覚したのであれば、経営幹部の激怒は即時の説明責任を求める姿勢を表している可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The torn document may symbolize his refusal to tolerate conduct that he considers indefensible.",
+          "grammar": "may / 関係代名詞that",
+          "ja": "破られた書類は、彼が弁護の余地がないと考える行為を容認しない姿勢を象徴しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Serious ethical violations can damage trust within an organization and trigger disciplinary or legal consequences.",
+          "grammar": "can / 並列動詞",
+          "ja": "重大な倫理違反は組織内の信頼を損ない、懲戒上または法的な結果を引き起こす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing egregious misconduct, outrage, ethical breaches, accountability, confrontation, corporate conflict, and disciplinary consequences.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は言語道断の不正行為、憤り、倫理違反、説明責任、対立、企業内の衝突、懲戒上の結果を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "executive": {
+      "x": 51,
+      "y": 33
+    },
+    "woman": {
+      "x": 10,
+      "y": 48
+    },
+    "man": {
+      "x": 77,
+      "y": 45
+    },
+    "document": {
+      "x": 51,
+      "y": 49
+    },
+    "tear": {
+      "x": 51,
+      "y": 47
+    },
+    "hands": {
+      "x": 51,
+      "y": 37
+    },
+    "anger": {
+      "x": 51,
+      "y": 27
+    },
+    "table": {
+      "x": 53,
+      "y": 78
+    },
+    "laptop": {
+      "x": 50,
+      "y": 68
+    },
+    "folders": {
+      "x": 76,
+      "y": 76
+    },
+    "papers": {
+      "x": 78,
+      "y": 78
+    },
+    "glass": {
+      "x": 61,
+      "y": 67
+    },
+    "speaker": {
+      "x": 51,
+      "y": 84
+    },
+    "chair": {
+      "x": 98,
+      "y": 71
+    },
+    "suit": {
+      "x": 51,
+      "y": 58
+    },
+    "tie": {
+      "x": 50,
+      "y": 55
+    },
+    "window": {
+      "x": 91,
+      "y": 15
+    },
+    "boardroom": {
+      "x": 50,
+      "y": 15
+    },
+    "shock": {
+      "x": 87,
+      "y": 39
+    },
+    "meeting": {
+      "x": 50,
+      "y": 75
+    }
+  }
+}

@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_079",
+  "imageSrc": "assets/images/l2_079.webp",
+  "titleEn": "Learning to Identify Wild Mushrooms",
+  "titleJa": "森で野生のキノコを見分ける",
+  "description": "木々に囲まれた明るい森の中で、5人のハイカーが野生のキノコを観察している場面である。右側の男性ガイドは帽子と大きなバックパックを身につけ、しゃがみながら白っぽいキノコを手に持ち、地面に生えているキノコを指さして説明している。左側には4人の参加者がしゃがみ込み、ガイドの説明を注意深く聞いている。地面には茶色いキノコの群れと、赤い傘に白い斑点のある目立つキノコの群れが並んでいる。周囲には苔、落ち葉、シダ、木の幹などがあり、森の自然環境がよく分かる。野生のキノコには食用に適するものと危険なものがあるため、この場面は外見だけで判断せず、専門的な識別の重要性を学ぶ様子として描写できる。森林、キノコ、観察、分類、野外学習、安全な採集を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration of five hikers learning about wild mushrooms in a sunlit forest. Four participants crouch together while an experienced male guide with a hat and backpack holds one pale mushroom and points toward mushrooms on the forest floor. Show several large brown mushrooms on the left and striking red mushrooms with white spots on the right, plus moss, ferns, fallen leaves, tree trunks, and backpacks. Emphasize observation and mushroom identification, not eating. Landscape 16:9, realistic detailed illustration, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "mushroom",
+          "ja": "キノコ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "forest",
+          "ja": "森",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "guide",
+          "ja": "ガイド",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "hiker",
+          "ja": "ハイカー",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leaf",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "moss",
+          "ja": "苔",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ground",
+          "ja": "地面",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "learn",
+          "ja": "学ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "red",
+          "ja": "赤い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at mushrooms",
+          "ja": "キノコを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a mushroom",
+          "ja": "キノコを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the ground",
+          "ja": "地面を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "walk in the forest",
+          "ja": "森を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "red mushrooms",
+          "ja": "赤いキノコ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "brown mushrooms",
+          "ja": "茶色いキノコ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "wear a backpack",
+          "ja": "バックパックを背負う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about nature",
+          "ja": "自然について学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five people are in a forest.",
+          "grammar": "be動詞＋場所",
+          "ja": "5人の人が森にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are looking at mushrooms.",
+          "grammar": "現在進行形",
+          "ja": "彼らはキノコを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is holding a mushroom.",
+          "grammar": "現在進行形",
+          "ja": "男性がキノコを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is pointing at the mushrooms.",
+          "grammar": "現在進行形",
+          "ja": "彼はキノコを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are red and brown mushrooms on the ground.",
+          "grammar": "There are",
+          "ja": "地面には赤いキノコと茶色いキノコがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people are wearing backpacks.",
+          "grammar": "現在進行形",
+          "ja": "人々はバックパックを背負っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are listening to the guide.",
+          "grammar": "現在進行形",
+          "ja": "彼らはガイドの話を聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are learning about nature.",
+          "grammar": "現在進行形",
+          "ja": "彼らは自然について学んでいます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "species",
+          "ja": "種",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "guide",
+          "ja": "案内人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "fungus",
+          "ja": "菌類",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "forest",
+          "ja": "森林",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュックサック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "identify",
+          "ja": "見分ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distinguish",
+          "ja": "区別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wild",
+          "ja": "野生の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "poisonous",
+          "ja": "有毒な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "edible",
+          "ja": "食用の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "similar",
+          "ja": "似ている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "identify wild mushrooms",
+          "ja": "野生のキノコを見分ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe different species",
+          "ja": "異なる種類を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare their appearance",
+          "ja": "外見を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine a specimen",
+          "ja": "標本を詳しく調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "distinguish similar mushrooms",
+          "ja": "似たキノコを区別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn from a guide",
+          "ja": "ガイドから学ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be careful with wild mushrooms",
+          "ja": "野生のキノコに注意する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a forest study trip",
+          "ja": "森林での野外学習",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A guide is teaching four hikers how to identify wild mushrooms.",
+          "grammar": "how to",
+          "ja": "ガイドが4人のハイカーに野生のキノコの見分け方を教えています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The group is crouching on the forest floor to examine several species.",
+          "grammar": "現在進行形 / to不定詞",
+          "ja": "グループは数種類のキノコを調べるために林床にしゃがんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The guide is holding one mushroom while pointing at another group.",
+          "grammar": "while＋現在分詞",
+          "ja": "ガイドは1本のキノコを持ちながら、別のキノコの群れを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are both brown mushrooms and red mushrooms with white spots.",
+          "grammar": "There are / both A and B",
+          "ja": "茶色いキノコと白い斑点のある赤いキノコの両方があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The hikers appear to be listening carefully to the guide's explanation.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "ハイカーたちはガイドの説明を注意深く聞いているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The different colors and shapes may help them compare the species.",
+          "grammar": "may help＋O＋動詞",
+          "ja": "色や形の違いは、種類を比較する助けになるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Some wild mushrooms can be dangerous even when they look attractive.",
+          "grammar": "can / even when",
+          "ja": "野生のキノコには、見た目が魅力的でも危険なものがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows why people should identify wild mushrooms carefully before collecting them.",
+          "grammar": "why節 / should / before＋動名詞",
+          "ja": "この場面は、野生のキノコを採集する前に注意深く種類を見分けるべき理由を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "mycology",
+          "ja": "菌類学",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "foraging",
+          "ja": "野生食材の採集",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "specimen",
+          "ja": "標本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "toxicity",
+          "ja": "毒性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "morphology",
+          "ja": "形態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "classify",
+          "ja": "分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "differentiate",
+          "ja": "区別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "forage",
+          "ja": "野生の食材を探す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scrutinize",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "edible",
+          "ja": "食用に適した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "toxic",
+          "ja": "有毒な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "palatable",
+          "ja": "食用として好ましい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distinctive",
+          "ja": "特徴的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "deceptive",
+          "ja": "紛らわしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "identify fungal species",
+          "ja": "菌類の種類を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scrutinize a specimen",
+          "ja": "標本を詳しく調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare morphological features",
+          "ja": "形態的特徴を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "differentiate edible species",
+          "ja": "食用種を区別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assess potential toxicity",
+          "ja": "潜在的な毒性を評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "practice responsible foraging",
+          "ja": "責任ある採集を行う",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "examine the surrounding habitat",
+          "ja": "周囲の生息環境を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "avoid deceptive similarities",
+          "ja": "紛らわしい類似点に注意する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "conduct a field identification",
+          "ja": "野外で種を識別する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The group appears to be participating in a field lesson on mycology and the identification of wild fungal species.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "グループは菌類学と野生の菌類の識別について学ぶ野外実習に参加しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The guide is scrutinizing one specimen while directing the participants' attention toward several mushrooms growing nearby.",
+          "grammar": "while＋現在分詞",
+          "ja": "ガイドは1つの標本を詳しく調べながら、近くに生えている複数のキノコへ参加者の注意を向けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The contrasting cap colors, spots, stems, and sizes provide visible morphological features that can be compared during identification.",
+          "grammar": "関係代名詞that / 受動態",
+          "ja": "傘の色、斑点、柄、大きさの違いは、識別時に比較できる目に見える形態的特徴となっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Accurate identification is essential because edible and toxic mushrooms may occasionally share deceptively similar characteristics.",
+          "grammar": "because / may",
+          "ja": "食用のキノコと有毒なキノコが紛らわしいほど似た特徴を持つ場合があるため、正確な識別が不可欠です。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The surrounding moss, leaf litter, and trees may also provide clues about the habitat in which particular species occur.",
+          "grammar": "may / 関係詞in which",
+          "ja": "周囲の苔、落ち葉、木々も、特定の種類が生育する環境を判断する手掛かりになる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Responsible foraging requires more than simply judging whether a mushroom appears visually palatable.",
+          "grammar": "require more than / whether節",
+          "ja": "責任ある採集には、キノコが見た目に食べられそうかどうかを判断する以上の知識が必要です。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A knowledgeable guide can demonstrate how multiple characteristics should be considered before any wild specimen is classified as edible.",
+          "grammar": "how節 / should be / before",
+          "ja": "知識のあるガイドは、野生の標本を食用と判断する前に複数の特徴を検討すべきことを示すことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The participants' concentrated expressions suggest that they are learning to differentiate species rather than merely collecting attractive mushrooms.",
+          "grammar": "suggest that / rather than",
+          "ja": "参加者の集中した表情から、単に見た目の良いキノコを採集するのではなく、種類を見分ける方法を学んでいることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing mycology, foraging, fungal morphology, field identification, habitat, toxicity, and responsible interaction with nature.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は菌類学、採集、菌類の形態、野外識別、生息環境、毒性、自然との責任ある関わりを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "guide": {
+      "x": 82,
+      "y": 43
+    },
+    "woman": {
+      "x": 12,
+      "y": 42
+    },
+    "man": {
+      "x": 28,
+      "y": 39
+    },
+    "hiker": {
+      "x": 43,
+      "y": 39
+    },
+    "student": {
+      "x": 56,
+      "y": 40
+    },
+    "mushroom": {
+      "x": 73,
+      "y": 61
+    },
+    "brown": {
+      "x": 29,
+      "y": 74
+    },
+    "red": {
+      "x": 60,
+      "y": 73
+    },
+    "spots": {
+      "x": 59,
+      "y": 69
+    },
+    "stem": {
+      "x": 59,
+      "y": 78
+    },
+    "cap": {
+      "x": 59,
+      "y": 70
+    },
+    "moss": {
+      "x": 39,
+      "y": 77
+    },
+    "leaves": {
+      "x": 67,
+      "y": 86
+    },
+    "fern": {
+      "x": 4,
+      "y": 86
+    },
+    "trees": {
+      "x": 52,
+      "y": 12
+    },
+    "forest": {
+      "x": 70,
+      "y": 20
+    },
+    "path": {
+      "x": 70,
+      "y": 33
+    },
+    "backpack": {
+      "x": 92,
+      "y": 23
+    },
+    "hat": {
+      "x": 80,
+      "y": 8
+    },
+    "finger": {
+      "x": 66,
+      "y": 57
+    }
+  }
+}

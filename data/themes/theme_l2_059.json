@@ -1,0 +1,737 @@
+{
+  "id": "theme_l2_059",
+  "imageSrc": "assets/images/l2_059.webp",
+  "titleEn": "Welcomed by Her New Soccer Team",
+  "titleJa": "新しいサッカーチームの仲間",
+  "description": "晴れた日の学校のグラウンドで、青いユニフォームを着た女子サッカーチームの生徒たちが、新しい仲間を囲んで楽しそうに話している場面である。中央の女子生徒はサッカーボールを持ち、周囲の4人のチームメートから笑顔で声をかけられている。肩に手を置いたり、身ぶりを交えたりしながら親しく交流しており、チームに溶け込んでいる様子が分かる。背景には同じユニフォームを着た生徒や私服姿の生徒がおり、手を振ったり会話したりしている。さらに奥にはサッカーゴール、校舎、木々、青空が見える。学校生活、部活動、多様な背景を持つ生徒同士の交流、新しい集団への適応を英語で描写する練習に適した場面である。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a diverse group of five teenage girls in matching blue soccer uniforms gathered closely together on a sunny school field. The girl in the center holds a soccer ball while her teammates smile, talk, place hands on her shoulders, and warmly include her in the group. Add several other students in the background, some wearing soccer uniforms and others casual clothes, waving or talking. Include a soccer goal, green grass, leafy trees, a large school building, blue sky, and soft clouds. Emphasize friendship, teamwork, and a new student becoming comfortable with her teammates. No logos, no readable school names, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "team",
+          "ja": "チーム",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shirt",
+          "ja": "シャツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "school",
+          "ja": "学校",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "グラウンド",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "goal",
+          "ja": "ゴール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "friend",
+          "ja": "友達",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "ほほえむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "hold a soccer ball",
+          "ja": "サッカーボールを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear blue shirts",
+          "ja": "青いシャツを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "smile at each other",
+          "ja": "お互いに笑顔を向ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "talk with friends",
+          "ja": "友達と話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand together",
+          "ja": "一緒に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "on the school field",
+          "ja": "学校のグラウンドで",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a soccer goal",
+          "ja": "サッカーゴール",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "students in the background",
+          "ja": "背景の生徒たち",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five girls are standing together.",
+          "grammar": "現在進行形",
+          "ja": "5人の女の子が一緒に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are wearing blue soccer shirts.",
+          "grammar": "現在進行形",
+          "ja": "彼女たちは青いサッカーシャツを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One girl is holding a soccer ball.",
+          "grammar": "現在進行形",
+          "ja": "一人の女の子がサッカーボールを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girls are smiling and talking.",
+          "grammar": "現在進行形",
+          "ja": "女の子たちは笑顔で話しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女たちは楽しそうに見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a soccer goal behind them.",
+          "grammar": "There is",
+          "ja": "彼女たちの後ろにサッカーゴールがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are other students in the background.",
+          "grammar": "There are",
+          "ja": "背景にはほかの生徒たちがいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The school building is behind the field.",
+          "grammar": "be動詞＋場所",
+          "ja": "校舎はグラウンドの後ろにあります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "teammate",
+          "ja": "チームメート",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "uniform",
+          "ja": "ユニフォーム",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "club",
+          "ja": "部活動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "member",
+          "ja": "メンバー",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "background",
+          "ja": "背景",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "welcome",
+          "ja": "歓迎する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "include",
+          "ja": "仲間に入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "encourage",
+          "ja": "励ます",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "communicate",
+          "ja": "意思疎通する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "join",
+          "ja": "参加する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "friendly",
+          "ja": "親しみやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "diverse",
+          "ja": "多様な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "comfortable",
+          "ja": "居心地のよい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "supportive",
+          "ja": "支え合う",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cheerful",
+          "ja": "明るい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "join a soccer team",
+          "ja": "サッカーチームに入る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "welcome a new teammate",
+          "ja": "新しいチームメートを歓迎する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make her feel comfortable",
+          "ja": "彼女が安心できるようにする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "talk with her teammates",
+          "ja": "チームメートと話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "place a hand on her shoulder",
+          "ja": "彼女の肩に手を置く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear matching uniforms",
+          "ja": "おそろいのユニフォームを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "students from different backgrounds",
+          "ja": "異なる背景を持つ生徒たち",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "become part of the group",
+          "ja": "グループの一員になる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The girls appear to be members of the same school soccer team.",
+          "grammar": "appear to be",
+          "ja": "女の子たちは同じ学校のサッカーチームのメンバーのようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The girl in the center is holding a ball while talking with her teammates.",
+          "grammar": "while＋現在分詞",
+          "ja": "中央の女の子はボールを持ちながらチームメートと話しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her teammates are standing close to her and smiling warmly.",
+          "grammar": "現在進行形",
+          "ja": "チームメートたちは彼女の近くに立ち、親しげに笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One teammate has placed her hand on the girl's shoulder.",
+          "grammar": "現在完了形",
+          "ja": "一人のチームメートが女の子の肩に手を置いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their body language suggests that they are making her feel welcome.",
+          "grammar": "suggest that / make＋O＋C",
+          "ja": "彼女たちの身ぶりから、新しい仲間を歓迎していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Several other students are talking and waving in the background.",
+          "grammar": "現在進行形",
+          "ja": "背景ではほかの生徒たちが話したり手を振ったりしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team includes students from several different backgrounds.",
+          "grammar": "現在形",
+          "ja": "チームにはさまざまな背景を持つ生徒がいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The central girl seems to be becoming comfortable with her new group.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "中央の女の子は新しいグループに少しずつ慣れているように見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "cohort",
+          "ja": "同じ集団・仲間",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "acculturation",
+          "ja": "新しい文化や集団への適応",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "camaraderie",
+          "ja": "仲間意識",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rapport",
+          "ja": "親密な関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "belonging",
+          "ja": "帰属意識",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "acculturate",
+          "ja": "新しい文化や集団に適応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "integrate",
+          "ja": "溶け込む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assimilate",
+          "ja": "集団になじむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "embrace",
+          "ja": "受け入れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "bond",
+          "ja": "絆を築く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inclusive",
+          "ja": "包摂的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multicultural",
+          "ja": "多文化の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cohesive",
+          "ja": "結束した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "receptive",
+          "ja": "受け入れる姿勢のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "affiliated",
+          "ja": "所属している",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "become acculturated to a cohort",
+          "ja": "新しい仲間の集団に適応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "integrate into a new team",
+          "ja": "新しいチームに溶け込む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop camaraderie with teammates",
+          "ja": "チームメートとの仲間意識を育てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "establish rapport with peers",
+          "ja": "仲間と親密な関係を築く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "foster a sense of belonging",
+          "ja": "帰属意識を育む",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "embrace a new member",
+          "ja": "新しいメンバーを受け入れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "form a cohesive group",
+          "ja": "結束した集団を形成する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "interact across cultural backgrounds",
+          "ja": "異なる文化的背景を越えて交流する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create an inclusive atmosphere",
+          "ja": "包摂的な雰囲気を作る",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The central student appears to be becoming acculturated to a cohort of teammates who have warmly welcomed her into the group.",
+          "grammar": "appear to be＋現在分詞 / 関係代名詞who",
+          "ja": "中央の生徒は、自分を温かく迎えてくれたチームメートの集団に徐々に適応しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The teammates' close physical proximity and relaxed smiles suggest that strong camaraderie is developing among them.",
+          "grammar": "suggest that / 現在進行形",
+          "ja": "チームメート同士の近い距離と自然な笑顔から、強い仲間意識が育っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Holding the soccer ball at the center of the group visually reinforces the girl's emerging membership in the team.",
+          "grammar": "動名詞主語",
+          "ja": "グループの中央でサッカーボールを持っていることが、その女の子がチームの一員になりつつあることを視覚的に強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several teammates are touching one another's shoulders and gesturing naturally, which indicates a high degree of rapport.",
+          "grammar": "関係代名詞which",
+          "ja": "数人のチームメートが互いの肩に触れたり自然に身ぶりをしたりしており、高い親密さが感じられます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The culturally diverse group illustrates how participation in school activities can foster meaningful social integration.",
+          "grammar": "how節",
+          "ja": "文化的に多様な集団は、学校活動への参加がどのように有意義な社会的統合を促すかを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The teammates appear receptive to one another despite their different backgrounds.",
+          "grammar": "appear＋形容詞 / despite",
+          "ja": "異なる背景を持っているにもかかわらず、チームメートたちは互いを受け入れているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The students in the background reinforce the impression of an active and socially connected school community.",
+          "grammar": "現在形",
+          "ja": "背景の生徒たちは、活気があり社会的につながりのある学校共同体という印象をさらに強めています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Shared participation in a sports team can help newcomers establish relationships and develop a stronger sense of belonging.",
+          "grammar": "can help＋O＋動詞",
+          "ja": "スポーツチームで一緒に活動することは、新しいメンバーが人間関係を築き、より強い帰属意識を持つ助けになります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing acculturation, inclusion, peer relationships, teamwork, and multicultural interaction.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は新しい集団への適応、包摂、仲間関係、チームワーク、多文化交流を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "girl1": {
+      "x": 48,
+      "y": 51
+    },
+    "girl2": {
+      "x": 25,
+      "y": 50
+    },
+    "girl3": {
+      "x": 34,
+      "y": 47
+    },
+    "girl4": {
+      "x": 61,
+      "y": 45
+    },
+    "girl5": {
+      "x": 76,
+      "y": 51
+    },
+    "ball": {
+      "x": 47,
+      "y": 70
+    },
+    "jersey1": {
+      "x": 49,
+      "y": 58
+    },
+    "jersey2": {
+      "x": 24,
+      "y": 61
+    },
+    "jersey3": {
+      "x": 35,
+      "y": 56
+    },
+    "jersey4": {
+      "x": 61,
+      "y": 55
+    },
+    "jersey5": {
+      "x": 77,
+      "y": 60
+    },
+    "hand1": {
+      "x": 41,
+      "y": 48
+    },
+    "hand2": {
+      "x": 55,
+      "y": 45
+    },
+    "student1": {
+      "x": 4,
+      "y": 36
+    },
+    "student2": {
+      "x": 9,
+      "y": 38
+    },
+    "student3": {
+      "x": 13,
+      "y": 32
+    },
+    "student4": {
+      "x": 87,
+      "y": 40
+    },
+    "student5": {
+      "x": 94,
+      "y": 43
+    },
+    "goal": {
+      "x": 87,
+      "y": 30
+    },
+    "field": {
+      "x": 53,
+      "y": 86
+    },
+    "school": {
+      "x": 70,
+      "y": 17
+    },
+    "windows": {
+      "x": 69,
+      "y": 14
+    },
+    "trees": {
+      "x": 20,
+      "y": 14
+    },
+    "grass": {
+      "x": 67,
+      "y": 83
+    },
+    "sky": {
+      "x": 48,
+      "y": 7
+    },
+    "clouds": {
+      "x": 42,
+      "y": 10
+    }
+  }
+}

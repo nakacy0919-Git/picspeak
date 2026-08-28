@@ -1,0 +1,721 @@
+{
+  "id": "theme_l2_058",
+  "imageSrc": "assets/images/l2_058.webp",
+  "titleEn": "Forced Into a Van",
+  "titleJa": "駐車場で連れ去られる男性",
+  "description": "薄暗い地下駐車場で、スーツ姿の男性が覆面をした2人の男に黒いバンへ連れて行かれている場面である。中央の男性は体を前に傾け、驚いた表情をしている。左側の覆面の男は男性の腕や肩をつかみ、右側の覆面の男も反対側から男性を押さえている。すぐ右には黒いバンが停車し、横のスライドドアが開いている。床は濡れて光を反射しており、奥には別の車やコンクリートの柱が見える。天井には照明や配管があり、地下駐車場らしい暗く緊張した雰囲気になっている。人物の動作、感情、車との位置関係、緊迫した場面を英語で描写する練習に適している。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a tense scene in a dim underground parking garage where two masked men are forcing a frightened businessman toward an open black van. The businessman wears a dark suit and leans forward while resisting. One masked man in black holds him from the left, while another in a dark green jacket restrains him beside the van. Show the van's sliding door open, wet reflective concrete floor, parking pillars, ceiling pipes, fluorescent lights, and another parked car in the background. Preserve the dramatic but non-graphic atmosphere. No weapons, no blood, no logos, no readable text. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "van",
+          "ja": "バン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "door",
+          "ja": "ドア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mask",
+          "ja": "覆面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "suit",
+          "ja": "スーツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "照明",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "garage",
+          "ja": "駐車場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pillar",
+          "ja": "柱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "つかむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "push",
+          "ja": "押す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pull",
+          "ja": "引く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "afraid",
+          "ja": "怖がっている",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "two masked men",
+          "ja": "2人の覆面の男",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "hold the man",
+          "ja": "男性をつかむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push him toward the van",
+          "ja": "彼をバンの方へ押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an open door",
+          "ja": "開いたドア",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "wear a dark suit",
+          "ja": "暗い色のスーツを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside a parking garage",
+          "ja": "駐車場の中",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a black van",
+          "ja": "黒いバン",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a wet floor",
+          "ja": "濡れた床",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three men are beside a van.",
+          "grammar": "be動詞＋場所",
+          "ja": "3人の男性がバンのそばにいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two men are wearing masks.",
+          "grammar": "現在進行形",
+          "ja": "2人の男性は覆面をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are holding another man.",
+          "grammar": "現在進行形",
+          "ja": "彼らは別の男性をつかんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is wearing a suit.",
+          "grammar": "現在進行形",
+          "ja": "その男性はスーツを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The van door is open.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "バンのドアは開いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man looks afraid.",
+          "grammar": "look＋形容詞",
+          "ja": "男性は怖がっているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is another car in the background.",
+          "grammar": "There is",
+          "ja": "背景には別の車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The floor is wet and dark.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "床は濡れていて暗いです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "businessman",
+          "ja": "会社員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "kidnapper",
+          "ja": "誘拐犯",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "vehicle",
+          "ja": "車両",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "garage",
+          "ja": "駐車場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "struggle",
+          "ja": "もみ合い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "force",
+          "ja": "無理に動かす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "押さえる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "resist",
+          "ja": "抵抗する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grab",
+          "ja": "つかむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frightened",
+          "ja": "おびえた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "masked",
+          "ja": "覆面をした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "underground",
+          "ja": "地下の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tense",
+          "ja": "緊迫した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "open",
+          "ja": "開いている",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "force someone toward a van",
+          "ja": "人を無理にバンの方へ連れて行く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "restrain the businessman",
+          "ja": "会社員を押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "try to resist",
+          "ja": "抵抗しようとする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "grab his arm",
+          "ja": "彼の腕をつかむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an open sliding door",
+          "ja": "開いたスライドドア",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a dim underground garage",
+          "ja": "薄暗い地下駐車場",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "look extremely frightened",
+          "ja": "とてもおびえて見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a tense struggle",
+          "ja": "緊迫したもみ合い",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two masked men are forcing a businessman toward a black van.",
+          "grammar": "現在進行形",
+          "ja": "2人の覆面の男が会社員を黒いバンの方へ無理に連れて行っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One man is holding the businessman's arm from the left.",
+          "grammar": "現在進行形",
+          "ja": "一人の男が左側から会社員の腕をつかんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other man is restraining him beside the open door.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の男が開いたドアのそばで彼を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The businessman appears to be trying to resist.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "会社員は抵抗しようとしているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The sliding door of the van has been left open.",
+          "grammar": "現在完了受動態",
+          "ja": "バンのスライドドアは開けられたままです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The wet floor reflects the lights above.",
+          "grammar": "現在形",
+          "ja": "濡れた床が頭上の照明を反射しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another parked car can be seen in the background.",
+          "grammar": "助動詞＋受動態",
+          "ja": "背景には別の駐車中の車が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that the businessman is in serious trouble.",
+          "grammar": "suggest that",
+          "ja": "この場面から、会社員が深刻なトラブルに巻き込まれていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "captive",
+          "ja": "捕らわれた人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "abduction",
+          "ja": "拉致",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "coercion",
+          "ja": "強制",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "assailant",
+          "ja": "襲撃者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "confinement",
+          "ja": "拘束",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "abduct",
+          "ja": "拉致する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coerce",
+          "ja": "強制する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "拘束する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overpower",
+          "ja": "力で制圧する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spirited",
+          "ja": "連れ去られた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "forcible",
+          "ja": "強制的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "clandestine",
+          "ja": "人目を避けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distressed",
+          "ja": "ひどく動揺した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vulnerable",
+          "ja": "無防備な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "ominous",
+          "ja": "不吉な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "spirit away a captive",
+          "ja": "捕らえた人をひそかに連れ去る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "forcibly restrain the captive",
+          "ja": "捕らえた人を力ずくで拘束する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coerce him toward the vehicle",
+          "ja": "彼を車両の方へ無理に動かす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "attempt to break free",
+          "ja": "逃れようとする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be overpowered by assailants",
+          "ja": "襲撃者たちに力で制圧される",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a forcible abduction",
+          "ja": "強制的な拉致",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "an ominous underground setting",
+          "ja": "不吉な地下の環境",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "display visible distress",
+          "ja": "明らかな動揺を示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "drag someone toward a vehicle",
+          "ja": "人を車両の方へ引っ張る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two masked assailants appear to be attempting to spirit away a captive in an underground parking garage.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "2人の覆面の襲撃者が地下駐車場で捕らえた男性を連れ去ろうとしているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The businessman is being forcibly restrained as the men move him toward the open vehicle.",
+          "grammar": "現在進行形受動態 / as",
+          "ja": "男性たちが会社員を開いた車両へ動かす中、彼は力ずくで拘束されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His strained posture and alarmed expression suggest that he is resisting against his will.",
+          "grammar": "suggest that",
+          "ja": "彼の緊張した姿勢と驚いた表情から、自分の意思に反して抵抗していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One assailant grips him from the left while the other restrains him beside the sliding door.",
+          "grammar": "while",
+          "ja": "一人の襲撃者が左側から彼をつかむ一方、もう一人はスライドドアのそばで彼を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The open van appears positioned to facilitate the man's immediate confinement inside the vehicle.",
+          "grammar": "appear＋過去分詞 / to不定詞",
+          "ja": "開いたバンは、男性をすぐに車内へ拘束するための位置にあるように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The dim lighting, concrete structure, and nearly empty garage create an especially ominous atmosphere.",
+          "grammar": "現在形",
+          "ja": "薄暗い照明、コンクリート構造、ほとんど人のいない駐車場が、特に不吉な雰囲気を作り出しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Reflections on the wet pavement intensify the visual tension of the confrontation.",
+          "grammar": "現在形",
+          "ja": "濡れた床面の反射が、この対立場面の視覚的な緊張感を強めています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The victim's formal clothing contrasts sharply with the concealed faces and dark clothing of the assailants.",
+          "grammar": "contrast with",
+          "ja": "被害者のフォーマルな服装は、襲撃者たちの隠された顔や暗い服装と鮮明な対比をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing coercion, resistance, emotional distress, spatial relationships, and a rapidly developing emergency.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は強制、抵抗、精神的動揺、位置関係、急速に展開する緊急事態を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "captive": {
+      "x": 38,
+      "y": 47
+    },
+    "assailant1": {
+      "x": 23,
+      "y": 45
+    },
+    "assailant2": {
+      "x": 47,
+      "y": 43
+    },
+    "mask1": {
+      "x": 25,
+      "y": 22
+    },
+    "mask2": {
+      "x": 49,
+      "y": 25
+    },
+    "suit": {
+      "x": 37,
+      "y": 44
+    },
+    "arm": {
+      "x": 31,
+      "y": 35
+    },
+    "van": {
+      "x": 76,
+      "y": 43
+    },
+    "door": {
+      "x": 58,
+      "y": 40
+    },
+    "seat": {
+      "x": 59,
+      "y": 34
+    },
+    "wheel": {
+      "x": 69,
+      "y": 77
+    },
+    "light": {
+      "x": 83,
+      "y": 47
+    },
+    "garage": {
+      "x": 47,
+      "y": 13
+    },
+    "floor": {
+      "x": 43,
+      "y": 86
+    },
+    "puddle": {
+      "x": 19,
+      "y": 75
+    },
+    "pillar": {
+      "x": 6,
+      "y": 35
+    },
+    "car": {
+      "x": 9,
+      "y": 46
+    },
+    "ceiling": {
+      "x": 35,
+      "y": 7
+    },
+    "pipes": {
+      "x": 48,
+      "y": 10
+    },
+    "lamp1": {
+      "x": 20,
+      "y": 12
+    },
+    "lamp2": {
+      "x": 12,
+      "y": 24
+    },
+    "arrow": {
+      "x": 61,
+      "y": 90
+    }
+  }
+}

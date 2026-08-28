@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_086",
+  "imageSrc": "assets/images/l2_086.webp",
+  "titleEn": "Displaying an Abashed Demeanor",
+  "titleJa": "恥ずかしそうな態度を見せる少年",
+  "description": "教室で、教師が大型スクリーンに男子生徒の幼い頃の写真を映して紹介している場面である。画面には、幼い男の子が笑顔で絵を描いている写真が大きく表示されている。右側には現在の男子生徒が立っており、少し顔を赤らめ、片手を首の後ろに当てながら照れたように笑っている。彼の姿勢や表情から、みんなの前で自分の子どもの頃の写真を見せられて恥ずかしさを感じていることが伝わる。周囲の4人のクラスメートは机に座り、笑顔で彼を見ている。教師も明るい表情で画面を示している。人前で注目を浴びたときの照れ、気まずさ、恥ずかしさ、表情やしぐさから感情を推測する英語描写の練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a classroom presentation. A female teacher smiles and gestures toward a large screen showing a childhood photo of a boy happily drawing. The same boy, now a student, stands beside the screen looking embarrassed, blushing slightly and rubbing the back of his neck. Four classmates sit at desks smiling at him. Bright classroom, books and school decorations, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "teacher",
+          "ja": "先生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "photo",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "classroom",
+          "ja": "教室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "book",
+          "ja": "本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "neck",
+          "ja": "首",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "笑顔",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "見せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "laugh",
+          "ja": "笑う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shy",
+          "ja": "恥ずかしそうな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "show a photo",
+          "ja": "写真を見せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand by the screen",
+          "ja": "画面のそばに立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "touch his neck",
+          "ja": "首に触れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look embarrassed",
+          "ja": "恥ずかしそうに見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "smile at him",
+          "ja": "彼に微笑む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit at desks",
+          "ja": "机に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a childhood photo",
+          "ja": "子どもの頃の写真",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "in the classroom",
+          "ja": "教室の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A teacher is showing a photo to the class.",
+          "grammar": "現在進行形",
+          "ja": "先生がクラスに写真を見せています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The photo shows a young boy.",
+          "grammar": "現在形",
+          "ja": "その写真には幼い男の子が写っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is standing beside the screen.",
+          "grammar": "現在進行形",
+          "ja": "男の子が画面のそばに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is touching the back of his neck.",
+          "grammar": "現在進行形",
+          "ja": "彼は首の後ろに触れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He looks shy and embarrassed.",
+          "grammar": "look＋形容詞",
+          "ja": "彼は恥ずかしそうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Four classmates are sitting at their desks.",
+          "grammar": "現在進行形",
+          "ja": "4人のクラスメートが机に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The classmates are smiling at him.",
+          "grammar": "現在進行形",
+          "ja": "クラスメートたちは彼に微笑んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Everyone is looking at the boy.",
+          "grammar": "現在進行形",
+          "ja": "みんながその男の子を見ています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "presentation",
+          "ja": "発表",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "childhood",
+          "ja": "子ども時代",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "classmate",
+          "ja": "クラスメート",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "attention",
+          "ja": "注目",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "expression",
+          "ja": "表情",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "embarrassment",
+          "ja": "恥ずかしさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "present",
+          "ja": "紹介する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gesture",
+          "ja": "身ぶりで示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "blush",
+          "ja": "顔を赤らめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "react",
+          "ja": "反応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "embarrassed",
+          "ja": "恥ずかしい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "awkward",
+          "ja": "気まずい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "amused",
+          "ja": "楽しそうな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nervous",
+          "ja": "緊張した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "childish",
+          "ja": "子どもらしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "show a childhood photo",
+          "ja": "子どもの頃の写真を見せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "feel embarrassed",
+          "ja": "恥ずかしく感じる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "rub the back of his neck",
+          "ja": "首の後ろをさする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "become the center of attention",
+          "ja": "注目の的になる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "smile at a classmate",
+          "ja": "クラスメートに微笑む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give a classroom presentation",
+          "ja": "教室で発表する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look slightly awkward",
+          "ja": "少し気まずそうに見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "react with amusement",
+          "ja": "楽しそうに反応する",
+          "type": "inference",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A teacher is presenting a childhood photograph of one of her students.",
+          "grammar": "現在進行形",
+          "ja": "先生が生徒の1人の子どもの頃の写真を紹介しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The photograph shows the boy smiling while drawing a picture.",
+          "grammar": "while＋現在分詞",
+          "ja": "写真には、その男の子が絵を描きながら笑っている様子が写っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The student standing beside the screen appears to be embarrassed.",
+          "grammar": "現在分詞 / appear to be",
+          "ja": "画面の横に立っている生徒は恥ずかしそうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "He is rubbing the back of his neck and smiling awkwardly.",
+          "grammar": "現在進行形",
+          "ja": "彼は首の後ろをさすりながら気まずそうに笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His classmates are looking at him with amused expressions.",
+          "grammar": "現在進行形 / with",
+          "ja": "クラスメートたちは楽しそうな表情で彼を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He may feel uncomfortable because everyone is paying attention to him.",
+          "grammar": "may / because",
+          "ja": "みんなが彼に注目しているため、彼は居心地の悪さを感じているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The teacher seems to be introducing the photo in a friendly way.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "先生は親しみのある様子で写真を紹介しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how people sometimes become embarrassed when personal photos are shown in public.",
+          "grammar": "how節 / when節 / 受動態",
+          "ja": "この場面は、個人的な写真を人前で見せられると人が恥ずかしくなることがある様子を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "demeanor",
+          "ja": "態度・物腰",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "embarrassment",
+          "ja": "困惑・恥ずかしさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "self-consciousness",
+          "ja": "人目を気にすること",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "discomposure",
+          "ja": "動揺・落ち着かなさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "awkwardness",
+          "ja": "気まずさ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reminiscence",
+          "ja": "思い出",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "blush",
+          "ja": "赤面する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fidget",
+          "ja": "落ち着かず体を動かす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reminisce",
+          "ja": "思い出を語る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tease",
+          "ja": "からかう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "abashed",
+          "ja": "恥じ入った・きまり悪そうな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sheepish",
+          "ja": "ばつの悪そうな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "self-conscious",
+          "ja": "人目を気にした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "flustered",
+          "ja": "動揺した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nostalgic",
+          "ja": "懐かしさを感じる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an abashed demeanor",
+          "ja": "恥じ入ったような態度",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "wear a sheepish smile",
+          "ja": "ばつの悪そうな笑みを浮かべる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "display visible embarrassment",
+          "ja": "目に見える恥ずかしさを示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "become self-conscious",
+          "ja": "人目を気にするようになる",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "attract unwanted attention",
+          "ja": "望まない注目を集める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reveal a childhood photograph",
+          "ja": "子どもの頃の写真を披露する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "react with mild amusement",
+          "ja": "少し面白がって反応する",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "recall an embarrassing memory",
+          "ja": "恥ずかしい思い出を振り返る",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "mask his discomfort",
+          "ja": "居心地の悪さを隠す",
+          "type": "inference",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The student displays an abashed demeanor as a childhood photograph of him is presented to the class.",
+          "grammar": "as / 受動態",
+          "ja": "自分の子どもの頃の写真がクラスに紹介される中、その生徒は恥じ入ったような態度を見せています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "His sheepish smile and the hand placed behind his neck strongly suggest a sense of embarrassment.",
+          "grammar": "過去分詞 / suggest",
+          "ja": "ばつの悪そうな笑みと首の後ろに置いた手から、強い恥ずかしさが感じられます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He appears self-conscious because the attention of both his teacher and classmates is focused on him.",
+          "grammar": "appear＋形容詞 / because / 受動態",
+          "ja": "先生とクラスメートの両方の注目が自分に集まっているため、彼は人目を気にしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The childhood image projected behind him creates a striking contrast between his carefree younger self and his present embarrassment.",
+          "grammar": "過去分詞 / contrast between A and B",
+          "ja": "背後に映された幼少期の写真は、無邪気だった幼い頃の自分と現在の恥ずかしさを鮮明に対比させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The classmates' amused expressions may intensify his awkwardness even though they do not appear openly hostile.",
+          "grammar": "may / even though",
+          "ja": "クラスメートたちの楽しそうな表情は、敵意があるようには見えないものの、彼の気まずさを強めている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Rubbing the back of one's neck can function as a self-conscious gesture when a person feels awkward or exposed.",
+          "grammar": "動名詞主語 / when",
+          "ja": "首の後ろをさするしぐさは、気まずさや人目にさらされている感覚を覚えたときの照れた反応として現れることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the teacher appears cheerful, the student may perceive the situation as mildly embarrassing because a personal memory has become public.",
+          "grammar": "Although / may / 現在完了形",
+          "ja": "先生は楽しそうですが、個人的な思い出が人前に公開されたため、生徒は少し恥ずかしい状況だと感じている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "His abashed reaction illustrates how even a harmless reminiscence can provoke self-consciousness when it unexpectedly becomes the focus of a group.",
+          "grammar": "how節 / even / when",
+          "ja": "彼の恥じ入った反応は、何気ない思い出であっても、突然集団の注目の的になると人目を気にする気持ちを引き起こすことがあることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing an abashed demeanor, embarrassment, self-consciousness, sheepish behavior, social attention, and emotional body language.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は恥じ入った態度、恥ずかしさ、人目を気にする心理、ばつの悪そうなしぐさ、周囲からの注目、感情を示すボディランゲージを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "teacher": {
+      "x": 15,
+      "y": 31
+    },
+    "student": {
+      "x": 72,
+      "y": 43
+    },
+    "screen": {
+      "x": 52,
+      "y": 27
+    },
+    "photo": {
+      "x": 51,
+      "y": 27
+    },
+    "child": {
+      "x": 51,
+      "y": 28
+    },
+    "smile": {
+      "x": 71,
+      "y": 30
+    },
+    "neck": {
+      "x": 76,
+      "y": 31
+    },
+    "hoodie": {
+      "x": 71,
+      "y": 52
+    },
+    "classmates": {
+      "x": 52,
+      "y": 66
+    },
+    "girl": {
+      "x": 87,
+      "y": 65
+    },
+    "boy": {
+      "x": 7,
+      "y": 64
+    },
+    "desk": {
+      "x": 73,
+      "y": 83
+    },
+    "book": {
+      "x": 39,
+      "y": 79
+    },
+    "chair": {
+      "x": 26,
+      "y": 88
+    },
+    "plant": {
+      "x": 94,
+      "y": 48
+    },
+    "drawing": {
+      "x": 45,
+      "y": 44
+    },
+    "board": {
+      "x": 7,
+      "y": 18
+    },
+    "poster": {
+      "x": 94,
+      "y": 15
+    },
+    "classroom": {
+      "x": 86,
+      "y": 25
+    },
+    "embarrassment": {
+      "x": 71,
+      "y": 30
+    }
+  }
+}

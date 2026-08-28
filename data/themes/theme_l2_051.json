@@ -1,0 +1,753 @@
+{
+  "id": "theme_l2_051",
+  "imageSrc": "assets/images/l2_051.webp",
+  "titleEn": "Emergency Planning After the Flood",
+  "titleJa": "洪水後の緊急作戦会議",
+  "description": "大規模な洪水が発生した山間部で、5人の救助隊員が車のボンネットに広げた地図を囲み、次の行動計画を話し合っている場面である。中央のオレンジ色の救助服を着た隊員が地図上の場所を指さし、ほかの隊員たちは真剣な表情で確認している。左側にはオレンジ色と赤色の装備を身につけた隊員が立ち、右側には黄色と青色の救助服を着た隊員がいる。全員がバックパックや安全装備を身につけている。手前には無線機、赤い救助バッグ、ロープが置かれている。背景では川が氾濫し、道路や土地の一部が水に覆われ、流木や泥が広がっている。さらに奥には山、住宅、木々が見える。災害現場での協力、地図を使った計画、洪水被害、救助活動を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show five emergency rescue workers gathered around a large map spread across the hood of a vehicle in a flooded mountain valley. The central rescuer in orange protective gear points to a location on the map while the others study it seriously. Use orange, red, yellow, and blue rescue jackets, helmets, backpacks, gloves, radios, and safety equipment. Place a red emergency bag, handheld radios, and a coiled rescue rope on the vehicle. In the background, show severe flood damage with muddy water, damaged roads, debris, trees, houses, and green mountains. Preserve the teamwork and emergency-planning atmosphere of the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "team",
+          "ja": "チーム",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "river",
+          "ja": "川",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rope",
+          "ja": "ロープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "radio",
+          "ja": "無線機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "plan",
+          "ja": "計画する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "help",
+          "ja": "助ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "flooded",
+          "ja": "洪水になった",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at a map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the map",
+          "ja": "地図を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "five rescue workers",
+          "ja": "5人の救助隊員",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a flooded area",
+          "ja": "洪水の地域",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "wear safety helmets",
+          "ja": "安全用ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a red rescue bag",
+          "ja": "赤い救助バッグ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "mountains in the background",
+          "ja": "背景の山々",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "協力して働く",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five rescue workers are looking at a map.",
+          "grammar": "現在進行形",
+          "ja": "5人の救助隊員が地図を見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One worker is pointing at the map.",
+          "grammar": "現在進行形",
+          "ja": "一人の隊員が地図を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are wearing colorful rescue clothes.",
+          "grammar": "現在進行形",
+          "ja": "彼らは色の違う救助服を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a red bag on the car.",
+          "grammar": "There is",
+          "ja": "車の上に赤いバッグがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a rope near the map.",
+          "grammar": "There is",
+          "ja": "地図の近くにロープがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The land is covered with water.",
+          "grammar": "受動態",
+          "ja": "土地は水で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are mountains in the background.",
+          "grammar": "There are",
+          "ja": "背景には山があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team is making a plan.",
+          "grammar": "現在進行形",
+          "ja": "チームは計画を立てています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "rescuer",
+          "ja": "救助隊員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "flood",
+          "ja": "洪水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "route",
+          "ja": "経路",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "がれき",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "strategy",
+          "ja": "作戦",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "discuss",
+          "ja": "話し合う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "locate",
+          "ja": "位置を確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "respond",
+          "ja": "対応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "被害を受けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "muddy",
+          "ja": "泥だらけの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "emergency",
+          "ja": "緊急の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "serious",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "safe",
+          "ja": "安全な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "discuss an emergency plan",
+          "ja": "緊急計画を話し合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study a detailed map",
+          "ja": "詳しい地図を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "choose a safe route",
+          "ja": "安全な経路を選ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "respond to a flood",
+          "ja": "洪水に対応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear rescue equipment",
+          "ja": "救助装備を身につける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "damaged roads and houses",
+          "ja": "被害を受けた道路や家",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "muddy water and debris",
+          "ja": "泥水とがれき",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "work as a rescue team",
+          "ja": "救助チームとして協力する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five rescue workers are discussing how to respond to a serious flood.",
+          "grammar": "how to",
+          "ja": "5人の救助隊員が深刻な洪水にどう対応するか話し合っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A large map has been spread across the hood of their vehicle.",
+          "grammar": "現在完了受動態",
+          "ja": "大きな地図が車のボンネットの上に広げられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The worker in orange is pointing to a possible route.",
+          "grammar": "現在進行形",
+          "ja": "オレンジ色の隊員が可能な経路を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other rescuers are carefully studying the map.",
+          "grammar": "現在進行形",
+          "ja": "ほかの救助隊員たちは注意深く地図を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Radios, rescue bags, and rope have been placed near the map.",
+          "grammar": "現在完了受動態",
+          "ja": "無線機、救助バッグ、ロープが地図の近くに置かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Muddy water has covered a large part of the valley.",
+          "grammar": "現在完了形",
+          "ja": "泥水が谷の広い範囲を覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several roads appear to have been damaged by the flood.",
+          "grammar": "appear to have been",
+          "ja": "いくつかの道路は洪水によって被害を受けたように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The team is probably trying to find the safest way to reach the affected area.",
+          "grammar": "try to / 最上級",
+          "ja": "チームは被災地域へ到達する最も安全な方法を探していると考えられます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "contingency",
+          "ja": "不測の事態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stratagem",
+          "ja": "策略・作戦",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evacuation",
+          "ja": "避難",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inundation",
+          "ja": "浸水",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "terrain",
+          "ja": "地形",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "contrive",
+          "ja": "工夫して考案する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "assess",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prioritize",
+          "ja": "優先順位をつける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "navigate",
+          "ja": "進路を取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "devastated",
+          "ja": "壊滅的な被害を受けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "impassable",
+          "ja": "通行不能な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "provisional",
+          "ja": "暫定的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "strategic",
+          "ja": "戦略的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "urgent",
+          "ja": "緊急の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "contrive a contingency stratagem",
+          "ja": "緊急時に備えた作戦を考案する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "assess the flooded terrain",
+          "ja": "浸水した地形を評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate an emergency response",
+          "ja": "緊急対応を調整する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify an alternative route",
+          "ja": "代替経路を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prioritize rescue operations",
+          "ja": "救助活動に優先順位をつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "navigate around impassable roads",
+          "ja": "通行不能な道路を迂回する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "respond to widespread inundation",
+          "ja": "広範囲の浸水に対応する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "devise a provisional evacuation plan",
+          "ja": "暫定的な避難計画を立てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adapt to rapidly changing conditions",
+          "ja": "急速に変化する状況に適応する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The rescue team is attempting to contrive a contingency stratagem in response to widespread flooding across the valley.",
+          "grammar": "attempt to / in response to",
+          "ja": "救助隊は谷全体に広がる洪水に対応するため、緊急時の作戦を考案しようとしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The central rescuer is pointing to the map while the others assess possible routes through the devastated terrain.",
+          "grammar": "while",
+          "ja": "中央の救助隊員が地図を指さす一方、ほかの隊員たちは被害を受けた地形を通る可能な経路を評価しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Floodwater and debris appear to have rendered several roads partially or completely impassable.",
+          "grammar": "appear to have＋過去分詞 / render O C",
+          "ja": "洪水とがれきによって、いくつかの道路が部分的または完全に通行不能になったようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The detailed map allows the team to identify alternative routes and prioritize areas requiring urgent assistance.",
+          "grammar": "allow O to",
+          "ja": "詳しい地図によって、チームは代替経路を特定し、緊急支援が必要な地域に優先順位をつけることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Radios, protective gear, rope, and emergency bags indicate that the group is prepared for demanding rescue operations.",
+          "grammar": "indicate that",
+          "ja": "無線機、防護装備、ロープ、救助バッグから、このチームが困難な救助活動に備えていることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their concentrated expressions suggest that they are weighing several options before committing to a particular course of action.",
+          "grammar": "suggest that / before＋動名詞",
+          "ja": "隊員たちの集中した表情から、特定の行動方針を決定する前に複数の選択肢を検討していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The damaged landscape in the background emphasizes the scale of the emergency confronting the team.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "背景の被災した景観は、チームが直面している緊急事態の規模を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Effective disaster response often requires responders to adapt their plans as conditions change unexpectedly.",
+          "grammar": "require O to / as",
+          "ja": "効果的な災害対応では、状況が予想外に変化するにつれて計画を調整することがしばしば求められます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing strategic planning, collaboration, natural-disaster damage, and decision-making under pressure.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は戦略的計画、協力、自然災害の被害、緊迫した状況での意思決定を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman1": {
+      "x": 14,
+      "y": 45
+    },
+    "man1": {
+      "x": 29,
+      "y": 40
+    },
+    "man2": {
+      "x": 47,
+      "y": 44
+    },
+    "woman2": {
+      "x": 67,
+      "y": 42
+    },
+    "man3": {
+      "x": 82,
+      "y": 42
+    },
+    "helmet1": {
+      "x": 29,
+      "y": 21
+    },
+    "helmet2": {
+      "x": 46,
+      "y": 25
+    },
+    "cap": {
+      "x": 78,
+      "y": 24
+    },
+    "map": {
+      "x": 51,
+      "y": 76
+    },
+    "finger": {
+      "x": 50,
+      "y": 65
+    },
+    "vehicle": {
+      "x": 51,
+      "y": 88
+    },
+    "bag": {
+      "x": 15,
+      "y": 89
+    },
+    "radio1": {
+      "x": 31,
+      "y": 88
+    },
+    "radio2": {
+      "x": 88,
+      "y": 47
+    },
+    "rope": {
+      "x": 87,
+      "y": 88
+    },
+    "gloves": {
+      "x": 45,
+      "y": 61
+    },
+    "backpack1": {
+      "x": 8,
+      "y": 48
+    },
+    "backpack2": {
+      "x": 91,
+      "y": 49
+    },
+    "flood": {
+      "x": 61,
+      "y": 22
+    },
+    "river": {
+      "x": 58,
+      "y": 34
+    },
+    "road": {
+      "x": 59,
+      "y": 31
+    },
+    "debris": {
+      "x": 78,
+      "y": 36
+    },
+    "house1": {
+      "x": 4,
+      "y": 20
+    },
+    "house2": {
+      "x": 94,
+      "y": 22
+    },
+    "mountain1": {
+      "x": 20,
+      "y": 7
+    },
+    "mountain2": {
+      "x": 51,
+      "y": 7
+    },
+    "mountain3": {
+      "x": 77,
+      "y": 6
+    },
+    "trees": {
+      "x": 87,
+      "y": 17
+    },
+    "sky": {
+      "x": 55,
+      "y": 4
+    },
+    "clouds": {
+      "x": 62,
+      "y": 8
+    }
+  }
+}

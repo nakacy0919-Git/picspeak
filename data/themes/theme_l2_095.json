@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_095",
+  "imageSrc": "assets/images/l2_095.webp",
+  "titleEn": "Witnessing a Magmatic Paroxysm",
+  "titleJa": "大規模な火山噴火を目撃する観光客",
+  "description": "晴れた日の高台から、7人の人々が激しく噴火する巨大な火山を観察している場面である。中央から右側には円錐形の火山がそびえ、山頂の火口から赤く輝く溶岩が噴き出している。その上には大量の火山灰と噴煙が巨大な柱となって空高く立ち上り、上空で大きく広がっている。火山の斜面には複数の溶岩流が赤く光りながら流れ下っているように見える。左手前には7人の見物人が柵の近くに並び、火山を見つめたり写真を撮ったりしている。周囲には岩、草木、湖、山並み、広い谷があり、噴火の規模の大きさが強調されている。大規模な火山活動、マグマの噴出、噴煙、火山灰、溶岩流、自然災害、地質現象を英語で描写する練習に適した場面である。",
+  "category": "science",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of seven people watching a massive volcanic eruption from a safe scenic viewpoint. Show a cone-shaped volcano ejecting glowing lava, a towering ash plume, dense smoke, lava flowing down the slopes, a lake and mountains below, rocks, vegetation, and a wooden safety fence. Some visitors photograph the eruption. Bright daytime sky, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "volcano",
+          "ja": "火山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lava",
+          "ja": "溶岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smoke",
+          "ja": "煙",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lake",
+          "ja": "湖",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "people",
+          "ja": "人々",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "camera",
+          "ja": "カメラ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rock",
+          "ja": "岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "watch",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "erupt",
+          "ja": "噴火する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "flow",
+          "ja": "流れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "huge",
+          "ja": "巨大な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "watch the volcano",
+          "ja": "火山を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a photo",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a huge volcano",
+          "ja": "巨大な火山",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "hot red lava",
+          "ja": "熱い赤い溶岩",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large smoke cloud",
+          "ja": "大きな噴煙",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "flow down the mountain",
+          "ja": "山を流れ下る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand behind a fence",
+          "ja": "柵の後ろに立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "near the lake",
+          "ja": "湖の近くで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A volcano is erupting.",
+          "grammar": "現在進行形",
+          "ja": "火山が噴火しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Seven people are watching the volcano.",
+          "grammar": "現在進行形",
+          "ja": "7人が火山を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Hot lava is coming out of the volcano.",
+          "grammar": "現在進行形",
+          "ja": "熱い溶岩が火山から噴き出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A huge cloud is rising into the sky.",
+          "grammar": "現在進行形",
+          "ja": "巨大な雲のような噴煙が空へ上がっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One person is taking a picture.",
+          "grammar": "現在進行形",
+          "ja": "1人が写真を撮っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a lake below the mountain.",
+          "grammar": "There is",
+          "ja": "山の下には湖があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The volcano looks very dangerous.",
+          "grammar": "look＋形容詞",
+          "ja": "その火山はとても危険そうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The people may be far enough away to watch safely.",
+          "grammar": "may be / enough to",
+          "ja": "人々は安全に観察できるほど十分に離れているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "eruption",
+          "ja": "噴火",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "crater",
+          "ja": "火口",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "magma",
+          "ja": "マグマ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ash",
+          "ja": "火山灰",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plume",
+          "ja": "噴煙",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "slope",
+          "ja": "斜面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "explode",
+          "ja": "爆発する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "release",
+          "ja": "放出する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "photograph",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "volcanic",
+          "ja": "火山の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "violent",
+          "ja": "激しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "massive",
+          "ja": "巨大な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "active",
+          "ja": "活動中の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a volcanic eruption",
+          "ja": "火山噴火",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "release volcanic ash",
+          "ja": "火山灰を放出する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a towering ash plume",
+          "ja": "高く立ち上る噴煙",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "lava flowing downhill",
+          "ja": "斜面を流れ下る溶岩",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe from a distance",
+          "ja": "離れた場所から観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "photograph the eruption",
+          "ja": "噴火を撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an active volcano",
+          "ja": "活動中の火山",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a dangerous natural event",
+          "ja": "危険な自然現象",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Seven visitors are observing a violent volcanic eruption from a distant viewpoint.",
+          "grammar": "現在進行形",
+          "ja": "7人の見物人が離れた展望地点から激しい火山噴火を観察しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A massive column of ash and smoke is rising from the crater.",
+          "grammar": "現在進行形",
+          "ja": "大量の火山灰と煙の柱が火口から立ち上っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Bright lava is being ejected from the top of the volcano.",
+          "grammar": "現在進行形の受動態",
+          "ja": "明るく輝く溶岩が火山の山頂から噴き出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several streams of lava appear to be flowing down the slopes.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "複数の溶岩流が斜面を流れ下っているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One visitor is photographing the eruption while the others watch.",
+          "grammar": "while",
+          "ja": "1人の見物人が噴火を撮影し、その間ほかの人々は見守っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The enormous ash plume suggests that the eruption is extremely powerful.",
+          "grammar": "suggest that",
+          "ja": "巨大な噴煙から、この噴火が非常に強力であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The people are probably watching from a safe distance because volcanic eruptions can be dangerous.",
+          "grammar": "because / can",
+          "ja": "火山噴火は危険なので、人々はおそらく安全な距離から見ているのでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how an active volcano can suddenly transform the surrounding landscape.",
+          "grammar": "how節 / can",
+          "ja": "この場面は、活動中の火山が周囲の景観を突然大きく変える可能性があることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "paroxysm",
+          "ja": "激発・突発的な激しい活動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "magma",
+          "ja": "マグマ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ejecta",
+          "ja": "噴出物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "plume",
+          "ja": "噴煙柱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "eruption",
+          "ja": "噴火",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "volcanism",
+          "ja": "火山活動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "erupt",
+          "ja": "噴火する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "eject",
+          "ja": "噴出する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disgorge",
+          "ja": "大量に噴き出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spew",
+          "ja": "激しく噴き出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "magmatic",
+          "ja": "マグマの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "explosive",
+          "ja": "爆発的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cataclysmic",
+          "ja": "壊滅的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "pyroclastic",
+          "ja": "火砕性の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "voluminous",
+          "ja": "大量の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a magmatic paroxysm",
+          "ja": "マグマ活動の激発",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "undergo explosive volcanism",
+          "ja": "爆発的な火山活動を起こす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "eject volcanic material",
+          "ja": "火山物質を噴出する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "disgorge molten lava",
+          "ja": "溶融した溶岩を大量に噴き出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "generate an ash plume",
+          "ja": "噴煙柱を発生させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "spew incandescent ejecta",
+          "ja": "白熱した噴出物を噴き出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a cataclysmic eruption",
+          "ja": "壊滅的規模の噴火",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "tower above the crater",
+          "ja": "火口の上に高く立ち上る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reshape the surrounding terrain",
+          "ja": "周囲の地形を変形させる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The volcano is undergoing what appears to be an exceptionally violent magmatic paroxysm.",
+          "grammar": "現在進行形 / what節 / appear to be",
+          "ja": "その火山では、極めて激しいマグマ活動の激発と思われる現象が起きています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A voluminous eruption column of ash, gas, and fragmented material towers several kilometers above the crater.",
+          "grammar": "ofによる修飾 / 現在形",
+          "ja": "大量の火山灰、ガス、破砕物からなる噴煙柱が火口の数キロ上空までそびえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Incandescent magma is being ejected forcefully from the summit while lava descends the upper slopes.",
+          "grammar": "現在進行形の受動態 / while",
+          "ja": "白熱したマグマが山頂から激しく噴出し、その一方で溶岩が上部斜面を流れ下っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The immense ash plume indicates that substantial quantities of volcanic material are being injected into the atmosphere.",
+          "grammar": "indicate that / 現在進行形の受動態",
+          "ja": "巨大な噴煙は、大量の火山物質が大気中へ送り込まれていることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Such a magmatic paroxysm may occur when pressurized gases within rising magma are released with extraordinary force.",
+          "grammar": "may / when / 受動態",
+          "ja": "このようなマグマ活動の激発は、上昇するマグマ内部の高圧ガスが非常に強い力で放出される際に起こることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Were the eruption to intensify further, nearby areas could face hazards associated with ash fall, lava, and pyroclastic material.",
+          "grammar": "仮定法倒置 / could",
+          "ja": "もし噴火がさらに激化すれば、周辺地域は降灰、溶岩、火砕物に伴う危険に直面する可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The spectators' distant vantage point emphasizes both the enormous scale of the eruption and the need to maintain a safe distance.",
+          "grammar": "both A and B / need to",
+          "ja": "見物人が離れた展望地点にいることは、噴火の巨大な規模と安全距離を保つ必要性の両方を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Events of this magnitude can rapidly reshape terrain, disrupt ecosystems, and affect communities far beyond the immediate vicinity of the volcano.",
+          "grammar": "can / 並列動詞 / far beyond",
+          "ja": "この規模の現象は、地形を急速に変え、生態系を乱し、火山周辺をはるかに越えた地域社会にも影響を及ぼす可能性があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a magmatic paroxysm, explosive volcanism, volcanic ejecta, eruption columns, ash plumes, molten lava, geological hazards, and large-scale landscape transformation.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面はマグマ活動の激発、爆発的火山活動、火山噴出物、噴煙柱、火山灰、溶岩、地質災害、大規模な地形変化を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "volcano": {
+      "x": 72,
+      "y": 58
+    },
+    "crater": {
+      "x": 69,
+      "y": 51
+    },
+    "lava": {
+      "x": 69,
+      "y": 55
+    },
+    "plume": {
+      "x": 69,
+      "y": 22
+    },
+    "ash": {
+      "x": 66,
+      "y": 31
+    },
+    "smoke": {
+      "x": 79,
+      "y": 38
+    },
+    "slope": {
+      "x": 74,
+      "y": 66
+    },
+    "people": {
+      "x": 24,
+      "y": 79
+    },
+    "camera": {
+      "x": 35,
+      "y": 73
+    },
+    "fence": {
+      "x": 45,
+      "y": 83
+    },
+    "lake": {
+      "x": 25,
+      "y": 70
+    },
+    "mountain": {
+      "x": 15,
+      "y": 66
+    },
+    "rocks": {
+      "x": 19,
+      "y": 91
+    },
+    "grass": {
+      "x": 68,
+      "y": 88
+    },
+    "sky": {
+      "x": 28,
+      "y": 25
+    },
+    "clouds": {
+      "x": 25,
+      "y": 57
+    },
+    "eruption": {
+      "x": 69,
+      "y": 50
+    },
+    "magma": {
+      "x": 69,
+      "y": 53
+    },
+    "ejecta": {
+      "x": 67,
+      "y": 45
+    },
+    "paroxysm": {
+      "x": 70,
+      "y": 47
+    }
+  }
+}

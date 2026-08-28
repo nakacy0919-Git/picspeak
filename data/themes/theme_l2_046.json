@@ -1,0 +1,797 @@
+{
+  "id": "theme_l2_046",
+  "imageSrc": "assets/images/l2_046.webp",
+  "titleEn": "Everyone on Their Phones",
+  "titleJa": "スマートフォンを見る通勤客",
+  "description": "昼間の日本の通勤電車の車内を描いた場面である。車内は多くの乗客で混み合っており、左右の青いロングシートには会社員、若者、高齢者などが座っている。中央の通路にも多くの乗客が立ち、ほとんどの人がスマートフォンを見ている。手前左にはベージュ色のジャケットを着た女性、紺色のスーツを着た男性、緑色の服を着た女性が並んで座り、それぞれスマートフォンを操作している。手前右には青いパーカーを着た若者と黄色いセーターの女性が座り、同じようにスマートフォンを見ている。中央右には眼鏡をかけた年配の男性が座ってスマートフォンを確認している。通路では、黒い服とリュック姿の男性、青いトップスを着た女性、緑色のパーカーを着た男性などが立ってスマートフォンを使用している。車内には青い座席、大きな窓、金属ポール、つり革、荷物棚、車内モニターが並び、窓の外には建物や緑が見える。現代の日本の日常生活、公共交通機関の混雑、スマートフォンの普及、座っている人と立っている人の違いなどを英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a crowded modern Japanese commuter train during daytime, viewed straight down the central aisle in a wide 16:9 composition. Keep approximately the same passenger density as the reference, with around twenty adults of different ages. Some passengers are seated on long blue bench seats on both sides, while others stand in the aisle. Most passengers are quietly looking at smartphones. In the left foreground, include a woman in a beige jacket, a businessman in a navy suit with a black bag, and a woman in a green top. In the right foreground, include a young man in a blue hoodie, a woman in a pale yellow sweater, and an older gray-haired businessman with glasses. In the aisle, include several standing commuters with backpacks and shoulder bags. Show many triangular hand straps, stainless-steel poles, overhead luggage racks, large windows, blue seats, ceiling lights, and small digital information screens. Through the windows, show generic city buildings, trees, and daylight. Preserve the crowded but orderly atmosphere and strong perspective toward the rear of the carriage. Use varied natural poses rather than repeating the same figure. Replace all real railway names, logos, advertisements, route names, and readable text with fictional symbols or abstract graphics. No speech bubbles, no animals, no copyrighted characters. Polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "train",
+          "ja": "電車",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "passenger",
+          "ja": "乗客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "seat",
+          "ja": "座席",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "strap",
+          "ja": "つり革",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pole",
+          "ja": "ポール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "aisle",
+          "ja": "通路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混んでいる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a crowded train",
+          "ja": "混雑した電車",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "many passengers",
+          "ja": "たくさんの乗客",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "look at a smartphone",
+          "ja": "スマートフォンを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit on a blue seat",
+          "ja": "青い座席に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand in the aisle",
+          "ja": "通路に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a bag",
+          "ja": "バッグを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "straps above the passengers",
+          "ja": "乗客の上のつり革",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "buildings through the window",
+          "ja": "窓から見える建物",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There are many people on the train.",
+          "grammar": "There are",
+          "ja": "電車にはたくさんの人がいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Some passengers are sitting.",
+          "grammar": "現在進行形",
+          "ja": "何人かの乗客は座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some passengers are standing.",
+          "grammar": "現在進行形",
+          "ja": "何人かの乗客は立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many people are looking at their phones.",
+          "grammar": "現在進行形",
+          "ja": "多くの人がスマートフォンを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are blue seats on both sides.",
+          "grammar": "There are",
+          "ja": "両側に青い座席があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many straps above the passengers.",
+          "grammar": "There are",
+          "ja": "乗客の上にはたくさんのつり革があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several passengers are carrying bags.",
+          "grammar": "現在進行形",
+          "ja": "何人かの乗客はバッグを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The train looks very crowded.",
+          "grammar": "look＋形容詞",
+          "ja": "電車はとても混んでいるように見えます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "commuter",
+          "ja": "通勤・通学客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "carriage",
+          "ja": "車両",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "aisle",
+          "ja": "通路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "hand strap",
+          "ja": "つり革",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "luggage rack",
+          "ja": "荷物棚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scroll",
+          "ja": "スクロールする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "commute",
+          "ja": "通勤・通学する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ・つかむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "busy",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混み合った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "quiet",
+          "ja": "静かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "digital",
+          "ja": "デジタルの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "absorbed",
+          "ja": "夢中になった",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a crowded commuter train",
+          "ja": "混雑した通勤電車",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "passengers sitting on both sides",
+          "ja": "両側に座っている乗客",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "people standing in the aisle",
+          "ja": "通路に立っている人々",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "be absorbed in a smartphone",
+          "ja": "スマートフォンに夢中になる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a shoulder bag",
+          "ja": "ショルダーバッグを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand near a pole",
+          "ja": "ポールの近くに立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "blue bench seats",
+          "ja": "青いロングシート",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "travel through the city",
+          "ja": "街の中を移動する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The carriage is crowded with commuters of different ages.",
+          "grammar": "be crowded with",
+          "ja": "車内はさまざまな年齢の通勤・通学客で混雑しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Some passengers are sitting while others are standing in the aisle.",
+          "grammar": "while",
+          "ja": "座っている乗客もいれば、通路に立っている乗客もいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Most of the passengers are looking at their smartphones.",
+          "grammar": "most of",
+          "ja": "乗客の多くがスマートフォンを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A businessman on the left is using his phone with a black bag on his lap.",
+          "grammar": "with＋名詞",
+          "ja": "左側の会社員は黒いバッグを膝に置いてスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A young man in a blue hoodie is sitting near the camera on the right.",
+          "grammar": "現在進行形",
+          "ja": "青いパーカーを着た若者が右側の手前に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several standing passengers are carrying backpacks or shoulder bags.",
+          "grammar": "現在進行形",
+          "ja": "立っている何人かの乗客はリュックやショルダーバッグを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Rows of hand straps hang above the crowded aisle.",
+          "grammar": "現在形",
+          "ja": "混雑した通路の上にたくさんのつり革が並んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that smartphones are an important part of modern commuting.",
+          "grammar": "suggest that",
+          "ja": "この場面から、スマートフォンが現代の通勤・通学の重要な一部であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "commuter carriage",
+          "ja": "通勤車両",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "passenger density",
+          "ja": "乗客密度",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "public transportation",
+          "ja": "公共交通機関",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "digital device",
+          "ja": "デジタル端末",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "daily routine",
+          "ja": "日課",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "concentrate",
+          "ja": "集中する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "occupy",
+          "ja": "占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "並ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interact",
+          "ja": "関わる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reinforce",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "individual",
+          "ja": "個々の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "digitally connected",
+          "ja": "デジタルでつながった",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "orderly",
+          "ja": "整然とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "ubiquitous",
+          "ja": "至るところに見られる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a densely occupied commuter carriage",
+          "ja": "乗客で密集した通勤車両",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "be surrounded by other passengers",
+          "ja": "他の乗客に囲まれる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "focus individually on digital devices",
+          "ja": "個々にデジタル端末へ集中する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "occupy both seats and aisle space",
+          "ja": "座席と通路の両方を占める",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "form part of a daily commuting routine",
+          "ja": "日々の通勤・通学習慣の一部をなす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "remain quiet despite the crowd",
+          "ja": "混雑していても静かに過ごす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "demonstrate widespread smartphone use",
+          "ja": "スマートフォンの広範な利用を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "create strong linear perspective",
+          "ja": "強い遠近感を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "reflect contemporary urban life",
+          "ja": "現代の都市生活を反映する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image portrays a densely occupied commuter carriage in which passengers of different ages share a relatively confined public space.",
+          "grammar": "関係詞in which",
+          "ja": "この画像は、さまざまな年齢の乗客が比較的限られた公共空間を共有する混雑した通勤車両を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Although the carriage is crowded, most passengers appear quiet and focused on their own digital devices.",
+          "grammar": "although / appear＋形容詞",
+          "ja": "車内は混雑していますが、多くの乗客は静かに自分のデジタル端末へ集中しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Passengers occupy both the blue bench seats and the central aisle, creating a clear contrast between seated and standing commuters.",
+          "grammar": "both A and B / 現在分詞",
+          "ja": "乗客は青いロングシートと中央通路の両方を占め、座っている人と立っている人との明確な対比を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The repeated sight of smartphones throughout the carriage emphasizes how ubiquitous mobile technology has become in everyday urban life.",
+          "grammar": "how節 / 現在完了形",
+          "ja": "車内の至るところでスマートフォンが見られることは、携帯技術が日常の都市生活でいかに広く普及したかを強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Business bags, backpacks, shoulder bags, suits, and casual clothing suggest that the passengers are traveling for a variety of everyday purposes.",
+          "grammar": "suggest that",
+          "ja": "ビジネスバッグ、リュック、ショルダーバッグ、スーツ、普段着などから、乗客がさまざまな日常目的で移動していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Rows of hand straps, poles, seats, and windows create a strong linear perspective that leads the viewer's eye toward the far end of the carriage.",
+          "grammar": "関係代名詞that",
+          "ja": "つり革、ポール、座席、窓の繰り返しが強い遠近感を生み出し、見る人の視線を車両の奥へ導いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The passengers are physically close to one another, yet most of them appear socially separate because their attention is directed toward individual screens.",
+          "grammar": "yet / because",
+          "ja": "乗客同士は物理的には近くにいますが、多くの人が個々の画面に注意を向けているため、社会的には別々に過ごしているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The combination of crowded seating, standing passengers, personal bags, and digital devices reflects a recognizable form of contemporary urban commuting.",
+          "grammar": "現在形",
+          "ja": "混雑した座席、立っている乗客、個人のバッグ、デジタル端末の組み合わせは、現代的な都市通勤の典型的な姿を反映しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene is particularly useful for practicing how to describe crowd density, repeated actions, foreground and background, and the relationship between individual behavior and public space.",
+          "grammar": "how節 / between A and B",
+          "ja": "全体として、この場面は人の密度、繰り返される動作、前景と背景、そして個人の行動と公共空間の関係を描写する練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "left_front_beige_woman": {
+      "x": 7,
+      "y": 65
+    },
+    "left_businessman": {
+      "x": 21,
+      "y": 60
+    },
+    "left_green_woman": {
+      "x": 31,
+      "y": 59
+    },
+    "left_black_business_bag": {
+      "x": 28,
+      "y": 76
+    },
+    "left_brown_handbag": {
+      "x": 14,
+      "y": 83
+    },
+    "left_pink_phone": {
+      "x": 34,
+      "y": 58
+    },
+    "right_blue_hoodie_man": {
+      "x": 89,
+      "y": 63
+    },
+    "right_yellow_sweater_woman": {
+      "x": 69,
+      "y": 61
+    },
+    "right_gray_haired_man": {
+      "x": 58,
+      "y": 52
+    },
+    "right_crossbody_bag": {
+      "x": 91,
+      "y": 72
+    },
+    "right_beige_handbag": {
+      "x": 66,
+      "y": 72
+    },
+    "standing_dark_clothes_man": {
+      "x": 36,
+      "y": 36
+    },
+    "standing_blue_top_woman": {
+      "x": 47,
+      "y": 38
+    },
+    "standing_green_hoodie_man": {
+      "x": 81,
+      "y": 33
+    },
+    "standing_backpack": {
+      "x": 39,
+      "y": 43
+    },
+    "tan_shoulder_bag": {
+      "x": 48,
+      "y": 48
+    },
+    "center_phone_users": {
+      "x": 55,
+      "y": 34
+    },
+    "background_passengers_left": {
+      "x": 38,
+      "y": 27
+    },
+    "background_passengers_center": {
+      "x": 53,
+      "y": 27
+    },
+    "background_passengers_right": {
+      "x": 67,
+      "y": 29
+    },
+    "left_blue_bench": {
+      "x": 25,
+      "y": 82
+    },
+    "right_blue_bench": {
+      "x": 80,
+      "y": 81
+    },
+    "central_aisle": {
+      "x": 51,
+      "y": 72
+    },
+    "aisle_vanishing_point": {
+      "x": 52,
+      "y": 23
+    },
+    "left_window": {
+      "x": 12,
+      "y": 27
+    },
+    "right_window": {
+      "x": 90,
+      "y": 28
+    },
+    "city_buildings_outside": {
+      "x": 94,
+      "y": 22
+    },
+    "trees_outside": {
+      "x": 95,
+      "y": 36
+    },
+    "left_luggage_rack": {
+      "x": 17,
+      "y": 7
+    },
+    "right_luggage_rack": {
+      "x": 84,
+      "y": 7
+    },
+    "hand_straps_left": {
+      "x": 37,
+      "y": 8
+    },
+    "hand_straps_center": {
+      "x": 53,
+      "y": 8
+    },
+    "hand_straps_right": {
+      "x": 68,
+      "y": 8
+    },
+    "left_vertical_pole": {
+      "x": 25,
+      "y": 37
+    },
+    "center_vertical_pole": {
+      "x": 63,
+      "y": 37
+    },
+    "right_vertical_pole": {
+      "x": 77,
+      "y": 36
+    },
+    "left_digital_display": {
+      "x": 31,
+      "y": 8
+    },
+    "center_digital_display": {
+      "x": 55,
+      "y": 9
+    },
+    "right_digital_display": {
+      "x": 71,
+      "y": 8
+    },
+    "ceiling_lights": {
+      "x": 51,
+      "y": 4
+    },
+    "train_ceiling": {
+      "x": 51,
+      "y": 3
+    }
+  }
+}

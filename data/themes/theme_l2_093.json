@@ -1,0 +1,709 @@
+{
+  "id": "theme_l2_093",
+  "imageSrc": "assets/images/l2_093.webp",
+  "titleEn": "Examining Geological Strata at a Coastal Outcrop",
+  "titleJa": "海岸の露頭で地層を調査する地質学者たち",
+  "description": "海岸沿いの岩壁で、5人の地質調査員が露出した地層を観察している場面である。岩壁には茶色、灰色、黒色など異なる色の岩石層が水平に何層も重なっており、長い時間をかけて形成された地質構造がはっきり確認できる。中央の男性と女性は岩壁を指さしながら特定の地層について確認している。左側の女性、手前でしゃがんでいる女性、右側の男性はノートやクリップボードを持ち、観察結果を記録している。全員が安全用ヘルメットを着用し、一部はバックパックも背負っている。左奥には海と切り立った海岸の崖が見える。地層、堆積、侵食、岩石の年代、地質調査、露頭から過去の環境を読み取ることについて英語で描写する練習に適した場面である。",
+  "category": "science",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of five geologists examining layered rock strata on a coastal cliff. Two point at different sedimentary layers while three others take notes. Everyone wears safety helmets and outdoor clothing. Show distinct brown, gray, and black rock layers, notebooks, backpacks, rocky shore, sea, cliffs, and blue sky. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "rock",
+          "ja": "岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cliff",
+          "ja": "崖",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "people",
+          "ja": "人々",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "notebook",
+          "ja": "ノート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュックサック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sea",
+          "ja": "海",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "layer",
+          "ja": "層",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stone",
+          "ja": "石",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "study",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "different",
+          "ja": "異なる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the rocks",
+          "ja": "岩を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at a layer",
+          "ja": "地層を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write in a notebook",
+          "ja": "ノートに書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "different rock layers",
+          "ja": "異なる岩石の層",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a rocky cliff",
+          "ja": "岩の崖",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "near the sea",
+          "ja": "海の近くで",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "study the cliff",
+          "ja": "崖を調査する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five people are studying a rock cliff.",
+          "grammar": "現在進行形",
+          "ja": "5人が岩の崖を調査しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are wearing safety helmets.",
+          "grammar": "現在進行形",
+          "ja": "彼らは安全用ヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two people are pointing at the rocks.",
+          "grammar": "現在進行形",
+          "ja": "2人が岩を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Three people are holding notebooks.",
+          "grammar": "現在進行形",
+          "ja": "3人がノートを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cliff has many different layers.",
+          "grammar": "have",
+          "ja": "その崖には多くの異なる層があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some layers are dark and others are light.",
+          "grammar": "some ... others ...",
+          "ja": "暗い色の層もあれば明るい色の層もあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sea is beside the rocky shore.",
+          "grammar": "be動詞＋場所",
+          "ja": "海が岩場のそばにあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They may be learning about the rocks.",
+          "grammar": "may be＋現在分詞",
+          "ja": "彼らは岩について調べているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "geologist",
+          "ja": "地質学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "stratum",
+          "ja": "地層",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sediment",
+          "ja": "堆積物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "formation",
+          "ja": "地層・形成物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cliff",
+          "ja": "崖",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sample",
+          "ja": "標本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "layered",
+          "ja": "層状の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sedimentary",
+          "ja": "堆積性の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rocky",
+          "ja": "岩の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "horizontal",
+          "ja": "水平な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "ancient",
+          "ja": "古代の・非常に古い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "examine rock layers",
+          "ja": "岩石層を調査する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe the strata",
+          "ja": "地層を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record their findings",
+          "ja": "調査結果を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare different layers",
+          "ja": "異なる地層を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a sedimentary cliff",
+          "ja": "堆積岩の崖",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "layers of sediment",
+          "ja": "堆積物の層",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "conduct fieldwork",
+          "ja": "野外調査を行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study geological history",
+          "ja": "地質の歴史を研究する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five geologists are examining exposed rock layers along a coastal cliff.",
+          "grammar": "現在進行形",
+          "ja": "5人の地質学者が海岸の崖に露出した岩石層を調査しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two of them are pointing at particular layers in the rock.",
+          "grammar": "現在進行形",
+          "ja": "そのうち2人が岩の特定の層を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other researchers are recording their observations in notebooks.",
+          "grammar": "現在進行形",
+          "ja": "他の調査員たちは観察結果をノートに記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cliff contains several layers of different colors and thicknesses.",
+          "grammar": "現在形 / of",
+          "ja": "その崖には色や厚さの異なる複数の層があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The layers may have formed from sediment deposited over a long period of time.",
+          "grammar": "may have＋過去分詞 / 過去分詞",
+          "ja": "これらの層は長い時間をかけて堆積した物質から形成されたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The researchers are wearing helmets because loose rocks could fall from the cliff.",
+          "grammar": "because / could",
+          "ja": "崖から岩が落ちる可能性があるため、調査員たちはヘルメットを着用しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By comparing the layers, they may learn how the environment changed in the past.",
+          "grammar": "By＋動名詞 / how節",
+          "ja": "地層を比較することで、過去に環境がどのように変化したかを知ることができるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how geologists use exposed rock formations to study Earth's history.",
+          "grammar": "how節 / use A to",
+          "ja": "この場面は、地質学者が露出した岩層を利用して地球の歴史を研究する方法を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "stratigraphy",
+          "ja": "層序学",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "strata",
+          "ja": "地層",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "outcrop",
+          "ja": "露頭",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sedimentation",
+          "ja": "堆積作用",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "erosion",
+          "ja": "侵食",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "chronology",
+          "ja": "年代順・年代学",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "correlate",
+          "ja": "相互関係を調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accumulate",
+          "ja": "蓄積する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "erode",
+          "ja": "侵食する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stratified",
+          "ja": "層状になった",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sedimentary",
+          "ja": "堆積岩の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "geological",
+          "ja": "地質学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "successive",
+          "ja": "連続する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "exposed",
+          "ja": "露出した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "examine geological strata",
+          "ja": "地層を調査する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze a coastal outcrop",
+          "ja": "海岸の露頭を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study sedimentary strata",
+          "ja": "堆積地層を研究する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "establish geological chronology",
+          "ja": "地質学的年代順を明らかにする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "correlate successive layers",
+          "ja": "連続する地層を対比する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "undergo sedimentation",
+          "ja": "堆積作用を受ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reconstruct ancient environments",
+          "ja": "過去の環境を復元する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "interpret the stratigraphic record",
+          "ja": "地層記録を解釈する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a stratified rock formation",
+          "ja": "層状の岩石層",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The researchers are examining a remarkably well-exposed sequence of geological strata along the coastal outcrop.",
+          "grammar": "現在進行形 / 過去分詞",
+          "ja": "調査員たちは海岸の露頭に非常にはっきり露出した一連の地層を調査しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The alternating bands of rock indicate successive episodes of sedimentation that occurred over an immense span of time.",
+          "grammar": "indicate / 関係代名詞that",
+          "ja": "交互に重なる岩石層は、非常に長い時間にわたって起きた連続的な堆積作用を示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By identifying variations in color, composition, and thickness, the geologists can distinguish one stratum from another.",
+          "grammar": "By＋動名詞 / distinguish A from B",
+          "ja": "色、組成、厚さの違いを確認することで、地質学者たちは各地層を区別することができます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Stratigraphy enables researchers to establish the relative chronology of rock layers without necessarily knowing their absolute ages.",
+          "grammar": "enable O to / without＋動名詞",
+          "ja": "層序学によって、絶対年代を必ずしも知らなくても岩石層の相対的な年代順を明らかにすることができます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The darker bands may represent periods during which different sediments accumulated under changing environmental conditions.",
+          "grammar": "may / during which",
+          "ja": "より暗い地層は、環境条件が変化する中で異なる堆積物が蓄積した時期を表している可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Because coastal erosion has exposed the rock face, the researchers can inspect strata that would otherwise remain concealed underground.",
+          "grammar": "Because / 現在完了形 / 関係代名詞that / would",
+          "ja": "海岸侵食によって岩壁が露出しているため、通常なら地下に隠れている地層を調査することができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Careful correlation of successive strata can help geologists reconstruct ancient environments and major geological events.",
+          "grammar": "can help＋O＋動詞",
+          "ja": "連続する地層を慎重に対比することで、地質学者は過去の環境や主要な地質現象を復元することができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their field notes provide a systematic record from which the stratigraphic sequence can later be analyzed in greater detail.",
+          "grammar": "from which / 受動態",
+          "ja": "彼らの野外調査ノートは、後で地層の連続をさらに詳しく分析するための体系的な記録となります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing stratigraphy, geological strata, sedimentation, coastal outcrops, erosion, chronology, fieldwork, and the reconstruction of Earth's history.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は層序学、地層、堆積作用、海岸露頭、侵食、年代順、野外調査、地球史の復元を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "geologist": {
+      "x": 28,
+      "y": 43
+    },
+    "woman": {
+      "x": 39,
+      "y": 55
+    },
+    "helmet": {
+      "x": 36,
+      "y": 42
+    },
+    "strata": {
+      "x": 69,
+      "y": 43
+    },
+    "layer": {
+      "x": 67,
+      "y": 37
+    },
+    "outcrop": {
+      "x": 76,
+      "y": 48
+    },
+    "cliff": {
+      "x": 74,
+      "y": 23
+    },
+    "sediment": {
+      "x": 64,
+      "y": 51
+    },
+    "notebook": {
+      "x": 16,
+      "y": 60
+    },
+    "backpack": {
+      "x": 88,
+      "y": 74
+    },
+    "rocks": {
+      "x": 48,
+      "y": 78
+    },
+    "shore": {
+      "x": 11,
+      "y": 73
+    },
+    "sea": {
+      "x": 2,
+      "y": 45
+    },
+    "sky": {
+      "x": 12,
+      "y": 8
+    },
+    "pointing": {
+      "x": 45,
+      "y": 43
+    },
+    "fieldwork": {
+      "x": 34,
+      "y": 67
+    },
+    "erosion": {
+      "x": 18,
+      "y": 36
+    },
+    "formation": {
+      "x": 72,
+      "y": 31
+    },
+    "chronology": {
+      "x": 62,
+      "y": 43
+    }
+  }
+}

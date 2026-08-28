@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_088",
+  "imageSrc": "assets/images/l2_088.webp",
+  "titleEn": "Stalking a Hapless Quarry",
+  "titleJa": "不運な獲物を狙うライオン",
+  "description": "乾燥したサバンナの水場で、ライオンが草むらに身を潜めながら1頭のアンテロープを狙っている場面である。左手前には大きな雄ライオンが長い草の中に低い姿勢で伏せ、右奥の獲物を注意深く見つめている。アンテロープは水場の近くを歩きながら地面に顔を向けており、背後に潜む捕食者にはまだ気づいていないように見える。中央には小さな水場があり、周囲には乾いた草、岩、低木、アカシアのような木々が広がっている。遠景には岩山も見え、典型的な乾燥地帯の自然環境が表現されている。捕食者と獲物、待ち伏せ、危険への無自覚、食物連鎖、野生動物の生存競争を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of an African savanna. A male lion hides low in tall dry grass in the left foreground, watching an unaware antelope walking beside a small waterhole on the right. Show dry golden grass, scattered rocks, shrubs, acacia trees, distant rocky hills, and a bright blue sky. Emphasize predator and prey behavior, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "lion",
+          "ja": "ライオン",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "antelope",
+          "ja": "アンテロープ",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "grass",
+          "ja": "草",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rock",
+          "ja": "岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "animal",
+          "ja": "動物",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "pond",
+          "ja": "水場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "savanna",
+          "ja": "サバンナ",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "hide",
+          "ja": "隠れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "watch",
+          "ja": "見つめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hunt",
+          "ja": "狩る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dry",
+          "ja": "乾いた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "hide in the grass",
+          "ja": "草の中に隠れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the antelope",
+          "ja": "アンテロープを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "walk by the water",
+          "ja": "水辺を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a male lion",
+          "ja": "雄のライオン",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "a small waterhole",
+          "ja": "小さな水場",
+          "type": "place",
+          "points": 20
+        },
+        {
+          "text": "tall dry grass",
+          "ja": "背の高い乾いた草",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "hunt another animal",
+          "ja": "別の動物を狩る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "on the savanna",
+          "ja": "サバンナで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A lion is hiding in the grass.",
+          "grammar": "現在進行形",
+          "ja": "ライオンが草の中に隠れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The lion is watching an antelope.",
+          "grammar": "現在進行形",
+          "ja": "ライオンはアンテロープを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The antelope is walking near the water.",
+          "grammar": "現在進行形",
+          "ja": "アンテロープは水の近くを歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a small waterhole.",
+          "grammar": "There is",
+          "ja": "小さな水場があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is dry grass around the animals.",
+          "grammar": "There is",
+          "ja": "動物たちの周りには乾いた草があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The lion is very close to the ground.",
+          "grammar": "be動詞＋場所",
+          "ja": "ライオンは地面にとても近い姿勢です。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The antelope does not see the lion.",
+          "grammar": "一般動詞の否定",
+          "ja": "アンテロープはライオンに気づいていません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The lion may be ready to hunt.",
+          "grammar": "may be",
+          "ja": "ライオンは狩りをする準備をしているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "predator",
+          "ja": "捕食者",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "prey",
+          "ja": "獲物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "waterhole",
+          "ja": "水場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "habitat",
+          "ja": "生息地",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "danger",
+          "ja": "危険",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "distance",
+          "ja": "距離",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stalk",
+          "ja": "忍び寄る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "approach",
+          "ja": "近づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "attack",
+          "ja": "襲う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "unaware",
+          "ja": "気づいていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "hidden",
+          "ja": "隠れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cautious",
+          "ja": "慎重な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "wild",
+          "ja": "野生の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vulnerable",
+          "ja": "危険にさらされやすい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "stalk its prey",
+          "ja": "獲物に忍び寄る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hide in tall grass",
+          "ja": "背の高い草に隠れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain unaware of danger",
+          "ja": "危険に気づかないままでいる",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "approach the waterhole",
+          "ja": "水場に近づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch from a distance",
+          "ja": "離れた場所から見つめる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare to attack",
+          "ja": "襲う準備をする",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "a natural predator",
+          "ja": "自然界の捕食者",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "survive in the wild",
+          "ja": "野生で生き延びる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A lion is hiding in tall grass while watching an antelope near a waterhole.",
+          "grammar": "現在進行形 / while＋現在分詞",
+          "ja": "ライオンが背の高い草に隠れながら、水場の近くにいるアンテロープを見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The lion appears to be stalking its prey.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "ライオンは獲物に忍び寄っているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The antelope seems unaware that a predator is nearby.",
+          "grammar": "seem＋形容詞 / that節",
+          "ja": "アンテロープは捕食者が近くにいることに気づいていないようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The lion is keeping its body low so that it can remain hidden.",
+          "grammar": "so that / can",
+          "ja": "ライオンは隠れたままでいられるよう、体を低くしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The antelope is walking slowly beside the waterhole.",
+          "grammar": "現在進行形",
+          "ja": "アンテロープは水場のそばをゆっくり歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dry grass provides the lion with natural cover.",
+          "grammar": "provide A with B",
+          "ja": "乾いた草がライオンに自然な隠れ場所を与えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If the antelope notices the lion, it may try to escape.",
+          "grammar": "If / may",
+          "ja": "もしアンテロープがライオンに気づけば、逃げようとするかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates the relationship between predators and prey in the wild.",
+          "grammar": "between A and B",
+          "ja": "この場面は野生における捕食者と獲物の関係を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "quarry",
+          "ja": "狩りの獲物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "predation",
+          "ja": "捕食",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ambush",
+          "ja": "待ち伏せ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "camouflage",
+          "ja": "擬装・カモフラージュ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vigilance",
+          "ja": "警戒",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "survival",
+          "ja": "生存",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stalk",
+          "ja": "獲物に忍び寄る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "lurk",
+          "ja": "潜む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pounce",
+          "ja": "飛びかかる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evade",
+          "ja": "逃れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hapless",
+          "ja": "不運な・不幸な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unsuspecting",
+          "ja": "危険を疑っていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vulnerable",
+          "ja": "無防備な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concealed",
+          "ja": "隠された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "predatory",
+          "ja": "捕食性の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a hapless quarry",
+          "ja": "不運な獲物",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stalk an unsuspecting quarry",
+          "ja": "無警戒な獲物に忍び寄る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "lurk in tall grass",
+          "ja": "背の高い草に潜む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare an ambush",
+          "ja": "待ち伏せを仕掛ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain oblivious to danger",
+          "ja": "危険に全く気づかない",
+          "type": "inference",
+          "points": 20
+        },
+        {
+          "text": "exploit natural camouflage",
+          "ja": "自然のカモフラージュを利用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evade a predator",
+          "ja": "捕食者から逃れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a struggle for survival",
+          "ja": "生存をかけた争い",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "predatory behavior",
+          "ja": "捕食行動",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The lion appears to be stalking a hapless quarry that remains completely unaware of the danger lurking nearby.",
+          "grammar": "appear to be＋現在分詞 / 関係代名詞that / 現在分詞",
+          "ja": "ライオンは、近くに潜む危険に全く気づいていない不運な獲物に忍び寄っているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Concealed among the tall grass, the predator watches the antelope from a relatively short distance.",
+          "grammar": "過去分詞構文",
+          "ja": "背の高い草の中に身を隠し、捕食者は比較的近い距離からアンテロープを見つめています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The unsuspecting antelope appears preoccupied with the ground near the waterhole rather than the threat behind it.",
+          "grammar": "appear＋形容詞 / rather than",
+          "ja": "無警戒なアンテロープは背後の脅威ではなく、水場近くの地面に注意を向けているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By keeping its body low, the lion exploits the surrounding vegetation as natural camouflage.",
+          "grammar": "By＋動名詞 / as",
+          "ja": "体を低く保つことで、ライオンは周囲の植物を自然のカモフラージュとして利用しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The antelope's lack of vigilance makes it particularly vulnerable to a sudden ambush.",
+          "grammar": "make＋O＋C",
+          "ja": "アンテロープの警戒不足によって、突然の待ち伏せに特に弱い状態になっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Should the lion move within striking distance, it may attempt to pounce before its quarry has time to react.",
+          "grammar": "仮定法倒置 / may / before",
+          "ja": "もしライオンが攻撃可能な距離まで近づけば、獲物が反応する時間を得る前に飛びかかろうとする可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "For the hapless quarry, detecting the concealed predator in time could determine whether it escapes or becomes prey.",
+          "grammar": "動名詞主語 / whether A or B",
+          "ja": "不運な獲物にとって、隠れた捕食者を間に合うよう発見できるかどうかが、逃げ切れるか捕食されるかを左右する可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene vividly illustrates how predation depends on stealth, timing, camouflage, vigilance, and the ability to evade attack.",
+          "grammar": "how節 / 並列",
+          "ja": "この場面は、捕食が隠密性、タイミング、カモフラージュ、警戒、攻撃を回避する能力に左右されることを鮮明に示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing a hapless quarry, predatory behavior, stalking, ambush, vulnerability, vigilance, camouflage, and the struggle for survival.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は不運な獲物、捕食行動、忍び寄り、待ち伏せ、無防備さ、警戒、カモフラージュ、生存をかけた争いを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "lion": {
+      "x": 29,
+      "y": 59
+    },
+    "mane": {
+      "x": 29,
+      "y": 50
+    },
+    "antelope": {
+      "x": 70,
+      "y": 39
+    },
+    "horns": {
+      "x": 76,
+      "y": 34
+    },
+    "waterhole": {
+      "x": 77,
+      "y": 61
+    },
+    "grass": {
+      "x": 16,
+      "y": 67
+    },
+    "rocks": {
+      "x": 70,
+      "y": 56
+    },
+    "tree": {
+      "x": 89,
+      "y": 20
+    },
+    "shrub": {
+      "x": 51,
+      "y": 39
+    },
+    "savanna": {
+      "x": 66,
+      "y": 29
+    },
+    "hills": {
+      "x": 56,
+      "y": 25
+    },
+    "sky": {
+      "x": 57,
+      "y": 9
+    },
+    "clouds": {
+      "x": 54,
+      "y": 12
+    },
+    "quarry": {
+      "x": 70,
+      "y": 39
+    },
+    "predator": {
+      "x": 29,
+      "y": 59
+    },
+    "prey": {
+      "x": 70,
+      "y": 39
+    },
+    "camouflage": {
+      "x": 27,
+      "y": 66
+    },
+    "danger": {
+      "x": 49,
+      "y": 53
+    },
+    "shadow": {
+      "x": 31,
+      "y": 73
+    },
+    "ground": {
+      "x": 66,
+      "y": 72
+    }
+  }
+}

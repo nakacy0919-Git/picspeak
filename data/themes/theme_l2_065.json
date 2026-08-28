@@ -1,0 +1,697 @@
+{
+  "id": "theme_l2_065",
+  "imageSrc": "assets/images/l2_065.webp",
+  "titleEn": "Hikers in Danger from Falling Rocks",
+  "titleJa": "落石の危険に直面する登山者たち",
+  "description": "険しい山の細い登山道を3人の登山者が歩いている最中、右側の崖から突然大きな岩や小石が落下している場面である。手前の女性はオレンジ色のヘルメット、青緑色の上着、赤いバックパックを身につけ、落石に気づいて崖の上を見上げている。前方の2人はヘルメット、バックパック、トレッキングポールを使用しながら狭い道を進んでいる。右側には落石注意を示す三角形の警告標識があり、そのすぐ上の岩壁から複数の岩が落ちている。左側には深い谷と雪の残る高い山々が広がり、青空には白い雲が見える。登山中の危険、落石、警告標識、人物と自然環境の位置関係を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show three hikers on a narrow mountain trail beside a steep rocky cliff. A female hiker in the foreground wears an orange helmet, teal jacket, red backpack, and holds a trekking pole while looking upward in alarm. Two hikers continue ahead wearing helmets and backpacks. Large rocks and smaller stones are suddenly falling from the cliff above them with dust in the air. Place a triangular falling-rock warning sign beside the trail. Show a deep valley, dramatic snow-capped mountains, blue sky, and clouds. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "hiker",
+          "ja": "登山者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "rock",
+          "ja": "岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "標識",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "trail",
+          "ja": "登山道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "cliff",
+          "ja": "崖",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pole",
+          "ja": "ストック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "snow",
+          "ja": "雪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "落ちる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "climb",
+          "ja": "登る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "walk on a mountain trail",
+          "ja": "山道を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a backpack",
+          "ja": "リュックを背負う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rocks falling down",
+          "ja": "落下している岩",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look up at the rocks",
+          "ja": "岩を見上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a warning sign",
+          "ja": "警告標識",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a narrow trail",
+          "ja": "狭い登山道",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "snowy mountains",
+          "ja": "雪のある山々",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three hikers are walking on a mountain trail.",
+          "grammar": "現在進行形",
+          "ja": "3人の登山者が山道を歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is wearing an orange helmet.",
+          "grammar": "現在進行形",
+          "ja": "女性はオレンジ色のヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking up at the cliff.",
+          "grammar": "現在進行形",
+          "ja": "彼女は崖を見上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several rocks are falling from the cliff.",
+          "grammar": "現在進行形",
+          "ja": "いくつかの岩が崖から落ちています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a warning sign beside the trail.",
+          "grammar": "There is",
+          "ja": "登山道のそばに警告標識があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The hikers are carrying backpacks.",
+          "grammar": "現在進行形",
+          "ja": "登山者たちはリュックを背負っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The trail is very narrow.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "登山道はとても狭いです。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "There are snowy mountains in the background.",
+          "grammar": "There are",
+          "ja": "背景には雪の残る山々があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "rockfall",
+          "ja": "落石",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "warning",
+          "ja": "警告",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cliff",
+          "ja": "崖",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "valley",
+          "ja": "谷",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "danger",
+          "ja": "危険",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "avoid",
+          "ja": "避ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "continue",
+          "ja": "進み続ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "steep",
+          "ja": "急な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rocky",
+          "ja": "岩だらけの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "narrow",
+          "ja": "狭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sudden",
+          "ja": "突然の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unsafe",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "notice falling rocks",
+          "ja": "落石に気づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face a sudden danger",
+          "ja": "突然の危険に直面する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "walk along a narrow trail",
+          "ja": "狭い道を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear protective helmets",
+          "ja": "安全用ヘルメットを着用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fall from a steep cliff",
+          "ja": "急な崖から落ちる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow a warning sign",
+          "ja": "警告標識に注意する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use trekking poles",
+          "ja": "トレッキングポールを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "avoid the falling rocks",
+          "ja": "落石を避ける",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three hikers are walking along a narrow trail beside a steep cliff.",
+          "grammar": "現在進行形",
+          "ja": "3人の登山者が急な崖の横の狭い道を歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several large rocks are suddenly falling from the cliff above them.",
+          "grammar": "現在進行形",
+          "ja": "大きな岩がいくつも突然、彼らの上の崖から落ちています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman in front has noticed the rockfall and is looking upward.",
+          "grammar": "現在完了形 / 現在進行形",
+          "ja": "手前の女性は落石に気づき、上を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The hikers are wearing helmets to protect their heads.",
+          "grammar": "to不定詞",
+          "ja": "登山者たちは頭を守るためにヘルメットを着用しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A warning sign shows that falling rocks are a danger in this area.",
+          "grammar": "show that",
+          "ja": "警告標識は、この場所では落石が危険であることを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two hikers ahead are still moving along the trail.",
+          "grammar": "現在進行形",
+          "ja": "前方の2人の登山者はまだ道を進んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman may need to stop or move away from the cliff.",
+          "grammar": "may need to",
+          "ja": "女性は立ち止まるか、崖から離れる必要があるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The falling rocks make the mountain path extremely dangerous.",
+          "grammar": "make＋O＋C",
+          "ja": "落石によって山道は非常に危険な状態になっています。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "jeopardy",
+          "ja": "危険",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "rockfall",
+          "ja": "落石",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precipice",
+          "ja": "絶壁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "debris",
+          "ja": "落下物・岩くず",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hazard",
+          "ja": "危険要因",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evade",
+          "ja": "回避する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dislodge",
+          "ja": "外れて落ちる・外す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "plummet",
+          "ja": "急落する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "imperil",
+          "ja": "危険にさらす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "anticipate",
+          "ja": "予測する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "latent",
+          "ja": "潜在的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "precarious",
+          "ja": "危険で不安定な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "treacherous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "imminent",
+          "ja": "差し迫った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unstable",
+          "ja": "不安定な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a latent jeopardy",
+          "ja": "潜在的な危険",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "face imminent rockfall",
+          "ja": "差し迫った落石に直面する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "rocks dislodge from the cliff",
+          "ja": "岩が崖から外れて落ちる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "debris plummet toward the trail",
+          "ja": "落下物が登山道へ急落する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "imperil passing hikers",
+          "ja": "通行する登山者を危険にさらす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evade falling debris",
+          "ja": "落下する岩くずを回避する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "traverse a precarious trail",
+          "ja": "危険な登山道を進む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "anticipate geological hazards",
+          "ja": "地質的な危険を予測する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "heed a hazard warning",
+          "ja": "危険警告に注意を払う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The warning sign indicates a latent jeopardy that has suddenly become an immediate threat to the hikers.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "警告標識が示していた潜在的な危険が、突然登山者たちへの直接的な脅威となっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Large rocks appear to have been dislodged from the unstable cliff and are plummeting toward the narrow trail.",
+          "grammar": "appear to have been＋過去分詞 / 現在進行形",
+          "ja": "大きな岩が不安定な崖から外れ、狭い登山道へ急落しているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The foreground hiker has noticed the falling debris and is looking upward with visible alarm.",
+          "grammar": "現在完了形 / with＋名詞",
+          "ja": "手前の登山者は落下する岩に気づき、明らかに驚いた様子で上を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Although the hikers are wearing protective helmets, the size of the falling rocks could still imperil them severely.",
+          "grammar": "Although / could",
+          "ja": "登山者たちは保護用ヘルメットを着用していますが、落下する岩の大きさを考えると依然として深刻な危険があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The triangular sign suggests that rockfall is a known geological hazard along this section of the route.",
+          "grammar": "suggest that",
+          "ja": "三角形の標識から、この区間では落石が既知の地質的危険であることがうかがえます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The narrow path and steep precipice leave the hikers with relatively few options for evading the falling debris.",
+          "grammar": "leave O with",
+          "ja": "狭い道と急な絶壁のため、登山者が落下物を回避するための選択肢は比較的限られています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their helmets, backpacks, and trekking poles indicate that they are equipped for demanding mountain terrain, but not necessarily for a major rockfall.",
+          "grammar": "indicate that / but",
+          "ja": "ヘルメット、バックパック、トレッキングポールから険しい山岳地帯への装備は整っていますが、大規模な落石に十分対応できるとは限りません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene demonstrates how a seemingly stable landscape can conceal hazards that emerge without much warning.",
+          "grammar": "how節 / 関係代名詞that",
+          "ja": "この場面は、一見安定している景観にも、ほとんど前触れなく現れる危険が潜んでいることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing latent jeopardy, imminent danger, geological hazards, protective equipment, and rapid human reactions.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は潜在的な危険、差し迫った危険、地質災害、安全装備、突然の危険に対する人間の反応を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 32,
+      "y": 58
+    },
+    "hiker": {
+      "x": 46,
+      "y": 58
+    },
+    "leader": {
+      "x": 54,
+      "y": 52
+    },
+    "helmet": {
+      "x": 32,
+      "y": 47
+    },
+    "backpack": {
+      "x": 25,
+      "y": 70
+    },
+    "pole": {
+      "x": 43,
+      "y": 77
+    },
+    "trail": {
+      "x": 52,
+      "y": 72
+    },
+    "cliff": {
+      "x": 77,
+      "y": 28
+    },
+    "rocks": {
+      "x": 49,
+      "y": 18
+    },
+    "dust": {
+      "x": 54,
+      "y": 18
+    },
+    "sign": {
+      "x": 81,
+      "y": 45
+    },
+    "valley": {
+      "x": 15,
+      "y": 63
+    },
+    "mountains": {
+      "x": 18,
+      "y": 38
+    },
+    "snow": {
+      "x": 20,
+      "y": 36
+    },
+    "sky": {
+      "x": 31,
+      "y": 11
+    },
+    "clouds": {
+      "x": 22,
+      "y": 19
+    }
+  }
+}

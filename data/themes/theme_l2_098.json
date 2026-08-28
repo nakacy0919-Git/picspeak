@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_098",
+  "imageSrc": "assets/images/l2_098.webp",
+  "titleEn": "Elaborating on a Nuanced Distinction",
+  "titleJa": "微妙な違いを詳しく説明する講師",
+  "description": "明るい教室で、1人の講師が7人の受講者に向けて、大きなホワイトボードを使いながら複数の概念の微妙な違いを説明している場面である。左側には多数の点と右上がりの直線からなる散布図が描かれ、2つの要素の間に一定の関係があることを示している。右側には青と緑の2つの円があり、それらを結ぶ直線の矢印と、上方を回り込む破線の矢印が描かれている。講師は図に手を向けながら、似ているものの完全には同じではない2種類の関係や考え方を比較しているように見える。受講者たちは前方を向いて説明を聞き、机の上にはノートパソコン、ノート、ボトルなどが置かれている。単純な違いではなく、細かな条件や意味の差まで詳しく説明することを表す「elaborate on a nuanced distinction」を中心に、比較、相関、関係性、微妙な差異、詳細な説明について英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a male lecturer explaining diagrams to seven adult students in a bright classroom. Show an upward scatter plot on the left and two colored circles connected by direct and curved arrows on the right. Students listen from desks with laptops and notebooks. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "teacher",
+          "ja": "先生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "classroom",
+          "ja": "教室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "board",
+          "ja": "ボード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "graph",
+          "ja": "グラフ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "circle",
+          "ja": "円",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "arrow",
+          "ja": "矢印",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "laptop",
+          "ja": "ノートパソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "線",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指し示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "different",
+          "ja": "異なる",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "explain a graph",
+          "ja": "グラフを説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to the teacher",
+          "ja": "先生の話を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the board",
+          "ja": "ボードを指し示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare two ideas",
+          "ja": "2つの考えを比べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "two colored circles",
+          "ja": "2つの色のついた円",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "an upward line",
+          "ja": "右上がりの線",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "sit in a classroom",
+          "ja": "教室に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the board",
+          "ja": "ボードを見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A teacher is explaining something to seven students.",
+          "grammar": "現在進行形",
+          "ja": "先生が7人の生徒に何かを説明しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The students are sitting in a classroom.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちは教室に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a large graph on the board.",
+          "grammar": "There is",
+          "ja": "ボードには大きなグラフがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The graph has many blue dots.",
+          "grammar": "have",
+          "ja": "グラフには多くの青い点があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A blue line is going up.",
+          "grammar": "現在進行形",
+          "ja": "青い線が右上がりになっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two circles on the right.",
+          "grammar": "There are",
+          "ja": "右側には2つの円があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher is showing the difference between two ideas.",
+          "grammar": "現在進行形 / between",
+          "ja": "先生は2つの考えの違いを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The students may be learning about relationships between things.",
+          "grammar": "may be＋現在分詞",
+          "ja": "生徒たちは物事の関係について学んでいるのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "relationship",
+          "ja": "関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "difference",
+          "ja": "違い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pattern",
+          "ja": "パターン",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "diagram",
+          "ja": "図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "trend",
+          "ja": "傾向",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "connection",
+          "ja": "つながり",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distinguish",
+          "ja": "区別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compare",
+          "ja": "比較する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illustrate",
+          "ja": "図示する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "similar",
+          "ja": "似ている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "direct",
+          "ja": "直接的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "indirect",
+          "ja": "間接的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "positive",
+          "ja": "正の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "subtle",
+          "ja": "微妙な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "explain the difference",
+          "ja": "違いを説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compare two relationships",
+          "ja": "2つの関係を比較する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show a positive trend",
+          "ja": "正の傾向を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "distinguish between two ideas",
+          "ja": "2つの考えを区別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a direct connection",
+          "ja": "直接的なつながり",
+          "type": "concept",
+          "points": 20
+        },
+        {
+          "text": "an indirect connection",
+          "ja": "間接的なつながり",
+          "type": "concept",
+          "points": 20
+        },
+        {
+          "text": "illustrate a relationship",
+          "ja": "関係を図示する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a subtle difference",
+          "ja": "微妙な違い",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A lecturer is explaining several relationships by using graphs and diagrams.",
+          "grammar": "現在進行形 / by＋動名詞",
+          "ja": "講師がグラフや図を使って複数の関係を説明しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The scatter plot on the left shows a clear upward trend.",
+          "grammar": "現在形",
+          "ja": "左側の散布図は明確な右上がりの傾向を示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The dots appear to become higher as they move to the right.",
+          "grammar": "appear to / as",
+          "ja": "点は右へ進むにつれて高くなっているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the right, two circles are connected by different types of arrows.",
+          "grammar": "受動態",
+          "ja": "右側では、2つの円が異なる種類の矢印で結ばれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The teacher may be comparing a direct relationship with a more indirect one.",
+          "grammar": "may be＋現在分詞 / compare A with B",
+          "ja": "先生は直接的な関係と、より間接的な関係を比較しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the two ideas may look similar, there appears to be an important difference between them.",
+          "grammar": "Although / there appears to be",
+          "ja": "2つの考えは似て見えるかもしれませんが、その間には重要な違いがあるようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The students are listening carefully while the lecturer explains the diagrams.",
+          "grammar": "while",
+          "ja": "講師が図を説明している間、生徒たちは注意深く聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how diagrams can help people understand subtle differences.",
+          "grammar": "how節 / help＋O＋動詞",
+          "ja": "この場面は、図が微妙な違いを理解するのに役立つことを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "nuance",
+          "ja": "微妙な意味の差",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "distinction",
+          "ja": "区別・相違",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "correlation",
+          "ja": "相関関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "causality",
+          "ja": "因果関係",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "variable",
+          "ja": "変数",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mechanism",
+          "ja": "仕組み",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "elaborate",
+          "ja": "詳しく説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "differentiate",
+          "ja": "区別する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "delineate",
+          "ja": "明確に説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clarify",
+          "ja": "明確にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "nuanced",
+          "ja": "微妙な差を含む",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "subtle",
+          "ja": "微妙な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "conceptual",
+          "ja": "概念的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "statistical",
+          "ja": "統計的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "interrelated",
+          "ja": "相互に関連した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "elaborate on a nuanced distinction",
+          "ja": "微妙な違いを詳しく説明する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "draw a subtle distinction",
+          "ja": "微妙な区別をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "differentiate between two concepts",
+          "ja": "2つの概念を区別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clarify a conceptual difference",
+          "ja": "概念上の違いを明確にする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "illustrate a statistical relationship",
+          "ja": "統計的な関係を図示する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "distinguish correlation from causality",
+          "ja": "相関と因果関係を区別する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "delineate competing mechanisms",
+          "ja": "異なる仕組みを明確に説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "account for subtle differences",
+          "ja": "微妙な違いを考慮する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a nuanced conceptual distinction",
+          "ja": "微妙な概念上の区別",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The lecturer appears to be elaborating on a nuanced distinction between closely related concepts.",
+          "grammar": "appear to be＋現在分詞 / elaborate on / between",
+          "ja": "講師は互いに密接に関連する概念の微妙な違いについて詳しく説明しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "To elaborate on a nuanced distinction means to explain a subtle difference in considerably greater detail.",
+          "grammar": "to不定詞主語 / mean to",
+          "ja": "「elaborate on a nuanced distinction」とは、微妙な違いをかなり詳しく説明することを意味します。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The scatter plot illustrates a statistical association, whereas the diagram on the right depicts alternative forms of connection.",
+          "grammar": "whereas",
+          "ja": "散布図は統計的な関連を示している一方、右側の図は異なる形のつながりを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By presenting the two visual models side by side, the lecturer can highlight distinctions that might otherwise be overlooked.",
+          "grammar": "By＋動名詞 / 関係代名詞that / might",
+          "ja": "2つの視覚モデルを並べて提示することで、講師は通常なら見落とされかねない違いを強調できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A positive correlation between variables does not necessarily establish that one variable directly causes the other.",
+          "grammar": "not necessarily / establish that",
+          "ja": "変数間に正の相関があっても、一方が他方を直接引き起こすことが必ずしも証明されるわけではありません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The straight and curved arrows may be intended to distinguish a direct relationship from one involving an additional mechanism.",
+          "grammar": "may be intended to / distinguish A from B",
+          "ja": "直線と曲線の矢印は、直接的な関係と追加的な仕組みを伴う関係を区別するためのものかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Such a distinction is nuanced because the concepts are related and may initially appear almost interchangeable.",
+          "grammar": "because / may appear＋形容詞",
+          "ja": "これらの概念は関連しており、一見するとほとんど同じように見える可能性があるため、その区別は微妙です。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Rather than merely stating that the concepts differ, the lecturer is using visual evidence to delineate precisely how they differ.",
+          "grammar": "Rather than＋動名詞 / how節",
+          "ja": "講師は単に概念が異なると述べるのではなく、視覚的な資料を使って具体的にどのように異なるのかを明らかにしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in elaborating on nuanced distinctions, differentiating related concepts, interpreting statistical relationships, and explaining subtle conceptual differences.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は微妙な違いを詳しく説明すること、関連概念を区別すること、統計的関係を解釈すること、細かな概念差を説明することの練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "teacher": {
+      "x": 35,
+      "y": 34
+    },
+    "students": {
+      "x": 54,
+      "y": 72
+    },
+    "graph": {
+      "x": 56,
+      "y": 22
+    },
+    "dots": {
+      "x": 55,
+      "y": 20
+    },
+    "line": {
+      "x": 57,
+      "y": 18
+    },
+    "arrow": {
+      "x": 86,
+      "y": 24
+    },
+    "circle": {
+      "x": 76,
+      "y": 24
+    },
+    "diagram": {
+      "x": 84,
+      "y": 23
+    },
+    "board": {
+      "x": 69,
+      "y": 27
+    },
+    "laptop": {
+      "x": 9,
+      "y": 87
+    },
+    "desk": {
+      "x": 66,
+      "y": 79
+    },
+    "bottle": {
+      "x": 79,
+      "y": 82
+    },
+    "classroom": {
+      "x": 21,
+      "y": 16
+    },
+    "trend": {
+      "x": 56,
+      "y": 20
+    },
+    "correlation": {
+      "x": 56,
+      "y": 21
+    },
+    "connection": {
+      "x": 84,
+      "y": 24
+    },
+    "distinction": {
+      "x": 84,
+      "y": 23
+    },
+    "nuance": {
+      "x": 83,
+      "y": 23
+    },
+    "comparison": {
+      "x": 83,
+      "y": 24
+    },
+    "explanation": {
+      "x": 50,
+      "y": 34
+    }
+  }
+}

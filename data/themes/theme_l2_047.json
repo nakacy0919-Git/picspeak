@@ -1,0 +1,761 @@
+{
+  "id": "theme_l2_047",
+  "imageSrc": "assets/images/l2_047.webp",
+  "titleEn": "Sunflower Garden After the Rain",
+  "titleJa": "雨上がりのひまわり畑",
+  "description": "雨上がりの明るい家庭菜園で、2人の大人が大きく育ったひまわりの世話をしている。手前左では緑色のTシャツを着た女性が膝をつき、手袋をした手でひまわりの花や茎を確認している。右側では帽子と作業用オーバーオールを身につけた男性が、ひまわりの間に立って植物の様子を見ている。畑には背の高いひまわりが密集して咲き、葉には雨粒が残っている。左側には木枠で囲まれた野菜畑と水たまりがあり、背景には住宅、柵、大きな木が見える。空は青く、白い雲の間に虹がかかっている。植物の成長、天候、前景と背景、左右の位置関係を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a bright sunflower garden just after rain. Large healthy yellow sunflowers should dominate the foreground and middle ground, with visible raindrops on the leaves. In the left foreground, show a woman in a green T-shirt, jeans, and gardening gloves kneeling beside a sunflower and checking the flower and stem. On the right, show a man in a blue T-shirt, brown work overalls, gardening gloves, and a wide-brimmed hat standing among the sunflowers. Add raised wooden vegetable beds and a muddy path with shallow puddles on the left. In the background, show ordinary suburban houses, fences, and leafy trees. Include a blue sky, large white clouds, and a clear rainbow in the upper-left. Keep the composition close to the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "garden",
+          "ja": "庭・菜園",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sunflower",
+          "ja": "ひまわり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leaf",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rainbow",
+          "ja": "虹",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "kneel",
+          "ja": "ひざまずく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "育つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "yellow",
+          "ja": "黄色い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a sunflower garden",
+          "ja": "ひまわり畑",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "many yellow flowers",
+          "ja": "たくさんの黄色い花",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "kneel beside a flower",
+          "ja": "花のそばにひざまずく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand among the flowers",
+          "ja": "花の間に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear gardening gloves",
+          "ja": "園芸用手袋をつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a rainbow in the sky",
+          "ja": "空の虹",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "water on the ground",
+          "ja": "地面の水",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "houses in the background",
+          "ja": "背景の家々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There are many sunflowers in the garden.",
+          "grammar": "There are",
+          "ja": "庭にはたくさんのひまわりがあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is kneeling beside a sunflower.",
+          "grammar": "現在進行形",
+          "ja": "女性はひまわりのそばにひざまずいています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is wearing green gloves.",
+          "grammar": "現在進行形",
+          "ja": "彼女は緑色の手袋をつけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is standing among the flowers.",
+          "grammar": "現在進行形",
+          "ja": "男性は花の間に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is water on the ground.",
+          "grammar": "There is",
+          "ja": "地面には水があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sunflowers are tall and yellow.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "ひまわりは背が高く黄色いです。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "There are houses behind the garden.",
+          "grammar": "There are",
+          "ja": "庭の後ろには家があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a rainbow in the sky.",
+          "grammar": "There is",
+          "ja": "空には虹があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "gardener",
+          "ja": "園芸をする人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "sunflower",
+          "ja": "ひまわり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stem",
+          "ja": "茎",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "raindrop",
+          "ja": "雨粒",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "puddle",
+          "ja": "水たまり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vegetable bed",
+          "ja": "野菜畑",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "care for",
+          "ja": "世話をする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "bloom",
+          "ja": "咲く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "成長する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "healthy",
+          "ja": "健康な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "bright",
+          "ja": "明るい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "muddy",
+          "ja": "ぬかるんだ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "wet",
+          "ja": "濡れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "care for the sunflowers",
+          "ja": "ひまわりの世話をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine the flower closely",
+          "ja": "花をよく観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "grow tall and healthy",
+          "ja": "高く元気に育つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "raindrops on the leaves",
+          "ja": "葉の上の雨粒",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a muddy garden path",
+          "ja": "ぬかるんだ庭の小道",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "raised vegetable beds",
+          "ja": "木枠で囲まれた野菜畑",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a rainbow after the rain",
+          "ja": "雨上がりの虹",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "work together in the garden",
+          "ja": "庭で一緒に作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The two gardeners are taking care of a large sunflower garden.",
+          "grammar": "現在進行形",
+          "ja": "2人は大きなひまわり畑の世話をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman is examining one of the flowers while wearing gardening gloves.",
+          "grammar": "while＋現在分詞",
+          "ja": "女性は園芸用手袋をつけながら花の一つを観察しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is standing among the tall plants and looking toward her.",
+          "grammar": "現在進行形",
+          "ja": "男性は背の高い植物の間に立ち、女性の方を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sunflowers have grown taller than many of the other plants.",
+          "grammar": "現在完了形＋比較級",
+          "ja": "ひまわりはほかの多くの植物より高く育っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Raindrops can still be seen on the large green leaves.",
+          "grammar": "助動詞＋受動態",
+          "ja": "大きな緑の葉にはまだ雨粒が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several puddles have formed along the muddy path.",
+          "grammar": "現在完了形",
+          "ja": "ぬかるんだ小道にはいくつか水たまりができています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Ordinary houses and large trees can be seen behind the garden.",
+          "grammar": "助動詞＋受動態",
+          "ja": "庭の後ろには住宅や大きな木々が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The rainbow suggests that the rain has recently stopped.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "虹から、雨が少し前にやんだことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "vegetation",
+          "ja": "植物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cultivation",
+          "ja": "栽培",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "foliage",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower bed",
+          "ja": "花壇",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "moisture",
+          "ja": "水分",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "burgeon",
+          "ja": "急速に成長する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cultivate",
+          "ja": "栽培する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "注意深く調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "flourish",
+          "ja": "元気に育つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "nurture",
+          "ja": "育てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "lush",
+          "ja": "青々と茂った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vibrant",
+          "ja": "鮮やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "luxuriant",
+          "ja": "豊かに生い茂った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "saturated",
+          "ja": "水分を多く含んだ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thriving",
+          "ja": "元気に成長している",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "burgeon luxuriantly",
+          "ja": "豊かに勢いよく成長する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "lush green foliage",
+          "ja": "青々と茂った葉",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cultivate flowering plants",
+          "ja": "花をつける植物を栽培する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inspect the condition of a plant",
+          "ja": "植物の状態を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "retain moisture after rainfall",
+          "ja": "雨の後に水分を保つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "flourish under favorable conditions",
+          "ja": "好条件の下でよく育つ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "dominate the foreground",
+          "ja": "前景を大きく占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "contrast with the blue sky",
+          "ja": "青空と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "reflect successful cultivation",
+          "ja": "順調な栽培を示す",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The scene depicts a thriving garden in which sunflowers have burgeoned luxuriantly under favorable growing conditions.",
+          "grammar": "関係詞in which / 現在完了形",
+          "ja": "この場面は、良好な生育条件の下でひまわりが豊かに勢いよく成長した庭を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The large yellow flowers and dense green foliage dominate both the foreground and the middle ground.",
+          "grammar": "both A and B",
+          "ja": "大きな黄色い花と密集した緑の葉が、前景と中景の両方を大きく占めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is carefully inspecting one of the plants, suggesting that she is checking its health or development.",
+          "grammar": "現在分詞 / suggest that",
+          "ja": "女性は植物の一つを注意深く調べており、その健康状態や成長を確認していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The man's work clothes, gloves, and hat indicate that he is also involved in maintaining the garden.",
+          "grammar": "indicate that",
+          "ja": "男性の作業着、手袋、帽子から、彼も庭の管理に関わっていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Visible moisture on the leaves and puddles along the path suggest that the garden has recently received substantial rainfall.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "葉の水滴や小道の水たまりから、この庭には最近かなりの雨が降ったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The saturated soil may have provided the plants with enough moisture to continue growing vigorously.",
+          "grammar": "may have＋過去分詞 / enough to",
+          "ja": "十分に水分を含んだ土壌が、植物が勢いよく成長し続けるための水分を与えた可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The rainbow and bright clouds create a vivid contrast with the dense vegetation below.",
+          "grammar": "contrast with",
+          "ja": "虹と明るい雲が、その下の密集した植物と鮮やかな対比を生み出しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Raised vegetable beds on the left indicate that the space is used to cultivate more than ornamental flowers.",
+          "grammar": "indicate that / more than",
+          "ja": "左側の木枠の畑から、この場所では観賞用の花だけでなくほかの作物も栽培されていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing plant growth, weather conditions, human activity, and the spatial relationship between foreground vegetation and suburban surroundings.",
+          "grammar": "between A and B",
+          "ja": "全体として、この画像は植物の成長、天候、人の活動、前景の植物と郊外の周辺環境との位置関係を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 24,
+      "y": 55
+    },
+    "man": {
+      "x": 69,
+      "y": 38
+    },
+    "gloves": {
+      "x": 34,
+      "y": 52
+    },
+    "hat": {
+      "x": 72,
+      "y": 15
+    },
+    "overalls": {
+      "x": 69,
+      "y": 38
+    },
+    "sunflower1": {
+      "x": 36,
+      "y": 43
+    },
+    "sunflower2": {
+      "x": 64,
+      "y": 63
+    },
+    "sunflower3": {
+      "x": 82,
+      "y": 49
+    },
+    "sunflower4": {
+      "x": 93,
+      "y": 74
+    },
+    "sunflower5": {
+      "x": 46,
+      "y": 28
+    },
+    "sunflower6": {
+      "x": 56,
+      "y": 29
+    },
+    "field": {
+      "x": 62,
+      "y": 49
+    },
+    "foliage": {
+      "x": 56,
+      "y": 72
+    },
+    "raindrops": {
+      "x": 71,
+      "y": 64
+    },
+    "bed": {
+      "x": 7,
+      "y": 63
+    },
+    "vegetables": {
+      "x": 5,
+      "y": 52
+    },
+    "path": {
+      "x": 13,
+      "y": 77
+    },
+    "puddle": {
+      "x": 10,
+      "y": 74
+    },
+    "soil": {
+      "x": 41,
+      "y": 87
+    },
+    "rainbow": {
+      "x": 17,
+      "y": 10
+    },
+    "sky": {
+      "x": 42,
+      "y": 8
+    },
+    "clouds": {
+      "x": 52,
+      "y": 10
+    },
+    "tree1": {
+      "x": 11,
+      "y": 27
+    },
+    "tree2": {
+      "x": 43,
+      "y": 18
+    },
+    "tree3": {
+      "x": 86,
+      "y": 18
+    },
+    "house1": {
+      "x": 7,
+      "y": 30
+    },
+    "house2": {
+      "x": 28,
+      "y": 28
+    },
+    "house3": {
+      "x": 83,
+      "y": 27
+    },
+    "fence": {
+      "x": 19,
+      "y": 41
+    },
+    "garden": {
+      "x": 17,
+      "y": 47
+    },
+    "leaves": {
+      "x": 76,
+      "y": 63
+    },
+    "foreground": {
+      "x": 47,
+      "y": 82
+    }
+  }
+}

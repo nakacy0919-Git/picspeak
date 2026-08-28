@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_068",
+  "imageSrc": "assets/images/l2_068.webp",
+  "titleEn": "Clash at a Street Protest",
+  "titleJa": "街頭抗議での警察と群衆の衝突",
+  "description": "都市の路上で、機動隊と大勢の抗議参加者が金属製のバリケードを挟んで激しく対峙している場面である。左側には濃い色の防護服、ヘルメット、透明な盾を装備した警察官が列を作り、盾を前に押し出して群衆を抑えようとしている。右側では多数の抗議参加者がバリケードを押し返し、拳を上げたり大声で訴えたりしている。黒や赤の旗を掲げる人もいる。中央付近では双方がバリケード越しに強く押し合い、非常に緊迫した状況になっている。背景には都市の建物や木々があり、地面には小さなごみや空のボトルが落ちている。群衆、対立、公共空間、安全装備、感情の高まりを英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show a tense confrontation on a city street between a line of riot police and a large crowd of protesters. Police on the left wear dark protective uniforms, helmets, and clear shields while pushing forward. Protesters on the right push against metal barricades, raise fists, shout, and hold plain black and red flags. Include urban buildings, trees, scattered debris, and a crowded background. Emphasize the barrier between the two groups and the intense standoff. No weapons in active use, no blood, no logos, no political symbols, no readable slogans. Landscape 16:9, polished realistic illustration style rather than photography.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "police",
+          "ja": "警察",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "people",
+          "ja": "人々",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "shield",
+          "ja": "盾",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "barrier",
+          "ja": "柵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flag",
+          "ja": "旗",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "群衆",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "push",
+          "ja": "押す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shout",
+          "ja": "叫ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "raise",
+          "ja": "上げる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "angry",
+          "ja": "怒った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a shield",
+          "ja": "盾を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push the barrier",
+          "ja": "柵を押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "raise a fist",
+          "ja": "拳を上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wave a flag",
+          "ja": "旗を振る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shout at the police",
+          "ja": "警察に向かって叫ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a large crowd",
+          "ja": "大勢の群衆",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "on a city street",
+          "ja": "都市の通りで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Many police officers are standing on the left.",
+          "grammar": "現在進行形",
+          "ja": "多くの警察官が左側に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are holding large shields.",
+          "grammar": "現在進行形",
+          "ja": "彼らは大きな盾を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large crowd is standing on the right.",
+          "grammar": "現在進行形",
+          "ja": "大勢の群衆が右側にいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are pushing a metal barrier.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が金属製の柵を押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are raising their fists.",
+          "grammar": "現在進行形",
+          "ja": "何人かは拳を上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are several flags in the crowd.",
+          "grammar": "There are",
+          "ja": "群衆の中にはいくつかの旗があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people look angry.",
+          "grammar": "look＋形容詞",
+          "ja": "人々は怒っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The street is very crowded.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "通りはとても混雑しています。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "protester",
+          "ja": "抗議参加者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "officer",
+          "ja": "警察官",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "protest",
+          "ja": "抗議活動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "barricade",
+          "ja": "バリケード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "conflict",
+          "ja": "衝突",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "protest",
+          "ja": "抗議する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "block",
+          "ja": "遮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "advance",
+          "ja": "前進する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "resist",
+          "ja": "抵抗する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "tense",
+          "ja": "緊迫した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "protective",
+          "ja": "防護用の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "angry",
+          "ja": "怒った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "public",
+          "ja": "公共の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "take part in a protest",
+          "ja": "抗議活動に参加する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push against a barricade",
+          "ja": "バリケードを押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear protective equipment",
+          "ja": "防護装備を身につける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "form a police line",
+          "ja": "警察が列を作る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "raise their fists",
+          "ja": "拳を上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shout in protest",
+          "ja": "抗議して叫ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a tense confrontation",
+          "ja": "緊迫した対立",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "control the crowd",
+          "ja": "群衆を制御する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A large group of protesters is confronting a line of police officers.",
+          "grammar": "現在進行形",
+          "ja": "大勢の抗議参加者が警察官の列と対峙しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The police are wearing helmets and carrying clear shields.",
+          "grammar": "現在進行形",
+          "ja": "警察官たちはヘルメットを着用し、透明な盾を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several protesters are pushing against a metal barricade.",
+          "grammar": "現在進行形",
+          "ja": "何人かの抗議参加者が金属製のバリケードを押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are raising their fists while others are holding flags.",
+          "grammar": "while",
+          "ja": "拳を上げている人がいる一方、旗を持っている人もいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The officers appear to be trying to stop the crowd from moving forward.",
+          "grammar": "appear to be＋現在分詞 / stop O from",
+          "ja": "警察官たちは群衆が前進するのを止めようとしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The protesters look angry and determined.",
+          "grammar": "look＋形容詞",
+          "ja": "抗議参加者たちは怒り、強い決意を持っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The metal barricade separates the two groups.",
+          "grammar": "現在形",
+          "ja": "金属製のバリケードが2つの集団を隔てています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that the situation may become more serious.",
+          "grammar": "suggest that / may",
+          "ja": "この場面から、状況がさらに深刻になる可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "standoff",
+          "ja": "にらみ合い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "confrontation",
+          "ja": "対立・衝突",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "unrest",
+          "ja": "社会的不安・騒乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "barricade",
+          "ja": "バリケード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "resistance",
+          "ja": "抵抗",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "repel",
+          "ja": "押し返す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disperse",
+          "ja": "解散させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "restrain",
+          "ja": "抑える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "escalate",
+          "ja": "激化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surge",
+          "ja": "押し寄せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "volatile",
+          "ja": "不安定で危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "defiant",
+          "ja": "反抗的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "contentious",
+          "ja": "対立を招く",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "confrontational",
+          "ja": "対立的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "reinforced",
+          "ja": "強化された",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a volatile standoff",
+          "ja": "不安定で危険なにらみ合い",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "repel an advancing crowd",
+          "ja": "前進する群衆を押し返す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "surge against the barricade",
+          "ja": "バリケードへ押し寄せる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "restrain the protesters",
+          "ja": "抗議参加者を抑える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "disperse a large crowd",
+          "ja": "大勢の群衆を解散させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "escalate into a confrontation",
+          "ja": "対立へと激化する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "display defiant gestures",
+          "ja": "反抗的な身ぶりを示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "maintain a defensive line",
+          "ja": "防御線を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face mounting civil unrest",
+          "ja": "高まる社会的不安に直面する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image depicts a volatile standoff between riot police and a large group of protesters on an urban street.",
+          "grammar": "between A and B",
+          "ja": "この画像には、都市の通りで機動隊と大勢の抗議参加者が危険なにらみ合いをしている様子が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The officers are maintaining a reinforced defensive line while using transparent shields to hold back the crowd.",
+          "grammar": "while＋現在分詞 / use O to",
+          "ja": "警察官たちは透明な盾で群衆を押しとどめながら、強固な防御線を維持しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several protesters are surging against the barricade with visibly confrontational expressions and gestures.",
+          "grammar": "現在進行形 / with",
+          "ja": "数人の抗議参加者が明らかに対立的な表情や身ぶりを示しながらバリケードへ押し寄せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Raised fists and flags reinforce the impression that the crowd is expressing strong collective resistance.",
+          "grammar": "reinforce / that節",
+          "ja": "上げられた拳や旗は、群衆が強い集団的抵抗を示しているという印象を強めています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The police appear to be attempting to repel the advancing protesters without allowing the defensive line to collapse.",
+          "grammar": "appear to be＋現在分詞 / without＋動名詞",
+          "ja": "警察は防御線を崩さずに、前進してくる抗議参加者を押し返そうとしているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The physical pressure being applied from both sides suggests that the confrontation could escalate rapidly.",
+          "grammar": "being＋過去分詞 / suggest that / could",
+          "ja": "双方から物理的な圧力がかかっていることから、この対立が急速に激化する可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Protective helmets, body armor, shields, and barricades indicate that authorities anticipated a potentially contentious situation.",
+          "grammar": "indicate that",
+          "ja": "ヘルメット、防護服、盾、バリケードから、当局が対立の可能性を事前に想定していたことが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The tightly packed crowd and repeated defiant gestures heighten the sense of civil unrest without revealing the specific cause of the protest.",
+          "grammar": "without＋動名詞",
+          "ja": "密集した群衆と繰り返される反抗的な身ぶりが社会的不安の印象を強めていますが、抗議の具体的な理由までは画像から分かりません。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a volatile standoff, crowd control, resistance, protective equipment, physical confrontation, and escalating tension.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は緊迫したにらみ合い、群衆整理、抵抗、防護装備、物理的対立、激化する緊張を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "officer1": {
+      "x": 19,
+      "y": 50
+    },
+    "officer2": {
+      "x": 31,
+      "y": 45
+    },
+    "officer3": {
+      "x": 7,
+      "y": 43
+    },
+    "shield1": {
+      "x": 39,
+      "y": 43
+    },
+    "shield2": {
+      "x": 29,
+      "y": 40
+    },
+    "helmet": {
+      "x": 20,
+      "y": 24
+    },
+    "protester1": {
+      "x": 67,
+      "y": 51
+    },
+    "protester2": {
+      "x": 83,
+      "y": 52
+    },
+    "protester3": {
+      "x": 61,
+      "y": 34
+    },
+    "protester4": {
+      "x": 76,
+      "y": 35
+    },
+    "crowd": {
+      "x": 75,
+      "y": 21
+    },
+    "barrier": {
+      "x": 64,
+      "y": 61
+    },
+    "fist": {
+      "x": 78,
+      "y": 14
+    },
+    "flag1": {
+      "x": 84,
+      "y": 12
+    },
+    "flag2": {
+      "x": 95,
+      "y": 10
+    },
+    "street": {
+      "x": 48,
+      "y": 88
+    },
+    "debris": {
+      "x": 47,
+      "y": 89
+    },
+    "bottle": {
+      "x": 46,
+      "y": 85
+    },
+    "building": {
+      "x": 13,
+      "y": 13
+    },
+    "trees": {
+      "x": 53,
+      "y": 12
+    }
+  }
+}

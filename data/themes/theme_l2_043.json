@@ -1,0 +1,761 @@
+{
+  "id": "theme_l2_043",
+  "imageSrc": "assets/images/l2_043.webp",
+  "titleEn": "Technology Hall Tour",
+  "titleJa": "技術展示ホール見学",
+  "description": "昼間の大きな屋内展示ホールを描いた場面である。高い天井には金属の梁が広がり、白い太い柱が何本も立っている。広い展示空間は、左側の木目調のエリアと右側の青緑色の床のエリアに分かれており、車や機械、ロボットアームのような展示物が並んでいる。中央には大きな円形の展示装置があり、その周りに説明パネルや機械設備が配置されている。左側には数台の車と、ロープで囲まれた車の骨組みの展示があり、右側には黄色いスポーツカーや産業機械の展示が見られる。上から見下ろす構図になっているため、前景・中景・背景の位置関係が分かりやすい。児童生徒が描写しやすいように人物は2人だけにし、手前の見学通路に2人の生徒を配置する。一人は黄色い車を指さし、もう一人は中央の大きな円形展示を見ている。建物の広さ、展示物の種類、左右のエリアの違い、床の色、柱、天井、位置関係を英語で説明する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the overall spatial composition closely on the provided reference photograph, but replace all visible banners, signs, labels, logos, screen text, and identifying exhibition names with original fictional designs, simple symbols, or generic lettering. Do not use proper nouns in the English scene. The purpose is indoor townscape and public-space description practice, so the image should be realistic, clear, and easy for children and students to describe. Show a very large indoor technology and transportation exhibition hall viewed from a slightly elevated position. The ceiling should be very high, filled with metal beams, lighting fixtures, and skylight-like panels. Several thick white columns should rise from the floor to the ceiling, dividing the hall into sections. The floor should be separated into two main zones: on the left, a warm wood-toned display area; on the right, a wide blue-green carpeted display area. In the center, place a large circular exhibit with a gray outer wall and an information band around it. Around this central exhibit, show large industrial machines and mechanical displays arranged in a spacious layout. On the left side, include a row of displayed vehicles in different colors, and in the foreground-left place an exposed car frame or chassis surrounded by red ropes and silver stanchions. Also include a large plain display wall near the bottom-left edge. On the right-middle area, place a bright yellow sports car displayed behind ropes. Farther right, show a line of industrial robotic arms or factory machines behind low barriers. Add a few hanging vertical banners from the ceiling with original generic text or abstract symbols only. In the far background, continue the exhibition hall with more machines, display booths, and equipment, but no readable real-world names. The overall layout should clearly show foreground, middle ground, and background. Show exactly two visible teenage students and no other people anywhere in the image. Place both students on the dark viewing walkway near the bottom center foreground. One student should be pointing toward the yellow sports car on the right. The other student should be looking toward the large circular exhibit in the middle. Keep the students relatively small so the hall remains the main focus. Their clothing should be simple and casual. Do not add crowds, museum staff, groups, visitors in the distance, or people reflected in glass. Preserve the main positional relationships clearly: exposed car frame on the left foreground, large circular exhibit in the center, yellow sports car in the right-middle area, industrial robots on the far right, wood floor on the left, blue-green floor on the right, and a high ceiling with beams above. Exactly two visible people, no more and no less. No animals, no speech bubbles, no copyrighted characters, and no recognizable commercial logos. Landscape 16:9 composition, polished illustrated style rather than photography, realistic architecture and proportions, visually organized and information-rich, suitable for practicing descriptions of indoor space, technology exhibits, positions, scale, and public architecture.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "hall",
+          "ja": "ホール",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "machine",
+          "ja": "機械",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "robot",
+          "ja": "ロボット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ceiling",
+          "ja": "天井",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "column",
+          "ja": "柱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rope",
+          "ja": "ロープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sign",
+          "ja": "案内表示",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "big",
+          "ja": "大きい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "yellow",
+          "ja": "黄色い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a big hall",
+          "ja": "大きなホール",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a yellow car",
+          "ja": "黄色い車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "many machines",
+          "ja": "たくさんの機械",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a round exhibit",
+          "ja": "丸い展示",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a high ceiling",
+          "ja": "高い天井",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "stand on the walkway",
+          "ja": "通路に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point to the car",
+          "ja": "車を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the middle",
+          "ja": "中央を見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This is a big exhibition hall.",
+          "grammar": "be動詞",
+          "ja": "これは大きな展示ホールです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There are many cars and machines inside.",
+          "grammar": "There are",
+          "ja": "中にはたくさんの車や機械があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a round exhibit in the middle.",
+          "grammar": "There is",
+          "ja": "真ん中に丸い展示があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A yellow car is on the right.",
+          "grammar": "be動詞＋場所",
+          "ja": "右側に黄色い車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a car frame on the left.",
+          "grammar": "There is",
+          "ja": "左側に車の骨組みがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two students are standing on the walkway.",
+          "grammar": "現在進行形",
+          "ja": "2人の生徒が通路に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing at the yellow car.",
+          "grammar": "現在進行形",
+          "ja": "一人の生徒が黄色い車を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is looking at the round exhibit.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の生徒は丸い展示を見ています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "exhibition hall",
+          "ja": "展示ホール",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "展示",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vehicle",
+          "ja": "乗り物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sports car",
+          "ja": "スポーツカー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "robotic arm",
+          "ja": "ロボットアーム",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chassis",
+          "ja": "車台",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hang",
+          "ja": "つり下がる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "分ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "現代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "elevated",
+          "ja": "高い位置からの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "industrial",
+          "ja": "工業的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "central",
+          "ja": "中央の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a spacious exhibition hall",
+          "ja": "広々とした展示ホール",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a central round display",
+          "ja": "中央の丸い展示",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a bright yellow sports car",
+          "ja": "鮮やかな黄色いスポーツカー",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "robotic arms on the right",
+          "ja": "右側のロボットアーム",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a chassis behind ropes",
+          "ja": "ロープの中の車台",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "hanging banners from the ceiling",
+          "ja": "天井から下がるバナー",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "point toward the sports car",
+          "ja": "スポーツカーの方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the central display",
+          "ja": "中央展示を見る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "This scene shows a spacious indoor exhibition hall.",
+          "grammar": "現在形",
+          "ja": "この場面は広々とした屋内展示ホールを示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The hall is viewed from a slightly elevated position.",
+          "grammar": "受動態",
+          "ja": "このホールはやや高い位置から見下ろす構図になっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large round display stands in the center of the hall.",
+          "grammar": "現在形",
+          "ja": "大きな丸い展示がホールの中央にあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the left, several vehicles are displayed on a wood floor.",
+          "grammar": "受動態",
+          "ja": "左側では、数台の乗り物が木の床の上に展示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A car chassis is surrounded by ropes in the front-left area.",
+          "grammar": "受動態",
+          "ja": "前方左側では、車台がロープで囲まれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A bright yellow sports car can be seen on the right side.",
+          "grammar": "助動詞＋受動態",
+          "ja": "右側には鮮やかな黄色いスポーツカーが見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Farther right, industrial robots and machines fill another display area.",
+          "grammar": "現在形",
+          "ja": "さらに右側では、工業用ロボットや機械が別の展示エリアを満たしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is pointing toward the sports car while the other is observing the central display.",
+          "grammar": "while",
+          "ja": "一人の生徒はスポーツカーを指さし、もう一人は中央展示を観察しています。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "exhibition venue",
+          "ja": "展示会場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "architecture",
+          "ja": "建築",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "layout",
+          "ja": "配置構成",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "chassis",
+          "ja": "車台",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "industrial equipment",
+          "ja": "産業機器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dominate",
+          "ja": "大きく占める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "divide",
+          "ja": "分ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emphasize",
+          "ja": "強調する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overlook",
+          "ja": "見下ろす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illustrate",
+          "ja": "示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "industrial",
+          "ja": "工業的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "symmetrical",
+          "ja": "左右のつり合いがある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "informative",
+          "ja": "情報量の多い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a spacious indoor exhibition venue",
+          "ja": "広々とした屋内展示会場",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "dominate the central area",
+          "ja": "中央部分を大きく占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "divide the hall into zones",
+          "ja": "ホールを複数の区域に分ける",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an exposed vehicle chassis",
+          "ja": "むき出しの車台",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "industrial robots on display",
+          "ja": "展示された産業用ロボット",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a prominent yellow sports car",
+          "ja": "目立つ黄色いスポーツカー",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "emphasize scale and depth",
+          "ja": "規模と奥行きを強調する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "practice describing spatial relationships",
+          "ja": "位置関係の描写を練習する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a high ceiling supported by beams",
+          "ja": "梁に支えられた高い天井",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a spacious indoor exhibition venue devoted to vehicles, machines, and industrial technology.",
+          "grammar": "現在形 / devoted to",
+          "ja": "この画像は、乗り物、機械、産業技術に関する広々とした屋内展示会場を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The hall is viewed from an elevated perspective, which makes the overall layout easier to understand.",
+          "grammar": "関係代名詞which",
+          "ja": "このホールはやや高い視点から見下ろされており、そのため全体の配置構成が理解しやすくなっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A prominent circular exhibit dominates the central area and functions as a visual anchor for the surrounding displays.",
+          "grammar": "and / function as",
+          "ja": "目立つ円形展示が中央部分を大きく占め、周囲の展示の視覚的な中心として機能しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The contrasting floor colors help divide the hall into separate display zones on the left and right.",
+          "grammar": "help＋動詞",
+          "ja": "対照的な床の色が、ホールを左右の別々の展示区域に分けるのに役立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the left, the exposed vehicle chassis and the row of display cars emphasize transportation technology from a structural point of view.",
+          "grammar": "emphasize / from a ... point of view",
+          "ja": "左側では、むき出しの車台と展示車両の列が、構造的な観点から乗り物技術を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "On the right, the yellow sports car contrasts with the more functional industrial robots and factory equipment behind it.",
+          "grammar": "contrast with",
+          "ja": "右側では、黄色いスポーツカーが、その奥にあるより実用的な産業用ロボットや工場設備と対照をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The repeated white columns and exposed ceiling beams reinforce the scale, height, and orderly structure of the building.",
+          "grammar": "reinforce",
+          "ja": "繰り返し現れる白い柱と露出した天井の梁が、建物の規模、高さ、整然とした構造を強めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The two students are deliberately kept small in the foreground so that the architecture and exhibition layout remain the main focus.",
+          "grammar": "so that",
+          "ja": "2人の生徒は、建築と展示レイアウトが主な焦点として保たれるよう、前景で意図的に小さく配置されています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene is especially useful for practicing how to describe indoor scale, display arrangement, left-right contrast, and the relationship between foreground and background.",
+          "grammar": "how節 / between A and B",
+          "ja": "全体として、この場面は屋内空間の規模、展示の配置、左右の対比、そして前景と背景の関係をどのように描写するか練習するのに特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "high_ceiling": {
+      "x": 52,
+      "y": 8
+    },
+    "ceiling_beams": {
+      "x": 63,
+      "y": 10
+    },
+    "white_column_left": {
+      "x": 41,
+      "y": 30
+    },
+    "white_column_center_right": {
+      "x": 79,
+      "y": 33
+    },
+    "left_wood_floor_area": {
+      "x": 23,
+      "y": 63
+    },
+    "right_blue_green_floor": {
+      "x": 74,
+      "y": 71
+    },
+    "large_display_wall": {
+      "x": 8,
+      "y": 67
+    },
+    "row_of_cars_left": {
+      "x": 17,
+      "y": 58
+    },
+    "blue_car_left": {
+      "x": 15,
+      "y": 55
+    },
+    "brown_car_left": {
+      "x": 21,
+      "y": 58
+    },
+    "white_car_left": {
+      "x": 24,
+      "y": 62
+    },
+    "car_chassis_front_left": {
+      "x": 28,
+      "y": 78
+    },
+    "red_rope_barriers_left": {
+      "x": 27,
+      "y": 80
+    },
+    "central_round_exhibit": {
+      "x": 49,
+      "y": 51
+    },
+    "information_band": {
+      "x": 49,
+      "y": 56
+    },
+    "industrial_machine_back_center": {
+      "x": 41,
+      "y": 40
+    },
+    "machinery_line_center": {
+      "x": 61,
+      "y": 43
+    },
+    "hanging_banner_left": {
+      "x": 23,
+      "y": 31
+    },
+    "hanging_banner_center": {
+      "x": 49,
+      "y": 28
+    },
+    "hanging_banner_right": {
+      "x": 70,
+      "y": 30
+    },
+    "yellow_sports_car": {
+      "x": 65,
+      "y": 64
+    },
+    "red_rope_barriers_right": {
+      "x": 65,
+      "y": 67
+    },
+    "robotic_arms_far_right": {
+      "x": 89,
+      "y": 47
+    },
+    "factory_machines_right": {
+      "x": 83,
+      "y": 56
+    },
+    "low_barriers_right": {
+      "x": 86,
+      "y": 63
+    },
+    "foreground_dark_walkway": {
+      "x": 45,
+      "y": 90
+    },
+    "student_pointing": {
+      "x": 48,
+      "y": 86
+    },
+    "student_looking_center": {
+      "x": 53,
+      "y": 86
+    },
+    "background_machines_left": {
+      "x": 31,
+      "y": 42
+    },
+    "background_machines_center": {
+      "x": 58,
+      "y": 39
+    },
+    "far_back_wall": {
+      "x": 86,
+      "y": 29
+    },
+    "skylight_panels": {
+      "x": 80,
+      "y": 5
+    }
+  }
+}

@@ -1,0 +1,757 @@
+{
+  "id": "theme_l2_049",
+  "imageSrc": "assets/images/l2_049.webp",
+  "titleEn": "Seagulls Around the Fisherman",
+  "titleJa": "カモメに囲まれた漁師",
+  "description": "晴れた港の桟橋で、漁師が魚の入ったバケツを持って歩いている場面である。漁師は青いパーカー、作業用オーバーオール、ニット帽、長靴を身につけている。魚のにおいに引き寄せられた多くのカモメが漁師の周囲を飛び回り、一羽はバケツの中の魚を取ろうとしている。漁師は片方の手を上げて鳥を追い払おうとしている。桟橋は木製で、左右には太い木の柱と手すりが並んでいる。右奥には青と白の漁船が停泊し、さらに奥には海辺の住宅や木々が見える。青い海、白い雲、たくさんのカモメによって動きのある港の風景になっている。人物の動作、鳥の位置、港の構造、前景と背景を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a fisherman walking along a sunny wooden pier while carrying a metal bucket full of small fish. He wears a blue hoodie, dark waterproof overalls, rubber boots, and a navy knit cap. Many seagulls circle closely around him, and one bird reaches toward the fish in the bucket. The fisherman raises one hand defensively as if trying to drive the birds away. Show wooden railings and thick pier posts on both sides, bright blue seawater, a blue-and-white fishing boat moored on the right, and coastal houses and trees in the background. Include a bright blue sky with large white clouds. Preserve the energetic composition and numerous birds from the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "fisherman",
+          "ja": "漁師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "bird",
+          "ja": "鳥",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fish",
+          "ja": "魚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bucket",
+          "ja": "バケツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boat",
+          "ja": "船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pier",
+          "ja": "桟橋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sea",
+          "ja": "海",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cloud",
+          "ja": "雲",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fly",
+          "ja": "飛ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "carry",
+          "ja": "運ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "blue",
+          "ja": "青い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "carry a bucket",
+          "ja": "バケツを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a bucket of fish",
+          "ja": "魚の入ったバケツ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "many flying birds",
+          "ja": "たくさんの飛んでいる鳥",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "walk on the pier",
+          "ja": "桟橋を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "raise his hand",
+          "ja": "手を上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a boat on the right",
+          "ja": "右側の船",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "blue water",
+          "ja": "青い海",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "houses in the background",
+          "ja": "背景の家々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A fisherman is walking on a pier.",
+          "grammar": "現在進行形",
+          "ja": "漁師が桟橋を歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is carrying a bucket of fish.",
+          "grammar": "現在進行形",
+          "ja": "彼は魚の入ったバケツを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many birds are flying around him.",
+          "grammar": "現在進行形",
+          "ja": "たくさんの鳥が彼の周りを飛んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One bird is near the bucket.",
+          "grammar": "be動詞＋場所",
+          "ja": "一羽の鳥がバケツの近くにいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The fisherman is raising his hand.",
+          "grammar": "現在進行形",
+          "ja": "漁師は手を上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a boat on the right.",
+          "grammar": "There is",
+          "ja": "右側に船があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sea is blue.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "海は青いです。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "There are white clouds in the sky.",
+          "grammar": "There are",
+          "ja": "空には白い雲があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "seagull",
+          "ja": "カモメ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "harbor",
+          "ja": "港",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "pier",
+          "ja": "桟橋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "fishing boat",
+          "ja": "漁船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "railing",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "overalls",
+          "ja": "オーバーオール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "取り囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "approach",
+          "ja": "近づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "chase",
+          "ja": "追い払う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wooden",
+          "ja": "木製の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "多く集まった",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "coastal",
+          "ja": "海岸の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "hungry",
+          "ja": "空腹の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "walk along a wooden pier",
+          "ja": "木製の桟橋を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "be surrounded by seagulls",
+          "ja": "カモメに囲まれる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "try to take the fish",
+          "ja": "魚を取ろうとする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "chase the birds away",
+          "ja": "鳥を追い払う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect the bucket",
+          "ja": "バケツを守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a fishing boat nearby",
+          "ja": "近くの漁船",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "wooden posts and railings",
+          "ja": "木製の柱と手すり",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a sunny coastal harbor",
+          "ja": "晴れた海辺の港",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A fisherman is walking along a wooden pier with a bucket of fish.",
+          "grammar": "現在進行形 / with",
+          "ja": "漁師が魚の入ったバケツを持って木製の桟橋を歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Many seagulls are flying closely around him.",
+          "grammar": "現在進行形",
+          "ja": "たくさんのカモメが彼のすぐ周りを飛んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One of the birds is trying to take a fish from the bucket.",
+          "grammar": "try to",
+          "ja": "一羽の鳥がバケツから魚を取ろうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The fisherman is raising his hand to chase the birds away.",
+          "grammar": "to不定詞",
+          "ja": "漁師は鳥を追い払うために手を上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A blue fishing boat is tied beside the pier.",
+          "grammar": "受動態",
+          "ja": "青い漁船が桟橋のそばにつながれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Wooden posts and railings run along both sides of the pier.",
+          "grammar": "現在形",
+          "ja": "木製の柱と手すりが桟橋の両側に続いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Houses and trees can be seen across the harbor.",
+          "grammar": "助動詞＋受動態",
+          "ja": "港の向こう側には家や木々が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The birds are probably attracted by the smell of the fish.",
+          "grammar": "受動態 / probably",
+          "ja": "鳥たちはおそらく魚のにおいに引き寄せられています。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "mariner",
+          "ja": "船乗り・漁師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "flock",
+          "ja": "鳥の群れ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "harbor",
+          "ja": "港",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "catch",
+          "ja": "漁獲物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "predicament",
+          "ja": "困った状況",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "beleaguer",
+          "ja": "しつこく悩ませる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "swarm",
+          "ja": "群がる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fend",
+          "ja": "防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pilfer",
+          "ja": "こっそり盗む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evade",
+          "ja": "避ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hapless",
+          "ja": "不運な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "persistent",
+          "ja": "しつこい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "frantic",
+          "ja": "必死の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vulnerable",
+          "ja": "被害を受けやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "chaotic",
+          "ja": "混乱した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "beleaguer a hapless mariner",
+          "ja": "不運な船乗りをしつこく悩ませる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "swarm around the fisherman",
+          "ja": "漁師の周囲に群がる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fend off persistent seagulls",
+          "ja": "しつこいカモメを追い払う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pilfer fish from the bucket",
+          "ja": "バケツから魚を盗む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect his freshly caught fish",
+          "ja": "獲ったばかりの魚を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "find himself in a predicament",
+          "ja": "困った状況に陥る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create a chaotic scene",
+          "ja": "混乱した場面を生み出す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "hover directly above the catch",
+          "ja": "漁獲物の真上を飛ぶ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "struggle to evade the flock",
+          "ja": "鳥の群れを避けようと苦労する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A flock of persistent seagulls is beleaguering a hapless mariner as he carries his catch along the pier.",
+          "grammar": "as節 / 現在進行形",
+          "ja": "しつこいカモメの群れが、不運な漁師が漁獲物を桟橋で運んでいるところを悩ませています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several birds are swarming around him in an attempt to reach the fish inside the bucket.",
+          "grammar": "in an attempt to",
+          "ja": "数羽の鳥がバケツの中の魚に届こうとして彼の周囲に群がっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One particularly bold seagull appears to be trying to pilfer a fish directly from the container.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "特に大胆な一羽のカモメは、容器から直接魚を盗もうとしているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The fisherman raises one arm defensively while attempting to fend off the birds with the other.",
+          "grammar": "while＋現在分詞",
+          "ja": "漁師は片腕を防御するように上げながら、もう一方で鳥を追い払おうとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His tense expression suggests that the unexpected attention has placed him in a frustrating predicament.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "彼の緊張した表情から、思いがけない鳥の襲来によって困った状況に置かれていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The numerous wings spread across the foreground and sky create a strong sense of frantic movement.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "前景や空に広がる多数の翼が、激しい動きを強く感じさせています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The moored fishing boat and wooden pier establish the setting as a working coastal harbor.",
+          "grammar": "establish A as B",
+          "ja": "停泊した漁船と木製の桟橋によって、この場所が実際に使われている海辺の港であることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The exposed bucket makes the catch particularly vulnerable to birds searching for an easy meal.",
+          "grammar": "make＋O＋C",
+          "ja": "ふたのないバケツによって、漁獲物は簡単な餌を探す鳥に特に狙われやすくなっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image offers useful practice in describing simultaneous action, spatial movement, emotional reaction, and a rapidly developing predicament.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は同時に起こる動作、空間的な動き、感情的な反応、急速に展開する困った状況を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "fisherman": {
+      "x": 58,
+      "y": 42
+    },
+    "bucket": {
+      "x": 65,
+      "y": 55
+    },
+    "fish": {
+      "x": 65,
+      "y": 50
+    },
+    "hand": {
+      "x": 63,
+      "y": 26
+    },
+    "hat": {
+      "x": 53,
+      "y": 11
+    },
+    "hoodie": {
+      "x": 57,
+      "y": 31
+    },
+    "overalls": {
+      "x": 55,
+      "y": 64
+    },
+    "seagull1": {
+      "x": 37,
+      "y": 14
+    },
+    "seagull2": {
+      "x": 35,
+      "y": 38
+    },
+    "seagull3": {
+      "x": 70,
+      "y": 47
+    },
+    "seagull4": {
+      "x": 79,
+      "y": 14
+    },
+    "seagull5": {
+      "x": 18,
+      "y": 8
+    },
+    "seagull6": {
+      "x": 15,
+      "y": 23
+    },
+    "seagull7": {
+      "x": 94,
+      "y": 18
+    },
+    "seagull8": {
+      "x": 62,
+      "y": 7
+    },
+    "seagull9": {
+      "x": 73,
+      "y": 30
+    },
+    "pier": {
+      "x": 67,
+      "y": 77
+    },
+    "railing": {
+      "x": 27,
+      "y": 64
+    },
+    "post1": {
+      "x": 17,
+      "y": 58
+    },
+    "post2": {
+      "x": 37,
+      "y": 56
+    },
+    "post3": {
+      "x": 91,
+      "y": 48
+    },
+    "rope": {
+      "x": 16,
+      "y": 82
+    },
+    "sea": {
+      "x": 20,
+      "y": 50
+    },
+    "boat": {
+      "x": 88,
+      "y": 39
+    },
+    "harbor": {
+      "x": 77,
+      "y": 37
+    },
+    "houses": {
+      "x": 85,
+      "y": 30
+    },
+    "trees": {
+      "x": 76,
+      "y": 28
+    },
+    "sky": {
+      "x": 46,
+      "y": 6
+    },
+    "clouds": {
+      "x": 79,
+      "y": 8
+    },
+    "buoy": {
+      "x": 24,
+      "y": 47
+    },
+    "shadow": {
+      "x": 76,
+      "y": 79
+    }
+  }
+}

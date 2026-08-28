@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_075",
+  "imageSrc": "assets/images/l2_075.webp",
+  "titleEn": "Apologizing for Damaging a Classmate's Project",
+  "titleJa": "友達の作品を壊して謝る生徒",
+  "description": "明るい教室で、2人の男子生徒が壊れてしまった立体模型を前にしている場面である。左側の生徒は机の横に立ち、頭を深く下げて申し訳なさそうな姿勢を取っている。右側の生徒は椅子に座り、壊れた作品を見ながら悲しそうで困った表情を浮かべている。机の上には山、川、木々などを表した手作りの模型があり、中央部分が崩れ、紙や模型の破片が周囲に散らばっている。2人は同じような学校の制服を着ており、背景にはホワイトボード、本棚、地球儀、机や椅子が見える。失敗、謝罪、後悔、相手への思いやり、壊れた物への対応を英語で描写する練習に適した場面である。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration of two teenage boys in a bright classroom beside a damaged handmade school project. One student stands and bows deeply with his head lowered in apology. The other sits at the desk looking disappointed and worried. On the desk, show a broken cardboard landscape model with mountains, a blue river, small trees, and scattered pieces. Include school uniforms, desks, a whiteboard, bookshelves, plants, and a globe. Landscape 16:9, realistic illustration, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "project",
+          "ja": "作品",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "river",
+          "ja": "川",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "classroom",
+          "ja": "教室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "globe",
+          "ja": "地球儀",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "piece",
+          "ja": "破片",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bow",
+          "ja": "お辞儀をする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "break",
+          "ja": "壊す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sad",
+          "ja": "悲しい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "bow his head",
+          "ja": "頭を下げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the project",
+          "ja": "作品を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit at a desk",
+          "ja": "机に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a broken project",
+          "ja": "壊れた作品",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "small model trees",
+          "ja": "小さな模型の木",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "pieces on the desk",
+          "ja": "机の上の破片",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "look very sorry",
+          "ja": "とても申し訳なさそうに見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "inside a classroom",
+          "ja": "教室の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Two students are in a classroom.",
+          "grammar": "be動詞＋場所",
+          "ja": "2人の生徒が教室にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One student is bowing his head.",
+          "grammar": "現在進行形",
+          "ja": "1人の生徒が頭を下げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other student is sitting at a desk.",
+          "grammar": "現在進行形",
+          "ja": "もう1人の生徒は机に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a broken project on the desk.",
+          "grammar": "There is",
+          "ja": "机の上に壊れた作品があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are small pieces around the project.",
+          "grammar": "There are",
+          "ja": "作品の周りには小さな破片があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The seated student looks sad.",
+          "grammar": "look＋形容詞",
+          "ja": "座っている生徒は悲しそうに見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The standing student looks sorry.",
+          "grammar": "look＋形容詞",
+          "ja": "立っている生徒は申し訳なさそうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "He may be saying sorry.",
+          "grammar": "may be＋現在分詞",
+          "ja": "彼は謝っているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "apology",
+          "ja": "謝罪",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mistake",
+          "ja": "失敗",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "model",
+          "ja": "模型",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "損傷",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "classmate",
+          "ja": "クラスメート",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "responsibility",
+          "ja": "責任",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "apologize",
+          "ja": "謝る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "傷つける・壊す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "repair",
+          "ja": "修理する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "admit",
+          "ja": "認める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sorry",
+          "ja": "申し訳なく思っている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "動揺した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "broken",
+          "ja": "壊れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "disappointed",
+          "ja": "がっかりした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "responsible",
+          "ja": "責任のある",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "apologize to a classmate",
+          "ja": "クラスメートに謝る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "damage a school project",
+          "ja": "学校の作品を壊す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "admit a mistake",
+          "ja": "失敗を認める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take responsibility",
+          "ja": "責任を取る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "look deeply sorry",
+          "ja": "深く反省しているように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "feel disappointed",
+          "ja": "がっかりする",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "repair the broken model",
+          "ja": "壊れた模型を修理する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make things right",
+          "ja": "問題をきちんと解決する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "One student appears to be apologizing to his classmate.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "1人の生徒がクラスメートに謝っているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is bowing deeply with his head lowered.",
+          "grammar": "現在進行形 / with＋O＋過去分詞",
+          "ja": "彼は頭を下げて深くお辞儀をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A handmade model on the desk has been badly damaged.",
+          "grammar": "現在完了受動態",
+          "ja": "机の上の手作り模型がひどく壊れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Pieces of the project are scattered across the desk.",
+          "grammar": "受動態",
+          "ja": "作品の破片が机の上に散らばっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The seated student looks disappointed as he examines the damage.",
+          "grammar": "as",
+          "ja": "座っている生徒は壊れた部分を見ながら、がっかりしているようです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The standing student may feel responsible for what happened.",
+          "grammar": "may / what節",
+          "ja": "立っている生徒は起きたことに責任を感じているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "He may be trying to admit his mistake and apologize sincerely.",
+          "grammar": "may be＋現在分詞 / try to",
+          "ja": "彼は自分の失敗を認め、心から謝ろうとしているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "They may need to work together to repair the damaged project.",
+          "grammar": "may need to / to不定詞",
+          "ja": "2人は壊れた作品を直すために協力する必要があるかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "contrition",
+          "ja": "深い後悔・悔恨",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "remorse",
+          "ja": "良心の呵責・後悔",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "culpability",
+          "ja": "責任・過失",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "restitution",
+          "ja": "償い・原状回復",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reconciliation",
+          "ja": "和解",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "atonement",
+          "ja": "償い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "repent",
+          "ja": "悔いる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "acknowledge",
+          "ja": "認める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rectify",
+          "ja": "正す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reconcile",
+          "ja": "和解する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "penitent",
+          "ja": "深く反省した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "contrite",
+          "ja": "悔いている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "remorseful",
+          "ja": "後悔している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crestfallen",
+          "ja": "意気消沈した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "irreparable",
+          "ja": "修復できない",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "display genuine contrition",
+          "ja": "心からの悔恨を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "adopt a penitent posture",
+          "ja": "深く反省した姿勢を取る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "acknowledge one's culpability",
+          "ja": "自分の責任を認める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "express profound remorse",
+          "ja": "深い後悔を表す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "make restitution for the damage",
+          "ja": "損害を償う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rectify one's mistake",
+          "ja": "自分の過ちを正す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "seek reconciliation",
+          "ja": "和解を求める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a crestfallen classmate",
+          "ja": "意気消沈したクラスメート",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "take responsibility for the damage",
+          "ja": "損害に対する責任を負う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The standing student adopts a distinctly penitent posture, suggesting genuine contrition over what has occurred.",
+          "grammar": "現在分詞 / suggest",
+          "ja": "立っている生徒は明らかに深く反省した姿勢を取り、起きたことに対する心からの悔恨を示しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "His lowered head and deep bow convey remorse more strongly than a casual verbal apology would.",
+          "grammar": "比較表現 / than",
+          "ja": "頭を下げた深いお辞儀は、軽い言葉だけの謝罪よりも強く後悔の気持ちを伝えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The severely damaged model suggests that considerable effort may have been invested in the project before it was broken.",
+          "grammar": "suggest that / may have been＋過去分詞 / before",
+          "ja": "大きく壊れた模型から、それが壊れる前にかなりの労力が作品制作に費やされていた可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The seated student's crestfallen expression indicates disappointment rather than outright anger.",
+          "grammar": "rather than",
+          "ja": "座っている生徒の意気消沈した表情は、激しい怒りというより失望を示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If the standing student is responsible for the damage, acknowledging his culpability would be an important first step toward reconciliation.",
+          "grammar": "If / 動名詞主語 / toward",
+          "ja": "もし立っている生徒が損傷の原因であるなら、自分の責任を認めることは和解への重要な第一歩となるでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Sincere contrition generally involves not only apologizing but also attempting to rectify the consequences of one's actions.",
+          "grammar": "not only A but also B",
+          "ja": "心からの悔恨には、単に謝るだけでなく、自分の行動がもたらした結果を正そうとすることも含まれます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Offering to repair or rebuild the project could serve as a form of restitution and demonstrate that his remorse is genuine.",
+          "grammar": "動名詞主語 / could / that節",
+          "ja": "作品を修理または作り直すことを申し出れば、それは一種の償いとなり、彼の後悔が本物であることを示せるでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The situation illustrates how taking responsibility for a mistake can help restore trust after an interpersonal conflict.",
+          "grammar": "how節 / 動名詞主語",
+          "ja": "この場面は、過ちに責任を持つことが人間関係上の問題の後に信頼を取り戻す助けになることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing penitent contrition, remorse, culpability, restitution, damaged relationships, and reconciliation.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は深い悔恨、後悔、責任、償い、傷ついた人間関係、和解を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "student1": {
+      "x": 32,
+      "y": 46
+    },
+    "student2": {
+      "x": 76,
+      "y": 50
+    },
+    "bow": {
+      "x": 34,
+      "y": 31
+    },
+    "face": {
+      "x": 76,
+      "y": 34
+    },
+    "uniform": {
+      "x": 30,
+      "y": 52
+    },
+    "project": {
+      "x": 68,
+      "y": 76
+    },
+    "mountain": {
+      "x": 73,
+      "y": 72
+    },
+    "river": {
+      "x": 65,
+      "y": 80
+    },
+    "trees": {
+      "x": 58,
+      "y": 78
+    },
+    "pieces": {
+      "x": 73,
+      "y": 84
+    },
+    "desk": {
+      "x": 64,
+      "y": 86
+    },
+    "paper": {
+      "x": 50,
+      "y": 78
+    },
+    "chair": {
+      "x": 90,
+      "y": 74
+    },
+    "board": {
+      "x": 66,
+      "y": 20
+    },
+    "shelf": {
+      "x": 40,
+      "y": 66
+    },
+    "books": {
+      "x": 42,
+      "y": 68
+    },
+    "globe": {
+      "x": 95,
+      "y": 47
+    },
+    "plant": {
+      "x": 31,
+      "y": 55
+    },
+    "window": {
+      "x": 5,
+      "y": 15
+    },
+    "sunlight": {
+      "x": 15,
+      "y": 17
+    }
+  }
+}

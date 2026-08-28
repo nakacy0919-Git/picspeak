@@ -1,0 +1,737 @@
+{
+  "id": "theme_l2_061",
+  "imageSrc": "assets/images/l2_061.webp",
+  "titleEn": "Archaeological Excavation in Ancient Ruins",
+  "titleJa": "古代遺跡の発掘調査",
+  "description": "古代の石造遺跡で、4人の考古学者が発掘調査をしている場面である。手前左の女性はブラシを使って土や砂を慎重に取り除き、右側の男性は小さな道具で遺物の周囲を掘っている。中央奥の男性はしゃがみながら懐中電灯で発掘場所を照らし、右奥の女性はノートに調査内容を記録している。掘られた区画には人骨、頭蓋骨、土器、硬貨、装飾された石板などの遺物が見える。周囲には彫刻のある石柱、石壁、石床が残され、発掘道具やバケツも置かれている。考古学調査、古代文明、遺物の位置関係、調査方法を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show four archaeologists excavating an ancient stone ruin. In the foreground, a woman carefully brushes soil away from artifacts while a man on the right uses a small excavation tool. Behind them, an older man shines a flashlight into the excavation pit, and a woman records notes on a clipboard. Inside the pit, show pottery, old coins, human bones, a skull, broken stone fragments, and a decorated stone tablet. Surround the team with carved stone columns, weathered walls, cracked stone flooring, buckets, brushes, and archaeological tools. Warm sunlight enters the ruins. Landscape 16:9, polished realistic illustration style rather than photography, no logos, no readable modern text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "archaeologist",
+          "ja": "考古学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ruin",
+          "ja": "遺跡",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bone",
+          "ja": "骨",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "skull",
+          "ja": "頭蓋骨",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pot",
+          "ja": "壺",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coin",
+          "ja": "硬貨",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "brush",
+          "ja": "ブラシ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "明かり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stone",
+          "ja": "石",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "column",
+          "ja": "柱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dig",
+          "ja": "掘る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clean",
+          "ja": "きれいにする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "old",
+          "ja": "古い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "dig in the ground",
+          "ja": "地面を掘る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "clean an old object",
+          "ja": "古い物をきれいにする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a small brush",
+          "ja": "小さなブラシを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shine a light",
+          "ja": "明かりを当てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "write in a notebook",
+          "ja": "ノートに書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "old bones and pots",
+          "ja": "古い骨や壺",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "inside an ancient ruin",
+          "ja": "古代遺跡の中",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "stone columns around them",
+          "ja": "周囲の石柱",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four archaeologists are working in an ancient ruin.",
+          "grammar": "現在進行形",
+          "ja": "4人の考古学者が古代遺跡で作業しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A woman is cleaning the ground with a brush.",
+          "grammar": "現在進行形",
+          "ja": "女性がブラシで地面をきれいにしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is digging on the right.",
+          "grammar": "現在進行形",
+          "ja": "男性が右側で掘っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another man is holding a light.",
+          "grammar": "現在進行形",
+          "ja": "別の男性が明かりを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is writing in a notebook.",
+          "grammar": "現在進行形",
+          "ja": "女性がノートに書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are bones in the ground.",
+          "grammar": "There are",
+          "ja": "地面には骨があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are several old pots.",
+          "grammar": "There are",
+          "ja": "いくつか古い壺があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ruins are made of stone.",
+          "grammar": "受動態",
+          "ja": "遺跡は石でできています。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "excavation",
+          "ja": "発掘",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "artifact",
+          "ja": "遺物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "skeleton",
+          "ja": "骨格",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pottery",
+          "ja": "土器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "石板",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "site",
+          "ja": "遺跡現場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "excavate",
+          "ja": "発掘する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "uncover",
+          "ja": "掘り出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ancient",
+          "ja": "古代の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "buried",
+          "ja": "埋められた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fragile",
+          "ja": "壊れやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "historic",
+          "ja": "歴史的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "excavate an ancient site",
+          "ja": "古代遺跡を発掘する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "uncover buried artifacts",
+          "ja": "埋まっている遺物を掘り出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "brush away the soil",
+          "ja": "土をブラシで取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine human remains",
+          "ja": "人骨を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record important discoveries",
+          "ja": "重要な発見を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shine a flashlight into the pit",
+          "ja": "穴の中を懐中電灯で照らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "ancient pottery and coins",
+          "ja": "古代の土器と硬貨",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "work carefully together",
+          "ja": "慎重に協力して作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four archaeologists are excavating an ancient site inside the ruins.",
+          "grammar": "現在進行形",
+          "ja": "4人の考古学者が遺跡内部で古代の発掘現場を調査しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The woman on the left is carefully brushing soil away from an artifact.",
+          "grammar": "現在進行形",
+          "ja": "左側の女性は遺物から慎重に土を払い落としています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man on the right is using a small tool to uncover buried objects.",
+          "grammar": "to不定詞",
+          "ja": "右側の男性は埋まった物を掘り出すために小さな道具を使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An older archaeologist is shining a flashlight into the excavation pit.",
+          "grammar": "現在進行形",
+          "ja": "年配の考古学者が発掘区画を懐中電灯で照らしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman in the background is recording information on a clipboard.",
+          "grammar": "現在進行形",
+          "ja": "背景の女性はクリップボードに情報を記録しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several pieces of pottery, coins, bones, and a skull have been uncovered.",
+          "grammar": "現在完了受動態",
+          "ja": "いくつかの土器、硬貨、骨、頭蓋骨が発掘されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team is probably working slowly because the artifacts may be fragile.",
+          "grammar": "because / may",
+          "ja": "遺物が壊れやすい可能性があるため、チームはゆっくり作業しているのでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The carved columns suggest that the site once belonged to an advanced ancient culture.",
+          "grammar": "suggest that",
+          "ja": "彫刻された柱から、この遺跡がかつて高度な古代文化に属していたことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "vestige",
+          "ja": "遺物・痕跡",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "antiquarian",
+          "ja": "古代遺物に関する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relic",
+          "ja": "遺物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "provenance",
+          "ja": "由来・出所",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stratum",
+          "ja": "地層",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "uneearth",
+          "ja": "発掘する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "exhume",
+          "ja": "掘り出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "catalog",
+          "ja": "記録・分類する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scrutinize",
+          "ja": "詳細に調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "preserve",
+          "ja": "保存する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "antiquated",
+          "ja": "非常に古い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intricate",
+          "ja": "精巧な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fragmentary",
+          "ja": "断片的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "buried",
+          "ja": "埋没した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "archaeological",
+          "ja": "考古学上の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "unearth antiquarian vestiges",
+          "ja": "古代の遺物を発掘する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "exhume buried human remains",
+          "ja": "埋没した人骨を掘り出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scrutinize archaeological relics",
+          "ja": "考古学的遺物を詳細に調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "establish the provenance of artifacts",
+          "ja": "遺物の由来を明らかにする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "catalog newly discovered objects",
+          "ja": "新しく発見した物を記録分類する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "preserve fragile remains",
+          "ja": "壊れやすい遺物を保存する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "excavate a distinct stratum",
+          "ja": "特定の地層を発掘する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reconstruct an ancient civilization",
+          "ja": "古代文明を復元的に理解する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "document intricate architectural remains",
+          "ja": "精巧な建築遺構を記録する",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The archaeological team is meticulously unearthing antiquarian vestiges within the remains of an ancient structure.",
+          "grammar": "現在進行形",
+          "ja": "考古学チームは古代建造物の遺構内で古代の遺物を細心の注意を払って発掘しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The exposed pottery, coins, skeletal remains, and decorated tablet constitute a diverse collection of archaeological relics.",
+          "grammar": "現在形",
+          "ja": "露出した土器、硬貨、人骨、装飾石板は、多様な考古学的遺物の集合を形成しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One researcher is brushing away loose soil so as not to damage the fragile material beneath it.",
+          "grammar": "so as not to",
+          "ja": "一人の研究者は下にある壊れやすい資料を傷つけないよう、柔らかい土をブラシで取り除いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The older archaeologist is illuminating the excavation pit while his colleagues scrutinize individual finds.",
+          "grammar": "while",
+          "ja": "年配の考古学者が発掘区画を照らす一方、同僚たちは個々の発見物を詳しく調べています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Careful documentation may allow the researchers to establish the provenance and historical context of the artifacts.",
+          "grammar": "may allow O to",
+          "ja": "慎重な記録によって、研究者は遺物の由来や歴史的背景を明らかにできる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The human remains appear to have been buried within the same archaeological stratum as several pieces of pottery.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "人骨は複数の土器と同じ考古学的地層に埋葬されていたように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Intricately carved columns surrounding the site suggest that the building once held considerable cultural or ceremonial significance.",
+          "grammar": "suggest that",
+          "ja": "発掘現場を囲む精巧な彫刻の柱から、この建物がかつて大きな文化的または儀礼的意味を持っていたことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By cataloging fragmentary evidence from the excavation, archaeologists may gradually reconstruct aspects of the society that occupied the site.",
+          "grammar": "By＋動名詞 / 関係代名詞that",
+          "ja": "発掘から得られた断片的な証拠を記録分類することで、考古学者はこの場所に暮らしていた社会の姿を徐々に再構築できる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing antiquarian vestiges, archaeological methods, spatial relationships, historical inference, and collaborative fieldwork.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は古代遺物、考古学的手法、位置関係、歴史的推論、共同での現地調査を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman1": {
+      "x": 25,
+      "y": 47
+    },
+    "man1": {
+      "x": 40,
+      "y": 31
+    },
+    "man2": {
+      "x": 72,
+      "y": 43
+    },
+    "woman2": {
+      "x": 88,
+      "y": 25
+    },
+    "brush": {
+      "x": 35,
+      "y": 76
+    },
+    "light": {
+      "x": 42,
+      "y": 35
+    },
+    "tool": {
+      "x": 65,
+      "y": 59
+    },
+    "clipboard": {
+      "x": 87,
+      "y": 30
+    },
+    "skull": {
+      "x": 57,
+      "y": 67
+    },
+    "bones": {
+      "x": 54,
+      "y": 77
+    },
+    "pot1": {
+      "x": 42,
+      "y": 67
+    },
+    "pot2": {
+      "x": 48,
+      "y": 65
+    },
+    "pot3": {
+      "x": 33,
+      "y": 80
+    },
+    "coins": {
+      "x": 47,
+      "y": 85
+    },
+    "tablet": {
+      "x": 65,
+      "y": 81
+    },
+    "pit": {
+      "x": 54,
+      "y": 72
+    },
+    "column1": {
+      "x": 9,
+      "y": 18
+    },
+    "column2": {
+      "x": 22,
+      "y": 13
+    },
+    "column3": {
+      "x": 73,
+      "y": 14
+    },
+    "wall": {
+      "x": 92,
+      "y": 18
+    },
+    "floor": {
+      "x": 54,
+      "y": 48
+    },
+    "bucket1": {
+      "x": 5,
+      "y": 84
+    },
+    "bucket2": {
+      "x": 96,
+      "y": 63
+    },
+    "tools": {
+      "x": 14,
+      "y": 89
+    },
+    "stones": {
+      "x": 61,
+      "y": 88
+    },
+    "sunlight": {
+      "x": 49,
+      "y": 9
+    }
+  }
+}

@@ -1,0 +1,709 @@
+{
+  "id": "theme_l2_069",
+  "imageSrc": "assets/images/l2_069.webp",
+  "titleEn": "Family Roots at an Ancestral Home",
+  "titleJa": "先祖代々の家で家族のルーツを振り返る",
+  "description": "古い伝統的な家の前で、3世代にわたる家族が一枚の古い家族写真を囲んでいる場面である。中央では高齢の男女が並び、その前には昔の男女が写った額入りの白黒写真がある。左側には成人男性と少年、右側には成人女性、少女、もう一人の成人男性がおり、全員が写真を見ながら穏やかな表情を浮かべている。大人たちは子どもの肩に手を置くなど、家族の親密さが感じられる。背景には赤茶色の瓦屋根、木製の扉、古い柱を持つ伝統的な住宅があり、庭には石畳、植木鉢、木々が見える。家族の歴史、世代間のつながり、祖先、伝統的な住居、古い写真を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show a multigenerational Asian family of seven standing together in front of an old traditional family home. An elderly couple in the center holds a framed black-and-white portrait of an older couple, while younger adults and two children gather around them smiling and looking at the photograph. Include a weathered tiled roof, wooden doors, stone columns, courtyard paving, plants, and trees. Emphasize family heritage, warm relationships, and the contrast between generations. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "family",
+          "ja": "家族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "photo",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "grandfather",
+          "ja": "祖父",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "grandmother",
+          "ja": "祖母",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "男の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "girl",
+          "ja": "女の子",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "額縁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "roof",
+          "ja": "屋根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "ほほえむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "old",
+          "ja": "古い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at an old photo",
+          "ja": "古い写真を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a picture frame",
+          "ja": "写真立てを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand together",
+          "ja": "一緒に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "smile at the photo",
+          "ja": "写真を見てほほえむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an old family house",
+          "ja": "古い家族の家",
+          "type": "place",
+          "points": 20
+        },
+        {
+          "text": "three generations",
+          "ja": "3世代",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a black-and-white photo",
+          "ja": "白黒写真",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "in front of the house",
+          "ja": "家の前で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A family is standing in front of an old house.",
+          "grammar": "現在進行形",
+          "ja": "家族が古い家の前に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There are seven people in the family.",
+          "grammar": "There are",
+          "ja": "家族には7人います。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The grandparents are in the center.",
+          "grammar": "be動詞＋場所",
+          "ja": "祖父母は中央にいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are holding an old photo.",
+          "grammar": "現在進行形",
+          "ja": "彼らは古い写真を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A boy is standing on the left.",
+          "grammar": "現在進行形",
+          "ja": "男の子が左側に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A girl is standing on the right.",
+          "grammar": "現在進行形",
+          "ja": "女の子が右側に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Everyone is looking at the picture.",
+          "grammar": "現在進行形",
+          "ja": "みんなが写真を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The family looks happy.",
+          "grammar": "look＋形容詞",
+          "ja": "家族は幸せそうに見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "generation",
+          "ja": "世代",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ancestor",
+          "ja": "先祖",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "relative",
+          "ja": "親族",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "portrait",
+          "ja": "肖像写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tradition",
+          "ja": "伝統",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "memory",
+          "ja": "思い出",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "remember",
+          "ja": "思い出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "share",
+          "ja": "共有する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "preserve",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gather",
+          "ja": "集まる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "traditional",
+          "ja": "伝統的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "historic",
+          "ja": "歴史のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "elderly",
+          "ja": "高齢の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "close",
+          "ja": "親しい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "valuable",
+          "ja": "大切な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "gather as a family",
+          "ja": "家族で集まる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at an ancestral portrait",
+          "ja": "先祖の肖像写真を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remember older generations",
+          "ja": "昔の世代を思い出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "share family memories",
+          "ja": "家族の思い出を共有する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "preserve family traditions",
+          "ja": "家族の伝統を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a traditional family home",
+          "ja": "伝統的な家族の家",
+          "type": "place",
+          "points": 20
+        },
+        {
+          "text": "members of three generations",
+          "ja": "3世代の家族",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a valuable family photograph",
+          "ja": "大切な家族写真",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Members of three generations are gathered in front of a traditional family home.",
+          "grammar": "受動態",
+          "ja": "3世代の家族が伝統的な家の前に集まっています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The elderly couple is holding a framed black-and-white photograph.",
+          "grammar": "現在進行形",
+          "ja": "高齢の夫婦が額に入った白黒写真を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people in the photograph may be older members of the family.",
+          "grammar": "may",
+          "ja": "写真に写っている人々は、この家族の昔の親族かもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The younger family members are looking at the portrait with interest.",
+          "grammar": "現在進行形 / with",
+          "ja": "若い家族は興味を持ってその肖像写真を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several adults have placed their hands on the children's shoulders.",
+          "grammar": "現在完了形",
+          "ja": "何人かの大人が子どもたちの肩に手を置いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their smiles suggest that the photograph has special meaning for the family.",
+          "grammar": "suggest that",
+          "ja": "彼らの笑顔から、その写真が家族にとって特別な意味を持っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The old house may have been connected with the family for many years.",
+          "grammar": "may have been＋過去分詞",
+          "ja": "この古い家は長年この家族と関わってきたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how photographs can help families remember their history.",
+          "grammar": "how節",
+          "ja": "この場面は、写真が家族の歴史を思い出す助けになることを示しています。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "lineage",
+          "ja": "家系・血統",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ancestry",
+          "ja": "祖先・家系",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "heritage",
+          "ja": "受け継がれた伝統",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "heirloom",
+          "ja": "家宝",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "progenitor",
+          "ja": "祖先",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "reminisce",
+          "ja": "思い出を語る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inherit",
+          "ja": "受け継ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "commemorate",
+          "ja": "記念する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "preserve",
+          "ja": "保存する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "trace",
+          "ja": "たどる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ancestral",
+          "ja": "先祖代々の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "hereditary",
+          "ja": "代々受け継がれる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multigenerational",
+          "ja": "多世代にわたる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sentimental",
+          "ja": "感傷的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "timeworn",
+          "ja": "年月を経た",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a hereditary domicile",
+          "ja": "代々受け継がれてきた家",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "trace one's lineage",
+          "ja": "自分の家系をたどる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "preserve ancestral heritage",
+          "ja": "先祖からの文化的遺産を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reminisce about previous generations",
+          "ja": "過去の世代について思い出を語る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inherit a family heirloom",
+          "ja": "家宝を受け継ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "commemorate one's progenitors",
+          "ja": "祖先をしのぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain multigenerational ties",
+          "ja": "世代を越えたつながりを維持する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a timeworn ancestral residence",
+          "ja": "年月を経た先祖代々の住居",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "convey a sense of continuity",
+          "ja": "世代の連続性を感じさせる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The multigenerational family appears to be gathering at what may be a hereditary domicile associated with their ancestry.",
+          "grammar": "appear to be＋現在分詞 / what節 / may",
+          "ja": "この多世代家族は、自分たちの家系と関係する先祖代々の家と思われる場所に集まっているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The framed portrait may depict progenitors whose memory continues to hold significance for the younger generations.",
+          "grammar": "may / 関係代名詞whose",
+          "ja": "額入りの写真には、若い世代にとって今も重要な存在である祖先が写っているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By examining the old photograph together, the family can trace aspects of its lineage and preserve a shared sense of ancestry.",
+          "grammar": "By＋動名詞 / can",
+          "ja": "古い写真を一緒に見ることで、家族は家系の一部をたどり、共通の祖先意識を守ることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The elderly couple occupies the center of the group, visually linking the children with earlier generations.",
+          "grammar": "現在分詞による付帯状況",
+          "ja": "高齢の夫婦が集団の中央に位置し、子どもたちと以前の世代を視覚的につないでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The timeworn architecture behind them reinforces the impression that the residence has considerable historical importance to the family.",
+          "grammar": "reinforce / that節",
+          "ja": "背後の年月を経た建物は、その住居が家族にとって大きな歴史的意味を持つという印象を強めています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their affectionate gestures and relaxed smiles suggest that the gathering is associated with positive family memories rather than formal obligation.",
+          "grammar": "suggest that / rather than",
+          "ja": "親しみのある身ぶりと穏やかな笑顔から、この集まりが形式的な義務ではなく、温かな家族の記憶と結びついていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Old photographs can function as sentimental heirlooms through which descendants develop a tangible connection with their heritage.",
+          "grammar": "through which",
+          "ja": "古い写真は、子孫が自分たちの伝統や歴史との具体的なつながりを感じるための思い出深い家宝として機能することがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Preserving both the ancestral residence and family records may help maintain continuity between past, present, and future generations.",
+          "grammar": "動名詞主語 / may help",
+          "ja": "先祖代々の住居と家族の記録の両方を守ることは、過去・現在・未来の世代の連続性を維持する助けになるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a hereditary domicile, lineage, ancestry, heirlooms, multigenerational relationships, and cultural continuity.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は先祖代々の家、家系、祖先、家宝、多世代の関係、文化的な継承を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man1": {
+      "x": 23,
+      "y": 48
+    },
+    "boy": {
+      "x": 32,
+      "y": 68
+    },
+    "grandfather": {
+      "x": 44,
+      "y": 50
+    },
+    "grandmother": {
+      "x": 55,
+      "y": 55
+    },
+    "woman": {
+      "x": 68,
+      "y": 50
+    },
+    "girl": {
+      "x": 75,
+      "y": 69
+    },
+    "man2": {
+      "x": 84,
+      "y": 48
+    },
+    "photo": {
+      "x": 50,
+      "y": 72
+    },
+    "frame": {
+      "x": 50,
+      "y": 72
+    },
+    "couple": {
+      "x": 50,
+      "y": 72
+    },
+    "house": {
+      "x": 50,
+      "y": 31
+    },
+    "roof": {
+      "x": 50,
+      "y": 12
+    },
+    "doorway": {
+      "x": 50,
+      "y": 40
+    },
+    "column": {
+      "x": 59,
+      "y": 37
+    },
+    "steps": {
+      "x": 10,
+      "y": 81
+    },
+    "courtyard": {
+      "x": 51,
+      "y": 94
+    },
+    "tree": {
+      "x": 91,
+      "y": 12
+    },
+    "plants": {
+      "x": 94,
+      "y": 75
+    },
+    "pot": {
+      "x": 4,
+      "y": 79
+    }
+  }
+}

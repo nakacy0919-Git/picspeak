@@ -15,7 +15,6 @@
         { "text": "wallet", "ja": "財布", "type": "object", "points": 10 },
         { "text": "bag", "ja": "かばん", "type": "object", "points": 10 },
         { "text": "station", "ja": "駅", "type": "place", "points": 10 },
-        { "text": "bench", "ja": "ベンチ", "type": "object", "points": 10 },
         { "text": "train", "ja": "電車", "type": "object", "points": 10 },
         { "text": "man", "ja": "男性", "type": "person", "points": 10 },
         { "text": "boy", "ja": "男の子", "type": "person", "points": 10 },
@@ -60,14 +59,6 @@
           "type": "detail",
           "points": 40,
           "audioSrc": "assets/audio/l2_001_elem_s3.mp3"
-        },
-        {
-          "text": "A wallet is near the bench.",
-          "grammar": "be動詞＋場所",
-          "ja": "財布がベンチの近くにあります。",
-          "type": "detail",
-          "points": 40,
-          "audioSrc": "assets/audio/l2_001_elem_s4.mp3"
         },
         {
           "text": "A man is cleaning up some coffee.",
@@ -141,7 +132,7 @@
           "audioSrc": "assets/audio/l2_001_jh_s2.mp3"
         },
         {
-          "text": "Her friend is pointing toward a wallet lying near the bench.",
+          "text": "Her friend is pointing toward a wallet.",
           "grammar": "現在分詞による後置修飾",
           "ja": "友達はベンチの近くに落ちている財布を指さしています。",
           "type": "detail",
@@ -229,14 +220,6 @@
           "audioSrc": "assets/audio/l2_001_hs_s2.mp3"
         },
         {
-          "text": "Her companion is gesturing toward the wallet, which is lying unnoticed beside a nearby bench.",
-          "grammar": "非制限用法の関係代名詞",
-          "ja": "同行している友人は、近くのベンチのそばに気づかれずに落ちている財布の方を指しています。",
-          "type": "detail",
-          "points": 40,
-          "audioSrc": "assets/audio/l2_001_hs_s3.mp3"
-        },
-        {
           "text": "Meanwhile, a station employee is assisting an elderly passenger who appears confused by the station map.",
           "grammar": "関係代名詞who",
           "ja": "その一方で、駅員は駅の地図に戸惑っているように見える高齢の乗客を手助けしています。",
@@ -283,7 +266,6 @@
     "girl": { "x": 36, "y": 52 },
     "bag": { "x": 39, "y": 63 },
     "wallet": { "x": 57, "y": 72 },
-    "bench": { "x": 63, "y": 60 },
     "station_employee": { "x": 18, "y": 48 },
     "suitcase": { "x": 13, "y": 69 },
     "spilled_coffee": { "x": 82, "y": 72 },

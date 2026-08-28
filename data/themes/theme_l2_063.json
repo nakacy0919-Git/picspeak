@@ -1,0 +1,705 @@
+{
+  "id": "theme_l2_063",
+  "imageSrc": "assets/images/l2_063.webp",
+  "titleEn": "A Controversial Decision on the Field",
+  "titleJa": "判定をめぐるサッカー選手の抗議",
+  "description": "満員のサッカースタジアムで、審判の判定をめぐって選手たちが強く反応している場面である。中央では赤いユニフォームの選手が立っており、その足元では水色のユニフォームの選手が倒れて脚を押さえている。右側の審判は両手を上げて選手たちを制止するような姿勢を取っている。水色のチームの複数の選手は両腕を広げたり、ひざまずいたりして判定に抗議している。一方、右奥の赤いユニフォームの選手は両腕を上げて喜んでいる。背景の観客席は赤い服を着たサポーターで埋まり、赤と白の旗やマフラーが多数見える。試合中の判定、選手の感情、観客の反応、公平性や偏りに対する印象を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show a controversial moment in a crowded soccer stadium. A referee in black raises both hands to control the situation. One light-blue player lies on the grass holding his leg, while several light-blue teammates protest with raised or open arms. A red player stands near the injured player, and another red player celebrates in the background. Fill the stands with enthusiastic supporters dressed mainly in red, waving red-and-white flags and scarves. Include the ball on the grass and a dramatic match atmosphere. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable team names.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "referee",
+          "ja": "審判",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "player",
+          "ja": "選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "競技場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "観客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "flag",
+          "ja": "旗",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "leg",
+          "ja": "脚",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "shirt",
+          "ja": "ユニフォーム",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hand",
+          "ja": "手",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stadium",
+          "ja": "スタジアム",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "倒れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "raise",
+          "ja": "上げる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shout",
+          "ja": "叫ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "celebrate",
+          "ja": "喜ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "angry",
+          "ja": "怒った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a soccer referee",
+          "ja": "サッカーの審判",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "raise both hands",
+          "ja": "両手を上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "lie on the ground",
+          "ja": "地面に倒れている",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold his leg",
+          "ja": "脚を押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "shout at the referee",
+          "ja": "審判に向かって叫ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "players in blue",
+          "ja": "青いユニフォームの選手",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "players in red",
+          "ja": "赤いユニフォームの選手",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a large crowd",
+          "ja": "大勢の観客",
+          "type": "person",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A soccer player is lying on the ground.",
+          "grammar": "現在進行形",
+          "ja": "サッカー選手が地面に倒れています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is holding his leg.",
+          "grammar": "現在進行形",
+          "ja": "彼は脚を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A referee is standing near the players.",
+          "grammar": "現在進行形",
+          "ja": "審判が選手たちの近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The referee is raising both hands.",
+          "grammar": "現在進行形",
+          "ja": "審判は両手を上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some players in blue look angry.",
+          "grammar": "look＋形容詞",
+          "ja": "青いユニフォームの選手たちは怒っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A player in red is standing near the injured player.",
+          "grammar": "現在進行形",
+          "ja": "赤いユニフォームの選手が倒れた選手の近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a ball on the grass.",
+          "grammar": "There is",
+          "ja": "芝生の上にボールがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many fans in the stadium.",
+          "grammar": "There are",
+          "ja": "スタジアムには多くのファンがいます。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "decision",
+          "ja": "判定",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "referee",
+          "ja": "審判",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "opponent",
+          "ja": "相手選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "supporter",
+          "ja": "サポーター",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "foul",
+          "ja": "反則",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "injury",
+          "ja": "けが",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "protest",
+          "ja": "抗議する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "complain",
+          "ja": "不満を言う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "signal",
+          "ja": "合図する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "celebrate",
+          "ja": "喜ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "injured",
+          "ja": "けがをした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "腹を立てた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "controversial",
+          "ja": "議論を呼ぶ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "excited",
+          "ja": "興奮した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unfair",
+          "ja": "不公平な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "protest a decision",
+          "ja": "判定に抗議する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "complain to the referee",
+          "ja": "審判に不満を訴える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fall after a challenge",
+          "ja": "接触後に倒れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold an injured leg",
+          "ja": "けがをした脚を押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "signal with both hands",
+          "ja": "両手で合図する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "argue about a foul",
+          "ja": "反則について言い争う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cheer from the stands",
+          "ja": "観客席から声援を送る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a controversial decision",
+          "ja": "議論を呼ぶ判定",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Several players are protesting a referee's decision during a soccer match.",
+          "grammar": "現在進行形",
+          "ja": "数人の選手がサッカーの試合中に審判の判定へ抗議しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A light-blue player is lying on the field and holding his leg.",
+          "grammar": "現在進行形",
+          "ja": "水色のユニフォームの選手がグラウンドに倒れ、脚を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A red player is standing close to the injured player.",
+          "grammar": "現在進行形",
+          "ja": "赤いユニフォームの選手がけがをした選手の近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The referee is holding up both hands as if trying to calm the players.",
+          "grammar": "as if / try to",
+          "ja": "審判は選手たちを落ち着かせようとするように両手を上げています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Some light-blue players are spreading their arms to question the decision.",
+          "grammar": "to不定詞",
+          "ja": "水色の選手たちは判定に疑問を示すため両腕を広げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One red player in the background is celebrating with both arms raised.",
+          "grammar": "現在進行形 / with",
+          "ja": "背景では赤いユニフォームの選手が両腕を上げて喜んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The crowd behind the players is cheering loudly.",
+          "grammar": "現在進行形",
+          "ja": "選手たちの後ろの観客が大きな声で応援しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The players may believe that the referee's decision was unfair.",
+          "grammar": "may / believe that",
+          "ja": "選手たちは審判の判定が不公平だったと考えているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "partisan",
+          "ja": "一方に偏った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "propensity",
+          "ja": "傾向",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "impartiality",
+          "ja": "公平性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "bias",
+          "ja": "偏り・偏見",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "verdict",
+          "ja": "判定",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "remonstrate",
+          "ja": "強く抗議する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "adjudicate",
+          "ja": "判定を下す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dispute",
+          "ja": "異議を唱える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "favor",
+          "ja": "ひいきする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "appease",
+          "ja": "なだめる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contentious",
+          "ja": "論争を招く",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "aggrieved",
+          "ja": "不当な扱いに憤った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "impartial",
+          "ja": "公平な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "disputed",
+          "ja": "異議を唱えられた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "subjective",
+          "ja": "主観的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a partisan propensity",
+          "ja": "一方に偏る傾向",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "question the referee's impartiality",
+          "ja": "審判の公平性に疑問を呈する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "remonstrate against the verdict",
+          "ja": "判定に強く抗議する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dispute a contentious decision",
+          "ja": "論争を招く判定に異議を唱える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "display apparent bias",
+          "ja": "明らかな偏りを示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "favor one side",
+          "ja": "一方をひいきする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "appease aggrieved players",
+          "ja": "不満を抱く選手たちをなだめる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain strict impartiality",
+          "ja": "厳格な公平性を保つ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "perceive the ruling as biased",
+          "ja": "判定を偏っていると受け止める",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The aggrieved players appear to suspect a partisan propensity in the referee's handling of the disputed incident.",
+          "grammar": "appear to / suspect",
+          "ja": "不満を抱く選手たちは、問題となった場面に対する審判の対応に一方へ偏る傾向があるのではないかと疑っているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several light-blue players are remonstrating against the verdict while the referee attempts to control the confrontation.",
+          "grammar": "while / attempt to",
+          "ja": "数人の水色の選手が判定に強く抗議する一方、審判は対立を収めようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The injured player's position on the ground appears to have intensified his teammates' dissatisfaction with the ruling.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "選手が地面に倒れていることが、判定に対するチームメートの不満をさらに強めたようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their expansive gestures suggest that they perceive the decision as questionable or potentially biased.",
+          "grammar": "suggest that / perceive A as B",
+          "ja": "選手たちの大きな身ぶりから、その判定を疑わしい、あるいは偏っている可能性があると受け止めていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The overwhelmingly red crowd may further contribute to the impression that one side enjoys a strong psychological advantage.",
+          "grammar": "may / contribute to",
+          "ja": "観客の大部分が赤いチームを支持していることも、一方のチームが心理的に大きな優位性を持っているという印象を強めている可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Nothing in the image alone proves that the referee actually favors either team, despite the players' apparent suspicions.",
+          "grammar": "prove that / despite",
+          "ja": "選手たちが疑っているように見えても、この画像だけから審判が実際にどちらかのチームをひいきしていると証明することはできません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "An official must maintain strict impartiality when adjudicating contentious situations under intense pressure.",
+          "grammar": "when＋現在分詞",
+          "ja": "審判は強いプレッシャーの中で論争を招く場面を判定する際、厳格な公平性を保たなければなりません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The contrasting reactions of the two teams illustrate how a single ruling can produce dramatically different interpretations.",
+          "grammar": "how節",
+          "ja": "両チームの対照的な反応は、一つの判定がいかに大きく異なる解釈を生み得るかを示しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a partisan propensity, perceived bias, disputed decisions, emotional protest, and the importance of impartial officiating.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は一方に偏る傾向、認識された偏り、議論を呼ぶ判定、感情的な抗議、公平な審判の重要性を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "referee": {
+      "x": 77,
+      "y": 42
+    },
+    "player1": {
+      "x": 53,
+      "y": 50
+    },
+    "player2": {
+      "x": 57,
+      "y": 72
+    },
+    "player3": {
+      "x": 20,
+      "y": 48
+    },
+    "player4": {
+      "x": 32,
+      "y": 53
+    },
+    "player5": {
+      "x": 9,
+      "y": 63
+    },
+    "player6": {
+      "x": 91,
+      "y": 48
+    },
+    "ball": {
+      "x": 64,
+      "y": 82
+    },
+    "leg": {
+      "x": 52,
+      "y": 72
+    },
+    "hand": {
+      "x": 71,
+      "y": 22
+    },
+    "crowd": {
+      "x": 50,
+      "y": 20
+    },
+    "flag1": {
+      "x": 7,
+      "y": 15
+    },
+    "flag2": {
+      "x": 47,
+      "y": 11
+    },
+    "flag3": {
+      "x": 89,
+      "y": 13
+    },
+    "scarves": {
+      "x": 36,
+      "y": 15
+    },
+    "field": {
+      "x": 53,
+      "y": 88
+    },
+    "grass": {
+      "x": 47,
+      "y": 92
+    },
+    "stands": {
+      "x": 48,
+      "y": 29
+    }
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "id": "theme_l2_067",
+  "imageSrc": "assets/images/l2_067.webp",
+  "titleEn": "Thinking About the Meaning of Success",
+  "titleJa": "成功とは何かを考える授業",
+  "description": "高校の教室で、教師がホワイトボードに「What does it truly mean to be successful?」という問いを書き、生徒たちに考えさせている場面である。左側の女性教師は黒いマーカーを持ってホワイトボードの前に立っている。手前には3人の生徒が机に座り、教師とボードの問いに注意を向けている。教室の壁には授業での態度や学習への姿勢についての掲示物があり、左上には時計も掛かっている。ホワイトボードが画面の大部分を占め、問いそのものが授業の中心であることが分かる。学校生活、授業中の思考、抽象的な問い、成功に対する価値観を英語で描写する練習に適した場面である。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show a female teacher standing at a large whiteboard in a high school classroom, holding a black marker after writing the question, \"What does it truly mean to be successful?\" Three teenage students sit at desks in the foreground facing the board and listening thoughtfully. Include a wall clock, simple classroom expectation posters, desks, notebooks, chairs, and a clean academic atmosphere. Make the large whiteboard and reflective question the main visual focus. Landscape 16:9, polished realistic illustration style rather than photography, no logos or commercial branding.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "teacher",
+          "ja": "先生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "student",
+          "ja": "生徒",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "classroom",
+          "ja": "教室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "board",
+          "ja": "ホワイトボード",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "marker",
+          "ja": "マーカー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "clock",
+          "ja": "時計",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "question",
+          "ja": "質問",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "notebook",
+          "ja": "ノート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "write",
+          "ja": "書く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "think",
+          "ja": "考える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "successful",
+          "ja": "成功した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "write on the board",
+          "ja": "ボードに書く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a marker",
+          "ja": "マーカーを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit at a desk",
+          "ja": "机に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to the teacher",
+          "ja": "先生の話を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "think about success",
+          "ja": "成功について考える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a big whiteboard",
+          "ja": "大きなホワイトボード",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "three students",
+          "ja": "3人の生徒",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "inside a classroom",
+          "ja": "教室の中",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A teacher is standing in front of a whiteboard.",
+          "grammar": "現在進行形",
+          "ja": "先生がホワイトボードの前に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is holding a marker.",
+          "grammar": "現在進行形",
+          "ja": "彼女はマーカーを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a question on the board.",
+          "grammar": "There is",
+          "ja": "ボードに質問が書かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Three students are sitting at their desks.",
+          "grammar": "現在進行形",
+          "ja": "3人の生徒が机に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students are looking at the board.",
+          "grammar": "現在進行形",
+          "ja": "生徒たちはボードを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are thinking about success.",
+          "grammar": "現在進行形",
+          "ja": "彼らは成功について考えています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a clock on the wall.",
+          "grammar": "There is",
+          "ja": "壁に時計があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The classroom looks quiet.",
+          "grammar": "look＋形容詞",
+          "ja": "教室は静かに見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "discussion",
+          "ja": "話し合い",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "success",
+          "ja": "成功",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "meaning",
+          "ja": "意味",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "opinion",
+          "ja": "意見",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "attitude",
+          "ja": "姿勢",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reflect",
+          "ja": "振り返って考える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "consider",
+          "ja": "よく考える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "express",
+          "ja": "表現する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discuss",
+          "ja": "話し合う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "define",
+          "ja": "定義する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "thoughtful",
+          "ja": "よく考えている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "abstract",
+          "ja": "抽象的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "personal",
+          "ja": "個人的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "positive",
+          "ja": "前向きな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "important",
+          "ja": "重要な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "reflect on success",
+          "ja": "成功について振り返って考える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "consider an important question",
+          "ja": "重要な問いについて考える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "define personal success",
+          "ja": "自分にとっての成功を定義する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "express an opinion",
+          "ja": "意見を表現する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "discuss different ideas",
+          "ja": "異なる考えについて話し合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a thought-provoking question",
+          "ja": "考えさせられる問い",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "listen carefully in class",
+          "ja": "授業で注意深く聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "think about the future",
+          "ja": "将来について考える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The teacher is asking the students to think about the meaning of success.",
+          "grammar": "ask＋O＋to",
+          "ja": "先生は生徒たちに成功の意味について考えるよう求めています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She has written a thought-provoking question on the whiteboard.",
+          "grammar": "現在完了形",
+          "ja": "彼女はホワイトボードに考えさせられる問いを書いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students are sitting quietly while looking at the board.",
+          "grammar": "while＋現在分詞",
+          "ja": "生徒たちはボードを見ながら静かに座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They may have different ideas about what it means to be successful.",
+          "grammar": "may / what節",
+          "ja": "成功するとは何かについて、生徒たちは異なる考えを持っているかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The teacher may want them to express their own opinions.",
+          "grammar": "want＋O＋to",
+          "ja": "先生は生徒たちに自分の意見を表現してほしいのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Posters on the wall remind students about positive classroom behavior.",
+          "grammar": "remind＋O＋about",
+          "ja": "壁の掲示物は生徒たちに前向きな授業態度を思い出させています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The question encourages the students to reflect on their values and goals.",
+          "grammar": "encourage＋O＋to",
+          "ja": "その問いは生徒たちに自分の価値観や目標について考えるよう促しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The lesson appears to focus on discussion rather than memorizing facts.",
+          "grammar": "appear to / rather than",
+          "ja": "この授業は事実の暗記よりも話し合いを重視しているようです。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "introspection",
+          "ja": "内省",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "notion",
+          "ja": "概念・考え",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "criterion",
+          "ja": "判断基準",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "fulfillment",
+          "ja": "充実感",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "perspective",
+          "ja": "視点",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ponder",
+          "ja": "じっくり考える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ruminate",
+          "ja": "熟考する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contemplate",
+          "ja": "深く考える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "articulate",
+          "ja": "明確に言葉で表す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reassess",
+          "ja": "再評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "subjective",
+          "ja": "主観的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "philosophical",
+          "ja": "哲学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "reflective",
+          "ja": "熟考している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "intrinsic",
+          "ja": "内在的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "conventional",
+          "ja": "従来型の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "ponder a philosophical question",
+          "ja": "哲学的な問いをじっくり考える",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "ruminate on the notion of success",
+          "ja": "成功という概念について熟考する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "engage in introspection",
+          "ja": "内省する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reassess conventional criteria",
+          "ja": "従来の判断基準を再評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "articulate a personal perspective",
+          "ja": "個人的な見方を明確に表現する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "contemplate intrinsic fulfillment",
+          "ja": "内面的な充実について深く考える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "question conventional definitions",
+          "ja": "従来の定義に疑問を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop an independent viewpoint",
+          "ja": "独自の見解を形成する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reflect on personal values",
+          "ja": "自分の価値観について振り返る",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The teacher is inviting the students to ponder a philosophical question concerning the true meaning of success.",
+          "grammar": "invite＋O＋to / concerning",
+          "ja": "先生は生徒たちに、成功の本当の意味に関する哲学的な問いをじっくり考えるよう促しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The question on the board encourages the class to ruminate on a notion that is inherently subjective.",
+          "grammar": "encourage＋O＋to / 関係代名詞that",
+          "ja": "ボード上の問いは、本質的に主観的な成功という概念について熟考するようクラスに促しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Rather than supplying a fixed definition, the teacher appears to be encouraging introspection and independent judgment.",
+          "grammar": "Rather than / appear to be＋現在分詞",
+          "ja": "固定された定義を与えるのではなく、先生は内省と自立した判断を促しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Students may be asked to reassess conventional criteria such as wealth, status, achievement, or social recognition.",
+          "grammar": "may be＋過去分詞 / such as",
+          "ja": "生徒たちは、富、地位、達成、社会的評価といった従来の成功基準を再評価するよう求められるのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The lesson may prompt them to consider whether personal fulfillment should carry as much weight as external achievement.",
+          "grammar": "whether節 / as much A as B",
+          "ja": "この授業は、外面的な達成と同じくらい個人的な充実感を重視すべきか考えさせる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The students' quiet posture suggests that they are contemplating the question rather than responding immediately.",
+          "grammar": "suggest that / rather than",
+          "ja": "生徒たちの静かな姿勢から、すぐに答えるのではなく問いについて深く考えていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By articulating their individual perspectives, the students could discover how widely definitions of success vary from person to person.",
+          "grammar": "By＋動名詞 / how節",
+          "ja": "自分自身の考えを言葉にすることで、成功の定義が人によって大きく異なることに気づく可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The classroom setting illustrates how education can extend beyond factual knowledge to include reflection on values and life goals.",
+          "grammar": "how節 / extend beyond",
+          "ja": "この教室の場面は、教育が事実的知識を超えて、価値観や人生の目標についての内省まで含み得ることを示しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing introspection, subjective criteria, philosophical reflection, personal values, and contrasting notions of success.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は内省、主観的な基準、哲学的思考、個人の価値観、異なる成功観を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "teacher": {
+      "x": 27,
+      "y": 49
+    },
+    "marker": {
+      "x": 36,
+      "y": 45
+    },
+    "board": {
+      "x": 60,
+      "y": 44
+    },
+    "question": {
+      "x": 55,
+      "y": 36
+    },
+    "student1": {
+      "x": 19,
+      "y": 78
+    },
+    "student2": {
+      "x": 38,
+      "y": 78
+    },
+    "student3": {
+      "x": 64,
+      "y": 79
+    },
+    "desk1": {
+      "x": 31,
+      "y": 94
+    },
+    "desk2": {
+      "x": 45,
+      "y": 92
+    },
+    "notebook": {
+      "x": 31,
+      "y": 94
+    },
+    "clock": {
+      "x": 10,
+      "y": 9
+    },
+    "poster1": {
+      "x": 9,
+      "y": 29
+    },
+    "poster2": {
+      "x": 9,
+      "y": 49
+    },
+    "poster3": {
+      "x": 89,
+      "y": 85
+    },
+    "rules": {
+      "x": 62,
+      "y": 4
+    },
+    "wall": {
+      "x": 17,
+      "y": 17
+    },
+    "tray": {
+      "x": 48,
+      "y": 67
+    },
+    "eraser": {
+      "x": 45,
+      "y": 67
+    }
+  }
+}

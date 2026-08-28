@@ -1,0 +1,705 @@
+{
+  "id": "theme_l2_072",
+  "imageSrc": "assets/images/l2_072.webp",
+  "titleEn": "Detecting an Overheating Machine",
+  "titleJa": "過熱する機械を点検する作業員",
+  "description": "工場内で、作業員が熱画像カメラを使って大型の電動モーターとポンプ設備を点検している場面である。右側の男性作業員は黄色いヘルメット、安全メガネ、作業手袋、防護服を身につけ、手持ちのサーマルカメラを機械に向けている。左側の大型モーターは中央部分が赤やオレンジ色に見え、通常より高温になっていることが視覚的に示されている。カメラの画面にも同じ機械が熱画像として表示され、特にモーター周辺が高温になっている。設備の後方には太い配管、接続部分、ポンプなどがあり、工業施設らしい環境が広がっている。設備点検、異常発熱、故障の兆候、安全管理、予防保全を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration of an industrial worker inspecting an overheating electric motor with a handheld thermal camera. The worker wears a yellow hard hat, safety glasses, gloves, and dark protective clothing. Show a large motor connected to a pump and industrial pipes, with the motor glowing red-orange from excessive heat. The thermal camera screen shows the same hot area in bright thermal colors. Include metal pipes, valves, bolts, machinery, and a realistic factory environment. Landscape 16:9, realistic illustration rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "worker",
+          "ja": "作業員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "machine",
+          "ja": "機械",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "camera",
+          "ja": "カメラ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pipe",
+          "ja": "配管",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "motor",
+          "ja": "モーター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "factory",
+          "ja": "工場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "heat",
+          "ja": "熱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wear",
+          "ja": "身につける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hot",
+          "ja": "熱い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "check a machine",
+          "ja": "機械を点検する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a camera",
+          "ja": "カメラを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a helmet",
+          "ja": "ヘルメットをかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear safety glasses",
+          "ja": "安全メガネをかける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a hot motor",
+          "ja": "熱くなったモーター",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "look at the screen",
+          "ja": "画面を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside a factory",
+          "ja": "工場の中で",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "red and orange heat",
+          "ja": "赤やオレンジ色の熱",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A worker is checking a machine.",
+          "grammar": "現在進行形",
+          "ja": "作業員が機械を点検しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is wearing a yellow helmet.",
+          "grammar": "現在進行形",
+          "ja": "彼は黄色いヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is holding a special camera.",
+          "grammar": "現在進行形",
+          "ja": "彼は特別なカメラを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The motor is very hot.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "モーターはとても熱くなっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The camera shows the hot area.",
+          "grammar": "現在形",
+          "ja": "カメラは熱い部分を示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are large pipes behind the motor.",
+          "grammar": "There are",
+          "ja": "モーターの後ろには大きな配管があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The worker is looking at the machine.",
+          "grammar": "現在進行形",
+          "ja": "作業員は機械を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The machine may have a problem.",
+          "grammar": "may",
+          "ja": "機械には問題があるかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "technician",
+          "ja": "技術者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "設備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "temperature",
+          "ja": "温度",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inspection",
+          "ja": "点検",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "problem",
+          "ja": "問題",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pump",
+          "ja": "ポンプ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "detect",
+          "ja": "発見する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "measure",
+          "ja": "測定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "監視する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overheated",
+          "ja": "過熱した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "industrial",
+          "ja": "工業用の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thermal",
+          "ja": "熱の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "abnormal",
+          "ja": "異常な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "inspect industrial equipment",
+          "ja": "工業設備を点検する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a thermal camera",
+          "ja": "熱画像カメラを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "detect abnormal heat",
+          "ja": "異常な熱を検出する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "measure the temperature",
+          "ja": "温度を測定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an overheated motor",
+          "ja": "過熱したモーター",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "monitor the equipment",
+          "ja": "設備を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify a possible problem",
+          "ja": "問題の可能性を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent a breakdown",
+          "ja": "故障を防ぐ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A technician is inspecting an industrial motor with a thermal camera.",
+          "grammar": "現在進行形 / with",
+          "ja": "技術者が熱画像カメラを使って工業用モーターを点検しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The motor appears to be producing an unusual amount of heat.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "モーターは異常な量の熱を発しているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The thermal camera shows a bright red and orange area.",
+          "grammar": "現在形",
+          "ja": "熱画像カメラには明るい赤色とオレンジ色の部分が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The bright colors indicate that the motor is extremely hot.",
+          "grammar": "indicate that",
+          "ja": "明るい色はモーターが非常に高温であることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The worker is wearing protective equipment while inspecting the machine.",
+          "grammar": "while＋現在分詞",
+          "ja": "作業員は機械を点検しながら安全装備を身につけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The motor is connected to a large pump and several pipes.",
+          "grammar": "受動態",
+          "ja": "モーターは大型ポンプや複数の配管につながっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The technician may be trying to find the cause of the overheating.",
+          "grammar": "may be＋現在分詞 / try to",
+          "ja": "技術者は過熱の原因を探そうとしているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Finding the problem early could help prevent a serious breakdown.",
+          "grammar": "動名詞主語 / could help",
+          "ja": "問題を早く発見することで重大な故障を防げる可能性があります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "anomaly",
+          "ja": "異常",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "malfunction",
+          "ja": "機能不良",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "overheating",
+          "ja": "過熱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "thermography",
+          "ja": "熱画像診断",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "maintenance",
+          "ja": "保守・整備",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "diagnose",
+          "ja": "原因を診断する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "detect",
+          "ja": "検出する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deteriorate",
+          "ja": "劣化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mitigate",
+          "ja": "軽減する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "avert",
+          "ja": "回避する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "excessive",
+          "ja": "過度の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "abnormal",
+          "ja": "異常な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "preventive",
+          "ja": "予防的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "critical",
+          "ja": "重大な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "incipient",
+          "ja": "初期段階の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "detect a thermal anomaly",
+          "ja": "熱的な異常を検出する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "diagnose an incipient malfunction",
+          "ja": "初期段階の機能不良を診断する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify excessive heat",
+          "ja": "過剰な熱を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "conduct infrared thermography",
+          "ja": "赤外線熱画像診断を行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "perform preventive maintenance",
+          "ja": "予防保全を行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "avert catastrophic failure",
+          "ja": "重大な故障を回避する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "mitigate equipment damage",
+          "ja": "設備の損傷を軽減する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor critical machinery",
+          "ja": "重要設備を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "indicate abnormal heat buildup",
+          "ja": "異常な熱の蓄積を示す",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The technician is using infrared thermography to detect a pronounced thermal anomaly in the electric motor.",
+          "grammar": "use A to B",
+          "ja": "技術者は赤外線熱画像診断を使って、電動モーターの顕著な熱的異常を検出しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The intense red and orange region indicates an abnormal buildup of heat within the motor assembly.",
+          "grammar": "indicate＋名詞",
+          "ja": "強い赤色とオレンジ色の領域は、モーター内部に異常な熱が蓄積していることを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Such excessive heating may be symptomatic of an incipient mechanical or electrical malfunction.",
+          "grammar": "may be / symptomatic of",
+          "ja": "このような過度の発熱は、初期段階の機械的または電気的な故障の兆候である可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The handheld thermal camera enables the worker to identify temperature differences without making direct contact with the equipment.",
+          "grammar": "enable O to / without＋動名詞",
+          "ja": "手持ちの熱画像カメラにより、作業員は設備に直接触れることなく温度差を確認できます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The worker's helmet, safety glasses, and gloves suggest that the inspection is being conducted in a potentially hazardous industrial environment.",
+          "grammar": "suggest that / 現在進行受動態",
+          "ja": "ヘルメット、安全メガネ、手袋から、この点検が潜在的な危険を伴う工業環境で行われていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If the anomaly were ignored, continued overheating could cause components to deteriorate and eventually result in equipment failure.",
+          "grammar": "仮定法過去 / could",
+          "ja": "この異常を放置すれば、過熱が続いて部品が劣化し、最終的に設備故障につながる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Detecting the problem at an early stage allows preventive maintenance to be carried out before the machinery suffers critical damage.",
+          "grammar": "動名詞主語 / allow O to / before",
+          "ja": "問題を早期に発見することで、機械が重大な損傷を受ける前に予防保全を実施できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Thermal monitoring can mitigate operational risks by revealing faults that may not be visible during an ordinary visual inspection.",
+          "grammar": "by＋動名詞 / 関係代名詞that",
+          "ja": "熱監視は、通常の目視点検では確認できない可能性のある故障を明らかにすることで、運転上のリスクを軽減できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing thermography, thermal anomalies, preventive maintenance, equipment malfunction, industrial safety, and fault detection.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は熱画像診断、熱的異常、予防保全、設備故障、産業安全、異常検知を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "worker": {
+      "x": 84,
+      "y": 53
+    },
+    "helmet": {
+      "x": 84,
+      "y": 12
+    },
+    "glasses": {
+      "x": 77,
+      "y": 29
+    },
+    "glove": {
+      "x": 65,
+      "y": 67
+    },
+    "camera": {
+      "x": 64,
+      "y": 49
+    },
+    "screen": {
+      "x": 64,
+      "y": 47
+    },
+    "motor": {
+      "x": 29,
+      "y": 46
+    },
+    "heat": {
+      "x": 37,
+      "y": 43
+    },
+    "housing": {
+      "x": 23,
+      "y": 46
+    },
+    "shaft": {
+      "x": 53,
+      "y": 43
+    },
+    "pump": {
+      "x": 64,
+      "y": 34
+    },
+    "pipe": {
+      "x": 65,
+      "y": 11
+    },
+    "flange": {
+      "x": 62,
+      "y": 18
+    },
+    "cable": {
+      "x": 45,
+      "y": 22
+    },
+    "base": {
+      "x": 37,
+      "y": 69
+    },
+    "bolts": {
+      "x": 40,
+      "y": 66
+    },
+    "steam": {
+      "x": 27,
+      "y": 12
+    },
+    "floor": {
+      "x": 45,
+      "y": 87
+    }
+  }
+}

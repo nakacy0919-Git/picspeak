@@ -1,0 +1,769 @@
+{
+  "id": "theme_l2_045",
+  "imageSrc": "assets/images/l2_045.webp",
+  "titleEn": "Bakery by the Street",
+  "titleJa": "通り沿いのベーカリー",
+  "description": "暖かな日差しの中、街路樹のある歩道沿いに小さなベーカリーが建っている。店の正面には大きなガラス窓があり、窓の内側にはアイシングのかかった丸いパンや焼き菓子が何段にも並べられている。入口のドアは開いており、店内にはペンダントライト、棚、カウンターなどが見える。建物は深い緑色の枠と赤レンガの壁を組み合わせた外観で、窓の下には花の入ったプランターが置かれている。歩道には2人の若者だけが立っており、一人はショーウィンドウのパンを指さし、もう一人は開いた入口から店内を見ている。左側には大きな街路樹と道路が続き、右側には店の外壁と窓が伸びている。店内と屋外、左右、手前と奥の位置関係を英語で説明する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A high-quality detailed educational illustration for an English picture-description speaking test. Base the architecture, storefront composition, warm lighting, pastry display, sidewalk, and overall atmosphere closely on the provided reference image, but replace all real store names, logos, menu text, product labels, signs, and identifying commercial details with original fictional designs or simple decorative symbols. Do not use proper nouns. The main purpose is townscape and everyday street-scene description practice for children and students. Show a charming small bakery located directly beside a tree-lined urban sidewalk on a warm late-afternoon day. The bakery exterior should combine a dark muted green wooden storefront frame with a red-brick upper and side wall. In the center-right, show a very large clear display window occupying much of the storefront. Behind the glass, clearly arrange several rows of round freshly baked pastries or sweet rolls covered with white icing in neat groups on trays. The pastries should be highly visible from outside and should form one of the main focal points of the image. Through the glass window, show a warm and inviting bakery interior illuminated by several hanging pendant lights. Include simple wooden shelves, bread baskets, jars, cups, trays, and a service counter, but absolutely no staff or customers inside. Near the center-left of the storefront, show a dark framed glass entrance door standing open toward the sidewalk. Warm interior light should spill gently toward the entrance. In the lower-right foreground, place a long rectangular wooden planter filled with small red, yellow, white, and green flowering plants directly beneath the bakery window. On the left side of the composition, show a broad sidewalk shaded partly by a large leafy street tree. Beyond the tree, include a quiet city street and vague low-rise storefronts or buildings extending into the distance. Do not include cars with visible drivers or pedestrians in the background. Show exactly two visible people and no others anywhere in the entire image. Place both young people outside on the sidewalk in front of the bakery. One young person should stand closer to the window and point with one hand toward the rows of iced pastries behind the glass, looking interested and slightly excited. The second young person should stand closer to the open doorway and look through the entrance toward the warmly lit interior, as if deciding whether to enter. Their clothing should be simple casual clothes and their gestures should be natural and easy for students to describe. Keep both figures relatively small enough that the storefront remains the main subject. Include a subtle visual suggestion of freshly baked food, such as gentle stylized warm steam-like curves near the doorway and window, but do not use speech bubbles or text. Preserve the main spatial relationships clearly: leafy tree and street on the left, open entrance near the center, large pastry window on the right, flower planter below the window, warm bakery interior behind the glass, and exactly two young people on the sidewalk. No staff, no customers inside, no extra pedestrians, no reflected people, no people in posters, no animals, no copyrighted characters, no recognizable commercial logos, no proper nouns, and no important readable text. Landscape 16:9 composition, polished illustrated style rather than photography, realistic human proportions, realistic storefront architecture, warm late-afternoon atmosphere, information-rich but visually organized and uncluttered, suitable for practicing English descriptions of shopfronts, windows, food displays, streets, positions, foreground and background.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "bakery",
+          "ja": "パン屋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "shop",
+          "ja": "店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "door",
+          "ja": "ドア",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bread",
+          "ja": "パン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cake",
+          "ja": "お菓子・ケーキ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "ライト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "open",
+          "ja": "開いている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "warm",
+          "ja": "暖かい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a small bakery",
+          "ja": "小さなパン屋",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a large window",
+          "ja": "大きな窓",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "many sweet rolls",
+          "ja": "たくさんの甘いパン",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "an open door",
+          "ja": "開いたドア",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "point at the bread",
+          "ja": "パンを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look inside the shop",
+          "ja": "店の中を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "flowers under the window",
+          "ja": "窓の下の花",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a tree on the left",
+          "ja": "左側の木",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a bakery beside the street.",
+          "grammar": "There is",
+          "ja": "通りのそばにパン屋があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "There is a large window at the front.",
+          "grammar": "There is",
+          "ja": "正面に大きな窓があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many sweet rolls in the window.",
+          "grammar": "There are",
+          "ja": "窓にはたくさんの甘いパンがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The door is open.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "ドアは開いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two people are standing outside the bakery.",
+          "grammar": "現在進行形",
+          "ja": "2人がパン屋の外に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One person is pointing at the bread.",
+          "grammar": "現在進行形",
+          "ja": "一人がパンを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other person is looking inside.",
+          "grammar": "現在進行形",
+          "ja": "もう一人は店の中を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are flowers under the window.",
+          "grammar": "There are",
+          "ja": "窓の下には花があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "storefront",
+          "ja": "店構え",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "display window",
+          "ja": "ショーウィンドウ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pastry",
+          "ja": "焼き菓子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sidewalk",
+          "ja": "歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "planter",
+          "ja": "プランター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "display",
+          "ja": "陳列する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "attract",
+          "ja": "引きつける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "enter",
+          "ja": "入る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inviting",
+          "ja": "入りたくなるような",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "fresh",
+          "ja": "焼きたての・新鮮な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "bright",
+          "ja": "明るい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cozy",
+          "ja": "居心地のよい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tree-lined",
+          "ja": "街路樹のある",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a bakery storefront",
+          "ja": "パン屋の店構え",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "pastries behind the glass",
+          "ja": "ガラスの向こうの焼き菓子",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a warmly lit interior",
+          "ja": "暖かく照らされた店内",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "stand beside the entrance",
+          "ja": "入口のそばに立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "look through the window",
+          "ja": "窓越しに見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the pastries",
+          "ja": "焼き菓子の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a flower planter below the window",
+          "ja": "窓の下の花のプランター",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a tree-lined sidewalk",
+          "ja": "街路樹のある歩道",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The scene shows a small bakery beside a tree-lined sidewalk.",
+          "grammar": "現在形",
+          "ja": "この場面は街路樹のある歩道沿いの小さなパン屋を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Many iced pastries are displayed behind the large glass window.",
+          "grammar": "受動態",
+          "ja": "大きなガラス窓の向こうには、アイシングのかかったたくさんの焼き菓子が陳列されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The open entrance allows people to see the warmly lit interior.",
+          "grammar": "allow＋O＋to",
+          "ja": "開いた入口から暖かく照らされた店内を見ることができます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several pendant lights are hanging inside the bakery.",
+          "grammar": "現在進行形",
+          "ja": "店内にはいくつかのペンダントライトが下がっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One young person is pointing toward the pastries in the display window.",
+          "grammar": "現在進行形",
+          "ja": "一人の若者がショーウィンドウの焼き菓子を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other person is looking through the open doorway.",
+          "grammar": "現在進行形",
+          "ja": "もう一人は開いた入口から店内を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A colorful flower planter is placed directly below the window.",
+          "grammar": "受動態",
+          "ja": "色とりどりの花のプランターが窓のすぐ下に置かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The warm lighting and fresh-looking pastries make the bakery appear inviting.",
+          "grammar": "make＋O＋C",
+          "ja": "暖かな照明と焼きたてに見えるパンによって、店は入りたくなるような雰囲気に見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "storefront",
+          "ja": "店舗正面",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "merchandise display",
+          "ja": "商品の陳列",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "facade",
+          "ja": "建物正面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pedestrian",
+          "ja": "歩行者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ambience",
+          "ja": "雰囲気",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "showcase",
+          "ja": "目立つように展示する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "entice",
+          "ja": "興味を引く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "illuminate",
+          "ja": "照らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "景観を構成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inviting",
+          "ja": "魅力的で入りやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prominent",
+          "ja": "目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "transparent",
+          "ja": "透明な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "warmly lit",
+          "ja": "暖かく照らされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "street-facing",
+          "ja": "通りに面した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a prominent street-facing storefront",
+          "ja": "目立つ通り沿いの店構え",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "showcase freshly baked pastries",
+          "ja": "焼きたての焼き菓子を目立つように展示する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a transparent display window",
+          "ja": "透明なショーウィンドウ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "contrast with the brick facade",
+          "ja": "レンガの外壁と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "draw attention from the sidewalk",
+          "ja": "歩道から注意を引く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create an inviting ambience",
+          "ja": "入りやすい雰囲気を作る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "connect the interior with the street",
+          "ja": "店内と通りをつなぐ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "occupy the lower edge of the facade",
+          "ja": "外壁の下端を占める",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "practice describing commercial streetscapes",
+          "ja": "商業街路景観の描写を練習する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The image presents a small street-facing bakery whose large display window serves as the main visual feature of the storefront.",
+          "grammar": "関係代名詞whose",
+          "ja": "この画像は、大きなショーウィンドウが店舗正面の主要な視覚的特徴となっている小さな通り沿いのパン屋を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Rows of iced pastries are prominently showcased behind the glass, allowing them to be seen clearly from the sidewalk.",
+          "grammar": "受動態 / allowing",
+          "ja": "アイシングのかかった焼き菓子がガラスの向こうに目立つように並べられ、歩道からはっきり見えるようになっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The open doorway visually connects the public sidewalk with the warmly illuminated interior.",
+          "grammar": "connect A with B",
+          "ja": "開いた入口が、公共の歩道と暖かく照らされた店内を視覚的につないでいます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Dark green trim around the windows contrasts effectively with the red brick facade and the warm golden light inside.",
+          "grammar": "contrast with",
+          "ja": "窓まわりの深い緑色の縁取りが、赤レンガの外壁や店内の暖かな金色の光と効果的な対比を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The flower-filled planter occupying the lower edge of the storefront softens the architecture and adds color to the pedestrian environment.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "店構えの下端を占める花いっぱいのプランターが建物の硬い印象を和らげ、歩行空間に色彩を加えています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One passerby is drawn toward the pastry display, whereas the second person is focusing on the open entrance and interior.",
+          "grammar": "whereas / 受動態",
+          "ja": "一人の通行人は焼き菓子の陳列に注意を引かれている一方、もう一人は開いた入口と店内を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Their different lines of sight help emphasize both the products in the window and the welcoming atmosphere beyond the doorway.",
+          "grammar": "both A and B",
+          "ja": "2人の異なる視線によって、窓の商品と入口の向こうにある入りやすい雰囲気の両方が強調されています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The large street tree on the left frames the storefront while also separating the bakery visually from the roadway.",
+          "grammar": "while also＋現在分詞",
+          "ja": "左側の大きな街路樹は店構えを縁取ると同時に、パン屋を道路から視覚的に分けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene is especially useful for practicing how commercial architecture, product displays, lighting, and pedestrian space interact within an everyday streetscape.",
+          "grammar": "how節",
+          "ja": "全体として、この場面は商業建築、商品陳列、照明、歩行空間が日常の街路景観の中でどのように関係するか描写する練習に特に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "bakery_storefront": {
+      "x": 67,
+      "y": 39
+    },
+    "red_brick_wall": {
+      "x": 91,
+      "y": 25
+    },
+    "dark_green_storefront_frame": {
+      "x": 67,
+      "y": 23
+    },
+    "large_display_window": {
+      "x": 74,
+      "y": 41
+    },
+    "pastry_display": {
+      "x": 73,
+      "y": 54
+    },
+    "iced_rolls_top_row": {
+      "x": 72,
+      "y": 47
+    },
+    "iced_rolls_bottom_row": {
+      "x": 74,
+      "y": 57
+    },
+    "open_entrance": {
+      "x": 43,
+      "y": 48
+    },
+    "open_glass_door": {
+      "x": 39,
+      "y": 43
+    },
+    "warm_interior": {
+      "x": 63,
+      "y": 32
+    },
+    "pendant_light_one": {
+      "x": 53,
+      "y": 22
+    },
+    "pendant_light_two": {
+      "x": 65,
+      "y": 24
+    },
+    "pendant_light_three": {
+      "x": 76,
+      "y": 25
+    },
+    "pendant_light_four": {
+      "x": 84,
+      "y": 26
+    },
+    "interior_shelves": {
+      "x": 70,
+      "y": 39
+    },
+    "interior_counter": {
+      "x": 54,
+      "y": 47
+    },
+    "bread_baskets": {
+      "x": 78,
+      "y": 42
+    },
+    "flower_planter": {
+      "x": 71,
+      "y": 77
+    },
+    "red_flowers": {
+      "x": 68,
+      "y": 75
+    },
+    "yellow_flowers": {
+      "x": 74,
+      "y": 75
+    },
+    "street_tree": {
+      "x": 13,
+      "y": 24
+    },
+    "tree_trunk": {
+      "x": 15,
+      "y": 46
+    },
+    "left_sidewalk": {
+      "x": 23,
+      "y": 77
+    },
+    "quiet_street": {
+      "x": 7,
+      "y": 59
+    },
+    "distant_buildings": {
+      "x": 7,
+      "y": 42
+    },
+    "student_pointing_pastries": {
+      "x": 63,
+      "y": 67
+    },
+    "student_looking_inside": {
+      "x": 43,
+      "y": 66
+    },
+    "warm_light_near_door": {
+      "x": 48,
+      "y": 47
+    },
+    "decorative_aroma_curves": {
+      "x": 58,
+      "y": 40
+    },
+    "storefront_lower_panel": {
+      "x": 78,
+      "y": 68
+    },
+    "brick_side_wall_right": {
+      "x": 95,
+      "y": 45
+    },
+    "sidewalk_edge": {
+      "x": 31,
+      "y": 86
+    },
+    "shop_window_reflection": {
+      "x": 86,
+      "y": 37
+    },
+    "tree_canopy": {
+      "x": 12,
+      "y": 10
+    }
+  }
+}

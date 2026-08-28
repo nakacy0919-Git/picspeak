@@ -1,0 +1,737 @@
+{
+  "id": "theme_l2_062",
+  "imageSrc": "assets/images/l2_062.webp",
+  "titleEn": "Campus Tour for Prospective Students",
+  "titleJa": "大学キャンパスを見学する学生たち",
+  "description": "晴れた日の大学キャンパスで、6人の若者が案内スタッフと一緒にキャンパスツアーに参加している場面である。右側の女性スタッフは名札を身につけ、資料を持ちながら片手を大きく伸ばして建物や施設を説明している。学生たちはスタッフの話を聞きながら歩いており、数人は大学案内のパンフレットを持っている。中央右の男子学生はスマートフォンを構え、キャンパスの様子を撮影している。参加者はさまざまな背景を持つ若者で構成され、楽しそうに案内を聞いている。背景にはガラス張りの近代的な校舎、レンガ造りの建物、芝生、大きな木、街灯、歩道が見える。大学見学、進路選択、多様な学生同士の交流、施設案内を英語で描写する練習に適した場面である。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show six prospective university students walking through a sunny campus with a female tour guide. The guide stands on the right wearing a navy polo shirt and ID badge, holding a folder and extending one arm to introduce the campus. Several students carry university brochures, and one male student holds up a smartphone to take a photo or video. Show a diverse group of young adults listening with interest. Include a modern glass academic building, brick buildings, green lawns, large trees, a campus path, and a black street lamp. Bright blue sky with soft clouds. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable institutional names.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "student",
+          "ja": "学生",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "guide",
+          "ja": "案内係",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "school",
+          "ja": "学校",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "building",
+          "ja": "建物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "booklet",
+          "ja": "パンフレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "phone",
+          "ja": "スマートフォン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "grass",
+          "ja": "芝生",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "path",
+          "ja": "歩道",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "lamp",
+          "ja": "街灯",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "take",
+          "ja": "撮る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sunny",
+          "ja": "晴れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "walk around the campus",
+          "ja": "キャンパスを歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to the guide",
+          "ja": "案内係の話を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a booklet",
+          "ja": "パンフレットを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take a picture",
+          "ja": "写真を撮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show the buildings",
+          "ja": "建物を案内する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a university campus",
+          "ja": "大学のキャンパス",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "green trees and grass",
+          "ja": "緑の木々と芝生",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large glass building",
+          "ja": "大きなガラス張りの建物",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Six students are walking around a university campus.",
+          "grammar": "現在進行形",
+          "ja": "6人の学生が大学のキャンパスを歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A woman is showing them around the campus.",
+          "grammar": "現在進行形",
+          "ja": "女性が学生たちにキャンパスを案内しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is pointing to something on the right.",
+          "grammar": "現在進行形",
+          "ja": "彼女は右側の何かを指し示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some students are holding booklets.",
+          "grammar": "現在進行形",
+          "ja": "何人かの学生はパンフレットを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is holding a phone.",
+          "grammar": "現在進行形",
+          "ja": "一人の学生がスマートフォンを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students look interested.",
+          "grammar": "look＋形容詞",
+          "ja": "学生たちは興味を持っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are large buildings behind them.",
+          "grammar": "There are",
+          "ja": "彼らの後ろには大きな建物があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The weather is sunny and bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "天気は晴れて明るいです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "campus",
+          "ja": "キャンパス",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "見学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "brochure",
+          "ja": "パンフレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "facility",
+          "ja": "施設",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tour",
+          "ja": "見学ツアー",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "applicant",
+          "ja": "志願者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "introduce",
+          "ja": "紹介する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explore",
+          "ja": "見て回る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "撮影する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prospective",
+          "ja": "入学を検討している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "modern",
+          "ja": "近代的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "diverse",
+          "ja": "多様な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "interested",
+          "ja": "興味を持った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spacious",
+          "ja": "広々とした",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "take a campus tour",
+          "ja": "キャンパスツアーに参加する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prospective university students",
+          "ja": "大学進学を検討している学生",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "introduce campus facilities",
+          "ja": "キャンパスの施設を紹介する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "follow the tour guide",
+          "ja": "ツアーガイドについて行く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "read a university brochure",
+          "ja": "大学案内を読む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "record the campus on a phone",
+          "ja": "スマートフォンでキャンパスを撮影する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explore a modern campus",
+          "ja": "近代的なキャンパスを見て回る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn about the university",
+          "ja": "大学について学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A group of prospective students is taking a guided tour of the university campus.",
+          "grammar": "現在進行形",
+          "ja": "大学進学を検討している学生のグループがキャンパスツアーに参加しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The guide is explaining the campus while walking with the students.",
+          "grammar": "while＋現在分詞",
+          "ja": "ガイドは学生たちと歩きながらキャンパスについて説明しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is extending her arm to introduce a building or facility.",
+          "grammar": "to不定詞",
+          "ja": "彼女は建物や施設を紹介するために腕を伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several students are carrying brochures about the university.",
+          "grammar": "現在進行形",
+          "ja": "数人の学生が大学についてのパンフレットを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One student is using his smartphone to record part of the tour.",
+          "grammar": "to不定詞",
+          "ja": "一人の学生はツアーの一部を撮影するためにスマートフォンを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The students appear interested in what the guide is saying.",
+          "grammar": "appear＋形容詞 / what節",
+          "ja": "学生たちはガイドの説明に興味を持っているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Modern academic buildings and green spaces can be seen around them.",
+          "grammar": "助動詞＋受動態",
+          "ja": "周囲には近代的な校舎や緑地が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They may be visiting the campus before deciding where to apply.",
+          "grammar": "may / before＋動名詞",
+          "ja": "彼らは出願先を決める前にキャンパスを見学しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "aspirant",
+          "ja": "志望者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "cohort",
+          "ja": "同じ目的を持つ集団",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "matriculation",
+          "ja": "大学入学",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "orientation",
+          "ja": "案内・オリエンテーション",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "amenity",
+          "ja": "設備・施設",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "aspire",
+          "ja": "志望する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "familiarize",
+          "ja": "慣れ親しませる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "survey",
+          "ja": "見て回る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evaluate",
+          "ja": "評価する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "envision",
+          "ja": "思い描く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "aspiring",
+          "ja": "志望している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "collegiate",
+          "ja": "大学の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "prospective",
+          "ja": "将来入学する可能性のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "informative",
+          "ja": "有益な情報を与える",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "multicultural",
+          "ja": "多文化的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an aspirant cohort",
+          "ja": "志望者の一団",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "familiarize aspirants with the campus",
+          "ja": "志望者にキャンパスを知ってもらう",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "survey collegiate amenities",
+          "ja": "大学の設備を見て回る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "evaluate prospective institutions",
+          "ja": "進学候補の大学を評価する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "attend a pre-matriculation orientation",
+          "ja": "入学前の案内に参加する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "envision life on campus",
+          "ja": "キャンパスでの生活を思い描く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explore academic facilities",
+          "ja": "教育施設を見学する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "engage a multicultural cohort",
+          "ja": "多文化的な学生集団と関わる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "make an informed enrollment decision",
+          "ja": "十分な情報を基に進学先を決める",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An aspirant cohort is touring the university in order to familiarize itself with the campus before making enrollment decisions.",
+          "grammar": "in order to / before＋動名詞",
+          "ja": "志望者の一団が、進学先を決定する前にキャンパスを知るため大学を見学しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The guide is gesturing toward the surrounding facilities while providing the prospective students with information about the institution.",
+          "grammar": "while＋現在分詞 / provide A with B",
+          "ja": "ガイドは周囲の施設を示しながら、志望学生に大学についての情報を提供しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several members of the cohort are carrying brochures that may help them evaluate the university's programs and amenities.",
+          "grammar": "関係代名詞that / may",
+          "ja": "グループの数人は、大学の教育内容や施設を評価するのに役立つ可能性のあるパンフレットを持っています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One student is documenting the tour on his smartphone, perhaps to review the campus later.",
+          "grammar": "現在分詞 / to不定詞",
+          "ja": "一人の学生は、後でキャンパスを振り返るためか、スマートフォンでツアーを記録しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The participants' attentive expressions suggest that they are seriously considering the institution as a possible destination for matriculation.",
+          "grammar": "suggest that / consider A as B",
+          "ja": "参加者の真剣な表情から、この大学を進学先の候補として本格的に検討していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The modern glass buildings, landscaped grounds, and open pedestrian spaces collectively convey a well-developed collegiate environment.",
+          "grammar": "現在形",
+          "ja": "近代的なガラス張りの建物、整備された緑地、開放的な歩行空間が、充実した大学環境を示しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The multicultural composition of the group suggests that the institution may attract applicants from a wide range of backgrounds.",
+          "grammar": "suggest that / may",
+          "ja": "グループの多文化的な構成から、この大学がさまざまな背景を持つ志願者を集めている可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Campus visits enable aspirants to envision their future daily lives in ways that brochures and websites alone cannot provide.",
+          "grammar": "enable O to / 関係代名詞that",
+          "ja": "キャンパス見学によって、志望者はパンフレットやウェブサイトだけでは得られない形で将来の大学生活を思い描くことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing an aspirant cohort, university orientation, academic decision-making, campus facilities, and multicultural interaction.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は志望者の集団、大学案内、進学に関する意思決定、キャンパス施設、多文化交流を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "guide": {
+      "x": 77,
+      "y": 52
+    },
+    "student1": {
+      "x": 11,
+      "y": 50
+    },
+    "student2": {
+      "x": 25,
+      "y": 53
+    },
+    "student3": {
+      "x": 30,
+      "y": 43
+    },
+    "student4": {
+      "x": 40,
+      "y": 50
+    },
+    "student5": {
+      "x": 48,
+      "y": 52
+    },
+    "student6": {
+      "x": 55,
+      "y": 50
+    },
+    "phone": {
+      "x": 56,
+      "y": 47
+    },
+    "brochure1": {
+      "x": 16,
+      "y": 75
+    },
+    "brochure2": {
+      "x": 28,
+      "y": 68
+    },
+    "brochure3": {
+      "x": 42,
+      "y": 65
+    },
+    "folder": {
+      "x": 68,
+      "y": 68
+    },
+    "badge": {
+      "x": 74,
+      "y": 72
+    },
+    "hand": {
+      "x": 96,
+      "y": 41
+    },
+    "path": {
+      "x": 63,
+      "y": 82
+    },
+    "grass": {
+      "x": 86,
+      "y": 72
+    },
+    "lamp": {
+      "x": 55,
+      "y": 22
+    },
+    "building1": {
+      "x": 34,
+      "y": 27
+    },
+    "building2": {
+      "x": 64,
+      "y": 28
+    },
+    "building3": {
+      "x": 92,
+      "y": 31
+    },
+    "windows": {
+      "x": 34,
+      "y": 26
+    },
+    "tree1": {
+      "x": 10,
+      "y": 14
+    },
+    "tree2": {
+      "x": 84,
+      "y": 18
+    },
+    "students": {
+      "x": 65,
+      "y": 51
+    },
+    "sky": {
+      "x": 54,
+      "y": 7
+    },
+    "clouds": {
+      "x": 61,
+      "y": 9
+    }
+  }
+}

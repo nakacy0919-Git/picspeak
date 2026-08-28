@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_091",
+  "imageSrc": "assets/images/l2_091.webp",
+  "titleEn": "Admiring a Herculean Masterstroke",
+  "titleJa": "偉業を描いた傑作を鑑賞する人々",
+  "description": "美術館の展示室で、4人の来館者が巨大な山岳画を鑑賞している場面である。中央の金色の額縁に入った絵には、雪に覆われた鋭い山頂の上に立つ登山家が描かれている。登山家はオレンジ色の上着を着てザックを背負い、片手でピッケルを高く掲げている。周囲には険しい雪山や雲が広がり、極めて困難な登頂を成し遂げた瞬間のように見える。絵の前では男女3人と少年1人が背を向けて立ち、その壮大な作品に見入っている。左右には白い古典的な彫刻も展示されている。途方もない努力を要する偉業、卓越した成果、傑作、困難な挑戦の達成、美術鑑賞について英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of four visitors in an elegant art museum admiring a huge framed mountain painting. The painting shows a lone climber standing triumphantly on a narrow snowy summit, raising an ice axe above dramatic alpine peaks and clouds. Include two classical white statues beside the painting, warm gallery lighting, polished floor, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "museum",
+          "ja": "美術館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "painting",
+          "ja": "絵画",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "mountain",
+          "ja": "山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "climber",
+          "ja": "登山家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "snow",
+          "ja": "雪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "statue",
+          "ja": "像",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "frame",
+          "ja": "額縁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "来館者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "boy",
+          "ja": "少年",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "axe",
+          "ja": "ピッケル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "climb",
+          "ja": "登る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "raise",
+          "ja": "上げる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "huge",
+          "ja": "巨大な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at a painting",
+          "ja": "絵を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand in a museum",
+          "ja": "美術館に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "climb a mountain",
+          "ja": "山に登る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "raise an ice axe",
+          "ja": "ピッケルを掲げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a snowy mountain",
+          "ja": "雪山",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a large painting",
+          "ja": "大きな絵",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "two white statues",
+          "ja": "2体の白い像",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "on the mountain top",
+          "ja": "山頂で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four people are looking at a large painting.",
+          "grammar": "現在進行形",
+          "ja": "4人が大きな絵を見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are standing in an art museum.",
+          "grammar": "現在進行形",
+          "ja": "彼らは美術館に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The painting shows snowy mountains.",
+          "grammar": "現在形",
+          "ja": "その絵には雪山が描かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A climber is standing on the top of a mountain.",
+          "grammar": "現在進行形",
+          "ja": "登山家が山頂に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is raising an ice axe.",
+          "grammar": "現在進行形",
+          "ja": "彼はピッケルを掲げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are two white statues beside the painting.",
+          "grammar": "There are",
+          "ja": "絵の横には2体の白い像があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The mountain looks very high and dangerous.",
+          "grammar": "look＋形容詞",
+          "ja": "その山はとても高く危険そうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The climber may be happy because he reached the top.",
+          "grammar": "may / because",
+          "ja": "登山家は頂上に到達したので喜んでいるのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "artwork",
+          "ja": "芸術作品",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "achievement",
+          "ja": "達成",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "summit",
+          "ja": "山頂",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "challenge",
+          "ja": "挑戦",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "gallery",
+          "ja": "展示室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "sculpture",
+          "ja": "彫刻",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "admire",
+          "ja": "感心して見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "achieve",
+          "ja": "達成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "overcome",
+          "ja": "乗り越える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reach",
+          "ja": "到達する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "impressive",
+          "ja": "印象的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "difficult",
+          "ja": "困難な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "successful",
+          "ja": "成功した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dramatic",
+          "ja": "劇的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "admire a masterpiece",
+          "ja": "傑作を鑑賞する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reach the summit",
+          "ja": "山頂に到達する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "overcome a difficult challenge",
+          "ja": "困難な挑戦を乗り越える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "achieve a difficult goal",
+          "ja": "難しい目標を達成する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on a narrow peak",
+          "ja": "狭い山頂に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a dramatic mountain scene",
+          "ja": "劇的な山岳風景",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an impressive achievement",
+          "ja": "印象的な偉業",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "visit an art gallery",
+          "ja": "美術館を訪れる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four visitors are admiring a huge mountain painting in an art gallery.",
+          "grammar": "現在進行形",
+          "ja": "4人の来館者が美術館で巨大な山岳画を鑑賞しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The painting shows a climber who has reached a snowy summit.",
+          "grammar": "関係代名詞who / 現在完了形",
+          "ja": "その絵には雪山の頂上に到達した登山家が描かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is raising his ice axe as if he were celebrating his success.",
+          "grammar": "as if",
+          "ja": "彼は成功を祝っているかのようにピッケルを掲げています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The narrow ridge suggests that reaching the summit was extremely difficult.",
+          "grammar": "suggest that",
+          "ja": "狭い尾根から、山頂への到達が非常に困難だったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The visitors appear impressed by the dramatic scene.",
+          "grammar": "appear＋形容詞",
+          "ja": "来館者たちは劇的な光景に感銘を受けているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Two classical sculptures are displayed on either side of the painting.",
+          "grammar": "受動態 / on either side of",
+          "ja": "絵画の両側には2体の古典的な彫刻が展示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The climber may have overcome many difficulties before reaching the peak.",
+          "grammar": "may have＋過去分詞 / before＋動名詞",
+          "ja": "登山家は頂上に到達するまでに多くの困難を乗り越えたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene represents the satisfaction of achieving a very difficult goal.",
+          "grammar": "of＋動名詞",
+          "ja": "この場面は非常に難しい目標を達成する満足感を表しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "masterstroke",
+          "ja": "見事な成果・傑作",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "feat",
+          "ja": "偉業",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "endeavor",
+          "ja": "努力・試み",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "prowess",
+          "ja": "卓越した能力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "triumph",
+          "ja": "大成功・勝利",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accomplishment",
+          "ja": "達成・偉業",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "surmount",
+          "ja": "困難を克服する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "conquer",
+          "ja": "征服する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "attain",
+          "ja": "達成する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "embody",
+          "ja": "体現する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "Herculean",
+          "ja": "途方もない努力を要する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "formidable",
+          "ja": "非常に困難な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "monumental",
+          "ja": "記念碑的な・極めて大きな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "daunting",
+          "ja": "ひるませるほど困難な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "extraordinary",
+          "ja": "並外れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a Herculean masterstroke",
+          "ja": "途方もない努力による見事な成果",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "accomplish a Herculean feat",
+          "ja": "途方もない偉業を成し遂げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "surmount formidable obstacles",
+          "ja": "非常に困難な障害を克服する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "attain a daunting objective",
+          "ja": "困難な目標を達成する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "demonstrate extraordinary prowess",
+          "ja": "並外れた力量を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "celebrate a monumental triumph",
+          "ja": "途方もない成功を祝う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "embody human perseverance",
+          "ja": "人間の忍耐力を体現する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "conquer a treacherous summit",
+          "ja": "危険な山頂を制覇する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an extraordinary accomplishment",
+          "ja": "並外れた偉業",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The monumental painting depicts what appears to be a Herculean feat of mountaineering.",
+          "grammar": "what節 / appear to be",
+          "ja": "その壮大な絵画には、途方もない登山上の偉業と思われる光景が描かれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Perched on an exceptionally narrow ridge, the climber raises his ice axe in apparent triumph.",
+          "grammar": "過去分詞構文",
+          "ja": "極めて狭い尾根の上に立った登山家は、勝利を示すかのようにピッケルを掲げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The surrounding peaks emphasize the formidable scale of the challenge he has apparently surmounted.",
+          "grammar": "関係代名詞省略 / 現在完了形",
+          "ja": "周囲の山々は、彼が克服したと思われる挑戦の途方もない規模を強調しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Reaching such a precarious summit would have required exceptional endurance, technical prowess, and determination.",
+          "grammar": "動名詞主語 / would have＋過去分詞",
+          "ja": "このような危険な山頂への到達には、並外れた持久力、技術力、決意が必要だったでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The accomplishment could reasonably be described as Herculean because of the immense physical and psychological demands involved.",
+          "grammar": "could be＋過去分詞 / because of",
+          "ja": "その達成は、要求される身体的・精神的負担の大きさから、まさにHerculeanな偉業と表現できるでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The artist's dramatic composition may itself constitute a masterstroke, directing the viewers' attention toward the solitary climber.",
+          "grammar": "may / 現在分詞",
+          "ja": "劇的な構図そのものも見事な表現であり、鑑賞者の視線を孤独な登山家へ導いているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The four visitors appear absorbed in an image that embodies courage, perseverance, and the desire to transcend human limitations.",
+          "grammar": "appear＋形容詞 / 関係代名詞that / desire to",
+          "ja": "4人の来館者は、勇気、忍耐、人間の限界を超えようとする意志を体現した作品に見入っているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Whether interpreted as an athletic triumph or an artistic masterstroke, the painting conveys an unmistakable sense of extraordinary accomplishment.",
+          "grammar": "Whether＋過去分詞 / A or B",
+          "ja": "スポーツ上の偉業として解釈しても芸術的な傑作として解釈しても、この絵は並外れた達成感を明確に伝えています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a Herculean masterstroke, formidable challenges, monumental achievements, perseverance, prowess, triumph, and artistic admiration.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は途方もない努力による見事な成果、非常に困難な挑戦、偉大な達成、忍耐、力量、勝利、芸術作品への感嘆を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "painting": {
+      "x": 51,
+      "y": 40
+    },
+    "climber": {
+      "x": 51,
+      "y": 27
+    },
+    "summit": {
+      "x": 51,
+      "y": 39
+    },
+    "axe": {
+      "x": 53,
+      "y": 18
+    },
+    "mountain": {
+      "x": 65,
+      "y": 31
+    },
+    "snow": {
+      "x": 53,
+      "y": 55
+    },
+    "clouds": {
+      "x": 62,
+      "y": 39
+    },
+    "frame": {
+      "x": 51,
+      "y": 6
+    },
+    "visitors": {
+      "x": 50,
+      "y": 72
+    },
+    "woman": {
+      "x": 69,
+      "y": 67
+    },
+    "man": {
+      "x": 22,
+      "y": 66
+    },
+    "boy": {
+      "x": 83,
+      "y": 73
+    },
+    "statue": {
+      "x": 94,
+      "y": 50
+    },
+    "gallery": {
+      "x": 51,
+      "y": 87
+    },
+    "floor": {
+      "x": 52,
+      "y": 94
+    },
+    "rope": {
+      "x": 52,
+      "y": 36
+    },
+    "backpack": {
+      "x": 50,
+      "y": 28
+    },
+    "ridge": {
+      "x": 51,
+      "y": 49
+    },
+    "masterstroke": {
+      "x": 51,
+      "y": 40
+    },
+    "triumph": {
+      "x": 51,
+      "y": 26
+    }
+  }
+}

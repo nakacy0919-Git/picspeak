@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_074",
+  "imageSrc": "assets/images/l2_074.webp",
+  "titleEn": "Learning from a Damaged Safety Helmet",
+  "titleJa": "壊れたヘルメットから学ぶ安全研修",
+  "description": "職場の安全研修で、講師が大きくひび割れた黄色い安全ヘルメットを教材として示している場面である。中央の男性講師はヘルメットを両手で持ち、指で亀裂を示しながら説明している。手前には4人の作業員が座り、オレンジ色や黄色の反射ベストを着用して講師の説明を聞いている。テーブルの上には白い安全ヘルメットや作業用手袋が置かれている。左奥の棚には複数のヘルメットや安全用品が並び、壁にはヘルメット、安全メガネ、安全帯などの保護具を示す掲示と警告標識がある。破損した安全装備を実例として使い、点検、交換、事故防止、職場での安全意識を英語で描写する練習に適した場面である。",
+  "category": "school",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration of a workplace safety training session. An instructor holds up a badly cracked yellow hard hat and points directly at the damage while explaining it to four workers wearing reflective safety vests. Include a white hard hat and work gloves on the table, extra helmets on shelves, a whiteboard, and simple safety posters showing protective equipment and warning symbols. Bright training room, landscape 16:9, realistic illustration rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "worker",
+          "ja": "作業員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "teacher",
+          "ja": "講師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "helmet",
+          "ja": "ヘルメット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "crack",
+          "ja": "ひび",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vest",
+          "ja": "安全ベスト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "poster",
+          "ja": "ポスター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "room",
+          "ja": "部屋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "safety",
+          "ja": "安全",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "show",
+          "ja": "見せる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "broken",
+          "ja": "壊れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "hold a helmet",
+          "ja": "ヘルメットを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at a crack",
+          "ja": "ひびを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a safety vest",
+          "ja": "安全ベストを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "listen to the teacher",
+          "ja": "講師の話を聞く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a broken helmet",
+          "ja": "壊れたヘルメット",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a white helmet",
+          "ja": "白いヘルメット",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "safety posters",
+          "ja": "安全ポスター",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "learn about safety",
+          "ja": "安全について学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A man is holding a yellow helmet.",
+          "grammar": "現在進行形",
+          "ja": "男性が黄色いヘルメットを持っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The helmet has a large crack.",
+          "grammar": "have",
+          "ja": "そのヘルメットには大きなひびがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The man is pointing at the crack.",
+          "grammar": "現在進行形",
+          "ja": "男性はひびを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Four workers are listening to him.",
+          "grammar": "現在進行形",
+          "ja": "4人の作業員が彼の話を聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are wearing safety vests.",
+          "grammar": "現在進行形",
+          "ja": "彼らは安全ベストを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a white helmet on the table.",
+          "grammar": "There is",
+          "ja": "机の上に白いヘルメットがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are safety posters on the wall.",
+          "grammar": "There are",
+          "ja": "壁には安全ポスターがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are learning about workplace safety.",
+          "grammar": "現在進行形",
+          "ja": "彼らは職場の安全について学んでいます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "instructor",
+          "ja": "講師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "trainee",
+          "ja": "研修参加者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "損傷",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "equipment",
+          "ja": "装備",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "inspection",
+          "ja": "点検",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accident",
+          "ja": "事故",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "replace",
+          "ja": "交換する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prevent",
+          "ja": "防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "損傷した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "protective",
+          "ja": "保護用の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "necessary",
+          "ja": "必要な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "careful",
+          "ja": "注意深い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "inspect safety equipment",
+          "ja": "安全装備を点検する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explain the damage",
+          "ja": "損傷について説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "replace a damaged helmet",
+          "ja": "損傷したヘルメットを交換する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent workplace accidents",
+          "ja": "職場事故を防ぐ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "wear protective equipment",
+          "ja": "保護具を着用する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "attend safety training",
+          "ja": "安全研修に参加する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "notice a serious crack",
+          "ja": "大きなひびに気づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "learn from an example",
+          "ja": "実例から学ぶ",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An instructor is teaching four workers about protective equipment.",
+          "grammar": "現在進行形",
+          "ja": "講師が4人の作業員に保護具について教えています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is showing them a helmet that has been badly damaged.",
+          "grammar": "関係代名詞that / 現在完了受動態",
+          "ja": "彼はひどく損傷したヘルメットを見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The instructor is pointing directly at a large crack in the helmet.",
+          "grammar": "現在進行形",
+          "ja": "講師はヘルメットの大きなひびを直接指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The workers are listening carefully while wearing reflective vests.",
+          "grammar": "while＋現在分詞",
+          "ja": "作業員たちは反射ベストを着て注意深く説明を聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The damaged helmet may no longer protect a worker properly.",
+          "grammar": "may",
+          "ja": "損傷したヘルメットは作業員を十分に保護できない可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A white helmet on the table may be used to compare damaged and safe equipment.",
+          "grammar": "may be＋過去分詞 / to不定詞",
+          "ja": "机の白いヘルメットは、損傷した装備と安全な装備を比較するために使われるのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The posters behind the group show different kinds of protective equipment and warnings.",
+          "grammar": "現在形",
+          "ja": "グループの後ろのポスターには、さまざまな保護具や警告が示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The lesson demonstrates why workers should inspect their equipment before using it.",
+          "grammar": "why節 / should",
+          "ja": "この研修は、作業員が使用前に装備を点検すべき理由を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "didactic",
+          "ja": "教育的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "exemplar",
+          "ja": "実例・見本",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "integrity",
+          "ja": "完全性・健全性",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "compliance",
+          "ja": "規則遵守",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "precaution",
+          "ja": "予防措置",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "hazard",
+          "ja": "危険要因",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "demonstrate",
+          "ja": "実演して示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discard",
+          "ja": "廃棄する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reinforce",
+          "ja": "強化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compromised",
+          "ja": "機能が損なわれた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "defective",
+          "ja": "欠陥のある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "protective",
+          "ja": "保護用の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "instructive",
+          "ja": "教訓的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "mandatory",
+          "ja": "義務付けられた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a didactic exemplar",
+          "ja": "教育的な実例",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "compromised structural integrity",
+          "ja": "損なわれた構造的な強度",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "inspect protective equipment",
+          "ja": "保護具を点検する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "discard defective equipment",
+          "ja": "欠陥のある装備を廃棄する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reinforce safety awareness",
+          "ja": "安全意識を高める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "comply with safety regulations",
+          "ja": "安全規則を遵守する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "take preventive precautions",
+          "ja": "予防措置を講じる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "demonstrate a potential hazard",
+          "ja": "潜在的な危険を実例で示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "conduct workplace safety training",
+          "ja": "職場の安全研修を実施する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The cracked helmet is being used as a didactic exemplar during a workplace safety training session.",
+          "grammar": "現在進行受動態 / as",
+          "ja": "ひび割れたヘルメットが、職場の安全研修で教育的な実例として使用されています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The instructor is drawing attention to the severe cracks that have compromised the helmet's structural integrity.",
+          "grammar": "関係代名詞that / 現在完了形",
+          "ja": "講師は、ヘルメットの構造的な強度を損なった深刻なひびに注意を向けさせています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By displaying actual damage, he can demonstrate more clearly why defective protective equipment should be discarded.",
+          "grammar": "By＋動名詞 / why節 / should be",
+          "ja": "実際の損傷を見せることで、欠陥のある保護具をなぜ廃棄すべきなのかをより明確に示すことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The trainees' focused attention suggests that the damaged helmet serves as an effective and instructive warning.",
+          "grammar": "suggest that / serve as",
+          "ja": "研修参加者が集中していることから、この損傷したヘルメットが効果的で教訓的な警告例になっていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Protective equipment whose structural integrity has been compromised may fail to provide adequate protection during an accident.",
+          "grammar": "関係代名詞whose / 現在完了受動態 / may",
+          "ja": "構造的な強度が損なわれた保護具は、事故時に十分な保護機能を果たさない可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The undamaged helmet on the table may provide a useful comparison with the defective one being demonstrated.",
+          "grammar": "may / with / being＋過去分詞",
+          "ja": "机の上の損傷していないヘルメットは、説明に使用されている欠陥品との比較に役立つ可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Safety posters and protective gear around the room reinforce the importance of compliance with workplace precautions.",
+          "grammar": "reinforce / compliance with",
+          "ja": "室内の安全ポスターや保護具は、職場での予防措置を遵守する重要性を強調しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Regular inspection allows workers to identify deterioration before damaged equipment becomes a serious occupational hazard.",
+          "grammar": "allow O to / before",
+          "ja": "定期的な点検により、損傷した装備が重大な職場の危険要因となる前に劣化を発見できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a didactic exemplar, compromised integrity, protective equipment, hazard prevention, inspection, and safety compliance.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は教育的な実例、損なわれた強度、保護具、危険防止、点検、安全規則の遵守を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "instructor": {
+      "x": 45,
+      "y": 40
+    },
+    "helmet": {
+      "x": 59,
+      "y": 29
+    },
+    "crack": {
+      "x": 58,
+      "y": 22
+    },
+    "finger": {
+      "x": 52,
+      "y": 34
+    },
+    "worker1": {
+      "x": 11,
+      "y": 61
+    },
+    "worker2": {
+      "x": 31,
+      "y": 73
+    },
+    "worker3": {
+      "x": 70,
+      "y": 70
+    },
+    "worker4": {
+      "x": 92,
+      "y": 60
+    },
+    "vest": {
+      "x": 73,
+      "y": 82
+    },
+    "hardhat": {
+      "x": 48,
+      "y": 87
+    },
+    "gloves": {
+      "x": 56,
+      "y": 93
+    },
+    "table": {
+      "x": 53,
+      "y": 93
+    },
+    "poster": {
+      "x": 86,
+      "y": 27
+    },
+    "warning": {
+      "x": 88,
+      "y": 34
+    },
+    "board": {
+      "x": 67,
+      "y": 25
+    },
+    "shelf": {
+      "x": 8,
+      "y": 34
+    },
+    "helmets": {
+      "x": 7,
+      "y": 20
+    },
+    "jacket": {
+      "x": 24,
+      "y": 39
+    },
+    "window": {
+      "x": 8,
+      "y": 10
+    },
+    "room": {
+      "x": 66,
+      "y": 10
+    }
+  }
+}

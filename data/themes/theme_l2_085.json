@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_085",
+  "imageSrc": "assets/images/l2_085.webp",
+  "titleEn": "A Fetid Stench from Overflowing Garbage",
+  "titleJa": "あふれたゴミから漂う悪臭",
+  "description": "飲食店の裏手にある路地で、大量のゴミがあふれ、強い悪臭が漂っている場面である。右側には大きな緑色のゴミ収集箱が2つ並び、どちらもふたが閉まらないほど食品容器、ビニール袋、生ゴミなどでいっぱいになっている。さらに周囲の地面にも大量のゴミが散乱し、黒いゴミ袋や段ボール箱、金属製のゴミ箱も置かれている。ゴミ箱からは緑色の臭気が立ち上っている。中央の作業員はゴミ箱のふたを開けながら鼻を押さえ、手前の青いシャツを着た男性と左奥の女性も鼻をつまみながら不快そうな表情をしている。右端の開いた厨房では別の料理人が作業を続けている。ごみ処理、衛生管理、腐敗した生ゴミ、悪臭、飲食店周辺の環境問題を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a restaurant alley with four people and overflowing dumpsters. Two large green dumpsters are packed with food waste, plastic bags, containers, and garbage spilling onto the ground. Green odor fumes rise from the trash. A worker opens a dumpster while covering his nose, and a man and woman nearby also hold their noses in disgust. Another cook works inside the open kitchen doorway. Include black garbage bags, a metal trash can, cardboard boxes, brick walls, and a dirty alley. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "garbage",
+          "ja": "ゴミ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dumpster",
+          "ja": "大型ゴミ箱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "box",
+          "ja": "箱",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "food",
+          "ja": "食べ物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "worker",
+          "ja": "作業員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "nose",
+          "ja": "鼻",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "alley",
+          "ja": "路地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "smell",
+          "ja": "におう",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "押さえる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "open",
+          "ja": "開ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "throw",
+          "ja": "捨てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dirty",
+          "ja": "汚れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "overflowing garbage",
+          "ja": "あふれたゴミ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "hold his nose",
+          "ja": "鼻を押さえる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "open the dumpster",
+          "ja": "大型ゴミ箱を開ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "black garbage bags",
+          "ja": "黒いゴミ袋",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "food on the ground",
+          "ja": "地面にある食べ物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a bad smell",
+          "ja": "嫌なにおい",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a dirty alley",
+          "ja": "汚れた路地",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "behind a restaurant",
+          "ja": "飲食店の裏で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "There is a lot of garbage in the alley.",
+          "grammar": "There is",
+          "ja": "路地にはたくさんのゴミがあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two large dumpsters are full of garbage.",
+          "grammar": "be full of",
+          "ja": "2つの大きなゴミ箱はゴミでいっぱいです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Garbage is lying on the ground.",
+          "grammar": "現在進行形",
+          "ja": "ゴミが地面に散らばっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A worker is opening a dumpster.",
+          "grammar": "現在進行形",
+          "ja": "作業員が大型ゴミ箱を開けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is holding his nose.",
+          "grammar": "現在進行形",
+          "ja": "彼は鼻を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man and a woman are also covering their noses.",
+          "grammar": "現在進行形",
+          "ja": "男性と女性も鼻を押さえています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are black bags beside the dumpsters.",
+          "grammar": "There are",
+          "ja": "大型ゴミ箱のそばには黒い袋があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The garbage smells very bad.",
+          "grammar": "smell＋形容詞",
+          "ja": "そのゴミはとても嫌なにおいがします。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "waste",
+          "ja": "廃棄物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "odor",
+          "ja": "におい",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sanitation",
+          "ja": "衛生管理",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "container",
+          "ja": "容器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "restaurant",
+          "ja": "飲食店",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "leftover",
+          "ja": "食べ残し",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "overflow",
+          "ja": "あふれる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rot",
+          "ja": "腐る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dispose",
+          "ja": "処分する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scatter",
+          "ja": "散らばる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smelly",
+          "ja": "臭い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rotten",
+          "ja": "腐った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unpleasant",
+          "ja": "不快な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unsanitary",
+          "ja": "不衛生な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "overflowing",
+          "ja": "あふれている",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "overflow with garbage",
+          "ja": "ゴミであふれる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give off a bad odor",
+          "ja": "嫌なにおいを放つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dispose of food waste",
+          "ja": "生ゴミを処分する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cover their noses",
+          "ja": "鼻を覆う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "rotten food waste",
+          "ja": "腐った生ゴミ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "poor sanitation",
+          "ja": "劣悪な衛生状態",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "garbage scattered around",
+          "ja": "周囲に散乱したゴミ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an unpleasant odor",
+          "ja": "不快な臭い",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The dumpsters behind the restaurant are overflowing with garbage.",
+          "grammar": "現在進行形 / overflow with",
+          "ja": "飲食店の裏の大型ゴミ箱はゴミであふれています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Food containers, plastic bags, and leftovers are scattered across the ground.",
+          "grammar": "受動態",
+          "ja": "食品容器、ビニール袋、食べ残しが地面一面に散乱しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A restaurant worker is holding his nose while opening one of the dumpsters.",
+          "grammar": "while＋現在分詞",
+          "ja": "飲食店の作業員が鼻を押さえながらゴミ箱の1つを開けています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two other people are also covering their noses because of the smell.",
+          "grammar": "because of",
+          "ja": "別の2人もにおいのため鼻を覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The green fumes suggest that the waste is giving off an unpleasant odor.",
+          "grammar": "suggest that / 現在進行形",
+          "ja": "緑色の臭気表現から、廃棄物が不快なにおいを放っていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Some of the food waste may have begun to rot.",
+          "grammar": "may have＋過去分詞",
+          "ja": "一部の生ゴミは腐り始めているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Poor waste management can create serious sanitation problems around a restaurant.",
+          "grammar": "can",
+          "ja": "不適切なゴミ管理は飲食店周辺に深刻な衛生問題を引き起こす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows why food waste should be removed before it begins to decay.",
+          "grammar": "why節 / should be＋過去分詞 / before",
+          "ja": "この場面は、生ゴミが腐敗し始める前に処分すべき理由を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "stench",
+          "ja": "悪臭",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "refuse",
+          "ja": "廃棄物・ゴミ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "decay",
+          "ja": "腐敗",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "putrefaction",
+          "ja": "腐敗・腐乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sanitation",
+          "ja": "衛生管理",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "nuisance",
+          "ja": "迷惑・生活妨害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reek",
+          "ja": "悪臭を放つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "decompose",
+          "ja": "腐敗する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accumulate",
+          "ja": "蓄積する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discard",
+          "ja": "廃棄する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fetid",
+          "ja": "ひどい悪臭を放つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "rancid",
+          "ja": "腐敗臭のする",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "putrid",
+          "ja": "腐った悪臭のする",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "noxious",
+          "ja": "有害で不快な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unsanitary",
+          "ja": "不衛生な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a fetid stench",
+          "ja": "鼻をつくひどい悪臭",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reek of decaying refuse",
+          "ja": "腐敗したゴミの悪臭を放つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accumulate food waste",
+          "ja": "生ゴミを蓄積する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "undergo rapid decomposition",
+          "ja": "急速に腐敗する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "create a sanitation hazard",
+          "ja": "衛生上の危険を生み出す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "emit a noxious odor",
+          "ja": "有害で不快な臭気を放つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "overflow onto the pavement",
+          "ja": "歩道上へあふれ出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improper waste disposal",
+          "ja": "不適切な廃棄物処理",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "prevent further putrefaction",
+          "ja": "さらなる腐敗を防ぐ",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The overflowing dumpsters appear to be emitting a fetid stench that is forcing nearby people to cover their noses.",
+          "grammar": "appear to be＋現在分詞 / 関係代名詞that / force O to",
+          "ja": "あふれた大型ゴミ箱から鼻をつく悪臭が漂い、近くの人々が鼻を覆わずにはいられないようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Large quantities of discarded food, packaging, and refuse have accumulated both inside and around the containers.",
+          "grammar": "現在完了形 / both A and B",
+          "ja": "大量の廃棄された食品、包装材、ゴミが容器の内外に蓄積しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visible reaction of the workers suggests that the decomposing waste reeks strongly enough to cause considerable discomfort.",
+          "grammar": "suggest that / enough to",
+          "ja": "作業員たちの反応から、腐敗したゴミがかなりの不快感を引き起こすほど強烈な悪臭を放っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Organic refuse left in warm conditions can undergo rapid decomposition and eventually produce a putrid odor.",
+          "grammar": "過去分詞 / can",
+          "ja": "暖かい環境に放置された生ゴミは急速に腐敗し、やがて腐敗臭を発することがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The garbage spilling onto the pavement indicates that the available waste containers have exceeded their capacity.",
+          "grammar": "現在分詞 / indicate that / 現在完了形",
+          "ja": "路面にあふれ出したゴミは、ゴミ容器の収容量を超えていることを示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Such unsanitary conditions could attract pests and create a significant sanitation hazard for the surrounding area.",
+          "grammar": "could / 並列動詞",
+          "ja": "このような不衛生な状態は害虫を引き寄せ、周辺地域に重大な衛生上の危険をもたらす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Because the dumpsters are located immediately beside a working kitchen, proper refuse management would be particularly important.",
+          "grammar": "Because / 仮定的would",
+          "ja": "大型ゴミ箱が稼働中の厨房のすぐ横にあるため、適切な廃棄物管理は特に重要だと考えられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Regular collection and thorough cleaning would help prevent refuse from accumulating to the point at which it emits a noxious stench.",
+          "grammar": "would help / prevent A from＋動名詞 / at which",
+          "ja": "定期的な回収と徹底した清掃によって、有害な悪臭を放つほどゴミが蓄積するのを防ぐことができるでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a fetid stench, decomposing refuse, putrefaction, overflowing waste, poor sanitation, and improper waste disposal.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面はひどい悪臭、腐敗するゴミ、腐敗、あふれた廃棄物、不衛生な状態、不適切なゴミ処理を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man": {
+      "x": 20,
+      "y": 47
+    },
+    "woman": {
+      "x": 7,
+      "y": 44
+    },
+    "worker": {
+      "x": 38,
+      "y": 46
+    },
+    "cook": {
+      "x": 94,
+      "y": 34
+    },
+    "nose": {
+      "x": 22,
+      "y": 32
+    },
+    "dumpster": {
+      "x": 62,
+      "y": 51
+    },
+    "garbage": {
+      "x": 62,
+      "y": 41
+    },
+    "fumes": {
+      "x": 58,
+      "y": 23
+    },
+    "bags": {
+      "x": 84,
+      "y": 70
+    },
+    "trashcan": {
+      "x": 75,
+      "y": 67
+    },
+    "boxes": {
+      "x": 93,
+      "y": 83
+    },
+    "food": {
+      "x": 49,
+      "y": 72
+    },
+    "plastic": {
+      "x": 54,
+      "y": 74
+    },
+    "lid": {
+      "x": 61,
+      "y": 29
+    },
+    "brick": {
+      "x": 68,
+      "y": 13
+    },
+    "alley": {
+      "x": 28,
+      "y": 77
+    },
+    "kitchen": {
+      "x": 95,
+      "y": 27
+    },
+    "door": {
+      "x": 89,
+      "y": 33
+    },
+    "puddle": {
+      "x": 35,
+      "y": 77
+    },
+    "stench": {
+      "x": 53,
+      "y": 25
+    }
+  }
+}

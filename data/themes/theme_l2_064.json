@@ -1,0 +1,717 @@
+{
+  "id": "theme_l2_064",
+  "imageSrc": "assets/images/l2_064.webp",
+  "titleEn": "Emergency Planning for a Volcanic Eruption",
+  "titleJa": "火山噴火に備える緊急対策会議",
+  "description": "火山が激しく噴火している地域について、複数の専門家や緊急対応スタッフが対策会議をしている場面である。中央では年配の専門家が大型のデジタル地図を指さし、火山周辺の危険区域や避難経路について説明している。周囲には行政担当者、軍関係者、救助スタッフなどが座り、真剣な表情で地図を確認している。大型スクリーンには噴煙と溶岩を噴き上げる火山が映り、別のモニターには衛星画像や地震活動を示すグラフが表示されている。デジタル地図には火山を中心として赤やオレンジ色の危険区域が広がっている。自然災害、避難計画、専門家同士の協力、危険区域の分析を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the reference image. Show an emergency response team gathered around a large illuminated digital map during a volcanic crisis. An older scientist points to the volcano and red hazard zones while officials, military personnel, and rescue workers listen seriously. Behind them, show a large screen with an erupting volcano, another screen with a satellite map, and monitors displaying seismic graphs. Include orange emergency jackets, uniforms, maps, screens, smoke, lava, and a tense control-room atmosphere. Landscape 16:9, polished realistic illustration style rather than photography, no logos or readable organization names.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "volcano",
+          "ja": "火山",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "map",
+          "ja": "地図",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "team",
+          "ja": "チーム",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fire",
+          "ja": "火",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smoke",
+          "ja": "煙",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lava",
+          "ja": "溶岩",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "uniform",
+          "ja": "制服",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "computer",
+          "ja": "コンピューター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "plan",
+          "ja": "計画する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at a map",
+          "ja": "地図を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the volcano",
+          "ja": "火山を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a large screen",
+          "ja": "大きな画面",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "an erupting volcano",
+          "ja": "噴火している火山",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "red danger areas",
+          "ja": "赤い危険区域",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "協力する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear orange jackets",
+          "ja": "オレンジ色の上着を着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make an emergency plan",
+          "ja": "緊急計画を立てる",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A team is looking at a large map.",
+          "grammar": "現在進行形",
+          "ja": "チームが大きな地図を見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "An older man is pointing at the volcano.",
+          "grammar": "現在進行形",
+          "ja": "年配の男性が火山を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The volcano is erupting.",
+          "grammar": "現在進行形",
+          "ja": "火山が噴火しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a lot of smoke above the volcano.",
+          "grammar": "There is",
+          "ja": "火山の上には大量の煙があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people look serious.",
+          "grammar": "look＋形容詞",
+          "ja": "人々は真剣な表情をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are several computer screens.",
+          "grammar": "There are",
+          "ja": "いくつかのコンピューター画面があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are wearing uniforms.",
+          "grammar": "現在進行形",
+          "ja": "何人かは制服を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are making an emergency plan.",
+          "grammar": "現在進行形",
+          "ja": "彼らは緊急計画を立てています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "eruption",
+          "ja": "噴火",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evacuation",
+          "ja": "避難",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "scientist",
+          "ja": "科学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "official",
+          "ja": "担当者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "zone",
+          "ja": "区域",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "data",
+          "ja": "データ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "monitor",
+          "ja": "監視する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prepare",
+          "ja": "準備する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "evacuate",
+          "ja": "避難する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "emergency",
+          "ja": "緊急の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "volcanic",
+          "ja": "火山の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dangerous",
+          "ja": "危険な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "serious",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "seismic",
+          "ja": "地震の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "monitor volcanic activity",
+          "ja": "火山活動を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze seismic data",
+          "ja": "地震データを分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify dangerous zones",
+          "ja": "危険区域を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prepare an evacuation plan",
+          "ja": "避難計画を準備する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "respond to an eruption",
+          "ja": "噴火に対応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study a digital map",
+          "ja": "デジタル地図を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a volcanic danger zone",
+          "ja": "火山の危険区域",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "work as an emergency team",
+          "ja": "緊急対応チームとして協力する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An emergency team is discussing how to respond to a volcanic eruption.",
+          "grammar": "how to",
+          "ja": "緊急対応チームが火山噴火にどう対応するか話し合っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The scientist is pointing to a dangerous area on the digital map.",
+          "grammar": "現在進行形",
+          "ja": "科学者がデジタル地図上の危険区域を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Red and orange areas show where the danger may be greatest.",
+          "grammar": "where節 / may",
+          "ja": "赤色とオレンジ色の区域は危険が特に大きい場所を示しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A large screen shows a volcano producing smoke and lava.",
+          "grammar": "現在分詞",
+          "ja": "大型画面には煙と溶岩を噴き出す火山が映っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Other monitors are displaying satellite images and seismic data.",
+          "grammar": "現在進行形",
+          "ja": "ほかのモニターには衛星画像や地震データが表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Rescue workers and officials are listening carefully to the explanation.",
+          "grammar": "現在進行形",
+          "ja": "救助スタッフや担当者が説明を注意深く聞いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team may be deciding which areas should be evacuated first.",
+          "grammar": "may be＋現在分詞 / 間接疑問",
+          "ja": "チームはどの地域を最初に避難させるべきか決めているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Their serious expressions suggest that the situation is very dangerous.",
+          "grammar": "suggest that",
+          "ja": "真剣な表情から、状況が非常に危険であることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "volcanologist",
+          "ja": "火山学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "contingency",
+          "ja": "不測の事態への備え",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evacuation",
+          "ja": "避難",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "seismicity",
+          "ja": "地震活動",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "hazard",
+          "ja": "危険",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "forecast",
+          "ja": "予測する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "delineate",
+          "ja": "境界を明確に示す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mitigate",
+          "ja": "軽減する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "coordinate",
+          "ja": "調整する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mobilize",
+          "ja": "動員する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "imminent",
+          "ja": "差し迫った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "catastrophic",
+          "ja": "壊滅的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "volatile",
+          "ja": "不安定な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "seismic",
+          "ja": "地震活動の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "provisional",
+          "ja": "暫定的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "devise a contingency plan",
+          "ja": "緊急時対応計画を立案する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "forecast an imminent eruption",
+          "ja": "差し迫った噴火を予測する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "delineate volcanic hazard zones",
+          "ja": "火山危険区域を明確に示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor escalating seismicity",
+          "ja": "活発化する地震活動を監視する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "coordinate evacuation procedures",
+          "ja": "避難手順を調整する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mitigate catastrophic damage",
+          "ja": "壊滅的被害を軽減する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "mobilize emergency personnel",
+          "ja": "緊急対応要員を動員する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assess a volatile situation",
+          "ja": "不安定な状況を評価する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "identify communities at risk",
+          "ja": "危険にさらされる地域を特定する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The emergency team appears to be devising a contingency plan in response to an imminent volcanic eruption.",
+          "grammar": "appear to be＋現在分詞 / in response to",
+          "ja": "緊急対応チームは、差し迫った火山噴火に対応するための緊急計画を立案しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The senior volcanologist is delineating hazard zones on a digital map while the other officials examine the projected impact area.",
+          "grammar": "while",
+          "ja": "年配の火山学者がデジタル地図上で危険区域を示す一方、ほかの担当者は予測される影響範囲を確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The expanding red region appears to represent areas that could be threatened by lava or other volcanic hazards.",
+          "grammar": "appear to / 関係代名詞that / could",
+          "ja": "広がる赤い区域は、溶岩などの火山災害によって危険にさらされる可能性のある地域を表しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Seismic graphs displayed on the monitors may help specialists assess whether volcanic activity is escalating.",
+          "grammar": "過去分詞 / whether節",
+          "ja": "モニターに表示された地震波形は、火山活動が活発化しているかを専門家が判断する助けになる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Satellite imagery allows the team to monitor the wider region and identify communities that may be at risk.",
+          "grammar": "allow O to / 関係代名詞that",
+          "ja": "衛星画像によって、チームは広い地域を監視し、危険にさらされる可能性のある地域を特定できます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Military and emergency personnel are participating in the briefing so that evacuation procedures can be coordinated efficiently.",
+          "grammar": "so that / 受動態",
+          "ja": "避難手順を効率的に調整できるよう、軍関係者や緊急対応スタッフも会議に参加しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The team may need to mobilize personnel rapidly if the eruption threatens populated areas.",
+          "grammar": "may need to / if",
+          "ja": "噴火が居住地域を脅かす場合、チームは迅速に人員を動員する必要があるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Combining scientific forecasts with emergency planning can help mitigate the potentially catastrophic consequences of a major eruption.",
+          "grammar": "動名詞主語 / help＋動詞",
+          "ja": "科学的予測と緊急計画を組み合わせることで、大規模噴火による壊滅的な被害を軽減できる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing contingency planning, seismic monitoring, hazard assessment, evacuation, and coordinated disaster response.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は緊急時対応計画、地震活動の監視、危険評価、避難、組織的な災害対応を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "scientist": {
+      "x": 30,
+      "y": 43
+    },
+    "official": {
+      "x": 47,
+      "y": 45
+    },
+    "woman": {
+      "x": 59,
+      "y": 44
+    },
+    "soldier": {
+      "x": 71,
+      "y": 43
+    },
+    "rescuer": {
+      "x": 84,
+      "y": 45
+    },
+    "worker": {
+      "x": 94,
+      "y": 43
+    },
+    "observer": {
+      "x": 14,
+      "y": 49
+    },
+    "map": {
+      "x": 53,
+      "y": 75
+    },
+    "volcano": {
+      "x": 44,
+      "y": 68
+    },
+    "hazard": {
+      "x": 55,
+      "y": 72
+    },
+    "finger": {
+      "x": 42,
+      "y": 66
+    },
+    "screen": {
+      "x": 23,
+      "y": 19
+    },
+    "eruption": {
+      "x": 22,
+      "y": 16
+    },
+    "smoke": {
+      "x": 24,
+      "y": 7
+    },
+    "lava": {
+      "x": 22,
+      "y": 21
+    },
+    "satellite": {
+      "x": 70,
+      "y": 18
+    },
+    "seismic": {
+      "x": 88,
+      "y": 17
+    },
+    "monitor": {
+      "x": 75,
+      "y": 36
+    },
+    "table": {
+      "x": 55,
+      "y": 82
+    },
+    "jacket": {
+      "x": 84,
+      "y": 48
+    },
+    "uniform": {
+      "x": 72,
+      "y": 45
+    }
+  }
+}

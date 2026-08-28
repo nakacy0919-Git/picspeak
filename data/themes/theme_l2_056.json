@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_056",
+  "imageSrc": "assets/images/l2_056.webp",
+  "titleEn": "A Dramatic Save",
+  "titleJa": "ゴール前の劇的なセーブ",
+  "description": "夕方のサッカースタジアムで、ゴールキーパーがゴール上部へ飛んできたボールを防ごうとしている場面である。中央のゴールキーパーは緑色のユニフォームとグローブを身につけ、空中へ大きく跳びながら右手を伸ばしている。ボールはクロスバー付近の高い位置にあり、ゴールに入りそうになっている。左側には赤いユニフォームの攻撃選手がボールの行方を見守り、右側には青いユニフォームを着た2人の守備選手がゴールの方向を見ている。背景には大勢の観客が入り、スタジアムの照明と夕焼け空が見える。スポーツ中の瞬間的な動作、人物の位置、ボールの動き、前景と背景を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a dramatic soccer match at sunset. In front of a full-size goal, a goalkeeper in a green jersey and gloves is leaping high and stretching one hand toward a ball flying close to the crossbar. On the left, show one attacking player in red watching the shot. On the right, show two defenders in blue watching the ball. Include the white goal frame, net, green field, crowded stands, stadium lights, and warm evening sky. Preserve the strong sense of movement and the goalkeeper's airborne save. No team logos or commercial text. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "goalkeeper",
+          "ja": "ゴールキーパー",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "player",
+          "ja": "選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "ball",
+          "ja": "ボール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "goal",
+          "ja": "ゴール",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "net",
+          "ja": "ネット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "グローブ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "競技場",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crowd",
+          "ja": "観客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "照明",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "jump",
+          "ja": "跳ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reach",
+          "ja": "手を伸ばす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "watch",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "save",
+          "ja": "防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "high",
+          "ja": "高い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "jump into the air",
+          "ja": "空中へ跳ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reach for the ball",
+          "ja": "ボールに手を伸ばす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a soccer goal",
+          "ja": "サッカーゴール",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "wear goalkeeper gloves",
+          "ja": "ゴールキーパー用グローブをつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "watch the ball",
+          "ja": "ボールを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "near the crossbar",
+          "ja": "クロスバーの近く",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "players in blue",
+          "ja": "青いユニフォームの選手",
+          "type": "person",
+          "points": 20
+        },
+        {
+          "text": "a large crowd",
+          "ja": "大勢の観客",
+          "type": "person",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A goalkeeper is jumping in front of the goal.",
+          "grammar": "現在進行形",
+          "ja": "ゴールキーパーがゴールの前で跳んでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is reaching for the ball.",
+          "grammar": "現在進行形",
+          "ja": "彼はボールに手を伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ball is above the goalkeeper.",
+          "grammar": "be動詞＋場所",
+          "ja": "ボールはゴールキーパーの上にあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a player in red on the left.",
+          "grammar": "There is",
+          "ja": "左側に赤いユニフォームの選手がいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two players in blue are watching the ball.",
+          "grammar": "現在進行形",
+          "ja": "青いユニフォームの2人の選手がボールを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a white net behind the goalkeeper.",
+          "grammar": "There is",
+          "ja": "ゴールキーパーの後ろには白いネットがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many people in the stadium.",
+          "grammar": "There are",
+          "ja": "スタジアムにはたくさんの人がいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sky is orange and bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "空はオレンジ色で明るいです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "goalkeeper",
+          "ja": "ゴールキーパー",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "attacker",
+          "ja": "攻撃選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "defender",
+          "ja": "守備選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "crossbar",
+          "ja": "クロスバー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stadium",
+          "ja": "スタジアム",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "shot",
+          "ja": "シュート",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "block",
+          "ja": "防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dive",
+          "ja": "飛びつく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stretch",
+          "ja": "伸ばす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "defend",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dramatic",
+          "ja": "劇的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "powerful",
+          "ja": "力強い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "観客でいっぱいの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "airborne",
+          "ja": "空中にいる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "close",
+          "ja": "間近の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "make a diving save",
+          "ja": "飛びついてセーブする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stretch out one arm",
+          "ja": "片腕を伸ばす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "block a powerful shot",
+          "ja": "強烈なシュートを防ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fly toward the goal",
+          "ja": "ゴールへ飛んでいく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "close to the crossbar",
+          "ja": "クロスバーの近く",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "watch the goalkeeper",
+          "ja": "ゴールキーパーを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "defend the goal",
+          "ja": "ゴールを守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a crowded soccer stadium",
+          "ja": "観客でいっぱいのサッカースタジアム",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The goalkeeper is making a dramatic save in front of the goal.",
+          "grammar": "現在進行形",
+          "ja": "ゴールキーパーがゴール前で劇的なセーブをしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He has jumped high into the air to reach the ball.",
+          "grammar": "現在完了形 / to不定詞",
+          "ja": "彼はボールに届くため高く空中へ跳び上がっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ball is traveling toward the upper part of the goal.",
+          "grammar": "現在進行形",
+          "ja": "ボールはゴール上部へ向かっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The goalkeeper is stretching out his right hand to block the shot.",
+          "grammar": "to不定詞",
+          "ja": "ゴールキーパーはシュートを防ぐため右手を伸ばしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "An attacker in red is watching the ball from the left side.",
+          "grammar": "現在進行形",
+          "ja": "赤いユニフォームの攻撃選手が左側からボールを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Two defenders in blue are standing near the goal.",
+          "grammar": "現在進行形",
+          "ja": "青いユニフォームの2人の守備選手がゴールの近くに立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The crowd appears excited by the action near the goal.",
+          "grammar": "appear＋形容詞",
+          "ja": "観客はゴール前のプレーに興奮しているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The goalkeeper will probably try to push the ball over the crossbar.",
+          "grammar": "will / probably",
+          "ja": "ゴールキーパーはおそらくボールをクロスバーの上へ押し出そうとしています。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "projectile",
+          "ja": "飛来物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "trajectory",
+          "ja": "軌道",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reflex",
+          "ja": "反射的反応",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "interception",
+          "ja": "阻止・遮断",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "crossbar",
+          "ja": "クロスバー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "parry",
+          "ja": "そらして防ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deflect",
+          "ja": "方向をそらす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "intercept",
+          "ja": "途中で阻止する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "propel",
+          "ja": "勢いよく飛ばす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "thwart",
+          "ja": "阻止する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "airborne",
+          "ja": "空中にある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "incoming",
+          "ja": "飛んでくる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "acrobatic",
+          "ja": "曲芸的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "imminent",
+          "ja": "差し迫った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "spectacular",
+          "ja": "目を見張るような",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "parry an incoming projectile",
+          "ja": "飛んでくる物体をそらして防ぐ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "deflect the ball over the crossbar",
+          "ja": "ボールをクロスバーの上へそらす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "intercept the ball's trajectory",
+          "ja": "ボールの軌道を途中で遮る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "make an acrobatic save",
+          "ja": "曲芸的なセーブをする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "react with remarkable reflexes",
+          "ja": "優れた反射神経で反応する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "thwart an imminent goal",
+          "ja": "目前のゴールを阻止する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "propel the ball toward goal",
+          "ja": "ボールをゴールへ勢いよく飛ばす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stretch to full extension",
+          "ja": "体を限界まで伸ばす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "alter the ball's trajectory",
+          "ja": "ボールの軌道を変える",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The goalkeeper is attempting to parry an incoming projectile that is heading toward the upper corner of the goal.",
+          "grammar": "attempt to / 関係代名詞that",
+          "ja": "ゴールキーパーはゴール上隅へ向かう飛来物であるボールをそらして防ごうとしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He has launched himself into the air in an effort to intercept the ball's trajectory.",
+          "grammar": "現在完了形 / in an effort to",
+          "ja": "彼はボールの軌道を阻止しようと空中へ飛び出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His fully extended arm suggests that the shot is close to exceeding his normal reach.",
+          "grammar": "suggest that",
+          "ja": "完全に伸びた腕から、このシュートが通常の守備範囲を超えそうであることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The ball appears to have been propelled toward the upper section of the goal with considerable force.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "ボールはかなりの勢いでゴール上部へ飛ばされたように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If the goalkeeper makes contact, he may be able to deflect the ball over the crossbar.",
+          "grammar": "if節 / may",
+          "ja": "ゴールキーパーがボールに触れれば、クロスバーの上へそらすことができるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The nearby attacker and defenders are watching intently because the outcome of the play remains uncertain.",
+          "grammar": "because",
+          "ja": "プレーの結果がまだ分からないため、近くの攻撃選手と守備選手は真剣に見守っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The goalkeeper's acrobatic movement demonstrates the reflexes required to thwart an imminent goal.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "ゴールキーパーの曲芸的な動きは、目前の得点を阻止するために必要な反射神経を示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The crowded stands and dramatic evening light intensify the sense of urgency surrounding the save.",
+          "grammar": "現在形",
+          "ja": "満員の観客席と劇的な夕方の光が、このセーブをめぐる緊迫感をさらに高めています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing rapid movement, trajectory, spatial relationships, athletic reactions, and an uncertain outcome.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は素早い動き、軌道、位置関係、運動選手の反応、結果が分からない状況を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "goalkeeper": {
+      "x": 47,
+      "y": 48
+    },
+    "ball": {
+      "x": 62,
+      "y": 9
+    },
+    "glove": {
+      "x": 56,
+      "y": 22
+    },
+    "attacker": {
+      "x": 20,
+      "y": 59
+    },
+    "defender1": {
+      "x": 69,
+      "y": 59
+    },
+    "defender2": {
+      "x": 88,
+      "y": 60
+    },
+    "goal": {
+      "x": 52,
+      "y": 48
+    },
+    "net": {
+      "x": 49,
+      "y": 52
+    },
+    "crossbar": {
+      "x": 55,
+      "y": 22
+    },
+    "post": {
+      "x": 21,
+      "y": 50
+    },
+    "field": {
+      "x": 51,
+      "y": 93
+    },
+    "crowd": {
+      "x": 26,
+      "y": 24
+    },
+    "stadium": {
+      "x": 48,
+      "y": 14
+    },
+    "lights": {
+      "x": 88,
+      "y": 26
+    },
+    "sky": {
+      "x": 86,
+      "y": 8
+    },
+    "sunset": {
+      "x": 91,
+      "y": 17
+    },
+    "jersey1": {
+      "x": 47,
+      "y": 43
+    },
+    "jersey2": {
+      "x": 20,
+      "y": 54
+    },
+    "jersey3": {
+      "x": 70,
+      "y": 52
+    },
+    "jersey4": {
+      "x": 88,
+      "y": 53
+    }
+  }
+}

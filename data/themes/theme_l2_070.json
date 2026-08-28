@@ -1,0 +1,693 @@
+{
+  "id": "theme_l2_070",
+  "imageSrc": "assets/images/l2_070.webp",
+  "titleEn": "Receiving Encouraging Medical News",
+  "titleJa": "医師から安心できる説明を受ける患者",
+  "description": "明るい診察室で、医師が女性患者と向かい合って話している場面である。左側の男性医師は白衣を着て首に聴診器をかけ、笑顔で親指を立てている。右側の女性患者は診察用の椅子に座り、医師の説明を聞きながら笑顔を見せている。中央のモニターには体内を撮影した医療画像が表示され、左奥にも複数の画像が掲示されている。机にはキーボード、マウス、小さな植物などが置かれている。医師の表情やジェスチャーから、患者に安心感を与える説明をしている場面と考えられる。医療、診察、検査結果、安心、医師と患者のコミュニケーションを英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A polished educational illustration based closely on the reference image. Show a smiling male doctor in a white coat and blue scrubs sitting opposite a female patient in a bright medical consultation room. The doctor wears a stethoscope and gives a thumbs-up while speaking reassuringly. The patient sits in an examination chair and smiles back. Show a medical scan on the central monitor, additional scan images on the left, a keyboard, mouse, small plants, desk, and clean clinic interior. Landscape 16:9, realistic illustration rather than photography, no logos or readable medical text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "doctor",
+          "ja": "医師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "patient",
+          "ja": "患者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "hospital",
+          "ja": "病院",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coat",
+          "ja": "白衣",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "image",
+          "ja": "画像",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "computer",
+          "ja": "コンピューター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hand",
+          "ja": "手",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "desk",
+          "ja": "机",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "ほほえむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "listen",
+          "ja": "聞く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "talk to a patient",
+          "ja": "患者と話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a white coat",
+          "ja": "白衣を着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give a thumbs-up",
+          "ja": "親指を立てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the doctor",
+          "ja": "医師を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit in a chair",
+          "ja": "椅子に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a medical image",
+          "ja": "医療画像",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "on the computer screen",
+          "ja": "コンピューター画面に",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "inside a clinic",
+          "ja": "診療所の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A doctor is talking to a patient.",
+          "grammar": "現在進行形",
+          "ja": "医師が患者と話しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The doctor is wearing a white coat.",
+          "grammar": "現在進行形",
+          "ja": "医師は白衣を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is giving a thumbs-up.",
+          "grammar": "現在進行形",
+          "ja": "彼は親指を立てています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The patient is sitting in a chair.",
+          "grammar": "現在進行形",
+          "ja": "患者は椅子に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are both smiling.",
+          "grammar": "現在進行形",
+          "ja": "2人とも笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a medical image on the screen.",
+          "grammar": "There is",
+          "ja": "画面に医療画像があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a computer on the desk.",
+          "grammar": "There is",
+          "ja": "机の上にコンピューターがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The patient looks happy.",
+          "grammar": "look＋形容詞",
+          "ja": "患者はうれしそうに見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "physician",
+          "ja": "医師",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "patient",
+          "ja": "患者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "scan",
+          "ja": "画像検査",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "result",
+          "ja": "結果",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "consultation",
+          "ja": "診察・相談",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reassure",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "discuss",
+          "ja": "話し合う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "review",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "medical",
+          "ja": "医療の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "positive",
+          "ja": "前向きな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relieved",
+          "ja": "安心した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "friendly",
+          "ja": "親しみやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "calm",
+          "ja": "落ち着いた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "review a medical scan",
+          "ja": "医療画像を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "explain the results",
+          "ja": "結果を説明する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reassure the patient",
+          "ja": "患者を安心させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "have a medical consultation",
+          "ja": "診察を受ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show a positive gesture",
+          "ja": "前向きなジェスチャーを示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit in an examination chair",
+          "ja": "診察用の椅子に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look relieved",
+          "ja": "安心したように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "discuss medical information",
+          "ja": "医療情報について話し合う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A doctor is discussing medical information with a female patient.",
+          "grammar": "現在進行形",
+          "ja": "医師が女性患者と医療情報について話しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A medical scan is displayed on the monitor behind them.",
+          "grammar": "受動態",
+          "ja": "2人の後ろのモニターには医療画像が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The doctor is giving the patient a thumbs-up while smiling.",
+          "grammar": "while＋現在分詞",
+          "ja": "医師は笑顔で患者に親指を立てています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "His gesture appears to be reassuring the patient.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "彼のジェスチャーは患者を安心させているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The patient is smiling as she listens to the doctor's explanation.",
+          "grammar": "as",
+          "ja": "患者は医師の説明を聞きながら笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The doctor may be explaining the results of an examination.",
+          "grammar": "may be＋現在分詞",
+          "ja": "医師は検査結果を説明しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The relaxed expressions of both people suggest that the conversation is going well.",
+          "grammar": "suggest that",
+          "ja": "2人の穏やかな表情から、会話が順調に進んでいることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Clear communication can help patients feel less anxious about medical examinations.",
+          "grammar": "can help＋O＋動詞",
+          "ja": "分かりやすいコミュニケーションは、患者が検査への不安を減らす助けになります。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "prognosis",
+          "ja": "予後・今後の見通し",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "diagnosis",
+          "ja": "診断",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "consultation",
+          "ja": "診察・相談",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "radiograph",
+          "ja": "放射線画像",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "reassurance",
+          "ja": "安心させること",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "alleviate",
+          "ja": "和らげる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "convey",
+          "ja": "伝える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "interpret",
+          "ja": "解釈する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reassure",
+          "ja": "安心させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "disclose",
+          "ja": "伝える・明らかにする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "favorable",
+          "ja": "好ましい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "reassuring",
+          "ja": "安心させるような",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "clinical",
+          "ja": "臨床の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "relieved",
+          "ja": "安心した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "encouraging",
+          "ja": "希望を与える",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "convey a favorable prognosis",
+          "ja": "好ましい予後の見通しを伝える",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "interpret diagnostic images",
+          "ja": "診断画像を読み取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "provide clinical reassurance",
+          "ja": "医学的な安心感を与える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "alleviate a patient's anxiety",
+          "ja": "患者の不安を和らげる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "discuss examination findings",
+          "ja": "検査所見について話し合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "communicate in reassuring terms",
+          "ja": "安心させる言葉で伝える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "review a radiographic image",
+          "ja": "放射線画像を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "respond with visible relief",
+          "ja": "明らかな安心感を示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "establish rapport with a patient",
+          "ja": "患者との信頼関係を築く",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The physician appears to be conveying reassuring information to the patient during a clinical consultation.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "医師は診察の中で、患者に安心できる情報を伝えているように見えます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A diagnostic image displayed on the monitor suggests that they may be discussing the findings of a recent examination.",
+          "grammar": "過去分詞 / suggest that / may",
+          "ja": "モニターに表示された診断画像から、最近行われた検査の所見について話している可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The doctor's thumbs-up gesture may be intended to reassure the patient rather than provide a precise medical conclusion.",
+          "grammar": "may be intended to / rather than",
+          "ja": "医師の親指を立てるジェスチャーは、正確な医学的結論を示すというより、患者を安心させるためのものかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The patient's smile and relaxed posture indicate that the conversation has probably alleviated some of her anxiety.",
+          "grammar": "indicate that / 現在完了形",
+          "ja": "患者の笑顔と落ち着いた姿勢から、この会話によって不安の一部が和らいだ可能性が考えられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Effective physicians must be able to interpret clinical information and convey it in terms that patients can understand.",
+          "grammar": "be able to / 関係代名詞that",
+          "ja": "優れた医師には、臨床情報を読み取り、それを患者が理解できる言葉で伝える能力が必要です。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Clear explanations can provide reassurance even when medical information itself is complex.",
+          "grammar": "even when",
+          "ja": "医学的情報そのものが複雑であっても、分かりやすい説明は患者に安心感を与えることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The friendly interaction demonstrates how nonverbal communication can contribute to establishing rapport between a physician and a patient.",
+          "grammar": "how節 / contribute to＋動名詞",
+          "ja": "親しみのあるやり取りは、非言語コミュニケーションが医師と患者の信頼関係の構築にどのように役立つかを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Although the image gives an encouraging impression, the exact diagnosis or prognosis cannot be determined from the scene alone.",
+          "grammar": "Although / 受動態",
+          "ja": "画像全体からは安心できる印象を受けますが、正確な診断や予後をこの場面だけから判断することはできません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing clinical consultation, reassurance, diagnostic imaging, patient communication, and emotional relief.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は診察、安心感、診断画像、患者とのコミュニケーション、精神的な安堵を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "doctor": {
+      "x": 29,
+      "y": 46
+    },
+    "patient": {
+      "x": 83,
+      "y": 48
+    },
+    "thumb": {
+      "x": 38,
+      "y": 53
+    },
+    "coat": {
+      "x": 27,
+      "y": 69
+    },
+    "stethoscope": {
+      "x": 23,
+      "y": 55
+    },
+    "scrubs": {
+      "x": 32,
+      "y": 67
+    },
+    "monitor": {
+      "x": 57,
+      "y": 36
+    },
+    "scan": {
+      "x": 56,
+      "y": 37
+    },
+    "images": {
+      "x": 4,
+      "y": 17
+    },
+    "chair": {
+      "x": 95,
+      "y": 67
+    },
+    "desk": {
+      "x": 59,
+      "y": 74
+    },
+    "keyboard": {
+      "x": 55,
+      "y": 70
+    },
+    "mouse": {
+      "x": 64,
+      "y": 73
+    },
+    "plant": {
+      "x": 74,
+      "y": 61
+    },
+    "window": {
+      "x": 74,
+      "y": 12
+    }
+  }
+}

@@ -1,0 +1,717 @@
+{
+  "id": "theme_l2_055",
+  "imageSrc": "assets/images/l2_055.webp",
+  "titleEn": "Shark Beside the Tour Boat",
+  "titleJa": "観光船のそばに現れたサメ",
+  "description": "晴れた海上で、小型の観光船のすぐそばを大きなサメが泳いでいる場面である。船には複数の観光客が乗っており、多くの人が手すりにつかまりながら海面を見て驚いている。手前左の男性と女性は身を乗り出し、中央付近の男性はサメの方向を指さしている。別の女性は両手を顔の近くに上げ、強く驚いた表情をしている。船の右側では帽子をかぶった男性が手すりにつかまりながら海を見ている。右手前の海面には巨大なサメの頭と背びれが見え、船の左下にも別の大きな影が水中に見える。海は鮮やかな青色で、船の周囲には白い波が立っている。海上での予期しない出来事、人々の驚き、船とサメの位置関係を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a small sightseeing boat on bright blue ocean water with several adult tourists reacting in shock to a very large shark swimming beside the boat. Some passengers lean over the rail, one points toward the shark, and others look frightened or surprised. Show the shark's head and dorsal fin clearly above or just below the water near the right foreground, with another large underwater shadow near the left side of the boat. Include metal railings, a small cabin, wake and white foam around the boat, and bright sunny conditions. Preserve the crowded passenger reactions and dramatic spatial relationship between the boat and shark. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "shark",
+          "ja": "サメ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boat",
+          "ja": "船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "people",
+          "ja": "人々",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "sea",
+          "ja": "海",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "water",
+          "ja": "水",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fin",
+          "ja": "ひれ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "rail",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wave",
+          "ja": "波",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sun",
+          "ja": "太陽",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "swim",
+          "ja": "泳ぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "つかむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "afraid",
+          "ja": "怖がっている",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a large shark",
+          "ja": "大きなサメ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "ride on a boat",
+          "ja": "船に乗る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the shark",
+          "ja": "サメを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look into the water",
+          "ja": "水の中を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold the rail",
+          "ja": "手すりにつかまる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "swim near the boat",
+          "ja": "船の近くを泳ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a fin above the water",
+          "ja": "水面上のひれ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "blue ocean water",
+          "ja": "青い海",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Many people are standing on a boat.",
+          "grammar": "現在進行形",
+          "ja": "多くの人が船の上に立っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A large shark is swimming near the boat.",
+          "grammar": "現在進行形",
+          "ja": "大きなサメが船の近くを泳いでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One man is pointing at the shark.",
+          "grammar": "現在進行形",
+          "ja": "一人の男性がサメを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people are holding the rail.",
+          "grammar": "現在進行形",
+          "ja": "何人かは手すりにつかまっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people look surprised.",
+          "grammar": "look＋形容詞",
+          "ja": "人々は驚いているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a large fin in the water.",
+          "grammar": "There is",
+          "ja": "水の中に大きなひれがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sea is bright blue.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "海は鮮やかな青色です。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "There are white waves around the boat.",
+          "grammar": "There are",
+          "ja": "船の周りには白い波があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "tourist",
+          "ja": "観光客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "shark",
+          "ja": "サメ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vessel",
+          "ja": "船",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ocean",
+          "ja": "海",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "dorsal fin",
+          "ja": "背びれ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "railing",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "approach",
+          "ja": "近づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surround",
+          "ja": "取り囲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "lean",
+          "ja": "身を乗り出す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "react",
+          "ja": "反応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "frightened",
+          "ja": "おびえた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "shocked",
+          "ja": "衝撃を受けた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "enormous",
+          "ja": "巨大な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "nearby",
+          "ja": "近くの",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unexpected",
+          "ja": "予想外の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an enormous shark",
+          "ja": "巨大なサメ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "approach the boat",
+          "ja": "船に近づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "lean over the railing",
+          "ja": "手すりから身を乗り出す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "react in surprise",
+          "ja": "驚いて反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point toward the water",
+          "ja": "水面の方を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "swim alongside the boat",
+          "ja": "船の横を泳ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a visible dorsal fin",
+          "ja": "見えている背びれ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a sightseeing trip",
+          "ja": "観光船での旅行",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A group of tourists is watching a huge shark beside their boat.",
+          "grammar": "現在進行形",
+          "ja": "観光客の一団が船のそばの巨大なサメを見ています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several passengers are leaning over the railing to get a better view.",
+          "grammar": "to不定詞",
+          "ja": "何人かの乗客がよく見ようと手すりから身を乗り出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One man is pointing toward the shark while shouting to the others.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の男性がほかの人に知らせながらサメを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some tourists look frightened by how close the animal is.",
+          "grammar": "how節",
+          "ja": "サメが非常に近いため、何人かの観光客はおびえているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The shark's dorsal fin can be seen clearly above the surface.",
+          "grammar": "助動詞＋受動態",
+          "ja": "サメの背びれが水面上にはっきり見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another large shape can be seen beneath the water near the boat.",
+          "grammar": "助動詞＋受動態",
+          "ja": "船の近くの水中には別の大きな影も見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "White foam has formed around the moving vessel.",
+          "grammar": "現在完了形",
+          "ja": "動いている船の周囲に白い泡ができています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The unexpected encounter has clearly surprised the passengers.",
+          "grammar": "現在完了形",
+          "ja": "予想外の遭遇によって乗客たちは明らかに驚いています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "onlooker",
+          "ja": "見物人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "predator",
+          "ja": "捕食動物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "proximity",
+          "ja": "近接",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "encounter",
+          "ja": "遭遇",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "spectacle",
+          "ja": "目を引く光景",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "appall",
+          "ja": "ぞっとさせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "startle",
+          "ja": "驚かせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "loom",
+          "ja": "不気味に大きく迫る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "surface",
+          "ja": "水面に現れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "recoil",
+          "ja": "驚いて身を引く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "appalled",
+          "ja": "ぞっとした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "menacing",
+          "ja": "脅威を感じさせる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "formidable",
+          "ja": "恐ろしいほど強大な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "alarmed",
+          "ja": "危機感を覚えた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unanticipated",
+          "ja": "予期しない",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "appall onlookers",
+          "ja": "見物人たちをぞっとさせる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "loom beside the vessel",
+          "ja": "船のそばに不気味に迫る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "recoil in alarm",
+          "ja": "驚いて身を引く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "surface at close range",
+          "ja": "至近距離で水面に現れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an imposing marine predator",
+          "ja": "威圧感のある海の捕食動物",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "react with visible alarm",
+          "ja": "明らかな驚きで反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "venture dangerously close",
+          "ja": "危険なほど近づく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "witness an unexpected spectacle",
+          "ja": "予想外の光景を目撃する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "be startled by its proximity",
+          "ja": "その近さに驚かされる",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The enormous shark appears to appall the onlookers as it surfaces within striking proximity of the sightseeing boat.",
+          "grammar": "appear to / as",
+          "ja": "巨大なサメが観光船のすぐ近くに浮上し、見物人たちをぞっとさせているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several passengers are visibly alarmed by the predator looming beside the vessel.",
+          "grammar": "受動態 / 現在分詞",
+          "ja": "数人の乗客は船のそばに迫る捕食動物に明らかに驚いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One man points emphatically toward the water while others recoil or clutch the railing.",
+          "grammar": "while",
+          "ja": "一人の男性が水面を強く指さす一方、ほかの人々は身を引いたり手すりにつかまったりしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The exposed dorsal fin and massive body make the shark appear particularly formidable at such close range.",
+          "grammar": "make＋O＋C",
+          "ja": "露出した背びれと巨大な体によって、至近距離のサメは特に恐ろしく見えます。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The passengers' expressions suggest that they had not anticipated encountering such a large predator during the excursion.",
+          "grammar": "suggest that / 過去完了形",
+          "ja": "乗客たちの表情から、このような巨大な捕食動物に観光中に遭遇するとは予想していなかったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A second shadow beneath the surface further intensifies the sense of uncertainty surrounding the boat.",
+          "grammar": "現在形",
+          "ja": "水面下のもう一つの影が、船の周囲の不確実で緊迫した雰囲気をさらに強めています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The calm blue ocean contrasts sharply with the passengers' panicked reactions.",
+          "grammar": "contrast with",
+          "ja": "穏やかな青い海は、乗客たちの慌てた反応と鮮明な対比をなしています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The dramatic encounter illustrates how quickly an ordinary sightseeing trip can turn into an alarming spectacle.",
+          "grammar": "how節",
+          "ja": "この劇的な遭遇は、普通の観光旅行がいかに急速に驚くべき出来事へ変わり得るかを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing fear, unexpected wildlife encounters, spatial proximity, and simultaneous human reactions.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は恐怖、予期しない野生動物との遭遇、距離の近さ、複数の人々の同時反応を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "shark": {
+      "x": 69,
+      "y": 78
+    },
+    "fin": {
+      "x": 84,
+      "y": 57
+    },
+    "shadow": {
+      "x": 22,
+      "y": 77
+    },
+    "boat": {
+      "x": 49,
+      "y": 39
+    },
+    "rail": {
+      "x": 39,
+      "y": 46
+    },
+    "cabin": {
+      "x": 63,
+      "y": 16
+    },
+    "tourist1": {
+      "x": 24,
+      "y": 33
+    },
+    "tourist2": {
+      "x": 34,
+      "y": 35
+    },
+    "tourist3": {
+      "x": 42,
+      "y": 26
+    },
+    "tourist4": {
+      "x": 52,
+      "y": 23
+    },
+    "tourist5": {
+      "x": 59,
+      "y": 25
+    },
+    "tourist6": {
+      "x": 66,
+      "y": 20
+    },
+    "tourist7": {
+      "x": 69,
+      "y": 15
+    },
+    "finger": {
+      "x": 35,
+      "y": 17
+    },
+    "hat1": {
+      "x": 42,
+      "y": 23
+    },
+    "hat2": {
+      "x": 62,
+      "y": 12
+    },
+    "glasses": {
+      "x": 51,
+      "y": 13
+    },
+    "water": {
+      "x": 82,
+      "y": 38
+    },
+    "foam": {
+      "x": 88,
+      "y": 42
+    },
+    "wake": {
+      "x": 80,
+      "y": 31
+    },
+    "ocean": {
+      "x": 16,
+      "y": 20
+    }
+  }
+}

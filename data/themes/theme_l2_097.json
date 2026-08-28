@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_097",
+  "imageSrc": "assets/images/l2_097.webp",
+  "titleEn": "Bottoming Out After a Prolonged Slump",
+  "titleJa": "長期低迷の末に底を打つ業績",
+  "description": "明るいオフィスの会議室で、4人のビジネスパーソンが大きな折れ線グラフを見ながら業績について話し合っている場面である。立っている女性は画面を指さし、長期間にわたって大きく下落してきた数値が90前後で横ばいになり始めた部分を説明している。その箇所は緑色の楕円で強調されている。3人の同僚はテーブルを囲んで説明を聞いており、机の上にはノートパソコン、資料、グラフ、ノート、カップなどが置かれている。グラフは約250から急激かつ長期的に下落した後、最も低い水準付近で安定し始めている。このため、長期間の低迷の末に数値や業績が最悪の水準に達し、それ以上下がらなくなることを表す「bottom out after a prolonged slump」を学ぶのに適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of four businesspeople in a modern office meeting. A woman points at a large line chart that falls steadily from a high level and then flattens near its lowest point, highlighted with a circle. Three colleagues sit at a conference table with a laptop and reports. Bright city office, landscape 16:9, no logos.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "graph",
+          "ja": "グラフ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "office",
+          "ja": "オフィス",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "laptop",
+          "ja": "ノートパソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paper",
+          "ja": "資料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "線",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "number",
+          "ja": "数字",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "下がる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "low",
+          "ja": "低い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the graph",
+          "ja": "グラフを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the screen",
+          "ja": "画面を指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "the line goes down",
+          "ja": "線が下がる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a low point",
+          "ja": "低い地点",
+          "type": "concept",
+          "points": 20
+        },
+        {
+          "text": "sit at a table",
+          "ja": "テーブルに座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "talk about the graph",
+          "ja": "グラフについて話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work in an office",
+          "ja": "オフィスで働く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stop going down",
+          "ja": "下がるのが止まる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four people are having a meeting.",
+          "grammar": "現在進行形",
+          "ja": "4人が会議をしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A woman is pointing at a graph.",
+          "grammar": "現在進行形",
+          "ja": "女性がグラフを指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Three people are sitting at the table.",
+          "grammar": "現在進行形",
+          "ja": "3人がテーブルに座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The line on the graph is going down.",
+          "grammar": "現在進行形",
+          "ja": "グラフの線が下がっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The line becomes almost flat at the end.",
+          "grammar": "become＋形容詞",
+          "ja": "線は最後の部分でほぼ横ばいになっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a laptop on the table.",
+          "grammar": "There is",
+          "ja": "テーブルの上にノートパソコンがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The numbers are much lower than before.",
+          "grammar": "比較級",
+          "ja": "数字は以前よりずっと低くなっています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The graph may have stopped falling.",
+          "grammar": "may have＋過去分詞",
+          "ja": "グラフは下がるのを止めたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "decline",
+          "ja": "減少・低下",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "trend",
+          "ja": "傾向",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "performance",
+          "ja": "業績",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "level",
+          "ja": "水準",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "meeting",
+          "ja": "会議",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "report",
+          "ja": "報告書",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "decrease",
+          "ja": "減少する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stabilize",
+          "ja": "安定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "explain",
+          "ja": "説明する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "steady",
+          "ja": "安定した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sharp",
+          "ja": "急激な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "lowest",
+          "ja": "最も低い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "gradual",
+          "ja": "徐々の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "stable",
+          "ja": "安定した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a downward trend",
+          "ja": "下降傾向",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reach the lowest point",
+          "ja": "最も低い地点に達する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show a sharp decline",
+          "ja": "急激な低下を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "begin to stabilize",
+          "ja": "安定し始める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze business performance",
+          "ja": "業績を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "discuss the results",
+          "ja": "結果について話し合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain at a low level",
+          "ja": "低い水準にとどまる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stop falling further",
+          "ja": "それ以上下がらなくなる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A business team is analyzing a graph showing a long downward trend.",
+          "grammar": "現在進行形 / 現在分詞",
+          "ja": "ビジネスチームが長期的な下降傾向を示すグラフを分析しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The value has fallen from about 250 to around 90.",
+          "grammar": "現在完了形 / from A to B",
+          "ja": "数値は約250から90前後まで下落しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The presenter is pointing at the lowest part of the graph.",
+          "grammar": "現在進行形 / 最上級",
+          "ja": "発表者はグラフの最も低い部分を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The final section appears to be becoming more stable.",
+          "grammar": "appear to be＋現在分詞",
+          "ja": "最後の部分はより安定し始めているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A green circle highlights the area where the decline has stopped.",
+          "grammar": "関係副詞where / 現在完了形",
+          "ja": "緑色の円が、下落が止まった部分を強調しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The company may have experienced poor performance for a long time.",
+          "grammar": "may have＋過去分詞",
+          "ja": "会社は長期間にわたり業績不振を経験してきたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The recent stability may indicate that conditions are no longer getting worse.",
+          "grammar": "may indicate that / 比較級",
+          "ja": "最近の安定は、状況がそれ以上悪化していないことを示しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The team appears to be discussing whether the decline has finally reached its bottom.",
+          "grammar": "appear to be / whether節 / 現在完了形",
+          "ja": "チームは下落がついに底に達したかどうかを話し合っているようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "slump",
+          "ja": "長期的な低迷・不振",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "downturn",
+          "ja": "景気後退・下降",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "nadir",
+          "ja": "最低点",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "stagnation",
+          "ja": "停滞",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "trajectory",
+          "ja": "推移・軌道",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "recovery",
+          "ja": "回復",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "plummet",
+          "ja": "急落する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "bottom",
+          "ja": "底を打つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stabilize",
+          "ja": "安定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rebound",
+          "ja": "反発する・回復する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prolonged",
+          "ja": "長期にわたる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "depressed",
+          "ja": "低迷した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "persistent",
+          "ja": "長く続く",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tentative",
+          "ja": "まだ確実でない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "flat",
+          "ja": "横ばいの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "bottom out after a prolonged slump",
+          "ja": "長期低迷の末に底を打つ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "endure a prolonged downturn",
+          "ja": "長期的な低迷に耐える",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "reach a historical nadir",
+          "ja": "歴史的な最低点に達する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show signs of stabilization",
+          "ja": "安定化の兆候を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "halt the downward trajectory",
+          "ja": "下降傾向を止める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain near the bottom",
+          "ja": "底値付近にとどまる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "anticipate a gradual recovery",
+          "ja": "緩やかな回復を見込む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "reverse a persistent decline",
+          "ja": "長期的な下落を反転させる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enter a tentative rebound",
+          "ja": "不確実ながら反発局面に入る",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The graph suggests that the company's performance may finally be bottoming out after a prolonged slump.",
+          "grammar": "suggest that / may be＋現在分詞 / bottom out",
+          "ja": "グラフは、会社の業績が長期低迷の末についに底を打ちつつある可能性を示しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "After declining steadily from approximately 250, the indicator has settled near 90 and begun to move sideways.",
+          "grammar": "After＋動名詞 / 現在完了形",
+          "ja": "約250から継続的に下落した後、その指標は90前後で落ち着き、横ばいで推移し始めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "To bottom out means to reach the lowest point of a decline before stabilizing or beginning to recover.",
+          "grammar": "to不定詞主語 / before＋動名詞",
+          "ja": "「bottom out」とは、下落の最低点に達し、その後安定または回復し始めることを意味します。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The prolonged downward trajectory indicates that the organization has endured a sustained period of weak performance.",
+          "grammar": "indicate that / 現在完了形",
+          "ja": "長期にわたる下降傾向は、その組織が継続的な業績不振の時期を経験してきたことを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The circled section is significant because it marks a possible transition from persistent decline to stabilization.",
+          "grammar": "because / transition from A to B",
+          "ja": "円で囲まれた部分は、継続的な下落から安定への転換点となる可能性があるため重要です。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Although the figures have stopped deteriorating, there is not yet enough evidence to conclude that a genuine recovery has begun.",
+          "grammar": "Although / enough to / conclude that / 現在完了形",
+          "ja": "数値の悪化は止まっていますが、本格的な回復が始まったと判断するにはまだ十分な証拠がありません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If subsequent data move upward, analysts may interpret the current plateau as the nadir of the prolonged slump.",
+          "grammar": "If / may / interpret A as B",
+          "ja": "今後のデータが上昇すれば、分析担当者は現在の横ばい局面を長期低迷の底と判断するかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The presentation appears intended to determine whether the downward trend has genuinely bottomed out or merely paused temporarily.",
+          "grammar": "appear＋過去分詞 / whether A or B / 現在完了形",
+          "ja": "このプレゼンテーションは、下降傾向が本当に底を打ったのか、それとも一時的に止まっているだけなのかを判断するためのものに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a market or business indicator that has bottomed out after a prolonged slump, as well as decline, stagnation, stabilization, nadirs, and tentative recovery.",
+          "grammar": "関係代名詞that / as well as",
+          "ja": "全体として、この場面は長期低迷の末に底を打った市場や業績指標に加え、下落、停滞、安定化、最低点、不確実な回復を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "graph": {
+      "x": 34,
+      "y": 27
+    },
+    "decline": {
+      "x": 31,
+      "y": 27
+    },
+    "bottom": {
+      "x": 48,
+      "y": 45
+    },
+    "circle": {
+      "x": 48,
+      "y": 45
+    },
+    "screen": {
+      "x": 32,
+      "y": 28
+    },
+    "presenter": {
+      "x": 62,
+      "y": 42
+    },
+    "woman": {
+      "x": 65,
+      "y": 64
+    },
+    "man": {
+      "x": 18,
+      "y": 61
+    },
+    "table": {
+      "x": 49,
+      "y": 85
+    },
+    "laptop": {
+      "x": 38,
+      "y": 76
+    },
+    "reports": {
+      "x": 49,
+      "y": 82
+    },
+    "office": {
+      "x": 72,
+      "y": 16
+    },
+    "window": {
+      "x": 82,
+      "y": 18
+    },
+    "plant": {
+      "x": 75,
+      "y": 42
+    },
+    "trend": {
+      "x": 29,
+      "y": 29
+    },
+    "slump": {
+      "x": 35,
+      "y": 35
+    },
+    "nadir": {
+      "x": 48,
+      "y": 45
+    },
+    "plateau": {
+      "x": 48,
+      "y": 45
+    },
+    "meeting": {
+      "x": 58,
+      "y": 67
+    },
+    "recovery": {
+      "x": 50,
+      "y": 44
+    }
+  }
+}

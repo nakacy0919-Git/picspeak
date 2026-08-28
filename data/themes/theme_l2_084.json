@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_084",
+  "imageSrc": "assets/images/l2_084.webp",
+  "titleEn": "Providing Accessible Entry to a Museum",
+  "titleJa": "誰もが利用しやすい博物館の入口",
+  "description": "晴れた日の博物館の入口で、車いすを利用する来館者を含む人々が建物へ向かっている場面である。正面には大きな柱と開いた入口があり、その横には階段だけでなく、手すり付きの長いスロープが設置されている。左手前では女性が車いすに乗った男性を押し、中央では別の車いす利用者がスロープを上っている。さらに複数の来館者が入口へ歩いている。建物の左側には大きな恐竜の骨格標本が展示され、博物館であることが分かる。周囲には木々、花壇、植木鉢なども配置されている。バリアフリー、アクセシビリティ、公共施設、車いす利用者への配慮、誰もが利用できる設計について英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a museum entrance with several visitors. Show two wheelchair users using wide accessible ramps with metal handrails, one accompanied by a woman pushing the wheelchair. Other visitors walk toward the open entrance. Include stone columns, stairs, a large dinosaur skeleton display, trees, flowers, and bright daylight. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "museum",
+          "ja": "博物館",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "wheelchair",
+          "ja": "車いす",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "ramp",
+          "ja": "スロープ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stairs",
+          "ja": "階段",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "来館者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "dinosaur",
+          "ja": "恐竜",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "push",
+          "ja": "押す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "move",
+          "ja": "進む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "enter",
+          "ja": "入る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wide",
+          "ja": "広い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "use a wheelchair",
+          "ja": "車いすを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "go up the ramp",
+          "ja": "スロープを上る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "push a wheelchair",
+          "ja": "車いすを押す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enter the museum",
+          "ja": "博物館に入る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "walk up the ramp",
+          "ja": "スロープを歩いて上る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a dinosaur skeleton",
+          "ja": "恐竜の骨格",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "metal handrails",
+          "ja": "金属製の手すり",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "a museum entrance",
+          "ja": "博物館の入口",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Several people are going into a museum.",
+          "grammar": "現在進行形",
+          "ja": "何人かの人が博物館に入ろうとしています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two people are using wheelchairs.",
+          "grammar": "現在進行形",
+          "ja": "2人が車いすを使っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is pushing a wheelchair.",
+          "grammar": "現在進行形",
+          "ja": "女性が車いすを押しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a long ramp in front of the museum.",
+          "grammar": "There is",
+          "ja": "博物館の前には長いスロープがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are stairs beside the ramp.",
+          "grammar": "There are",
+          "ja": "スロープの横には階段があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some visitors are walking toward the entrance.",
+          "grammar": "現在進行形",
+          "ja": "何人かの来館者が入口へ歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a dinosaur skeleton outside.",
+          "grammar": "There is",
+          "ja": "外には恐竜の骨格があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The museum looks easy to enter.",
+          "grammar": "look＋形容詞 / to不定詞",
+          "ja": "その博物館は入りやすそうに見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "access",
+          "ja": "利用・進入",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "wheelchair",
+          "ja": "車いす",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "facility",
+          "ja": "施設",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "visitor",
+          "ja": "来館者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "handrail",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "entrance",
+          "ja": "入口",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "assist",
+          "ja": "手助けする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "provide",
+          "ja": "提供する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "allow",
+          "ja": "可能にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "improve",
+          "ja": "改善する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accessible",
+          "ja": "利用しやすい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "public",
+          "ja": "公共の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "independent",
+          "ja": "自立した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inclusive",
+          "ja": "誰も排除しない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "convenient",
+          "ja": "便利な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "provide wheelchair access",
+          "ja": "車いすでの利用を可能にする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use an accessible ramp",
+          "ja": "利用しやすいスロープを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "assist a wheelchair user",
+          "ja": "車いす利用者を手助けする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enter the building safely",
+          "ja": "安全に建物へ入る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "improve public access",
+          "ja": "公共施設へのアクセスを改善する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "move independently",
+          "ja": "自立して移動する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an inclusive facility",
+          "ja": "誰もが利用できる施設",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "barrier-free access",
+          "ja": "バリアフリーのアクセス",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The museum provides ramps for visitors who use wheelchairs.",
+          "grammar": "関係代名詞who",
+          "ja": "その博物館は車いすを利用する来館者のためにスロープを設置しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Two wheelchair users are approaching the entrance by using the ramps.",
+          "grammar": "現在進行形 / by＋動名詞",
+          "ja": "2人の車いす利用者がスロープを使って入口へ向かっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One woman is assisting a man by pushing his wheelchair.",
+          "grammar": "現在進行形 / by＋動名詞",
+          "ja": "1人の女性が車いすを押して男性を手助けしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ramps have handrails on both sides to make them safer.",
+          "grammar": "to不定詞 / make＋O＋C",
+          "ja": "スロープには安全性を高めるため両側に手すりがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Visitors who can use the stairs also have a separate route to the entrance.",
+          "grammar": "関係代名詞who",
+          "ja": "階段を利用できる来館者には入口への別の経路もあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The design allows people with different mobility needs to enter the museum.",
+          "grammar": "allow O to",
+          "ja": "この設計によって、異なる移動上のニーズを持つ人々が博物館に入ることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The accessible entrance may help wheelchair users move more independently.",
+          "grammar": "may help＋O＋動詞",
+          "ja": "利用しやすい入口は、車いす利用者がより自立して移動する助けになるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how public facilities can become more inclusive.",
+          "grammar": "how節 / can",
+          "ja": "この場面は、公共施設をどのようにより利用しやすくできるかを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "accessibility",
+          "ja": "利用しやすさ・アクセシビリティ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inclusion",
+          "ja": "包摂",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accommodation",
+          "ja": "必要に応じた配慮",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "mobility",
+          "ja": "移動能力",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "barrier",
+          "ja": "障壁",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "設備・インフラ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accommodate",
+          "ja": "必要に応じて対応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "facilitate",
+          "ja": "容易にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "eliminate",
+          "ja": "取り除く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "enable",
+          "ja": "可能にする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "accessible",
+          "ja": "利用可能な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inclusive",
+          "ja": "包摂的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "equitable",
+          "ja": "公平な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unobstructed",
+          "ja": "妨げのない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "universal",
+          "ja": "すべての人を対象とした",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "facilitate wheelchair access",
+          "ja": "車いすでのアクセスを容易にする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "eliminate physical barriers",
+          "ja": "物理的障壁を取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "accommodate mobility needs",
+          "ja": "移動上のニーズに対応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "promote social inclusion",
+          "ja": "社会的包摂を促進する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "ensure equitable access",
+          "ja": "公平なアクセスを確保する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "provide accessible infrastructure",
+          "ja": "利用しやすい設備を提供する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "enable independent mobility",
+          "ja": "自立した移動を可能にする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adopt universal design",
+          "ja": "ユニバーサルデザインを採用する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "remove architectural barriers",
+          "ja": "建築上の障壁を取り除く",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The museum appears to have incorporated accessibility into the design of its main entrance.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "この博物館は正面入口の設計にアクセシビリティを取り入れているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The wide ramps facilitate access for visitors whose mobility may be limited.",
+          "grammar": "関係代名詞whose / may",
+          "ja": "幅の広いスロープは、移動に制約がある可能性のある来館者のアクセスを容易にしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Metal handrails run along the ramps, providing additional support and security.",
+          "grammar": "現在分詞",
+          "ja": "金属製の手すりがスロープ沿いに設置され、追加の支えと安全性を提供しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By providing both stairs and ramps, the building accommodates visitors with different mobility needs.",
+          "grammar": "By＋動名詞",
+          "ja": "階段とスロープの両方を設置することで、建物は異なる移動上のニーズを持つ来館者に対応しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Accessible infrastructure can eliminate architectural barriers that might otherwise prevent some people from entering public facilities independently.",
+          "grammar": "関係代名詞that / might / otherwise",
+          "ja": "利用しやすい設備は、そうでなければ一部の人々が公共施設へ自力で入ることを妨げる建築上の障壁を取り除くことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The two wheelchair users illustrate why equitable access requires more than simply providing a conventional staircase.",
+          "grammar": "why節 / require more than＋動名詞",
+          "ja": "2人の車いす利用者の存在は、公平なアクセスには通常の階段を設置するだけでは不十分であることを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Such accommodations can enable people with disabilities to participate more independently in cultural and educational activities.",
+          "grammar": "enable O to",
+          "ja": "このような配慮によって、障害のある人々が文化的・教育的活動により自立して参加できるようになります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The entrance reflects the broader principle of universal design, in which environments are created to serve as many people as possible.",
+          "grammar": "関係詞in which / 受動態",
+          "ja": "この入口は、できる限り多くの人が利用できる環境を作るというユニバーサルデザインの幅広い考え方を反映しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing accessibility, inclusion, accommodation, mobility, equitable access, barrier-free infrastructure, and universal design.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面はアクセシビリティ、包摂、合理的配慮、移動、公平なアクセス、バリアフリー設備、ユニバーサルデザインを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "museum": {
+      "x": 70,
+      "y": 24
+    },
+    "entrance": {
+      "x": 74,
+      "y": 32
+    },
+    "wheelchair": {
+      "x": 18,
+      "y": 71
+    },
+    "visitor": {
+      "x": 53,
+      "y": 49
+    },
+    "woman": {
+      "x": 8,
+      "y": 56
+    },
+    "ramp": {
+      "x": 55,
+      "y": 66
+    },
+    "stairs": {
+      "x": 80,
+      "y": 61
+    },
+    "handrail": {
+      "x": 49,
+      "y": 63
+    },
+    "column": {
+      "x": 52,
+      "y": 28
+    },
+    "door": {
+      "x": 70,
+      "y": 33
+    },
+    "dinosaur": {
+      "x": 25,
+      "y": 31
+    },
+    "skeleton": {
+      "x": 24,
+      "y": 35
+    },
+    "tree": {
+      "x": 6,
+      "y": 23
+    },
+    "flowers": {
+      "x": 91,
+      "y": 71
+    },
+    "planter": {
+      "x": 92,
+      "y": 45
+    },
+    "banner": {
+      "x": 94,
+      "y": 19
+    },
+    "people": {
+      "x": 72,
+      "y": 39
+    },
+    "path": {
+      "x": 30,
+      "y": 84
+    },
+    "building": {
+      "x": 44,
+      "y": 15
+    },
+    "sky": {
+      "x": 20,
+      "y": 8
+    }
+  }
+}

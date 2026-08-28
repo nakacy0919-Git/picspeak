@@ -1,0 +1,725 @@
+{
+  "id": "theme_l2_052",
+  "imageSrc": "assets/images/l2_052.webp",
+  "titleEn": "A Bee Sting in the Garden",
+  "titleJa": "庭仕事中のハチ刺され",
+  "description": "晴れた日の庭で、女性が植物の手入れをしている最中にハチに刺された場面である。女性は緑色のシャツ、ベージュ色のエプロン、麦わら帽子を身につけ、右手には剪定ばさみを持っている。もう一方の手の甲には赤く腫れた小さな刺し傷があり、その近くを一匹のハチが飛んでいる。女性は驚いた表情で刺された手を見ている。左側には紫色の花がたくさん咲き、右側には鉢植え、じょうろ、住宅の窓、花の咲いた植物が見える。背景には木、白い柵、青空が広がっている。庭仕事中の出来事、人物の表情、虫、植物、道具の位置関係を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a woman gardening on a bright sunny day. She wears a green shirt, beige gardening apron, jeans, gloves, and a wide straw hat. She holds red pruning shears in one gloved hand while suddenly looking in alarm at the back of her other bare hand, where a small red swollen sting mark is visible. A single bee is flying close to the injured hand. Fill the left foreground with tall purple flowers. Add green shrubs, pink flowers, terracotta pots, a metal watering can, a white fence, leafy trees, and part of a house with a window in the background. Bright blue sky, natural garden setting, landscape 16:9, polished realistic illustration style rather than photography, no logos, no readable commercial text, no speech bubbles.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "bee",
+          "ja": "ハチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hand",
+          "ja": "手",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "garden",
+          "ja": "庭",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scissors",
+          "ja": "はさみ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "can",
+          "ja": "じょうろ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "fly",
+          "ja": "飛ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hurt",
+          "ja": "痛む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "purple",
+          "ja": "紫色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "work in the garden",
+          "ja": "庭で作業する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a flying bee",
+          "ja": "飛んでいるハチ",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "look at her hand",
+          "ja": "自分の手を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a red mark",
+          "ja": "赤い跡",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "hold pruning scissors",
+          "ja": "剪定ばさみを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "purple flowers",
+          "ja": "紫色の花",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "wear a straw hat",
+          "ja": "麦わら帽子をかぶる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a watering can",
+          "ja": "じょうろ",
+          "type": "object",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A woman is working in the garden.",
+          "grammar": "現在進行形",
+          "ja": "女性が庭で作業しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is holding pruning scissors.",
+          "grammar": "現在進行形",
+          "ja": "彼女は剪定ばさみを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A bee is flying near her hand.",
+          "grammar": "現在進行形",
+          "ja": "ハチが彼女の手の近くを飛んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a red mark on her hand.",
+          "grammar": "There is",
+          "ja": "彼女の手には赤い跡があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at her hand.",
+          "grammar": "現在進行形",
+          "ja": "彼女は自分の手を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She looks surprised.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女は驚いているように見えます。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "There are many purple flowers.",
+          "grammar": "There are",
+          "ja": "紫色の花がたくさんあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a watering can on the right.",
+          "grammar": "There is",
+          "ja": "右側にじょうろがあります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "gardener",
+          "ja": "園芸をする人",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "bee",
+          "ja": "ハチ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sting",
+          "ja": "刺し傷",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "swelling",
+          "ja": "腫れ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "pruner",
+          "ja": "剪定ばさみ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lavender",
+          "ja": "ラベンダー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sting",
+          "ja": "刺す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "prune",
+          "ja": "剪定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "react",
+          "ja": "反応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "notice",
+          "ja": "気づく",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "swollen",
+          "ja": "腫れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "painful",
+          "ja": "痛い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "startled",
+          "ja": "驚いた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sunny",
+          "ja": "晴れた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "be stung by a bee",
+          "ja": "ハチに刺される",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a swollen red mark",
+          "ja": "赤く腫れた跡",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "react in surprise",
+          "ja": "驚いて反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prune the flowers",
+          "ja": "花を剪定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "fly close to her hand",
+          "ja": "彼女の手の近くを飛ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear gardening clothes",
+          "ja": "園芸用の服を着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "flowers beside the path",
+          "ja": "小道のそばの花",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "work outside on a sunny day",
+          "ja": "晴れた日に屋外で作業する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The woman appears to have been stung by a bee while gardening.",
+          "grammar": "appear to have been＋過去分詞 / while",
+          "ja": "女性は庭仕事中にハチに刺されたようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A small red swollen mark can be seen on the back of her hand.",
+          "grammar": "助動詞＋受動態",
+          "ja": "彼女の手の甲には小さく赤く腫れた跡が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A bee is still flying close to the injured area.",
+          "grammar": "現在進行形",
+          "ja": "ハチがまだ傷の近くを飛んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is holding pruning shears in her gloved hand.",
+          "grammar": "現在進行形",
+          "ja": "彼女は手袋をした手で剪定ばさみを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her facial expression shows that she is surprised and uncomfortable.",
+          "grammar": "show that",
+          "ja": "彼女の表情から、驚いて不快に感じていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Tall purple flowers fill the left side of the garden.",
+          "grammar": "現在形",
+          "ja": "背の高い紫色の花が庭の左側を埋めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A metal watering can and several pots are placed on the right.",
+          "grammar": "受動態",
+          "ja": "金属製のじょうろといくつかの鉢が右側に置かれています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The bee was probably attracted by the flowers in the garden.",
+          "grammar": "受動態 / probably",
+          "ja": "ハチはおそらく庭の花に引き寄せられたのでしょう。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "membrane",
+          "ja": "膜",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cutaneous",
+          "ja": "皮膚の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "puncture",
+          "ja": "刺し傷",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "venom",
+          "ja": "毒液",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inflammation",
+          "ja": "炎症",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "puncture",
+          "ja": "穴を開ける・刺す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "penetrate",
+          "ja": "貫通する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "inject",
+          "ja": "注入する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "provoke",
+          "ja": "引き起こす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "recoil",
+          "ja": "驚いて身を引く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cutaneous",
+          "ja": "皮膚に関する",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "localized",
+          "ja": "局所的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inflamed",
+          "ja": "炎症を起こした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "abrupt",
+          "ja": "突然の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "painful",
+          "ja": "痛みを伴う",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "puncture a cutaneous membrane",
+          "ja": "皮膚膜を刺して貫く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "penetrate the surface of the skin",
+          "ja": "皮膚表面を貫通する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "provoke a localized reaction",
+          "ja": "局所的な反応を引き起こす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "develop visible inflammation",
+          "ja": "目に見える炎症が生じる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "recoil from sudden pain",
+          "ja": "突然の痛みに身を引く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a localized cutaneous injury",
+          "ja": "局所的な皮膚損傷",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "react to an insect sting",
+          "ja": "虫刺されに反応する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "interrupt routine gardening",
+          "ja": "日常的な庭仕事を中断させる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "display signs of discomfort",
+          "ja": "不快感を示す",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The gardener appears to have suffered an insect sting that has punctured the cutaneous membrane on the back of her hand.",
+          "grammar": "appear to have＋過去分詞 / 関係代名詞that",
+          "ja": "園芸作業をしている女性は、手の甲の皮膚を刺す虫刺されを受けたようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A small puncture surrounded by localized redness is clearly visible on the injured area.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "局所的な赤みで囲まれた小さな刺し傷が、傷ついた部分にはっきり見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The nearby bee suggests that its stinger may have penetrated the surface of her skin.",
+          "grammar": "suggest that / may have＋過去分詞",
+          "ja": "近くにいるハチから、その針が彼女の皮膚表面を刺した可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Her abrupt reaction indicates that the sting has caused immediate pain or discomfort.",
+          "grammar": "indicate that / 現在完了形",
+          "ja": "彼女の突然の反応から、刺されたことで即座に痛みや不快感が生じたことが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The visible swelling appears to represent a localized inflammatory response around the puncture site.",
+          "grammar": "appear to",
+          "ja": "目に見える腫れは、刺された場所の周囲で生じた局所的な炎症反応を示しているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "She has momentarily stopped pruning the flowers in order to inspect the injured hand.",
+          "grammar": "現在完了形 / in order to",
+          "ja": "彼女は傷ついた手を確認するため、一時的に花の剪定をやめています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The abundance of flowering plants provides a plausible reason for insects to be present in the garden.",
+          "grammar": "provide a reason for",
+          "ja": "花が豊富に咲いていることは、庭に虫がいるもっともらしい理由になります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The contrast between the peaceful garden and her alarmed expression emphasizes how suddenly the incident occurred.",
+          "grammar": "contrast between / how節",
+          "ja": "穏やかな庭と彼女の驚いた表情との対比が、この出来事がいかに突然起きたかを強調しています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing physical reactions, unexpected events, gardening activity, and cause-and-effect relationships.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は身体的反応、予期しない出来事、庭仕事、原因と結果の関係を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 58,
+      "y": 43
+    },
+    "bee": {
+      "x": 42,
+      "y": 26
+    },
+    "sting": {
+      "x": 42,
+      "y": 43
+    },
+    "hand": {
+      "x": 40,
+      "y": 42
+    },
+    "hat": {
+      "x": 61,
+      "y": 13
+    },
+    "apron": {
+      "x": 53,
+      "y": 58
+    },
+    "shirt": {
+      "x": 59,
+      "y": 45
+    },
+    "glove": {
+      "x": 30,
+      "y": 61
+    },
+    "pruner": {
+      "x": 28,
+      "y": 67
+    },
+    "flowers1": {
+      "x": 12,
+      "y": 57
+    },
+    "flowers2": {
+      "x": 82,
+      "y": 35
+    },
+    "lavender": {
+      "x": 15,
+      "y": 66
+    },
+    "can": {
+      "x": 91,
+      "y": 77
+    },
+    "pot1": {
+      "x": 82,
+      "y": 74
+    },
+    "pot2": {
+      "x": 90,
+      "y": 68
+    },
+    "house": {
+      "x": 92,
+      "y": 25
+    },
+    "window": {
+      "x": 93,
+      "y": 21
+    },
+    "tree": {
+      "x": 16,
+      "y": 20
+    },
+    "fence": {
+      "x": 25,
+      "y": 44
+    },
+    "path": {
+      "x": 70,
+      "y": 80
+    },
+    "shrubs": {
+      "x": 78,
+      "y": 56
+    },
+    "sky": {
+      "x": 51,
+      "y": 8
+    },
+    "clouds": {
+      "x": 48,
+      "y": 15
+    }
+  }
+}

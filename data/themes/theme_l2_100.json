@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_100",
+  "imageSrc": "assets/images/l2_100.webp",
+  "titleEn": "Sniffing Out Clandestine Collusion",
+  "titleJa": "秘密裏の共謀を突き止める調査チーム",
+  "description": "近代的なオフィスの調査室で、4人の専門家が複数のモニターを見ながら不審な人物関係や通信記録を分析している場面である。左上の画面にはセキュリティを示す南京錠、隣の画面には多数の記録データが表示されている。左下の大型モニターには複数の人物アイコンが線で結ばれたネットワーク図があり、特に数人が赤色で強調され、互いに情報をやり取りしているように示されている。女性分析官が画面を指さし、中央の男性は慎重にデータを確認している。右側の女性も端末を持ちながら分析に参加し、後方の男性も画面を注視している。背景にはさらに2人の人物が見える。秘密裏に協力している人物同士のつながりを証拠やデータから突き止めることを表す「sniff out clandestine collusion」を中心に、調査、監視、データ分析、共謀、不正行為の発見について英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of six people in a corporate investigation office. Four analysts study multiple security monitors showing a lock icon, communication records, and a network diagram with several suspicious people highlighted in red. Include laptops, a tablet, documents, and two blurred colleagues in the background. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "computer",
+          "ja": "コンピューター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "people",
+          "ja": "人々",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "laptop",
+          "ja": "ノートパソコン",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tablet",
+          "ja": "タブレット",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "paper",
+          "ja": "書類",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "lock",
+          "ja": "鍵",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "線",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "point",
+          "ja": "指さす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "study",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "find",
+          "ja": "見つける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "serious",
+          "ja": "真剣な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the screen",
+          "ja": "画面を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "point at the computer",
+          "ja": "コンピューターを指さす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study the data",
+          "ja": "データを調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "find a problem",
+          "ja": "問題を見つける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "use a laptop",
+          "ja": "ノートパソコンを使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a tablet",
+          "ja": "タブレットを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "many connected people",
+          "ja": "つながっている多くの人々",
+          "type": "detail",
+          "points": 20
+        },
+        {
+          "text": "work together",
+          "ja": "一緒に作業する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Four people are studying several computer screens.",
+          "grammar": "現在進行形",
+          "ja": "4人が複数のコンピューター画面を調べています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A woman is pointing at a screen.",
+          "grammar": "現在進行形",
+          "ja": "女性が画面を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A man is looking carefully at the information.",
+          "grammar": "現在進行形",
+          "ja": "男性が情報を注意深く見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another woman is holding a tablet.",
+          "grammar": "現在進行形",
+          "ja": "別の女性がタブレットを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many people connected by lines on the screen.",
+          "grammar": "There are / 過去分詞",
+          "ja": "画面には線で結ばれた多くの人々が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people on the screen are shown in red.",
+          "grammar": "受動態",
+          "ja": "画面上の何人かは赤色で表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team may be looking for a hidden connection.",
+          "grammar": "may be＋現在分詞",
+          "ja": "チームは隠されたつながりを探しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "They may have found something suspicious.",
+          "grammar": "may have＋過去分詞",
+          "ja": "彼らは何か不審なものを見つけたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "investigation",
+          "ja": "調査",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "network",
+          "ja": "ネットワーク",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "connection",
+          "ja": "つながり",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "security",
+          "ja": "セキュリティ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "record",
+          "ja": "記録",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "evidence",
+          "ja": "証拠",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "investigate",
+          "ja": "調査する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "identify",
+          "ja": "特定する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "communicate",
+          "ja": "連絡を取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "suspicious",
+          "ja": "不審な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "hidden",
+          "ja": "隠された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "connected",
+          "ja": "つながっている",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "secret",
+          "ja": "秘密の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "digital",
+          "ja": "デジタルの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "analyze digital records",
+          "ja": "デジタル記録を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "investigate suspicious activity",
+          "ja": "不審な活動を調査する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify hidden connections",
+          "ja": "隠されたつながりを特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine communication records",
+          "ja": "通信記録を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a network of people",
+          "ja": "人々のネットワーク",
+          "type": "concept",
+          "points": 20
+        },
+        {
+          "text": "collect digital evidence",
+          "ja": "デジタル証拠を集める",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work as a team",
+          "ja": "チームとして作業する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "discover a secret relationship",
+          "ja": "秘密の関係を発見する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A team of analysts is investigating suspicious connections between several people.",
+          "grammar": "現在進行形 / between",
+          "ja": "分析チームが複数の人物の間にある不審なつながりを調査しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The screens show communication records and a network of connected individuals.",
+          "grammar": "現在形 / 過去分詞",
+          "ja": "画面には通信記録と、互いにつながった人物のネットワークが表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several individuals are highlighted in red because they may be important to the investigation.",
+          "grammar": "受動態 / because / may",
+          "ja": "複数の人物が赤色で強調されており、調査上重要な人物なのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One analyst is pointing at information that appears suspicious.",
+          "grammar": "現在進行形 / 関係代名詞that / appear＋形容詞",
+          "ja": "1人の分析官が不審に見える情報を指さしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The team may be comparing records to discover whether the people communicated secretly.",
+          "grammar": "may be＋現在分詞 / whether節",
+          "ja": "チームは、その人物たちが秘密裏に連絡を取っていたかを調べるため記録を比較しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Digital evidence can reveal relationships that are difficult to notice at first.",
+          "grammar": "can / 関係代名詞that",
+          "ja": "デジタル証拠によって、一見しただけでは気付きにくい関係が明らかになることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The lock symbol suggests that the investigation involves private or protected information.",
+          "grammar": "suggest that",
+          "ja": "鍵のマークから、この調査が非公開または保護された情報に関係していることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The analysts appear to be trying to uncover a hidden pattern of cooperation.",
+          "grammar": "appear to be＋現在分詞 / try to",
+          "ja": "分析官たちは隠された協力関係のパターンを明らかにしようとしているようです。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "collusion",
+          "ja": "共謀・談合",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "clandestine",
+          "ja": "秘密裏の・極秘の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "conspiracy",
+          "ja": "陰謀・共謀",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "surveillance",
+          "ja": "監視",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "metadata",
+          "ja": "メタデータ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "corroboration",
+          "ja": "裏付け・補強証拠",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sniff",
+          "ja": "嗅ぎつける・突き止める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "uncover",
+          "ja": "暴く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "trace",
+          "ja": "追跡する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "corroborate",
+          "ja": "裏付ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "covert",
+          "ja": "秘密の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "illicit",
+          "ja": "不正な・違法な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "encrypted",
+          "ja": "暗号化された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concealed",
+          "ja": "隠された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "incriminating",
+          "ja": "犯罪関与を示す",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "sniff out clandestine collusion",
+          "ja": "秘密裏の共謀を嗅ぎつける",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "uncover covert coordination",
+          "ja": "秘密の連携を暴く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "trace suspicious communications",
+          "ja": "不審な通信を追跡する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze encrypted records",
+          "ja": "暗号化された記録を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify a collusive network",
+          "ja": "共謀ネットワークを特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "corroborate digital evidence",
+          "ja": "デジタル証拠を裏付ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "detect an illicit arrangement",
+          "ja": "不正な取り決めを発見する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "map concealed relationships",
+          "ja": "隠された関係を図式化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "expose a covert conspiracy",
+          "ja": "秘密の共謀を暴露する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The investigators appear to be using digital records to sniff out clandestine collusion among a group of individuals.",
+          "grammar": "appear to be＋現在分詞 / use A to / sniff out",
+          "ja": "調査員たちはデジタル記録を利用して、複数の人物の間にある秘密裏の共謀を突き止めようとしているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "To sniff out clandestine collusion means to detect secret cooperation by piecing together subtle clues and concealed relationships.",
+          "grammar": "to不定詞主語 / by＋動名詞",
+          "ja": "「sniff out clandestine collusion」とは、わずかな手掛かりや隠された関係をつなぎ合わせて秘密の共謀を発見することを意味します。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The network visualization highlights several individuals whose communication patterns appear unusually interconnected.",
+          "grammar": "関係代名詞whose / appear＋形容詞",
+          "ja": "ネットワーク図では、通信パターンが異常に密接につながっていると思われる複数の人物が強調されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By cross-referencing communication records, analysts may be able to reconstruct relationships that the participants attempted to conceal.",
+          "grammar": "By＋動名詞 / may be able to / 関係代名詞that",
+          "ja": "通信記録を照合することで、分析官は関係者が隠そうとした人物関係を再構築できる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Repeated contact among the same small cluster of individuals could constitute evidence of coordinated activity rather than coincidence.",
+          "grammar": "could / rather than",
+          "ja": "同じ少数の人物の間で繰り返し連絡が確認されれば、単なる偶然ではなく組織的な活動の証拠となる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The investigators would need to corroborate the apparent pattern with additional evidence before concluding that actual collusion had occurred.",
+          "grammar": "would need to / before＋動名詞 / 過去完了形",
+          "ja": "実際に共謀が行われていたと結論付ける前に、調査員はそのパターンを追加証拠によって裏付ける必要があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Digital metadata can sometimes expose covert coordination even when the content of individual communications remains inaccessible.",
+          "grammar": "can / even when",
+          "ja": "個々の通信内容そのものを確認できない場合でも、デジタルメタデータから秘密の連携が明らかになることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The team's intense scrutiny suggests that they may have detected an anomalous pattern requiring further investigation.",
+          "grammar": "suggest that / may have＋過去分詞 / 現在分詞",
+          "ja": "チームが注意深く調査している様子から、さらなる調査が必要な異常なパターンを発見した可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing efforts to sniff out clandestine collusion through network analysis, surveillance, communication records, corroboration, and digital investigation.",
+          "grammar": "to不定詞 / through＋名詞 / 列挙",
+          "ja": "全体として、この場面はネットワーク分析、監視、通信記録、証拠の裏付け、デジタル調査を通して秘密裏の共謀を突き止める取り組みを描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "analyst": {
+      "x": 43,
+      "y": 25
+    },
+    "man": {
+      "x": 51,
+      "y": 48
+    },
+    "woman": {
+      "x": 71,
+      "y": 54
+    },
+    "screen": {
+      "x": 21,
+      "y": 44
+    },
+    "lock": {
+      "x": 10,
+      "y": 18
+    },
+    "records": {
+      "x": 26,
+      "y": 18
+    },
+    "network": {
+      "x": 18,
+      "y": 50
+    },
+    "nodes": {
+      "x": 17,
+      "y": 51
+    },
+    "arrows": {
+      "x": 18,
+      "y": 50
+    },
+    "laptop": {
+      "x": 18,
+      "y": 82
+    },
+    "tablet": {
+      "x": 47,
+      "y": 82
+    },
+    "papers": {
+      "x": 53,
+      "y": 91
+    },
+    "office": {
+      "x": 76,
+      "y": 14
+    },
+    "security": {
+      "x": 10,
+      "y": 18
+    },
+    "evidence": {
+      "x": 27,
+      "y": 18
+    },
+    "collusion": {
+      "x": 18,
+      "y": 50
+    },
+    "conspiracy": {
+      "x": 18,
+      "y": 50
+    },
+    "surveillance": {
+      "x": 22,
+      "y": 32
+    },
+    "metadata": {
+      "x": 26,
+      "y": 18
+    },
+    "investigation": {
+      "x": 38,
+      "y": 48
+    }
+  }
+}

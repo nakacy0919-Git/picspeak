@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_082",
+  "imageSrc": "assets/images/l2_082.webp",
+  "titleEn": "Casting a Covetous Look at the Winner",
+  "titleJa": "優勝者をうらやましそうに見つめる少女",
+  "description": "舞台上で行われたダンスや演技の大会の表彰場面である。中央右には紺色の衣装を着た若い女性が立ち、金色の大きなトロフィーを両手で持ちながら誇らしげに笑っている。強いスポットライトが彼女とトロフィーを照らし、優勝者であることが強調されている。その左側には紫色の衣装を着た年下の少女が腕を組んで立ち、眉をひそめながらトロフィーの方向を横目で見ている。少女の表情には不満、嫉妬、羨望が表れているように見える。背景には同じ大会に参加した複数の出演者が並び、優勝者に拍手を送っている。舞台には暗い背景とカーテンがあり、華やかな衣装と照明によって表彰式らしい雰囲気が作られている。成功、競争、嫉妬、羨望、表情や態度から感情を推測する英語描写の練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a dance competition award ceremony on a theater stage. A smiling young female winner in a dark blue performance dress proudly holds a large gold trophy under a spotlight. Beside her, a younger girl in a purple costume stands with her arms crossed and gives the winner and trophy a jealous sideways look. Several other female performers stand in the background applauding. Dark stage curtains, theatrical lighting, elegant costumes, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "girl",
+          "ja": "少女",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "winner",
+          "ja": "優勝者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "trophy",
+          "ja": "トロフィー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dress",
+          "ja": "ドレス",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stage",
+          "ja": "舞台",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "light",
+          "ja": "照明",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "arm",
+          "ja": "腕",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "笑顔",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "dance",
+          "ja": "ダンス",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "prize",
+          "ja": "賞",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "clap",
+          "ja": "拍手する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしい",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "hold a trophy",
+          "ja": "トロフィーを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand on the stage",
+          "ja": "舞台に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cross her arms",
+          "ja": "腕を組む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look at the winner",
+          "ja": "優勝者を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a blue dress",
+          "ja": "青いドレスを着る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "wear a purple dress",
+          "ja": "紫色のドレスを着る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "clap for the winner",
+          "ja": "優勝者に拍手する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "win a prize",
+          "ja": "賞を取る",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A young woman is holding a trophy.",
+          "grammar": "現在進行形",
+          "ja": "若い女性がトロフィーを持っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is smiling on the stage.",
+          "grammar": "現在進行形",
+          "ja": "彼女は舞台の上で笑っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is wearing a dark blue dress.",
+          "grammar": "現在進行形",
+          "ja": "彼女は濃い青色のドレスを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A younger girl is standing beside her.",
+          "grammar": "現在進行形",
+          "ja": "年下の少女が彼女の隣に立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The younger girl has her arms crossed.",
+          "grammar": "have＋O＋過去分詞",
+          "ja": "年下の少女は腕を組んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is looking at the winner.",
+          "grammar": "現在進行形",
+          "ja": "彼女は優勝者を見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several girls are clapping in the background.",
+          "grammar": "現在進行形",
+          "ja": "背景では何人かの少女が拍手しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The younger girl may feel jealous.",
+          "grammar": "may",
+          "ja": "年下の少女は嫉妬しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "competition",
+          "ja": "競技会",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "champion",
+          "ja": "優勝者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "award",
+          "ja": "賞",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "performer",
+          "ja": "出演者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "expression",
+          "ja": "表情",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "jealousy",
+          "ja": "嫉妬",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "applaud",
+          "ja": "拍手する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "win",
+          "ja": "勝つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "envy",
+          "ja": "うらやむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "glance",
+          "ja": "ちらりと見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "proud",
+          "ja": "誇らしい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "jealous",
+          "ja": "嫉妬した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "不満な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "disappointed",
+          "ja": "がっかりした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "successful",
+          "ja": "成功した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "win the competition",
+          "ja": "大会で優勝する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "receive a trophy",
+          "ja": "トロフィーを受け取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look proud of herself",
+          "ja": "自分を誇らしく思っているように見える",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cross her arms",
+          "ja": "腕を組む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "give a jealous look",
+          "ja": "嫉妬した目で見る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "envy the winner",
+          "ja": "優勝者をうらやむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "applaud the champion",
+          "ja": "優勝者に拍手する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "feel disappointed",
+          "ja": "がっかりする",
+          "type": "inference",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A young performer appears to have won a competition.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "若い出演者が大会で優勝したようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is proudly holding a large gold trophy.",
+          "grammar": "現在進行形 / 副詞",
+          "ja": "彼女は大きな金色のトロフィーを誇らしげに持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several other performers are applauding her in the background.",
+          "grammar": "現在進行形",
+          "ja": "背景では他の出演者たちが彼女に拍手しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The younger girl beside her has crossed her arms and looks unhappy.",
+          "grammar": "現在完了形 / look＋形容詞",
+          "ja": "隣の年下の少女は腕を組み、不満そうに見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is glancing sideways at the winner and the trophy.",
+          "grammar": "現在進行形",
+          "ja": "彼女は優勝者とトロフィーを横目で見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her facial expression suggests that she may be jealous of the winner.",
+          "grammar": "suggest that / may be",
+          "ja": "彼女の表情から、優勝者に嫉妬している可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "She may have hoped to receive the trophy herself.",
+          "grammar": "may have＋過去分詞",
+          "ja": "彼女自身がトロフィーを受け取りたいと思っていたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how competition can produce both pride and disappointment.",
+          "grammar": "how節 / can",
+          "ja": "この場面は、競争が誇りと失望の両方を生み出すことがあることを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "covetous",
+          "ja": "他人のものを欲しがる・羨望に満ちた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "leer",
+          "ja": "意味ありげな横目・いやらしい視線",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "envy",
+          "ja": "羨望",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "resentment",
+          "ja": "不満・憤り",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "triumph",
+          "ja": "勝利",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accolade",
+          "ja": "栄誉・賞賛",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "covet",
+          "ja": "他人のものを強く欲しがる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "begrudge",
+          "ja": "人の成功をねたむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "glower",
+          "ja": "険しい目でにらむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "rejoice",
+          "ja": "喜ぶ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "elated",
+          "ja": "大喜びした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "covetous",
+          "ja": "羨望に満ちた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sullen",
+          "ja": "不機嫌な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "envious",
+          "ja": "うらやましがる",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "triumphant",
+          "ja": "勝ち誇った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "cast a covetous leer",
+          "ja": "羨望に満ちた横目を向ける",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "covet the coveted trophy",
+          "ja": "皆が欲しがるトロフィーを強く欲しがる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "begrudge another's success",
+          "ja": "他人の成功をねたむ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "display unmistakable envy",
+          "ja": "明らかな羨望を示す",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "bask in triumph",
+          "ja": "勝利の喜びに浸る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "receive a prestigious accolade",
+          "ja": "名誉ある賞を受ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "suppress feelings of resentment",
+          "ja": "不満の感情を抑える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "adopt a sullen expression",
+          "ja": "不機嫌な表情を浮かべる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "contrast triumph with envy",
+          "ja": "勝利と羨望を対比する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The scene juxtaposes the winner's triumphant delight with another contestant's unmistakable envy.",
+          "grammar": "juxtapose A with B",
+          "ja": "この場面は、優勝者の勝利の喜びと別の参加者の明らかな羨望を対比しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The trophy holder appears elated as she receives public recognition for her achievement.",
+          "grammar": "appear＋形容詞 / as",
+          "ja": "トロフィーを持つ女性は、自分の成果が公に認められ、大喜びしているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "By contrast, the younger contestant casts what could be interpreted as a covetous leer toward the winner's trophy.",
+          "grammar": "what節 / could be＋過去分詞",
+          "ja": "対照的に、年下の参加者は優勝者のトロフィーに、羨望に満ちた横目とも解釈できる視線を向けています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Her crossed arms, furrowed brow, and sideways glance collectively convey resentment and dissatisfaction.",
+          "grammar": "並列主語 / convey",
+          "ja": "腕を組んだ姿勢、しかめた眉、横目の視線が合わさり、不満や憤りを表しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She may covet not only the trophy itself but also the recognition and prestige associated with winning it.",
+          "grammar": "not only A but also B / 過去分詞",
+          "ja": "彼女はトロフィーそのものだけでなく、それを獲得することに伴う評価や名誉も欲しがっているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The applauding performers in the background make the younger girl's sullen reaction appear even more conspicuous.",
+          "grammar": "make＋O＋C / 比較級",
+          "ja": "背景で拍手している出演者たちによって、年下の少女の不機嫌な反応がさらに目立っています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If she had expected to win, seeing another contestant receive the accolade could have intensified her sense of disappointment.",
+          "grammar": "仮定法過去完了 / could have＋過去分詞",
+          "ja": "もし自分が勝つと期待していたなら、他の参加者が賞を受け取るのを見たことで失望がさらに強まった可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A covetous response often arises when admiration for another person's success becomes mixed with a desire to possess the same reward.",
+          "grammar": "when節 / become mixed with",
+          "ja": "他人の成功への称賛に、同じ報酬を自分も手に入れたいという欲求が混ざると、羨望に満ちた反応が生じることがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a covetous leer, envy, resentment, rivalry, triumph, recognition, and contrasting emotional reactions.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は羨望に満ちた横目、嫉妬、不満、競争心、勝利、評価、対照的な感情反応を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "winner": {
+      "x": 66,
+      "y": 34
+    },
+    "girl": {
+      "x": 31,
+      "y": 50
+    },
+    "trophy": {
+      "x": 63,
+      "y": 52
+    },
+    "leer": {
+      "x": 32,
+      "y": 39
+    },
+    "smile": {
+      "x": 66,
+      "y": 20
+    },
+    "arms": {
+      "x": 31,
+      "y": 71
+    },
+    "dress": {
+      "x": 67,
+      "y": 70
+    },
+    "purple": {
+      "x": 31,
+      "y": 65
+    },
+    "blue": {
+      "x": 67,
+      "y": 64
+    },
+    "performers": {
+      "x": 79,
+      "y": 51
+    },
+    "applause": {
+      "x": 88,
+      "y": 55
+    },
+    "stage": {
+      "x": 52,
+      "y": 91
+    },
+    "spotlight": {
+      "x": 71,
+      "y": 8
+    },
+    "curtain": {
+      "x": 6,
+      "y": 29
+    },
+    "handle": {
+      "x": 70,
+      "y": 41
+    },
+    "base": {
+      "x": 65,
+      "y": 72
+    },
+    "costume": {
+      "x": 31,
+      "y": 61
+    },
+    "brow": {
+      "x": 31,
+      "y": 36
+    },
+    "glance": {
+      "x": 33,
+      "y": 40
+    },
+    "crowd": {
+      "x": 13,
+      "y": 52
+    }
+  }
+}

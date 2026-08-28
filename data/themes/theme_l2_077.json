@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_077",
+  "imageSrc": "assets/images/l2_077.webp",
+  "titleEn": "Investigating Microbial Proliferation",
+  "titleJa": "微生物の増殖を調べる研究者",
+  "description": "明るい研究室で、男性研究者が顕微鏡を使って微生物のサンプルを観察している場面である。研究者は白衣と青い手袋を着用し、顕微鏡の接眼レンズをのぞきながら機器を操作している。右側の大型モニターには、緑、紫、オレンジなどさまざまな色や形をした微生物が拡大表示されている。机の上には液体の入ったフラスコ、シャーレ、試験管が並び、背景の棚にも複数の実験器具や薬品容器が置かれている。研究者は微生物の数や形、増殖の状態などを分析していると考えられる。顕微鏡観察、実験、微生物、細胞、増殖、科学研究を英語で描写する練習に適した場面である。",
+  "category": "action",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of a scientist studying microorganisms in a bright laboratory. Show one male researcher in a white lab coat and blue gloves looking through a microscope. A large monitor beside him displays many colorful magnified microbes and cells. Include a flask with clear liquid, a Petri dish, test tubes with blue liquid, laboratory bottles, shelves, and scientific equipment. Clean modern laboratory, landscape 16:9, detailed realistic illustration rather than photography, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "scientist",
+          "ja": "科学者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "lab",
+          "ja": "研究室",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "microscope",
+          "ja": "顕微鏡",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coat",
+          "ja": "白衣",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flask",
+          "ja": "フラスコ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tube",
+          "ja": "試験管",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dish",
+          "ja": "シャーレ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "cell",
+          "ja": "細胞",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "study",
+          "ja": "調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "use",
+          "ja": "使う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "増える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "use a microscope",
+          "ja": "顕微鏡を使う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear blue gloves",
+          "ja": "青い手袋をつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear a white coat",
+          "ja": "白衣を着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "look through a microscope",
+          "ja": "顕微鏡をのぞく",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study small cells",
+          "ja": "小さな細胞を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "colorful microbes",
+          "ja": "色鮮やかな微生物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "test tubes",
+          "ja": "試験管",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "inside a laboratory",
+          "ja": "研究室の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A scientist is working in a laboratory.",
+          "grammar": "現在進行形",
+          "ja": "科学者が研究室で働いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is looking through a microscope.",
+          "grammar": "現在進行形",
+          "ja": "彼は顕微鏡をのぞいています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is wearing a white coat and blue gloves.",
+          "grammar": "現在進行形",
+          "ja": "彼は白衣と青い手袋を身につけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are colorful cells on the screen.",
+          "grammar": "There are",
+          "ja": "画面には色鮮やかな細胞があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a flask on the table.",
+          "grammar": "There is",
+          "ja": "机の上にフラスコがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many test tubes beside the screen.",
+          "grammar": "There are",
+          "ja": "画面のそばにたくさんの試験管があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scientist is studying very small organisms.",
+          "grammar": "現在進行形",
+          "ja": "科学者はとても小さな生物を調べています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The laboratory looks clean and bright.",
+          "grammar": "look＋形容詞",
+          "ja": "研究室は清潔で明るく見えます。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "researcher",
+          "ja": "研究者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "microbe",
+          "ja": "微生物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sample",
+          "ja": "試料",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "organism",
+          "ja": "生物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "experiment",
+          "ja": "実験",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "growth",
+          "ja": "増殖",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "observe",
+          "ja": "観察する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "analyze",
+          "ja": "分析する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "multiply",
+          "ja": "増殖する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "microscopic",
+          "ja": "顕微鏡でしか見えないほど小さい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "scientific",
+          "ja": "科学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "magnified",
+          "ja": "拡大された",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "biological",
+          "ja": "生物学的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sterile",
+          "ja": "無菌の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "observe a sample",
+          "ja": "試料を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine microorganisms",
+          "ja": "微生物を詳しく調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze cell growth",
+          "ja": "細胞の増殖を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "conduct an experiment",
+          "ja": "実験を行う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a magnified image",
+          "ja": "拡大画像",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "microscopic organisms",
+          "ja": "微小な生物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "work in a laboratory",
+          "ja": "研究室で働く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "study microbial growth",
+          "ja": "微生物の増殖を研究する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A researcher is examining a biological sample through a microscope.",
+          "grammar": "現在進行形",
+          "ja": "研究者が顕微鏡を使って生物学的な試料を調べています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A magnified image of microorganisms is displayed on the monitor.",
+          "grammar": "受動態",
+          "ja": "モニターには微生物の拡大画像が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scientist is wearing gloves to protect both himself and the samples.",
+          "grammar": "to不定詞",
+          "ja": "科学者は自分自身と試料の両方を守るために手袋を着用しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Several test tubes contain a blue liquid.",
+          "grammar": "現在形",
+          "ja": "いくつかの試験管には青い液体が入っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The researcher may be comparing the number and shape of different microbes.",
+          "grammar": "may be＋現在分詞",
+          "ja": "研究者は異なる微生物の数や形を比較しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The organisms on the screen appear to have different colors and shapes.",
+          "grammar": "appear to have",
+          "ja": "画面上の生物はさまざまな色や形をしているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He may be investigating how quickly the microorganisms multiply.",
+          "grammar": "may be＋現在分詞 / how節",
+          "ja": "彼は微生物がどれくらい速く増殖するのかを調べているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Careful observation can help scientists understand microbial growth.",
+          "grammar": "can help＋O＋動詞",
+          "ja": "注意深い観察は、科学者が微生物の増殖を理解する助けになります。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "proliferation",
+          "ja": "急速な増殖",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "microbiology",
+          "ja": "微生物学",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "specimen",
+          "ja": "検体・標本",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "culture",
+          "ja": "培養物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "colony",
+          "ja": "微生物の集落",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pathogen",
+          "ja": "病原体",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "incubate",
+          "ja": "培養する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "proliferate",
+          "ja": "増殖する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "magnify",
+          "ja": "拡大する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "quantify",
+          "ja": "数量化する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "microscopic",
+          "ja": "微視的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "microbial",
+          "ja": "微生物の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "pathogenic",
+          "ja": "病原性の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cellular",
+          "ja": "細胞の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "sterile",
+          "ja": "無菌状態の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "microbial proliferation",
+          "ja": "微生物の増殖",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "examine a microscopic specimen",
+          "ja": "顕微鏡検体を調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "cultivate microbial colonies",
+          "ja": "微生物のコロニーを培養する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "quantify population growth",
+          "ja": "個体数の増加を数量化する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "identify potential pathogens",
+          "ja": "潜在的な病原体を特定する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "analyze cellular morphology",
+          "ja": "細胞形態を分析する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain sterile conditions",
+          "ja": "無菌状態を維持する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "monitor bacterial cultures",
+          "ja": "細菌培養物を観察する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "conduct microbiological research",
+          "ja": "微生物学研究を行う",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The researcher appears to be investigating microbial proliferation by examining a specimen under a microscope.",
+          "grammar": "appear to be＋現在分詞 / by＋動名詞",
+          "ja": "研究者は顕微鏡で検体を観察することによって、微生物の増殖を調べているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The monitor displays a magnified field containing microorganisms with markedly different shapes and structures.",
+          "grammar": "現在分詞 / with",
+          "ja": "モニターには、形や構造が大きく異なる微生物を含む拡大画像が表示されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The abundance of visible organisms may indicate substantial proliferation within the biological sample.",
+          "grammar": "may indicate",
+          "ja": "多数の微生物が見えていることは、生物学的試料内でかなり増殖している可能性を示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By comparing microscopic images over time, the researcher could quantify changes in microbial population density.",
+          "grammar": "By＋動名詞 / could",
+          "ja": "時間の経過に伴う顕微鏡画像を比較することで、研究者は微生物の個体密度の変化を数量化できる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Differences in cellular morphology may help distinguish one microbial species from another.",
+          "grammar": "may help / distinguish A from B",
+          "ja": "細胞形態の違いは、ある微生物種を別の種と区別する助けになる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The use of gloves and carefully arranged laboratory equipment suggests that contamination must be minimized during the experiment.",
+          "grammar": "suggest that / must be＋過去分詞",
+          "ja": "手袋の使用や整然と配置された実験器具から、実験中の汚染を最小限に抑える必要があることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If a rapidly proliferating organism were pathogenic, monitoring its growth would be particularly important for scientific analysis.",
+          "grammar": "仮定法過去 / 動名詞主語",
+          "ja": "急速に増殖している生物が病原性を持つ場合、その増殖を監視することは科学的分析において特に重要になるでしょう。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Microscopy enables researchers to investigate biological structures that cannot normally be observed with the naked eye.",
+          "grammar": "enable O to / 関係代名詞that",
+          "ja": "顕微鏡を使うことで、研究者は通常肉眼では観察できない生物学的構造を調査できます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing microbial proliferation, microscopy, laboratory specimens, cellular morphology, scientific observation, and microbiological research.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は微生物の増殖、顕微鏡観察、検体、細胞形態、科学的観察、微生物学研究を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "scientist": {
+      "x": 32,
+      "y": 46
+    },
+    "microscope": {
+      "x": 49,
+      "y": 53
+    },
+    "eyepiece": {
+      "x": 43,
+      "y": 36
+    },
+    "lens": {
+      "x": 48,
+      "y": 52
+    },
+    "sample": {
+      "x": 49,
+      "y": 60
+    },
+    "gloves": {
+      "x": 51,
+      "y": 73
+    },
+    "coat": {
+      "x": 24,
+      "y": 70
+    },
+    "monitor": {
+      "x": 79,
+      "y": 44
+    },
+    "microbes": {
+      "x": 79,
+      "y": 40
+    },
+    "flask": {
+      "x": 64,
+      "y": 77
+    },
+    "dish": {
+      "x": 76,
+      "y": 88
+    },
+    "tubes": {
+      "x": 88,
+      "y": 82
+    },
+    "liquid": {
+      "x": 89,
+      "y": 84
+    },
+    "rack": {
+      "x": 90,
+      "y": 88
+    },
+    "bottles": {
+      "x": 79,
+      "y": 12
+    },
+    "shelf": {
+      "x": 66,
+      "y": 13
+    },
+    "window": {
+      "x": 8,
+      "y": 24
+    },
+    "plant": {
+      "x": 96,
+      "y": 8
+    },
+    "table": {
+      "x": 70,
+      "y": 91
+    },
+    "laboratory": {
+      "x": 62,
+      "y": 28
+    }
+  }
+}

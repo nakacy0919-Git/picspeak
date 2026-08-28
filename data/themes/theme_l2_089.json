@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_089",
+  "imageSrc": "assets/images/l2_089.webp",
+  "titleEn": "Removing a Noxious Thistle from a Tomato Field",
+  "titleJa": "トマト畑から有害なアザミを抜き取る農家",
+  "description": "晴れた日のトマト畑で、1人の農家が作物の間に生えた大きな雑草を根ごと引き抜いている場面である。男性は帽子、作業着、エプロン、厚手の手袋を身につけ、地面にしゃがみながら両手で背の高いアザミのような雑草をつかんでいる。雑草には長く鋭い葉があり、根には土が付着している。周囲には支柱に固定されたトマトの株が規則正しく並び、赤く熟したトマトとまだ緑色のトマトが多数実っている。農家は作物の成長を妨げる有害な雑草を取り除き、畑を管理していると考えられる。有害植物、雑草除去、農業、作物への悪影響、植物同士の競争について英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of one farmer kneeling in a sunny tomato field and pulling a large thorny thistle from the soil by its roots. He wears a cap, apron, work gloves, jeans, and boots. Rows of tomato plants with red and green tomatoes surround him. Show exposed roots, loose soil, wooden stakes, lush crops, and a clear summer sky. Landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "farmer",
+          "ja": "農家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tomato",
+          "ja": "トマト",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "weed",
+          "ja": "雑草",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "root",
+          "ja": "根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "soil",
+          "ja": "土",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "畑",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "leaf",
+          "ja": "葉",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "pull",
+          "ja": "引き抜く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remove",
+          "ja": "取り除く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "grow",
+          "ja": "育つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "work",
+          "ja": "作業する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "green",
+          "ja": "緑色の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "pull a weed",
+          "ja": "雑草を抜く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "work in a field",
+          "ja": "畑で働く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear work gloves",
+          "ja": "作業用手袋をする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "grow tomatoes",
+          "ja": "トマトを育てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pull out the roots",
+          "ja": "根を引き抜く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "red tomatoes",
+          "ja": "赤いトマト",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "green tomatoes",
+          "ja": "緑色のトマト",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "between the plants",
+          "ja": "植物の間に",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A farmer is working in a tomato field.",
+          "grammar": "現在進行形",
+          "ja": "農家がトマト畑で作業しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "He is pulling a large weed from the ground.",
+          "grammar": "現在進行形",
+          "ja": "彼は地面から大きな雑草を引き抜いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is wearing gloves and a hat.",
+          "grammar": "現在進行形",
+          "ja": "彼は手袋と帽子を身につけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The weed has long green leaves.",
+          "grammar": "have",
+          "ja": "その雑草には長い緑色の葉があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The roots are coming out of the soil.",
+          "grammar": "現在進行形",
+          "ja": "根が土から抜け出しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many tomatoes around him.",
+          "grammar": "There are",
+          "ja": "彼の周りにはたくさんのトマトがあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some tomatoes are red and some are green.",
+          "grammar": "some ... some ...",
+          "ja": "赤いトマトもあれば緑色のトマトもあります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The farmer may be removing a harmful weed.",
+          "grammar": "may be＋現在分詞",
+          "ja": "農家は有害な雑草を取り除いているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "thistle",
+          "ja": "アザミ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "weed",
+          "ja": "雑草",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "crop",
+          "ja": "作物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "root",
+          "ja": "根",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "farmland",
+          "ja": "農地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "growth",
+          "ja": "成長",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "uproot",
+          "ja": "根こそぎ引き抜く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remove",
+          "ja": "除去する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "compete",
+          "ja": "競争する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "harmful",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thorny",
+          "ja": "とげのある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unwanted",
+          "ja": "望まれていない",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "healthy",
+          "ja": "健康な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "ripe",
+          "ja": "熟した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "uproot a weed",
+          "ja": "雑草を根こそぎ抜く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remove a thistle",
+          "ja": "アザミを取り除く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect the crops",
+          "ja": "作物を守る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compete for water",
+          "ja": "水を奪い合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a thorny plant",
+          "ja": "とげのある植物",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an unwanted weed",
+          "ja": "不要な雑草",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "healthy tomato plants",
+          "ja": "健康なトマトの株",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "keep the field clean",
+          "ja": "畑をきれいに保つ",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A farmer is uprooting a large weed from between rows of tomato plants.",
+          "grammar": "現在進行形",
+          "ja": "農家がトマトの列の間から大きな雑草を根こそぎ引き抜いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The plant has long, sharp-looking leaves and a large root system.",
+          "grammar": "現在形",
+          "ja": "その植物には長く鋭そうな葉と大きな根があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is wearing thick gloves to protect his hands.",
+          "grammar": "to不定詞",
+          "ja": "彼は手を守るため厚手の手袋をしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many ripe and unripe tomatoes are growing around the weed.",
+          "grammar": "現在進行形",
+          "ja": "雑草の周りには熟したトマトと未熟なトマトがたくさん育っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The farmer may be removing the weed because it could harm the crops.",
+          "grammar": "may be / because / could",
+          "ja": "その雑草が作物に害を与える可能性があるため、農家は取り除いているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Weeds can compete with crops for water, sunlight, and nutrients.",
+          "grammar": "can / compete with A for B",
+          "ja": "雑草は水、日光、栄養分をめぐって作物と競争することがあります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Pulling out the entire root can help prevent the weed from growing back.",
+          "grammar": "動名詞主語 / prevent A from＋動名詞",
+          "ja": "根全体を引き抜くことで、雑草が再び生えるのを防ぐことができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how farmers manage unwanted plants to protect their crops.",
+          "grammar": "how節 / to不定詞",
+          "ja": "この場面は、農家が作物を守るため不要な植物をどのように管理するかを示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "noxious",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thistle",
+          "ja": "アザミ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "infestation",
+          "ja": "大量発生・侵入",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vegetation",
+          "ja": "植物・植生",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "nutrient",
+          "ja": "栄養分",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "cultivation",
+          "ja": "栽培",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "eradicate",
+          "ja": "根絶する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "uproot",
+          "ja": "根こそぎ引き抜く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "encroach",
+          "ja": "侵入する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deplete",
+          "ja": "枯渇させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "invasive",
+          "ja": "侵略的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "detrimental",
+          "ja": "有害な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "thorny",
+          "ja": "とげのある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "competitive",
+          "ja": "競争力の強い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "agricultural",
+          "ja": "農業の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a noxious thistle",
+          "ja": "有害なアザミ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "eradicate invasive weeds",
+          "ja": "侵略的な雑草を根絶する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "uproot the entire plant",
+          "ja": "植物全体を根こそぎ抜く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "encroach on cultivated land",
+          "ja": "耕作地に侵入する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "deplete soil nutrients",
+          "ja": "土壌の栄養分を奪う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "compete with cultivated crops",
+          "ja": "栽培作物と競合する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prevent further infestation",
+          "ja": "さらなる蔓延を防ぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pose an agricultural threat",
+          "ja": "農業上の脅威となる",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "maintain crop productivity",
+          "ja": "作物の生産性を維持する",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The farmer appears to be uprooting a noxious thistle that has emerged among his cultivated tomato plants.",
+          "grammar": "appear to be＋現在分詞 / 関係代名詞that / 現在完了形",
+          "ja": "農家は栽培中のトマトの間に生えてきた有害なアザミを根こそぎ引き抜いているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The weed's tall stem, jagged leaves, and extensive roots distinguish it clearly from the surrounding crop.",
+          "grammar": "並列主語 / distinguish A from B",
+          "ja": "その雑草の高い茎、ぎざぎざした葉、広がった根は、周囲の作物とは明らかに異なっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A noxious weed can be detrimental to agriculture because it competes with crops for limited water, light, and nutrients.",
+          "grammar": "can / because / compete with A for B",
+          "ja": "有害雑草は限られた水、光、栄養分を作物と奪い合うため、農業に悪影響を及ぼす可能性があります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "By grasping the plant near its base, the farmer is attempting to remove the entire root system rather than merely cutting off the visible foliage.",
+          "grammar": "By＋動名詞 / attempt to / rather than＋動名詞",
+          "ja": "植物の根元をつかむことで、農家は目に見える葉だけを切るのではなく、根全体を除去しようとしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "If part of the root were left in the soil, the thistle might regenerate and continue encroaching on the cultivated area.",
+          "grammar": "仮定法過去 / might / continue＋動名詞",
+          "ja": "もし根の一部が土の中に残れば、アザミが再生して耕作地への侵入を続ける可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Removing invasive vegetation before it produces seeds can reduce the likelihood of a wider infestation.",
+          "grammar": "動名詞主語 / before / can",
+          "ja": "侵略的な植物が種を作る前に除去することで、さらに広範囲へ蔓延する可能性を低下させることができます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The healthy tomato plants surrounding the weed suggest that the farmer is taking preventive action to maintain crop productivity.",
+          "grammar": "現在分詞 / suggest that / take action to",
+          "ja": "雑草を囲む健康なトマトの株から、農家が作物の生産性を維持するため予防的な対策を取っていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Effective weed management requires farmers to identify potentially noxious species and eradicate them before they become firmly established.",
+          "grammar": "require O to / before",
+          "ja": "効果的な雑草管理には、農家が有害となり得る種を識別し、定着する前に根絶することが求められます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a noxious thistle, invasive vegetation, weed eradication, agricultural competition, nutrient depletion, infestation, and crop protection.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は有害なアザミ、侵略的植物、雑草の根絶、農業上の競争、栄養分の枯渇、蔓延、作物保護を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "farmer": {
+      "x": 57,
+      "y": 34
+    },
+    "thistle": {
+      "x": 40,
+      "y": 43
+    },
+    "roots": {
+      "x": 48,
+      "y": 78
+    },
+    "gloves": {
+      "x": 46,
+      "y": 66
+    },
+    "hat": {
+      "x": 53,
+      "y": 9
+    },
+    "apron": {
+      "x": 61,
+      "y": 43
+    },
+    "tomato": {
+      "x": 13,
+      "y": 50
+    },
+    "plants": {
+      "x": 85,
+      "y": 43
+    },
+    "stakes": {
+      "x": 90,
+      "y": 24
+    },
+    "soil": {
+      "x": 53,
+      "y": 84
+    },
+    "leaves": {
+      "x": 39,
+      "y": 35
+    },
+    "stem": {
+      "x": 41,
+      "y": 45
+    },
+    "field": {
+      "x": 27,
+      "y": 65
+    },
+    "crop": {
+      "x": 18,
+      "y": 43
+    },
+    "weed": {
+      "x": 40,
+      "y": 44
+    },
+    "boots": {
+      "x": 64,
+      "y": 83
+    },
+    "row": {
+      "x": 30,
+      "y": 71
+    },
+    "trees": {
+      "x": 22,
+      "y": 12
+    },
+    "sky": {
+      "x": 65,
+      "y": 8
+    },
+    "ground": {
+      "x": 72,
+      "y": 87
+    }
+  }
+}

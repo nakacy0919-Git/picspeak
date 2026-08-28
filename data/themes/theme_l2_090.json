@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_090",
+  "imageSrc": "assets/images/l2_090.webp",
+  "titleEn": "Receiving a Ceremonial Salutation",
+  "titleJa": "花束とともに正式な歓迎を受ける選手たち",
+  "description": "明るく上品なホテルや施設のロビーで、スポーツチームの選手たちがスタッフから正式な歓迎を受けている場面である。画像には合計7人が描かれている。左側には青いチームウェアを着た4人の選手がおり、旅行用のスーツケースやバックパックを持って到着している。中央の男性選手は笑顔で女性スタッフと向き合い、女性スタッフから大きな花束を受け取っている。右側にはスーツ姿の男性スタッフも別の花束を持ちながら歓迎しており、そのさらに後ろには女性スタッフが立っている。選手たちもスタッフも笑顔で、到着を祝う温かく正式な雰囲気がある。歓迎、到着、儀礼的な挨拶、ホスピタリティ、代表団やチームへの公式なもてなしを英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of seven people in an elegant hotel lobby. Four athletes in matching blue tracksuits arrive with suitcases and backpacks. A smiling female staff member presents a large flower bouquet to the leading male athlete, while a male staff member holds another bouquet and welcomes the group. A second female staff member stands near the reception desk. Warm formal welcome, bright lobby, landscape 16:9, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "athlete",
+          "ja": "選手",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "staff",
+          "ja": "スタッフ",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bouquet",
+          "ja": "花束",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "suitcase",
+          "ja": "スーツケース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "backpack",
+          "ja": "リュックサック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hotel",
+          "ja": "ホテル",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "lobby",
+          "ja": "ロビー",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "team",
+          "ja": "チーム",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "笑顔",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "give",
+          "ja": "渡す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "receive",
+          "ja": "受け取る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "welcome",
+          "ja": "歓迎する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "arrive",
+          "ja": "到着する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "happy",
+          "ja": "うれしそうな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "give a bouquet",
+          "ja": "花束を渡す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "receive some flowers",
+          "ja": "花を受け取る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "welcome the team",
+          "ja": "チームを歓迎する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a suitcase",
+          "ja": "スーツケースを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wear blue uniforms",
+          "ja": "青いユニフォームを着る",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "smile at each other",
+          "ja": "互いに微笑む",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "arrive at a hotel",
+          "ja": "ホテルに到着する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "in the lobby",
+          "ja": "ロビーで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A sports team is arriving at a hotel.",
+          "grammar": "現在進行形",
+          "ja": "スポーツチームがホテルに到着しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Four athletes are wearing blue uniforms.",
+          "grammar": "現在進行形",
+          "ja": "4人の選手が青いユニフォームを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is giving flowers to a man.",
+          "grammar": "現在進行形",
+          "ja": "女性が男性に花を渡しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The athlete is receiving a large bouquet.",
+          "grammar": "現在進行形",
+          "ja": "その選手は大きな花束を受け取っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another man is holding a bouquet.",
+          "grammar": "現在進行形",
+          "ja": "別の男性も花束を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The athletes have suitcases and backpacks.",
+          "grammar": "have",
+          "ja": "選手たちはスーツケースやリュックサックを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Everyone looks happy.",
+          "grammar": "look＋形容詞",
+          "ja": "みんなうれしそうに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The staff are welcoming the team.",
+          "grammar": "現在進行形",
+          "ja": "スタッフがチームを歓迎しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "arrival",
+          "ja": "到着",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reception",
+          "ja": "歓迎・受付",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "guest",
+          "ja": "客・来賓",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "delegation",
+          "ja": "代表団",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "hospitality",
+          "ja": "もてなし",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "greeting",
+          "ja": "挨拶",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "present",
+          "ja": "贈呈する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "greet",
+          "ja": "出迎える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "welcome",
+          "ja": "歓迎する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "celebrate",
+          "ja": "祝う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "formal",
+          "ja": "正式な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "friendly",
+          "ja": "親しみのある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "welcoming",
+          "ja": "歓迎する雰囲気の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "elegant",
+          "ja": "上品な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "grateful",
+          "ja": "感謝している",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "welcome the athletes",
+          "ja": "選手たちを歓迎する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "present a bouquet",
+          "ja": "花束を贈呈する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "receive a warm welcome",
+          "ja": "温かい歓迎を受ける",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "arrive with luggage",
+          "ja": "荷物を持って到着する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "greet the visiting team",
+          "ja": "訪問チームを出迎える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show hospitality",
+          "ja": "もてなしを示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "a formal reception",
+          "ja": "正式な歓迎",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "exchange friendly smiles",
+          "ja": "親しげな笑顔を交わす",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A group of athletes is being welcomed by hotel staff.",
+          "grammar": "現在進行形の受動態",
+          "ja": "選手の一団がホテルのスタッフから歓迎されています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The athletes appear to have just arrived with their luggage.",
+          "grammar": "appear to have＋過去分詞",
+          "ja": "選手たちは荷物を持って到着したばかりのようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "A female staff member is presenting a bouquet to the leading athlete.",
+          "grammar": "現在進行形 / present A to B",
+          "ja": "女性スタッフが先頭の選手に花束を贈呈しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A male staff member is holding another bouquet beside her.",
+          "grammar": "現在進行形",
+          "ja": "男性スタッフが彼女の隣でもう1つの花束を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "All of the people are smiling during the reception.",
+          "grammar": "現在進行形 / during",
+          "ja": "歓迎の間、全員が笑顔を見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The flowers may have been prepared to celebrate the team's arrival.",
+          "grammar": "may have been＋過去分詞 / to不定詞",
+          "ja": "花はチームの到着を祝うために用意されたのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The elegant lobby makes the welcome appear more formal.",
+          "grammar": "make＋O＋C",
+          "ja": "上品なロビーによって、歓迎がより正式なものに見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene shows how hosts can make visiting guests feel welcome.",
+          "grammar": "how節 / make＋O＋C",
+          "ja": "この場面は、迎える側が訪問客を歓迎されていると感じさせる方法を示しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "salutation",
+          "ja": "挨拶・敬礼",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "ceremony",
+          "ja": "儀式",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "reception",
+          "ja": "歓迎会・歓迎",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "delegation",
+          "ja": "代表団",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "hospitality",
+          "ja": "歓待・もてなし",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "courtesy",
+          "ja": "礼儀・厚意",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "bestow",
+          "ja": "授ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "greet",
+          "ja": "出迎える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "honor",
+          "ja": "敬意を表する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "commemorate",
+          "ja": "記念する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ceremonial",
+          "ja": "儀礼的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "cordial",
+          "ja": "心からの・親しみのある",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "distinguished",
+          "ja": "著名な・高位の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "gracious",
+          "ja": "礼儀正しく親切な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "commemorative",
+          "ja": "記念の",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a ceremonial salutation",
+          "ja": "儀礼的な歓迎の挨拶",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "extend a cordial welcome",
+          "ja": "心のこもった歓迎を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "present a floral tribute",
+          "ja": "敬意を表す花束を贈呈する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "greet a visiting delegation",
+          "ja": "訪問代表団を出迎える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "demonstrate gracious hospitality",
+          "ja": "心のこもった歓待を示す",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "mark a formal arrival",
+          "ja": "正式な到着を記念する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "honor distinguished guests",
+          "ja": "来賓に敬意を表する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "observe ceremonial protocol",
+          "ja": "儀礼上の手順に従う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "receive an official reception",
+          "ja": "公式な歓迎を受ける",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The visiting athletes appear to be receiving a ceremonial salutation upon their arrival.",
+          "grammar": "appear to be＋現在分詞 / upon",
+          "ja": "訪問した選手たちは、到着に際して儀礼的な歓迎を受けているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A female staff member presents a large bouquet to the leading athlete as part of the formal reception.",
+          "grammar": "present A to B / as part of",
+          "ja": "女性スタッフは正式な歓迎の一環として、先頭の選手に大きな花束を贈呈しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The matching uniforms, luggage, and backpacks suggest that the group has recently arrived as a visiting sports delegation.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "そろいのユニフォーム、荷物、リュックサックから、この一団が訪問スポーツ代表団として到着したばかりであることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The bouquets function as ceremonial gestures of hospitality rather than ordinary personal gifts.",
+          "grammar": "function as / rather than",
+          "ja": "花束は通常の個人的な贈り物というより、歓待を表す儀礼的なしるしとして機能しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "By extending a cordial welcome, the hosts are attempting to make the visiting team feel both honored and appreciated.",
+          "grammar": "By＋動名詞 / attempt to / make＋O＋C / both A and B",
+          "ja": "心のこもった歓迎を示すことで、迎える側は訪問チームに敬意と感謝の両方を感じてもらおうとしています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The elegant surroundings reinforce the impression that this is an organized reception rather than an informal encounter.",
+          "grammar": "that節 / rather than",
+          "ja": "上品な周囲の雰囲気は、これが偶然の気軽な出会いではなく、準備された歓迎行事であるという印象を強めています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Ceremonial salutations are often used to acknowledge distinguished visitors and mark the significance of their arrival.",
+          "grammar": "受動態 / to不定詞",
+          "ja": "儀礼的な歓迎の挨拶は、重要な訪問者を認め、その到着の意義を示すために用いられることがあります。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The smiles exchanged between the athletes and staff indicate that the formalities are being conducted in a warm and cordial atmosphere.",
+          "grammar": "過去分詞 / indicate that / 現在進行形の受動態",
+          "ja": "選手とスタッフの間で交わされる笑顔から、儀礼が温かく親しみのある雰囲気の中で行われていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a ceremonial salutation, formal reception, hospitality, delegation, floral tribute, courtesy, and official welcome.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は儀礼的な歓迎、正式な接遇、歓待、代表団、花束の贈呈、礼儀、公式な歓迎を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "athlete": {
+      "x": 40,
+      "y": 39
+    },
+    "staff": {
+      "x": 65,
+      "y": 37
+    },
+    "bouquet": {
+      "x": 52,
+      "y": 49
+    },
+    "flowers": {
+      "x": 52,
+      "y": 44
+    },
+    "suitcase": {
+      "x": 31,
+      "y": 86
+    },
+    "backpack": {
+      "x": 27,
+      "y": 48
+    },
+    "uniform": {
+      "x": 36,
+      "y": 53
+    },
+    "smile": {
+      "x": 44,
+      "y": 24
+    },
+    "lobby": {
+      "x": 54,
+      "y": 12
+    },
+    "reception": {
+      "x": 88,
+      "y": 66
+    },
+    "counter": {
+      "x": 92,
+      "y": 73
+    },
+    "luggage": {
+      "x": 7,
+      "y": 81
+    },
+    "team": {
+      "x": 24,
+      "y": 39
+    },
+    "salutation": {
+      "x": 58,
+      "y": 48
+    },
+    "welcome": {
+      "x": 67,
+      "y": 39
+    },
+    "suit": {
+      "x": 84,
+      "y": 53
+    },
+    "plants": {
+      "x": 91,
+      "y": 20
+    },
+    "window": {
+      "x": 50,
+      "y": 11
+    },
+    "floor": {
+      "x": 55,
+      "y": 86
+    },
+    "entrance": {
+      "x": 8,
+      "y": 14
+    }
+  }
+}

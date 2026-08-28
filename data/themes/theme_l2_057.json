@@ -1,0 +1,717 @@
+{
+  "id": "theme_l2_057",
+  "imageSrc": "assets/images/l2_057.webp",
+  "titleEn": "Farmers Facing a Severe Drought",
+  "titleJa": "深刻な干ばつに苦しむ農家",
+  "description": "強い日差しが照りつける農地で、5人の農家が干ばつによって枯れた作物を見つめている場面である。手前では年配の男性がしゃがみ込み、枯れた植物に手を添えながら額を押さえている。左奥の男性は杖に両手を置き、うつむいている。中央の女性は腕を組んで畑を見つめ、右側の2人の男性も頭や額に手を当てて困った表情をしている。地面はひび割れて乾燥し、畑一面の作物が茶色く枯れている。背景には乾いた丘やわずかな木々が見え、空には強い太陽が輝いている。干ばつ、農業被害、人々の感情、自然環境と生活の関係を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show five farmers standing or crouching in a severely drought-stricken field under intense sunlight. In the foreground, an older man crouches beside a dead crop and holds his forehead in distress. On the left, another older farmer leans on a walking stick. In the center, a woman stands with folded arms, while two men on the right hold their heads or foreheads in concern. Fill the field with dry brown crops and deeply cracked soil. Show dry hills, sparse trees, blue sky, and a glaring sun in the background. Preserve the serious emotional atmosphere and agricultural devastation of the reference image. No logos, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "farmer",
+          "ja": "農家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "field",
+          "ja": "畑",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "plant",
+          "ja": "植物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "soil",
+          "ja": "土",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sun",
+          "ja": "太陽",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stick",
+          "ja": "杖",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hill",
+          "ja": "丘",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sky",
+          "ja": "空",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "crouch",
+          "ja": "しゃがむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dry",
+          "ja": "乾く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a dry field",
+          "ja": "乾いた畑",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "dead plants",
+          "ja": "枯れた植物",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "cracked soil",
+          "ja": "ひび割れた土",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "look at the plants",
+          "ja": "植物を見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold his head",
+          "ja": "頭を抱える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand in the field",
+          "ja": "畑に立つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a hot sunny day",
+          "ja": "暑く晴れた日",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "hills in the background",
+          "ja": "背景の丘",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Five farmers are standing in a dry field.",
+          "grammar": "現在進行形",
+          "ja": "5人の農家が乾いた畑にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "One man is crouching near a dead plant.",
+          "grammar": "現在進行形",
+          "ja": "一人の男性が枯れた植物の近くにしゃがんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is holding his head.",
+          "grammar": "現在進行形",
+          "ja": "彼は頭を抱えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The plants are brown and dry.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "植物は茶色く乾いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The ground is cracked.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "地面はひび割れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The farmers look worried.",
+          "grammar": "look＋形容詞",
+          "ja": "農家の人々は心配しているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are dry hills in the background.",
+          "grammar": "There are",
+          "ja": "背景には乾いた丘があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The sun is very bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "太陽はとても強く照っています。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "farmer",
+          "ja": "農家",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "drought",
+          "ja": "干ばつ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "crop",
+          "ja": "作物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "harvest",
+          "ja": "収穫",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "farmland",
+          "ja": "農地",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "crack",
+          "ja": "ひび",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "wither",
+          "ja": "枯れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "suffer",
+          "ja": "苦しむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "damage",
+          "ja": "被害を与える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "survive",
+          "ja": "生き残る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "severe",
+          "ja": "深刻な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "barren",
+          "ja": "不毛な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "worried",
+          "ja": "心配している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "exhausted",
+          "ja": "疲れ果てた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "damaged",
+          "ja": "被害を受けた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "suffer from a drought",
+          "ja": "干ばつに苦しむ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "crops wither in the heat",
+          "ja": "暑さで作物が枯れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "deeply cracked soil",
+          "ja": "深くひび割れた土",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "lose the harvest",
+          "ja": "収穫を失う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inspect the damaged crops",
+          "ja": "被害を受けた作物を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face a serious problem",
+          "ja": "深刻な問題に直面する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stand under the hot sun",
+          "ja": "強い日差しの下に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a damaged farming area",
+          "ja": "被害を受けた農地",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The farmers are facing a serious drought in their fields.",
+          "grammar": "現在進行形",
+          "ja": "農家の人々は畑で深刻な干ばつに直面しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Most of the crops have withered because of the lack of water.",
+          "grammar": "現在完了形 / because of",
+          "ja": "水不足のため、ほとんどの作物が枯れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The soil has become dry and deeply cracked.",
+          "grammar": "現在完了形",
+          "ja": "土壌は乾燥し、深くひび割れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One farmer is crouching down to inspect a dead plant.",
+          "grammar": "to不定詞",
+          "ja": "一人の農家が枯れた植物を確認するためにしゃがんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several farmers are holding their heads because they are worried.",
+          "grammar": "because",
+          "ja": "何人かの農家は心配して頭を抱えています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman in the center is standing with her arms folded.",
+          "grammar": "with＋名詞＋過去分詞",
+          "ja": "中央の女性は腕を組んで立っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The damaged crops suggest that the harvest may be very poor.",
+          "grammar": "suggest that / may",
+          "ja": "被害を受けた作物から、収穫が非常に少なくなる可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The farmers may be worried about how they will continue their work.",
+          "grammar": "may / how節",
+          "ja": "農家の人々は今後どのように仕事を続けるか心配しているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "agrarian",
+          "ja": "農業の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "devastation",
+          "ja": "壊滅的被害",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "drought",
+          "ja": "干ばつ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "aridity",
+          "ja": "乾燥",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "livelihood",
+          "ja": "生計",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "bewail",
+          "ja": "嘆き悲しむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wither",
+          "ja": "枯れる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "deplete",
+          "ja": "枯渇させる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "jeopardize",
+          "ja": "危険にさらす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ravage",
+          "ja": "壊滅的な被害を与える",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "parched",
+          "ja": "からからに乾いた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "desolate",
+          "ja": "荒涼とした",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "barren",
+          "ja": "不毛な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "precarious",
+          "ja": "不安定な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "devastating",
+          "ja": "壊滅的な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "bewail agrarian devastation",
+          "ja": "農業の壊滅的被害を嘆く",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "ravage agricultural land",
+          "ja": "農地に壊滅的被害を与える",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wither under prolonged aridity",
+          "ja": "長期間の乾燥で枯れる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "jeopardize rural livelihoods",
+          "ja": "農村の生計を危険にさらす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "stand on parched soil",
+          "ja": "乾ききった土の上に立つ",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "survey the devastated crops",
+          "ja": "壊滅的な被害を受けた作物を見渡す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "face a precarious future",
+          "ja": "不安定な将来に直面する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "suffer catastrophic crop failure",
+          "ja": "壊滅的な不作に苦しむ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "deplete available water supplies",
+          "ja": "利用可能な水資源を枯渇させる",
+          "type": "action",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The farmers appear to be bewailing the agrarian devastation caused by an exceptionally severe drought.",
+          "grammar": "appear to be＋現在分詞 / 過去分詞",
+          "ja": "農家の人々は、非常に深刻な干ばつによって引き起こされた農業の壊滅的被害を嘆いているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The parched soil and withered crops indicate that prolonged aridity has ravaged the farmland.",
+          "grammar": "indicate that / 現在完了形",
+          "ja": "乾ききった土壌と枯れた作物から、長期間の乾燥が農地に深刻な被害を与えたことが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One elderly farmer crouches beside a dead plant while holding his forehead in visible despair.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の年配の農家は、明らかに絶望した様子で額を押さえながら枯れた植物のそばにしゃがんでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The other farmers' subdued postures suggest that they are contemplating the scale of the crop failure.",
+          "grammar": "suggest that",
+          "ja": "ほかの農家の沈んだ姿勢から、不作の規模について考え込んでいることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Such extensive agricultural damage could jeopardize the livelihoods of families that depend heavily on farming.",
+          "grammar": "could / 関係代名詞that",
+          "ja": "このような広範囲の農業被害は、農業に大きく依存する家族の生計を危険にさらす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The glaring sunlight and barren landscape reinforce the impression of prolonged heat and insufficient rainfall.",
+          "grammar": "現在形",
+          "ja": "強烈な日差しと不毛な景観が、長期間の暑さと降雨不足という印象をさらに強めています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "If the drought continues, the farmers may face an increasingly precarious economic situation.",
+          "grammar": "if節 / may",
+          "ja": "干ばつが続けば、農家の人々はますます不安定な経済状況に直面する可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene illustrates how environmental conditions can directly affect food production and rural communities.",
+          "grammar": "how節",
+          "ja": "この場面は、環境条件が食料生産や農村社会に直接どのような影響を与えるかを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing drought, agricultural loss, emotional distress, environmental damage, and economic uncertainty.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は干ばつ、農業損失、精神的苦痛、環境被害、経済的不安を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "farmer1": {
+      "x": 29,
+      "y": 51
+    },
+    "farmer2": {
+      "x": 9,
+      "y": 33
+    },
+    "woman": {
+      "x": 48,
+      "y": 35
+    },
+    "farmer3": {
+      "x": 65,
+      "y": 34
+    },
+    "farmer4": {
+      "x": 87,
+      "y": 34
+    },
+    "hat1": {
+      "x": 31,
+      "y": 25
+    },
+    "hat2": {
+      "x": 10,
+      "y": 9
+    },
+    "cap1": {
+      "x": 63,
+      "y": 11
+    },
+    "cap2": {
+      "x": 86,
+      "y": 11
+    },
+    "stick": {
+      "x": 11,
+      "y": 46
+    },
+    "crop": {
+      "x": 34,
+      "y": 70
+    },
+    "field": {
+      "x": 54,
+      "y": 59
+    },
+    "soil": {
+      "x": 53,
+      "y": 88
+    },
+    "cracks": {
+      "x": 41,
+      "y": 83
+    },
+    "plant1": {
+      "x": 67,
+      "y": 65
+    },
+    "plant2": {
+      "x": 86,
+      "y": 66
+    },
+    "plant3": {
+      "x": 6,
+      "y": 64
+    },
+    "hills": {
+      "x": 54,
+      "y": 44
+    },
+    "trees": {
+      "x": 8,
+      "y": 40
+    },
+    "sun": {
+      "x": 78,
+      "y": 11
+    },
+    "sky": {
+      "x": 51,
+      "y": 8
+    }
+  }
+}

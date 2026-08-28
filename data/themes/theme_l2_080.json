@@ -1,0 +1,713 @@
+{
+  "id": "theme_l2_080",
+  "imageSrc": "assets/images/l2_080.webp",
+  "titleEn": "Investigating Neglected Conditions at an Animal Shelter",
+  "titleJa": "劣悪な環境の動物施設を調査する",
+  "description": "衛生状態の悪い動物収容施設で、複数の調査員が犬や猫の飼育環境を確認している場面である。左側には4人の調査員が集まり、深刻そうな表情で施設内部を観察している。中央の女性調査員はクリップボードを持ち、汚れたケージの写真を他のメンバーに見せながら説明している。右側には上下に積まれた金属製のケージが並び、中には複数の犬や猫が収容されている。ケージ、床、壁はかなり汚れており、餌や水の容器も見える。奥では青い手袋を着用した職員がケージを確認している。施設全体には汚れや老朽化が目立ち、動物福祉や衛生管理に問題がある可能性を感じさせる。動物保護、施設調査、不衛生な環境、ネグレクト、福祉、改善の必要性を英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A realistic educational illustration of five investigators inspecting severely neglected conditions inside an animal shelter. Four concerned investigators stand together while one woman holds a clipboard and shows photographs of dirty cages. Another worker wearing blue gloves checks cages in the background. Show stacked rusty metal cages containing several dogs and cats, dirty floors, stained walls, food and water bowls, and visibly poor sanitation. Emphasize animal welfare inspection and neglect, not graphic injury. Landscape 16:9, realistic detailed illustration, no logos or readable text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "cat",
+          "ja": "猫",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "cage",
+          "ja": "ケージ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "worker",
+          "ja": "作業員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "photo",
+          "ja": "写真",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "floor",
+          "ja": "床",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "bowl",
+          "ja": "容器",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "glove",
+          "ja": "手袋",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "room",
+          "ja": "部屋",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "animal",
+          "ja": "動物",
+          "type": "animal",
+          "points": 10
+        },
+        {
+          "text": "look",
+          "ja": "見る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "hold",
+          "ja": "持つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "check",
+          "ja": "確認する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "dirty",
+          "ja": "汚れた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "look at the cages",
+          "ja": "ケージを見る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold some photos",
+          "ja": "写真を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "check the animals",
+          "ja": "動物を確認する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "dogs in cages",
+          "ja": "ケージの中の犬",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "a cat in a cage",
+          "ja": "ケージの中の猫",
+          "type": "animal",
+          "points": 20
+        },
+        {
+          "text": "a dirty floor",
+          "ja": "汚れた床",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "wear blue gloves",
+          "ja": "青い手袋をつける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "inside an animal shelter",
+          "ja": "動物保護施設の中で",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Several people are inside an animal shelter.",
+          "grammar": "be動詞＋場所",
+          "ja": "数人の人が動物保護施設の中にいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "They are looking at the animal cages.",
+          "grammar": "現在進行形",
+          "ja": "彼らは動物のケージを見ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are dogs and cats in the cages.",
+          "grammar": "There are",
+          "ja": "ケージの中には犬や猫がいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A woman is holding some photos.",
+          "grammar": "現在進行形",
+          "ja": "女性が写真を持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Another worker is wearing blue gloves.",
+          "grammar": "現在進行形",
+          "ja": "別の作業員は青い手袋をつけています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cages are very dirty.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "ケージはとても汚れています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are bowls inside the cages.",
+          "grammar": "There are",
+          "ja": "ケージの中には容器があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The people look worried.",
+          "grammar": "look＋形容詞",
+          "ja": "人々は心配そうに見えます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "shelter",
+          "ja": "保護施設",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "investigator",
+          "ja": "調査員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "condition",
+          "ja": "状態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "sanitation",
+          "ja": "衛生状態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "welfare",
+          "ja": "福祉",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "neglect",
+          "ja": "放置・ネグレクト",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "inspect",
+          "ja": "点検する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "examine",
+          "ja": "詳しく調べる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "improve",
+          "ja": "改善する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "filthy",
+          "ja": "非常に汚い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "unsanitary",
+          "ja": "不衛生な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "concerned",
+          "ja": "心配している",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "poor",
+          "ja": "劣悪な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "inspect an animal shelter",
+          "ja": "動物保護施設を調査する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "document poor conditions",
+          "ja": "劣悪な状態を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "examine dirty cages",
+          "ja": "汚れたケージを調べる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "protect animal welfare",
+          "ja": "動物福祉を守る",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "improve sanitation",
+          "ja": "衛生状態を改善する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "show photographic evidence",
+          "ja": "写真による証拠を示す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "unsanitary living conditions",
+          "ja": "不衛生な飼育環境",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "possible animal neglect",
+          "ja": "動物ネグレクトの可能性",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A group of investigators is inspecting the conditions inside an animal shelter.",
+          "grammar": "現在進行形",
+          "ja": "調査員のグループが動物保護施設内の状態を調べています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Several dogs and cats are being kept in dirty metal cages.",
+          "grammar": "現在進行受動態",
+          "ja": "複数の犬や猫が汚れた金属製のケージに収容されています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "One investigator is showing photographs of the poor conditions to the others.",
+          "grammar": "現在進行形",
+          "ja": "1人の調査員が劣悪な環境の写真を他の人々に見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cages, walls, and floor appear to be extremely dirty.",
+          "grammar": "appear to be",
+          "ja": "ケージ、壁、床は非常に汚れているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A worker wearing blue gloves is checking the cages in the background.",
+          "grammar": "現在分詞 / 現在進行形",
+          "ja": "背景では青い手袋をつけた作業員がケージを確認しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The investigators may be collecting evidence of possible animal neglect.",
+          "grammar": "may be＋現在分詞",
+          "ja": "調査員たちは動物ネグレクトの可能性を示す証拠を集めているのかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Poor sanitation can create serious health risks for animals.",
+          "grammar": "can",
+          "ja": "劣悪な衛生状態は動物に深刻な健康上の危険をもたらす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that the shelter may need major improvements to protect animal welfare.",
+          "grammar": "suggest that / may need",
+          "ja": "この場面から、動物福祉を守るために施設の大幅な改善が必要な可能性がうかがえます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "squalor",
+          "ja": "不潔で劣悪な環境",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "neglect",
+          "ja": "ネグレクト・放置",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "welfare",
+          "ja": "福祉",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "deprivation",
+          "ja": "必要なものが与えられない状態",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "evidence",
+          "ja": "証拠",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "confinement",
+          "ja": "拘束・収容",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "document",
+          "ja": "記録する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "scrutinize",
+          "ja": "詳しく調査する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remediate",
+          "ja": "改善する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "substantiate",
+          "ja": "証拠で裏付ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "ghastly",
+          "ja": "ぞっとするほどひどい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "squalid",
+          "ja": "不潔で劣悪な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "deplorable",
+          "ja": "嘆かわしいほどひどい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "inhumane",
+          "ja": "非人道的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "dilapidated",
+          "ja": "老朽化した",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "live in ghastly squalor",
+          "ja": "ぞっとするほど劣悪な環境で暮らす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "document deplorable conditions",
+          "ja": "嘆かわしいほど劣悪な状態を記録する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "scrutinize animal welfare",
+          "ja": "動物福祉を詳しく調査する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "substantiate allegations of neglect",
+          "ja": "ネグレクトの疑いを証拠で裏付ける",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "prolonged confinement",
+          "ja": "長期間の収容",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "unsanitary living conditions",
+          "ja": "不衛生な飼育環境",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "remediate serious deficiencies",
+          "ja": "深刻な問題点を改善する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "collect photographic evidence",
+          "ja": "写真による証拠を収集する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a dilapidated facility",
+          "ja": "老朽化した施設",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The investigators appear to be documenting animals confined in conditions of ghastly squalor.",
+          "grammar": "appear to be＋現在分詞 / 過去分詞",
+          "ja": "調査員たちは、ぞっとするほど劣悪な環境に収容されている動物の状況を記録しているようです。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The rust-stained cages, filthy flooring, and heavily soiled walls create an unmistakably squalid environment.",
+          "grammar": "複合形容詞 / 現在形",
+          "ja": "錆で汚れたケージ、不潔な床、ひどく汚れた壁によって、明らかに劣悪な環境になっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Photographs being presented by one investigator may have been collected to substantiate allegations of neglect.",
+          "grammar": "being＋過去分詞 / may have been＋過去分詞 / to不定詞",
+          "ja": "1人の調査員が提示している写真は、ネグレクトの疑いを裏付けるために収集されたものかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Several animals remain confined behind metal bars while the inspection team scrutinizes their living conditions.",
+          "grammar": "while / 現在形",
+          "ja": "調査チームが飼育環境を詳しく確認する間、複数の動物が金属製の柵の中に収容されたままです。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The visibly inadequate sanitation may expose the animals to disease, stress, and prolonged physical discomfort.",
+          "grammar": "may＋動詞",
+          "ja": "目に見えて不十分な衛生状態は、動物を病気、ストレス、長期的な身体的不快感にさらす可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The investigators' grave expressions suggest that they regard the situation as a serious animal-welfare concern.",
+          "grammar": "suggest that / regard A as B",
+          "ja": "調査員たちの深刻な表情から、この状況を重大な動物福祉上の問題と見なしていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "If neglect were substantiated, substantial intervention might be required to remediate the facility and improve the animals' welfare.",
+          "grammar": "仮定法過去 / might / to不定詞",
+          "ja": "もしネグレクトが確認されれば、施設を改善し動物福祉を向上させるために大規模な介入が必要になる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Prolonged confinement in such deplorable surroundings could constitute a serious failure to provide adequate care.",
+          "grammar": "動名詞的名詞句 / could",
+          "ja": "このような嘆かわしい環境での長期収容は、十分なケアを提供できていない重大な状態にあたる可能性があります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing ghastly squalor, animal neglect, confinement, sanitation, photographic evidence, welfare inspections, and remedial action.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面はぞっとするほど劣悪な環境、動物ネグレクト、収容、不衛生、写真証拠、福祉調査、改善措置を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 10,
+      "y": 42
+    },
+    "man": {
+      "x": 23,
+      "y": 29
+    },
+    "investigator": {
+      "x": 45,
+      "y": 40
+    },
+    "worker": {
+      "x": 57,
+      "y": 34
+    },
+    "photos": {
+      "x": 34,
+      "y": 63
+    },
+    "clipboard": {
+      "x": 46,
+      "y": 56
+    },
+    "dog": {
+      "x": 93,
+      "y": 22
+    },
+    "cat": {
+      "x": 79,
+      "y": 70
+    },
+    "puppy": {
+      "x": 91,
+      "y": 72
+    },
+    "cage": {
+      "x": 88,
+      "y": 45
+    },
+    "bars": {
+      "x": 83,
+      "y": 34
+    },
+    "rust": {
+      "x": 81,
+      "y": 51
+    },
+    "bowl": {
+      "x": 89,
+      "y": 84
+    },
+    "floor": {
+      "x": 62,
+      "y": 86
+    },
+    "dirt": {
+      "x": 72,
+      "y": 77
+    },
+    "gloves": {
+      "x": 58,
+      "y": 52
+    },
+    "window": {
+      "x": 6,
+      "y": 9
+    },
+    "wall": {
+      "x": 38,
+      "y": 12
+    },
+    "shelter": {
+      "x": 66,
+      "y": 18
+    },
+    "squalor": {
+      "x": 80,
+      "y": 61
+    }
+  }
+}

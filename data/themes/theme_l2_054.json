@@ -1,0 +1,721 @@
+{
+  "id": "theme_l2_054",
+  "imageSrc": "assets/images/l2_054.webp",
+  "titleEn": "Argument at the Airport Counter",
+  "titleJa": "空港カウンターでの口論",
+  "description": "空港のチェックインまたは案内カウンターで、男性客が係員に強い口調で抗議している場面である。手前中央の男性はカウンターに片手をつき、もう一方の手を大きく上げながら怒った表情で話している。カウンターの向こう側には制服姿の女性職員が座り、落ち着いた様子で対応している。男性の後ろには多くの乗客が列を作っており、スーツケースやバックパックを持ちながら順番を待っている。列の中には腕を組んだ人や困った表情の人もいる。大きな窓の外には空港の駐機場と飛行機が見える。空港でのトラブル、人の感情、列の様子、公共の場でのやり取りを英語で描写する練習に適した場面である。",
+  "category": "trouble",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a busy airport service counter where an angry male passenger is arguing with a calm female staff member in uniform. The man leans forward with one hand on the counter and raises the other while speaking angrily. Behind him, show a long line of travelers with suitcases, backpacks, and concerned or impatient expressions. Include queue barriers, computer screens, a large terminal interior, wide windows, and airplanes visible outside. Preserve the crowded airport atmosphere and strong emotional contrast between the upset passenger and professional staff member. No logos, no airline names, no readable commercial text, no speech bubbles. Landscape 16:9, polished realistic illustration style rather than photography, suitable for English picture-description practice.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "airport",
+          "ja": "空港",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "man",
+          "ja": "男性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "staff",
+          "ja": "職員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "counter",
+          "ja": "カウンター",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "line",
+          "ja": "列",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "suitcase",
+          "ja": "スーツケース",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "bag",
+          "ja": "バッグ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "screen",
+          "ja": "画面",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "window",
+          "ja": "窓",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "plane",
+          "ja": "飛行機",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "talk",
+          "ja": "話す",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wait",
+          "ja": "待つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stand",
+          "ja": "立つ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "raise",
+          "ja": "上げる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "angry",
+          "ja": "怒っている",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "an angry man",
+          "ja": "怒っている男性",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "talk to the staff",
+          "ja": "職員と話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "raise his hand",
+          "ja": "手を上げる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "stand in line",
+          "ja": "列に並ぶ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry a suitcase",
+          "ja": "スーツケースを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wait behind him",
+          "ja": "彼の後ろで待つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "planes outside",
+          "ja": "外の飛行機",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "at the airport counter",
+          "ja": "空港カウンターで",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A man is talking to an airport worker.",
+          "grammar": "現在進行形",
+          "ja": "男性が空港職員と話しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man looks angry.",
+          "grammar": "look＋形容詞",
+          "ja": "男性は怒っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is raising one hand.",
+          "grammar": "現在進行形",
+          "ja": "彼は片手を上げています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is sitting behind the counter.",
+          "grammar": "現在進行形",
+          "ja": "女性はカウンターの後ろに座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many people are waiting in line.",
+          "grammar": "現在進行形",
+          "ja": "たくさんの人が列で待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people have suitcases.",
+          "grammar": "have＋名詞",
+          "ja": "何人かはスーツケースを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are large windows behind them.",
+          "grammar": "There are",
+          "ja": "彼らの後ろには大きな窓があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are airplanes outside.",
+          "grammar": "There are",
+          "ja": "外には飛行機があります。",
+          "type": "detail",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "passenger",
+          "ja": "乗客",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "employee",
+          "ja": "職員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "terminal",
+          "ja": "空港ターミナル",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "queue",
+          "ja": "列",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "luggage",
+          "ja": "荷物",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "complaint",
+          "ja": "苦情",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "complain",
+          "ja": "苦情を言う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "argue",
+          "ja": "口論する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gesture",
+          "ja": "身ぶりをする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "respond",
+          "ja": "対応する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "upset",
+          "ja": "腹を立てた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "calm",
+          "ja": "落ち着いた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "crowded",
+          "ja": "混雑した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "impatient",
+          "ja": "いら立った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "professional",
+          "ja": "職業的で落ち着いた",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "make a complaint",
+          "ja": "苦情を言う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "argue with an employee",
+          "ja": "職員と口論する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "speak in an angry voice",
+          "ja": "怒った声で話す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "wait in a long queue",
+          "ja": "長い列で待つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "carry heavy luggage",
+          "ja": "大きな荷物を持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "remain calm",
+          "ja": "落ち着いている",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "an airport service counter",
+          "ja": "空港のサービスカウンター",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "planes beyond the windows",
+          "ja": "窓の向こうの飛行機",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An upset passenger is arguing with an employee at an airport counter.",
+          "grammar": "現在進行形",
+          "ja": "腹を立てた乗客が空港カウンターで職員と口論しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The passenger is leaning over the counter and speaking angrily.",
+          "grammar": "現在進行形",
+          "ja": "乗客はカウンターに身を乗り出し、怒った様子で話しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "He is gesturing with one hand while the employee remains calm.",
+          "grammar": "while",
+          "ja": "彼が片手で身ぶりをする一方、職員は落ち着いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A long line of travelers is waiting behind him.",
+          "grammar": "現在進行形",
+          "ja": "彼の後ろでは旅行者の長い列が待っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several passengers are carrying suitcases and backpacks.",
+          "grammar": "現在進行形",
+          "ja": "何人かの乗客はスーツケースやリュックを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Some people in the queue appear impatient or concerned.",
+          "grammar": "appear＋形容詞",
+          "ja": "列の中には、いら立ったり心配したりしているように見える人もいます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Airplanes can be seen through the large terminal windows.",
+          "grammar": "助動詞＋受動態",
+          "ja": "大きなターミナルの窓から飛行機が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The employee is probably trying to solve the passenger's problem.",
+          "grammar": "try to",
+          "ja": "職員はおそらく乗客の問題を解決しようとしています。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "functionary",
+          "ja": "職員・係員",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "grievance",
+          "ja": "不満・苦情",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "confrontation",
+          "ja": "対立",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "disruption",
+          "ja": "混乱",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "composure",
+          "ja": "冷静さ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "harangue",
+          "ja": "長々と激しく非難する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "berate",
+          "ja": "激しく叱責する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "remonstrate",
+          "ja": "強く抗議する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "gesticulate",
+          "ja": "激しく身ぶりをする",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mediate",
+          "ja": "仲介する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "irate",
+          "ja": "激怒した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "aggrieved",
+          "ja": "不当な扱いに憤った",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "confrontational",
+          "ja": "対立的な",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "restrained",
+          "ja": "自制した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "exasperated",
+          "ja": "いら立ち切った",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "harangue functionaries",
+          "ja": "職員たちを激しく非難する",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "voice a grievance",
+          "ja": "不満を申し立てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "berate an airport employee",
+          "ja": "空港職員を激しく非難する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "gesticulate angrily",
+          "ja": "怒って激しく身ぶりをする",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "maintain professional composure",
+          "ja": "職業的な冷静さを保つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cause a public disruption",
+          "ja": "公共の場で混乱を起こす",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "hold up the queue",
+          "ja": "列を滞らせる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "resolve the confrontation",
+          "ja": "対立を解決する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "express mounting frustration",
+          "ja": "高まる不満を表す",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "An irate passenger is haranguing an airport functionary while a long queue of travelers waits behind him.",
+          "grammar": "while / 現在進行形",
+          "ja": "激怒した乗客が空港職員を激しく非難する一方、彼の後ろでは旅行者の長い列が待っています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "His raised hand, forward-leaning posture, and tense expression indicate that he is voicing a serious grievance.",
+          "grammar": "indicate that",
+          "ja": "上げた手、前のめりの姿勢、険しい表情から、彼が強い不満を訴えていることが分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The employee appears to be maintaining her professional composure despite the passenger's confrontational behavior.",
+          "grammar": "appear to be / despite",
+          "ja": "職員は、乗客の対立的な態度にもかかわらず、職業的な冷静さを保っているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Several travelers waiting nearby look exasperated, suggesting that the confrontation may be delaying the queue.",
+          "grammar": "現在分詞 / suggest that",
+          "ja": "近くで待っている旅行者の何人かはいら立って見え、この口論が列を遅らせている可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The passenger's aggressive gesticulation contrasts sharply with the restrained posture of the staff member.",
+          "grammar": "contrast with",
+          "ja": "乗客の激しい身ぶりは、職員の抑制された姿勢と鮮明な対比をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Suitcases, queue barriers, service computers, and aircraft beyond the windows clearly establish the setting as an airport terminal.",
+          "grammar": "establish A as B",
+          "ja": "スーツケース、列を区切る柵、業務用コンピューター、窓の向こうの飛行機によって、この場所が空港ターミナルであることが明確に分かります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The scene suggests that a travel disruption or service problem may have triggered the passenger's anger.",
+          "grammar": "suggest that / may have＋過去分詞",
+          "ja": "この場面から、移動上のトラブルやサービス上の問題が乗客の怒りを引き起こした可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Managing such confrontations requires staff members to communicate clearly while avoiding further escalation.",
+          "grammar": "動名詞主語 / require O to / while",
+          "ja": "このような対立への対応では、さらなる激化を避けながら明確に意思疎通することが職員に求められます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image provides useful practice in describing conflict, emotional intensity, public behavior, and contrasting reactions in a crowded setting.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この画像は対立、感情の高まり、公共の場での行動、混雑した環境での対照的な反応を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "man": {
+      "x": 60,
+      "y": 40
+    },
+    "staff": {
+      "x": 89,
+      "y": 53
+    },
+    "hand": {
+      "x": 73,
+      "y": 26
+    },
+    "counter": {
+      "x": 65,
+      "y": 75
+    },
+    "screen": {
+      "x": 79,
+      "y": 59
+    },
+    "queue": {
+      "x": 21,
+      "y": 46
+    },
+    "traveler1": {
+      "x": 38,
+      "y": 39
+    },
+    "traveler2": {
+      "x": 27,
+      "y": 36
+    },
+    "traveler3": {
+      "x": 19,
+      "y": 31
+    },
+    "traveler4": {
+      "x": 12,
+      "y": 29
+    },
+    "traveler5": {
+      "x": 7,
+      "y": 30
+    },
+    "suitcase1": {
+      "x": 13,
+      "y": 67
+    },
+    "suitcase2": {
+      "x": 20,
+      "y": 72
+    },
+    "backpack": {
+      "x": 26,
+      "y": 44
+    },
+    "barrier": {
+      "x": 22,
+      "y": 59
+    },
+    "window": {
+      "x": 76,
+      "y": 17
+    },
+    "plane1": {
+      "x": 79,
+      "y": 25
+    },
+    "plane2": {
+      "x": 68,
+      "y": 28
+    },
+    "terminal": {
+      "x": 48,
+      "y": 15
+    },
+    "pillar": {
+      "x": 43,
+      "y": 20
+    },
+    "floor": {
+      "x": 29,
+      "y": 89
+    },
+    "sky": {
+      "x": 80,
+      "y": 8
+    }
+  }
+}

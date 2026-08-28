@@ -1,0 +1,721 @@
+{
+  "id": "theme_l2_060",
+  "imageSrc": "assets/images/l2_060.webp",
+  "titleEn": "A Red Coat in a Snowy Street",
+  "titleJa": "雪の街を歩く女性",
+  "description": "雪が降る冬の住宅街で、赤いコートを着た女性が雪道を歩いている場面である。女性は白いニット帽とマフラー、茶色のロングブーツを身につけ、両手をコートのポケットに入れている。通りには大量の雪が積もり、道路には車のわだちや足跡が残っている。右側には雪に覆われた車が何台も並び、左側にはレンガ造りの住宅、階段、黒い柵が続いている。街路樹の枝にも雪が積もり、通りには街灯が並んでいる。白一色に近い冬景色の中で女性の鮮やかな赤いコートが強い対比を生み出している。人物の服装、天候、町並み、色彩の対比、前景と背景を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a woman walking alone along a snow-covered residential street during gentle snowfall. She wears a vivid red belted winter coat, white knit hat and scarf, dark pants, and tall brown boots, with both hands in her coat pockets. Cover the road, sidewalks, parked cars, tree branches, steps, and railings with deep fresh snow. Show rows of brick townhouses on both sides, black iron fences, bare trees, street lamps, tire tracks, and footprints. Emphasize the striking contrast between the woman's bright red coat and the nearly white winter landscape. Landscape 16:9, polished realistic illustration style rather than photography, no logos, no readable commercial text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "woman",
+          "ja": "女性",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "snow",
+          "ja": "雪",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "coat",
+          "ja": "コート",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "hat",
+          "ja": "帽子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "scarf",
+          "ja": "マフラー",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "boots",
+          "ja": "ブーツ",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "house",
+          "ja": "家",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "street",
+          "ja": "通り",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "walk",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "fall",
+          "ja": "降る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "wear",
+          "ja": "身につける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "smile",
+          "ja": "ほほえむ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "red",
+          "ja": "赤い",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "wear a red coat",
+          "ja": "赤いコートを着る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "walk in the snow",
+          "ja": "雪の中を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a white hat",
+          "ja": "白い帽子",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "snow-covered cars",
+          "ja": "雪に覆われた車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "snow on the trees",
+          "ja": "木の上の雪",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "houses on the left",
+          "ja": "左側の家々",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "cars on the right",
+          "ja": "右側の車",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "a snowy street",
+          "ja": "雪の積もった通り",
+          "type": "description",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A woman is walking on a snowy street.",
+          "grammar": "現在進行形",
+          "ja": "女性が雪の積もった通りを歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "She is wearing a red coat.",
+          "grammar": "現在進行形",
+          "ja": "彼女は赤いコートを着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "She is wearing a white hat.",
+          "grammar": "現在進行形",
+          "ja": "彼女は白い帽子をかぶっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Snow is falling around her.",
+          "grammar": "現在進行形",
+          "ja": "彼女の周りで雪が降っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many cars on the right.",
+          "grammar": "There are",
+          "ja": "右側にはたくさんの車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The cars are covered with snow.",
+          "grammar": "受動態",
+          "ja": "車は雪で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are houses on both sides of the street.",
+          "grammar": "There are",
+          "ja": "通りの両側に家があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her red coat is very bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "彼女の赤いコートはとても鮮やかです。",
+          "type": "description",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "pedestrian",
+          "ja": "歩行者",
+          "type": "person",
+          "points": 10
+        },
+        {
+          "text": "snowfall",
+          "ja": "降雪",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "townhouse",
+          "ja": "連棟住宅",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "railing",
+          "ja": "手すり",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "footprint",
+          "ja": "足跡",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "track",
+          "ja": "わだち",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "accumulate",
+          "ja": "積もる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "cover",
+          "ja": "覆う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対照をなす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "stroll",
+          "ja": "歩く",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "snowy",
+          "ja": "雪の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "bright",
+          "ja": "鮮やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "quiet",
+          "ja": "静かな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "wintry",
+          "ja": "冬らしい",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "colorful",
+          "ja": "色鮮やかな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "walk through heavy snow",
+          "ja": "大雪の中を歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "snow-covered parked cars",
+          "ja": "雪に覆われた駐車中の車",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "fresh snow on the road",
+          "ja": "道路に積もった新雪",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "rows of brick houses",
+          "ja": "並んだレンガ造りの家",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "bare snow-covered trees",
+          "ja": "雪をかぶった葉のない木",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "leave tracks in the snow",
+          "ja": "雪に跡を残す",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "contrast with the snow",
+          "ja": "雪と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a quiet winter neighborhood",
+          "ja": "静かな冬の住宅街",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A woman is walking through a quiet neighborhood during heavy snowfall.",
+          "grammar": "現在進行形 / during",
+          "ja": "女性が大雪の中、静かな住宅街を歩いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Fresh snow has accumulated on the road, sidewalks, cars, and trees.",
+          "grammar": "現在完了形",
+          "ja": "道路、歩道、車、木には新しい雪が積もっています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is wearing warm winter clothes to protect herself from the cold.",
+          "grammar": "to不定詞",
+          "ja": "女性は寒さから身を守るために暖かい冬服を着ています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Several parked cars are almost completely covered with snow.",
+          "grammar": "受動態",
+          "ja": "駐車中の何台かの車はほぼ完全に雪で覆われています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Tire tracks can be seen along the middle of the road.",
+          "grammar": "助動詞＋受動態",
+          "ja": "道路の中央にはタイヤの跡が見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Rows of brick houses line both sides of the street.",
+          "grammar": "現在形",
+          "ja": "レンガ造りの家が通りの両側に並んでいます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Her bright red coat contrasts strongly with the white surroundings.",
+          "grammar": "contrast with",
+          "ja": "彼女の鮮やかな赤いコートは白い周囲の景色と強く対照をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The deep snow suggests that the area has received a large amount of snowfall.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "深く積もった雪から、この地域ではかなりの量の雪が降ったことがうかがえます。",
+          "type": "inference",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "disparity",
+          "ja": "著しい違い・隔たり",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "contrast",
+          "ja": "対比",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "streetscape",
+          "ja": "街路景観",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accumulation",
+          "ja": "堆積",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "monochrome",
+          "ja": "単色調",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "accentuate",
+          "ja": "際立たせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "juxtapose",
+          "ja": "並置して対比する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "blanket",
+          "ja": "一面を覆う",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "traverse",
+          "ja": "横切る・通り抜ける",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "distinguish",
+          "ja": "際立たせる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "glaring",
+          "ja": "非常に目立つ",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "vivid",
+          "ja": "鮮やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "muted",
+          "ja": "落ち着いた色調の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "snowbound",
+          "ja": "雪に閉ざされた",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "conspicuous",
+          "ja": "ひときわ目立つ",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "a glaring disparity",
+          "ja": "一目で分かるほどの著しい違い",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "accentuate the color contrast",
+          "ja": "色彩の対比を際立たせる",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "juxtapose red against white",
+          "ja": "赤と白を並置して対比する",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "traverse a snowbound street",
+          "ja": "雪に閉ざされた通りを歩く",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "blanket the entire streetscape",
+          "ja": "街路景観全体を覆う",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "stand out conspicuously",
+          "ja": "ひときわ目立つ",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a predominantly monochrome landscape",
+          "ja": "ほぼ単色調の景観",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "contrast with muted surroundings",
+          "ja": "落ち着いた周囲の色調と対照をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "create a striking visual distinction",
+          "ja": "強い視覚的な違いを生み出す",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The woman's vivid red coat creates a glaring disparity between her appearance and the predominantly white surroundings.",
+          "grammar": "between A and B",
+          "ja": "女性の鮮やかな赤いコートは、彼女の姿とほぼ白一色の周囲との間に非常に目立つ違いを生み出しています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "Fresh snow has blanketed almost the entire streetscape, including the road, parked vehicles, trees, and building entrances.",
+          "grammar": "現在完了形 / including",
+          "ja": "新雪が道路、駐車車両、木々、建物の入口を含む街路景観のほぼ全体を覆っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Against this muted winter landscape, the saturated red fabric becomes particularly conspicuous.",
+          "grammar": "前置詞句 / become＋形容詞",
+          "ja": "この落ち着いた冬景色を背景に、鮮やかな赤い布地が特に目立っています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The pedestrian is calmly traversing the snowbound street despite the ongoing snowfall.",
+          "grammar": "現在進行形 / despite",
+          "ja": "歩行者は雪が降り続いているにもかかわらず、雪に閉ざされた通りを落ち着いて歩いています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The considerable accumulation on the parked cars suggests that the snowfall has continued for some time.",
+          "grammar": "suggest that / 現在完了形",
+          "ja": "駐車車両にかなり雪が積もっていることから、雪がしばらく降り続いていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Rows of brick townhouses and iron railings provide a darker structural framework that further accentuates the snow.",
+          "grammar": "関係代名詞that",
+          "ja": "並んだレンガ造りの住宅と鉄製の柵が暗い構造的な枠組みとなり、雪をさらに際立たせています。",
+          "type": "description",
+          "points": 40
+        },
+        {
+          "text": "The image deliberately juxtaposes a warm, vivid color with an overwhelmingly cold and monochrome environment.",
+          "grammar": "juxtapose A with B",
+          "ja": "この画像は暖かく鮮やかな色と、圧倒的に寒々しい単色調の環境を意図的に対比させています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Tire tracks and footprints indicate that people and vehicles have continued to move through the neighborhood despite the weather.",
+          "grammar": "indicate that / 現在完了形",
+          "ja": "タイヤの跡や足跡から、悪天候にもかかわらず人や車が住宅街を移動し続けていることが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the scene provides useful practice in describing a glaring disparity, color contrast, winter weather, urban scenery, and spatial composition.",
+          "grammar": "動名詞列挙",
+          "ja": "全体として、この場面は際立った違い、色彩の対比、冬の天候、都市景観、空間構成を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 50,
+      "y": 47
+    },
+    "coat": {
+      "x": 50,
+      "y": 50
+    },
+    "hat": {
+      "x": 50,
+      "y": 17
+    },
+    "scarf": {
+      "x": 50,
+      "y": 29
+    },
+    "boots": {
+      "x": 50,
+      "y": 84
+    },
+    "snow": {
+      "x": 42,
+      "y": 72
+    },
+    "street": {
+      "x": 52,
+      "y": 78
+    },
+    "track": {
+      "x": 39,
+      "y": 83
+    },
+    "footprints": {
+      "x": 51,
+      "y": 82
+    },
+    "car1": {
+      "x": 89,
+      "y": 55
+    },
+    "car2": {
+      "x": 76,
+      "y": 50
+    },
+    "car3": {
+      "x": 68,
+      "y": 46
+    },
+    "house1": {
+      "x": 15,
+      "y": 26
+    },
+    "house2": {
+      "x": 89,
+      "y": 22
+    },
+    "stairs": {
+      "x": 13,
+      "y": 35
+    },
+    "fence": {
+      "x": 18,
+      "y": 50
+    },
+    "tree1": {
+      "x": 29,
+      "y": 17
+    },
+    "tree2": {
+      "x": 73,
+      "y": 15
+    },
+    "lamp1": {
+      "x": 38,
+      "y": 23
+    },
+    "lamp2": {
+      "x": 84,
+      "y": 18
+    },
+    "sky": {
+      "x": 56,
+      "y": 7
+    },
+    "background": {
+      "x": 53,
+      "y": 28
+    }
+  }
+}

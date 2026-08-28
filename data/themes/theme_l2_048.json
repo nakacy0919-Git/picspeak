@@ -1,0 +1,761 @@
+{
+  "id": "theme_l2_048",
+  "imageSrc": "assets/images/l2_048.webp",
+  "titleEn": "Backyard Beside the Highway",
+  "titleJa": "高速道路沿いの庭",
+  "description": "晴れた昼間、住宅の裏庭で家族がくつろいでいる場面である。左側のテラスには女性と男性が椅子に座り、マグカップを持ちながら話をしている。手前中央では黄色いTシャツを着た女の子が芝生の近くに座り、大きな犬をなでている。庭には木製のテーブル、鉢植え、花壇、芝生、大きな木があり、落ち着いた住宅地の雰囲気がある。一方、右側には非常に高い防音壁が庭と高速道路を隔てている。壁の向こうには多くの乗用車やトラックが走っている。防音壁によって交通騒音が住宅地に直接入りにくくなっていることが分かる。住宅地、高速道路、防音設備、家族の過ごし方、左右の対比を英語で描写する練習に適した場面である。",
+  "category": "daily",
+  "timeLimit": 45,
+  "imagePrompt": "A detailed educational illustration based closely on the provided reference image. Show a sunny suburban backyard directly beside a busy multilane highway. On the left patio, show a woman and a man sitting in outdoor chairs and holding mugs. In the foreground, show a girl in a yellow T-shirt sitting beside a large golden dog and gently petting it. Include a wooden table, potted plants, green lawn, flowers, shrubs, a large tree, wooden fence, and neighboring houses. Along the entire right side, show a tall gray sound barrier separating the garden from the highway. Beyond the barrier, show many cars, vans, and trucks moving along several lanes. Keep the strong contrast between the peaceful garden and busy traffic. Bright blue sky with soft clouds, landscape 16:9, polished realistic illustration style rather than photography, no logos or readable commercial text.",
+  "scoringData": {
+    "elementary": {
+      "words": [
+        {
+          "text": "garden",
+          "ja": "庭",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "highway",
+          "ja": "高速道路",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "wall",
+          "ja": "壁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "car",
+          "ja": "車",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "truck",
+          "ja": "トラック",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "dog",
+          "ja": "犬",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "chair",
+          "ja": "椅子",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "table",
+          "ja": "テーブル",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "flower",
+          "ja": "花",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "tree",
+          "ja": "木",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "sit",
+          "ja": "座る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drink",
+          "ja": "飲む",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "pet",
+          "ja": "なでる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "drive",
+          "ja": "走る・運転する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "quiet",
+          "ja": "静かな",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "sit in the garden",
+          "ja": "庭に座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "hold a cup",
+          "ja": "カップを持つ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "pet the dog",
+          "ja": "犬をなでる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a busy highway",
+          "ja": "交通量の多い高速道路",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "a tall wall",
+          "ja": "高い壁",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "cars and trucks",
+          "ja": "車とトラック",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "flowers by the wall",
+          "ja": "壁のそばの花",
+          "type": "location",
+          "points": 20
+        },
+        {
+          "text": "houses in the background",
+          "ja": "背景の家々",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "Three people are relaxing in the garden.",
+          "grammar": "現在進行形",
+          "ja": "3人が庭でくつろいでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A man and a woman are sitting on chairs.",
+          "grammar": "現在進行形",
+          "ja": "男性と女性が椅子に座っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "They are holding cups.",
+          "grammar": "現在進行形",
+          "ja": "2人はカップを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is petting a dog.",
+          "grammar": "現在進行形",
+          "ja": "女の子は犬をなでています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There is a tall wall on the right.",
+          "grammar": "There is",
+          "ja": "右側に高い壁があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many cars on the highway.",
+          "grammar": "There are",
+          "ja": "高速道路にはたくさんの車があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "There are many flowers in the garden.",
+          "grammar": "There are",
+          "ja": "庭にはたくさんの花があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The garden looks quiet and peaceful.",
+          "grammar": "look＋形容詞",
+          "ja": "庭は静かで穏やかに見えます。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "junior_high": {
+      "words": [
+        {
+          "text": "backyard",
+          "ja": "裏庭",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "traffic",
+          "ja": "交通",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "barrier",
+          "ja": "防音壁・障壁",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "vehicle",
+          "ja": "車両",
+          "type": "object",
+          "points": 10
+        },
+        {
+          "text": "patio",
+          "ja": "テラス",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "lawn",
+          "ja": "芝生",
+          "type": "place",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "隔てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "relax",
+          "ja": "くつろぐ",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "protect",
+          "ja": "守る",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "reduce",
+          "ja": "減らす",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "peaceful",
+          "ja": "穏やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "busy",
+          "ja": "交通量の多い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "suburban",
+          "ja": "郊外の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tall",
+          "ja": "高い",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "comfortable",
+          "ja": "快適な",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "relax in the backyard",
+          "ja": "裏庭でくつろぐ",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "a tall sound barrier",
+          "ja": "高い防音壁",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "separate the garden from the highway",
+          "ja": "庭と高速道路を隔てる",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "heavy highway traffic",
+          "ja": "交通量の多い高速道路",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "reduce traffic noise",
+          "ja": "交通騒音を減らす",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "sit on the patio",
+          "ja": "テラスに座る",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "play with the dog",
+          "ja": "犬と触れ合う",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "flowers along the barrier",
+          "ja": "防音壁沿いの花",
+          "type": "location",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "A family is relaxing in a suburban backyard beside a busy highway.",
+          "grammar": "現在進行形 / beside",
+          "ja": "家族が交通量の多い高速道路沿いの郊外の裏庭でくつろいでいます。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "The man and woman are sitting on outdoor chairs and holding mugs.",
+          "grammar": "現在進行形",
+          "ja": "男性と女性は屋外用の椅子に座ってマグカップを持っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The girl is sitting on the ground and petting the dog.",
+          "grammar": "現在進行形",
+          "ja": "女の子は地面に座り、犬をなでています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "A tall barrier separates the backyard from the highway.",
+          "grammar": "separate A from B",
+          "ja": "高い防音壁が裏庭と高速道路を隔てています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "Many cars and trucks are traveling along the highway.",
+          "grammar": "現在進行形",
+          "ja": "多くの車やトラックが高速道路を走っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The barrier probably helps reduce the traffic noise.",
+          "grammar": "help＋動詞",
+          "ja": "その壁は交通騒音を減らすのに役立っていると考えられます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Flowers and shrubs have been planted along the wall.",
+          "grammar": "現在完了受動態",
+          "ja": "壁沿いには花や低木が植えられています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The peaceful garden contrasts with the heavy traffic nearby.",
+          "grammar": "contrast with",
+          "ja": "穏やかな庭は近くの激しい交通と対照をなしています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    },
+    "high_school": {
+      "words": [
+        {
+          "text": "intrusion",
+          "ja": "侵入",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "noise",
+          "ja": "騒音",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "infrastructure",
+          "ja": "インフラ",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "proximity",
+          "ja": "近接",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "vegetation",
+          "ja": "植物",
+          "type": "concept",
+          "points": 10
+        },
+        {
+          "text": "attenuate",
+          "ja": "弱める",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "shield",
+          "ja": "保護する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "buffer",
+          "ja": "緩衝する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "separate",
+          "ja": "隔てる",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "mitigate",
+          "ja": "緩和する",
+          "type": "action",
+          "points": 10
+        },
+        {
+          "text": "residential",
+          "ja": "住宅地の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "acoustic",
+          "ja": "音響の",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "tranquil",
+          "ja": "静かで穏やかな",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "adjacent",
+          "ja": "隣接した",
+          "type": "description",
+          "points": 10
+        },
+        {
+          "text": "substantial",
+          "ja": "かなりの",
+          "type": "description",
+          "points": 10
+        }
+      ],
+      "chunks": [
+        {
+          "text": "attenuate sonic intrusion",
+          "ja": "騒音の侵入を弱める",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "mitigate traffic noise",
+          "ja": "交通騒音を緩和する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "an acoustic barrier",
+          "ja": "防音壁",
+          "type": "object",
+          "points": 20
+        },
+        {
+          "text": "shield a residential area",
+          "ja": "住宅地を保護する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "live in close proximity to a highway",
+          "ja": "高速道路のすぐ近くに住む",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "buffer the surrounding community",
+          "ja": "周辺住宅地への影響を緩衝する",
+          "type": "action",
+          "points": 20
+        },
+        {
+          "text": "contrast sharply with heavy traffic",
+          "ja": "激しい交通と鮮明な対比をなす",
+          "type": "description",
+          "points": 20
+        },
+        {
+          "text": "preserve a tranquil environment",
+          "ja": "静かな環境を保つ",
+          "type": "gist",
+          "points": 20
+        },
+        {
+          "text": "separate residential and transportation spaces",
+          "ja": "住宅空間と交通空間を分離する",
+          "type": "gist",
+          "points": 20
+        }
+      ],
+      "sentences": [
+        {
+          "text": "The scene depicts a residential backyard located in close proximity to a heavily traveled highway.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "この場面は交通量の非常に多い高速道路のすぐ近くにある住宅の裏庭を描いています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
+          "text": "A substantial acoustic barrier separates the tranquil garden from the continuous flow of traffic.",
+          "grammar": "separate A from B",
+          "ja": "大きな防音壁が静かな庭と絶え間ない交通の流れを隔てています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The barrier appears to have been installed to attenuate sonic intrusion from the adjacent highway.",
+          "grammar": "appear to have been＋過去分詞",
+          "ja": "その壁は隣接する高速道路からの騒音の侵入を弱めるために設置されたようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Numerous cars and freight trucks traveling beyond the wall indicate that the roadway carries a substantial volume of traffic.",
+          "grammar": "現在分詞 / indicate that",
+          "ja": "壁の向こうを走る多数の乗用車や貨物トラックから、その道路の交通量がかなり多いことが分かります。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Despite the highway's proximity, the family appears able to use the outdoor space in a relatively relaxed manner.",
+          "grammar": "despite / appear able to",
+          "ja": "高速道路が近いにもかかわらず、家族は比較的落ち着いて屋外空間を利用できているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Vegetation planted along the barrier provides an additional visual buffer between the domestic space and the transportation infrastructure.",
+          "grammar": "過去分詞による後置修飾",
+          "ja": "防音壁沿いに植えられた植物は、家庭空間と交通インフラの間に追加の視覚的な緩衝帯を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The peaceful activities in the foreground contrast sharply with the constant movement of vehicles in the background.",
+          "grammar": "contrast with",
+          "ja": "前景での穏やかな活動は、背景で絶えず移動する車両と鮮明な対比をなしています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The design illustrates how urban infrastructure can mitigate environmental problems created by major transportation routes.",
+          "grammar": "how節",
+          "ja": "この設計は、大規模な交通路によって生じる環境問題を都市インフラがどのように緩和できるかを示しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Overall, the image is useful for describing the relationship between residential comfort, traffic infrastructure, environmental design, and noise reduction.",
+          "grammar": "relationship between",
+          "ja": "全体として、この画像は住宅の快適性、交通インフラ、環境設計、騒音軽減の関係を描写する練習に適しています。",
+          "type": "gist",
+          "points": 40
+        }
+      ]
+    }
+  },
+  "pins": {
+    "woman": {
+      "x": 9,
+      "y": 59
+    },
+    "man": {
+      "x": 22,
+      "y": 53
+    },
+    "girl": {
+      "x": 33,
+      "y": 74
+    },
+    "dog": {
+      "x": 24,
+      "y": 83
+    },
+    "mug1": {
+      "x": 12,
+      "y": 62
+    },
+    "mug2": {
+      "x": 23,
+      "y": 56
+    },
+    "chair1": {
+      "x": 5,
+      "y": 66
+    },
+    "chair2": {
+      "x": 21,
+      "y": 62
+    },
+    "table": {
+      "x": 17,
+      "y": 74
+    },
+    "pot1": {
+      "x": 15,
+      "y": 71
+    },
+    "pot2": {
+      "x": 21,
+      "y": 70
+    },
+    "patio": {
+      "x": 18,
+      "y": 83
+    },
+    "lawn": {
+      "x": 45,
+      "y": 67
+    },
+    "tree": {
+      "x": 31,
+      "y": 28
+    },
+    "fence": {
+      "x": 29,
+      "y": 44
+    },
+    "house1": {
+      "x": 6,
+      "y": 23
+    },
+    "house2": {
+      "x": 20,
+      "y": 21
+    },
+    "barrier": {
+      "x": 72,
+      "y": 50
+    },
+    "highway": {
+      "x": 73,
+      "y": 25
+    },
+    "truck1": {
+      "x": 68,
+      "y": 22
+    },
+    "truck2": {
+      "x": 88,
+      "y": 25
+    },
+    "truck3": {
+      "x": 62,
+      "y": 22
+    },
+    "car1": {
+      "x": 76,
+      "y": 28
+    },
+    "car2": {
+      "x": 90,
+      "y": 31
+    },
+    "car3": {
+      "x": 83,
+      "y": 25
+    },
+    "traffic": {
+      "x": 72,
+      "y": 21
+    },
+    "flowers1": {
+      "x": 67,
+      "y": 73
+    },
+    "flowers2": {
+      "x": 55,
+      "y": 85
+    },
+    "shrubs": {
+      "x": 58,
+      "y": 60
+    },
+    "sky": {
+      "x": 63,
+      "y": 8
+    },
+    "clouds": {
+      "x": 72,
+      "y": 8
+    },
+    "road": {
+      "x": 78,
+      "y": 24
+    }
+  }
+}
