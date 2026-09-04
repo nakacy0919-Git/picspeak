@@ -31,6 +31,10 @@ window.picSpeakJsonCache = new Map();
 window.picSpeakThemeCache = new Map();
 window.picSpeakGridCache = new Map();
 
+// theme_catalog.json の読み込み完了待ち。
+// 回線が遅い端末で一覧を先に開いても、空配列をキャッシュしない。
+let appDataReadyPromise = null;
+
 window.fetchJsonCached = async function(url, cacheKey = url) {
     if (window.picSpeakJsonCache.has(cacheKey)) {
         return window.picSpeakJsonCache.get(cacheKey);
@@ -128,7 +132,7 @@ const themeGrid = document.getElementById('theme-grid');
 async function initApp() {
     const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
     if (!SpeechRecognition) {
-        alert("【重要】お使いのブラウザは音声認識に非対応です。Google Chromeをご利用ください。");
+        alert("【重要】このブラウザでは音声認識を利用できません。PCではChrome / Edge、iPad・iPhoneではSafariをお試しください。");
         return; 
     }
     if (typeof window.initSpeechRecognition === 'function') {
@@ -146,9 +150,58 @@ async function initApp() {
 }
 
 // ==========================================
+// ★ 音声認識エラー時のUI復旧
+// speech.js の recognition.onerror から呼ばれる
+// ==========================================
+window.handleSpeechFailure = function(errorCode) {
+    window.isRecording = false;
+
+    if (window.gameTimer) {
+        clearInterval(window.gameTimer);
+        window.gameTimer = null;
+    }
+
+    if (window.supportInterval) {
+        clearInterval(window.supportInterval);
+        window.supportInterval = null;
+    }
+
+    const btnStartTurn = document.getElementById('btn-start-turn');
+    if (btnStartTurn) {
+        btnStartTurn.classList.remove('hidden');
+        btnStartTurn.classList.add('animate-attention');
+    }
+
+    const recIndicator = document.getElementById('recording-indicator');
+    if (recIndicator) {
+        recIndicator.classList.add('hidden');
+    }
+
+    const btnFinishTurn = document.getElementById('btn-finish-turn');
+    if (btnFinishTurn) {
+        btnFinishTurn.classList.add('hidden');
+    }
+
+    const statusText = document.getElementById('status-text');
+    if (statusText) {
+        statusText.textContent = errorCode ? `Microphone Error: ${errorCode}` : 'Microphone Error';
+    }
+
+    const promptImage = document.getElementById('prompt-image');
+    if (promptImage && window.appState.selectedMode !== 'mosaic') {
+        promptImage.classList.remove('blur-none');
+        promptImage.classList.add('blur-md');
+    }
+};
+
+// ==========================================
 // ★ テーマグリッド描画（画像選択画面）
 // ==========================================
 window.renderThemeGrid = async function() {
+    if (appDataReadyPromise) {
+        await appDataReadyPromise;
+    }
+
     const themeGrid = document.getElementById('theme-grid');
     if (!themeGrid) return;
     themeGrid.innerHTML = '<div class="col-span-full text-center text-gray-500 font-bold py-10 text-xl md:text-2xl">Loading Images...</div>';
@@ -1043,7 +1096,7 @@ window.togglePracticeRecording = function() {
     if (!window.practiceRec) {
         const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
         window.practiceRec = new SpeechRec();
-        window.practiceRec.lang = 'en-US'; window.practiceRec.interimResults = true; window.practiceRec.continuous = true; 
+        window.practiceRec.lang = 'en-US'; window.practiceRec.interimResults = true; window.practiceRec.continuous = !window.isIOS; 
         
         window.practiceRec.onresult = (e) => {
             let text = '';
@@ -1312,36 +1365,61 @@ document.addEventListener('click', (e) => {
 
     const btnStartTurn = e.target.closest('#btn-start-turn');
     if (btnStartTurn) {
-        if(typeof window.startSpeech === 'function') window.startSpeech(); 
+        let started = false;
+
+        if (typeof window.startSpeech === 'function') {
+            started = window.startSpeech();
+        }
+
+        // 音声認識の開始要求自体が失敗した場合は、
+        // LISTENING表示やタイマー開始に進まない。
+        if (!started) {
+            window.isRecording = false;
+
+            const statusText = document.getElementById('status-text');
+            if (statusText) {
+                statusText.textContent = 'Microphone Error';
+            }
+
+            return;
+        }
+
         window.isRecording = true;
+
         btnStartTurn.classList.remove('animate-attention');
         btnStartTurn.classList.add('hidden');
-        
+
         const recIndicator = document.getElementById('recording-indicator');
-        if(recIndicator) recIndicator.classList.remove('hidden');
-        
+        if (recIndicator) {
+            recIndicator.classList.remove('hidden');
+        }
+
         const statusText = document.getElementById('status-text');
-        if(statusText) statusText.textContent = "Speak Now!";
-        
+        if (statusText) {
+            statusText.textContent = "Speak Now!";
+        }
+
         const promptImage = document.getElementById('prompt-image');
-        if(promptImage) {
+        if (promptImage) {
             promptImage.classList.remove('blur-md');
             promptImage.classList.add('blur-none');
         }
-        
+
         const supportToggle = document.getElementById('support-toggle');
         if (window.timeElapsed === 0 && supportToggle && supportToggle.checked) {
-            if(typeof getAggregatedData === 'function') {
+            if (typeof getAggregatedData === 'function') {
                 const targetData = getAggregatedData(window.currentTheme, window.appState.selectedLevel);
-                if(typeof window.dropPin === 'function') {
+                if (typeof window.dropPin === 'function') {
                     targetData.words.forEach(w => window.dropPin(w.text, window.currentTheme, true));
                 }
             }
             window.supportInterval = setInterval(window.triggerSupportHint, 6000);
         }
+
         if (window.timeElapsed === 0 && typeof window.startTimer === 'function') {
             window.startTimer();
         }
+
         return;
     }
 
@@ -1428,7 +1506,9 @@ document.addEventListener('click', (e) => {
     }
 });
 
-window.addEventListener('DOMContentLoaded', window.initApp);
+window.addEventListener('DOMContentLoaded', () => {
+    appDataReadyPromise = initApp();
+});
 
 function setupOqPasswordLock() {
     const oqBtn = document.querySelector('.mode-btn[data-mode="oralquest"]');
@@ -1511,9 +1591,21 @@ window.setupSubmitButton = function(score) {
             const sClass = localStorage.getItem('picSpeakStudentClass') || '不明';
             const sNumber = localStorage.getItem('picSpeakStudentNumber') || '不明';
             const sName = localStorage.getItem('picSpeakStudentName') || '不明';
-            const themeTitle = window.currentTheme ? window.currentTheme.titleJa : '不明なテーマ';
-            
-            const playKey = `playCount_${window.currentTheme.id}`;
+
+            const currentThemeKey =
+                window.tempSelectedThemeId ||
+                (window.currentTheme && window.currentTheme.id) ||
+                'unknown';
+
+            const catalogItem = window.themeCatalog.find(item => item.id === currentThemeKey);
+
+            const themeTitle =
+                (window.currentTheme && (window.currentTheme.titleJa || window.currentTheme.titleEn)) ||
+                (catalogItem && (catalogItem.titleJa || catalogItem.titleEn)) ||
+                currentThemeKey ||
+                '不明なテーマ';
+
+            const playKey = `playCount_${currentThemeKey}`;
             let playCount = parseInt(localStorage.getItem(playKey) || '1');
 
             const formData = new FormData();

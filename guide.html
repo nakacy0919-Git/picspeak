@@ -4,22 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <meta name="description" content="PicSpeak（ピックスピーク）の完全活用ガイド。写真描写（Picture Description）を用いた英語スピーキング力の向上メソッドや、学校の授業・家庭学習での具体的なICT活用アイデア、音声認識を用いた学習手順を詳しく解説します。">
+    <meta name="description" content="PicSpeak（ピックスピーク）の公式活用ガイド。Picture Description（写真描写）の基本的な使い方、授業・家庭学習での活用例、音声認識を使った練習方法、iPadでの確認事項を紹介します。">
     
-    <title>PicSpeak 活用ガイド - スピーキング力を飛躍させる学習法</title>
+    <title>PicSpeak 活用ガイド | 写真描写を使ったスピーキング練習</title>
+    <link rel="canonical" href="https://www.pic-speak-story.com/guide.html">
+    <meta property="og:title" content="PicSpeak 活用ガイド | 写真描写を使ったスピーキング練習">
+    <meta property="og:description" content="PicSpeakの基本操作、授業での使い方、音声認識によるフィードバック、トラブル時の確認方法を紹介します。">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://www.pic-speak-story.com/guide.html">
     
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-2212278850521165" crossorigin="anonymous"></script>
 
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "PicSpeak 活用ガイド",
+      "mainEntityOfPage": "https://www.pic-speak-story.com/guide.html",
+      "author": {
+        "@type": "Person",
+        "name": "Kohei Nakashima",
+        "url": "https://www.pic-speak-story.com/about.html"
+      },
+      "dateModified": "2026-09-05T05:15:00+09:00",
+      "publisher": {
+        "@type": "Organization",
+        "name": "PicSpeak & EduTools",
+        "url": "https://www.pic-speak-story.com/"
+      }
+    }
+    </script>
+
+
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        .bg-sns-gradient { background: linear-gradient(45deg, #c13584, #f56040, #fcaf45); }
-        .text-sns-gradient { background: linear-gradient(45deg, #c13584, #f56040, #fcaf45); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    </style>
+    .bg-sns-gradient {
+        background: linear-gradient(45deg, #c13584, #f56040, #fcaf45);
+    }
+
+    .text-sns-gradient {
+        background: linear-gradient(45deg, #c13584, #f56040, #fcaf45);
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
 </head>
 <body class="bg-gray-50 text-gray-800 font-sans leading-relaxed">
     <div class="max-w-4xl mx-auto px-6 py-12">
-        <h1 class="text-3xl md:text-4xl font-black text-center mb-4 text-sns-gradient tracking-tight">PicSpeak 完全活用ガイド</h1>
-        <p class="text-center text-gray-500 font-bold mb-10">英語のスピーキング力を劇的に伸ばすための具体的な学習ステップと授業アイデア</p>
+        <h1 class="text-3xl md:text-4xl font-black text-center mb-4 text-sns-gradient tracking-tight">PicSpeak 活用ガイド</h1>
+        <p class="text-center text-gray-500 font-bold mb-10">Picture Descriptionを使った具体的な練習ステップと授業アイデア</p>
         
         <div class="bg-white p-8 md:p-10 rounded-3xl shadow-sm border border-gray-200 space-y-12">
             
@@ -31,31 +66,32 @@
                 </div>
                 
                 <p class="text-gray-700 leading-relaxed font-medium mb-8">
-                    PicSpeakは、写真や画像に描かれている状況を英語で即興的に説明する「Picture Description（写真描写）」のトレーニングに特化した、完全無料の教育用Webアプリケーションです。中島浩平が教育現場での実践と課題をもとに開発し、現在多くの学校でスピーキング力の向上に活用されています。
+                    PicSpeakは、写真や画像に描かれている状況を英語で説明する「Picture Description（写真描写）」の練習に特化した、無料の教育用Webアプリケーションです。英語教員・中島浩平が、授業で生徒の発話機会を増やすための実践と課題をもとに開発しています。学校の授業や家庭学習で、繰り返しスピーキング練習を行うために利用できます。
                 </p>
 
                 <div class="space-y-6">
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                        <h3 class="text-lg font-black text-gray-800 mb-3 flex items-center gap-2"><span class="text-indigo-500">■</span> 第二言語習得論（SLA）に基づく学習アプローチ</h3>
+                        <h3 class="text-lg font-black text-gray-800 mb-3 flex items-center gap-2"><span class="text-indigo-500">■</span> 授業実践と第二言語習得研究を参考にした学習設計</h3>
                         <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-                            日本の英語教育において、「英語の知識」を「実際に使えるスキル」に昇華させる機会が圧倒的に不足しています。PicSpeakは、SLA（第二言語習得論）の観点から、頭に思い浮かんだ概念を即座に英語の音声にする「自動化（Automatization）」のプロセスを強力に促進します。音声認識技術（Web Speech API）を活用し、生徒の発話をリアルタイムでテキスト化。ターゲットとなる表現が使えているか（Accuracy）と、1分間あたりの発話語数（WPM: Words Per Minute）を瞬時にスコアリングすることで、ゲーム感覚で学習のモチベーションを最大化します。
+                            PicSpeakでは、写真を見ながら知っている語彙や文法を実際に声に出し、同じ課題に繰り返し取り組むことを大切にしています。技能習得、アウトプット、流暢性などに関する第二言語習得研究を参考にしていますが、これらの理論がPicSpeakそのものの学習効果を直接証明するものではありません。音声認識技術（Web Speech API）を利用して発話を文字として認識し、認識された表現やWPM（Words Per Minute）などを、練習を振り返るための目安として表示します。
                         </p>
                     </div>
 
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
-                        <h3 class="text-lg font-black text-gray-800 mb-4 flex items-center gap-2"><span class="text-indigo-500">■</span> 選べる4つのトレーニングモード</h3>
+                        <h3 class="text-lg font-black text-gray-800 mb-4 flex items-center gap-2"><span class="text-indigo-500">■</span> 目的に応じて選べるトレーニングモード</h3>
                         <ul class="list-none space-y-4">
-                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">📸</span><p class="text-sm md:text-base text-gray-600"><strong>SNAPSHOT（スナップショット）：</strong> 1枚の写真をとことん詳細に描写します。名詞や動詞、前置詞をフル活用し、英語を組み立てる基礎体力を養います。</p></li>
-                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">🎞️</span><p class="text-sm md:text-base text-gray-600"><strong>STORY（ストーリー）：</strong> 4枚の連続した写真を順番に説明します。接続詞（and, but, so, because等）を用いて物語を構成する「リテリング」の力が鍛えられます。</p></li>
-                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">⚡️</span><p class="text-sm md:text-base text-gray-600"><strong>PIC FLASH（ピックフラッシュ）：</strong> 次々と切り替わる画像を見て瞬時に英単語を発話する、英語の反射神経を極限まで高めるモードです。</p></li>
-                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">🕵️</span><p class="text-sm md:text-base text-gray-600"><strong>DETECTIVE（ディテクティブ）：</strong> 2枚の絵の「間違い」を英語で指摘します。「The boy is running, but the girl is walking.」のような比較表現の特訓に最適です。</p></li>
+                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">📸</span><p class="text-sm md:text-base text-gray-600"><strong>SNAPSHOT（スナップショット）：</strong> 1枚の写真を観察し、名詞、動詞、形容詞、前置詞などを使いながら、見える内容を詳しく説明します。</p></li>
+                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">🎞️</span><p class="text-sm md:text-base text-gray-600"><strong>STORY（ストーリー）：</strong> 4枚の連続した写真を順番に説明し、接続詞（and, but, so, because等）を使って出来事をつなぐ練習を行います。</p></li>
+                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">⚡️</span><p class="text-sm md:text-base text-gray-600"><strong>PIC FLASH（ピックフラッシュ）：</strong> 次々と切り替わる画像を見て、知っている英単語や短い表現を素早く取り出す練習を行います。</p></li>
+                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">🧩</span><p class="text-sm md:text-base text-gray-600"><strong>MOSAIC（モザイク）：</strong> 一部が見えにくい画像から内容を推測し、“Maybe...” “It looks like...” などの表現を使う練習を行います。</p></li>
+                            <li class="flex items-start gap-3"><span class="text-xl mt-0.5">🕵️</span><p class="text-sm md:text-base text-gray-600"><strong>DETECTIVE（ディテクティブ）：</strong> 2枚の似た絵の違いを英語で説明し、比較・対比に使う表現を繰り返し使います。</p></li>
                         </ul>
                     </div>
 
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
                         <h3 class="text-lg font-black text-gray-800 mb-3 flex items-center gap-2"><span class="text-indigo-500">■</span> プライバシーと安全性への配慮</h3>
                         <p class="text-sm md:text-base text-gray-600 leading-relaxed">
-                            教育現場で安心してご利用いただけるよう、PicSpeakは入力された音声データや認識テキストを外部のサーバーに送信・保存することは一切ありません。すべての音声認識処理はお使いの端末（ブラウザ）の機能を利用してローカルで完結する、セキュアな設計となっています。
+                            PicSpeakはWeb Speech APIなど、利用端末・ブラウザが提供する音声認識機能を利用します。PicSpeak独自のサーバーに音声ファイルを保存することを目的とした機能は設けていませんが、音声認識の処理方法はブラウザやOSの実装によって異なり、認識処理のためにブラウザ提供元等の外部サービスへ音声が送信される場合があります。利用する端末・ブラウザの設定やプライバシーポリシーもあわせてご確認ください。詳しくは当サイトのプライバシーポリシーをご覧ください。<br><span class="text-xs text-gray-500 mt-2 inline-block">参考：<a href="https://developer.mozilla.org/en-US/docs/Web/API/Web_Speech_API/Using_the_Web_Speech_API" target="_blank" rel="noopener noreferrer" class="underline hover:text-indigo-600">MDN Web Speech API</a></span>
                         </p>
                     </div>
                 </div>
@@ -65,14 +101,14 @@
             <section>
                 <div class="flex items-center gap-3 mb-6 border-b-2 border-pink-200 pb-3">
                     <span class="text-3xl">🚀</span>
-                    <h2 class="text-2xl font-black text-gray-900">【生徒向け】Snapshotを使った最強の「自主練」5ステップ</h2>
+                    <h2 class="text-2xl font-black text-gray-900">【生徒向け】Snapshotを使った自主練習5ステップ</h2>
                 </div>
-                <p class="text-gray-700 mb-6 font-medium">PicSpeakの「Snapshotモード」は、1枚の写真をとことん描写するトレーニングに最適です。ただ何となく話すのではなく、以下の5つのステップを意識することで、あなたの英語力は爆発的に伸びます。</p>
+                <p class="text-gray-700 mb-6 font-medium">PicSpeakの「Snapshotモード」では、1枚の写真を使って段階的に表現を増やす練習ができます。最初から長い英文を作ろうとせず、以下の5つのステップで少しずつ発話を広げてみましょう。</p>
                 
                 <div class="space-y-6">
                     <div class="bg-blue-50 p-5 rounded-2xl border border-blue-100">
                         <h3 class="text-lg font-bold text-blue-800 mb-2">Step 1: まずは「目に見えるモノ（名詞）」をひたすら口に出す</h3>
-                        <p class="text-sm text-gray-700">完璧な文章（I can see a... など）を作ろうとして黙り込んでしまうのはNGです。まずは "dog", "tree", "sky" など、写真に写っているモノの単語をテンポよく発音して、アプリを青く光らせましょう！</p>
+                        <p class="text-sm text-gray-700">最初から長い文章を作る必要はありません。まずは "dog", "tree", "sky" など、写真に写っているモノの単語を声に出し、言える情報を増やしていきましょう。</p>
                     </div>
                     <div class="bg-green-50 p-5 rounded-2xl border border-green-100">
                         <h3 class="text-lg font-bold text-green-800 mb-2">Step 2: 「色」や「様子（形容詞）」をトッピングする</h3>
@@ -84,11 +120,11 @@
                     </div>
                     <div class="bg-purple-50 p-5 rounded-2xl border border-purple-100">
                         <h3 class="text-lg font-bold text-purple-800 mb-2">Step 4: リザルト画面で「言えなかった表現」をチェック</h3>
-                        <p class="text-sm text-gray-700">タイムアップ後が成長の最大のチャンス！リザルト画面では「あなたが言えなかったターゲット表現（紫色の文字）」が表示されます。「あ、この状況はこう言えばよかったのか！」という気付きが語彙力を広げます。</p>
+                        <p class="text-sm text-gray-700">タイムアップ後はリザルト画面を確認します。表示されたターゲット表現は、次に使ってみたい語や表現を確認するための参考として利用できます。</p>
                     </div>
                     <div class="bg-pink-50 p-5 rounded-2xl border border-pink-100">
-                        <h3 class="text-lg font-bold text-pink-800 mb-2">Step 5: 「🎤練習モード」からの「PLAY AGAIN」で100%を目指す！</h3>
-                        <p class="text-sm text-gray-700">言えなかった単語は「練習モード」でマイクに向かって反復練習。完璧に発音できるようになったら、「PLAY AGAIN」でもう一度同じ写真に挑戦しましょう。さっき言えなかったフレーズがスラスラ出てくる快感を味わってください！</p>
+                        <h3 class="text-lg font-bold text-pink-800 mb-2">Step 5: 「🎤練習モード」から「PLAY AGAIN」で再挑戦</h3>
+                        <p class="text-sm text-gray-700">言えなかった表現は「練習モード」でお手本を確認し、音声認識結果を参考にしながら反復します。その後「PLAY AGAIN」で同じ写真に再挑戦し、前回より使える表現が増えたかを確認してみましょう。</p>
                     </div>
                 </div>
             </section>
@@ -98,24 +134,24 @@
                     <span class="text-3xl">👨‍🏫</span>
                     <h2 class="text-2xl font-black text-gray-900">【先生向け】学校現場でのPicSpeak活用アイデア</h2>
                 </div>
-                <p class="text-gray-700 mb-6 font-medium">PicSpeakは、1人1台端末（ChromebookやiPadなど）が普及した現代の教室において、圧倒的なアウトプット量を確保する最強の相棒になります。</p>
+                <p class="text-gray-700 mb-6 font-medium">PicSpeakは、1人1台端末を活用し、生徒一人ひとりが同時に英語を声に出す時間を作るための選択肢の一つです。</p>
                 
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
                         <h3 class="text-lg font-black text-gray-800 mb-3">🕒 授業冒頭のウォームアップ</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">授業開始の最初の3分間、「今日のお題」として指定したテーマを全員で一斉にプレイさせます。画面が光るゲーム性と、WPM（話すスピード）が可視化されることで、生徒の英語脳が一気に覚醒し、クラス全体が活気付きます。</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">授業開始の最初の3分間、「今日のお題」として指定したテーマを全員で一斉にプレイさせます。画面上のフィードバックやWPMなどを使い、短時間で繰り返し発話するウォームアップとして利用できます。</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
                         <h3 class="text-lg font-black text-gray-800 mb-3">🗣 ペアワーク実践 ＆ Similar Photo Partyへの連携</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">PicSpeakで写真描写の基礎トレーニングを積んだ後は、ペアで遊べる英語コミュニケーションゲーム<b>「<a href="https://similar-photo.com/" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 underline font-black">Similar Photo Party</a>」</b>に挑戦するのが圧倒的におすすめ！基礎練習から「伝わる喜び」を味わえる実践的なペアワークへとスムーズに移行でき、楽しさと英語力がさらに倍増します。</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">PicSpeakで写真描写の基礎トレーニングを積んだ後は、ペアで遊べる英語コミュニケーションゲーム<b>「<a href="https://similar-photo.com/" target="_blank" rel="noopener noreferrer" class="text-pink-500 hover:text-pink-700 underline font-black">Similar Photo Party</a>」</b>へつなげる方法もあります。個人での写真描写の後にペアで説明・確認する活動を入れることで、発話練習から対話活動へ展開できます。</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
                         <h3 class="text-lg font-black text-gray-800 mb-3">🔥 休み時間のタイムアタック大会</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">「Support Mode」をオフにした状態で、特定の写真でのCompletion Rate（達成度）やWPMを競わせます。「先生、あと少しで100%だったのに！」と休み時間でも自発的に英語を話す生徒が続出します。</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">「Support Mode」をオフにし、同じ写真に複数回取り組む活動にも使えます。Completion RateやWPMは競争だけを目的にせず、自分の前回の結果と比較する目安として使うことをおすすめします。</p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-2xl border border-gray-200">
                         <h3 class="text-lg font-black text-gray-800 mb-3">📈 スピーキングテストの事前対策</h3>
-                        <p class="text-sm text-gray-600 leading-relaxed">英検の二次試験（面接）や、GTECなどのスピーキングテストにおける「イラスト描写問題」の対策として、STORYモード（4コマ写真描写）を宿題として課すことで、本番での瞬発力と表現力を鍛え上げることができます。</p>
+                        <p class="text-sm text-gray-600 leading-relaxed">イラストや写真を説明する形式のスピーキング課題に慣れる練習として、STORYモード（4コマ写真描写）を授業や家庭学習で使うことができます。各試験の公式問題形式や評価基準は、必ず最新の公式情報も確認してください。</p>
                     </div>
                 </div>
             </section>
@@ -123,21 +159,21 @@
             <section>
                 <div class="flex items-center gap-3 mb-6 border-b-2 border-teal-200 pb-3">
                     <span class="text-3xl">🧠</span>
-                    <h2 class="text-2xl font-black text-gray-900">なぜ「Picture Description」が英語力向上に効くのか？</h2>
+                    <h2 class="text-2xl font-black text-gray-900">なぜPicture Descriptionをスピーキング練習に使うのか？</h2>
                 </div>
                 <p class="text-gray-700 leading-relaxed font-medium mb-4">
-                    私たちが日本語を話すとき、頭の中で「文法」を意識することはほとんどありません。目の前の「情景」や頭に浮かんだ「概念」を、そのままダイレクトに言葉に変換しています。<br><br>
-                    しかし、日本の英語学習者の多くは「日本語の文を思い浮かべる ➔ それを頭の中で英語に翻訳する ➔ 口に出す」というプロセスを踏んでしまうため、言葉に詰まってしまいます。<br><br>
-                    PicSpeakが採用している「写真描写（Picture Description）」は、<strong>視覚情報（写真）を、日本語を介さずにダイレクトに英語へ結びつけるトレーニング</strong>です。これを繰り返すことで、「英語を英語のまま処理する回路（英語脳）」が鍛えられ、実際の英会話でもポンポンと言葉が飛び出してくるようになるのです。
+                    Picture Descriptionでは、話す内容の手がかりが写真の中にあります。人物、物、場所、動作、色、位置関係など、目に見える情報から始められるため、フリートークのように「何を話そう」とゼロから考える負担を減らしやすい活動です。<br><br>
+                    学習者は、知っている語彙や文法を使って短い表現から発話し、同じ写真に再挑戦しながら表現を増やすことができます。母語を頭の中で使うこと自体を否定するのではなく、毎回長い日本語文を完成させてから訳すことに頼りすぎず、<strong>視覚情報を手がかりに英語を取り出す経験を増やす</strong>ことを重視しています。<br><br>
+                    Picture Descriptionだけで会話力全体が身につくわけではありません。質問応答、意見交換、対話などと組み合わせながら、スピーキングの一部分を集中的に練習する活動として位置づけています。
                 </p>
             </section>
 
             <section>
                 <div class="flex items-center gap-3 mb-6 border-b-2 border-red-200 pb-3 mt-12">
                     <span class="text-3xl">🆘</span>
-                    <h2 class="text-2xl font-black text-gray-900">【トラブル対応】iPadで音声が認識されない時は？</h2>
+                    <h2 class="text-2xl font-black text-gray-900">【トラブル対応】iPadで音声認識が反応しないときの確認項目</h2>
                 </div>
-                <p class="text-gray-700 mb-6 font-medium">マイクに向かって話しても画面が反応しない場合は、iPadの設定が原因かもしれません。以下の5つのステップを確認してみましょう！</p>
+                <p class="text-gray-700 mb-6 font-medium">音声認識が反応しない場合は、iPadOS、ブラウザ、マイク権限、通信環境など複数の原因が考えられます。表示項目はiPadOSやブラウザのバージョンによって異なる場合があります。以下を順番に確認してください。</p>
                 
                 <div class="space-y-6 bg-red-50 p-6 md:p-8 rounded-3xl border border-red-100">
                     
@@ -145,7 +181,7 @@
                         <img src="assets/images/ipad1.webp" alt="iOSアップデートの確認" class="w-full md:w-1/3 rounded-xl shadow-sm border border-gray-200">
                         <div class="flex-1 text-left">
                             <h4 class="font-black text-gray-900 text-lg md:text-xl mb-2"><span class="text-red-600 mr-1">STEP 1:</span> iPadOSが最新か確認する</h4>
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">音声認識が作動しない時、一番多い原因が「システムが古いこと」です。まずは「設定」アプリ ＞「一般」＞「ソフトウェアアップデート」を開き、アップデートが来ていないか確認してください。システムが古いと音声を正しく拾ってくれません。</p>
+                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">まず「設定」アプリ ＞「一般」＞「ソフトウェアアップデート」を開き、iPadOSの更新があるか確認してください。古いOSではブラウザ機能の動作が不安定になる場合があります。</p>
                         </div>
                     </div>
 
@@ -161,7 +197,7 @@
                         <img src="assets/images/ipad3.webp" alt="音声認識の選択" class="w-full md:w-1/3 rounded-xl shadow-sm border border-gray-200">
                         <div class="flex-1 text-left">
                             <h4 class="font-black text-gray-900 text-lg md:text-xl mb-2"><span class="text-red-600 mr-1">STEP 3:</span> 「音声認識」をタップする</h4>
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">右側に表示されるメニューの中から、「音声認識」という項目を探してタップしてください。<br><span class="text-xs md:text-sm text-gray-500 font-bold">※見つからない場合は「マイク」の項目も合わせて確認してください。</span></p>
+                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">「音声認識」や「マイク」に関する項目が表示される場合は、使用するブラウザへの許可状況を確認してください。<br><span class="text-xs md:text-sm text-gray-500 font-bold">※設定項目の名称や場所はiPadOS・ブラウザのバージョンによって異なることがあります。</span></p>
                         </div>
                     </div>
 
@@ -169,20 +205,31 @@
                         <img src="assets/images/ipad4.webp" alt="ブラウザの許可" class="w-full md:w-1/3 rounded-xl shadow-sm border border-gray-200">
                         <div class="flex-1 text-left">
                             <h4 class="font-black text-gray-900 text-lg md:text-xl mb-2"><span class="text-red-600 mr-1">STEP 4:</span> ブラウザの許可を「オン」にする</h4>
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">一覧の中から、使用するブラウザアプリ（Safari や Chrome など）を探し、右側のスイッチが<strong>「オン（緑色）」</strong>に有効化されているかを確認してください。</p>
+                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">使用するブラウザにマイクまたは音声認識の許可が表示されている場合は、有効になっているか確認してください。また、Webサイト側でマイク利用を求める表示が出た場合は「許可」を選択してください。</p>
                         </div>
                     </div>
 
                     <div class="flex flex-col md:flex-row gap-5 items-center md:items-start bg-white p-5 rounded-2xl shadow-sm border border-gray-100">
                         <img src="assets/images/ipad5.webp" alt="再起動" class="w-full md:w-1/3 rounded-xl shadow-sm border border-gray-200">
                         <div class="flex-1 text-left">
-                            <h4 class="font-black text-gray-900 text-lg md:text-xl mb-2"><span class="text-red-600 mr-1">STEP 5:</span> ダメなら「再起動」してみる！</h4>
-                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">有効化した後にアプリを使用してください。<br>💡 <strong>魔法の解決策：</strong>もしこれでも音声認識しない場合は、<strong>一度iPadの電源を完全に切り、再起動</strong>してみてください。音声認識しないトラブルの多くは、これだけで改善されます！</p>
+                            <h4 class="font-black text-gray-900 text-lg md:text-xl mb-2"><span class="text-red-600 mr-1">STEP 5:</span> 必要に応じてブラウザやiPadを再起動する</h4>
+                            <p class="text-sm md:text-base text-gray-700 leading-relaxed">設定を確認した後、ブラウザをいったん終了して再度開いてください。それでも改善しない場合は、iPad本体を再起動してからもう一度お試しください。通信環境やブラウザ側の対応状況によっては、設定だけでは利用できない場合もあります。</p>
                         </div>
                     </div>
 
                 </div>
             </section>
+            <section>
+                <div class="flex items-center gap-3 mb-6 border-b-2 border-blue-200 pb-3 mt-12">
+                    <span class="text-3xl">📊</span>
+                    <h2 class="text-2xl font-black text-gray-900">スコア・WPMの見方</h2>
+                </div>
+                <div class="bg-blue-50 p-6 rounded-2xl border border-blue-100 text-sm md:text-base text-gray-700 leading-relaxed">
+                    <p class="mb-3">PicSpeakの認識結果、Completion Rate、WPMなどは、<strong>標準化された英語能力試験のスコアではありません。</strong> 同じ学習者が繰り返し練習したときの変化を振り返るための参考情報として利用してください。</p>
+                    <p>WPMは主に発話速度を見る指標であり、流暢性全体を表すものではありません。内容の分かりやすさ、発音、間の取り方、文法、語彙、相手とのやり取りなどは別の観点として確認する必要があります。</p>
+                </div>
+            </section>
+
             <section>
                 <div class="flex items-center gap-3 mb-6 border-b-2 border-gray-200 pb-3 mt-12">
                     <span class="text-3xl">❓</span>
@@ -191,7 +238,7 @@
                 <div class="space-y-6">
                     <div>
                         <h3 class="text-lg font-bold text-gray-800 flex items-start gap-2"><span class="text-pink-500">Q.</span> どのような端末で利用できますか？</h3>
-                        <p class="text-sm text-gray-600 mt-1 pl-7">A. 音声認識機能（Web Speech API）に対応しているブラウザ（Google Chrome、Safari、Microsoft Edgeなど）を搭載したPC、Chromebook、iPad、スマートフォンでご利用いただけます。マイクへのアクセス許可が必要です。</p>
+                        <p class="text-sm text-gray-600 mt-1 pl-7">A. PC、Chromebook、iPad、スマートフォンなどのWebブラウザで利用できますが、音声認識（Web Speech API）の対応状況はブラウザ・OS・バージョンによって異なります。マイクへのアクセス許可が必要です。音声認識が利用できない場合は、別の対応ブラウザや端末もお試しください。</p>
                     </div>
                     <div>
                         <h3 class="text-lg font-bold text-gray-800 flex items-start gap-2"><span class="text-pink-500">Q.</span> 音声認識がうまく反応しません。</h3>
@@ -199,7 +246,7 @@
                     </div>
                     <div>
                         <h3 class="text-lg font-bold text-gray-800 flex items-start gap-2"><span class="text-pink-500">Q.</span> 授業での利用は無料ですか？</h3>
-                        <p class="text-sm text-gray-600 mt-1 pl-7">A. はい、学校の授業や家庭学習でのご利用は完全無料です。教育現場でのICT活用を推進するため、すべての方に無償で提供しております。</p>
+                        <p class="text-sm text-gray-600 mt-1 pl-7">A. はい。現在、学校の授業や家庭学習で無料で利用できます。利用条件については当サイトの利用規約もご確認ください。</p>
                     </div>
                 </div>
             </section>
@@ -211,7 +258,9 @@
                 <span class="text-xl">🏠</span> PicSpeakで今すぐプレイ！
             </a>
             
-            <div class="flex gap-4 text-sm font-bold text-gray-500 mt-4">
+            <div class="flex flex-wrap justify-center gap-4 text-sm font-bold text-gray-500 mt-4">
+                <a href="about.html" class="hover:text-pink-500 transition-colors">運営者</a>
+                <a href="methodology.html" class="hover:text-pink-500 transition-colors">学習メソッド</a>
                 <a href="privacy.html" class="hover:text-pink-500 transition-colors">プライバシーポリシー</a>
                 <a href="terms.html" class="hover:text-pink-500 transition-colors">利用規約</a>
                 <a href="blog.html" class="hover:text-pink-500 transition-colors" target="_blank">📝 公式ブログ</a>

@@ -3,7 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PicSpeak - For Teachers</title>
+    <title>PicSpeak 教員用課題リンク生成 | For Teachers</title>
+    <meta name="description" content="PicSpeakの教員向け課題リンク生成ページです。画像・目標レベル・提出先Googleフォームを設定し、生徒配信用URLを作成できます。">
+    <meta name="robots" content="noindex,follow">
+    <link rel="canonical" href="https://www.pic-speak-story.com/teacher.html">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700;900&display=swap');
@@ -27,7 +30,7 @@
     <main class="max-w-3xl mx-auto px-4 mt-8 md:mt-10">
         <div class="text-center mb-8 md:mb-10">
             <h2 class="text-2xl md:text-3xl font-black text-gray-900 mb-2">課題リンク生成ツール 🔗</h2>
-            <p class="text-sm md:text-base text-gray-500 font-bold">生徒に取り組ませたい画像と提出先を設定して、専用URLを発行します。</p>
+            <p class="text-sm md:text-base text-gray-500 font-bold">画像・目標レベル・提出先を設定し、生徒に配信するPicSpeak課題URLを作成します。</p>
         </div>
 
         <div class="bg-white rounded-3xl shadow-md border border-gray-100 p-6 md:p-8 space-y-8">
@@ -42,7 +45,7 @@
                 <a href="https://docs.google.com/forms/d/1XMtUzrAVord2REFEgf9tCUmFtvSJFLstF2xjFAPaslo/copy" target="_blank" class="inline-flex items-center gap-2 bg-blue-50 hover:bg-blue-100 border border-blue-200 text-blue-700 font-bold px-5 py-2.5 rounded-xl transition-colors shadow-sm text-sm">
                     <span>📄</span> テンプレートをコピーする
                 </a>
-                <p class="text-[10px] text-gray-400 mt-2">※現在はダミーリンクです。後ほど本物のコピー用URLに差し替えます。</p>
+                <p class="text-[10px] text-gray-400 mt-2">※Googleアカウントにログインした状態で開き、ご自身のGoogleドライブにコピーして使用してください。</p>
             </section>
 
             <hr class="border-gray-100">
@@ -84,6 +87,12 @@
                     </div>
                 </div>
             </section>
+
+            <div class="bg-gray-50 border border-gray-100 rounded-2xl px-4 py-3">
+                <p class="text-[11px] md:text-xs text-gray-500 leading-relaxed">
+                    🔒 このページで入力したGoogleフォームURLは、課題リンク生成のためにブラウザ内で使用します。このページから運営者のサーバーへ保存する処理は行っていません。
+                </p>
+            </div>
 
             <!-- STEP 4 (生成ボタン) -->
             <section class="pt-4">
