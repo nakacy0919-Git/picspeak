@@ -18,10 +18,51 @@ window.gameTimer = null;
 window.supportInterval = null; 
 window.timeLeft = 30; 
 window.timeElapsed = 0; 
-window.themeList = [];
+window.themeCatalog = [];
 window.accumulatedTranscript = ""; 
 window.rawTranscriptForCounting = ""; 
 window.audioCtx = null;
+
+// ==========================================
+// ★ Vercel Edge Requests削減用キャッシュ
+// ==========================================
+// 同一ページ内では同じJSONを二度取得しない。
+window.picSpeakJsonCache = new Map();
+window.picSpeakThemeCache = new Map();
+window.picSpeakGridCache = new Map();
+
+window.fetchJsonCached = async function(url, cacheKey = url) {
+    if (window.picSpeakJsonCache.has(cacheKey)) {
+        return window.picSpeakJsonCache.get(cacheKey);
+    }
+
+    const requestPromise = fetch(url)
+        .then(res => {
+            if (!res.ok) throw new Error(`HTTP ${res.status}: ${url}`);
+            return res.json();
+        })
+        .catch(error => {
+            window.picSpeakJsonCache.delete(cacheKey);
+            throw error;
+        });
+
+    window.picSpeakJsonCache.set(cacheKey, requestPromise);
+    return requestPromise;
+};
+
+window.getThemeDataCached = async function(id, folderPath = 'data/themes') {
+    const cacheKey = `${folderPath}/${id}`;
+
+    if (window.picSpeakThemeCache.has(cacheKey)) {
+        return window.picSpeakThemeCache.get(cacheKey);
+    }
+
+    const fetchedData = await window.fetchJsonCached(`${folderPath}/${id}.json`, cacheKey);
+    const themeData = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+
+    window.picSpeakThemeCache.set(cacheKey, themeData);
+    return themeData;
+};
 
 // 練習モーダル用変数
 window.isPracticeRecording = false;
@@ -94,10 +135,13 @@ async function initApp() {
         window.initSpeechRecognition(window.handleSpeechResult, window.handleSpeechEnd);
     }
     try {
-        const response = await fetch('data/theme_list.json?t=' + new Date().getTime());
-        window.themeList = await response.json();
+        window.themeCatalog = await window.fetchJsonCached('data/theme_catalog.json', 'theme_catalog');
+        if (!Array.isArray(window.themeCatalog)) {
+            throw new Error('theme_catalog.json が配列ではありません。');
+        }
     } catch (error) {
-        console.error("テーマリスト読み込み失敗:", error);
+        console.error("テーマカタログ読み込み失敗:", error);
+        window.themeCatalog = [];
     }
 }
 
@@ -113,24 +157,27 @@ window.renderThemeGrid = async function() {
         let results = [];
         let isDetective = (window.appState && window.appState.selectedMode === 'detective');
         
-        if (window.appState.selectedMode === 'oralquest') {
-            const res = await fetch('data/oralquest_list.json?t=' + new Date().getTime());
-            results = await res.json();
-            results = results.map(item => ({ id: item.id, data: item }));
+        const gridCacheKey = window.appState.selectedMode || 'snapshot';
+
+        if (window.picSpeakGridCache.has(gridCacheKey)) {
+            results = window.picSpeakGridCache.get(gridCacheKey);
+        } else if (window.appState.selectedMode === 'oralquest') {
+            const list = await window.fetchJsonCached('data/oralquest_list.json', 'oralquest_list');
+            results = list.map(item => ({ id: item.id, data: item }));
+            window.picSpeakGridCache.set(gridCacheKey, results);
         } else if (window.appState.selectedMode === 'mosaic') {
-            const res = await fetch('data/mosaic_list.json?t=' + new Date().getTime());
-            results = await res.json();
+            results = await window.fetchJsonCached('data/mosaic_list.json', 'mosaic_list');
+            window.picSpeakGridCache.set(gridCacheKey, results);
         } else if (isDetective) {
-            const res = await fetch('data/detective_list.json?t=' + new Date().getTime());
-            results = await res.json();
+            results = await window.fetchJsonCached('data/detective_list.json', 'detective_list');
+            window.picSpeakGridCache.set(gridCacheKey, results);
         } else {
-            const fetchPromises = window.themeList.map(id => 
-                fetch(`data/themes/${id}.json?t=${new Date().getTime()}`)
-                .then(res => res.json())
-                .then(data => ({ id, data: Array.isArray(data) ? data[0] : data }))
-                .catch(e => null)
-            );
-            results = await Promise.all(fetchPromises);
+            // 通常テーマは一覧用の軽量カタログだけを使う。
+            // ここでは147個の個別テーマJSONを取得しない。
+            results = window.themeCatalog
+                .filter(item => item && item.id)
+                .map(item => ({ id: item.id, data: item }));
+            window.picSpeakGridCache.set(gridCacheKey, results);
         }
 
         let html = '';
@@ -146,7 +193,7 @@ window.renderThemeGrid = async function() {
                     試しに、下のサンプルの<span class="text-pink-500 underline decoration-pink-300 decoration-2 underline-offset-4">「B」の絵（下半分）の中にある間違っている部分</span>を直接クリック（タップ）してみてね。
                 </p>
                 <div class="relative w-full rounded-2xl overflow-hidden border-4 border-yellow-300 bg-white shadow-inner cursor-pointer" onclick="handleTutorialClick(event)">
-                    <img src="assets/images/detective/sample.webp" class="w-full h-auto object-contain pointer-events-none">
+                    <img src="assets/images/detective/sample.webp" loading="lazy" decoding="async" class="w-full h-auto object-contain pointer-events-none">
                     <div id="tutorial-overlay" class="absolute inset-0 pointer-events-none"></div>
                 </div>
             </div>`;
@@ -177,7 +224,7 @@ window.renderThemeGrid = async function() {
             <div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
-                    <img src="${item.data.imageSrc}" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
+                    <img src="${item.data.imageSrc}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
                 <div class="p-3 md:p-4 text-center border-t border-gray-50 flex-1 flex flex-col items-center justify-center leading-tight bg-white pointer-events-none">
                     <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${titleEn}</span>
@@ -221,8 +268,7 @@ window.renderThemeGrid = async function() {
 window.handleTutorialClick = async function(e) {
     if (!window.tutorialData) {
         try {
-            const res = await fetch('data/detective/detective_sample.json?t=' + new Date().getTime());
-            window.tutorialData = await res.json();
+            window.tutorialData = await window.fetchJsonCached('data/detective/detective_sample.json', 'detective_sample');
         } catch (err) {
             return;
         }
@@ -313,9 +359,7 @@ window.startPrePracticeWithTheme = async function(id) {
         let folderPath = 'data/themes';
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
-        const res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
-        const fetchedData = await res.json();
-        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
+        window.currentTheme = await window.getThemeDataCached(id, folderPath);
     } catch (e) {
         alert(`データの読み込みに失敗しました。`);
         return;
@@ -518,20 +562,15 @@ window.startGameWithTheme = async function(id) {
         if (window.appState.selectedMode === 'mosaic') folderPath = 'data/mosaic';
         if (window.appState.selectedMode === 'detective') folderPath = 'data/detective';
         
-        let res;
         if (window.appState.selectedMode === 'oralquest') {
-            res = await fetch(`data/oralquest/${id}.json?t=` + new Date().getTime());
-            if (!res.ok) {
-                res = await fetch(`data/themes/${id}.json?t=` + new Date().getTime());
+            try {
+                window.currentTheme = await window.getThemeDataCached(id, 'data/oralquest');
+            } catch (oralQuestError) {
+                window.currentTheme = await window.getThemeDataCached(id, 'data/themes');
             }
         } else {
-            res = await fetch(`${folderPath}/${id}.json?t=` + new Date().getTime());
+            window.currentTheme = await window.getThemeDataCached(id, folderPath);
         }
-
-        if (!res.ok) throw new Error("Data not found");
-        
-        const fetchedData = await res.json();
-        window.currentTheme = Array.isArray(fetchedData) ? fetchedData[0] : fetchedData;
     } catch (e) {
         alert(`データの読み込みに失敗しました。`);
         return;
