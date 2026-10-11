@@ -23,6 +23,15 @@ window.isIOS =
 
 window.isSpeechStarting = false;
 window.lastSpeechError = null;
+window.speechRestartTimer = null;
+window.speechSessionId = 0;
+window.speechRetryCount = 0;
+window.cancelSpeechRestart = function() {
+    if (window.speechRestartTimer !== null) {
+        clearTimeout(window.speechRestartTimer);
+        window.speechRestartTimer = null;
+    }
+};
 
 
 // ==========================================
@@ -109,6 +118,12 @@ window.createNewRecognition = function() {
     // ======================================
 
     recognition.onresult = function(event) {
+        // Ignore events from an old or stopped recognition session.
+        if (recognition !== window.myRecognition ||
+            window.isForceStopped ||
+            !window.isRecording) {
+            return;
+        }
 
         let finalTranscript = '';
         let interimTranscript = '';
@@ -129,6 +144,8 @@ window.createNewRecognition = function() {
                     result[0].transcript;
             }
         }
+
+        if (finalTranscript.trim()) window.speechRetryCount = 0;
 
         console.log(
             '[SpeechRecognition] result',
@@ -278,38 +295,38 @@ window.createNewRecognition = function() {
          * iOSは1回の認識が短時間で
          * 終了することがあるため再生成
          */
-        setTimeout(function() {
-
-            if (
-                window.isForceStopped ||
-                !window.isRecording
-            ) {
-                return;
+        if (window.speechRetryCount >= 4) {
+            window.stopSpeech();
+            if (typeof window.handleSpeechFailure === 'function') {
+                window.handleSpeechFailure('repeated-recognition-end');
             }
+            return;
+        }
+
+        const sessionId = window.speechSessionId;
+        const delays = [700, 1400, 2800, 5600];
+        const delayMs = delays[window.speechRetryCount++];
+
+        window.cancelSpeechRestart();
+        window.speechRestartTimer = setTimeout(function() {
+            window.speechRestartTimer = null;
+
+            if (sessionId !== window.speechSessionId ||
+                window.isForceStopped || !window.isRecording ||
+                window.isSpeechStarting) return;
 
             try {
-
                 window.createNewRecognition();
-
                 window.isSpeechStarting = true;
-
                 window.myRecognition.start();
-
-                console.log(
-                    '[SpeechRecognition] restarted'
-                );
-
-            } catch (e) {
-
-                window.isSpeechStarting = false;
-
-                console.error(
-                    '音声認識の自動再起動に失敗:',
-                    e
-                );
+            } catch (error) {
+                console.error('[SpeechRecognition] restart failed', error);
+                window.stopSpeech();
+                if (typeof window.handleSpeechFailure === 'function') {
+                    window.handleSpeechFailure('restart-failed');
+                }
             }
-
-        }, window.isIOS ? 500 : 200);
+        }, delayMs);
     };
 
 
@@ -347,6 +364,7 @@ window.startSpeech = function() {
 
 
     // 二重START防止
+    if (window.isRecording && !window.isForceStopped) return true;
     if (window.isSpeechStarting) {
         console.log(
             '[SpeechRecognition] already starting'
@@ -355,6 +373,9 @@ window.startSpeech = function() {
     }
 
 
+    window.cancelSpeechRestart();
+    window.speechSessionId++;
+    window.speechRetryCount = 0;
     window.isForceStopped = false;
     window.lastSpeechError = null;
 
@@ -405,6 +426,9 @@ window.startSpeech = function() {
 
 window.stopSpeech = function() {
 
+    window.cancelSpeechRestart();
+    window.speechSessionId++;
+    window.speechRetryCount = 0;
     window.isForceStopped = true;
     window.isRecording = false;
     window.isSpeechStarting = false;

@@ -3,6 +3,17 @@
 // ゲームコアエンジン
 // ==========================================
 
+window.picSpeakEscapeHTML = function(value) {
+    const chars = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#39;'
+    };
+    return String(value ?? '').replace(/[&<>"']/g, char => chars[char]);
+};
+
 window.processPracticeDiff = function(spoken, target) {
     if (!spoken.trim()) return { html: "", isPerfect: false };
     const targetWords = target.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/);
@@ -11,8 +22,8 @@ window.processPracticeDiff = function(spoken, target) {
     spokenWordsRaw.forEach(word => {
         const cleanWord = word.toLowerCase().replace(/[.,!?]/g, '');
         if (cleanWord && !targetWords.includes(cleanWord)) {
-            html += `<span class="text-purple-600 font-black border-b-[6px] border-purple-300 bg-purple-50 px-2 mx-1 rounded-lg">${word}</span>`;
-        } else { html += `${word} `; }
+            html += `<span class="text-purple-600 font-black border-b-[6px] border-purple-300 bg-purple-50 px-2 mx-1 rounded-lg">${window.picSpeakEscapeHTML(word)}</span>`;
+        } else { html += `${window.picSpeakEscapeHTML(word)} `; }
     });
     const normalizedSpoken = spoken.toLowerCase().replace(/[.,!?]/g, '');
     const normalizedTarget = target.toLowerCase().replace(/[.,!?]/g, '');
@@ -34,7 +45,7 @@ window.triggerSupportHint = function() {
         const hint = availableHints[Math.floor(Math.random() * availableHints.length)];
         const hintEl = document.createElement('div');
         hintEl.className = 'absolute top-[50%] left-[50%] flex flex-col items-center justify-center support-text-float w-[90%] pointer-events-none z-[30]';
-        hintEl.innerHTML = `<div class="bg-black/70 backdrop-blur-md text-white px-6 md:px-8 py-4 md:py-6 rounded-3xl shadow-2xl border border-white/20 text-center"><div class="text-2xl md:text-5xl lg:text-6xl font-black tracking-wide drop-shadow-md mb-2">${hint.text}</div><div class="text-sm md:text-2xl font-bold text-gray-300">${hint.ja}</div></div>`;
+        hintEl.innerHTML = `<div class="bg-black/70 backdrop-blur-md text-white px-6 md:px-8 py-4 md:py-6 rounded-3xl shadow-2xl border border-white/20 text-center"><div class="text-2xl md:text-5xl lg:text-6xl font-black tracking-wide drop-shadow-md mb-2">${window.picSpeakEscapeHTML(hint.text)}</div><div class="text-sm md:text-2xl font-bold text-gray-300">${window.picSpeakEscapeHTML(hint.ja)}</div></div>`;
         supportTextContainer.appendChild(hintEl);
         setTimeout(() => { if(supportTextContainer.contains(hintEl)) supportTextContainer.removeChild(hintEl); }, 5000);
     }
@@ -82,7 +93,7 @@ window.dropPin = function(word, theme, isHint = false) {
     pin.style.left = `${pinData.x}%`; pin.style.top = `${pinData.y}%`; pin.style.transform = 'translate(-50%, -100%)';
     const opacityClass = isHint ? 'opacity-80 bg-gray-50 border-gray-200 text-gray-500' : 'bg-white border-white text-gray-900 drop-shadow-md';
     const heart = isHint ? '📍' : '❤️';
-    pin.innerHTML = `<div class="${opacityClass} text-[10px] md:text-sm lg:text-base font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full shadow-lg border-2 mb-1 md:mb-1.5 tracking-wider uppercase">${heart} ${word}</div><div class="w-1.5 md:w-2 h-3.5 md:h-5 bg-gray-300 shadow-sm rounded-b-full"></div>`;
+    pin.innerHTML = `<div class="${opacityClass} text-[10px] md:text-sm lg:text-base font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full shadow-lg border-2 mb-1 md:mb-1.5 tracking-wider uppercase">${heart} ${window.picSpeakEscapeHTML(word)}</div><div class="w-1.5 md:w-2 h-3.5 md:h-5 bg-gray-300 shadow-sm rounded-b-full"></div>`;
     if(!isHint) {
         const popEffect = document.createElement('div'); popEffect.className = 'pin-pop-effect'; pin.appendChild(popEffect);
     }
@@ -91,7 +102,7 @@ window.dropPin = function(word, theme, isHint = false) {
 
 window.highlightGlobalText = function(text) {
     if (!text) return "";
-    let html = text;
+    let html = window.picSpeakEscapeHTML(text);
     const phrases = [...Array.from(foundChunksSet), ...Array.from(foundSentencesSet)].sort((a, b) => b.length - a.length);
     phrases.forEach(phrase => {
         const regex = new RegExp(`(${phrase.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')})`, 'gi');
@@ -139,6 +150,9 @@ window.handleSpeechResult = function(finalText, interimText) {
         }
         return; 
     }
+
+    // Never score picture-game speech before START or after STOP.
+    if (!window.isRecording || window.isForceStopped) return;
 
     if (finalText.trim().length > 0) window.rawTranscriptForCounting += finalText + " ";
     const currentTempText = window.rawTranscriptForCounting + interimText;

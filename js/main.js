@@ -274,14 +274,14 @@ window.renderThemeGrid = async function() {
             }
             
             html += `
-            <div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${item.id}" data-category="${category}">
+            <div class="theme-card cursor-pointer rounded-2xl md:rounded-3xl overflow-hidden shadow-sm border border-gray-100 hover:border-pink-300 hover:shadow-md transition-all relative transform hover:-translate-y-1 bg-white flex flex-col" data-id="${window.picSpeakEscapeHTML(item.id)}" data-category="${window.picSpeakEscapeHTML(category)}">
                 ${badgeHtml}
                 <div class="relative w-full aspect-video bg-gray-50 shrink-0 pointer-events-none overflow-hidden">
-                    <img src="${item.data.imageSrc}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
+                    <img src="${window.picSpeakEscapeHTML(item.data.imageSrc)}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
                 <div class="p-3 md:p-4 text-center border-t border-gray-50 flex-1 flex flex-col items-center justify-center leading-tight bg-white pointer-events-none">
-                    <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${titleEn}</span>
-                    <span class="text-[10px] md:text-xs font-bold text-gray-400 line-clamp-1">${titleJa}</span>
+                    <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${window.picSpeakEscapeHTML(titleEn)}</span>
+                    <span class="text-[10px] md:text-xs font-bold text-gray-400 line-clamp-1">${window.picSpeakEscapeHTML(titleJa)}</span>
                 </div>
             </div>`;
         });
@@ -480,17 +480,17 @@ window.renderPrePracticeList = function() {
     }
 
     items.forEach(item => {
-        const escapedText = item.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        const escapedJa = (item.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const safeText = window.picSpeakEscapeHTML(item.text);
+        const safeJa = window.picSpeakEscapeHTML(item.ja || "");
         listContainer.innerHTML += `
             <div class="bg-white p-3 md:p-4 rounded-xl shadow-sm border border-gray-100 flex flex-col xl:flex-row xl:items-center justify-between gap-3 mb-3">
                 <div class="flex-1 pr-2">
-                    <div class="font-black text-gray-800 text-base md:text-lg leading-tight">${item.text}</div>
-                    <div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${item.ja || ""}</div>
+                    <div class="font-black text-gray-800 text-base md:text-lg leading-tight">${safeText}</div>
+                    <div class="text-xs md:text-sm font-bold text-gray-500 mt-1">${safeJa}</div>
                 </div>
                 <div class="flex items-center gap-2 shrink-0">
-                    <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 shadow-sm">🔊 聞く</button>
-                    <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-xs md:text-sm font-bold shadow-sm">🎤 練習</button>
+                    <button data-picspeak-action="tts" data-picspeak-text="${safeText}" class="px-3 py-2 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs md:text-sm font-bold text-gray-700 shadow-sm">🔊 聞く</button>
+                    <button data-picspeak-action="practice" data-picspeak-text="${safeText}" data-picspeak-ja="${safeJa}" class="px-3 py-2 bg-blue-50 text-blue-700 rounded-lg text-xs md:text-sm font-bold shadow-sm">🎤 練習</button>
                 </div>
             </div>`;
     });
@@ -543,23 +543,23 @@ window.renderClassroomList = function() {
     }
 
     targetData.sentences.forEach((sentence, index) => {
-        const escapedText = sentence.text.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-        const escapedJa = (sentence.ja || "").replace(/'/g, "\\'").replace(/"/g, "&quot;");
+        const safeText = window.picSpeakEscapeHTML(sentence.text);
+        const safeJa = window.picSpeakEscapeHTML(sentence.ja || "");
         const audioSrc = sentence.audioSrc || ''; 
 
         listContainer.innerHTML += `
             <div class="bg-gray-700/50 rounded-2xl p-4 border border-gray-600 hover:border-gray-500 transition-colors mb-4">
                 <div class="flex items-center justify-between mb-3">
                     <span class="text-gray-400 font-bold text-sm">Sentence ${index + 1}</span>
-                    <button onclick="window.playClassroomAudio('${audioSrc}', '${escapedText}')" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
+                    <button data-picspeak-action="classroom-audio" data-picspeak-src="${window.picSpeakEscapeHTML(audioSrc)}" data-picspeak-text="${safeText}" class="bg-pink-500 hover:bg-pink-400 text-white rounded-full w-10 h-10 flex items-center justify-center shadow-lg transition-transform hover:scale-110">
                         <svg class="w-5 h-5 ml-1" fill="currentColor" viewBox="0 0 20 20"><path d="M4 4l12 6-12 6z"></path></svg>
                     </button>
                 </div>
                 <div class="classroom-text-reveal cursor-pointer group" onclick="this.classList.toggle('revealed')">
                     <div class="text-gray-500 text-sm font-bold border-2 border-dashed border-gray-600 rounded-xl p-3 text-center group-[.revealed]:hidden hover:bg-gray-600/30">👀 クリックして英文を表示</div>
                     <div class="hidden group-[.revealed]:block">
-                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${sentence.text}</p>
-                        <p class="text-gray-400 text-sm font-bold">${sentence.ja}</p>
+                        <p class="text-white font-black text-lg md:text-xl leading-tight mb-2">${safeText}</p>
+                        <p class="text-gray-400 text-sm font-bold">${safeJa}</p>
                     </div>
                 </div>
             </div>
@@ -586,7 +586,42 @@ window.playClassroomAudio = function(audioSrc, fallbackText) {
 // ==========================================
 // ★ メインゲーム起動ロジック
 // ==========================================
+document.addEventListener('click', function(event) {
+    const button = event.target.closest(
+        'button[data-picspeak-action]'
+    );
+    if (!button) return;
+
+    const type = button.dataset.picspeakAction;
+    const text = button.dataset.picspeakText || '';
+    const ja = button.dataset.picspeakJa || '';
+
+    if (type === 'tts') {
+        window.playResultTTS(text);
+    } else if (type === 'practice') {
+        window.openPractice(text, ja);
+    } else if (type === 'classroom-audio') {
+        window.playClassroomAudio(
+            button.dataset.picspeakSrc || '',
+            text
+        );
+    }
+});
+
 window.startGameWithTheme = async function(id) {
+    // End the previous attempt before resetting game state.
+    if (window.myRecognition) {
+        window.myRecognition.onend = null;
+    }
+    if (typeof window.stopSpeech === 'function') {
+        window.stopSpeech();
+    }
+    clearInterval(window.gameTimer);
+    clearInterval(window.supportInterval);
+    window.gameTimer = null;
+    window.supportInterval = null;
+    window.isRecording = false;
+
     const detUi = document.getElementById('detective-ui');
     if (detUi) detUi.remove(); 
     
@@ -667,6 +702,7 @@ window.startGameWithTheme = async function(id) {
     if(timerText) timerText.textContent = `${window.timeLeft}s`; 
     
     window.timeElapsed = 0;
+    window.__picSpeakHistorySaved = false;
     window.rawTranscriptForCounting = "";
     window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
@@ -756,6 +792,20 @@ window.changeTranscriptSize = function(delta) {
 };
 
 window.finishGameAndShowResult = function() {
+    clearInterval(window.gameTimer);
+    window.gameTimer = null;
+    clearInterval(window.supportInterval);
+    window.supportInterval = null;
+
+    if (window.appState?.selectedMode === 'mosaic' && window.MosaicGame) {
+        window.MosaicGame.stop();
+    }
+    if (window.appState?.selectedMode === 'detective' && window.DetectiveGame) {
+        window.DetectiveGame.isActive = false;
+        clearInterval(window.DetectiveGame.timerInterval);
+        window.DetectiveGame.timerInterval = null;
+    }
+
     try {
         if(typeof window.stopSpeech === 'function') window.stopSpeech();
         window.isRecording = false;
@@ -794,6 +844,9 @@ window.finishGameAndShowResult = function() {
 };
 
 window.renderSnapshotResult = function() {
+    const safeHTML = window.picSpeakEscapeHTML;
+    const actionArg = value =>
+        safeHTML(JSON.stringify(String(value ?? '')));
     let stats = null;
     if(typeof getCompletionStats === 'function') {
         stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
@@ -868,18 +921,18 @@ window.renderSnapshotResult = function() {
             cat.cleared.forEach(item => {
                 const safeText = item.text ? String(item.text) : "";
                 const safeJa = item.ja ? String(item.ja) : "";
-                const escapedText = safeText.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                const escapedJa = safeJa.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const escapedText = actionArg(safeText);
+                const escapedJa = actionArg(safeJa);
                 
                 clearedItemsHtml += `
                     <div class="flex flex-col xl:flex-row xl:items-center justify-between gap-2 mb-2 ${style.light} p-3 rounded-xl border ${style.border} shadow-sm">
                         <div class="flex-1 pr-1">
-                            <div class="text-sm sm:text-base font-black ${style.text} tracking-wide leading-tight">${safeText} <span class="text-lg ml-1">✅</span></div>
-                            <div class="text-xs sm:text-sm font-bold ${style.text} opacity-80 mt-1">${safeJa}</div>
+                            <div class="text-sm sm:text-base font-black ${style.text} tracking-wide leading-tight">${safeHTML(safeText)} <span class="text-lg ml-1">✅</span></div>
+                            <div class="text-xs sm:text-sm font-bold ${style.text} opacity-80 mt-1">${safeHTML(safeJa)}</div>
                         </div>
                         <div class="flex flex-wrap gap-2 shrink-0 mt-2 xl:mt-0 justify-end">
-                            <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-1.5 bg-white/80 hover:bg-white rounded-lg text-xs sm:text-sm font-bold ${style.text} transition-colors shadow-sm border ${style.border}">🔊 発音</button>
-                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
+                            <button onclick="window.playResultTTS(${escapedText})" class="px-3 py-1.5 bg-white/80 hover:bg-white rounded-lg text-xs sm:text-sm font-bold ${style.text} transition-colors shadow-sm border ${style.border}">🔊 発音</button>
+                            <button onclick="window.openPractice(${escapedText}, ${escapedJa})" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
                         </div>
                     </div>`;
             });
@@ -888,20 +941,20 @@ window.renderSnapshotResult = function() {
                 const isHidden = index >= previewCount ? "hidden missed-item-card" : "missed-item-card";
                 const safeText = item.text ? String(item.text) : "";
                 const safeJa = item.ja ? String(item.ja) : "";
-                const escapedText = safeText.replace(/'/g, "\\'").replace(/"/g, "&quot;");
-                const escapedJa = safeJa.replace(/'/g, "\\'").replace(/"/g, "&quot;");
+                const escapedText = actionArg(safeText);
+                const escapedJa = actionArg(safeJa);
                 missedItemsHtml += `
                     <div class="${isHidden} flex flex-col xl:flex-row xl:items-center justify-between gap-2 mb-2 bg-white p-3 rounded-xl border ${style.border} shadow-sm">
                         <div class="flex items-start gap-2 flex-1">
                             <span class="${style.text} font-black text-lg sm:text-xl shrink-0 mt-0.5">💡</span>
                             <div class="flex-1 pr-1">
-                                <div class="text-sm sm:text-base font-black text-gray-800 tracking-wide leading-tight">${safeText}</div>
-                                <div class="text-xs font-bold text-gray-500 mt-1">${safeJa}</div>
+                                <div class="text-sm sm:text-base font-black text-gray-800 tracking-wide leading-tight">${safeHTML(safeText)}</div>
+                                <div class="text-xs font-bold text-gray-500 mt-1">${safeHTML(safeJa)}</div>
                             </div>
                         </div>
                         <div class="flex flex-wrap gap-2 shrink-0 mt-2 xl:mt-0 justify-end">
-                            <button onclick="window.playResultTTS('${escapedText}')" class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs sm:text-sm font-bold text-gray-700 transition-colors shadow-sm border border-gray-200">🔊 発音</button>
-                            <button onclick="window.openPractice('${escapedText}', '${escapedJa}')" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
+                            <button onclick="window.playResultTTS(${escapedText})" class="px-3 py-1.5 bg-gray-100 hover:bg-gray-200 rounded-lg text-xs sm:text-sm font-bold text-gray-700 transition-colors shadow-sm border border-gray-200">🔊 発音</button>
+                            <button onclick="window.openPractice(${escapedText}, ${escapedJa})" class="px-3 py-1.5 bg-blue-50 hover:bg-blue-100 rounded-lg text-xs sm:text-sm font-bold text-blue-700 transition-colors shadow-sm border border-blue-200">🎤 練習</button>
                         </div>
                     </div>`;
             });
@@ -918,7 +971,7 @@ window.renderSnapshotResult = function() {
             categoryHtml += `
                 <div class="bg-white rounded-2xl shadow-sm border border-gray-200 relative transition-all flex flex-col h-auto">
                     <div class="absolute top-0 left-0 w-1.5 h-full ${style.bar} rounded-l-2xl"></div>
-                    <div class="flex justify-between items-center p-3 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors" onclick="document.getElementById('cat-body-${key}').classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
+                    <div class="flex justify-between items-center p-3 sm:p-4 cursor-pointer hover:bg-gray-50 transition-colors" onclick="this.nextElementSibling.classList.toggle('hidden'); this.querySelector('.chevron').classList.toggle('rotate-180');">
                         <div class="pl-2">
                             <h4 class="font-black text-gray-800 text-base sm:text-lg">${dict.title}</h4>
                             <p class="text-[10px] sm:text-xs font-bold text-gray-500 mt-0.5">${dict.advice}</p>
@@ -928,7 +981,7 @@ window.renderSnapshotResult = function() {
                             <svg class="chevron w-5 h-5 text-gray-400 transform transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="3" d="M19 9l-7 7-7-7"></path></svg>
                         </div>
                     </div>
-                    <div id="cat-body-${key}" class="px-3 sm:px-4 pb-4 flex-1 flex flex-col">
+                    <div id="cat-body-${safeHTML(key)}" class="px-3 sm:px-4 pb-4 flex-1 flex flex-col">
                         <div class="flex items-center gap-2 mb-3 pl-2">
                             <div class="w-full bg-gray-100 rounded-full h-2 overflow-hidden border border-gray-200 shadow-inner">
                                 <div class="${style.bar} h-2 rounded-full transition-all duration-1000" style="width: ${catMatchRate}%"></div>
@@ -972,7 +1025,7 @@ window.renderSnapshotResult = function() {
                             <button onclick="window.changeTranscriptSize(1)" class="w-6 h-6 bg-white border border-gray-300 rounded-full text-gray-600 font-black hover:bg-gray-100 shadow-sm flex items-center justify-center transition-colors">＋</button>
                         </div>
                     </div>
-                    <div id="final-transcript-text" class="font-medium text-gray-700 italic flex-1 overflow-y-auto pr-2 custom-scrollbar" style="font-size: 0.95rem; line-height: 1.5;">"${finalTranscript || 'No speech recorded.'}"</div>
+                    <div id="final-transcript-text" class="font-medium text-gray-700 italic flex-1 overflow-y-auto pr-2 custom-scrollbar" style="font-size: 0.95rem; line-height: 1.5;">"${safeHTML(finalTranscript) || 'No speech recorded.'}"</div>
                 </div>
             </div>
 
@@ -995,6 +1048,22 @@ window.renderSnapshotResult = function() {
     if (typeof window.setupSubmitButton === 'function') {
         const finalScoreToSubmit = stats ? stats.completionRate : 0;
         window.setupSubmitButton(finalScoreToSubmit);
+    }
+
+    // Save each completed picture-game attempt once.
+    if (!window.__picSpeakHistorySaved &&
+        typeof window.saveLearningLog === 'function') {
+        window.__picSpeakHistorySaved = true;
+        window.saveLearningLog({
+            date: new Date().toISOString(),
+            imageId: window.currentTheme?.id || window.tempSelectedThemeId || 'unknown',
+            mode: window.appState.selectedMode,
+            level: window.appState.selectedLevel,
+            score: Number(document.getElementById('scoreDisplay')?.textContent) || 0,
+            completion: stats ? stats.completionRate : 0,
+            words: totalWords,
+            wpm: wpm
+        });
     }
 };
 
