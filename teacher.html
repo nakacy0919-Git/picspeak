@@ -165,25 +165,47 @@
 
             // フォームURLから「フォームID」を抽出する正規表現
             // 例: https://docs.google.com/forms/d/e/1FAIpQLScXXXXXX/viewform -> 1FAIpQLScXXXXXX
-            const formIdMatch = formUrlInput.match(/\/d\/e\/([a-zA-Z0-9_-]+)\//);
-            let formId = "";
-            if (formIdMatch && formIdMatch[1]) {
-                formId = formIdMatch[1];
-            } else {
-                // 万が一うまく抽出できなかった場合はそのままIDとして扱う（直接IDを入力した場合など）
-                formId = formUrlInput;
+            let formId = '';
+
+            try {
+                if (/^https?:\/\//i.test(formUrlInput)) {
+                    const parsed = new URL(formUrlInput);
+                    const match = /^\/forms\/d\/e\/([A-Za-z0-9_-]{20,200})\/viewform\/?$/.exec(parsed.pathname);
+
+                    if (parsed.protocol !== 'https:' ||
+                        parsed.hostname !== 'docs.google.com' || !match) {
+                        throw new Error('Invalid Google Forms URL');
+                    }
+
+                    formId = match[1];
+                } else {
+                    formId = formUrlInput;
+                }
+
+                if (!/^[A-Za-z0-9_-]{20,200}$/.test(formId)) {
+                    throw new Error('Invalid form ID');
+                }
+
+                if (!/^[A-Za-z0-9_-]{1,80}$/.test(themeId) ||
+                    !['elementary', 'junior_high', 'high_school'].includes(levelId)) {
+                    throw new Error('Invalid theme or level');
+                }
+
+            } catch (error) {
+                alert("Googleフォームの公開URL・画像・レベルを確認してください。");
+                return;
             }
 
-            // ベースとなるURL（開発中はLive ServerのURL、本番は実際のドメイン）
-            const baseUrl = window.location.href.replace('teacher.html', 'play.html');
-            
-            // パラメータを結合（トップ画面になるように調整）
-            const studentUrl = `${baseUrl}?mode=snapshot&theme=${themeId}&level=${levelId}&formId=${formId}`;
+            const studentUrl = new URL('play.html', window.location.href);
+            studentUrl.searchParams.set('mode', 'snapshot');
+            studentUrl.searchParams.set('theme', themeId);
+            studentUrl.searchParams.set('level', levelId);
+            studentUrl.searchParams.set('formId', formId);
 
-            // 結果を表示
+            // ?????
             const resultArea = document.getElementById('result-area');
             const outputUrl = document.getElementById('output-url');
-            outputUrl.value = studentUrl;
+            outputUrl.value = studentUrl.toString();
             resultArea.classList.remove('hidden');
         });
 

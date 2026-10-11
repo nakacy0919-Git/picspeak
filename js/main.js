@@ -1605,7 +1605,21 @@ window.checkUrlParameters = function() {
     const levelId = urlParams.get('level');
     const formId = urlParams.get('formId');
 
-    if (themeId && formId) {
+    if (themeId !== null || formId !== null) {
+        const validTheme = /^[A-Za-z0-9_-]{1,80}$/.test(themeId || '');
+        const validForm = /^[A-Za-z0-9_-]{20,200}$/.test(formId || '');
+        const validLevel = levelId === null ||
+            ['elementary', 'junior_high', 'high_school'].includes(levelId);
+        const validMode = !urlParams.has('mode') ||
+            urlParams.get('mode') === 'snapshot';
+        const unique = ['theme', 'formId', 'level', 'mode']
+            .every(key => urlParams.getAll(key).length <= 1);
+
+        if (!validTheme || !validForm || !validLevel ||
+            !validMode || !unique) {
+            alert("課題リンクが正しくありません。先生に確認してください。");
+            return;
+        }
         window.appState.selectedMode = 'snapshot';
         window.appState.selectedLevel = levelId || 'elementary';
         window.appState.formId = formId; 
@@ -1651,6 +1665,10 @@ window.setupSubmitButton = function(score) {
     
     if (formId && submitBtn) {
         submitBtn.classList.remove('hidden');
+        submitBtn.disabled = false;
+        submitBtn.textContent = "📤 先生に提出";
+        submitBtn.classList.remove('from-gray-300', 'to-gray-400');
+        submitBtn.classList.add('from-green-400', 'to-emerald-500');
         submitBtn.onclick = null;
         
         submitBtn.onclick = () => {
@@ -1692,11 +1710,11 @@ window.setupSubmitButton = function(score) {
                 mode: 'no-cors',
                 body: formData
             }).then(() => {
-                submitBtn.innerHTML = '✅ 提出完了！';
+                submitBtn.textContent = "📨 送信試行済み（受信未確認）";
                 submitBtn.classList.replace('from-green-400', 'from-gray-300');
                 submitBtn.classList.replace('to-emerald-500', 'to-gray-400');
                 localStorage.setItem(playKey, playCount + 1); 
-                alert('先生にスコアが送信されました！よくがんばりましたね！');
+                alert("送信処理を試みましたが、Googleフォームでの受信は確認できません。必要に応じて先生に確認してください。");
             }).catch(err => {
                 submitBtn.innerHTML = '❌ 送信失敗（もう一度押す）';
                 submitBtn.disabled = false;
