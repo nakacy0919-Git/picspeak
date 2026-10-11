@@ -259,6 +259,14 @@ window.renderThemeGrid = async function() {
             let category = item.data.category || 'other'; 
             let titleEn = item.data.titleEn || 'No Title';
             let titleJa = item.data.titleJa || '名称未設定';
+            // PICSPEAK_LEGACY_TITLE_DISPLAY_V1
+            const legacyTitle = category === 'other' && /^\d+$/.test(String(item.id)) && window.appState.selectedMode === 'snapshot';
+            const legacyTitleClamp = legacyTitle ? 'line-clamp-2' : 'line-clamp-1';
+            if (legacyTitle) {
+                const englishExample = titleEn;
+                titleEn = titleJa;
+                titleJa = englishExample;
+            }
             
             if (window.appState.selectedMode === 'mosaic') {
                 imageFilterClass = "blur-2xl scale-110"; 
@@ -280,7 +288,7 @@ window.renderThemeGrid = async function() {
                     <img src="${window.picSpeakEscapeHTML(item.data.imageSrc)}" loading="lazy" decoding="async" class="absolute inset-0 w-full h-full object-cover transition-all duration-500 ${imageFilterClass}">
                 </div>
                 <div class="p-3 md:p-4 text-center border-t border-gray-50 flex-1 flex flex-col items-center justify-center leading-tight bg-white pointer-events-none">
-                    <span class="text-sm md:text-base font-black text-gray-800 line-clamp-1 mb-0.5">${window.picSpeakEscapeHTML(titleEn)}</span>
+                    <span class="text-sm md:text-base font-black text-gray-800 ${legacyTitleClamp} mb-0.5">${window.picSpeakEscapeHTML(titleEn)}</span>
                     <span class="text-[10px] md:text-xs font-bold text-gray-400 line-clamp-1">${window.picSpeakEscapeHTML(titleJa)}</span>
                 </div>
             </div>`;

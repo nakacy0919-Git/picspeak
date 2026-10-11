@@ -135,7 +135,7 @@
                         const themeData = Array.isArray(data) ? data[0] : data;
                         
                         // ★ undefined にならないように修正
-                        const titleJa = themeData.titleJa || '名称未設定';
+                        const titleJa = themeData.titleJa || themeData.description || id;
                         const titleEn = themeData.titleEn || id;
 
                         // 旧教材（category: other）は除外するなどの条件が必要ならここで判定
@@ -231,5 +231,122 @@
         // ページ読み込み時にテーマ一覧を取得
         window.addEventListener('DOMContentLoaded', loadThemes);
     </script>
+
+<script id="picspeak-teacher-form-memory-v1">
+(() => {
+  const input = document.getElementById('input-form-url');
+  if (!input) return;
+
+  const key = 'picspeak_teacher_google_form_url_v1';
+
+  const row = document.createElement('div');
+  row.className = 'flex flex-wrap items-center gap-3 mt-3';
+
+  const saveButton = document.createElement('button');
+  saveButton.type = 'button';
+  saveButton.className =
+    'bg-pink-500 hover:bg-pink-600 text-white font-bold ' +
+    'px-5 py-2.5 rounded-xl shadow-sm text-sm transition-colors';
+  saveButton.textContent =
+    '\u{1F4BE} \u3053\u306e\u30d5\u30a9\u30fc\u30e0\u3092\u4fdd\u5b58';
+
+  const status = document.createElement('span');
+  status.className = 'text-xs font-bold';
+  status.setAttribute('role', 'status');
+
+  row.append(saveButton, status);
+  input.insertAdjacentElement('afterend', row);
+
+  function getSaved() {
+    try {
+      return localStorage.getItem(key) || '';
+    } catch {
+      return '';
+    }
+  }
+
+  function showStatus(message, color) {
+    status.textContent = message;
+    status.style.color = color;
+  }
+
+  function updateStatus() {
+    const saved = getSaved();
+    const current = input.value.trim();
+
+    if (saved && current === saved) {
+      showStatus(
+        '\u2705 \u4fdd\u5b58\u6e08\u307f',
+        '#15803d'
+      );
+    } else if (current !== saved) {
+      showStatus(
+        '\u270f\ufe0f \u672a\u4fdd\u5b58\u306e\u5909\u66f4\u304c\u3042\u308a\u307e\u3059',
+        '#b45309'
+      );
+    } else {
+      showStatus(
+        '\u672a\u767b\u9332',
+        '#64748b'
+      );
+    }
+  }
+
+  function isValidForm(value) {
+    if (/^https?:\/\//i.test(value)) {
+      try {
+        const url = new URL(value);
+        return url.protocol === 'https:' &&
+          url.hostname === 'docs.google.com' &&
+          /^\/forms\/d\/e\/[A-Za-z0-9_-]{20,200}\/viewform\/?$/
+            .test(url.pathname);
+      } catch {
+        return false;
+      }
+    }
+
+    return /^[A-Za-z0-9_-]{20,200}$/.test(value);
+  }
+
+  const previous = getSaved();
+  if (previous && !input.value.trim()) {
+    input.value = previous;
+  }
+
+  input.addEventListener('input', updateStatus);
+
+  saveButton.addEventListener('click', () => {
+    const value = input.value.trim();
+
+    if (!isValidForm(value)) {
+      showStatus(
+        '\u26a0\ufe0f Google\u30d5\u30a9\u30fc\u30e0\u306eURL\u3092\u78ba\u8a8d\u3057\u3066\u304f\u3060\u3055\u3044',
+        '#dc2626'
+      );
+      return;
+    }
+
+    try {
+      localStorage.setItem(key, value);
+
+      if (localStorage.getItem(key) !== value) {
+        throw Error('Storage verification failed');
+      }
+
+      input.value = value;
+      updateStatus();
+    } catch (error) {
+      console.error(error);
+      showStatus(
+        '\u274c \u4fdd\u5b58\u3067\u304d\u307e\u305b\u3093\u3067\u3057\u305f',
+        '#dc2626'
+      );
+    }
+  });
+
+  updateStatus();
+})();
+</script>
+
 </body>
 </html>
