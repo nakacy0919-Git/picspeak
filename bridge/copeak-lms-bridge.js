@@ -22,7 +22,7 @@
     if(!banner){banner=document.createElement('aside');banner.setAttribute('role','status');banner.style.cssText='position:fixed;bottom:12px;left:12px;right:12px;z-index:2147483646;padding:11px 13px;border-radius:11px;color:white;font:700 13px/1.6 system-ui;box-shadow:0 4px 18px #0003;text-align:center';document.body.append(banner);}
     banner.style.background=error?'#a51e38':'#1c4d98';banner.replaceChildren(document.createTextNode('Copeak Classroom · '+message));
   }
-  if(!VALID_ID.test(assignment)||!parentOrigin||!/^https?:\/\/[^/]+$/.test(parentOrigin)||!expected[mode]||![30,45,60].includes(seconds)||!location.pathname.endsWith(expected[mode])){
+  if(!VALID_ID.test(assignment)||!parentOrigin||!/^https?:\/\/[^/]+$/.test(parentOrigin)||!expected[mode]||!(mode==='picflash'?[3,5,10,30,45,60]:[30,45,60]).includes(seconds)||!location.pathname.endsWith(expected[mode])){
     notice('課題リンクが無効です。Classroomから起動し直してください。',true);return;
   }
   const uuid=()=>crypto.randomUUID();
@@ -132,6 +132,10 @@
       if(en){document.querySelectorAll('.pf-lang-cb:checked').forEach(e=>{e.checked=false;e.dispatchEvent(new Event('change',{bubbles:true}));});en.checked=true;en.dispatchEvent(new Event('change',{bubbles:true}));}
       document.querySelector('.pf-mode-btn[data-mode="trial"]')?.click();
       document.querySelector('.pf-count-btn[data-count="10"]')?.click();
+      const perCard=({30:3,45:5,60:10})[seconds]||seconds;
+      const timerButton=document.querySelector('.pf-time-btn[data-time="'+perCard+'"]');
+      if(!timerButton)throw Error('PIC FLASH timer option missing');
+      timerButton.click();
       const index=window.CATEGORIES_DATA.findIndex(x=>x.id===content);
       if(index<0)throw Error('カテゴリIDがありません。');
       document.querySelectorAll('#pf-category-grid button')[index]?.click();
