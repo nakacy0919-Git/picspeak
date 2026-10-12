@@ -38,6 +38,9 @@ window.OralQuestGame = {
     init: function() {
         this.currentStage = 1;
         this.subStage = "reading";
+        this.lmsReadingAccuracy=null;this.lmsReadingWpm=null;
+        this.lmsQA1Rating=null;this.lmsPictureCompletion=null;this.lmsQA2Rating=null;
+        this.lmsTotalWords=0;this.lmsFinished=false;
         this.transcript = "";
         this.interimTranscript = "";
         this.timeElapsed = 0;
@@ -349,6 +352,7 @@ window.OralQuestGame = {
         let wpm = 0;
         if (this.timeElapsed > 0) wpm = Math.round(spokenWords.length / (this.timeElapsed / 60));
 
+        this.lmsReadingAccuracy=accuracy;this.lmsReadingWpm=wpm;this.lmsTotalWords+=spokenWords.length;
         document.getElementById('oq-accuracy-text').textContent = accuracy;
         document.getElementById('oq-wpm-text').textContent = wpm;
         
@@ -389,6 +393,7 @@ window.OralQuestGame = {
             starsHtml = "⭐☆☆"; feedbackText = "もう少し！模範解答を確認しよう。";
         }
 
+        this.lmsQA1Rating=matchCount>=3?2:matchCount>=1?1:0;this.lmsTotalWords+=spokenWords.length;
         const modelsHtml = this.q1ModelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-indigo-300">${ans}</div>`).join('');
 
         const resEl = document.getElementById('oq-q1-result');
@@ -417,6 +422,8 @@ window.OralQuestGame = {
         }
         
         let completionRate = stats ? stats.completionRate : 0;
+        this.lmsPictureCompletion=completionRate;
+        this.lmsTotalWords+=(this.transcript+' '+this.interimTranscript).trim().split(/\s+/).filter(Boolean).length;
         let score = document.getElementById('oq-s2-live-score').textContent;
         
         let feedbackText = completionRate >= 80 ? "Excellent! 素晴らしい描写力です！" : 
@@ -469,6 +476,7 @@ window.OralQuestGame = {
             starsHtml = "⭐☆☆"; feedbackText = "もう少し！主語と動詞を使って、フルセンテンスで答えよう。";
         }
 
+        this.lmsQA2Rating=spokenWords.length>=5&&matchCount>=1?2:spokenWords.length>=3?1:0;this.lmsTotalWords+=spokenWords.length;
         const modelsHtml = (this.currentQ2 && this.currentQ2.modelAnswers) 
             ? this.currentQ2.modelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-purple-300">${ans}</div>`).join('')
             : "";
@@ -491,6 +499,7 @@ window.OralQuestGame = {
     },
 
     showFinalResult: function() {
+        this.lmsFinished=true;
         const accuracy = parseInt(document.getElementById('oq-accuracy-text')?.textContent || "0");
         const wpm = parseInt(document.getElementById('oq-wpm-text')?.textContent || "0");
         const s2Score = parseInt(document.getElementById('oq-s2-live-score')?.textContent || "0");

@@ -11,7 +11,7 @@
   const expected={snapshot:'play.html',mosaic:'play.html',detective:'play.html',oralquest:'play.html',story:'story.html',picflash:'picflash.html'};
   // Remove the nonsecret launch hint from browser history at startup.
   history.replaceState(history.state,'',location.pathname+location.search);
-  const ENDPOINT='https://sxcbudhcxiblpdzpgfep.supabase.co/rest/v1/rpc/picspeak_finish_attempt_v2';
+  const ENDPOINT='https://sxcbudhcxiblpdzpgfep.supabase.co/rest/v1/rpc/picspeak_finish_attempt_v3';
   const API_KEY='sb_publishable_X01jWRkXutwwxhFAud3VwA_UGAYw05l'; // public, NOT service_role
   const cacheKey='copeak-picspeak-pending-v1';
   const VALID_ID=/^[a-f0-9]{8}(?:-[a-f0-9]{4}){3}-[a-f0-9]{12}$/i;
@@ -44,7 +44,7 @@
     const now=Date.now();if(now-lastFinished<1300)return;lastFinished=now;
     const payload={p_token:token,p_run_id:uuid(),p_score_raw:result.score_raw??null,p_score_percent:result.score_percent??null,
       p_completion_percent:result.completion_percent??null,p_wpm:result.wpm??null,
-      p_word_count:result.word_count??null,p_duration_seconds:result.duration_seconds??null};
+      p_word_count:result.word_count??null,p_duration_seconds:result.duration_seconds??null,p_metrics:result.metrics??{}};
     runCount++;
     try{await request(payload);notice('結果を保存しました（'+runCount+'回）。Classroomに戻ると成績を確認できます。');}
     catch(e){const x=pending();x.push(payload);setPending(x);notice('送信に失敗したため、このタブに結果を一時保存しました。再送が必要です。',true);console.warn('PicSpeak attempt sync failed',e);}
@@ -59,7 +59,7 @@
       const found=window.DetectiveGame?.foundIds?.size||0;
       const total=Number(window.currentTheme?.totalDifferences)||0;
       const score=total>0?round(num(100*found/total)):0;
-      return {score_raw:found,score_percent:score,completion_percent:score,word_count:words,wpm,duration_seconds:sec};
+      return {score_raw:found,score_percent:score,completion_percent:score,word_count:words,wpm,duration_seconds:sec,metrics:{found,total}};
     }
     if(mode==='mosaic'){
       const target=Number(window.MosaicGame?.targetWords)||50;
@@ -67,11 +67,17 @@
       return {score_raw:num(document.getElementById('scoreDisplay')?.textContent,1000000),score_percent:round(completion??score),completion_percent:round(completion??score),word_count:words,wpm,duration_seconds:sec};
     }
     if(mode==='oralquest'){
-      const accuracy=num(parseFloat(document.getElementById('oq-accuracy-text')?.textContent));
-      const imageScore=num(document.getElementById('oq-s2-live-score')?.textContent);
-      const mean=round(((accuracy||0)+(imageScore||0))/2);
-      const oralWpm=num(document.getElementById('oq-wpm-text')?.textContent,1000);
-      return {score_raw:mean,score_percent:accuracy,completion_percent:accuracy,wpm:oralWpm,word_count:words,duration_seconds:sec};
+      const q=window.OralQuestGame;
+      const reading=num(q?.lmsReadingAccuracy),picture=num(q?.lmsPictureCompletion);
+      const qa1=num(q?.lmsQA1Rating,2),qa2=num(q?.lmsQA2Rating,2);
+      if(!q?.lmsFinished || reading==null || picture==null || qa1==null || qa2==null){
+        notice('ORAL QUESTの段階別成績を取得できませんでした。',true);return null;
+      }
+      const mean=round((reading+picture)/2);
+      const oralWpm=num(q?.lmsReadingWpm,1000);
+      return {score_raw:null,score_percent:mean,completion_percent:picture,
+        wpm:oralWpm,word_count:num(q?.lmsTotalWords,10000),duration_seconds:null,
+        metrics:{reading_accuracy:reading,picture_completion:picture,qa1_rating:qa1,qa2_rating:qa2,stages_completed:3}};
     }
     const completionPct=round(completion??0);
     // PicSpeak Score is a raw game-point value, NOT an accuracy/percentage.
@@ -92,17 +98,22 @@
     });
     const score=targets?round(num(hits/targets*100)):0;
     const sec=Number(window.pssSettings?.retellingTime||20)*scenes.length;
-    return {score_raw:score,score_percent:score,completion_percent:score,word_count:words,wpm:sec?round(num(words*60/sec,1000)):null,duration_seconds:sec};
+    return {score_raw:null,score_percent:score,completion_percent:score,word_count:words,wpm:sec?round(num(words*60/sec,1000)):null,duration_seconds:sec,metrics:{targets_found:hits,targets_total:targets,scenes_completed:scenes.length}};
   }
   function flashResult(){
-    let item;try{item=JSON.parse(localStorage.getItem('picflash_history')||'[]')[0];}catch{}
-    const category=window.CATEGORIES_DATA?.find(x=>x.id===content)?.title;
-    if(!item||!category||item.category!==category||Number(item.count)!==10||item.language!=='en-US'){
-      notice('英語・10問・指定カテゴリで挑戦した結果だけを保存します。',true);return null;
+    const stats=window.PicFlashLmsStats;
+    if(!stats || stats.category!==content || stats.mode!=='trial' ||
+       stats.total!==10 || stats.languages?.length!==1 || stats.languages[0]!=='en-US' ||
+       !Number.isInteger(stats.correct) || !Number.isInteger(stats.skipped) ||
+       stats.correct<0 || stats.skipped<0 || stats.correct+stats.skipped!==10){
+      notice('PIC FLASHの10問・英語チャレンジ結果を検証できません。',true);return null;
     }
-    const sec=num(document.getElementById('pf-final-time')?.textContent||item.time,36000);
-    if(sec==null)return null;
-    return {score_percent:null,completion_percent:100,word_count:null,wpm:null,duration_seconds:round(sec)};
+    const sec=num(stats.time,36000);
+    if(sec==null || sec<=0)return null;
+    const rate=stats.correct*10;
+    return {score_percent:rate,completion_percent:rate,word_count:null,wpm:null,
+      duration_seconds:round(sec),metrics:{correct:stats.correct,skipped:stats.skipped,
+        total:10,language:'en-US',trial:true}};
   }
   function wrap(name,toResult){const original=window[name];if(typeof original!=='function')throw Error(name+' が見つかりません。');
     window[name]=function(...args){const out=original.apply(this,args);try{const result=toResult();if(result)void save(result);}catch(e){notice('結果の計測に失敗しました。',true);console.error(e);}return out;};

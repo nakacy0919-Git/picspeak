@@ -74,6 +74,7 @@ const pfState = {
     startTime: 0,
     cardStartTime: 0,    
     penalty: 0,
+    correctCount: 0, skippedCount: 0,
     timerId: null,
     isPlaying: false,
     hasAnswered: false,
@@ -390,7 +391,8 @@ async function startPfGame() {
 
 function startTrialMode() {
     pfState.currentIndex = 0;
-    pfState.penalty = 0; 
+    pfState.penalty = 0;
+    pfState.correctCount=0;pfState.skippedCount=0;window.PicFlashLmsStats=null;
     pfState.comboCount = 0;
     pfState.isPlaying = false; 
     pfState.hasAnswered = false;
@@ -616,6 +618,7 @@ function revealAllHints(status, targetIndex = null) {
 
 function handleCorrect() {
     if (pfState.hasAnswered || pfState.isTransitioning) return;
+    pfState.correctCount++;
     pfState.hasAnswered = true;
     pfState.isTransitioning = true;
     pfState.comboCount++;
@@ -678,7 +681,8 @@ function handleCorrect() {
 }
 
 function handleSkip() {
-    if (pfState.hasAnswered || pfState.isTransitioning) return; 
+    if (pfState.hasAnswered || pfState.isTransitioning) return;
+    pfState.skippedCount++;
     pfState.hasAnswered = true;
     pfState.isTransitioning = true;
     pfState.comboCount = 0; 
@@ -803,6 +807,9 @@ function endPfGame() {
     
     const finalTime = (Date.now() - pfState.startTime) / 1000 + pfState.penalty;
     document.getElementById('pf-final-time').innerText = finalTime.toFixed(2);
+    window.PicFlashLmsStats={correct:pfState.correctCount,skipped:pfState.skippedCount,
+      total:pfState.cards.length,time:finalTime,category:pfState.category,mode:pfState.mode,
+      languages:[...pfState.languages]};
     
     const pbBadge = document.getElementById('pf-pb-badge');
     const resultBox = document.getElementById('pf-result-box');
