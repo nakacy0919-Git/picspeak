@@ -336,6 +336,7 @@ window.finishGameAndShowResult = function() {
     const scoreDisplay = document.getElementById('scoreDisplay');
     const wordCountDisplay = document.getElementById('wordCountDisplay');
     const finalScore = scoreDisplay ? scoreDisplay.textContent : "0";
+    const finishedTranscript = window.rawTranscriptForCounting || "";
     const finalWordCount = wordCountDisplay ? parseInt(wordCountDisplay.textContent) || 0 : 0;
     let wpm = window.timeElapsed > 0 ? Math.round(finalWordCount / (window.timeElapsed / 60)) : 0;
     const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
@@ -412,7 +413,7 @@ window.finishGameAndShowResult = function() {
                     
                     <div class="bg-gray-50 rounded-2xl md:rounded-3xl p-4 md:p-5 border border-gray-200 flex flex-col shadow-inner min-h-[120px] lg:flex-1 shrink-0 relative">
                         <span class="text-gray-400 font-extrabold text-xs tracking-widest mb-2 block uppercase">Your Transcript</span>
-                        <div class="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-4 lg:line-clamp-none flex-1 lg:overflow-y-auto">${window.highlightGlobalText(window.rawTranscriptForCounting) || "No words recorded."}</div>
+                        <div class="text-base md:text-lg lg:text-xl font-medium text-gray-700 leading-relaxed line-clamp-3 md:line-clamp-4 lg:line-clamp-none flex-1 lg:overflow-y-auto">${window.highlightGlobalText(finishedTranscript) || "No words recorded."}</div>
                         <button onclick="window.openFullTranscript()" class="mt-2 text-xs md:text-sm font-black text-blue-500 hover:text-blue-600 transition-colors self-end flex items-center gap-1 lg:hidden">全て表示する <span class="text-lg">▶</span></button>
                     </div>
                 </div>
@@ -421,6 +422,7 @@ window.finishGameAndShowResult = function() {
                     <div class="flex-1 bg-white rounded-2xl md:rounded-3xl shadow-lg border border-gray-100 flex flex-col lg:overflow-hidden lg:h-full">
                         <div class="bg-gray-100 px-4 md:px-6 py-3 md:py-4 border-b border-gray-200 flex items-center justify-between shrink-0"><h3 class="text-base md:text-xl font-black text-gray-700 tracking-wider">💡 NEXT TARGETS</h3></div>
                         <div class="p-4 md:p-6 lg:overflow-y-auto flex-1">
+                            <p class="text-xs text-gray-500 mb-4">目標表現との一致を示します。文法・論理性・発音の正確さまでは採点していません。主語＋動詞で伝え、理由や説明を加えてみましょう。</p>
                             ${window.createFeedbackSection('Words', stats.missedWords, 'word', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Chunks', stats.missedChunks, 'chunk', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}
                             ${window.createFeedbackSection('Sentences', stats.missedSentences, 'sentence', false) || '<p class="text-gray-400 font-bold text-center py-4">全てクリア！</p>'}

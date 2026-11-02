@@ -81,6 +81,7 @@ const pfState = {
     isTransitioning: false, 
     isSwitchingMic: false,
     micFatal: false,
+    micRetryCount: 0,
     comboCount: 0 
 };
 
@@ -153,24 +154,15 @@ function checkIsCorrect(card, transcript, targetLang) {
             const phraseNoSpace = targetPhrase.toLowerCase().replace(/\s+/g, '');
             return transcriptNoSpace.includes(phraseNoSpace);
         } else {
-            const targetWords = targetPhrase.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => !STOP_WORDS.has(w) && w.length > 0);
-            const spokenWords = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').trim().split(/\s+/).filter(w => w.length > 0);
-            
-            if (targetWords.length === 0) return false;
-
-            let matchCount = 0;
-            targetWords.forEach(tw => {
-                const isMatch = spokenWords.some(sw => {
-                    if (sw === tw) return true;
-                    if (sw === tw + 's' || sw === tw + 'es' || sw === tw + 'ing' || sw === tw + 'ed' || sw === tw + 'd') return true;
-                    if (tw === sw + 's' || tw === sw + 'es' || tw === sw + 'ing' || tw === sw + 'ed' || tw === sw + 'd') return true;
-                    return false;
-                });
-                if (isMatch) matchCount++;
-            });
-
-            const requiredRate = targetWords.length <= 2 ? 1.0 : 0.8;
-            return (matchCount / targetWords.length) >= requiredRate;
+            // Require an accepted phrase in the spoken order, rather than accepting
+            // an unordered bag of 80% of its words. Alternatives remain supported.
+            const toTokens = value => String(value || '').toLocaleLowerCase().normalize('NFKC')
+                .replace(/[.,!?'"’“”\-:;]/g, ' ').trim().split(/\s+/).filter(Boolean);
+            const targetWords = toTokens(targetPhrase);
+            const spokenWords = toTokens(transcript);
+            return targetWords.length > 0 && spokenWords.some((_,i) =>
+                i+targetWords.length<=spokenWords.length &&
+                targetWords.every((word,j)=>word===spokenWords[i+j]));
         }
     });
 }
@@ -195,13 +187,14 @@ if (SpeechRec) {
         }
 
         const mainTranscript = transcripts[0].trim();
+        if (mainTranscript) pfState.micRetryCount = 0;
 
         // --- 本番モード(Trial) の処理 ---
         if (pfState.isPlaying && pfState.mode === 'trial') {
             const statusTextEl = document.getElementById('pf-status-text');
             if (statusTextEl) statusTextEl.innerText = mainTranscript || 'Listening...';
 
-            if (mainTranscript.includes("skip") || mainTranscript.includes("スキップ")) {
+            if (/(^|\s)skip(\s|$)/i.test(mainTranscript) || mainTranscript.includes("スキップ")) {
                 handleSkip();
                 return;
             }
@@ -292,23 +285,39 @@ if (SpeechRec) {
             if (pfState.timerId) clearInterval(pfState.timerId);
             const status = document.getElementById('pf-status-text');
             if (status) status.textContent = 'マイクを利用できません。サイトのマイク権限を確認してください。';
+            const overlay = document.getElementById('pf-start-overlay');
+            if (overlay) overlay.classList.remove('hidden');
         }
     };
     pfRec.onend = () => {
         if (pfState.micFatal) return;
-        if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.isSwitchingMic) {
-            setTimeout(() => { 
-                if (pfState.isPlaying && !pfState.isSwitchingMic) {
-                    try { pfRec.start(); } catch(err){} 
-                }
-            }, 200);
-        } else if (pfState.mode === 'practice' && window.practiceTargetWords && !pfState.isSwitchingMic) {
-            setTimeout(() => { 
-                if (window.practiceTargetWords && !pfState.isSwitchingMic) {
-                    try { pfRec.start(); } catch(err){} 
-                }
-            }, 200);
+        const isTrial = pfState.isPlaying && pfState.mode === 'trial' && !pfState.isSwitchingMic;
+        const isPractice = pfState.mode === 'practice' && !!window.practiceTargetWords && !pfState.isSwitchingMic;
+        if (!isTrial && !isPractice) return;
+        const attempt = ++pfState.micRetryCount;
+        if (attempt > 8) {
+            pfState.micFatal = true;
+            pfState.isPlaying = false;
+            if (pfState.timerId) clearInterval(pfState.timerId);
+            const message = '音声認識が繰り返し終了しました。マイクの権限と通信状況を確認し、再開してください。';
+            const status = document.getElementById('pf-status-text');
+            if (status) status.textContent = message;
+            if (isPractice) {
+                const practiceStatus = document.getElementById(window.practiceStatusId);
+                if (practiceStatus) practiceStatus.textContent = message;
+            } else {
+                document.getElementById('pf-start-overlay')?.classList.remove('hidden');
+            }
+            return;
         }
+        setTimeout(() => {
+            if (pfState.micFatal || pfState.isSwitchingMic) return;
+            if ((pfState.isPlaying && pfState.mode === 'trial') ||
+                (pfState.mode === 'practice' && window.practiceTargetWords)) {
+                try { pfRec.start(); }
+                catch(e) { console.warn('PicFlash recognition restart failed',e); }
+            }
+        }, Math.min(250 * 2 ** (attempt - 1), 1800));
     };
 }
 
@@ -439,9 +448,15 @@ function startTrialMode() {
 }
 
 document.getElementById('btn-pf-real-start').addEventListener('click', () => {
+    if (!pfRec) {
+        const status = document.getElementById('pf-status-text');
+        if (status) status.textContent = 'このブラウザでは音声認識を使えません。対応するブラウザで開いてください。';
+        return;
+    }
     document.getElementById('pf-start-overlay').classList.add('hidden');
     
     pfState.micFatal = false;
+    pfState.micRetryCount = 0;
     pfState.isPlaying = true;
     pfState.startTime = Date.now();
     pfState.cardStartTime = Date.now();
@@ -961,6 +976,7 @@ window.playPfTTS = function(cardIdx, lang) {
 
 window.startPracticeRec = function(cardIdx, lang, statusId) {
     pfState.micFatal = false;
+    pfState.micRetryCount = 0;
     if (!pfRec) return alert("音声認識に非対応のブラウザです");
     const card = pfState.cards[cardIdx];
     

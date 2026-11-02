@@ -91,10 +91,9 @@
     scenes.forEach((scene,i)=>{
       const lev=scene.levels?.[level]||scene;
       const transcript=String(state?.retellingTranscripts?.[i]||'').toLowerCase().replace(/[.,!?]/g,' ');
-      const spoken=new Set(transcript.split(/\s+/).filter(Boolean));words+=transcript.split(/\s+/).filter(Boolean).length;
+      words+=transcript.split(/\s+/).filter(Boolean).length;
       for(const target of lev.targets||[]){targets++;
-        const keys=target.keywords?.length?target.keywords:String(target.text||'').toLowerCase().replace(/[.,!?]/g,' ').split(/\s+/).filter(w=>w.length>2);
-        if(keys.some(k=>spoken.has(String(k).toLowerCase())))hits++;
+        if(window.picSpeakStoryMatchTarget?.(target,transcript))hits++;
       }
     });
     const score=targets?round(num(hits/targets*100)):0;

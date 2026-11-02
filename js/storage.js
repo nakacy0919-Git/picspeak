@@ -56,6 +56,20 @@ window.renderHistoryLogs = function() {
     };
     
     let html = '';
+    const latest = logs[0];
+    const comparable = logs.filter(item =>
+        item.imageId === latest.imageId && item.level === latest.level &&
+        Number.isFinite(Number(item.completion)));
+    const previous = comparable[1];
+    const difference = previous ? Number(comparable[0].completion) - Number(previous.completion) : null;
+    const trend = difference === null
+        ? '同じ教材・レベルの前回記録はありません。'
+        : '前回比 ' + (difference > 0 ? '+' : '') + difference.toFixed(0) + ' ポイント';
+    html += `<div class="bg-white border border-gray-200 rounded-xl p-3 mb-3 text-gray-600">
+      <div class="font-bold text-sm">最近の記録：${escapeHTML(latest.imageId||'教材')} · ${escapeHTML(latest.level||'')}</div>
+      <div class="text-sm">目標表現カバー率 ${Number(latest.completion||0).toFixed(0)}% · ${escapeHTML(trend)}</div>
+      <p class="text-xs text-gray-500 mt-1">同一端末・同一ブラウザの保存履歴です。利用者ごとの個別記録ではありません。</p>
+    </div>`;
     logs.forEach(log => {
         // 日付のフォーマット
         let dateStr = "";

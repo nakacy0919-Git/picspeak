@@ -376,15 +376,19 @@ window.OralQuestGame = {
 
         let starsHtml = "";
         let feedbackText = "";
-        if (matchCount >= 3) {
-            starsHtml = "⭐⭐⭐"; feedbackText = "Excellent! 完璧に理由を答えられました！";
-        } else if (matchCount >= 1) {
-            starsHtml = "⭐⭐☆"; feedbackText = "Good! キーキーワードが含まれています。";
+        const sufficientContext = spokenWords.length >= 4;
+        const strongHits = Math.min(3, this.q1Keywords.length);
+        const qa1Rating = sufficientContext && strongHits > 0 && matchCount >= strongHits
+            ? 2 : sufficientContext && matchCount >= 1 ? 1 : 0;
+        if (qa1Rating === 2) {
+            starsHtml = "⭐⭐⭐"; feedbackText = "複数の目標語句を含められました。内容も確認しましょう。";
+        } else if (qa1Rating === 1) {
+            starsHtml = "⭐⭐☆"; feedbackText = "目標語句が一部含まれています。理由を付け足してみよう。";
         } else {
-            starsHtml = "⭐☆☆"; feedbackText = "もう少し！模範解答を確認しよう。";
+            starsHtml = "⭐☆☆"; feedbackText = "質問に合った文で答えてみよう。";
         }
 
-        this.lmsQA1Rating=matchCount>=3?2:matchCount>=1?1:0;this.lmsTotalWords+=spokenWords.length;
+        this.lmsQA1Rating=qa1Rating;this.lmsTotalWords+=spokenWords.length;
         const modelsHtml = this.q1ModelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-indigo-300">${ans}</div>`).join('');
 
         const resEl = document.getElementById('oq-q1-result');
@@ -460,7 +464,7 @@ window.OralQuestGame = {
         let starsHtml = "";
         let feedbackText = "";
         if (spokenWords.length >= 5 && matchCount >= 1) {
-            starsHtml = "⭐⭐⭐"; feedbackText = "Excellent! 自分の言葉でしっかり答えられました！";
+            starsHtml = "⭐⭐⭐"; feedbackText = "目標語句を含む文が言えました。意味の適切さは先生とも確認しましょう。";
         } else if (spokenWords.length >= 3 && matchCount >= 1) {
             starsHtml = "⭐⭐☆"; feedbackText = "Good! キーワードが使えています。理由も付け足してみよう。";
         } else {
@@ -514,7 +518,7 @@ window.OralQuestGame = {
                 
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
                     <div class="flex flex-col items-center justify-center">
-                        <span class="text-sm font-black text-gray-400 uppercase tracking-widest mb-2">Practice Rank · ${totalScore}/100</span>
+                        <span class="text-sm font-black text-gray-400 uppercase tracking-widest mb-2">Target Practice · ${totalScore}/100</span>
                         <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-8 border-gray-50 shadow-inner flex items-center justify-center bg-white">
                             <span class="text-6xl md:text-7xl font-black ${rankColor} drop-shadow-md">${rank}</span>
                         </div>
@@ -526,6 +530,7 @@ window.OralQuestGame = {
                     </div>
                 </div>
 
+                <p class="text-xs text-gray-500 mb-4">語句の認識に基づく練習指標です。発音・文法・意味の正しさを保証する採点ではありません。</p>
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
                     <div class="bg-blue-50 rounded-2xl p-4 border border-blue-100">
                         <div class="text-[10px] font-black text-blue-400 uppercase tracking-widest mb-1">Stage 1: Reading</div>
