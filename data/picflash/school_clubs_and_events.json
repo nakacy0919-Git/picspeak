@@ -1,952 +1,2977 @@
 [
   {
-    "id": "nh_elem_school_subjects_and_stationery_001",
-    "img": "assets/images/picflash/classmates.webp",
+    "id": "nh_elem_school_clubs_and_events_001",
+    "img": "assets/images/picflash/badminton.webp",
     "targets": {
-      "en-US": ["classmates", "classmate", "my classmates"],
-      "ja-JP": ["クラスメート", "同級生", "クラスの友達"],
-      "pt-BR": ["colegas de classe", "colega de classe", "meus colegas de classe"],
-      "vi-VN": ["bạn cùng lớp", "các bạn cùng lớp", "bạn học cùng lớp"],
-      "tl-PH": ["mga kaklase", "kaklase", "aking mga kaklase"],
-      "es-ES": ["compañeros de clase", "compañero de clase", "mis compañeros de clase"],
-      "zh-CN": ["同班同学", "同学", "我的同班同学"],
-      "ko-KR": ["반 친구들", "반 친구", "같은 반 친구들"],
-      "id-ID": ["teman sekelas", "teman-teman sekelas", "teman satu kelas"],
-      "ne-NP": ["सहपाठीहरू", "सहपाठी", "कक्षाका साथीहरू"],
-      "th-TH": ["เพื่อนร่วมชั้น", "เพื่อนในห้อง", "เพื่อนร่วมชั้นของฉัน"],
-      "hi-IN": ["सहपाठी", "कक्षा के साथी", "मेरे सहपाठी"],
-      "ru-RU": ["одноклассники", "одноклассник", "мои одноклассники"],
-      "fr-FR": ["camarades de classe", "camarade de classe", "mes camarades de classe"],
-      "de-DE": ["Klassenkameraden", "Klassenkamerad", "Mitschüler"],
-      "it-IT": ["compagni di classe", "compagno di classe", "i miei compagni"],
-      "ar-SA": ["زملاء الصف", "زميل الصف", "زملائي في الصف"],
-      "tr-TR": ["sınıf arkadaşları", "sınıf arkadaşı", "sınıf arkadaşlarım"],
-      "my-MM": ["အတန်းဖော်များ", "အတန်းဖော်", "ကျွန်ုပ်၏အတန်းဖော်များ"]
+      "en-US": [
+        "badminton",
+        "play badminton",
+        "badminton game"
+      ],
+      "ja-JP": [
+        "バドミントン",
+        "ばどみんとん",
+        "バドミントンをする"
+      ],
+      "pt-BR": [
+        "badminton",
+        "jogar badminton",
+        "jogo de badminton"
+      ],
+      "vi-VN": [
+        "cầu lông",
+        "chơi cầu lông",
+        "môn cầu lông"
+      ],
+      "tl-PH": [
+        "badminton",
+        "maglaro ng badminton",
+        "larong badminton"
+      ],
+      "es-ES": [
+        "bádminton",
+        "jugar al bádminton",
+        "deporte de bádminton"
+      ],
+      "zh-CN": [
+        "羽毛球",
+        "打羽毛球",
+        "羽毛球运动"
+      ],
+      "ko-KR": [
+        "배드민턴",
+        "배드민턴을 치다",
+        "배드민턴 경기"
+      ],
+      "id-ID": [
+        "bulu tangkis",
+        "bermain bulu tangkis",
+        "badminton"
+      ],
+      "ne-NP": [
+        "ब्याडमिन्टन",
+        "ब्याडमिन्टन खेल्नु",
+        "ब्याडमिन्टन खेल"
+      ],
+      "th-TH": [
+        "แบดมินตัน",
+        "เล่นแบดมินตัน",
+        "กีฬาแบดมินตัน"
+      ],
+      "hi-IN": [
+        "बैडमिंटन",
+        "बैडमिंटन खेलना",
+        "बैडमिंटन का खेल"
+      ],
+      "ru-RU": [
+        "бадминтон",
+        "играть в бадминтон",
+        "игра в бадминтон"
+      ],
+      "fr-FR": [
+        "badminton",
+        "jouer au badminton",
+        "le badminton"
+      ],
+      "de-DE": [
+        "Badminton",
+        "Badminton spielen",
+        "Badmintonspiel"
+      ],
+      "it-IT": [
+        "badminton",
+        "giocare a badminton",
+        "il badminton"
+      ],
+      "ar-SA": [
+        "الريشة الطائرة",
+        "لعب الريشة الطائرة",
+        "رياضة الريشة الطائرة"
+      ],
+      "tr-TR": [
+        "badminton",
+        "badminton oynamak",
+        "badminton sporu"
+      ],
+      "my-MM": [
+        "ကြက်တောင်ရိုက်",
+        "ကြက်တောင်ရိုက်ကစားသည်",
+        "ဘက်မင်တန်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_002",
-    "img": "assets/images/picflash/classroom.webp",
+    "id": "nh_elem_school_clubs_and_events_002",
+    "img": "assets/images/picflash/baseball.webp",
     "targets": {
-      "en-US": ["classroom", "a classroom", "the classroom"],
-      "ja-JP": ["きょうしつ", "教室", "クラスルーム"],
-      "pt-BR": ["sala de aula", "uma sala de aula", "a sala de aula"],
-      "vi-VN": ["lớp học", "phòng học", "một lớp học"],
-      "tl-PH": ["silid-aralan", "classroom", "isang silid-aralan"],
-      "es-ES": ["aula", "salón de clase", "una clase"],
-      "zh-CN": ["教室", "课堂", "一间教室"],
-      "ko-KR": ["교실", "학급 교실", "한 교실"],
-      "id-ID": ["ruang kelas", "kelas", "sebuah ruang kelas"],
-      "ne-NP": ["कक्षाकोठा", "कक्षा", "एउटा कक्षाकोठा"],
-      "th-TH": ["ห้องเรียน", "ชั้นเรียน", "ห้องเรียนหนึ่งห้อง"],
-      "hi-IN": ["कक्षा", "कक्षा-कक्ष", "एक कक्षा"],
-      "ru-RU": ["класс", "классная комната", "учебный кабинет"],
-      "fr-FR": ["salle de classe", "classe", "une salle de classe"],
-      "de-DE": ["Klassenzimmer", "Klassenraum", "ein Klassenzimmer"],
-      "it-IT": ["aula", "classe", "un'aula"],
-      "ar-SA": ["فصل دراسي", "صف", "غرفة صف"],
-      "tr-TR": ["sınıf", "derslik", "bir sınıf"],
-      "my-MM": ["စာသင်ခန်း", "အတန်းခန်း", "စာသင်ခန်းတစ်ခန်း"]
+      "en-US": [
+        "baseball",
+        "play baseball",
+        "baseball game"
+      ],
+      "ja-JP": [
+        "やきゅう",
+        "野球",
+        "ベースボール"
+      ],
+      "pt-BR": [
+        "beisebol",
+        "jogar beisebol",
+        "jogo de beisebol"
+      ],
+      "vi-VN": [
+        "bóng chày",
+        "chơi bóng chày",
+        "môn bóng chày"
+      ],
+      "tl-PH": [
+        "baseball",
+        "maglaro ng baseball",
+        "larong baseball"
+      ],
+      "es-ES": [
+        "béisbol",
+        "jugar al béisbol",
+        "partido de béisbol"
+      ],
+      "zh-CN": [
+        "棒球",
+        "打棒球",
+        "棒球运动"
+      ],
+      "ko-KR": [
+        "야구",
+        "야구를 하다",
+        "야구 경기"
+      ],
+      "id-ID": [
+        "bisbol",
+        "bermain bisbol",
+        "baseball"
+      ],
+      "ne-NP": [
+        "बेसबल",
+        "बेसबल खेल्नु",
+        "बेसबल खेल"
+      ],
+      "th-TH": [
+        "เบสบอล",
+        "เล่นเบสบอล",
+        "กีฬาเบสบอล"
+      ],
+      "hi-IN": [
+        "बेसबॉल",
+        "बेसबॉल खेलना",
+        "बेसबॉल का खेल"
+      ],
+      "ru-RU": [
+        "бейсбол",
+        "играть в бейсбол",
+        "бейсбольная игра"
+      ],
+      "fr-FR": [
+        "baseball",
+        "jouer au baseball",
+        "le baseball"
+      ],
+      "de-DE": [
+        "Baseball",
+        "Baseball spielen",
+        "Baseballspiel"
+      ],
+      "it-IT": [
+        "baseball",
+        "giocare a baseball",
+        "il baseball"
+      ],
+      "ar-SA": [
+        "البيسبول",
+        "لعب البيسبول",
+        "رياضة البيسبول"
+      ],
+      "tr-TR": [
+        "beyzbol",
+        "beyzbol oynamak",
+        "beyzbol sporu"
+      ],
+      "my-MM": [
+        "ဘေ့စ်ဘော",
+        "ဘေ့စ်ဘောကစားသည်",
+        "ဘေ့စ်ဘောအားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_003",
-    "img": "assets/images/picflash/dictionary.webp",
+    "id": "nh_elem_school_clubs_and_events_003",
+    "img": "assets/images/picflash/basketball.webp",
     "targets": {
-      "en-US": ["dictionary", "a dictionary", "dictionaries"],
-      "ja-JP": ["じしょ", "辞書", "辞典"],
-      "pt-BR": ["dicionário", "um dicionário", "dicionários"],
-      "vi-VN": ["từ điển", "một cuốn từ điển", "quyển từ điển"],
-      "tl-PH": ["diksyunaryo", "isang diksyunaryo", "dictionary"],
-      "es-ES": ["diccionario", "un diccionario", "diccionarios"],
-      "zh-CN": ["词典", "字典", "一本词典"],
-      "ko-KR": ["사전", "한 권의 사전", "어학사전"],
-      "id-ID": ["kamus", "sebuah kamus", "buku kamus"],
-      "ne-NP": ["शब्दकोश", "डिक्सनरी", "एउटा शब्दकोश"],
-      "th-TH": ["พจนานุกรม", "ดิกชันนารี", "พจนานุกรมหนึ่งเล่ม"],
-      "hi-IN": ["शब्दकोश", "डिक्शनरी", "एक शब्दकोश"],
-      "ru-RU": ["словарь", "один словарь", "словари"],
-      "fr-FR": ["dictionnaire", "un dictionnaire", "dictionnaires"],
-      "de-DE": ["Wörterbuch", "ein Wörterbuch", "Lexikon"],
-      "it-IT": ["dizionario", "un dizionario", "dizionari"],
-      "ar-SA": ["قاموس", "معجم", "قاموس واحد"],
-      "tr-TR": ["sözlük", "bir sözlük", "lügat"],
-      "my-MM": ["အဘိဓာန်", "စကားလုံးအဘိဓာန်", "အဘိဓာန်တစ်အုပ်"]
+      "en-US": [
+        "basketball",
+        "play basketball",
+        "basketball game"
+      ],
+      "ja-JP": [
+        "バスケットボール",
+        "バスケ",
+        "バスケットボールをする"
+      ],
+      "pt-BR": [
+        "basquete",
+        "basquetebol",
+        "jogar basquete"
+      ],
+      "vi-VN": [
+        "bóng rổ",
+        "chơi bóng rổ",
+        "môn bóng rổ"
+      ],
+      "tl-PH": [
+        "basketball",
+        "maglaro ng basketball",
+        "larong basketball"
+      ],
+      "es-ES": [
+        "baloncesto",
+        "básquetbol",
+        "jugar al baloncesto"
+      ],
+      "zh-CN": [
+        "篮球",
+        "打篮球",
+        "篮球运动"
+      ],
+      "ko-KR": [
+        "농구",
+        "농구를 하다",
+        "농구 경기"
+      ],
+      "id-ID": [
+        "bola basket",
+        "basket",
+        "bermain bola basket"
+      ],
+      "ne-NP": [
+        "बास्केटबल",
+        "बास्केटबल खेल्नु",
+        "बास्केटबल खेल"
+      ],
+      "th-TH": [
+        "บาสเกตบอล",
+        "เล่นบาสเกตบอล",
+        "กีฬาบาสเกตบอล"
+      ],
+      "hi-IN": [
+        "बास्केटबॉल",
+        "बास्केटबॉल खेलना",
+        "बास्केटबॉल का खेल"
+      ],
+      "ru-RU": [
+        "баскетбол",
+        "играть в баскетбол",
+        "баскетбольная игра"
+      ],
+      "fr-FR": [
+        "basket-ball",
+        "basket",
+        "jouer au basket"
+      ],
+      "de-DE": [
+        "Basketball",
+        "Basketball spielen",
+        "Basketballspiel"
+      ],
+      "it-IT": [
+        "pallacanestro",
+        "basket",
+        "giocare a basket"
+      ],
+      "ar-SA": [
+        "كرة السلة",
+        "لعب كرة السلة",
+        "رياضة كرة السلة"
+      ],
+      "tr-TR": [
+        "basketbol",
+        "basketbol oynamak",
+        "basketbol sporu"
+      ],
+      "my-MM": [
+        "ဘတ်စကက်ဘော",
+        "ဘတ်စကက်ဘောကစားသည်",
+        "ဘတ်စကက်ဘောအားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_004",
-    "img": "assets/images/picflash/elementary_school.webp",
+    "id": "nh_elem_school_clubs_and_events_004",
+    "img": "assets/images/picflash/dance_team.webp",
     "targets": {
-      "en-US": ["elementary school", "primary school", "an elementary school"],
-      "ja-JP": ["しょうがっこう", "小学校", "小学校校舎"],
-      "pt-BR": ["escola primária", "escola de ensino fundamental", "uma escola primária"],
-      "vi-VN": ["trường tiểu học", "tiểu học", "một trường tiểu học"],
-      "tl-PH": ["elementarya", "paaralang elementarya", "elementary school"],
-      "es-ES": ["escuela primaria", "colegio de primaria", "una escuela primaria"],
-      "zh-CN": ["小学", "小学校", "一所小学"],
-      "ko-KR": ["초등학교", "초등교", "한 초등학교"],
-      "id-ID": ["sekolah dasar", "SD", "sebuah sekolah dasar"],
-      "ne-NP": ["प्राथमिक विद्यालय", "आधारभूत विद्यालय", "एउटा प्राथमिक विद्यालय"],
-      "th-TH": ["โรงเรียนประถม", "โรงเรียนประถมศึกษา", "โรงเรียนประถมหนึ่งแห่ง"],
-      "hi-IN": ["प्राथमिक विद्यालय", "प्राइमरी स्कूल", "एक प्राथमिक विद्यालय"],
-      "ru-RU": ["начальная школа", "младшая школа", "одна начальная школа"],
-      "fr-FR": ["école primaire", "une école primaire", "école élémentaire"],
-      "de-DE": ["Grundschule", "eine Grundschule", "Primarschule"],
-      "it-IT": ["scuola elementare", "scuola primaria", "una scuola elementare"],
-      "ar-SA": ["مدرسة ابتدائية", "المدرسة الابتدائية", "مدرسة أولية"],
-      "tr-TR": ["ilkokul", "bir ilkokul", "ilk öğretim okulu"],
-      "my-MM": ["မူလတန်းကျောင်း", "အခြေခံပညာမူလတန်းကျောင်း", "မူလတန်းကျောင်းတစ်ကျောင်း"]
+      "en-US": [
+        "dance team",
+        "the dance team",
+        "school dance team"
+      ],
+      "ja-JP": [
+        "ダンスチーム",
+        "ダンスぶ",
+        "ダンス部"
+      ],
+      "pt-BR": [
+        "equipe de dança",
+        "grupo de dança",
+        "time de dança"
+      ],
+      "vi-VN": [
+        "đội nhảy",
+        "nhóm nhảy",
+        "đội múa"
+      ],
+      "tl-PH": [
+        "dance team",
+        "grupo ng sayaw",
+        "koponan ng sayaw"
+      ],
+      "es-ES": [
+        "equipo de baile",
+        "grupo de danza",
+        "grupo de baile"
+      ],
+      "zh-CN": [
+        "舞蹈队",
+        "舞蹈社",
+        "学校舞蹈队"
+      ],
+      "ko-KR": [
+        "댄스 팀",
+        "댄스부",
+        "무용팀"
+      ],
+      "id-ID": [
+        "tim tari",
+        "kelompok tari",
+        "tim dansa"
+      ],
+      "ne-NP": [
+        "नृत्य टोली",
+        "डान्स टोली",
+        "नाच समूह"
+      ],
+      "th-TH": [
+        "ทีมเต้น",
+        "ทีมเต้นรำ",
+        "ชมรมเต้น"
+      ],
+      "hi-IN": [
+        "डांस टीम",
+        "नृत्य दल",
+        "डांस ग्रुप"
+      ],
+      "ru-RU": [
+        "танцевальная команда",
+        "танцевальная группа",
+        "школьная команда танцев"
+      ],
+      "fr-FR": [
+        "équipe de danse",
+        "groupe de danse",
+        "club de danse"
+      ],
+      "de-DE": [
+        "Tanzteam",
+        "Tanzgruppe",
+        "Tanz-AG"
+      ],
+      "it-IT": [
+        "squadra di danza",
+        "gruppo di ballo",
+        "gruppo di danza"
+      ],
+      "ar-SA": [
+        "فريق الرقص",
+        "فرقة رقص",
+        "مجموعة رقص"
+      ],
+      "tr-TR": [
+        "dans takımı",
+        "dans grubu",
+        "okul dans takımı"
+      ],
+      "my-MM": [
+        "အကအသင်း",
+        "အကအဖွဲ့",
+        "ကျောင်းအကအသင်း"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_005",
-    "img": "assets/images/picflash/English.webp",
+    "id": "nh_elem_school_clubs_and_events_005",
+    "img": "assets/images/picflash/dancing.webp",
     "targets": {
-      "en-US": ["English", "English class", "the English language"],
-      "ja-JP": ["えいご", "英語", "英語の授業"],
-      "pt-BR": ["inglês", "língua inglesa", "aula de inglês"],
-      "vi-VN": ["tiếng Anh", "môn tiếng Anh", "Anh ngữ"],
-      "tl-PH": ["Ingles", "wikang Ingles", "asignaturang Ingles"],
-      "es-ES": ["inglés", "idioma inglés", "clase de inglés"],
-      "zh-CN": ["英语", "英语课", "英文"],
-      "ko-KR": ["영어", "영어 수업", "영어 과목"],
-      "id-ID": ["bahasa Inggris", "pelajaran bahasa Inggris", "Inggris"],
-      "ne-NP": ["अङ्ग्रेजी", "अंग्रेजी भाषा", "अङ्ग्रेजी विषय"],
-      "th-TH": ["ภาษาอังกฤษ", "วิชาภาษาอังกฤษ", "อังกฤษ"],
-      "hi-IN": ["अंग्रेज़ी", "अंग्रेज़ी भाषा", "अंग्रेज़ी विषय"],
-      "ru-RU": ["английский", "английский язык", "урок английского"],
-      "fr-FR": ["anglais", "langue anglaise", "cours d'anglais"],
-      "de-DE": ["Englisch", "englische Sprache", "Englischunterricht"],
-      "it-IT": ["inglese", "lingua inglese", "lezione d'inglese"],
-      "ar-SA": ["الإنجليزية", "اللغة الإنجليزية", "درس الإنجليزية"],
-      "tr-TR": ["İngilizce", "İngilizce dersi", "İngiliz dili"],
-      "my-MM": ["အင်္ဂလိပ်စာ", "အင်္ဂလိပ်ဘာသာ", "အင်္ဂလိပ်စာသင်ခန်း"]
+      "en-US": [
+        "dancing",
+        "dance",
+        "doing a dance"
+      ],
+      "ja-JP": [
+        "ダンス",
+        "おどること",
+        "踊ること"
+      ],
+      "pt-BR": [
+        "dança",
+        "dançando",
+        "dançar"
+      ],
+      "vi-VN": [
+        "nhảy múa",
+        "khiêu vũ",
+        "đang nhảy"
+      ],
+      "tl-PH": [
+        "pagsasayaw",
+        "sayaw",
+        "sumasayaw"
+      ],
+      "es-ES": [
+        "baile",
+        "bailando",
+        "danza"
+      ],
+      "zh-CN": [
+        "跳舞",
+        "舞蹈",
+        "正在跳舞"
+      ],
+      "ko-KR": [
+        "춤추기",
+        "춤",
+        "댄스"
+      ],
+      "id-ID": [
+        "menari",
+        "tarian",
+        "berdansa"
+      ],
+      "ne-NP": [
+        "नाच्दै",
+        "नृत्य",
+        "नाच्नु"
+      ],
+      "th-TH": [
+        "การเต้น",
+        "เต้นรำ",
+        "กำลังเต้น"
+      ],
+      "hi-IN": [
+        "नृत्य",
+        "नाचना",
+        "डांसिंग"
+      ],
+      "ru-RU": [
+        "танцы",
+        "танцевать",
+        "танцевание"
+      ],
+      "fr-FR": [
+        "danse",
+        "danser",
+        "en train de danser"
+      ],
+      "de-DE": [
+        "Tanzen",
+        "Tanz",
+        "tanzen"
+      ],
+      "it-IT": [
+        "ballo",
+        "danza",
+        "ballare"
+      ],
+      "ar-SA": [
+        "الرقص",
+        "يرقص",
+        "رقصة"
+      ],
+      "tr-TR": [
+        "dans",
+        "dans etmek",
+        "dans etme"
+      ],
+      "my-MM": [
+        "ကခုန်ခြင်း",
+        "အက",
+        "ကနေသည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_006",
-    "img": "assets/images/picflash/eraser.webp",
+    "id": "nh_elem_school_clubs_and_events_006",
+    "img": "assets/images/picflash/dodgeball.webp",
     "targets": {
-      "en-US": ["eraser", "an eraser", "rubber"],
-      "ja-JP": ["けしゴム", "消しゴム", "イレーサー"],
-      "pt-BR": ["borracha", "uma borracha", "apagador"],
-      "vi-VN": ["cục tẩy", "gôm", "một cục tẩy"],
-      "tl-PH": ["pambura", "eraser", "isang pambura"],
-      "es-ES": ["goma", "borrador", "una goma"],
-      "zh-CN": ["橡皮", "橡皮擦", "一块橡皮"],
-      "ko-KR": ["지우개", "고무 지우개", "지우개 하나"],
-      "id-ID": ["penghapus", "karet penghapus", "sebuah penghapus"],
-      "ne-NP": ["रबर", "मेटाउने रबर", "एउटा रबर"],
-      "th-TH": ["ยางลบ", "ยางลบหนึ่งก้อน", "ที่ลบ"],
-      "hi-IN": ["रबर", "इरेज़र", "एक रबर"],
-      "ru-RU": ["ластик", "резинка", "один ластик"],
-      "fr-FR": ["gomme", "une gomme", "effaceur"],
-      "de-DE": ["Radiergummi", "ein Radiergummi", "Gummi"],
-      "it-IT": ["gomma", "una gomma", "gomma da cancellare"],
-      "ar-SA": ["ممحاة", "ممحاة قلم", "ممحاة واحدة"],
-      "tr-TR": ["silgi", "bir silgi", "kalem silgisi"],
-      "my-MM": ["ခဲဖျက်", "ဖျက်ဆေး", "ခဲဖျက်တစ်ခု"]
+      "en-US": [
+        "dodgeball",
+        "play dodgeball",
+        "dodgeball game"
+      ],
+      "ja-JP": [
+        "ドッジボール",
+        "どっじぼーる",
+        "ドッジボールをする"
+      ],
+      "pt-BR": [
+        "queimada",
+        "jogar queimada",
+        "jogo de queimada"
+      ],
+      "vi-VN": [
+        "bóng né",
+        "chơi bóng né",
+        "trò ném bóng né"
+      ],
+      "tl-PH": [
+        "dodgeball",
+        "maglaro ng dodgeball",
+        "larong dodgeball"
+      ],
+      "es-ES": [
+        "balón prisionero",
+        "quemados",
+        "jugar al balón prisionero"
+      ],
+      "zh-CN": [
+        "躲避球",
+        "打躲避球",
+        "躲避球游戏"
+      ],
+      "ko-KR": [
+        "피구",
+        "피구를 하다",
+        "피구 경기"
+      ],
+      "id-ID": [
+        "dodgeball",
+        "bola tembak",
+        "bermain dodgeball"
+      ],
+      "ne-NP": [
+        "डजबल",
+        "डजबल खेल्नु",
+        "चक्मा बल खेल"
+      ],
+      "th-TH": [
+        "ดอดจ์บอล",
+        "เล่นดอดจ์บอล",
+        "กีฬาโดดจ์บอล"
+      ],
+      "hi-IN": [
+        "डॉजबॉल",
+        "डॉजबॉल खेलना",
+        "डॉजबॉल का खेल"
+      ],
+      "ru-RU": [
+        "вышибалы",
+        "доджбол",
+        "играть в вышибалы"
+      ],
+      "fr-FR": [
+        "balle aux prisonniers",
+        "dodgeball",
+        "jouer à la balle aux prisonniers"
+      ],
+      "de-DE": [
+        "Völkerball",
+        "Dodgeball",
+        "Völkerball spielen"
+      ],
+      "it-IT": [
+        "palla prigioniera",
+        "dodgeball",
+        "giocare a palla prigioniera"
+      ],
+      "ar-SA": [
+        "كرة المراوغة",
+        "دودج بول",
+        "لعب كرة المراوغة"
+      ],
+      "tr-TR": [
+        "yakan top",
+        "dodgeball",
+        "yakan top oynamak"
+      ],
+      "my-MM": [
+        "ဒေါ့ချ်ဘော",
+        "ရှောင်တိမ်းဘောလုံး",
+        "ဒေါ့ချ်ဘောကစားသည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_007",
-    "img": "assets/images/picflash/glue.webp",
+    "id": "nh_elem_school_clubs_and_events_007",
+    "img": "assets/images/picflash/gymnastics.webp",
     "targets": {
-      "en-US": ["glue", "some glue", "a glue stick"],
-      "ja-JP": ["のり", "糊", "接着剤"],
-      "pt-BR": ["cola", "um pouco de cola", "cola em bastão"],
-      "vi-VN": ["keo dán", "hồ dán", "keo"],
-      "tl-PH": ["pandikit", "glue", "pandikit na stick"],
-      "es-ES": ["pegamento", "cola", "barra de pegamento"],
-      "zh-CN": ["胶水", "胶棒", "粘合剂"],
-      "ko-KR": ["풀", "접착제", "딱풀"],
-      "id-ID": ["lem", "perekat", "lem stik"],
-      "ne-NP": ["गोंद", "टाँस्ने पदार्थ", "ग्लु"],
-      "th-TH": ["กาว", "กาวแท่ง", "กาวติดกระดาษ"],
-      "hi-IN": ["गोंद", "ग्लू", "ग्लू स्टिक"],
-      "ru-RU": ["клей", "клеящий карандаш", "немного клея"],
-      "fr-FR": ["colle", "bâton de colle", "de la colle"],
-      "de-DE": ["Kleber", "Klebstoff", "Klebestift"],
-      "it-IT": ["colla", "colla stick", "adesivo"],
-      "ar-SA": ["غراء", "لاصق", "قلم غراء"],
-      "tr-TR": ["yapıştırıcı", "tutkal", "stick yapıştırıcı"],
-      "my-MM": ["ကော်", "ကော်တံ", "ကပ်ဆေး"]
+      "en-US": [
+        "gymnastics",
+        "do gymnastics",
+        "gymnastic exercises"
+      ],
+      "ja-JP": [
+        "たいそう",
+        "体操",
+        "器械体操"
+      ],
+      "pt-BR": [
+        "ginástica",
+        "fazer ginástica",
+        "ginástica artística"
+      ],
+      "vi-VN": [
+        "thể dục dụng cụ",
+        "thể dục",
+        "tập thể dục dụng cụ"
+      ],
+      "tl-PH": [
+        "gymnastics",
+        "himnastika",
+        "mag-gymnastics"
+      ],
+      "es-ES": [
+        "gimnasia",
+        "hacer gimnasia",
+        "gimnasia artística"
+      ],
+      "zh-CN": [
+        "体操",
+        "做体操",
+        "竞技体操"
+      ],
+      "ko-KR": [
+        "체조",
+        "기계체조",
+        "체조를 하다"
+      ],
+      "id-ID": [
+        "senam",
+        "gimnastik",
+        "melakukan senam"
+      ],
+      "ne-NP": [
+        "जिम्नास्टिक्स",
+        "व्यायाम",
+        "जिम्नास्टिक गर्नु"
+      ],
+      "th-TH": [
+        "ยิมนาสติก",
+        "กายกรรม",
+        "เล่นยิมนาสติก"
+      ],
+      "hi-IN": [
+        "जिम्नास्टिक",
+        "व्यायाम",
+        "जिम्नास्टिक करना"
+      ],
+      "ru-RU": [
+        "гимнастика",
+        "заниматься гимнастикой",
+        "спортивная гимнастика"
+      ],
+      "fr-FR": [
+        "gymnastique",
+        "faire de la gymnastique",
+        "gymnastique artistique"
+      ],
+      "de-DE": [
+        "Gymnastik",
+        "Turnen",
+        "turnen"
+      ],
+      "it-IT": [
+        "ginnastica",
+        "fare ginnastica",
+        "ginnastica artistica"
+      ],
+      "ar-SA": [
+        "الجمباز",
+        "ممارسة الجمباز",
+        "التمارين الجمبازية"
+      ],
+      "tr-TR": [
+        "jimnastik",
+        "jimnastik yapmak",
+        "artistik jimnastik"
+      ],
+      "my-MM": [
+        "ကျွမ်းဘားအားကစား",
+        "ဂျင်နတ်စတစ်",
+        "ကျွမ်းဘားလေ့ကျင့်သည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_008",
-    "img": "assets/images/picflash/gym.webp",
+    "id": "nh_elem_school_clubs_and_events_008",
+    "img": "assets/images/picflash/judo.webp",
     "targets": {
-      "en-US": ["gym", "gymnasium", "school gym"],
-      "ja-JP": ["たいいくかん", "体育館", "ジム"],
-      "pt-BR": ["ginásio", "ginásio esportivo", "ginásio da escola"],
-      "vi-VN": ["nhà thể chất", "phòng thể dục", "nhà thi đấu"],
-      "tl-PH": ["gym", "gymnasium", "gym ng paaralan"],
-      "es-ES": ["gimnasio", "pabellón deportivo", "gimnasio escolar"],
-      "zh-CN": ["体育馆", "学校体育馆", "健身房"],
-      "ko-KR": ["체육관", "학교 체육관", "강당"],
-      "id-ID": ["gedung olahraga", "gimnasium", "gym sekolah"],
-      "ne-NP": ["व्यायामशाला", "खेलकुद हल", "विद्यालयको जिम"],
-      "th-TH": ["โรงยิม", "โรงพลศึกษา", "โรงยิมของโรงเรียน"],
-      "hi-IN": ["व्यायामशाला", "जिम", "स्कूल जिम"],
-      "ru-RU": ["спортзал", "гимнастический зал", "школьный спортзал"],
-      "fr-FR": ["gymnase", "salle de sport", "gymnase scolaire"],
-      "de-DE": ["Turnhalle", "Sporthalle", "Schulturnhalle"],
-      "it-IT": ["palestra", "palestra scolastica", "ginnasio"],
-      "ar-SA": ["صالة رياضية", "صالة المدرسة", "قاعة رياضية"],
-      "tr-TR": ["spor salonu", "okul spor salonu", "jimnastik salonu"],
-      "my-MM": ["အားကစားခန်းမ", "ကျောင်းအားကစားခန်းမ", "ဂျင်ခန်း"]
+      "en-US": [
+        "judo",
+        "do judo",
+        "practice judo"
+      ],
+      "ja-JP": [
+        "じゅうどう",
+        "柔道",
+        "柔道をする"
+      ],
+      "pt-BR": [
+        "judô",
+        "praticar judô",
+        "fazer judô"
+      ],
+      "vi-VN": [
+        "judo",
+        "võ judo",
+        "tập judo"
+      ],
+      "tl-PH": [
+        "judo",
+        "mag-judo",
+        "magsanay ng judo"
+      ],
+      "es-ES": [
+        "judo",
+        "practicar judo",
+        "hacer judo"
+      ],
+      "zh-CN": [
+        "柔道",
+        "练柔道",
+        "柔道运动"
+      ],
+      "ko-KR": [
+        "유도",
+        "유도를 하다",
+        "유도 운동"
+      ],
+      "id-ID": [
+        "judo",
+        "berlatih judo",
+        "olahraga judo"
+      ],
+      "ne-NP": [
+        "जुडो",
+        "जुडो खेल्नु",
+        "जुडो अभ्यास"
+      ],
+      "th-TH": [
+        "ยูโด",
+        "เล่นยูโด",
+        "ฝึกยูโด"
+      ],
+      "hi-IN": [
+        "जूडो",
+        "जूडो करना",
+        "जूडो का अभ्यास"
+      ],
+      "ru-RU": [
+        "дзюдо",
+        "заниматься дзюдо",
+        "практиковать дзюдо"
+      ],
+      "fr-FR": [
+        "judo",
+        "faire du judo",
+        "pratiquer le judo"
+      ],
+      "de-DE": [
+        "Judo",
+        "Judo machen",
+        "Judo trainieren"
+      ],
+      "it-IT": [
+        "judo",
+        "fare judo",
+        "praticare judo"
+      ],
+      "ar-SA": [
+        "الجودو",
+        "ممارسة الجودو",
+        "لعب الجودو"
+      ],
+      "tr-TR": [
+        "judo",
+        "judo yapmak",
+        "judo çalışmak"
+      ],
+      "my-MM": [
+        "ဂျူဒို",
+        "ဂျူဒိုကစားသည်",
+        "ဂျူဒိုလေ့ကျင့်သည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_009",
-    "img": "assets/images/picflash/home_economics.webp",
+    "id": "nh_elem_school_clubs_and_events_009",
+    "img": "assets/images/picflash/kendo.webp",
     "targets": {
-      "en-US": ["home economics", "home economics class", "domestic science"],
-      "ja-JP": ["かていか", "家庭科", "家庭科の授業"],
-      "pt-BR": ["economia doméstica", "aula de economia doméstica", "educação doméstica"],
-      "vi-VN": ["môn gia chánh", "kinh tế gia đình", "môn nữ công gia chánh"],
-      "tl-PH": ["home economics", "edukasyong pantahanan", "HE"],
-      "es-ES": ["economía doméstica", "clase de economía doméstica", "educación para el hogar"],
-      "zh-CN": ["家政课", "家庭科", "家政"],
-      "ko-KR": ["가정과", "가정 수업", "가정 과목"],
-      "id-ID": ["ekonomi rumah tangga", "pelajaran rumah tangga", "tata boga dan rumah tangga"],
-      "ne-NP": ["गृह अर्थशास्त्र", "गृह विज्ञान", "घरव्यवस्थापन विषय"],
-      "th-TH": ["คหกรรม", "วิชาคหกรรม", "การงานบ้าน"],
-      "hi-IN": ["गृह विज्ञान", "गृह अर्थशास्त्र", "होम साइंस"],
-      "ru-RU": ["домоводство", "урок домоводства", "домашняя экономика"],
-      "fr-FR": ["économie domestique", "cours d'économie domestique", "enseignement ménager"],
-      "de-DE": ["Hauswirtschaft", "Hauswirtschaftsunterricht", "Haushaltslehre"],
-      "it-IT": ["economia domestica", "lezione di economia domestica", "scienze domestiche"],
-      "ar-SA": ["اقتصاد منزلي", "التدبير المنزلي", "درس الاقتصاد المنزلي"],
-      "tr-TR": ["ev ekonomisi", "ev idaresi dersi", "ev bilgisi"],
-      "my-MM": ["အိမ်တွင်းစီးပွားရေးပညာ", "အိမ်မှုကိစ္စပညာ", "အိမ်တွင်းပညာဘာသာ"]
+      "en-US": [
+        "kendo",
+        "do kendo",
+        "practice kendo"
+      ],
+      "ja-JP": [
+        "けんどう",
+        "剣道",
+        "剣道をする"
+      ],
+      "pt-BR": [
+        "kendô",
+        "praticar kendô",
+        "fazer kendô"
+      ],
+      "vi-VN": [
+        "kendo",
+        "kiếm đạo",
+        "tập kiếm đạo"
+      ],
+      "tl-PH": [
+        "kendo",
+        "mag-kendo",
+        "magsanay ng kendo"
+      ],
+      "es-ES": [
+        "kendo",
+        "practicar kendo",
+        "hacer kendo"
+      ],
+      "zh-CN": [
+        "剑道",
+        "练剑道",
+        "剑道运动"
+      ],
+      "ko-KR": [
+        "검도",
+        "검도를 하다",
+        "검도 수련"
+      ],
+      "id-ID": [
+        "kendo",
+        "berlatih kendo",
+        "olahraga kendo"
+      ],
+      "ne-NP": [
+        "केन्डो",
+        "केन्डो अभ्यास",
+        "केन्डो खेल्नु"
+      ],
+      "th-TH": [
+        "เคนโด",
+        "ฝึกเคนโด",
+        "เล่นเคนโด"
+      ],
+      "hi-IN": [
+        "केंडो",
+        "केंडो करना",
+        "केंडो का अभ्यास"
+      ],
+      "ru-RU": [
+        "кэндо",
+        "заниматься кэндо",
+        "практиковать кэндо"
+      ],
+      "fr-FR": [
+        "kendo",
+        "faire du kendo",
+        "pratiquer le kendo"
+      ],
+      "de-DE": [
+        "Kendo",
+        "Kendo machen",
+        "Kendo trainieren"
+      ],
+      "it-IT": [
+        "kendo",
+        "fare kendo",
+        "praticare kendo"
+      ],
+      "ar-SA": [
+        "الكندو",
+        "ممارسة الكندو",
+        "تدريب الكندو"
+      ],
+      "tr-TR": [
+        "kendo",
+        "kendo yapmak",
+        "kendo çalışmak"
+      ],
+      "my-MM": [
+        "ကန်ဒို",
+        "ကန်ဒိုလေ့ကျင့်သည်",
+        "ဂျပန်ဓားပညာ"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_010",
-    "img": "assets/images/picflash/junior_high_school.webp",
+    "id": "nh_elem_school_clubs_and_events_010",
+    "img": "assets/images/picflash/piano.webp",
     "targets": {
-      "en-US": ["junior high school", "middle school", "a junior high school"],
-      "ja-JP": ["ちゅうがっこう", "中学校", "中学"],
-      "pt-BR": ["escola de ensino fundamental II", "escola secundária", "ginásio"],
-      "vi-VN": ["trường trung học cơ sở", "trường cấp hai", "THCS"],
-      "tl-PH": ["junior high school", "mataas na paaralan", "junior high"],
-      "es-ES": ["escuela secundaria", "instituto", "secundaria"],
-      "zh-CN": ["初中", "初级中学", "一所初中"],
-      "ko-KR": ["중학교", "중등학교", "한 중학교"],
-      "id-ID": ["sekolah menengah pertama", "SMP", "sekolah menengah"],
-      "ne-NP": ["निम्न माध्यमिक विद्यालय", "माध्यमिक विद्यालय", "जुनियर हाई स्कूल"],
-      "th-TH": ["โรงเรียนมัธยมต้น", "มัธยมศึกษาตอนต้น", "โรงเรียนมัธยม"],
-      "hi-IN": ["जूनियर हाई स्कूल", "मिडिल स्कूल", "माध्यमिक विद्यालय"],
-      "ru-RU": ["средняя школа", "младшая средняя школа", "школа средней ступени"],
-      "fr-FR": ["collège", "école secondaire", "collège junior"],
-      "de-DE": ["Mittelschule", "Sekundarschule", "weiterführende Schule"],
-      "it-IT": ["scuola media", "scuola secondaria di primo grado", "scuola secondaria"],
-      "ar-SA": ["مدرسة إعدادية", "مدرسة متوسطة", "المرحلة الإعدادية"],
-      "tr-TR": ["ortaokul", "bir ortaokul", "orta öğretim okulu"],
-      "my-MM": ["အလယ်တန်းကျောင်း", "အခြေခံပညာအလယ်တန်းကျောင်း", "ဂျူနီယာဟိုင်းစကူးလ်"]
+      "en-US": [
+        "piano",
+        "a piano",
+        "the piano"
+      ],
+      "ja-JP": [
+        "ピアノ",
+        "ぴあの",
+        "洋琴"
+      ],
+      "pt-BR": [
+        "piano",
+        "um piano",
+        "o piano"
+      ],
+      "vi-VN": [
+        "đàn piano",
+        "piano",
+        "đàn dương cầm"
+      ],
+      "tl-PH": [
+        "piano",
+        "isang piano",
+        "pyano"
+      ],
+      "es-ES": [
+        "piano",
+        "un piano",
+        "el piano"
+      ],
+      "zh-CN": [
+        "钢琴",
+        "一架钢琴",
+        "钢琴乐器"
+      ],
+      "ko-KR": [
+        "피아노",
+        "피아노 한 대",
+        "건반악기"
+      ],
+      "id-ID": [
+        "piano",
+        "sebuah piano",
+        "alat musik piano"
+      ],
+      "ne-NP": [
+        "पियानो",
+        "एउटा पियानो",
+        "पियानो बाजा"
+      ],
+      "th-TH": [
+        "เปียโน",
+        "เปียโนหนึ่งหลัง",
+        "เครื่องเปียโน"
+      ],
+      "hi-IN": [
+        "पियानो",
+        "एक पियानो",
+        "पियानो वाद्य"
+      ],
+      "ru-RU": [
+        "пианино",
+        "фортепиано",
+        "рояль"
+      ],
+      "fr-FR": [
+        "piano",
+        "un piano",
+        "le piano"
+      ],
+      "de-DE": [
+        "Klavier",
+        "ein Klavier",
+        "Piano"
+      ],
+      "it-IT": [
+        "pianoforte",
+        "piano",
+        "un pianoforte"
+      ],
+      "ar-SA": [
+        "بيانو",
+        "آلة البيانو",
+        "بيانو واحد"
+      ],
+      "tr-TR": [
+        "piyano",
+        "bir piyano",
+        "piyano çalgısı"
+      ],
+      "my-MM": [
+        "ပီယာနို",
+        "ပီယာနိုတစ်လုံး",
+        "ပီယာနိုတူရိယာ"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_011",
-    "img": "assets/images/picflash/marker.webp",
+    "id": "nh_elem_school_clubs_and_events_011",
+    "img": "assets/images/picflash/play_soccer.webp",
     "targets": {
-      "en-US": ["marker", "a marker", "marker pen"],
-      "ja-JP": ["マーカー", "マーカーペン", "蛍光ペン"],
-      "pt-BR": ["marcador", "caneta marcadora", "marca-texto"],
-      "vi-VN": ["bút đánh dấu", "bút marker", "bút dạ"],
-      "tl-PH": ["marker", "marker pen", "pananda"],
-      "es-ES": ["rotulador", "marcador", "marcador de texto"],
-      "zh-CN": ["记号笔", "马克笔", "荧光笔"],
-      "ko-KR": ["마커", "마커펜", "형광펜"],
-      "id-ID": ["spidol", "marker", "pena penanda"],
-      "ne-NP": ["मार्कर", "मार्कर पेन", "हाइलाइटर"],
-      "th-TH": ["ปากกามาร์กเกอร์", "ปากกาเมจิก", "ปากกาเน้นข้อความ"],
-      "hi-IN": ["मार्कर", "मार्कर पेन", "हाइलाइटर"],
-      "ru-RU": ["маркер", "фломастер", "маркерная ручка"],
-      "fr-FR": ["marqueur", "feutre", "surligneur"],
-      "de-DE": ["Marker", "Filzstift", "Textmarker"],
-      "it-IT": ["pennarello", "marker", "evidenziatore"],
-      "ar-SA": ["قلم تحديد", "ماركر", "قلم فلوماستر"],
-      "tr-TR": ["keçeli kalem", "marker", "işaretleme kalemi"],
-      "my-MM": ["မာကာပင်", "အမှတ်အသားပင်", "ဟိုက်လိုက်တာပင်"]
+      "en-US": [
+        "play soccer",
+        "play football",
+        "playing soccer"
+      ],
+      "ja-JP": [
+        "サッカーをする",
+        "サッカーをやる",
+        "サッカーで遊ぶ"
+      ],
+      "pt-BR": [
+        "jogar futebol",
+        "praticar futebol",
+        "jogar bola"
+      ],
+      "vi-VN": [
+        "chơi bóng đá",
+        "đá bóng",
+        "chơi đá bóng"
+      ],
+      "tl-PH": [
+        "maglaro ng soccer",
+        "maglaro ng football",
+        "mag-football"
+      ],
+      "es-ES": [
+        "jugar al fútbol",
+        "jugar fútbol",
+        "practicar fútbol"
+      ],
+      "zh-CN": [
+        "踢足球",
+        "玩足球",
+        "打足球"
+      ],
+      "ko-KR": [
+        "축구를 하다",
+        "축구하다",
+        "축구를 하며 놀다"
+      ],
+      "id-ID": [
+        "bermain sepak bola",
+        "main bola",
+        "bermain bola kaki"
+      ],
+      "ne-NP": [
+        "फुटबल खेल्नु",
+        "सकर खेल्नु",
+        "फुटबल खेल्दै"
+      ],
+      "th-TH": [
+        "เล่นฟุตบอล",
+        "เตะฟุตบอล",
+        "เล่นบอล"
+      ],
+      "hi-IN": [
+        "फुटबॉल खेलना",
+        "सॉकर खेलना",
+        "फुटबॉल खेल"
+      ],
+      "ru-RU": [
+        "играть в футбол",
+        "играть в соккер",
+        "заниматься футболом"
+      ],
+      "fr-FR": [
+        "jouer au football",
+        "jouer au foot",
+        "faire du football"
+      ],
+      "de-DE": [
+        "Fußball spielen",
+        "Fußball spielen gehen",
+        "Soccer spielen"
+      ],
+      "it-IT": [
+        "giocare a calcio",
+        "giocare al calcio",
+        "fare calcio"
+      ],
+      "ar-SA": [
+        "يلعب كرة القدم",
+        "لعب كرة القدم",
+        "يمارس كرة القدم"
+      ],
+      "tr-TR": [
+        "futbol oynamak",
+        "top oynamak",
+        "futbol oyna"
+      ],
+      "my-MM": [
+        "ဘောလုံးကစားသည်",
+        "ဖుట်ဘောကစားသည်",
+        "ဆော့ကာကစားသည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_012",
-    "img": "assets/images/picflash/math.webp",
+    "id": "nh_elem_school_clubs_and_events_012",
+    "img": "assets/images/picflash/rugby.webp",
     "targets": {
-      "en-US": ["math", "mathematics", "math class"],
-      "ja-JP": ["さんすう", "算数", "数学"],
-      "pt-BR": ["matemática", "aula de matemática", "matemáticas"],
-      "vi-VN": ["toán", "môn toán", "toán học"],
-      "tl-PH": ["matematika", "math", "asignaturang matematika"],
-      "es-ES": ["matemáticas", "matemática", "clase de matemáticas"],
-      "zh-CN": ["数学", "数学课", "算术"],
-      "ko-KR": ["수학", "산수", "수학 수업"],
-      "id-ID": ["matematika", "pelajaran matematika", "math"],
-      "ne-NP": ["गणित", "गणित विषय", "गणितको कक्षा"],
-      "th-TH": ["คณิตศาสตร์", "วิชาคณิตศาสตร์", "เลข"],
-      "hi-IN": ["गणित", "गणित विषय", "मैथ्स"],
-      "ru-RU": ["математика", "урок математики", "арифметика"],
-      "fr-FR": ["mathématiques", "maths", "cours de mathématiques"],
-      "de-DE": ["Mathematik", "Mathe", "Mathematikunterricht"],
-      "it-IT": ["matematica", "lezione di matematica", "matematica scolastica"],
-      "ar-SA": ["رياضيات", "الرياضيات", "درس الرياضيات"],
-      "tr-TR": ["matematik", "matematik dersi", "matematik bilimi"],
-      "my-MM": ["သင်္ချာ", "သင်္ချာဘာသာ", "သင်္ချာအတန်း"]
+      "en-US": [
+        "rugby",
+        "play rugby",
+        "rugby game"
+      ],
+      "ja-JP": [
+        "ラグビー",
+        "らぐびー",
+        "ラグビーをする"
+      ],
+      "pt-BR": [
+        "rúgbi",
+        "jogar rúgbi",
+        "jogo de rúgbi"
+      ],
+      "vi-VN": [
+        "bóng bầu dục",
+        "rugby",
+        "chơi rugby"
+      ],
+      "tl-PH": [
+        "rugby",
+        "maglaro ng rugby",
+        "larong rugby"
+      ],
+      "es-ES": [
+        "rugby",
+        "jugar al rugby",
+        "partido de rugby"
+      ],
+      "zh-CN": [
+        "橄榄球",
+        "打橄榄球",
+        "英式橄榄球"
+      ],
+      "ko-KR": [
+        "럭비",
+        "럭비를 하다",
+        "럭비 경기"
+      ],
+      "id-ID": [
+        "rugbi",
+        "bermain rugbi",
+        "olahraga rugbi"
+      ],
+      "ne-NP": [
+        "रग्बी",
+        "रग्बी खेल्नु",
+        "रग्बी खेल"
+      ],
+      "th-TH": [
+        "รักบี้",
+        "เล่นรักบี้",
+        "กีฬารักบี้"
+      ],
+      "hi-IN": [
+        "रग्बी",
+        "रग्बी खेलना",
+        "रग्बी का खेल"
+      ],
+      "ru-RU": [
+        "регби",
+        "играть в регби",
+        "игра в регби"
+      ],
+      "fr-FR": [
+        "rugby",
+        "jouer au rugby",
+        "le rugby"
+      ],
+      "de-DE": [
+        "Rugby",
+        "Rugby spielen",
+        "Rugbyspiel"
+      ],
+      "it-IT": [
+        "rugby",
+        "giocare a rugby",
+        "il rugby"
+      ],
+      "ar-SA": [
+        "الرجبي",
+        "لعب الرجبي",
+        "رياضة الرجبي"
+      ],
+      "tr-TR": [
+        "ragbi",
+        "ragbi oynamak",
+        "ragbi sporu"
+      ],
+      "my-MM": [
+        "ရပ်ဘီ",
+        "ရပ်ဘီကစားသည်",
+        "ရပ်ဘီအားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_013",
-    "img": "assets/images/picflash/moral_education.webp",
+    "id": "nh_elem_school_clubs_and_events_013",
+    "img": "assets/images/picflash/soccer.webp",
     "targets": {
-      "en-US": ["moral education", "moral education class", "ethics class"],
-      "ja-JP": ["どうとく", "道徳", "道徳の授業"],
-      "pt-BR": ["educação moral", "aula de ética", "educação ética"],
-      "vi-VN": ["giáo dục đạo đức", "môn đạo đức", "đạo đức"],
-      "tl-PH": ["edukasyong pagpapakatao", "moral education", "values education"],
-      "es-ES": ["educación moral", "educación en valores", "clase de ética"],
-      "zh-CN": ["道德教育", "品德课", "道德课"],
-      "ko-KR": ["도덕", "도덕 교육", "도덕 수업"],
-      "id-ID": ["pendidikan moral", "pendidikan karakter", "pelajaran moral"],
-      "ne-NP": ["नैतिक शिक्षा", "नैतिकता शिक्षा", "नैतिक विषय"],
-      "th-TH": ["จริยศึกษา", "ศีลธรรมศึกษา", "วิชาคุณธรรม"],
-      "hi-IN": ["नैतिक शिक्षा", "नैतिकता", "मूल्य शिक्षा"],
-      "ru-RU": ["нравственное воспитание", "этика", "урок нравственности"],
-      "fr-FR": ["éducation morale", "enseignement moral", "cours d'éthique"],
-      "de-DE": ["Moralunterricht", "Ethikunterricht", "Werteerziehung"],
-      "it-IT": ["educazione morale", "educazione civica e morale", "lezione di etica"],
-      "ar-SA": ["تربية أخلاقية", "التربية الأخلاقية", "درس الأخلاق"],
-      "tr-TR": ["ahlak eğitimi", "değerler eğitimi", "ahlak dersi"],
-      "my-MM": ["ကိုယ်ကျင့်တရားပညာ", "စာရိတ္တပညာ", "အကျင့်စာရိတ္တသင်ခန်းစာ"]
+      "en-US": [
+        "soccer",
+        "football",
+        "soccer game"
+      ],
+      "ja-JP": [
+        "サッカー",
+        "さっかー",
+        "フットボール"
+      ],
+      "pt-BR": [
+        "futebol",
+        "jogo de futebol",
+        "futebol de campo"
+      ],
+      "vi-VN": [
+        "bóng đá",
+        "môn bóng đá",
+        "trận bóng đá"
+      ],
+      "tl-PH": [
+        "soccer",
+        "football",
+        "larong soccer"
+      ],
+      "es-ES": [
+        "fútbol",
+        "balompié",
+        "partido de fútbol"
+      ],
+      "zh-CN": [
+        "足球",
+        "足球运动",
+        "足球比赛"
+      ],
+      "ko-KR": [
+        "축구",
+        "축구 경기",
+        "풋볼"
+      ],
+      "id-ID": [
+        "sepak bola",
+        "bola kaki",
+        "permainan sepak bola"
+      ],
+      "ne-NP": [
+        "फुटबल",
+        "सकर",
+        "फुटबल खेल"
+      ],
+      "th-TH": [
+        "ฟุตบอล",
+        "กีฬาฟุตบอล",
+        "เกมฟุตบอล"
+      ],
+      "hi-IN": [
+        "फुटबॉल",
+        "सॉकर",
+        "फुटबॉल का खेल"
+      ],
+      "ru-RU": [
+        "футбол",
+        "соккер",
+        "футбольная игра"
+      ],
+      "fr-FR": [
+        "football",
+        "foot",
+        "match de football"
+      ],
+      "de-DE": [
+        "Fußball",
+        "Fußballspiel",
+        "Soccer"
+      ],
+      "it-IT": [
+        "calcio",
+        "football",
+        "partita di calcio"
+      ],
+      "ar-SA": [
+        "كرة القدم",
+        "لعبة كرة القدم",
+        "مباراة كرة قدم"
+      ],
+      "tr-TR": [
+        "futbol",
+        "futbol oyunu",
+        "futbol maçı"
+      ],
+      "my-MM": [
+        "ဘောလုံး",
+        "ဖుట်ဘော",
+        "ဘောလုံးအားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_014",
-    "img": "assets/images/picflash/music.webp",
+    "id": "nh_elem_school_clubs_and_events_014",
+    "img": "assets/images/picflash/sports.webp",
     "targets": {
-      "en-US": ["music", "music class", "the subject music"],
-      "ja-JP": ["おんがく", "音楽", "音楽の授業"],
-      "pt-BR": ["música", "aula de música", "disciplina de música"],
-      "vi-VN": ["âm nhạc", "môn âm nhạc", "giờ nhạc"],
-      "tl-PH": ["musika", "klase sa musika", "asignaturang musika"],
-      "es-ES": ["música", "clase de música", "asignatura de música"],
-      "zh-CN": ["音乐", "音乐课", "音乐科"],
-      "ko-KR": ["음악", "음악 수업", "음악 과목"],
-      "id-ID": ["musik", "pelajaran musik", "kelas musik"],
-      "ne-NP": ["सङ्गीत", "संगीत", "सङ्गीत विषय"],
-      "th-TH": ["ดนตรี", "วิชาดนตรี", "ชั่วโมงดนตรี"],
-      "hi-IN": ["संगीत", "संगीत विषय", "संगीत की कक्षा"],
-      "ru-RU": ["музыка", "урок музыки", "музыкальный предмет"],
-      "fr-FR": ["musique", "cours de musique", "matière musique"],
-      "de-DE": ["Musik", "Musikunterricht", "Musikfach"],
-      "it-IT": ["musica", "lezione di musica", "materia musicale"],
-      "ar-SA": ["موسيقى", "درس الموسيقى", "مادة الموسيقى"],
-      "tr-TR": ["müzik", "müzik dersi", "müzik dersi"],
-      "my-MM": ["ဂီတ", "ဂီတဘာသာ", "ဂီတသင်ခန်းစာ"]
+      "en-US": [
+        "sports",
+        "sport",
+        "different sports"
+      ],
+      "ja-JP": [
+        "スポーツ",
+        "すぽーつ",
+        "運動"
+      ],
+      "pt-BR": [
+        "esportes",
+        "esporte",
+        "vários esportes"
+      ],
+      "vi-VN": [
+        "thể thao",
+        "các môn thể thao",
+        "môn thể thao"
+      ],
+      "tl-PH": [
+        "mga sports",
+        "palakasan",
+        "mga laro"
+      ],
+      "es-ES": [
+        "deportes",
+        "deporte",
+        "varios deportes"
+      ],
+      "zh-CN": [
+        "体育运动",
+        "运动",
+        "各种运动"
+      ],
+      "ko-KR": [
+        "스포츠",
+        "운동",
+        "여러 스포츠"
+      ],
+      "id-ID": [
+        "olahraga",
+        "berbagai olahraga",
+        "sport"
+      ],
+      "ne-NP": [
+        "खेलकुद",
+        "खेल",
+        "विभिन्न खेलहरू"
+      ],
+      "th-TH": [
+        "กีฬา",
+        "กีฬาต่างๆ",
+        "การเล่นกีฬา"
+      ],
+      "hi-IN": [
+        "खेल",
+        "खेलकूद",
+        "विभिन्न खेल"
+      ],
+      "ru-RU": [
+        "спорт",
+        "виды спорта",
+        "спортивные занятия"
+      ],
+      "fr-FR": [
+        "sports",
+        "sport",
+        "différents sports"
+      ],
+      "de-DE": [
+        "Sport",
+        "Sportarten",
+        "verschiedene Sportarten"
+      ],
+      "it-IT": [
+        "sport",
+        "gli sport",
+        "diversi sport"
+      ],
+      "ar-SA": [
+        "رياضة",
+        "رياضات",
+        "أنواع الرياضة"
+      ],
+      "tr-TR": [
+        "spor",
+        "sporlar",
+        "çeşitli sporlar"
+      ],
+      "my-MM": [
+        "အားကစား",
+        "အားကစားများ",
+        "အားကစားအမျိုးမျိုး"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_015",
-    "img": "assets/images/picflash/music_room.webp",
+    "id": "nh_elem_school_clubs_and_events_015",
+    "img": "assets/images/picflash/swim.webp",
     "targets": {
-      "en-US": ["music room", "the music room", "school music room"],
-      "ja-JP": ["おんがくしつ", "音楽室", "音楽の教室"],
-      "pt-BR": ["sala de música", "a sala de música", "sala de música da escola"],
-      "vi-VN": ["phòng âm nhạc", "phòng nhạc", "phòng học nhạc"],
-      "tl-PH": ["silid ng musika", "music room", "silid-aralan ng musika"],
-      "es-ES": ["aula de música", "sala de música", "salón de música"],
-      "zh-CN": ["音乐教室", "音乐室", "学校音乐室"],
-      "ko-KR": ["음악실", "음악 교실", "학교 음악실"],
-      "id-ID": ["ruang musik", "kelas musik", "ruang pelajaran musik"],
-      "ne-NP": ["सङ्गीत कोठा", "संगीत कक्ष", "विद्यालयको सङ्गीत कोठा"],
-      "th-TH": ["ห้องดนตรี", "ห้องเรียนดนตรี", "ห้องดนตรีของโรงเรียน"],
-      "hi-IN": ["संगीत कक्ष", "म्यूज़िक रूम", "संगीत की कक्षा"],
-      "ru-RU": ["кабинет музыки", "музыкальный класс", "комната музыки"],
-      "fr-FR": ["salle de musique", "classe de musique", "salle de musique de l'école"],
-      "de-DE": ["Musikraum", "Musikzimmer", "Musikunterrichtsraum"],
-      "it-IT": ["aula di musica", "sala di musica", "aula musicale"],
-      "ar-SA": ["غرفة الموسيقى", "قاعة الموسيقى", "فصل الموسيقى"],
-      "tr-TR": ["müzik odası", "müzik sınıfı", "okul müzik odası"],
-      "my-MM": ["ဂီတခန်း", "ဂီတစာသင်ခန်း", "ကျောင်းဂီတခန်း"]
+      "en-US": [
+        "swim",
+        "to swim",
+        "go swimming"
+      ],
+      "ja-JP": [
+        "およぐ",
+        "泳ぐ",
+        "水泳をする"
+      ],
+      "pt-BR": [
+        "nadar",
+        "ir nadar",
+        "praticar natação"
+      ],
+      "vi-VN": [
+        "bơi",
+        "đi bơi",
+        "bơi lội"
+      ],
+      "tl-PH": [
+        "lumangoy",
+        "maglangoy",
+        "maligo at lumangoy"
+      ],
+      "es-ES": [
+        "nadar",
+        "ir a nadar",
+        "hacer natación"
+      ],
+      "zh-CN": [
+        "游泳",
+        "去游泳",
+        "游水"
+      ],
+      "ko-KR": [
+        "수영하다",
+        "헤엄치다",
+        "수영하러 가다"
+      ],
+      "id-ID": [
+        "berenang",
+        "pergi berenang",
+        "renang"
+      ],
+      "ne-NP": [
+        "पौडिनु",
+        "पौडी खेल्नु",
+        "पौडी गर्न जानु"
+      ],
+      "th-TH": [
+        "ว่ายน้ำ",
+        "ไปว่ายน้ำ",
+        "เล่นน้ำ"
+      ],
+      "hi-IN": [
+        "तैरना",
+        "तैरने जाना",
+        "स्विमिंग करना"
+      ],
+      "ru-RU": [
+        "плавать",
+        "пойти плавать",
+        "заниматься плаванием"
+      ],
+      "fr-FR": [
+        "nager",
+        "aller nager",
+        "faire de la natation"
+      ],
+      "de-DE": [
+        "schwimmen",
+        "schwimmen gehen",
+        "Schwimmen"
+      ],
+      "it-IT": [
+        "nuotare",
+        "andare a nuotare",
+        "fare nuoto"
+      ],
+      "ar-SA": [
+        "يسبح",
+        "السباحة",
+        "يذهب للسباحة"
+      ],
+      "tr-TR": [
+        "yüzmek",
+        "yüzmeye gitmek",
+        "yüzme yapmak"
+      ],
+      "my-MM": [
+        "ရေကူးသည်",
+        "ရေကူးသွားသည်",
+        "ရေကူးခြင်း"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_016",
-    "img": "assets/images/picflash/notebook.webp",
+    "id": "nh_elem_school_clubs_and_events_016",
+    "img": "assets/images/picflash/swimming.webp",
     "targets": {
-      "en-US": ["notebook", "a notebook", "school notebook"],
-      "ja-JP": ["ノート", "のーと", "学習帳"],
-      "pt-BR": ["caderno", "um caderno", "caderno escolar"],
-      "vi-VN": ["vở", "quyển vở", "vở học sinh"],
-      "tl-PH": ["kuwaderno", "notebook", "isang kuwaderno"],
-      "es-ES": ["cuaderno", "un cuaderno", "cuaderno escolar"],
-      "zh-CN": ["笔记本", "练习本", "一本笔记本"],
-      "ko-KR": ["공책", "노트", "공책 한 권"],
-      "id-ID": ["buku tulis", "buku catatan", "sebuah buku tulis"],
-      "ne-NP": ["कापी", "नोटबुक", "एउटा कापी"],
-      "th-TH": ["สมุด", "สมุดโน้ต", "สมุดเรียน"],
-      "hi-IN": ["कॉपी", "नोटबुक", "एक कॉपी"],
-      "ru-RU": ["тетрадь", "блокнот", "школьная тетрадь"],
-      "fr-FR": ["cahier", "carnet", "un cahier"],
-      "de-DE": ["Heft", "Notizbuch", "Schulheft"],
-      "it-IT": ["quaderno", "taccuino", "un quaderno"],
-      "ar-SA": ["دفتر", "كراسة", "دفتر مدرسي"],
-      "tr-TR": ["defter", "not defteri", "okul defteri"],
-      "my-MM": ["စာအုပ်ငယ်", "မှတ်စုစာအုပ်", "ကျောင်းသုံးစာအုပ်"]
+      "en-US": [
+        "swimming",
+        "swim",
+        "the sport of swimming"
+      ],
+      "ja-JP": [
+        "すいえい",
+        "水泳",
+        "泳ぐこと"
+      ],
+      "pt-BR": [
+        "natação",
+        "nadar",
+        "esporte de natação"
+      ],
+      "vi-VN": [
+        "bơi lội",
+        "bơi",
+        "môn bơi"
+      ],
+      "tl-PH": [
+        "paglangoy",
+        "swimming",
+        "palakasan sa paglangoy"
+      ],
+      "es-ES": [
+        "natación",
+        "nadar",
+        "deporte de natación"
+      ],
+      "zh-CN": [
+        "游泳",
+        "游泳运动",
+        "游水"
+      ],
+      "ko-KR": [
+        "수영",
+        "헤엄",
+        "수영 운동"
+      ],
+      "id-ID": [
+        "renang",
+        "berenang",
+        "olahraga renang"
+      ],
+      "ne-NP": [
+        "पौडी",
+        "पौडी खेल",
+        "स्विमिङ"
+      ],
+      "th-TH": [
+        "ว่ายน้ำ",
+        "การว่ายน้ำ",
+        "กีฬาว่ายน้ำ"
+      ],
+      "hi-IN": [
+        "तैराकी",
+        "स्विमिंग",
+        "तैरना"
+      ],
+      "ru-RU": [
+        "плавание",
+        "плавать",
+        "вид спорта плавание"
+      ],
+      "fr-FR": [
+        "natation",
+        "nager",
+        "sport de natation"
+      ],
+      "de-DE": [
+        "Schwimmen",
+        "schwimmen",
+        "Schwimmsport"
+      ],
+      "it-IT": [
+        "nuoto",
+        "nuotare",
+        "sport del nuoto"
+      ],
+      "ar-SA": [
+        "السباحة",
+        "سباحة",
+        "رياضة السباحة"
+      ],
+      "tr-TR": [
+        "yüzme",
+        "yüzmek",
+        "yüzme sporu"
+      ],
+      "my-MM": [
+        "ရေကူးခြင်း",
+        "ရေကူးအားကစား",
+        "ရေကူး"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_017",
-    "img": "assets/images/picflash/P.E..webp",
+    "id": "nh_elem_school_clubs_and_events_017",
+    "img": "assets/images/picflash/table_tennis.webp",
     "targets": {
-      "en-US": ["P.E.", "physical education", "PE"],
-      "ja-JP": ["たいいく", "体育", "保健体育"],
-      "pt-BR": ["educação física", "aula de educação física", "EF"],
-      "vi-VN": ["thể dục", "giáo dục thể chất", "môn thể dục"],
-      "tl-PH": ["P.E.", "physical education", "edukasyong pisikal"],
-      "es-ES": ["educación física", "clase de educación física", "EF"],
-      "zh-CN": ["体育", "体育课", "体育教育"],
-      "ko-KR": ["체육", "체육 수업", "체육 과목"],
-      "id-ID": ["pendidikan jasmani", "olahraga", "pelajaran olahraga"],
-      "ne-NP": ["शारीरिक शिक्षा", "व्यायाम", "खेलकुद शिक्षा"],
-      "th-TH": ["พละศึกษา", "พลศึกษา", "วิชาพลศึกษา"],
-      "hi-IN": ["शारीरिक शिक्षा", "पी.ई.", "व्यायाम शिक्षा"],
-      "ru-RU": ["физкультура", "физическое воспитание", "урок физкультуры"],
-      "fr-FR": ["éducation physique", "EPS", "cours de sport"],
-      "de-DE": ["Sportunterricht", "Sport", "Leibeserziehung"],
-      "it-IT": ["educazione fisica", "ginnastica", "lezione di educazione fisica"],
-      "ar-SA": ["تربية بدنية", "الرياضة المدرسية", "درس التربية البدنية"],
-      "tr-TR": ["beden eğitimi", "spor dersi", "beden dersi"],
-      "my-MM": ["ကိုယ်ကာယပညာ", "အားကစားဘာသာ", "ကာယလေ့ကျင့်ခန်း"]
+      "en-US": [
+        "table tennis",
+        "ping-pong",
+        "play table tennis"
+      ],
+      "ja-JP": [
+        "たっきゅう",
+        "卓球",
+        "ピンポン"
+      ],
+      "pt-BR": [
+        "tênis de mesa",
+        "pingue-pongue",
+        "jogar tênis de mesa"
+      ],
+      "vi-VN": [
+        "bóng bàn",
+        "chơi bóng bàn",
+        "ping pong"
+      ],
+      "tl-PH": [
+        "table tennis",
+        "ping-pong",
+        "maglaro ng table tennis"
+      ],
+      "es-ES": [
+        "tenis de mesa",
+        "ping-pong",
+        "jugar al tenis de mesa"
+      ],
+      "zh-CN": [
+        "乒乓球",
+        "打乒乓球",
+        "桌球"
+      ],
+      "ko-KR": [
+        "탁구",
+        "탁구를 치다",
+        "핑퐁"
+      ],
+      "id-ID": [
+        "tenis meja",
+        "pingpong",
+        "bermain tenis meja"
+      ],
+      "ne-NP": [
+        "टेबल टेनिस",
+        "पिङपङ",
+        "टेबल टेनिस खेल्नु"
+      ],
+      "th-TH": [
+        "ปิงปอง",
+        "เทเบิลเทนนิส",
+        "เล่นปิงปอง"
+      ],
+      "hi-IN": [
+        "टेबल टेनिस",
+        "पिंग-पोंग",
+        "टेबल टेनिस खेलना"
+      ],
+      "ru-RU": [
+        "настольный теннис",
+        "пинг-понг",
+        "играть в настольный теннис"
+      ],
+      "fr-FR": [
+        "tennis de table",
+        "ping-pong",
+        "jouer au tennis de table"
+      ],
+      "de-DE": [
+        "Tischtennis",
+        "Pingpong",
+        "Tischtennis spielen"
+      ],
+      "it-IT": [
+        "tennis tavolo",
+        "ping-pong",
+        "giocare a ping-pong"
+      ],
+      "ar-SA": [
+        "تنس الطاولة",
+        "بينغ بونغ",
+        "لعب تنس الطاولة"
+      ],
+      "tr-TR": [
+        "masa tenisi",
+        "ping pong",
+        "masa tenisi oynamak"
+      ],
+      "my-MM": [
+        "စားပွဲတင်တင်းနစ်",
+        "ပင်ပေါင်",
+        "စားပွဲတင်တင်းနစ်ကစားသည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_018",
-    "img": "assets/images/picflash/pen.webp",
+    "id": "nh_elem_school_clubs_and_events_018",
+    "img": "assets/images/picflash/tennis.webp",
     "targets": {
-      "en-US": ["pen", "a pen", "pens"],
-      "ja-JP": ["ペン", "ぺん", "筆記具"],
-      "pt-BR": ["caneta", "uma caneta", "canetas"],
-      "vi-VN": ["bút", "bút mực", "một cây bút"],
-      "tl-PH": ["panulat", "bolpen", "isang bolpen"],
-      "es-ES": ["bolígrafo", "pluma", "un bolígrafo"],
-      "zh-CN": ["笔", "圆珠笔", "一支笔"],
-      "ko-KR": ["펜", "볼펜", "펜 한 자루"],
-      "id-ID": ["pena", "pulpen", "sebuah pulpen"],
-      "ne-NP": ["कलम", "पेन", "एउटा कलम"],
-      "th-TH": ["ปากกา", "ปากกาหนึ่งด้าม", "ปากกาลูกลื่น"],
-      "hi-IN": ["पेन", "कलम", "एक पेन"],
-      "ru-RU": ["ручка", "одна ручка", "шариковая ручка"],
-      "fr-FR": ["stylo", "un stylo", "stylos"],
-      "de-DE": ["Stift", "Kugelschreiber", "ein Stift"],
-      "it-IT": ["penna", "una penna", "penne"],
-      "ar-SA": ["قلم", "قلم حبر", "قلم واحد"],
-      "tr-TR": ["kalem", "tükenmez kalem", "bir kalem"],
-      "my-MM": ["ဘောပင်", "မင်တံ", "ဘောပင်တစ်ချောင်း"]
+      "en-US": [
+        "tennis",
+        "play tennis",
+        "tennis game"
+      ],
+      "ja-JP": [
+        "テニス",
+        "てにす",
+        "テニスをする"
+      ],
+      "pt-BR": [
+        "tênis",
+        "jogar tênis",
+        "jogo de tênis"
+      ],
+      "vi-VN": [
+        "quần vợt",
+        "tennis",
+        "chơi quần vợt"
+      ],
+      "tl-PH": [
+        "tennis",
+        "maglaro ng tennis",
+        "larong tennis"
+      ],
+      "es-ES": [
+        "tenis",
+        "jugar al tenis",
+        "partido de tenis"
+      ],
+      "zh-CN": [
+        "网球",
+        "打网球",
+        "网球运动"
+      ],
+      "ko-KR": [
+        "테니스",
+        "테니스를 치다",
+        "테니스 경기"
+      ],
+      "id-ID": [
+        "tenis",
+        "bermain tenis",
+        "olahraga tenis"
+      ],
+      "ne-NP": [
+        "टेनिस",
+        "टेनिस खेल्नु",
+        "टेनिस खेल"
+      ],
+      "th-TH": [
+        "เทนนิส",
+        "เล่นเทนนิส",
+        "กีฬาเทนนิส"
+      ],
+      "hi-IN": [
+        "टेनिस",
+        "टेनिस खेलना",
+        "टेनिस का खेल"
+      ],
+      "ru-RU": [
+        "теннис",
+        "играть в теннис",
+        "теннисная игра"
+      ],
+      "fr-FR": [
+        "tennis",
+        "jouer au tennis",
+        "le tennis"
+      ],
+      "de-DE": [
+        "Tennis",
+        "Tennis spielen",
+        "Tennisspiel"
+      ],
+      "it-IT": [
+        "tennis",
+        "giocare a tennis",
+        "il tennis"
+      ],
+      "ar-SA": [
+        "التنس",
+        "لعب التنس",
+        "رياضة التنس"
+      ],
+      "tr-TR": [
+        "tenis",
+        "tenis oynamak",
+        "tenis sporu"
+      ],
+      "my-MM": [
+        "တင်းနစ်",
+        "တင်းနစ်ကစားသည်",
+        "တင်းနစ်အားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_019",
-    "img": "assets/images/picflash/pencil.webp",
+    "id": "nh_elem_school_clubs_and_events_019",
+    "img": "assets/images/picflash/volleyball.webp",
     "targets": {
-      "en-US": ["pencil", "a pencil", "pencils"],
-      "ja-JP": ["えんぴつ", "鉛筆", "ペンシル"],
-      "pt-BR": ["lápis", "um lápis", "lápis de escrever"],
-      "vi-VN": ["bút chì", "một cây bút chì", "bút chì viết"],
-      "tl-PH": ["lapis", "isang lapis", "mga lapis"],
-      "es-ES": ["lápiz", "un lápiz", "lápices"],
-      "zh-CN": ["铅笔", "一支铅笔", "木铅笔"],
-      "ko-KR": ["연필", "연필 한 자루", "나무 연필"],
-      "id-ID": ["pensil", "sebuah pensil", "pensil kayu"],
-      "ne-NP": ["पेन्सिल", "सिसाकलम", "एउटा पेन्सिल"],
-      "th-TH": ["ดินสอ", "ดินสอหนึ่งแท่ง", "ดินสอไม้"],
-      "hi-IN": ["पेंसिल", "एक पेंसिल", "लकड़ी की पेंसिल"],
-      "ru-RU": ["карандаш", "один карандаш", "карандаши"],
-      "fr-FR": ["crayon", "un crayon", "crayons"],
-      "de-DE": ["Bleistift", "ein Bleistift", "Bleistifte"],
-      "it-IT": ["matita", "una matita", "matite"],
-      "ar-SA": ["قلم رصاص", "قلم رصاص واحد", "أقلام رصاص"],
-      "tr-TR": ["kurşun kalem", "bir kurşun kalem", "kalem"],
-      "my-MM": ["ခဲတံ", "ခဲတံတစ်ချောင်း", "စာရေးခဲတံ"]
+      "en-US": [
+        "volleyball",
+        "play volleyball",
+        "volleyball game"
+      ],
+      "ja-JP": [
+        "バレーボール",
+        "バレー",
+        "バレーボールをする"
+      ],
+      "pt-BR": [
+        "vôlei",
+        "voleibol",
+        "jogar vôlei"
+      ],
+      "vi-VN": [
+        "bóng chuyền",
+        "chơi bóng chuyền",
+        "môn bóng chuyền"
+      ],
+      "tl-PH": [
+        "volleyball",
+        "maglaro ng volleyball",
+        "larong volleyball"
+      ],
+      "es-ES": [
+        "voleibol",
+        "vóley",
+        "jugar al voleibol"
+      ],
+      "zh-CN": [
+        "排球",
+        "打排球",
+        "排球运动"
+      ],
+      "ko-KR": [
+        "배구",
+        "배구를 하다",
+        "배구 경기"
+      ],
+      "id-ID": [
+        "bola voli",
+        "voli",
+        "bermain bola voli"
+      ],
+      "ne-NP": [
+        "भलिबल",
+        "भलिबल खेल्नु",
+        "भलिबल खेल"
+      ],
+      "th-TH": [
+        "วอลเลย์บอล",
+        "เล่นวอลเลย์บอล",
+        "กีฬาวอลเลย์บอล"
+      ],
+      "hi-IN": [
+        "वॉलीबॉल",
+        "वॉलीबॉल खेलना",
+        "वॉलीबॉल का खेल"
+      ],
+      "ru-RU": [
+        "волейбол",
+        "играть в волейбол",
+        "волейбольная игра"
+      ],
+      "fr-FR": [
+        "volley-ball",
+        "volley",
+        "jouer au volley"
+      ],
+      "de-DE": [
+        "Volleyball",
+        "Volleyball spielen",
+        "Volleyballspiel"
+      ],
+      "it-IT": [
+        "pallavolo",
+        "volley",
+        "giocare a pallavolo"
+      ],
+      "ar-SA": [
+        "الكرة الطائرة",
+        "لعب الكرة الطائرة",
+        "رياضة الكرة الطائرة"
+      ],
+      "tr-TR": [
+        "voleybol",
+        "voleybol oynamak",
+        "voleybol sporu"
+      ],
+      "my-MM": [
+        "ဘော်လီဘော",
+        "ဘော်လီဘောကစားသည်",
+        "ဘော်လီဘောအားကစား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_020",
-    "img": "assets/images/picflash/pencil_case.webp",
+    "id": "nh_elem_school_clubs_and_events_020",
+    "img": "assets/images/picflash/drawing.webp",
     "targets": {
-      "en-US": ["pencil case", "a pencil case", "pen case"],
-      "ja-JP": ["ふでばこ", "筆箱", "ペンケース"],
-      "pt-BR": ["estojo", "estojo de lápis", "um estojo"],
-      "vi-VN": ["hộp bút", "túi bút", "một hộp bút"],
-      "tl-PH": ["lalagyan ng lapis", "pencil case", "pen case"],
-      "es-ES": ["estuche", "estuche de lápices", "portalápices"],
-      "zh-CN": ["铅笔盒", "笔袋", "文具盒"],
-      "ko-KR": ["필통", "연필통", "펜 케이스"],
-      "id-ID": ["tempat pensil", "kotak pensil", "tas pensil"],
-      "ne-NP": ["पेन्सिल बक्स", "कलमदानी", "पेन्सिल केस"],
-      "th-TH": ["กล่องดินสอ", "กระเป๋าดินสอ", "กล่องใส่เครื่องเขียน"],
-      "hi-IN": ["पेंसिल बॉक्स", "पेंसिल केस", "कलमदान"],
-      "ru-RU": ["пенал", "футляр для карандашей", "школьный пенал"],
-      "fr-FR": ["trousse", "trousse à crayons", "étui à crayons"],
-      "de-DE": ["Federmäppchen", "Mäppchen", "Stifteetui"],
-      "it-IT": ["astuccio", "portapenne", "astuccio per matite"],
-      "ar-SA": ["مقلمة", "علبة أقلام", "حافظة أقلام"],
-      "tr-TR": ["kalem kutusu", "kalemlik", "kalem çantası"],
-      "my-MM": ["ခဲတံဘူး", "စာရေးကိရိယာအိတ်", "ပင်ဆယ်ကေ့စ်"]
+      "en-US": [
+        "drawing",
+        "draw",
+        "drawing pictures"
+      ],
+      "ja-JP": [
+        "おえかき",
+        "絵を描くこと",
+        "絵画"
+      ],
+      "pt-BR": [
+        "desenho",
+        "desenhar",
+        "fazer desenhos"
+      ],
+      "vi-VN": [
+        "vẽ",
+        "vẽ tranh",
+        "hội họa"
+      ],
+      "tl-PH": [
+        "pagguhit",
+        "gumuhit",
+        "pagdodrowing"
+      ],
+      "es-ES": [
+        "dibujo",
+        "dibujar",
+        "hacer dibujos"
+      ],
+      "zh-CN": [
+        "画画",
+        "绘画",
+        "画图"
+      ],
+      "ko-KR": [
+        "그림 그리기",
+        "그림을 그리다",
+        "드로잉"
+      ],
+      "id-ID": [
+        "menggambar",
+        "gambar",
+        "melukis gambar"
+      ],
+      "ne-NP": [
+        "चित्र कोर्नु",
+        "रेखाचित्र",
+        "चित्र बनाउनु"
+      ],
+      "th-TH": [
+        "วาดรูป",
+        "การวาดภาพ",
+        "วาดภาพ"
+      ],
+      "hi-IN": [
+        "चित्र बनाना",
+        "ड्राइंग",
+        "चित्रकारी"
+      ],
+      "ru-RU": [
+        "рисование",
+        "рисовать",
+        "рисовать картинки"
+      ],
+      "fr-FR": [
+        "dessin",
+        "dessiner",
+        "faire des dessins"
+      ],
+      "de-DE": [
+        "Zeichnen",
+        "zeichnen",
+        "Bilder malen"
+      ],
+      "it-IT": [
+        "disegno",
+        "disegnare",
+        "fare disegni"
+      ],
+      "ar-SA": [
+        "الرسم",
+        "يرسم",
+        "رسم الصور"
+      ],
+      "tr-TR": [
+        "resim çizmek",
+        "çizim",
+        "resim yapmak"
+      ],
+      "my-MM": [
+        "ပုံဆွဲခြင်း",
+        "ပုံဆွဲသည်",
+        "ပန်းချီဆွဲခြင်း"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_021",
-    "img": "assets/images/picflash/pencil_sharpener.webp",
+    "id": "nh_elem_school_clubs_and_events_021",
+    "img": "assets/images/picflash/playing_the_piano.webp",
     "targets": {
-      "en-US": ["pencil sharpener", "a pencil sharpener", "sharpener"],
-      "ja-JP": ["えんぴつけずり", "鉛筆削り", "鉛筆削り器"],
-      "pt-BR": ["apontador", "apontador de lápis", "um apontador"],
-      "vi-VN": ["gọt bút chì", "đồ gọt bút chì", "cái chuốt bút chì"],
-      "tl-PH": ["pantasa", "pantasa ng lapis", "pencil sharpener"],
-      "es-ES": ["sacapuntas", "afilalápices", "un sacapuntas"],
-      "zh-CN": ["卷笔刀", "削笔器", "铅笔刀"],
-      "ko-KR": ["연필깎이", "연필깎는 기계", "샤프너"],
-      "id-ID": ["rautan pensil", "peraut", "sebuah rautan pensil"],
-      "ne-NP": ["पेन्सिल तिखार्ने", "सार्पनर", "पेन्सिल कटर"],
-      "th-TH": ["กบเหลาดินสอ", "เครื่องเหลาดินสอ", "ที่เหลาดินสอ"],
-      "hi-IN": ["पेंसिल शार्पनर", "शार्पनर", "पेंसिल छीलने वाला"],
-      "ru-RU": ["точилка", "точилка для карандашей", "одна точилка"],
-      "fr-FR": ["taille-crayon", "un taille-crayon", "aiguiseur de crayons"],
-      "de-DE": ["Bleistiftspitzer", "Spitzer", "Anspitzer"],
-      "it-IT": ["temperamatite", "un temperamatite", "affilamatite"],
-      "ar-SA": ["مبراة", "مبراة أقلام", "براية"],
-      "tr-TR": ["kalemtıraş", "kalem açacağı", "bir kalemtıraş"],
-      "my-MM": ["ခဲတံချွန်စက်", "ခဲတံချွန်", "ပင်ဆယ်ရှားပနာ"]
+      "en-US": [
+        "playing the piano",
+        "play the piano",
+        "piano playing"
+      ],
+      "ja-JP": [
+        "ピアノをひく",
+        "ピアノを弾く",
+        "ピアノ演奏"
+      ],
+      "pt-BR": [
+        "tocar piano",
+        "tocando piano",
+        "tocar o piano"
+      ],
+      "vi-VN": [
+        "chơi đàn piano",
+        "đánh đàn piano",
+        "chơi piano"
+      ],
+      "tl-PH": [
+        "tumugtog ng piano",
+        "mag-piano",
+        "pagtugtog ng piano"
+      ],
+      "es-ES": [
+        "tocar el piano",
+        "tocando el piano",
+        "tocar piano"
+      ],
+      "zh-CN": [
+        "弹钢琴",
+        "正在弹钢琴",
+        "钢琴演奏"
+      ],
+      "ko-KR": [
+        "피아노를 치다",
+        "피아노 연주",
+        "피아노를 연주하다"
+      ],
+      "id-ID": [
+        "bermain piano",
+        "memainkan piano",
+        "bermain pianonya"
+      ],
+      "ne-NP": [
+        "पियानो बजाउनु",
+        "पियानो खेल्नु",
+        "पियानो वादन"
+      ],
+      "th-TH": [
+        "เล่นเปียโน",
+        "บรรเลงเปียโน",
+        "กำลังเล่นเปียโน"
+      ],
+      "hi-IN": [
+        "पियानो बजाना",
+        "पियानो खेलना",
+        "पियानो वादन"
+      ],
+      "ru-RU": [
+        "играть на пианино",
+        "игра на пианино",
+        "играть на фортепиано"
+      ],
+      "fr-FR": [
+        "jouer du piano",
+        "jouer au piano",
+        "faire du piano"
+      ],
+      "de-DE": [
+        "Klavier spielen",
+        "Klavierspielen",
+        "am Klavier spielen"
+      ],
+      "it-IT": [
+        "suonare il pianoforte",
+        "suonare il piano",
+        "suonando il pianoforte"
+      ],
+      "ar-SA": [
+        "يعزف البيانو",
+        "العزف على البيانو",
+        "يلعب على البيانو"
+      ],
+      "tr-TR": [
+        "piyano çalmak",
+        "piyano çalma",
+        "piyano çalıyor"
+      ],
+      "my-MM": [
+        "ပီယာနိုတီးသည်",
+        "ပီယာနိုတီးခြင်း",
+        "ပီယာနိုတီးနေသည်"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_022",
-    "img": "assets/images/picflash/period_for_integrated_studies.webp",
+    "id": "nh_elem_school_clubs_and_events_022",
+    "img": "assets/images/picflash/racket.webp",
     "targets": {
-      "en-US": ["period for integrated studies", "integrated studies", "integrated study period"],
-      "ja-JP": ["そうごうてきながくしゅうのじかん", "総合的な学習の時間", "総合学習"],
-      "pt-BR": ["período de estudos integrados", "estudos integrados", "aula interdisciplinar"],
-      "vi-VN": ["tiết học tích hợp", "học tập tích hợp", "giờ học tổng hợp"],
-      "tl-PH": ["integrated studies", "oras ng pinagsamang pag-aaral", "integrated study period"],
-      "es-ES": ["periodo de estudios integrados", "estudios integrados", "clase interdisciplinaria"],
-      "zh-CN": ["综合学习时间", "综合学习", "综合实践课"],
-      "ko-KR": ["종합 학습 시간", "통합 학습", "종합 학습"],
-      "id-ID": ["waktu studi terpadu", "pembelajaran terpadu", "pelajaran terintegrasi"],
-      "ne-NP": ["एकीकृत अध्ययन समय", "समग्र अध्ययन", "एकीकृत सिकाइ"],
-      "th-TH": ["ชั่วโมงการเรียนรู้แบบบูรณาการ", "การเรียนรู้แบบบูรณาการ", "ชั่วโมงบูรณาการ"],
-      "hi-IN": ["एकीकृत अध्ययन अवधि", "समेकित अध्ययन", "एकीकृत शिक्षा"],
-      "ru-RU": ["час комплексного обучения", "интегрированное обучение", "интегрированный урок"],
-      "fr-FR": ["période d'études intégrées", "études intégrées", "cours interdisciplinaire"],
-      "de-DE": ["Zeit für integriertes Lernen", "fächerübergreifendes Lernen", "Integrationsunterricht"],
-      "it-IT": ["periodo di studi integrati", "studi integrati", "lezione interdisciplinare"],
-      "ar-SA": ["حصة الدراسات المتكاملة", "تعلم متكامل", "درس تكاملي"],
-      "tr-TR": ["bütünleşik öğrenme saati", "bütünleşik çalışmalar", "disiplinler arası ders"],
-      "my-MM": ["ပေါင်းစပ်လေ့လာရေးအချိန်", "ပေါင်းစပ်သင်ယူမှု", "ဘက်စုံလေ့လာရေးအတန်း"]
+      "en-US": [
+        "racket",
+        "a racket",
+        "tennis racket"
+      ],
+      "ja-JP": [
+        "ラケット",
+        "らけっと",
+        "テニスラケット"
+      ],
+      "pt-BR": [
+        "raquete",
+        "uma raquete",
+        "raquete de tênis"
+      ],
+      "vi-VN": [
+        "vợt",
+        "vợt tennis",
+        "một cây vợt"
+      ],
+      "tl-PH": [
+        "raketa",
+        "racket",
+        "tennis racket"
+      ],
+      "es-ES": [
+        "raqueta",
+        "una raqueta",
+        "raqueta de tenis"
+      ],
+      "zh-CN": [
+        "球拍",
+        "网球拍",
+        "一把球拍"
+      ],
+      "ko-KR": [
+        "라켓",
+        "테니스 라켓",
+        "라켓 하나"
+      ],
+      "id-ID": [
+        "raket",
+        "raket tenis",
+        "sebuah raket"
+      ],
+      "ne-NP": [
+        "र्‍याकेट",
+        "टेनिस र्‍याकेट",
+        "एउटा र्‍याकेट"
+      ],
+      "th-TH": [
+        "ไม้แร็กเกต",
+        "แร็กเกต",
+        "ไม้เทนนิส"
+      ],
+      "hi-IN": [
+        "रैकेट",
+        "टेनिस रैकेट",
+        "एक रैकेट"
+      ],
+      "ru-RU": [
+        "ракетка",
+        "теннисная ракетка",
+        "одна ракетка"
+      ],
+      "fr-FR": [
+        "raquette",
+        "raquette de tennis",
+        "une raquette"
+      ],
+      "de-DE": [
+        "Schläger",
+        "Tennisschläger",
+        "ein Schläger"
+      ],
+      "it-IT": [
+        "racchetta",
+        "racchetta da tennis",
+        "una racchetta"
+      ],
+      "ar-SA": [
+        "مضرب",
+        "مضرب تنس",
+        "مضرب واحد"
+      ],
+      "tr-TR": [
+        "raket",
+        "tenis raketi",
+        "bir raket"
+      ],
+      "my-MM": [
+        "ရက်ကက်",
+        "တင်းနစ်ရက်ကက်",
+        "ရိုက်တံ"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_023",
-    "img": "assets/images/picflash/recorder.webp",
+    "id": "nh_elem_school_clubs_and_events_023",
+    "img": "assets/images/picflash/entrance_ceremony.webp",
     "targets": {
-      "en-US": ["recorder", "a recorder", "recorder instrument"],
-      "ja-JP": ["リコーダー", "たてぶえ", "縦笛"],
-      "pt-BR": ["flauta doce", "uma flauta doce", "flauta"],
-      "vi-VN": ["sáo recorder", "sáo dọc", "cây sáo"],
-      "tl-PH": ["recorder", "plauta", "isang recorder"],
-      "es-ES": ["flauta dulce", "una flauta dulce", "flauta"],
-      "zh-CN": ["竖笛", "直笛", "一支竖笛"],
-      "ko-KR": ["리코더", "세로피리", "리코더 악기"],
-      "id-ID": ["rekorder", "seruling recorder", "seruling"],
-      "ne-NP": ["रेकर्डर बाँसुरी", "बाँसुरी", "रेकर्डर"],
-      "th-TH": ["รีคอร์เดอร์", "ขลุ่ยรีคอร์เดอร์", "ขลุ่ย"],
-      "hi-IN": ["रिकॉर्डर", "रिकॉर्डर बाँसुरी", "बाँसुरी"],
-      "ru-RU": ["блокфлейта", "флейта", "одна блокфлейта"],
-      "fr-FR": ["flûte à bec", "une flûte à bec", "flûte"],
-      "de-DE": ["Blockflöte", "eine Blockflöte", "Flöte"],
-      "it-IT": ["flauto dolce", "un flauto dolce", "flauto"],
-      "ar-SA": ["ناي ريكوردر", "فلوت ريكوردر", "ناي"],
-      "tr-TR": ["blok flüt", "flüt", "bir blok flüt"],
-      "my-MM": ["ရက်ကော်ဒါပုလွေ", "ပုလွေ", "ဒေါင်လိုက်ပုလွေ"]
+      "en-US": [
+        "entrance ceremony",
+        "school entrance ceremony",
+        "admission ceremony"
+      ],
+      "ja-JP": [
+        "にゅうがくしき",
+        "入学式",
+        "入学の式"
+      ],
+      "pt-BR": [
+        "cerimônia de entrada",
+        "cerimônia de ingresso escolar"
+      ],
+      "vi-VN": [
+        "lễ nhập học",
+        "lễ khai giảng nhập học"
+      ],
+      "tl-PH": [
+        "seremonya ng pagpasok",
+        "school entrance ceremony"
+      ],
+      "es-ES": [
+        "ceremonia de ingreso",
+        "ceremonia de entrada a la escuela"
+      ],
+      "zh-CN": [
+        "入学典礼",
+        "入学仪式"
+      ],
+      "ko-KR": [
+        "입학식",
+        "학교 입학식"
+      ],
+      "id-ID": [
+        "upacara masuk sekolah",
+        "upacara penerimaan siswa"
+      ],
+      "ne-NP": [
+        "विद्यालय प्रवेश समारोह",
+        "भर्ना समारोह"
+      ],
+      "th-TH": [
+        "พิธีเข้าเรียน",
+        "พิธีปฐมนิเทศเข้าโรงเรียน"
+      ],
+      "hi-IN": [
+        "विद्यालय प्रवेश समारोह",
+        "प्रवेश समारोह"
+      ],
+      "ru-RU": [
+        "церемония поступления",
+        "школьная церемония поступления"
+      ],
+      "fr-FR": [
+        "cérémonie d'entrée",
+        "cérémonie de rentrée scolaire"
+      ],
+      "de-DE": [
+        "Einschulungsfeier",
+        "Aufnahmefeier"
+      ],
+      "it-IT": [
+        "cerimonia d'ingresso",
+        "cerimonia di ammissione scolastica"
+      ],
+      "ar-SA": [
+        "حفل دخول المدرسة",
+        "مراسم الالتحاق بالمدرسة"
+      ],
+      "tr-TR": [
+        "okula giriş töreni",
+        "kayıt töreni"
+      ],
+      "my-MM": [
+        "ကျောင်းဝင်ပွဲ",
+        "ကျောင်းဝင်အခမ်းအနား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_024",
-    "img": "assets/images/picflash/ruler.webp",
+    "id": "nh_elem_school_clubs_and_events_024",
+    "img": "assets/images/picflash/graduation_ceremony.webp",
     "targets": {
-      "en-US": ["ruler", "a ruler", "school ruler"],
-      "ja-JP": ["じょうぎ", "定規", "ものさし"],
-      "pt-BR": ["régua", "uma régua", "régua escolar"],
-      "vi-VN": ["thước kẻ", "cây thước", "một cái thước"],
-      "tl-PH": ["ruler", "panukat", "isang ruler"],
-      "es-ES": ["regla", "una regla", "regla escolar"],
-      "zh-CN": ["尺子", "直尺", "一把尺子"],
-      "ko-KR": ["자", "눈금자", "자 하나"],
-      "id-ID": ["penggaris", "mistar", "sebuah penggaris"],
-      "ne-NP": ["रुलर", "स्केल", "नाप्ने पट्टी"],
-      "th-TH": ["ไม้บรรทัด", "ที่วัด", "ไม้บรรทัดหนึ่งอัน"],
-      "hi-IN": ["स्केल", "रूलर", "एक स्केल"],
-      "ru-RU": ["линейка", "одна линейка", "школьная линейка"],
-      "fr-FR": ["règle", "une règle", "règle scolaire"],
-      "de-DE": ["Lineal", "ein Lineal", "Schullineal"],
-      "it-IT": ["righello", "un righello", "riga"],
-      "ar-SA": ["مسطرة", "مسطرة قياس", "مسطرة واحدة"],
-      "tr-TR": ["cetvel", "bir cetvel", "ölçü cetveli"],
-      "my-MM": ["ပေတံ", "တိုင်းတာတံ", "ပေတံတစ်ချောင်း"]
+      "en-US": [
+        "graduation ceremony",
+        "school graduation ceremony",
+        "graduation"
+      ],
+      "ja-JP": [
+        "そつぎょうしき",
+        "卒業式",
+        "卒業の式"
+      ],
+      "pt-BR": [
+        "cerimônia de formatura",
+        "formatura"
+      ],
+      "vi-VN": [
+        "lễ tốt nghiệp",
+        "buổi lễ tốt nghiệp"
+      ],
+      "tl-PH": [
+        "seremonya ng pagtatapos",
+        "graduation ceremony"
+      ],
+      "es-ES": [
+        "ceremonia de graduación",
+        "graduación"
+      ],
+      "zh-CN": [
+        "毕业典礼",
+        "毕业仪式"
+      ],
+      "ko-KR": [
+        "졸업식",
+        "졸업 행사"
+      ],
+      "id-ID": [
+        "upacara kelulusan",
+        "wisuda sekolah"
+      ],
+      "ne-NP": [
+        "स्नातक समारोह",
+        "विद्यालय समापन समारोह"
+      ],
+      "th-TH": [
+        "พิธีจบการศึกษา",
+        "พิธีสำเร็จการศึกษา"
+      ],
+      "hi-IN": [
+        "स्नातक समारोह",
+        "विद्यालय विदाई समारोह"
+      ],
+      "ru-RU": [
+        "церемония выпуска",
+        "выпускной"
+      ],
+      "fr-FR": [
+        "cérémonie de remise des diplômes",
+        "cérémonie de fin d'études"
+      ],
+      "de-DE": [
+        "Abschlussfeier",
+        "Schulabschlussfeier"
+      ],
+      "it-IT": [
+        "cerimonia di diploma",
+        "cerimonia di fine studi"
+      ],
+      "ar-SA": [
+        "حفل التخرج",
+        "مراسم التخرج"
+      ],
+      "tr-TR": [
+        "mezuniyet töreni",
+        "mezuniyet"
+      ],
+      "my-MM": [
+        "ကျောင်းဆင်းပွဲ",
+        "ဘွဲ့နှင်းသဘင်အခမ်းအနား"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_025",
-    "img": "assets/images/picflash/school.webp",
+    "id": "nh_elem_school_clubs_and_events_025",
+    "img": "assets/images/picflash/volunteer_day.webp",
     "targets": {
-      "en-US": ["school", "a school", "the school"],
-      "ja-JP": ["がっこう", "学校", "スクール"],
-      "pt-BR": ["escola", "uma escola", "a escola"],
-      "vi-VN": ["trường học", "trường", "một trường học"],
-      "tl-PH": ["paaralan", "isang paaralan", "school"],
-      "es-ES": ["escuela", "colegio", "una escuela"],
-      "zh-CN": ["学校", "校园", "一所学校"],
-      "ko-KR": ["학교", "스쿨", "한 학교"],
-      "id-ID": ["sekolah", "sebuah sekolah", "sekolahan"],
-      "ne-NP": ["विद्यालय", "स्कूल", "एउटा विद्यालय"],
-      "th-TH": ["โรงเรียน", "สถานศึกษา", "โรงเรียนหนึ่งแห่ง"],
-      "hi-IN": ["स्कूल", "विद्यालय", "एक स्कूल"],
-      "ru-RU": ["школа", "одна школа", "учебное заведение"],
-      "fr-FR": ["école", "une école", "établissement scolaire"],
-      "de-DE": ["Schule", "eine Schule", "Schulgebäude"],
-      "it-IT": ["scuola", "una scuola", "istituto scolastico"],
-      "ar-SA": ["مدرسة", "المدرسة", "مؤسسة تعليمية"],
-      "tr-TR": ["okul", "bir okul", "eğitim kurumu"],
-      "my-MM": ["ကျောင်း", "စာသင်ကျောင်း", "ကျောင်းတစ်ကျောင်း"]
+      "en-US": [
+        "volunteer day",
+        "a volunteer day",
+        "volunteering day"
+      ],
+      "ja-JP": [
+        "ボランティアデー",
+        "ボランティアの日",
+        "奉仕活動の日"
+      ],
+      "pt-BR": [
+        "dia do voluntariado",
+        "dia de trabalho voluntário"
+      ],
+      "vi-VN": [
+        "ngày tình nguyện",
+        "ngày hoạt động tình nguyện"
+      ],
+      "tl-PH": [
+        "araw ng boluntaryo",
+        "volunteer day"
+      ],
+      "es-ES": [
+        "día del voluntariado",
+        "día de voluntarios"
+      ],
+      "zh-CN": [
+        "志愿者日",
+        "志愿服务日"
+      ],
+      "ko-KR": [
+        "자원봉사의 날",
+        "봉사 활동의 날"
+      ],
+      "id-ID": [
+        "hari relawan",
+        "hari kegiatan sukarela"
+      ],
+      "ne-NP": [
+        "स्वयंसेवा दिवस",
+        "स्वयंसेवक दिवस"
+      ],
+      "th-TH": [
+        "วันอาสาสมัคร",
+        "วันทำกิจกรรมจิตอาสา"
+      ],
+      "hi-IN": [
+        "स्वयंसेवा दिवस",
+        "स्वयंसेवक दिवस"
+      ],
+      "ru-RU": [
+        "день волонтёра",
+        "день волонтёрской работы"
+      ],
+      "fr-FR": [
+        "journée du bénévolat",
+        "journée des bénévoles"
+      ],
+      "de-DE": [
+        "Freiwilligentag",
+        "Tag der Freiwilligenarbeit"
+      ],
+      "it-IT": [
+        "giornata del volontariato",
+        "giornata dei volontari"
+      ],
+      "ar-SA": [
+        "يوم التطوع",
+        "يوم العمل التطوعي"
+      ],
+      "tr-TR": [
+        "gönüllülük günü",
+        "gönüllü çalışma günü"
+      ],
+      "my-MM": [
+        "စေတနာ့ဝန်ထမ်းနေ့",
+        "စေတနာ့လုပ်အားပေးနေ့"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_026",
-    "img": "assets/images/picflash/school_nurse's_office.webp",
+    "id": "nh_elem_school_clubs_and_events_026",
+    "img": "assets/images/picflash/Halloween.webp",
     "targets": {
-      "en-US": ["school nurse's office", "nurse's office", "school health room"],
-      "ja-JP": ["ほけんしつ", "保健室", "学校の保健室"],
-      "pt-BR": ["enfermaria da escola", "sala da enfermeira", "sala de saúde"],
-      "vi-VN": ["phòng y tế trường học", "phòng y tế", "phòng của y tá trường"],
-      "tl-PH": ["clinic ng paaralan", "nurse's office", "silid pangkalusugan"],
-      "es-ES": ["enfermería escolar", "sala de la enfermera", "sala de salud"],
-      "zh-CN": ["保健室", "校医室", "学校医务室"],
-      "ko-KR": ["보건실", "학교 보건실", "양호실"],
-      "id-ID": ["ruang UKS", "ruang kesehatan sekolah", "ruang perawat sekolah"],
-      "ne-NP": ["विद्यालय स्वास्थ्य कक्ष", "नर्सको कोठा", "प्राथमिक उपचार कक्ष"],
-      "th-TH": ["ห้องพยาบาล", "ห้องอนามัยโรงเรียน", "ห้องพยาบาลของโรงเรียน"],
-      "hi-IN": ["स्कूल नर्स का कमरा", "चिकित्सा कक्ष", "स्कूल स्वास्थ्य कक्ष"],
-      "ru-RU": ["медпункт", "кабинет школьной медсестры", "медицинский кабинет"],
-      "fr-FR": ["infirmerie", "infirmerie scolaire", "bureau de l'infirmière"],
-      "de-DE": ["Krankenzimmer", "Schulsanitätsraum", "Zimmer der Schulkrankenschwester"],
-      "it-IT": ["infermeria scolastica", "stanza dell'infermiera", "sala medica"],
-      "ar-SA": ["عيادة المدرسة", "غرفة الممرضة", "غرفة الصحة المدرسية"],
-      "tr-TR": ["okul reviri", "hemşire odası", "sağlık odası"],
-      "my-MM": ["ကျောင်းဆေးခန်း", "ကျောင်းသူနာပြုခန်း", "ကျန်းမာရေးခန်း"]
+      "en-US": [
+        "Halloween",
+        "Halloween night"
+      ],
+      "ja-JP": [
+        "ハロウィーン",
+        "ハロウィン",
+        "はろうぃん"
+      ],
+      "pt-BR": [
+        "Halloween",
+        "Dia das Bruxas"
+      ],
+      "vi-VN": [
+        "Halloween",
+        "lễ Halloween"
+      ],
+      "tl-PH": [
+        "Halloween",
+        "Araw ng Halloween"
+      ],
+      "es-ES": [
+        "Halloween",
+        "Noche de Brujas"
+      ],
+      "zh-CN": [
+        "万圣节",
+        "万圣夜"
+      ],
+      "ko-KR": [
+        "할로윈",
+        "핼러윈"
+      ],
+      "id-ID": [
+        "Halloween",
+        "Hari Halloween"
+      ],
+      "ne-NP": [
+        "हेलोविन",
+        "हेलोविन पर्व"
+      ],
+      "th-TH": [
+        "ฮาโลวีน",
+        "วันฮาโลวีน"
+      ],
+      "hi-IN": [
+        "हैलोवीन",
+        "हैलोवीन दिवस"
+      ],
+      "ru-RU": [
+        "Хэллоуин",
+        "ночь Хэллоуина"
+      ],
+      "fr-FR": [
+        "Halloween",
+        "fête d'Halloween"
+      ],
+      "de-DE": [
+        "Halloween",
+        "Halloweenabend"
+      ],
+      "it-IT": [
+        "Halloween",
+        "festa di Halloween"
+      ],
+      "ar-SA": [
+        "الهالوين",
+        "عيد الهالوين"
+      ],
+      "tr-TR": [
+        "Cadılar Bayramı",
+        "Halloween"
+      ],
+      "my-MM": [
+        "ဟယ်လိုဝင်း",
+        "ဟယ်လိုဝင်းပွဲ"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_027",
-    "img": "assets/images/picflash/school_principal's_office.webp",
+    "id": "nh_elem_school_clubs_and_events_027",
+    "img": "assets/images/picflash/christmas.webp",
     "targets": {
-      "en-US": ["school principal's office", "principal's office", "headteacher's office"],
-      "ja-JP": ["こうちょうしつ", "校長室", "校長先生の部屋"],
-      "pt-BR": ["sala do diretor", "gabinete do diretor", "diretoria"],
-      "vi-VN": ["phòng hiệu trưởng", "văn phòng hiệu trưởng", "phòng của hiệu trưởng"],
-      "tl-PH": ["opisina ng punong-guro", "principal's office", "tanggapan ng principal"],
-      "es-ES": ["despacho del director", "oficina del director", "dirección"],
-      "zh-CN": ["校长室", "校长办公室", "学校校长室"],
-      "ko-KR": ["교장실", "교장 선생님 방", "학교장실"],
-      "id-ID": ["ruang kepala sekolah", "kantor kepala sekolah", "ruang kepsek"],
-      "ne-NP": ["प्रधानाध्यापकको कार्यालय", "प्रधानाध्यापक कक्ष", "स्कूल प्रमुखको कोठा"],
-      "th-TH": ["ห้องผู้อำนวยการ", "ห้องครูใหญ่", "สำนักงานผู้อำนวยการ"],
-      "hi-IN": ["प्रधानाचार्य कक्ष", "प्रिंसिपल का कार्यालय", "प्रधानाचार्य का कमरा"],
-      "ru-RU": ["кабинет директора", "директорская", "офис директора школы"],
-      "fr-FR": ["bureau du directeur", "bureau de la directrice", "bureau du principal"],
-      "de-DE": ["Direktorenzimmer", "Büro des Schulleiters", "Schulleiterbüro"],
-      "it-IT": ["ufficio del preside", "ufficio del dirigente", "presidenza"],
-      "ar-SA": ["مكتب المدير", "غرفة مدير المدرسة", "مكتب مدير المدرسة"],
-      "tr-TR": ["müdür odası", "okul müdürünün odası", "müdürlük"],
-      "my-MM": ["ကျောင်းအုပ်ကြီးရုံးခန်း", "ကျောင်းအုပ်ခန်း", "ကျောင်းအုပ်ရုံး"]
+      "en-US": [
+        "Christmas",
+        "Christmas Day"
+      ],
+      "ja-JP": [
+        "クリスマス",
+        "くりすます",
+        "クリスマスの日"
+      ],
+      "pt-BR": [
+        "Natal",
+        "Dia de Natal"
+      ],
+      "vi-VN": [
+        "Giáng sinh",
+        "lễ Giáng sinh"
+      ],
+      "tl-PH": [
+        "Pasko",
+        "Araw ng Pasko"
+      ],
+      "es-ES": [
+        "Navidad",
+        "día de Navidad"
+      ],
+      "zh-CN": [
+        "圣诞节",
+        "圣诞"
+      ],
+      "ko-KR": [
+        "크리스마스",
+        "성탄절"
+      ],
+      "id-ID": [
+        "Natal",
+        "Hari Natal"
+      ],
+      "ne-NP": [
+        "क्रिसमस",
+        "क्रिसमस दिवस"
+      ],
+      "th-TH": [
+        "คริสต์มาส",
+        "วันคริสต์มาส"
+      ],
+      "hi-IN": [
+        "क्रिसमस",
+        "क्रिसमस दिवस"
+      ],
+      "ru-RU": [
+        "Рождество",
+        "Рождественский день"
+      ],
+      "fr-FR": [
+        "Noël",
+        "jour de Noël"
+      ],
+      "de-DE": [
+        "Weihnachten",
+        "Weihnachtstag"
+      ],
+      "it-IT": [
+        "Natale",
+        "giorno di Natale"
+      ],
+      "ar-SA": [
+        "عيد الميلاد",
+        "يوم عيد الميلاد"
+      ],
+      "tr-TR": [
+        "Noel",
+        "Noel günü"
+      ],
+      "my-MM": [
+        "ခရစ္စမတ်",
+        "ခရစ္စမတ်နေ့"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_028",
-    "img": "assets/images/picflash/science.webp",
+    "id": "nh_elem_school_clubs_and_events_028",
+    "img": "assets/images/picflash/Children's_Day.webp",
     "targets": {
-      "en-US": ["science", "science class", "the subject science"],
-      "ja-JP": ["りか", "理科", "科学"],
-      "pt-BR": ["ciências", "aula de ciências", "ciência"],
-      "vi-VN": ["khoa học", "môn khoa học", "môn tự nhiên"],
-      "tl-PH": ["agham", "science", "klase sa agham"],
-      "es-ES": ["ciencias", "ciencia", "clase de ciencias"],
-      "zh-CN": ["科学", "科学课", "自然科学"],
-      "ko-KR": ["과학", "과학 수업", "과학 과목"],
-      "id-ID": ["sains", "ilmu pengetahuan", "pelajaran sains"],
-      "ne-NP": ["विज्ञान", "विज्ञान विषय", "विज्ञानको कक्षा"],
-      "th-TH": ["วิทยาศาสตร์", "วิชาวิทยาศาสตร์", "วิทย์"],
-      "hi-IN": ["विज्ञान", "विज्ञान विषय", "साइंस"],
-      "ru-RU": ["естествознание", "наука", "урок естествознания"],
-      "fr-FR": ["sciences", "science", "cours de sciences"],
-      "de-DE": ["Naturwissenschaften", "Sachkunde", "Naturwissenschaftsunterricht"],
-      "it-IT": ["scienze", "scienza", "lezione di scienze"],
-      "ar-SA": ["علوم", "العلوم", "درس العلوم"],
-      "tr-TR": ["fen bilgisi", "bilim", "fen dersi"],
-      "my-MM": ["သိပ္ပံ", "သိပ္ပံဘာသာ", "သိပ္ပံသင်ခန်းစာ"]
+      "en-US": [
+        "Children's Day",
+        "Japanese Children's Day"
+      ],
+      "ja-JP": [
+        "こどものひ",
+        "こどもの日",
+        "子供の日"
+      ],
+      "pt-BR": [
+        "Dia das Crianças",
+        "dia das crianças japonês"
+      ],
+      "vi-VN": [
+        "Ngày Trẻ em",
+        "Ngày Thiếu nhi Nhật Bản"
+      ],
+      "tl-PH": [
+        "Araw ng mga Bata",
+        "Children's Day"
+      ],
+      "es-ES": [
+        "Día del Niño",
+        "Día de los Niños"
+      ],
+      "zh-CN": [
+        "儿童节",
+        "日本儿童节"
+      ],
+      "ko-KR": [
+        "어린이날",
+        "일본 어린이날"
+      ],
+      "id-ID": [
+        "Hari Anak",
+        "Hari Anak Jepang"
+      ],
+      "ne-NP": [
+        "बाल दिवस",
+        "जापानी बाल दिवस"
+      ],
+      "th-TH": [
+        "วันเด็ก",
+        "วันเด็กญี่ปุ่น"
+      ],
+      "hi-IN": [
+        "बाल दिवस",
+        "जापानी बाल दिवस"
+      ],
+      "ru-RU": [
+        "День детей",
+        "японский День детей"
+      ],
+      "fr-FR": [
+        "Journée des enfants",
+        "fête des enfants au Japon"
+      ],
+      "de-DE": [
+        "Kindertag",
+        "japanischer Kindertag"
+      ],
+      "it-IT": [
+        "Giornata dei bambini",
+        "festa dei bambini giapponese"
+      ],
+      "ar-SA": [
+        "يوم الأطفال",
+        "يوم الأطفال الياباني"
+      ],
+      "tr-TR": [
+        "Çocuklar Günü",
+        "Japon Çocuklar Günü"
+      ],
+      "my-MM": [
+        "ကလေးများနေ့",
+        "ဂျပန်ကလေးများနေ့"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_029",
-    "img": "assets/images/picflash/scissors.webp",
+    "id": "nh_elem_school_clubs_and_events_029",
+    "img": "assets/images/picflash/Star_Festival.webp",
     "targets": {
-      "en-US": ["scissors", "a pair of scissors", "scissor"],
-      "ja-JP": ["はさみ", "ハサミ", "鋏"],
-      "pt-BR": ["tesoura", "uma tesoura", "par de tesouras"],
-      "vi-VN": ["kéo", "cái kéo", "một chiếc kéo"],
-      "tl-PH": ["gunting", "isang gunting", "scissors"],
-      "es-ES": ["tijeras", "unas tijeras", "tijera"],
-      "zh-CN": ["剪刀", "一把剪刀", "剪子"],
-      "ko-KR": ["가위", "가위 한 자루", "종이 가위"],
-      "id-ID": ["gunting", "sebuah gunting", "gunting kertas"],
-      "ne-NP": ["कैंची", "एउटा कैंची", "कागज काट्ने कैंची"],
-      "th-TH": ["กรรไกร", "กรรไกรหนึ่งอัน", "กรรไกรตัดกระดาษ"],
-      "hi-IN": ["कैंची", "एक कैंची", "कागज़ काटने की कैंची"],
-      "ru-RU": ["ножницы", "пара ножниц", "одни ножницы"],
-      "fr-FR": ["ciseaux", "une paire de ciseaux", "des ciseaux"],
-      "de-DE": ["Schere", "eine Schere", "Papierschere"],
-      "it-IT": ["forbici", "un paio di forbici", "forbice"],
-      "ar-SA": ["مقص", "مقص واحد", "مقص ورق"],
-      "tr-TR": ["makas", "bir makas", "kağıt makası"],
-      "my-MM": ["ကတ်ကြေး", "ကတ်ကြေးတစ်ချောင်း", "စက္ကူကတ်ကြေး"]
+      "en-US": [
+        "Star Festival",
+        "Tanabata",
+        "Japanese Star Festival"
+      ],
+      "ja-JP": [
+        "たなばた",
+        "七夕",
+        "七夕祭り"
+      ],
+      "pt-BR": [
+        "Festival das Estrelas",
+        "Tanabata"
+      ],
+      "vi-VN": [
+        "Lễ hội Tanabata",
+        "Lễ hội Sao"
+      ],
+      "tl-PH": [
+        "Pista ng mga Bituin",
+        "Tanabata"
+      ],
+      "es-ES": [
+        "Festival de las Estrellas",
+        "Tanabata"
+      ],
+      "zh-CN": [
+        "七夕节",
+        "七夕"
+      ],
+      "ko-KR": [
+        "칠석",
+        "다나바타"
+      ],
+      "id-ID": [
+        "Festival Bintang",
+        "Tanabata"
+      ],
+      "ne-NP": [
+        "तारा महोत्सव",
+        "तानाबाता"
+      ],
+      "th-TH": [
+        "เทศกาลดวงดาว",
+        "ทานาบาตะ"
+      ],
+      "hi-IN": [
+        "तारा उत्सव",
+        "तानाबाता"
+      ],
+      "ru-RU": [
+        "Праздник звёзд",
+        "Танабата"
+      ],
+      "fr-FR": [
+        "Fête des étoiles",
+        "Tanabata"
+      ],
+      "de-DE": [
+        "Sternenfest",
+        "Tanabata"
+      ],
+      "it-IT": [
+        "Festa delle stelle",
+        "Tanabata"
+      ],
+      "ar-SA": [
+        "مهرجان النجوم",
+        "تاناباتا"
+      ],
+      "tr-TR": [
+        "Yıldız Festivali",
+        "Tanabata"
+      ],
+      "my-MM": [
+        "ကြယ်ပွဲတော်",
+        "တနာဘာတာ"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_030",
-    "img": "assets/images/picflash/social_studies.webp",
+    "id": "nh_elem_school_clubs_and_events_030",
+    "img": "assets/images/picflash/New_Year's_Day.webp",
     "targets": {
-      "en-US": ["social studies", "social studies class", "social science"],
-      "ja-JP": ["しゃかい", "社会", "社会科"],
-      "pt-BR": ["estudos sociais", "ciências sociais", "aula de estudos sociais"],
-      "vi-VN": ["xã hội học", "môn xã hội", "nghiên cứu xã hội"],
-      "tl-PH": ["araling panlipunan", "social studies", "AP"],
-      "es-ES": ["ciencias sociales", "estudios sociales", "clase de sociales"],
-      "zh-CN": ["社会课", "社会学科", "社会学习"],
-      "ko-KR": ["사회", "사회과", "사회 수업"],
-      "id-ID": ["ilmu sosial", "pelajaran sosial", "IPS"],
-      "ne-NP": ["सामाजिक अध्ययन", "सामाजिक शिक्षा", "समाज अध्ययन"],
-      "th-TH": ["สังคมศึกษา", "วิชาสังคม", "สังคมศาสตร์"],
-      "hi-IN": ["सामाजिक अध्ययन", "सामाजिक विज्ञान", "समाज अध्ययन"],
-      "ru-RU": ["обществознание", "социальные науки", "урок обществознания"],
-      "fr-FR": ["études sociales", "sciences sociales", "cours d'études sociales"],
-      "de-DE": ["Sozialkunde", "Gesellschaftslehre", "Sozialwissenschaften"],
-      "it-IT": ["studi sociali", "scienze sociali", "educazione sociale"],
-      "ar-SA": ["دراسات اجتماعية", "علوم اجتماعية", "مادة الاجتماعيات"],
-      "tr-TR": ["sosyal bilgiler", "sosyal bilimler", "sosyal bilgiler dersi"],
-      "my-MM": ["လူမှုရေးဘာသာ", "လူမှုလေ့လာရေး", "လူမှုသိပ္ပံ"]
+      "en-US": [
+        "New Year's Day",
+        "New Year Day",
+        "January first"
+      ],
+      "ja-JP": [
+        "がんじつ",
+        "元日",
+        "お正月"
+      ],
+      "pt-BR": [
+        "Dia de Ano Novo",
+        "primeiro de janeiro"
+      ],
+      "vi-VN": [
+        "Ngày đầu năm mới",
+        "Tết Dương lịch"
+      ],
+      "tl-PH": [
+        "Araw ng Bagong Taon",
+        "Bagong Taon"
+      ],
+      "es-ES": [
+        "Año Nuevo",
+        "Día de Año Nuevo"
+      ],
+      "zh-CN": [
+        "元旦",
+        "新年第一天"
+      ],
+      "ko-KR": [
+        "새해 첫날",
+        "신정"
+      ],
+      "id-ID": [
+        "Hari Tahun Baru",
+        "Tahun Baru"
+      ],
+      "ne-NP": [
+        "नयाँ वर्षको दिन",
+        "नयाँ वर्ष"
+      ],
+      "th-TH": [
+        "วันขึ้นปีใหม่",
+        "วันปีใหม่"
+      ],
+      "hi-IN": [
+        "नववर्ष दिवस",
+        "नए साल का दिन"
+      ],
+      "ru-RU": [
+        "Новый год",
+        "первый день Нового года"
+      ],
+      "fr-FR": [
+        "Jour de l'An",
+        "Nouvel An"
+      ],
+      "de-DE": [
+        "Neujahrstag",
+        "Neujahr"
+      ],
+      "it-IT": [
+        "Capodanno",
+        "giorno di Capodanno"
+      ],
+      "ar-SA": [
+        "يوم رأس السنة",
+        "أول يوم من السنة"
+      ],
+      "tr-TR": [
+        "Yılbaşı Günü",
+        "yeni yılın ilk günü"
+      ],
+      "my-MM": [
+        "နှစ်သစ်ကူးနေ့",
+        "နှစ်သစ်နေ့"
+      ]
     }
   },
   {
-    "id": "nh_elem_school_subjects_and_stationery_031",
-    "img": "assets/images/picflash/stapler.webp",
+    "id": "nh_elem_school_clubs_and_events_031",
+    "img": "assets/images/picflash/birthday.webp",
     "targets": {
-      "en-US": ["stapler", "a stapler", "paper stapler"],
-      "ja-JP": ["ホッチキス", "ステープラー", "紙とじ器"],
-      "pt-BR": ["grampeador", "um grampeador", "grampeador de papel"],
-      "vi-VN": ["dập ghim", "máy bấm kim", "cái bấm ghim"],
-      "tl-PH": ["stapler", "pang-staple", "isang stapler"],
-      "es-ES": ["grapadora", "una grapadora", "engrapadora"],
-      "zh-CN": ["订书机", "钉书机", "一个订书机"],
-      "ko-KR": ["스테이플러", "호치키스", "종이 스테이플러"],
-      "id-ID": ["stapler", "penjepret kertas", "sebuah stapler"],
-      "ne-NP": ["स्टेप्लर", "कागज जोड्ने स्टेप्लर", "एउटा स्टेप्लर"],
-      "th-TH": ["ที่เย็บกระดาษ", "เครื่องเย็บกระดาษ", "สเตเปลอร์"],
-      "hi-IN": ["स्टेपलर", "कागज़ स्टेपलर", "एक स्टेपलर"],
-      "ru-RU": ["степлер", "канцелярский степлер", "один степлер"],
-      "fr-FR": ["agrafeuse", "une agrafeuse", "agrafeuse de bureau"],
-      "de-DE": ["Tacker", "Hefter", "ein Tacker"],
-      "it-IT": ["cucitrice", "spillatrice", "una cucitrice"],
-      "ar-SA": ["دباسة", "آلة تدبيس", "دباسة ورق"],
-      "tr-TR": ["zımba", "zımba makinesi", "bir zımba"],
-      "my-MM": ["စတေးပလာ", "စက္ကူချုပ်စက်", "စာရွက်ချုပ်စက်"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_032",
-    "img": "assets/images/picflash/stationery.webp",
-    "targets": {
-      "en-US": ["stationery", "school supplies", "writing supplies"],
-      "ja-JP": ["ぶんぼうぐ", "文房具", "文具"],
-      "pt-BR": ["material de papelaria", "material escolar", "artigos de papelaria"],
-      "vi-VN": ["văn phòng phẩm", "đồ dùng học tập", "dụng cụ học tập"],
-      "tl-PH": ["mga gamit sa paaralan", "stationery", "mga gamit panulat"],
-      "es-ES": ["papelería", "material escolar", "útiles escolares"],
-      "zh-CN": ["文具", "学习用品", "文具用品"],
-      "ko-KR": ["문구류", "학용품", "문방구 용품"],
-      "id-ID": ["alat tulis", "perlengkapan sekolah", "alat tulis sekolah"],
-      "ne-NP": ["स्टेशनरी", "शैक्षिक सामग्री", "लेखन सामग्री"],
-      "th-TH": ["เครื่องเขียน", "อุปกรณ์การเรียน", "ของใช้ในโรงเรียน"],
-      "hi-IN": ["स्टेशनरी", "स्कूल की सामग्री", "लेखन सामग्री"],
-      "ru-RU": ["канцелярские принадлежности", "школьные принадлежности", "канцтовары"],
-      "fr-FR": ["papeterie", "fournitures scolaires", "articles de bureau"],
-      "de-DE": ["Schreibwaren", "Schulmaterialien", "Büromaterial"],
-      "it-IT": ["cancelleria", "materiale scolastico", "articoli di cartoleria"],
-      "ar-SA": ["قرطاسية", "أدوات مدرسية", "أدوات مكتبية"],
-      "tr-TR": ["kırtasiye", "okul malzemeleri", "yazı gereçleri"],
-      "my-MM": ["စာရေးကိရိယာများ", "ကျောင်းသုံးပစ္စည်းများ", "စာရေးပစ္စည်းများ"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_033",
-    "img": "assets/images/picflash/sticker.webp",
-    "targets": {
-      "en-US": ["sticker", "a sticker", "stickers"],
-      "ja-JP": ["シール", "ステッカー", "貼り紙"],
-      "pt-BR": ["adesivo", "um adesivo", "figurinha adesiva"],
-      "vi-VN": ["nhãn dán", "sticker", "miếng dán"],
-      "tl-PH": ["sticker", "etiketa", "isang sticker"],
-      "es-ES": ["pegatina", "adhesivo", "una pegatina"],
-      "zh-CN": ["贴纸", "贴画", "一张贴纸"],
-      "ko-KR": ["스티커", "붙임 딱지", "스티커 하나"],
-      "id-ID": ["stiker", "label tempel", "sebuah stiker"],
-      "ne-NP": ["स्टिकर", "टाँस्ने चित्र", "एउटा स्टिकर"],
-      "th-TH": ["สติกเกอร์", "แผ่นติด", "สติกเกอร์หนึ่งแผ่น"],
-      "hi-IN": ["स्टिकर", "चिपकाने वाला लेबल", "एक स्टिकर"],
-      "ru-RU": ["наклейка", "стикер", "одна наклейка"],
-      "fr-FR": ["autocollant", "sticker", "un autocollant"],
-      "de-DE": ["Aufkleber", "Sticker", "ein Aufkleber"],
-      "it-IT": ["adesivo", "sticker", "un adesivo"],
-      "ar-SA": ["ملصق", "ستيكر", "ملصق واحد"],
-      "tr-TR": ["çıkartma", "sticker", "bir çıkartma"],
-      "my-MM": ["စတစ်ကာ", "ကပ်စတစ်ကာ", "စတစ်ကာတစ်ခု"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_034",
-    "img": "assets/images/picflash/study.webp",
-    "targets": {
-      "en-US": ["study", "to study", "learn"],
-      "ja-JP": ["べんきょうする", "勉強する", "学ぶ"],
-      "pt-BR": ["estudar", "aprender", "fazer estudos"],
-      "vi-VN": ["học", "học tập", "nghiên cứu"],
-      "tl-PH": ["mag-aral", "pag-aralan", "matuto"],
-      "es-ES": ["estudiar", "aprender", "hacer estudios"],
-      "zh-CN": ["学习", "读书", "学"],
-      "ko-KR": ["공부하다", "배우다", "학습하다"],
-      "id-ID": ["belajar", "mempelajari", "menuntut ilmu"],
-      "ne-NP": ["पढ्नु", "अध्ययन गर्नु", "सिक्नु"],
-      "th-TH": ["เรียน", "ศึกษา", "เรียนหนังสือ"],
-      "hi-IN": ["पढ़ना", "अध्ययन करना", "सीखना"],
-      "ru-RU": ["учиться", "изучать", "заниматься"],
-      "fr-FR": ["étudier", "apprendre", "travailler"],
-      "de-DE": ["lernen", "studieren", "üben"],
-      "it-IT": ["studiare", "imparare", "fare studio"],
-      "ar-SA": ["يدرس", "يتعلم", "يذاكر"],
-      "tr-TR": ["çalışmak", "öğrenmek", "ders çalışmak"],
-      "my-MM": ["လေ့လာသည်", "စာကျက်သည်", "သင်ယူသည်"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_035",
-    "img": "assets/images/picflash/study_English.webp",
-    "targets": {
-      "en-US": ["study English", "learn English", "study the English language"],
-      "ja-JP": ["えいごをべんきょうする", "英語を勉強する", "英語を学ぶ"],
-      "pt-BR": ["estudar inglês", "aprender inglês", "estudar a língua inglesa"],
-      "vi-VN": ["học tiếng Anh", "học Anh văn", "học môn tiếng Anh"],
-      "tl-PH": ["mag-aral ng Ingles", "matuto ng Ingles", "pag-aralan ang Ingles"],
-      "es-ES": ["estudiar inglés", "aprender inglés", "estudiar el idioma inglés"],
-      "zh-CN": ["学英语", "学习英语", "学习英文"],
-      "ko-KR": ["영어를 공부하다", "영어를 배우다", "영어 공부를 하다"],
-      "id-ID": ["belajar bahasa Inggris", "mempelajari bahasa Inggris", "belajar Inggris"],
-      "ne-NP": ["अङ्ग्रेजी पढ्नु", "अङ्ग्रेजी सिक्नु", "अङ्ग्रेजी अध्ययन गर्नु"],
-      "th-TH": ["เรียนภาษาอังกฤษ", "ศึกษาภาษาอังกฤษ", "เรียนอังกฤษ"],
-      "hi-IN": ["अंग्रेज़ी पढ़ना", "अंग्रेज़ी सीखना", "अंग्रेज़ी का अध्ययन करना"],
-      "ru-RU": ["учить английский", "изучать английский", "учить английский язык"],
-      "fr-FR": ["étudier l'anglais", "apprendre l'anglais", "étudier la langue anglaise"],
-      "de-DE": ["Englisch lernen", "Englisch studieren", "die englische Sprache lernen"],
-      "it-IT": ["studiare inglese", "imparare l'inglese", "studiare la lingua inglese"],
-      "ar-SA": ["يدرس الإنجليزية", "يتعلم الإنجليزية", "يدرس اللغة الإنجليزية"],
-      "tr-TR": ["İngilizce çalışmak", "İngilizce öğrenmek", "İngilizce dersi çalışmak"],
-      "my-MM": ["အင်္ဂလိပ်စာလေ့လာသည်", "အင်္ဂလိပ်စာသင်ယူသည်", "အင်္ဂလိပ်ဘာသာလေ့လာသည်"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_036",
-    "img": "assets/images/picflash/subjects.webp",
-    "targets": {
-      "en-US": ["subjects", "school subjects", "subject"],
-      "ja-JP": ["きょうか", "教科", "科目"],
-      "pt-BR": ["disciplinas", "matérias escolares", "matéria"],
-      "vi-VN": ["các môn học", "môn học", "các môn ở trường"],
-      "tl-PH": ["mga asignatura", "asignatura", "mga subject"],
-      "es-ES": ["asignaturas", "materias", "materias escolares"],
-      "zh-CN": ["科目", "学科", "学校科目"],
-      "ko-KR": ["과목", "교과목", "학교 과목"],
-      "id-ID": ["mata pelajaran", "pelajaran", "mata pelajaran sekolah"],
-      "ne-NP": ["विषयहरू", "पाठ्य विषय", "विद्यालयका विषयहरू"],
-      "th-TH": ["วิชา", "วิชาเรียน", "รายวิชา"],
-      "hi-IN": ["विषय", "स्कूल के विषय", "पाठ्य विषय"],
-      "ru-RU": ["предметы", "школьные предметы", "предмет"],
-      "fr-FR": ["matières", "matières scolaires", "matière"],
-      "de-DE": ["Fächer", "Schulfächer", "Fach"],
-      "it-IT": ["materie", "materie scolastiche", "materia"],
-      "ar-SA": ["مواد دراسية", "المواد", "مادة دراسية"],
-      "tr-TR": ["dersler", "okul dersleri", "ders"],
-      "my-MM": ["ဘာသာရပ်များ", "ကျောင်းဘာသာရပ်များ", "ဘာသာရပ်"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_037",
-    "img": "assets/images/picflash/teachers'_office.webp",
-    "targets": {
-      "en-US": ["teachers' office", "staff room", "teachers' room"],
-      "ja-JP": ["しょくいんしつ", "職員室", "先生たちの部屋"],
-      "pt-BR": ["sala dos professores", "sala do corpo docente", "sala dos docentes"],
-      "vi-VN": ["phòng giáo viên", "phòng hội đồng", "phòng của giáo viên"],
-      "tl-PH": ["faculty room", "teachers' office", "silid ng mga guro"],
-      "es-ES": ["sala de profesores", "sala del profesorado", "despacho de profesores"],
-      "zh-CN": ["教师办公室", "教员室", "老师办公室"],
-      "ko-KR": ["교무실", "선생님실", "교사 사무실"],
-      "id-ID": ["ruang guru", "kantor guru", "ruang para guru"],
-      "ne-NP": ["शिक्षक कक्ष", "शिक्षकहरूको कार्यालय", "स्टाफ रुम"],
-      "th-TH": ["ห้องพักครู", "ห้องครู", "สำนักงานครู"],
-      "hi-IN": ["शिक्षक कक्ष", "स्टाफ रूम", "अध्यापक कक्ष"],
-      "ru-RU": ["учительская", "кабинет учителей", "комната учителей"],
-      "fr-FR": ["salle des professeurs", "bureau des enseignants", "salle des enseignants"],
-      "de-DE": ["Lehrerzimmer", "Lehrerbüro", "Zimmer der Lehrkräfte"],
-      "it-IT": ["sala insegnanti", "sala professori", "ufficio degli insegnanti"],
-      "ar-SA": ["غرفة المعلمين", "مكتب المعلمين", "غرفة المدرسين"],
-      "tr-TR": ["öğretmenler odası", "öğretmen odası", "öğretmenler ofisi"],
-      "my-MM": ["ဆရာဆရာမများရုံးခန်း", "ဆရာများအခန်း", "ဝန်ထမ်းဆရာအခန်း"]
-    }
-  },
-  {
-    "id": "nh_elem_school_subjects_and_stationery_038",
-    "img": "assets/images/picflash/textbook.webp",
-    "targets": {
-      "en-US": ["textbook", "a textbook", "school textbook"],
-      "ja-JP": ["きょうかしょ", "教科書", "テキストブック"],
-      "pt-BR": ["livro didático", "um livro didático", "livro escolar"],
-      "vi-VN": ["sách giáo khoa", "quyển sách giáo khoa", "sách học"],
-      "tl-PH": ["aklat-aralin", "textbook", "aklat sa paaralan"],
-      "es-ES": ["libro de texto", "libro escolar", "un libro de texto"],
-      "zh-CN": ["教科书", "课本", "一本教科书"],
-      "ko-KR": ["교과서", "교재", "교과서 한 권"],
-      "id-ID": ["buku pelajaran", "buku teks", "buku sekolah"],
-      "ne-NP": ["पाठ्यपुस्तक", "पाठ्य किताब", "विद्यालयको किताब"],
-      "th-TH": ["หนังสือเรียน", "ตำราเรียน", "หนังสือแบบเรียน"],
-      "hi-IN": ["पाठ्यपुस्तक", "टेक्स्टबुक", "स्कूल की किताब"],
-      "ru-RU": ["учебник", "школьный учебник", "один учебник"],
-      "fr-FR": ["manuel scolaire", "livre scolaire", "un manuel"],
-      "de-DE": ["Schulbuch", "Lehrbuch", "ein Schulbuch"],
-      "it-IT": ["libro di testo", "libro scolastico", "un libro di testo"],
-      "ar-SA": ["كتاب مدرسي", "كتاب دراسي", "كتاب منهجي"],
-      "tr-TR": ["ders kitabı", "okul kitabı", "bir ders kitabı"],
-      "my-MM": ["ဖတ်စာအုပ်", "ကျောင်းသုံးဖတ်စာအုပ်", "သင်ရိုးစာအုပ်"]
+      "en-US": [
+        "birthday",
+        "a birthday",
+        "birthday celebration"
+      ],
+      "ja-JP": [
+        "たんじょうび",
+        "誕生日",
+        "バースデー"
+      ],
+      "pt-BR": [
+        "aniversário",
+        "dia do aniversário"
+      ],
+      "vi-VN": [
+        "sinh nhật",
+        "ngày sinh nhật"
+      ],
+      "tl-PH": [
+        "kaarawan",
+        "birthday"
+      ],
+      "es-ES": [
+        "cumpleaños",
+        "día de cumpleaños"
+      ],
+      "zh-CN": [
+        "生日",
+        "生日庆祝"
+      ],
+      "ko-KR": [
+        "생일",
+        "생일날"
+      ],
+      "id-ID": [
+        "ulang tahun",
+        "hari ulang tahun"
+      ],
+      "ne-NP": [
+        "जन्मदिन",
+        "जन्मदिनको दिन"
+      ],
+      "th-TH": [
+        "วันเกิด",
+        "งานวันเกิด"
+      ],
+      "hi-IN": [
+        "जन्मदिन",
+        "जन्मदिन का दिन"
+      ],
+      "ru-RU": [
+        "день рождения",
+        "празднование дня рождения"
+      ],
+      "fr-FR": [
+        "anniversaire",
+        "jour d'anniversaire"
+      ],
+      "de-DE": [
+        "Geburtstag",
+        "Geburtstagsfeier"
+      ],
+      "it-IT": [
+        "compleanno",
+        "giorno del compleanno"
+      ],
+      "ar-SA": [
+        "عيد ميلاد",
+        "يوم الميلاد"
+      ],
+      "tr-TR": [
+        "doğum günü",
+        "doğum günü kutlaması"
+      ],
+      "my-MM": [
+        "မွေးနေ့",
+        "မွေးနေ့ပွဲ"
+      ]
     }
   }
 ]

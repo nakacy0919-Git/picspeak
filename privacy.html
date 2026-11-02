@@ -27,7 +27,7 @@
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">3. 学習データ（ローカルストレージ・IndexedDB等）について</h2>
                 <p>本サービスの一部では、利便性向上のため、プレイ日時、スコア、達成率、挑戦回数、利用者が入力した学習用テキスト等を、ブラウザ内のローカルストレージやIndexedDB等に保存する場合があります。</p>
-                <p class="mt-3">これらのブラウザ内保存データについて、PicSpeak & EduToolsの運営サーバーへ自動的に収集・蓄積する処理は行っていません。ただし、次項の「教員が設定したGoogleフォームへの課題提出」を利用する場合は、提出操作によって一部の情報がGoogleフォームへ送信されます。</p>
+                <p class="mt-3">これらのブラウザ内保存データについて、PicSpeak & EduToolsの運営サーバーへ自動的に収集・蓄積する処理は行っていません。ただし、Googleフォームへの課題提出やCopeak Classroomから起動する課題では、一部情報が外部サービスへ送信されます。</p>
             </section>
 
             <section>
@@ -38,6 +38,11 @@
                 <p class="mt-3">学校・教員が本機能を利用する場合は、各学校・教育機関の個人情報保護方針やGoogle Workspace等の利用ルールに従って、適切に運用してください。</p>
             </section>
 
+            <section>
+                <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">4-2. Copeak Classroomとの成績連携</h2>
+                <p>Copeak ClassroomからPicSpeakの課題を起動した場合、課題トークンと実施結果をSupabase（Copeak Classroomのデータベース）へ送信します。課題・生徒の識別情報、実施回数、スコア、目標表現の達成率、WPM、発話単語数、時間、活動別結果が保存されます。通信に失敗した結果は、再送のためそのタブのセッションストレージに一時保存される場合があります。</p>
+                <p class="mt-3">得点は主にブラウザの音声認識結果から計算されます。サーバーは認証トークンや数値の形式・範囲を検査しますが、発話内容の真偽まで独立して検証しているものではありません。正式な学習評価には教員の確認を併用してください。</p>
+            </section>
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">5. 広告の配信について（Google AdSense）</h2>
                 <p class="mb-3">本サービスでは、第三者配信の広告サービスとしてGoogle AdSenseを利用する場合があります。</p>
@@ -70,7 +75,7 @@
             <section>
                 <h2 class="text-xl font-bold text-pink-500 mb-3 border-b pb-2">10. 改定について</h2>
                 <p>本ポリシーは、サービス内容や利用する外部サービスの変更等に応じて改定することがあります。重要な変更がある場合は、本ページ上でお知らせします。</p>
-                <p class="mt-3 text-sm text-gray-500">最終更新日：2026年9月5日</p>
+                <p class="mt-3 text-sm text-gray-500">最終更新日：2026年11月2日</p>
             </section>
         </div>
 

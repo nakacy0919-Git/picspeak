@@ -337,19 +337,10 @@ window.OralQuestGame = {
         const passageText = document.getElementById('oq-passage-text').textContent || "";
         const targetWords = passageText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
         
-        let matchCount = 0;
-        targetWords.forEach(targetWord => {
-            if (spokenWords.some(spoken => 
-                spoken === targetWord || spoken === targetWord + 's' || spoken === targetWord + 'es' || spoken === targetWord + 'ed' || spoken === targetWord + 'ing'
-            )) {
-                matchCount++;
-            }
-        });
+        // Ordered recognition match; this does not measure pronunciation.
+        let accuracy = window.picSpeakOrderedWordAccuracy(passageText, fullText);
 
-        let accuracy = targetWords.length > 0 ? Math.floor((matchCount / targetWords.length) * 100) : 0;
-        if (accuracy > 100) accuracy = 100;
-
-        let wpm = 0;
+                let wpm = 0;
         if (this.timeElapsed > 0) wpm = Math.round(spokenWords.length / (this.timeElapsed / 60));
 
         this.lmsReadingAccuracy=accuracy;this.lmsReadingWpm=wpm;this.lmsTotalWords+=spokenWords.length;
@@ -470,13 +461,13 @@ window.OralQuestGame = {
         let feedbackText = "";
         if (spokenWords.length >= 5 && matchCount >= 1) {
             starsHtml = "⭐⭐⭐"; feedbackText = "Excellent! 自分の言葉でしっかり答えられました！";
-        } else if (spokenWords.length >= 3) {
-            starsHtml = "⭐⭐☆"; feedbackText = "Good! さらに具体的に（becauseなどで）理由を付け足してみよう。";
+        } else if (spokenWords.length >= 3 && matchCount >= 1) {
+            starsHtml = "⭐⭐☆"; feedbackText = "Good! キーワードが使えています。理由も付け足してみよう。";
         } else {
-            starsHtml = "⭐☆☆"; feedbackText = "もう少し！主語と動詞を使って、フルセンテンスで答えよう。";
+            starsHtml = "⭐☆☆"; feedbackText = "質問に合った内容を、主語と動詞を使って答えよう。";
         }
 
-        this.lmsQA2Rating=spokenWords.length>=5&&matchCount>=1?2:spokenWords.length>=3?1:0;this.lmsTotalWords+=spokenWords.length;
+        this.lmsQA2Rating=spokenWords.length>=5&&matchCount>=1?2:spokenWords.length>=3&&matchCount>=1?1:0;this.lmsTotalWords+=spokenWords.length;
         const modelsHtml = (this.currentQ2 && this.currentQ2.modelAnswers) 
             ? this.currentQ2.modelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-purple-300">${ans}</div>`).join('')
             : "";
@@ -504,18 +495,16 @@ window.OralQuestGame = {
         const wpm = parseInt(document.getElementById('oq-wpm-text')?.textContent || "0");
         const s2Score = parseInt(document.getElementById('oq-s2-live-score')?.textContent || "0");
         
-        const totalScore = accuracy + s2Score;
-        let rank = "C";
-        let rankColor = "text-gray-500";
-        let message = "Keep trying! 音読と描写の基礎を練習しよう。";
-
-        if (totalScore >= 180) {
-            rank = "S"; rankColor = "text-yellow-400"; message = "Outstanding! 完璧なスピーキング力です！";
-        } else if (totalScore >= 140) {
-            rank = "A"; rankColor = "text-pink-500"; message = "Excellent! 非常に高い英語力を持っています。";
-        } else if (totalScore >= 100) {
-            rank = "B"; rankColor = "text-blue-500"; message = "Good! さらに語彙を増やして表現力を高めよう。";
-        }
+        const pictureCompletion=Math.max(0,Math.min(100,Number(this.lmsPictureCompletion)||0));
+        const qaRating=(Number(this.lmsQA1Rating)||0)+(Number(this.lmsQA2Rating)||0);
+        const qaPercent=Math.round(qaRating/4*100);
+        // Normalized target-based practice score: reading 25%, picture 45%, Q&A 30%.
+        const totalScore=Math.round(accuracy*0.25+pictureCompletion*0.45+qaPercent*0.30);
+        this.lmsOverallPracticeScore=totalScore;
+        let rank="C",rankColor="text-gray-500",message="Keep trying! 今日の目標表現を練習しよう。";
+        if(totalScore>=90){rank="S";rankColor="text-yellow-400";message="Excellent! 今日の練習目標をよく達成できました。";}
+        else if(totalScore>=75){rank="A";rankColor="text-pink-500";message="Great! 目標表現を多く使えています。";}
+        else if(totalScore>=55){rank="B";rankColor="text-blue-500";message="Good! 次は見落とした表現に挑戦しよう。";}
 
         document.getElementById('oq-stage-3').innerHTML = `
             <div class="bg-white w-full rounded-3xl shadow-lg border border-gray-200 p-6 md:p-10 text-center fade-in">
@@ -525,7 +514,7 @@ window.OralQuestGame = {
                 
                 <div class="flex flex-col md:flex-row items-center justify-center gap-8 mb-8">
                     <div class="flex flex-col items-center justify-center">
-                        <span class="text-sm font-black text-gray-400 uppercase tracking-widest mb-2">Total Rank</span>
+                        <span class="text-sm font-black text-gray-400 uppercase tracking-widest mb-2">Practice Rank · ${totalScore}/100</span>
                         <div class="w-32 h-32 md:w-40 md:h-40 rounded-full border-8 border-gray-50 shadow-inner flex items-center justify-center bg-white">
                             <span class="text-6xl md:text-7xl font-black ${rankColor} drop-shadow-md">${rank}</span>
                         </div>
@@ -545,11 +534,11 @@ window.OralQuestGame = {
                     </div>
                     <div class="bg-pink-50 rounded-2xl p-4 border border-pink-100">
                         <div class="text-[10px] font-black text-pink-400 uppercase tracking-widest mb-1">Stage 2: Picture</div>
-                        <div class="text-3xl font-black text-pink-600">${s2Score}<span class="text-sm">pt</span></div>
+                        <div class="text-3xl font-black text-pink-600">${pictureCompletion}<span class="text-sm">%</span></div><div class="text-xs text-pink-500">Game points: ${s2Score}</div>
                     </div>
                     <div class="bg-purple-50 rounded-2xl p-4 border border-purple-100 flex flex-col justify-center">
                         <div class="text-[10px] font-black text-purple-400 uppercase tracking-widest mb-1">Stage 3: Q&A</div>
-                        <div class="text-sm font-bold text-purple-600">Complete!</div>
+                        <div class="text-3xl font-black text-purple-600">${qaPercent}<span class="text-sm">%</span></div>
                     </div>
                 </div>
 

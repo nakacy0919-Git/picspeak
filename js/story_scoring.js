@@ -101,14 +101,9 @@ function handleStorySpeechResult(finalText, interimText) {
             }
         });
 
-        const tWords = targetText.toLowerCase().replace(/[.,!?]/g, '').split(/\s+/).filter(w=>w);
-        const sWords = currentTempText.split(/\s+/);
-        const sSet = new Set(sWords.map(w => w.replace(/[.,!?]/g, '').toLowerCase()).filter(w=>w));
-        
-        let matchCount = 0;
-        tWords.forEach(w => { if(sSet.has(w)) matchCount++; });
-        let acc = tWords.length === 0 ? 0 : Math.min(100, Math.floor((matchCount / tWords.length) * 100));
-        
+        const sWords=currentTempText.split(/\s+/);
+        const acc=window.picSpeakOrderedWordAccuracy(targetText,currentTempText);
+
         const accEl = document.getElementById('reading-accuracy');
         if(accEl) accEl.textContent = `${acc}%`;
 
@@ -116,7 +111,7 @@ function handleStorySpeechResult(finalText, interimText) {
         const scoreEl = document.getElementById('reading-score');
         if(scoreEl) scoreEl.textContent = Math.floor(acc * 1.5);
 
-        const tSetForMatch = new Set(tWords);
+        const tSetForMatch = new Set(window.picSpeakTokens(targetText));
         const htmlTranscript = sWords.map(w => {
             const cleanW = w.replace(/[.,!?]/g, '').toLowerCase();
             return (cleanW && !tSetForMatch.has(cleanW)) ? `<span class="text-purple-600 font-black underline decoration-purple-300" title="本文にない単語">${w}</span>` : w;

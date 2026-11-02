@@ -7,9 +7,9 @@ window.saveLearningLog = function(logData) {
     try {
         let logs = JSON.parse(localStorage.getItem('picspeak_logs')) || [];
         logs.unshift(logData);
-        // 最新50件のみ保存してローカルストレージのパンクを防ぐ
-        if (logs.length > 50) {
-            logs = logs.slice(0, 50);
+        // 最新200件を端末内に保存。Classroomの成績管理とは別。
+        if (logs.length > 200) {
+            logs = logs.slice(0, 200);
         }
         localStorage.setItem('picspeak_logs', JSON.stringify(logs));
     } catch (e) {

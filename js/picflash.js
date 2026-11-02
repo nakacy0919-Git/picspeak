@@ -80,6 +80,7 @@ const pfState = {
     hasAnswered: false,
     isTransitioning: false, 
     isSwitchingMic: false,
+    micFatal: false,
     comboCount: 0 
 };
 
@@ -284,7 +285,17 @@ if (SpeechRec) {
         }
     };
 
+    pfRec.onerror = event => {
+        if (['not-allowed','service-not-allowed','audio-capture'].includes(event.error)) {
+            pfState.micFatal = true;
+            pfState.isPlaying = false;
+            if (pfState.timerId) clearInterval(pfState.timerId);
+            const status = document.getElementById('pf-status-text');
+            if (status) status.textContent = 'マイクを利用できません。サイトのマイク権限を確認してください。';
+        }
+    };
     pfRec.onend = () => {
+        if (pfState.micFatal) return;
         if (pfState.isPlaying && pfState.mode === 'trial' && !pfState.isSwitchingMic) {
             setTimeout(() => { 
                 if (pfState.isPlaying && !pfState.isSwitchingMic) {
@@ -430,6 +441,7 @@ function startTrialMode() {
 document.getElementById('btn-pf-real-start').addEventListener('click', () => {
     document.getElementById('pf-start-overlay').classList.add('hidden');
     
+    pfState.micFatal = false;
     pfState.isPlaying = true;
     pfState.startTime = Date.now();
     pfState.cardStartTime = Date.now();
@@ -948,6 +960,7 @@ window.playPfTTS = function(cardIdx, lang) {
 };
 
 window.startPracticeRec = function(cardIdx, lang, statusId) {
+    pfState.micFatal = false;
     if (!pfRec) return alert("音声認識に非対応のブラウザです");
     const card = pfState.cards[cardIdx];
     

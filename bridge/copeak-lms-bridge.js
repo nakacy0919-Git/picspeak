@@ -73,11 +73,12 @@
       if(!q?.lmsFinished || reading==null || picture==null || qa1==null || qa2==null){
         notice('ORAL QUESTの段階別成績を取得できませんでした。',true);return null;
       }
-      const mean=round((reading+picture)/2);
+      const qaPercent=round((qa1+qa2)/4*100);
+      const mean=round(reading*0.25+picture*0.45+qaPercent*0.30);
       const oralWpm=num(q?.lmsReadingWpm,1000);
       return {score_raw:null,score_percent:mean,completion_percent:picture,
         wpm:oralWpm,word_count:num(q?.lmsTotalWords,10000),duration_seconds:null,
-        metrics:{reading_accuracy:reading,picture_completion:picture,qa1_rating:qa1,qa2_rating:qa2,stages_completed:3}};
+        metrics:{reading_accuracy:reading,picture_completion:picture,qa1_rating:qa1,qa2_rating:qa2,qa_completion_percent:qaPercent,practice_score:mean,stages_completed:3}};
     }
     const completionPct=round(completion??0);
     // PicSpeak Score is a raw game-point value, NOT an accuracy/percentage.

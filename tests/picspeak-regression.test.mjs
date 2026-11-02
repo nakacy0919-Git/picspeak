@@ -1,0 +1,18 @@
+import assert from 'node:assert/strict';import fs from 'node:fs';import vm from 'node:vm';
+const read=p=>fs.readFileSync(new URL('../'+p,import.meta.url),'utf8');
+const win={};vm.runInNewContext(read('js/scoring.js'),{window:win,Set,Math,Uint16Array,String,Number,Array,Object,console});
+assert.equal(win.flexibleMatch('a girl is reading a book','book a reading is girl'.split(' '),'sentence'),false);
+assert.equal(win.flexibleMatch('a girl is reading a book','a girl is reading a book'.split(' '),'sentence'),true);
+assert.equal(win.picSpeakOrderedWordAccuracy('a girl is reading a book','a girl is reading a book'),100);
+assert.ok(win.picSpeakOrderedWordAccuracy('a girl is reading a book','book a reading is girl')<70);
+assert.equal(win.picSpeakOrderedWordAccuracy('the cat and the cat','the cat'),40);
+const mosaic=JSON.parse(read('data/mosaic_list.json'));assert.equal(mosaic.length,36);
+assert.equal(mosaic.some(x=>['mosaic_1003','mosaic_1014'].includes(x.id)),false);
+const school=JSON.parse(read('data/picflash/school_subjects_and_stationery.json'));
+const clubs=JSON.parse(read('data/picflash/school_clubs_and_events.json'));
+assert.notDeepEqual(school,clubs);assert.ok(clubs.length===31&&clubs.every(x=>Object.keys(x.targets).length===19));
+assert.match(read('teacher.html'),/fetch\('data\/theme_catalog.json'\)/);
+assert.match(read('js/oralquest_game.js'),/qaPercent\*0\.30/);
+assert.match(read('bridge/copeak-lms-bridge.js'),/qaPercent\*0\.30/);
+for(const p of ['js/scoring.js','js/oralquest_game.js','js/story_scoring.js','js/picflash.js','js/speech.js','js/game.js','js/storage.js','bridge/copeak-lms-bridge.js'])new vm.Script(read(p),{filename:p});
+console.log('PicSpeak regression checks passed');

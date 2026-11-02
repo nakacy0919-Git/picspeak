@@ -394,7 +394,7 @@ window.finishGameAndShowResult = function() {
                             <span class="text-[9px] md:text-[11px] text-gray-400 font-bold mt-1">前回: ${prevScore}</span>
                         </div>
                         <div class="bg-sns-gradient rounded-2xl p-3 md:p-4 flex flex-col items-center shadow-md text-white relative">
-                            <span class="text-white/80 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">Completion</span>
+                            <span class="text-white/80 font-extrabold text-[10px] md:text-xs tracking-widest mb-0.5 md:mb-1 uppercase">Target Coverage</span>
                             <span class="text-2xl md:text-4xl font-black">${stats.completionRate}<span class="text-lg md:text-xl">%</span></span>
                             <span class="text-[9px] md:text-[11px] text-white/80 font-bold mt-1">前回: ${prevComp}</span>
                         </div>

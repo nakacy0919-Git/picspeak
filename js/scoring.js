@@ -33,32 +33,23 @@ window.getAggregatedData = function(theme, level) {
     return data;
 };
 
-window.flexibleMatch = function(targetText, spokenWordsArray, itemType) {
-    if (!targetText) return false;
-    const targetWords = targetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/);
-    
-    let wordsToMatch = targetWords;
-    
-    if (itemType === 'word') {
-        const coreWords = targetWords.filter(w => !window.STOP_WORDS.has(w) && w.length > 0);
-        wordsToMatch = coreWords.length > 0 ? coreWords : targetWords;
-    }
-
-    if (wordsToMatch.length === 0) return false;
-
-    let matchCount = 0;
-    wordsToMatch.forEach(w => {
-        const isMatch = spokenWordsArray.some(spoken => {
-            if (spoken === w) return true;
-            if (spoken === w + 's' || spoken === w + 'es' || spoken === w + 'ing' || spoken === w + 'ed' || spoken === w + 'd') return true;
-            if (w === spoken + 's' || w === spoken + 'es' || w === spoken + 'ing' || w === spoken + 'ed' || w === spoken + 'd') return true;
-            return false;
-        });
-        if (isMatch) matchCount++;
-    });
-
-    const requiredRate = wordsToMatch.length <= 2 ? 1.0 : 0.8;
-    return (matchCount / wordsToMatch.length) >= requiredRate;
+// Target expression coverage; not pronunciation or grammar accuracy.
+window.picSpeakTokens = text => String(text||'').toLowerCase().replace(/[’]/g,"'").replace(/[^a-z0-9'\s]/g,' ').trim().split(/\s+/).filter(Boolean);
+window.picSpeakOrderedWordAccuracy = function(expected,transcript) {
+ const a=window.picSpeakTokens(expected),b=window.picSpeakTokens(transcript);
+ if(!a.length)return 0;
+ const prev=new Uint16Array(b.length+1);
+ for(let i=1;i<=a.length;i++){let diag=0;for(let j=1;j<=b.length;j++){const old=prev[j];prev[j]=a[i-1]===b[j-1]?diag+1:Math.max(prev[j],prev[j-1]);diag=old;}}
+ return Math.round(prev[b.length]*100/a.length);
+};
+window.flexibleMatch = function(targetText,spokenWordsArray,itemType) {
+ const a=window.picSpeakTokens(targetText);
+ const b=Array.isArray(spokenWordsArray)?spokenWordsArray.flatMap(window.picSpeakTokens):window.picSpeakTokens(spokenWordsArray);
+ if(!a.length||!b.length)return false;
+ const same=(x,y)=>x===y||x+'s'===y||x+'es'===y||x+'ing'===y||x+'ed'===y||y+'s'===x||y+'es'===x||y+'ing'===x||y+'ed'===x;
+ if(itemType==='word')return a.some(x=>!window.STOP_WORDS.has(x)&&b.some(y=>same(x,y)))||(a.every(x=>window.STOP_WORDS.has(x))&&a.some(x=>b.includes(x)));
+ for(let j=0;j<=b.length-a.length;j++)if(a.every((x,i)=>x===b[i+j]))return true;
+ return false;
 };
 
 window.calculateScore = function(transcript, theme, selectedLevel) {

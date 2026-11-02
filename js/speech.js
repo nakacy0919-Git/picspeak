@@ -344,7 +344,7 @@ window.startSpeech = function() {
 
         alert(
             'このブラウザでは音声認識を利用できません。\n\n' +
-            'iPadではSafariをお試しください。'
+            '対応ブラウザで開き、マイク権限を確認してください。iPadではSafariをお試しください。'
         );
 
         return false;

@@ -119,38 +119,22 @@
     <script>
         // テーマ一覧を自動取得してセレクトボックスにセットする処理
         async function loadThemes() {
-            const selectTheme = document.getElementById('select-theme');
+            const selectTheme=document.getElementById('select-theme');
             try {
-                // theme_list.json からIDを取得
-                const res = await fetch('data/theme_list.json?t=' + new Date().getTime());
-                const themeIds = await res.json();
-                
-                selectTheme.innerHTML = '<option value="" disabled selected>画像を選択してください</option>';
-                
-                // 各テーマのタイトルを取得
-                for (const id of themeIds) {
-                    try {
-                        const dataRes = await fetch(`data/themes/${id}.json?t=${new Date().getTime()}`);
-                        const data = await dataRes.json();
-                        const themeData = Array.isArray(data) ? data[0] : data;
-                        
-                        // ★ undefined にならないように修正
-                        const titleJa = themeData.titleJa || themeData.description || id;
-                        const titleEn = themeData.titleEn || id;
-
-                        // 旧教材（category: other）は除外するなどの条件が必要ならここで判定
-                        if(themeData.category !== 'other') {
-                            const option = document.createElement('option');
-                            option.value = id;
-                            option.textContent = `${titleJa} (${titleEn})`;
-                            selectTheme.appendChild(option);
-                        }
-                    } catch (err) {
-                        console.warn(`テーマ ${id} の読み込みスキップ`);
-                    }
-                }
-            } catch (error) {
-                selectTheme.innerHTML = '<option value="">テーマの読み込みに失敗しました</option>';
+                const response=await fetch('data/theme_catalog.json');
+                if(!response.ok)throw Error('HTTP '+response.status);
+                const catalog=await response.json();
+                if(!Array.isArray(catalog))throw Error('Invalid catalog');
+                selectTheme.innerHTML='<option value="" disabled selected>画像を選択してください</option>';
+                catalog.filter(item=>item&&item.id&&item.category!=='other').forEach(item=>{
+                    const option=document.createElement('option');
+                    option.value=item.id;
+                    option.textContent=`${item.titleJa||item.description||item.id} (${item.titleEn||item.id})`;
+                    selectTheme.appendChild(option);
+                });
+            } catch(error) {
+                console.error('Theme catalog error',error);
+                selectTheme.innerHTML='<option value="">テーマの読み込みに失敗しました</option>';
             }
         }
 
