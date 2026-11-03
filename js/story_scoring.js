@@ -8,11 +8,7 @@ window.picSpeakStoryMatchTarget = function(target, transcript) {
     if (!target || !window.picSpeakTokens) return false;
     const spoken = window.picSpeakTokens(transcript);
     if (!spoken.length) return false;
-    const phraseFound = phrase => {
-        const words = window.picSpeakTokens(phrase);
-        return words.length > 0 && spoken.some((_,i) => i+words.length<=spoken.length &&
-            words.every((w,j)=>spoken[i+j]===w));
-    };
+    const phraseFound = phrase => window.picSpeakMatchPhrase(phrase,transcript,true);
     if (Array.isArray(target.keywords) && target.keywords.length) {
         return target.keywords.some(phraseFound);
     }
@@ -131,7 +127,8 @@ function handleStorySpeechResult(finalText, interimText) {
         const tSetForMatch = new Set(window.picSpeakTokens(targetText));
         const htmlTranscript = sWords.map(w => {
             const cleanW = w.replace(/[.,!?]/g, '').toLowerCase();
-            return (cleanW && !tSetForMatch.has(cleanW)) ? `<span class="text-purple-600 font-black underline decoration-purple-300" title="本文にない単語">${w}</span>` : w;
+            const safe = window.picSpeakEscapeHTML(w);
+            return (cleanW && !tSetForMatch.has(cleanW)) ? `<span class="text-purple-600 font-black underline decoration-purple-300" title="本文にない単語">${safe}</span>` : safe;
         }).join(" ");
         
         const transBox = document.getElementById('reading-transcript');
@@ -220,14 +217,14 @@ function finishStoryRetelling() {
                 <div class="flex justify-between items-center mb-3 pb-3 border-b border-gray-100">
                     <h4 class="font-black text-gray-800 text-xl pl-2">Scene ${i + 1}</h4>
                     <div class="flex flex-col items-end">
-                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Story Grammar</span>
+                        <span class="text-[10px] font-bold text-gray-400 uppercase tracking-widest">Story Key Points</span>
                         <span class="font-black ${sceneMatchRate >= 80 ? 'text-green-500' : sceneMatchRate >= 50 ? 'text-yellow-500' : 'text-pink-500'} text-2xl leading-none">${sceneMatchRate}%</span>
                     </div>
                 </div>
                 
                 <div class="mb-4">
                     <span class="text-xs font-black text-gray-400 uppercase tracking-widest mb-1 block">Your Speech</span>
-                    <div class="text-base text-gray-600 font-medium leading-relaxed bg-gray-50 p-3 rounded-xl border border-gray-100 italic">"${transcript || 'No speech recorded.'}"</div>
+                    <div class="text-base text-gray-600 font-medium leading-relaxed bg-gray-50 p-3 rounded-xl border border-gray-100 italic">"${window.picSpeakEscapeHTML(transcript || 'No speech recorded.')}"</div>
                 </div>
                 
                 <div>

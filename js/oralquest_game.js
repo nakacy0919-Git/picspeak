@@ -44,6 +44,7 @@ window.OralQuestGame = {
         this.transcript = "";
         this.interimTranscript = "";
         this.timeElapsed = 0;
+        this.q1Keywords=[];this.q1ModelAnswers=[];this.currentQ2=null;
 
         let passageText = "Passage data not found.";
         let q1Text = "Question data not found.";
@@ -362,24 +363,11 @@ window.OralQuestGame = {
     },
 
     calculateQ1Result: function() {
-        const fullText = (this.transcript + " " + this.interimTranscript).trim();
-        const spokenWords = fullText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
-        
-        let matchCount = 0;
-        this.q1Keywords.forEach(kw => {
-            if (spokenWords.some(spoken => 
-                spoken === kw || spoken === kw + 's' || spoken === kw + 'es' || spoken === kw + 'd' || spoken === kw + 'ed' || spoken === kw + 'ing'
-            )) {
-                matchCount++;
-            }
-        });
-
-        let starsHtml = "";
-        let feedbackText = "";
-        const sufficientContext = spokenWords.length >= 4;
-        const strongHits = Math.min(3, this.q1Keywords.length);
-        const qa1Rating = sufficientContext && strongHits > 0 && matchCount >= strongHits
-            ? 2 : sufficientContext && matchCount >= 1 ? 1 : 0;
+        const fullText=(this.transcript+' '+this.interimTranscript).trim();
+        const spokenWords=window.picSpeakTokens(fullText);
+        const matchCount=window.picSpeakKeywordHits(fullText,this.q1Keywords).length;
+        const qa1Rating=window.picSpeakAnswerRating(fullText,this.q1Keywords,this.q1ModelAnswers);
+        let starsHtml='',feedbackText='';
         if (qa1Rating === 2) {
             starsHtml = "⭐⭐⭐"; feedbackText = "複数の目標語句を含められました。内容も確認しましょう。";
         } else if (qa1Rating === 1) {
@@ -404,7 +392,7 @@ window.OralQuestGame = {
         `;
         resEl.classList.remove('hidden');
 
-        if (matchCount >= 3 && typeof window.playSuccessChime === 'function') window.playSuccessChime();
+        if (qa1Rating === 2 && typeof window.playSuccessChime === 'function') window.playSuccessChime();
         else if (matchCount >= 1 && typeof window.playTapSound === 'function') window.playTapSound();
     },
 
@@ -451,27 +439,21 @@ window.OralQuestGame = {
     },
 
     calculateQ2Result: function() {
-        const fullText = (this.transcript + " " + this.interimTranscript).trim();
-        const spokenWords = fullText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
-        
-        let matchCount = 0;
-        if (this.currentQ2 && this.currentQ2.keywords) {
-            this.currentQ2.keywords.forEach(kw => {
-                if (spokenWords.some(spoken => spoken.includes(kw))) matchCount++;
-            });
-        }
+        const fullText=(this.transcript+' '+this.interimTranscript).trim();
+        const spokenWords=window.picSpeakTokens(fullText);
+        const qa2Rating=window.picSpeakAnswerRating(fullText,this.currentQ2?.keywords||[],this.currentQ2?.modelAnswers||[]);
 
         let starsHtml = "";
         let feedbackText = "";
-        if (spokenWords.length >= 5 && matchCount >= 1) {
+        if (qa2Rating === 2) {
             starsHtml = "⭐⭐⭐"; feedbackText = "目標語句を含む文が言えました。意味の適切さは先生とも確認しましょう。";
-        } else if (spokenWords.length >= 3 && matchCount >= 1) {
+        } else if (qa2Rating === 1) {
             starsHtml = "⭐⭐☆"; feedbackText = "Good! キーワードが使えています。理由も付け足してみよう。";
         } else {
             starsHtml = "⭐☆☆"; feedbackText = "質問に合った内容を、主語と動詞を使って答えよう。";
         }
 
-        this.lmsQA2Rating=spokenWords.length>=5&&matchCount>=1?2:spokenWords.length>=3&&matchCount>=1?1:0;this.lmsTotalWords+=spokenWords.length;
+        this.lmsQA2Rating=qa2Rating;this.lmsTotalWords+=spokenWords.length;
         const modelsHtml = (this.currentQ2 && this.currentQ2.modelAnswers) 
             ? this.currentQ2.modelAnswers.map(ans => `<div class="mb-1 pl-2 border-l-2 border-purple-300">${ans}</div>`).join('')
             : "";
@@ -489,8 +471,8 @@ window.OralQuestGame = {
         `;
         resEl.classList.remove('hidden');
 
-        if (spokenWords.length >= 5 && typeof window.playSuccessChime === 'function') window.playSuccessChime();
-        else if (spokenWords.length >= 3 && typeof window.playTapSound === 'function') window.playTapSound();
+        if (qa2Rating === 2 && typeof window.playSuccessChime === 'function') window.playSuccessChime();
+        else if (qa2Rating === 1 && typeof window.playTapSound === 'function') window.playTapSound();
     },
 
     showFinalResult: function() {

@@ -25,9 +25,7 @@ window.processPracticeDiff = function(spoken, target) {
             html += `<span class="text-purple-600 font-black border-b-[6px] border-purple-300 bg-purple-50 px-2 mx-1 rounded-lg">${window.picSpeakEscapeHTML(word)}</span>`;
         } else { html += `${window.picSpeakEscapeHTML(word)} `; }
     });
-    const normalizedSpoken = spoken.toLowerCase().replace(/[.,!?]/g, '');
-    const normalizedTarget = target.toLowerCase().replace(/[.,!?]/g, '');
-    const isPerfect = normalizedSpoken.includes(normalizedTarget) && normalizedTarget.length > 0;
+    const isPerfect = !!target.trim() && window.picSpeakMatchPhrase(target, spoken);
     return { html: html.trim(), isPerfect };
 };
 

@@ -42,4 +42,53 @@ const storyHtml=read('story.html');
 assert.ok(storyHtml.indexOf('src="js/scoring.js"')<storyHtml.indexOf('src="js/story_scoring.js"'));
 for(const path of ['js/scoring.js','js/oralquest_game.js','js/story_scoring.js','js/picflash.js','js/speech.js','js/game.js','js/storage.js','bridge/copeak-lms-bridge.js'])
  new vm.Script(read(path),{filename:path});
+
+assert.equal(win.flexibleMatch('departure board','departure'.split(' '),'word'),false);
+assert.equal(win.flexibleMatch('departure board','departure board'.split(' '),'word'),true);
+assert.equal(win.picSpeakMatchPhrase('a girl is reading a book','book a reading is girl'),false);
+assert.equal(win.picSpeakAnswerRating('the ticket machine is here',['ticket machine'],[]),1);
+assert.equal(win.picSpeakAnswerRating('I do not like it',['train','bus'],[]),0);
+const allThemes=JSON.parse(read('data/theme_list.json'));
+const allLevels=['elementary','junior_high','high_school'];
+let inspectedTargets=0,checkedLevels=0;
+for (const id of allThemes) {
+  const json=JSON.parse(read('data/themes/'+id+'.json'));
+  const theme=Array.isArray(json)?json[0]:json;
+  for (const level of allLevels) {
+    const agg=win.getAggregatedData(theme,level);
+    const all=[...agg.words,...agg.chunks,...agg.sentences];
+    if (!all.length) continue;
+    inspectedTargets+=all.length;checkedLevels++;
+    win.foundWordsSet=new Set(agg.words.map(x=>x.text));
+    win.foundChunksSet=new Set(agg.chunks.map(x=>x.text));
+    win.foundSentencesSet=new Set(agg.sentences.map(x=>x.text));
+    const full=win.getCompletionStats(theme,level);
+    assert.equal(full.completionRate,100,'all targets covered '+id+'/'+level);
+    win.foundWordsSet=new Set();
+    win.foundChunksSet=new Set();
+    win.foundSentencesSet=new Set();
+    assert.equal(win.getCompletionStats(theme,level).completionRate,0,'zero targets covered '+id+'/'+level);
+    if(all.length>1) {
+      win.foundWordsSet=new Set(agg.words.slice(0,1).map(x=>x.text));
+      assert.ok(win.getCompletionStats(theme,level).completionRate<100,'no premature 100% '+id+'/'+level);
+    }
+  }
+}
+const oralList=JSON.parse(read('data/oralquest_list.json'));
+let inspectedQAs=0;
+for (const item of oralList) {
+  const json=JSON.parse(read('data/oralquest/'+item.id+'.json'));
+  const lesson=Array.isArray(json)?json[0]:json;
+  for(const question of [lesson.stage1.q1,...lesson.stage3.questions]){
+    for(const answer of question.modelAnswers||[]){
+      assert.equal(win.picSpeakAnswerRating(answer,question.keywords,question.modelAnswers),2,'model answer '+item.id);
+      inspectedQAs++;
+    }
+  }
+}
+assert.match(read('js/main.js'),/const isComplete=!!window\.appState\.practiceTargetText\.trim\(\)/);
+assert.match(read('js/oralquest_game.js'),/picSpeakAnswerRating\(fullText/);
+assert.match(read('bridge/copeak-lms-bridge.js'),/const mean=Math\.round\(reading\*0\.25/);
+console.log('Scoring integrity:',checkedLevels,'theme levels,',inspectedTargets,'targets,',inspectedQAs,'Oral Quest model answers.');
+
 console.log('PicSpeak regression checks passed');

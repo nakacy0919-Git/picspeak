@@ -74,7 +74,7 @@
         notice('ORAL QUESTの段階別成績を取得できませんでした。',true);return null;
       }
       const qaPercent=round((qa1+qa2)/4*100);
-      const mean=round(reading*0.25+picture*0.45+qaPercent*0.30);
+      const mean=Math.round(reading*0.25+picture*0.45+qaPercent*0.30);
       const oralWpm=num(q?.lmsReadingWpm,1000);
       return {score_raw:null,score_percent:mean,completion_percent:picture,
         wpm:oralWpm,word_count:num(q?.lmsTotalWords,10000),duration_seconds:null,
@@ -96,7 +96,7 @@
         if(window.picSpeakStoryMatchTarget?.(target,transcript))hits++;
       }
     });
-    const score=targets?round(num(hits/targets*100)):0;
+    const score=targets?Math.floor(hits/targets*100):0;
     const sec=Number(window.pssSettings?.retellingTime||20)*scenes.length;
     return {score_raw:null,score_percent:score,completion_percent:score,word_count:words,wpm:sec?round(num(words*60/sec,1000)):null,duration_seconds:sec,metrics:{targets_found:hits,targets_total:targets,scenes_completed:scenes.length}};
   }

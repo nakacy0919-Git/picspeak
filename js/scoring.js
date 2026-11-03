@@ -30,26 +30,60 @@ window.getAggregatedData = function(theme, level) {
             data.sentences.push(...(theme.scoringData[lvl].sentences || []));
         }
     });
+    // De-duplicate inherited targets across school levels.
+    for (const kind of ['words','chunks','sentences']) {
+      const seen=new Set();
+      data[kind]=data[kind].filter(item=>{
+        const key=String(item?.text||'').trim().toLowerCase().replace(/\s+/g,' ');
+        if(!key||seen.has(key))return false;
+        seen.add(key);return true;
+      });
+    }
     return data;
 };
 
 // Target expression coverage; not pronunciation or grammar accuracy.
 window.picSpeakTokens = text => String(text||'').toLowerCase().replace(/[’]/g,"'").replace(/[^a-z0-9'\s]/g,' ').trim().split(/\s+/).filter(Boolean);
-window.picSpeakOrderedWordAccuracy = function(expected,transcript) {
- const a=window.picSpeakTokens(expected),b=window.picSpeakTokens(transcript);
- if(!a.length)return 0;
- const prev=new Uint16Array(b.length+1);
- for(let i=1;i<=a.length;i++){let diag=0;for(let j=1;j<=b.length;j++){const old=prev[j];prev[j]=a[i-1]===b[j-1]?diag+1:Math.max(prev[j],prev[j-1]);diag=old;}}
- return Math.round(prev[b.length]*100/a.length);
+window.picSpeakEscapeHTML = value => String(value??'').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+window.picSpeakWordEquivalent = function(expected, actual) {
+  if(expected===actual)return true;
+  if(expected.length<3)return false;
+  const forms=new Set([expected+'s',expected+'es',expected+'ed',expected+'ing']);
+  if(expected.endsWith('e')){forms.add(expected+'d');forms.add(expected.slice(0,-1)+'ing');}
+  if(expected.endsWith('y'))forms.add(expected.slice(0,-1)+'ies');
+  if(/[aeiou][bcdfghjklmnpqrstvwxyz]$/.test(expected))forms.add(expected+expected.slice(-1)+'ing');
+  return forms.has(actual);
 };
-window.flexibleMatch = function(targetText,spokenWordsArray,itemType) {
- const a=window.picSpeakTokens(targetText);
- const b=Array.isArray(spokenWordsArray)?spokenWordsArray.flatMap(window.picSpeakTokens):window.picSpeakTokens(spokenWordsArray);
- if(!a.length||!b.length)return false;
- const same=(x,y)=>x===y||x+'s'===y||x+'es'===y||x+'ing'===y||x+'ed'===y||y+'s'===x||y+'es'===x||y+'ing'===x||y+'ed'===x;
- if(itemType==='word')return a.some(x=>!window.STOP_WORDS.has(x)&&b.some(y=>same(x,y)))||(a.every(x=>window.STOP_WORDS.has(x))&&a.some(x=>b.includes(x)));
- for(let j=0;j<=b.length-a.length;j++)if(a.every((x,i)=>x===b[i+j]))return true;
- return false;
+window.picSpeakMatchPhrase = function(target,transcript,allowInflections=false) {
+  const a=window.picSpeakTokens(target),b=window.picSpeakTokens(transcript);
+  if(!a.length||a.length>b.length)return false;
+  for(let i=0;i<=b.length-a.length;i++){
+    if(a.every((w,j)=>allowInflections?window.picSpeakWordEquivalent(w,b[i+j]):w===b[i+j]))return true;
+  }
+  return false;
+};
+window.picSpeakKeywordHits = function(transcript, keywords) {
+  const unique=[...new Set((Array.isArray(keywords)?keywords:[]).map(k=>String(k).trim().toLowerCase()).filter(Boolean))];
+  return unique.filter(k=>window.picSpeakMatchPhrase(k,transcript,true));
+};
+window.picSpeakAnswerRating = function(transcript,keywords,modelAnswers) {
+  const said=window.picSpeakTokens(transcript);
+  if(said.length<3)return 0;
+  const hits=window.picSpeakKeywordHits(transcript,keywords);
+  const exactModel=(Array.isArray(modelAnswers)?modelAnswers:[]).some(m=>window.picSpeakTokens(m).join(' ')===said.join(' '));
+  if(said.length>=4&&(exactModel||hits.length>=2))return 2;
+  return hits.length>=1?1:0;
+};
+window.picSpeakOrderedWordAccuracy = function(expected,transcript) {
+  const a=window.picSpeakTokens(expected),b=window.picSpeakTokens(transcript);
+  if(!a.length)return 0;
+  const prev=new Uint16Array(b.length+1);
+  for(let i=1;i<=a.length;i++){let diag=0;for(let j=1;j<=b.length;j++){const old=prev[j];prev[j]=a[i-1]===b[j-1]?diag+1:Math.max(prev[j],prev[j-1]);diag=old;}}
+  return Math.round(prev[b.length]*100/a.length);
+};
+window.flexibleMatch = function(target,spokenWordsArray,itemType) {
+  const transcript=Array.isArray(spokenWordsArray)?spokenWordsArray.join(' '):spokenWordsArray;
+  return window.picSpeakMatchPhrase(target,transcript,itemType==='word');
 };
 
 window.calculateScore = function(transcript, theme, selectedLevel) {
@@ -122,11 +156,16 @@ window.getCompletionStats = function(theme, selectedLevel) {
     
     // ★ 各要素の評価ウェイト（合計100%）と、それを満たすための「目標ポイント」
     const CATEGORY_TARGETS = {
-        object: { target: 40, weight: 20 },     // 40pt分言えれば20%獲得
-        attribute: { target: 40, weight: 20 },  // 40pt分言えれば20%獲得
-        detail: { target: 40, weight: 20 },     // 40pt分言えれば20%獲得
-        gist: { target: 60, weight: 40 }        // 60pt分（文章など）言えれば40%獲得
+      object:{weight:20},attribute:{weight:20},detail:{weight:20},gist:{weight:40}
     };
+    const CATEGORY_ALIASES={
+      object:'object',person:'object',animal:'object',food:'object',clothing:'object',material:'object',
+      attribute:'attribute',description:'attribute',emotion:'attribute',state:'attribute',color:'attribute',weather:'attribute',
+      detail:'detail',location:'detail',place:'detail',background:'detail',event:'detail',time:'detail',number:'detail',
+      gist:'gist',inference:'gist',action:'gist',concept:'gist',reason:'gist',purpose:'gist'
+    };
+    const normalizedCategory=(item,kind)=>CATEGORY_ALIASES[String(item.category||item.type||'').trim().toLowerCase()]
+      || ({words:'object',chunks:'detail',sentences:'gist'}[kind]||'gist');
 
     const categoryStats = {
         "object": { label: "Object (物体・人物)", earned: 0, max: 0, cleared: [], missed: [] },
@@ -136,14 +175,10 @@ window.getCompletionStats = function(theme, selectedLevel) {
         "other": { label: "Others (その他)", earned: 0, max: 0, cleared: [], missed: [] }
     };
 
-    const processItems = (items, foundSet, fallbackPoints) => {
+    const processItems = (items, foundSet, fallbackPoints, kind) => {
         items.forEach(item => {
             const pts = item.points || fallbackPoints;
-            let rawCategory = item.category || item.type || "other";
-            
-            // 高度な情報である inference は gist（要点）の枠で高く評価する
-            if (rawCategory === 'inference') rawCategory = 'gist';
-            if (!categoryStats[rawCategory]) rawCategory = 'other';
+            const rawCategory=normalizedCategory(item,kind);
 
             categoryStats[rawCategory].max += pts;
 
@@ -157,9 +192,9 @@ window.getCompletionStats = function(theme, selectedLevel) {
     };
 
     // 理論上のポイントは 単語10pt、チャンク20pt、文章40pt をベースとする
-    processItems(targetData.words, window.foundWordsSet, 10);
-    processItems(targetData.chunks, window.foundChunksSet, 20);
-    processItems(targetData.sentences, window.foundSentencesSet, 40);
+    processItems(targetData.words, window.foundWordsSet, 10, 'words');
+    processItems(targetData.chunks, window.foundChunksSet, 20, 'chunks');
+    processItems(targetData.sentences, window.foundSentencesSet, 40, 'sentences');
 
     let completionRate = 0;
     let totalValidWeight = 0;
@@ -172,22 +207,13 @@ window.getCompletionStats = function(theme, selectedLevel) {
     });
     const weightMultiplier = totalValidWeight > 0 ? (100 / totalValidWeight) : 1;
     
-    // バケツ方式で各カテゴリの達成率を計算
-    Object.keys(CATEGORY_TARGETS).forEach(key => {
-        const cat = categoryStats[key];
-        const target = CATEGORY_TARGETS[key].target;
-        const weight = CATEGORY_TARGETS[key].weight * weightMultiplier;
-        
-        // そのカテゴリーの問題数が少なく、目標ポイントに満たない場合は、ある分だけで満点とする
-        const actualTarget = Math.min(target, cat.max > 0 ? cat.max : target);
-        
-        if (actualTarget > 0 && cat.max > 0) {
-            const rate = Math.min(1.0, cat.earned / actualTarget);
-            completionRate += rate * weight;
-            cat.matchRate = Math.floor(rate * 100); 
-        } else {
-            cat.matchRate = 0;
-        }
+    // True coverage of all unique targets, not a capped point threshold.
+    Object.keys(CATEGORY_TARGETS).forEach(key=>{
+      const cat=categoryStats[key];
+      const weight=CATEGORY_TARGETS[key].weight*weightMultiplier;
+      const rate=cat.max>0?Math.min(1,cat.earned/cat.max):0;
+      completionRate+=rate*weight;
+      cat.matchRate=Math.floor(rate*100);
     });
 
     // other（その他）の表示用計算

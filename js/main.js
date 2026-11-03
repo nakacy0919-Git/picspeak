@@ -1172,6 +1172,10 @@ window.togglePracticeRecording = function() {
 
     if (!window.practiceRec) {
         const SpeechRec = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (!SpeechRec) {
+            if (feedbackEl) { feedbackEl.classList.remove('hidden'); feedbackEl.textContent='このブラウザは音声認識に対応していません。SafariまたはChromeでお試しください。'; }
+            return;
+        }
         window.practiceRec = new SpeechRec();
         window.practiceRec.lang = 'en-US'; window.practiceRec.interimResults = true; window.practiceRec.continuous = !window.isIOS; 
         
@@ -1182,16 +1186,11 @@ window.togglePracticeRecording = function() {
             if(transcriptEl) { transcriptEl.innerText = text; transcriptEl.style.color = "#ef4444"; }
             window.appState.practiceRawTranscript = text;
 
-            const spoken = text.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>w);
-            const targetWords = window.appState.practiceTargetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>!['a','an','the','is','are','in','on','at'].includes(w));
-            
-            let match = 0;
-            targetWords.forEach(w => { 
-                if(spoken.includes(w) || spoken.includes(w+'s') || spoken.includes(w+'es') || spoken.includes(w+'ing') || spoken.includes(w+'d') || spoken.includes(w+'ed')) match++; 
-            });
-            const rate = targetWords.length > 0 ? (match / targetWords.length) : 0;
-
-            if (rate >= 0.8 && window.isPracticeRecording) {
+            // Practice uses the same contiguous word-order matcher as the game.
+            const isComplete=!!window.appState.practiceTargetText.trim() &&
+                window.picSpeakMatchPhrase(window.appState.practiceTargetText,text);
+            const rate=window.picSpeakOrderedWordAccuracy(window.appState.practiceTargetText,text)/100;
+            if (isComplete && window.isPracticeRecording) {
                 window.isPracticeRecording = false; window.practiceSuccess = true; 
                 try { window.practiceRec.stop(); } catch(err){}
                 window.playSuccessChime(); window.createConfetti(); window.showExcellentPrompt(); 
@@ -1201,17 +1200,17 @@ window.togglePracticeRecording = function() {
             }
         };
         
+        window.practiceRec.onerror = event => {
+            window.isPracticeRecording=false;
+            if(btn)btn.textContent='RETRY';
+            if(feedbackEl){feedbackEl.classList.remove('hidden');feedbackEl.textContent='マイクエラー: '+(event.error||'unknown')+'。マイク権限を確認して再試行してください。';}
+        };
         window.practiceRec.onend = () => {
             if(window.practiceSuccess) return;
             if(!window.isPracticeRecording) {
-                const spoken = window.appState.practiceRawTranscript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>w);
-                const targetWords = window.appState.practiceTargetText.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w=>!['a','an','the','is','are','in','on','at'].includes(w));
-                let match = 0;
-                targetWords.forEach(w => { 
-                    if(spoken.includes(w) || spoken.includes(w+'s') || spoken.includes(w+'es') || spoken.includes(w+'ing') || spoken.includes(w+'d') || spoken.includes(w+'ed')) match++; 
-                });
-                const rate = targetWords.length > 0 ? (match / targetWords.length) : (spoken.length > 0 ? 1 : 0);
-                
+                // Partial feedback respects word order instead of bag-of-words.
+                const rate=window.picSpeakOrderedWordAccuracy(window.appState.practiceTargetText,window.appState.practiceRawTranscript)/100;
+
                 if(feedbackEl) {
                     feedbackEl.classList.remove('hidden');
                     if (rate >= 0.5) { feedbackEl.innerHTML = "👍 Good! あと少し！もう一度チャレンジ！"; feedbackEl.style.color = "#ca8a04"; } 
