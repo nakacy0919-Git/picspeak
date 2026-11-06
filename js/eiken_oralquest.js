@@ -191,8 +191,8 @@
     el("oq-task").innerHTML=content;
     var last=n===steps.length;
     el("oq-practice-footer").innerHTML='<button type="button" class="btn" data-action="previous" '+(state.step===0?'disabled':'')+'>‹ 前へ</button>'
-      +'<span class="muted-note">'+(c.visual.imageSrc?"":"画像未登録のため描写は文章で代替")+'</span>'
       +'<button type="button" class="btn btn-primary" data-action="next">'+(last?"練習を終了":"次へ ›")+'</button>';
+    window.scrollTo(0,0);
   }
   function status(message,isError){
     var node=el("oq-audio-status");
