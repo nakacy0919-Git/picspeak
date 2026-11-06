@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "ep2_001",
+    "grade": "pre2",
+    "stage": 1,
+    "band": "guided",
+    "title": "Community Bike Sharing",
+    "passage": {
+      "title": "Community Bike Sharing",
+      "text": "Many cities now offer bicycles that people can rent for short trips. Riders can pick up a bicycle at one station and return it to another. This service is useful for people who do not own bicycles or want to avoid crowded buses.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "Panel A: a man unlocking rental bike, a woman checking station map, a boy returning bike. Panel B: woman at full parking rack, all spaces occupied, looking worried.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is bicycle sharing useful for some people?",
+        "modelAnswers": [
+          "Because they can travel without owning a bicycle."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the man doing?",
+        "modelAnswers": [
+          "He is unlocking a rental bicycle."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why does the woman look worried?",
+        "modelAnswers": [
+          "Because there is no space to return her bicycle."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think more towns should have rental bicycles?",
+        "modelAnswers": [
+          "Yes. They can make short trips easier and reduce traffic."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Would you rather travel by train or by car?",
+        "modelAnswers": [
+          "I prefer trains because I can relax."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_002",
+    "grade": "pre2",
+    "stage": 2,
+    "band": "guided",
+    "title": "Digital School Notices",
+    "passage": {
+      "title": "Digital School Notices",
+      "text": "Some schools send important notices to parents through online systems. Parents can read them on their phones instead of receiving many paper letters. The systems may also help teachers share information quickly when class schedules change.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: teacher typing notice, parent checking phone, student reading schedule. B: student cannot see message because phone battery is empty.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can online notices help teachers?",
+        "modelAnswers": [
+          "They can share information quickly when schedules change."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the teacher doing?",
+        "modelAnswers": [
+          "She is typing a notice on a computer."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the student check the notice?",
+        "modelAnswers": [
+          "Because the phone's battery has run out."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools use more digital notices?",
+        "modelAnswers": [
+          "Yes, but they should offer paper notices to families who need them."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "How do you usually contact your friends?",
+        "modelAnswers": [
+          "I usually send them messages."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_003",
+    "grade": "pre2",
+    "stage": 3,
+    "band": "guided",
+    "title": "Local Food Festivals",
+    "passage": {
+      "title": "Local Food Festivals",
+      "text": "Local food festivals give visitors a chance to try dishes made by nearby farmers and restaurants. Some events also include cooking lessons. By attending these festivals, people can discover new foods and learn more about their region.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: chef demonstrating cooking, girl tasting dish, man buying vegetables. B: vendor disappointed because strong wind blows paper signs down.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can people discover at local food festivals?",
+        "modelAnswers": [
+          "They can discover new foods and learn about their region."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the chef doing?",
+        "modelAnswers": [
+          "The chef is showing visitors how to cook."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why does the vendor look disappointed?",
+        "modelAnswers": [
+          "Because the wind has blown down the signs."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think food festivals are good for towns?",
+        "modelAnswers": [
+          "Yes. They attract visitors and support local businesses."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Can you cook any dishes by yourself?",
+        "modelAnswers": [
+          "Yes. I can cook fried rice."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_004",
+    "grade": "pre2",
+    "stage": 4,
+    "band": "guided",
+    "title": "Reading to Younger Children",
+    "passage": {
+      "title": "Reading to Younger Children",
+      "text": "Some high school students volunteer to read picture books to younger children. They visit libraries and community centers on weekends. The activity helps children enjoy stories and gives the older students a chance to improve their communication skills.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: teen reading picture book, children sitting in circle, librarian arranging books. B: boy struggling to reach book on high shelf.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How does reading aloud help older students?",
+        "modelAnswers": [
+          "It helps them improve their communication skills."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the teenager doing?",
+        "modelAnswers": [
+          "She is reading a picture book to children."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the boy having trouble?",
+        "modelAnswers": [
+          "Because the book is on a shelf that is too high."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you like to volunteer with younger children?",
+        "modelAnswers": [
+          "Yes. I would enjoy reading stories to them."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What was your favorite book when you were little?",
+        "modelAnswers": [
+          "I liked stories about animals."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_005",
+    "grade": "pre2",
+    "stage": 5,
+    "band": "guided",
+    "title": "Plastic-free Lunches",
+    "passage": {
+      "title": "Plastic-free Lunches",
+      "text": "Some families are trying to use fewer disposable containers for lunch. They bring reusable boxes and bottles when they go out. This small change can reduce trash, although families need to wash the containers after using them.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: mother packing reusable box, student filling bottle, father washing a container. B: woman cannot close an overflowing lunch box.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can reusable lunch boxes help the environment?",
+        "modelAnswers": [
+          "They can reduce the amount of trash."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the father doing?",
+        "modelAnswers": [
+          "He is washing a reusable container."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the woman having difficulty?",
+        "modelAnswers": [
+          "Because there is too much food in the box."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think people should use reusable bottles?",
+        "modelAnswers": [
+          "Yes. They produce less waste and save money."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What do you usually eat for lunch?",
+        "modelAnswers": [
+          "I usually eat rice and vegetables."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_006",
+    "grade": "pre2",
+    "stage": 6,
+    "band": "guided",
+    "title": "Small Science Museums",
+    "passage": {
+      "title": "Small Science Museums",
+      "text": "Science museums sometimes provide experiments that visitors can try themselves. Children may build simple machines or study plants with microscopes. These activities make difficult ideas easier to understand and can encourage students to become interested in science.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: guide showing microscope, boy building model bridge, girl observing plants. B: girl's paper bridge collapsing under heavy toy.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are hands-on activities useful at science museums?",
+        "modelAnswers": [
+          "Because they make difficult ideas easier to understand."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is building a model bridge."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why has the girl's bridge fallen down?",
+        "modelAnswers": [
+          "Because she put something too heavy on it."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should students visit museums more often?",
+        "modelAnswers": [
+          "Yes. They can learn by doing experiments."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Which science topic interests you?",
+        "modelAnswers": [
+          "I'm interested in space."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_007",
+    "grade": "pre2",
+    "stage": 7,
+    "band": "guided",
+    "title": "Public Water Stations",
+    "passage": {
+      "title": "Public Water Stations",
+      "text": "Some towns have installed machines that provide free drinking water in parks and stations. People can fill their own bottles instead of buying new ones. These stations are especially useful during hot weather, when staying hydrated is important.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: runner filling bottle, worker checking machine, child taking a drink. B: runner annoyed because bottle does not fit below tap.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can people do at public water stations?",
+        "modelAnswers": [
+          "They can fill their own bottles with drinking water."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the runner doing?",
+        "modelAnswers": [
+          "He is filling a water bottle."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the runner having a problem?",
+        "modelAnswers": [
+          "Because the bottle is too tall for the tap."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should public places provide free drinking water?",
+        "modelAnswers": [
+          "Yes. It helps people stay healthy in hot weather."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "How much water do you drink every day?",
+        "modelAnswers": [
+          "I drink about six glasses."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_008",
+    "grade": "pre2",
+    "stage": 8,
+    "band": "guided",
+    "title": "Community Language Exchange",
+    "passage": {
+      "title": "Community Language Exchange",
+      "text": "In some towns, residents meet to practice speaking different languages. They play games, discuss their cultures, and help one another learn useful expressions. Such events are often inexpensive and can help newcomers make friends in the community.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: two adults talking across table, student writing phrase, volunteer handing name tags. B: newcomer cannot find room because sign is unclear.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can language exchanges help newcomers?",
+        "modelAnswers": [
+          "They can help newcomers make friends."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is writing down a useful phrase."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why does the newcomer look confused?",
+        "modelAnswers": [
+          "Because the sign does not show the room clearly."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you join a language-exchange event?",
+        "modelAnswers": [
+          "Yes. I want to practice English with new people."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Who would you like to talk with in English?",
+        "modelAnswers": [
+          "I'd like to talk with students overseas."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_009",
+    "grade": "pre2",
+    "stage": 9,
+    "band": "guided",
+    "title": "Repairing Old Clothes",
+    "passage": {
+      "title": "Repairing Old Clothes",
+      "text": "Some people repair damaged clothes instead of throwing them away. They may sew a loose button or fix a small hole. Repair workshops teach these skills, helping people save money and use their clothes for a longer time.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: woman sewing button, instructor showing needle, teen ironing repaired shirt. B: teen unhappy because button falls off again.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do people learn to repair clothes?",
+        "modelAnswers": [
+          "To save money and use clothes longer."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the woman doing?",
+        "modelAnswers": [
+          "She is sewing a button onto a shirt."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the teenager unhappy?",
+        "modelAnswers": [
+          "Because the button has fallen off again."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think schools should teach simple repairs?",
+        "modelAnswers": [
+          "Yes. Students can use those skills in daily life."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Have you ever made something with your hands?",
+        "modelAnswers": [
+          "Yes. I made a small wooden box."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_010",
+    "grade": "pre2",
+    "stage": 10,
+    "band": "guided",
+    "title": "Morning Walking Groups",
+    "passage": {
+      "title": "Morning Walking Groups",
+      "text": "In many neighborhoods, people meet for short walks before breakfast. Walking with others can make exercise more enjoyable, especially for older residents. Group members often choose safe routes and encourage one another to stay active throughout the year.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: group walking in park, leader pointing to map, man tying shoes. B: woman unable to join group because shoelace is broken.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do people enjoy walking in groups?",
+        "modelAnswers": [
+          "Because walking with others can be more enjoyable."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the leader doing?",
+        "modelAnswers": [
+          "She is pointing to a map."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the woman start walking?",
+        "modelAnswers": [
+          "Because her shoelace has broken."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you like to exercise with a group?",
+        "modelAnswers": [
+          "Yes. Friends can help me stay motivated."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What time do you usually wake up?",
+        "modelAnswers": [
+          "I usually wake up at six."
+        ]
+      }
+    ],
+    "guidance": [
+      "Identify the reason or purpose in the passage.",
+      "Describe actions using the present progressive.",
+      "Explain a pictured problem using because."
+    ]
+  },
+  {
+    "id": "ep2_011",
+    "grade": "pre2",
+    "stage": 11,
+    "band": "practice",
+    "title": "Online Shopping Returns",
+    "passage": {
+      "title": "Online Shopping Returns",
+      "text": "Buying things online is convenient, but sometimes products arrive in the wrong size. Many stores allow customers to send items back. Before ordering, shoppers should check return rules carefully so they know what to do if there is a problem.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: woman measuring shoes, man packing return box, delivery worker holding parcel. B: man looking worried because return label is missing.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What should shoppers check before ordering?",
+        "modelAnswers": [
+          "They should check the store's return rules."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the man doing?",
+        "modelAnswers": [
+          "He is packing an item into a box."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the man worried?",
+        "modelAnswers": [
+          "Because he cannot find the return label."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Is shopping online better than shopping in stores?",
+        "modelAnswers": [
+          "Both are useful, but I like trying products in stores."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What was the last thing you bought?",
+        "modelAnswers": [
+          "I bought a notebook."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_012",
+    "grade": "pre2",
+    "stage": 12,
+    "band": "practice",
+    "title": "Healthy School Snacks",
+    "passage": {
+      "title": "Healthy School Snacks",
+      "text": "Some school cafeterias now sell fruit, yogurt, and other healthy snacks. Students can choose these foods between classes instead of buying sweets every day. Offering a variety of choices may help young people build better eating habits.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: cashier selling fruit cup, student choosing yogurt, worker arranging apples. B: girl disappointed because preferred fruit has sold out.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do some schools offer healthy snacks?",
+        "modelAnswers": [
+          "To help students develop better eating habits."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the worker doing?",
+        "modelAnswers": [
+          "The worker is arranging apples."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the girl disappointed?",
+        "modelAnswers": [
+          "Because the fruit she wanted is sold out."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools sell more healthy snacks?",
+        "modelAnswers": [
+          "Yes. Good snacks can help students concentrate."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What do you usually eat when you are hungry?",
+        "modelAnswers": [
+          "I usually have a banana."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_013",
+    "grade": "pre2",
+    "stage": 13,
+    "band": "practice",
+    "title": "Tourist Information Volunteers",
+    "passage": {
+      "title": "Tourist Information Volunteers",
+      "text": "Volunteer guides help visitors find interesting places in their cities. They may explain local history, suggest walking routes, or answer questions in foreign languages. Their work makes travel easier and can introduce visitors to places that are not famous.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: guide showing city map, tourists listening, volunteer pointing at temple. B: tourists confused because rain makes printed map unreadable.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do volunteer guides do for visitors?",
+        "modelAnswers": [
+          "They explain local history and suggest places to visit."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the guide doing?",
+        "modelAnswers": [
+          "She is showing tourists a city map."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why are the tourists confused?",
+        "modelAnswers": [
+          "Because the rain has damaged their map."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you like to guide foreign tourists?",
+        "modelAnswers": [
+          "Yes. I could introduce local food and history."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What place in your city do you recommend?",
+        "modelAnswers": [
+          "I recommend the old castle."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_014",
+    "grade": "pre2",
+    "stage": 14,
+    "band": "practice",
+    "title": "Borrowing Sports Equipment",
+    "passage": {
+      "title": "Borrowing Sports Equipment",
+      "text": "Some community centers lend sports equipment to local residents. Families can borrow balls, rackets, or helmets for a small fee. This service allows people to try activities without buying expensive equipment that they may use only once.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: staff handing racket to child, father signing form, children playing badminton. B: boy unhappy because a racket string has broken.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is borrowing sports equipment helpful?",
+        "modelAnswers": [
+          "People can try sports without buying expensive equipment."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the father doing?",
+        "modelAnswers": [
+          "He is signing a borrowing form."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the boy unhappy?",
+        "modelAnswers": [
+          "Because the racket's string is broken."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should towns lend sports equipment?",
+        "modelAnswers": [
+          "Yes. More people can try different activities."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What sport would you like to learn?",
+        "modelAnswers": [
+          "I would like to learn badminton."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_015",
+    "grade": "pre2",
+    "stage": 15,
+    "band": "practice",
+    "title": "Weather Alert Apps",
+    "passage": {
+      "title": "Weather Alert Apps",
+      "text": "Weather alert apps warn people about heavy rain or strong winds. Users can check local forecasts before leaving home. Although these apps are useful, people should also follow official instructions during dangerous weather instead of relying on phones alone.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: student checking alert, father closing window, mother bringing plants inside. B: man surprised because phone battery died during storm.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can weather apps help people?",
+        "modelAnswers": [
+          "They can warn people about dangerous weather."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the mother doing?",
+        "modelAnswers": [
+          "She is bringing plants into the house."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the man surprised?",
+        "modelAnswers": [
+          "Because his phone has stopped working."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think weather apps are important?",
+        "modelAnswers": [
+          "Yes. They help us prepare for storms."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What weather do you enjoy most?",
+        "modelAnswers": [
+          "I enjoy cool sunny days."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_016",
+    "grade": "pre2",
+    "stage": 16,
+    "band": "practice",
+    "title": "Farm Visits for Students",
+    "passage": {
+      "title": "Farm Visits for Students",
+      "text": "Some schools organize visits to farms so students can learn where food comes from. During these trips, they may plant vegetables, feed animals, or speak with farmers. Such experiences can help students appreciate the work needed to produce food.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: farmer showing seedlings, girl feeding sheep, boy planting lettuce. B: boy upset because muddy boots are stuck in wet soil.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can students learn from farm visits?",
+        "modelAnswers": [
+          "They can learn where food comes from and how farmers work."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is planting lettuce."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the boy having difficulty walking?",
+        "modelAnswers": [
+          "Because his boots are stuck in the mud."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools take students to farms?",
+        "modelAnswers": [
+          "Yes. Students can learn about growing food."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Do you like working outdoors?",
+        "modelAnswers": [
+          "Yes, especially in spring."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_017",
+    "grade": "pre2",
+    "stage": 17,
+    "band": "practice",
+    "title": "Quiet Spaces in Libraries",
+    "passage": {
+      "title": "Quiet Spaces in Libraries",
+      "text": "Many libraries now provide separate areas for silent study and group discussions. Students can choose the space that fits their needs. Libraries sometimes use signs to remind visitors about noise rules so that everyone can work comfortably.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: librarian placing quiet sign, students studying silently, group discussing project elsewhere. B: boy frustrated because nearby phone is ringing.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do libraries provide different areas?",
+        "modelAnswers": [
+          "So visitors can choose spaces that fit their needs."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the librarian doing?",
+        "modelAnswers": [
+          "She is putting up a quiet-zone sign."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the boy frustrated?",
+        "modelAnswers": [
+          "Because a phone is ringing nearby."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should libraries have spaces for group work?",
+        "modelAnswers": [
+          "Yes. Students sometimes need to discuss ideas."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Where do you usually study?",
+        "modelAnswers": [
+          "I usually study in my bedroom."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_018",
+    "grade": "pre2",
+    "stage": 18,
+    "band": "practice",
+    "title": "Food Donation Boxes",
+    "passage": {
+      "title": "Food Donation Boxes",
+      "text": "Some supermarkets place donation boxes near their entrances. Customers can leave unopened food that they do not need. Volunteers then deliver suitable items to organizations that help families experiencing difficulties, reducing waste while supporting people in the community.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: customer putting rice in donation box, volunteer checking labels, family carrying bag. B: volunteer cannot accept item because package is open.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do volunteers do with donated food?",
+        "modelAnswers": [
+          "They deliver it to organizations that help families."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the volunteer doing?",
+        "modelAnswers": [
+          "The volunteer is checking food labels."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the volunteer accept the item?",
+        "modelAnswers": [
+          "Because its package has been opened."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think food donation programs are valuable?",
+        "modelAnswers": [
+          "Yes. They reduce waste and help families."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "How do you help people around you?",
+        "modelAnswers": [
+          "I sometimes help neighbors carry bags."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_019",
+    "grade": "pre2",
+    "stage": 19,
+    "band": "practice",
+    "title": "Local History Walking Tours",
+    "passage": {
+      "title": "Local History Walking Tours",
+      "text": "Walking tours allow visitors to learn about the history of streets and buildings. Guides often share stories that are not written on signs. These tours can be enjoyable for both tourists and local people who want to rediscover their hometowns.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: guide speaking outside old house, visitor taking photo, student drawing building. B: elderly visitor tired after climbing long hill.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do guides share during history tours?",
+        "modelAnswers": [
+          "They share stories about streets and buildings."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is drawing an old building."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the visitor tired?",
+        "modelAnswers": [
+          "Because the group has walked up a long hill."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you take a local history tour?",
+        "modelAnswers": [
+          "Yes. I want to learn about my town."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What kind of places do you photograph?",
+        "modelAnswers": [
+          "I often photograph flowers and buildings."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_020",
+    "grade": "pre2",
+    "stage": 20,
+    "band": "practice",
+    "title": "Sharing Textbooks",
+    "passage": {
+      "title": "Sharing Textbooks",
+      "text": "Some students exchange textbooks that they no longer need. Schools can organize events where students give books to younger classmates. Reusing books can reduce costs for families, but students must make sure that the materials are still in good condition.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: senior handing textbook to junior, teacher checking pages, girls sorting books. B: student disappointed because textbook has missing pages.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do students exchange textbooks?",
+        "modelAnswers": [
+          "To reuse books and reduce costs for families."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the teacher doing?",
+        "modelAnswers": [
+          "The teacher is checking the book's pages."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the student disappointed?",
+        "modelAnswers": [
+          "Because some pages are missing."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools encourage textbook exchanges?",
+        "modelAnswers": [
+          "Yes. They help families save money."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Do you prefer paper books or digital books?",
+        "modelAnswers": [
+          "I prefer paper books because they are easy to read."
+        ]
+      }
+    ],
+    "guidance": [
+      "State an opinion and give at least one reason."
+    ]
+  },
+  {
+    "id": "ep2_021",
+    "grade": "pre2",
+    "stage": 21,
+    "band": "mock",
+    "title": "Planting Trees in Town",
+    "passage": {
+      "title": "Planting Trees in Town",
+      "text": "Many towns plant trees along roads and near schools. Trees can provide shade during hot months and create pleasant places to walk. However, residents must water young trees and care for them until they are strong enough to grow well.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: children planting sapling, worker watering tree, mayor holding shovel. B: young tree leaning after wind, worker concerned.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do towns plant trees?",
+        "modelAnswers": [
+          "Because they provide shade and pleasant walking areas."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the worker doing?",
+        "modelAnswers": [
+          "The worker is watering a young tree."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the worker concerned?",
+        "modelAnswers": [
+          "Because the wind has made the tree lean."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should cities plant more trees?",
+        "modelAnswers": [
+          "Yes. Trees make streets cooler and more attractive."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Do you enjoy gardening?",
+        "modelAnswers": [
+          "Yes. I like growing flowers."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_022",
+    "grade": "pre2",
+    "stage": 22,
+    "band": "mock",
+    "title": "Learning Through Podcasts",
+    "passage": {
+      "title": "Learning Through Podcasts",
+      "text": "Some students listen to educational podcasts while traveling or doing simple chores. Podcasts can introduce ideas about history, science, and culture. Because listeners can pause or replay episodes, they are helpful for learners who want to study at their own pace.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: boy listening on train, girl recording podcast, teacher choosing episode on tablet. B: boy cannot listen because headphones are tangled.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are podcasts useful for learners?",
+        "modelAnswers": [
+          "Because they can pause and replay episodes."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is recording a podcast."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the boy listen?",
+        "modelAnswers": [
+          "Because his headphones are tangled."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Do you think podcasts are useful for studying?",
+        "modelAnswers": [
+          "Yes. I can listen again when I miss something."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What do you listen to on your way to school?",
+        "modelAnswers": [
+          "I listen to music and English lessons."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_023",
+    "grade": "pre2",
+    "stage": 23,
+    "band": "mock",
+    "title": "Neighborhood Emergency Drills",
+    "passage": {
+      "title": "Neighborhood Emergency Drills",
+      "text": "Local communities sometimes practice what to do during earthquakes or fires. Residents learn where to gather and how to help each other. These drills are useful because people can act more calmly if a real emergency happens in the future.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: instructor showing emergency bag, families walking to meeting point, boy carrying water. B: woman confused because meeting place sign is covered.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are emergency drills useful?",
+        "modelAnswers": [
+          "They help people act calmly during emergencies."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the boy carrying?",
+        "modelAnswers": [
+          "He is carrying bottles of water."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the woman confused?",
+        "modelAnswers": [
+          "Because she cannot see the meeting-place sign."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should young people join emergency drills?",
+        "modelAnswers": [
+          "Yes. Everyone should know how to stay safe."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What would you take in an emergency?",
+        "modelAnswers": [
+          "I would take water, food, and a flashlight."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_024",
+    "grade": "pre2",
+    "stage": 24,
+    "band": "mock",
+    "title": "Community Music Events",
+    "passage": {
+      "title": "Community Music Events",
+      "text": "Some neighborhoods organize small concerts in public squares. Local musicians perform while families enjoy music together. These events do not require expensive tickets, and they can give young performers an opportunity to play in front of an audience.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: teenager playing violin, family listening, organizer arranging chairs. B: guitarist worried because microphone has stopped working.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can community concerts help young musicians?",
+        "modelAnswers": [
+          "They can perform in front of an audience."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the organizer doing?",
+        "modelAnswers": [
+          "The organizer is arranging chairs."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the guitarist worried?",
+        "modelAnswers": [
+          "Because the microphone isn't working."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should public concerts be free?",
+        "modelAnswers": [
+          "Sometimes. Free concerts let more people enjoy music."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What type of music do you enjoy?",
+        "modelAnswers": [
+          "I like jazz and pop."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_025",
+    "grade": "pre2",
+    "stage": 25,
+    "band": "mock",
+    "title": "Helping at Animal Shelters",
+    "passage": {
+      "title": "Helping at Animal Shelters",
+      "text": "Animal shelters care for dogs and cats that need new homes. Volunteers clean living spaces, prepare food, and spend time with the animals. This work is important, but volunteers must learn how to handle animals safely before helping.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: volunteer filling dog bowl, woman cleaning cage, boy walking dog. B: boy cannot open cage because key is missing.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do volunteers do at animal shelters?",
+        "modelAnswers": [
+          "They clean spaces, prepare food, and spend time with animals."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is walking a dog."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the boy open the cage?",
+        "modelAnswers": [
+          "Because he cannot find the key."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Would you like to volunteer at an animal shelter?",
+        "modelAnswers": [
+          "Yes. I enjoy taking care of animals."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "Do you have any pets?",
+        "modelAnswers": [
+          "No, but I would like a cat."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_026",
+    "grade": "pre2",
+    "stage": 26,
+    "band": "mock",
+    "title": "Using Public Gardens",
+    "passage": {
+      "title": "Using Public Gardens",
+      "text": "Some cities have opened small gardens where residents can grow vegetables together. People share tools and learn from more experienced gardeners. The gardens can also bring neighbors together, although members need to decide how to divide the work fairly.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: elderly man teaching girl to plant, boy carrying watering can, woman harvesting carrots. B: members arguing because nobody watered vegetables.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do community gardens help neighbors?",
+        "modelAnswers": [
+          "They give neighbors chances to work and learn together."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the woman doing?",
+        "modelAnswers": [
+          "She is harvesting carrots."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why are the members upset?",
+        "modelAnswers": [
+          "Because the vegetables have not been watered."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should towns create community gardens?",
+        "modelAnswers": [
+          "Yes. They help people learn and meet neighbors."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What plants would you like to grow?",
+        "modelAnswers": [
+          "I would like to grow strawberries."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_027",
+    "grade": "pre2",
+    "stage": 27,
+    "band": "mock",
+    "title": "Reusing School Uniforms",
+    "passage": {
+      "title": "Reusing School Uniforms",
+      "text": "Some schools collect uniforms from graduating students and offer them to younger students. Families can save money, and fewer clothes are thrown away. Before being passed on, the uniforms are cleaned and checked so that they can be worn comfortably.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: teacher sorting jackets, mother checking uniform size, student carrying bag. B: girl disappointed because available jacket is too small.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do schools collect used uniforms?",
+        "modelAnswers": [
+          "To help families save money and reduce waste."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the teacher doing?",
+        "modelAnswers": [
+          "The teacher is sorting used jackets."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the girl disappointed?",
+        "modelAnswers": [
+          "Because the jacket is too small."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools offer secondhand uniforms?",
+        "modelAnswers": [
+          "Yes. It is practical and better for the environment."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What clothes do you like wearing at home?",
+        "modelAnswers": [
+          "I like comfortable T-shirts."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_028",
+    "grade": "pre2",
+    "stage": 28,
+    "band": "mock",
+    "title": "Accessible Playgrounds",
+    "passage": {
+      "title": "Accessible Playgrounds",
+      "text": "Some parks are installing playground equipment that children with different abilities can enjoy. Wider paths and safer swings make the spaces easier to use. Designers often ask families for ideas before building new playgrounds, hoping to create places where everyone feels welcome.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: architect showing drawing, child using wide ramp, father pushing accessible swing. B: family unable to enter park because gate is blocked.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do designers ask families for ideas?",
+        "modelAnswers": [
+          "To build playgrounds that everyone can enjoy."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the father doing?",
+        "modelAnswers": [
+          "He is pushing a swing."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the family enter the playground?",
+        "modelAnswers": [
+          "Because the entrance is blocked."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should parks be designed for everyone?",
+        "modelAnswers": [
+          "Yes. Every child should have somewhere to play."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What did you enjoy doing as a child?",
+        "modelAnswers": [
+          "I enjoyed playing on swings."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_029",
+    "grade": "pre2",
+    "stage": 29,
+    "band": "mock",
+    "title": "Preparing for Job Interviews",
+    "passage": {
+      "title": "Preparing for Job Interviews",
+      "text": "Some schools invite local workers to help students practice job interviews. Students learn how to answer questions clearly and describe their strengths. Practicing several times can make them more confident, even if they feel nervous when speaking to unfamiliar adults.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: student answering mock interviewer, teacher taking notes, classmate waiting outside. B: student nervous because resume has been left at home.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do students practice interviews?",
+        "modelAnswers": [
+          "To become more confident and answer questions clearly."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the teacher doing?",
+        "modelAnswers": [
+          "The teacher is taking notes."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why is the student nervous?",
+        "modelAnswers": [
+          "Because the resume was left at home."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools teach interview skills?",
+        "modelAnswers": [
+          "Yes. Students will need them when looking for work."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What job are you interested in?",
+        "modelAnswers": [
+          "I'm interested in becoming a designer."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep2_030",
+    "grade": "pre2",
+    "stage": 30,
+    "band": "mock",
+    "title": "Protecting Rivers",
+    "passage": {
+      "title": "Protecting Rivers",
+      "text": "Community groups sometimes organize projects to protect local rivers. Volunteers remove litter, test water quality, and teach children about wildlife. By collecting information regularly, they can notice changes in the environment and explain to residents why clean rivers matter.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "two_panel",
+      "artDirection": "A: student testing water sample, volunteer picking up litter, child observing fish. B: group cannot reach riverbank because path is flooded.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do volunteers test river water regularly?",
+        "modelAnswers": [
+          "To notice changes in the environment."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_actions",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is testing a water sample."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_situation",
+        "prompt": "Why can't the group reach the river?",
+        "modelAnswers": [
+          "Because the path is flooded."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "topic_opinion",
+        "prompt": "Should schools help protect local rivers?",
+        "modelAnswers": [
+          "Yes. Students can learn while helping nature."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal_general",
+        "prompt": "What outdoor place do you like visiting?",
+        "modelAnswers": [
+          "I like visiting forests."
+        ]
+      }
+    ],
+    "guidance": []
+  }
+]
