@@ -15,7 +15,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "Panel A: a man unlocking rental bike, a woman checking station map, a boy returning bike. Panel B: woman at full parking rack, all spaces occupied, looking worried.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "a man unlocking rental bike, a woman checking station map, a boy returning bike.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "woman at full parking rack, all spaces occupied, looking worried.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -29,17 +43,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the man doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is unlocking a rental bicycle."
+          "The man is unlocking a rental bicycle. The woman is checking a map, and the boy is returning another bicycle."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why does the woman look worried?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because there is no space to return her bicycle."
+          "The woman cannot return her bicycle because every space at the station is occupied."
         ]
       },
       {
@@ -81,7 +95,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: teacher typing notice, parent checking phone, student reading schedule. B: student cannot see message because phone battery is empty.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "teacher typing notice, parent checking phone, student reading schedule. B: student cannot see message because phone battery is empty.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "student cannot see message because phone battery is empty.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -95,17 +123,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the teacher doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is typing a notice on a computer."
+          "The teacher is typing a notice. A parent is checking a phone, and a student is reading the schedule."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the student check the notice?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the phone's battery has run out."
+          "The student cannot read the notice because the phone's battery has run out."
         ]
       },
       {
@@ -147,7 +175,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: chef demonstrating cooking, girl tasting dish, man buying vegetables. B: vendor disappointed because strong wind blows paper signs down.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "chef demonstrating cooking, girl tasting dish, man buying vegetables. B: vendor disappointed because strong wind blows paper signs down.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "vendor disappointed because strong wind blows paper signs down.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -161,17 +203,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the chef doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The chef is showing visitors how to cook."
+          "The chef is showing visitors how to cook. A girl is tasting food, and a man is buying vegetables."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why does the vendor look disappointed?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the wind has blown down the signs."
+          "The vendor cannot display the signs because strong wind has blown them down."
         ]
       },
       {
@@ -213,7 +255,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: teen reading picture book, children sitting in circle, librarian arranging books. B: boy struggling to reach book on high shelf.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "teen reading picture book, children sitting in circle, librarian arranging books. B: boy struggling to reach book on high shelf.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy struggling to reach book on high shelf.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -227,17 +283,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the teenager doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is reading a picture book to children."
+          "The teenager is reading a picture book. The children are listening, and the librarian is arranging books."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the boy having trouble?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the book is on a shelf that is too high."
+          "The boy cannot reach the picture book because it is on a high shelf."
         ]
       },
       {
@@ -279,7 +335,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: mother packing reusable box, student filling bottle, father washing a container. B: woman cannot close an overflowing lunch box.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "mother packing reusable box, student filling bottle, father washing a container. B: woman cannot close an overflowing lunch box.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "woman cannot close an overflowing lunch box.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -293,17 +363,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the father doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is washing a reusable container."
+          "The mother is packing a lunch box. The student is filling a bottle, and the father is washing a container."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the woman having difficulty?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because there is too much food in the box."
+          "The woman is having trouble closing her lunch box because it contains too much food."
         ]
       },
       {
@@ -345,7 +415,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: guide showing microscope, boy building model bridge, girl observing plants. B: girl's paper bridge collapsing under heavy toy.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "guide showing microscope, boy building model bridge, girl observing plants. B: girl's paper bridge collapsing under heavy toy.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "girl's paper bridge collapsing under heavy toy.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -359,17 +443,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the boy doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is building a model bridge."
+          "The guide is showing visitors a microscope. The boy is building a bridge, and the girl is observing plants."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why has the girl's bridge fallen down?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because she put something too heavy on it."
+          "The girl's paper bridge has collapsed because she placed a heavy toy on it."
         ]
       },
       {
@@ -411,7 +495,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: runner filling bottle, worker checking machine, child taking a drink. B: runner annoyed because bottle does not fit below tap.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "runner filling bottle, worker checking machine, child taking a drink. B: runner annoyed because bottle does not fit below tap.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "runner annoyed because bottle does not fit below tap.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -425,17 +523,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the runner doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is filling a water bottle."
+          "The runner is filling a bottle. The worker is checking the machine, and the child is drinking water."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the runner having a problem?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the bottle is too tall for the tap."
+          "The runner cannot fill the bottle properly because it is too tall for the tap."
         ]
       },
       {
@@ -477,7 +575,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: two adults talking across table, student writing phrase, volunteer handing name tags. B: newcomer cannot find room because sign is unclear.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "two adults talking across table, student writing phrase, volunteer handing name tags. B: newcomer cannot find room because sign is unclear.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "newcomer cannot find room because sign is unclear.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -491,17 +603,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the student doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The student is writing down a useful phrase."
+          "Two adults are talking. A student is writing a phrase, and a volunteer is handing out name tags."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why does the newcomer look confused?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the sign does not show the room clearly."
+          "The newcomer cannot find the meeting room because the sign is not clear."
         ]
       },
       {
@@ -543,7 +655,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: woman sewing button, instructor showing needle, teen ironing repaired shirt. B: teen unhappy because button falls off again.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "woman sewing button, instructor showing needle, teen ironing repaired shirt. B: teen unhappy because button falls off again.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "teen unhappy because button falls off again.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -557,17 +683,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the woman doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is sewing a button onto a shirt."
+          "The woman is sewing a button. The instructor is showing a needle, and the teenager is ironing a shirt."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the teenager unhappy?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the button has fallen off again."
+          "The teenager is disappointed because a button has fallen off the shirt again."
         ]
       },
       {
@@ -609,7 +735,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: group walking in park, leader pointing to map, man tying shoes. B: woman unable to join group because shoelace is broken.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "group walking in park, leader pointing to map, man tying shoes. B: woman unable to join group because shoelace is broken.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "woman unable to join group because shoelace is broken.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -623,17 +763,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the leader doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is pointing to a map."
+          "The people are walking together. The leader is pointing to a map, and a man is tying his shoes."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the woman start walking?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because her shoelace has broken."
+          "The woman cannot join the walk yet because her shoelace has broken."
         ]
       },
       {
@@ -675,7 +815,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: woman measuring shoes, man packing return box, delivery worker holding parcel. B: man looking worried because return label is missing.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "woman measuring shoes, man packing return box, delivery worker holding parcel. B: man looking worried because return label is missing.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "man looking worried because return label is missing.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -689,17 +843,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the man doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is packing an item into a box."
+          "The woman is measuring a pair of shoes. The man is packing a box, and the delivery worker is carrying a parcel."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the man worried?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because he cannot find the return label."
+          "The man cannot return the product because he cannot find its return label."
         ]
       },
       {
@@ -739,7 +893,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: cashier selling fruit cup, student choosing yogurt, worker arranging apples. B: girl disappointed because preferred fruit has sold out.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "cashier selling fruit cup, student choosing yogurt, worker arranging apples. B: girl disappointed because preferred fruit has sold out.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "girl disappointed because preferred fruit has sold out.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -753,17 +921,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the worker doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The worker is arranging apples."
+          "The cashier is selling fruit. A student is choosing yogurt, and the worker is arranging apples."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the girl disappointed?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the fruit she wanted is sold out."
+          "The girl is disappointed because the fruit she wants is sold out."
         ]
       },
       {
@@ -803,7 +971,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: guide showing city map, tourists listening, volunteer pointing at temple. B: tourists confused because rain makes printed map unreadable.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "guide showing city map, tourists listening, volunteer pointing at temple. B: tourists confused because rain makes printed map unreadable.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "tourists confused because rain makes printed map unreadable.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -817,17 +999,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the guide doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is showing tourists a city map."
+          "The guide is showing tourists a map. They are listening, and a volunteer is pointing at a temple."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why are the tourists confused?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the rain has damaged their map."
+          "The tourists cannot use their printed map because it has become wet in the rain."
         ]
       },
       {
@@ -867,7 +1049,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: staff handing racket to child, father signing form, children playing badminton. B: boy unhappy because a racket string has broken.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "staff handing racket to child, father signing form, children playing badminton. B: boy unhappy because a racket string has broken.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy unhappy because a racket string has broken.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -881,17 +1077,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the father doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is signing a borrowing form."
+          "The staff member is handing a racket to a child. The father is signing a form, and children are playing badminton."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the boy unhappy?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the racket's string is broken."
+          "The boy cannot use the racket because one of its strings has broken."
         ]
       },
       {
@@ -931,7 +1127,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: student checking alert, father closing window, mother bringing plants inside. B: man surprised because phone battery died during storm.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "student checking alert, father closing window, mother bringing plants inside. B: man surprised because phone battery died during storm.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "man surprised because phone battery died during storm.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -945,17 +1155,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the mother doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is bringing plants into the house."
+          "The student is checking a weather alert. The father is closing a window, and the mother is bringing plants inside."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the man surprised?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because his phone has stopped working."
+          "The man cannot check the weather alert because his phone's battery has died."
         ]
       },
       {
@@ -995,7 +1205,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: farmer showing seedlings, girl feeding sheep, boy planting lettuce. B: boy upset because muddy boots are stuck in wet soil.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "farmer showing seedlings, girl feeding sheep, boy planting lettuce. B: boy upset because muddy boots are stuck in wet soil.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy upset because muddy boots are stuck in wet soil.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1009,17 +1233,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the boy doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is planting lettuce."
+          "The farmer is showing seedlings. The girl is feeding sheep, and the boy is planting lettuce."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the boy having difficulty walking?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because his boots are stuck in the mud."
+          "The boy cannot walk easily because his boots are stuck in the mud."
         ]
       },
       {
@@ -1059,7 +1283,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: librarian placing quiet sign, students studying silently, group discussing project elsewhere. B: boy frustrated because nearby phone is ringing.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "librarian placing quiet sign, students studying silently, group discussing project elsewhere. B: boy frustrated because nearby phone is ringing.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy frustrated because nearby phone is ringing.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1073,17 +1311,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the librarian doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is putting up a quiet-zone sign."
+          "The librarian is putting up a sign. Some students are studying, and another group is discussing a project."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the boy frustrated?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because a phone is ringing nearby."
+          "The boy cannot concentrate because a nearby phone keeps ringing."
         ]
       },
       {
@@ -1123,7 +1361,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: customer putting rice in donation box, volunteer checking labels, family carrying bag. B: volunteer cannot accept item because package is open.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "customer putting rice in donation box, volunteer checking labels, family carrying bag. B: volunteer cannot accept item because package is open.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "volunteer cannot accept item because package is open.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1137,17 +1389,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the volunteer doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The volunteer is checking food labels."
+          "The customer is putting rice in a box. A volunteer is checking labels, and a family is carrying a bag."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the volunteer accept the item?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because its package has been opened."
+          "The volunteer cannot accept the food because its package is already open."
         ]
       },
       {
@@ -1187,7 +1439,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: guide speaking outside old house, visitor taking photo, student drawing building. B: elderly visitor tired after climbing long hill.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "guide speaking outside old house, visitor taking photo, student drawing building. B: elderly visitor tired after climbing long hill.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "elderly visitor tired after climbing long hill.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1201,17 +1467,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the student doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The student is drawing an old building."
+          "The guide is talking outside an old house. A visitor is taking photos, and a student is drawing."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the visitor tired?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the group has walked up a long hill."
+          "The older visitor is tired because the group has walked up a long hill."
         ]
       },
       {
@@ -1251,7 +1517,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: senior handing textbook to junior, teacher checking pages, girls sorting books. B: student disappointed because textbook has missing pages.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "senior handing textbook to junior, teacher checking pages, girls sorting books. B: student disappointed because textbook has missing pages.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "student disappointed because textbook has missing pages.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1265,17 +1545,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the teacher doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The teacher is checking the book's pages."
+          "The older student is handing over a textbook. The teacher is checking pages, and two girls are sorting books."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the student disappointed?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because some pages are missing."
+          "The student cannot use the textbook properly because some pages are missing."
         ]
       },
       {
@@ -1315,7 +1595,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: children planting sapling, worker watering tree, mayor holding shovel. B: young tree leaning after wind, worker concerned.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "children planting sapling, worker watering tree, mayor holding shovel. B: young tree leaning after wind, worker concerned.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "young tree leaning after wind, worker concerned.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1329,17 +1623,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the worker doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The worker is watering a young tree."
+          "The children are planting a tree. A worker is watering it, and another person is holding a shovel."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the worker concerned?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the wind has made the tree lean."
+          "The worker is worried because the young tree has started leaning after strong wind."
         ]
       },
       {
@@ -1377,7 +1671,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: boy listening on train, girl recording podcast, teacher choosing episode on tablet. B: boy cannot listen because headphones are tangled.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "boy listening on train, girl recording podcast, teacher choosing episode on tablet. B: boy cannot listen because headphones are tangled.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy cannot listen because headphones are tangled.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1391,17 +1699,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the girl doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is recording a podcast."
+          "The boy is listening to a podcast. The girl is recording one, and the teacher is choosing an episode."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the boy listen?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because his headphones are tangled."
+          "The boy cannot listen to his podcast because his headphones are tangled."
         ]
       },
       {
@@ -1439,7 +1747,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: instructor showing emergency bag, families walking to meeting point, boy carrying water. B: woman confused because meeting place sign is covered.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "instructor showing emergency bag, families walking to meeting point, boy carrying water. B: woman confused because meeting place sign is covered.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "woman confused because meeting place sign is covered.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1453,17 +1775,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the boy carrying?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is carrying bottles of water."
+          "The instructor is showing an emergency bag. Families are walking to the meeting point, and a boy is carrying water."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the woman confused?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because she cannot see the meeting-place sign."
+          "The woman cannot find the meeting place because the sign is covered."
         ]
       },
       {
@@ -1501,7 +1823,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: teenager playing violin, family listening, organizer arranging chairs. B: guitarist worried because microphone has stopped working.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "teenager playing violin, family listening, organizer arranging chairs. B: guitarist worried because microphone has stopped working.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "guitarist worried because microphone has stopped working.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1515,17 +1851,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the organizer doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The organizer is arranging chairs."
+          "The teenager is playing a violin. A family is listening, and the organizer is arranging chairs."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the guitarist worried?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the microphone isn't working."
+          "The guitarist cannot perform properly because the microphone has stopped working."
         ]
       },
       {
@@ -1563,7 +1899,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: volunteer filling dog bowl, woman cleaning cage, boy walking dog. B: boy cannot open cage because key is missing.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "volunteer filling dog bowl, woman cleaning cage, boy walking dog. B: boy cannot open cage because key is missing.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "boy cannot open cage because key is missing.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1577,17 +1927,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the boy doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is walking a dog."
+          "The volunteer is filling a bowl. A woman is cleaning a cage, and a boy is walking a dog."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the boy open the cage?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because he cannot find the key."
+          "The boy cannot open the animal's cage because the key is missing."
         ]
       },
       {
@@ -1625,7 +1975,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: elderly man teaching girl to plant, boy carrying watering can, woman harvesting carrots. B: members arguing because nobody watered vegetables.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "elderly man teaching girl to plant, boy carrying watering can, woman harvesting carrots. B: members arguing because nobody watered vegetables.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "members arguing because nobody watered vegetables.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1639,17 +2003,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the woman doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "She is harvesting carrots."
+          "The elderly man is teaching a girl to plant. A boy is carrying water, and a woman is picking carrots."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why are the members upset?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the vegetables have not been watered."
+          "The gardeners are upset because nobody has watered the vegetables."
         ]
       },
       {
@@ -1687,7 +2051,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: teacher sorting jackets, mother checking uniform size, student carrying bag. B: girl disappointed because available jacket is too small.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "teacher sorting jackets, mother checking uniform size, student carrying bag. B: girl disappointed because available jacket is too small.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "girl disappointed because available jacket is too small.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1701,17 +2079,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the teacher doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The teacher is sorting used jackets."
+          "The teacher is sorting jackets. The mother is checking a size, and the student is carrying a bag."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the girl disappointed?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the jacket is too small."
+          "The girl cannot wear the secondhand jacket because it is too small."
         ]
       },
       {
@@ -1749,7 +2127,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: architect showing drawing, child using wide ramp, father pushing accessible swing. B: family unable to enter park because gate is blocked.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "architect showing drawing, child using wide ramp, father pushing accessible swing. B: family unable to enter park because gate is blocked.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "family unable to enter park because gate is blocked.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1763,17 +2155,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the father doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "He is pushing a swing."
+          "The architect is showing a drawing. A child is using a ramp, and the father is pushing a swing."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the family enter the playground?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the entrance is blocked."
+          "The family cannot enter the playground because the entrance is blocked."
         ]
       },
       {
@@ -1811,7 +2203,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: student answering mock interviewer, teacher taking notes, classmate waiting outside. B: student nervous because resume has been left at home.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "student answering mock interviewer, teacher taking notes, classmate waiting outside. B: student nervous because resume has been left at home.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "student nervous because resume has been left at home.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1825,17 +2231,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the teacher doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The teacher is taking notes."
+          "The student is answering questions. The teacher is taking notes, and another student is waiting outside."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why is the student nervous?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the resume was left at home."
+          "The student cannot show the resume because it was left at home."
         ]
       },
       {
@@ -1873,7 +2279,21 @@
       "status": "pending",
       "type": "two_panel",
       "artDirection": "A: student testing water sample, volunteer picking up litter, child observing fish. B: group cannot reach riverbank because path is flooded.",
-      "imageSrc": null
+      "imageSrc": null,
+      "panels": [
+        {
+          "number": 1,
+          "label": "Picture A",
+          "description": "student testing water sample, volunteer picking up litter, child observing fish. B: group cannot reach riverbank because path is flooded.",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "label": "Picture B",
+          "description": "group cannot reach riverbank because path is flooded.",
+          "imageSrc": null
+        }
+      ]
     },
     "questions": [
       {
@@ -1887,17 +2307,17 @@
       {
         "number": 2,
         "type": "picture_actions",
-        "prompt": "What is the student doing?",
+        "prompt": "Please look at the people in Picture A. They are doing different things. Tell me as much as you can about what they are doing.",
         "modelAnswers": [
-          "The student is testing a water sample."
+          "The student is testing a water sample. A volunteer is picking up litter, and a child is watching fish."
         ]
       },
       {
         "number": 3,
         "type": "picture_situation",
-        "prompt": "Why can't the group reach the river?",
+        "prompt": "Now, please look at the person or people in Picture B. Please describe the situation.",
         "modelAnswers": [
-          "Because the path is flooded."
+          "The group cannot reach the riverside because the path is flooded."
         ]
       },
       {
