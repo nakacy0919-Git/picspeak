@@ -100,7 +100,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "teacher typing notice, parent checking phone, student reading schedule. B: student cannot see message because phone battery is empty.",
+          "description": "teacher typing notice, parent checking phone, student reading schedule.",
           "imageSrc": null
         },
         {
@@ -180,7 +180,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "chef demonstrating cooking, girl tasting dish, man buying vegetables. B: vendor disappointed because strong wind blows paper signs down.",
+          "description": "chef demonstrating cooking, girl tasting dish, man buying vegetables.",
           "imageSrc": null
         },
         {
@@ -260,7 +260,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "teen reading picture book, children sitting in circle, librarian arranging books. B: boy struggling to reach book on high shelf.",
+          "description": "teen reading picture book, children sitting in circle, librarian arranging books.",
           "imageSrc": null
         },
         {
@@ -340,7 +340,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "mother packing reusable box, student filling bottle, father washing a container. B: woman cannot close an overflowing lunch box.",
+          "description": "mother packing reusable box, student filling bottle, father washing a container.",
           "imageSrc": null
         },
         {
@@ -420,7 +420,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "guide showing microscope, boy building model bridge, girl observing plants. B: girl's paper bridge collapsing under heavy toy.",
+          "description": "guide showing microscope, boy building model bridge, girl observing plants.",
           "imageSrc": null
         },
         {
@@ -500,7 +500,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "runner filling bottle, worker checking machine, child taking a drink. B: runner annoyed because bottle does not fit below tap.",
+          "description": "runner filling bottle, worker checking machine, child taking a drink.",
           "imageSrc": null
         },
         {
@@ -580,7 +580,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "two adults talking across table, student writing phrase, volunteer handing name tags. B: newcomer cannot find room because sign is unclear.",
+          "description": "two adults talking across table, student writing phrase, volunteer handing name tags.",
           "imageSrc": null
         },
         {
@@ -660,7 +660,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "woman sewing button, instructor showing needle, teen ironing repaired shirt. B: teen unhappy because button falls off again.",
+          "description": "woman sewing button, instructor showing needle, teen ironing repaired shirt.",
           "imageSrc": null
         },
         {
@@ -740,7 +740,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "group walking in park, leader pointing to map, man tying shoes. B: woman unable to join group because shoelace is broken.",
+          "description": "group walking in park, leader pointing to map, man tying shoes.",
           "imageSrc": null
         },
         {
@@ -820,7 +820,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "woman measuring shoes, man packing return box, delivery worker holding parcel. B: man looking worried because return label is missing.",
+          "description": "woman measuring shoes, man packing return box, delivery worker holding parcel.",
           "imageSrc": null
         },
         {
@@ -898,7 +898,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "cashier selling fruit cup, student choosing yogurt, worker arranging apples. B: girl disappointed because preferred fruit has sold out.",
+          "description": "cashier selling fruit cup, student choosing yogurt, worker arranging apples.",
           "imageSrc": null
         },
         {
@@ -976,7 +976,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "guide showing city map, tourists listening, volunteer pointing at temple. B: tourists confused because rain makes printed map unreadable.",
+          "description": "guide showing city map, tourists listening, volunteer pointing at temple.",
           "imageSrc": null
         },
         {
@@ -1054,7 +1054,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "staff handing racket to child, father signing form, children playing badminton. B: boy unhappy because a racket string has broken.",
+          "description": "staff handing racket to child, father signing form, children playing badminton.",
           "imageSrc": null
         },
         {
@@ -1132,7 +1132,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "student checking alert, father closing window, mother bringing plants inside. B: man surprised because phone battery died during storm.",
+          "description": "student checking alert, father closing window, mother bringing plants inside.",
           "imageSrc": null
         },
         {
@@ -1210,7 +1210,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "farmer showing seedlings, girl feeding sheep, boy planting lettuce. B: boy upset because muddy boots are stuck in wet soil.",
+          "description": "farmer showing seedlings, girl feeding sheep, boy planting lettuce.",
           "imageSrc": null
         },
         {
@@ -1288,7 +1288,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "librarian placing quiet sign, students studying silently, group discussing project elsewhere. B: boy frustrated because nearby phone is ringing.",
+          "description": "librarian placing quiet sign, students studying silently, group discussing project elsewhere.",
           "imageSrc": null
         },
         {
@@ -1366,7 +1366,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "customer putting rice in donation box, volunteer checking labels, family carrying bag. B: volunteer cannot accept item because package is open.",
+          "description": "customer putting rice in donation box, volunteer checking labels, family carrying bag.",
           "imageSrc": null
         },
         {
@@ -1444,7 +1444,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "guide speaking outside old house, visitor taking photo, student drawing building. B: elderly visitor tired after climbing long hill.",
+          "description": "guide speaking outside old house, visitor taking photo, student drawing building.",
           "imageSrc": null
         },
         {
@@ -1522,7 +1522,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "senior handing textbook to junior, teacher checking pages, girls sorting books. B: student disappointed because textbook has missing pages.",
+          "description": "senior handing textbook to junior, teacher checking pages, girls sorting books.",
           "imageSrc": null
         },
         {
@@ -1600,7 +1600,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "children planting sapling, worker watering tree, mayor holding shovel. B: young tree leaning after wind, worker concerned.",
+          "description": "children planting sapling, worker watering tree, mayor holding shovel.",
           "imageSrc": null
         },
         {
@@ -1676,7 +1676,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "boy listening on train, girl recording podcast, teacher choosing episode on tablet. B: boy cannot listen because headphones are tangled.",
+          "description": "boy listening on train, girl recording podcast, teacher choosing episode on tablet.",
           "imageSrc": null
         },
         {
@@ -1752,7 +1752,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "instructor showing emergency bag, families walking to meeting point, boy carrying water. B: woman confused because meeting place sign is covered.",
+          "description": "instructor showing emergency bag, families walking to meeting point, boy carrying water.",
           "imageSrc": null
         },
         {
@@ -1828,7 +1828,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "teenager playing violin, family listening, organizer arranging chairs. B: guitarist worried because microphone has stopped working.",
+          "description": "teenager playing violin, family listening, organizer arranging chairs.",
           "imageSrc": null
         },
         {
@@ -1904,7 +1904,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "volunteer filling dog bowl, woman cleaning cage, boy walking dog. B: boy cannot open cage because key is missing.",
+          "description": "volunteer filling dog bowl, woman cleaning cage, boy walking dog.",
           "imageSrc": null
         },
         {
@@ -1980,7 +1980,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "elderly man teaching girl to plant, boy carrying watering can, woman harvesting carrots. B: members arguing because nobody watered vegetables.",
+          "description": "elderly man teaching girl to plant, boy carrying watering can, woman harvesting carrots.",
           "imageSrc": null
         },
         {
@@ -2056,7 +2056,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "teacher sorting jackets, mother checking uniform size, student carrying bag. B: girl disappointed because available jacket is too small.",
+          "description": "teacher sorting jackets, mother checking uniform size, student carrying bag.",
           "imageSrc": null
         },
         {
@@ -2132,7 +2132,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "architect showing drawing, child using wide ramp, father pushing accessible swing. B: family unable to enter park because gate is blocked.",
+          "description": "architect showing drawing, child using wide ramp, father pushing accessible swing.",
           "imageSrc": null
         },
         {
@@ -2208,7 +2208,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "student answering mock interviewer, teacher taking notes, classmate waiting outside. B: student nervous because resume has been left at home.",
+          "description": "student answering mock interviewer, teacher taking notes, classmate waiting outside.",
           "imageSrc": null
         },
         {
@@ -2284,7 +2284,7 @@
         {
           "number": 1,
           "label": "Picture A",
-          "description": "student testing water sample, volunteer picking up litter, child observing fish. B: group cannot reach riverbank because path is flooded.",
+          "description": "student testing water sample, volunteer picking up litter, child observing fish.",
           "imageSrc": null
         },
         {
