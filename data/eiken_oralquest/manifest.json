@@ -1,0 +1,77 @@
+{
+  "schemaVersion": 1,
+  "project": "PicSpeak Oral Quest",
+  "course": "Eiken second-stage speaking practice",
+  "status": "draft_content_only",
+  "published": false,
+  "note": "Independent original practice materials. Not official Eiken examination questions or scoring criteria.",
+  "createdOn": "2026-11-07",
+  "totalCards": 120,
+  "totalOralQuestions": 540,
+  "grades": [
+    {
+      "label": "3級",
+      "key": "3",
+      "file": "grade3.json",
+      "cardCount": 30,
+      "questionsPerCard": 5,
+      "approxInterviewDuration": "約5分",
+      "format": "約30語の音読→本文1問→イラスト2問→個人質問2問"
+    },
+    {
+      "label": "準2級",
+      "key": "pre2",
+      "file": "grade_pre2.json",
+      "cardCount": 30,
+      "questionsPerCard": 5,
+      "approxInterviewDuration": "約6分",
+      "format": "約50語の音読→本文1問→人物動作1問→状況説明1問→意見2問"
+    },
+    {
+      "label": "2級",
+      "key": "2",
+      "file": "grade2.json",
+      "cardCount": 30,
+      "questionsPerCard": 4,
+      "approxInterviewDuration": "約7分",
+      "format": "約60語の音読→本文1問→3コマの説明→意見2問"
+    },
+    {
+      "label": "準1級",
+      "key": "pre1",
+      "file": "grade_pre1.json",
+      "cardCount": 30,
+      "questionsPerCard": 4,
+      "approxInterviewDuration": "約8分",
+      "format": "4コマ説明（準備60秒・ナレーション120秒）→意見4問"
+    }
+  ],
+  "stageBands": [
+    {
+      "from": 1,
+      "to": 10,
+      "key": "guided",
+      "ui": "Study with model answers and hints after attempting"
+    },
+    {
+      "from": 11,
+      "to": 20,
+      "key": "practice",
+      "ui": "Practice independently, then review models"
+    },
+    {
+      "from": 21,
+      "to": 30,
+      "key": "mock",
+      "ui": "Hide hints and model answers until completion"
+    }
+  ],
+  "imagePolicy": "All picture assets are pending. imageSrc stays null until original illustrations are reviewed and linked.",
+  "integrationPolicy": "Do not append to data/oralquest_list.json or modify live oralquest_game.js until UI and illustration phase.",
+  "referenceUrls": [
+    "https://www.eiken.or.jp/eiken/exam/grade_3/solutions.html",
+    "https://www.eiken.or.jp/eiken/exam/grade_p2/solutions.html",
+    "https://www.eiken.or.jp/eiken/exam/grade_2/solutions.html",
+    "https://www.eiken.or.jp/eiken/exam/grade_p1/solutions.html"
+  ]
+}
