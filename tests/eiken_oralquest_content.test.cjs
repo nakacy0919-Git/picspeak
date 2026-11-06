@@ -31,7 +31,7 @@ for (const spec of manifest.grades) {
   } else {
    const range=spec.key==='3'?[27,42]:spec.key==='pre2'?[45,60]:[55,70];
    assert.ok(card.passage.wordCount>=range[0]&&card.passage.wordCount<=range[1],card.id);
-   assert.equal(card.passage.wordCount,card.passage.text.trim().split(/\\s+/).length,card.id);
+   assert.equal(card.passage.wordCount,card.passage.text.trim().split(/\s+/).length,card.id);
    if (spec.key==='2') {
     assert.equal(card.visual.panels.length,3,card.id);
     assert.ok(card.questions[1].modelAnswers[0].startsWith(card.storyLeadIn),card.id);
