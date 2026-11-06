@@ -1,0 +1,2132 @@
+[
+  {
+    "id": "e2_001",
+    "grade": "2",
+    "stage": 1,
+    "band": "guided",
+    "title": "School Solar Projects",
+    "passage": {
+      "title": "School Solar Projects",
+      "text": "Some schools are installing solar panels on their roofs to produce electricity. Students can use information from the panels in science lessons and learn how sunlight becomes energy. Although installing the equipment requires money, schools may reduce electricity costs over time. Teachers also hope these projects encourage students to think about the environment.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A school principal suggested installing solar panels",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Students raised money by organizing a charity sale",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Workers installed panels and students celebrated",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can solar panels help schools?",
+        "modelAnswers": [
+          "They can produce electricity and reduce costs over time."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "At first, the principal suggested putting solar panels on the school's roof. The students wanted to help, so they held a charity sale to raise money. A few months later, workers installed the panels. The students were pleased because their school could now use cleaner energy."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Do you think schools should spend money on renewable energy?",
+        "modelAnswers": [
+          "Yes. It may cost more at first, but students can learn about sustainability."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think young people should learn how to manage money?",
+        "modelAnswers": [
+          "Yes. It helps them make responsible decisions."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_002",
+    "grade": "2",
+    "stage": 2,
+    "band": "guided",
+    "title": "Online Medical Advice",
+    "passage": {
+      "title": "Online Medical Advice",
+      "text": "Some hospitals provide online consultations for patients with minor health concerns. Patients can speak to doctors from home and avoid long trips, which is especially helpful in rural areas. However, not every illness can be checked through a screen, so doctors sometimes ask patients to visit a hospital for a direct examination.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A woman felt sick but lived far from a clinic",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She spoke to a doctor through a tablet",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The doctor advised her to come in for an examination",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are online consultations helpful in rural areas?",
+        "modelAnswers": [
+          "Because patients may not need to travel long distances."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A woman living in a rural town began to feel ill. Since the nearest clinic was far away, she arranged an online consultation. She described her symptoms to a doctor using a tablet. After listening carefully, the doctor asked her to visit the clinic for an examination."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should people rely more on online medical services?",
+        "modelAnswers": [
+          "They can help with simple concerns, but serious symptoms need in-person care."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think people today get enough exercise?",
+        "modelAnswers": [
+          "Not always. Many people spend too much time sitting."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_003",
+    "grade": "2",
+    "stage": 3,
+    "band": "guided",
+    "title": "Reusable Packaging",
+    "passage": {
+      "title": "Reusable Packaging",
+      "text": "Some online stores are experimenting with packaging that customers can return after receiving their orders. The boxes can be cleaned and used again, reducing the need for disposable materials. However, companies must organize collection services, and customers need to remember to return the packaging. The success of such systems depends on cooperation.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A shop owner introduced returnable boxes",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Customers received products in new boxes",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "A delivery company collected boxes for reuse",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is customer cooperation important for reusable packaging?",
+        "modelAnswers": [
+          "Because customers need to return the packaging."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "One day, a shop owner decided to reduce packaging waste. She began sending products in returnable boxes and explained the new system to customers. At first, some customers forgot to return them. Later, the delivery company began collecting used boxes, and the system became easier for everyone."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should companies reduce disposable packaging?",
+        "modelAnswers": [
+          "Yes. It can reduce waste, although reuse must be convenient."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you like to start your own business someday?",
+        "modelAnswers": [
+          "Maybe. I would enjoy creating useful products."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_004",
+    "grade": "2",
+    "stage": 4,
+    "band": "guided",
+    "title": "Community Study Hubs",
+    "passage": {
+      "title": "Community Study Hubs",
+      "text": "Public study hubs give students a quiet place to work after school. Some offer free internet access, reference books, and volunteers who can answer basic questions. These places are especially useful for students who have little space or unreliable internet at home. Communities must decide how to fund and maintain them fairly.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student tried to study in a noisy apartment",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She heard about a new study hub at the library",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "She used the hub and finished her report",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are study hubs helpful to some students?",
+        "modelAnswers": [
+          "They offer space and internet access that students may lack at home."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student had trouble concentrating because her apartment was noisy. Her teacher told her about a new study hub in the local library. The next day, she went there and found a quiet desk and internet access. She finished her report and decided to return the following week."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should local governments offer free places to study?",
+        "modelAnswers": [
+          "Yes. They can reduce differences between students' home environments."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Is it important for students to have part-time jobs?",
+        "modelAnswers": [
+          "It can be useful if the work does not interfere with studying."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_005",
+    "grade": "2",
+    "stage": 5,
+    "band": "guided",
+    "title": "Urban Farming",
+    "passage": {
+      "title": "Urban Farming",
+      "text": "Some cities support farms on rooftops and in unused spaces between buildings. These projects give residents fresh produce and opportunities to learn about growing food. Urban farms may also create green areas where neighbors can meet. However, they require careful planning because water, sunlight, and building safety all matter.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "An apartment manager found an unused rooftop",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents worked together to build planting boxes",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Vegetables grew and neighbors held a harvest lunch",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do some cities support urban farms?",
+        "modelAnswers": [
+          "They provide fresh produce and places for residents to learn."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "An apartment manager noticed that the rooftop was rarely used. He suggested creating a garden there, and several residents agreed to help. They installed planting boxes and watered the vegetables regularly. By autumn, they had grown enough food to share at a neighborhood lunch."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Do you think city residents should grow some of their food?",
+        "modelAnswers": [
+          "Yes. It can teach them about food production and reduce transportation."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Should people spend more time outdoors?",
+        "modelAnswers": [
+          "Yes. Time outside can improve both health and mood."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_006",
+    "grade": "2",
+    "stage": 6,
+    "band": "guided",
+    "title": "Flexible Working Hours",
+    "passage": {
+      "title": "Flexible Working Hours",
+      "text": "Some companies allow employees to choose when they begin and finish work. Flexible schedules can help people manage childcare, study, or long journeys to the office. On the other hand, workers may find it harder to arrange meetings when everyone has different hours. Clear communication is necessary for these systems to work.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A father struggled to take his daughter to school",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "His company introduced flexible working hours",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "He changed his schedule and joined his daughter's school event",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What problem can flexible working hours create?",
+        "modelAnswers": [
+          "It can be difficult to arrange meetings."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A father was often late when taking his daughter to school because his job started early. Then his company introduced flexible working hours. He asked to begin work later in the morning. As a result, he could take his daughter to school and even attend a school event."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should more companies offer flexible schedules?",
+        "modelAnswers": [
+          "Yes, provided teams can still communicate effectively."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you prefer to work in an office or from home?",
+        "modelAnswers": [
+          "I would prefer a mix of both."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_007",
+    "grade": "2",
+    "stage": 7,
+    "band": "guided",
+    "title": "Reducing Food Waste at Cafes",
+    "passage": {
+      "title": "Reducing Food Waste at Cafes",
+      "text": "Restaurants and cafés sometimes prepare more food than customers buy. To prevent waste, some shops sell remaining items at lower prices near closing time. Other businesses use apps to tell customers what is available. These efforts can save resources, but food safety rules must still be followed carefully.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A bakery had unsold bread every evening",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "The owner advertised discounted bread through an app",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Customers bought the bread before closing",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do some cafés reduce food waste?",
+        "modelAnswers": [
+          "They sell leftover items at lower prices or use apps."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A bakery owner noticed that many loaves of bread were left at the end of each day. She decided to use an app to offer the remaining bread at a discount. Soon, nearby residents began visiting before closing time. The shop wasted less bread, and customers saved money."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should stores lower prices for food near its expiration date?",
+        "modelAnswers": [
+          "Yes, if the food is safe, it can reduce waste."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think cooking should be taught in schools?",
+        "modelAnswers": [
+          "Yes. It is an important life skill."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_008",
+    "grade": "2",
+    "stage": 8,
+    "band": "guided",
+    "title": "Public Transport for Seniors",
+    "passage": {
+      "title": "Public Transport for Seniors",
+      "text": "As populations age, transportation becomes an important issue in many towns. Some communities provide small buses that travel through residential areas and stop near clinics or shops. Such services help older residents live independently, although operating them can be expensive when there are only a few passengers.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "An older woman could not reach the grocery store easily",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents asked the town for a small bus",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "A new bus route opened and the woman went shopping",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do small community buses help older residents?",
+        "modelAnswers": [
+          "They make it easier to reach clinics and shops independently."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "An older woman found it difficult to buy groceries because she no longer drove. She and her neighbors asked the town office for better transportation. Several months later, a small bus began stopping near her home. She was delighted because she could visit the shops independently."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should towns spend more money on transport for older people?",
+        "modelAnswers": [
+          "Yes. It helps people remain active and independent."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think everyone should learn to drive?",
+        "modelAnswers": [
+          "No. It depends on where they live and their needs."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_009",
+    "grade": "2",
+    "stage": 9,
+    "band": "guided",
+    "title": "Digital Art Exhibitions",
+    "passage": {
+      "title": "Digital Art Exhibitions",
+      "text": "Museums are developing exhibitions that use digital screens and interactive technology. Visitors can explore artworks in detail, listen to explanations, and sometimes create their own images. These exhibitions may attract people who rarely visit museums. However, traditional paintings and sculptures remain important because seeing actual objects provides a different experience.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student felt museums were boring",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Her teacher took the class to an interactive exhibition",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The student created digital art and became interested",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can visitors do at digital art exhibitions?",
+        "modelAnswers": [
+          "They can explore art, hear explanations, and create images."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student thought museums were boring and did not want to go on a class trip. However, her teacher took everyone to an interactive art exhibition. There, she could change colors on a huge digital display. She enjoyed creating her own image and became interested in visiting more museums."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Will technology make traditional museums unnecessary?",
+        "modelAnswers": [
+          "No. Digital tools are useful, but real artworks offer unique experiences."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Should art be a required subject at school?",
+        "modelAnswers": [
+          "Yes. It helps students express themselves."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_010",
+    "grade": "2",
+    "stage": 10,
+    "band": "guided",
+    "title": "Disaster Preparation Apps",
+    "passage": {
+      "title": "Disaster Preparation Apps",
+      "text": "During natural disasters, accurate information can help people make safe decisions. Some cities offer apps that show evacuation centers, emergency supplies, and local warnings. These tools are convenient, but they may not work when electricity or internet connections fail. Families should therefore keep a paper emergency plan as well.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A family received a severe-storm alert on a phone",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "The power went out, so they checked a paper map",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "They followed the map to a nearby shelter",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why should families also have paper emergency plans?",
+        "modelAnswers": [
+          "Because apps may stop working during power or internet failures."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A family received a warning about a severe storm and prepared to leave home. Suddenly, the electricity went out, and their phones could not connect to the internet. Fortunately, the parents had prepared a paper map of local shelters. They followed the route and arrived safely."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should emergency training be required in schools?",
+        "modelAnswers": [
+          "Yes. Everyone needs to know what to do under pressure."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think people depend too much on smartphones?",
+        "modelAnswers": [
+          "Yes. Many people struggle when their phones stop working."
+        ]
+      }
+    ],
+    "guidance": [
+      "Organize the story as beginning, problem, result.",
+      "Use past tense and linking expressions.",
+      "Give an opinion and support it with a reason."
+    ]
+  },
+  {
+    "id": "e2_011",
+    "grade": "2",
+    "stage": 11,
+    "band": "practice",
+    "title": "Ethical Tourism",
+    "passage": {
+      "title": "Ethical Tourism",
+      "text": "Popular tourist destinations sometimes struggle with crowded streets and excessive waste. To protect these areas, local governments may limit vehicle access or encourage visitors to travel outside busy seasons. Tourism supports jobs, but it should also respect residents and natural environments. Both tourists and businesses share responsibility for reducing problems.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Residents complained about noisy tour buses",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A town introduced a car-free weekend",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Visitors walked around, and the streets became quieter",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can local governments reduce problems caused by tourism?",
+        "modelAnswers": [
+          "They can limit vehicle access or encourage off-season travel."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "Residents in a historic town became frustrated by the number of tour buses on narrow streets. The local government introduced a car-free weekend in the town center. At first, some tourists were surprised. Later, many enjoyed exploring the town on foot, and residents appreciated the quieter atmosphere."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should tourists pay extra fees to protect famous places?",
+        "modelAnswers": [
+          "Sometimes. Small fees can support maintenance and conservation."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you rather visit a famous destination or a quiet place?",
+        "modelAnswers": [
+          "I prefer quieter places because I can relax."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_012",
+    "grade": "2",
+    "stage": 12,
+    "band": "practice",
+    "title": "Student-led Research",
+    "passage": {
+      "title": "Student-led Research",
+      "text": "Some schools let students choose research topics based on their personal interests. Students learn to collect reliable information, compare different views, and present conclusions. Working independently can build confidence, but teachers still need to provide guidance so students do not rely on inaccurate sources or simple answers.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A group chose to study local water quality",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "They collected samples and interviewed experts",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "They presented their findings at a school assembly",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do students need guidance during research?",
+        "modelAnswers": [
+          "To avoid inaccurate sources and oversimplified answers."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A group of students decided to research water quality in a nearby river. They collected samples and interviewed a local scientist. After comparing the results, they prepared charts for a school assembly. Their presentation encouraged other students to think about how to keep the river clean."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should students be allowed to choose their own research topics?",
+        "modelAnswers": [
+          "Yes. They often work harder when the subject interests them."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Is teamwork important for success?",
+        "modelAnswers": [
+          "Yes. People can share different strengths."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_013",
+    "grade": "2",
+    "stage": 13,
+    "band": "practice",
+    "title": "Public Electric Buses",
+    "passage": {
+      "title": "Public Electric Buses",
+      "text": "Several cities are introducing electric buses to reduce noise and air pollution. These vehicles can be comfortable for passengers, but they need charging stations and reliable electricity. Transport companies must compare costs carefully before replacing entire fleets. Some cities begin by testing electric buses on short routes.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A transport company announced a trial electric bus",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A driver tested the bus along a short route",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Passengers gave feedback and the company planned another trial",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do some cities test electric buses on short routes first?",
+        "modelAnswers": [
+          "To compare costs and check whether they work reliably."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A local transport company wanted to try electric buses. It selected a short route and asked an experienced driver to test a new vehicle. Passengers enjoyed the quiet ride, but the company discovered that charging took longer than expected. It decided to improve its plans before buying more buses."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should public transport use more electric vehicles?",
+        "modelAnswers": [
+          "Yes, but cities need reliable charging systems."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you pay more for environmentally friendly services?",
+        "modelAnswers": [
+          "Sometimes, if the extra cost were reasonable."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_014",
+    "grade": "2",
+    "stage": 14,
+    "band": "practice",
+    "title": "Intergenerational Learning",
+    "passage": {
+      "title": "Intergenerational Learning",
+      "text": "Some community centers organize classes where younger and older people teach one another. Teenagers may explain smartphone functions, while older residents share cooking skills or local history. These exchanges can reduce misunderstandings between generations and give participants confidence. They work best when everyone listens patiently and respects different experiences.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A teenager offered to teach a smartphone class",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Older residents practiced sending photos",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "One resident later taught the teenager a traditional recipe",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do intergenerational classes benefit participants?",
+        "modelAnswers": [
+          "They share knowledge and understand other generations better."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A teenager volunteered to teach older residents how to use smartphones. During the first lesson, several participants were nervous, but she patiently showed them how to send photographs. After the class, one resident invited her to a cooking workshop. The teenager enjoyed learning a family recipe in return."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should schools encourage activities with older residents?",
+        "modelAnswers": [
+          "Yes. Both generations can learn useful things."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you find it easy to talk to people of different ages?",
+        "modelAnswers": [
+          "Usually, especially when we share an interest."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_015",
+    "grade": "2",
+    "stage": 15,
+    "band": "practice",
+    "title": "Healthy Sleep Habits",
+    "passage": {
+      "title": "Healthy Sleep Habits",
+      "text": "Many teenagers have difficulty getting enough sleep because of busy schedules and late-night screen use. Health educators suggest keeping regular bedtimes and reducing bright-screen exposure before sleeping. Schools are also discussing how homework and early start times affect rest. Healthy sleep is important for concentration and emotional well-being.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student stayed up late playing games",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "He felt sleepy during an important lesson",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "He decided to put his phone away earlier and sleep longer",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do health educators suggest reducing screen use before bed?",
+        "modelAnswers": [
+          "Because it may help teenagers sleep better."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student often played mobile games until midnight. One morning, he fell asleep during an important class and missed part of the lesson. After talking to his teacher, he decided to leave his phone outside his bedroom. Soon, he began sleeping longer and felt more focused in class."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should schools begin later in the morning?",
+        "modelAnswers": [
+          "Possibly. Later starts may help teenagers get enough sleep."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "How do you relax after a busy day?",
+        "modelAnswers": [
+          "I usually take a walk or read."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_016",
+    "grade": "2",
+    "stage": 16,
+    "band": "practice",
+    "title": "Local Renewable Energy",
+    "passage": {
+      "title": "Local Renewable Energy",
+      "text": "Some towns are working with residents to produce renewable energy locally. Small wind turbines or solar systems can supply power to public buildings. Community projects may create local jobs and increase awareness about energy use. However, decisions about costs, land use, and maintenance require careful discussion.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A town held a meeting about solar power",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents visited a proposed site and raised concerns",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The town revised the plan and began a smaller project",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What must residents discuss before starting local energy projects?",
+        "modelAnswers": [
+          "They must discuss costs, land use, and maintenance."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A town council proposed building a solar power system near a community center. At a public meeting, residents asked questions about costs and safety. The council listened and changed the project to a smaller design. After receiving more support, the town began installing the panels."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should residents have a say in local energy projects?",
+        "modelAnswers": [
+          "Yes. Projects affect their neighborhoods and budgets."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you prefer making decisions alone or with others?",
+        "modelAnswers": [
+          "I prefer discussing important decisions with others."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_017",
+    "grade": "2",
+    "stage": 17,
+    "band": "practice",
+    "title": "Using Robots in Care Homes",
+    "passage": {
+      "title": "Using Robots in Care Homes",
+      "text": "Care homes are beginning to use simple robots for tasks such as carrying supplies and reminding residents about schedules. These tools may reduce the workload of staff, allowing more time for personal care. Yet robots cannot replace the human warmth and understanding that many older residents need.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A care worker was busy carrying supplies",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A delivery robot began bringing supplies to rooms",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The worker used the saved time to talk with a resident",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why can't robots completely replace care workers?",
+        "modelAnswers": [
+          "Because people need human warmth and understanding."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A care worker spent a large part of every day carrying towels and other supplies through a care home. The manager introduced a small delivery robot to help. At first, the staff needed time to learn how to use it. Later, the worker could spend more time talking with residents."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should care homes use more robots?",
+        "modelAnswers": [
+          "Yes, for simple tasks, but human care must remain central."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think technology always makes life better?",
+        "modelAnswers": [
+          "No. It can create new problems as well as benefits."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_018",
+    "grade": "2",
+    "stage": 18,
+    "band": "practice",
+    "title": "Learning Financial Skills",
+    "passage": {
+      "title": "Learning Financial Skills",
+      "text": "Some schools are introducing lessons about budgeting, saving, and responsible borrowing. Students practice comparing prices and planning how to use limited money. Financial education can help young adults avoid unnecessary debt. However, lessons should use practical situations rather than requiring students to memorize complicated financial terms.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student wanted an expensive new phone",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She made a savings plan with her teacher",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "She bought a phone later without borrowing money",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What should financial education focus on?",
+        "modelAnswers": [
+          "It should focus on practical situations like budgeting and comparing prices."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student wanted to buy a new phone but did not have enough money. Instead of borrowing from a friend, she discussed a budget with her teacher and found ways to save. After several months, she bought a less expensive phone with her own savings. She felt proud of her decision."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should financial education be required in high school?",
+        "modelAnswers": [
+          "Yes. Students need practical money-management skills."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Is saving money more important than spending it on experiences?",
+        "modelAnswers": [
+          "Both matter, so people should plan a balance."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_019",
+    "grade": "2",
+    "stage": 19,
+    "band": "practice",
+    "title": "Protecting Local Wildlife",
+    "passage": {
+      "title": "Protecting Local Wildlife",
+      "text": "Changes in land use can threaten animals that live near towns. Some communities build wildlife crossings or protect small areas of natural habitat. Scientists monitor animal populations to measure the results. These efforts may require funding, but protecting local wildlife can also maintain healthy ecosystems for future generations.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Residents saw animals crossing a busy road",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Local volunteers asked for a safe wildlife passage",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Workers built a small crossing and animals began using it",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do scientists monitor animal populations?",
+        "modelAnswers": [
+          "To see whether protection efforts are working."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "Residents noticed that small animals were crossing a dangerous road near a forest. They asked the local government to build a safer route. After discussing the problem, workers installed a wildlife passage under the road. In the following months, volunteers observed animals using the new crossing."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should cities spend money protecting wildlife?",
+        "modelAnswers": [
+          "Yes. Healthy ecosystems benefit both animals and people."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think children spend enough time learning about nature?",
+        "modelAnswers": [
+          "No. Outdoor education should be more common."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_020",
+    "grade": "2",
+    "stage": 20,
+    "band": "practice",
+    "title": "Remote Language Exchanges",
+    "passage": {
+      "title": "Remote Language Exchanges",
+      "text": "Some schools connect classes in different countries through video meetings. Students can practice languages while exchanging ideas about daily life and culture. These programs are often less expensive than traveling abroad. Still, teachers must arrange suitable times and help students communicate respectfully across cultural differences.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Two teachers planned an online exchange",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Students met through video and talked about school life",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "They created a shared presentation about their cultures",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What is one advantage of online school exchanges?",
+        "modelAnswers": [
+          "They are less expensive than traveling abroad."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "Teachers from two countries arranged an online cultural exchange. Their students first felt nervous about speaking English with strangers. After discussing school lunches and hobbies, the students became more comfortable. Later, both classes worked together on a presentation about their cultures and promised to keep in touch."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should all schools offer international exchanges?",
+        "modelAnswers": [
+          "Yes. Students can build communication skills and global awareness."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Is learning a language easier with a partner?",
+        "modelAnswers": [
+          "For me, yes. Conversation gives me motivation."
+        ]
+      }
+    ],
+    "guidance": [
+      "Describe all three panels before checking the example."
+    ]
+  },
+  {
+    "id": "e2_021",
+    "grade": "2",
+    "stage": 21,
+    "band": "mock",
+    "title": "Reducing Noise in Cities",
+    "passage": {
+      "title": "Reducing Noise in Cities",
+      "text": "Traffic and construction can create serious noise problems for people living in large cities. Some areas have introduced quieter road surfaces and limits on construction hours. Parks and green spaces also provide places to escape busy streets. However, reducing noise requires cooperation from companies, residents, and local authorities.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Residents complained about noisy construction at night",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "The town met with the building company",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The company changed its schedule and residents slept better",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do some cities try to reduce noise?",
+        "modelAnswers": [
+          "They use quieter roads and limit construction hours."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "People living near a construction site complained because loud work continued late into the evening. The town office arranged a meeting with the building company. After hearing the residents' concerns, the company agreed to stop noisy work earlier. The neighbors were relieved and could sleep better."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should cities restrict noisy activities at night?",
+        "modelAnswers": [
+          "Yes. People need quiet surroundings to rest."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you rather live in the countryside or a city?",
+        "modelAnswers": [
+          "I prefer the city because services are convenient."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_022",
+    "grade": "2",
+    "stage": 22,
+    "band": "mock",
+    "title": "Digital Privacy at School",
+    "passage": {
+      "title": "Digital Privacy at School",
+      "text": "Many schools use online services to manage homework and communicate with families. These tools save time, but they also store personal information. Teachers and students need to understand privacy settings and create strong passwords. Schools should explain clearly what information is collected and how it will be protected.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student used the same password everywhere",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A friend warned that the account might be unsafe",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The student created a stronger password and enabled extra security",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why should schools explain how personal information is used?",
+        "modelAnswers": [
+          "So students and families understand how their data is protected."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student used a very simple password for every school service. One day, a friend explained that the password could be guessed easily. The student asked a teacher for advice and changed the password. He also enabled an extra security step, making his account harder to access."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should digital safety be taught in schools?",
+        "modelAnswers": [
+          "Yes. Students need to protect their personal information."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think social media is mostly helpful or harmful?",
+        "modelAnswers": [
+          "It can be helpful, but people must use it carefully."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_023",
+    "grade": "2",
+    "stage": 23,
+    "band": "mock",
+    "title": "Affordable Cultural Activities",
+    "passage": {
+      "title": "Affordable Cultural Activities",
+      "text": "Museums, theaters, and music halls sometimes offer discounts for young people. These programs allow students to experience activities that might otherwise be too expensive. Supporters believe that access to culture can broaden interests and inspire creativity. However, institutions must find ways to cover operating costs while keeping tickets affordable.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student wanted to attend a concert but tickets were expensive",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She learned about a student discount program",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "She attended the concert and joined a school music club",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do cultural organizations offer student discounts?",
+        "modelAnswers": [
+          "To make cultural experiences more affordable for young people."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student had always wanted to hear a live orchestra, but the tickets were too expensive. Then she found a student discount offered by the concert hall. She bought a ticket and enjoyed the performance. The experience inspired her to join the school music club."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should governments support cultural activities for students?",
+        "modelAnswers": [
+          "Yes. Arts education should not depend only on family income."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you prefer watching performances online or in person?",
+        "modelAnswers": [
+          "In person, because the atmosphere is special."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_024",
+    "grade": "2",
+    "stage": 24,
+    "band": "mock",
+    "title": "Flexible Public Libraries",
+    "passage": {
+      "title": "Flexible Public Libraries",
+      "text": "Some public libraries have extended their evening hours to support students and working adults. Visitors can borrow books or use study spaces after school or work. Longer opening hours may improve access, but libraries need enough staff and funding to operate safely at night.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student worked part-time and missed library hours",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents requested later opening times",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The library stayed open later twice a week and the student visited",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why might longer library hours be difficult to provide?",
+        "modelAnswers": [
+          "Because libraries need additional staff and funding."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student wanted to use the library after her part-time job, but it always closed before she arrived. She signed a community request for longer opening hours. The library agreed to stay open late twice a week. The student was finally able to use its study space."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should libraries remain open later in the evening?",
+        "modelAnswers": [
+          "Yes, where there is demand and enough staff."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think studying in public places helps concentration?",
+        "modelAnswers": [
+          "It helps me because I am less likely to use my phone."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_025",
+    "grade": "2",
+    "stage": 25,
+    "band": "mock",
+    "title": "Responsible AI in Education",
+    "passage": {
+      "title": "Responsible AI in Education",
+      "text": "Artificial intelligence tools can help students generate ideas, review vocabulary, and receive quick feedback. However, students may become dependent on them or accept inaccurate information. Teachers are therefore developing rules that encourage responsible use. The goal is to support learning while still requiring students to think and create independently.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student asked an AI tool to summarize a history article",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She noticed a date in the summary was wrong",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "She checked reliable sources and corrected her assignment",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What problems can arise when students rely too much on AI?",
+        "modelAnswers": [
+          "They may accept inaccurate information or stop thinking independently."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student used an AI tool to summarize a history article for homework. She almost copied the summary without checking it, but one date seemed incorrect. After comparing the information with a textbook, she discovered the mistake. She revised her assignment and learned to verify AI-generated answers."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should students be allowed to use AI for homework?",
+        "modelAnswers": [
+          "Yes, as a learning aid, but they must check facts and do their own thinking."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think people should learn new skills throughout life?",
+        "modelAnswers": [
+          "Yes. Society and technology keep changing."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_026",
+    "grade": "2",
+    "stage": 26,
+    "band": "mock",
+    "title": "Community Health Campaigns",
+    "passage": {
+      "title": "Community Health Campaigns",
+      "text": "Local health offices sometimes organize free events that teach residents about exercise, nutrition, and disease prevention. Visitors may receive advice from professionals or take simple health measurements. These campaigns can increase awareness, but the information should be easy to understand and accessible to people of different ages.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A town office announced a free health event",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Volunteers demonstrated simple stretching exercises",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Residents joined weekly exercise meetings afterward",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why should health campaign information be easy to understand?",
+        "modelAnswers": [
+          "So people of different ages can use it."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A town office organized a free health event for local residents. At the event, volunteers demonstrated simple stretching exercises, and nurses answered questions about healthy habits. Several visitors enjoyed the activities so much that they decided to meet for exercise every week. Their group gradually grew larger."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should communities offer more free health activities?",
+        "modelAnswers": [
+          "Yes. They can encourage healthy habits for all residents."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "What healthy habit would you like to improve?",
+        "modelAnswers": [
+          "I want to go to bed earlier."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_027",
+    "grade": "2",
+    "stage": 27,
+    "band": "mock",
+    "title": "Safe Cycling Infrastructure",
+    "passage": {
+      "title": "Safe Cycling Infrastructure",
+      "text": "Many cities want more residents to use bicycles for short journeys. Separate bicycle lanes and clearer traffic signs may reduce accidents, but redesigning roads can be costly and sometimes removes parking spaces. City planners must balance the needs of cyclists, drivers, and pedestrians when deciding how to improve streets.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student was frightened cycling beside heavy traffic",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents asked the city for a protected bike lane",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The city built the lane and more students began cycling safely",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is redesigning streets for cyclists sometimes difficult?",
+        "modelAnswers": [
+          "Because it can cost money and reduce parking spaces."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student often cycled to school beside busy traffic and felt unsafe. Her parents joined other residents in asking the city for a separate bicycle lane. After a public discussion, the city built a protected lane near the school. More students began cycling, and parents felt less worried."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should cities build more protected bicycle lanes?",
+        "modelAnswers": [
+          "Yes. They make cycling safer and encourage greener travel."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you give up driving if public transportation improved?",
+        "modelAnswers": [
+          "I would use public transport more often."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_028",
+    "grade": "2",
+    "stage": 28,
+    "band": "mock",
+    "title": "Supporting Small Bookstores",
+    "passage": {
+      "title": "Supporting Small Bookstores",
+      "text": "Independent bookstores face competition from large online retailers. Some survive by organizing reading clubs, author events, and workshops that bring local people together. Customers may pay slightly more for books, but they also gain personal recommendations and a place to discuss literature. Community support can make a difference.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A bookstore owner worried about falling sales",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "She started a weekend reading club",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "More residents visited the store and bought books",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do small bookstores attract customers?",
+        "modelAnswers": [
+          "They hold events and offer personal recommendations."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "An independent bookstore owner noticed that fewer customers were visiting her shop. She decided to organize a reading club on weekends and invited local writers to speak. After several successful events, more people discovered the bookstore. The owner was happy to see customers recommending it to friends."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should people support local shops even if prices are higher?",
+        "modelAnswers": [
+          "Sometimes. They offer personal service and strengthen communities."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think reading habits are changing?",
+        "modelAnswers": [
+          "Yes. More people read on screens, but books remain valuable."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_029",
+    "grade": "2",
+    "stage": 29,
+    "band": "mock",
+    "title": "Water-saving Technologies",
+    "passage": {
+      "title": "Water-saving Technologies",
+      "text": "Some buildings now use systems that collect rainwater for gardens and cleaning. Other systems monitor water use and alert residents to leaks. These technologies can save resources and lower bills, but installation costs may discourage building owners. Public information about long-term savings can help people make informed decisions.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "An apartment manager noticed unusually high water bills",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A monitoring system found a leaking pipe",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Workers repaired the pipe and the building saved water",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can water-saving systems benefit building owners?",
+        "modelAnswers": [
+          "They can reduce water use and lower bills."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "An apartment manager noticed that water bills had increased unexpectedly. He asked a company to install a monitoring system. Soon, the system detected a leak behind a wall. Workers repaired the pipe, and the building used much less water the following month."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should governments encourage water-saving equipment?",
+        "modelAnswers": [
+          "Yes. Water is valuable, and conservation benefits communities."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Would you change daily habits to protect the environment?",
+        "modelAnswers": [
+          "Yes. Small actions can make a difference."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e2_030",
+    "grade": "2",
+    "stage": 30,
+    "band": "mock",
+    "title": "Supporting Students with Disabilities",
+    "passage": {
+      "title": "Supporting Students with Disabilities",
+      "text": "Schools are developing ways to make learning accessible to students with different needs. Some provide captions on videos, adjustable desks, or digital textbooks. These tools can help students participate more independently. Successful support also depends on listening to students and making adjustments rather than assuming one solution works for everyone.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "three_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A student had difficulty following videos without captions",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "The class asked teachers to add captions",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "The school introduced captioned videos and the student joined discussions",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is it important to listen to students when providing support?",
+        "modelAnswers": [
+          "Because students have different needs and one solution may not suit everyone."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "three_picture_narration",
+        "prompt": "Please describe the situation in the three pictures.",
+        "modelAnswers": [
+          "A student found it difficult to follow classroom videos because they had no captions. Her classmates told the teacher about the problem. The school began providing captioned videos and written summaries. As a result, the student could understand the lessons better and take part in group discussions."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_opinion",
+        "prompt": "Should schools spend more on accessible learning tools?",
+        "modelAnswers": [
+          "Yes. All students deserve an equal chance to learn."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "general_opinion",
+        "prompt": "Do you think students learn best in the same way?",
+        "modelAnswers": [
+          "No. People have different strengths and learning needs."
+        ]
+      }
+    ],
+    "guidance": []
+  }
+]
