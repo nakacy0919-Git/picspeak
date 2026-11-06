@@ -29,7 +29,9 @@
           "description": "woman at full parking rack, all spaces occupied, looking worried.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_001.webp",
+      "promptId": "ep2_001"
     },
     "questions": [
       {
@@ -109,7 +111,9 @@
           "description": "student cannot see message because phone battery is empty.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_002.webp",
+      "promptId": "ep2_002"
     },
     "questions": [
       {
@@ -189,7 +193,9 @@
           "description": "vendor disappointed because strong wind blows paper signs down.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_003.webp",
+      "promptId": "ep2_003"
     },
     "questions": [
       {
@@ -269,7 +275,9 @@
           "description": "boy struggling to reach book on high shelf.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_004.webp",
+      "promptId": "ep2_004"
     },
     "questions": [
       {
@@ -349,7 +357,9 @@
           "description": "woman cannot close an overflowing lunch box.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_005.webp",
+      "promptId": "ep2_005"
     },
     "questions": [
       {
@@ -429,7 +439,9 @@
           "description": "girl's paper bridge collapsing under heavy toy.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_006.webp",
+      "promptId": "ep2_006"
     },
     "questions": [
       {
@@ -509,7 +521,9 @@
           "description": "runner annoyed because bottle does not fit below tap.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_007.webp",
+      "promptId": "ep2_007"
     },
     "questions": [
       {
@@ -589,7 +603,9 @@
           "description": "newcomer cannot find room because sign is unclear.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_008.webp",
+      "promptId": "ep2_008"
     },
     "questions": [
       {
@@ -669,7 +685,9 @@
           "description": "teen unhappy because button falls off again.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_009.webp",
+      "promptId": "ep2_009"
     },
     "questions": [
       {
@@ -749,7 +767,9 @@
           "description": "woman unable to join group because shoelace is broken.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_010.webp",
+      "promptId": "ep2_010"
     },
     "questions": [
       {
@@ -829,7 +849,9 @@
           "description": "man looking worried because return label is missing.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_011.webp",
+      "promptId": "ep2_011"
     },
     "questions": [
       {
@@ -907,7 +929,9 @@
           "description": "girl disappointed because preferred fruit has sold out.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_012.webp",
+      "promptId": "ep2_012"
     },
     "questions": [
       {
@@ -985,7 +1009,9 @@
           "description": "tourists confused because rain makes printed map unreadable.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_013.webp",
+      "promptId": "ep2_013"
     },
     "questions": [
       {
@@ -1063,7 +1089,9 @@
           "description": "boy unhappy because a racket string has broken.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_014.webp",
+      "promptId": "ep2_014"
     },
     "questions": [
       {
@@ -1141,7 +1169,9 @@
           "description": "man surprised because phone battery died during storm.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_015.webp",
+      "promptId": "ep2_015"
     },
     "questions": [
       {
@@ -1219,7 +1249,9 @@
           "description": "boy upset because muddy boots are stuck in wet soil.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_016.webp",
+      "promptId": "ep2_016"
     },
     "questions": [
       {
@@ -1297,7 +1329,9 @@
           "description": "boy frustrated because nearby phone is ringing.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_017.webp",
+      "promptId": "ep2_017"
     },
     "questions": [
       {
@@ -1375,7 +1409,9 @@
           "description": "volunteer cannot accept item because package is open.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_018.webp",
+      "promptId": "ep2_018"
     },
     "questions": [
       {
@@ -1453,7 +1489,9 @@
           "description": "elderly visitor tired after climbing long hill.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_019.webp",
+      "promptId": "ep2_019"
     },
     "questions": [
       {
@@ -1531,7 +1569,9 @@
           "description": "student disappointed because textbook has missing pages.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_020.webp",
+      "promptId": "ep2_020"
     },
     "questions": [
       {
@@ -1609,7 +1649,9 @@
           "description": "young tree leaning after wind, worker concerned.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_021.webp",
+      "promptId": "ep2_021"
     },
     "questions": [
       {
@@ -1685,7 +1727,9 @@
           "description": "boy cannot listen because headphones are tangled.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_022.webp",
+      "promptId": "ep2_022"
     },
     "questions": [
       {
@@ -1761,7 +1805,9 @@
           "description": "woman confused because meeting place sign is covered.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_023.webp",
+      "promptId": "ep2_023"
     },
     "questions": [
       {
@@ -1837,7 +1883,9 @@
           "description": "guitarist worried because microphone has stopped working.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_024.webp",
+      "promptId": "ep2_024"
     },
     "questions": [
       {
@@ -1913,7 +1961,9 @@
           "description": "boy cannot open cage because key is missing.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_025.webp",
+      "promptId": "ep2_025"
     },
     "questions": [
       {
@@ -1989,7 +2039,9 @@
           "description": "members arguing because nobody watered vegetables.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_026.webp",
+      "promptId": "ep2_026"
     },
     "questions": [
       {
@@ -2065,7 +2117,9 @@
           "description": "girl disappointed because available jacket is too small.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_027.webp",
+      "promptId": "ep2_027"
     },
     "questions": [
       {
@@ -2141,7 +2195,9 @@
           "description": "family unable to enter park because gate is blocked.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_028.webp",
+      "promptId": "ep2_028"
     },
     "questions": [
       {
@@ -2217,7 +2273,9 @@
           "description": "student nervous because resume has been left at home.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_029.webp",
+      "promptId": "ep2_029"
     },
     "questions": [
       {
@@ -2293,7 +2351,9 @@
           "description": "group cannot reach riverbank because path is flooded.",
           "imageSrc": null
         }
-      ]
+      ],
+      "plannedImageSrc": "assets/images/eiken_oralquest/pre2/ep2_030.webp",
+      "promptId": "ep2_030"
     },
     "questions": [
       {
