@@ -1,0 +1,1892 @@
+[
+  {
+    "id": "e3_001",
+    "grade": "3",
+    "stage": 1,
+    "band": "guided",
+    "title": "Library Day",
+    "passage": {
+      "title": "Library Day",
+      "text": "On Saturdays, some children visit the town library. They read books and do their homework there. A librarian helps them find interesting stories.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Library: a librarian at a desk, a boy reading at a table, a girl carrying three books.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Where do some children do their homework?",
+        "modelAnswers": [
+          "They do it at the town library."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is reading a book."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many books is the girl carrying?",
+        "modelAnswers": [
+          "She is carrying three books."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you enjoy reading books?",
+        "modelAnswers": [
+          "Yes, I do. I like adventure stories."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you usually do after school?",
+        "modelAnswers": [
+          "I usually play basketball with my friends."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_002",
+    "grade": "3",
+    "stage": 2,
+    "band": "guided",
+    "title": "School Garden",
+    "passage": {
+      "title": "School Garden",
+      "text": "Our school has a small garden behind the gym. Students grow tomatoes and flowers there. They water the plants every morning and sometimes share vegetables with their families.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do the students do every morning?",
+        "modelAnswers": [
+          "They water the plants."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is watering the flowers."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the bucket?",
+        "modelAnswers": [
+          "It is near the bench."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you ever grown vegetables?",
+        "modelAnswers": [
+          "Yes, I have. I grew tomatoes last summer."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Which school subject do you like best?",
+        "modelAnswers": [
+          "I like science because experiments are fun."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_003",
+    "grade": "3",
+    "stage": 3,
+    "band": "guided",
+    "title": "A Rainy Morning",
+    "passage": {
+      "title": "A Rainy Morning",
+      "text": "Some people bring umbrellas on rainy days. Others wear raincoats when they walk to school. Wearing dry clothes helps people stay comfortable during bad weather.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Street: woman holding an umbrella, boy wearing a yellow raincoat, bicycle next to a tree.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do some people wear raincoats?",
+        "modelAnswers": [
+          "To stay dry when they walk to school."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the woman holding?",
+        "modelAnswers": [
+          "She is holding an umbrella."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the bicycle?",
+        "modelAnswers": [
+          "It is next to a tree."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like rainy days?",
+        "modelAnswers": [
+          "No, I don't. I prefer sunny weather."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "How do you usually come to school?",
+        "modelAnswers": [
+          "I usually take the train."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_004",
+    "grade": "3",
+    "stage": 4,
+    "band": "guided",
+    "title": "Weekend Cooking",
+    "passage": {
+      "title": "Weekend Cooking",
+      "text": "Many families cook together on weekends. Children can wash vegetables or set the table. Cooking with family members is a good way to learn new skills.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Kitchen: father cutting carrots, daughter washing tomatoes, three plates on dining table.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can children do when their families cook?",
+        "modelAnswers": [
+          "They can wash vegetables or set the table."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the father doing?",
+        "modelAnswers": [
+          "He is cutting carrots."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many plates are on the table?",
+        "modelAnswers": [
+          "There are three plates."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you sometimes help cook dinner?",
+        "modelAnswers": [
+          "Yes. I often make salad."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What food would you like to learn to make?",
+        "modelAnswers": [
+          "I want to learn to make curry."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_005",
+    "grade": "3",
+    "stage": 5,
+    "band": "guided",
+    "title": "At the Zoo",
+    "passage": {
+      "title": "At the Zoo",
+      "text": "Many zoos teach visitors about wild animals. People can learn where animals live and what they eat. Zoo workers also explain how to protect animals.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Zoo: keeper feeding a giraffe, two children watching, sign with a picture of a zebra.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can visitors learn at zoos?",
+        "modelAnswers": [
+          "They can learn where animals live and what they eat."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the keeper doing?",
+        "modelAnswers": [
+          "The keeper is feeding a giraffe."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many children are watching?",
+        "modelAnswers": [
+          "Two children are watching."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "What animal do you like best?",
+        "modelAnswers": [
+          "I like elephants because they are strong."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Would you like to visit another country?",
+        "modelAnswers": [
+          "Yes. I want to see Australia."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_006",
+    "grade": "3",
+    "stage": 6,
+    "band": "guided",
+    "title": "Music Club",
+    "passage": {
+      "title": "Music Club",
+      "text": "Some students join music clubs after school. They practice songs together and perform at school events. Playing music with friends can be exciting and enjoyable.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Music room: girl playing piano, boy holding guitar, drum beside the window.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "When do some students practice songs?",
+        "modelAnswers": [
+          "They practice after school."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is playing the piano."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the drum?",
+        "modelAnswers": [
+          "It is beside the window."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Can you play a musical instrument?",
+        "modelAnswers": [
+          "Yes, I can play the guitar."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What kind of music do you listen to?",
+        "modelAnswers": [
+          "I often listen to pop music."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_007",
+    "grade": "3",
+    "stage": 7,
+    "band": "guided",
+    "title": "Community Clean-up",
+    "passage": {
+      "title": "Community Clean-up",
+      "text": "On Sunday mornings, volunteers clean the park near the station. They pick up trash and collect empty bottles. Their work makes the park safer and nicer for everyone.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Park: two students picking up litter, woman holding trash bag, three empty bottles on ground.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do the volunteers collect?",
+        "modelAnswers": [
+          "They collect empty bottles."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What are the students doing?",
+        "modelAnswers": [
+          "They are picking up trash."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many empty bottles are on the ground?",
+        "modelAnswers": [
+          "There are three."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you ever cleaned a park?",
+        "modelAnswers": [
+          "Yes. I helped at a community event."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you do to help at home?",
+        "modelAnswers": [
+          "I wash the dishes."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_008",
+    "grade": "3",
+    "stage": 8,
+    "band": "guided",
+    "title": "A New Bicycle",
+    "passage": {
+      "title": "A New Bicycle",
+      "text": "Many children ride bicycles to school or to the park. Wearing a helmet is important because it can protect their heads. Cyclists should also follow traffic rules.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Street: boy putting on helmet, girl riding bicycle, traffic light showing red.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is wearing a helmet important?",
+        "modelAnswers": [
+          "Because it can protect cyclists' heads."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is putting on a helmet."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "What color is the traffic light?",
+        "modelAnswers": [
+          "It is red."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you often ride a bicycle?",
+        "modelAnswers": [
+          "Yes. I ride to the park on weekends."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What sport would you like to try?",
+        "modelAnswers": [
+          "I'd like to try tennis."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_009",
+    "grade": "3",
+    "stage": 9,
+    "band": "guided",
+    "title": "Farmers' Market",
+    "passage": {
+      "title": "Farmers' Market",
+      "text": "Every month, farmers sell fresh food at the town market. People can buy vegetables, fruit, and bread there. Some families enjoy talking with the farmers.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Market: woman choosing apples, farmer handing a bag to man, four pumpkins on table.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can people buy at the market?",
+        "modelAnswers": [
+          "They can buy vegetables, fruit, and bread."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the woman doing?",
+        "modelAnswers": [
+          "She is choosing apples."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many pumpkins are on the table?",
+        "modelAnswers": [
+          "There are four pumpkins."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like shopping at markets?",
+        "modelAnswers": [
+          "Yes. I like buying fresh fruit."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What is your favorite season?",
+        "modelAnswers": [
+          "My favorite season is autumn."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_010",
+    "grade": "3",
+    "stage": 10,
+    "band": "guided",
+    "title": "After-school Sports",
+    "passage": {
+      "title": "After-school Sports",
+      "text": "Many students exercise after classes. Some play soccer on the school field, while others run around the track. Playing sports helps students feel energetic.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "School field: girls kicking soccer ball, boy drinking water, bag under a tree.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Where do some students play soccer?",
+        "modelAnswers": [
+          "They play on the school field."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What are the girls doing?",
+        "modelAnswers": [
+          "They are playing soccer."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the bag?",
+        "modelAnswers": [
+          "It is under a tree."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like playing team sports?",
+        "modelAnswers": [
+          "Yes. I enjoy volleyball."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you usually do on Sundays?",
+        "modelAnswers": [
+          "I usually relax at home."
+        ]
+      }
+    ],
+    "guidance": [
+      "Find the answer in the passage.",
+      "Use be + verb-ing to describe an action.",
+      "Give a short complete sentence."
+    ]
+  },
+  {
+    "id": "e3_011",
+    "grade": "3",
+    "stage": 11,
+    "band": "practice",
+    "title": "Bus Stop",
+    "passage": {
+      "title": "Bus Stop",
+      "text": "People often wait at bus stops near shopping centers. Some read books while waiting. Bus drivers help passengers travel safely to different places in the town.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Bus stop: elderly man reading newspaper, student checking watch, two people sitting on bench.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do some people do while waiting for the bus?",
+        "modelAnswers": [
+          "They read books."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is checking a watch."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many people are sitting on the bench?",
+        "modelAnswers": [
+          "Two people are sitting there."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you often use buses?",
+        "modelAnswers": [
+          "Sometimes. I take a bus to the museum."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Where would you like to go next weekend?",
+        "modelAnswers": [
+          "I'd like to go to the beach."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_012",
+    "grade": "3",
+    "stage": 12,
+    "band": "practice",
+    "title": "Family Picnic",
+    "passage": {
+      "title": "Family Picnic",
+      "text": "In spring, many families have picnics in parks. They bring sandwiches and drinks and sit on the grass. Children often play games after eating lunch.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Park: family sitting on blanket, girl throwing a ball, picnic basket beside father.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Where do families sit during picnics?",
+        "modelAnswers": [
+          "They sit on the grass."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is throwing a ball."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the picnic basket?",
+        "modelAnswers": [
+          "It is beside the father."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like eating outside?",
+        "modelAnswers": [
+          "Yes. Food tastes good in the park."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Who do you usually spend weekends with?",
+        "modelAnswers": [
+          "I usually spend them with my family."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_013",
+    "grade": "3",
+    "stage": 13,
+    "band": "practice",
+    "title": "Pet Care",
+    "passage": {
+      "title": "Pet Care",
+      "text": "Many families keep dogs or cats at home. Pets need fresh water, food, and time to play. Owners should take care of their animals every day.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do pets need?",
+        "modelAnswers": [
+          "They need water, food, and time to play."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is giving water to a dog."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the toy ball?",
+        "modelAnswers": [
+          "It is under the sofa."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Would you like to have a pet?",
+        "modelAnswers": [
+          "Yes. I'd like to have a dog."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you do when you feel tired?",
+        "modelAnswers": [
+          "I listen to music."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_014",
+    "grade": "3",
+    "stage": 14,
+    "band": "practice",
+    "title": "School Festival",
+    "passage": {
+      "title": "School Festival",
+      "text": "Our school festival is held every autumn. Students prepare games, food stalls, and music performances. Parents and neighbors come to enjoy the special day together.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Festival: students selling cookies, visitor taking photo, five colorful balloons above booth.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do students prepare for the festival?",
+        "modelAnswers": [
+          "They prepare games, food stalls, and music performances."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What are the students doing?",
+        "modelAnswers": [
+          "They are selling cookies."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many balloons are above the booth?",
+        "modelAnswers": [
+          "There are five."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you enjoy school festivals?",
+        "modelAnswers": [
+          "Yes, because I like working with classmates."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What would you like to do during your next holiday?",
+        "modelAnswers": [
+          "I'd like to go camping."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_015",
+    "grade": "3",
+    "stage": 15,
+    "band": "practice",
+    "title": "Train Travel",
+    "passage": {
+      "title": "Train Travel",
+      "text": "Many people travel by train because it is convenient. They can read, listen to music, or enjoy the view. Passengers should speak quietly on crowded trains.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Train car: woman reading, man looking out window, umbrella beside seat.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do many people travel by train?",
+        "modelAnswers": [
+          "Because it is convenient."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the woman doing?",
+        "modelAnswers": [
+          "She is reading a book."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the umbrella?",
+        "modelAnswers": [
+          "It is beside the seat."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like taking trains?",
+        "modelAnswers": [
+          "Yes. I enjoy looking out the window."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Have you ever visited a big city?",
+        "modelAnswers": [
+          "Yes. I have visited Osaka."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_016",
+    "grade": "3",
+    "stage": 16,
+    "band": "practice",
+    "title": "Healthy Breakfast",
+    "passage": {
+      "title": "Healthy Breakfast",
+      "text": "Eating breakfast helps students prepare for the day. Some people eat rice and eggs, while others choose bread and fruit. A balanced meal can give us energy.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Dining room: boy eating toast, mother pouring milk, two bananas on plate.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why is breakfast important for students?",
+        "modelAnswers": [
+          "Because it can give them energy."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the mother doing?",
+        "modelAnswers": [
+          "She is pouring milk."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many bananas are on the plate?",
+        "modelAnswers": [
+          "There are two."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you eat breakfast every morning?",
+        "modelAnswers": [
+          "Yes. I usually eat rice and eggs."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What time do you get up on weekdays?",
+        "modelAnswers": [
+          "I get up at six thirty."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_017",
+    "grade": "3",
+    "stage": 17,
+    "band": "practice",
+    "title": "Outdoor Art",
+    "passage": {
+      "title": "Outdoor Art",
+      "text": "Some towns display paintings and sculptures in public parks. Visitors enjoy looking at art while walking outside. Local artists sometimes teach children how to draw.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Park: child painting on easel, artist explaining picture, sculpture near pond.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do some local artists teach children?",
+        "modelAnswers": [
+          "They teach them how to draw."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the child doing?",
+        "modelAnswers": [
+          "The child is painting a picture."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the sculpture?",
+        "modelAnswers": [
+          "It is near the pond."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like drawing pictures?",
+        "modelAnswers": [
+          "Yes. I enjoy drawing animals."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What is something you are good at?",
+        "modelAnswers": [
+          "I'm good at making things."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_018",
+    "grade": "3",
+    "stage": 18,
+    "band": "practice",
+    "title": "Summer Camp",
+    "passage": {
+      "title": "Summer Camp",
+      "text": "During summer vacation, children sometimes join outdoor camps. They learn to put up tents, cook meals, and enjoy nature. Camp leaders teach them how to stay safe.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do children learn at outdoor camps?",
+        "modelAnswers": [
+          "They learn to put up tents and cook meals."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is putting up a tent."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the lantern?",
+        "modelAnswers": [
+          "It is next to the backpack."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Would you like to go camping?",
+        "modelAnswers": [
+          "Yes. I want to sleep in a tent."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Which do you prefer, mountains or beaches?",
+        "modelAnswers": [
+          "I prefer mountains because they are quiet."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_019",
+    "grade": "3",
+    "stage": 19,
+    "band": "practice",
+    "title": "Town Museum",
+    "passage": {
+      "title": "Town Museum",
+      "text": "Small museums show visitors the history of their towns. People can see old photographs, clothes, and tools. Some museums offer activities for children on weekends.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Museum: visitor looking at old clock, guide pointing at photograph, two hats in display case.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can people see at small museums?",
+        "modelAnswers": [
+          "They can see old photographs, clothes, and tools."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the guide doing?",
+        "modelAnswers": [
+          "The guide is pointing at a photograph."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many hats are in the case?",
+        "modelAnswers": [
+          "There are two hats."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you enjoy visiting museums?",
+        "modelAnswers": [
+          "Yes. I like learning about the past."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What did you do last weekend?",
+        "modelAnswers": [
+          "I went shopping with my friends."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_020",
+    "grade": "3",
+    "stage": 20,
+    "band": "practice",
+    "title": "Helping Neighbors",
+    "passage": {
+      "title": "Helping Neighbors",
+      "text": "People can help their neighbors in simple ways. Some carry heavy bags for older people. Others take part in local events or share useful information.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Street: student carrying groceries for elderly woman, man opening door, small dog near bench.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How can people help older neighbors?",
+        "modelAnswers": [
+          "They can carry heavy bags for them."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is carrying groceries."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the dog?",
+        "modelAnswers": [
+          "It is near the bench."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you ever helped a neighbor?",
+        "modelAnswers": [
+          "Yes. I helped carry some boxes."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What job would you like to have?",
+        "modelAnswers": [
+          "I would like to be a nurse."
+        ]
+      }
+    ],
+    "guidance": [
+      "Answer without looking at the model first."
+    ]
+  },
+  {
+    "id": "e3_021",
+    "grade": "3",
+    "stage": 21,
+    "band": "mock",
+    "title": "Recycling Paper",
+    "passage": {
+      "title": "Recycling Paper",
+      "text": "Many schools collect used paper and notebooks. The paper can be recycled into new products. By recycling regularly, students can help reduce the amount of trash.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Classroom: student putting paper into blue box, teacher holding notebooks, poster on wall.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What can used paper become?",
+        "modelAnswers": [
+          "It can become new products."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the student doing?",
+        "modelAnswers": [
+          "The student is putting paper in a box."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the poster?",
+        "modelAnswers": [
+          "It is on the wall."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you recycle things at home?",
+        "modelAnswers": [
+          "Yes. We separate paper and plastic."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What is your favorite activity at school?",
+        "modelAnswers": [
+          "I like working on science projects."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_022",
+    "grade": "3",
+    "stage": 22,
+    "band": "mock",
+    "title": "Learning Languages",
+    "passage": {
+      "title": "Learning Languages",
+      "text": "Some children learn another language after school. They practice speaking with friends and watch videos in that language. Learning languages helps people communicate with others.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Classroom: two children talking in English, teacher writing word on board, globe on shelf.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "How do some children practice another language?",
+        "modelAnswers": [
+          "They practice speaking with friends and watching videos."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the teacher doing?",
+        "modelAnswers": [
+          "The teacher is writing on the board."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the globe?",
+        "modelAnswers": [
+          "It is on the shelf."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Why are you studying English?",
+        "modelAnswers": [
+          "Because I want to talk with people abroad."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What country would you like to visit?",
+        "modelAnswers": [
+          "I would like to visit Canada."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_023",
+    "grade": "3",
+    "stage": 23,
+    "band": "mock",
+    "title": "Safety at Night",
+    "passage": {
+      "title": "Safety at Night",
+      "text": "People should be careful when walking outside at night. Bright streetlights help them see the road. It is also important to follow traffic signals at crossings.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store on corner.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are streetlights helpful at night?",
+        "modelAnswers": [
+          "They help people see the road."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the pedestrian doing?",
+        "modelAnswers": [
+          "The pedestrian is waiting to cross."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the store?",
+        "modelAnswers": [
+          "It is on the corner."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you often go out at night?",
+        "modelAnswers": [
+          "No. I usually stay at home."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you do before going to bed?",
+        "modelAnswers": [
+          "I read for a few minutes."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_024",
+    "grade": "3",
+    "stage": 24,
+    "band": "mock",
+    "title": "Online Lessons",
+    "passage": {
+      "title": "Online Lessons",
+      "text": "Some students use computers to take lessons at home. They can listen to teachers and ask questions online. These lessons are useful when traveling to school is difficult.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Bedroom desk: girl wearing headphones at computer, brother writing in notebook, lamp next to screen.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why are online lessons useful for some students?",
+        "modelAnswers": [
+          "Because traveling to school can be difficult."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is studying online."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the lamp?",
+        "modelAnswers": [
+          "It is next to the screen."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you ever taken an online lesson?",
+        "modelAnswers": [
+          "Yes. I studied English online."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Do you prefer studying alone or with friends?",
+        "modelAnswers": [
+          "I prefer studying with friends."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_025",
+    "grade": "3",
+    "stage": 25,
+    "band": "mock",
+    "title": "Winter Activities",
+    "passage": {
+      "title": "Winter Activities",
+      "text": "In winter, some children enjoy skating or playing in the snow. They wear warm coats and gloves. After playing outside, many families drink something hot.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Snowy park: two children making snowman, mother holding hot drink, red scarf on snowman.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do children wear when they play outside in winter?",
+        "modelAnswers": [
+          "They wear warm coats and gloves."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What are the children doing?",
+        "modelAnswers": [
+          "They are making a snowman."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "What color is the snowman's scarf?",
+        "modelAnswers": [
+          "It is red."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like winter sports?",
+        "modelAnswers": [
+          "Yes. I like skating."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What season do you think is the best?",
+        "modelAnswers": [
+          "I think spring is best."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_026",
+    "grade": "3",
+    "stage": 26,
+    "band": "mock",
+    "title": "Community Sports Day",
+    "passage": {
+      "title": "Community Sports Day",
+      "text": "Many towns hold sports days for families. Children and adults run races or play simple games together. The event gives neighbors a chance to meet.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Field: boy running race, father cheering, three cones beside finish line.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do towns hold sports days?",
+        "modelAnswers": [
+          "To give neighbors a chance to meet and play games."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the boy doing?",
+        "modelAnswers": [
+          "He is running a race."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many cones are beside the finish line?",
+        "modelAnswers": [
+          "There are three cones."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you joined a sports day?",
+        "modelAnswers": [
+          "Yes. I ran in a relay race."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What is your favorite way to exercise?",
+        "modelAnswers": [
+          "I like walking in the evening."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_027",
+    "grade": "3",
+    "stage": 27,
+    "band": "mock",
+    "title": "Visiting the Dentist",
+    "passage": {
+      "title": "Visiting the Dentist",
+      "text": "Taking care of our teeth is important. Dentists check teeth and show patients how to brush properly. Children should brush their teeth after meals when possible.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on wall.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do dentists show patients?",
+        "modelAnswers": [
+          "They show them how to brush their teeth."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the dentist doing?",
+        "modelAnswers": [
+          "The dentist is showing a toothbrush."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many pictures are on the wall?",
+        "modelAnswers": [
+          "There are two pictures."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "How often do you brush your teeth?",
+        "modelAnswers": [
+          "I brush them twice a day."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you do to stay healthy?",
+        "modelAnswers": [
+          "I exercise and eat vegetables."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_028",
+    "grade": "3",
+    "stage": 28,
+    "band": "mock",
+    "title": "Lost and Found",
+    "passage": {
+      "title": "Lost and Found",
+      "text": "People sometimes leave things on buses or trains. Station workers keep many lost items in a special room. Travelers can ask for help if they lose something.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Station counter: girl talking to worker, worker holding blue umbrella, backpack on counter.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Where do station workers keep lost items?",
+        "modelAnswers": [
+          "They keep them in a special room."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the worker holding?",
+        "modelAnswers": [
+          "The worker is holding an umbrella."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the backpack?",
+        "modelAnswers": [
+          "It is on the counter."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Have you ever lost something important?",
+        "modelAnswers": [
+          "Yes. I lost my wallet once."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What do you always carry in your bag?",
+        "modelAnswers": [
+          "I always carry my phone and a notebook."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_029",
+    "grade": "3",
+    "stage": 29,
+    "band": "mock",
+    "title": "Bird Watching",
+    "passage": {
+      "title": "Bird Watching",
+      "text": "People can watch many kinds of birds near rivers. Some use binoculars to see birds far away. Watching birds teaches people more about the natural world.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Riverside: woman using binoculars, boy drawing bird, two ducks in water.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "Why do some people use binoculars?",
+        "modelAnswers": [
+          "To see birds far away."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the woman doing?",
+        "modelAnswers": [
+          "She is watching birds with binoculars."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "How many ducks are in the river?",
+        "modelAnswers": [
+          "There are two."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you enjoy spending time in nature?",
+        "modelAnswers": [
+          "Yes. I enjoy walking by rivers."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "What new hobby would you like to start?",
+        "modelAnswers": [
+          "I'd like to try photography."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "e3_030",
+    "grade": "3",
+    "stage": 30,
+    "band": "mock",
+    "title": "Preparing for a Trip",
+    "passage": {
+      "title": "Preparing for a Trip",
+      "text": "Before a trip, people check the weather and pack their bags. They also find information about places to visit. Good preparation can make traveling more enjoyable.",
+      "preparationSeconds": 20
+    },
+    "visual": {
+      "status": "pending",
+      "type": "single",
+      "artDirection": "Bedroom: girl packing suitcase, boy looking at map, camera on bed.",
+      "imageSrc": null
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "passage",
+        "prompt": "What do people do before a trip?",
+        "modelAnswers": [
+          "They check the weather and pack their bags."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "picture_action",
+        "prompt": "What is the girl doing?",
+        "modelAnswers": [
+          "She is packing a suitcase."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "picture_detail",
+        "prompt": "Where is the camera?",
+        "modelAnswers": [
+          "It is on the bed."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "personal",
+        "prompt": "Do you like traveling?",
+        "modelAnswers": [
+          "Yes. I like seeing new places."
+        ]
+      },
+      {
+        "number": 5,
+        "type": "personal",
+        "prompt": "Where did you go on your last trip?",
+        "modelAnswers": [
+          "I went to Kyoto with my family."
+        ]
+      }
+    ],
+    "guidance": []
+  }
+]
