@@ -2,7 +2,7 @@
   "schemaVersion": 1,
   "project": "PicSpeak Oral Quest",
   "course": "Eiken second-stage speaking practice",
-  "status": "draft_content_only",
+  "status": "development_ui_with_pending_illustrations",
   "published": false,
   "note": "Independent original practice materials. Not official Eiken examination questions or scoring criteria.",
   "createdOn": "2026-11-07",
@@ -67,11 +67,17 @@
     }
   ],
   "imagePolicy": "All picture assets are pending. imageSrc stays null until original illustrations are reviewed and linked.",
-  "integrationPolicy": "Do not append to data/oralquest_list.json or modify live oralquest_game.js until UI and illustration phase.",
+  "integrationPolicy": "The grade-first UI is an independent development-page route. Do not merge into main or publish until the owner approves. Legacy OralQuestGame and its 20 scenes remain available; official-score claims are prohibited.",
   "referenceUrls": [
     "https://www.eiken.or.jp/eiken/exam/grade_3/solutions.html",
     "https://www.eiken.or.jp/eiken/exam/grade_p2/solutions.html",
     "https://www.eiken.or.jp/eiken/exam/grade_2/solutions.html",
     "https://www.eiken.or.jp/eiken/exam/grade_p1/solutions.html"
-  ]
+  ],
+  "imagePromptsFile": "image_prompts.json",
+  "imagePromptsCsv": "image_prompts.csv",
+  "optionalPanelPromptsCsv": "panel_prompts.csv",
+  "plannedCompositeImages": 120,
+  "plannedOptionalPanelImages": 270,
+  "trainingPage": "eiken-oralquest.html"
 }
