@@ -45,10 +45,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "At first, the principal suggested putting solar panels on the school's roof. The students wanted to help, so they held a charity sale to raise money. A few months later, workers installed the panels. The students were pleased because their school could now use cleaner energy."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -71,7 +72,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "At first, the principal suggested putting solar panels on the school's roof.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_002",
@@ -119,10 +122,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A woman living in a rural town began to feel ill. Since the nearest clinic was far away, she arranged an online consultation. She described her symptoms to a doctor using a tablet. After listening carefully, the doctor asked her to visit the clinic for an examination."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -145,7 +149,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A woman living in a rural town began to feel ill.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_003",
@@ -193,10 +199,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "One day, a shop owner decided to reduce packaging waste. She began sending products in returnable boxes and explained the new system to customers. At first, some customers forgot to return them. Later, the delivery company began collecting used boxes, and the system became easier for everyone."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -219,7 +226,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "One day, a shop owner decided to reduce packaging waste.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_004",
@@ -267,10 +276,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student had trouble concentrating because her apartment was noisy. Her teacher told her about a new study hub in the local library. The next day, she went there and found a quiet desk and internet access. She finished her report and decided to return the following week."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -293,7 +303,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A student had trouble concentrating because her apartment was noisy.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_005",
@@ -341,10 +353,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "An apartment manager noticed that the rooftop was rarely used. He suggested creating a garden there, and several residents agreed to help. They installed planting boxes and watered the vegetables regularly. By autumn, they had grown enough food to share at a neighborhood lunch."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -367,7 +380,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "An apartment manager noticed that the rooftop was rarely used.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_006",
@@ -415,10 +430,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A father was often late when taking his daughter to school because his job started early. Then his company introduced flexible working hours. He asked to begin work later in the morning. As a result, he could take his daughter to school and even attend a school event."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -441,7 +457,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A father was often late when taking his daughter to school because his job started early.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_007",
@@ -489,10 +507,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A bakery owner noticed that many loaves of bread were left at the end of each day. She decided to use an app to offer the remaining bread at a discount. Soon, nearby residents began visiting before closing time. The shop wasted less bread, and customers saved money."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -515,7 +534,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A bakery owner noticed that many loaves of bread were left at the end of each day.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_008",
@@ -563,10 +584,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "An older woman found it difficult to buy groceries because she no longer drove. She and her neighbors asked the town office for better transportation. Several months later, a small bus began stopping near her home. She was delighted because she could visit the shops independently."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -589,7 +611,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "An older woman found it difficult to buy groceries because she no longer drove.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_009",
@@ -637,10 +661,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student thought museums were boring and did not want to go on a class trip. However, her teacher took everyone to an interactive art exhibition. There, she could change colors on a huge digital display. She enjoyed creating her own image and became interested in visiting more museums."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -663,7 +688,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A student thought museums were boring and did not want to go on a class trip.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_010",
@@ -711,10 +738,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A family received a warning about a severe storm and prepared to leave home. Suddenly, the electricity went out, and their phones could not connect to the internet. Fortunately, the parents had prepared a paper map of local shelters. They followed the route and arrived safely."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -737,7 +765,9 @@
       "Organize the story as beginning, problem, result.",
       "Use past tense and linking expressions.",
       "Give an opinion and support it with a reason."
-    ]
+    ],
+    "storyLeadIn": "A family received a warning about a severe storm and prepared to leave home.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_011",
@@ -785,10 +815,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "Residents in a historic town became frustrated by the number of tour buses on narrow streets. The local government introduced a car-free weekend in the town center. At first, some tourists were surprised. Later, many enjoyed exploring the town on foot, and residents appreciated the quieter atmosphere."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -809,7 +840,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "Residents in a historic town became frustrated by the number of tour buses on narrow streets.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_012",
@@ -857,10 +890,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A group of students decided to research water quality in a nearby river. They collected samples and interviewed a local scientist. After comparing the results, they prepared charts for a school assembly. Their presentation encouraged other students to think about how to keep the river clean."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -881,7 +915,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A group of students decided to research water quality in a nearby river.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_013",
@@ -929,10 +965,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A local transport company wanted to try electric buses. It selected a short route and asked an experienced driver to test a new vehicle. Passengers enjoyed the quiet ride, but the company discovered that charging took longer than expected. It decided to improve its plans before buying more buses."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -953,7 +990,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A local transport company wanted to try electric buses.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_014",
@@ -1001,10 +1040,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A teenager volunteered to teach older residents how to use smartphones. During the first lesson, several participants were nervous, but she patiently showed them how to send photographs. After the class, one resident invited her to a cooking workshop. The teenager enjoyed learning a family recipe in return."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1025,7 +1065,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A teenager volunteered to teach older residents how to use smartphones.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_015",
@@ -1073,10 +1115,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student often played mobile games until midnight. One morning, he fell asleep during an important class and missed part of the lesson. After talking to his teacher, he decided to leave his phone outside his bedroom. Soon, he began sleeping longer and felt more focused in class."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1097,7 +1140,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A student often played mobile games until midnight.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_016",
@@ -1145,10 +1190,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A town council proposed building a solar power system near a community center. At a public meeting, residents asked questions about costs and safety. The council listened and changed the project to a smaller design. After receiving more support, the town began installing the panels."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1169,7 +1215,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A town council proposed building a solar power system near a community center.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_017",
@@ -1217,10 +1265,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A care worker spent a large part of every day carrying towels and other supplies through a care home. The manager introduced a small delivery robot to help. At first, the staff needed time to learn how to use it. Later, the worker could spend more time talking with residents."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1241,7 +1290,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A care worker spent a large part of every day carrying towels and other supplies through a care home.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_018",
@@ -1289,10 +1340,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student wanted to buy a new phone but did not have enough money. Instead of borrowing from a friend, she discussed a budget with her teacher and found ways to save. After several months, she bought a less expensive phone with her own savings. She felt proud of her decision."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1313,7 +1365,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "A student wanted to buy a new phone but did not have enough money.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_019",
@@ -1361,10 +1415,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "Residents noticed that small animals were crossing a dangerous road near a forest. They asked the local government to build a safer route. After discussing the problem, workers installed a wildlife passage under the road. In the following months, volunteers observed animals using the new crossing."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1385,7 +1440,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "Residents noticed that small animals were crossing a dangerous road near a forest.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_020",
@@ -1433,10 +1490,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "Teachers from two countries arranged an online cultural exchange. Their students first felt nervous about speaking English with strangers. After discussing school lunches and hobbies, the students became more comfortable. Later, both classes worked together on a presentation about their cultures and promised to keep in touch."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1457,7 +1515,9 @@
     ],
     "guidance": [
       "Describe all three panels before checking the example."
-    ]
+    ],
+    "storyLeadIn": "Teachers from two countries arranged an online cultural exchange.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_021",
@@ -1505,10 +1565,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "People living near a construction site complained because loud work continued late into the evening. The town office arranged a meeting with the building company. After hearing the residents' concerns, the company agreed to stop noisy work earlier. The neighbors were relieved and could sleep better."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1527,7 +1588,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "People living near a construction site complained because loud work continued late into the evening.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_022",
@@ -1575,10 +1638,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student used a very simple password for every school service. One day, a friend explained that the password could be guessed easily. The student asked a teacher for advice and changed the password. He also enabled an extra security step, making his account harder to access."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1597,7 +1661,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student used a very simple password for every school service.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_023",
@@ -1645,10 +1711,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student had always wanted to hear a live orchestra, but the tickets were too expensive. Then she found a student discount offered by the concert hall. She bought a ticket and enjoyed the performance. The experience inspired her to join the school music club."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1667,7 +1734,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student had always wanted to hear a live orchestra, but the tickets were too expensive.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_024",
@@ -1715,10 +1784,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student wanted to use the library after her part-time job, but it always closed before she arrived. She signed a community request for longer opening hours. The library agreed to stay open late twice a week. The student was finally able to use its study space."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1737,7 +1807,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student wanted to use the library after her part-time job, but it always closed before she arrived.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_025",
@@ -1785,10 +1857,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student used an AI tool to summarize a history article for homework. She almost copied the summary without checking it, but one date seemed incorrect. After comparing the information with a textbook, she discovered the mistake. She revised her assignment and learned to verify AI-generated answers."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1807,7 +1880,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student used an AI tool to summarize a history article for homework.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_026",
@@ -1855,10 +1930,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A town office organized a free health event for local residents. At the event, volunteers demonstrated simple stretching exercises, and nurses answered questions about healthy habits. Several visitors enjoyed the activities so much that they decided to meet for exercise every week. Their group gradually grew larger."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1877,7 +1953,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A town office organized a free health event for local residents.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_027",
@@ -1925,10 +2003,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student often cycled to school beside busy traffic and felt unsafe. Her parents joined other residents in asking the city for a separate bicycle lane. After a public discussion, the city built a protected lane near the school. More students began cycling, and parents felt less worried."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -1947,7 +2026,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student often cycled to school beside busy traffic and felt unsafe.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_028",
@@ -1995,10 +2076,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "An independent bookstore owner noticed that fewer customers were visiting her shop. She decided to organize a reading club on weekends and invited local writers to speak. After several successful events, more people discovered the bookstore. The owner was happy to see customers recommending it to friends."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -2017,7 +2099,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "An independent bookstore owner noticed that fewer customers were visiting her shop.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_029",
@@ -2065,10 +2149,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "An apartment manager noticed that water bills had increased unexpectedly. He asked a company to install a monitoring system. Soon, the system detected a leak behind a wall. Workers repaired the pipe, and the building used much less water the following month."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -2087,7 +2172,9 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "An apartment manager noticed that water bills had increased unexpectedly.",
+    "storyPreparationSeconds": 20
   },
   {
     "id": "e2_030",
@@ -2135,10 +2222,11 @@
       {
         "number": 2,
         "type": "three_picture_narration",
-        "prompt": "Please describe the situation in the three pictures.",
+        "prompt": "Please look at the three pictures and describe the situation. Begin with the printed opening sentence.",
         "modelAnswers": [
           "A student found it difficult to follow classroom videos because they had no captions. Her classmates told the teacher about the problem. The school began providing captioned videos and written summaries. As a result, the student could understand the lessons better and take part in group discussions."
-        ]
+        ],
+        "preparationSeconds": 20
       },
       {
         "number": 3,
@@ -2157,6 +2245,8 @@
         ]
       }
     ],
-    "guidance": []
+    "guidance": [],
+    "storyLeadIn": "A student found it difficult to follow classroom videos because they had no captions.",
+    "storyPreparationSeconds": 20
   }
 ]
