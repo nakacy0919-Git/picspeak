@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f8f7f4">
+  <meta name="description" content="PicSpeak Oral Quest - 英検3級・準2級・2級・準1級のオリジナル二次面接トレーニング">
+  <title>Oral Quest | PicSpeak</title>
+  <link rel="icon" href="assets/picspeaklogo.png">
+  <style>
+    :root{--ink:#232939;--muted:#687185;--line:#e8e9ed;--paper:#f8f7f4;--white:#fff;--accent:#e67755;--accent-dark:#ba5135;--navy:#222c47;--shadow:0 10px 38px rgba(25,36,55,.065)}
+    *{box-sizing:border-box}html{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans JP",sans-serif;color:var(--ink);background:var(--paper);-webkit-tap-highlight-color:transparent}
+    body{margin:0;min-height:100vh}button,input,textarea{font:inherit}button{cursor:pointer}button:disabled{cursor:not-allowed;opacity:.45}button:focus-visible,a:focus-visible,textarea:focus-visible{outline:3px solid #e8997f;outline-offset:3px}a{color:inherit}
+    .hidden{display:none!important}.shell{min-height:100vh;display:flex;flex-direction:column}.topbar{height:70px;padding:0 max(20px,calc((100vw - 1152px)/2));background:rgba(255,255,255,.94);border-bottom:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:14px;position:sticky;top:0;z-index:5;backdrop-filter:blur(14px)}
+    .top-left{display:flex;align-items:center;gap:12px}.brand-mark{width:36px;height:36px;border-radius:12px;object-fit:cover}.brand{font-family:Georgia,"Times New Roman",serif;font-size:22px;font-weight:700;letter-spacing:-.7px;text-decoration:none}.brand span{color:#e66c62}.top-divider{width:1px;height:26px;background:var(--line);margin:0 3px}.section-name{font-size:13px;letter-spacing:.11em;font-weight:800;color:#647087}.top-right{display:flex;align-items:center;gap:8px}.icon-btn{width:39px;height:39px;border-radius:13px;border:1px solid var(--line);background:#fff;color:var(--ink);display:grid;place-items:center;font-size:19px;text-decoration:none}.icon-btn:hover{background:#f4f3f1}
+    main{width:min(1120px,calc(100% - 40px));margin:0 auto;flex:1;padding:40px 0 70px}
+    .eyebrow{font-size:11px;font-weight:900;letter-spacing:.20em;text-transform:uppercase;color:var(--accent-dark);margin:0 0 10px}
+    .page-title{font-family:Georgia,"Noto Serif JP",serif;font-size:clamp(30px,3.8vw,47px);letter-spacing:-.045em;font-weight:700;line-height:1.15;margin:0 0 8px}
+    .intro{font-size:14px;color:var(--muted);margin:0 0 28px}
+    .grade-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:17px}
+    .grade-card{text-align:left;background:var(--white);border:1px solid #e7e8ec;border-radius:24px;min-height:170px;padding:24px 26px;box-shadow:var(--shadow);transition:transform .16s,border-color .16s,box-shadow .16s;position:relative;overflow:hidden}
+    .grade-card:before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--grade)}.grade-card:hover{transform:translateY(-3px);border-color:var(--grade);box-shadow:0 14px 44px rgba(25,36,55,.12)}
+    .grade-name{font-size:27px;font-weight:900;letter-spacing:-.05em}.grade-sub{font-size:12px;color:var(--muted);font-weight:700;margin-top:5px}.grade-foot{margin-top:19px;display:flex;justify-content:space-between;align-items:center;color:var(--muted);font-size:12px;font-weight:700;gap:8px}.grade-arrow{display:grid;place-items:center;background:color-mix(in srgb,var(--grade) 12%,white);color:var(--grade);width:32px;height:32px;border-radius:11px;font-size:20px}
+    .grade-progress{height:4px;border-radius:5px;background:#eef0f1;margin-top:12px;overflow:hidden}.grade-progress>div{height:100%;background:var(--grade);transition:width .2s}
+    .section-head{display:flex;align-items:end;justify-content:space-between;gap:16px;margin-bottom:24px}.back-link{display:inline-flex;align-items:center;gap:6px;padding:0;border:0;background:transparent;font-size:13px;font-weight:800;color:var(--muted);margin-bottom:20px}.back-link:hover{color:var(--ink)}
+    .stat{border:1px solid var(--line);border-radius:99px;padding:8px 14px;background:#fff;font-weight:800;font-size:12px;white-space:nowrap}
+    .band-title{font-size:13px;font-weight:900;color:var(--ink);margin:28px 0 10px;display:flex;align-items:center;gap:10px}.band-title span{font-size:11px;color:var(--muted);font-weight:700}
+    .stage-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:10px}
+    .stage-card{text-align:left;border:1px solid var(--line);background:#fff;border-radius:16px;padding:15px;min-height:106px;display:flex;flex-direction:column;justify-content:space-between;transition:border-color .15s,background .15s,transform .15s}
+    .stage-card:hover{border-color:#d28a72;transform:translateY(-2px)}.stage-top{display:flex;justify-content:space-between;align-items:center}
+    .stage-num{font-family:Georgia,serif;font-size:25px;font-weight:700;letter-spacing:-.04em}.stage-done{font-size:12px;border-radius:50%;background:#e2f5e9;color:#287947;width:24px;height:24px;display:grid;place-items:center;font-weight:900}.stage-title{font-size:11px;font-weight:650;color:#747c89;white-space:normal;line-height:1.35;min-height:28px}
+    .practice-wrap{max-width:900px;margin:0 auto}.practice-head{display:flex;align-items:center;justify-content:space-between;gap:15px;flex-wrap:wrap}.small-kicker{font-size:11px;color:var(--accent-dark);font-weight:900;letter-spacing:.14em;text-transform:uppercase}.practice-title{margin:5px 0 0;font-size:23px;letter-spacing:-.03em}
+    .progress-track{height:5px;border-radius:999px;background:#e7e9ed;overflow:hidden;margin:19px 0 20px}.progress-fill{height:100%;background:linear-gradient(90deg,#d85e5b,#f4ab6e);width:0;transition:width .2s}
+    .practice-card{background:#fff;border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow);padding:26px 30px}
+    .task-tag{font-size:11px;font-weight:900;color:var(--accent-dark);text-transform:uppercase;letter-spacing:.13em}.task-title{font-size:22px;letter-spacing:-.02em;margin:6px 0 18px;line-height:1.35}
+    .reading-text{font-size:clamp(17px,1.8vw,22px);font-weight:500;line-height:1.82;background:#faf9f6;border-radius:16px;padding:24px 26px;border:1px solid #eee9e1}
+    .question-text{font-size:clamp(19px,2vw,24px);font-weight:700;line-height:1.65;margin:10px 0 18px}
+    .picture-info{font-size:12px;color:#98684f;font-weight:650;background:#fff5ec;padding:9px 13px;border-radius:10px;margin:10px 0 14px}
+    .picture-preview{max-width:100%;width:100%;max-height:380px;object-fit:contain;border-radius:15px;background:#faf9f6;border:1px solid var(--line)}
+    .panel-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:14px 0}.panel-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.panel{min-height:130px;background:#f7f8fa;border:1px dashed #cfd4dd;border-radius:14px;padding:15px;display:flex;flex-direction:column;gap:9px}.panel b{font-size:11px;color:#b35c46;text-transform:uppercase}.panel p{font-size:13px;color:#596477;line-height:1.5;margin:0}
+    .placeholder-single{background:#f7f8fa;border:1px dashed #cfd4dd;border-radius:16px;padding:22px;margin:14px 0}.placeholder-single b{font-size:12px;color:#a65b47}.placeholder-single p{font-size:14px;color:#566174;line-height:1.7;margin:8px 0 0}
+    .voice-box{border-top:1px solid var(--line);margin-top:22px;padding-top:20px}
+    .action-row{display:flex;flex-wrap:wrap;gap:10px;align-items:center}.btn{border:1px solid #d9dee5;background:#fff;color:var(--ink);padding:12px 17px;border-radius:12px;font-size:13px;font-weight:850;line-height:1.2;min-height:46px}.btn:hover{background:#f6f7f8}.btn-primary{background:var(--navy);border-color:var(--navy);color:#fff}.btn-primary:hover{background:#313f63}.btn-record{background:#e8795b;border-color:#e8795b;color:#fff}.btn-record:hover{background:#c76347}.btn-stop{background:#fff1ed;border-color:#efb3a6;color:#a43b31}
+    .transcript{width:100%;min-height:94px;resize:vertical;padding:13px 15px;border-radius:13px;background:#fafbfc;border:1px solid #dfe3e9;color:#344156;font-size:15px;line-height:1.55;margin-top:12px}
+    .hint{margin:11px 0 0;font-size:12px;color:var(--muted);line-height:1.6}.notice{margin:12px 0 0;font-size:12px;color:#a44a38}.counter{font-size:12px;font-weight:800;color:#8b6271;margin-left:auto}
+    .model{margin-top:16px;border:1px solid #dceadf;background:#f4fbf6;border-radius:15px;padding:17px 20px}.model-label{font-size:11px;color:#3e7652;font-weight:900;letter-spacing:.09em;text-transform:uppercase}.model p{font-size:15px;line-height:1.7;white-space:pre-line;margin:8px 0 0;color:#284638}
+    .practice-footer{display:flex;justify-content:space-between;gap:10px;margin-top:16px;align-items:center}.muted-note{font-size:11px;color:#858c98;line-height:1.5}
+    .finish-card{text-align:center;max-width:580px;margin:35px auto;background:#fff;border-radius:24px;padding:42px 32px;border:1px solid var(--line);box-shadow:var(--shadow)}.finish-icon{font-size:38px}.finish-card h2{font-size:29px;margin:14px 0 12px}.finish-card p{color:var(--muted);line-height:1.7;font-size:14px;margin:0 0 26px}
+    .error{background:#fff1ec;color:#9d3e2c;border:1px solid #f4c7bb;border-radius:12px;padding:14px;font-size:13px;line-height:1.5;margin:16px 0}
+    footer{padding:16px 24px;text-align:center;color:#979ba6;font-size:11px}
+    @media(max-width:760px){.topbar{height:62px;padding:0 16px}.brand{font-size:19px}.section-name{font-size:11px}.top-divider{margin:0}.brand-mark{width:30px;height:30px}.top-left{gap:8px}main{width:calc(100% - 28px);padding:24px 0 54px}.grade-grid{gap:10px}.grade-card{min-height:154px;padding:20px 16px;border-radius:18px}.grade-name{font-size:24px}.grade-foot{margin-top:15px}.stage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stage-card{padding:12px;min-height:94px}.stage-num{font-size:23px}.stage-title{font-size:10px}.practice-card{padding:18px 16px;border-radius:18px}.reading-text{padding:15px 16px}.panel-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.panel{padding:10px;min-height:140px}.panel p{font-size:11px}.practice-footer{flex-wrap:wrap}.action-row .btn{flex:1}.page-title{font-size:33px}}
+    @media(max-width:400px){.grade-grid{grid-template-columns:1fr}.grade-card{min-height:132px}.topbar .brand-mark{display:none}.panel-grid.three{grid-template-columns:1fr}.section-name{letter-spacing:.02em}}
+    @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+  </style>
+</head>
+<body>
+<div class="shell">
+  <header class="topbar">
+    <div class="top-left">
+      <img class="brand-mark" src="assets/picspeaklogo.png" alt="">
+      <a class="brand" href="play.html"><span>Pic</span>Speak</a>
+      <div class="top-divider"></div>
+      <span class="section-name">ORAL QUEST</span>
+    </div>
+    <div class="top-right">
+      <button class="icon-btn hidden" id="oq-back" type="button" aria-label="前の画面に戻る" title="戻る">‹</button>
+      <a class="icon-btn" href="play.html" aria-label="PicSpeakホームへ" title="ホーム">⌂</a>
+    </div>
+  </header>
+  <main>
+    <section id="oq-grades">
+      <p class="eyebrow">EIKEN SPEAKING</p>
+      <h1 class="page-title">級を選んで、話そう。</h1>
+      <p class="intro">英検二次面接トレーニング · 各級30ステージ</p>
+      <div id="oq-grade-grid" class="grade-grid" aria-label="英検級一覧"></div>
+    </section>
+    <section id="oq-stages" class="hidden">
+      <button class="back-link" type="button" data-action="back">‹ 級を変更</button>
+      <div class="section-head">
+        <div><p class="eyebrow" id="oq-level-kicker">EIKEN</p><h1 class="page-title" id="oq-level-title">3級</h1></div>
+        <div id="oq-level-stat" class="stat">0 / 30 完了</div>
+      </div>
+      <div id="oq-stage-groups"></div>
+    </section>
+    <section id="oq-practice" class="hidden practice-wrap">
+      <button class="back-link" type="button" data-action="back">‹ 30ステージへ</button>
+      <div class="practice-head">
+        <div><span id="oq-practice-kicker" class="small-kicker">EIKEN</span><h1 class="practice-title" id="oq-practice-title">Stage 01</h1></div>
+        <div class="stat" id="oq-step-counter">1 / 6</div>
+      </div>
+      <div class="progress-track" aria-hidden="true"><div class="progress-fill" id="oq-step-progress"></div></div>
+      <div class="practice-card" id="oq-task" aria-live="polite"></div>
+      <div id="oq-practice-footer" class="practice-footer"></div>
+    </section>
+    <section id="oq-finished" class="hidden"></section>
+    <div id="oq-load-error" class="error hidden" role="alert"></div>
+  </main>
+  <footer>Original practice materials · Not official Eiken examination content</footer>
+</div>
+<script src="js/eiken_oralquest.js" defer></script>
+</body>
+</html>
