@@ -1582,8 +1582,22 @@ document.addEventListener('click', (e) => {
     }
 });
 
-window.addEventListener('DOMContentLoaded', () => {
+window.addEventListener('DOMContentLoaded', async () => {
     appDataReadyPromise = initApp();
+
+    // 新しい英検級別モードからも、従来の20シーンへ戻れるようにする。
+    // 専用クエリ以外では既存のホーム・課題リンクの動作を一切変えない。
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('oralquestLegacy') === '1' && !params.has('theme') && !params.has('formId')) {
+        try {
+            await appDataReadyPromise;
+            window.appState.selectedMode = 'oralquest';
+            if (typeof showView === 'function') showView(document.getElementById('view-select'));
+            if (typeof window.renderThemeGrid === 'function') await window.renderThemeGrid();
+        } catch (err) {
+            console.error('Could not load legacy Oral Quest', err);
+        }
+    }
 });
 
 function setupOqPasswordLock() {
