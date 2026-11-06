@@ -38,8 +38,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "One afternoon, a residents' committee met to discuss the growing amount of household waste. One afternoon, the residents of an apartment building gathered to discuss a problem. The trash bins were often overflowing, and everyone was frustrated. During the meeting, one woman suggested holding a reuse event instead of simply adding more bins. A few weeks later, the residents organized tables where neighbors could exchange useful items and repair broken appliances. The event attracted many families. Eventually, the amount of waste decreased, and the residents felt that they had found a practical solution together."
-      ]
+        "One afternoon, a residents' committee met to discuss the growing amount of household waste. The trash bins were often overflowing, and everyone was frustrated. During the meeting, one woman suggested holding a reuse event instead of simply adding more bins. A few weeks later, the residents organized tables where neighbors could exchange useful items and repair broken appliances. The event attracted many families. Eventually, the amount of waste decreased, and the residents felt that they had found a practical solution together."
+      ],
+      "wordCount": 81
     },
     "questions": [
       {
@@ -120,8 +121,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A museum director was preparing an exhibition that would attract families from across the region. A museum director was excited about a new exhibition. However, shortly after the opening, she noticed that a visitor using a wheelchair could not reach one of the galleries. She felt embarrassed that the barrier had been overlooked. She arranged a meeting with museum staff and an accessibility adviser to discuss possible improvements. They decided to install a ramp and provide clearer signs. When the work was completed, the visitor returned with her family and was able to enjoy the exhibition. The director realized that good design should consider everyone from the beginning."
-      ]
+        "A museum director was preparing an exhibition that would attract families from across the region. However, shortly after the opening, she noticed that a visitor using a wheelchair could not reach one of the galleries. She felt embarrassed that the barrier had been overlooked. She arranged a meeting with museum staff and an accessibility adviser to discuss possible improvements. They decided to install a ramp and provide clearer signs. When the work was completed, the visitor returned with her family and was able to enjoy the exhibition. The director realized that good design should consider everyone from the beginning."
+      ],
+      "wordCount": 99
     },
     "questions": [
       {
@@ -202,8 +204,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A town council was discussing what to do with an old building that had been unused for years. A town council was concerned about an old building that had stood empty for several years. It was becoming expensive to maintain, and some members suggested selling the land. During a public meeting, a group of young residents proposed turning the building into a shared learning center. They explained that the town lacked affordable places for after-school activities and adult classes. The council agreed to a limited renovation, and volunteers helped clean and paint the rooms. Once the center opened, people of different ages began attending classes there, giving the building a new purpose."
-      ]
+        "A town council was discussing what to do with an old building that had been unused for years. It was becoming expensive to maintain, and some members suggested selling the land. During a public meeting, a group of young residents proposed turning the building into a shared learning center. They explained that the town lacked affordable places for after-school activities and adult classes. The council agreed to a limited renovation, and volunteers helped clean and paint the rooms. Once the center opened, people of different ages began attending classes there, giving the building a new purpose."
+      ],
+      "wordCount": 96
     },
     "questions": [
       {
@@ -284,8 +287,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A company manager was considering a request from employees who spent hours commuting every day. A company manager learned that several employees were exhausted by their long daily commutes. During a meeting, workers asked whether they could work from home a few days a week. The manager agreed to test a remote-work policy and introduced regular video meetings. Most employees appreciated the extra time they gained, and productivity remained stable. However, some newer workers found it difficult to build relationships with colleagues. The manager decided to improve mentoring and provide opportunities for teams to meet in person."
-      ]
+        "A company manager was considering a request from employees who spent hours commuting every day. During a meeting, workers asked whether they could work from home a few days a week. The manager agreed to test a remote-work policy and introduced regular video meetings. Most employees appreciated the extra time they gained, and productivity remained stable. However, some newer workers found it difficult to build relationships with colleagues. The manager decided to improve mentoring and provide opportunities for teams to meet in person."
+      ],
+      "wordCount": 83
     },
     "questions": [
       {
@@ -366,8 +370,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A town official was reviewing emergency plans after several years of unusually heavy rainfall. A town official was reviewing emergency preparations after several seasons of heavy rain. While examining the warning system, she discovered that some older residents did not own smartphones and might miss urgent alerts. She worried that the town's technology-based approach was leaving people behind. The office recruited neighborhood volunteers and created a list of households needing additional assistance. When another severe-rain warning arrived, the volunteers visited those homes while digital alerts were sent to others. Most residents reached safe locations in time, and the official recognized the value of combining technology with human support."
-      ]
+        "A town official was reviewing emergency plans after several years of unusually heavy rainfall. While examining the warning system, she discovered that some older residents did not own smartphones and might miss urgent alerts. She worried that the town's technology-based approach was leaving people behind. The office recruited neighborhood volunteers and created a list of households needing additional assistance. When another severe-rain warning arrived, the volunteers visited those homes while digital alerts were sent to others. Most residents reached safe locations in time, and the official recognized the value of combining technology with human support."
+      ],
+      "wordCount": 95
     },
     "questions": [
       {
@@ -448,8 +453,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A school principal noticed that students were becoming increasingly anxious about examinations and future careers. A school principal became worried after several teachers reported that students were struggling with exam stress. One student had stopped joining activities and seemed unusually withdrawn. During a staff meeting, a teacher suggested offering confidential counseling rather than simply telling students to study harder. The principal arranged for a trained counselor to visit the school and made a private room available. At first, students were hesitant to use the service, but teachers explained that asking for support was normal. Gradually, more students sought help, and one student began participating in school life again."
-      ]
+        "A school principal noticed that students were becoming increasingly anxious about examinations and future careers. One student had stopped joining activities and seemed unusually withdrawn. During a staff meeting, a teacher suggested offering confidential counseling rather than simply telling students to study harder. The principal arranged for a trained counselor to visit the school and made a private room available. At first, students were hesitant to use the service, but teachers explained that asking for support was normal. Gradually, more students sought help, and one student began participating in school life again."
+      ],
+      "wordCount": 92
     },
     "questions": [
       {
@@ -530,8 +536,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A local environmental group was planning a project to protect wildlife along the coast. A local environmental group discovered plastic waste scattered across a coastal wetland where birds were nesting. The group leader wanted to organize a cleanup, but she was worried that too many visitors might disturb the birds. She consulted scientists and asked nearby businesses to support the project. Together, they created a careful plan that kept volunteers away from sensitive areas. Over the following weekend, volunteers removed waste and installed educational signs. The wetland became cleaner without disrupting the nesting season, and the group began planning long-term monitoring."
-      ]
+        "A local environmental group was planning a project to protect wildlife along the coast. The group had found plastic waste scattered near nesting birds. The group leader wanted to organize a cleanup, but she was worried that too many visitors might disturb the birds. She consulted scientists and asked nearby businesses to support the project. Together, they created a careful plan that kept volunteers away from sensitive areas. Over the following weekend, volunteers removed waste and installed educational signs. The wetland became cleaner without disrupting the nesting season, and the group began planning long-term monitoring."
+      ],
+      "wordCount": 95
     },
     "questions": [
       {
@@ -612,8 +619,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A regional hospital was considering new ways to serve villages far from medical facilities. A regional hospital found that older residents in remote villages were missing routine medical appointments because public transportation was limited. A doctor proposed using a mobile clinic to bring basic health services to those communities. The hospital initially worried about the cost, but local organizations offered to help identify suitable locations. After a trial period, nurses began visiting villages regularly in a specially equipped van. Residents welcomed the service, and the hospital collected data to decide whether the program should expand."
-      ]
+        "A regional hospital was considering new ways to serve villages far from medical facilities. Older residents in remote villages had been missing appointments because public transport was limited. A doctor proposed using a mobile clinic to bring basic health services to those communities. The hospital initially worried about the cost, but local organizations offered to help identify suitable locations. After a trial period, nurses began visiting villages regularly in a specially equipped van. Residents welcomed the service, and the hospital collected data to decide whether the program should expand."
+      ],
+      "wordCount": 89
     },
     "questions": [
       {
@@ -694,8 +702,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "An architect was presenting a plan to reduce summer heat in a crowded city district. An architect attended a community meeting where residents complained about uncomfortable summer temperatures. She proposed creating rooftop gardens to provide shade and absorb some heat. Several building owners were interested but worried about weight and maintenance. The architect worked with engineers to select suitable buildings and design safe planting areas. After installation, residents began using the new rooftop spaces to relax. Although the gardens required ongoing care, the project encouraged further discussion about how cities could adapt to hotter summers."
-      ]
+        "An architect was presenting a plan to reduce summer heat in a crowded city district. Residents had complained about uncomfortable summer temperatures. She proposed creating rooftop gardens to provide shade and absorb some heat. Several building owners were interested but worried about weight and maintenance. The architect worked with engineers to select suitable buildings and design safe planting areas. After installation, residents began using the new rooftop spaces to relax. Although the gardens required ongoing care, the project encouraged further discussion about how cities could adapt to hotter summers."
+      ],
+      "wordCount": 89
     },
     "questions": [
       {
@@ -776,8 +785,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A food manufacturer was reviewing complaints about labels that customers found difficult to understand. A food manufacturer received complaints that its ingredient labels were difficult to read. One parent explained that identifying possible allergens took too much time, particularly when shopping with children. A member of the design team suggested using clearer symbols and larger text. The company invited customers with different needs to test several label designs. After making revisions, it introduced the new packaging in local supermarkets. The feedback was positive, and the company realized that better communication could increase both safety and customer confidence."
-      ]
+        "A food manufacturer was reviewing complaints about labels that customers found difficult to understand. One parent explained that identifying possible allergens took too much time, particularly when shopping with children. A member of the design team suggested using clearer symbols and larger text. The company invited customers with different needs to test several label designs. After making revisions, it introduced the new packaging in local supermarkets. The feedback was positive, and the company realized that better communication could increase both safety and customer confidence."
+      ],
+      "wordCount": 84
     },
     "questions": [
       {
@@ -858,8 +868,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A human-resources manager was considering software to help evaluate job applications. A human-resources manager was overwhelmed by hundreds of job applications. A technology company offered software that could rank candidates automatically, so the manager agreed to a trial. Initially, the system seemed to save time. However, an employee noticed that some applicants with relevant experience were receiving unexpectedly low scores. After investigating, the manager discovered that the tool relied on unfair patterns from past data. The company stopped using automatic rejection and introduced a human review process before making hiring decisions."
-      ]
+        "A human-resources manager was considering software to help evaluate job applications. A technology company offered software that could rank candidates automatically, so the manager agreed to a trial. Initially, the system seemed to save time. However, an employee noticed that some applicants with relevant experience were receiving unexpectedly low scores. After investigating, the manager discovered that the tool relied on unfair patterns from past data. The company stopped using automatic rejection and introduced a human review process before making hiring decisions."
+      ],
+      "wordCount": 81
     },
     "questions": [
       {
@@ -938,8 +949,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A city environmental officer wanted to improve the disposal of unwanted electronic devices. A city environmental officer learned that many households were storing broken phones and old laptops because residents did not know how to dispose of them safely. She proposed placing collection boxes at schools and community centers. Teachers and students created posters explaining why electronic waste should be handled carefully. Over the next month, families brought in their unused devices. A licensed recycling company collected the equipment and separated reusable materials. The officer was pleased with the response and planned to make the collection program a regular event."
-      ]
+        "A city environmental officer wanted to improve the disposal of unwanted electronic devices. Many households were storing unwanted phones and laptops instead of disposing of them safely. She proposed placing collection boxes at schools and community centers. Teachers and students created posters explaining why electronic waste should be handled carefully. Over the next month, families brought in their unused devices. A licensed recycling company collected the equipment and separated reusable materials. The officer was pleased with the response and planned to make the collection program a regular event."
+      ],
+      "wordCount": 88
     },
     "questions": [
       {
@@ -1018,8 +1030,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A librarian was concerned that some residents could not use essential online public services. A librarian noticed that several older residents were struggling to complete forms on the town's new online service. One man had visited the library repeatedly because he did not understand the website. The librarian suggested offering free digital-skills workshops and recruited volunteers from a nearby college. During the sessions, participants practiced using secure websites and learned how to protect personal information. Several weeks later, the man was able to complete his own application. The library decided to continue the workshops because demand was higher than expected."
-      ]
+        "A librarian was concerned that some residents could not use essential online public services. One man had visited the library repeatedly because he did not understand the website. The librarian suggested offering free digital-skills workshops and recruited volunteers from a nearby college. During the sessions, participants practiced using secure websites and learned how to protect personal information. Several weeks later, the man was able to complete his own application. The library decided to continue the workshops because demand was higher than expected."
+      ],
+      "wordCount": 82
     },
     "questions": [
       {
@@ -1098,8 +1111,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A school committee was reviewing its uniform rules after receiving feedback from students. A school committee received requests from students who felt uncomfortable with the existing uniform rules. Some wanted trousers instead of skirts, while others needed warmer clothing in winter. The committee invited students and parents to discuss practical alternatives. After considering costs and school traditions, it introduced several approved uniform options. Students could choose the items that suited them without changing the school's overall appearance. The new policy reduced complaints and encouraged the committee to seek student feedback on other rules as well."
-      ]
+        "A school committee was reviewing its uniform rules after receiving feedback from students. Some wanted trousers instead of skirts, while others needed warmer clothing in winter. The committee invited students and parents to discuss practical alternatives. After considering costs and school traditions, it introduced several approved uniform options. Students could choose the items that suited them without changing the school's overall appearance. The new policy reduced complaints and encouraged the committee to seek student feedback on other rules as well."
+      ],
+      "wordCount": 80
     },
     "questions": [
       {
@@ -1178,8 +1192,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A transport planner was studying why fewer students and older residents used local buses. A transport planner discovered that many residents avoided local buses because fares had risen. Students and older passengers were particularly affected. At a public meeting, she proposed a discounted-fare trial for these groups. Some council members worried about the loss of ticket revenue, but the city agreed to test the idea for several months. During the trial, ridership increased, especially outside rush hour. The planner prepared a report comparing the benefits and costs before recommending whether the program should continue."
-      ]
+        "A transport planner was studying why fewer students and older residents used local buses. Bus fares had risen, making public transport less affordable for some residents. Students and older passengers were particularly affected. At a public meeting, she proposed a discounted-fare trial for these groups. Some council members worried about the loss of ticket revenue, but the city agreed to test the idea for several months. During the trial, ridership increased, especially outside rush hour. The planner prepared a report comparing the benefits and costs before recommending whether the program should continue."
+      ],
+      "wordCount": 92
     },
     "questions": [
       {
@@ -1258,8 +1273,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A company supervisor was reviewing requests from workers who cared for older family members. A company supervisor noticed that an experienced employee had become distracted at work. During a private conversation, the employee explained that her father needed regular care and she was struggling to manage hospital visits. The supervisor suggested a temporary flexible schedule and asked the team to redistribute a few responsibilities fairly. At first, colleagues were concerned about extra work, so the supervisor clarified everyone's duties. Over time, the arrangement helped the employee continue her career while meeting her family's needs, and teamwork gradually improved."
-      ]
+        "A company supervisor was reviewing requests from workers who cared for older family members. An experienced employee had been struggling to balance work with caring for her father. During a private conversation, the employee explained that her father needed regular care and she was struggling to manage hospital visits. The supervisor suggested a temporary flexible schedule and asked the team to redistribute a few responsibilities fairly. At first, colleagues were concerned about extra work, so the supervisor clarified everyone's duties. Over time, the arrangement helped the employee continue her career while meeting her family's needs, and teamwork gradually improved."
+      ],
+      "wordCount": 99
     },
     "questions": [
       {
@@ -1338,8 +1354,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A city planner was considering a redevelopment project near a small river. A city planner was preparing to approve a redevelopment project near a river. The original design included a large paved area and new shops. However, residents showed her photographs of birds and insects that depended on the riverside habitat. She asked environmental specialists to investigate before making a final decision. Their report suggested that a narrow wildlife corridor could protect important species while allowing part of the development to proceed. The planner changed the design, and the completed project included both a walking path and protected natural areas."
-      ]
+        "A city planner was considering a redevelopment project near a small river. The original design included a large paved area and new shops. However, residents showed her photographs of birds and insects that depended on the riverside habitat. She asked environmental specialists to investigate before making a final decision. Their report suggested that a narrow wildlife corridor could protect important species while allowing part of the development to proceed. The planner changed the design, and the completed project included both a walking path and protected natural areas."
+      ],
+      "wordCount": 87
     },
     "questions": [
       {
@@ -1418,8 +1435,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A local journalist was monitoring social media during a major storm. A local journalist noticed a widely shared social-media post claiming that a bridge had collapsed during a storm. The message was causing anxiety, and drivers were changing their routes. Before reporting the story, the journalist contacted the transport office and checked official updates. She discovered that the bridge was open and that the post contained an old photograph from another location. Her news organization published a clear correction with supporting evidence. Residents began sharing the verified information, and the journalist reflected on how quickly rumors could spread during emergencies."
-      ]
+        "A local journalist was monitoring social media during a major storm. A false social-media post claimed that a bridge had collapsed during the storm. The message was causing anxiety, and drivers were changing their routes. Before reporting the story, the journalist contacted the transport office and checked official updates. She discovered that the bridge was open and that the post contained an old photograph from another location. Her news organization published a clear correction with supporting evidence. Residents began sharing the verified information, and the journalist reflected on how quickly rumors could spread during emergencies."
+      ],
+      "wordCount": 95
     },
     "questions": [
       {
@@ -1498,8 +1516,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A mayor was hearing complaints from residents of a popular historic town. A mayor of a historic town had welcomed tourism because it created jobs for local businesses. However, residents increasingly complained that apartments were being turned into short-term tourist rentals, making homes harder to afford. The mayor organized a public consultation with landlords, residents, and hotel owners. After reviewing the information, the town introduced registration rules and limits in certain neighborhoods. Some apartments returned to the long-term rental market, but tourism businesses worried about fewer visitors. The mayor decided to monitor both housing costs and economic effects before making further changes."
-      ]
+        "A mayor was hearing complaints from residents of a popular historic town. Tourism had created local jobs, but more homes were becoming short-term rentals. However, residents increasingly complained that apartments were being turned into short-term tourist rentals, making homes harder to afford. The mayor organized a public consultation with landlords, residents, and hotel owners. After reviewing the information, the town introduced registration rules and limits in certain neighborhoods. Some apartments returned to the long-term rental market, but tourism businesses worried about fewer visitors. The mayor decided to monitor both housing costs and economic effects before making further changes."
+      ],
+      "wordCount": 98
     },
     "questions": [
       {
@@ -1578,8 +1597,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A training-center director was planning courses for adults whose jobs were changing. A training-center director learned that several local factories were introducing new machines. Workers were anxious because they did not know whether their jobs would change or disappear. The director met with employers and identified skills that would be useful in the new workplaces. She organized affordable evening classes in digital equipment and basic data handling. Some workers were initially nervous about returning to study, but instructors offered individual support. After completing the courses, several participants moved into new roles, demonstrating that career development does not have to end after graduation."
-      ]
+        "A training-center director was planning courses for adults whose jobs were changing. Several local factories were planning to introduce new machines. Workers were anxious because they did not know whether their jobs would change or disappear. The director met with employers and identified skills that would be useful in the new workplaces. She organized affordable evening classes in digital equipment and basic data handling. Some workers were initially nervous about returning to study, but instructors offered individual support. After completing the courses, several participants moved into new roles, demonstrating that career development does not have to end after graduation."
+      ],
+      "wordCount": 99
     },
     "questions": [
       {
@@ -1658,8 +1678,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A regional council was considering where to build a new renewable-energy facility. A regional council wanted to increase renewable-energy production and proposed building a solar facility near farmland. The plan immediately created disagreement. Some residents welcomed cleaner energy, while farmers worried about losing productive land. The council arranged an independent study of several possible sites and invited residents to comment on the findings. It eventually selected an area with fewer environmental and agricultural conflicts, even though construction would cost slightly more. Once the facility opened, the council published a report explaining why the final location had been chosen."
-      ]
+        "A regional council was considering where to build a new renewable-energy facility. The council hoped to build a solar facility near farmland. The plan immediately created disagreement. Some residents welcomed cleaner energy, while farmers worried about losing productive land. The council arranged an independent study of several possible sites and invited residents to comment on the findings. It eventually selected an area with fewer environmental and agricultural conflicts, even though construction would cost slightly more. Once the facility opened, the council published a report explaining why the final location had been chosen."
+      ],
+      "wordCount": 92
     },
     "questions": [
       {
@@ -1736,8 +1757,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A school district was evaluating a new AI system designed to recommend study materials. A school district introduced an AI tool that recommended learning materials based on students' previous answers. Initially, teachers welcomed the extra support. However, one teacher noticed that some students were repeatedly assigned simple exercises even after making progress. She raised the issue with the district, which reviewed the system's data and decision rules. The investigation showed that earlier mistakes were influencing recommendations too strongly. The district changed the settings and required regular teacher reviews. Students then received a wider range of appropriately challenging materials."
-      ]
+        "A school district was evaluating a new AI system designed to recommend study materials. Teachers had begun using an AI tool that suggested exercises based on past answers. Initially, teachers welcomed the extra support. However, one teacher noticed that some students were repeatedly assigned simple exercises even after making progress. She raised the issue with the district, which reviewed the system's data and decision rules. The investigation showed that earlier mistakes were influencing recommendations too strongly. The district changed the settings and required regular teacher reviews. Students then received a wider range of appropriately challenging materials."
+      ],
+      "wordCount": 96
     },
     "questions": [
       {
@@ -1814,8 +1836,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A social entrepreneur was looking for ways to help families struggling with rising food prices. A social entrepreneur learned that many families were finding it difficult to afford fresh groceries. She proposed creating a food cooperative where members could purchase products in larger quantities directly from local farms. Several volunteers agreed to help organize orders and deliveries. At first, the group struggled to estimate demand and cover storage costs. After adjusting the system, the cooperative opened in a small community space and began offering affordable food. The entrepreneur was pleased, but she continued reviewing the finances to ensure that the project could survive without constant donations."
-      ]
+        "A social entrepreneur was looking for ways to help families struggling with rising food prices. She proposed creating a food cooperative where members could purchase products in larger quantities directly from local farms. Several volunteers agreed to help organize orders and deliveries. At first, the group struggled to estimate demand and cover storage costs. After adjusting the system, the cooperative opened in a small community space and began offering affordable food. The entrepreneur was pleased, but she continued reviewing the finances to ensure that the project could survive without constant donations."
+      ],
+      "wordCount": 91
     },
     "questions": [
       {
@@ -1892,8 +1915,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A transport authority was considering a camera system to improve security at a busy station. A transport authority was concerned about repeated thefts at a busy station. A supplier recommended installing a facial-recognition system, claiming that it could identify suspects quickly. The authority initially supported the idea, but a privacy group asked how travelers' images would be stored and whether innocent people might be wrongly identified. Officials held a public hearing and commissioned an independent review. They eventually adopted a narrower security plan with strict limits on data collection and clear public notices. The authority decided to evaluate the program regularly rather than assuming that new technology automatically improved safety."
-      ]
+        "A transport authority was considering a camera system to improve security at a busy station. A supplier recommended installing a facial-recognition system, claiming that it could identify suspects quickly. The authority initially supported the idea, but a privacy group asked how travelers' images would be stored and whether innocent people might be wrongly identified. Officials held a public hearing and commissioned an independent review. They eventually adopted a narrower security plan with strict limits on data collection and clear public notices. The authority decided to evaluate the program regularly rather than assuming that new technology automatically improved safety."
+      ],
+      "wordCount": 98
     },
     "questions": [
       {
@@ -1970,8 +1994,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A local historian was trying to save an old theater that had fallen into disrepair. A local historian learned that an old theater might be demolished because its roof was leaking and repairs were expensive. She believed the building was an important part of the town's cultural history. She organized a meeting and invited residents, business owners, and preservation experts to discuss alternatives. With a combination of donations and public funding, the town began a careful restoration project. After months of work, the theater reopened for community performances. The historian was delighted to see young performers using a building that had connected generations of residents."
-      ]
+        "A local historian was trying to save an old theater that had fallen into disrepair. The building's roof was leaking, and repairs were expensive. She believed the building was an important part of the town's cultural history. She organized a meeting and invited residents, business owners, and preservation experts to discuss alternatives. With a combination of donations and public funding, the town began a careful restoration project. After months of work, the theater reopened for community performances. The historian was delighted to see young performers using a building that had connected generations of residents."
+      ],
+      "wordCount": 94
     },
     "questions": [
       {
@@ -2048,8 +2073,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A city health officer was preparing a summer plan after record-breaking temperatures. A city health officer became worried after a period of extreme heat led to more people seeking medical help. She noticed that many bus stops offered no shade and that older residents living alone were especially vulnerable. During a planning meeting, she recommended installing shaded shelters and opening public cooling spaces. The city worked with local centers to extend their daytime hours and distributed information about heat risks. When the next heatwave arrived, residents had more places to rest and drink water. The officer continued collecting health data to evaluate the effectiveness of the measures."
-      ]
+        "A city health officer was preparing a summer plan after record-breaking temperatures. She noticed that many bus stops offered no shade and that older residents living alone were especially vulnerable. During a planning meeting, she recommended installing shaded shelters and opening public cooling spaces. The city worked with local centers to extend their daytime hours and distributed information about heat risks. When the next heatwave arrived, residents had more places to rest and drink water. The officer continued collecting health data to evaluate the effectiveness of the measures."
+      ],
+      "wordCount": 88
     },
     "questions": [
       {
@@ -2126,8 +2152,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A school-board member was preparing to review policies that affected teenagers in the district. A school-board member received complaints that decisions about school schedules were being made without asking students. She decided to invite student representatives to a public meeting. Before attending, the students surveyed their classmates and prepared evidence about commuting times and after-school responsibilities. The board listened to their presentation and agreed to test a revised timetable for one term. Although the change did not solve every problem, students appreciated being included in the process. The board member decided to establish a regular student advisory group."
-      ]
+        "A school-board member was preparing to review policies that affected teenagers in the district. She decided to invite student representatives to a public meeting. Before attending, the students surveyed their classmates and prepared evidence about commuting times and after-school responsibilities. The board listened to their presentation and agreed to test a revised timetable for one term. Although the change did not solve every problem, students appreciated being included in the process. The board member decided to establish a regular student advisory group."
+      ],
+      "wordCount": 82
     },
     "questions": [
       {
@@ -2204,8 +2231,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A labor inspector was investigating complaints from people working through delivery apps. A labor inspector received complaints from delivery couriers who said their earnings were unpredictable and insurance coverage was unclear. She arranged a meeting where workers could explain their experiences. Some workers valued flexible schedules, but others worried about accidents and sudden changes to payment rules. The inspector contacted the delivery companies and encouraged discussions about minimum standards and transparent contracts. One company later introduced clearer payment information and additional safety support. The inspector continued monitoring conditions because she knew that flexibility should not come at the cost of basic protections."
-      ]
+        "A labor inspector was investigating complaints from people working through delivery apps. Couriers had reported unpredictable earnings and unclear insurance coverage. She arranged a meeting where workers could explain their experiences. Some workers valued flexible schedules, but others worried about accidents and sudden changes to payment rules. The inspector contacted the delivery companies and encouraged discussions about minimum standards and transparent contracts. One company later introduced clearer payment information and additional safety support. The inspector continued monitoring conditions because she knew that flexibility should not come at the cost of basic protections."
+      ],
+      "wordCount": 92
     },
     "questions": [
       {
@@ -2282,8 +2310,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A city technology officer was proposing sensors to improve traffic management. A city technology officer wanted to introduce sensors that would measure traffic and pedestrian movement. She argued that the data could help planners reduce congestion and improve safety. During a public meeting, however, a resident asked whether the equipment could identify individual people. The officer realized that the original explanation had not addressed privacy concerns. Her team redesigned the pilot to collect anonymous counts instead of personal records and published a clear description of the safeguards. The project then began on a limited scale, with an independent review scheduled before any expansion."
-      ]
+        "A city technology officer was proposing sensors to improve traffic management. She argued that the data could help planners reduce congestion and improve safety. During a public meeting, however, a resident asked whether the equipment could identify individual people. The officer realized that the original explanation had not addressed privacy concerns. Her team redesigned the pilot to collect anonymous counts instead of personal records and published a clear description of the safeguards. The project then began on a limited scale, with an independent review scheduled before any expansion."
+      ],
+      "wordCount": 88
     },
     "questions": [
       {
@@ -2360,8 +2389,9 @@
     "narration": {
       "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
       "modelAnswers": [
-        "A city official was examining a proposal to use small delivery robots in crowded neighborhoods. A city official was approached by a company that wanted to use small delivery robots on public sidewalks. The robots promised to reduce the need for short delivery trips by car. During a demonstration, however, a parent pushing a stroller had difficulty passing a robot on a narrow pavement. The official organized safety tests with residents, disability advocates, and the company. They agreed on slower speeds and revised routes that avoided busy or narrow walkways. The service began on a limited basis, while the city continued checking whether pedestrian access was being protected."
-      ]
+        "A city official was examining a proposal to use small delivery robots in crowded neighborhoods. A delivery company wanted to use robots on public sidewalks. The robots promised to reduce the need for short delivery trips by car. During a demonstration, however, a parent pushing a stroller had difficulty passing a robot on a narrow pavement. The official organized safety tests with residents, disability advocates, and the company. They agreed on slower speeds and revised routes that avoided busy or narrow walkways. The service began on a limited basis, while the city continued checking whether pedestrian access was being protected."
+      ],
+      "wordCount": 100
     },
     "questions": [
       {
