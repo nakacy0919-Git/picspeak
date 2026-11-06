@@ -1,0 +1,2402 @@
+[
+  {
+    "id": "ep1_001",
+    "grade": "pre1",
+    "stage": 1,
+    "band": "guided",
+    "title": "A Neighborhood Recycling Plan",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "One afternoon, a residents' committee met to discuss the growing amount of household waste.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Apartment residents see overflowing trash bins",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "A resident proposes a shared repair-and-reuse event at a meeting",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Volunteers organize tables and neighbors exchange working appliances",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Waste bins are less full and residents celebrate a successful event",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "One afternoon, a residents' committee met to discuss the growing amount of household waste. One afternoon, the residents of an apartment building gathered to discuss a problem. The trash bins were often overflowing, and everyone was frustrated. During the meeting, one woman suggested holding a reuse event instead of simply adding more bins. A few weeks later, the residents organized tables where neighbors could exchange useful items and repair broken appliances. The event attracted many families. Eventually, the amount of waste decreased, and the residents felt that they had found a practical solution together."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the woman at the meeting, what would you be thinking?",
+        "modelAnswers": [
+          "I would be thinking that residents need a solution they can participate in, not just more garbage collection."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should communities require residents to separate their waste?",
+        "modelAnswers": [
+          "I believe they should, provided the rules are simple and recycling services are available. Clear explanations would encourage cooperation."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can repairing products become more common than replacing them?",
+        "modelAnswers": [
+          "It could if repair services became affordable and convenient. Manufacturers should also make parts easier to replace."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Do individual actions really make a difference to environmental problems?",
+        "modelAnswers": [
+          "Individual actions alone are insufficient, but they can influence businesses and government policy when many people participate."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_002",
+    "grade": "pre1",
+    "stage": 2,
+    "band": "guided",
+    "title": "Making a Museum Accessible",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A museum director was preparing an exhibition that would attract families from across the region.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "A visitor in a wheelchair finds stairs blocking entrance to gallery",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Director discusses the problem with staff and an accessibility adviser",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Workers install a ramp and add clear signs",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Visitor enters gallery with family while director watches with relief",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A museum director was preparing an exhibition that would attract families from across the region. A museum director was excited about a new exhibition. However, shortly after the opening, she noticed that a visitor using a wheelchair could not reach one of the galleries. She felt embarrassed that the barrier had been overlooked. She arranged a meeting with museum staff and an accessibility adviser to discuss possible improvements. They decided to install a ramp and provide clearer signs. When the work was completed, the visitor returned with her family and was able to enjoy the exhibition. The director realized that good design should consider everyone from the beginning."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the director after seeing the visitor at the stairs, what would you be thinking?",
+        "modelAnswers": [
+          "I would feel responsible for overlooking an obvious barrier and would want to correct it quickly."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should public facilities be required to meet strict accessibility standards?",
+        "modelAnswers": [
+          "Yes. Public services should be usable by all residents, including people with disabilities and older people."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Are small businesses unfairly burdened by accessibility requirements?",
+        "modelAnswers": [
+          "The costs can be challenging, so governments should provide financial support and practical guidance instead of abandoning the standards."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "What is more important when designing public spaces: efficiency or inclusion?",
+        "modelAnswers": [
+          "Both matter, but efficiency should not come at the expense of people being excluded from essential services."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_003",
+    "grade": "pre1",
+    "stage": 3,
+    "band": "guided",
+    "title": "An Empty Community Center",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A town council was discussing what to do with an old building that had been unused for years.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "An abandoned community building has broken windows and weeds",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Young residents propose turning it into a shared learning center",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Council approves repairs and local volunteers paint rooms",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Children and adults use new classrooms together",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A town council was discussing what to do with an old building that had been unused for years. A town council was concerned about an old building that had stood empty for several years. It was becoming expensive to maintain, and some members suggested selling the land. During a public meeting, a group of young residents proposed turning the building into a shared learning center. They explained that the town lacked affordable places for after-school activities and adult classes. The council agreed to a limited renovation, and volunteers helped clean and paint the rooms. Once the center opened, people of different ages began attending classes there, giving the building a new purpose."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were a council member listening to the young residents, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to investigate whether the proposed center could meet local needs without creating an unsustainable financial burden."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should local governments preserve unused public buildings?",
+        "modelAnswers": [
+          "Only when there is a realistic plan for their use. Preservation has value, but maintenance costs and public priorities must be considered."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can volunteer activities replace government services?",
+        "modelAnswers": [
+          "Volunteers can provide valuable support, but essential services should not depend entirely on unpaid labor."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "How can young people influence decisions in their communities?",
+        "modelAnswers": [
+          "They can attend public meetings, collect evidence, and work with local organizations to present practical proposals."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_004",
+    "grade": "pre1",
+    "stage": 4,
+    "band": "guided",
+    "title": "A New Remote-Work Policy",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A company manager was considering a request from employees who spent hours commuting every day.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Employees sit exhausted on a crowded morning train",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Staff suggest working remotely several days a week",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Manager introduces trial with online meetings",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Employees gain time, but manager notices some new workers struggling to connect",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A company manager was considering a request from employees who spent hours commuting every day. A company manager learned that several employees were exhausted by their long daily commutes. During a meeting, workers asked whether they could work from home a few days a week. The manager agreed to test a remote-work policy and introduced regular video meetings. Most employees appreciated the extra time they gained, and productivity remained stable. However, some newer workers found it difficult to build relationships with colleagues. The manager decided to improve mentoring and provide opportunities for teams to meet in person."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the manager when new workers reported feeling isolated, what would you be thinking?",
+        "modelAnswers": [
+          "I would be thinking that a flexible policy needs stronger support for employees who have not yet built workplace relationships."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should remote work become a permanent option for more employees?",
+        "modelAnswers": [
+          "Where job duties allow it, yes. Hybrid arrangements can improve work-life balance while preserving opportunities for collaboration."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Does working from home weaken a company's culture?",
+        "modelAnswers": [
+          "It can if organizations neglect communication, but deliberate team-building and clear expectations can help maintain a shared culture."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should employers be responsible for employees' well-being outside working hours?",
+        "modelAnswers": [
+          "They should respect personal boundaries and avoid unreasonable demands, although employees also need to manage their own time."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_005",
+    "grade": "pre1",
+    "stage": 5,
+    "band": "guided",
+    "title": "Preparing for Severe Floods",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A town official was reviewing emergency plans after several years of unusually heavy rainfall.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Families watch news of rising river levels",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Town official finds that older residents may not receive smartphone alerts",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Officials recruit neighborhood volunteers for door-to-door warnings",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Residents evacuate safely after the next severe-rain warning",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A town official was reviewing emergency plans after several years of unusually heavy rainfall. A town official was reviewing emergency preparations after several seasons of heavy rain. While examining the warning system, she discovered that some older residents did not own smartphones and might miss urgent alerts. She worried that the town's technology-based approach was leaving people behind. The office recruited neighborhood volunteers and created a list of households needing additional assistance. When another severe-rain warning arrived, the volunteers visited those homes while digital alerts were sent to others. Most residents reached safe locations in time, and the official recognized the value of combining technology with human support."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the official after discovering the communication gap, what would you be thinking?",
+        "modelAnswers": [
+          "I would realize that emergency systems are only effective when they reach the most vulnerable residents."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should governments spend more on disaster preparation than on recovery?",
+        "modelAnswers": [
+          "Both are necessary, but prevention can save lives and may reduce future damage. Investment should reflect local risks."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Do individuals have a responsibility to prepare for natural disasters?",
+        "modelAnswers": [
+          "Yes. Families should know evacuation routes and keep emergency supplies, while public agencies provide reliable infrastructure and information."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should cities restrict construction in areas exposed to natural disasters?",
+        "modelAnswers": [
+          "Restrictions can be justified in high-risk areas, but residents and businesses need transparent information and fair assistance."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_006",
+    "grade": "pre1",
+    "stage": 6,
+    "band": "guided",
+    "title": "A School Counseling Program",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A school principal noticed that students were becoming increasingly anxious about examinations and future careers.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Student sits alone looking overwhelmed by study materials",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Teacher proposes confidential counseling sessions",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "School invites trained counselor and creates private room",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Student talks with counselor and later joins classmates for lunch",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A school principal noticed that students were becoming increasingly anxious about examinations and future careers. A school principal became worried after several teachers reported that students were struggling with exam stress. One student had stopped joining activities and seemed unusually withdrawn. During a staff meeting, a teacher suggested offering confidential counseling rather than simply telling students to study harder. The principal arranged for a trained counselor to visit the school and made a private room available. At first, students were hesitant to use the service, but teachers explained that asking for support was normal. Gradually, more students sought help, and one student began participating in school life again."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the principal before introducing the program, what would you be thinking?",
+        "modelAnswers": [
+          "I would be concerned about protecting students' privacy while ensuring they know where to seek support."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should every school employ a professional counselor?",
+        "modelAnswers": [
+          "Ideally, yes. Early support can prevent minor difficulties from becoming more serious, though smaller schools may need shared services."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Does academic competition have more benefits than disadvantages?",
+        "modelAnswers": [
+          "Moderate competition can motivate students, but excessive pressure can damage confidence and well-being."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should parents be informed whenever a teenager seeks counseling?",
+        "modelAnswers": [
+          "The student's safety matters most. Policies should protect confidentiality while allowing appropriate intervention when serious risks exist."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_007",
+    "grade": "pre1",
+    "stage": 7,
+    "band": "guided",
+    "title": "Cleaning a Coastal Wetland",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A local environmental group was planning a project to protect wildlife along the coast.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Volunteers notice plastic waste near nesting birds",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Group leader asks local businesses to sponsor cleanup supplies",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Volunteers clean shore while scientists identify sensitive nesting areas",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Beach becomes cleaner and warning signs protect habitat",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A local environmental group was planning a project to protect wildlife along the coast. A local environmental group discovered plastic waste scattered across a coastal wetland where birds were nesting. The group leader wanted to organize a cleanup, but she was worried that too many visitors might disturb the birds. She consulted scientists and asked nearby businesses to support the project. Together, they created a careful plan that kept volunteers away from sensitive areas. Over the following weekend, volunteers removed waste and installed educational signs. The wetland became cleaner without disrupting the nesting season, and the group began planning long-term monitoring."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the group leader planning the cleanup, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to protect the wildlife while ensuring that volunteers do not unintentionally damage the habitat."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should companies be required to help clean up pollution caused by their products?",
+        "modelAnswers": [
+          "Yes. Extended responsibility can encourage firms to design less harmful packaging and fund appropriate collection systems."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Are volunteer cleanups enough to protect the oceans?",
+        "modelAnswers": [
+          "No. They are valuable, but reducing waste at the source and improving industrial regulation are equally important."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should environmentally sensitive areas be closed to tourists?",
+        "modelAnswers": [
+          "Sometimes. Seasonal restrictions can protect wildlife, provided communities receive clear information and alternatives."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_008",
+    "grade": "pre1",
+    "stage": 8,
+    "band": "guided",
+    "title": "A Mobile Health Clinic",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A regional hospital was considering new ways to serve villages far from medical facilities.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Older resident struggles with long journey to hospital",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Doctor suggests a mobile health clinic visiting villages",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Hospital converts van and schedules visits with nurses",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Residents receive checkups close to home while doctor evaluates demand",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A regional hospital was considering new ways to serve villages far from medical facilities. A regional hospital found that older residents in remote villages were missing routine medical appointments because public transportation was limited. A doctor proposed using a mobile clinic to bring basic health services to those communities. The hospital initially worried about the cost, but local organizations offered to help identify suitable locations. After a trial period, nurses began visiting villages regularly in a specially equipped van. Residents welcomed the service, and the hospital collected data to decide whether the program should expand."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the doctor proposing the mobile clinic, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to demonstrate that preventive care could reach isolated residents more efficiently than waiting for them to travel."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should healthcare services be equally available in rural and urban areas?",
+        "modelAnswers": [
+          "They should be accessible to everyone, although identical facilities may not be practical. Mobile services and telemedicine can help bridge gaps."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Is it fair for governments to spend more per person in remote regions?",
+        "modelAnswers": [
+          "Some additional spending can be justified when geography creates unavoidable disadvantages."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "How can technology improve healthcare without reducing personal contact?",
+        "modelAnswers": [
+          "It can handle scheduling and routine monitoring so medical professionals have more time for meaningful conversations."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_009",
+    "grade": "pre1",
+    "stage": 9,
+    "band": "guided",
+    "title": "Greener Rooftops in a City",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "An architect was presenting a plan to reduce summer heat in a crowded city district.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Residents complain that rooftop surfaces become extremely hot",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Architect proposes planting rooftop gardens on selected buildings",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Building owners consult engineers and install safe planting beds",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Residents enjoy cooler shared spaces and monitor maintenance costs",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "An architect was presenting a plan to reduce summer heat in a crowded city district. An architect attended a community meeting where residents complained about uncomfortable summer temperatures. She proposed creating rooftop gardens to provide shade and absorb some heat. Several building owners were interested but worried about weight and maintenance. The architect worked with engineers to select suitable buildings and design safe planting areas. After installation, residents began using the new rooftop spaces to relax. Although the gardens required ongoing care, the project encouraged further discussion about how cities could adapt to hotter summers."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were a building owner considering the proposal, what would you be thinking?",
+        "modelAnswers": [
+          "I would be interested in the potential benefits but concerned about structural safety, cost, and ongoing maintenance."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should cities require new buildings to include more green space?",
+        "modelAnswers": [
+          "In dense areas, carefully designed requirements could improve quality of life, provided builders have flexibility in meeting them."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can urban design reduce the effects of climate change?",
+        "modelAnswers": [
+          "It can help communities adapt to heat and flooding, although it cannot replace efforts to reduce greenhouse-gas emissions."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should environmental policies prioritize long-term benefits over immediate costs?",
+        "modelAnswers": [
+          "Long-term benefits matter greatly, but governments must also consider affordability and support people who bear the initial costs."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_010",
+    "grade": "pre1",
+    "stage": 10,
+    "band": "guided",
+    "title": "Clearer Food Allergy Labels",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A food manufacturer was reviewing complaints about labels that customers found difficult to understand.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Parent studies crowded ingredient label and looks concerned",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Company employee suggests simple allergy symbols and larger print",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Design team tests labels with different customers",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "New packaging appears in shops and shoppers find information more easily",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A food manufacturer was reviewing complaints about labels that customers found difficult to understand. A food manufacturer received complaints that its ingredient labels were difficult to read. One parent explained that identifying possible allergens took too much time, particularly when shopping with children. A member of the design team suggested using clearer symbols and larger text. The company invited customers with different needs to test several label designs. After making revisions, it introduced the new packaging in local supermarkets. The feedback was positive, and the company realized that better communication could increase both safety and customer confidence."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the employee suggesting changes, what would you be thinking?",
+        "modelAnswers": [
+          "I would believe that clear information is a safety issue, not just a matter of attractive packaging."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should companies be legally required to display allergy information clearly?",
+        "modelAnswers": [
+          "Yes. Consumers need reliable information to protect their health, and consistent labeling helps them compare products."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can excessive product information confuse consumers?",
+        "modelAnswers": [
+          "It can, so companies should organize information carefully rather than removing important details."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should consumer safety ever take priority over business profits?",
+        "modelAnswers": [
+          "Certainly. Businesses have a responsibility to avoid foreseeable harm, even when improving safety involves additional costs."
+        ]
+      }
+    ],
+    "guidance": [
+      "Build a four-step story: situation, problem, action, outcome.",
+      "Use past tenses and explain characters' feelings.",
+      "Give two reasons or an example for broader opinions."
+    ]
+  },
+  {
+    "id": "ep1_011",
+    "grade": "pre1",
+    "stage": 11,
+    "band": "practice",
+    "title": "An Automated Hiring System",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A human-resources manager was considering software to help evaluate job applications.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Manager sees an overwhelming number of job applications",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Software company demonstrates an automated screening tool",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Manager discovers qualified applicants were rejected unfairly",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Company suspends automatic rejection and introduces human review",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A human-resources manager was considering software to help evaluate job applications. A human-resources manager was overwhelmed by hundreds of job applications. A technology company offered software that could rank candidates automatically, so the manager agreed to a trial. Initially, the system seemed to save time. However, an employee noticed that some applicants with relevant experience were receiving unexpectedly low scores. After investigating, the manager discovered that the tool relied on unfair patterns from past data. The company stopped using automatic rejection and introduced a human review process before making hiring decisions."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the manager after discovering the problem, what would you be thinking?",
+        "modelAnswers": [
+          "I would worry about unfairly excluding talented people and would want independent testing before using the software again."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should employers use artificial intelligence to select job candidates?",
+        "modelAnswers": [
+          "AI may help organize applications, but final decisions should be transparent and subject to meaningful human oversight."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Who should be responsible when an automated decision harms someone?",
+        "modelAnswers": [
+          "Organizations deploying the system should remain accountable, even when the software was developed by another company."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Will automation create more jobs than it eliminates?",
+        "modelAnswers": [
+          "It may create new occupations, but workers will need access to retraining as some existing tasks disappear."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_012",
+    "grade": "pre1",
+    "stage": 12,
+    "band": "practice",
+    "title": "Collecting Old Electronics",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A city environmental officer wanted to improve the disposal of unwanted electronic devices.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Old phones and laptops fill household drawers",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Officer proposes collection boxes at local schools",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Students organize awareness campaign and families deliver devices",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Recycling company collects equipment and officer explains safe disposal",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A city environmental officer wanted to improve the disposal of unwanted electronic devices. A city environmental officer learned that many households were storing broken phones and old laptops because residents did not know how to dispose of them safely. She proposed placing collection boxes at schools and community centers. Teachers and students created posters explaining why electronic waste should be handled carefully. Over the next month, families brought in their unused devices. A licensed recycling company collected the equipment and separated reusable materials. The officer was pleased with the response and planned to make the collection program a regular event."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the officer before launching the collection program, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to make disposal convenient while ensuring that personal data and hazardous materials were handled safely."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should manufacturers take responsibility for recycling old electronic products?",
+        "modelAnswers": [
+          "Yes. They are well placed to design products for reuse and organize responsible collection systems."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Does frequent smartphone replacement cause serious environmental problems?",
+        "modelAnswers": [
+          "It contributes to resource consumption and electronic waste, so longer product life and better repair options would help."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should schools teach students about the environmental costs of technology?",
+        "modelAnswers": [
+          "Yes. Students should understand the full life cycle of devices, not just their everyday benefits."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_013",
+    "grade": "pre1",
+    "stage": 13,
+    "band": "practice",
+    "title": "Bridging the Digital Divide",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A librarian was concerned that some residents could not use essential online public services.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Older man cannot complete online city-office form",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Librarian proposes free digital-skills workshops",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Volunteers show residents how to use secure websites",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Participants complete applications independently and librarian expands sessions",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A librarian was concerned that some residents could not use essential online public services. A librarian noticed that several older residents were struggling to complete forms on the town's new online service. One man had visited the library repeatedly because he did not understand the website. The librarian suggested offering free digital-skills workshops and recruited volunteers from a nearby college. During the sessions, participants practiced using secure websites and learned how to protect personal information. Several weeks later, the man was able to complete his own application. The library decided to continue the workshops because demand was higher than expected."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the librarian watching residents struggle, what would you be thinking?",
+        "modelAnswers": [
+          "I would worry that moving public services online without support was excluding people who needed those services most."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should governments keep paper-based options for public services?",
+        "modelAnswers": [
+          "Yes. Digital systems can improve efficiency, but alternatives are necessary for people who face barriers to using them."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can digital literacy be taught effectively to older adults?",
+        "modelAnswers": [
+          "Certainly. Patient instruction and practical tasks can help learners build confidence at any age."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Is technological progress always beneficial for society?",
+        "modelAnswers": [
+          "Not automatically. New systems need to be evaluated for accessibility, privacy, and their effects on vulnerable groups."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_014",
+    "grade": "pre1",
+    "stage": 14,
+    "band": "practice",
+    "title": "Introducing Inclusive School Uniforms",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A school committee was reviewing its uniform rules after receiving feedback from students.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Students explain that current uniforms are uncomfortable and restrictive",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Committee discusses flexible uniform options with parents",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "School introduces several approved clothing choices",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Students select comfortable uniforms while teachers observe positive response",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A school committee was reviewing its uniform rules after receiving feedback from students. A school committee received requests from students who felt uncomfortable with the existing uniform rules. Some wanted trousers instead of skirts, while others needed warmer clothing in winter. The committee invited students and parents to discuss practical alternatives. After considering costs and school traditions, it introduced several approved uniform options. Students could choose the items that suited them without changing the school's overall appearance. The new policy reduced complaints and encouraged the committee to seek student feedback on other rules as well."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were a student speaking to the committee, what would you be thinking?",
+        "modelAnswers": [
+          "I would hope the adults listened to our practical needs rather than assuming all students had the same preferences."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should students be involved in making school rules?",
+        "modelAnswers": [
+          "Yes. Participation can improve fairness and teach young people to take responsibility for their community."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Are uniforms useful for creating a sense of belonging?",
+        "modelAnswers": [
+          "They can encourage unity, but rigid rules may limit comfort and self-expression."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should schools preserve traditions even when social values change?",
+        "modelAnswers": [
+          "Traditions deserve consideration, but schools should revise practices that create unnecessary barriers or unfair treatment."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_015",
+    "grade": "pre1",
+    "stage": 15,
+    "band": "practice",
+    "title": "Rethinking Public Transit Fares",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A transport planner was studying why fewer students and older residents used local buses.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Bus stop with many residents waiting but high fare poster",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Planner proposes discounted fares for young and older passengers",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "City runs a limited discount trial and tracks bus use",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Bus carries more passengers while planner reviews cost data",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A transport planner was studying why fewer students and older residents used local buses. A transport planner discovered that many residents avoided local buses because fares had risen. Students and older passengers were particularly affected. At a public meeting, she proposed a discounted-fare trial for these groups. Some council members worried about the loss of ticket revenue, but the city agreed to test the idea for several months. During the trial, ridership increased, especially outside rush hour. The planner prepared a report comparing the benefits and costs before recommending whether the program should continue."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the planner presenting the trial results, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to show both the social benefits and the financial costs so that the council could make an informed decision."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should public transport be free for everyone?",
+        "modelAnswers": [
+          "Free services could improve access, but funding them sustainably would be difficult. Targeted discounts may be more practical."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Should cities favor buses and trains over private cars?",
+        "modelAnswers": [
+          "In crowded areas, reliable public transport can reduce congestion and pollution, although rural residents may still need cars."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Is it fair to spend tax money on services that some people rarely use?",
+        "modelAnswers": [
+          "Yes, when those services provide broad public benefits and help people meet essential needs."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_016",
+    "grade": "pre1",
+    "stage": 16,
+    "band": "practice",
+    "title": "Caregiving and Employment",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A company supervisor was reviewing requests from workers who cared for older family members.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Employee receives urgent phone call about parent while at desk",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Supervisor meets employee to discuss flexible work options",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Team rearranges responsibilities and employee works adjusted hours",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Employee continues working while caring for parent and colleagues coordinate smoothly",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A company supervisor was reviewing requests from workers who cared for older family members. A company supervisor noticed that an experienced employee had become distracted at work. During a private conversation, the employee explained that her father needed regular care and she was struggling to manage hospital visits. The supervisor suggested a temporary flexible schedule and asked the team to redistribute a few responsibilities fairly. At first, colleagues were concerned about extra work, so the supervisor clarified everyone's duties. Over time, the arrangement helped the employee continue her career while meeting her family's needs, and teamwork gradually improved."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the supervisor after hearing about the employee's situation, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to support the employee without placing an unreasonable burden on the rest of the team."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should employers offer paid leave for family caregiving?",
+        "modelAnswers": [
+          "Yes, because caregiving is a common social need, although policies must be designed so that small employers can manage the costs."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Will aging populations change the way companies operate?",
+        "modelAnswers": [
+          "Yes. More workers may need flexible schedules and support for caregiving responsibilities."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should family members or public services carry the main responsibility for elder care?",
+        "modelAnswers": [
+          "Both have roles, but public services are essential to prevent families from facing impossible demands alone."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_017",
+    "grade": "pre1",
+    "stage": 17,
+    "band": "practice",
+    "title": "Protecting Urban Biodiversity",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A city planner was considering a redevelopment project near a small river.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Developers present plans to pave riverside area",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Local residents show planner photographs of birds and insects living there",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Planner revises project to preserve habitat corridor",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "New path opens while wildlife habitat remains protected",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A city planner was considering a redevelopment project near a small river. A city planner was preparing to approve a redevelopment project near a river. The original design included a large paved area and new shops. However, residents showed her photographs of birds and insects that depended on the riverside habitat. She asked environmental specialists to investigate before making a final decision. Their report suggested that a narrow wildlife corridor could protect important species while allowing part of the development to proceed. The planner changed the design, and the completed project included both a walking path and protected natural areas."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the planner when residents presented their concerns, what would you be thinking?",
+        "modelAnswers": [
+          "I would realize that the environmental effects needed closer investigation before approving an irreversible change."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should economic development be restricted to protect biodiversity?",
+        "modelAnswers": [
+          "Sometimes, especially when development threatens rare habitats. Balanced planning can often find alternatives that reduce harm."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can small green spaces make a meaningful difference in cities?",
+        "modelAnswers": [
+          "Yes. Connected habitats can support wildlife and improve the environment for residents."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Who should decide how land is used in a community?",
+        "modelAnswers": [
+          "Local authorities should make decisions transparently with input from residents, experts, and affected businesses."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_018",
+    "grade": "pre1",
+    "stage": 18,
+    "band": "practice",
+    "title": "False Information During an Emergency",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A local journalist was monitoring social media during a major storm.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "People share alarming post claiming bridge is closed",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Journalist checks official transport website and finds post is false",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "News team publishes corrected information with sources",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Residents stop sharing rumor and use verified route updates",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A local journalist was monitoring social media during a major storm. A local journalist noticed a widely shared social-media post claiming that a bridge had collapsed during a storm. The message was causing anxiety, and drivers were changing their routes. Before reporting the story, the journalist contacted the transport office and checked official updates. She discovered that the bridge was open and that the post contained an old photograph from another location. Her news organization published a clear correction with supporting evidence. Residents began sharing the verified information, and the journalist reflected on how quickly rumors could spread during emergencies."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the journalist after seeing the viral post, what would you be thinking?",
+        "modelAnswers": [
+          "I would feel pressure to respond quickly, but verifying the claim would remain more important than being first."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should social media companies remove false information during emergencies?",
+        "modelAnswers": [
+          "They should respond promptly to demonstrably false claims that create safety risks, while providing transparent reasons and appeal procedures."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Are people becoming less able to judge the reliability of information?",
+        "modelAnswers": [
+          "Not necessarily, but the speed and volume of online content make careful verification increasingly important."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should schools teach students how to verify online information?",
+        "modelAnswers": [
+          "Absolutely. Students should learn to compare sources, identify evidence, and recognize misleading images."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_019",
+    "grade": "pre1",
+    "stage": 19,
+    "band": "practice",
+    "title": "Tourism and Housing Prices",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A mayor was hearing complaints from residents of a popular historic town.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Tourists roll suitcases past homes being used as short-term rentals",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Residents tell mayor that long-term housing has become expensive",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Town introduces registration rules for short-term accommodation",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Some homes return to long-term rental market and mayor reviews tourism impact",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A mayor was hearing complaints from residents of a popular historic town. A mayor of a historic town had welcomed tourism because it created jobs for local businesses. However, residents increasingly complained that apartments were being turned into short-term tourist rentals, making homes harder to afford. The mayor organized a public consultation with landlords, residents, and hotel owners. After reviewing the information, the town introduced registration rules and limits in certain neighborhoods. Some apartments returned to the long-term rental market, but tourism businesses worried about fewer visitors. The mayor decided to monitor both housing costs and economic effects before making further changes."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the mayor facing these competing demands, what would you be thinking?",
+        "modelAnswers": [
+          "I would look for a fair balance between tourism income and residents' ability to find affordable housing."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should cities limit the number of short-term holiday rentals?",
+        "modelAnswers": [
+          "Limits can be justified where housing is scarce, but rules should reflect local conditions and be evaluated regularly."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Do tourists have responsibilities toward residents of the places they visit?",
+        "modelAnswers": [
+          "Yes. Visitors should respect local rules, reduce noise, and support businesses without damaging everyday community life."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should economic growth always be a government's main priority?",
+        "modelAnswers": [
+          "No. Economic growth matters, but housing, social well-being, and environmental quality are also essential."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_020",
+    "grade": "pre1",
+    "stage": 20,
+    "band": "practice",
+    "title": "Lifelong Education for Workers",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A training-center director was planning courses for adults whose jobs were changing.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Factory workers learn that new machines will replace some tasks",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Director meets local employers to identify needed skills",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Training center offers evening courses in digital equipment",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Workers complete courses and transfer to new positions",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A training-center director was planning courses for adults whose jobs were changing. A training-center director learned that several local factories were introducing new machines. Workers were anxious because they did not know whether their jobs would change or disappear. The director met with employers and identified skills that would be useful in the new workplaces. She organized affordable evening classes in digital equipment and basic data handling. Some workers were initially nervous about returning to study, but instructors offered individual support. After completing the courses, several participants moved into new roles, demonstrating that career development does not have to end after graduation."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the director speaking to worried workers, what would you be thinking?",
+        "modelAnswers": [
+          "I would want to offer realistic opportunities without promising that every job could be protected."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should employers pay for workers to learn new skills?",
+        "modelAnswers": [
+          "They should contribute, particularly when technological changes benefit the business and require employees to adapt."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Will university degrees become less important in the future?",
+        "modelAnswers": [
+          "Degrees will remain valuable, but short courses and practical experience may play a larger role throughout working life."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should governments support adults who return to education?",
+        "modelAnswers": [
+          "Yes. Financial aid and flexible schedules can help people adapt to changes in the labor market."
+        ]
+      }
+    ],
+    "guidance": [
+      "Tell the four-panel story in your own words before checking the example."
+    ]
+  },
+  {
+    "id": "ep1_021",
+    "grade": "pre1",
+    "stage": 21,
+    "band": "mock",
+    "title": "Choosing a Community Energy Site",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A regional council was considering where to build a new renewable-energy facility.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Council displays map showing possible solar farm near farmland",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Farmers and environmentalists express different concerns at meeting",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Council orders independent studies and moves facility to less sensitive site",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Solar facility begins operation while farmland remains available",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A regional council was considering where to build a new renewable-energy facility. A regional council wanted to increase renewable-energy production and proposed building a solar facility near farmland. The plan immediately created disagreement. Some residents welcomed cleaner energy, while farmers worried about losing productive land. The council arranged an independent study of several possible sites and invited residents to comment on the findings. It eventually selected an area with fewer environmental and agricultural conflicts, even though construction would cost slightly more. Once the facility opened, the council published a report explaining why the final location had been chosen."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were a council member during the disagreement, what would you be thinking?",
+        "modelAnswers": [
+          "I would want objective evidence and a transparent process so that residents understood the trade-offs."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should renewable-energy projects be built even when local residents object?",
+        "modelAnswers": [
+          "Public benefits matter, but objections deserve serious consideration. Authorities should explore alternatives and explain decisions transparently."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Is a rapid transition to clean energy more important than protecting local landscapes?",
+        "modelAnswers": [
+          "Both goals matter, and careful site selection can reduce unnecessary conflicts between them."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "How can governments build public trust in difficult policy decisions?",
+        "modelAnswers": [
+          "They should share evidence early, invite meaningful participation, and explain how public feedback influenced the outcome."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_022",
+    "grade": "pre1",
+    "stage": 22,
+    "band": "mock",
+    "title": "Checking Fairness in Educational AI",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A school district was evaluating a new AI system designed to recommend study materials.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Teachers see software recommending different lessons to students",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Teacher notices some students repeatedly receive easier material",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "District investigates training data and adjusts system",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Students receive broader study options while teachers monitor recommendations",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A school district was evaluating a new AI system designed to recommend study materials. A school district introduced an AI tool that recommended learning materials based on students' previous answers. Initially, teachers welcomed the extra support. However, one teacher noticed that some students were repeatedly assigned simple exercises even after making progress. She raised the issue with the district, which reviewed the system's data and decision rules. The investigation showed that earlier mistakes were influencing recommendations too strongly. The district changed the settings and required regular teacher reviews. Students then received a wider range of appropriately challenging materials."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the teacher who discovered this pattern, what would you be thinking?",
+        "modelAnswers": [
+          "I would be concerned that the system was limiting students' opportunities rather than helping them improve."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should AI systems make important educational decisions without teacher approval?",
+        "modelAnswers": [
+          "No. Teachers should remain responsible for high-stakes decisions, using automated recommendations only as supporting information."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Could personalized learning technology increase inequality?",
+        "modelAnswers": [
+          "Yes, if it relies on biased data or unequal access, so fairness checks and teacher involvement are essential."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "What skills will remain important even as AI becomes more capable?",
+        "modelAnswers": [
+          "Critical thinking, creativity, communication, and ethical judgment will remain central to learning and work."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_023",
+    "grade": "pre1",
+    "stage": 23,
+    "band": "mock",
+    "title": "A Community Food Cooperative",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A social entrepreneur was looking for ways to help families struggling with rising food prices.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Families compare expensive groceries and leave some items behind",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Entrepreneur proposes a member-run food cooperative",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Volunteers partner with farmers and arrange bulk purchases",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Cooperative opens and members share affordable food while covering costs",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A social entrepreneur was looking for ways to help families struggling with rising food prices. A social entrepreneur learned that many families were finding it difficult to afford fresh groceries. She proposed creating a food cooperative where members could purchase products in larger quantities directly from local farms. Several volunteers agreed to help organize orders and deliveries. At first, the group struggled to estimate demand and cover storage costs. After adjusting the system, the cooperative opened in a small community space and began offering affordable food. The entrepreneur was pleased, but she continued reviewing the finances to ensure that the project could survive without constant donations."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the entrepreneur facing storage costs, what would you be thinking?",
+        "modelAnswers": [
+          "I would want a financially sustainable plan so that the cooperative could continue supporting families over the long term."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should governments support social enterprises that address food insecurity?",
+        "modelAnswers": [
+          "Yes, when they demonstrate measurable public benefits and manage resources responsibly."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can local food systems help communities become more resilient?",
+        "modelAnswers": [
+          "They can diversify supply chains and strengthen relationships with producers, although they cannot replace all wider distribution networks."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Is access to nutritious food mainly a personal responsibility?",
+        "modelAnswers": [
+          "Individuals make choices, but income, location, and food prices also shape what options are available."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_024",
+    "grade": "pre1",
+    "stage": 24,
+    "band": "mock",
+    "title": "Facial Recognition at a Station",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A transport authority was considering a camera system to improve security at a busy station.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Crowded station suffers repeated thefts and officials propose facial recognition",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Privacy group asks authority how images will be stored and used",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Authority holds public hearing and limits data collection",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Station uses revised security plan with clear notices and independent review",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A transport authority was considering a camera system to improve security at a busy station. A transport authority was concerned about repeated thefts at a busy station. A supplier recommended installing a facial-recognition system, claiming that it could identify suspects quickly. The authority initially supported the idea, but a privacy group asked how travelers' images would be stored and whether innocent people might be wrongly identified. Officials held a public hearing and commissioned an independent review. They eventually adopted a narrower security plan with strict limits on data collection and clear public notices. The authority decided to evaluate the program regularly rather than assuming that new technology automatically improved safety."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were an official listening to the privacy concerns, what would you be thinking?",
+        "modelAnswers": [
+          "I would want evidence that the technology was effective and that safeguards could prevent misuse or mistaken identification."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should facial-recognition technology be used in public places?",
+        "modelAnswers": [
+          "Only in carefully defined situations with strong oversight, transparency, and meaningful limits on data retention."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Is personal privacy becoming less important to younger generations?",
+        "modelAnswers": [
+          "I do not think so. Many young people value privacy, although they may not understand every way their data is collected."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should public safety always take priority over individual freedoms?",
+        "modelAnswers": [
+          "Not automatically. Restrictions on freedom should be necessary, proportionate, and subject to independent review."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_025",
+    "grade": "pre1",
+    "stage": 25,
+    "band": "mock",
+    "title": "Restoring a Historic Theater",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A local historian was trying to save an old theater that had fallen into disrepair.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Old theater has leaking roof and a notice of possible demolition",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Historian meets residents and business owners to propose restoration",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Volunteers and craftspeople repair building while preserving original details",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Theater reopens for community performances and residents gather",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A local historian was trying to save an old theater that had fallen into disrepair. A local historian learned that an old theater might be demolished because its roof was leaking and repairs were expensive. She believed the building was an important part of the town's cultural history. She organized a meeting and invited residents, business owners, and preservation experts to discuss alternatives. With a combination of donations and public funding, the town began a careful restoration project. After months of work, the theater reopened for community performances. The historian was delighted to see young performers using a building that had connected generations of residents."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the historian at the first meeting, what would you be thinking?",
+        "modelAnswers": [
+          "I would hope to persuade people that the theater's cultural value justified a realistic restoration plan."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should historic buildings be preserved even when restoration is expensive?",
+        "modelAnswers": [
+          "Important buildings deserve protection, but each project should be evaluated for cultural value, cost, and future use."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can cultural heritage contribute to local economic development?",
+        "modelAnswers": [
+          "Yes. Well-managed heritage sites can attract visitors and create jobs while strengthening local identity."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should modern architecture imitate traditional local styles?",
+        "modelAnswers": [
+          "Not necessarily. New buildings can respect their surroundings without copying the past exactly."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_026",
+    "grade": "pre1",
+    "stage": 26,
+    "band": "mock",
+    "title": "Responding to Extreme Heat",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A city health officer was preparing a summer plan after record-breaking temperatures.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Residents wait for buses in direct sun while an older man feels unwell",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Officer proposes shaded shelters and public cooling spaces",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Workers install shade and local centers extend daytime hours",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Residents use cooling spaces during heatwave and officer reviews hospital visits",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A city health officer was preparing a summer plan after record-breaking temperatures. A city health officer became worried after a period of extreme heat led to more people seeking medical help. She noticed that many bus stops offered no shade and that older residents living alone were especially vulnerable. During a planning meeting, she recommended installing shaded shelters and opening public cooling spaces. The city worked with local centers to extend their daytime hours and distributed information about heat risks. When the next heatwave arrived, residents had more places to rest and drink water. The officer continued collecting health data to evaluate the effectiveness of the measures."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the officer planning the response, what would you be thinking?",
+        "modelAnswers": [
+          "I would prioritize residents most exposed to heat while developing measures that could be maintained in future summers."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should cities invest more in adapting to extreme weather?",
+        "modelAnswers": [
+          "Yes. Adaptation can protect lives, although it must be combined with efforts to reduce the causes of climate change."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Are air-conditioned public spaces a good solution to extreme heat?",
+        "modelAnswers": [
+          "They provide important short-term protection, but cities should also improve shade, building design, and access to drinking water."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Who should receive priority during periods of extreme heat?",
+        "modelAnswers": [
+          "People at greater risk, including older residents, outdoor workers, and those without safe cooling options, should receive additional support."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_027",
+    "grade": "pre1",
+    "stage": 27,
+    "band": "mock",
+    "title": "Giving Students a Voice",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A school-board member was preparing to review policies that affected teenagers in the district.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Students complain that decisions are made without consulting them",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Board member invites student representatives to a meeting",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Students present survey results and propose timetable adjustments",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Board adopts trial schedule and students monitor feedback",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A school-board member was preparing to review policies that affected teenagers in the district. A school-board member received complaints that decisions about school schedules were being made without asking students. She decided to invite student representatives to a public meeting. Before attending, the students surveyed their classmates and prepared evidence about commuting times and after-school responsibilities. The board listened to their presentation and agreed to test a revised timetable for one term. Although the change did not solve every problem, students appreciated being included in the process. The board member decided to establish a regular student advisory group."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the board member listening to the students' evidence, what would you be thinking?",
+        "modelAnswers": [
+          "I would recognize that students could make informed contributions when given access to information and a genuine opportunity to speak."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should teenagers be given more influence over education policy?",
+        "modelAnswers": [
+          "Yes. Their perspectives are essential, but decisions should also consider teachers, families, and long-term educational goals."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Should the voting age be lowered further in democratic countries?",
+        "modelAnswers": [
+          "It is worth discussing, especially if civic education is strengthened, though the potential effects vary across political systems."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "How can schools encourage meaningful civic participation?",
+        "modelAnswers": [
+          "They can offer student councils with real responsibilities, teach evidence-based debate, and show how decisions are made."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_028",
+    "grade": "pre1",
+    "stage": 28,
+    "band": "mock",
+    "title": "Protecting Platform Workers",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A labor inspector was investigating complaints from people working through delivery apps.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Courier studies phone showing long hours and low pay",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Workers meet inspector to explain unpredictable earnings",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "City and companies discuss minimum standards and insurance",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Company introduces clearer payments and safety support while inspector monitors results",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A labor inspector was investigating complaints from people working through delivery apps. A labor inspector received complaints from delivery couriers who said their earnings were unpredictable and insurance coverage was unclear. She arranged a meeting where workers could explain their experiences. Some workers valued flexible schedules, but others worried about accidents and sudden changes to payment rules. The inspector contacted the delivery companies and encouraged discussions about minimum standards and transparent contracts. One company later introduced clearer payment information and additional safety support. The inspector continued monitoring conditions because she knew that flexibility should not come at the cost of basic protections."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the inspector after hearing the couriers, what would you be thinking?",
+        "modelAnswers": [
+          "I would want regulations that protect workers without eliminating the flexibility many of them value."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should app-based workers receive benefits similar to regular employees?",
+        "modelAnswers": [
+          "Where they face comparable risks and dependence, basic protections should apply, although benefit systems may need flexible designs."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Does the gig economy offer more freedom or insecurity?",
+        "modelAnswers": [
+          "It offers both. Workers gain scheduling options but may experience unstable income and limited protection."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Who should bear the cost of protecting workers in new industries?",
+        "modelAnswers": [
+          "Companies, workers, and public systems may all contribute, but responsibility should reflect who controls the working conditions."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_029",
+    "grade": "pre1",
+    "stage": 29,
+    "band": "mock",
+    "title": "A Smart-City Data Project",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A city technology officer was proposing sensors to improve traffic management.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Officer shows dashboard measuring traffic and pedestrian movement",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Resident asks whether cameras could track individual people",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Team redesigns system to collect anonymous counts and publish safeguards",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "City launches limited pilot and evaluates traffic patterns without tracking identities",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A city technology officer was proposing sensors to improve traffic management. A city technology officer wanted to introduce sensors that would measure traffic and pedestrian movement. She argued that the data could help planners reduce congestion and improve safety. During a public meeting, however, a resident asked whether the equipment could identify individual people. The officer realized that the original explanation had not addressed privacy concerns. Her team redesigned the pilot to collect anonymous counts instead of personal records and published a clear description of the safeguards. The project then began on a limited scale, with an independent review scheduled before any expansion."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the officer after the resident's question, what would you be thinking?",
+        "modelAnswers": [
+          "I would recognize that public trust depends on explaining what data is collected and why it is necessary."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should cities collect data about residents to improve public services?",
+        "modelAnswers": [
+          "They may collect limited, necessary data, but should minimize personal information and allow independent oversight."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Can anonymous data ever create privacy risks?",
+        "modelAnswers": [
+          "Yes. Some datasets can be combined to reveal identities, so anonymization must be tested carefully."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "Should citizens be allowed to reject technologies introduced by local government?",
+        "modelAnswers": [
+          "They should have meaningful opportunities to challenge projects and demand safeguards, especially when essential rights may be affected."
+        ]
+      }
+    ],
+    "guidance": []
+  },
+  {
+    "id": "ep1_030",
+    "grade": "pre1",
+    "stage": 30,
+    "band": "mock",
+    "title": "Autonomous Delivery on Sidewalks",
+    "preparationSeconds": 60,
+    "narrationSeconds": 120,
+    "storyLeadIn": "A city official was examining a proposal to use small delivery robots in crowded neighborhoods.",
+    "visual": {
+      "status": "pending",
+      "type": "four_panel",
+      "panels": [
+        {
+          "number": 1,
+          "description": "Delivery company demonstrates robot carrying groceries on sidewalk",
+          "imageSrc": null
+        },
+        {
+          "number": 2,
+          "description": "Parent with stroller finds narrow pavement partly blocked by robot",
+          "imageSrc": null
+        },
+        {
+          "number": 3,
+          "description": "Official organizes safety tests with residents and company",
+          "imageSrc": null
+        },
+        {
+          "number": 4,
+          "description": "Robot follows revised routes and local officials monitor pedestrian access",
+          "imageSrc": null
+        }
+      ],
+      "imageSrc": null
+    },
+    "narration": {
+      "prompt": "Please narrate the story in the four pictures. Start with the printed opening sentence.",
+      "modelAnswers": [
+        "A city official was examining a proposal to use small delivery robots in crowded neighborhoods. A city official was approached by a company that wanted to use small delivery robots on public sidewalks. The robots promised to reduce the need for short delivery trips by car. During a demonstration, however, a parent pushing a stroller had difficulty passing a robot on a narrow pavement. The official organized safety tests with residents, disability advocates, and the company. They agreed on slower speeds and revised routes that avoided busy or narrow walkways. The service began on a limited basis, while the city continued checking whether pedestrian access was being protected."
+      ]
+    },
+    "questions": [
+      {
+        "number": 1,
+        "type": "picture_related_perspective",
+        "prompt": "If you were the official watching the blocked sidewalk, what would you be thinking?",
+        "modelAnswers": [
+          "I would realize that convenience for customers cannot justify creating obstacles for pedestrians, particularly those with mobility needs."
+        ]
+      },
+      {
+        "number": 2,
+        "type": "topic_opinion",
+        "prompt": "Should delivery robots be permitted on public sidewalks?",
+        "modelAnswers": [
+          "They can be useful if routes, speed limits, and safety standards are strictly controlled and enforced."
+        ]
+      },
+      {
+        "number": 3,
+        "type": "topic_social_opinion",
+        "prompt": "Will autonomous systems make urban life more convenient?",
+        "modelAnswers": [
+          "They may improve efficiency, but cities must consider accessibility, employment, reliability, and public safety."
+        ]
+      },
+      {
+        "number": 4,
+        "type": "broader_social_opinion",
+        "prompt": "How should governments respond when innovation develops faster than regulations?",
+        "modelAnswers": [
+          "They should use transparent trials, independent evidence, and adaptable rules rather than either banning everything or allowing unrestricted deployment."
+        ]
+      }
+    ],
+    "guidance": []
+  }
+]
