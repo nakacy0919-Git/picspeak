@@ -7,8 +7,9 @@
     "title": "Community Bike Sharing",
     "passage": {
       "title": "Community Bike Sharing",
-      "text": "Many cities now offer bicycles that people can rent for short trips. Riders can pick up a bicycle at one station and return it to another. This service is useful for people who do not own bicycles or want to avoid crowded buses.",
-      "preparationSeconds": 20
+      "text": "Many cities now offer bicycles that people can rent for short trips. Riders can pick up a bicycle at one station and return it to another. This service is useful for people who do not own bicycles or want to avoid crowded buses. Some stations also offer helmets and information about safe routes for first-time riders.",
+      "preparationSeconds": 20,
+      "wordCount": 56
     },
     "visual": {
       "status": "pending",
@@ -72,8 +73,9 @@
     "title": "Digital School Notices",
     "passage": {
       "title": "Digital School Notices",
-      "text": "Some schools send important notices to parents through online systems. Parents can read them on their phones instead of receiving many paper letters. The systems may also help teachers share information quickly when class schedules change.",
-      "preparationSeconds": 20
+      "text": "Some schools send important notices to parents through online systems. Parents can read them on their phones instead of receiving many paper letters. The systems may also help teachers share information quickly when class schedules change. Schools must still help families who cannot easily use the internet at home.",
+      "preparationSeconds": 20,
+      "wordCount": 49
     },
     "visual": {
       "status": "pending",
@@ -137,8 +139,9 @@
     "title": "Local Food Festivals",
     "passage": {
       "title": "Local Food Festivals",
-      "text": "Local food festivals give visitors a chance to try dishes made by nearby farmers and restaurants. Some events also include cooking lessons. By attending these festivals, people can discover new foods and learn more about their region.",
-      "preparationSeconds": 20
+      "text": "Local food festivals give visitors a chance to try dishes made by nearby farmers and restaurants. Some events also include cooking lessons. By attending these festivals, people can discover new foods and learn more about their region. Organizers may invite students to prepare small displays about traditional foods and recipes.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -202,8 +205,9 @@
     "title": "Reading to Younger Children",
     "passage": {
       "title": "Reading to Younger Children",
-      "text": "Some high school students volunteer to read picture books to younger children. They visit libraries and community centers on weekends. The activity helps children enjoy stories and gives the older students a chance to improve their communication skills.",
-      "preparationSeconds": 20
+      "text": "Some high school students volunteer to read picture books to younger children. They visit libraries and community centers on weekends. The activity helps children enjoy stories and gives the older students a chance to improve their communication skills. Volunteers usually select age-appropriate books and practice reading them before meeting the children.",
+      "preparationSeconds": 20,
+      "wordCount": 51
     },
     "visual": {
       "status": "pending",
@@ -267,8 +271,9 @@
     "title": "Plastic-free Lunches",
     "passage": {
       "title": "Plastic-free Lunches",
-      "text": "Some families are trying to use fewer disposable containers for lunch. They bring reusable boxes and bottles when they go out. This small change can reduce trash, although families need to wash the containers after using them.",
-      "preparationSeconds": 20
+      "text": "Some families are trying to use fewer disposable containers for lunch. They bring reusable boxes and bottles when they go out. This small change can reduce trash, although families need to wash the containers after using them. Some families find reusable containers easier to carry because their lids close securely.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -332,8 +337,9 @@
     "title": "Small Science Museums",
     "passage": {
       "title": "Small Science Museums",
-      "text": "Science museums sometimes provide experiments that visitors can try themselves. Children may build simple machines or study plants with microscopes. These activities make difficult ideas easier to understand and can encourage students to become interested in science.",
-      "preparationSeconds": 20
+      "text": "Science museums sometimes provide experiments that visitors can try themselves. Children may build simple machines or study plants with microscopes. These activities make difficult ideas easier to understand and can encourage students to become interested in science. Visitors often remember scientific ideas better when they can actually try an experiment.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -397,8 +403,9 @@
     "title": "Public Water Stations",
     "passage": {
       "title": "Public Water Stations",
-      "text": "Some towns have installed machines that provide free drinking water in parks and stations. People can fill their own bottles instead of buying new ones. These stations are especially useful during hot weather, when staying hydrated is important.",
-      "preparationSeconds": 20
+      "text": "Some towns have installed machines that provide free drinking water in parks and stations. People can fill their own bottles instead of buying new ones. These stations are especially useful during hot weather, when staying hydrated is important. Local officials must check the machines regularly to keep the water clean and safe.",
+      "preparationSeconds": 20,
+      "wordCount": 52
     },
     "visual": {
       "status": "pending",
@@ -462,8 +469,9 @@
     "title": "Community Language Exchange",
     "passage": {
       "title": "Community Language Exchange",
-      "text": "In some towns, residents meet to practice speaking different languages. They play games, discuss their cultures, and help one another learn useful expressions. Such events are often inexpensive and can help newcomers make friends in the community.",
-      "preparationSeconds": 20
+      "text": "In some towns, residents meet to practice speaking different languages. They play games, discuss their cultures, and help one another learn useful expressions. Such events are often inexpensive and can help newcomers make friends in the community. Some events include short introductions that help new participants feel comfortable about speaking.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -527,8 +535,9 @@
     "title": "Repairing Old Clothes",
     "passage": {
       "title": "Repairing Old Clothes",
-      "text": "Some people repair damaged clothes instead of throwing them away. They may sew a loose button or fix a small hole. Repair workshops teach these skills, helping people save money and use their clothes for a longer time.",
-      "preparationSeconds": 20
+      "text": "Some people repair damaged clothes instead of throwing them away. They may sew a loose button or fix a small hole. Repair workshops teach these skills, helping people save money and use their clothes for a longer time. Learning to repair clothes also helps people understand how everyday products are made.",
+      "preparationSeconds": 20,
+      "wordCount": 51
     },
     "visual": {
       "status": "pending",
@@ -592,8 +601,9 @@
     "title": "Morning Walking Groups",
     "passage": {
       "title": "Morning Walking Groups",
-      "text": "In many neighborhoods, people meet for short walks before breakfast. Walking with others can make exercise more enjoyable, especially for older residents. Group members often choose safe routes and encourage one another to stay active throughout the year.",
-      "preparationSeconds": 20
+      "text": "In many neighborhoods, people meet for short walks before breakfast. Walking with others can make exercise more enjoyable, especially for older residents. Group members often choose safe routes and encourage one another to stay active throughout the year. Even short walks can become a positive habit when people meet at regular times.",
+      "preparationSeconds": 20,
+      "wordCount": 52
     },
     "visual": {
       "status": "pending",
@@ -657,8 +667,9 @@
     "title": "Online Shopping Returns",
     "passage": {
       "title": "Online Shopping Returns",
-      "text": "Buying things online is convenient, but sometimes products arrive in the wrong size. Many stores allow customers to send items back. Before ordering, shoppers should check return rules carefully so they know what to do if there is a problem.",
-      "preparationSeconds": 20
+      "text": "Buying things online is convenient, but sometimes products arrive in the wrong size. Many stores allow customers to send items back. Before ordering, shoppers should check return rules carefully so they know what to do if there is a problem. Customers can save time by keeping the original package until they check their purchases.",
+      "preparationSeconds": 20,
+      "wordCount": 54
     },
     "visual": {
       "status": "pending",
@@ -720,8 +731,9 @@
     "title": "Healthy School Snacks",
     "passage": {
       "title": "Healthy School Snacks",
-      "text": "Some school cafeterias now sell fruit, yogurt, and other healthy snacks. Students can choose these foods between classes instead of buying sweets every day. Offering a variety of choices may help young people build better eating habits.",
-      "preparationSeconds": 20
+      "text": "Some school cafeterias now sell fruit, yogurt, and other healthy snacks. Students can choose these foods between classes instead of buying sweets every day. Offering a variety of choices may help young people build better eating habits. Some cafeterias ask students which healthy foods they would most like to buy.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -783,8 +795,9 @@
     "title": "Tourist Information Volunteers",
     "passage": {
       "title": "Tourist Information Volunteers",
-      "text": "Volunteer guides help visitors find interesting places in their cities. They may explain local history, suggest walking routes, or answer questions in foreign languages. Their work makes travel easier and can introduce visitors to places that are not famous.",
-      "preparationSeconds": 20
+      "text": "Volunteer guides help visitors find interesting places in their cities. They may explain local history, suggest walking routes, or answer questions in foreign languages. Their work makes travel easier and can introduce visitors to places that are not famous. Guides can also recommend quieter places that do not appear in popular travel magazines.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
@@ -846,8 +859,9 @@
     "title": "Borrowing Sports Equipment",
     "passage": {
       "title": "Borrowing Sports Equipment",
-      "text": "Some community centers lend sports equipment to local residents. Families can borrow balls, rackets, or helmets for a small fee. This service allows people to try activities without buying expensive equipment that they may use only once.",
-      "preparationSeconds": 20
+      "text": "Some community centers lend sports equipment to local residents. Families can borrow balls, rackets, or helmets for a small fee. This service allows people to try activities without buying expensive equipment that they may use only once. Community staff explain the rules and inspect equipment before lending it to residents.",
+      "preparationSeconds": 20,
+      "wordCount": 50
     },
     "visual": {
       "status": "pending",
@@ -909,8 +923,9 @@
     "title": "Weather Alert Apps",
     "passage": {
       "title": "Weather Alert Apps",
-      "text": "Weather alert apps warn people about heavy rain or strong winds. Users can check local forecasts before leaving home. Although these apps are useful, people should also follow official instructions during dangerous weather instead of relying on phones alone.",
-      "preparationSeconds": 20
+      "text": "Weather alert apps warn people about heavy rain or strong winds. Users can check local forecasts before leaving home. Although these apps are useful, people should also follow official instructions during dangerous weather instead of relying on phones alone. Many apps also provide advice about emergency shelters and dangerous roads during storms.",
+      "preparationSeconds": 20,
+      "wordCount": 52
     },
     "visual": {
       "status": "pending",
@@ -972,8 +987,9 @@
     "title": "Farm Visits for Students",
     "passage": {
       "title": "Farm Visits for Students",
-      "text": "Some schools organize visits to farms so students can learn where food comes from. During these trips, they may plant vegetables, feed animals, or speak with farmers. Such experiences can help students appreciate the work needed to produce food.",
-      "preparationSeconds": 20
+      "text": "Some schools organize visits to farms so students can learn where food comes from. During these trips, they may plant vegetables, feed animals, or speak with farmers. Such experiences can help students appreciate the work needed to produce food. Teachers ask students to write short reports about what they observed at the farms.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
@@ -1035,8 +1051,9 @@
     "title": "Quiet Spaces in Libraries",
     "passage": {
       "title": "Quiet Spaces in Libraries",
-      "text": "Many libraries now provide separate areas for silent study and group discussions. Students can choose the space that fits their needs. Libraries sometimes use signs to remind visitors about noise rules so that everyone can work comfortably.",
-      "preparationSeconds": 20
+      "text": "Many libraries now provide separate areas for silent study and group discussions. Students can choose the space that fits their needs. Libraries sometimes use signs to remind visitors about noise rules so that everyone can work comfortably. Visitors are expected to respect the needs of other users in each of these areas.",
+      "preparationSeconds": 20,
+      "wordCount": 52
     },
     "visual": {
       "status": "pending",
@@ -1098,8 +1115,9 @@
     "title": "Food Donation Boxes",
     "passage": {
       "title": "Food Donation Boxes",
-      "text": "Some supermarkets place donation boxes near their entrances. Customers can leave unopened food that they do not need. Volunteers then deliver suitable items to organizations that help families experiencing difficulties, reducing waste while supporting people in the community.",
-      "preparationSeconds": 20
+      "text": "Some supermarkets place donation boxes near their entrances. Customers can leave unopened food that they do not need. Volunteers then deliver suitable items to organizations that help families experiencing difficulties, reducing waste while supporting people in the community. Donation programs often provide clear instructions about which kinds of food are acceptable.",
+      "preparationSeconds": 20,
+      "wordCount": 51
     },
     "visual": {
       "status": "pending",
@@ -1161,8 +1179,9 @@
     "title": "Local History Walking Tours",
     "passage": {
       "title": "Local History Walking Tours",
-      "text": "Walking tours allow visitors to learn about the history of streets and buildings. Guides often share stories that are not written on signs. These tours can be enjoyable for both tourists and local people who want to rediscover their hometowns.",
-      "preparationSeconds": 20
+      "text": "Walking tours allow visitors to learn about the history of streets and buildings. Guides often share stories that are not written on signs. These tours can be enjoyable for both tourists and local people who want to rediscover their hometowns. Guides may ask questions and encourage participants to share memories of local places.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
@@ -1224,8 +1243,9 @@
     "title": "Sharing Textbooks",
     "passage": {
       "title": "Sharing Textbooks",
-      "text": "Some students exchange textbooks that they no longer need. Schools can organize events where students give books to younger classmates. Reusing books can reduce costs for families, but students must make sure that the materials are still in good condition.",
-      "preparationSeconds": 20
+      "text": "Some students exchange textbooks that they no longer need. Schools can organize events where students give books to younger classmates. Reusing books can reduce costs for families, but students must make sure that the materials are still in good condition. Teachers can check the books and help students find editions suitable for their classes.",
+      "preparationSeconds": 20,
+      "wordCount": 54
     },
     "visual": {
       "status": "pending",
@@ -1287,8 +1307,9 @@
     "title": "Planting Trees in Town",
     "passage": {
       "title": "Planting Trees in Town",
-      "text": "Many towns plant trees along roads and near schools. Trees can provide shade during hot months and create pleasant places to walk. However, residents must water young trees and care for them until they are strong enough to grow well.",
-      "preparationSeconds": 20
+      "text": "Many towns plant trees along roads and near schools. Trees can provide shade during hot months and create pleasant places to walk. However, residents must water young trees and care for them until they are strong enough to grow well. Community members sometimes help by watering young trees during particularly dry summer weeks.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
@@ -1348,8 +1369,9 @@
     "title": "Learning Through Podcasts",
     "passage": {
       "title": "Learning Through Podcasts",
-      "text": "Some students listen to educational podcasts while traveling or doing simple chores. Podcasts can introduce ideas about history, science, and culture. Because listeners can pause or replay episodes, they are helpful for learners who want to study at their own pace.",
-      "preparationSeconds": 20
+      "text": "Some students listen to educational podcasts while traveling or doing simple chores. Podcasts can introduce ideas about history, science, and culture. Because listeners can pause or replay episodes, they are helpful for learners who want to study at their own pace. However, listeners still need to choose reliable programs and check the information they hear.",
+      "preparationSeconds": 20,
+      "wordCount": 55
     },
     "visual": {
       "status": "pending",
@@ -1409,8 +1431,9 @@
     "title": "Neighborhood Emergency Drills",
     "passage": {
       "title": "Neighborhood Emergency Drills",
-      "text": "Local communities sometimes practice what to do during earthquakes or fires. Residents learn where to gather and how to help each other. These drills are useful because people can act more calmly if a real emergency happens in the future.",
-      "preparationSeconds": 20
+      "text": "Local communities sometimes practice what to do during earthquakes or fires. Residents learn where to gather and how to help each other. These drills are useful because people can act more calmly if a real emergency happens in the future. Practice sessions sometimes include helping people who need extra time or support during evacuation.",
+      "preparationSeconds": 20,
+      "wordCount": 54
     },
     "visual": {
       "status": "pending",
@@ -1470,8 +1493,9 @@
     "title": "Community Music Events",
     "passage": {
       "title": "Community Music Events",
-      "text": "Some neighborhoods organize small concerts in public squares. Local musicians perform while families enjoy music together. These events do not require expensive tickets, and they can give young performers an opportunity to play in front of an audience.",
-      "preparationSeconds": 20
+      "text": "Some neighborhoods organize small concerts in public squares. Local musicians perform while families enjoy music together. These events do not require expensive tickets, and they can give young performers an opportunity to play in front of an audience. Event organizers may also encourage visitors to talk with performers after each concert.",
+      "preparationSeconds": 20,
+      "wordCount": 51
     },
     "visual": {
       "status": "pending",
@@ -1531,8 +1555,9 @@
     "title": "Helping at Animal Shelters",
     "passage": {
       "title": "Helping at Animal Shelters",
-      "text": "Animal shelters care for dogs and cats that need new homes. Volunteers clean living spaces, prepare food, and spend time with the animals. This work is important, but volunteers must learn how to handle animals safely before helping.",
-      "preparationSeconds": 20
+      "text": "Animal shelters care for dogs and cats that need new homes. Volunteers clean living spaces, prepare food, and spend time with the animals. This work is important, but volunteers must learn how to handle animals safely before helping. Shelters often cooperate with veterinarians to ensure that animals receive appropriate medical care.",
+      "preparationSeconds": 20,
+      "wordCount": 51
     },
     "visual": {
       "status": "pending",
@@ -1592,8 +1617,9 @@
     "title": "Using Public Gardens",
     "passage": {
       "title": "Using Public Gardens",
-      "text": "Some cities have opened small gardens where residents can grow vegetables together. People share tools and learn from more experienced gardeners. The gardens can also bring neighbors together, although members need to decide how to divide the work fairly.",
-      "preparationSeconds": 20
+      "text": "Some cities have opened small gardens where residents can grow vegetables together. People share tools and learn from more experienced gardeners. The gardens can also bring neighbors together, although members need to decide how to divide the work fairly. Members sometimes organize schedules so that gardening tasks are shared fairly throughout the year.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
@@ -1653,8 +1679,9 @@
     "title": "Reusing School Uniforms",
     "passage": {
       "title": "Reusing School Uniforms",
-      "text": "Some schools collect uniforms from graduating students and offer them to younger students. Families can save money, and fewer clothes are thrown away. Before being passed on, the uniforms are cleaned and checked so that they can be worn comfortably.",
-      "preparationSeconds": 20
+      "text": "Some schools collect uniforms from graduating students and offer them to younger students. Families can save money, and fewer clothes are thrown away. Before being passed on, the uniforms are cleaned and checked so that they can be worn comfortably. Schools may provide a selection of sizes so that students can find comfortable clothing.",
+      "preparationSeconds": 20,
+      "wordCount": 54
     },
     "visual": {
       "status": "pending",
@@ -1714,8 +1741,9 @@
     "title": "Accessible Playgrounds",
     "passage": {
       "title": "Accessible Playgrounds",
-      "text": "Some parks are installing playground equipment that children with different abilities can enjoy. Wider paths and safer swings make the spaces easier to use. Designers often ask families for ideas before building new playgrounds, hoping to create places where everyone feels welcome.",
-      "preparationSeconds": 20
+      "text": "Some parks are installing playground equipment that children with different abilities can enjoy. Wider paths and safer swings make the spaces easier to use. Designers often ask families for ideas before building new playgrounds, hoping to create places where everyone feels welcome. Families are often asked to give feedback about accessibility before the equipment is installed.",
+      "preparationSeconds": 20,
+      "wordCount": 56
     },
     "visual": {
       "status": "pending",
@@ -1775,8 +1803,9 @@
     "title": "Preparing for Job Interviews",
     "passage": {
       "title": "Preparing for Job Interviews",
-      "text": "Some schools invite local workers to help students practice job interviews. Students learn how to answer questions clearly and describe their strengths. Practicing several times can make them more confident, even if they feel nervous when speaking to unfamiliar adults.",
-      "preparationSeconds": 20
+      "text": "Some schools invite local workers to help students practice job interviews. Students learn how to answer questions clearly and describe their strengths. Practicing several times can make them more confident, even if they feel nervous when speaking to unfamiliar adults. Local professionals may explain which personal skills are useful in different kinds of jobs.",
+      "preparationSeconds": 20,
+      "wordCount": 54
     },
     "visual": {
       "status": "pending",
@@ -1836,8 +1865,9 @@
     "title": "Protecting Rivers",
     "passage": {
       "title": "Protecting Rivers",
-      "text": "Community groups sometimes organize projects to protect local rivers. Volunteers remove litter, test water quality, and teach children about wildlife. By collecting information regularly, they can notice changes in the environment and explain to residents why clean rivers matter.",
-      "preparationSeconds": 20
+      "text": "Community groups sometimes organize projects to protect local rivers. Volunteers remove litter, test water quality, and teach children about wildlife. By collecting information regularly, they can notice changes in the environment and explain to residents why clean rivers matter. Students can compare water test results over time and present their findings to residents.",
+      "preparationSeconds": 20,
+      "wordCount": 53
     },
     "visual": {
       "status": "pending",
