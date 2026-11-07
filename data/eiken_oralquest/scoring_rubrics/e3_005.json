@@ -1,0 +1,211 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_005",
+  "grade": "3",
+  "stage": 5,
+  "title": "At the Zoo",
+  "imageFilename": "e3_005.webp",
+  "imageSha256": "a74fd60379040d39fee27476437f0e06b3f0cc10e96429f4ddccd602332e7e07",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_005.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "ready_for_practice_only",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "reviewNotes": "Reviewed the single high-quality zoo image: a man/father in blue is pointing toward a large elephant; a young boy in a blue cap is looking through black binoculars; a girl in pink watches at the railing. Exactly two clearly foreground children are standing beside the man. A large elephant and zoo sign are visible. The originally planned giraffe and keeper are NOT present; questions have been revised to match the actual scene.",
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A boy is looking through binoculars. A man is pointing at an elephant. A girl is watching the elephant. They are at the zoo.",
+    "facts": [
+      {
+        "id": "boy_binoculars",
+        "labelJa": "男の子が双眼鏡で見ている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "child",
+                "son",
+                "he",
+                "young boy"
+              ],
+              [
+                "binoculars",
+                "binocular",
+                "field glasses"
+              ],
+              [
+                "looking",
+                "looking through",
+                "watching",
+                "using",
+                "holding",
+                "looking at",
+                "is looking",
+                "is using"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "man_pointing",
+        "labelJa": "男性がゾウを指さしている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "man",
+                "father",
+                "dad",
+                "he",
+                "adult"
+              ],
+              [
+                "pointing",
+                "points",
+                "showing",
+                "indicating"
+              ],
+              [
+                "elephant",
+                "animal"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "girl_watching",
+        "labelJa": "女の子がゾウを見ている",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "girl",
+                "daughter",
+                "she",
+                "young girl"
+              ],
+              [
+                "watching",
+                "looking",
+                "looking at",
+                "seeing",
+                "observing"
+              ],
+              [
+                "elephant",
+                "animal"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "at_zoo",
+        "labelJa": "動物園の場面である",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "zoo",
+                "animal park",
+                "zoological park"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "男の子がしていること",
+      "full": [
+        {
+          "all": [
+            [
+              "looking",
+              "looking through",
+              "watching",
+              "using",
+              "looking at"
+            ],
+            [
+              "binoculars",
+              "binocular",
+              "field glasses"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "binoculars",
+              "binocular",
+              "field glasses"
+            ]
+          ]
+        }
+      ],
+      "rightRole": [
+        "boy",
+        "child",
+        "son",
+        "he"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "girl",
+        "she",
+        "woman",
+        "mother",
+        "dad",
+        "father",
+        "man"
+      ],
+      "examples": [
+        "He is looking through binoculars.",
+        "The boy is using binoculars.",
+        "He is looking at the elephant with binoculars."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "男性の隣にいる子どもの人数",
+      "full": [
+        {
+          "all": [
+            [
+              "two",
+              "2"
+            ]
+          ]
+        }
+      ],
+      "partial": [],
+      "rejectExpressions": [
+        "not two",
+        "not 2",
+        "more than two",
+        "fewer than two",
+        "less than two"
+      ],
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
+      "examples": [
+        "Two.",
+        "Two children.",
+        "There are two children standing next to him."
+      ]
+    }
+  }
+}
