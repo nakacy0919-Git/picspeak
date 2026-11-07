@@ -33,15 +33,30 @@
       "githubBinaryUploaded": false,
       "scoringRubric": "scoring_rubrics/e3_002.json",
       "scoringStatus": "image_reviewed_and_rules_tested"
+    },
+    {
+      "id": "e3_003",
+      "stage": 3,
+      "title": "A Rainy Morning",
+      "filename": "e3_003.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_003.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp",
+      "sha256": "acf92f075edd4a9c63a6693454de23b36d4b53485c711ac5b792a131754fd215",
+      "dimensions": "1600x1200",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_003.json",
+      "scoringStatus": "image_reviewed_and_rules_created"
     }
   ],
   "next": {
-    "id": "e3_003",
-    "stage": 3,
-    "title": "A Rainy Morning",
-    "filename": "e3_003.webp",
+    "id": "e3_004",
+    "stage": 4,
+    "title": "Weekend Cooking",
+    "filename": "e3_004.webp",
     "status": "awaiting_illustration_and_scoring",
-    "scene": "Rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, a bicycle beside a tree."
+    "scene": "Kitchen: father cutting carrots, daughter washing tomatoes, three plates on a dining table."
   },
-  "notes": "Stage 01 and Stage 02 files are safely saved in ChatGPT Library, with independent practice-scoring rubrics committed to development branch. Binary image assets have not yet been committed to GitHub, so app imageSrc stays null."
+  "notes": "Stages 01–03 images saved in ChatGPT Library; all three have card-specific scoring rubrics in GitHub development branch. GitHub binary images not yet committed, so app imageSrc stays null."
 }
