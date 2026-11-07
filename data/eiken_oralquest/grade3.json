@@ -90,7 +90,11 @@
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_002.webp",
       "promptId": "e3_002",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_002.webp",
+      "reviewedHanddrawnImage": true,
+      "actualImageSize": "1536x1024",
+      "imageSha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5"
     },
     "questions": [
       {
@@ -155,11 +159,15 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree.",
+      "artDirection": "Rainy school-route scene: a schoolgirl holds a pink umbrella in the foreground; a boy walks wearing a yellow hooded raincoat; an unattended blue bicycle is parked next to a tall green tree in the background on the right. Rain, puddles and distant houses.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_003.webp",
       "promptId": "e3_003",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_003.webp",
+      "reviewedHanddrawnImage": true,
+      "actualImageSize": "1536x1024",
+      "imageSha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81"
     },
     "questions": [
       {
@@ -173,9 +181,10 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the woman holding?",
+        "prompt": "What is the girl holding?",
         "modelAnswers": [
-          "She is holding an umbrella."
+          "She is holding an umbrella.",
+          "She is holding a pink umbrella."
         ]
       },
       {
