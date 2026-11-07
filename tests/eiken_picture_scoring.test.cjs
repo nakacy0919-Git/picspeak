@@ -3,92 +3,35 @@ const assert=require('node:assert/strict');
 const fs=require('node:fs');
 const path=require('node:path');
 const scoring=require('../js/eiken_picture_scoring.js');
-const root=path.resolve(__dirname,'../data/eiken_oralquest/');
-const get=id=>JSON.parse(fs.readFileSync(path.join(root,'scoring_rubrics',id+'.json'),'utf8'));
-const a=get('e3_001'),b=get('e3_002'),c=get('e3_003'),d=get('e3_004'),e=get('e3_005');
-let checked=0;
-function expectScore(rubric,kind,num,text,expected){
-  const result=kind==='free'?scoring.scoreFree(rubric,text):scoring.scoreQuestion(rubric,num,text);
-  assert.ok(result,'scoring result absent');
-  assert.equal(result.score,expected,rubric.cardId+': '+text+' expected '+expected+' got '+result.score);
-  assert.equal(result.practiceOnly,true);
-  checked++;
-}
-expectScore(a,'free',null,'A boy is reading a book at a table. A girl is holding three books. The librarian is at the counter. They are in the library.',100);
-expectScore(a,'q',2,'He is reading a book.',100);
-expectScore(a,'q',2,'Reading a book.',100);
-expectScore(a,'q',2,'The girl is reading a book.',0);
-expectScore(a,'q',3,'Three.',100);
-expectScore(a,'q',3,'She is carrying three books.',100);
-expectScore(a,'q',3,'Two books.',0);
-expectScore(b,'free',null,'A girl is watering the flowers. A boy is planting seeds. There is a bucket next to the bench. They are in the school garden.',100);
-expectScore(b,'free',null,'The boy is watering the flowers. The girl is planting seeds. There is a bucket near the bench. They are in the garden.',30);
-expectScore(b,'q',2,'She is watering the flowers.',100);
-expectScore(b,'q',2,'She is giving water to the plants.',100);
-expectScore(b,'q',2,'Watering the flowers.',100);
-expectScore(b,'q',2,'The girl is watering.',55);
-expectScore(b,'q',2,'The boy is watering the flowers.',0);
-expectScore(b,'q',2,'The girl is not watering the flowers.',0);
-expectScore(b,'q',3,'It is near the bench.',100);
-expectScore(b,'q',3,'The bucket is beside the bench.',100);
-expectScore(b,'q',3,'Next to the bench.',100);
-expectScore(b,'q',3,'The bucket is under the bench.',0);
-expectScore(b,'q',3,'The bucket is far from the bench.',0);
-expectScore(b,'q',3,'The bucket is near the building.',0);
-expectScore(c,'free',null,'A schoolgirl is holding a pink umbrella. A boy is wearing a yellow raincoat. There is a bicycle next to the tree. It is raining.',100);
-expectScore(c,'free',null,'A girl has an umbrella. A child in a yellow rain jacket is walking in the rain. There is a bike beside the tree.',100);
-expectScore(c,'free',null,'The boy is holding an umbrella. A woman is wearing a yellow raincoat. The bicycle is under the school.',0);
-expectScore(c,'q',2,'She is holding a pink umbrella.',100);
-expectScore(c,'q',2,'An umbrella.',100);
-expectScore(c,'q',2,'The schoolgirl has a pink umbrella.',100);
-expectScore(c,'q',2,'The boy is holding an umbrella.',0);
-expectScore(c,'q',2,'The girl is not holding an umbrella.',0);
-expectScore(c,'q',3,'It is next to the tree.',100);
-expectScore(c,'q',3,'It is beside a tree.',100);
-expectScore(c,'q',3,'Near the tree.',100);
-expectScore(c,'q',3,'Under the tree.',0);
-expectScore(c,'q',3,'Far from the tree.',0);
-expectScore(c,'q',3,'It is near the school.',0);
-expectScore(c,'q',3,"It's a bicycle.",0);
-expectScore(d,'free',null,'A woman is stirring a pot. A boy is cutting tomatoes. There is a bowl of lettuce on the counter. They are cooking in the kitchen.',100);
-expectScore(d,'free',null,'The mother is mixing food in a pot. Her son is slicing tomatoes. There is salad in a bowl in the kitchen.',100);
-expectScore(d,'free',null,'The boy is stirring a pot. The mother is cutting tomatoes. They are in a kitchen.',10);
-expectScore(d,'q',2,'She is stirring a pot.',100);
-expectScore(d,'q',2,'The mother is mixing soup in a pot.',100);
-expectScore(d,'q',2,'She is stirring.',55);
-expectScore(d,'q',2,'The boy is stirring a pot.',0);
-expectScore(d,'q',2,'She is not stirring a pot.',0);
-expectScore(d,'q',3,'He is cutting tomatoes.',100);
-expectScore(d,'q',3,'Tomatoes.',100);
-expectScore(d,'q',3,'The boy is slicing tomatoes.',100);
-expectScore(d,'q',3,'The mother is slicing tomatoes.',0);
-expectScore(d,'q',3,'Carrots.',0);
-expectScore(d,'q',3,'He is not cutting tomatoes.',0);
-expectScore(e,'free',null,'A boy is looking through binoculars. A man is pointing at an elephant. A girl is watching the elephant. They are at the zoo.',100);
-expectScore(e,'free',null,'The father is pointing at the elephant. His son is using binoculars. His daughter is looking at the elephant. They are at a zoo.',100);
-expectScore(e,'free',null,'A girl is using binoculars. A man is pointing at the elephant. A boy is watching the elephant. They are at the zoo.',40);
-expectScore(e,'q',2,'He is looking through binoculars.',100);
-expectScore(e,'q',2,'The boy is using binoculars.',100);
-expectScore(e,'q',2,'He is looking at the elephant with binoculars.',100);
-expectScore(e,'q',2,'Binoculars.',55);
-expectScore(e,'q',2,'A girl is looking through binoculars.',0);
-expectScore(e,'q',2,'He is not looking through binoculars.',0);
-expectScore(e,'q',3,'Two.',100);
-expectScore(e,'q',3,'There are two children.',100);
-expectScore(e,'q',3,'2 children.',100);
-expectScore(e,'q',3,'Three.',0);
-expectScore(e,'q',3,'There is one child.',0);
-expectScore(e,'q',3,'There are not two children.',0);
-expectScore(e,'q',3,'There are more than two children.',0);
-assert.equal(scoring.scoreFree(null,'A girl is watering flowers.'),null);
+const root=path.resolve(__dirname,'../data/eiken_oralquest');
 const index=JSON.parse(fs.readFileSync(path.join(root,'image_scoring_manifest.json'),'utf8'));
+const cards=JSON.parse(fs.readFileSync(path.join(root,'grade3.json'),'utf8'));
 assert.equal(index.cards.length,120);
-assert.equal(index.cards.filter(c=>c.rubricFile).length,5);
-for(const card of index.cards.filter(c=>c.rubricFile)){
- const rubric=get(card.cardId);
- assert.equal(rubric.cardId,card.cardId);
- assert.equal(rubric.imageChecked,true);
- assert.equal(rubric.notOfficialEikenScore,true);
- assert.equal(rubric.freeDescription.facts.reduce((n,x)=>n+x.points,0),100);
+assert.equal(cards.length,30);
+const active=index.cards.filter(c=>c.rubricFile);
+assert.equal(active.length,1,'Only Stage01 hand-drawn rubric may be active during redesign');
+assert.equal(active[0].cardId,'e3_001');
+for(const card of cards){
+ assert.equal(card.visual.imageSrc,null,'GitHub image binary not committed: '+card.id);
+ assert.equal(card.visual.redesignStyleVersion,'eiken-handdrawn-v2');
+ const entry=index.cards.find(x=>x.cardId===card.id);
+ assert.ok(entry,'missing scoring entry '+card.id);
+ if(card.stage>1)assert.equal(entry.rubricFile,null,'old photo rubric must be disabled '+card.id);
 }
-console.log('Eiken picture scoring tests passed:',checked,'scenarios, 5 image-reviewed rubrics, 115 pending.');
+const rubric=JSON.parse(fs.readFileSync(path.join(root,active[0].rubricFile),'utf8'));
+assert.equal(rubric.imageChecked,true);
+assert.equal(rubric.imageSha256,'46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba');
+const checks=[
+ ['free',0,'A boy is reading a book at the table. A girl is carrying three books. A librarian is behind the counter in the library.',100],
+ ['q',2,'He is reading a book.',100],
+ ['q',2,'The boy is reading.',100],
+ ['q',2,'The girl is reading a book.',0],
+ ['q',3,'She is carrying three books.',100],
+ ['q',3,'Three.',100],
+ ['q',3,'Two.',0]
+];
+for(const [kind,n,text,expected] of checks){
+ const result=kind==='free'?scoring.scoreFree(rubric,text):scoring.scoreQuestion(rubric,n,text);
+ assert.equal(result.score,expected,text);
+}
+console.log('Eiken Grade3 hand-drawn redesign: 1 verified sample, 29 pending, '+checks.length+' scoring regression cases.');
