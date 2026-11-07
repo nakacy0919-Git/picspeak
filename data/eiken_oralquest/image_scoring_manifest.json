@@ -1,0 +1,1869 @@
+{
+  "schemaVersion": 1,
+  "createdOn": "2026-11-07",
+  "workflow": "Illustration generated -> check actual visible facts and question consistency -> author card-specific rubric (facts, points, paraphrases, explicit negatives) -> test with correct and incorrect speech transcripts -> save image and rubric -> next card",
+  "gradingMethod": "rule_based_transcript_content_matching; no image analysis at runtime",
+  "disclaimer": "Scores are local practice heuristics, NOT official Eiken marks or pronunciation/fluency/grammar assessment.",
+  "cards": [
+    {
+      "cardId": "e3_001",
+      "grade": "3",
+      "stage": 1,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_001.webp",
+      "rubricStatus": "image_checked",
+      "rubricFile": "scoring_rubrics/e3_001.json",
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_002",
+      "grade": "3",
+      "stage": 2,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_002.webp",
+      "rubricStatus": "image_checked",
+      "rubricFile": "scoring_rubrics/e3_002.json",
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_003",
+      "grade": "3",
+      "stage": 3,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_003.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_004",
+      "grade": "3",
+      "stage": 4,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_004.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_005",
+      "grade": "3",
+      "stage": 5,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_005.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_006",
+      "grade": "3",
+      "stage": 6,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_006.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_007",
+      "grade": "3",
+      "stage": 7,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_007.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_008",
+      "grade": "3",
+      "stage": 8,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_008.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_009",
+      "grade": "3",
+      "stage": 9,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_009.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_010",
+      "grade": "3",
+      "stage": 10,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_010.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_011",
+      "grade": "3",
+      "stage": 11,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_011.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_012",
+      "grade": "3",
+      "stage": 12,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_012.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_013",
+      "grade": "3",
+      "stage": 13,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_013.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_014",
+      "grade": "3",
+      "stage": 14,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_014.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_015",
+      "grade": "3",
+      "stage": 15,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_015.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_016",
+      "grade": "3",
+      "stage": 16,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_016.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_017",
+      "grade": "3",
+      "stage": 17,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_017.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_018",
+      "grade": "3",
+      "stage": 18,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_018.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_019",
+      "grade": "3",
+      "stage": 19,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_019.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_020",
+      "grade": "3",
+      "stage": 20,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_020.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_021",
+      "grade": "3",
+      "stage": 21,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_021.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_022",
+      "grade": "3",
+      "stage": 22,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_022.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_023",
+      "grade": "3",
+      "stage": 23,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_023.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_024",
+      "grade": "3",
+      "stage": 24,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_024.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_025",
+      "grade": "3",
+      "stage": 25,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_025.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_026",
+      "grade": "3",
+      "stage": 26,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_026.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_027",
+      "grade": "3",
+      "stage": 27,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_027.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_028",
+      "grade": "3",
+      "stage": 28,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_028.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_029",
+      "grade": "3",
+      "stage": 29,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_029.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e3_030",
+      "grade": "3",
+      "stage": 30,
+      "imageFile": "assets/images/eiken_oralquest/grade3/e3_030.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_001",
+      "grade": "pre2",
+      "stage": 1,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_001.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_002",
+      "grade": "pre2",
+      "stage": 2,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_002.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_003",
+      "grade": "pre2",
+      "stage": 3,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_003.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_004",
+      "grade": "pre2",
+      "stage": 4,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_004.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_005",
+      "grade": "pre2",
+      "stage": 5,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_005.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_006",
+      "grade": "pre2",
+      "stage": 6,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_006.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_007",
+      "grade": "pre2",
+      "stage": 7,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_007.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_008",
+      "grade": "pre2",
+      "stage": 8,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_008.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_009",
+      "grade": "pre2",
+      "stage": 9,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_009.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_010",
+      "grade": "pre2",
+      "stage": 10,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_010.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_011",
+      "grade": "pre2",
+      "stage": 11,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_011.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_012",
+      "grade": "pre2",
+      "stage": 12,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_012.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_013",
+      "grade": "pre2",
+      "stage": 13,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_013.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_014",
+      "grade": "pre2",
+      "stage": 14,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_014.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_015",
+      "grade": "pre2",
+      "stage": 15,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_015.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_016",
+      "grade": "pre2",
+      "stage": 16,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_016.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_017",
+      "grade": "pre2",
+      "stage": 17,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_017.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_018",
+      "grade": "pre2",
+      "stage": 18,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_018.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_019",
+      "grade": "pre2",
+      "stage": 19,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_019.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_020",
+      "grade": "pre2",
+      "stage": 20,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_020.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_021",
+      "grade": "pre2",
+      "stage": 21,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_021.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_022",
+      "grade": "pre2",
+      "stage": 22,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_022.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_023",
+      "grade": "pre2",
+      "stage": 23,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_023.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_024",
+      "grade": "pre2",
+      "stage": 24,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_024.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_025",
+      "grade": "pre2",
+      "stage": 25,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_025.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_026",
+      "grade": "pre2",
+      "stage": 26,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_026.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_027",
+      "grade": "pre2",
+      "stage": 27,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_027.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_028",
+      "grade": "pre2",
+      "stage": 28,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_028.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_029",
+      "grade": "pre2",
+      "stage": 29,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_029.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep2_030",
+      "grade": "pre2",
+      "stage": 30,
+      "imageFile": "assets/images/eiken_oralquest/pre2/ep2_030.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2,
+          3
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_001",
+      "grade": "2",
+      "stage": 1,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_001.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_002",
+      "grade": "2",
+      "stage": 2,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_002.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_003",
+      "grade": "2",
+      "stage": 3,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_003.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_004",
+      "grade": "2",
+      "stage": 4,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_004.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_005",
+      "grade": "2",
+      "stage": 5,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_005.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_006",
+      "grade": "2",
+      "stage": 6,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_006.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_007",
+      "grade": "2",
+      "stage": 7,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_007.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_008",
+      "grade": "2",
+      "stage": 8,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_008.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_009",
+      "grade": "2",
+      "stage": 9,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_009.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_010",
+      "grade": "2",
+      "stage": 10,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_010.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_011",
+      "grade": "2",
+      "stage": 11,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_011.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_012",
+      "grade": "2",
+      "stage": 12,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_012.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_013",
+      "grade": "2",
+      "stage": 13,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_013.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_014",
+      "grade": "2",
+      "stage": 14,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_014.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_015",
+      "grade": "2",
+      "stage": 15,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_015.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_016",
+      "grade": "2",
+      "stage": 16,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_016.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_017",
+      "grade": "2",
+      "stage": 17,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_017.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_018",
+      "grade": "2",
+      "stage": 18,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_018.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_019",
+      "grade": "2",
+      "stage": 19,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_019.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_020",
+      "grade": "2",
+      "stage": 20,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_020.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_021",
+      "grade": "2",
+      "stage": 21,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_021.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_022",
+      "grade": "2",
+      "stage": 22,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_022.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_023",
+      "grade": "2",
+      "stage": 23,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_023.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_024",
+      "grade": "2",
+      "stage": 24,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_024.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_025",
+      "grade": "2",
+      "stage": 25,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_025.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_026",
+      "grade": "2",
+      "stage": 26,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_026.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_027",
+      "grade": "2",
+      "stage": 27,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_027.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_028",
+      "grade": "2",
+      "stage": 28,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_028.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_029",
+      "grade": "2",
+      "stage": 29,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_029.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "e2_030",
+      "grade": "2",
+      "stage": 30,
+      "imageFile": "assets/images/eiken_oralquest/grade2/e2_030.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          2
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_001",
+      "grade": "pre1",
+      "stage": 1,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_001.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_002",
+      "grade": "pre1",
+      "stage": 2,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_002.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_003",
+      "grade": "pre1",
+      "stage": 3,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_003.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_004",
+      "grade": "pre1",
+      "stage": 4,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_004.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_005",
+      "grade": "pre1",
+      "stage": 5,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_005.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_006",
+      "grade": "pre1",
+      "stage": 6,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_006.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_007",
+      "grade": "pre1",
+      "stage": 7,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_007.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_008",
+      "grade": "pre1",
+      "stage": 8,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_008.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_009",
+      "grade": "pre1",
+      "stage": 9,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_009.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_010",
+      "grade": "pre1",
+      "stage": 10,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_010.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_011",
+      "grade": "pre1",
+      "stage": 11,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_011.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_012",
+      "grade": "pre1",
+      "stage": 12,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_012.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_013",
+      "grade": "pre1",
+      "stage": 13,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_013.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_014",
+      "grade": "pre1",
+      "stage": 14,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_014.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_015",
+      "grade": "pre1",
+      "stage": 15,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_015.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_016",
+      "grade": "pre1",
+      "stage": 16,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_016.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_017",
+      "grade": "pre1",
+      "stage": 17,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_017.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_018",
+      "grade": "pre1",
+      "stage": 18,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_018.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_019",
+      "grade": "pre1",
+      "stage": 19,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_019.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_020",
+      "grade": "pre1",
+      "stage": 20,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_020.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_021",
+      "grade": "pre1",
+      "stage": 21,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_021.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_022",
+      "grade": "pre1",
+      "stage": 22,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_022.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_023",
+      "grade": "pre1",
+      "stage": 23,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_023.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_024",
+      "grade": "pre1",
+      "stage": 24,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_024.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_025",
+      "grade": "pre1",
+      "stage": 25,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_025.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_026",
+      "grade": "pre1",
+      "stage": 26,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_026.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_027",
+      "grade": "pre1",
+      "stage": 27,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_027.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_028",
+      "grade": "pre1",
+      "stage": 28,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_028.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_029",
+      "grade": "pre1",
+      "stage": 29,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_029.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    },
+    {
+      "cardId": "ep1_030",
+      "grade": "pre1",
+      "stage": 30,
+      "imageFile": "assets/images/eiken_oralquest/pre1/ep1_030.webp",
+      "rubricStatus": "awaiting_image_review",
+      "rubricFile": null,
+      "description": {
+        "freeImage": true,
+        "pictureQuestions": [
+          1
+        ]
+      },
+      "scoreType": "practice_only"
+    }
+  ]
+}
