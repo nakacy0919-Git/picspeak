@@ -39,8 +39,11 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_002 School Garden: Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is watering the flowers.'; Q3 'Where is the bucket?' answer 'It is near the bench.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "awaiting_new_style_illustration",
-      "styleVersion": "eiken-handdrawn-v2"
+      "status": "handdrawn_saved_library",
+      "styleVersion": "eiken-handdrawn-v2",
+      "imageSize": "1536x1024",
+      "imageSha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5",
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp"
     },
     {
       "id": "e3_003",
@@ -56,8 +59,11 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_003 A Rainy Morning: A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree. Photo questions the student must answer: Q2 'What is the woman holding?' answer 'She is holding an umbrella.'; Q3 'Where is the bicycle?' answer 'It is next to a tree.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "awaiting_new_style_illustration",
-      "styleVersion": "eiken-handdrawn-v2"
+      "status": "handdrawn_saved_library",
+      "styleVersion": "eiken-handdrawn-v2",
+      "imageSize": "1536x1024",
+      "imageSha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81",
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp"
     },
     {
       "id": "e3_004",
