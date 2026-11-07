@@ -1,0 +1,209 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_003",
+  "grade": "3",
+  "stage": 3,
+  "title": "A Rainy Morning",
+  "imageFilename": "e3_003.webp",
+  "imageSha256": "acf92f075edd4a9c63a6693454de23b36d4b53485c711ac5b792a131754fd215",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_003.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "ready_for_practice_only",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "reviewNotes": "Checked rendered image: adult woman on the left holds an open blue umbrella, a child in the center is wearing a yellow hooded raincoat, and an unoccupied teal bicycle is parked beside a large tree on the right. Rain is falling. No cyclist is depicted.",
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A woman is holding an umbrella. A boy is wearing a yellow raincoat. There is a bicycle next to the tree. It is raining.",
+    "facts": [
+      {
+        "id": "woman_umbrella",
+        "labelJa": "女性が傘を持っている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "woman",
+                "lady",
+                "she",
+                "mother",
+                "adult"
+              ],
+              [
+                "umbrella",
+                "brolly",
+                "parasol"
+              ],
+              [
+                "holding",
+                "holds",
+                "carrying",
+                "has",
+                "using",
+                "with"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "boy_yellow_raincoat",
+        "labelJa": "男の子が黄色いレインコートを着ている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "child",
+                "kid",
+                "he",
+                "student"
+              ],
+              [
+                "yellow"
+              ],
+              [
+                "raincoat",
+                "rain coat",
+                "rain jacket",
+                "rainwear",
+                "coat",
+                "hoodie",
+                "jacket"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bicycle_tree",
+        "labelJa": "自転車が木の近くに停めてある",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "bicycle",
+                "bike",
+                "cycle"
+              ],
+              [
+                "next to",
+                "beside",
+                "near",
+                "by",
+                "close to",
+                "against"
+              ],
+              [
+                "tree"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rain",
+        "labelJa": "雨が降っている",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "raining",
+                "rain",
+                "rainy",
+                "wet pavement",
+                "wet street"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "女性が持っているもの",
+      "full": [
+        {
+          "all": [
+            [
+              "umbrella",
+              "brolly",
+              "rain umbrella"
+            ]
+          ]
+        }
+      ],
+      "partial": [],
+      "rightRole": [
+        "woman",
+        "she",
+        "lady",
+        "mother"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "boy",
+        "he",
+        "child",
+        "student"
+      ],
+      "examples": [
+        "She is holding an umbrella.",
+        "An umbrella.",
+        "The woman has an umbrella."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "自転車の場所",
+      "full": [
+        {
+          "all": [
+            [
+              "next to",
+              "beside",
+              "near",
+              "by",
+              "close to",
+              "against"
+            ],
+            [
+              "tree"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "tree"
+            ]
+          ]
+        }
+      ],
+      "rejectExpressions": [
+        "under the tree",
+        "inside the tree",
+        "far from the tree",
+        "away from the tree",
+        "in front of the school",
+        "behind the school",
+        "on the tree"
+      ],
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
+      "examples": [
+        "It is next to a tree.",
+        "The bicycle is beside the tree.",
+        "Near the tree."
+      ]
+    }
+  }
+}
