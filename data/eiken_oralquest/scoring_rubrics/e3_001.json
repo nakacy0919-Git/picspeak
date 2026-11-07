@@ -1,0 +1,186 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_001",
+  "grade": "3",
+  "stage": 1,
+  "title": "Library Day",
+  "imageFilename": "e3_001.webp",
+  "imageSha256": "0f0f91e96f9acea2cd766884e1b92e492b5142e030c617d28ab20ded584790c1",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_001.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "ready_for_practice_only",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A boy is reading a book at a table in the library. A girl is carrying three books. A librarian is helping a student at the counter.",
+    "facts": [
+      {
+        "id": "boy_reading",
+        "labelJa": "男の子が本を読んでいる",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "he",
+                "male student"
+              ],
+              [
+                "reading",
+                "reads",
+                "read"
+              ],
+              [
+                "book",
+                "books"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "girl_books",
+        "labelJa": "女の子が3冊の本を持っている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "girl",
+                "she",
+                "female student"
+              ],
+              [
+                "holding",
+                "carrying",
+                "has",
+                "with"
+              ],
+              [
+                "three books",
+                "3 books",
+                "three textbooks"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "librarian_counter",
+        "labelJa": "司書がカウンターにいる",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "librarian",
+                "library staff",
+                "woman",
+                "staff member"
+              ],
+              [
+                "counter",
+                "desk"
+              ]
+            ]
+          },
+          {
+            "all": [
+              [
+                "librarian",
+                "library staff"
+              ],
+              [
+                "helping",
+                "assisting",
+                "talking"
+              ],
+              [
+                "student",
+                "boy",
+                "visitor"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "library",
+        "labelJa": "図書館での場面",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "library",
+                "bookshelves"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "男の子の動作",
+      "full": [
+        {
+          "all": [
+            [
+              "reading",
+              "reads",
+              "read"
+            ],
+            [
+              "book",
+              "books"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "reading",
+              "reads"
+            ]
+          ]
+        }
+      ],
+      "rejectIfOnlyWrongRole": [
+        "girl",
+        "she"
+      ],
+      "examples": [
+        "He is reading a book.",
+        "The boy is reading.",
+        "Reading a book."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "女の子の本の数",
+      "full": [
+        {
+          "all": [
+            [
+              "three",
+              "3"
+            ]
+          ]
+        }
+      ],
+      "partial": [],
+      "examples": [
+        "Three.",
+        "She is carrying three books."
+      ]
+    }
+  }
+}
