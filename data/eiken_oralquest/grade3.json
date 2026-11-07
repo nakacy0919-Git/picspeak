@@ -14,13 +14,14 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Public library: a young boy seated at a table reading an open book; a girl standing nearby carrying EXACTLY THREE clearly separate books; a friendly librarian behind the service counter. Original hand-drawn exam-card illustration with crisp ink outlines and soft textured pastel coloring.",
+      "artDirection": "Library with clear three-layer perspective: foreground boy reading book at a table, backpack under the table; midground girl standing with exactly three books in her arms, chair next to the table; background librarian behind a circulation counter, with bookshelf behind the librarian and window beside the shelf. No domestic living-room items.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_001.webp",
       "promptId": "e3_001",
       "redesignPreviewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
       "previewSha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "depthDesignRequired": true
     },
     "questions": [
       {
