@@ -5,7 +5,7 @@ const path=require('node:path');
 const scoring=require('../js/eiken_picture_scoring.js');
 const root=path.resolve(__dirname,'../data/eiken_oralquest/');
 const get=id=>JSON.parse(fs.readFileSync(path.join(root,'scoring_rubrics',id+'.json'),'utf8'));
-const a=get('e3_001'),b=get('e3_002');
+const a=get('e3_001'),b=get('e3_002'),c=get('e3_003');
 let checked=0;
 function expectScore(rubric,kind,num,text,expected){
   const result=kind==='free'?scoring.scoreFree(rubric,text):scoring.scoreQuestion(rubric,num,text);
@@ -35,10 +35,25 @@ expectScore(b,'q',3,'Next to the bench.',100);
 expectScore(b,'q',3,'The bucket is under the bench.',0);
 expectScore(b,'q',3,'The bucket is far from the bench.',0);
 expectScore(b,'q',3,'The bucket is near the building.',0);
+expectScore(c,'free',null,'A woman is holding an umbrella. A boy is wearing a yellow raincoat. A bicycle is parked next to the tree. It is raining.',100);
+expectScore(c,'free',null,'The lady has a blue umbrella. A child in a yellow rain jacket is standing in the rain. There is a bike beside the tree.',100);
+expectScore(c,'free',null,'A boy is holding an umbrella. A woman is wearing a yellow raincoat. The bicycle is under the school.',0);
+expectScore(c,'q',2,'She is holding an umbrella.',100);
+expectScore(c,'q',2,'An umbrella.',100);
+expectScore(c,'q',2,'The lady has a blue umbrella.',100);
+expectScore(c,'q',2,'The boy is holding an umbrella.',0);
+expectScore(c,'q',2,'She is not holding an umbrella.',0);
+expectScore(c,'q',3,'It is next to the tree.',100);
+expectScore(c,'q',3,'It is beside a tree.',100);
+expectScore(c,'q',3,'Near the tree.',100);
+expectScore(c,'q',3,'Under the tree.',0);
+expectScore(c,'q',3,'Far from the tree.',0);
+expectScore(c,'q',3,'It is near the school.',0);
+expectScore(c,'q',3,"It's a bicycle.",0);
 assert.equal(scoring.scoreFree(null,'A girl is watering flowers.'),null);
 const index=JSON.parse(fs.readFileSync(path.join(root,'image_scoring_manifest.json'),'utf8'));
 assert.equal(index.cards.length,120);
-assert.equal(index.cards.filter(c=>c.rubricFile).length,2);
+assert.equal(index.cards.filter(c=>c.rubricFile).length,3);
 for(const card of index.cards.filter(c=>c.rubricFile)){
  const rubric=get(card.cardId);
  assert.equal(rubric.cardId,card.cardId);
@@ -46,4 +61,4 @@ for(const card of index.cards.filter(c=>c.rubricFile)){
  assert.equal(rubric.notOfficialEikenScore,true);
  assert.equal(rubric.freeDescription.facts.reduce((n,x)=>n+x.points,0),100);
 }
-console.log('Eiken picture scoring tests passed:',checked,'scenarios, 2 image-reviewed rubrics, 118 pending.');
+console.log('Eiken picture scoring tests passed:',checked,'scenarios, 3 image-reviewed rubrics, 117 pending.');
