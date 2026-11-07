@@ -67,15 +67,31 @@
       "scoringRubric": "scoring_rubrics/e3_004.json",
       "scoringStatus": "image_reviewed_and_scoring_rules_created",
       "note": "One image only. Actual mother/boy cooking image; original questions revised to match facts."
+    },
+    {
+      "id": "e3_005",
+      "stage": 5,
+      "title": "At the Zoo",
+      "filename": "e3_005.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_005.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_005.webp",
+      "sha256": "a74fd60379040d39fee27476437f0e06b3f0cc10e96429f4ddccd602332e7e07",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_005.json",
+      "scoringStatus": "image_reviewed_and_16_cases_passed",
+      "note": "Exactly one image generated; image showed elephant not planned giraffe, so image-specific Q2 and Q3 and rubric were corrected."
     }
   ],
   "next": {
-    "id": "e3_005",
-    "stage": 5,
-    "title": "At the Zoo",
-    "filename": "e3_005.webp",
+    "id": "e3_006",
+    "stage": 6,
+    "title": "Music Club",
+    "filename": "e3_006.webp",
     "status": "awaiting_illustration_and_scoring",
-    "scene": "Zoo: a keeper feeding a giraffe, two children watching, and a zebra picture on a sign."
+    "scene": "Music room: a girl is playing the piano, a boy is holding a guitar, and a drum is beside the window."
   },
-  "notes": "Grade 3 Stages 01–04 saved in ChatGPT Library with individual content-scoring rubrics on the development branch. The image binaries are not committed to GitHub; app imageSrc remains null."
+  "notes": "Grade 3 Stages 01–05 images saved in ChatGPT Library. Each has a matching scoring rubric in the development branch; binary images are not committed to GitHub, so imageSrc remains null."
 }
