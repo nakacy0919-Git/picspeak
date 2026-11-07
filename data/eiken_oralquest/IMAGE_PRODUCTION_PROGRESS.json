@@ -104,11 +104,12 @@
   "next": {
     "id": "e3_007",
     "stage": 7,
-    "title": "Park Cleanup",
+    "title": "Community Clean-up",
     "filename": "e3_007.webp",
-    "status": "awaiting_new_handdrawn_illustration"
+    "status": "rejected_wrong_scene_not_saved",
+    "scene": "PUBLIC PARK OUTDOORS: exactly two school students wearing gloves are BOTH bending down to PICK UP LITTER from the grass, beside a paved park path; one adult woman stands nearby holding open a large trash bag. EXACTLY THREE empty transparent plastic bottles lie visibly on bare ground in the lower right foreground, separate from other litter, easy to count. Trees, park benches and grass in background. No library, no cafeteria, no tables of food, no books."
   },
-  "notes": "Grade3 stages 01–06 saved in ChatGPT Library. Stage06 verified file e3_006.webp is 1536x1024 WebP. Matching scoring rubric committed to development branch. Binary images are NOT committed to GitHub and imageSrc stays null. No production deployment.",
+  "notes": "Stage07 image generation in this turn twice returned wrong scenes (library and cafeteria). Both rejected, neither saved or registered as e3_007.webp. Existing Grade3 stage01–06 image files and scores remain untouched. Questions retained: No.2 'What are the students doing?' Answer 'They are picking up trash.'; No.3 'How many empty bottles are on the ground?' Answer 'There are three.'",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
