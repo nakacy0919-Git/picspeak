@@ -5,110 +5,106 @@
   "stage": 5,
   "title": "At the Zoo",
   "imageFilename": "e3_005.webp",
-  "imageSha256": "a74fd60379040d39fee27476437f0e06b3f0cc10e96429f4ddccd602332e7e07",
+  "imageSha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_005.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
-  "status": "ready_for_practice_only",
+  "status": "handdrawn_image_reviewed",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
-  "reviewNotes": "Reviewed the single high-quality zoo image: a man/father in blue is pointing toward a large elephant; a young boy in a blue cap is looking through black binoculars; a girl in pink watches at the railing. Exactly two clearly foreground children are standing beside the man. A large elephant and zoo sign are visible. The originally planned giraffe and keeper are NOT present; questions have been revised to match the actual scene.",
+  "reviewNotes": "New hand-drawn illustration: khaki-uniformed adult zookeeper extends green leaves to a giraffe; exactly two foreground children—a boy in blue and a girl in pink—watch behind the barrier. Other distant visitors are walking near the entrance, not watching the giraffe. Sign at zoo entrance has elephant and lion silhouettes, NOT a zebra.",
   "freeDescription": {
     "maxPoints": 100,
-    "example": "A boy is looking through binoculars. A man is pointing at an elephant. A girl is watching the elephant. They are at the zoo.",
+    "example": "A zookeeper is feeding a giraffe. Two children are watching the giraffe. The giraffe is eating leaves. They are at the zoo.",
     "facts": [
       {
-        "id": "boy_binoculars",
-        "labelJa": "男の子が双眼鏡で見ている",
+        "id": "keeper_feeding",
+        "labelJa": "飼育員がキリンに餌をあげている",
         "points": 40,
         "checks": [
           {
             "all": [
               [
-                "boy",
-                "child",
-                "son",
-                "he",
-                "young boy"
+                "keeper",
+                "zookeeper",
+                "zoo keeper",
+                "man",
+                "worker",
+                "he"
               ],
               [
-                "binoculars",
-                "binocular",
-                "field glasses"
+                "feeding",
+                "feeds",
+                "giving",
+                "gives"
               ],
               [
-                "looking",
-                "looking through",
-                "watching",
-                "using",
-                "holding",
-                "looking at",
-                "is looking",
-                "is using"
+                "giraffe",
+                "leaves",
+                "food"
               ]
             ]
           }
         ]
       },
       {
-        "id": "man_pointing",
-        "labelJa": "男性がゾウを指さしている",
+        "id": "two_children",
+        "labelJa": "2人の子どもが見ている",
         "points": 30,
         "checks": [
           {
             "all": [
               [
-                "man",
-                "father",
-                "dad",
-                "he",
-                "adult"
+                "two",
+                "2"
               ],
               [
-                "pointing",
-                "points",
-                "showing",
-                "indicating"
-              ],
-              [
-                "elephant",
-                "animal"
-              ]
-            ]
-          }
-        ]
-      },
-      {
-        "id": "girl_watching",
-        "labelJa": "女の子がゾウを見ている",
-        "points": 20,
-        "checks": [
-          {
-            "all": [
-              [
-                "girl",
-                "daughter",
-                "she",
-                "young girl"
+                "children",
+                "kids",
+                "students",
+                "young visitors"
               ],
               [
                 "watching",
                 "looking",
                 "looking at",
-                "seeing",
-                "observing"
-              ],
-              [
-                "elephant",
-                "animal"
+                "observing",
+                "seeing"
               ]
             ]
           }
         ]
       },
       {
-        "id": "at_zoo",
-        "labelJa": "動物園の場面である",
+        "id": "giraffe_eating",
+        "labelJa": "キリンが葉を食べている",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "giraffe",
+                "it"
+              ],
+              [
+                "eating",
+                "eats",
+                "chewing",
+                "chews"
+              ],
+              [
+                "leaves",
+                "leaf",
+                "food",
+                "plants"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "zoo",
+        "labelJa": "動物園での場面",
         "points": 10,
         "checks": [
           {
@@ -116,7 +112,7 @@
               [
                 "zoo",
                 "animal park",
-                "zoological park"
+                "zoological garden"
               ]
             ]
           }
@@ -127,21 +123,21 @@
   "questions": {
     "2": {
       "maxPoints": 100,
-      "labelJa": "男の子がしていること",
+      "labelJa": "飼育員の動作",
       "full": [
         {
           "all": [
             [
-              "looking",
-              "looking through",
-              "watching",
-              "using",
-              "looking at"
+              "feeding",
+              "feeds",
+              "giving",
+              "gives"
             ],
             [
-              "binoculars",
-              "binocular",
-              "field glasses"
+              "giraffe",
+              "animal",
+              "leaves",
+              "food"
             ]
           ]
         }
@@ -150,37 +146,37 @@
         {
           "all": [
             [
-              "binoculars",
-              "binocular",
-              "field glasses"
+              "feeding",
+              "feeds",
+              "giving",
+              "gives"
             ]
           ]
         }
       ],
       "rightRole": [
-        "boy",
-        "child",
-        "son",
-        "he"
+        "keeper",
+        "zookeeper",
+        "zoo keeper",
+        "man",
+        "he",
+        "worker"
       ],
       "rejectIfOnlyWrongRole": [
         "girl",
+        "boy",
         "she",
-        "woman",
-        "mother",
-        "dad",
-        "father",
-        "man"
+        "child"
       ],
       "examples": [
-        "He is looking through binoculars.",
-        "The boy is using binoculars.",
-        "He is looking at the elephant with binoculars."
+        "He is feeding a giraffe.",
+        "The keeper is giving food to the giraffe.",
+        "Feeding the giraffe."
       ]
     },
     "3": {
       "maxPoints": 100,
-      "labelJa": "男性の隣にいる子どもの人数",
+      "labelJa": "キリンを見ている子どもの人数",
       "full": [
         {
           "all": [
@@ -192,6 +188,8 @@
         }
       ],
       "partial": [],
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
       "rejectExpressions": [
         "not two",
         "not 2",
@@ -199,12 +197,10 @@
         "fewer than two",
         "less than two"
       ],
-      "rightRole": [],
-      "rejectIfOnlyWrongRole": [],
       "examples": [
         "Two.",
-        "Two children.",
-        "There are two children standing next to him."
+        "Two children are watching.",
+        "There are two children."
       ]
     }
   }
