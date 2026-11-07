@@ -12,24 +12,24 @@
       "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_001.webp",
       "storage": "ChatGPT Library",
       "libraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
-      "sha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
+      "sha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "dimensions": "1536x1024",
       "format": "WebP",
       "githubBinaryUploaded": false,
       "scoringRubric": "scoring_rubrics/e3_001.json",
-      "scoringStatus": "matched_illustration_content_early_sample",
-      "review": "New original drawn illustration; first vector sample in new exam-card style. Potential quality refinement before using as final master."
+      "scoringStatus": "ready_for_revalidation_after_image_replacement",
+      "review": "Accepted library-scene artwork from previous Stage 01 response with book-reading boy, exactly three books held by girl, and librarian behind desk; replaced older flat sample file."
     }
   ],
   "next": {
-    "id": "e3_001",
-    "stage": 1,
-    "title": "Library Day",
-    "filename": "e3_001.webp",
-    "status": "requires_depth_correct_final_art",
-    "scene": "Library with clear three-layer perspective: foreground boy reading book at a table, backpack under the table; midground girl standing with exactly three books in her arms, chair next to the table; background librarian behind a circulation counter, with bookshelf behind the librarian and window beside the shelf. No domestic living-room items."
+    "id": "e3_002",
+    "stage": 2,
+    "title": "School Garden",
+    "filename": "e3_002.webp",
+    "status": "failed_generation_wrong_scene_do_not_save",
+    "scene": "A girl watering flowers, a boy planting seeds, and a bucket clearly next to a garden bench. Original hand-drawn depth-rich exam illustration."
   },
-  "notes": "Multiple attempts to add depth repeated the unrelated user-supplied living-room reference and were rejected. No new depth-correct Library Day image was saved. The old candidate remains in a review-only folder and is not published. Refined three-layer library-only prompt recorded in image_prompts.json.",
+  "notes": "Stage 01 hand-drawn Library Day image from prior response was converted to WebP and saved over candidate e3_001.webp in ChatGPT Library. Stage 02 generation twice incorrectly repeated Library Day; neither wrong-scene output was saved or approved. Next remains Stage 02 School Garden.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
