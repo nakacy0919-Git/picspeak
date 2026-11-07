@@ -1,7 +1,7 @@
 {
   "version": 1,
   "updatedAt": "2026-11-07",
-  "workflow": "Generate one stage -> validate against its card/questions -> save with exact .webp filename -> only then generate the next stage",
+  "workflow": "Generate one stage -> validate visible image facts -> save exact .webp -> create image-specific content-scoring rubric and test paraphrases/wrong answers -> only then move to next image",
   "grade": "3",
   "completed": [
     {
@@ -15,16 +15,33 @@
       "sha256": "0f0f91e96f9acea2cd766884e1b92e492b5142e030c617d28ab20ded584790c1",
       "dimensions": "1448x1086",
       "format": "WebP",
-      "githubBinaryUploaded": false
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_001.json",
+      "scoringStatus": "image_reviewed_and_rules_tested"
+    },
+    {
+      "id": "e3_002",
+      "stage": 2,
+      "title": "School Garden",
+      "filename": "e3_002.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_002.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp",
+      "sha256": "39142930b906b9b4040b705982bc80d0ef49c6bf26abf9abcabb709d5d4dfb48",
+      "dimensions": "1448x1086",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_002.json",
+      "scoringStatus": "image_reviewed_and_rules_tested"
     }
   ],
   "next": {
-    "id": "e3_002",
-    "stage": 2,
-    "title": "School Garden",
-    "filename": "e3_002.webp",
-    "status": "awaiting_correct_illustration",
-    "scene": "A school garden. A girl is watering flowers, a boy is planting seeds, and a bucket is placed near a bench. No text."
+    "id": "e3_003",
+    "stage": 3,
+    "title": "A Rainy Morning",
+    "filename": "e3_003.webp",
+    "status": "awaiting_illustration_and_scoring",
+    "scene": "Rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, a bicycle beside a tree."
   },
-  "notes": "Several incorrect library images were returned while attempting Stage 02; they were rejected and not saved as e3_002.webp. The grade JSON imageSrc remains null until the correct binary asset is committed."
+  "notes": "Stage 01 and Stage 02 files are safely saved in ChatGPT Library, with independent practice-scoring rubrics committed to development branch. Binary image assets have not yet been committed to GitHub, so app imageSrc stays null."
 }
