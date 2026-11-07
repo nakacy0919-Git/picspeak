@@ -130,7 +130,7 @@ Many families cook together on weekends. Children can wash vegetables or set the
 
 ### 画像制作指示（未制作）
 
-Kitchen: father cutting carrots, daughter washing tomatoes, three plates on dining table.
+Bright home kitchen: an adult woman stirring a steaming pot, a young boy carefully cutting tomatoes on a cutting board, and fresh green lettuce in a glass bowl on the counter.
 
 ### 面接官からの質問・参考回答
 
@@ -138,13 +138,13 @@ Kitchen: father cutting carrots, daughter washing tomatoes, three plates on dini
 
 - They can wash vegetables or set the table.
 
-**No.2｜What is the father doing?**
+**No.2｜What is the woman doing?**
 
-- He is cutting carrots.
+- She is stirring a pot.
 
-**No.3｜How many plates are on the table?**
+**No.3｜What is the boy cutting?**
 
-- There are three plates.
+- He is cutting tomatoes.
 
 **No.4｜Do you sometimes help cook dinner?**
 
