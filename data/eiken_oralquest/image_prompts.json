@@ -119,8 +119,11 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_006 Music Club: Music room: girl playing piano, boy holding guitar, drum beside the window. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is playing the piano.'; Q3 'Where is the drum?' answer 'It is beside the window.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "awaiting_new_style_illustration",
-      "styleVersion": "eiken-handdrawn-v2"
+      "status": "handdrawn_saved_library",
+      "styleVersion": "eiken-handdrawn-v2",
+      "imageSize": "1536x1024",
+      "imageSha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_006.webp"
     },
     {
       "id": "e3_007",
