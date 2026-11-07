@@ -90,10 +90,10 @@
     "stage": 6,
     "title": "Music Club",
     "filename": "e3_006.webp",
-    "status": "awaiting_new_handdrawn_illustration",
-    "scene": "Music room: a girl playing the piano, a boy holding a guitar, a drum by the window. Confirm original Grade3 questions before final generation."
+    "status": "generated_not_accepted_wrong_student_actions",
+    "scene": "A girl sitting at the piano playing with both hands, a boy standing and holding an acoustic guitar, a drum beside the window. No girl singing and no boy at the piano."
   },
-  "notes": "Stage 01-05 images are saved as WebP in ChatGPT Library, with image-matched practice rubrics in GitHub development branch. Stage 04 was saved from the previously generated illustration before recording Stage 05. No GitHub image binary files have been uploaded, so app imageSrc remains null. Never publish production without approval.",
+  "notes": "Stage06 generation attempts on this turn repeatedly put the boy at the piano and the girl singing. None has been accepted as the image of this card, none has been saved under e3_006.webp or linked to the scoring rubric. The existing Grade3 Q2 ('What is the girl doing?') must remain based on girl playing piano, Q3 drum beside window. Pending a correctly rendered illustration. Stages 01-05 remain the saved images.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
