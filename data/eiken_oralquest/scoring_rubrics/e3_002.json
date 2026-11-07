@@ -162,6 +162,11 @@
         "She is watering the flowers.",
         "The girl is giving water to the plants.",
         "Watering the flowers."
+      ],
+      "rightRole": [
+        "girl",
+        "she",
+        "female student"
       ]
     },
     "3": {
@@ -197,7 +202,15 @@
         "It is near the bench.",
         "The bucket is beside the bench.",
         "Next to the bench."
+      ],
+      "rejectExpressions": [
+        "under the bench",
+        "on the bench",
+        "behind the bench",
+        "far from the bench",
+        "away from the bench"
       ]
     }
-  }
+  },
+  "reviewNotes": "Verified: girl is watering flowers, boy is planting seeds, metal bucket is near a bench. Tomato plants behind the children are visible, but are not required for a passing answer."
 }
