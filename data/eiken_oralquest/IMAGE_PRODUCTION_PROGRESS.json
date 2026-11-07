@@ -83,17 +83,32 @@
       "scoringRubric": "scoring_rubrics/e3_005.json",
       "scoringStatus": "image_reviewed_and_rubric_updated",
       "review": "Hand-drawn picture and exam-style No.2/No.3 questions have been checked. Text-only local scoring rubric is a practice heuristic."
+    },
+    {
+      "id": "e3_006",
+      "stage": 6,
+      "title": "Music Club",
+      "filename": "e3_006.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_006.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_006.webp",
+      "sha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_006.json",
+      "scoringStatus": "handdrawn_image_verified_and_rubric_created",
+      "review": "Girl playing piano, boy holding guitar, drum beside left window; all match the original picture questions."
     }
   ],
   "next": {
-    "id": "e3_006",
-    "stage": 6,
-    "title": "Music Club",
-    "filename": "e3_006.webp",
-    "status": "generated_not_accepted_wrong_student_actions",
-    "scene": "A girl sitting at the piano playing with both hands, a boy standing and holding an acoustic guitar, a drum beside the window. No girl singing and no boy at the piano."
+    "id": "e3_007",
+    "stage": 7,
+    "title": "Park Cleanup",
+    "filename": "e3_007.webp",
+    "status": "awaiting_new_handdrawn_illustration"
   },
-  "notes": "Stage06 generation attempts on this turn repeatedly put the boy at the piano and the girl singing. None has been accepted as the image of this card, none has been saved under e3_006.webp or linked to the scoring rubric. The existing Grade3 Q2 ('What is the girl doing?') must remain based on girl playing piano, Q3 drum beside window. Pending a correctly rendered illustration. Stages 01-05 remain the saved images.",
+  "notes": "Grade3 stages 01–06 saved in ChatGPT Library. Stage06 verified file e3_006.webp is 1536x1024 WebP. Matching scoring rubric committed to development branch. Binary images are NOT committed to GitHub and imageSrc stays null. No production deployment.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
