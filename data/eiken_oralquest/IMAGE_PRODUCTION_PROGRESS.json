@@ -51,15 +51,31 @@
       "alternativeImage": "e3_003.png",
       "qualityRevision": "High-resolution replacement, realistic editorial school-rainy scene; grade3 No.2 question and rubric updated to foreground girl with pink umbrella.",
       "imageUsability": "High-resolution WebP and PNG validated and accessible in ChatGPT file library; app image remains pending GitHub binary upload."
+    },
+    {
+      "id": "e3_004",
+      "stage": 4,
+      "title": "Weekend Cooking",
+      "filename": "e3_004.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_004.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_004.webp",
+      "sha256": "5cb65677b062fb68bcc13782ec80580c11276d785374f0c1d32354860af52c44",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_004.json",
+      "scoringStatus": "image_reviewed_and_scoring_rules_created",
+      "note": "One image only. Actual mother/boy cooking image; original questions revised to match facts."
     }
   ],
   "next": {
-    "id": "e3_004",
-    "stage": 4,
-    "title": "Weekend Cooking",
-    "filename": "e3_004.webp",
+    "id": "e3_005",
+    "stage": 5,
+    "title": "At the Zoo",
+    "filename": "e3_005.webp",
     "status": "awaiting_illustration_and_scoring",
-    "scene": "Kitchen: father cutting carrots, daughter washing tomatoes, three plates on a dining table."
+    "scene": "Zoo: a keeper feeding a giraffe, two children watching, and a zebra picture on a sign."
   },
-  "notes": "Stages 01-03 images saved in ChatGPT Library; Stage03 WebP overwritten with high-quality 1536x1024 replacement and PNG alternative. Stage03 question/rubric changed to match visible schoolgirl instead of prior adult-woman prompt. Github image binary still not committed; imageSrc remains null."
+  "notes": "Grade 3 Stages 01–04 saved in ChatGPT Library with individual content-scoring rubrics on the development branch. The image binaries are not committed to GitHub; app imageSrc remains null."
 }
