@@ -166,9 +166,9 @@ Bright home kitchen: an adult woman stirring a steaming pot, a young boy careful
 
 Many zoos teach visitors about wild animals. People can learn where animals live and what they eat. Zoo workers also explain how to protect animals. Visitors can ask keepers questions about their favorite animals.
 
-### 画像制作指示（未制作）
+### 画像構成（作成・保存済み）
 
-Zoo: keeper feeding a giraffe, two children watching, sign with a picture of a zebra.
+Elephant enclosure: a father points to an elephant while a boy uses binoculars and a girl watches beside him. Two children stand next to the father.
 
 ### 面接官からの質問・参考回答
 
@@ -176,13 +176,13 @@ Zoo: keeper feeding a giraffe, two children watching, sign with a picture of a z
 
 - They can learn where animals live and what they eat.
 
-**No.2｜What is the keeper doing?**
+**No.2｜What is the boy doing?**
 
-- The keeper is feeding a giraffe.
+- He is looking at the elephant through binoculars.
 
-**No.3｜How many children are watching?**
+**No.3｜How many children are standing next to the man?**
 
-- Two children are watching.
+- Two children are standing next to the man.
 
 **No.4｜What animal do you like best?**
 
