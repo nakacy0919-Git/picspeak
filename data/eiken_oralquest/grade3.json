@@ -14,10 +14,13 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Library: a librarian at a desk, a boy reading at a table, a girl carrying three books.",
+      "artDirection": "Public library: a young boy seated at a table reading an open book; a girl standing nearby carrying EXACTLY THREE clearly separate books; a friendly librarian behind the service counter. Original hand-drawn exam-card illustration with crisp ink outlines and soft textured pastel coloring.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_001.webp",
-      "promptId": "e3_001"
+      "promptId": "e3_001",
+      "redesignPreviewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
+      "previewSha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -85,7 +88,8 @@
       "artDirection": "Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_002.webp",
-      "promptId": "e3_002"
+      "promptId": "e3_002",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -150,10 +154,11 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; a younger boy in a yellow hooded raincoat walking behind her; an unoccupied silver bicycle parked next to a leafy tree on the right. Another student holds a navy-blue umbrella. Wet pavement and falling rain.",
+      "artDirection": "A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_003.webp",
-      "promptId": "e3_003"
+      "promptId": "e3_003",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -167,9 +172,8 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the girl holding?",
+        "prompt": "What is the woman holding?",
         "modelAnswers": [
-          "She is holding a pink umbrella.",
           "She is holding an umbrella."
         ]
       },
@@ -219,13 +223,11 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Bright home kitchen: a mother stirring a steaming pot using a wooden spoon, a young boy carefully slicing red tomatoes on a cutting board, and a glass bowl of fresh green lettuce on the counter. Natural daylight, realistic high-quality image. No numbered plates.",
+      "artDirection": "At home in a kitchen, a father is cutting carrots at the counter, his daughter is washing tomatoes, and there are exactly three empty plates on the dining table.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_004.webp",
       "promptId": "e3_004",
-      "actualImageSize": "1536x1024",
-      "sourceFileSaved": "ChatGPT Library /PicSpeak/OralQuest/grade3/e3_004.webp",
-      "imageSourceFormat": "WebP"
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -239,19 +241,17 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the woman doing?",
+        "prompt": "What is the father doing?",
         "modelAnswers": [
-          "She is stirring a pot.",
-          "She is stirring food in a pot."
+          "He is cutting carrots."
         ]
       },
       {
         "number": 3,
         "type": "picture_detail",
-        "prompt": "What is the boy cutting?",
+        "prompt": "How many plates are on the table?",
         "modelAnswers": [
-          "He is cutting tomatoes.",
-          "Tomatoes."
+          "There are three plates."
         ]
       },
       {
@@ -292,13 +292,11 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Sunny zoo elephant habitat with a large elephant at right. In the foreground, a father points toward the elephant, a boy looks through binoculars, and a girl watches beside them. Two children are standing beside the man, with a zoo sign and an elephant information board nearby.",
+      "artDirection": "At a zoo, a keeper is feeding a giraffe while exactly two children are watching, and a sign shows a small illustration of a zebra.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_005.webp",
       "promptId": "e3_005",
-      "sourceFileSaved": "ChatGPT Library /PicSpeak/OralQuest/grade3/e3_005.webp",
-      "actualImageSize": "1536x1024",
-      "imageSourceFormat": "WebP"
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -312,19 +310,17 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the boy doing?",
+        "prompt": "What is the keeper doing?",
         "modelAnswers": [
-          "He is looking at the elephant through binoculars.",
-          "He is using binoculars."
+          "The keeper is feeding a giraffe."
         ]
       },
       {
         "number": 3,
         "type": "picture_detail",
-        "prompt": "How many children are standing next to the man?",
+        "prompt": "How many children are watching?",
         "modelAnswers": [
-          "Two.",
-          "Two children are standing next to the man."
+          "Two children are watching."
         ]
       },
       {
@@ -368,7 +364,8 @@
       "artDirection": "Music room: girl playing piano, boy holding guitar, drum beside the window.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_006.webp",
-      "promptId": "e3_006"
+      "promptId": "e3_006",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -436,7 +433,8 @@
       "artDirection": "Park: two students picking up litter, woman holding trash bag, three empty bottles on ground.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_007.webp",
-      "promptId": "e3_007"
+      "promptId": "e3_007",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -504,7 +502,8 @@
       "artDirection": "Street: boy putting on helmet, girl riding bicycle, traffic light showing red.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_008.webp",
-      "promptId": "e3_008"
+      "promptId": "e3_008",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -572,7 +571,8 @@
       "artDirection": "Market: woman choosing apples, farmer handing a bag to man, four pumpkins on table.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_009.webp",
-      "promptId": "e3_009"
+      "promptId": "e3_009",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -640,7 +640,8 @@
       "artDirection": "School field: girls kicking soccer ball, boy drinking water, bag under a tree.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_010.webp",
-      "promptId": "e3_010"
+      "promptId": "e3_010",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -708,7 +709,8 @@
       "artDirection": "Bus stop: elderly man reading newspaper, student checking watch, two people sitting on bench.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_011.webp",
-      "promptId": "e3_011"
+      "promptId": "e3_011",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -774,7 +776,8 @@
       "artDirection": "Park: family sitting on blanket, girl throwing a ball, picnic basket beside father.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_012.webp",
-      "promptId": "e3_012"
+      "promptId": "e3_012",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -840,7 +843,8 @@
       "artDirection": "Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_013.webp",
-      "promptId": "e3_013"
+      "promptId": "e3_013",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -906,7 +910,8 @@
       "artDirection": "Festival: students selling cookies, visitor taking photo, five colorful balloons above booth.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_014.webp",
-      "promptId": "e3_014"
+      "promptId": "e3_014",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -972,7 +977,8 @@
       "artDirection": "Train car: woman reading, man looking out window, umbrella beside seat.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_015.webp",
-      "promptId": "e3_015"
+      "promptId": "e3_015",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1038,7 +1044,8 @@
       "artDirection": "Dining room: boy eating toast, mother pouring milk, two bananas on plate.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_016.webp",
-      "promptId": "e3_016"
+      "promptId": "e3_016",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1104,7 +1111,8 @@
       "artDirection": "Park: child painting on easel, artist explaining picture, sculpture near pond.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_017.webp",
-      "promptId": "e3_017"
+      "promptId": "e3_017",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1170,7 +1178,8 @@
       "artDirection": "Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_018.webp",
-      "promptId": "e3_018"
+      "promptId": "e3_018",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1236,7 +1245,8 @@
       "artDirection": "Museum: visitor looking at old clock, guide pointing at photograph, two hats in display case.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_019.webp",
-      "promptId": "e3_019"
+      "promptId": "e3_019",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1302,7 +1312,8 @@
       "artDirection": "Street: student carrying groceries for elderly woman, man opening door, small dog near bench.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_020.webp",
-      "promptId": "e3_020"
+      "promptId": "e3_020",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1368,7 +1379,8 @@
       "artDirection": "Classroom: student putting paper into blue box, teacher holding notebooks, poster on wall.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_021.webp",
-      "promptId": "e3_021"
+      "promptId": "e3_021",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1432,7 +1444,8 @@
       "artDirection": "Classroom: two children talking in English, teacher writing word on board, globe on shelf.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_022.webp",
-      "promptId": "e3_022"
+      "promptId": "e3_022",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1496,7 +1509,8 @@
       "artDirection": "Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store on corner.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_023.webp",
-      "promptId": "e3_023"
+      "promptId": "e3_023",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1560,7 +1574,8 @@
       "artDirection": "Bedroom desk: girl wearing headphones at computer, brother writing in notebook, lamp next to screen.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_024.webp",
-      "promptId": "e3_024"
+      "promptId": "e3_024",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1624,7 +1639,8 @@
       "artDirection": "Snowy park: two children making snowman, mother holding hot drink, red scarf on snowman.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_025.webp",
-      "promptId": "e3_025"
+      "promptId": "e3_025",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1688,7 +1704,8 @@
       "artDirection": "Field: boy running race, father cheering, three cones beside finish line.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_026.webp",
-      "promptId": "e3_026"
+      "promptId": "e3_026",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1752,7 +1769,8 @@
       "artDirection": "Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on wall.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_027.webp",
-      "promptId": "e3_027"
+      "promptId": "e3_027",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1816,7 +1834,8 @@
       "artDirection": "Station counter: girl talking to worker, worker holding blue umbrella, backpack on counter.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_028.webp",
-      "promptId": "e3_028"
+      "promptId": "e3_028",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1880,7 +1899,8 @@
       "artDirection": "Riverside: woman using binoculars, boy drawing bird, two ducks in water.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_029.webp",
-      "promptId": "e3_029"
+      "promptId": "e3_029",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
@@ -1944,7 +1964,8 @@
       "artDirection": "Bedroom: girl packing suitcase, boy looking at map, camera on bed.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_030.webp",
-      "promptId": "e3_030"
+      "promptId": "e3_030",
+      "redesignStyleVersion": "eiken-handdrawn-v2"
     },
     "questions": [
       {
