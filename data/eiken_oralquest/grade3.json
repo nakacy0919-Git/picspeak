@@ -150,7 +150,7 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Street: woman holding an umbrella, boy wearing a yellow raincoat, bicycle next to a tree.",
+      "artDirection": "Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; a younger boy in a yellow hooded raincoat walking behind her; an unoccupied silver bicycle parked next to a leafy tree on the right. Another student holds a navy-blue umbrella. Wet pavement and falling rain.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_003.webp",
       "promptId": "e3_003"
@@ -167,8 +167,9 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the woman holding?",
+        "prompt": "What is the girl holding?",
         "modelAnswers": [
+          "She is holding a pink umbrella.",
           "She is holding an umbrella."
         ]
       },
