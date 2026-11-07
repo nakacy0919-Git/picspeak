@@ -292,10 +292,13 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "Zoo: keeper feeding a giraffe, two children watching, sign with a picture of a zebra.",
+      "artDirection": "Sunny zoo elephant habitat with a large elephant at right. In the foreground, a father points toward the elephant, a boy looks through binoculars, and a girl watches beside them. Two children are standing beside the man, with a zoo sign and an elephant information board nearby.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_005.webp",
-      "promptId": "e3_005"
+      "promptId": "e3_005",
+      "sourceFileSaved": "ChatGPT Library /PicSpeak/OralQuest/grade3/e3_005.webp",
+      "actualImageSize": "1536x1024",
+      "imageSourceFormat": "WebP"
     },
     "questions": [
       {
@@ -309,17 +312,19 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the keeper doing?",
+        "prompt": "What is the boy doing?",
         "modelAnswers": [
-          "The keeper is feeding a giraffe."
+          "He is looking at the elephant through binoculars.",
+          "He is using binoculars."
         ]
       },
       {
         "number": 3,
         "type": "picture_detail",
-        "prompt": "How many children are watching?",
+        "prompt": "How many children are standing next to the man?",
         "modelAnswers": [
-          "Two children are watching."
+          "Two.",
+          "Two children are standing next to the man."
         ]
       },
       {
