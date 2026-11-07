@@ -217,12 +217,15 @@
       "wordCount": 35
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_github_binary",
       "type": "single",
-      "artDirection": "Kitchen: father cutting carrots, daughter washing tomatoes, three plates on dining table.",
+      "artDirection": "Bright home kitchen: a mother stirring a steaming pot using a wooden spoon, a young boy carefully slicing red tomatoes on a cutting board, and a glass bowl of fresh green lettuce on the counter. Natural daylight, realistic high-quality image. No numbered plates.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_004.webp",
-      "promptId": "e3_004"
+      "promptId": "e3_004",
+      "actualImageSize": "1536x1024",
+      "sourceFileSaved": "ChatGPT Library /PicSpeak/OralQuest/grade3/e3_004.webp",
+      "imageSourceFormat": "WebP"
     },
     "questions": [
       {
@@ -236,17 +239,19 @@
       {
         "number": 2,
         "type": "picture_action",
-        "prompt": "What is the father doing?",
+        "prompt": "What is the woman doing?",
         "modelAnswers": [
-          "He is cutting carrots."
+          "She is stirring a pot.",
+          "She is stirring food in a pot."
         ]
       },
       {
         "number": 3,
         "type": "picture_detail",
-        "prompt": "How many plates are on the table?",
+        "prompt": "What is the boy cutting?",
         "modelAnswers": [
-          "There are three plates."
+          "He is cutting tomatoes.",
+          "Tomatoes."
         ]
       },
       {
