@@ -4,7 +4,7 @@
   "course": "Eiken second-stage speaking practice",
   "status": "development_ui_with_pending_illustrations",
   "published": false,
-  "note": "Independent original practice materials. Not official Eiken examination questions or scoring criteria.",
+  "note": "Grade 3 illustration series restarted 2026-11-07 in original hand-drawn speaking-card style. Photo assets for 01–05 archived, not approved; Grade 3 v2 begins with one original Library Day sample.",
   "createdOn": "2026-11-07",
   "totalCards": 120,
   "totalOralQuestions": 540,
@@ -84,11 +84,12 @@
     "engine": "js/eiken_picture_scoring.js",
     "manifest": "image_scoring_manifest.json",
     "guide": "SCORING_GUIDE.md",
-    "readyRubrics": 5,
-    "pendingRubrics": 115,
-    "grade1ImagesSaved": 5,
+    "readyRubrics": 1,
+    "pendingRubrics": 119,
+    "grade1ImagesSaved": 1,
     "method": "transcript-based, image-verified rubric",
     "notOfficialEiken": true,
-    "runtimeImageAssetsInGithub": 0
+    "runtimeImageAssetsInGithub": 0,
+    "styleVersion": "eiken-handdrawn-v2"
   }
 }
