@@ -48,10 +48,15 @@
       "aspectRatio": "4:3",
       "composition": "single",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Street: woman holding an umbrella, boy wearing a yellow raincoat, bicycle next to a tree.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "ORIGINAL high-quality editorial educational picture for Eiken Grade 3 oral speaking. Realistic detailed visual storytelling, natural expressive human anatomy, believable rainy reflections, richly detailed but uncluttered environment, sharp 1536px or larger. Show a rainy Japanese school walkway in a single landscape composition: foreground teenage schoolgirl holding an OPEN PINK UMBRELLA; a boy walking behind her in a BRIGHT YELLOW HOODED RAINCOAT; a completely UNATTENDED SILVER BICYCLE visibly PARKED BESIDE A LARGE LEAFY TREE at the right. Another student may hold a navy umbrella, but no one is riding or holding the bicycle. Important focus: three clear testable facts—girl holds an umbrella, boy wears yellow raincoat, bicycle is next to tree. Heavy emphasis on precise spatial placement. No captions, words, labels, logo, watermark, lettering, oversized graphics or speech bubbles. No confusing extra people that obscure these actions.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "replacement_generated_library_saved",
+      "savedFormats": [
+        "webp",
+        "png"
+      ],
+      "imageSize": "1536x1024"
     },
     {
       "id": "e3_004",
