@@ -5,11 +5,11 @@
   "stage": 2,
   "title": "School Garden",
   "imageFilename": "e3_002.webp",
-  "imageSha256": "39142930b906b9b4040b705982bc80d0ef49c6bf26abf9abcabb709d5d4dfb48",
+  "imageSha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_002.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
-  "status": "ready_for_practice_only",
+  "status": "handdrawn_image_reviewed",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
   "freeDescription": {
@@ -212,5 +212,5 @@
       ]
     }
   },
-  "reviewNotes": "Verified: girl is watering flowers, boy is planting seeds, metal bucket is near a bench. Tomato plants behind the children are visible, but are not required for a passing answer."
+  "reviewNotes": "Verified actual hand-drawn garden image: pink-apron girl watering pink and yellow flowers with blue can; boy in a blue hoodie planting seeds in the adjacent rectangular soil bed; one blue bucket on the ground immediately beside the wooden bench, in front of the right-side tree. A school building stands clearly in the rear. Question 2 and 3 are visually answerable."
 }
