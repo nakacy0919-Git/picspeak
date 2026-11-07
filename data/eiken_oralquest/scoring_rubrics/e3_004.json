@@ -5,70 +5,64 @@
   "stage": 4,
   "title": "Weekend Cooking",
   "imageFilename": "e3_004.webp",
-  "imageSha256": "5cb65677b062fb68bcc13782ec80580c11276d785374f0c1d32354860af52c44",
+  "imageSha256": "4c41da844f615908177ad6693997d55aabd0a21322f7acc6dc404337838fcb5e",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_004.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
-  "status": "ready_for_practice_only",
+  "status": "handdrawn_image_reviewed",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
-  "reviewNotes": "One image generated and reviewed for Stage 04. Actual scene: an adult woman/mother stirs a steaming silver pot with a wooden spoon on the right; a young boy in green apron cuts red tomatoes on the cutting board on the left; green lettuce is visible in a clear bowl on the front-left counter. The image has no reliably countable dining plates. The original father/daughter/three-plates question set was revised to woman and boy actions. The saved picture is 1536x1024.",
+  "reviewNotes": "Original hand-drawn illustration: father in blue shirt and dark apron slices carrots on a board at front left; daughter in pink apron washes tomatoes at sink behind him; exactly three white plates visible on dining table at right; shelves, stove and window provide depth.",
   "freeDescription": {
     "maxPoints": 100,
-    "example": "A woman is stirring a pot. A boy is cutting tomatoes. There is a bowl of lettuce on the counter. They are cooking in the kitchen.",
+    "example": "A father is cutting carrots. His daughter is washing tomatoes. There are three plates on the table. They are cooking in the kitchen.",
     "facts": [
       {
-        "id": "woman_stirring",
-        "labelJa": "女性が鍋をかき混ぜている",
+        "id": "father_carrots",
+        "labelJa": "父親がニンジンを切っている",
         "points": 40,
         "checks": [
           {
             "all": [
               [
-                "woman",
-                "mother",
-                "mom",
-                "mum",
-                "lady",
-                "she"
-              ],
-              [
-                "stirring",
-                "stirs",
-                "mixing",
-                "mixes",
-                "cooking"
-              ],
-              [
-                "pot",
-                "soup",
-                "food"
-              ]
-            ]
-          }
-        ]
-      },
-      {
-        "id": "boy_tomatoes",
-        "labelJa": "男の子がトマトを切っている",
-        "points": 30,
-        "checks": [
-          {
-            "all": [
-              [
-                "boy",
-                "son",
-                "he",
-                "child",
-                "kid"
+                "father",
+                "dad",
+                "man",
+                "he"
               ],
               [
                 "cutting",
                 "slicing",
                 "chopping",
                 "cuts",
-                "slices",
-                "chops"
+                "slices"
+              ],
+              [
+                "carrots",
+                "carrot"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "daughter_tomatoes",
+        "labelJa": "娘がトマトを洗っている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "daughter",
+                "girl",
+                "she"
+              ],
+              [
+                "washing",
+                "rinsing",
+                "cleaning",
+                "washes",
+                "rinses"
               ],
               [
                 "tomato",
@@ -79,35 +73,35 @@
         ]
       },
       {
-        "id": "lettuce_bowl",
-        "labelJa": "ボウルにレタスが入っている",
+        "id": "three_plates",
+        "labelJa": "食卓にお皿が3枚ある",
         "points": 20,
         "checks": [
           {
             "all": [
               [
-                "lettuce",
-                "salad",
-                "green vegetables"
+                "3",
+                "three"
               ],
               [
-                "bowl",
-                "glass bowl"
+                "plates",
+                "plate"
               ]
             ]
           }
         ]
       },
       {
-        "id": "kitchen_scene",
-        "labelJa": "キッチンで料理している",
+        "id": "kitchen",
+        "labelJa": "キッチンで料理をしている",
         "points": 10,
         "checks": [
           {
             "all": [
               [
                 "kitchen",
-                "home kitchen"
+                "cooking at home",
+                "cooking together"
               ]
             ]
           }
@@ -118,20 +112,20 @@
   "questions": {
     "2": {
       "maxPoints": 100,
-      "labelJa": "女性の動作",
+      "labelJa": "父親の動作",
       "full": [
         {
           "all": [
             [
-              "stirring",
-              "stirs",
-              "mixing",
-              "mixes"
+              "cutting",
+              "slicing",
+              "chopping",
+              "cuts",
+              "slices"
             ],
             [
-              "pot",
-              "soup",
-              "food"
+              "carrot",
+              "carrots"
             ]
           ]
         }
@@ -140,65 +134,56 @@
         {
           "all": [
             [
-              "stirring",
-              "stirs",
-              "mixing",
-              "mixes"
+              "cutting",
+              "slicing",
+              "chopping"
             ]
           ]
         }
       ],
       "rightRole": [
-        "woman",
-        "mother",
-        "mom",
-        "mum",
-        "lady",
-        "she"
+        "father",
+        "dad",
+        "man",
+        "he"
       ],
       "rejectIfOnlyWrongRole": [
-        "boy",
-        "he",
-        "son",
-        "man"
+        "girl",
+        "she",
+        "daughter",
+        "woman"
       ],
       "examples": [
-        "She is stirring a pot.",
-        "The woman is mixing food in a pot.",
-        "Stirring a pot."
+        "He is cutting carrots.",
+        "He is slicing carrots."
       ]
     },
     "3": {
       "maxPoints": 100,
-      "labelJa": "男の子が切っている食べ物",
+      "labelJa": "食卓のお皿の数",
       "full": [
         {
           "all": [
             [
-              "tomatoes",
-              "tomato"
+              "three",
+              "3"
             ]
           ]
         }
       ],
       "partial": [],
-      "rightRole": [
-        "boy",
-        "he",
-        "son",
-        "child"
-      ],
-      "rejectIfOnlyWrongRole": [
-        "woman",
-        "she",
-        "mother",
-        "mom",
-        "lady"
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
+      "rejectExpressions": [
+        "not three",
+        "not 3",
+        "more than three",
+        "fewer than three",
+        "less than three"
       ],
       "examples": [
-        "He is cutting tomatoes.",
-        "Tomatoes.",
-        "The boy is slicing tomatoes."
+        "Three.",
+        "There are three plates on the table."
       ]
     }
   }
