@@ -383,7 +383,11 @@
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_006.webp",
       "promptId": "e3_006",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "imageSha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
+      "actualImageSize": "1536x1024",
+      "reviewedHanddrawnImage": true,
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_006.webp"
     },
     "questions": [
       {
