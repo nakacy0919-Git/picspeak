@@ -5,11 +5,11 @@
   "stage": 1,
   "title": "Library Day",
   "imageFilename": "e3_001.webp",
-  "imageSha256": "0f0f91e96f9acea2cd766884e1b92e492b5142e030c617d28ab20ded584790c1",
-  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_001.webp",
+  "imageSha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
-  "status": "ready_for_practice_only",
+  "status": "candidate_illustration_reviewed",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
   "freeDescription": {
@@ -189,5 +189,5 @@
       "rejectExpressions": []
     }
   },
-  "reviewNotes": "Verified: seated boy is reading a book; foreground girl is carrying exactly three books; librarian is behind the counter. Another student at the counter is optional context."
+  "reviewNotes": "New 3:2 hand-drawn card artwork: a boy seated reading an open book on the left, a girl standing holding exactly three distinct stacked books on the right, and librarian with glasses behind the library service counter. Bookshelves and a window are visible. Old photograph was superseded for design consistency."
 }
