@@ -1,0 +1,203 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_002",
+  "grade": "3",
+  "stage": 2,
+  "title": "School Garden",
+  "imageFilename": "e3_002.webp",
+  "imageSha256": "39142930b906b9b4040b705982bc80d0ef49c6bf26abf9abcabb709d5d4dfb48",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_002.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "ready_for_practice_only",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A girl is watering the flowers. A boy is planting seeds. There is a bucket next to the bench. They are working in the school garden.",
+    "facts": [
+      {
+        "id": "girl_watering",
+        "labelJa": "女の子が花に水をやっている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "girl",
+                "she",
+                "female student"
+              ],
+              [
+                "watering",
+                "waters",
+                "water",
+                "giving water",
+                "pouring water",
+                "sprinkling"
+              ],
+              [
+                "flower",
+                "flowers",
+                "plant",
+                "plants"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "boy_planting",
+        "labelJa": "男の子が種を植えている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "he",
+                "male student"
+              ],
+              [
+                "planting",
+                "plants",
+                "sowing",
+                "putting"
+              ],
+              [
+                "seed",
+                "seeds"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bucket_bench",
+        "labelJa": "バケツがベンチの近くにある",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "bucket",
+                "pail"
+              ],
+              [
+                "near",
+                "next to",
+                "beside",
+                "by",
+                "close to"
+              ],
+              [
+                "bench"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "school_garden",
+        "labelJa": "学校の庭・花壇である",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "school garden",
+                "garden",
+                "flower bed",
+                "vegetable patch",
+                "schoolyard"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "女の子の動作",
+      "full": [
+        {
+          "all": [
+            [
+              "watering",
+              "waters",
+              "water",
+              "giving water",
+              "pouring water",
+              "sprinkling"
+            ],
+            [
+              "flowers",
+              "flower",
+              "plants",
+              "plant"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "watering",
+              "waters",
+              "sprinkling",
+              "giving water",
+              "pouring water"
+            ]
+          ]
+        }
+      ],
+      "rejectIfOnlyWrongRole": [
+        "boy",
+        "he"
+      ],
+      "examples": [
+        "She is watering the flowers.",
+        "The girl is giving water to the plants.",
+        "Watering the flowers."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "バケツの位置",
+      "full": [
+        {
+          "all": [
+            [
+              "near",
+              "next to",
+              "beside",
+              "by",
+              "close to"
+            ],
+            [
+              "bench"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "bench"
+            ]
+          ]
+        }
+      ],
+      "rejectIfOnlyWrongRole": [],
+      "examples": [
+        "It is near the bench.",
+        "The bucket is beside the bench.",
+        "Next to the bench."
+      ]
+    }
+  }
+}
