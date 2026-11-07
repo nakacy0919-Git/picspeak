@@ -84,9 +84,9 @@
     "engine": "js/eiken_picture_scoring.js",
     "manifest": "image_scoring_manifest.json",
     "guide": "SCORING_GUIDE.md",
-    "readyRubrics": 2,
-    "pendingRubrics": 118,
-    "grade1ImagesSaved": 2,
+    "readyRubrics": 3,
+    "pendingRubrics": 117,
+    "grade1ImagesSaved": 3,
     "method": "transcript-based, image-verified rubric",
     "notOfficialEiken": true,
     "runtimeImageAssetsInGithub": 0
