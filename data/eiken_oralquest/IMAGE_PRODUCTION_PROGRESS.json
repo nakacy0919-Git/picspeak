@@ -42,12 +42,14 @@
       "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_003.webp",
       "storage": "ChatGPT Library",
       "libraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp",
-      "sha256": "acf92f075edd4a9c63a6693454de23b36d4b53485c711ac5b792a131754fd215",
-      "dimensions": "1600x1200",
+      "sha256": "a083605ba24d74c02afbcf27c63254b86089b911288a0c6c822be7fed928e3d0",
+      "dimensions": "1536x1024",
       "format": "WebP",
       "githubBinaryUploaded": false,
       "scoringRubric": "scoring_rubrics/e3_003.json",
-      "scoringStatus": "image_reviewed_and_rules_created"
+      "scoringStatus": "revised_and_needs_retest",
+      "alternativeImage": "e3_003.png",
+      "qualityRevision": "High-resolution replacement, realistic editorial school-rainy scene; grade3 No.2 question and rubric updated to foreground girl with pink umbrella."
     }
   ],
   "next": {
@@ -58,5 +60,5 @@
     "status": "awaiting_illustration_and_scoring",
     "scene": "Kitchen: father cutting carrots, daughter washing tomatoes, three plates on a dining table."
   },
-  "notes": "Stages 01–03 images saved in ChatGPT Library; all three have card-specific scoring rubrics in GitHub development branch. GitHub binary images not yet committed, so app imageSrc stays null."
+  "notes": "Stages 01-03 images saved in ChatGPT Library; Stage03 WebP overwritten with high-quality 1536x1024 replacement and PNG alternative. Stage03 question/rubric changed to match visible schoolgirl instead of prior adult-woman prompt. Github image binary still not committed; imageSrc remains null."
 }
