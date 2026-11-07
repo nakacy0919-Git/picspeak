@@ -237,7 +237,7 @@
   }
   function formatPictureScore(result){
     if(!result)return '';
-    var facts=(result.matched||[]).map(function(f){return '<span class="score-fact">✓ '+escapeHtml(f.labelJa)+' +'+f.points+'</span>';}).join("");
+    var facts=(Array.isArray(result.matched)?result.matched:[]).map(function(f){return '<span class="score-fact">✓ '+escapeHtml(f.labelJa)+' +'+f.points+'</span>';}).join("");
     facts+=(result.missing||[]).map(function(f){return '<span class="score-fact missing">△ '+escapeHtml(f.labelJa)+'</span>';}).join("");
     var note=result.kind==="free_description"?"描写内容の一致度です。":(result.status==="matched"?"質問の目標内容を確認しました。":"伝えたい内容をもう少し具体的にしてみましょう。");
     var example=result.example||(result.examples&&result.examples[0])||"";
