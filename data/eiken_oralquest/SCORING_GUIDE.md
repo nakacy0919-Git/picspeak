@@ -45,7 +45,8 @@
 | 3級03 A Rainy Morning | 手描き版WebP保存済・画像内容確認済 | [e3_003.json](scoring_rubrics/e3_003.json) | 未公開 |
 | 3級04 Weekend Cooking | 手描き版WebP保存済・画像内容確認済 | [e3_004.json](scoring_rubrics/e3_004.json) | 未公開 |
 | 3級05 At the Zoo | 手描き版WebP保存済・画像内容確認済 | [e3_005.json](scoring_rubrics/e3_005.json) | 未公開 |
-| 3級06〜30 | 未制作 | 制作時に新しいルールを作成 | 未公開 |
+| 3級06 Music Club | 手描き版WebP保存済・画像内容確認済 | [e3_006.json](scoring_rubrics/e3_006.json) | 未公開 |
+| 3級07〜30 | 未制作 | 制作時に新しいルールを作成 | 未公開 |
 | 準2級・2級・準1級 | 画像未制作 | 作画後に制作 | 未公開 |
 
 本番の採点値や合否判定とは区別し、画像内容に基づく練習スコアとして扱います。
