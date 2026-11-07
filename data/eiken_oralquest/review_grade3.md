@@ -92,7 +92,7 @@ Some people bring umbrellas on rainy days. Others wear raincoats when they walk 
 
 ### 画像制作指示（未制作）
 
-Street: woman holding an umbrella, boy wearing a yellow raincoat, bicycle next to a tree.
+Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; a younger boy in a yellow hooded raincoat walking behind her; an unoccupied silver bicycle parked next to a leafy tree on the right. Another student holds a navy-blue umbrella. Wet pavement and falling rain.
 
 ### 面接官からの質問・参考回答
 
@@ -100,7 +100,7 @@ Street: woman holding an umbrella, boy wearing a yellow raincoat, bicycle next t
 
 - To stay dry when they walk to school.
 
-**No.2｜What is the woman holding?**
+**No.2｜What is the girl holding?**
 
 - She is holding an umbrella.
 
