@@ -1,0 +1,206 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_006",
+  "grade": "3",
+  "stage": 6,
+  "title": "Music Club",
+  "imageFilename": "e3_006.webp",
+  "imageSha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_006.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "handdrawn_image_reviewed",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "reviewNotes": "Verified hand-drawn card: ponytailed GIRL seated at black upright piano with both hands on keys; BOY standing to left holding/playing an acoustic guitar; a red single floor drum sits immediately beside the left-side classroom window. Music stands, chalkboard and bookshelves confirm school music room. Both Eiken picture questions are visibly answerable. Note: source picture shows boy playing guitar as well as holding it.",
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A girl is playing the piano. A boy is playing a guitar. There is a drum beside the window. They are in the music room.",
+    "facts": [
+      {
+        "id": "girl_piano",
+        "labelJa": "女の子がピアノを弾いている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "girl",
+                "she",
+                "female student",
+                "schoolgirl"
+              ],
+              [
+                "playing",
+                "plays",
+                "using"
+              ],
+              [
+                "piano",
+                "keyboard"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "boy_guitar",
+        "labelJa": "男の子がギターを持っている・弾いている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "he",
+                "male student"
+              ],
+              [
+                "holding",
+                "holds",
+                "has",
+                "playing",
+                "plays",
+                "carrying"
+              ],
+              [
+                "guitar"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "drum_window",
+        "labelJa": "ドラムが窓の隣にある",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "drum",
+                "drums"
+              ],
+              [
+                "beside",
+                "next to",
+                "by",
+                "near",
+                "close to"
+              ],
+              [
+                "window"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "music_room",
+        "labelJa": "音楽室の場面である",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "music room",
+                "music classroom",
+                "school music room"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "女の子の動作",
+      "full": [
+        {
+          "all": [
+            [
+              "playing",
+              "plays"
+            ],
+            [
+              "piano",
+              "keyboard"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "piano",
+              "keyboard"
+            ]
+          ]
+        }
+      ],
+      "rightRole": [
+        "girl",
+        "she",
+        "female student",
+        "schoolgirl"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "boy",
+        "he",
+        "male student",
+        "man"
+      ],
+      "examples": [
+        "She is playing the piano.",
+        "The girl is playing the piano.",
+        "Playing the piano."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "ドラムの場所",
+      "full": [
+        {
+          "all": [
+            [
+              "beside",
+              "next to",
+              "near",
+              "by",
+              "close to"
+            ],
+            [
+              "window"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "window"
+            ]
+          ]
+        }
+      ],
+      "rejectExpressions": [
+        "far from the window",
+        "away from the window",
+        "under the window",
+        "on the window",
+        "behind the piano"
+      ],
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
+      "examples": [
+        "It is beside the window.",
+        "The drum is next to the window.",
+        "Near the window."
+      ]
+    }
+  }
+}
