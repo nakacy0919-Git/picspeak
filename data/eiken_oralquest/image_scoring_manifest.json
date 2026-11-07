@@ -42,8 +42,8 @@
       "grade": "3",
       "stage": 3,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_003.webp",
-      "rubricStatus": "awaiting_image_review",
-      "rubricFile": null,
+      "rubricStatus": "image_checked",
+      "rubricFile": "scoring_rubrics/e3_003.json",
       "description": {
         "freeImage": true,
         "pictureQuestions": [
