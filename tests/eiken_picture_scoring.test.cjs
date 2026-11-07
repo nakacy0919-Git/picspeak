@@ -5,7 +5,7 @@ const path=require('node:path');
 const scoring=require('../js/eiken_picture_scoring.js');
 const root=path.resolve(__dirname,'../data/eiken_oralquest/');
 const get=id=>JSON.parse(fs.readFileSync(path.join(root,'scoring_rubrics',id+'.json'),'utf8'));
-const a=get('e3_001'),b=get('e3_002'),c=get('e3_003'),d=get('e3_004');
+const a=get('e3_001'),b=get('e3_002'),c=get('e3_003'),d=get('e3_004'),e=get('e3_005');
 let checked=0;
 function expectScore(rubric,kind,num,text,expected){
   const result=kind==='free'?scoring.scoreFree(rubric,text):scoring.scoreQuestion(rubric,num,text);
@@ -64,10 +64,26 @@ expectScore(d,'q',3,'The boy is slicing tomatoes.',100);
 expectScore(d,'q',3,'The mother is slicing tomatoes.',0);
 expectScore(d,'q',3,'Carrots.',0);
 expectScore(d,'q',3,'He is not cutting tomatoes.',0);
+expectScore(e,'free',null,'A boy is looking through binoculars. A man is pointing at an elephant. A girl is watching the elephant. They are at the zoo.',100);
+expectScore(e,'free',null,'The father is pointing at the elephant. His son is using binoculars. His daughter is looking at the elephant. They are at a zoo.',100);
+expectScore(e,'free',null,'A girl is using binoculars. A man is pointing at the elephant. A boy is watching the elephant. They are at the zoo.',40);
+expectScore(e,'q',2,'He is looking through binoculars.',100);
+expectScore(e,'q',2,'The boy is using binoculars.',100);
+expectScore(e,'q',2,'He is looking at the elephant with binoculars.',100);
+expectScore(e,'q',2,'Binoculars.',55);
+expectScore(e,'q',2,'A girl is looking through binoculars.',0);
+expectScore(e,'q',2,'He is not looking through binoculars.',0);
+expectScore(e,'q',3,'Two.',100);
+expectScore(e,'q',3,'There are two children.',100);
+expectScore(e,'q',3,'2 children.',100);
+expectScore(e,'q',3,'Three.',0);
+expectScore(e,'q',3,'There is one child.',0);
+expectScore(e,'q',3,'There are not two children.',0);
+expectScore(e,'q',3,'There are more than two children.',0);
 assert.equal(scoring.scoreFree(null,'A girl is watering flowers.'),null);
 const index=JSON.parse(fs.readFileSync(path.join(root,'image_scoring_manifest.json'),'utf8'));
 assert.equal(index.cards.length,120);
-assert.equal(index.cards.filter(c=>c.rubricFile).length,4);
+assert.equal(index.cards.filter(c=>c.rubricFile).length,5);
 for(const card of index.cards.filter(c=>c.rubricFile)){
  const rubric=get(card.cardId);
  assert.equal(rubric.cardId,card.cardId);
@@ -75,4 +91,4 @@ for(const card of index.cards.filter(c=>c.rubricFile)){
  assert.equal(rubric.notOfficialEikenScore,true);
  assert.equal(rubric.freeDescription.facts.reduce((n,x)=>n+x.points,0),100);
 }
-console.log('Eiken picture scoring tests passed:',checked,'scenarios, 4 image-reviewed rubrics, 116 pending.');
+console.log('Eiken picture scoring tests passed:',checked,'scenarios, 5 image-reviewed rubrics, 115 pending.');
