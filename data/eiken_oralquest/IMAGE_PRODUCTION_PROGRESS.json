@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "updatedAt": "2026-11-07",
+  "workflow": "Generate one stage -> validate against its card/questions -> save with exact .webp filename -> only then generate the next stage",
+  "grade": "3",
+  "completed": [
+    {
+      "id": "e3_001",
+      "stage": 1,
+      "title": "Library Day",
+      "filename": "e3_001.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_001.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_001.webp",
+      "sha256": "0f0f91e96f9acea2cd766884e1b92e492b5142e030c617d28ab20ded584790c1",
+      "dimensions": "1448x1086",
+      "format": "WebP",
+      "githubBinaryUploaded": false
+    }
+  ],
+  "next": {
+    "id": "e3_002",
+    "stage": 2,
+    "title": "School Garden",
+    "filename": "e3_002.webp",
+    "status": "awaiting_correct_illustration",
+    "scene": "A school garden. A girl is watering flowers, a boy is planting seeds, and a bucket is placed near a bench. No text."
+  },
+  "notes": "Several incorrect library images were returned while attempting Stage 02; they were rejected and not saved as e3_002.webp. The grade JSON imageSrc remains null until the correct binary asset is committed."
+}
