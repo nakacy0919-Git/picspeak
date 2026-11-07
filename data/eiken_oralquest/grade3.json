@@ -233,11 +233,15 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "At home in a kitchen, a father is cutting carrots at the counter, his daughter is washing tomatoes, and there are exactly three empty plates on the dining table.",
+      "artDirection": "A home kitchen: a father in a navy apron is cutting carrots at a counter in the foreground. His daughter washes tomatoes at the sink behind him. Exactly three white plates lie on the wooden dining table at front right. Kitchen cabinets and a window create depth.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_004.webp",
       "promptId": "e3_004",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "reviewedHanddrawnImage": true,
+      "imageSha256": "4c41da844f615908177ad6693997d55aabd0a21322f7acc6dc404337838fcb5e",
+      "actualImageSize": "1536x1024",
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_004.webp"
     },
     "questions": [
       {
@@ -302,11 +306,15 @@
     "visual": {
       "status": "pending",
       "type": "single",
-      "artDirection": "At a zoo, a keeper is feeding a giraffe while exactly two children are watching, and a sign shows a small illustration of a zebra.",
+      "artDirection": "An outdoor zoo enclosure: a male zookeeper in a khaki uniform is feeding green leaves to a giraffe. Exactly two children in the foreground watch behind the railing. A zoo entrance arch, a few distant people walking away, a tree, rocks and flowers appear in the background. The distant walkers are not watching the giraffe.",
       "imageSrc": null,
       "plannedImageSrc": "assets/images/eiken_oralquest/grade3/e3_005.webp",
       "promptId": "e3_005",
-      "redesignStyleVersion": "eiken-handdrawn-v2"
+      "redesignStyleVersion": "eiken-handdrawn-v2",
+      "reviewedHanddrawnImage": true,
+      "imageSha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f",
+      "actualImageSize": "1536x1024",
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_005.webp"
     },
     "questions": [
       {
