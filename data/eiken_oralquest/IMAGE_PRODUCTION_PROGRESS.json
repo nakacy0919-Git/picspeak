@@ -19,17 +19,49 @@
       "scoringRubric": "scoring_rubrics/e3_001.json",
       "scoringStatus": "ready_for_revalidation_after_image_replacement",
       "review": "Accepted library-scene artwork from previous Stage 01 response with book-reading boy, exactly three books held by girl, and librarian behind desk; replaced older flat sample file."
+    },
+    {
+      "id": "e3_002",
+      "stage": 2,
+      "title": "School Garden",
+      "filename": "e3_002.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_002.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp",
+      "sha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_002.json",
+      "scoringStatus": "image_checked_rules_ready",
+      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions."
+    },
+    {
+      "id": "e3_003",
+      "stage": 3,
+      "title": "A Rainy Morning",
+      "filename": "e3_003.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_003.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp",
+      "sha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_003.json",
+      "scoringStatus": "image_checked_rules_ready",
+      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions."
     }
   ],
   "next": {
-    "id": "e3_002",
-    "stage": 2,
-    "title": "School Garden",
-    "filename": "e3_002.webp",
-    "status": "failed_generation_wrong_scene_do_not_save",
-    "scene": "A girl watering flowers, a boy planting seeds, and a bucket clearly next to a garden bench. Original hand-drawn depth-rich exam illustration."
+    "id": "e3_004",
+    "stage": 4,
+    "title": "Weekend Cooking",
+    "filename": "e3_004.webp",
+    "status": "awaiting_new_handdrawn_illustration",
+    "scene": "Father cutting carrots, daughter washing tomatoes, exactly three plates on the dining table."
   },
-  "notes": "Stage 01 hand-drawn Library Day image from prior response was converted to WebP and saved over candidate e3_001.webp in ChatGPT Library. Stage 02 generation twice incorrectly repeated Library Day; neither wrong-scene output was saved or approved. Next remains Stage 02 School Garden.",
+  "notes": "New hand-drawn cards 01-03 are saved in Library. Stage02 and Stage03 are formally saved under canonical filenames and have checked scoring rubrics. GitHub binary image assets still not uploaded, so app imageSrc remains null and the running app cannot display these yet.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
