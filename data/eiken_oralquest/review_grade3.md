@@ -1,12 +1,12 @@
 # Oral Quest｜英検3級（全30ステージ）
 
-この資料はPicSpeak向けに独自作成した面接練習原稿です。画像は未制作で、**画像指示は今後のイラスト制作のためのメモ**です。公式問題・公式模範解答ではありません。
+原則、写真ではなく**オリジナルの手描き試験カード風イラスト**を使用する。添付の英検風見本は絵柄の参考のみとし、場面を模倣しない。画像は実際の面接官の質問・模範回答と一致することが必須。教材は非公式のオリジナル練習資料。
 
 ---
 
 ## Stage 01 — Library Day
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（34 words）
 
@@ -14,9 +14,11 @@
 
 On Saturdays, some children visit the town library. They read books and do their homework there. A librarian helps them find interesting stories. Older students sometimes help younger children choose books they will enjoy.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
-Library: a librarian at a desk, a boy reading at a table, a girl carrying three books.
+Public library: a young boy seated at a table reading an open book; a girl standing nearby carrying EXACTLY THREE clearly separate books; a friendly librarian behind the service counter. Original hand-drawn exam-card illustration with crisp ink outlines and soft textured pastel coloring.
+
+**新しい手描き版の試作は保存済み。** Library: /PicSpeak/OralQuest/grade3_redesign/e3_001.webp
 
 ### 面接官からの質問・参考回答
 
@@ -44,7 +46,7 @@ Library: a librarian at a desk, a boy reading at a table, a girl carrying three 
 
 ## Stage 02 — School Garden
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（38 words）
 
@@ -52,9 +54,11 @@ Library: a librarian at a desk, a boy reading at a table, a girl carrying three 
 
 Our school has a small garden behind the gym. Students grow tomatoes and flowers there. They water the plants every morning and sometimes share vegetables with their families. Classes also visit the garden to learn how vegetables grow.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -82,7 +86,7 @@ Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench
 
 ## Stage 03 — A Rainy Morning
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（35 words）
 
@@ -90,9 +94,11 @@ Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench
 
 Some people bring umbrellas on rainy days. Others wear raincoats when they walk to school. Wearing dry clothes helps people stay comfortable during bad weather. Families often check the weather forecast before leaving the house.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
-Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; a younger boy in a yellow hooded raincoat walking behind her; an unoccupied silver bicycle parked next to a leafy tree on the right. Another student holds a navy-blue umbrella. Wet pavement and falling rain.
+A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -100,7 +106,7 @@ Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; 
 
 - To stay dry when they walk to school.
 
-**No.2｜What is the girl holding?**
+**No.2｜What is the woman holding?**
 
 - She is holding an umbrella.
 
@@ -120,7 +126,7 @@ Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; 
 
 ## Stage 04 — Weekend Cooking
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（35 words）
 
@@ -128,9 +134,11 @@ Rainy school walkway: a teenage girl holding a pink umbrella in the foreground; 
 
 Many families cook together on weekends. Children can wash vegetables or set the table. Cooking with family members is a good way to learn new skills. Everyone can help by cleaning up after the meal.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
-Bright home kitchen: an adult woman stirring a steaming pot, a young boy carefully cutting tomatoes on a cutting board, and fresh green lettuce in a glass bowl on the counter.
+At home in a kitchen, a father is cutting carrots at the counter, his daughter is washing tomatoes, and there are exactly three empty plates on the dining table.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -138,13 +146,13 @@ Bright home kitchen: an adult woman stirring a steaming pot, a young boy careful
 
 - They can wash vegetables or set the table.
 
-**No.2｜What is the woman doing?**
+**No.2｜What is the father doing?**
 
-- She is stirring a pot.
+- He is cutting carrots.
 
-**No.3｜What is the boy cutting?**
+**No.3｜How many plates are on the table?**
 
-- He is cutting tomatoes.
+- There are three plates.
 
 **No.4｜Do you sometimes help cook dinner?**
 
@@ -158,7 +166,7 @@ Bright home kitchen: an adult woman stirring a steaming pot, a young boy careful
 
 ## Stage 05 — At the Zoo
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（34 words）
 
@@ -166,9 +174,11 @@ Bright home kitchen: an adult woman stirring a steaming pot, a young boy careful
 
 Many zoos teach visitors about wild animals. People can learn where animals live and what they eat. Zoo workers also explain how to protect animals. Visitors can ask keepers questions about their favorite animals.
 
-### 画像構成（作成・保存済み）
+### イラスト構成（オリジナル教材）
 
-Elephant enclosure: a father points to an elephant while a boy uses binoculars and a girl watches beside him. Two children stand next to the father.
+At a zoo, a keeper is feeding a giraffe while exactly two children are watching, and a sign shows a small illustration of a zebra.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -176,13 +186,13 @@ Elephant enclosure: a father points to an elephant while a boy uses binoculars a
 
 - They can learn where animals live and what they eat.
 
-**No.2｜What is the boy doing?**
+**No.2｜What is the keeper doing?**
 
-- He is looking at the elephant through binoculars.
+- The keeper is feeding a giraffe.
 
-**No.3｜How many children are standing next to the man?**
+**No.3｜How many children are watching?**
 
-- Two children are standing next to the man.
+- Two children are watching.
 
 **No.4｜What animal do you like best?**
 
@@ -196,7 +206,7 @@ Elephant enclosure: a father points to an elephant while a boy uses binoculars a
 
 ## Stage 06 — Music Club
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（36 words）
 
@@ -204,9 +214,11 @@ Elephant enclosure: a father points to an elephant while a boy uses binoculars a
 
 Some students join music clubs after school. They practice songs together and perform at school events. Playing music with friends can be exciting and enjoyable. Many students feel proud after performing in front of an audience.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Music room: girl playing piano, boy holding guitar, drum beside the window.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -234,7 +246,7 @@ Music room: girl playing piano, boy holding guitar, drum beside the window.
 
 ## Stage 07 — Community Clean-up
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（38 words）
 
@@ -242,9 +254,11 @@ Music room: girl playing piano, boy holding guitar, drum beside the window.
 
 On Sunday mornings, volunteers clean the park near the station. They pick up trash and collect empty bottles. Their work makes the park safer and nicer for everyone. The volunteers wear gloves and work together in small groups.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Park: two students picking up litter, woman holding trash bag, three empty bottles on ground.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -272,7 +286,7 @@ Park: two students picking up litter, woman holding trash bag, three empty bottl
 
 ## Stage 08 — A New Bicycle
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（36 words）
 
@@ -280,9 +294,11 @@ Park: two students picking up litter, woman holding trash bag, three empty bottl
 
 Many children ride bicycles to school or to the park. Wearing a helmet is important because it can protect their heads. Cyclists should also follow traffic rules. Bright lights and careful riding also make roads safer.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Street: boy putting on helmet, girl riding bicycle, traffic light showing red.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -310,7 +326,7 @@ Street: boy putting on helmet, girl riding bicycle, traffic light showing red.
 
 ## Stage 09 — Farmers' Market
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（34 words）
 
@@ -318,9 +334,11 @@ Street: boy putting on helmet, girl riding bicycle, traffic light showing red.
 
 Every month, farmers sell fresh food at the town market. People can buy vegetables, fruit, and bread there. Some families enjoy talking with the farmers. Farmers often explain how they grow their fresh vegetables.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Market: woman choosing apples, farmer handing a bag to man, four pumpkins on table.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -348,7 +366,7 @@ Market: woman choosing apples, farmer handing a bag to man, four pumpkins on tab
 
 ## Stage 10 — After-school Sports
 
-**練習区分：** 基礎（ヒントあり）
+**練習区分：** 基礎
 
 ### 音読（32 words）
 
@@ -356,9 +374,11 @@ Market: woman choosing apples, farmer handing a bag to man, four pumpkins on tab
 
 Many students exercise after classes. Some play soccer on the school field, while others run around the track. Playing sports helps students feel energetic. Teachers encourage students to drink water after exercising.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 School field: girls kicking soccer ball, boy drinking water, bag under a tree.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -386,7 +406,7 @@ School field: girls kicking soccer ball, boy drinking water, bag under a tree.
 
 ## Stage 11 — Bus Stop
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（35 words）
 
@@ -394,9 +414,11 @@ School field: girls kicking soccer ball, boy drinking water, bag under a tree.
 
 People often wait at bus stops near shopping centers. Some read books while waiting. Bus drivers help passengers travel safely to different places in the town. Many passengers check the timetable before leaving their homes.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Bus stop: elderly man reading newspaper, student checking watch, two people sitting on bench.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -424,7 +446,7 @@ Bus stop: elderly man reading newspaper, student checking watch, two people sitt
 
 ## Stage 12 — Family Picnic
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（35 words）
 
@@ -432,9 +454,11 @@ Bus stop: elderly man reading newspaper, student checking watch, two people sitt
 
 In spring, many families have picnics in parks. They bring sandwiches and drinks and sit on the grass. Children often play games after eating lunch. Some parks have special picnic tables for families to use.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Park: family sitting on blanket, girl throwing a ball, picnic basket beside father.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -462,7 +486,7 @@ Park: family sitting on blanket, girl throwing a ball, picnic basket beside fath
 
 ## Stage 13 — Pet Care
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（38 words）
 
@@ -470,9 +494,11 @@ Park: family sitting on blanket, girl throwing a ball, picnic basket beside fath
 
 Many families keep dogs or cats at home. Pets need fresh water, food, and time to play. Owners should take care of their animals every day. Taking pets to the veterinarian is also part of caring for them.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -500,7 +526,7 @@ Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.
 
 ## Stage 14 — School Festival
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（36 words）
 
@@ -508,9 +534,11 @@ Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.
 
 Our school festival is held every autumn. Students prepare games, food stalls, and music performances. Parents and neighbors come to enjoy the special day together. Students often make colorful posters to welcome visitors to the festival.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Festival: students selling cookies, visitor taking photo, five colorful balloons above booth.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -538,7 +566,7 @@ Festival: students selling cookies, visitor taking photo, five colorful balloons
 
 ## Stage 15 — Train Travel
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（36 words）
 
@@ -546,9 +574,11 @@ Festival: students selling cookies, visitor taking photo, five colorful balloons
 
 Many people travel by train because it is convenient. They can read, listen to music, or enjoy the view. Passengers should speak quietly on crowded trains. Keeping bags close to you can make train journeys easier.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Train car: woman reading, man looking out window, umbrella beside seat.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -576,7 +606,7 @@ Train car: woman reading, man looking out window, umbrella beside seat.
 
 ## Stage 16 — Healthy Breakfast
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（37 words）
 
@@ -584,9 +614,11 @@ Train car: woman reading, man looking out window, umbrella beside seat.
 
 Eating breakfast helps students prepare for the day. Some people eat rice and eggs, while others choose bread and fruit. A balanced meal can give us energy. Families can prepare simple meals together before going to school.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Dining room: boy eating toast, mother pouring milk, two bananas on plate.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -614,7 +646,7 @@ Dining room: boy eating toast, mother pouring milk, two bananas on plate.
 
 ## Stage 17 — Outdoor Art
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（34 words）
 
@@ -622,9 +654,11 @@ Dining room: boy eating toast, mother pouring milk, two bananas on plate.
 
 Some towns display paintings and sculptures in public parks. Visitors enjoy looking at art while walking outside. Local artists sometimes teach children how to draw. Some artists also display their work inside community centers.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Park: child painting on easel, artist explaining picture, sculpture near pond.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -652,7 +686,7 @@ Park: child painting on easel, artist explaining picture, sculpture near pond.
 
 ## Stage 18 — Summer Camp
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（36 words）
 
@@ -660,9 +694,11 @@ Park: child painting on easel, artist explaining picture, sculpture near pond.
 
 During summer vacation, children sometimes join outdoor camps. They learn to put up tents, cook meals, and enjoy nature. Camp leaders teach them how to stay safe. Campers should take their trash home to protect nature.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -690,7 +726,7 @@ Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.
 
 ## Stage 19 — Town Museum
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（35 words）
 
@@ -698,9 +734,11 @@ Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.
 
 Small museums show visitors the history of their towns. People can see old photographs, clothes, and tools. Some museums offer activities for children on weekends. Visitors can ask questions when they join guided museum tours.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Museum: visitor looking at old clock, guide pointing at photograph, two hats in display case.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -728,7 +766,7 @@ Museum: visitor looking at old clock, guide pointing at photograph, two hats in 
 
 ## Stage 20 — Helping Neighbors
 
-**練習区分：** 実践（自力で回答）
+**練習区分：** 実践
 
 ### 音読（35 words）
 
@@ -736,9 +774,11 @@ Museum: visitor looking at old clock, guide pointing at photograph, two hats in 
 
 People can help their neighbors in simple ways. Some carry heavy bags for older people. Others take part in local events or share useful information. Even a small act of kindness can make someone happy.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Street: student carrying groceries for elderly woman, man opening door, small dog near bench.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -766,7 +806,7 @@ Street: student carrying groceries for elderly woman, man opening door, small do
 
 ## Stage 21 — Recycling Paper
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（36 words）
 
@@ -774,9 +814,11 @@ Street: student carrying groceries for elderly woman, man opening door, small do
 
 Many schools collect used paper and notebooks. The paper can be recycled into new products. By recycling regularly, students can help reduce the amount of trash. Schools often place collection boxes near classrooms for this purpose.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Classroom: student putting paper into blue box, teacher holding notebooks, poster on wall.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -804,7 +846,7 @@ Classroom: student putting paper into blue box, teacher holding notebooks, poste
 
 ## Stage 22 — Learning Languages
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（36 words）
 
@@ -812,9 +854,11 @@ Classroom: student putting paper into blue box, teacher holding notebooks, poste
 
 Some children learn another language after school. They practice speaking with friends and watch videos in that language. Learning languages helps people communicate with others. Students can use new words when they meet visitors from abroad.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Classroom: two children talking in English, teacher writing word on board, globe on shelf.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -842,7 +886,7 @@ Classroom: two children talking in English, teacher writing word on board, globe
 
 ## Stage 23 — Safety at Night
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（35 words）
 
@@ -850,9 +894,11 @@ Classroom: two children talking in English, teacher writing word on board, globe
 
 People should be careful when walking outside at night. Bright streetlights help them see the road. It is also important to follow traffic signals at crossings. Wearing bright clothes can also help drivers see pedestrians.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store on corner.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -880,7 +926,7 @@ Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store
 
 ## Stage 24 — Online Lessons
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（40 words）
 
@@ -888,9 +934,11 @@ Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store
 
 Some students use computers to take lessons at home. They can listen to teachers and ask questions online. These lessons are useful when traveling to school is difficult. Students should take short breaks when using screens for a long time.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Bedroom desk: girl wearing headphones at computer, brother writing in notebook, lamp next to screen.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -918,7 +966,7 @@ Bedroom desk: girl wearing headphones at computer, brother writing in notebook, 
 
 ## Stage 25 — Winter Activities
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（35 words）
 
@@ -926,9 +974,11 @@ Bedroom desk: girl wearing headphones at computer, brother writing in notebook, 
 
 In winter, some children enjoy skating or playing in the snow. They wear warm coats and gloves. After playing outside, many families drink something hot. Children often return home with red cheeks and happy smiles.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Snowy park: two children making snowman, mother holding hot drink, red scarf on snowman.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -956,7 +1006,7 @@ Snowy park: two children making snowman, mother holding hot drink, red scarf on 
 
 ## Stage 26 — Community Sports Day
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（34 words）
 
@@ -964,9 +1014,11 @@ Snowy park: two children making snowman, mother holding hot drink, red scarf on 
 
 Many towns hold sports days for families. Children and adults run races or play simple games together. The event gives neighbors a chance to meet. Many teams practice before the big event to prepare.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Field: boy running race, father cheering, three cones beside finish line.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -994,7 +1046,7 @@ Field: boy running race, father cheering, three cones beside finish line.
 
 ## Stage 27 — Visiting the Dentist
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（35 words）
 
@@ -1002,9 +1054,11 @@ Field: boy running race, father cheering, three cones beside finish line.
 
 Taking care of our teeth is important. Dentists check teeth and show patients how to brush properly. Children should brush their teeth after meals when possible. Regular visits to a dentist can help prevent problems.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on wall.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -1032,7 +1086,7 @@ Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on 
 
 ## Stage 28 — Lost and Found
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（36 words）
 
@@ -1040,9 +1094,11 @@ Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on 
 
 People sometimes leave things on buses or trains. Station workers keep many lost items in a special room. Travelers can ask for help if they lose something. Workers usually ask travelers to describe their lost belongings.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Station counter: girl talking to worker, worker holding blue umbrella, backpack on counter.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -1070,7 +1126,7 @@ Station counter: girl talking to worker, worker holding blue umbrella, backpack 
 
 ## Stage 29 — Bird Watching
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（37 words）
 
@@ -1078,9 +1134,11 @@ Station counter: girl talking to worker, worker holding blue umbrella, backpack 
 
 People can watch many kinds of birds near rivers. Some use binoculars to see birds far away. Watching birds teaches people more about the natural world. People should stay quiet so they do not frighten the birds.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Riverside: woman using binoculars, boy drawing bird, two ducks in water.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
@@ -1108,7 +1166,7 @@ Riverside: woman using binoculars, boy drawing bird, two ducks in water.
 
 ## Stage 30 — Preparing for a Trip
 
-**練習区分：** 本番形式（ヒントなし）
+**練習区分：** 模擬
 
 ### 音読（35 words）
 
@@ -1116,9 +1174,11 @@ Riverside: woman using binoculars, boy drawing bird, two ducks in water.
 
 Before a trip, people check the weather and pack their bags. They also find information about places to visit. Good preparation can make traveling more enjoyable. Writing a simple list helps travelers remember important things.
 
-### 画像制作指示（未制作）
+### イラスト構成（オリジナル教材）
 
 Bedroom: girl packing suitcase, boy looking at map, camera on bed.
+
+**新しい手描き版の制作待ち。** 旧写真は採用しない。
 
 ### 面接官からの質問・参考回答
 
