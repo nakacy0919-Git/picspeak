@@ -10,7 +10,7 @@
       "grade": "3",
       "stage": 1,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_001.webp",
-      "rubricStatus": "image_checked",
+      "rubricStatus": "handdrawn_sample_verified",
       "rubricFile": "scoring_rubrics/e3_001.json",
       "description": {
         "freeImage": true,
@@ -26,8 +26,8 @@
       "grade": "3",
       "stage": 2,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_002.webp",
-      "rubricStatus": "image_checked",
-      "rubricFile": "scoring_rubrics/e3_002.json",
+      "rubricStatus": "superseded_photo_awaiting_redraw",
+      "rubricFile": null,
       "description": {
         "freeImage": true,
         "pictureQuestions": [
@@ -35,15 +35,16 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "archivedRubricFile": "scoring_rubrics/e3_002.json"
     },
     {
       "cardId": "e3_003",
       "grade": "3",
       "stage": 3,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_003.webp",
-      "rubricStatus": "image_checked",
-      "rubricFile": "scoring_rubrics/e3_003.json",
+      "rubricStatus": "superseded_photo_awaiting_redraw",
+      "rubricFile": null,
       "description": {
         "freeImage": true,
         "pictureQuestions": [
@@ -51,15 +52,16 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "archivedRubricFile": "scoring_rubrics/e3_003.json"
     },
     {
       "cardId": "e3_004",
       "grade": "3",
       "stage": 4,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_004.webp",
-      "rubricStatus": "image_checked",
-      "rubricFile": "scoring_rubrics/e3_004.json",
+      "rubricStatus": "superseded_photo_awaiting_redraw",
+      "rubricFile": null,
       "description": {
         "freeImage": true,
         "pictureQuestions": [
@@ -67,15 +69,16 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "archivedRubricFile": "scoring_rubrics/e3_004.json"
     },
     {
       "cardId": "e3_005",
       "grade": "3",
       "stage": 5,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_005.webp",
-      "rubricStatus": "image_checked",
-      "rubricFile": "scoring_rubrics/e3_005.json",
+      "rubricStatus": "superseded_photo_awaiting_redraw",
+      "rubricFile": null,
       "description": {
         "freeImage": true,
         "pictureQuestions": [
@@ -83,14 +86,15 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "archivedRubricFile": "scoring_rubrics/e3_005.json"
     },
     {
       "cardId": "e3_006",
       "grade": "3",
       "stage": 6,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_006.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -106,7 +110,7 @@
       "grade": "3",
       "stage": 7,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_007.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -122,7 +126,7 @@
       "grade": "3",
       "stage": 8,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_008.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -138,7 +142,7 @@
       "grade": "3",
       "stage": 9,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_009.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -154,7 +158,7 @@
       "grade": "3",
       "stage": 10,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_010.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -170,7 +174,7 @@
       "grade": "3",
       "stage": 11,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_011.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -186,7 +190,7 @@
       "grade": "3",
       "stage": 12,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_012.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -202,7 +206,7 @@
       "grade": "3",
       "stage": 13,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_013.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -218,7 +222,7 @@
       "grade": "3",
       "stage": 14,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_014.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -234,7 +238,7 @@
       "grade": "3",
       "stage": 15,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_015.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -250,7 +254,7 @@
       "grade": "3",
       "stage": 16,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_016.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -266,7 +270,7 @@
       "grade": "3",
       "stage": 17,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_017.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -282,7 +286,7 @@
       "grade": "3",
       "stage": 18,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_018.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -298,7 +302,7 @@
       "grade": "3",
       "stage": 19,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_019.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -314,7 +318,7 @@
       "grade": "3",
       "stage": 20,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_020.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -330,7 +334,7 @@
       "grade": "3",
       "stage": 21,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_021.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -346,7 +350,7 @@
       "grade": "3",
       "stage": 22,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_022.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -362,7 +366,7 @@
       "grade": "3",
       "stage": 23,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_023.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -378,7 +382,7 @@
       "grade": "3",
       "stage": 24,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_024.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -394,7 +398,7 @@
       "grade": "3",
       "stage": 25,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_025.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -410,7 +414,7 @@
       "grade": "3",
       "stage": 26,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_026.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -426,7 +430,7 @@
       "grade": "3",
       "stage": 27,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_027.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -442,7 +446,7 @@
       "grade": "3",
       "stage": 28,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_028.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -458,7 +462,7 @@
       "grade": "3",
       "stage": 29,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_029.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
@@ -474,7 +478,7 @@
       "grade": "3",
       "stage": 30,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_030.webp",
-      "rubricStatus": "awaiting_image_review",
+      "rubricStatus": "awaiting_new_style_illustration",
       "rubricFile": null,
       "description": {
         "freeImage": true,
