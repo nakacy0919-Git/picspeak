@@ -22,14 +22,14 @@
     }
   ],
   "next": {
-    "id": "e3_002",
-    "stage": 2,
-    "title": "School Garden",
-    "filename": "e3_002.webp",
-    "status": "awaiting_new_style_illustration",
-    "scene": "Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench."
+    "id": "e3_001",
+    "stage": 1,
+    "title": "Library Day",
+    "filename": "e3_001.webp",
+    "status": "requires_depth_correct_final_art",
+    "scene": "Library with clear three-layer perspective: foreground boy reading book at a table, backpack under the table; midground girl standing with exactly three books in her arms, chair next to the table; background librarian behind a circulation counter, with bookshelf behind the librarian and window beside the shelf. No domestic living-room items."
   },
-  "notes": "The photo-style assets Stage 01–05 are archived for provenance and NOT accepted as Eiken Grade 3 exam-style images. Music Club photo (Stage 06) was never enrolled. New hand-drawn Grade 3 series restarted from Stage 01; its illustration saved separately and not yet committed to GitHub. Old photo-based rubrics Stage 02–05 are excluded from live scoring index pending replacement.",
+  "notes": "Multiple attempts to add depth repeated the unrelated user-supplied living-room reference and were rejected. No new depth-correct Library Day image was saved. The old candidate remains in a review-only folder and is not published. Refined three-layer library-only prompt recorded in image_prompts.json.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
