@@ -19,10 +19,10 @@
       "prompt": "ORIGINAL English Grade 3 interview-card illustration. A REAL PUBLIC LIBRARY with pronounced and readable linear perspective, not a family living room. Foreground, closest to viewer on the LEFT: a boy seated at a wooden reading table, reading an OPEN GREEN BOOK held in his hands; a small backpack is clearly UNDER the table, a chair is BESIDE the table. MIDGROUND at center-right: a girl STANDING and CARRYING EXACTLY THREE individually distinguishable books in her arms (red, blue, yellow); books must NOT be resting on the table. BACKGROUND, visibly FARTHER AWAY at back right: an adult librarian wearing glasses STANDING BEHIND a wooden circulation COUNTER; a tall shelf of books BEHIND the librarian, a window TO THE LEFT OF the counter. Show receding floor tiles and table edges, smaller distant furniture, some overlap and true spacing between foreground people and back counter, visible room depth and clear spatial relations. Fine ink contour lines, elegant natural hand-drawn watercolor/colored-pencil shading, high-end educational textbook art, realistic but simplified proportions and expressive natural faces. Avoid photographic, flat vector, chibi, manga/anime and poster styles. Absolutely do NOT include: sofas, dining tables, tea cups, radio, newspaper, musical notes, family snack scene, thought bubbles, or the user-supplied reference picture's layout. No written words or labels. The image MUST answer 'What is the boy doing?' (He is reading a book.) and 'How many books is the girl carrying?' (Three). Additional spatial description should be possible: 'behind the counter', 'in front of the bookshelf', 'under the table', 'next to the table'. Single wide illustrated scene, no panels or floating inserts, 3:2 landscape.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "pending_depth_redesign",
+      "status": "handdrawn_library_scene_saved",
       "styleVersion": "eiken-handdrawn-v2",
       "previewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
-      "previewSha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
+      "previewSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "notes": "Previous image attempts produced a copy of the user-supplied living room instead of Library Day. All are rejected; do not treat output as an accepted picture or change scoring against an invalid image."
     },
     {
