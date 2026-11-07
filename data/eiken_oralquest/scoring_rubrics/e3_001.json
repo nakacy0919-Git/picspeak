@@ -161,6 +161,11 @@
         "He is reading a book.",
         "The boy is reading.",
         "Reading a book."
+      ],
+      "rightRole": [
+        "boy",
+        "he",
+        "male student"
       ]
     },
     "3": {
@@ -180,7 +185,9 @@
       "examples": [
         "Three.",
         "She is carrying three books."
-      ]
+      ],
+      "rejectExpressions": []
     }
-  }
+  },
+  "reviewNotes": "Verified: seated boy is reading a book; foreground girl is carrying exactly three books; librarian is behind the counter. Another student at the counter is optional context."
 }
