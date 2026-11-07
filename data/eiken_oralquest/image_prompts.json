@@ -89,13 +89,21 @@
       "title": "At the Zoo",
       "imageFile": "e3_005.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_005.webp",
-      "aspectRatio": "4:3",
+      "aspectRatio": "3:2",
       "composition": "single",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Zoo: keeper feeding a giraffe, two children watching, sign with a picture of a zebra.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create ONE original, high-quality 3:2 landscape photograph-like educational visual of a sunny zoo elephant enclosure. In the foreground a father in blue points toward a big elephant standing in its habitat; next to him are EXACTLY TWO clearly visible children: a boy wearing a cap who is USING BINOCULARS to look at the animal and a girl in pink who is WATCHING THE ELEPHANT. In the background a large elephant stands near rocks and trees, and the setting is clearly an organized zoo. Maintain natural, warm daylight, believable anatomy, clear readable actions, and uncluttered spatial relationships. IMPORTANT: this is an elephant scene, not a giraffe or feeding-keeper scene. No logos, watermarks, or distracting extraneous signs.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "generated_library_saved",
+      "imageSize": "1536x1024",
+      "verifiedImageFacts": [
+        "A boy using binoculars",
+        "A man pointing to a large elephant",
+        "A girl watching the elephant beside the boy",
+        "Two children next to man",
+        "Zoo environment"
+      ]
     },
     {
       "id": "e3_006",
