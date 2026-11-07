@@ -1,0 +1,205 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_004",
+  "grade": "3",
+  "stage": 4,
+  "title": "Weekend Cooking",
+  "imageFilename": "e3_004.webp",
+  "imageSha256": "5cb65677b062fb68bcc13782ec80580c11276d785374f0c1d32354860af52c44",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_004.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "ready_for_practice_only",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "reviewNotes": "One image generated and reviewed for Stage 04. Actual scene: an adult woman/mother stirs a steaming silver pot with a wooden spoon on the right; a young boy in green apron cuts red tomatoes on the cutting board on the left; green lettuce is visible in a clear bowl on the front-left counter. The image has no reliably countable dining plates. The original father/daughter/three-plates question set was revised to woman and boy actions. The saved picture is 1536x1024.",
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "A woman is stirring a pot. A boy is cutting tomatoes. There is a bowl of lettuce on the counter. They are cooking in the kitchen.",
+    "facts": [
+      {
+        "id": "woman_stirring",
+        "labelJa": "女性が鍋をかき混ぜている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "woman",
+                "mother",
+                "mom",
+                "mum",
+                "lady",
+                "she"
+              ],
+              [
+                "stirring",
+                "stirs",
+                "mixing",
+                "mixes",
+                "cooking"
+              ],
+              [
+                "pot",
+                "soup",
+                "food"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "boy_tomatoes",
+        "labelJa": "男の子がトマトを切っている",
+        "points": 30,
+        "checks": [
+          {
+            "all": [
+              [
+                "boy",
+                "son",
+                "he",
+                "child",
+                "kid"
+              ],
+              [
+                "cutting",
+                "slicing",
+                "chopping",
+                "cuts",
+                "slices",
+                "chops"
+              ],
+              [
+                "tomato",
+                "tomatoes"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "lettuce_bowl",
+        "labelJa": "ボウルにレタスが入っている",
+        "points": 20,
+        "checks": [
+          {
+            "all": [
+              [
+                "lettuce",
+                "salad",
+                "green vegetables"
+              ],
+              [
+                "bowl",
+                "glass bowl"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "kitchen_scene",
+        "labelJa": "キッチンで料理している",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "kitchen",
+                "home kitchen"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "女性の動作",
+      "full": [
+        {
+          "all": [
+            [
+              "stirring",
+              "stirs",
+              "mixing",
+              "mixes"
+            ],
+            [
+              "pot",
+              "soup",
+              "food"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "stirring",
+              "stirs",
+              "mixing",
+              "mixes"
+            ]
+          ]
+        }
+      ],
+      "rightRole": [
+        "woman",
+        "mother",
+        "mom",
+        "mum",
+        "lady",
+        "she"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "boy",
+        "he",
+        "son",
+        "man"
+      ],
+      "examples": [
+        "She is stirring a pot.",
+        "The woman is mixing food in a pot.",
+        "Stirring a pot."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "男の子が切っている食べ物",
+      "full": [
+        {
+          "all": [
+            [
+              "tomatoes",
+              "tomato"
+            ]
+          ]
+        }
+      ],
+      "partial": [],
+      "rightRole": [
+        "boy",
+        "he",
+        "son",
+        "child"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "woman",
+        "she",
+        "mother",
+        "mom",
+        "lady"
+      ],
+      "examples": [
+        "He is cutting tomatoes.",
+        "Tomatoes.",
+        "The boy is slicing tomatoes."
+      ]
+    }
+  }
+}
