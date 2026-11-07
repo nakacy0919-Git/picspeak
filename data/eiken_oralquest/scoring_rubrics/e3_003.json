@@ -5,36 +5,36 @@
   "stage": 3,
   "title": "A Rainy Morning",
   "imageFilename": "e3_003.webp",
-  "imageSha256": "acf92f075edd4a9c63a6693454de23b36d4b53485c711ac5b792a131754fd215",
+  "imageSha256": "a083605ba24d74c02afbcf27c63254b86089b911288a0c6c822be7fed928e3d0",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_003.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
   "status": "ready_for_practice_only",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
-  "reviewNotes": "Checked rendered image: adult woman on the left holds an open blue umbrella, a child in the center is wearing a yellow hooded raincoat, and an unoccupied teal bicycle is parked beside a large tree on the right. Rain is falling. No cyclist is depicted.",
+  "reviewNotes": "Reviewed high-resolution replacement: a foreground schoolgirl holds an open pink umbrella; a second student holds a navy umbrella; a schoolboy wearing a bright yellow raincoat walks in the background; an unoccupied silver bicycle is visibly parked next to a leafy tree at right; rain is falling. Original picture question about an adult woman has been changed to a girl for factual consistency.",
   "freeDescription": {
     "maxPoints": 100,
-    "example": "A woman is holding an umbrella. A boy is wearing a yellow raincoat. There is a bicycle next to the tree. It is raining.",
+    "example": "A schoolgirl is holding a pink umbrella. A boy is wearing a yellow raincoat. There is a bicycle next to the tree. It is raining.",
     "facts": [
       {
-        "id": "woman_umbrella",
-        "labelJa": "女性が傘を持っている",
+        "id": "girl_umbrella",
+        "labelJa": "女の子が傘を持っている",
         "points": 40,
         "checks": [
           {
             "all": [
               [
-                "woman",
-                "lady",
+                "girl",
                 "she",
-                "mother",
-                "adult"
+                "schoolgirl",
+                "female student",
+                "teenage girl",
+                "young woman"
               ],
               [
                 "umbrella",
-                "brolly",
-                "parasol"
+                "brolly"
               ],
               [
                 "holding",
@@ -128,7 +128,7 @@
   "questions": {
     "2": {
       "maxPoints": 100,
-      "labelJa": "女性が持っているもの",
+      "labelJa": "女の子が持っているもの",
       "full": [
         {
           "all": [
@@ -142,21 +142,22 @@
       ],
       "partial": [],
       "rightRole": [
-        "woman",
+        "girl",
         "she",
-        "lady",
-        "mother"
+        "schoolgirl",
+        "female student",
+        "young woman"
       ],
       "rejectIfOnlyWrongRole": [
         "boy",
         "he",
-        "child",
-        "student"
+        "male student",
+        "man"
       ],
       "examples": [
-        "She is holding an umbrella.",
-        "An umbrella.",
-        "The woman has an umbrella."
+        "She is holding a pink umbrella.",
+        "The girl has an umbrella.",
+        "An umbrella."
       ]
     },
     "3": {
