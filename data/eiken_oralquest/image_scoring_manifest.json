@@ -60,8 +60,8 @@
       "grade": "3",
       "stage": 4,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_004.webp",
-      "rubricStatus": "superseded_photo_awaiting_redraw",
-      "rubricFile": null,
+      "rubricStatus": "handdrawn_image_checked",
+      "rubricFile": "scoring_rubrics/e3_004.json",
       "description": {
         "freeImage": true,
         "pictureQuestions": [
@@ -77,8 +77,8 @@
       "grade": "3",
       "stage": 5,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_005.webp",
-      "rubricStatus": "superseded_photo_awaiting_redraw",
-      "rubricFile": null,
+      "rubricStatus": "handdrawn_image_checked",
+      "rubricFile": "scoring_rubrics/e3_005.json",
       "description": {
         "freeImage": true,
         "pictureQuestions": [
