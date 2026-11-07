@@ -136,9 +136,9 @@ Many families cook together on weekends. Children can wash vegetables or set the
 
 ### イラスト構成（オリジナル教材）
 
-At home in a kitchen, a father is cutting carrots at the counter, his daughter is washing tomatoes, and there are exactly three empty plates on the dining table.
+A home kitchen: a father in a navy apron is cutting carrots at a counter in the foreground. His daughter washes tomatoes at the sink behind him. Exactly three white plates lie on the wooden dining table at front right. Kitchen cabinets and a window create depth.
 
-**新しい手描き版の制作待ち。** 旧写真は採用しない。
+**手描き版作成・保存済み。** 画像のNo.2/No.3と採点基準を照合済み。
 
 ### 面接官からの質問・参考回答
 
@@ -176,9 +176,9 @@ Many zoos teach visitors about wild animals. People can learn where animals live
 
 ### イラスト構成（オリジナル教材）
 
-At a zoo, a keeper is feeding a giraffe while exactly two children are watching, and a sign shows a small illustration of a zebra.
+An outdoor zoo enclosure: a male zookeeper in a khaki uniform is feeding green leaves to a giraffe. Exactly two children in the foreground watch behind the railing. A zoo entrance arch, a few distant people walking away, a tree, rocks and flowers appear in the background. The distant walkers are not watching the giraffe.
 
-**新しい手描き版の制作待ち。** 旧写真は採用しない。
+**手描き版作成・保存済み。** 画像のNo.2/No.3と採点基準を照合済み。
 
 ### 面接官からの質問・参考回答
 
