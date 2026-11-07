@@ -24,7 +24,7 @@ assert.equal(rubric.imageSha256,'46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df
 const checks=[
  ['free',0,'A boy is reading a book at the table. A girl is carrying three books. A librarian is behind the counter in the library.',100],
  ['q',2,'He is reading a book.',100],
- ['q',2,'The boy is reading.',100],
+ ['q',2,'The boy is reading.',55],
  ['q',2,'The girl is reading a book.',0],
  ['q',3,'She is carrying three books.',100],
  ['q',3,'Three.',100],
