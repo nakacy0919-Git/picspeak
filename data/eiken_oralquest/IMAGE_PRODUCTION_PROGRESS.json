@@ -47,9 +47,10 @@
       "format": "WebP",
       "githubBinaryUploaded": false,
       "scoringRubric": "scoring_rubrics/e3_003.json",
-      "scoringStatus": "revised_and_needs_retest",
+      "scoringStatus": "image_revised_and_15_cases_passed",
       "alternativeImage": "e3_003.png",
-      "qualityRevision": "High-resolution replacement, realistic editorial school-rainy scene; grade3 No.2 question and rubric updated to foreground girl with pink umbrella."
+      "qualityRevision": "High-resolution replacement, realistic editorial school-rainy scene; grade3 No.2 question and rubric updated to foreground girl with pink umbrella.",
+      "imageUsability": "High-resolution WebP and PNG validated and accessible in ChatGPT file library; app image remains pending GitHub binary upload."
     }
   ],
   "next": {
