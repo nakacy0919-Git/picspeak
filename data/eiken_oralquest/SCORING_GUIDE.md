@@ -34,16 +34,14 @@
 - `visual.imageSrc` が `null` の間は、説明テキストによる代替練習で、実画像を使う試験再現とはなりません。
 - 準1級のナレーション等は高度な意味理解が必要です。ルール方式だけで公式採点のような正確性を保証しないこと。
 
-## 完成・作業中一覧
+## 新しい3級イラスト版の制作状況
 
-| ステージ | 画像 | 採点ルーブリック | テスト | GitHub画像 |
-|---|---|---|---|---|
-| 3級01 Library Day | ChatGPT LibraryにWebP保存 | [e3_001.json](scoring_rubrics/e3_001.json) | 正答・誤答検査済 | 未登録 |
-| 3級02 School Garden | ChatGPT LibraryにWebP保存 | [e3_002.json](scoring_rubrics/e3_002.json) | 正答・誤答検査済 | 未登録 |
-| 3級03 A Rainy Morning | ChatGPT LibraryにWebP保存 | [e3_003.json](scoring_rubrics/e3_003.json) | 15ケース検査済 | 未登録 |
-| 3級04 Weekend Cooking | ChatGPT LibraryにWebP保存 | [e3_004.json](scoring_rubrics/e3_004.json) | 14ケース検査済 | 未登録 |
-| 3級05 At the Zoo | ChatGPT LibraryにWebP保存 | [e3_005.json](scoring_rubrics/e3_005.json) | 16ケース検査済 | 未登録 |
-| その他115ステージ | 順次制作 | 画像確定と同時に作成 | 画像ごとに検査 | 未登録 |
+旧写真Stage 01〜05は制作実績として記録のみ残し、3級の採点対象から除外しました。新画像に一致したルーブリックの再確認が必要です。
 
-公式・その他の既存モードを壊さず、作業はGitHubの開発ブランチでのみ進めます。
+| ステージ | 新画像 | 採点 | 公開 |
+|---|---|---|---|
+| 3級01 Library Day | [新しい手描き試作](GRADE3_ART_REDESIGN.md)として保存済 | [e3_001.json](scoring_rubrics/e3_001.json) — 新イラストを基準に確認 | 未公開 |
+| 3級02〜30 | 未制作 | 旧写真版ルールは使用不可。制作時に作成 | 未公開 |
+| 準2級・2級・準1級 | 画像未制作 | 作画後に制作 | 未公開 |
 
+本番の採点値や合否判定とは区別し、画像内容に基づく練習スコアとして扱います。
