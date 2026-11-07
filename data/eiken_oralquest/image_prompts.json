@@ -13,13 +13,16 @@
       "title": "Library Day",
       "imageFile": "e3_001.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_001.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Library: a librarian at a desk, a boy reading at a table, a girl carrying three books.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_001 Library Day: Public library: a young boy seated at a table reading an open book; a girl standing nearby carrying EXACTLY THREE clearly separate books; a friendly librarian behind the service counter. Original hand-drawn exam-card illustration with crisp ink outlines and soft textured pastel coloring. Photo questions the student must answer: Q2 'What is the boy doing?' answer 'He is reading a book.'; Q3 'How many books is the girl carrying?' answer 'She is carrying three books.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "new_style_sample_saved",
+      "styleVersion": "eiken-handdrawn-v2",
+      "previewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
+      "previewSha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba"
     },
     {
       "id": "e3_002",
@@ -29,13 +32,14 @@
       "title": "School Garden",
       "imageFile": "e3_002.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_002.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_002 School Garden: Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is watering the flowers.'; Q3 'Where is the bucket?' answer 'It is near the bench.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_003",
@@ -45,18 +49,14 @@
       "title": "A Rainy Morning",
       "imageFile": "e3_003.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_003.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "ORIGINAL high-quality editorial educational picture for Eiken Grade 3 oral speaking. Realistic detailed visual storytelling, natural expressive human anatomy, believable rainy reflections, richly detailed but uncluttered environment, sharp 1536px or larger. Show a rainy Japanese school walkway in a single landscape composition: foreground teenage schoolgirl holding an OPEN PINK UMBRELLA; a boy walking behind her in a BRIGHT YELLOW HOODED RAINCOAT; a completely UNATTENDED SILVER BICYCLE visibly PARKED BESIDE A LARGE LEAFY TREE at the right. Another student may hold a navy umbrella, but no one is riding or holding the bicycle. Important focus: three clear testable facts—girl holds an umbrella, boy wears yellow raincoat, bicycle is next to tree. Heavy emphasis on precise spatial placement. No captions, words, labels, logo, watermark, lettering, oversized graphics or speech bubbles. No confusing extra people that obscure these actions.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_003 A Rainy Morning: A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree. Photo questions the student must answer: Q2 'What is the woman holding?' answer 'She is holding an umbrella.'; Q3 'Where is the bicycle?' answer 'It is next to a tree.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "replacement_generated_library_saved",
-      "savedFormats": [
-        "webp",
-        "png"
-      ],
-      "imageSize": "1536x1024"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_004",
@@ -67,19 +67,13 @@
       "imageFile": "e3_004.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_004.webp",
       "aspectRatio": "3:2",
-      "composition": "single",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Single high-quality photorealistic editorial picture of a warm family kitchen on a sunny weekend. An adult mother on the right is stirring a steaming stainless-steel cooking pot with a wooden spoon. Her young son, wearing a green apron, is safely slicing ripe RED TOMATOES on a wooden cutting board on the left. A clear glass bowl of fresh lettuce sits on the front left of the counter. Natural window light, warm realistic textures, authentic domestic setting, detailed faces and hands. Ensure that the mother, the boy, the tomatoes and the pot are distinctly recognizable and do not include any three-plates requirement, father cutting carrots, or daughter washing tomatoes. Single static image, no watermark, no advertising, no readable text.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_004 Weekend Cooking: At home in a kitchen, a father is cutting carrots at the counter, his daughter is washing tomatoes, and there are exactly three empty plates on the dining table. Photo questions the student must answer: Q2 'What is the father doing?' answer 'He is cutting carrots.'; Q3 'How many plates are on the table?' answer 'There are three plates.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "generated_library_saved",
-      "imageSize": "1536x1024",
-      "verifiedImageFacts": [
-        "Mother stirring pot",
-        "Boy slicing tomatoes",
-        "Lettuce in clear bowl",
-        "Home kitchen"
-      ]
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_005",
@@ -90,20 +84,13 @@
       "imageFile": "e3_005.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_005.webp",
       "aspectRatio": "3:2",
-      "composition": "single",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create ONE original, high-quality 3:2 landscape photograph-like educational visual of a sunny zoo elephant enclosure. In the foreground a father in blue points toward a big elephant standing in its habitat; next to him are EXACTLY TWO clearly visible children: a boy wearing a cap who is USING BINOCULARS to look at the animal and a girl in pink who is WATCHING THE ELEPHANT. In the background a large elephant stands near rocks and trees, and the setting is clearly an organized zoo. Maintain natural, warm daylight, believable anatomy, clear readable actions, and uncluttered spatial relationships. IMPORTANT: this is an elephant scene, not a giraffe or feeding-keeper scene. No logos, watermarks, or distracting extraneous signs.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_005 At the Zoo: At a zoo, a keeper is feeding a giraffe while exactly two children are watching, and a sign shows a small illustration of a zebra. Photo questions the student must answer: Q2 'What is the keeper doing?' answer 'The keeper is feeding a giraffe.'; Q3 'How many children are watching?' answer 'Two children are watching.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "generated_library_saved",
-      "imageSize": "1536x1024",
-      "verifiedImageFacts": [
-        "A boy using binoculars",
-        "A man pointing to a large elephant",
-        "A girl watching the elephant beside the boy",
-        "Two children next to man",
-        "Zoo environment"
-      ]
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_006",
@@ -113,13 +100,14 @@
       "title": "Music Club",
       "imageFile": "e3_006.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_006.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Music room: girl playing piano, boy holding guitar, drum beside the window.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_006 Music Club: Music room: girl playing piano, boy holding guitar, drum beside the window. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is playing the piano.'; Q3 'Where is the drum?' answer 'It is beside the window.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_007",
@@ -129,13 +117,14 @@
       "title": "Community Clean-up",
       "imageFile": "e3_007.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_007.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Park: two students picking up litter, woman holding trash bag, three empty bottles on ground.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_007 Community Clean-up: Park: two students picking up litter, woman holding trash bag, three empty bottles on ground. Photo questions the student must answer: Q2 'What are the students doing?' answer 'They are picking up trash.'; Q3 'How many empty bottles are on the ground?' answer 'There are three.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_008",
@@ -145,13 +134,14 @@
       "title": "A New Bicycle",
       "imageFile": "e3_008.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_008.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Street: boy putting on helmet, girl riding bicycle, traffic light showing red.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_008 A New Bicycle: Street: boy putting on helmet, girl riding bicycle, traffic light showing red. Photo questions the student must answer: Q2 'What is the boy doing?' answer 'He is putting on a helmet.'; Q3 'What color is the traffic light?' answer 'It is red.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_009",
@@ -161,13 +151,14 @@
       "title": "Farmers' Market",
       "imageFile": "e3_009.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_009.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Market: woman choosing apples, farmer handing a bag to man, four pumpkins on table.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_009 Farmers' Market: Market: woman choosing apples, farmer handing a bag to man, four pumpkins on table. Photo questions the student must answer: Q2 'What is the woman doing?' answer 'She is choosing apples.'; Q3 'How many pumpkins are on the table?' answer 'There are four pumpkins.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_010",
@@ -177,13 +168,14 @@
       "title": "After-school Sports",
       "imageFile": "e3_010.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_010.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: School field: girls kicking soccer ball, boy drinking water, bag under a tree.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_010 After-school Sports: School field: girls kicking soccer ball, boy drinking water, bag under a tree. Photo questions the student must answer: Q2 'What are the girls doing?' answer 'They are playing soccer.'; Q3 'Where is the bag?' answer 'It is under a tree.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_011",
@@ -193,13 +185,14 @@
       "title": "Bus Stop",
       "imageFile": "e3_011.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_011.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Bus stop: elderly man reading newspaper, student checking watch, two people sitting on bench.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_011 Bus Stop: Bus stop: elderly man reading newspaper, student checking watch, two people sitting on bench. Photo questions the student must answer: Q2 'What is the student doing?' answer 'The student is checking a watch.'; Q3 'How many people are sitting on the bench?' answer 'Two people are sitting there.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_012",
@@ -209,13 +202,14 @@
       "title": "Family Picnic",
       "imageFile": "e3_012.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_012.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Park: family sitting on blanket, girl throwing a ball, picnic basket beside father.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_012 Family Picnic: Park: family sitting on blanket, girl throwing a ball, picnic basket beside father. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is throwing a ball.'; Q3 'Where is the picnic basket?' answer 'It is beside the father.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_013",
@@ -225,13 +219,14 @@
       "title": "Pet Care",
       "imageFile": "e3_013.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_013.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Living room: boy giving water to dog, mother brushing cat, toy ball under sofa.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_013 Pet Care: Living room: boy giving water to dog, mother brushing cat, toy ball under sofa. Photo questions the student must answer: Q2 'What is the boy doing?' answer 'He is giving water to a dog.'; Q3 'Where is the toy ball?' answer 'It is under the sofa.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_014",
@@ -241,13 +236,14 @@
       "title": "School Festival",
       "imageFile": "e3_014.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_014.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Festival: students selling cookies, visitor taking photo, five colorful balloons above booth.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_014 School Festival: Festival: students selling cookies, visitor taking photo, five colorful balloons above booth. Photo questions the student must answer: Q2 'What are the students doing?' answer 'They are selling cookies.'; Q3 'How many balloons are above the booth?' answer 'There are five.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_015",
@@ -257,13 +253,14 @@
       "title": "Train Travel",
       "imageFile": "e3_015.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_015.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Train car: woman reading, man looking out window, umbrella beside seat.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_015 Train Travel: Train car: woman reading, man looking out window, umbrella beside seat. Photo questions the student must answer: Q2 'What is the woman doing?' answer 'She is reading a book.'; Q3 'Where is the umbrella?' answer 'It is beside the seat.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_016",
@@ -273,13 +270,14 @@
       "title": "Healthy Breakfast",
       "imageFile": "e3_016.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_016.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Dining room: boy eating toast, mother pouring milk, two bananas on plate.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_016 Healthy Breakfast: Dining room: boy eating toast, mother pouring milk, two bananas on plate. Photo questions the student must answer: Q2 'What is the mother doing?' answer 'She is pouring milk.'; Q3 'How many bananas are on the plate?' answer 'There are two.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_017",
@@ -289,13 +287,14 @@
       "title": "Outdoor Art",
       "imageFile": "e3_017.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_017.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Park: child painting on easel, artist explaining picture, sculpture near pond.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_017 Outdoor Art: Park: child painting on easel, artist explaining picture, sculpture near pond. Photo questions the student must answer: Q2 'What is the child doing?' answer 'The child is painting a picture.'; Q3 'Where is the sculpture?' answer 'It is near the pond.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_018",
@@ -305,13 +304,14 @@
       "title": "Summer Camp",
       "imageFile": "e3_018.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_018.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_018 Summer Camp: Campsite: girl putting up tent, boy carrying firewood, lantern next to backpack. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is putting up a tent.'; Q3 'Where is the lantern?' answer 'It is next to the backpack.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_019",
@@ -321,13 +321,14 @@
       "title": "Town Museum",
       "imageFile": "e3_019.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_019.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Museum: visitor looking at old clock, guide pointing at photograph, two hats in display case.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_019 Town Museum: Museum: visitor looking at old clock, guide pointing at photograph, two hats in display case. Photo questions the student must answer: Q2 'What is the guide doing?' answer 'The guide is pointing at a photograph.'; Q3 'How many hats are in the case?' answer 'There are two hats.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_020",
@@ -337,13 +338,14 @@
       "title": "Helping Neighbors",
       "imageFile": "e3_020.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_020.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Street: student carrying groceries for elderly woman, man opening door, small dog near bench.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_020 Helping Neighbors: Street: student carrying groceries for elderly woman, man opening door, small dog near bench. Photo questions the student must answer: Q2 'What is the student doing?' answer 'The student is carrying groceries.'; Q3 'Where is the dog?' answer 'It is near the bench.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_021",
@@ -353,13 +355,14 @@
       "title": "Recycling Paper",
       "imageFile": "e3_021.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_021.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Classroom: student putting paper into blue box, teacher holding notebooks, poster on wall.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_021 Recycling Paper: Classroom: student putting paper into blue box, teacher holding notebooks, poster on wall. Photo questions the student must answer: Q2 'What is the student doing?' answer 'The student is putting paper in a box.'; Q3 'Where is the poster?' answer 'It is on the wall.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_022",
@@ -369,13 +372,14 @@
       "title": "Learning Languages",
       "imageFile": "e3_022.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_022.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Classroom: two children talking in English, teacher writing word on board, globe on shelf.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_022 Learning Languages: Classroom: two children talking in English, teacher writing word on board, globe on shelf. Photo questions the student must answer: Q2 'What is the teacher doing?' answer 'The teacher is writing on the board.'; Q3 'Where is the globe?' answer 'It is on the shelf.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_023",
@@ -385,13 +389,14 @@
       "title": "Safety at Night",
       "imageFile": "e3_023.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_023.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store on corner.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_023 Safety at Night: Crossing at dusk: pedestrian waiting at red signal, cyclist wearing light, store on corner. Photo questions the student must answer: Q2 'What is the pedestrian doing?' answer 'The pedestrian is waiting to cross.'; Q3 'Where is the store?' answer 'It is on the corner.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_024",
@@ -401,13 +406,14 @@
       "title": "Online Lessons",
       "imageFile": "e3_024.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_024.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Bedroom desk: girl wearing headphones at computer, brother writing in notebook, lamp next to screen.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_024 Online Lessons: Bedroom desk: girl wearing headphones at computer, brother writing in notebook, lamp next to screen. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is studying online.'; Q3 'Where is the lamp?' answer 'It is next to the screen.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_025",
@@ -417,13 +423,14 @@
       "title": "Winter Activities",
       "imageFile": "e3_025.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_025.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Snowy park: two children making snowman, mother holding hot drink, red scarf on snowman.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_025 Winter Activities: Snowy park: two children making snowman, mother holding hot drink, red scarf on snowman. Photo questions the student must answer: Q2 'What are the children doing?' answer 'They are making a snowman.'; Q3 'What color is the snowman's scarf?' answer 'It is red.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_026",
@@ -433,13 +440,14 @@
       "title": "Community Sports Day",
       "imageFile": "e3_026.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_026.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Field: boy running race, father cheering, three cones beside finish line.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_026 Community Sports Day: Field: boy running race, father cheering, three cones beside finish line. Photo questions the student must answer: Q2 'What is the boy doing?' answer 'He is running a race.'; Q3 'How many cones are beside the finish line?' answer 'There are three cones.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_027",
@@ -449,13 +457,14 @@
       "title": "Visiting the Dentist",
       "imageFile": "e3_027.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_027.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on wall.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_027 Visiting the Dentist: Dental room: dentist showing toothbrush to boy, mother sitting, two pictures on wall. Photo questions the student must answer: Q2 'What is the dentist doing?' answer 'The dentist is showing a toothbrush.'; Q3 'How many pictures are on the wall?' answer 'There are two pictures.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_028",
@@ -465,13 +474,14 @@
       "title": "Lost and Found",
       "imageFile": "e3_028.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_028.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Station counter: girl talking to worker, worker holding blue umbrella, backpack on counter.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_028 Lost and Found: Station counter: girl talking to worker, worker holding blue umbrella, backpack on counter. Photo questions the student must answer: Q2 'What is the worker holding?' answer 'The worker is holding an umbrella.'; Q3 'Where is the backpack?' answer 'It is on the counter.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_029",
@@ -481,13 +491,14 @@
       "title": "Bird Watching",
       "imageFile": "e3_029.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_029.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Riverside: woman using binoculars, boy drawing bird, two ducks in water.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_029 Bird Watching: Riverside: woman using binoculars, boy drawing bird, two ducks in water. Photo questions the student must answer: Q2 'What is the woman doing?' answer 'She is watching birds with binoculars.'; Q3 'How many ducks are in the river?' answer 'There are two.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "e3_030",
@@ -497,13 +508,14 @@
       "title": "Preparing for a Trip",
       "imageFile": "e3_030.webp",
       "imagePath": "assets/images/eiken_oralquest/grade3/e3_030.webp",
-      "aspectRatio": "4:3",
-      "composition": "single",
+      "aspectRatio": "3:2",
+      "composition": "single_handdrawn_exam_scene",
       "panels": 1,
-      "prompt": "Create an ORIGINAL, high-quality English speaking-test illustration with natural human anatomy and clear actions. Warm modern editorial illustration with soft paper-like texture, polished clean outlines, realistic everyday objects, balanced composition, gentle natural light, tasteful muted colors, non-photorealistic. Suitable for a Japanese high-school learning app; clear enough to describe in English. Absolutely NO written words, captions, letters, numerals, speech bubbles, signatures, logos, watermarks, decorative UI or arrows. Do not reproduce or imitate any existing examination card. ONE complete, coherent scene in 4:3 landscape orientation. Show distinct identifiable characters and their activities. Include the specified countable objects and spatial details in visible positions. Scene: Bedroom: girl packing suitcase, boy looking at map, camera on bed.. The artwork must be classroom-safe, friendly, logically consistent and visually unambiguous. Avoid conflicting extra actions or distracting details.",
+      "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_030 Preparing for a Trip: Bedroom: girl packing suitcase, boy looking at map, camera on bed. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is packing a suitcase.'; Q3 'Where is the camera?' answer 'It is on the bed.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "not_generated"
+      "status": "awaiting_new_style_illustration",
+      "styleVersion": "eiken-handdrawn-v2"
     },
     {
       "id": "ep2_001",
