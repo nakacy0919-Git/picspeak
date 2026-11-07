@@ -40,7 +40,8 @@
 |---|---|---|---|---|
 | 3級01 Library Day | ChatGPT LibraryにWebP保存 | [e3_001.json](scoring_rubrics/e3_001.json) | 正答・誤答検査済 | 未登録 |
 | 3級02 School Garden | ChatGPT LibraryにWebP保存 | [e3_002.json](scoring_rubrics/e3_002.json) | 正答・誤答検査済 | 未登録 |
-| その他118ステージ | 順次制作 | 画像確定と同時に作成 | 画像ごとに検査 | 未登録 |
+| 3級03 A Rainy Morning | ChatGPT LibraryにWebP保存 | [e3_003.json](scoring_rubrics/e3_003.json) | 15ケース検査済 | 未登録 |
+| その他117ステージ | 順次制作 | 画像確定と同時に作成 | 画像ごとに検査 | 未登録 |
 
 公式・その他の既存モードを壊さず、作業はGitHubの開発ブランチでのみ進めます。
 
