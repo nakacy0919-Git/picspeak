@@ -58,7 +58,7 @@ Our school has a small garden behind the gym. Students grow tomatoes and flowers
 
 Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.
 
-**新しい手描き版の制作待ち。** 旧写真は採用しない。
+**新しい手描き版作成・保存済み。** 画像と面接問題を照合済み。
 
 ### 面接官からの質問・参考回答
 
@@ -96,9 +96,9 @@ Some people bring umbrellas on rainy days. Others wear raincoats when they walk 
 
 ### イラスト構成（オリジナル教材）
 
-A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree.
+Rainy school-route: a girl holding a pink umbrella in the foreground, a boy in a yellow hooded raincoat, and an unattended blue bicycle parked beside a large tree at right.
 
-**新しい手描き版の制作待ち。** 旧写真は採用しない。
+**新しい手描き版作成・保存済み。** 画像と面接問題を照合済み。
 
 ### 面接官からの質問・参考回答
 
@@ -106,7 +106,7 @@ A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, an
 
 - To stay dry when they walk to school.
 
-**No.2｜What is the woman holding?**
+**No.2｜What is the girl holding?**
 
 - She is holding an umbrella.
 
