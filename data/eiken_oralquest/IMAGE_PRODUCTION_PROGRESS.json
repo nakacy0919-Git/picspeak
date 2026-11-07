@@ -1,9 +1,38 @@
 {
-  "version": 1,
+  "version": 2,
   "updatedAt": "2026-11-07",
   "workflow": "Generate one stage -> validate visible image facts -> save exact .webp -> create image-specific content-scoring rubric and test paraphrases/wrong answers -> only then move to next image",
   "grade": "3",
   "completed": [
+    {
+      "id": "e3_001",
+      "stage": 1,
+      "title": "Library Day",
+      "filename": "e3_001.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_001.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
+      "sha256": "46ba3b04c7ee8bd4896eb1e7595c3dabbde2bb7287db1df35efc5fcacceb03ba",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_001.json",
+      "scoringStatus": "matched_illustration_content_early_sample",
+      "review": "New original drawn illustration; first vector sample in new exam-card style. Potential quality refinement before using as final master."
+    }
+  ],
+  "next": {
+    "id": "e3_002",
+    "stage": 2,
+    "title": "School Garden",
+    "filename": "e3_002.webp",
+    "status": "awaiting_new_style_illustration",
+    "scene": "Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench."
+  },
+  "notes": "The photo-style assets Stage 01–05 are archived for provenance and NOT accepted as Eiken Grade 3 exam-style images. Music Club photo (Stage 06) was never enrolled. New hand-drawn Grade 3 series restarted from Stage 01; its illustration saved separately and not yet committed to GitHub. Old photo-based rubrics Stage 02–05 are excluded from live scoring index pending replacement.",
+  "redesignDate": "2026-11-07",
+  "designSystem": "eiken-handdrawn-v2",
+  "archivedPreviousImages": [
     {
       "id": "e3_001",
       "stage": 1,
@@ -84,14 +113,5 @@
       "scoringStatus": "image_reviewed_and_16_cases_passed",
       "note": "Exactly one image generated; image showed elephant not planned giraffe, so image-specific Q2 and Q3 and rubric were corrected."
     }
-  ],
-  "next": {
-    "id": "e3_006",
-    "stage": 6,
-    "title": "Music Club",
-    "filename": "e3_006.webp",
-    "status": "awaiting_illustration_and_scoring",
-    "scene": "Music room: a girl is playing the piano, a boy is holding a guitar, and a drum is beside the window."
-  },
-  "notes": "Grade 3 Stages 01–05 images saved in ChatGPT Library. Each has a matching scoring rubric in the development branch; binary images are not committed to GitHub, so imageSrc remains null."
+  ]
 }
