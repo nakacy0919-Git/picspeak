@@ -5,11 +5,13 @@
   "use strict";
   var DATA_ROOT = "data/eiken_oralquest/";
   var SAVE_KEY = "picspeak-eiken-oralquest-progress-v1";
+  var PICTURE_SCORE_KEY = "picspeak-eiken-oralquest-picture-scores-v1";
   var GRADE_COLOR = { "3":"#4d8b86", "pre2":"#4c83a5", "2":"#a278bd", "pre1":"#c47b4e" };
   var state = {
     manifest: null, grade: null, cards: null, card: null, step: 0,
     responses: [], revealed: {}, attempted: {}, screen:"grades",
-    recording:false, recognition:null, interval:null, seconds:0, listening:false
+    recording:false, recognition:null, interval:null, seconds:0, listening:false,
+    rubric:null, scoringManifest:null, freeOpen:false, freeText:""
   };
   var cached = {};
   function el(id){return document.getElementById(id);}
@@ -59,6 +61,8 @@
     try {
       state.manifest=await getJSON("manifest.json");
       if(state.manifest.totalCards!==120) throw new Error("教材データの構成が一致しません。");
+      try {state.scoringManifest=await getJSON("image_scoring_manifest.json");}
+      catch(e) {console.warn("Scoring index not available",e);state.scoringManifest=null;}
       renderGrades();
       show("grades");
     } catch(err) {
@@ -120,12 +124,24 @@
     });
     return parts;
   }
-  function openStage(number){
+  async function openStage(number){
     var card=state.cards && state.cards.find(function(c){return c.stage===number;});
     if(!card)return;
     haltAudio();
     state.card=card;state.step=0;state.responses=[];state.revealed={};state.attempted={};
+    state.rubric=null;state.freeOpen=false;state.freeText="";
     show("practice");renderTask();
+    var entry=state.scoringManifest&&state.scoringManifest.cards&&state.scoringManifest.cards.find(function(x){return x.cardId===card.id;});
+    if(entry&&entry.rubricFile){
+      try {
+        var rubric=await getJSON(entry.rubricFile);
+        if(state.card!==card||state.screen!=="practice")return;
+        if(rubric.cardId===card.id&&rubric.imageChecked){
+          state.rubric=rubric;
+          if(!state.recording){if(el("oq-response"))state.responses[state.step]=el("oq-response").value;renderTask();}
+        }
+      }catch(error){console.warn("Image rubric unavailable",card.id,error);}
+    }
   }
   function currentTask(){return taskList(state.card)[state.step];}
   function renderVisual(){
@@ -183,6 +199,20 @@
     content+='<span class="counter" id="oq-timer" aria-live="off"></span></div>';
     content+='<textarea id="oq-response" class="transcript" lang="en" spellcheck="false" aria-label="話した英語または入力した英文" placeholder="話した英語がここに表示されます。直接入力もできます。">'+escapeHtml(answers[state.step]||"")+'</textarea>';
     content+='<div class="hint" id="oq-audio-status">音声認識が使えない場合は英文を入力できます。</div>';
+    var pictureQuestion=task.kind==="question" && (task.question.type.indexOf("picture")>=0 || task.question.type==="three_picture_narration");
+    if(pictureQuestion && state.rubric && state.rubric.questions[String(task.question.number)]){
+      content+='<div class="action-row" style="margin-top:13px"><button type="button" class="btn btn-primary" data-action="score-picture">画像内容を採点する</button></div>';
+      content+='<div id="oq-image-score" aria-live="polite"></div>';
+    }
+    if(pictureQuestion && task.question.number===2 && state.rubric && state.rubric.freeDescription){
+      content+='<div class="action-row" style="margin-top:12px"><button type="button" class="btn" data-action="free-toggle">画像全体を自由描写'+(state.freeOpen?" ▲":" ▼")+'</button></div>';
+      if(state.freeOpen){
+        content+='<div class="free-panel"><h3>写真の様子を自由に説明しよう</h3>';
+        content+='<textarea id="oq-free-response" class="transcript" lang="en" spellcheck="false" placeholder="Describe the whole picture in English.">'+escapeHtml(state.freeText)+'</textarea>';
+        content+='<div class="action-row" style="margin-top:10px"><button type="button" class="btn btn-primary" data-action="score-free">描写を採点する</button></div>';
+        content+='<div id="oq-free-score" aria-live="polite"></div></div>';
+      }
+    }
     if(!isRead){
       content+='<div class="action-row" style="margin-top:14px"><button type="button" class="btn" data-action="model">模範解答'+(showModel?"を隠す":"を見る")+'</button></div>';
       if(showModel) content+='<div class="model"><span class="model-label">SAMPLE ANSWER</span><p>'+task.models.map(escapeHtml).join("\n\n")+'</p></div>';
@@ -193,6 +223,40 @@
     el("oq-practice-footer").innerHTML='<button type="button" class="btn" data-action="previous" '+(state.step===0?'disabled':'')+'>‹ 前へ</button>'
       +'<button type="button" class="btn btn-primary" data-action="next">'+(last?"練習を終了":"次へ ›")+'</button>';
     window.scrollTo(0,0);
+  }
+  function scoreStorage(){
+    try{var d=JSON.parse(localStorage.getItem(PICTURE_SCORE_KEY)||"{}");return d&&typeof d==="object"?d:{};}
+    catch(_e){return {};}
+  }
+  function rememberPictureScore(kind,number,result){
+    if(!result||result.status==="unanswered")return;
+    var data=scoreStorage(),key=state.card.id+"_"+kind+(number||"");
+    var old=data[key];
+    if(!old||result.score>=old.score)data[key]={score:result.score,maxScore:100,kind,question:number||null};
+    try{localStorage.setItem(PICTURE_SCORE_KEY,JSON.stringify(data));}catch(_e){}
+  }
+  function formatPictureScore(result){
+    if(!result)return '';
+    var facts=(result.matched||[]).map(function(f){return '<span class="score-fact">✓ '+escapeHtml(f.labelJa)+' +'+f.points+'</span>';}).join("");
+    facts+=(result.missing||[]).map(function(f){return '<span class="score-fact missing">△ '+escapeHtml(f.labelJa)+'</span>';}).join("");
+    var note=result.kind==="free_description"?"描写内容の一致度です。":(result.status==="matched"?"質問の目標内容を確認しました。":"伝えたい内容をもう少し具体的にしてみましょう。");
+    var example=result.example||(result.examples&&result.examples[0])||"";
+    return '<div class="score-box"><div class="score-head"><strong>内容一致 '+result.score+' / 100</strong><span>練習スコア</span></div>'
+      +'<div class="score-facts">'+facts+'</div>'
+      +'<p class="score-note">'+escapeHtml(note)+' '+escapeHtml(result.disclaimer||"公式の合否判定ではありません。")+'</p>'
+      +(example?'<details style="margin-top:8px"><summary class="hint" style="cursor:pointer">模範表現を確認</summary><p class="hint">'+escapeHtml(example)+'</p></details>':'')
+      +'</div>';
+  }
+  function runPictureScore(isFree){
+    if(!state.rubric||!window.EikenPictureScoring)return;
+    var task=currentTask(),engine=window.EikenPictureScoring;
+    var response=isFree?(el("oq-free-response")?el("oq-free-response").value:""):(el("oq-response")?el("oq-response").value:"");
+    if(!response.trim()){status("英文を話すか入力してから採点してください。",true);return;}
+    var result=isFree?engine.scoreFree(state.rubric,response):engine.scoreQuestion(state.rubric,task.question.number,response);
+    if(!result)return;
+    rememberPictureScore(isFree?"free":"q",isFree?null:task.question.number,result);
+    var target=el(isFree?"oq-free-score":"oq-image-score");
+    if(target)target.innerHTML=formatPictureScore(result);
   }
   function status(message,isError){
     var node=el("oq-audio-status");
@@ -316,9 +380,12 @@
     markCompleted(state.grade,state.card.stage);
     var c=state.card;
     show("finished");el("oq-back").classList.remove("hidden");
+    var scores=scoreStorage(),keys=Object.keys(scores).filter(function(k){return k.indexOf(c.id+"_")===0;});
+    var top=keys.length?Math.max.apply(null,keys.map(function(k){return scores[k].score;})):null;
+    var resultLine=top===null?"":'<p class="practice-points">今回の画像内容一致スコア（最高）：'+top+' / 100</p>';
     el("oq-finished").innerHTML='<div class="finish-card"><div class="finish-icon" aria-hidden="true">✓</div>'
       +'<p class="eyebrow">'+escapeHtml(labelFor(state.grade))+' / STAGE '+String(c.stage).padStart(2,"0")+'</p>'
-      +'<h2>練習完了</h2>'
+      +'<h2>練習完了</h2>'+resultLine
       +'<p>最後まで練習しました。回答内容を振り返り、もう一度話してみましょう。<br>ここでの完了は英検の合否判定ではありません。</p>'
       +'<div class="action-row" style="justify-content:center">'
       +'<button type="button" class="btn" data-action="retry">もう一度</button>'
@@ -351,6 +418,13 @@
     if(action==="listen"){var task=currentTask();speak(task.kind==="reading"?task.text:task.text);return;}
     if(action==="previous"){goStep(-1);return;}
     if(action==="next"){goStep(1);return;}
+    if(action==="score-picture"){runPictureScore(false);return;}
+    if(action==="score-free"){state.freeText=el("oq-free-response")?el("oq-free-response").value:state.freeText;runPictureScore(true);return;}
+    if(action==="free-toggle"){
+      if(el("oq-response"))state.responses[state.step]=el("oq-response").value;
+      if(el("oq-free-response"))state.freeText=el("oq-free-response").value;
+      state.freeOpen=!state.freeOpen;renderTask();return;
+    }
     if(action==="model"){
       var t=currentTask(),band=state.card.band;
       if((band==="practice"||band==="mock") && !(state.attempted[state.step]||(state.responses[state.step]||"").trim())){
@@ -363,6 +437,9 @@
   });
   el("oq-back").addEventListener("click",back);
   document.addEventListener("input",function(event){
+    if(event.target && event.target.id==="oq-free-response" && state.screen==="practice"){
+      state.freeText=event.target.value;
+    }
     if(event.target && event.target.id==="oq-response" && state.screen==="practice"){
       state.responses[state.step]=event.target.value;
       if(event.target.value.trim())state.attempted[state.step]=true;
