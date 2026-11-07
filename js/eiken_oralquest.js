@@ -382,7 +382,7 @@
     show("finished");el("oq-back").classList.remove("hidden");
     var scores=scoreStorage(),keys=Object.keys(scores).filter(function(k){return k.indexOf(c.id+"_")===0;});
     var top=keys.length?Math.max.apply(null,keys.map(function(k){return scores[k].score;})):null;
-    var resultLine=top===null?"":'<p class="practice-points">今回の画像内容一致スコア（最高）：'+top+' / 100</p>';
+    var resultLine=top===null?"":'<p class="practice-points">このステージの画像内容一致・最高記録：'+top+' / 100</p>';
     el("oq-finished").innerHTML='<div class="finish-card"><div class="finish-icon" aria-hidden="true">✓</div>'
       +'<p class="eyebrow">'+escapeHtml(labelFor(state.grade))+' / STAGE '+String(c.stage).padStart(2,"0")+'</p>'
       +'<h2>練習完了</h2>'+resultLine
