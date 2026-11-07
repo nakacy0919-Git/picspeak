@@ -51,6 +51,16 @@
     @media(max-width:760px){.topbar{height:62px;padding:0 16px}.brand{font-size:19px}.section-name{font-size:11px}.top-divider{margin:0}.brand-mark{width:30px;height:30px}.top-left{gap:8px}main{width:calc(100% - 28px);padding:24px 0 54px}.grade-grid{gap:10px}.grade-card{min-height:154px;padding:20px 16px;border-radius:18px}.grade-name{font-size:24px}.grade-foot{margin-top:15px}.stage-grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.stage-card{padding:12px;min-height:94px}.stage-num{font-size:23px}.stage-title{font-size:10px}.practice-card{padding:18px 16px;border-radius:18px}.reading-text{padding:15px 16px}.panel-grid.three{grid-template-columns:repeat(3,minmax(0,1fr))}.panel{padding:10px;min-height:140px}.panel p{font-size:11px}.practice-footer{flex-wrap:wrap}.action-row .btn{flex:1}.page-title{font-size:33px}}
     @media(max-width:400px){.grade-grid{grid-template-columns:1fr}.grade-card{min-height:132px}.topbar .brand-mark{display:none}.panel-grid.three{grid-template-columns:1fr}.section-name{letter-spacing:.02em}}
     @media(prefers-reduced-motion:reduce){*,*:before,*:after{transition:none!important;animation:none!important}}
+  
+    .score-box{margin-top:14px;padding:14px 16px;border-radius:14px;border:1px solid #dde8e2;background:#f7fcf9}
+    .score-head{display:flex;justify-content:space-between;align-items:center;gap:10px}
+    .score-head strong{font-size:17px;color:#2b6348}.score-head span{font-size:11px;color:#627d6d;font-weight:750}
+    .score-facts{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}.score-fact{display:inline-flex;font-size:11px;font-weight:750;color:#4a695b;background:#e5f5eb;padding:5px 8px;border-radius:8px}
+    .score-fact.missing{background:#f5f2eb;color:#8d7d68}
+    .score-note{font-size:11px;color:#718076;margin:9px 0 0;line-height:1.55}
+    .free-panel{margin-top:13px;border:1px solid #e3e6ed;border-radius:14px;background:#fafbfe;padding:14px}
+    .free-panel h3{font-size:14px;margin:0 0 7px}.free-panel textarea{min-height:105px}
+    .practice-points{font-size:12px;color:#677687;font-weight:750}
   </style>
 </head>
 <body>
@@ -98,6 +108,7 @@
   </main>
   <footer>Original practice materials · Not official Eiken examination content</footer>
 </div>
+<script src="js/eiken_picture_scoring.js" defer></script>
 <script src="js/eiken_oralquest.js" defer></script>
 </body>
 </html>
