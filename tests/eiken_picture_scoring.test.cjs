@@ -12,8 +12,13 @@ assert.equal(index.cards.length,120);
 assert.equal(grade.length,30);
 assert.deepEqual(index.cards.filter(c=>c.rubricFile).map(c=>c.cardId),ids);
 for(const c of grade){
- assert.equal(c.visual.imageSrc,null,'No binary image committed on branch: '+c.id);
- if(c.stage>7) assert.equal(index.cards.find(x=>x.cardId===c.id).rubricFile,null);
+ if(c.stage<=7){
+  assert.equal(c.visual.imageSrc,'assets/images/eiken_oralquest/grade3/'+c.id+'.webp','imageSrc must point at committed WebP');
+  assert.equal(c.visual.status,'ready');
+ }else{
+  assert.equal(c.visual.imageSrc,null,'Unfinished image must not be linked: '+c.id);
+  assert.equal(index.cards.find(x=>x.cardId===c.id).rubricFile,null);
+ }
 }
 const rub=ids.map(id=>{
  const r=data('scoring_rubrics/'+id+'.json');
@@ -31,7 +36,12 @@ for(const asset of registry.files){
  assert.equal(asset.sha256,stage.visual.imageSha256,'saved asset hash mismatch '+asset.id);
  assert.equal(asset.sha256,rule.imageSha256,'rubric hash mismatch '+asset.id);
  assert.equal(asset.targetRepoPath,stage.visual.plannedImageSrc);
- assert.equal(asset.assetStatus,'library_ready_github_pending');
+ assert.equal(asset.assetStatus,'github_development_branch_verified');
+ assert.equal(stage.visual.assetStatus,'github_development_branch_verified');
+ assert.equal(rule.repoImageCommitted,true);
+ const imageFile=path.resolve(dir,'../..',asset.targetRepoPath);
+ assert.ok(fs.existsSync(imageFile),'missing image binary '+imageFile);
+ assert.equal(fs.statSync(imageFile).size,asset.bytes);
 }
 const cases=[
  [0,'free',0,'A boy is reading a book. A girl is carrying three books. A librarian is at the counter in a library.',100],
@@ -73,4 +83,4 @@ for(const [i,t,num,answer,expected] of cases){
  const score=t==='free'?scorer.scoreFree(rub[i],answer):scorer.scoreQuestion(rub[i],num,answer);
  assert.equal(score.score,expected,answer);
 }
-console.log('Hand-drawn Eiken Grade 3: 7 illustrated rubrics active, '+cases.length+' scoring checks pass; 23 images pending.');
+console.log('Hand-drawn Eiken Grade 3: 7 image-backed rubrics active, '+cases.length+' scoring checks pass; 23 Grade3 images pending.');
