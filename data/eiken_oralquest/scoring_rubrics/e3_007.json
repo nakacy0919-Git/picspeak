@@ -1,0 +1,204 @@
+{
+  "schemaVersion": 1,
+  "cardId": "e3_007",
+  "grade": "3",
+  "stage": 7,
+  "title": "Community Clean-up",
+  "imageFilename": "e3_007.webp",
+  "imageSha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
+  "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_007.webp",
+  "imageChecked": true,
+  "repoImageCommitted": false,
+  "status": "handdrawn_image_reviewed",
+  "scoringType": "transcript_rule_based",
+  "notOfficialEikenScore": true,
+  "reviewNotes": "Verified final drawing: a boy in shirt and tie bends to pick up litter at lower left; a girl in school uniform bends to pick up a pink paper at middle center; an adult woman holds open a large transparent trash bag on right. Exactly three empty clear plastic bottles visibly lie separately on the bare ground along the foreground. Grassy park, path, bench and trees in background.",
+  "freeDescription": {
+    "maxPoints": 100,
+    "example": "Two students are picking up trash in the park. A woman is holding a trash bag. There are three empty bottles on the ground.",
+    "facts": [
+      {
+        "id": "students_collecting",
+        "labelJa": "2人の生徒がごみを拾っている",
+        "points": 40,
+        "checks": [
+          {
+            "all": [
+              [
+                "students",
+                "children",
+                "kids",
+                "boy and girl",
+                "two students",
+                "2 students"
+              ],
+              [
+                "picking up",
+                "collecting",
+                "cleaning up",
+                "gathering"
+              ],
+              [
+                "trash",
+                "litter",
+                "rubbish",
+                "garbage",
+                "paper"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "woman_trash_bag",
+        "labelJa": "女性がごみ袋を持っている",
+        "points": 25,
+        "checks": [
+          {
+            "all": [
+              [
+                "woman",
+                "lady",
+                "she",
+                "volunteer"
+              ],
+              [
+                "holding",
+                "holds",
+                "carrying",
+                "has"
+              ],
+              [
+                "trash bag",
+                "garbage bag",
+                "rubbish bag",
+                "big bag",
+                "plastic bag"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "three_bottles",
+        "labelJa": "空のボトルが3本地面にある",
+        "points": 25,
+        "checks": [
+          {
+            "all": [
+              [
+                "3",
+                "three"
+              ],
+              [
+                "empty bottles",
+                "plastic bottles",
+                "bottles"
+              ]
+            ]
+          }
+        ]
+      },
+      {
+        "id": "park",
+        "labelJa": "公園での場面",
+        "points": 10,
+        "checks": [
+          {
+            "all": [
+              [
+                "park",
+                "public park",
+                "outdoor park"
+              ]
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "questions": {
+    "2": {
+      "maxPoints": 100,
+      "labelJa": "生徒たちの動作",
+      "full": [
+        {
+          "all": [
+            [
+              "picking up",
+              "collecting",
+              "cleaning up",
+              "gathering"
+            ],
+            [
+              "trash",
+              "litter",
+              "garbage",
+              "rubbish",
+              "paper"
+            ]
+          ]
+        }
+      ],
+      "partial": [
+        {
+          "all": [
+            [
+              "cleaning",
+              "picking up",
+              "collecting",
+              "cleaning up"
+            ]
+          ]
+        }
+      ],
+      "rightRole": [
+        "students",
+        "they",
+        "children",
+        "kids",
+        "boy and girl"
+      ],
+      "rejectIfOnlyWrongRole": [
+        "woman",
+        "she",
+        "lady",
+        "man"
+      ],
+      "examples": [
+        "They are picking up trash.",
+        "The students are collecting litter.",
+        "They are cleaning up the park."
+      ]
+    },
+    "3": {
+      "maxPoints": 100,
+      "labelJa": "地面にある空きボトルの数",
+      "full": [
+        {
+          "all": [
+            [
+              "3",
+              "three"
+            ]
+          ]
+        }
+      ],
+      "partial": [],
+      "rejectExpressions": [
+        "not three",
+        "not 3",
+        "more than three",
+        "fewer than three",
+        "less than three"
+      ],
+      "rightRole": [],
+      "rejectIfOnlyWrongRole": [],
+      "examples": [
+        "Three.",
+        "There are three empty bottles.",
+        "There are three bottles on the ground."
+      ]
+    }
+  }
+}
