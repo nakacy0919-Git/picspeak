@@ -8,8 +8,8 @@
   "imageSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_001.webp",
   "imageChecked": true,
-  "repoImageCommitted": false,
-  "status": "provisional_paired_with_latest_library_art",
+  "repoImageCommitted": true,
+  "status": "image_rubric_ready_on_github_development",
   "scoringType": "transcript_rule_based",
   "notOfficialEikenScore": true,
   "freeDescription": {
@@ -189,5 +189,5 @@
       "rejectExpressions": []
     }
   },
-  "reviewNotes": "New 3:2 hand-drawn card artwork: a boy seated reading an open book on the left, a girl standing holding exactly three distinct stacked books on the right, and librarian with glasses behind the library service counter. Bookshelves and a window are visible. Old photograph was superseded for design consistency. [2026-11-08 asset correction: Canonical Library image now uses the accepted hand-drawn library illustration.]"
+  "reviewNotes": "New 3:2 hand-drawn card artwork: a boy seated reading an open book on the left, a girl standing holding exactly three distinct stacked books on the right, and librarian with glasses behind the library service counter. Bookshelves and a window are visible. Old photograph was superseded for design consistency. [2026-11-08 asset correction: Canonical Library image now uses the accepted hand-drawn library illustration.] [2026-11-08: Verified the matching WebP binary is now present in the GitHub development branch.]"
 }
