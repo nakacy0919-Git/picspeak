@@ -110,8 +110,8 @@
       "grade": "3",
       "stage": 7,
       "imageFile": "assets/images/eiken_oralquest/grade3/e3_007.webp",
-      "rubricStatus": "awaiting_new_style_illustration",
-      "rubricFile": null,
+      "rubricStatus": "handdrawn_image_checked",
+      "rubricFile": "scoring_rubrics/e3_007.json",
       "description": {
         "freeImage": true,
         "pictureQuestions": [
