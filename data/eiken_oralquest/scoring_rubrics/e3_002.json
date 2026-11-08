@@ -5,7 +5,7 @@
   "stage": 2,
   "title": "School Garden",
   "imageFilename": "e3_002.webp",
-  "imageSha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5",
+  "imageSha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038",
   "sourceImageLibrary": "/PicSpeak/OralQuest/grade3/e3_002.webp",
   "imageChecked": true,
   "repoImageCommitted": false,
@@ -212,5 +212,5 @@
       ]
     }
   },
-  "reviewNotes": "Verified actual hand-drawn garden image: pink-apron girl watering pink and yellow flowers with blue can; boy in a blue hoodie planting seeds in the adjacent rectangular soil bed; one blue bucket on the ground immediately beside the wooden bench, in front of the right-side tree. A school building stands clearly in the rear. Question 2 and 3 are visually answerable."
+  "reviewNotes": "Verified actual hand-drawn garden image: pink-apron girl watering pink and yellow flowers with blue can; boy in a blue hoodie planting seeds in the adjacent rectangular soil bed; one blue bucket on the ground immediately beside the wooden bench, in front of the right-side tree. A school building stands clearly in the rear. Question 2 and 3 are visually answerable. [2026-11-08 asset correction: Correct original hand-drawn School Garden WebP replaces stale photorealistic image in canonical folder.]"
 }
