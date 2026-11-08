@@ -139,8 +139,11 @@
       "prompt": "ORIGINAL HAND-DRAWN EDUCATIONAL PICTURE CARD, Eiken Grade 3 English speaking practice. MUST BE AN OUTDOOR PUBLIC PARK CLEANUP SCENE, not an interior of any building. Fine ink outlines, refined colored pencil and watercolor shading, clear foreground middle ground and background, natural anatomy, 3:2 landscape, no readable lettering. In the foreground, EXACTLY THREE EMPTY TRANSPARENT PLASTIC BOTTLES on bare ground, placed separately so a pupil can count all three; do not show any additional bottles or hide a bottle in a hand or bag. Middle ground: EXACTLY TWO SCHOOL STUDENTS, a boy and a girl, both wearing gloves and actively bending to PICK UP TRASH, hands reaching for pieces of litter; nobody is reading, eating or sitting. Nearby a STANDING ADULT WOMAN holds a large OPEN TRASH BAG, ready for collection. Background: open green park with pathway, grassy lawn, leafy trees, optional bench, clear blue sky. No library, no cafeteria, no classroom, no shelves, no books, no food, no tables, no indoor walls. These exact questions must be supported by visible actions: Q2 What are the students doing? → They are picking up trash. Q3 How many empty bottles are on the ground? → There are three. All people fully visible and all three bottles unambiguous. Do not emulate an existing copyrighted exam card.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "rejected_wrong_scene_awaiting_correct_illustration",
-      "styleVersion": "eiken-handdrawn-v2"
+      "status": "handdrawn_saved_library",
+      "styleVersion": "eiken-handdrawn-v2",
+      "imageSize": "1536x1024",
+      "imageSha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_007.webp"
     },
     {
       "id": "e3_008",
