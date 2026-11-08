@@ -99,17 +99,32 @@
       "scoringRubric": "scoring_rubrics/e3_006.json",
       "scoringStatus": "handdrawn_image_verified_and_rubric_created",
       "review": "Girl playing piano, boy holding guitar, drum beside left window; all match the original picture questions."
+    },
+    {
+      "id": "e3_007",
+      "stage": 7,
+      "title": "Community Clean-up",
+      "filename": "e3_007.webp",
+      "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_007.webp",
+      "storage": "ChatGPT Library",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_007.webp",
+      "sha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
+      "dimensions": "1536x1024",
+      "format": "WebP",
+      "githubBinaryUploaded": false,
+      "scoringRubric": "scoring_rubrics/e3_007.json",
+      "scoringStatus": "image_reviewed_rubric_registered",
+      "review": "Image shows two pupils collecting litter, adult woman holding trash bag, three clearly separated bottles on the ground."
     }
   ],
   "next": {
-    "id": "e3_007",
-    "stage": 7,
-    "title": "Community Clean-up",
-    "filename": "e3_007.webp",
-    "status": "rejected_wrong_scene_not_saved",
-    "scene": "PUBLIC PARK OUTDOORS: exactly two school students wearing gloves are BOTH bending down to PICK UP LITTER from the grass, beside a paved park path; one adult woman stands nearby holding open a large trash bag. EXACTLY THREE empty transparent plastic bottles lie visibly on bare ground in the lower right foreground, separate from other litter, easy to count. Trees, park benches and grass in background. No library, no cafeteria, no tables of food, no books."
+    "id": "e3_008",
+    "stage": 8,
+    "title": "A New Bicycle",
+    "filename": "e3_008.webp",
+    "status": "awaiting_new_handdrawn_illustration"
   },
-  "notes": "Stage07 image generation in this turn twice returned wrong scenes (library and cafeteria). Both rejected, neither saved or registered as e3_007.webp. Existing Grade3 stage01–06 image files and scores remain untouched. Questions retained: No.2 'What are the students doing?' Answer 'They are picking up trash.'; No.3 'How many empty bottles are on the ground?' Answer 'There are three.'",
+  "notes": "Stage07 original park cleanup picture converted to WebP and saved in ChatGPT Library as e3_007.webp. Active 7 image-reviewed picture rubrics. GitHub image binaries not committed; imageSrc remains null and no production deploy.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
