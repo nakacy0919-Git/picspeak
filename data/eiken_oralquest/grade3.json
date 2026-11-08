@@ -12,7 +12,7 @@
       "wordCount": 34
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "Library with clear three-layer perspective: foreground boy reading book at a table, backpack under the table; midground girl standing with exactly three books in her arms, chair next to the table; background librarian behind a circulation counter, with bookshelf behind the librarian and window beside the shelf. No domestic living-room items.",
       "imageSrc": null,
@@ -21,7 +21,12 @@
       "redesignPreviewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
       "previewSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "redesignStyleVersion": "eiken-handdrawn-v2",
-      "depthDesignRequired": true
+      "depthDesignRequired": true,
+      "assetStatus": "saved_library_and_included_in_offline_package",
+      "imageSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
+      "actualImageSize": "1536x1024",
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_001.webp",
+      "reviewedHanddrawnImage": true
     },
     "questions": [
       {
@@ -84,7 +89,7 @@
       "wordCount": 38
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench.",
       "imageSrc": null,
@@ -94,7 +99,8 @@
       "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_002.webp",
       "reviewedHanddrawnImage": true,
       "actualImageSize": "1536x1024",
-      "imageSha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5"
+      "imageSha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038",
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
@@ -157,7 +163,7 @@
       "wordCount": 35
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "Rainy school-route scene: a schoolgirl holds a pink umbrella in the foreground; a boy walks wearing a yellow hooded raincoat; an unattended blue bicycle is parked next to a tall green tree in the background on the right. Rain, puddles and distant houses.",
       "imageSrc": null,
@@ -167,7 +173,8 @@
       "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_003.webp",
       "reviewedHanddrawnImage": true,
       "actualImageSize": "1536x1024",
-      "imageSha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81"
+      "imageSha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81",
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
@@ -231,7 +238,7 @@
       "wordCount": 35
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "A home kitchen: a father in a navy apron is cutting carrots at a counter in the foreground. His daughter washes tomatoes at the sink behind him. Exactly three white plates lie on the wooden dining table at front right. Kitchen cabinets and a window create depth.",
       "imageSrc": null,
@@ -239,9 +246,10 @@
       "promptId": "e3_004",
       "redesignStyleVersion": "eiken-handdrawn-v2",
       "reviewedHanddrawnImage": true,
-      "imageSha256": "4c41da844f615908177ad6693997d55aabd0a21322f7acc6dc404337838fcb5e",
+      "imageSha256": "69e4643229bdcbd2c7446df6f27199275ce20d5139148e443bc681321bf975d3",
       "actualImageSize": "1536x1024",
-      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_004.webp"
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_004.webp",
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
@@ -304,7 +312,7 @@
       "wordCount": 34
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "An outdoor zoo enclosure: a male zookeeper in a khaki uniform is feeding green leaves to a giraffe. Exactly two children in the foreground watch behind the railing. A zoo entrance arch, a few distant people walking away, a tree, rocks and flowers appear in the background. The distant walkers are not watching the giraffe.",
       "imageSrc": null,
@@ -314,7 +322,8 @@
       "reviewedHanddrawnImage": true,
       "imageSha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f",
       "actualImageSize": "1536x1024",
-      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_005.webp"
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_005.webp",
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
@@ -377,7 +386,7 @@
       "wordCount": 36
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "Music room: girl playing piano, boy holding guitar, drum beside the window.",
       "imageSrc": null,
@@ -387,7 +396,8 @@
       "imageSha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
       "actualImageSize": "1536x1024",
       "reviewedHanddrawnImage": true,
-      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_006.webp"
+      "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_006.webp",
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
@@ -450,7 +460,7 @@
       "wordCount": 38
     },
     "visual": {
-      "status": "pending",
+      "status": "pending_repo_binary",
       "type": "single",
       "artDirection": "Park: two students picking up litter, woman holding trash bag, three empty bottles on ground.",
       "imageSrc": null,
@@ -460,7 +470,8 @@
       "imageSha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
       "actualImageSize": "1536x1024",
       "sourceFileSaved": "/PicSpeak/OralQuest/grade3/e3_007.webp",
-      "reviewedHanddrawnImage": true
+      "reviewedHanddrawnImage": true,
+      "assetStatus": "saved_library_and_included_in_offline_package"
     },
     "questions": [
       {
