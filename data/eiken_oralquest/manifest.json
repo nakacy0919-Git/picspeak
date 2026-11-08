@@ -2,9 +2,9 @@
   "schemaVersion": 1,
   "project": "PicSpeak Oral Quest",
   "course": "Eiken second-stage speaking practice",
-  "status": "development_ui_with_pending_illustrations",
+  "status": "development_with_seven_illustrations_in_offline_bundle",
   "published": false,
-  "note": "Grade 3 illustration series restarted 2026-11-07 in original hand-drawn speaking-card style. Photo assets for 01–05 archived, not approved; Grade 3 v2 begins with one original Library Day sample.",
+  "note": "Grade3 Stage 01–07 cards, original illustrations and scoring rubrics are assembled in a usable offline 7-stage package. Binary assets still need GitHub upload to make illustrations visible in the hosted dev app. Stage 08–30 are not yet illustrated.",
   "createdOn": "2026-11-07",
   "totalCards": 120,
   "totalOralQuestions": 540,
@@ -66,7 +66,7 @@
       "ui": "Hide hints and model answers until completion"
     }
   ],
-  "imagePolicy": "All picture assets are pending. imageSrc stays null until original illustrations are reviewed and linked.",
+  "imagePolicy": "Seven illustrations have been saved as original WebP files in the ChatGPT Library and an offline ZIP; the hosted imageSrc values remain null until the matching binaries exist at their target GitHub/Vercel paths.",
   "integrationPolicy": "The grade-first UI is an independent development-page route. Do not merge into main or publish until the owner approves. Legacy OralQuestGame and its 20 scenes remain available; official-score claims are prohibited.",
   "referenceUrls": [
     "https://www.eiken.or.jp/eiken/exam/grade_3/solutions.html",
