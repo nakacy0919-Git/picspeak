@@ -81,6 +81,29 @@
         +'</button>';
     }).join("");
   }
+  // The image files live in the library / offline pack until binary assets are uploaded.
+  // Probe the exact files; only show an image in the hosted app after it really loads.
+  async function attachAvailablePictures(grade,cards){
+    if(grade!=="3")return;
+    var registry;
+    try{registry=await getJSON("grade3_first7_asset_registry.json");}
+    catch(err){console.warn("Grade3 image registry is not available",err);return;}
+    if(!registry||!Array.isArray(registry.files))return;
+    await Promise.all(registry.files.map(function(asset){
+      return new Promise(function(resolve){
+        var card=cards.find(function(c){return c.id===asset.id;});
+        if(!card||!card.visual||!asset.targetRepoPath){resolve();return;}
+        var probe=new Image();
+        probe.onload=function(){
+          card.visual.imageSrc=asset.targetRepoPath;
+          card.visual.status="ready";
+          resolve();
+        };
+        probe.onerror=function(){resolve();};
+        probe.src=asset.targetRepoPath;
+      });
+    }));
+  }
   async function openGrade(grade){
     if(!state.manifest || !gradeMeta(grade)) return;
     haltAudio();
@@ -89,6 +112,7 @@
       if(!cached[grade]){
         cached[grade]=await getJSON(g.file);
         if(!Array.isArray(cached[grade])||cached[grade].length!==30)throw new Error("Incomplete cards");
+        await attachAvailablePictures(grade,cached[grade]);
       }
       state.grade=grade;state.cards=cached[grade];state.card=null;
       renderStages();show("stages");
@@ -108,10 +132,15 @@
       return '<h2 class="band-title">'+escapeHtml(group.title)+' <span>'+group.sub+'</span></h2>'
         +'<div class="stage-grid">'+state.cards.slice(group.from-1,group.to).map(function(c){
           var doneFlag=done.includes(c.stage);
-          return '<button type="button" class="stage-card" data-stage="'+c.stage+'" aria-label="Stage '+c.stage+' '+escapeHtml(c.title)+(doneFlag?" 完了済":"")+'">'
+          var pending=grade==="3"&&c.stage>7;
+          var imageReady=!!(c.visual&&c.visual.imageSrc);
+          return '<button type="button" class="stage-card'+(pending?" stage-pending":"")+(imageReady?" stage-with-image":"")+'" data-stage="'+c.stage+'" '+(pending?"disabled":"")+' aria-label="Stage '+c.stage+' '+escapeHtml(c.title)+(doneFlag?" 完了済":"")+(pending?" 制作中":"")+'">'
+           +(imageReady?'<img class="stage-thumb" loading="lazy" alt="" src="'+escapeHtml(c.visual.imageSrc)+'">':'')
            +'<div class="stage-top"><span class="stage-num">'+String(c.stage).padStart(2,"0")+'</span>'
            +(doneFlag?'<span class="stage-done" aria-hidden="true">✓</span>':'')+'</div>'
-           +'<span class="stage-title">'+escapeHtml(c.title)+'</span></button>';
+           +'<span class="stage-title">'+escapeHtml(c.title)+'</span>'
+           +(pending?'<span class="stage-status">制作中</span>':(grade==="3"&&!imageReady?'<span class="stage-status">画像登録待ち</span>':''))
+           +'</button>';
         }).join("")+'</div>';
     }).join("");
   }
@@ -126,7 +155,7 @@
   }
   async function openStage(number){
     var card=state.cards && state.cards.find(function(c){return c.stage===number;});
-    if(!card)return;
+    if(!card||(state.grade==="3"&&card.stage>7))return;
     haltAudio();
     state.card=card;state.step=0;state.responses=[];state.revealed={};state.attempted={};
     state.rubric=null;state.freeOpen=false;state.freeText="";
@@ -410,7 +439,7 @@
     if(action==="back"){back();return;}
     if(action==="return"){renderStages();show("stages");return;}
     if(action==="retry"){openStage(state.card.stage);return;}
-    if(action==="next-stage"){openStage(state.card.stage+1);return;}
+    if(action==="next-stage"){if(state.grade==="3"&&state.card.stage>=7){renderStages();show("stages");}else openStage(state.card.stage+1);return;}
     if(state.screen!=="practice")return;
     if(action==="record"){startRecord();return;}
     if(action==="stop"){stopRecord();return;}
