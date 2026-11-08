@@ -19,14 +19,15 @@
       "prompt": "ORIGINAL English Grade 3 interview-card illustration. A REAL PUBLIC LIBRARY with pronounced and readable linear perspective, not a family living room. Foreground, closest to viewer on the LEFT: a boy seated at a wooden reading table, reading an OPEN GREEN BOOK held in his hands; a small backpack is clearly UNDER the table, a chair is BESIDE the table. MIDGROUND at center-right: a girl STANDING and CARRYING EXACTLY THREE individually distinguishable books in her arms (red, blue, yellow); books must NOT be resting on the table. BACKGROUND, visibly FARTHER AWAY at back right: an adult librarian wearing glasses STANDING BEHIND a wooden circulation COUNTER; a tall shelf of books BEHIND the librarian, a window TO THE LEFT OF the counter. Show receding floor tiles and table edges, smaller distant furniture, some overlap and true spacing between foreground people and back counter, visible room depth and clear spatial relations. Fine ink contour lines, elegant natural hand-drawn watercolor/colored-pencil shading, high-end educational textbook art, realistic but simplified proportions and expressive natural faces. Avoid photographic, flat vector, chibi, manga/anime and poster styles. Absolutely do NOT include: sofas, dining tables, tea cups, radio, newspaper, musical notes, family snack scene, thought bubbles, or the user-supplied reference picture's layout. No written words or labels. The image MUST answer 'What is the boy doing?' (He is reading a book.) and 'How many books is the girl carrying?' (Three). Additional spatial description should be possible: 'behind the counter', 'in front of the bookshelf', 'under the table', 'next to the table'. Single wide illustrated scene, no panels or floating inserts, 3:2 landscape.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "previewLibraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
       "previewSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "notes": "Previous image attempts produced a copy of the user-supplied living room instead of Library Day. All are rejected; do not treat output as an accepted picture or change scoring against an invalid image.",
       "imageSha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "imageSize": "1536x1024",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_001.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_001.webp",
+      "githubBlobSha": "692a4d2e46c7197c874c013b35360d79361a75c8"
     },
     {
       "id": "e3_002",
@@ -42,11 +43,12 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_002 School Garden: Garden: one girl watering flowers, one boy planting seeds, a bucket near a bench. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is watering the flowers.'; Q3 'Where is the bucket?' answer 'It is near the bench.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp",
+      "githubBlobSha": "0538fbc203d9d8810f0395ad0dec7383c01c0165"
     },
     {
       "id": "e3_003",
@@ -62,11 +64,12 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_003 A Rainy Morning: A rainy street: a woman holding an umbrella, a boy wearing a yellow raincoat, and an unattended bicycle parked next to a tree. Photo questions the student must answer: Q2 'What is the woman holding?' answer 'She is holding an umbrella.'; Q3 'Where is the bicycle?' answer 'It is next to a tree.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_003.webp",
+      "githubBlobSha": "6fbcc053b67d5a335b251e9401ee8f9bac3c987e"
     },
     {
       "id": "e3_004",
@@ -82,11 +85,12 @@
       "prompt": "Create a high quality original hand-drawn color-pencil and watercolor picture card (3:2 landscape), English interview Grade 3, black ink outlines, plausible proportions and clear depth. Single scene with no panels. A home kitchen: a father in a navy apron is cutting carrots at a counter in the foreground. His daughter washes tomatoes at the sink behind him. Exactly three white plates lie on the wooden dining table at front right. Kitchen cabinets and a window create depth. Questions that must be visually answerable: No.2 What is the father doing? Answer: He is cutting carrots. No.3 How many plates are on the table? Answer: There are three plates. Do not copy any existing exam image. Avoid other people performing the named actions and avoid confusing countable objects.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "69e4643229bdcbd2c7446df6f27199275ce20d5139148e443bc681321bf975d3",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_004.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_004.webp",
+      "githubBlobSha": "17ae0d73c7d09a6e4ccd4d2d18b938731a737c1f"
     },
     {
       "id": "e3_005",
@@ -102,11 +106,12 @@
       "prompt": "Create a high quality original hand-drawn color-pencil and watercolor picture card (3:2 landscape), English interview Grade 3, black ink outlines, plausible proportions and clear depth. Single scene with no panels. An outdoor zoo enclosure: a male zookeeper in a khaki uniform is feeding green leaves to a giraffe. Exactly two children in the foreground watch behind the railing. A zoo entrance arch, a few distant people walking away, a tree, rocks and flowers appear in the background. The distant walkers are not watching the giraffe. Questions that must be visually answerable: No.2 What is the keeper doing? Answer: The keeper is feeding a giraffe. No.3 How many children are watching? Answer: Two children are watching. Do not copy any existing exam image. Avoid other people performing the named actions and avoid confusing countable objects.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_005.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_005.webp",
+      "githubBlobSha": "812ccb13ad38abbfcb3badd732662c2dad52c5f1"
     },
     {
       "id": "e3_006",
@@ -122,11 +127,12 @@
       "prompt": "Create a NEW ORIGINAL illustration for an Eiken Grade 3 second-stage speaking-test picture card, not a photo. Use fine confident hand-inked dark contours with slight natural line variation; softly shaded colored pencil, gouache and delicate watercolor washes on off-white textured paper; high-quality professional textbook artwork with natural expressive faces, anatomically convincing hands, gentle warm pastel palette, one continuous coherent everyday-life scene, realistic proportions simplified like editorial illustration. Use the uploaded real exam illustration ONLY as a visual-style inspiration, DO NOT recreate its family, dining table, newspaper, thought bubble, objects, or arrangement. No glossy 3D, no realistic photograph, no anime, no captions, words, signatures, logos, or watermarks. 3:2 landscape illustration with a thin ink border and enough breathing room. Ensure exact actions and exact counts match the linked card. Scene for e3_006 Music Club: Music room: girl playing piano, boy holding guitar, drum beside the window. Photo questions the student must answer: Q2 'What is the girl doing?' answer 'She is playing the piano.'; Q3 'Where is the drum?' answer 'It is beside the window.'. Everything needed to answer must be plainly visible. Do not place extra misleading countable objects or swap character actions.  Composition should invite two simple Grade 3 responses; keep scene readable at small tablet size.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_006.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_006.webp",
+      "githubBlobSha": "8adf62c97fdbc5da29c0ad45a9dd138b05a65a33"
     },
     {
       "id": "e3_007",
@@ -142,11 +148,12 @@
       "prompt": "ORIGINAL HAND-DRAWN EDUCATIONAL PICTURE CARD, Eiken Grade 3 English speaking practice. MUST BE AN OUTDOOR PUBLIC PARK CLEANUP SCENE, not an interior of any building. Fine ink outlines, refined colored pencil and watercolor shading, clear foreground middle ground and background, natural anatomy, 3:2 landscape, no readable lettering. In the foreground, EXACTLY THREE EMPTY TRANSPARENT PLASTIC BOTTLES on bare ground, placed separately so a pupil can count all three; do not show any additional bottles or hide a bottle in a hand or bag. Middle ground: EXACTLY TWO SCHOOL STUDENTS, a boy and a girl, both wearing gloves and actively bending to PICK UP TRASH, hands reaching for pieces of litter; nobody is reading, eating or sitting. Nearby a STANDING ADULT WOMAN holds a large OPEN TRASH BAG, ready for collection. Background: open green park with pathway, grassy lawn, leafy trees, optional bench, clear blue sky. No library, no cafeteria, no classroom, no shelves, no books, no food, no tables, no indoor walls. These exact questions must be supported by visible actions: Q2 What are the students doing? → They are picking up trash. Q3 How many empty bottles are on the ground? → There are three. All people fully visible and all three bottles unambiguous. Do not emulate an existing copyrighted exam card.",
       "panelFiles": [],
       "panelPrompts": [],
-      "status": "library_saved_github_binary_pending",
+      "status": "github_development_branch_ready",
       "styleVersion": "eiken-handdrawn-v2",
       "imageSize": "1536x1024",
       "imageSha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
-      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_007.webp"
+      "savedLibraryPath": "/PicSpeak/OralQuest/grade3/e3_007.webp",
+      "githubBlobSha": "ec1d2ec1400bd4fbb3d7eeb6c1bbaa1aa7f96584"
     },
     {
       "id": "e3_008",
