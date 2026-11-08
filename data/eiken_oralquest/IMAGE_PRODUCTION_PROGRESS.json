@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "updatedAt": "2026-11-07",
+  "updatedAt": "2026-11-08",
   "workflow": "Generate one stage -> validate visible image facts -> save exact .webp -> create image-specific content-scoring rubric and test paraphrases/wrong answers -> only then move to next image",
   "grade": "3",
   "completed": [
@@ -11,7 +11,7 @@
       "filename": "e3_001.webp",
       "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_001.webp",
       "storage": "ChatGPT Library",
-      "libraryPath": "/PicSpeak/OralQuest/grade3_redesign/e3_001.webp",
+      "libraryPath": "/PicSpeak/OralQuest/grade3/e3_001.webp",
       "sha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "dimensions": "1536x1024",
       "format": "WebP",
@@ -28,7 +28,7 @@
       "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_002.webp",
       "storage": "ChatGPT Library",
       "libraryPath": "/PicSpeak/OralQuest/grade3/e3_002.webp",
-      "sha256": "8b1c1a6aaea08dfbcff37b3f167fbeb7ca62d3c8e1770e7ed15182be29e518f5",
+      "sha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038",
       "dimensions": "1536x1024",
       "format": "WebP",
       "githubBinaryUploaded": false,
@@ -60,7 +60,7 @@
       "expectedRepoPath": "assets/images/eiken_oralquest/grade3/e3_004.webp",
       "storage": "ChatGPT Library",
       "libraryPath": "/PicSpeak/OralQuest/grade3/e3_004.webp",
-      "sha256": "4c41da844f615908177ad6693997d55aabd0a21322f7acc6dc404337838fcb5e",
+      "sha256": "69e4643229bdcbd2c7446df6f27199275ce20d5139148e443bc681321bf975d3",
       "dimensions": "1536x1024",
       "format": "WebP",
       "githubBinaryUploaded": false,
@@ -124,7 +124,7 @@
     "filename": "e3_008.webp",
     "status": "awaiting_new_handdrawn_illustration"
   },
-  "notes": "Stage07 original park cleanup picture converted to WebP and saved in ChatGPT Library as e3_007.webp. Active 7 image-reviewed picture rubrics. GitHub image binaries not committed; imageSrc remains null and no production deploy.",
+  "notes": "Seven correct hand-drawn illustrations now have verified matching filenames and SHA256s in /PicSpeak/OralQuest/grade3/ library and in the locally usable OralQuest_Grade3_Stage01-07.zip bundle. Two stale files (Stage02 & Stage04) were replaced by their correct hand-drawn versions. Binary image files still need to be pushed into the GitHub development branch before hosted app can display the illustrations. Main/Vercel production unchanged.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
