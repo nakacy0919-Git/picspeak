@@ -19,7 +19,9 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea"
     },
     {
       "cardId": "e3_002",
@@ -36,7 +38,9 @@
         ]
       },
       "scoreType": "practice_only",
-      "archivedRubricFile": "scoring_rubrics/e3_002.json"
+      "archivedRubricFile": "scoring_rubrics/e3_002.json",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038"
     },
     {
       "cardId": "e3_003",
@@ -53,7 +57,9 @@
         ]
       },
       "scoreType": "practice_only",
-      "archivedRubricFile": "scoring_rubrics/e3_003.json"
+      "archivedRubricFile": "scoring_rubrics/e3_003.json",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81"
     },
     {
       "cardId": "e3_004",
@@ -70,7 +76,9 @@
         ]
       },
       "scoreType": "practice_only",
-      "archivedRubricFile": "scoring_rubrics/e3_004.json"
+      "archivedRubricFile": "scoring_rubrics/e3_004.json",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "69e4643229bdcbd2c7446df6f27199275ce20d5139148e443bc681321bf975d3"
     },
     {
       "cardId": "e3_005",
@@ -87,7 +95,9 @@
         ]
       },
       "scoreType": "practice_only",
-      "archivedRubricFile": "scoring_rubrics/e3_005.json"
+      "archivedRubricFile": "scoring_rubrics/e3_005.json",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f"
     },
     {
       "cardId": "e3_006",
@@ -103,7 +113,9 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a"
     },
     {
       "cardId": "e3_007",
@@ -119,7 +131,9 @@
           3
         ]
       },
-      "scoreType": "practice_only"
+      "scoreType": "practice_only",
+      "assetStatus": "library_verified_github_binary_missing",
+      "binarySha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600"
     },
     {
       "cardId": "e3_008",
