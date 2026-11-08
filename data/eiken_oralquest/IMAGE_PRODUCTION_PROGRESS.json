@@ -15,10 +15,12 @@
       "sha256": "1c1f8592a7fe6a533bf6d426060e0dc7d10fea3d152e92f2832b9be2d66be6ea",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_001.json",
-      "scoringStatus": "ready_for_revalidation_after_image_replacement",
-      "review": "Accepted library-scene artwork from previous Stage 01 response with book-reading boy, exactly three books held by girl, and librarian behind desk; replaced older flat sample file."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "Accepted library-scene artwork from previous Stage 01 response with book-reading boy, exactly three books held by girl, and librarian behind desk; replaced older flat sample file.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "692a4d2e46c7197c874c013b35360d79361a75c8"
     },
     {
       "id": "e3_002",
@@ -31,10 +33,12 @@
       "sha256": "57956919c48a7241a477821a6a9912575314ec101c7f0818aed1a7b24ee39038",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_002.json",
-      "scoringStatus": "image_checked_rules_ready",
-      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "0538fbc203d9d8810f0395ad0dec7383c01c0165"
     },
     {
       "id": "e3_003",
@@ -47,10 +51,12 @@
       "sha256": "2890809dc665b0396f56c97de402f37c4f93f3e9e099e0b71920608ad81cbc81",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_003.json",
-      "scoringStatus": "image_checked_rules_ready",
-      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "New hand-drawn Eiken Grade 3 scene, checked against visual questions.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "6fbcc053b67d5a335b251e9401ee8f9bac3c987e"
     },
     {
       "id": "e3_004",
@@ -63,10 +69,12 @@
       "sha256": "69e4643229bdcbd2c7446df6f27199275ce20d5139148e443bc681321bf975d3",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_004.json",
-      "scoringStatus": "image_reviewed_and_rubric_updated",
-      "review": "Hand-drawn picture and exam-style No.2/No.3 questions have been checked. Text-only local scoring rubric is a practice heuristic."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "Hand-drawn picture and exam-style No.2/No.3 questions have been checked. Text-only local scoring rubric is a practice heuristic.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "17ae0d73c7d09a6e4ccd4d2d18b938731a737c1f"
     },
     {
       "id": "e3_005",
@@ -79,10 +87,12 @@
       "sha256": "dff714637ad3035754e2618a72b1ed243cf567c6e13af773e5be4ae53f01da6f",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_005.json",
-      "scoringStatus": "image_reviewed_and_rubric_updated",
-      "review": "Hand-drawn picture and exam-style No.2/No.3 questions have been checked. Text-only local scoring rubric is a practice heuristic."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "Hand-drawn picture and exam-style No.2/No.3 questions have been checked. Text-only local scoring rubric is a practice heuristic.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "812ccb13ad38abbfcb3badd732662c2dad52c5f1"
     },
     {
       "id": "e3_006",
@@ -95,10 +105,12 @@
       "sha256": "2068fcafdf0c19bf3ea57032684c6926a876e1a2087f54833b157780bdb1610a",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_006.json",
-      "scoringStatus": "handdrawn_image_verified_and_rubric_created",
-      "review": "Girl playing piano, boy holding guitar, drum beside left window; all match the original picture questions."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "Girl playing piano, boy holding guitar, drum beside left window; all match the original picture questions.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "8adf62c97fdbc5da29c0ad45a9dd138b05a65a33"
     },
     {
       "id": "e3_007",
@@ -111,10 +123,12 @@
       "sha256": "b6cbe3ae8bdee07d08d758a81043528cb7ae9ef7e32441ea29e929a3d2648600",
       "dimensions": "1536x1024",
       "format": "WebP",
-      "githubBinaryUploaded": false,
+      "githubBinaryUploaded": true,
       "scoringRubric": "scoring_rubrics/e3_007.json",
-      "scoringStatus": "image_reviewed_rubric_registered",
-      "review": "Image shows two pupils collecting litter, adult woman holding trash bag, three clearly separated bottles on the ground."
+      "scoringStatus": "image_in_development_branch_and_rubric_active",
+      "review": "Image shows two pupils collecting litter, adult woman holding trash bag, three clearly separated bottles on the ground.",
+      "githubCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279",
+      "githubBlobSha": "ec1d2ec1400bd4fbb3d7eeb6c1bbaa1aa7f96584"
     }
   ],
   "next": {
@@ -124,7 +138,7 @@
     "filename": "e3_008.webp",
     "status": "awaiting_new_handdrawn_illustration"
   },
-  "notes": "Seven correct hand-drawn illustrations now have verified matching filenames and SHA256s in /PicSpeak/OralQuest/grade3/ library and in the locally usable OralQuest_Grade3_Stage01-07.zip bundle. Two stale files (Stage02 & Stage04) were replaced by their correct hand-drawn versions. Binary image files still need to be pushed into the GitHub development branch before hosted app can display the illustrations. Main/Vercel production unchanged.",
+  "notes": "All seven Grade3 original hand-drawn pictures (01–07) are now actual WebP binaries committed to the GitHub development branch. Grade3 imageSrc points to those verified static assets and matching rubrics remain active. Stage08–30 pending. No merge to main and no production deployment.",
   "redesignDate": "2026-11-07",
   "designSystem": "eiken-handdrawn-v2",
   "archivedPreviousImages": [
