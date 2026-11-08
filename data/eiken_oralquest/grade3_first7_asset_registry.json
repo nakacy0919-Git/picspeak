@@ -11,10 +11,10 @@
     6,
     7
   ],
-  "workflowStatus": "pictures_saved_to_ChatGPT_Library_and_packaged_in_offline_trial",
-  "githubBinaryAssetsCommitted": false,
+  "workflowStatus": "image_binary_committed_to_GitHub_development_branch_and_linked_in_grade3_json",
+  "githubBinaryAssetsCommitted": true,
   "productionDeployed": false,
-  "comment": "The images are verified WebP files, but the actual binary files have not yet been pushed to this GitHub branch. Keep visual.imageSrc null until binary presence is verified. The offline ZIP contains functional preview plus an installer for a checked-out dev branch.",
+  "comment": "All seven WebP binaries were verified in the GitHub development branch by blob SHA and size. Each Grade3 Stage 01–07 card imageSrc now points to its committed local static asset. Do not merge into main or deploy production without approval.",
   "files": [
     {
       "stage": 1,
@@ -28,7 +28,8 @@
       "bytes": 561864,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "692a4d2e46c7197c874c013b35360d79361a75c8"
     },
     {
       "stage": 2,
@@ -42,7 +43,8 @@
       "bytes": 642318,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "0538fbc203d9d8810f0395ad0dec7383c01c0165"
     },
     {
       "stage": 3,
@@ -56,7 +58,8 @@
       "bytes": 846140,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "6fbcc053b67d5a335b251e9401ee8f9bac3c987e"
     },
     {
       "stage": 4,
@@ -70,7 +73,8 @@
       "bytes": 562392,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "17ae0d73c7d09a6e4ccd4d2d18b938731a737c1f"
     },
     {
       "stage": 5,
@@ -84,7 +88,8 @@
       "bytes": 836142,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "812ccb13ad38abbfcb3badd732662c2dad52c5f1"
     },
     {
       "stage": 6,
@@ -98,7 +103,8 @@
       "bytes": 620214,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "8adf62c97fdbc5da29c0ad45a9dd138b05a65a33"
     },
     {
       "stage": 7,
@@ -112,7 +118,9 @@
       "bytes": 807804,
       "dimensions": "1536x1024",
       "format": "WebP",
-      "assetStatus": "library_ready_github_pending"
+      "assetStatus": "github_development_branch_verified",
+      "gitBlobSha1": "ec1d2ec1400bd4fbb3d7eeb6c1bbaa1aa7f96584"
     }
-  ]
+  ],
+  "verifiedCommitSha": "6fdb9010d1a90c1952476d3f5c41325279410279"
 }
