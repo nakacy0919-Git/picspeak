@@ -61,7 +61,16 @@
     .free-panel{margin-top:13px;border:1px solid #e3e6ed;border-radius:14px;background:#fafbfe;padding:14px}
     .free-panel h3{font-size:14px;margin:0 0 7px}.free-panel textarea{min-height:105px}
     .practice-points{font-size:12px;color:#677687;font-weight:750}
-  </style>
+  
+    .stage-pending{opacity:.48;cursor:not-allowed;background:#f8fafb}
+    .stage-pending:hover{transform:none;border-color:var(--line)}
+    .stage-status{font-size:10px;font-weight:700;color:#a0aaba;margin-top:5px}
+    .stage-with-image{padding:8px;min-height:184px}
+    .stage-thumb{width:100%;height:90px;object-fit:cover;border-radius:9px;display:block;margin:0 0 7px}
+    .stage-with-image .stage-top{padding:0 5px}
+    .stage-with-image .stage-title{padding:0 5px}
+    @media(max-width:600px){.stage-with-image{min-height:145px}.stage-thumb{height:65px}}
+</style>
 </head>
 <body>
 <div class="shell">
