@@ -99,7 +99,7 @@
       '</div>' +
       '<label class="block"><span class="sr-only">文法・英文・写真名で検索</span><input id="grammar-search-input" type="search" autocomplete="off" placeholder="文法・写真名・英文を検索（例：関係代名詞 / cooking）" class="w-full rounded-xl bg-slate-50 border border-slate-200 px-4 py-2.5 text-sm md:text-base text-slate-800 focus:outline-none focus:ring-2 focus:ring-pink-300"></label>' +
       '<p id="grammar-result-count" role="status" aria-live="polite" class="text-xs font-bold text-slate-600 mt-3">モデルアンサーを読み込み中...</p>' +
-      '<p class="text-[11px] text-slate-400 mt-1">各英文の「小学生・中学生・高校生」はモデルアンサーの登録レベルです。写真選択時の Target Level とは別です。</p>';
+      '<p class="text-[11px] text-slate-400 mt-1">文法で検索した写真を選ぶと、そのモデルアンサーの登録レベルに自動で合わせます。採点内容は既存のままです。</p>';
     categories.parentNode.insertBefore(panel,categories);
     panel.addEventListener('click', e => {
       const choice = e.target.closest('.grammar-pill');
@@ -233,6 +233,28 @@
       }
       return result;
     };
+    // Capture runs before main.js opens the photo's mode dialog.
+    // A grammar search result must launch at the SAME level as the actual
+    // model answer displayed underneath the photo.
+    document.addEventListener('click', e => {
+      if (window.appState?.selectedMode !== 'snapshot') return;
+      const selected = effectiveGrammar();
+      const card = e.target.closest('.theme-card');
+      if (!selected || !card) return;
+      const original = chooseExample(indexed.get(String(card.dataset.id || '')) || {},selected);
+      if (!original) return;
+      window.appState.selectedLevel = original.level;
+      document.querySelectorAll('.level-btn').forEach(button => {
+        const active = button.dataset.level === original.level;
+        button.classList.toggle('selected-level-btn',active);
+        button.classList.toggle('bg-sns-gradient',active);
+        button.classList.toggle('text-white',active);
+        button.classList.toggle('shadow-lg',active);
+        button.classList.toggle('bg-gray-50',!active);
+        button.classList.toggle('border-gray-200',!active);
+        button.classList.toggle('text-gray-700',!active);
+      });
+    },true);
     document.addEventListener('click', e => {
       const button = e.target.closest('.theme-filter-btn');
       if (button) {
