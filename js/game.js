@@ -241,8 +241,8 @@ window.handleSpeechEnd = function() {
 window.stopRecording = function() {
     // Allow a final recognition event on iPad/Safari before ending the attempt.
     // The result screen awaits the same promise if FINISH is tapped immediately.
-    if (window.appState?.selectedMode === 'snapshot' && window.isRecording &&
-        typeof window.finishSnapshotSpeech === 'function') {
+    if (window.appState?.selectedMode === 'snapshot' && window.timeLeft <= 0 &&
+        window.isRecording && typeof window.finishSnapshotSpeech === 'function') {
         window.finishSnapshotSpeech();
     } else if (typeof stopSpeech === 'function') stopSpeech();
     const recordingIndicator = document.getElementById('recording-indicator');
