@@ -177,8 +177,12 @@ window.handleSpeechResult = function(finalText, interimText) {
         }
     }
 
-    if (window.appState.selectedMode !== 'detective' && currentTempText.trim().length > 0 && window.currentTheme) {
-        const result = calculateScore(currentTempText, window.currentTheme, window.appState.selectedLevel);
+    // Snapshot must never award a target from temporary/interim ASR guesses.
+    // They may disappear when the recognizer revises its hypothesis.
+    const scoreTranscript = window.appState.selectedMode === 'snapshot'
+        ? window.rawTranscriptForCounting : currentTempText;
+    if (window.appState.selectedMode !== 'detective' && scoreTranscript.trim().length > 0 && window.currentTheme) {
+        const result = calculateScore(scoreTranscript, window.currentTheme, window.appState.selectedLevel);
         if (result && result.addedPoints > 0) {
             if(scoreDisplay) scoreDisplay.textContent = result.score;
             const stats = getCompletionStats(window.currentTheme, window.appState.selectedLevel);
@@ -235,7 +239,12 @@ window.handleSpeechEnd = function() {
 };
 
 window.stopRecording = function() {
-    if(typeof stopSpeech === 'function') stopSpeech();
+    // Allow a final recognition event on iPad/Safari before ending the attempt.
+    // The result screen awaits the same promise if FINISH is tapped immediately.
+    if (window.appState?.selectedMode === 'snapshot' && window.timeLeft <= 0 &&
+        window.isRecording && typeof window.finishSnapshotSpeech === 'function') {
+        window.finishSnapshotSpeech();
+    } else if (typeof stopSpeech === 'function') stopSpeech();
     const recordingIndicator = document.getElementById('recording-indicator');
     const btnStartTurn = document.getElementById('btn-start-turn');
     const btnFinishTurn = document.getElementById('btn-finish-turn');

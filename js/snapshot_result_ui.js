@@ -91,8 +91,8 @@
       (attempt.status === 'missed' ? 'まだ言えなかった表現' : '今回言えた表現');
     if (description) description.textContent = list.length + '件' +
       (attempt.status === 'missed'
-        ? '｜お手本を聞いて、その場で音読できます'
-        : '｜今回の発話で認識された表現です');
+        ? '｜確定した認識テキストからは検出されませんでした'
+        : '｜確定した認識テキストから検出しました');
     if (!grid) return;
     if (!slice.length) {
       grid.innerHTML = '<div class="snapshot-empty">'+
@@ -154,14 +154,14 @@
       if (typeof originalRender === 'function') originalRender();
       return;
     }
-    const transcript = String(document.getElementById('transcript-box')?.innerText || '')
-      .replace('Press START and speak loudly.（STARTを押して、大きな声で話しましょう）','')
-      .replace('Press START and guess the picture!（STARTを押して推測してみよう）','').trim();
+    // The same final transcript is used for both scoring and feedback.
+    // The onscreen speech box may have shown an unconfirmed interim hypothesis.
+    const transcript = String(window.snapshotVerifiedTranscript ?? '').trim();
     const words = transcript
       ? transcript.toLowerCase().replace(/[.,!?]/g,'').split(/\s+/).filter(Boolean).length
       : 0;
-    const timeLimit = window.appState.customTimeLimit || 30;
-    const wpm = timeLimit > 0 ? Math.round(words / (timeLimit/60)) : 0;
+    const measuredSeconds = Number(window.snapshotVerifiedSeconds) || window.appState.customTimeLimit || 30;
+    const wpm = measuredSeconds > 0 ? Math.round(words / (measuredSeconds/60)) : 0;
     const view = document.getElementById('view-result');
     const container = document.getElementById('ranking-container');
     if (!view || !container) return;
@@ -189,7 +189,7 @@
           '<div class="snapshot-stat"><span class="snapshot-stat-label">WPM</span>'+
             '<span class="snapshot-stat-value">'+wpm+'</span></div>'+
           '<button type="button" class="snapshot-transcript-button" data-feedback-action="transcript">'+
-            '<span class="snapshot-transcript-caption">📝 話した英語を見る</span>'+
+            '<span class="snapshot-transcript-caption">📝 音声認識で確定した英文</span>'+
             '<span class="snapshot-transcript-preview">'+safe(transcript || 'No speech recorded.')+'</span></button>'+
         '</div>'+
         '<div id="snapshot-status-tabs" class="snapshot-status-tabs" role="tablist" aria-label="言えた・言えなかった"></div>'+
@@ -204,7 +204,7 @@
         '</div>'+
         '<div id="snapshot-transcript-dialog" class="snapshot-transcript-overlay hidden" role="dialog" aria-modal="true" aria-label="話した英語の全文">'+
           '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px">'+
-            '<strong style="font-size:20px">📝 あなたが話した英語</strong>'+
+            '<strong style="font-size:20px">📝 音声認識で確定した英語</strong>'+
             '<button type="button" data-feedback-action="close-transcript" style="border-radius:10px;background:#e2e8f0;padding:8px 16px;font-weight:900">✕ 閉じる</button></div>'+
           '<div class="snapshot-full-transcript">'+safe(transcript || 'No speech recorded.')+'</div>'+
         '</div>'+

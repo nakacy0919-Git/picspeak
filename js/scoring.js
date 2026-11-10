@@ -95,7 +95,9 @@ window.calculateScore = function(transcript, theme, selectedLevel) {
         }
     }
 
-    const spokenWordsArray = transcript.toLowerCase().replace(/[.,!?'"-]/g, '').split(/\s+/).filter(w => w);
+    // Use identical token normalization for the target and confirmed speech.
+    // Stripping apostrophes only on the speech side caused false negatives.
+    const spokenWordsArray = window.picSpeakTokens(transcript);
     const targetData = window.getAggregatedData(theme, selectedLevel);
 
     let newWords = [];

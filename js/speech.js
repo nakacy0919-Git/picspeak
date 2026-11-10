@@ -420,6 +420,65 @@ window.startSpeech = function() {
 };
 
 
+
+
+// Snapshot results must be based on confirmed ASR text, not interim guesses.
+// In contrast to stopSpeech(), this asks the recognizer to emit its final
+// speech result before disabling result callbacks. A bounded fallback avoids
+// trapping the interface if a mobile browser omits the end event.
+window.snapshotRecognitionFinishPromise = null;
+window.finishSnapshotSpeech = function() {
+    if (window.snapshotRecognitionFinishPromise) {
+        return window.snapshotRecognitionFinishPromise;
+    }
+    if (!window.myRecognition || window.isForceStopped || !window.isRecording ||
+        window.speechRestartTimer !== null) {
+        window.stopSpeech();
+        return Promise.resolve();
+    }
+
+    window.cancelSpeechRestart();
+    const recognition = window.myRecognition;
+    window.snapshotRecognitionFinishPromise = new Promise(resolve => {
+        let done = false;
+        let fallbackTimer = null;
+        const settle = () => {
+            if (done) return;
+            done = true;
+            clearTimeout(fallbackTimer);
+            // A newer session must not be shut down by a stale onend event.
+            if (window.myRecognition === recognition) {
+                recognition.onend = null;
+                recognition.onerror = null;
+                window.isForceStopped = true;
+                window.isRecording = false;
+                window.isSpeechStarting = false;
+                window.speechSessionId++;
+                window.speechRetryCount = 0;
+            }
+            resolve();
+        };
+        recognition.onend = settle; // Suppress the normal auto-restart path.
+        recognition.onerror = event => {
+            console.warn('[SpeechRecognition] finish event:', event?.error);
+            settle();
+        };
+        fallbackTimer = setTimeout(() => {
+            try { recognition.abort(); } catch (error) {}
+            settle();
+        }, 1200);
+        try {
+            recognition.stop();
+        } catch (error) {
+            console.warn('[SpeechRecognition] finish stop failed:', error);
+            settle();
+        }
+    }).finally(() => {
+        window.snapshotRecognitionFinishPromise = null;
+    });
+    return window.snapshotRecognitionFinishPromise;
+};
+
 // ==========================================
 // STOP
 // ==========================================
