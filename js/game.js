@@ -200,6 +200,29 @@ window.handleSpeechResult = function(finalText, interimText) {
         }
     }
     
+    // Snapshot: show the learner immediate feedback for EVERY speech hypothesis,
+    // including an interim one. This is read-only: the final "said/missed"
+    // evidence is still determined from final ASR text only.
+    if (window.appState?.selectedMode === 'snapshot' &&
+        typeof window.getSnapshotScorePreview === 'function' && window.currentTheme) {
+        const preview = window.getSnapshotScorePreview(
+            currentTempText,window.currentTheme,window.appState.selectedLevel);
+        if (scoreDisplay) scoreDisplay.textContent = String(preview.score);
+        if (liveCompletionText) liveCompletionText.textContent =
+            String(preview.completionRate) + '%';
+        if (liveCompletionBar) liveCompletionBar.style.width =
+            String(preview.completionRate) + '%';
+        const provisional = Boolean(String(interimText || '').trim());
+        for (const id of ['snapshot-score-preview-badge','snapshot-coverage-preview-badge']) {
+            const badge = document.getElementById(id);
+            if (badge) badge.classList.toggle('hidden',!provisional);
+        }
+        window.snapshotHasProvisionalSpeech = provisional;
+        // Normalize internal confirmed points to the same deterministic formula
+        // used for the preview, so final confirmation does not create score drift.
+        if (!provisional) window.currentScore = preview.score;
+    }
+
     let highlightedHTML = window.highlightGlobalText(currentTempText);
     if(transcriptBox) {
         if (currentTempText.trim().length > 0) {
