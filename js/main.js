@@ -712,6 +712,9 @@ window.startGameWithTheme = async function(id) {
     window.timeElapsed = 0;
     window.__picSpeakHistorySaved = false;
     window.rawTranscriptForCounting = "";
+    window.snapshotVerifiedTranscript = "";
+    window.snapshotVerifiedSeconds = 0;
+    window.__snapshotFinishingResult = false;
     window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
     
@@ -799,7 +802,9 @@ window.changeTranscriptSize = function(delta) {
     }
 };
 
-window.finishGameAndShowResult = function() {
+window.finishGameAndShowResult = async function() {
+    if (window.__snapshotFinishingResult) return;
+    window.__snapshotFinishingResult = true;
     clearInterval(window.gameTimer);
     window.gameTimer = null;
     clearInterval(window.supportInterval);
@@ -815,9 +820,45 @@ window.finishGameAndShowResult = function() {
     }
 
     try {
-        if(typeof window.stopSpeech === 'function') window.stopSpeech();
+        // Keep the microphone open only long enough to receive its final ASR
+        // event. Otherwise Safari's last phrase can be thrown away on STOP.
+        if (window.appState?.selectedMode === 'snapshot' &&
+            typeof window.finishSnapshotSpeech === 'function') {
+            await window.finishSnapshotSpeech();
+        } else if (typeof window.stopSpeech === 'function') {
+            window.stopSpeech();
+        }
         window.isRecording = false;
-        
+
+        // The feedback and the visible score must be calculated from exactly
+        // the same final (confirmed) transcript, never from interim text.
+        if (window.appState?.selectedMode === 'snapshot') {
+            const verified = String(window.rawTranscriptForCounting || '').trim();
+            window.snapshotVerifiedTranscript = verified;
+            window.snapshotVerifiedSeconds = Math.max(1,
+                Number(window.timeElapsed) || Number(window.appState.customTimeLimit) || 30);
+            if (typeof window.resetScore === 'function') window.resetScore();
+            const rescored = verified && typeof window.calculateScore === 'function'
+                ? window.calculateScore(verified,window.currentTheme,window.appState.selectedLevel)
+                : null;
+            const finalStats = typeof window.getCompletionStats === 'function'
+                ? window.getCompletionStats(window.currentTheme,window.appState.selectedLevel) : null;
+            const scoreDisplay = document.getElementById('scoreDisplay');
+            if (scoreDisplay) scoreDisplay.textContent = String(rescored?.score || 0);
+            const words = typeof window.picSpeakTokens === 'function'
+                ? window.picSpeakTokens(verified).length
+                : verified.split(/\s+/).filter(Boolean).length;
+            const wordsDisplay = document.getElementById('wordCountDisplay');
+            if (wordsDisplay) wordsDisplay.textContent = String(words);
+            const liveCompletion = document.getElementById('live-completion-text');
+            if (liveCompletion && finalStats) liveCompletion.textContent = finalStats.completionRate + '%';
+            const liveBar = document.getElementById('live-completion-bar');
+            if (liveBar && finalStats) liveBar.style.width = finalStats.completionRate + '%';
+            const transcriptBox = document.getElementById('transcript-box');
+            if (transcriptBox) transcriptBox.textContent =
+                verified || '音声認識で確定した英文はありません。';
+        }
+
         if (typeof ngWordGame !== 'undefined') {
             ngWordGame.cleanup();
         }
@@ -848,6 +889,8 @@ window.finishGameAndShowResult = function() {
         document.querySelectorAll('body > div[id^="view-"], .app-container > div[id^="view-"]').forEach(v => v.classList.add('hidden'));
         const fallback = document.getElementById('view-result');
         if (fallback) fallback.classList.remove('hidden');
+    } finally {
+        window.__snapshotFinishingResult = false;
     }
 };
 
