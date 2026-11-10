@@ -1,0 +1,94 @@
+/* Common pronunciation-practice layout for iPad Chrome/Safari and all entry points. */
+#practice-modal,
+#practice-modal.snapshot-compact-practice {
+  height:100dvh;max-height:100dvh;min-height:0;overflow:hidden!important;
+  overscroll-behavior:contain;box-sizing:border-box;
+}
+#practice-modal > div,
+#practice-modal.snapshot-compact-practice > div {
+  box-sizing:border-box;display:grid!important;
+  grid-template-columns:minmax(0,1fr);
+  grid-template-rows:auto minmax(0,auto) minmax(0,auto) minmax(70px,1fr) auto auto;
+  align-content:stretch;align-items:center;justify-items:center;
+  gap:clamp(3px,.8dvh,8px)!important;
+  height:100%!important;max-height:100%!important;min-height:0!important;
+  width:min(100%,1250px)!important;margin-inline:auto!important;
+  padding:12px clamp(12px,2.5vw,30px) max(12px,env(safe-area-inset-bottom))!important;
+  overflow:hidden!important;
+}
+#practice-modal > div > h3,
+#practice-modal.snapshot-compact-practice > div > h3 {
+  margin:0!important;padding:0 0 4px!important;
+  font-size:clamp(12px,1.6vw,19px)!important;line-height:1.25!important;
+}
+#practice-modal #practice-target,
+#practice-modal.snapshot-compact-practice #practice-target {
+  width:100%;min-height:0!important;max-height:min(28dvh,225px)!important;
+  margin:0!important;padding:0 clamp(6px,2vw,20px)!important;
+  font-size:var(--practice-target-font,clamp(20px,min(3vw,4.7dvh),39px))!important;
+  line-height:1.22!important;letter-spacing:-.02em;
+  overflow-x:hidden;overflow-y:auto;overflow-wrap:anywhere;
+  text-wrap:balance;scrollbar-width:thin;
+}
+#practice-modal #practice-ja,
+#practice-modal.snapshot-compact-practice #practice-ja {
+  width:100%;min-height:0!important;max-height:min(10dvh,72px)!important;
+  margin:0!important;padding:0 8px!important;
+  font-size:clamp(14px,min(1.8vw,2.5dvh),20px)!important;
+  line-height:1.25!important;overflow-y:auto;overflow-wrap:anywhere;
+}
+#practice-modal .practice-fit-output,
+#practice-modal.snapshot-compact-practice .practice-fit-output {
+  box-sizing:border-box;min-height:0!important;max-height:100%!important;
+  height:100%;width:100%;margin:0!important;
+  padding:clamp(9px,1.6dvh,20px)!important;display:flex;
+  align-items:center;justify-content:center;
+  overflow-y:auto!important;border-radius:16px!important;
+}
+#practice-modal #practice-transcript,
+#practice-modal.snapshot-compact-practice #practice-transcript {
+  min-height:0!important;max-height:100%!important;max-width:100%;
+  margin:0!important;font-size:clamp(16px,min(2.3vw,3.7dvh),29px)!important;
+  line-height:1.28!important;overflow-wrap:anywhere;overflow-y:auto;
+}
+#practice-modal #practice-feedback,
+#practice-modal.snapshot-compact-practice #practice-feedback {
+  box-sizing:border-box;width:100%;height:auto!important;
+  min-height:27px!important;max-height:min(7dvh,50px)!important;
+  margin:0!important;padding:0 4px!important;overflow-y:auto;
+  font-size:clamp(12px,1.5vw,17px)!important;line-height:1.2!important;
+}
+#practice-modal #btn-start-practice,
+#practice-modal.snapshot-compact-practice #btn-start-practice {
+  box-sizing:border-box;display:flex!important;flex-shrink:0;
+  width:min(430px,90%)!important;min-width:0!important;
+  min-height:54px!important;height:clamp(54px,7dvh,64px)!important;
+  max-height:64px!important;padding:8px 18px!important;margin:0!important;
+  font-size:clamp(19px,2.5vw,27px)!important;line-height:1!important;
+  align-self:end;justify-self:center;touch-action:manipulation;
+}
+#practice-modal #btn-start-practice span,
+#practice-modal.snapshot-compact-practice #btn-start-practice span {
+  font-size:clamp(22px,2.8vw,30px)!important;line-height:1!important;
+}
+#practice-modal #btn-close-practice,
+#practice-modal.snapshot-compact-practice #btn-close-practice {
+  top:max(9px,env(safe-area-inset-top))!important;left:10px!important;
+  width:40px!important;height:40px!important;font-size:24px!important;padding:0!important;
+}
+@media(max-height:650px) {
+  #practice-modal > div,#practice-modal.snapshot-compact-practice > div {
+    padding-top:6px!important;gap:3px!important;
+    grid-template-rows:auto minmax(0,auto) minmax(0,auto) minmax(55px,1fr) auto 50px;
+  }
+  #practice-modal #practice-target,#practice-modal.snapshot-compact-practice #practice-target {
+    max-height:25dvh!important;
+  }
+  #practice-modal #btn-start-practice,#practice-modal.snapshot-compact-practice #btn-start-practice {
+    min-height:48px!important;height:50px!important;
+  }
+}
+@media(max-width:600px) {
+  #practice-modal > div,#practice-modal.snapshot-compact-practice > div {padding-inline:12px!important;}
+  #practice-modal #practice-target,#practice-modal.snapshot-compact-practice #practice-target {max-height:25dvh!important;}
+}
