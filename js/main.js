@@ -714,6 +714,10 @@ window.startGameWithTheme = async function(id) {
     window.rawTranscriptForCounting = "";
     window.snapshotVerifiedTranscript = "";
     window.snapshotVerifiedSeconds = 0;
+    window.snapshotHasProvisionalSpeech = false;
+    for (const id of ['snapshot-score-preview-badge','snapshot-coverage-preview-badge']) {
+        document.getElementById(id)?.classList.add('hidden');
+    }
     window.__snapshotFinishingResult = false;
     window.accumulatedTranscript = ""; 
     if(typeof resetScore === 'function') resetScore(); 
@@ -834,6 +838,10 @@ window.finishGameAndShowResult = async function() {
         // the same final (confirmed) transcript, never from interim text.
         if (window.appState?.selectedMode === 'snapshot') {
             const verified = String(window.rawTranscriptForCounting || '').trim();
+            window.snapshotHasProvisionalSpeech = false;
+            for (const id of ['snapshot-score-preview-badge','snapshot-coverage-preview-badge']) {
+                document.getElementById(id)?.classList.add('hidden');
+            }
             window.snapshotVerifiedTranscript = verified;
             window.snapshotVerifiedSeconds = Math.max(1,
                 Number(window.timeElapsed) || Number(window.appState.customTimeLimit) || 30);
