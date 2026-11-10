@@ -137,11 +137,11 @@ window.createNewRecognition = function() {
             const result = event.results[i];
 
             if (result.isFinal) {
-                finalTranscript +=
-                    result[0].transcript;
+                finalTranscript += (finalTranscript ? ' ' : '') +
+                    String(result[0].transcript || '').trim();
             } else {
-                interimTranscript +=
-                    result[0].transcript;
+                interimTranscript += (interimTranscript ? ' ' : '') +
+                    String(result[0].transcript || '').trim();
             }
         }
 
