@@ -3,7 +3,7 @@
 #view-result.snapshot-result-mode #result-scroll-area {min-height:0;height:100%;overflow:hidden!important;padding:0!important;}
 #view-result.snapshot-result-mode #ranking-container {height:100%;min-height:0;max-width:none!important;overflow:hidden!important;display:flex;flex-direction:column;}
 #view-result.snapshot-result-mode .snapshot-feedback {box-sizing:border-box;height:100%;min-height:0;overflow:hidden;display:flex;flex-direction:column;gap:8px;padding:10px 14px 12px;background:#f6f8fc;color:#1e293b;}
-#view-result.snapshot-result-mode .snapshot-overview {display:grid;grid-template-columns:minmax(145px,1.15fr) repeat(2,minmax(85px,.65fr)) minmax(160px,1fr);gap:8px;flex-shrink:0;height:76px;}
+#view-result.snapshot-result-mode .snapshot-overview {display:grid;grid-template-columns:minmax(140px,1.15fr) repeat(3,minmax(75px,.65fr)) minmax(145px,1fr);gap:8px;flex-shrink:0;height:76px;}
 #view-result.snapshot-result-mode .snapshot-score {display:flex;align-items:center;gap:10px;background:linear-gradient(125deg,#0f766e,#10b981);color:white;border-radius:14px;padding:9px 16px;min-width:0;}
 #view-result.snapshot-result-mode .snapshot-score-value {font-weight:900;font-size:34px;letter-spacing:-.06em;line-height:1;}
 #view-result.snapshot-result-mode .snapshot-score-value span {font-size:18px;letter-spacing:0;}
@@ -61,7 +61,7 @@
 @media (min-width:1100px) and (min-height:780px) {#view-result.snapshot-result-mode .snapshot-item-grid {grid-template-columns:repeat(3,minmax(0,1fr));}}
 @media (max-width:699px) {
  #view-result.snapshot-result-mode .snapshot-feedback {padding:7px;gap:6px;}
- #view-result.snapshot-result-mode .snapshot-overview {grid-template-columns:1.4fr 1fr 1fr;height:63px;gap:5px;}
+ #view-result.snapshot-result-mode .snapshot-overview {grid-template-columns:1.3fr .9fr .9fr .9fr;height:63px;gap:5px;}
  #view-result.snapshot-result-mode .snapshot-transcript-button {display:none;}
  #view-result.snapshot-result-mode .snapshot-score {padding:6px 9px;gap:6px;}
  #view-result.snapshot-result-mode .snapshot-score-value {font-size:27px;}
