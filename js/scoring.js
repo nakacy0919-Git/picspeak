@@ -153,8 +153,11 @@ window.resetScore = function() {
     window.foundSentencesSet.clear();
 };
 
-window.getCompletionStats = function(theme, selectedLevel) {
+window.getCompletionStats = function(theme, selectedLevel, overrideFoundSets = null) {
     const targetData = window.getAggregatedData(theme, selectedLevel);
+    const scoredWords = overrideFoundSets?.words || window.foundWordsSet;
+    const scoredChunks = overrideFoundSets?.chunks || window.foundChunksSet;
+    const scoredSentences = overrideFoundSets?.sentences || window.foundSentencesSet;
     
     // ★ 各要素の評価ウェイト（合計100%）と、それを満たすための「目標ポイント」
     const CATEGORY_TARGETS = {
@@ -194,9 +197,9 @@ window.getCompletionStats = function(theme, selectedLevel) {
     };
 
     // 理論上のポイントは 単語10pt、チャンク20pt、文章40pt をベースとする
-    processItems(targetData.words, window.foundWordsSet, 10, 'words');
-    processItems(targetData.chunks, window.foundChunksSet, 20, 'chunks');
-    processItems(targetData.sentences, window.foundSentencesSet, 40, 'sentences');
+    processItems(targetData.words, scoredWords, 10, 'words');
+    processItems(targetData.chunks, scoredChunks, 20, 'chunks');
+    processItems(targetData.sentences, scoredSentences, 40, 'sentences');
 
     let completionRate = 0;
     let totalValidWeight = 0;
@@ -227,12 +230,35 @@ window.getCompletionStats = function(theme, selectedLevel) {
 
     return {
         completionRate,
-        missedWords: targetData.words.filter(w => !window.foundWordsSet.has(w.text)),
-        missedChunks: targetData.chunks.filter(c => !window.foundChunksSet.has(c.text)),
-        missedSentences: targetData.sentences.filter(s => !window.foundSentencesSet.has(s.text)),
-        clearedWords: targetData.words.filter(w => window.foundWordsSet.has(w.text)),
-        clearedChunks: targetData.chunks.filter(c => window.foundChunksSet.has(c.text)),
-        clearedSentences: targetData.sentences.filter(s => window.foundSentencesSet.has(s.text)),
+        missedWords: targetData.words.filter(w => !scoredWords.has(w.text)),
+        missedChunks: targetData.chunks.filter(c => !scoredChunks.has(c.text)),
+        missedSentences: targetData.sentences.filter(s => !scoredSentences.has(s.text)),
+        clearedWords: targetData.words.filter(w => scoredWords.has(w.text)),
+        clearedChunks: targetData.chunks.filter(c => scoredChunks.has(c.text)),
+        clearedSentences: targetData.sentences.filter(s => scoredSentences.has(s.text)),
         categories: categoryStats 
     };
+};
+
+// Pure, non-mutating Snapshot preview. The 4-category coverage and points use
+// precisely the same source targets and matching logic as the final scoring.
+// Interim ASR text may be previewed, but it must NOT enter found* sets.
+window.getSnapshotScorePreview = function(transcript, theme, level) {
+    const spoken = String(transcript || '');
+    const data = window.getAggregatedData(theme, level);
+    const sets = {words:new Set(),chunks:new Set(),sentences:new Set()};
+    const pointDefaults = {words:10,chunks:50,sentences:200};
+    let points = 0;
+    for (const kind of ['words','chunks','sentences']) {
+        const itemType = kind === 'words' ? 'word' : kind === 'chunks' ? 'chunk' : 'sentence';
+        for (const item of data[kind]) {
+            if (!item?.text || !window.flexibleMatch(item.text,spoken,itemType)) continue;
+            sets[kind].add(item.text);
+            points += item.points || pointDefaults[kind];
+        }
+    }
+    const multiplier = 1 + sets.chunks.size * 0.2 + sets.sentences.size * 0.5;
+    const score = Math.floor(points * multiplier);
+    const stats = window.getCompletionStats(theme,level,sets);
+    return {score,completionRate:stats.completionRate,stats,sets};
 };
