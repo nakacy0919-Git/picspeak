@@ -117,7 +117,7 @@
             '<button type="button" class="snapshot-item-action sound" data-feedback-action="audio" data-index="'+
               absoluteIndex+'" aria-label="お手本の音声：'+safe(english)+'">🔊 お手本</button>'+
             '<button type="button" class="snapshot-item-action speak" data-feedback-action="practice" data-index="'+
-              absoluteIndex+'" aria-label="音読練習：'+safe(english)+'">🎤 音読練習</button>'+
+              absoluteIndex+'" aria-label="音読練習：'+safe(english)+'">'+(practiced ? '✅ もう一度' : '🎤 音読練習')+'</button>'+
           '</div></article>';
       }).join('');
     }
