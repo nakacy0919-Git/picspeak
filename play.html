@@ -101,6 +101,21 @@
             animation: pop 0.2s ease-out forwards;
         }
     </style>
+    <style id="picspeak-play-qr-styles">
+      /* Use the same circular touch target as the existing controls. */
+      #btn-open-qr.site-qr-trigger {
+        display:inline-flex; flex:0 0 auto; width:52px; height:52px;
+        border-radius:9999px; background:rgba(255,255,255,.8);
+        border:1px solid #e5e7eb; box-shadow:0 4px 12px rgba(0,0,0,.1);
+        color:#6b7280; padding:12px;
+      }
+      #btn-open-qr.site-qr-trigger svg {width:25px; height:25px; stroke:currentColor; fill:none; stroke-width:2; stroke-linecap:round; stroke-linejoin:round;}
+      #btn-open-qr.site-qr-trigger:hover {color:#111827;}
+      @media(max-width:639px) {
+        #btn-open-qr.site-qr-trigger {width:44px;height:44px;padding:10px;}
+        #btn-open-qr.site-qr-trigger svg {width:21px;height:21px;}
+      }
+    </style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -267,6 +282,12 @@
                 <div class="flex gap-2 md:gap-3">
                     <button id="btn-open-tutorial" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="How to Play"><span class="text-xl md:text-2xl leading-none">📖</span></button>
                     <button id="btn-open-history" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Learning Log"><span class="text-xl md:text-2xl leading-none">📊</span></button>
+                    <!-- QR share button: same right-hand control row as How to Play, Learning Log and Settings. -->
+                    <button id="btn-open-qr" type="button" data-share-qr
+                        class="site-qr-trigger text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center"
+                        title="QRコードでPicSpeakを共有" aria-label="QRコードでPicSpeakを共有">
+                        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="3" y="3" width="7" height="7" rx="1"></rect><rect x="14" y="3" width="7" height="7" rx="1"></rect><rect x="3" y="14" width="7" height="7" rx="1"></rect><path d="M6 6h1M17 6h1M6 17h1M14 14h3v3h-3v-3M21 14v3M17 21h4M14 21v-2M21 19v-1"></path></svg>
+                    </button>
                     <button id="btn-open-settings" class="text-gray-500 hover:text-gray-900 transition-colors bg-white/80 p-3 rounded-full backdrop-blur-sm shadow-md border border-gray-200 sns-btn flex items-center justify-center" title="Settings">
                         <svg class="w-6 h-6 md:w-8 md:h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path></svg>
                     </button>
@@ -918,5 +939,6 @@
     <script src="js/oralquest_game.js"></script>
     <script src="js/main.js"></script>  
 <script defer src="bridge/copeak-lms-bridge.js"></script>
+    <script src="share-qr.js?v=20261110-play-qr" defer></script>
 </body>
 </html>
