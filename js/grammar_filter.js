@@ -448,6 +448,8 @@
     const originalRenderThemeGrid = window.renderThemeGrid;
     window.renderThemeGrid = async function () {
       const result = await originalRenderThemeGrid.apply(this, arguments);
+      // The existing category controls reset to All whenever the grid is rebuilt.
+      state.category = 'all';
       syncMode();
       applyFilters();
       return result;
