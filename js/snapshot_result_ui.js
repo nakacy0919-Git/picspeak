@@ -162,6 +162,7 @@
       : 0;
     const measuredSeconds = Number(window.snapshotVerifiedSeconds) || window.appState.customTimeLimit || 30;
     const wpm = measuredSeconds > 0 ? Math.round(words / (measuredSeconds/60)) : 0;
+    const finalScore = Number(document.getElementById('scoreDisplay')?.textContent) || 0;
     const view = document.getElementById('view-result');
     const container = document.getElementById('ranking-container');
     if (!view || !container) return;
@@ -184,6 +185,8 @@
         '<div class="snapshot-overview">'+
           '<div class="snapshot-score"><div><div class="snapshot-score-caption">今回の達成度</div>'+
             '<div class="snapshot-score-value">'+(stats.completionRate || 0)+'<span>%</span></div></div></div>'+
+          '<div class="snapshot-stat"><span class="snapshot-stat-label">Score</span>'+
+            '<span class="snapshot-stat-value">'+finalScore+'</span></div>'+
           '<div class="snapshot-stat"><span class="snapshot-stat-label">単語数</span>'+
             '<span class="snapshot-stat-value">'+words+'</span></div>'+
           '<div class="snapshot-stat"><span class="snapshot-stat-label">WPM</span>'+
