@@ -88,7 +88,8 @@ for (const item of oralList) {
 }
 assert.match(read('js/main.js'),/window\.finishPracticeSuccess\(finalRate\)/);
 assert.equal(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a book'),100);
-assert.equal(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a'),80);
+assert.equal(win.picSpeakPracticeMatchRate('the child is very happy','the child is very'),80);
+assert.equal(win.picSpeakPracticeMatchRate('one two three four five six seven eight nine ten','one two three four five six seven eight nine'),90);
 assert.ok(win.picSpeakPracticeMatchRate('a girl is reading a book','reading is a girl book')<80);
 assert.ok(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a book and some unrelated extra words')<80);
 assert.equal(win.picSpeakPracticeMatchRate('cat','cat'),100);
