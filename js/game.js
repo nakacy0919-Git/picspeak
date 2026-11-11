@@ -82,20 +82,62 @@ window.startTimer = function() {
     }, 1000);
 };
 
-window.dropPin = function(word, theme, isHint = false) {
-    if (!theme || !theme.pins || !theme.pins[word.toLowerCase()]) return;
+window.dropPin = function(word, theme, isHint = false, isPreview = false) {
+    const key = String(word || '').trim().toLowerCase();
+    if (!theme?.pins?.[key]) return;
     const pinContainer = document.getElementById('pin-container');
-    const pinData = theme.pins[word.toLowerCase()];
-    const pin = document.createElement('div');
-    pin.className = 'absolute flex flex-col items-center justify-center pin-drop z-20';
-    pin.style.left = `${pinData.x}%`; pin.style.top = `${pinData.y}%`; pin.style.transform = 'translate(-50%, -100%)';
-    const opacityClass = isHint ? 'opacity-80 bg-gray-50 border-gray-200 text-gray-500' : 'bg-white border-white text-gray-900 drop-shadow-md';
-    const heart = isHint ? '📍' : '❤️';
-    pin.innerHTML = `<div class="${opacityClass} text-[10px] md:text-sm lg:text-base font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full shadow-lg border-2 mb-1 md:mb-1.5 tracking-wider uppercase">${heart} ${window.picSpeakEscapeHTML(word)}</div><div class="w-1.5 md:w-2 h-3.5 md:h-5 bg-gray-300 shadow-sm rounded-b-full"></div>`;
-    if(!isHint) {
-        const popEffect = document.createElement('div'); popEffect.className = 'pin-pop-effect'; pin.appendChild(popEffect);
+    if (!pinContainer) return;
+    const pinData = theme.pins[key];
+    const existing = Array.from(pinContainer.querySelectorAll('[data-pin-word]'))
+        .find(el => el.dataset.pinWord === key);
+    if (existing && (isHint || isPreview || existing.dataset.pinState === 'confirmed')) return;
+    const pin = existing || document.createElement('div');
+    pin.dataset.pinWord = key;
+    pin.dataset.pinState = isHint ? 'hint' : isPreview ? 'preview' : 'confirmed';
+    pin.className = 'absolute flex flex-col items-center justify-center pin-drop z-20' +
+        (isPreview ? ' pin-preview' : '');
+    pin.style.left = pinData.x + '%';
+    pin.style.top = pinData.y + '%';
+    pin.style.transform = 'translate(-50%, -100%)';
+    const opacityClass = isHint
+        ? 'opacity-80 bg-gray-50 border-gray-200 text-gray-500'
+        : isPreview
+            ? 'bg-white/80 border-dashed border-blue-200 text-gray-600'
+            : 'bg-white border-white text-gray-900 drop-shadow-md';
+    const heart = isHint || isPreview ? '📍' : '❤️';
+    pin.innerHTML = '<div class="' + opacityClass +
+        ' text-[10px] md:text-sm lg:text-base font-black px-2 md:px-3 py-1 md:py-1.5 rounded-full shadow-lg border-2 mb-1 md:mb-1.5 tracking-wider uppercase">' +
+        heart + ' ' + window.picSpeakEscapeHTML(word) +
+        '</div><div class="w-1.5 md:w-2 h-3.5 md:h-5 bg-gray-300 shadow-sm rounded-b-full"></div>';
+    if (!isHint && !isPreview) {
+        const popEffect = document.createElement('div');
+        popEffect.className = 'pin-pop-effect';
+        pin.appendChild(popEffect);
     }
-    if(pinContainer) pinContainer.appendChild(pin);
+    if (!existing) pinContainer.appendChild(pin);
+};
+
+// Interim recognition gives an immediate, subdued visual preview. It never
+// changes the score or the verified "said / missed" results. Revoked interim
+// hypotheses automatically remove their provisional pins.
+window.syncSnapshotPreviewPins = function(transcript, theme, level) {
+    if (window.appState?.selectedMode !== 'snapshot' || !window.isRecording ||
+        !theme?.pins || typeof window.getAggregatedData !== 'function') return;
+    const pinContainer = document.getElementById('pin-container');
+    if (!pinContainer) return;
+    const active = new Set();
+    const words = window.getAggregatedData(theme, level).words || [];
+    words.forEach(item => {
+        const key = String(item.text || '').trim().toLowerCase();
+        if (!key || !theme.pins[key] || window.foundWordsSet.has(item.text)) return;
+        if (window.flexibleMatch(item.text, transcript, 'word')) {
+            active.add(key);
+            window.dropPin(item.text,theme,false,true);
+        }
+    });
+    pinContainer.querySelectorAll('[data-pin-state="preview"]').forEach(pin => {
+        if (!active.has(pin.dataset.pinWord)) pin.remove();
+    });
 };
 
 window.highlightGlobalText = function(text) {
@@ -200,6 +242,10 @@ window.handleSpeechResult = function(finalText, interimText) {
         }
     }
     
+    if (window.appState?.selectedMode === 'snapshot' && window.currentTheme) {
+        window.syncSnapshotPreviewPins(currentTempText, window.currentTheme, window.appState.selectedLevel);
+    }
+
     // Snapshot: show the learner immediate feedback for EVERY speech hypothesis,
     // including an interim one. This is read-only: the final "said/missed"
     // evidence is still determined from final ASR text only.
