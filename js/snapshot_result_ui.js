@@ -20,10 +20,10 @@
   function getPageSize() {
     const width = window.innerWidth;
     const height = window.innerHeight;
-    if (width < 700) return 2;
-    if (height < 650) return 2;
+    if (width < 700) return height < 760 ? 1 : 2;
+    if (height < 650 && width < 1100) return 2;
     if (width >= 1100 && height >= 780) return 6;
-    if (width >= 700 && width < 1100 && height >= 970) return 6;
+    if (width >= 700 && width <= 900 && height >= 850) return 6;
     return 4;
   }
   function visibleCategories() {
@@ -48,8 +48,8 @@
       {id:'missed',label:'まだ言えなかった',icon:'💡'},
       {id:'cleared',label:'言えた',icon:'✅'}
     ].map(item => {
-      const count = visibleCategories().reduce((n,c) =>
-        n + (getCategory(c.id)[item.id]?.length || 0), 0);
+      const count = new Set(visibleCategories().flatMap(c =>
+        (getCategory(c.id)[item.id] || []).map(expression => expression.text))).size;
       return '<button type="button" class="snapshot-status-tab" role="tab" '+
         'aria-selected="'+(item.id === attempt.status)+'" data-status="'+item.id+'">'+
         item.icon+' '+item.label+' <span style="font-size:12px">('+count+')</span></button>';
@@ -87,12 +87,13 @@
     const category = visibleCategories().find(c=>c.id === attempt.category);
     const title = document.getElementById('snapshot-list-title');
     const description = document.getElementById('snapshot-list-description');
-    if (title) title.textContent = (category?.label || '') + ' ・ ' +
-      (attempt.status === 'missed' ? 'まだ言えなかった表現' : '今回言えた表現');
-    if (description) description.textContent = list.length + '件' +
-      (attempt.status === 'missed'
-        ? '｜確定した認識テキストからは検出されませんでした'
-        : '｜確定した認識テキストから検出しました');
+    if (title) title.textContent = (category?.label || '') + ' ｜ ' +
+      (attempt.status === 'missed' ? '次に練習する表現' : '今回言えた表現');
+    if (description) description.textContent = list.length + '件';
+    const tip = document.getElementById('snapshot-list-tip');
+    if (tip) tip.textContent = attempt.status === 'missed'
+      ? '音声認識で確認できなかった表現です。お手本を聞いて、練習できます。'
+      : '今回の発話から確認できた表現です。';
     if (!grid) return;
     if (!slice.length) {
       grid.innerHTML = '<div class="snapshot-empty">'+
@@ -105,7 +106,11 @@
         const japanese = String(item.ja || '');
         const practiced = attempt.practiced.has(english);
         const absoluteIndex = offset + index;
+        const kind = attempt.kinds?.get(english) || '目標表現';
+        const number = String(absoluteIndex + 1).padStart(2,'0');
         return '<article class="snapshot-item-card">'+
+          '<div class="snapshot-card-meta"><span class="snapshot-item-kind">'+safe(kind)+
+          '</span><span class="snapshot-card-index">'+number+'</span></div>'+
           '<div class="snapshot-item-body">'+
             '<div class="snapshot-item-en" title="'+safe(english)+'">'+safe(english)+
               (attempt.status === 'missed' && practiced
@@ -131,6 +136,8 @@
 
   function refresh() {
     if (!attempt) return;
+    const workspace = document.querySelector('#view-result.snapshot-result-mode .snapshot-workspace');
+    if (workspace) workspace.dataset.status = attempt.status;
     renderStatusTabs();
     renderCategoryTabs();
     renderItems();
@@ -173,42 +180,72 @@
     view.style.height='100dvh';
     container.removeAttribute('style');
     container.parentElement?.removeAttribute('style');
+    // Tell learners whether each target is a word, phrase, or model sentence.
+    // Never alter score or select a different level for the labels.
+    const kinds = new Map();
+    if (typeof window.getAggregatedData === 'function') {
+      const targets = window.getAggregatedData(window.currentTheme,window.appState.selectedLevel);
+      for (const [key,label] of [['words','単語'],['chunks','チャンク'],['sentences','基本例文']]) {
+        for (const entry of targets[key] || []) kinds.set(String(entry.text || ''),label);
+      }
+    }
+    const levelLabel = ({
+      elementary:'小学生',junior_high:'中学生',high_school:'高校生'
+    })[window.appState.selectedLevel] || '英語';
+    const completion = Math.min(100,Math.max(0,Number(stats.completionRate) || 0));
     attempt = {
       stats,transcript,words,wpm,status:'missed',category:'object',page:0,
-      practiced:new Set()
+      practiced:new Set(),kinds
     };
     const firstUnsaid = visibleCategories().find(c=>getCategory(c.id).missed?.length);
     attempt.category = firstUnsaid?.id || 'object';
 
     container.innerHTML =
       '<section class="snapshot-feedback" aria-label="Snapshot の学習結果">'+
-        '<div class="snapshot-overview">'+
-          '<div class="snapshot-score"><div><div class="snapshot-score-caption">今回の達成度</div>'+
-            '<div class="snapshot-score-value">'+(stats.completionRate || 0)+'<span>%</span></div></div></div>'+
-          '<div class="snapshot-stat"><span class="snapshot-stat-label">Score</span>'+
-            '<span class="snapshot-stat-value">'+finalScore+'</span></div>'+
-          '<div class="snapshot-stat"><span class="snapshot-stat-label">単語数</span>'+
-            '<span class="snapshot-stat-value">'+words+'</span></div>'+
-          '<div class="snapshot-stat"><span class="snapshot-stat-label">WPM</span>'+
-            '<span class="snapshot-stat-value">'+wpm+'</span></div>'+
-          '<button type="button" class="snapshot-transcript-button" data-feedback-action="transcript">'+
-            '<span class="snapshot-transcript-caption">📝 音声認識で確定した英文</span>'+
-            '<span class="snapshot-transcript-preview">'+safe(transcript || 'No speech recorded.')+'</span></button>'+
-        '</div>'+
-        '<div id="snapshot-status-tabs" class="snapshot-status-tabs" role="tablist" aria-label="言えた・言えなかった"></div>'+
-        '<div id="snapshot-category-tabs" class="snapshot-categories" role="tablist" aria-label="4つの評価要素"></div>'+
-        '<div class="snapshot-list-head"><strong id="snapshot-list-title"></strong>'+
-          '<span id="snapshot-list-description"></span></div>'+
-        '<div id="snapshot-item-grid" class="snapshot-item-grid" role="tabpanel" aria-live="polite"></div>'+
-        '<div class="snapshot-pagination">'+
-          '<button id="snapshot-page-prev" class="snapshot-page-btn" type="button" data-feedback-action="prev">◀ 前へ</button>'+
-          '<span id="snapshot-page-count" class="snapshot-page-counter" aria-live="polite"></span>'+
-          '<button id="snapshot-page-next" class="snapshot-page-btn" type="button" data-feedback-action="next">次へ ▶</button>'+
-        '</div>'+
+        '<aside class="snapshot-aside" aria-label="学習結果と表示切り替え">'+
+          '<div class="snapshot-side-title"><span class="snapshot-eyebrow">LEARNING REVIEW</span>'+
+            '<span class="snapshot-level-pill">'+safe(levelLabel)+'モード</span></div>'+
+          '<div class="snapshot-overview">'+
+            '<div class="snapshot-score">'+
+              '<div class="snapshot-score-row"><div><div class="snapshot-score-caption">4つの要素の達成度</div>'+
+                '<div class="snapshot-score-value">'+completion+'<span>%</span></div></div>'+
+                '<div class="snapshot-score-symbol" aria-hidden="true">★</div></div>'+
+              '<div class="snapshot-score-track" role="progressbar" aria-label="今回の達成度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+completion+'">'+
+                '<span style="width:'+completion+'%"></span></div>'+
+            '</div>'+
+            '<div class="snapshot-stat"><span class="snapshot-stat-label">SCORE</span>'+
+              '<span class="snapshot-stat-value">'+finalScore+'</span></div>'+
+            '<div class="snapshot-stat"><span class="snapshot-stat-label">WORDS</span>'+
+              '<span class="snapshot-stat-value">'+words+'</span></div>'+
+            '<div class="snapshot-stat"><span class="snapshot-stat-label">WPM</span>'+
+              '<span class="snapshot-stat-value">'+wpm+'</span></div>'+
+            '<button type="button" class="snapshot-transcript-button" data-feedback-action="transcript">'+
+              '<span class="snapshot-transcript-caption">📝 話した英語を確認 <span aria-hidden="true">↗</span></span>'+
+              '<span class="snapshot-transcript-preview">'+safe(transcript || 'No speech recorded.')+'</span></button>'+
+          '</div>'+
+          '<div class="snapshot-tab-label">言えた？ 言えなかった？</div>'+
+          '<div id="snapshot-status-tabs" class="snapshot-status-tabs" role="tablist" aria-label="言えた・言えなかった"></div>'+
+          '<div class="snapshot-section-heading"><strong>4つの評価要素</strong><span>タップして切り替え</span></div>'+
+          '<div id="snapshot-category-tabs" class="snapshot-categories" role="tablist" aria-label="4つの評価要素"></div>'+
+        '</aside>'+
+        '<main class="snapshot-workspace" data-status="missed">'+
+          '<div class="snapshot-workspace-header">'+
+            '<span class="snapshot-workspace-eyebrow">EXPRESSIONS & PRACTICE</span>'+
+            '<div class="snapshot-list-head"><strong id="snapshot-list-title"></strong>'+
+              '<span id="snapshot-list-description"></span></div>'+
+            '<p id="snapshot-list-tip" class="snapshot-list-tip"></p>'+
+          '</div>'+
+          '<div id="snapshot-item-grid" class="snapshot-item-grid" role="tabpanel" aria-live="polite"></div>'+
+          '<div class="snapshot-pagination">'+
+            '<button id="snapshot-page-prev" class="snapshot-page-btn" type="button" data-feedback-action="prev">◀ 前へ</button>'+
+            '<span id="snapshot-page-count" class="snapshot-page-counter" aria-live="polite"></span>'+
+            '<button id="snapshot-page-next" class="snapshot-page-btn" type="button" data-feedback-action="next">次へ ▶</button>'+
+          '</div>'+
+        '</main>'+
         '<div id="snapshot-transcript-dialog" class="snapshot-transcript-overlay hidden" role="dialog" aria-modal="true" aria-label="話した英語の全文">'+
-          '<div style="display:flex;align-items:center;justify-content:space-between;gap:8px">'+
-            '<strong style="font-size:20px">📝 音声認識で確定した英語</strong>'+
-            '<button type="button" data-feedback-action="close-transcript" style="border-radius:10px;background:#e2e8f0;padding:8px 16px;font-weight:900">✕ 閉じる</button></div>'+
+          '<div class="snapshot-transcript-dialog-head">'+
+            '<strong>📝 音声認識で確定した英語</strong>'+
+            '<button type="button" data-feedback-action="close-transcript">✕ 閉じる</button></div>'+
           '<div class="snapshot-full-transcript">'+safe(transcript || 'No speech recorded.')+'</div>'+
         '</div>'+
       '</section>';
