@@ -2,6 +2,17 @@
    Never modifies scoring, speech recognition, practice, or Classroom history. */
 #view-result.snapshot-result-mode {min-height:0;overflow:hidden;}
 #view-result.snapshot-result-mode > div:first-child {padding-top:9px!important;padding-bottom:9px!important;}
+/* Keep Play Again and teacher submission side by side when both are shown. */
+#view-result.snapshot-result-mode > div:first-child > div:last-child {
+  width:auto!important;min-width:0;display:flex!important;flex-direction:row!important;
+  align-items:center;gap:8px!important;
+}
+#view-result.snapshot-result-mode #btn-play-again,
+#view-result.snapshot-result-mode #btn-submit-score {
+  box-sizing:border-box;width:auto!important;min-width:110px;min-height:42px;
+  padding:9px 13px!important;white-space:nowrap;flex:0 1 auto;
+}
+
 #view-result.snapshot-result-mode #result-scroll-area {
   box-sizing:border-box;min-height:0;height:100%;overflow:hidden!important;padding:0!important;
 }
@@ -282,6 +293,12 @@
 }
 @media (max-width:699px) {
   #view-result.snapshot-result-mode > div:first-child {padding:7px 10px!important;}
+
+  #view-result.snapshot-result-mode #btn-play-again,
+  #view-result.snapshot-result-mode #btn-submit-score {
+    min-width:88px;min-height:38px;padding:7px 10px!important;font-size:11px!important;
+  }
+
   #view-result.snapshot-result-mode .snapshot-feedback {
     display:flex;flex-direction:column;gap:7px;padding:7px;
   }
