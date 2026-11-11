@@ -178,7 +178,10 @@
           "grammar": "現在進行形",
           "ja": "看護師は手袋を着けています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "There is a large cooler beside the table.",

@@ -37,7 +37,7 @@
           {"text": "I see a young woman.", "grammar": "I see~", "ja": "若い女性が見えます。", "type": "object", "points": 20},
           {"text": "She is reading a book.", "grammar": "is ~ing", "ja": "彼女は本を読んでいます。", "type": "gist", "points": 40},
           {"text": "The book is red.", "grammar": "is ~", "ja": "その本は赤いです。", "type": "attribute", "points": 10},
-          {"text": "This is a big window.", "grammar": "This is~", "ja": "これは大きな窓です。", "type": "object", "points": 10},
+          {"text": "This is a big window.", "grammar": "This is~", "ja": "これは大きな窓です。", "type": "object", "points": 10, "coverageCategories": ["detail"]},
           {"text": "She has a cup of coffee.", "grammar": "have/has", "ja": "彼女はコーヒーのカップを持っています。", "type": "object", "points": 20}
         ]
       },
@@ -115,13 +115,34 @@
       }
     },
     "pins": {
-      "woman": {"x": 70, "y": 45},
-      "book": {"x": 55, "y": 68},
-      "cup": {"x": 40, "y": 75},
-      "plant": {"x": 24, "y": 65},
-      "window": {"x": 20, "y": 25},
-      "man": {"x": 33, "y": 55},
-      "table": {"x": 35, "y": 90}
+      "woman": {
+        "x": 70,
+        "y": 45
+      },
+      "book": {
+        "x": 55,
+        "y": 68
+      },
+      "cup": {
+        "x": 40,
+        "y": 75
+      },
+      "plant": {
+        "x": 24,
+        "y": 65
+      },
+      "window": {
+        "x": 20,
+        "y": 25
+      },
+      "man": {
+        "x": 33,
+        "y": 55
+      },
+      "table": {
+        "x": 35,
+        "y": 90
+      }
     }
   }
 ]

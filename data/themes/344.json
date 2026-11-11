@@ -42,9 +42,10 @@
       ],
       "sentences": [
         {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "category": "object"},
-        {"text": "She is a dancer.", "grammar": "be動詞", "ja": "彼女はダンサーです。", "category": "object"},
         {"text": "She has a green cap.", "grammar": "have", "ja": "彼女は緑の帽子を持っています。", "category": "attribute"},
         {"text": "She is happy.", "grammar": "be動詞", "ja": "彼女は幸せです。", "category": "inference"},
+        {"text": "She is dancing on a stage.", "ja": "女性はステージで踊っています。", "type": "detail", "points": 40},
+        {"text": "She is a dancer.", "grammar": "be動詞", "ja": "彼女はダンサーです。", "category": "object"},
         {"text": "This is a breakdance.", "grammar": "This is~", "ja": "これはブレイクダンスです。", "category": "gist"}
       ]
     },
@@ -127,13 +128,37 @@
     }
   },
   "pins": {
-    "woman_face": { "x": 45, "y": 60 },
-    "cap": { "x": 43, "y": 50 },
-    "hoodie": { "x": 55, "y": 60 },
-    "pants": { "x": 70, "y": 45 },
-    "shoes": { "x": 88, "y": 40 },
-    "spotlight_left": { "x": 5, "y": 5 },
-    "spotlight_right": { "x": 95, "y": 5 },
-    "graffiti": { "x": 50, "y": 40 }
+    "woman_face": {
+      "x": 45,
+      "y": 60
+    },
+    "cap": {
+      "x": 43,
+      "y": 50
+    },
+    "hoodie": {
+      "x": 55,
+      "y": 60
+    },
+    "pants": {
+      "x": 70,
+      "y": 45
+    },
+    "shoes": {
+      "x": 88,
+      "y": 40
+    },
+    "spotlight_left": {
+      "x": 5,
+      "y": 5
+    },
+    "spotlight_right": {
+      "x": 95,
+      "y": 5
+    },
+    "graffiti": {
+      "x": 50,
+      "y": 40
+    }
   }
 }

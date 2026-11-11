@@ -48,8 +48,8 @@
         {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。", "category": "object"},
         {"text": "They build something.", "grammar": "一般動詞", "ja": "彼らは何かを建てています。", "category": "gist"},
         {"text": "She uses a hammer.", "grammar": "一般動詞", "ja": "彼女はハンマーを使っています。", "category": "gist"},
-        {"text": "A boy has a blue hat.", "grammar": "have", "ja": "男の子が青いヘルメットを持っています。", "category": "attribute"},
         {"text": "There are many trees.", "grammar": "There is/are~", "ja": "たくさんの木があります。", "category": "object"},
+        {"text": "A boy has a blue hat.", "grammar": "have", "ja": "男の子が青いヘルメットを持っています。", "category": "attribute"},
         {"text": "They are working hard.", "grammar": "現在進行形", "ja": "彼らは一生懸命働いています。", "category": "inference"}
       ]
     },
@@ -135,17 +135,53 @@
     }
   },
   "pins": {
-    "girl": { "x": 30, "y": 45 },
-    "boy": { "x": 48, "y": 42 },
-    "hard hat": { "x": 15, "y": 65 },
-    "coverall": { "x": 30, "y": 50 },
-    "plank": { "x": 42, "y": 78 },
-    "nail": { "x": 24, "y": 45 },
-    "hammer": { "x": 35, "y": 62 },
-    "tree": { "x": 10, "y": 25 },
-    "paper": { "x": 65, "y": 55 },
-    "building": { "x": 50, "y": 15 },
-    "adult": { "x": 78, "y": 35 },
-    "shoe": { "x": 18, "y": 85 }
+    "girl": {
+      "x": 30,
+      "y": 45
+    },
+    "boy": {
+      "x": 48,
+      "y": 42
+    },
+    "hard hat": {
+      "x": 15,
+      "y": 65
+    },
+    "coverall": {
+      "x": 30,
+      "y": 50
+    },
+    "plank": {
+      "x": 42,
+      "y": 78
+    },
+    "nail": {
+      "x": 24,
+      "y": 45
+    },
+    "hammer": {
+      "x": 35,
+      "y": 62
+    },
+    "tree": {
+      "x": 10,
+      "y": 25
+    },
+    "paper": {
+      "x": 65,
+      "y": 55
+    },
+    "building": {
+      "x": 50,
+      "y": 15
+    },
+    "adult": {
+      "x": 78,
+      "y": 35
+    },
+    "shoe": {
+      "x": 18,
+      "y": 85
+    }
   }
 }

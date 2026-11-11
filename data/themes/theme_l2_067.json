@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The classroom looks quiet.",
+          "grammar": "look＋形容詞",
+          "ja": "教室は静かに見えます。",
+          "type": "description",
+          "points": 40
+        },
+        {
           "text": "Three students are sitting at their desks.",
           "grammar": "現在進行形",
           "ja": "3人の生徒が机に座っています。",
@@ -199,13 +206,6 @@
           "grammar": "There is",
           "ja": "壁に時計があります。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The classroom looks quiet.",
-          "grammar": "look＋形容詞",
-          "ja": "教室は静かに見えます。",
-          "type": "description",
           "points": 40
         }
       ]

@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "Three people are holding notebooks.",
-          "grammar": "現在進行形",
-          "ja": "3人がノートを持っています。",
+          "text": "The cliff has many different layers.",
+          "grammar": "have",
+          "ja": "その崖には多くの異なる層があります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "The cliff has many different layers.",
-          "grammar": "have",
-          "ja": "その崖には多くの異なる層があります。",
+          "text": "Three people are holding notebooks.",
+          "grammar": "現在進行形",
+          "ja": "3人がノートを持っています。",
           "type": "detail",
           "points": 40
         },

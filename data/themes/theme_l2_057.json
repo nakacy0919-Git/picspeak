@@ -376,16 +376,16 @@
           "points": 40
         },
         {
-          "text": "One farmer is crouching down to inspect a dead plant.",
-          "grammar": "to不定詞",
-          "ja": "一人の農家が枯れた植物を確認するためにしゃがんでいます。",
+          "text": "Several farmers are holding their heads because they are worried.",
+          "grammar": "because",
+          "ja": "何人かの農家は心配して頭を抱えています。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "Several farmers are holding their heads because they are worried.",
-          "grammar": "because",
-          "ja": "何人かの農家は心配して頭を抱えています。",
+          "text": "One farmer is crouching down to inspect a dead plant.",
+          "grammar": "to不定詞",
+          "ja": "一人の農家が枯れた植物を確認するためにしゃがんでいます。",
           "type": "detail",
           "points": 40
         },

@@ -171,7 +171,10 @@
           "grammar": "現在進行形",
           "ja": "彼女は濃い青色のドレスを着ています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "A younger girl is standing beside her.",
@@ -376,6 +379,13 @@
           "points": 40
         },
         {
+          "text": "Her facial expression suggests that she may be jealous of the winner.",
+          "grammar": "suggest that / may be",
+          "ja": "彼女の表情から、優勝者に嫉妬している可能性がうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "The younger girl beside her has crossed her arms and looks unhappy.",
           "grammar": "現在完了形 / look＋形容詞",
           "ja": "隣の年下の少女は腕を組み、不満そうに見えます。",
@@ -387,13 +397,6 @@
           "grammar": "現在進行形",
           "ja": "彼女は優勝者とトロフィーを横目で見ています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "Her facial expression suggests that she may be jealous of the winner.",
-          "grammar": "suggest that / may be",
-          "ja": "彼女の表情から、優勝者に嫉妬している可能性がうかがえます。",
-          "type": "inference",
           "points": 40
         },
         {

@@ -34,10 +34,10 @@
       ],
       "sentences": [
         {"text": "I see a boy and a woman.", "grammar": "I see~", "ja": "男の子と女性が見えます。", "category": "object"},
-        {"text": "The boy has a card.", "grammar": "have", "ja": "男の子はカードを持っています。", "category": "object"},
         {"text": "A book is on the desk.", "grammar": "be動詞", "ja": "本が机の上にあります。", "category": "detail"},
         {"text": "The woman has glasses.", "grammar": "have", "ja": "女性はメガネをかけています。", "category": "attribute"},
-        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"},
+        {"text": "The boy has a card.", "grammar": "have", "ja": "男の子はカードを持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -73,7 +73,8 @@
         {"text": "The librarian is scanning the book with a scanner.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "司書はスキャナーで本をスキャンしています。", "category": "gist"},
         {"text": "The boy is holding his library card in his hand.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "男の子は手に図書カードを持っています。", "category": "gist"},
         {"text": "The woman is sitting behind the desk.", "grammar": "現在進行形 / 前置詞 (behind)", "ja": "女性は机の後ろに座っています。", "category": "detail"},
-        {"text": "There is a book cart near the window.", "grammar": "There is/are~", "ja": "窓の近くにブックカートがあります。", "category": "detail"}
+        {"text": "There is a book cart near the window.", "grammar": "There is/are~", "ja": "窓の近くにブックカートがあります。", "category": "detail"},
+        {"text": "The boy is holding his library card.", "ja": "男の子は図書館のカードを持っています。", "type": "attribute", "points": 40}
       ]
     },
     "high_school": {
@@ -114,19 +115,61 @@
     }
   },
   "pins": {
-    "boy": { "x": 42, "y": 55 },
-    "librarian": { "x": 88, "y": 42 },
-    "book_desk": { "x": 75, "y": 68 },
-    "scanner": { "x": 70, "y": 48 },
-    "card": { "x": 55, "y": 53 },
-    "computer_monitor": { "x": 60, "y": 42 },
-    "keyboard": { "x": 68, "y": 62 },
-    "counter_desk": { "x": 65, "y": 80 },
-    "backpack": { "x": 32, "y": 60 },
-    "book_cart": { "x": 15, "y": 65 },
-    "book_on_cart": { "x": 18, "y": 52 },
-    "window": { "x": 20, "y": 20 },
-    "tree_outside": { "x": 65, "y": 15 },
-    "glasses": { "x": 84, "y": 25 }
+    "boy": {
+      "x": 42,
+      "y": 55
+    },
+    "librarian": {
+      "x": 88,
+      "y": 42
+    },
+    "book_desk": {
+      "x": 75,
+      "y": 68
+    },
+    "scanner": {
+      "x": 70,
+      "y": 48
+    },
+    "card": {
+      "x": 55,
+      "y": 53
+    },
+    "computer_monitor": {
+      "x": 60,
+      "y": 42
+    },
+    "keyboard": {
+      "x": 68,
+      "y": 62
+    },
+    "counter_desk": {
+      "x": 65,
+      "y": 80
+    },
+    "backpack": {
+      "x": 32,
+      "y": 60
+    },
+    "book_cart": {
+      "x": 15,
+      "y": 65
+    },
+    "book_on_cart": {
+      "x": 18,
+      "y": 52
+    },
+    "window": {
+      "x": 20,
+      "y": 20
+    },
+    "tree_outside": {
+      "x": 65,
+      "y": 15
+    },
+    "glasses": {
+      "x": 84,
+      "y": 25
+    }
   }
 }

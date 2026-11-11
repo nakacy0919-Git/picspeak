@@ -1,6 +1,6 @@
 // js/scoring.js
 // ==========================================
-// スコアリングおよび達成率計算システム (厳格＆バケツ方式版)
+// スコアと4要素の達成度（各25%・レベル別例文目標）
 // ==========================================
 
 window.currentScore = 0;
@@ -20,8 +20,8 @@ window.getAggregatedData = function(theme, level) {
 
     const levelsToInclude = [];
     if (level === 'elementary') levelsToInclude.push('elementary');
-    else if (level === 'junior_high') levelsToInclude.push('elementary', 'junior_high');
-    else if (level === 'high_school') levelsToInclude.push('elementary', 'junior_high', 'high_school');
+    else if (level === 'junior_high') levelsToInclude.push('junior_high', 'elementary');
+    else if (level === 'high_school') levelsToInclude.push('high_school', 'junior_high', 'elementary');
 
     levelsToInclude.forEach(lvl => {
         if (theme.scoringData[lvl]) {
@@ -159,10 +159,6 @@ window.getCompletionStats = function(theme, selectedLevel, overrideFoundSets = n
     const scoredChunks = overrideFoundSets?.chunks || window.foundChunksSet;
     const scoredSentences = overrideFoundSets?.sentences || window.foundSentencesSet;
     
-    // ★ 各要素の評価ウェイト（合計100%）と、それを満たすための「目標ポイント」
-    const CATEGORY_TARGETS = {
-      object:{weight:20},attribute:{weight:20},detail:{weight:20},gist:{weight:40}
-    };
     const CATEGORY_ALIASES={
       object:'object',person:'object',animal:'object',food:'object',clothing:'object',material:'object',
       attribute:'attribute',description:'attribute',emotion:'attribute',state:'attribute',color:'attribute',weather:'attribute',
@@ -185,13 +181,16 @@ window.getCompletionStats = function(theme, selectedLevel, overrideFoundSets = n
             const pts = item.points || fallbackPoints;
             const rawCategory=normalizedCategory(item,kind);
 
-            categoryStats[rawCategory].max += pts;
-
-            if (foundSet.has(item.text)) {
-                categoryStats[rawCategory].earned += pts;
-                categoryStats[rawCategory].cleared.push(item);
-            } else {
-                categoryStats[rawCategory].missed.push(item);
+            const categories = new Set([rawCategory,...(item.coverageCategories || [])]);
+            for (const category of categories) {
+                if (!categoryStats[category]) continue;
+                categoryStats[category].max += pts;
+                if (foundSet.has(item.text)) {
+                    categoryStats[category].earned += pts;
+                    categoryStats[category].cleared.push(item);
+                } else {
+                    categoryStats[category].missed.push(item);
+                }
             }
         });
     };
@@ -201,32 +200,44 @@ window.getCompletionStats = function(theme, selectedLevel, overrideFoundSets = n
     processItems(targetData.chunks, scoredChunks, 20, 'chunks');
     processItems(targetData.sentences, scoredSentences, 40, 'sentences');
 
-    let completionRate = 0;
-    let totalValidWeight = 0;
-
-    // 写真によっては特定のカテゴリー（例：detailがない等）が存在しない場合の救済処理
-    Object.keys(CATEGORY_TARGETS).forEach(key => {
-        if (categoryStats[key].max > 0) {
-            totalValidWeight += CATEGORY_TARGETS[key].weight;
+    // Sentence goals use the chosen level; familiar vocabulary from earlier
+    // levels can still communicate an object, attribute, or background.
+    const levelData = theme?.scoringData?.[selectedLevel] || {};
+    const evidence = {object:0,attribute:0,detail:0,gist:0};
+    const models = levelData.sentences || [];
+    const matchedModels = models.filter(s => scoredSentences.has(s.text));
+    for (const sentence of matchedModels) {
+        for (const category of sentence.coverageCategories || []) {
+            if (category in evidence) evidence[category] = 1;
         }
-    });
-    const weightMultiplier = totalValidWeight > 0 ? (100 / totalValidWeight) : 1;
-    
-    // True coverage of all unique targets, not a capped point threshold.
-    Object.keys(CATEGORY_TARGETS).forEach(key=>{
-      const cat=categoryStats[key];
-      const weight=CATEGORY_TARGETS[key].weight*weightMultiplier;
-      const rate=cat.max>0?Math.min(1,cat.earned/cat.max):0;
-      completionRate+=rate*weight;
-      cat.matchRate=Math.floor(rate*100);
-    });
-
-    // other（その他）の表示用計算
-    if (categoryStats.other.max > 0) {
-        categoryStats.other.matchRate = Math.min(100, Math.floor((categoryStats.other.earned / categoryStats.other.max) * 100));
     }
-
-    completionRate = Math.min(100, Math.floor(completionRate));
+    for (const kind of ['words','chunks','sentences']) {
+        const found = {words:scoredWords,chunks:scoredChunks,sentences:scoredSentences}[kind];
+        for (const item of targetData[kind] || []) {
+            const category = normalizedCategory(item,kind);
+            // A complete model sentence also demonstrates the target concepts
+            // it contains. The sentence goal below keeps isolated vocabulary
+            // from earning full achievement.
+            const inSentence = matchedModels.some(s =>
+                window.flexibleMatch(item.text,s.text,kind === 'words' ? 'word' : 'chunk'));
+            const strength = inSentence || found.has(item.text) ? 1 : 0;
+            evidence[category] = Math.min(1,evidence[category] + strength);
+        }
+    }
+    // Three distinct level-appropriate sentences are enough; repeating a
+    // sentence cannot fill the goal. Shorter datasets use all available models.
+    const requiredSentences = Math.min(3,new Set(models.map(s => s.text)).size);
+    const sentenceProgress = requiredSentences > 0
+        ? Math.min(1,new Set(matchedModels.map(s => s.text)).size / requiredSentences) : 0;
+    let completionRate = 0;
+    for (const key of Object.keys(evidence)) {
+        const rate = Math.min(evidence[key],0.7 + 0.3 * sentenceProgress);
+        categoryStats[key].matchRate = Math.round(rate * 100);
+        categoryStats[key].goalEvidence = evidence[key];
+        completionRate += rate * 25;
+    }
+    // Keep all four elements mandatory, even if the source lacks one.
+    completionRate = Math.min(100,Math.floor(completionRate + 1e-8));
 
     return {
         completionRate,

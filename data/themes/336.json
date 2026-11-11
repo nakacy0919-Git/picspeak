@@ -37,6 +37,7 @@
           {"text": "I see a teacher and students.", "grammar": "I see~", "ja": "先生と生徒たちが見えます。", "type": "object", "points": 20},
           {"text": "The teacher is very angry.", "grammar": "be動詞", "ja": "先生はとても怒っています。", "type": "inference", "points": 30},
           {"text": "She points at a boy.", "grammar": "一般動詞", "ja": "彼女は男の子を指さします。", "type": "gist", "points": 40},
+          {"text": "They are in a classroom.", "ja": "教室にいます。", "type": "detail", "points": 40},
           {"text": "The students are sad.", "grammar": "be動詞", "ja": "生徒たちは悲しそうです。", "type": "attribute", "points": 20},
           {"text": "A boy is crying.", "grammar": "現在進行形", "ja": "男の子が泣いています。", "type": "gist", "points": 30}
         ]
@@ -72,7 +73,7 @@
         "sentences": [
           {"text": "The teacher is scolding the students in the classroom.", "grammar": "現在進行形", "ja": "先生は教室で生徒たちを叱っています。", "type": "gist", "points": 40},
           {"text": "She is pointing her finger at them.", "grammar": "現在進行形", "ja": "彼女は彼らを指さしています。", "type": "gist", "points": 30},
-          {"text": "The students are looking down because they feel sorry.", "grammar": "接続詞 (because)", "ja": "生徒たちは反省しているので下を向いています。", "type": "inference", "points": 40},
+          {"text": "The students are looking down because they feel sorry.", "grammar": "接続詞 (because)", "ja": "生徒たちは反省しているので下を向いています。", "type": "inference", "points": 40, "coverageCategories": ["attribute"]},
           {"text": "A boy is crying and wiping his tears in the back.", "grammar": "現在進行形", "ja": "後ろで男の子が泣いて涙を拭いています。", "type": "detail", "points": 30},
           {"text": "There is a bulletin board on the wall.", "grammar": "There is/are~", "ja": "壁に掲示板があります。", "type": "detail", "points": 10}
         ]
@@ -115,13 +116,34 @@
       }
     },
     "pins": {
-      "teacher": { "x": 25, "y": 45 },
-      "boy_gray": { "x": 55, "y": 55 },
-      "girl": { "x": 68, "y": 55 },
-      "boy_blue": { "x": 82, "y": 60 },
-      "boy_crying": { "x": 95, "y": 45 },
-      "blackboard": { "x": 10, "y": 30 },
-      "bulletin_board": { "x": 58, "y": 20 }
+      "teacher": {
+        "x": 25,
+        "y": 45
+      },
+      "boy_gray": {
+        "x": 55,
+        "y": 55
+      },
+      "girl": {
+        "x": 68,
+        "y": 55
+      },
+      "boy_blue": {
+        "x": 82,
+        "y": 60
+      },
+      "boy_crying": {
+        "x": 95,
+        "y": 45
+      },
+      "blackboard": {
+        "x": 10,
+        "y": 30
+      },
+      "bulletin_board": {
+        "x": 58,
+        "y": 20
+      }
     }
   }
 ]

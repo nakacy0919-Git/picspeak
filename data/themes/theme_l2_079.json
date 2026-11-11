@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "He is pointing at the mushrooms.",
-          "grammar": "現在進行形",
-          "ja": "彼はキノコを指さしています。",
+          "text": "There are red and brown mushrooms on the ground.",
+          "grammar": "There are",
+          "ja": "地面には赤いキノコと茶色いキノコがあります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "There are red and brown mushrooms on the ground.",
-          "grammar": "There are",
-          "ja": "地面には赤いキノコと茶色いキノコがあります。",
+          "text": "He is pointing at the mushrooms.",
+          "grammar": "現在進行形",
+          "ja": "彼はキノコを指さしています。",
           "type": "detail",
           "points": 40
         },

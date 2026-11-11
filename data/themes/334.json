@@ -37,7 +37,7 @@
           {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。", "type": "object", "points": 20},
           {"text": "They play basketball.", "grammar": "一般動詞", "ja": "彼らはバスケットボールをします。", "type": "gist", "points": 40},
           {"text": "He has a ball.", "grammar": "have", "ja": "彼はボールを持っています。", "type": "detail", "points": 20},
-          {"text": "The boy runs fast.", "grammar": "一般動詞", "ja": "男の子は速く走ります。", "type": "gist", "points": 30},
+          {"text": "The boy runs fast.", "grammar": "一般動詞", "ja": "男の子は速く走ります。", "type": "gist", "points": 30, "coverageCategories": ["attribute"]},
           {"text": "This is a gym.", "grammar": "This is~", "ja": "ここは体育館です。", "type": "inference", "points": 30}
         ]
       },
@@ -115,12 +115,30 @@
       }
     },
     "pins": {
-      "boy_dribbling": { "x": 45, "y": 60 },
-      "boy_defending": { "x": 65, "y": 60 },
-      "ball": { "x": 35, "y": 60 },
-      "hoop": { "x": 15, "y": 25 },
-      "scoreboard": { "x": 35, "y": 25 },
-      "girl_left": { "x": 10, "y": 60 }
+      "boy_dribbling": {
+        "x": 45,
+        "y": 60
+      },
+      "boy_defending": {
+        "x": 65,
+        "y": 60
+      },
+      "ball": {
+        "x": 35,
+        "y": 60
+      },
+      "hoop": {
+        "x": 15,
+        "y": 25
+      },
+      "scoreboard": {
+        "x": 35,
+        "y": 25
+      },
+      "girl_left": {
+        "x": 10,
+        "y": 60
+      }
     }
   }
 ]

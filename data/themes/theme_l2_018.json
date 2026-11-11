@@ -174,6 +174,12 @@
           "points": 40
         },
         {
+          "text": "The room is being cleaned.",
+          "ja": "部屋は掃除中です。",
+          "type": "attribute",
+          "points": 40
+        },
+        {
           "text": "She is using some boxes.",
           "grammar": "現在進行形",
           "ja": "彼女はいくつかの箱を使っています。",
@@ -376,6 +382,13 @@
           "points": 40
         },
         {
+          "text": "The room is becoming more organized as they work together.",
+          "grammar": "as節",
+          "ja": "3人が協力するにつれて、部屋はより整理されてきています。",
+          "type": "gist",
+          "points": 40
+        },
+        {
           "text": "The daughter is sorting books into different groups.",
           "grammar": "現在進行形",
           "ja": "娘は本をいくつかのグループに分けています。",
@@ -401,13 +414,6 @@
           "grammar": "prepare to＋動詞",
           "ja": "彼はいくつかの額縁で壁を飾る準備をしています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The room is becoming more organized as they work together.",
-          "grammar": "as節",
-          "ja": "3人が協力するにつれて、部屋はより整理されてきています。",
-          "type": "gist",
           "points": 40
         }
       ]

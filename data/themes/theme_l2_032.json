@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "The woman is folding a T-shirt.",
-          "grammar": "現在進行形",
-          "ja": "女性がTシャツをたたんでいます。",
+          "text": "There are clean towels on the table.",
+          "grammar": "There are",
+          "ja": "テーブルにはきれいなタオルがあります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "There are clean towels on the table.",
-          "grammar": "There are",
-          "ja": "テーブルにはきれいなタオルがあります。",
+          "text": "The woman is folding a T-shirt.",
+          "grammar": "現在進行形",
+          "ja": "女性がTシャツをたたんでいます。",
           "type": "detail",
           "points": 40
         },
@@ -376,16 +376,16 @@
           "points": 40
         },
         {
-          "text": "The woman is folding clothes that have already been dried.",
-          "grammar": "関係代名詞that / 現在完了受動態",
-          "ja": "女性はすでに乾燥が終わった衣類をたたんでいます。",
+          "text": "She is organizing the clothes into several neat piles.",
+          "grammar": "現在進行形",
+          "ja": "彼女は服をいくつかのきれいな山に分けて整理しています。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "She is organizing the clothes into several neat piles.",
-          "grammar": "現在進行形",
-          "ja": "彼女は服をいくつかのきれいな山に分けて整理しています。",
+          "text": "The woman is folding clothes that have already been dried.",
+          "grammar": "関係代名詞that / 現在完了受動態",
+          "ja": "女性はすでに乾燥が終わった衣類をたたんでいます。",
           "type": "detail",
           "points": 40
         },
@@ -584,17 +584,17 @@
           "points": 40
         },
         {
-          "text": "Meanwhile, the woman is folding the freshly dried garments and organizing them according to type.",
-          "grammar": "現在進行形 / according to",
-          "ja": "その一方で、女性は乾燥したばかりの衣類をたたみ、種類別に整理しています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "The neatly arranged stacks indicate that she is approaching the task in a systematic manner.",
           "grammar": "indicate that",
           "ja": "きれいに並べられた衣類の山から、彼女が体系的に作業していることが分かります。",
           "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, the woman is folding the freshly dried garments and organizing them according to type.",
+          "grammar": "現在進行形 / according to",
+          "ja": "その一方で、女性は乾燥したばかりの衣類をたたみ、種類別に整理しています。",
+          "type": "detail",
           "points": 40
         },
         {

@@ -171,7 +171,10 @@
           "grammar": "現在進行形",
           "ja": "彼女は片足で立っています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "The girl on the left is holding a hoop.",
@@ -376,17 +379,17 @@
           "points": 40
         },
         {
-          "text": "The girl on the left is controlling a hoop beside her body.",
-          "grammar": "現在進行形",
-          "ja": "左の女子生徒は体の横でフープをコントロールしています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "She appears to be practicing a graceful movement.",
           "grammar": "appear to be＋現在分詞",
           "ja": "彼女は優雅な動きを練習しているようです。",
           "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "The girl on the left is controlling a hoop beside her body.",
+          "grammar": "現在進行形",
+          "ja": "左の女子生徒は体の横でフープをコントロールしています。",
+          "type": "detail",
           "points": 40
         },
         {

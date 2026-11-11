@@ -35,9 +35,9 @@
       "sentences": [
         {"text": "I see a boy and a woman.", "grammar": "I see~", "ja": "男の子と女性が見えます。", "category": "object"},
         {"text": "The boy looks at the bird.", "grammar": "一般動詞", "ja": "男の子が鳥を見ます。", "category": "gist"},
-        {"text": "The woman has a bird chart.", "grammar": "have", "ja": "女性は鳥の図を持っています。", "category": "object"},
         {"text": "The bird is in the water.", "grammar": "場所を表す前置詞", "ja": "鳥は水の中にいます。", "category": "detail"},
-        {"text": "The sun is yellow.", "grammar": "be動詞", "ja": "太陽は黄色いです。", "category": "attribute"}
+        {"text": "The sun is yellow.", "grammar": "be動詞", "ja": "太陽は黄色いです。", "category": "attribute"},
+        {"text": "The woman has a bird chart.", "grammar": "have", "ja": "女性は鳥の図を持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -114,16 +114,49 @@
     }
   },
   "pins": {
-    "boy": { "x": 16, "y": 62 },
-    "woman": { "x": 86, "y": 60 },
-    "telescope": { "x": 35, "y": 52 },
-    "bird": { "x": 68, "y": 45 },
-    "chart": { "x": 68, "y": 74 },
-    "tripod": { "x": 35, "y": 85 },
-    "lake": { "x": 55, "y": 42 },
-    "sun": { "x": 52, "y": 25 },
-    "tree": { "x": 8, "y": 18 },
-    "glasses": { "x": 81, "y": 46 },
-    "grass": { "x": 48, "y": 85 }
+    "boy": {
+      "x": 16,
+      "y": 62
+    },
+    "woman": {
+      "x": 86,
+      "y": 60
+    },
+    "telescope": {
+      "x": 35,
+      "y": 52
+    },
+    "bird": {
+      "x": 68,
+      "y": 45
+    },
+    "chart": {
+      "x": 68,
+      "y": 74
+    },
+    "tripod": {
+      "x": 35,
+      "y": 85
+    },
+    "lake": {
+      "x": 55,
+      "y": 42
+    },
+    "sun": {
+      "x": 52,
+      "y": 25
+    },
+    "tree": {
+      "x": 8,
+      "y": 18
+    },
+    "glasses": {
+      "x": 81,
+      "y": 46
+    },
+    "grass": {
+      "x": 48,
+      "y": 85
+    }
   }
 }

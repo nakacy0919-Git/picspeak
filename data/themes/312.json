@@ -36,9 +36,9 @@
         "sentences": [
           {"text": "I see a woman.", "grammar": "I see~", "ja": "女の人が見えます。", "type": "object", "points": 20},
           {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。", "type": "gist", "points": 40},
-          {"text": "She is wearing a mask.", "grammar": "is ~ing", "ja": "彼女はマスクをつけています。", "type": "gist", "points": 30},
-          {"text": "She is working at a desk.", "grammar": "is ~ing", "ja": "彼女は机で働いています。", "type": "gist", "points": 30},
-          {"text": "This is a black computer.", "grammar": "This is~", "ja": "これは黒いコンピューターです。", "type": "object", "points": 20}
+          {"text": "She is working at a desk.", "grammar": "is ~ing", "ja": "彼女は机で働いています。", "type": "gist", "points": 30, "coverageCategories": ["detail"]},
+          {"text": "This is a black computer.", "grammar": "This is~", "ja": "これは黒いコンピューターです。", "type": "object", "points": 20},
+          {"text": "She is wearing a mask.", "grammar": "is ~ing", "ja": "彼女はマスクをつけています。", "type": "gist", "points": 30}
         ]
       },
       "junior_high": {
@@ -115,14 +115,38 @@
       }
     },
     "pins": {
-      "woman": {"x": 50, "y": 50},
-      "mask": {"x": 47, "y": 40},
-      "computer": {"x": 15, "y": 55},
-      "keyboard": {"x": 35, "y": 94},
-      "humidifier": {"x": 81, "y": 84},
-      "steam": {"x": 80, "y": 50},
-      "calendar": {"x": 12, "y": 12},
-      "chair": {"x": 70, "y": 70}
+      "woman": {
+        "x": 50,
+        "y": 50
+      },
+      "mask": {
+        "x": 47,
+        "y": 40
+      },
+      "computer": {
+        "x": 15,
+        "y": 55
+      },
+      "keyboard": {
+        "x": 35,
+        "y": 94
+      },
+      "humidifier": {
+        "x": 81,
+        "y": 84
+      },
+      "steam": {
+        "x": 80,
+        "y": 50
+      },
+      "calendar": {
+        "x": 12,
+        "y": 12
+      },
+      "chair": {
+        "x": 70,
+        "y": 70
+      }
     }
   }
 ]

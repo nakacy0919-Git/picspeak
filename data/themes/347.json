@@ -38,9 +38,10 @@
       "sentences": [
         {"text": "I see boys and girls.", "grammar": "I see~", "ja": "男の子たちと女の子たちが見えます。", "category": "object"},
         {"text": "They play music.", "grammar": "一般動詞", "ja": "彼らは音楽を演奏します。", "category": "gist"},
+        {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。", "category": "inference", "coverageCategories": ["attribute"]},
+        {"text": "They are playing music in a room.", "ja": "部屋で音楽を演奏しています。", "type": "detail", "points": 40},
         {"text": "A boy plays the drum.", "grammar": "一般動詞", "ja": "男の子がドラムを叩きます。", "category": "gist"},
-        {"text": "The girl has a guitar.", "grammar": "have", "ja": "女の子はギターを持っています。", "category": "object"},
-        {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。", "category": "inference"}
+        {"text": "The girl has a guitar.", "grammar": "have", "ja": "女の子はギターを持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -75,7 +76,7 @@
       "sentences": [
         {"text": "The students are practicing music together.", "grammar": "現在進行形", "ja": "生徒たちは一緒に音楽の練習をしています。", "category": "gist"},
         {"text": "There is a drum set in the center of the room.", "grammar": "There is/are~", "ja": "部屋の中央にドラムセットがあります。", "category": "detail"},
-        {"text": "A girl in a purple shirt is playing the bass guitar.", "grammar": "現在進行形 / 前置詞", "ja": "紫色のシャツを着た女の子がベースを弾いています。", "category": "gist"},
+        {"text": "A girl in a purple shirt is playing the bass guitar.", "grammar": "現在進行形 / 前置詞", "ja": "紫色のシャツを着た女の子がベースを弾いています。", "category": "gist", "coverageCategories": ["attribute"]},
         {"text": "The male teacher is watching them and giving a thumbs up.", "grammar": "現在進行形", "ja": "男性の先生は彼らを見て、親指を立てています。", "category": "gist"},
         {"text": "They are playing their instruments happily.", "grammar": "現在進行形 / 副詞", "ja": "彼らは楽しそうに楽器を演奏しています。", "category": "inference"}
       ]
@@ -119,24 +120,81 @@
     }
   },
   "pins": {
-    "girl_keyboard": { "x": 13, "y": 55 },
-    "keyboard": { "x": 18, "y": 68 },
-    "teacher_man": { "x": 25, "y": 35 },
-    "girl_bass": { "x": 34, "y": 50 },
-    "headphones": { "x": 31, "y": 35 },
-    "bass_guitar": { "x": 38, "y": 55 },
-    "boy_drum": { "x": 54, "y": 38 },
-    "drums": { "x": 54, "y": 58 },
-    "boy_sax": { "x": 65, "y": 55 },
-    "sax_left": { "x": 67, "y": 62 },
-    "girl_sax": { "x": 77, "y": 55 },
-    "sax_right": { "x": 74, "y": 62 },
-    "teacher_woman": { "x": 84, "y": 40 },
-    "paper": { "x": 81, "y": 45 },
-    "boy_cymbals": { "x": 94, "y": 60 },
-    "cymbals": { "x": 89, "y": 55 },
-    "soundproof_panel": { "x": 45, "y": 25 },
-    "lockers": { "x": 95, "y": 25 },
-    "door": { "x": 12, "y": 30 }
+    "girl_keyboard": {
+      "x": 13,
+      "y": 55
+    },
+    "keyboard": {
+      "x": 18,
+      "y": 68
+    },
+    "teacher_man": {
+      "x": 25,
+      "y": 35
+    },
+    "girl_bass": {
+      "x": 34,
+      "y": 50
+    },
+    "headphones": {
+      "x": 31,
+      "y": 35
+    },
+    "bass_guitar": {
+      "x": 38,
+      "y": 55
+    },
+    "boy_drum": {
+      "x": 54,
+      "y": 38
+    },
+    "drums": {
+      "x": 54,
+      "y": 58
+    },
+    "boy_sax": {
+      "x": 65,
+      "y": 55
+    },
+    "sax_left": {
+      "x": 67,
+      "y": 62
+    },
+    "girl_sax": {
+      "x": 77,
+      "y": 55
+    },
+    "sax_right": {
+      "x": 74,
+      "y": 62
+    },
+    "teacher_woman": {
+      "x": 84,
+      "y": 40
+    },
+    "paper": {
+      "x": 81,
+      "y": 45
+    },
+    "boy_cymbals": {
+      "x": 94,
+      "y": 60
+    },
+    "cymbals": {
+      "x": 89,
+      "y": 55
+    },
+    "soundproof_panel": {
+      "x": 45,
+      "y": 25
+    },
+    "lockers": {
+      "x": 95,
+      "y": 25
+    },
+    "door": {
+      "x": 12,
+      "y": 30
+    }
   }
 }

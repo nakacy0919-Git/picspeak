@@ -37,9 +37,10 @@
         ],
         "sentences": [
           {"text": "I see many students.", "grammar": "I see~", "ja": "たくさんの生徒が見えます。", "type": "object", "points": 20},
-          {"text": "This is a classroom.", "grammar": "This is~", "ja": "ここは教室です。", "type": "object", "points": 20},
           {"text": "The boy is reading a book.", "grammar": "is ~ing", "ja": "男の子は本を読んでいます。", "type": "gist", "points": 40},
           {"text": "She has a pencil.", "grammar": "have/has", "ja": "彼女は鉛筆を持っています。", "type": "detail", "points": 10},
+          {"text": "The students look focused.", "ja": "生徒たちは集中しているようです。", "type": "attribute", "points": 40},
+          {"text": "This is a classroom.", "grammar": "This is~", "ja": "ここは教室です。", "type": "object", "points": 20},
           {"text": "A boy is using a computer.", "grammar": "is ~ing", "ja": "男の子がコンピューターを使っています。", "type": "gist", "points": 30}
         ]
       },
@@ -110,23 +111,53 @@
         "sentences": [
           {"text": "It looks like a typical scene of students studying during a class or free time.", "grammar": "It looks like~", "ja": "授業中または自由時間に生徒たちが勉強している典型的な風景のようです。", "type": "inference", "points": 40},
           {"text": "The boy who is wearing a blue hoodie is typing on his laptop.", "grammar": "関係代名詞(主格)", "ja": "青いパーカーを着ている男の子は、ノートパソコンで文字を打っています。", "type": "gist", "points": 40},
-          {"text": "The sunlight coming through the window makes the room look bright and warm.", "grammar": "現在分詞の形容詞的用法 / make+O+C", "ja": "窓から差し込む日光が、部屋を明るく暖かく見せています。", "type": "inference", "points": 30},
+          {"text": "The sunlight coming through the window makes the room look bright and warm.", "grammar": "現在分詞の形容詞的用法 / make+O+C", "ja": "窓から差し込む日光が、部屋を明るく暖かく見せています。", "type": "inference", "points": 30, "coverageCategories": ["detail"]},
           {"text": "I can see a girl concentrating on writing her notes diligently.", "grammar": "知覚動詞+O+現在分詞", "ja": "女の子が熱心にノートを書くことに集中しているのが見えます。", "type": "inference", "points": 30},
           {"text": "Because it looks quiet, they seem to be working on their own assignments.", "grammar": "接続詞(because) / seem to~", "ja": "静かそうに見えるので、彼らは個々の課題に取り組んでいるようです。", "type": "inference", "points": 40}
         ]
       }
     },
     "pins": {
-      "boy": {"x": 65, "y": 60},
-      "girl": {"x": 38, "y": 65},
-      "globe": {"x": 56, "y": 14},
-      "window": {"x": 25, "y": 20},
-      "bookshelf": {"x": 90, "y": 40},
-      "laptop": {"x": 58, "y": 70},
-      "bottle": {"x": 51, "y": 68},
-      "pencil case": {"x": 46, "y": 88},
-      "book": {"x": 15, "y": 50},
-      "notebook": {"x": 43, "y": 80}
+      "boy": {
+        "x": 65,
+        "y": 60
+      },
+      "girl": {
+        "x": 38,
+        "y": 65
+      },
+      "globe": {
+        "x": 56,
+        "y": 14
+      },
+      "window": {
+        "x": 25,
+        "y": 20
+      },
+      "bookshelf": {
+        "x": 90,
+        "y": 40
+      },
+      "laptop": {
+        "x": 58,
+        "y": 70
+      },
+      "bottle": {
+        "x": 51,
+        "y": 68
+      },
+      "pencil case": {
+        "x": 46,
+        "y": 88
+      },
+      "book": {
+        "x": 15,
+        "y": 50
+      },
+      "notebook": {
+        "x": 43,
+        "y": 80
+      }
     }
   }
 ]

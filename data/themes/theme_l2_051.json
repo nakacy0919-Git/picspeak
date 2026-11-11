@@ -171,7 +171,10 @@
           "grammar": "現在進行形",
           "ja": "彼らは色の違う救助服を着ています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "There is a red bag on the car.",

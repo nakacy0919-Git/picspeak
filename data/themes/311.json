@@ -37,8 +37,8 @@
           {"text": "I see a young woman.", "grammar": "I see~", "ja": "若い女の人が見えます。", "type": "object", "points": 20},
           {"text": "She is sitting on the sofa.", "grammar": "is ~ing", "ja": "彼女はソファに座っています。", "type": "gist", "points": 20},
           {"text": "She has a cold.", "grammar": "have/has", "ja": "彼女は風邪をひいています。", "type": "gist", "points": 40},
-          {"text": "This is a box of tissues.", "grammar": "This is~", "ja": "これはティッシュの箱です。", "type": "object", "points": 20},
-          {"text": "The woman looks sick.", "grammar": "look + 形容詞", "ja": "女の人は具合が悪そうです。", "type": "inference", "points": 30}
+          {"text": "The woman looks sick.", "grammar": "look + 形容詞", "ja": "女の人は具合が悪そうです。", "type": "inference", "points": 30},
+          {"text": "This is a box of tissues.", "grammar": "This is~", "ja": "これはティッシュの箱です。", "type": "object", "points": 20}
         ]
       },
       "junior_high": {
@@ -115,14 +115,38 @@
       }
     },
     "pins": {
-      "woman": {"x": 52, "y": 45},
-      "tissue": {"x": 28, "y": 85},
-      "box": {"x": 28, "y": 92},
-      "cushion": {"x": 20, "y": 75},
-      "sofa": {"x": 75, "y": 65},
-      "blanket": {"x": 50, "y": 92},
-      "window": {"x": 15, "y": 30},
-      "picture": {"x": 93, "y": 10}
+      "woman": {
+        "x": 52,
+        "y": 45
+      },
+      "tissue": {
+        "x": 28,
+        "y": 85
+      },
+      "box": {
+        "x": 28,
+        "y": 92
+      },
+      "cushion": {
+        "x": 20,
+        "y": 75
+      },
+      "sofa": {
+        "x": 75,
+        "y": 65
+      },
+      "blanket": {
+        "x": 50,
+        "y": 92
+      },
+      "window": {
+        "x": 15,
+        "y": 30
+      },
+      "picture": {
+        "x": 93,
+        "y": 10
+      }
     }
   }
 ]

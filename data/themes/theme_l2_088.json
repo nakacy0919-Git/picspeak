@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "There is a small waterhole.",
+          "text": "There is dry grass around the animals.",
           "grammar": "There is",
-          "ja": "小さな水場があります。",
+          "ja": "動物たちの周りには乾いた草があります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "There is dry grass around the animals.",
+          "text": "There is a small waterhole.",
           "grammar": "There is",
-          "ja": "動物たちの周りには乾いた草があります。",
+          "ja": "小さな水場があります。",
           "type": "detail",
           "points": 40
         },

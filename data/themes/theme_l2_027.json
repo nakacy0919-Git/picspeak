@@ -174,6 +174,12 @@
           "points": 40
         },
         {
+          "text": "The students look active.",
+          "ja": "生徒たちは活発な様子です。",
+          "type": "attribute",
+          "points": 40
+        },
+        {
           "text": "The girl is dribbling a basketball.",
           "grammar": "現在進行形",
           "ja": "女の子がバスケットボールをドリブルしています。",
@@ -376,17 +382,17 @@
           "points": 40
         },
         {
-          "text": "The girl is dribbling through several cones to improve her ball control.",
-          "grammar": "目的を表すto不定詞",
-          "ja": "女子生徒はボールコントロールを向上させるため、複数のコーンの間をドリブルしています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "She looks focused while moving through the course.",
           "grammar": "look＋形容詞 / while",
           "ja": "彼女はコースを進みながら集中しているようです。",
           "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The girl is dribbling through several cones to improve her ball control.",
+          "grammar": "目的を表すto不定詞",
+          "ja": "女子生徒はボールコントロールを向上させるため、複数のコーンの間をドリブルしています。",
+          "type": "detail",
           "points": 40
         },
         {
@@ -584,6 +590,13 @@
           "points": 40
         },
         {
+          "text": "Meanwhile, the third player is anticipating the rebound and maintaining a ready stance beneath the basket.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の選手はゴール下で準備姿勢を取りながらリバウンドを予測しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "The female player is maneuvering through a series of cones in order to develop greater agility and ball-handling control.",
           "grammar": "in order to",
           "ja": "女子選手は敏捷性とボールコントロールを高めるため、一連のコーンの間をドリブルしています。",
@@ -595,13 +608,6 @@
           "grammar": "indicate that / while＋現在分詞",
           "ja": "低い姿勢と前方を見る視線から、素早く動きながらボールをコントロールすることに集中していると分かります。",
           "type": "inference",
-          "points": 40
-        },
-        {
-          "text": "Meanwhile, the third player is anticipating the rebound and maintaining a ready stance beneath the basket.",
-          "grammar": "現在進行形",
-          "ja": "その一方で、3人目の選手はゴール下で準備姿勢を取りながらリバウンドを予測しています。",
-          "type": "detail",
           "points": 40
         },
         {

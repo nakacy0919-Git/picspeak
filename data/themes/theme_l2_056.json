@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The sky is orange and bright.",
+          "grammar": "be動詞＋形容詞",
+          "ja": "空はオレンジ色で明るいです。",
+          "type": "description",
+          "points": 40
+        },
+        {
           "text": "There is a player in red on the left.",
           "grammar": "There is",
           "ja": "左側に赤いユニフォームの選手がいます。",
@@ -199,13 +206,6 @@
           "grammar": "There are",
           "ja": "スタジアムにはたくさんの人がいます。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The sky is orange and bright.",
-          "grammar": "be動詞＋形容詞",
-          "ja": "空はオレンジ色で明るいです。",
-          "type": "description",
           "points": 40
         }
       ]

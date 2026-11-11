@@ -35,9 +35,10 @@
       "sentences": [
         {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
         {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"},
+        {"text": "The tool is red.", "grammar": "be動詞", "ja": "その道具は赤色です。", "category": "attribute"},
+        {"text": "They are working together in a room.", "ja": "部屋で一緒に作業しています。", "type": "detail", "points": 40},
         {"text": "The boy makes a robot car.", "grammar": "一般動詞", "ja": "男の子がロボットカーを作ります。", "category": "gist"},
-        {"text": "The girl has a tablet.", "grammar": "have", "ja": "女の子はタブレットを持っています。", "category": "object"},
-        {"text": "The tool is red.", "grammar": "be動詞", "ja": "その道具は赤色です。", "category": "attribute"}
+        {"text": "The girl has a tablet.", "grammar": "have", "ja": "女の子はタブレットを持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -114,19 +115,61 @@
     }
   },
   "pins": {
-    "boy_face": { "x": 30, "y": 30 },
-    "girl_face": { "x": 75, "y": 28 },
-    "screwdriver_hand": { "x": 35, "y": 62 },
-    "robot_car": { "x": 42, "y": 78 },
-    "wheel_front": { "x": 39, "y": 86 },
-    "wheel_back": { "x": 52, "y": 75 },
-    "tablet": { "x": 65, "y": 58 },
-    "blueprint": { "x": 72, "y": 80 },
-    "screwdriver_table": { "x": 20, "y": 82 },
-    "gears_left": { "x": 10, "y": 85 },
-    "gear_front": { "x": 58, "y": 92 },
-    "motor_small": { "x": 80, "y": 88 },
-    "motor_large": { "x": 90, "y": 82 },
-    "screw": { "x": 65, "y": 92 }
+    "boy_face": {
+      "x": 30,
+      "y": 30
+    },
+    "girl_face": {
+      "x": 75,
+      "y": 28
+    },
+    "screwdriver_hand": {
+      "x": 35,
+      "y": 62
+    },
+    "robot_car": {
+      "x": 42,
+      "y": 78
+    },
+    "wheel_front": {
+      "x": 39,
+      "y": 86
+    },
+    "wheel_back": {
+      "x": 52,
+      "y": 75
+    },
+    "tablet": {
+      "x": 65,
+      "y": 58
+    },
+    "blueprint": {
+      "x": 72,
+      "y": 80
+    },
+    "screwdriver_table": {
+      "x": 20,
+      "y": 82
+    },
+    "gears_left": {
+      "x": 10,
+      "y": 85
+    },
+    "gear_front": {
+      "x": 58,
+      "y": 92
+    },
+    "motor_small": {
+      "x": 80,
+      "y": 88
+    },
+    "motor_large": {
+      "x": 90,
+      "y": 82
+    },
+    "screw": {
+      "x": 65,
+      "y": 92
+    }
   }
 }

@@ -46,8 +46,8 @@
         {"text": "I see many children.", "grammar": "I see~", "ja": "たくさんの子供たちが見えます。"},
         {"text": "They are on a river bank.", "grammar": "be動詞", "ja": "彼らは川岸にいます。"},
         {"text": "A man talks to them.", "grammar": "一般動詞", "ja": "男の人が彼らに話しています。"},
+        {"text": "They wear orange life jackets.", "grammar": "一般動詞", "ja": "彼らはオレンジ色のライフジャケットを着ています。", "coverageCategories": ["attribute"]},
         {"text": "The man holds a paddle.", "grammar": "一般動詞", "ja": "男の人はパドルを持っています。"},
-        {"text": "They wear orange life jackets.", "grammar": "一般動詞", "ja": "彼らはオレンジ色のライフジャケットを着ています。"},
         {"text": "The children look happy.", "grammar": "look + 形容詞", "ja": "子供たちは楽しそうです。"}
       ]
     },
@@ -85,7 +85,7 @@
       "sentences": [
         {"text": "The students are attending an extracurricular activity outdoors.", "grammar": "現在進行形", "ja": "生徒たちは屋外で課外活動に参加しています。"},
         {"text": "An instructor is demonstrating how to use a paddle.", "grammar": "現在進行形", "ja": "インストラクターがパドルの使い方を実演しています。"},
-        {"text": "They are wearing orange life jackets for safety.", "grammar": "現在進行形", "ja": "彼らは安全のためにオレンジ色のライフジャケットを着ています。"},
+        {"text": "They are wearing orange life jackets for safety.", "grammar": "現在進行形", "ja": "彼らは安全のためにオレンジ色のライフジャケットを着ています。", "coverageCategories": ["attribute"]},
         {"text": "The students look attentive to the instructor's words.", "grammar": "look + 形容詞", "ja": "生徒たちはインストラクターの言葉を熱心に聞いているように見えます。"},
         {"text": "We can see some blue canoes on the water in the background.", "grammar": "助動詞 can", "ja": "背景の水上に青いカヌーが見えます。"}
       ]
@@ -124,25 +124,67 @@
         {"text": "It looks like a group of high school students attending a practical canoeing lesson.", "grammar": "It looks like~ / be Ving", "ja": "カヌーの実践的なレッスンに参加している高校生のグループのようです。"},
         {"text": "An instructor is providing hands-on instruction on how to hold a paddle correctly.", "grammar": "現在進行形", "ja": "インストラクターがパドルの正しい持ち方を実践的に指導しています。"},
         {"text": "They are engaged in the extracurricular activity under the supervision of adults.", "grammar": "be engaged in", "ja": "彼らは大人の監督の下で課外活動に取り組んでいます。"},
-        {"text": "The students wearing life jackets seem enthusiastic about learning the new skill.", "grammar": "Seem + 形容詞", "ja": "ライフジャケットを着た生徒たちは、新しいスキルを学ぶことに熱心なようです。"},
+        {"text": "The students wearing life jackets seem enthusiastic about learning the new skill.", "grammar": "Seem + 形容詞", "ja": "ライフジャケットを着た生徒たちは、新しいスキルを学ぶことに熱心なようです。", "coverageCategories": ["attribute"]},
         {"text": "The scenic environment with a wide river and lush trees provides a wonderful backdrop.", "grammar": "一般動詞", "ja": "広い川と青々とした木々のある風光明媚な環境が、素晴らしい背景を提供しています。"}
       ]
     }
   },
   "pins": {
-    "boy": { "x": 10, "y": 62 },
-    "girl": { "x": 25, "y": 65 },
-    "child": { "x": 55, "y": 68 },
-    "instructor": { "x": 35, "y": 55 },
-    "canoe": { "x": 80, "y": 45 },
-    "paddle": { "x": 45, "y": 60 },
-    "jacket": { "x": 60, "y": 45 },
-    "water": { "x": 72, "y": 70 },
-    "river": { "x": 55, "y": 42 },
-    "bank": { "x": 50, "y": 85 },
-    "tree": { "x": 10, "y": 25 },
-    "sky": { "x": 50, "y": 15 },
-    "landscape": { "x": 92, "y": 18 },
-    "outdoors": { "x": 65, "y": 15 }
+    "boy": {
+      "x": 10,
+      "y": 62
+    },
+    "girl": {
+      "x": 25,
+      "y": 65
+    },
+    "child": {
+      "x": 55,
+      "y": 68
+    },
+    "instructor": {
+      "x": 35,
+      "y": 55
+    },
+    "canoe": {
+      "x": 80,
+      "y": 45
+    },
+    "paddle": {
+      "x": 45,
+      "y": 60
+    },
+    "jacket": {
+      "x": 60,
+      "y": 45
+    },
+    "water": {
+      "x": 72,
+      "y": 70
+    },
+    "river": {
+      "x": 55,
+      "y": 42
+    },
+    "bank": {
+      "x": 50,
+      "y": 85
+    },
+    "tree": {
+      "x": 10,
+      "y": 25
+    },
+    "sky": {
+      "x": 50,
+      "y": 15
+    },
+    "landscape": {
+      "x": 92,
+      "y": 18
+    },
+    "outdoors": {
+      "x": 65,
+      "y": 15
+    }
   }
 }

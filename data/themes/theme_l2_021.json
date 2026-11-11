@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The students look excited.",
+          "grammar": "look＋形容詞",
+          "ja": "生徒たちはわくわくしているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "A girl is taking a picture.",
           "grammar": "現在進行形",
           "ja": "女の子が写真を撮っています。",
@@ -199,13 +206,6 @@
           "grammar": "There are",
           "ja": "色鮮やかな魚がたくさんいます。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The students look excited.",
-          "grammar": "look＋形容詞",
-          "ja": "生徒たちはわくわくしているようです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -376,17 +376,17 @@
           "points": 40
         },
         {
-          "text": "One girl is photographing a large stingray swimming past the glass.",
-          "grammar": "現在分詞による後置修飾",
-          "ja": "一人の女子生徒はガラスの前を泳ぐ大きなエイを撮影しています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "She looks impressed by the size of the animal.",
           "grammar": "look＋形容詞",
           "ja": "彼女はその生き物の大きさに感動しているようです。",
           "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "One girl is photographing a large stingray swimming past the glass.",
+          "grammar": "現在分詞による後置修飾",
+          "ja": "一人の女子生徒はガラスの前を泳ぐ大きなエイを撮影しています。",
+          "type": "detail",
           "points": 40
         },
         {

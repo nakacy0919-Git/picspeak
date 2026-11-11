@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "There are several old pots.",
+          "grammar": "There are",
+          "ja": "いくつか古い壺があります。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "Another man is holding a light.",
           "grammar": "現在進行形",
           "ja": "別の男性が明かりを持っています。",
@@ -191,13 +198,6 @@
           "text": "There are bones in the ground.",
           "grammar": "There are",
           "ja": "地面には骨があります。",
-          "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "There are several old pots.",
-          "grammar": "There are",
-          "ja": "いくつか古い壺があります。",
           "type": "detail",
           "points": 40
         },

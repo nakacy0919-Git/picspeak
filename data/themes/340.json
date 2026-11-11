@@ -37,8 +37,8 @@
         {"text": "I see a woman.", "grammar": "I see~", "ja": "女性が見えます。", "category": "object"},
         {"text": "She is walking her dog.", "grammar": "現在進行形", "ja": "彼女は犬を散歩させています。", "category": "gist"},
         {"text": "The dog is big and golden.", "grammar": "be動詞", "ja": "その犬は大きくて金色です。", "category": "attribute"},
-        {"text": "It is a sunny day.", "grammar": "天候を表すit", "ja": "晴れた日です。", "category": "attribute"},
-        {"text": "There are many trees in the park.", "grammar": "There is/are~", "ja": "公園にはたくさんの木があります。", "category": "detail"}
+        {"text": "There are many trees in the park.", "grammar": "There is/are~", "ja": "公園にはたくさんの木があります。", "category": "detail"},
+        {"text": "It is a sunny day.", "grammar": "天候を表すit", "ja": "晴れた日です。", "category": "attribute"}
       ]
     },
     "junior_high": {
@@ -115,12 +115,33 @@
     }
   },
   "pins": {
-    "woman": { "x": 30, "y": 50 },
-    "dog": { "x": 75, "y": 75 },
-    "leash": { "x": 48, "y": 55 },
-    "tree": { "x": 90, "y": 50 },
-    "path": { "x": 15, "y": 85 },
-    "grass": { "x": 60, "y": 80 },
-    "sky": { "x": 50, "y": 10 }
+    "woman": {
+      "x": 30,
+      "y": 50
+    },
+    "dog": {
+      "x": 75,
+      "y": 75
+    },
+    "leash": {
+      "x": 48,
+      "y": 55
+    },
+    "tree": {
+      "x": 90,
+      "y": 50
+    },
+    "path": {
+      "x": 15,
+      "y": 85
+    },
+    "grass": {
+      "x": 60,
+      "y": 80
+    },
+    "sky": {
+      "x": 50,
+      "y": 10
+    }
   }
 }

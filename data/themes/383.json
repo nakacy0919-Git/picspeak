@@ -35,8 +35,9 @@
       "sentences": [
         {"text": "I see a girl and a dog.", "grammar": "I see~", "ja": "女の子と犬が見えます。", "category": "object"},
         {"text": "The dog jumps.", "grammar": "一般動詞", "ja": "犬が跳びます。", "category": "gist"},
-        {"text": "The girl runs.", "grammar": "一般動詞", "ja": "女の子が走ります。", "category": "gist"},
         {"text": "She has a pink shirt.", "grammar": "have", "ja": "彼女はピンクのシャツを着ています。", "category": "attribute"},
+        {"text": "They are running in a field.", "ja": "野原で走っています。", "type": "detail", "points": 40},
+        {"text": "The girl runs.", "grammar": "一般動詞", "ja": "女の子が走ります。", "category": "gist"},
         {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
       ]
     },
@@ -114,18 +115,57 @@
     }
   },
   "pins": {
-    "girl": { "x": 80, "y": 40 },
-    "dog": { "x": 45, "y": 45 },
-    "hurdle": { "x": 15, "y": 65 },
-    "bar": { "x": 45, "y": 60 },
-    "pole": { "x": 65, "y": 55 },
-    "grass": { "x": 50, "y": 85 },
-    "fence": { "x": 50, "y": 35 },
-    "cloud": { "x": 20, "y": 10 },
-    "sky": { "x": 50, "y": 15 },
-    "tree": { "x": 10, "y": 25 },
-    "shadow": { "x": 40, "y": 80 },
-    "shirt": { "x": 78, "y": 35 },
-    "shoes": { "x": 86, "y": 78 }
+    "girl": {
+      "x": 80,
+      "y": 40
+    },
+    "dog": {
+      "x": 45,
+      "y": 45
+    },
+    "hurdle": {
+      "x": 15,
+      "y": 65
+    },
+    "bar": {
+      "x": 45,
+      "y": 60
+    },
+    "pole": {
+      "x": 65,
+      "y": 55
+    },
+    "grass": {
+      "x": 50,
+      "y": 85
+    },
+    "fence": {
+      "x": 50,
+      "y": 35
+    },
+    "cloud": {
+      "x": 20,
+      "y": 10
+    },
+    "sky": {
+      "x": 50,
+      "y": 15
+    },
+    "tree": {
+      "x": 10,
+      "y": 25
+    },
+    "shadow": {
+      "x": 40,
+      "y": 80
+    },
+    "shirt": {
+      "x": 78,
+      "y": 35
+    },
+    "shoes": {
+      "x": 86,
+      "y": 78
+    }
   }
 }

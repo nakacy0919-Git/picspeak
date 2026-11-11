@@ -174,17 +174,17 @@
           "points": 40
         },
         {
-          "text": "He is touching the back of his neck.",
-          "grammar": "現在進行形",
-          "ja": "彼は首の後ろに触れています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "He looks shy and embarrassed.",
           "grammar": "look＋形容詞",
           "ja": "彼は恥ずかしそうに見えます。",
           "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "He is touching the back of his neck.",
+          "grammar": "現在進行形",
+          "ja": "彼は首の後ろに触れています。",
+          "type": "detail",
           "points": 40
         },
         {

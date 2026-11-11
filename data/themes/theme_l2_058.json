@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The man looks afraid.",
+          "grammar": "look＋形容詞",
+          "ja": "男性は怖がっているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "The man is wearing a suit.",
           "grammar": "現在進行形",
           "ja": "その男性はスーツを着ています。",
@@ -184,13 +191,6 @@
           "text": "The van door is open.",
           "grammar": "be動詞＋形容詞",
           "ja": "バンのドアは開いています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The man looks afraid.",
-          "grammar": "look＋形容詞",
-          "ja": "男性は怖がっているように見えます。",
           "type": "detail",
           "points": 40
         },

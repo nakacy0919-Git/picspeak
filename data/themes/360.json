@@ -34,10 +34,10 @@
       ],
       "sentences": [
         {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
-        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"},
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference", "coverageCategories": ["attribute"]},
         {"text": "The boy has a brush.", "grammar": "have", "ja": "男の子は筆を持っています。", "category": "object"},
-        {"text": "The girl paints a dog.", "grammar": "一般動詞", "ja": "女の子が犬に色を塗ります。", "category": "gist"},
-        {"text": "This is a table.", "grammar": "This is~", "ja": "これはテーブルです。", "category": "object"}
+        {"text": "This is a table.", "grammar": "This is~", "ja": "これはテーブルです。", "category": "object", "coverageCategories": ["detail"]},
+        {"text": "The girl paints a dog.", "grammar": "一般動詞", "ja": "女の子が犬に色を塗ります。", "category": "gist"}
       ]
     },
     "junior_high": {
@@ -71,9 +71,9 @@
       "sentences": [
         {"text": "Two children are painting at the table.", "grammar": "現在進行形", "ja": "2人の子供がテーブルで色を塗っています。", "category": "gist"},
         {"text": "The boy is painting a clay pot carefully.", "grammar": "現在進行形 / 副詞", "ja": "男の子は注意深く粘土の壺に色を塗っています。", "category": "gist"},
-        {"text": "The girl is making a dog statue.", "grammar": "現在進行形", "ja": "女の子は犬の彫像を作っています。", "category": "gist"},
         {"text": "There is a container of tools between them.", "grammar": "There is/are~ / 前置詞 (between)", "ja": "彼らの間に道具の入った容器があります。", "category": "detail"},
-        {"text": "They are smiling and having fun together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に楽しんでいます。", "category": "inference"}
+        {"text": "They are smiling and having fun together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に楽しんでいます。", "category": "inference", "coverageCategories": ["attribute"]},
+        {"text": "The girl is making a dog statue.", "grammar": "現在進行形", "ja": "女の子は犬の彫像を作っています。", "category": "gist"}
       ]
     },
     "high_school": {
@@ -114,17 +114,53 @@
     }
   },
   "pins": {
-    "boy": { "x": 15, "y": 45 },
-    "girl": { "x": 85, "y": 45 },
-    "pot": { "x": 35, "y": 60 },
-    "dog_statue": { "x": 70, "y": 70 },
-    "brush_boy": { "x": 28, "y": 62 },
-    "brush_girl": { "x": 78, "y": 65 },
-    "tool_container": { "x": 51, "y": 78 },
-    "tools": { "x": 51, "y": 65 },
-    "plate": { "x": 24, "y": 88 },
-    "brush_table": { "x": 10, "y": 90 },
-    "tool_table": { "x": 86, "y": 91 },
-    "table": { "x": 50, "y": 90 }
+    "boy": {
+      "x": 15,
+      "y": 45
+    },
+    "girl": {
+      "x": 85,
+      "y": 45
+    },
+    "pot": {
+      "x": 35,
+      "y": 60
+    },
+    "dog_statue": {
+      "x": 70,
+      "y": 70
+    },
+    "brush_boy": {
+      "x": 28,
+      "y": 62
+    },
+    "brush_girl": {
+      "x": 78,
+      "y": 65
+    },
+    "tool_container": {
+      "x": 51,
+      "y": 78
+    },
+    "tools": {
+      "x": 51,
+      "y": 65
+    },
+    "plate": {
+      "x": 24,
+      "y": 88
+    },
+    "brush_table": {
+      "x": 10,
+      "y": 90
+    },
+    "tool_table": {
+      "x": 86,
+      "y": 91
+    },
+    "table": {
+      "x": 50,
+      "y": 90
+    }
   }
 }

@@ -37,7 +37,7 @@
         {"text": "I see two boys.", "grammar": "I see~", "ja": "2人の男の子が見えます。", "category": "object"},
         {"text": "They have a robot car.", "grammar": "have", "ja": "彼らはロボットカーを持っています。", "category": "object"},
         {"text": "The robot hits the wall.", "grammar": "一般動詞", "ja": "ロボットが壁にぶつかります。", "category": "gist"},
-        {"text": "They are sad.", "grammar": "be動詞", "ja": "彼らは悲し（困って）います。", "category": "inference"},
+        {"text": "They are sad.", "grammar": "be動詞", "ja": "彼らは悲し（困って）います。", "category": "inference", "coverageCategories": ["attribute"]},
         {"text": "The teacher is a woman.", "grammar": "This is / She is~", "ja": "先生は女性です。", "category": "object"}
       ]
     },
@@ -71,7 +71,7 @@
       ],
       "sentences": [
         {"text": "The robot car is hitting the wall.", "grammar": "現在進行形", "ja": "ロボットカーが壁にぶつかっています。", "category": "gist"},
-        {"text": "They are scratching their heads.", "grammar": "現在進行形", "ja": "彼らは頭をかいています。", "category": "gist"},
+        {"text": "They are scratching their heads.", "grammar": "現在進行形", "ja": "彼らは頭をかいています。", "category": "gist", "coverageCategories": ["attribute"]},
         {"text": "There are question marks above their heads.", "grammar": "There is/are~", "ja": "彼らの頭の上にクエスチョンマークがあります。", "category": "detail"},
         {"text": "The boys are looking at the robot.", "grammar": "現在進行形", "ja": "男の子たちはロボットを見ています。", "category": "gist"},
         {"text": "The teacher is talking to them.", "grammar": "現在進行形", "ja": "先生が彼らに話しかけています。", "category": "gist"}
@@ -115,16 +115,49 @@
     }
   },
   "pins": {
-    "boy": { "x": 35, "y": 40 },
-    "teacher": { "x": 82, "y": 40 },
-    "robot": { "x": 20, "y": 75 },
-    "wheel": { "x": 15, "y": 80 },
-    "collision": { "x": 10, "y": 65 },
-    "question_mark": { "x": 45, "y": 15 },
-    "arrow": { "x": 45, "y": 80 },
-    "boundary_line": { "x": 50, "y": 95 },
-    "hand_scratching_left": { "x": 40, "y": 15 },
-    "hand_scratching_right": { "x": 53, "y": 18 },
-    "teacher_hand": { "x": 72, "y": 38 }
+    "boy": {
+      "x": 35,
+      "y": 40
+    },
+    "teacher": {
+      "x": 82,
+      "y": 40
+    },
+    "robot": {
+      "x": 20,
+      "y": 75
+    },
+    "wheel": {
+      "x": 15,
+      "y": 80
+    },
+    "collision": {
+      "x": 10,
+      "y": 65
+    },
+    "question_mark": {
+      "x": 45,
+      "y": 15
+    },
+    "arrow": {
+      "x": 45,
+      "y": 80
+    },
+    "boundary_line": {
+      "x": 50,
+      "y": 95
+    },
+    "hand_scratching_left": {
+      "x": 40,
+      "y": 15
+    },
+    "hand_scratching_right": {
+      "x": 53,
+      "y": 18
+    },
+    "teacher_hand": {
+      "x": 72,
+      "y": 38
+    }
   }
 }

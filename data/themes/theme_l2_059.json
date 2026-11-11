@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "The girls are smiling and talking.",
-          "grammar": "現在進行形",
-          "ja": "女の子たちは笑顔で話しています。",
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女たちは楽しそうに見えます。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "They look happy.",
-          "grammar": "look＋形容詞",
-          "ja": "彼女たちは楽しそうに見えます。",
+          "text": "The girls are smiling and talking.",
+          "grammar": "現在進行形",
+          "ja": "女の子たちは笑顔で話しています。",
           "type": "detail",
           "points": 40
         },
@@ -376,6 +376,13 @@
           "points": 40
         },
         {
+          "text": "The central girl seems to be becoming comfortable with her new group.",
+          "grammar": "seem to be＋現在分詞",
+          "ja": "中央の女の子は新しいグループに少しずつ慣れているように見えます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "One teammate has placed her hand on the girl's shoulder.",
           "grammar": "現在完了形",
           "ja": "一人のチームメートが女の子の肩に手を置いています。",
@@ -401,13 +408,6 @@
           "grammar": "現在形",
           "ja": "チームにはさまざまな背景を持つ生徒がいます。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The central girl seems to be becoming comfortable with her new group.",
-          "grammar": "seem to be＋現在分詞",
-          "ja": "中央の女の子は新しいグループに少しずつ慣れているように見えます。",
-          "type": "inference",
           "points": 40
         }
       ]
@@ -584,17 +584,17 @@
           "points": 40
         },
         {
-          "text": "Several teammates are touching one another's shoulders and gesturing naturally, which indicates a high degree of rapport.",
-          "grammar": "関係代名詞which",
-          "ja": "数人のチームメートが互いの肩に触れたり自然に身ぶりをしたりしており、高い親密さが感じられます。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "The culturally diverse group illustrates how participation in school activities can foster meaningful social integration.",
           "grammar": "how節",
           "ja": "文化的に多様な集団は、学校活動への参加がどのように有意義な社会的統合を促すかを示しています。",
           "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "Several teammates are touching one another's shoulders and gesturing naturally, which indicates a high degree of rapport.",
+          "grammar": "関係代名詞which",
+          "ja": "数人のチームメートが互いの肩に触れたり自然に身ぶりをしたりしており、高い親密さが感じられます。",
+          "type": "detail",
           "points": 40
         },
         {

@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The visitors look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "来場者たちは楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "The teacher is writing notes.",
           "grammar": "現在進行形",
           "ja": "先生がメモを書いています。",
@@ -199,13 +206,6 @@
           "grammar": "現在進行形",
           "ja": "生徒がタブレットを使っています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The visitors look happy.",
-          "grammar": "look＋形容詞",
-          "ja": "来場者たちは楽しそうです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -382,6 +382,13 @@
           "points": 40
         },
         {
+          "text": "The visitors seem interested in the different experiments.",
+          "grammar": "seem＋形容詞",
+          "ja": "来場者たちはさまざまな実験に興味を持っているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "Two students are observing plant cells through a microscope.",
           "grammar": "現在進行形",
           "ja": "2人の生徒が顕微鏡で植物の細胞を観察しています。",
@@ -407,13 +414,6 @@
           "grammar": "関係代名詞that / 受動態",
           "ja": "生徒が異なる条件で育てられた植物を比較しています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The visitors seem interested in the different experiments.",
-          "grammar": "seem＋形容詞",
-          "ja": "来場者たちはさまざまな実験に興味を持っているようです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -590,6 +590,13 @@
           "points": 40
         },
         {
+          "text": "Several students are demonstrating a renewable-energy system by operating a miniature wind turbine.",
+          "grammar": "by＋動名詞",
+          "ja": "数人の生徒が小型風力タービンを動かして再生可能エネルギーの仕組みを実演しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "Two students are examining biological specimens through a microscope.",
           "grammar": "現在進行形",
           "ja": "2人の生徒が顕微鏡で生物標本を詳しく観察しています。",
@@ -600,13 +607,6 @@
           "text": "Another group is using a three-dimensional model to illustrate the structure of the solar system.",
           "grammar": "目的を表すto不定詞",
           "ja": "別のグループは太陽系の構造を示すために立体模型を使用しています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "Several students are demonstrating a renewable-energy system by operating a miniature wind turbine.",
-          "grammar": "by＋動名詞",
-          "ja": "数人の生徒が小型風力タービンを動かして再生可能エネルギーの仕組みを実演しています。",
           "type": "detail",
           "points": 40
         },

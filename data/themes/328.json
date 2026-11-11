@@ -37,8 +37,8 @@
           {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "type": "object", "points": 20},
           {"text": "They are in a classroom.", "grammar": "be動詞", "ja": "彼らは教室にいます。", "type": "inference", "points": 30},
           {"text": "They are very happy.", "grammar": "be動詞", "ja": "彼らはとても楽しそうです。", "type": "attribute", "points": 20},
-          {"text": "The boy touches the tablet.", "grammar": "一般動詞", "ja": "男の子がタブレットに触れています。", "type": "gist", "points": 30},
-          {"text": "A pen is on the desk.", "grammar": "be動詞", "ja": "机の上にペンがあります。", "type": "detail", "points": 10}
+          {"text": "A pen is on the desk.", "grammar": "be動詞", "ja": "机の上にペンがあります。", "type": "detail", "points": 10},
+          {"text": "The boy touches the tablet.", "grammar": "一般動詞", "ja": "男の子がタブレットに触れています。", "type": "gist", "points": 30}
         ]
       },
       "junior_high": {
@@ -115,13 +115,34 @@
       }
     },
     "pins": {
-      "boy": { "x": 30, "y": 40 },
-      "girl": { "x": 70, "y": 40 },
-      "tablet": { "x": 52, "y": 85 },
-      "pen": { "x": 18, "y": 92 },
-      "graph": { "x": 52, "y": 80 },
-      "background_students": { "x": 15, "y": 25 },
-      "desk": { "x": 80, "y": 75 }
+      "boy": {
+        "x": 30,
+        "y": 40
+      },
+      "girl": {
+        "x": 70,
+        "y": 40
+      },
+      "tablet": {
+        "x": 52,
+        "y": 85
+      },
+      "pen": {
+        "x": 18,
+        "y": 92
+      },
+      "graph": {
+        "x": 52,
+        "y": 80
+      },
+      "background_students": {
+        "x": 15,
+        "y": 25
+      },
+      "desk": {
+        "x": 80,
+        "y": 75
+      }
     }
   }
 ]

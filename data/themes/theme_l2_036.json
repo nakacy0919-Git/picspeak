@@ -178,7 +178,10 @@
           "grammar": "現在進行形",
           "ja": "もう一人の生徒はヘルメットをかぶっています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "The student is pointing at the road.",
@@ -376,6 +379,13 @@
           "points": 40
         },
         {
+          "text": "The bicycles appear to have electric-assist batteries.",
+          "grammar": "appear to have",
+          "ja": "自転車には電動アシスト用バッテリーが付いているようです。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "The Japanese student is pointing at the bicycle lane and explaining where to ride.",
           "grammar": "現在進行形 / 疑問詞＋to",
           "ja": "日本人の生徒は自転車レーンを指さし、どこを走ればよいか説明しています。",
@@ -387,13 +397,6 @@
           "grammar": "before＋動名詞",
           "ja": "その生徒は走り始める前にヘルメットを着用しています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The bicycles appear to have electric-assist batteries.",
-          "grammar": "appear to have",
-          "ja": "自転車には電動アシスト用バッテリーが付いているようです。",
-          "type": "inference",
           "points": 40
         },
         {

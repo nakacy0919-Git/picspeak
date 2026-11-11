@@ -584,6 +584,13 @@
           "points": 40
         },
         {
+          "text": "The museum preserves the locomotive not merely as an obsolete machine but as evidence of a transformative period in social history.",
+          "grammar": "not merely A but B",
+          "ja": "博物館はこの機関車を単なる時代遅れの機械としてではなく、社会史の大変革期を示す証拠として保存しています。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "The locomotive therefore symbolizes a pivotal transition from traditional transportation to mechanized mass transit.",
           "grammar": "symbolize / transition from A to B",
           "ja": "したがって、この機関車は従来の交通から機械化された大量輸送への極めて重要な転換を象徴しています。",
@@ -602,13 +609,6 @@
           "grammar": "begin＋動名詞 / 並列",
           "ja": "この画期的な転換点において、技術革新は商業、居住、雇用、日常生活のあり方を変え始めました。",
           "type": "gist",
-          "points": 40
-        },
-        {
-          "text": "The museum preserves the locomotive not merely as an obsolete machine but as evidence of a transformative period in social history.",
-          "grammar": "not merely A but B",
-          "ja": "博物館はこの機関車を単なる時代遅れの機械としてではなく、社会史の大変革期を示す証拠として保存しています。",
-          "type": "inference",
           "points": 40
         },
         {
