@@ -1179,9 +1179,9 @@ window.playTapSound = function() {
     } catch (e) { console.error("Tap sound failed", e); }
 };
 
-window.createConfetti = function() {
+window.createConfetti = function(count = 100) {
     const colors = ['#4ade80', '#60a5fa', '#facc15', '#f87171', '#a78bfa', '#fb923c'];
-    for (let i = 0; i < 100; i++) {
+    for (let i = 0; i < count; i++) {
         const confetti = document.createElement('div');
         confetti.className = 'confetti-piece';
         confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
@@ -1210,6 +1210,33 @@ window.closePracticeModal = function() {
     if (modal) modal.classList.add('hidden');
 };
 
+// Remedial practice is independent of the original Snapshot score.
+window.finishPracticeSuccess = function(rate) {
+    if (window.practiceSuccess || rate < 80 || !window.appState?.isPracticeMode) return;
+    window.practiceSuccess = true;
+    window.isPracticeRecording = false;
+    window.practiceBestRate = rate;
+    try { window.practiceRec?.stop(); } catch(e) {}
+    try {
+        if (rate >= 90 && typeof playSound === 'function') playSound('perfect');
+        else window.playSuccessChime();
+    } catch(e) { window.playSuccessChime(); }
+    window.createConfetti(rate >= 90 ? 60 : 35);
+    window.showExcellentPrompt();
+    const transcriptEl = document.getElementById('practice-transcript');
+    const feedbackEl = document.getElementById('practice-feedback');
+    const btn = document.getElementById('btn-start-practice');
+    if (transcriptEl) transcriptEl.style.color = '#16a34a';
+    if (feedbackEl) {
+        feedbackEl.classList.remove('hidden');
+        feedbackEl.textContent = rate >= 90
+            ? '🌟 Excellent! ' + rate + '% 一致！すばらしい！'
+            : '✨ Excellent! ' + rate + '% 一致！よくできました！';
+        feedbackEl.style.color = '#16a34a';
+    }
+    if (btn) btn.innerHTML = '<span style="font-size:1.5em">🔄</span> RETRY';
+};
+
 window.togglePracticeRecording = function() {
     const btn = document.getElementById('btn-start-practice');
     const transcriptEl = document.getElementById('practice-transcript');
@@ -1231,44 +1258,64 @@ window.togglePracticeRecording = function() {
         window.practiceRec.lang = 'en-US'; window.practiceRec.interimResults = true; window.practiceRec.continuous = !window.isIOS; 
         
         window.practiceRec.onresult = (e) => {
-            let text = '';
-            for(let i=0; i<e.results.length; i++) text += e.results[i][0].transcript;
-            
-            if(transcriptEl) { transcriptEl.innerText = text; transcriptEl.style.color = "#ef4444"; }
+            if (!window.appState?.isPracticeMode || !window.isPracticeRecording) return;
+            const pieces = Array.from(e.results || []).map(r => ({
+                text: String(r?.[0]?.transcript || '').trim(),
+                isFinal: !!r?.isFinal
+            })).filter(r => r.text);
+            // Preserve spaces between recognition segments; no interim speech
+            // is counted as an achieved target until confirmed as final.
+            const text = pieces.map(r => r.text).join(' ');
+            const finalText = pieces.filter(r => r.isFinal).map(r => r.text).join(' ');
+            const target = window.appState.practiceTargetText || '';
+            const rate = window.picSpeakPracticeMatchRate(target, text);
+            const finalRate = window.picSpeakPracticeMatchRate(target, finalText);
             window.appState.practiceRawTranscript = text;
-
-            // Practice uses the same contiguous word-order matcher as the game.
-            const isComplete=!!window.appState.practiceTargetText.trim() &&
-                window.picSpeakMatchPhrase(window.appState.practiceTargetText,text);
-            const rate=window.picSpeakOrderedWordAccuracy(window.appState.practiceTargetText,text)/100;
-            if (isComplete && window.isPracticeRecording) {
-                window.isPracticeRecording = false; window.practiceSuccess = true; 
-                try { window.practiceRec.stop(); } catch(err){}
-                window.playSuccessChime(); window.createConfetti(); window.showExcellentPrompt(); 
-                if(transcriptEl) transcriptEl.style.color = "#22c55e"; 
-                if(feedbackEl) { feedbackEl.classList.remove('hidden'); feedbackEl.innerHTML = "✨ Excellent! ばっちり言えました！"; feedbackEl.style.color = "#16a34a"; }
-                if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
+            window.practiceBestRate = Math.max(window.practiceBestRate || 0, rate);
+            if (transcriptEl) {
+                transcriptEl.innerText = text || 'Listening...';
+                transcriptEl.style.color = '#ef4444';
+            }
+            if (finalRate >= 80) {
+                window.finishPracticeSuccess(finalRate);
+            } else if (feedbackEl && text) {
+                feedbackEl.classList.remove('hidden');
+                feedbackEl.textContent = rate + '% 一致' + (rate >= 80 ? '｜音声を確認中…' : '｜もう少し！');
+                feedbackEl.style.color = rate >= 80 ? '#16a34a' : '#ca8a04';
             }
         };
-        
+
         window.practiceRec.onerror = event => {
             window.isPracticeRecording=false;
             if(btn)btn.textContent='RETRY';
             if(feedbackEl){feedbackEl.classList.remove('hidden');feedbackEl.textContent='マイクエラー: '+(event.error||'unknown')+'。マイク権限を確認して再試行してください。';}
         };
         window.practiceRec.onend = () => {
-            if(window.practiceSuccess) return;
-            if(!window.isPracticeRecording) {
-                // Partial feedback respects word order instead of bag-of-words.
-                const rate=window.picSpeakOrderedWordAccuracy(window.appState.practiceTargetText,window.appState.practiceRawTranscript)/100;
-
-                if(feedbackEl) {
-                    feedbackEl.classList.remove('hidden');
-                    if (rate >= 0.5) { feedbackEl.innerHTML = "👍 Good! あと少し！もう一度チャレンジ！"; feedbackEl.style.color = "#ca8a04"; } 
-                    else { feedbackEl.innerHTML = "💪 Keep Trying! お手本を聞いてみよう！"; feedbackEl.style.color = "#db2777"; }
+            if (window.practiceSuccess || !window.appState?.isPracticeMode) return;
+            if (!window.isPracticeRecording) {
+                // Manual STOP: accept the latest complete recognition text even
+                // if Safari did not supply a final callback before closing.
+                const rate = window.picSpeakPracticeMatchRate(
+                    window.appState.practiceTargetText, window.appState.practiceRawTranscript);
+                if (rate >= 80) {
+                    window.finishPracticeSuccess(rate);
+                    return;
                 }
-            } else { try { window.practiceRec.start(); } catch(e){} }
+                if (feedbackEl) {
+                    feedbackEl.classList.remove('hidden');
+                    if (rate >= 50) {
+                        feedbackEl.textContent = '👍 Good! ' + rate + '% 一致。あと少し！もう一度チャレンジ！';
+                        feedbackEl.style.color = '#ca8a04';
+                    } else {
+                        feedbackEl.textContent = '💪 Keep Trying! ' + rate + '% 一致。お手本を聞いてみよう！';
+                        feedbackEl.style.color = '#db2777';
+                    }
+                }
+            } else {
+                try { window.practiceRec.start(); } catch(e) {}
+            }
         };
+
     }
 
     if (window.isPracticeRecording) {
@@ -1276,7 +1323,7 @@ window.togglePracticeRecording = function() {
         try { window.practiceRec.stop(); } catch(e){}
         if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🔄</span> RETRY';
     } else {
-        window.appState.practiceRawTranscript = ""; window.practiceSuccess = false; 
+        window.appState.practiceRawTranscript = ""; window.practiceSuccess = false; window.practiceBestRate = 0;
         if(transcriptEl) { transcriptEl.innerHTML = "Listening..."; transcriptEl.style.color = "#ef4444"; }
         if(feedbackEl) { feedbackEl.classList.add('hidden'); feedbackEl.innerHTML = ""; }
         if(btn) btn.innerHTML = '<span style="font-size: 1.5em; vertical-align: middle;">🛑</span> STOP';

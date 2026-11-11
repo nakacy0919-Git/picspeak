@@ -81,6 +81,19 @@ window.picSpeakOrderedWordAccuracy = function(expected,transcript) {
   for(let i=1;i<=a.length;i++){let diag=0;for(let j=1;j<=b.length;j++){const old=prev[j];prev[j]=a[i-1]===b[j-1]?diag+1:Math.max(prev[j],prev[j-1]);diag=old;}}
   return Math.round(prev[b.length]*100/a.length);
 };
+// Feedback practice: ordered recall and precision prevent unrelated extra
+// speech from inflating the match. This is word-level ASR agreement,
+// not phoneme-level pronunciation scoring.
+window.picSpeakPracticeMatchRate = function(target, transcript) {
+  const expected=window.picSpeakTokens(target);
+  const spoken=window.picSpeakTokens(transcript);
+  if (!expected.length || !spoken.length) return 0;
+  const recall=window.picSpeakOrderedWordAccuracy(target,transcript);
+  const matched=Math.round(recall*expected.length/100);
+  const precision=Math.round(matched*100/spoken.length);
+  return Math.max(0,Math.min(100,recall,precision));
+};
+
 window.flexibleMatch = function(target,spokenWordsArray,itemType) {
   const transcript=Array.isArray(spokenWordsArray)?spokenWordsArray.join(' '):spokenWordsArray;
   return window.picSpeakMatchPhrase(target,transcript,itemType==='word');
