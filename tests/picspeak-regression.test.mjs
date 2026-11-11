@@ -86,7 +86,14 @@ for (const item of oralList) {
     }
   }
 }
-assert.match(read('js/main.js'),/const isComplete=!!window\.appState\.practiceTargetText\.trim\(\)/);
+assert.match(read('js/main.js'),/window\.finishPracticeSuccess\(finalRate\)/);
+assert.equal(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a book'),100);
+assert.equal(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a'),80);
+assert.ok(win.picSpeakPracticeMatchRate('a girl is reading a book','reading is a girl book')<80);
+assert.ok(win.picSpeakPracticeMatchRate('a girl is reading a book','a girl is reading a book and some unrelated extra words')<80);
+assert.equal(win.picSpeakPracticeMatchRate('cat','cat'),100);
+assert.equal(win.picSpeakPracticeMatchRate('cat','dog'),0);
+assert.match(read('js/game.js'),/syncSnapshotPreviewPins/);
 assert.match(read('js/oralquest_game.js'),/picSpeakAnswerRating\(fullText/);
 assert.match(read('bridge/copeak-lms-bridge.js'),/const mean=Math\.round\(reading\*0\.25/);
 console.log('Scoring integrity:',checkedLevels,'theme levels,',inspectedTargets,'targets,',inspectedQAs,'Oral Quest model answers.');
