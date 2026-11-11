@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "The people look angry.",
+          "grammar": "look＋形容詞",
+          "ja": "人々は怒っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "Some people are pushing a metal barrier.",
           "grammar": "現在進行形",
           "ja": "何人かの人が金属製の柵を押しています。",
@@ -191,13 +198,6 @@
           "text": "There are several flags in the crowd.",
           "grammar": "There are",
           "ja": "群衆の中にはいくつかの旗があります。",
-          "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The people look angry.",
-          "grammar": "look＋形容詞",
-          "ja": "人々は怒っているように見えます。",
           "type": "detail",
           "points": 40
         },
@@ -376,6 +376,13 @@
           "points": 40
         },
         {
+          "text": "The protesters look angry and determined.",
+          "grammar": "look＋形容詞",
+          "ja": "抗議参加者たちは怒り、強い決意を持っているように見えます。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "Some people are raising their fists while others are holding flags.",
           "grammar": "while",
           "ja": "拳を上げている人がいる一方、旗を持っている人もいます。",
@@ -387,13 +394,6 @@
           "grammar": "appear to be＋現在分詞 / stop O from",
           "ja": "警察官たちは群衆が前進するのを止めようとしているようです。",
           "type": "inference",
-          "points": 40
-        },
-        {
-          "text": "The protesters look angry and determined.",
-          "grammar": "look＋形容詞",
-          "ja": "抗議参加者たちは怒り、強い決意を持っているように見えます。",
-          "type": "detail",
           "points": 40
         },
         {

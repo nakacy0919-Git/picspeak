@@ -174,16 +174,19 @@
           "points": 40
         },
         {
-          "text": "There is a lot of smoke above the volcano.",
-          "grammar": "There is",
-          "ja": "火山の上には大量の煙があります。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "The people look serious.",
           "grammar": "look＋形容詞",
           "ja": "人々は真剣な表情をしています。",
+          "type": "detail",
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
+        },
+        {
+          "text": "There is a lot of smoke above the volcano.",
+          "grammar": "There is",
+          "ja": "火山の上には大量の煙があります。",
           "type": "detail",
           "points": 40
         },

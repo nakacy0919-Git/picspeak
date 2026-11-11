@@ -39,8 +39,8 @@
           {"text": "I see three students.", "grammar": "I see~", "ja": "3人の生徒が見えます。", "type": "object", "points": 20},
           {"text": "He has an eraser.", "grammar": "have", "ja": "彼は黒板消しを持っています。", "type": "gist", "points": 30},
           {"text": "The boy is tall.", "grammar": "be動詞", "ja": "その男の子は背が高いです。", "type": "attribute", "points": 10},
-          {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。", "type": "inference", "points": 30},
-          {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。", "type": "detail", "points": 10}
+          {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。", "type": "detail", "points": 10},
+          {"text": "This is a school.", "grammar": "This is~", "ja": "ここは学校です。", "type": "inference", "points": 30}
         ]
       },
       "junior_high": {
@@ -75,8 +75,8 @@
           {"text": "There are three students in the classroom.", "grammar": "There is/are~", "ja": "教室には3人の生徒がいます。", "type": "inference", "points": 30},
           {"text": "A boy is erasing the blackboard.", "grammar": "現在進行形", "ja": "男の子が黒板を消しています。", "type": "gist", "points": 40},
           {"text": "Another boy is sweeping the floor with a broom.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "もう一人の男の子がほうきで床を掃いています。", "type": "gist", "points": 40},
-          {"text": "The girl is standing near the boy.", "grammar": "現在進行形 / 前置詞 (near)", "ja": "女の子は男の子の近くに立っています。", "type": "detail", "points": 20},
-          {"text": "They are wearing school uniforms.", "grammar": "現在進行形", "ja": "彼らは学校の制服を着ています。", "type": "attribute", "points": 30}
+          {"text": "They are wearing school uniforms.", "grammar": "現在進行形", "ja": "彼らは学校の制服を着ています。", "type": "attribute", "points": 30},
+          {"text": "The girl is standing near the boy.", "grammar": "現在進行形 / 前置詞 (near)", "ja": "女の子は男の子の近くに立っています。", "type": "detail", "points": 20}
         ]
       },
       "high_school": {
@@ -111,19 +111,40 @@
           {"text": "It looks like the students are cleaning their classroom after school.", "grammar": "It looks like~", "ja": "放課後、生徒たちは教室の掃除をしているようです。", "type": "inference", "points": 40},
           {"text": "The boy who is standing near the window is sweeping the floor.", "grammar": "関係代名詞 (who)", "ja": "窓の近くに立っている男の子は床を掃いています。", "type": "gist", "points": 40},
           {"text": "They are working hard because it is their cleaning duty.", "grammar": "接続詞 (because)", "ja": "掃除当番なので、彼らは一生懸命働いています。", "type": "inference", "points": 40},
-          {"text": "We can see the words \"Test tomorrow\" on the large blackboard.", "grammar": "助動詞 (can)", "ja": "大きな黒板に「明日テスト」という文字が見えます。", "type": "detail", "points": 20},
-          {"text": "Bright sunlight comes through the window, and the classroom looks warm.", "grammar": "接続詞 (and) / look + 形容詞", "ja": "窓から明るい日差しが差し込み、教室は暖かそうです。", "type": "inference", "points": 30}
+          {"text": "Bright sunlight comes through the window, and the classroom looks warm.", "grammar": "接続詞 (and) / look + 形容詞", "ja": "窓から明るい日差しが差し込み、教室は暖かそうです。", "type": "inference", "points": 30},
+          {"text": "We can see the words \"Test tomorrow\" on the large blackboard.", "grammar": "助動詞 (can)", "ja": "大きな黒板に「明日テスト」という文字が見えます。", "type": "detail", "points": 20}
         ]
       }
     },
     "pins": {
-      "boy_erasing": { "x": 38, "y": 60 },
-      "girl": { "x": 49, "y": 60 },
-      "boy_sweeping": { "x": 69, "y": 65 },
-      "blackboard": { "x": 18, "y": 42 },
-      "window": { "x": 80, "y": 30 },
-      "desk": { "x": 92, "y": 80 },
-      "broom": { "x": 74, "y": 90 }
+      "boy_erasing": {
+        "x": 38,
+        "y": 60
+      },
+      "girl": {
+        "x": 49,
+        "y": 60
+      },
+      "boy_sweeping": {
+        "x": 69,
+        "y": 65
+      },
+      "blackboard": {
+        "x": 18,
+        "y": 42
+      },
+      "window": {
+        "x": 80,
+        "y": 30
+      },
+      "desk": {
+        "x": 92,
+        "y": 80
+      },
+      "broom": {
+        "x": 74,
+        "y": 90
+      }
     }
   }
 ]

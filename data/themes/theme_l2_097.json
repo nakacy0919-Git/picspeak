@@ -174,16 +174,19 @@
           "points": 40
         },
         {
-          "text": "The line on the graph is going down.",
-          "grammar": "現在進行形",
-          "ja": "グラフの線が下がっています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "The line becomes almost flat at the end.",
           "grammar": "become＋形容詞",
           "ja": "線は最後の部分でほぼ横ばいになっています。",
+          "type": "detail",
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
+        },
+        {
+          "text": "The line on the graph is going down.",
+          "grammar": "現在進行形",
+          "ja": "グラフの線が下がっています。",
           "type": "detail",
           "points": 40
         },

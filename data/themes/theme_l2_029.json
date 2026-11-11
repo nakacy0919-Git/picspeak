@@ -376,17 +376,17 @@
           "points": 40
         },
         {
-          "text": "The girl is clearing a hurdle while looking toward the next one.",
-          "grammar": "while＋現在分詞",
-          "ja": "女子生徒は次のハードルを見ながらハードルを跳び越えています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "Her body position looks balanced and controlled.",
           "grammar": "look＋形容詞",
           "ja": "彼女の体勢はバランスが取れていて安定しているようです。",
           "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "The girl is clearing a hurdle while looking toward the next one.",
+          "grammar": "while＋現在分詞",
+          "ja": "女子生徒は次のハードルを見ながらハードルを跳び越えています。",
+          "type": "detail",
           "points": 40
         },
         {

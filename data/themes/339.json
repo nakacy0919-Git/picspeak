@@ -36,9 +36,9 @@
       "sentences": [
         {"text": "I see boys.", "grammar": "I see~", "ja": "男の子たちが見えます。", "category": "object"},
         {"text": "This is a school.", "grammar": "This is~", "ja": "これは学校です。", "category": "detail"},
-        {"text": "He has a ball.", "grammar": "have", "ja": "彼はボールを持っています。", "category": "object"},
         {"text": "The sun is big.", "grammar": "be動詞", "ja": "太陽が大きいです。", "category": "attribute"},
-        {"text": "They play soccer.", "grammar": "一般動詞", "ja": "彼らはサッカーをします。", "category": "gist"}
+        {"text": "They play soccer.", "grammar": "一般動詞", "ja": "彼らはサッカーをします。", "category": "gist"},
+        {"text": "He has a ball.", "grammar": "have", "ja": "彼はボールを持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -74,8 +74,8 @@
         {"text": "They are playing soccer.", "grammar": "現在進行形", "ja": "彼らはサッカーをしています。", "category": "gist"},
         {"text": "One boy is throwing the ball.", "grammar": "現在進行形", "ja": "一人の男の子がボールを投げています。", "category": "gist"},
         {"text": "There is a goal behind the girl.", "grammar": "There is/are~", "ja": "女の子の後ろにゴールがあります。", "category": "detail"},
-        {"text": "The children are running on the field.", "grammar": "現在進行形", "ja": "子供たちはフィールドを走っています。", "category": "gist"},
-        {"text": "The boy in blue is watching the ball.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "青い服の男の子がボールを見ています。", "category": "gist"}
+        {"text": "The boy in blue is watching the ball.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "青い服の男の子がボールを見ています。", "category": "gist"},
+        {"text": "The children are running on the field.", "grammar": "現在進行形", "ja": "子供たちはフィールドを走っています。", "category": "gist"}
       ]
     },
     "high_school": {
@@ -116,12 +116,33 @@
     }
   },
   "pins": {
-    "boy": { "x": 12, "y": 60 },
-    "ball": { "x": 12, "y": 28 },
-    "girl": { "x": 45, "y": 52 },
-    "boy_front": { "x": 75, "y": 60 },
-    "goal": { "x": 92, "y": 35 },
-    "school": { "x": 18, "y": 25 },
-    "sun": { "x": 80, "y": 15 }
+    "boy": {
+      "x": 12,
+      "y": 60
+    },
+    "ball": {
+      "x": 12,
+      "y": 28
+    },
+    "girl": {
+      "x": 45,
+      "y": 52
+    },
+    "boy_front": {
+      "x": 75,
+      "y": 60
+    },
+    "goal": {
+      "x": 92,
+      "y": 35
+    },
+    "school": {
+      "x": 18,
+      "y": 25
+    },
+    "sun": {
+      "x": 80,
+      "y": 15
+    }
   }
 }

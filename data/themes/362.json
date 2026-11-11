@@ -72,8 +72,8 @@
         {"text": "There are two children in the garden.", "grammar": "There is/are~", "ja": "畑に2人の子供がいます。", "category": "detail"},
         {"text": "The boy is planting seeds in the soil.", "grammar": "現在進行形 / 前置詞 (in)", "ja": "男の子は土に種を植えています。", "category": "gist"},
         {"text": "The girl is watering the tomatoes with a watering can.", "grammar": "現在進行形 / 前置詞 (with)", "ja": "女の子はじょうろでトマトに水をやっています。", "category": "gist"},
-        {"text": "There are some wooden signs for the vegetables.", "grammar": "There is/are~", "ja": "野菜のための木製の看板がいくつかあります。", "category": "detail"},
-        {"text": "They are smiling and working together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に働いています。", "category": "inference"}
+        {"text": "They are smiling and working together.", "grammar": "現在進行形", "ja": "彼らは微笑みながら一緒に働いています。", "category": "inference", "coverageCategories": ["attribute"]},
+        {"text": "There are some wooden signs for the vegetables.", "grammar": "There is/are~", "ja": "野菜のための木製の看板がいくつかあります。", "category": "detail"}
       ]
     },
     "high_school": {
@@ -114,19 +114,61 @@
     }
   },
   "pins": {
-    "boy": { "x": 18, "y": 55 },
-    "girl": { "x": 82, "y": 45 },
-    "watering_can": { "x": 74, "y": 52 },
-    "sign_carrots_left": { "x": 10, "y": 40 },
-    "sign_carrots_right": { "x": 38, "y": 43 },
-    "sign_tomatoes": { "x": 60, "y": 43 },
-    "sign_plant": { "x": 93, "y": 42 },
-    "tomatoes": { "x": 62, "y": 75 },
-    "carrots": { "x": 5, "y": 60 },
-    "seeds": { "x": 28, "y": 90 },
-    "soil_patch_left": { "x": 40, "y": 75 },
-    "soil_patch_right": { "x": 50, "y": 75 },
-    "trees": { "x": 50, "y": 25 },
-    "plants_right": { "x": 95, "y": 65 }
+    "boy": {
+      "x": 18,
+      "y": 55
+    },
+    "girl": {
+      "x": 82,
+      "y": 45
+    },
+    "watering_can": {
+      "x": 74,
+      "y": 52
+    },
+    "sign_carrots_left": {
+      "x": 10,
+      "y": 40
+    },
+    "sign_carrots_right": {
+      "x": 38,
+      "y": 43
+    },
+    "sign_tomatoes": {
+      "x": 60,
+      "y": 43
+    },
+    "sign_plant": {
+      "x": 93,
+      "y": 42
+    },
+    "tomatoes": {
+      "x": 62,
+      "y": 75
+    },
+    "carrots": {
+      "x": 5,
+      "y": 60
+    },
+    "seeds": {
+      "x": 28,
+      "y": 90
+    },
+    "soil_patch_left": {
+      "x": 40,
+      "y": 75
+    },
+    "soil_patch_right": {
+      "x": 50,
+      "y": 75
+    },
+    "trees": {
+      "x": 50,
+      "y": 25
+    },
+    "plants_right": {
+      "x": 95,
+      "y": 65
+    }
   }
 }

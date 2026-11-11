@@ -36,8 +36,8 @@
         {"text": "I see two boys and a dog.", "grammar": "I see~", "ja": "2人の男の子と1匹の犬が見えます。", "category": "object"},
         {"text": "The dog is in the cage.", "grammar": "be動詞", "ja": "犬はケージの中にいます。", "category": "detail"},
         {"text": "The boy washes the dog.", "grammar": "一般動詞", "ja": "男の子が犬を洗います。", "category": "gist"},
-        {"text": "He has a brush.", "grammar": "have", "ja": "彼はブラシを持っています。", "category": "object"},
-        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference"}
+        {"text": "They are happy.", "grammar": "be動詞", "ja": "彼らは楽しそうです。", "category": "inference", "coverageCategories": ["attribute"]},
+        {"text": "He has a brush.", "grammar": "have", "ja": "彼はブラシを持っています。", "category": "object"}
       ]
     },
     "junior_high": {
@@ -114,17 +114,53 @@
     }
   },
   "pins": {
-    "kid": { "x": 38, "y": 35 },
-    "boy": { "x": 68, "y": 45 },
-    "dog": { "x": 15, "y": 60 },
-    "cage": { "x": 10, "y": 30 },
-    "brush": { "x": 24, "y": 45 },
-    "hose": { "x": 34, "y": 52 },
-    "water": { "x": 25, "y": 90 },
-    "bowl": { "x": 86, "y": 65 },
-    "sink": { "x": 88, "y": 75 },
-    "faucet": { "x": 93, "y": 50 },
-    "dispenser": { "x": 86, "y": 35 },
-    "mirror": { "x": 96, "y": 20 }
+    "kid": {
+      "x": 38,
+      "y": 35
+    },
+    "boy": {
+      "x": 68,
+      "y": 45
+    },
+    "dog": {
+      "x": 15,
+      "y": 60
+    },
+    "cage": {
+      "x": 10,
+      "y": 30
+    },
+    "brush": {
+      "x": 24,
+      "y": 45
+    },
+    "hose": {
+      "x": 34,
+      "y": 52
+    },
+    "water": {
+      "x": 25,
+      "y": 90
+    },
+    "bowl": {
+      "x": 86,
+      "y": 65
+    },
+    "sink": {
+      "x": 88,
+      "y": 75
+    },
+    "faucet": {
+      "x": 93,
+      "y": 50
+    },
+    "dispenser": {
+      "x": 86,
+      "y": 35
+    },
+    "mirror": {
+      "x": 96,
+      "y": 20
+    }
   }
 }

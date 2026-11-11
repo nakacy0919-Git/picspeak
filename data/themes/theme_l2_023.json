@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "They look happy.",
+          "grammar": "look＋形容詞",
+          "ja": "3人は楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "A girl is playing the keyboard.",
           "grammar": "現在進行形",
           "ja": "女の子がキーボードを弾いています。",
@@ -199,13 +206,6 @@
           "grammar": "There are",
           "ja": "部屋には譜面台があります。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "They look happy.",
-          "grammar": "look＋形容詞",
-          "ja": "3人は楽しそうです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -376,6 +376,13 @@
           "points": 40
         },
         {
+          "text": "The students seem focused on improving their performance.",
+          "grammar": "seem＋形容詞 / focus on",
+          "ja": "生徒たちは演奏をより良くすることに集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "She appears to be listening to the guitarist so that they can stay together.",
           "grammar": "appear to be / so that",
           "ja": "彼女は演奏を合わせるためにギターの音を聞いているようです。",
@@ -401,13 +408,6 @@
           "grammar": "suggest that",
           "ja": "楽器や譜面台から、3人が本格的な練習をしていることが分かります。",
           "type": "inference",
-          "points": 40
-        },
-        {
-          "text": "The students seem focused on improving their performance.",
-          "grammar": "seem＋形容詞 / focus on",
-          "ja": "生徒たちは演奏をより良くすることに集中しているようです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -584,6 +584,13 @@
           "points": 40
         },
         {
+          "text": "She appears highly engaged as she responds to the musical cues provided by the other performers.",
+          "grammar": "as節 / 過去分詞修飾",
+          "ja": "彼女は他の演奏者からの音楽的な合図に反応しながら、非常に熱心に取り組んでいるようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "The keyboard player is carefully interpreting the arrangement while listening closely to the guitarist.",
           "grammar": "while＋現在分詞",
           "ja": "キーボード担当の生徒はギターの音を注意深く聞きながら、楽曲の構成を表現しています。",
@@ -602,13 +609,6 @@
           "grammar": "現在進行形 / to不定詞",
           "ja": "その一方で、ボーカル担当はマイクに向かって歌いながら、細かな手の動きでリズムを取っています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "She appears highly engaged as she responds to the musical cues provided by the other performers.",
-          "grammar": "as節 / 過去分詞修飾",
-          "ja": "彼女は他の演奏者からの音楽的な合図に反応しながら、非常に熱心に取り組んでいるようです。",
-          "type": "emotion",
           "points": 40
         },
         {

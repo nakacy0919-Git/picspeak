@@ -174,6 +174,16 @@
           "points": 40
         },
         {
+          "text": "The museum looks easy to enter.",
+          "grammar": "look＋形容詞 / to不定詞",
+          "ja": "その博物館は入りやすそうに見えます。",
+          "type": "inference",
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
+        },
+        {
           "text": "There is a long ramp in front of the museum.",
           "grammar": "There is",
           "ja": "博物館の前には長いスロープがあります。",
@@ -199,13 +209,6 @@
           "grammar": "There is",
           "ja": "外には恐竜の骨格があります。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The museum looks easy to enter.",
-          "grammar": "look＋形容詞 / to不定詞",
-          "ja": "その博物館は入りやすそうに見えます。",
-          "type": "inference",
           "points": 40
         }
       ]
@@ -376,6 +379,13 @@
           "points": 40
         },
         {
+          "text": "The accessible entrance may help wheelchair users move more independently.",
+          "grammar": "may help＋O＋動詞",
+          "ja": "利用しやすい入口は、車いす利用者がより自立して移動する助けになるかもしれません。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "The ramps have handrails on both sides to make them safer.",
           "grammar": "to不定詞 / make＋O＋C",
           "ja": "スロープには安全性を高めるため両側に手すりがあります。",
@@ -393,13 +403,6 @@
           "text": "The design allows people with different mobility needs to enter the museum.",
           "grammar": "allow O to",
           "ja": "この設計によって、異なる移動上のニーズを持つ人々が博物館に入ることができます。",
-          "type": "inference",
-          "points": 40
-        },
-        {
-          "text": "The accessible entrance may help wheelchair users move more independently.",
-          "grammar": "may help＋O＋動詞",
-          "ja": "利用しやすい入口は、車いす利用者がより自立して移動する助けになるかもしれません。",
           "type": "inference",
           "points": 40
         },

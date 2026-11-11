@@ -178,7 +178,10 @@
           "grammar": "have",
           "ja": "グラフには多くの青い点があります。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "A blue line is going up.",

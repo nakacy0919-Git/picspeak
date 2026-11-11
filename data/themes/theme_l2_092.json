@@ -157,7 +157,10 @@
           "grammar": "受動態",
           "ja": "青い車が道路に駐車されています。",
           "type": "gist",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "Two police officers are checking the car.",

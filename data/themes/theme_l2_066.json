@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "The man is using a hoe.",
-          "grammar": "現在進行形",
-          "ja": "男性はくわを使っています。",
+          "text": "There are many green vegetables.",
+          "grammar": "There are",
+          "ja": "緑色の野菜がたくさんあります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "There are many green vegetables.",
-          "grammar": "There are",
-          "ja": "緑色の野菜がたくさんあります。",
+          "text": "The man is using a hoe.",
+          "grammar": "現在進行形",
+          "ja": "男性はくわを使っています。",
           "type": "detail",
           "points": 40
         },

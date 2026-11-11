@@ -174,6 +174,12 @@
           "points": 40
         },
         {
+          "text": "The plants have green leaves.",
+          "ja": "植物には緑の葉があります。",
+          "type": "attribute",
+          "points": 40
+        },
+        {
           "text": "A girl is watering the plants.",
           "grammar": "現在進行形",
           "ja": "女の子が植物に水をやっています。",
@@ -376,17 +382,17 @@
           "points": 40
         },
         {
-          "text": "One girl is watering seedlings while examining their leaves.",
-          "grammar": "while＋現在分詞",
-          "ja": "一人の女子生徒は葉を観察しながら苗に水をやっています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "She appears to be checking whether the plants are healthy.",
           "grammar": "appear to be / whether",
           "ja": "彼女は植物が健康かどうか確認しているようです。",
           "type": "inference",
+          "points": 40
+        },
+        {
+          "text": "One girl is watering seedlings while examining their leaves.",
+          "grammar": "while＋現在分詞",
+          "ja": "一人の女子生徒は葉を観察しながら苗に水をやっています。",
+          "type": "detail",
           "points": 40
         },
         {

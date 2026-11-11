@@ -36,7 +36,7 @@
         {"text": "I see a boy and a girl.", "grammar": "I see~", "ja": "男の子と女の子が見えます。", "category": "object"},
         {"text": "There are many stars.", "grammar": "There is/are~", "ja": "たくさんの星があります。", "category": "object"},
         {"text": "The boy points to a star.", "grammar": "一般動詞", "ja": "男の子が星を指さしています。", "category": "gist"},
-        {"text": "The sky is blue.", "grammar": "be動詞", "ja": "空は青いです。", "category": "attribute"},
+        {"text": "The sky is blue.", "grammar": "be動詞", "ja": "空は青いです。", "category": "attribute", "coverageCategories": ["detail"]},
         {"text": "She has a star map.", "grammar": "have", "ja": "彼女は星図を持っています。", "category": "object"}
       ]
     },
@@ -72,7 +72,7 @@
         {"text": "They are observing the stars in the night sky.", "grammar": "現在進行形", "ja": "彼らは夜空の星を観察しています。", "category": "gist"},
         {"text": "The telescope is standing on a tripod.", "grammar": "現在進行形", "ja": "望遠鏡が三脚の上に立っています。", "category": "object"},
         {"text": "The girl is holding a constellation map in her hands.", "grammar": "現在進行形", "ja": "女の子は両手で星座図を持っています。", "category": "object"},
-        {"text": "They look very excited to see the stars.", "grammar": "look + 形容詞 + 不定詞", "ja": "彼らは星を見てとてもワクワクしているように見えます。", "category": "inference"},
+        {"text": "They look very excited to see the stars.", "grammar": "look + 形容詞 + 不定詞", "ja": "彼らは星を見てとてもワクワクしているように見えます。", "category": "inference", "coverageCategories": ["attribute"]},
         {"text": "The boy is pointing at a star that he found.", "grammar": "関係代名詞", "ja": "男の子は見つけた星を指さしています。", "category": "gist"}
       ]
     },
@@ -108,22 +108,55 @@
         {"text": "It looks like the children are captivated by the beauty of the celestial sphere.", "grammar": "It looks like~", "ja": "子供たちは天球の美しさに心を奪われているようです。", "category": "inference"},
         {"text": "The boy is pointing toward a specific star while looking through the telescope.", "grammar": "接続詞 while", "ja": "男の子は望遠鏡を覗き込みながら、特定の星を指さしています。", "category": "gist"},
         {"text": "They are using a star chart to identify the constellations appearing tonight.", "grammar": "不定詞の副詞的用法", "ja": "彼らは今夜現れる星座を特定するために、星図を使用しています。", "category": "gist"},
-        {"text": "Because they are so enthusiastic about astronomy, they stayed up late tonight.", "grammar": "接続詞 because", "ja": "彼らは天文学にとても熱心なので、今夜は夜更かしをしました。", "category": "inference"},
+        {"text": "Because they are so enthusiastic about astronomy, they stayed up late tonight.", "grammar": "接続詞 because", "ja": "彼らは天文学にとても熱心なので、今夜は夜更かしをしました。", "category": "inference", "coverageCategories": ["detail"]},
         {"text": "The telescope, which is mounted on a sturdy tripod, helps them see far away objects.", "grammar": "関係代名詞（非制限用法）", "ja": "頑丈な三脚に取り付けられた望遠鏡は、遠くの物体を見るのを助けてくれます。", "category": "object"}
       ]
     }
   },
   "pins": {
-    "boy": { "x": 18, "y": 62 },
-    "girl": { "x": 84, "y": 65 },
-    "telescope": { "x": 42, "y": 42 },
-    "star": { "x": 72, "y": 8 },
-    "sky": { "x": 50, "y": 20 },
-    "map": { "x": 68, "y": 78 },
-    "tripod": { "x": 41, "y": 82 },
-    "hand": { "x": 30, "y": 32 },
-    "constellation": { "x": 70, "y": 75 },
-    "stars": { "x": 12, "y": 10 },
-    "paper": { "x": 63, "y": 70 }
+    "boy": {
+      "x": 18,
+      "y": 62
+    },
+    "girl": {
+      "x": 84,
+      "y": 65
+    },
+    "telescope": {
+      "x": 42,
+      "y": 42
+    },
+    "star": {
+      "x": 72,
+      "y": 8
+    },
+    "sky": {
+      "x": 50,
+      "y": 20
+    },
+    "map": {
+      "x": 68,
+      "y": 78
+    },
+    "tripod": {
+      "x": 41,
+      "y": 82
+    },
+    "hand": {
+      "x": 30,
+      "y": 32
+    },
+    "constellation": {
+      "x": 70,
+      "y": 75
+    },
+    "stars": {
+      "x": 12,
+      "y": 10
+    },
+    "paper": {
+      "x": 63,
+      "y": 70
+    }
   }
 }

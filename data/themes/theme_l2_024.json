@@ -160,13 +160,6 @@
           "points": 40
         },
         {
-          "text": "The man is showing some pictures.",
-          "grammar": "現在進行形",
-          "ja": "男性が写真を見せています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "He is holding a smartphone.",
           "grammar": "現在進行形",
           "ja": "彼はスマートフォンを持っています。",
@@ -174,9 +167,16 @@
           "points": 40
         },
         {
-          "text": "The woman is looking at the phone.",
-          "grammar": "現在進行形",
-          "ja": "女性がスマートフォンを見ています。",
+          "text": "They look very happy.",
+          "grammar": "look＋形容詞",
+          "ja": "2人はとても楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "There are drinks on the table.",
+          "grammar": "There are",
+          "ja": "テーブルには飲み物があります。",
           "type": "detail",
           "points": 40
         },
@@ -188,9 +188,16 @@
           "points": 40
         },
         {
-          "text": "There are drinks on the table.",
-          "grammar": "There are",
-          "ja": "テーブルには飲み物があります。",
+          "text": "The man is showing some pictures.",
+          "grammar": "現在進行形",
+          "ja": "男性が写真を見せています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
+          "text": "The woman is looking at the phone.",
+          "grammar": "現在進行形",
+          "ja": "女性がスマートフォンを見ています。",
           "type": "detail",
           "points": 40
         },
@@ -199,13 +206,6 @@
           "grammar": "There are",
           "ja": "小さな皿が2枚あります。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "They look very happy.",
-          "grammar": "look＋形容詞",
-          "ja": "2人はとても楽しそうです。",
-          "type": "emotion",
           "points": 40
         }
       ]

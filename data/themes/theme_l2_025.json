@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "They look relaxed.",
+          "grammar": "look＋形容詞",
+          "ja": "2人はリラックスしているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "The woman is looking at her phone.",
           "grammar": "現在進行形",
           "ja": "女性がスマートフォンを見ています。",
@@ -199,13 +206,6 @@
           "grammar": "have＋名詞",
           "ja": "2人は水を持っています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "They look relaxed.",
-          "grammar": "look＋形容詞",
-          "ja": "2人はリラックスしているようです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -376,6 +376,13 @@
           "points": 40
         },
         {
+          "text": "The two friends seem relaxed after walking through the park.",
+          "grammar": "seem＋形容詞 / after＋動名詞",
+          "ja": "2人は公園を歩いた後、リラックスしているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "The woman is reviewing photographs on her smartphone.",
           "grammar": "現在進行形",
           "ja": "女性はスマートフォンで写真を確認しています。",
@@ -401,13 +408,6 @@
           "grammar": "現在形",
           "ja": "大きな木々が休憩場所にたくさんの木陰を作っています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The two friends seem relaxed after walking through the park.",
-          "grammar": "seem＋形容詞 / after＋動名詞",
-          "ja": "2人は公園を歩いた後、リラックスしているようです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -584,17 +584,17 @@
           "points": 40
         },
         {
-          "text": "Meanwhile, his companion is reviewing photographs that she captured earlier in the day.",
-          "grammar": "関係代名詞that",
-          "ja": "その一方で、同行者はその日に先ほど撮影した写真を見直しています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "She appears pleased with the images of the surrounding vegetation and natural scenery.",
           "grammar": "appear＋補語",
           "ja": "彼女は周囲の植物や自然景観を撮影した写真に満足しているようです。",
           "type": "emotion",
+          "points": 40
+        },
+        {
+          "text": "Meanwhile, his companion is reviewing photographs that she captured earlier in the day.",
+          "grammar": "関係代名詞that",
+          "ja": "その一方で、同行者はその日に先ほど撮影した写真を見直しています。",
+          "type": "detail",
           "points": 40
         },
         {

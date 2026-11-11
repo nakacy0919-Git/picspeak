@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "The girl is petting a dog.",
-          "grammar": "現在進行形",
-          "ja": "女の子は犬をなでています。",
+          "text": "There is a tall wall on the right.",
+          "grammar": "There is",
+          "ja": "右側に高い壁があります。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "There is a tall wall on the right.",
-          "grammar": "There is",
-          "ja": "右側に高い壁があります。",
+          "text": "The girl is petting a dog.",
+          "grammar": "現在進行形",
+          "ja": "女の子は犬をなでています。",
           "type": "detail",
           "points": 40
         },

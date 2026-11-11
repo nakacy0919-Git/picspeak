@@ -174,6 +174,16 @@
           "points": 40
         },
         {
+          "text": "The mountain looks very high and dangerous.",
+          "grammar": "look＋形容詞",
+          "ja": "その山はとても高く危険そうに見えます。",
+          "type": "inference",
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
+        },
+        {
           "text": "A climber is standing on the top of a mountain.",
           "grammar": "現在進行形",
           "ja": "登山家が山頂に立っています。",
@@ -192,13 +202,6 @@
           "grammar": "There are",
           "ja": "絵の横には2体の白い像があります。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "The mountain looks very high and dangerous.",
-          "grammar": "look＋形容詞",
-          "ja": "その山はとても高く危険そうに見えます。",
-          "type": "inference",
           "points": 40
         },
         {

@@ -105,7 +105,7 @@
         {"text": "a red curtain in the background", "ja": "背景にある赤いカーテン", "category": "detail"}
       ],
       "sentences": [
-        {"text": "It looks like the students are engaging in a theatrical rehearsal for a school play.", "grammar": "It looks like~", "ja": "生徒たちは学校の劇の演劇リハーサルに取り組んでいるようです。", "category": "inference"},
+        {"text": "It looks like the students are engaging in a theatrical rehearsal for a school play.", "grammar": "It looks like~", "ja": "生徒たちは学校の劇の演劇リハーサルに取り組んでいるようです。", "category": "inference", "coverageCategories": ["detail"]},
         {"text": "The boy acting as a knight is holding a wooden sword.", "grammar": "現在分詞の形容詞的用法", "ja": "騎士を演じている男の子は木の剣を持っています。", "category": "gist"},
         {"text": "The girl wearing a beautiful crown is playing the role of a princess.", "grammar": "現在分詞の形容詞的用法", "ja": "美しい王冠をかぶっている女の子は、お姫様の役を演じています。", "category": "gist"},
         {"text": "Some students holding scripts are carefully observing the main actors.", "grammar": "現在分詞の形容詞的用法 / 副詞", "ja": "台本を持っている生徒たちは、主役たちを注意深く観察しています。", "category": "gist"},
@@ -114,17 +114,53 @@
     }
   },
   "pins": {
-    "knight": { "x": 30, "y": 50 },
-    "princess": { "x": 60, "y": 55 },
-    "sword": { "x": 45, "y": 35 },
-    "crown": { "x": 58, "y": 22 },
-    "armor": { "x": 30, "y": 45 },
-    "dress": { "x": 60, "y": 70 },
-    "curtain": { "x": 95, "y": 30 },
-    "script": { "x": 10, "y": 45 },
-    "stage": { "x": 50, "y": 85 },
-    "light": { "x": 50, "y": 10 },
-    "boy": { "x": 80, "y": 40 },
-    "girl": { "x": 15, "y": 30 }
+    "knight": {
+      "x": 30,
+      "y": 50
+    },
+    "princess": {
+      "x": 60,
+      "y": 55
+    },
+    "sword": {
+      "x": 45,
+      "y": 35
+    },
+    "crown": {
+      "x": 58,
+      "y": 22
+    },
+    "armor": {
+      "x": 30,
+      "y": 45
+    },
+    "dress": {
+      "x": 60,
+      "y": 70
+    },
+    "curtain": {
+      "x": 95,
+      "y": 30
+    },
+    "script": {
+      "x": 10,
+      "y": 45
+    },
+    "stage": {
+      "x": 50,
+      "y": 85
+    },
+    "light": {
+      "x": 50,
+      "y": 10
+    },
+    "boy": {
+      "x": 80,
+      "y": 40
+    },
+    "girl": {
+      "x": 15,
+      "y": 30
+    }
   }
 }

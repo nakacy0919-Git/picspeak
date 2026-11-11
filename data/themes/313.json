@@ -37,8 +37,8 @@
           {"text": "I see a young man.", "grammar": "I see~", "ja": "若い男の人が見えます。", "type": "object", "points": 20},
           {"text": "He is in the kitchen.", "grammar": "be動詞", "ja": "彼は台所にいます。", "type": "detail", "points": 20},
           {"text": "He is making breakfast.", "grammar": "is ~ing", "ja": "彼は朝食を作っています。", "type": "gist", "points": 40},
-          {"text": "The clock says eight.", "grammar": "三人称単数現在", "ja": "時計は8時を指しています。", "type": "detail", "points": 20},
-          {"text": "He looks happy.", "grammar": "look + 形容詞", "ja": "彼は幸せそうです。", "type": "inference", "points": 30}
+          {"text": "He looks happy.", "grammar": "look + 形容詞", "ja": "彼は幸せそうです。", "type": "inference", "points": 30},
+          {"text": "The clock says eight.", "grammar": "三人称単数現在", "ja": "時計は8時を指しています。", "type": "detail", "points": 20}
         ]
       },
       "junior_high": {
@@ -115,16 +115,46 @@
       }
     },
     "pins": {
-      "man": {"x": 61, "y": 50},
-      "pan": {"x": 48, "y": 85},
-      "clock": {"x": 32, "y": 18},
-      "sun": {"x": 91, "y": 20},
-      "tomato": {"x": 15, "y": 86},
-      "cucumber": {"x": 19, "y": 84},
-      "window": {"x": 86, "y": 30},
-      "cutting board": {"x": 20, "y": 90},
-      "apron": {"x": 61, "y": 65},
-      "salt": {"x": 45, "y": 68}
+      "man": {
+        "x": 61,
+        "y": 50
+      },
+      "pan": {
+        "x": 48,
+        "y": 85
+      },
+      "clock": {
+        "x": 32,
+        "y": 18
+      },
+      "sun": {
+        "x": 91,
+        "y": 20
+      },
+      "tomato": {
+        "x": 15,
+        "y": 86
+      },
+      "cucumber": {
+        "x": 19,
+        "y": 84
+      },
+      "window": {
+        "x": 86,
+        "y": 30
+      },
+      "cutting board": {
+        "x": 20,
+        "y": 90
+      },
+      "apron": {
+        "x": 61,
+        "y": 65
+      },
+      "salt": {
+        "x": 45,
+        "y": 68
+      }
     }
   }
 ]

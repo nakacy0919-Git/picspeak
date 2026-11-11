@@ -174,16 +174,16 @@
           "points": 40
         },
         {
-          "text": "The referee is raising both hands.",
-          "grammar": "現在進行形",
-          "ja": "審判は両手を上げています。",
+          "text": "Some players in blue look angry.",
+          "grammar": "look＋形容詞",
+          "ja": "青いユニフォームの選手たちは怒っているように見えます。",
           "type": "detail",
           "points": 40
         },
         {
-          "text": "Some players in blue look angry.",
-          "grammar": "look＋形容詞",
-          "ja": "青いユニフォームの選手たちは怒っているように見えます。",
+          "text": "The referee is raising both hands.",
+          "grammar": "現在進行形",
+          "ja": "審判は両手を上げています。",
           "type": "detail",
           "points": 40
         },

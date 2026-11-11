@@ -36,8 +36,8 @@
         {"text": "I see a man and children.", "grammar": "I see~", "ja": "男の人と子供たちが見えます。", "category": "object"},
         {"text": "They are near the fire.", "grammar": "be動詞", "ja": "彼らは火の近くにいます。", "category": "detail"},
         {"text": "The man is talking.", "grammar": "現在進行形", "ja": "男の人が話をしています。", "category": "gist"},
-        {"text": "It is night.", "grammar": "It is~", "ja": "夜です。", "category": "detail"},
-        {"text": "They have smiles.", "grammar": "have", "ja": "彼らは笑顔です。", "category": "inference"}
+        {"text": "They have smiles.", "grammar": "have", "ja": "彼らは笑顔です。", "category": "inference", "coverageCategories": ["attribute"]},
+        {"text": "It is night.", "grammar": "It is~", "ja": "夜です。", "category": "detail"}
       ]
     },
     "junior_high": {
@@ -72,7 +72,7 @@
         {"text": "They are sitting around a campfire together.", "grammar": "現在進行形", "ja": "彼らは一緒にキャンプファイヤーを囲んで座っています。", "category": "detail"},
         {"text": "The man is telling an interesting story to the children.", "grammar": "現在進行形", "ja": "男の人が子供たちに面白い話をしています。", "category": "gist"},
         {"text": "There is a large tent behind them.", "grammar": "There is/are~", "ja": "彼らの後ろに大きなテントがあります。", "category": "detail"},
-        {"text": "Everyone looks very excited and happy.", "grammar": "look + 形容詞", "ja": "みんなとてもわくわくして幸せそうです。", "category": "inference"},
+        {"text": "Everyone looks very excited and happy.", "grammar": "look + 形容詞", "ja": "みんなとてもわくわくして幸せそうです。", "category": "inference", "coverageCategories": ["attribute"]},
         {"text": "The fire is burning brightly in the center.", "grammar": "現在進行形", "ja": "中央で火が明るく燃えています。", "category": "gist"}
       ]
     },
@@ -114,15 +114,45 @@
     }
   },
   "pins": {
-    "leader": {"x": 51, "y": 37},
-    "fire": {"x": 51, "y": 80},
-    "tent": {"x": 90, "y": 24},
-    "log": {"x": 10, "y": 81},
-    "girl": {"x": 15, "y": 51},
-    "boy": {"x": 27, "y": 42},
-    "stone": {"x": 42, "y": 89},
-    "sky": {"x": 48, "y": 14},
-    "tree": {"x": 75, "y": 22},
-    "wood": {"x": 55, "y": 94}
+    "leader": {
+      "x": 51,
+      "y": 37
+    },
+    "fire": {
+      "x": 51,
+      "y": 80
+    },
+    "tent": {
+      "x": 90,
+      "y": 24
+    },
+    "log": {
+      "x": 10,
+      "y": 81
+    },
+    "girl": {
+      "x": 15,
+      "y": 51
+    },
+    "boy": {
+      "x": 27,
+      "y": 42
+    },
+    "stone": {
+      "x": 42,
+      "y": 89
+    },
+    "sky": {
+      "x": 48,
+      "y": 14
+    },
+    "tree": {
+      "x": 75,
+      "y": 22
+    },
+    "wood": {
+      "x": 55,
+      "y": 94
+    }
   }
 }

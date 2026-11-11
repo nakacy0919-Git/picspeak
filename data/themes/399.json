@@ -69,7 +69,7 @@
         {"text": "standing in a line", "ja": "一列に立っている", "category": "gist"}
       ],
       "sentences": [
-        {"text": "The students are practicing kudo together.", "grammar": "現在進行形", "ja": "生徒たちは一緒に弓道を練習しています。", "category": "gist"},
+        {"text": "The students are practicing kudo together.", "grammar": "現在進行形", "ja": "生徒たちは一緒に弓道を練習しています。", "category": "gist", "coverageCategories": ["detail"]},
         {"text": "The main archer is drawing a long bow.", "grammar": "現在進行形", "ja": "主たる弓手は長い弓を引いています。", "category": "gist"},
         {"text": "They wear traditional white and black uniforms.", "grammar": "一般動詞", "ja": "彼らは伝統的な白と黒の道着を着ています。", "category": "attribute"},
         {"text": "Others are observing the draw carefully.", "grammar": "現在進行形 / 副詞", "ja": "他の人たちは引く様子を注意深く見ています。", "category": "gist"},
@@ -104,7 +104,7 @@
         {"text": "carrying multiple ya in a yuzutsu", "ja": "矢筒に複数の矢を運んでいる", "category": "gist"}
       ],
       "sentences": [
-        {"text": "It looks like a group of students participating in a traditional kudo practice.", "grammar": "It looks like~", "ja": "それは、伝統的な弓道の練習に参加している生徒たちのグループのようです。", "category": "inference"},
+        {"text": "It looks like a group of students participating in a traditional kudo practice.", "grammar": "It looks like~", "ja": "それは、伝統的な弓道の練習に参加している生徒たちのグループのようです。", "category": "inference", "coverageCategories": ["detail"]},
         {"text": "The lead practitioner is drawing a yumi, demonstrating intense concentration.", "grammar": "現在進行形 / 分詞構文", "ja": "主たる実践者は弓（弓道）を引いて、激しい集中を実演しています。", "category": "gist"},
         {"text": "They are dressed in authentic white and black uniforms suitable for the martial art.", "grammar": "受動態的表現 (be dressed in) / 形容詞句", "ja": "彼らは、その武道に適した本物の白と黒の道着を着用しています。", "category": "attribute"},
         {"text": "We can see other students observing and holding additional equipment.", "grammar": "助動詞 + 知覚動詞的用法 (see O Ving)", "ja": "他の生徒たちが観察したり、追加の装備を持っていたりするのが見えます。", "category": "gist"},
@@ -113,20 +113,65 @@
     }
   },
   "pins": {
-    "bow": { "x": 10, "y": 62 },
-    "man": { "x": 35, "y": 55 },
-    "clothes": { "x": 60, "y": 45 },
-    "arm": { "x": 55, "y": 42 },
-    "girl": { "x": 75, "y": 28 },
-    "student": { "x": 10, "y": 18 },
-    "helmet": { "x": 25, "y": 25 },
-    "quiver": { "x": 92, "y": 18 },
-    "door": { "x": 70, "y": 15 },
-    "floor": { "x": 50, "y": 90 },
-    "railing": { "x": 50, "y": 42 },
-    "light": { "x": 20, "y": 10 },
-    "white": { "x": 80, "y": 40 },
-    "hand": { "x": 48, "y": 38 },
-    "black": { "x": 86, "y": 78 }
+    "bow": {
+      "x": 10,
+      "y": 62
+    },
+    "man": {
+      "x": 35,
+      "y": 55
+    },
+    "clothes": {
+      "x": 60,
+      "y": 45
+    },
+    "arm": {
+      "x": 55,
+      "y": 42
+    },
+    "girl": {
+      "x": 75,
+      "y": 28
+    },
+    "student": {
+      "x": 10,
+      "y": 18
+    },
+    "helmet": {
+      "x": 25,
+      "y": 25
+    },
+    "quiver": {
+      "x": 92,
+      "y": 18
+    },
+    "door": {
+      "x": 70,
+      "y": 15
+    },
+    "floor": {
+      "x": 50,
+      "y": 90
+    },
+    "railing": {
+      "x": 50,
+      "y": 42
+    },
+    "light": {
+      "x": 20,
+      "y": 10
+    },
+    "white": {
+      "x": 80,
+      "y": 40
+    },
+    "hand": {
+      "x": 48,
+      "y": 38
+    },
+    "black": {
+      "x": 86,
+      "y": 78
+    }
   }
 }

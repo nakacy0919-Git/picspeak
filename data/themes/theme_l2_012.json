@@ -174,6 +174,12 @@
           "points": 40
         },
         {
+          "text": "The family is busy cooking.",
+          "ja": "家族は忙しく料理をしています。",
+          "type": "attribute",
+          "points": 40
+        },
+        {
           "text": "The girl is looking at a tablet.",
           "grammar": "現在進行形",
           "ja": "女の子がタブレットを見ています。",
@@ -382,6 +388,13 @@
           "points": 40
         },
         {
+          "text": "Everyone seems cheerful because they are preparing the meal together.",
+          "grammar": "seem＋形容詞 / because",
+          "ja": "みんなで食事を準備しているので、全員楽しそうです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "Their daughter is checking a recipe on a tablet while explaining the next step.",
           "grammar": "while＋現在分詞",
           "ja": "娘は次の手順を説明しながらタブレットでレシピを確認しています。",
@@ -414,13 +427,6 @@
           "grammar": "whileを用いた同時進行",
           "ja": "別の家族が生地をこねている間、小さな子どもがいろいろな形を作っています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "Everyone seems cheerful because they are preparing the meal together.",
-          "grammar": "seem＋形容詞 / because",
-          "ja": "みんなで食事を準備しているので、全員楽しそうです。",
-          "type": "emotion",
           "points": 40
         }
       ]
@@ -597,6 +603,13 @@
           "points": 40
         },
         {
+          "text": "Another family member is kneading homemade bread dough while a young child uses cutters to create different shapes.",
+          "grammar": "whileを用いた同時進行",
+          "ja": "別の家族が手作りパンの生地をこねる一方で、小さな子どもは型を使ってさまざまな形を作っています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "Their teenage daughter is consulting a digital recipe and appears to be coordinating the sequence of cooking tasks.",
           "grammar": "appear to be＋現在分詞",
           "ja": "10代の娘はデジタルレシピを確認し、調理作業の順番を調整しているようです。",
@@ -621,13 +634,6 @@
           "text": "Meanwhile, the grandfather is retrieving beverages from the refrigerator so that they can be served with dinner.",
           "grammar": "so that＋受動態",
           "ja": "その一方で、祖父は夕食と一緒に出せるよう冷蔵庫から飲み物を取り出しています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "Another family member is kneading homemade bread dough while a young child uses cutters to create different shapes.",
-          "grammar": "whileを用いた同時進行",
-          "ja": "別の家族が手作りパンの生地をこねる一方で、小さな子どもは型を使ってさまざまな形を作っています。",
           "type": "detail",
           "points": 40
         },

@@ -164,7 +164,10 @@
           "grammar": "have",
           "ja": "そのヘルメットには大きなひびがあります。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "The man is pointing at the crack.",

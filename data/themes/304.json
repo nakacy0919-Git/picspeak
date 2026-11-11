@@ -37,8 +37,8 @@
           {"text": "I see a man and a woman.", "grammar": "I see~", "ja": "男の人と女の人が見えます。", "type": "object", "points": 20},
           {"text": "They are standing.", "grammar": "is ~ing", "ja": "彼らは立っています。", "type": "gist", "points": 20},
           {"text": "The woman has a phone.", "grammar": "have/has", "ja": "女の人はスマホを持っています。", "type": "gist", "points": 30},
-          {"text": "The boys are playing soccer.", "grammar": "is ~ing", "ja": "男の子たちはサッカーをしています。", "type": "gist", "points": 40},
-          {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。", "type": "object", "points": 20}
+          {"text": "This is a big park.", "grammar": "This is~", "ja": "ここは大きな公園です。", "type": "object", "points": 20, "coverageCategories": ["attribute", "detail"]},
+          {"text": "The boys are playing soccer.", "grammar": "is ~ing", "ja": "男の子たちはサッカーをしています。", "type": "gist", "points": 40}
         ]
       },
       "junior_high": {
@@ -73,8 +73,8 @@
           {"text": "A woman is taking a picture with her smartphone.", "grammar": "現在進行形", "ja": "女の人がスマートフォンで写真を撮っています。", "type": "gist", "points": 40},
           {"text": "The man next to her is holding a cup.", "grammar": "前置詞を用いた名詞修飾", "ja": "彼女の隣の男の人はカップを持っています。", "type": "detail", "points": 20},
           {"text": "There are some boys playing soccer in the background.", "grammar": "There is/are~ / 現在分詞の後置修飾", "ja": "背景にはサッカーをしている男の子たちがいます。", "type": "gist", "points": 30},
-          {"text": "A couple is having a picnic on the blanket.", "grammar": "場所を表す前置詞句", "ja": "カップルが敷物の上でピクニックをしています。", "type": "detail", "points": 20},
-          {"text": "They look happy to be outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外にいられて幸せそうに見えます。", "type": "inference", "points": 30}
+          {"text": "They look happy to be outside.", "grammar": "look + 形容詞 / 不定詞", "ja": "彼らは外にいられて幸せそうに見えます。", "type": "inference", "points": 30, "coverageCategories": ["attribute"]},
+          {"text": "A couple is having a picnic on the blanket.", "grammar": "場所を表す前置詞句", "ja": "カップルが敷物の上でピクニックをしています。", "type": "detail", "points": 20}
         ]
       },
       "high_school": {
@@ -115,14 +115,38 @@
       }
     },
     "pins": {
-      "man": {"x": 35, "y": 50},
-      "woman": {"x": 48, "y": 50},
-      "phone": {"x": 55, "y": 18},
-      "chair": {"x": 22, "y": 65},
-      "goal": {"x": 67, "y": 42},
-      "picnic": {"x": 88, "y": 58},
-      "cup": {"x": 41, "y": 38},
-      "tree": {"x": 85, "y": 25}
+      "man": {
+        "x": 35,
+        "y": 50
+      },
+      "woman": {
+        "x": 48,
+        "y": 50
+      },
+      "phone": {
+        "x": 55,
+        "y": 18
+      },
+      "chair": {
+        "x": 22,
+        "y": 65
+      },
+      "goal": {
+        "x": 67,
+        "y": 42
+      },
+      "picnic": {
+        "x": 88,
+        "y": 58
+      },
+      "cup": {
+        "x": 41,
+        "y": 38
+      },
+      "tree": {
+        "x": 85,
+        "y": 25
+      }
     }
   }
 ]

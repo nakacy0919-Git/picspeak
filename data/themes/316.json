@@ -75,6 +75,7 @@
           {"text": "There are three people in the living room.", "grammar": "There is/are~", "ja": "リビングルームに3人の人がいます。", "type": "inference", "points": 30},
           {"text": "They are sitting on the sofa.", "grammar": "現在進行形", "ja": "彼らはソファに座っています。", "type": "gist", "points": 30},
           {"text": "The family is enjoying watching TV.", "grammar": "動名詞", "ja": "家族はテレビを見るのを楽しんでいます。", "type": "inference", "points": 40},
+          {"text": "The family looks relaxed on the sofa.", "ja": "家族はソファでくつろいでいるようです。", "type": "attribute", "points": 40},
           {"text": "The boy is sitting between his parents.", "grammar": "前置詞 (between)", "ja": "男の子は両親の間に座っています。", "type": "detail", "points": 20},
           {"text": "It is eight o'clock in the morning.", "grammar": "時間を表すit", "ja": "朝の8時です。", "type": "inference", "points": 30}
         ]
@@ -117,13 +118,34 @@
       }
     },
     "pins": {
-      "father": { "x": 60, "y": 50 },
-      "mother": { "x": 84, "y": 55 },
-      "boy": { "x": 72, "y": 65 },
-      "TV": { "x": 12, "y": 50 },
-      "clock": { "x": 33, "y": 19 },
-      "sofa": { "x": 65, "y": 75 },
-      "window": { "x": 80, "y": 25 }
+      "father": {
+        "x": 60,
+        "y": 50
+      },
+      "mother": {
+        "x": 84,
+        "y": 55
+      },
+      "boy": {
+        "x": 72,
+        "y": 65
+      },
+      "TV": {
+        "x": 12,
+        "y": 50
+      },
+      "clock": {
+        "x": 33,
+        "y": 19
+      },
+      "sofa": {
+        "x": 65,
+        "y": 75
+      },
+      "window": {
+        "x": 80,
+        "y": 25
+      }
     }
   }
 ]

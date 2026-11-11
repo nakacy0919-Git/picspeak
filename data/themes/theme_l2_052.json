@@ -174,6 +174,13 @@
           "points": 40
         },
         {
+          "text": "She looks surprised.",
+          "grammar": "look＋形容詞",
+          "ja": "彼女は驚いているように見えます。",
+          "type": "description",
+          "points": 40
+        },
+        {
           "text": "There is a red mark on her hand.",
           "grammar": "There is",
           "ja": "彼女の手には赤い跡があります。",
@@ -185,13 +192,6 @@
           "grammar": "現在進行形",
           "ja": "彼女は自分の手を見ています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "She looks surprised.",
-          "grammar": "look＋形容詞",
-          "ja": "彼女は驚いているように見えます。",
-          "type": "description",
           "points": 40
         },
         {

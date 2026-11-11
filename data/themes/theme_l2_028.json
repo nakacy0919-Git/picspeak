@@ -174,16 +174,19 @@
           "points": 40
         },
         {
-          "text": "Another boy is hitting a ball.",
-          "grammar": "現在進行形",
-          "ja": "もう一人の男の子がボールを打っています。",
-          "type": "detail",
-          "points": 40
-        },
-        {
           "text": "He is wearing a helmet.",
           "grammar": "現在進行形",
           "ja": "彼はヘルメットをかぶっています。",
+          "type": "detail",
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
+        },
+        {
+          "text": "Another boy is hitting a ball.",
+          "grammar": "現在進行形",
+          "ja": "もう一人の男の子がボールを打っています。",
           "type": "detail",
           "points": 40
         },
@@ -376,6 +379,13 @@
           "points": 40
         },
         {
+          "text": "She looks focused as the ball rolls toward her.",
+          "grammar": "look＋形容詞 / as節",
+          "ja": "ボールが転がってくる中、彼女は集中しているようです。",
+          "type": "emotion",
+          "points": 40
+        },
+        {
           "text": "Another player is hitting a ball from a batting tee.",
           "grammar": "現在進行形",
           "ja": "別の選手はバッティングティーのボールを打っています。",
@@ -394,13 +404,6 @@
           "grammar": "目的を表すto不定詞",
           "ja": "女子生徒はゴロを捕るためにグローブを低く構えています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "She looks focused as the ball rolls toward her.",
-          "grammar": "look＋形容詞 / as節",
-          "ja": "ボールが転がってくる中、彼女は集中しているようです。",
-          "type": "emotion",
           "points": 40
         },
         {
@@ -584,6 +587,13 @@
           "points": 40
         },
         {
+          "text": "Her positioning suggests that she is developing quick reflexes and hand-eye coordination through repeated fielding drills.",
+          "grammar": "suggest that / through",
+          "ja": "彼女の構えから、反復的な守備練習を通して素早い反応と目と手の協調性を高めていることがうかがえます。",
+          "type": "inference",
+          "points": 40
+        },
+        {
           "text": "The batter is executing a controlled swing and generating power through the rotation of his hips and upper body.",
           "grammar": "現在進行形",
           "ja": "打者は安定したスイングを行い、腰と上半身の回転によって力を生み出しています。",
@@ -602,13 +612,6 @@
           "grammar": "while＋現在分詞",
           "ja": "その一方で、野手は低い姿勢を保ちながら、近づいてくるゴロの軌道を予測しています。",
           "type": "detail",
-          "points": 40
-        },
-        {
-          "text": "Her positioning suggests that she is developing quick reflexes and hand-eye coordination through repeated fielding drills.",
-          "grammar": "suggest that / through",
-          "ja": "彼女の構えから、反復的な守備練習を通して素早い反応と目と手の協調性を高めていることがうかがえます。",
-          "type": "inference",
           "points": 40
         },
         {

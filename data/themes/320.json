@@ -73,8 +73,8 @@
           {"text": "There are two students in the art room.", "grammar": "There is/are~", "ja": "美術室に2人の生徒がいます。", "type": "inference", "points": 30},
           {"text": "The boy is painting a mountain on the canvas.", "grammar": "現在進行形", "ja": "男の子はキャンバスに山の絵を描いています。", "type": "gist", "points": 40},
           {"text": "The girl is sitting on a chair.", "grammar": "現在進行形", "ja": "女の子は椅子に座っています。", "type": "detail", "points": 20},
-          {"text": "They are holding palettes in their hands.", "grammar": "現在進行形", "ja": "彼らは手にパレットを持っています。", "type": "detail", "points": 30},
-          {"text": "It is sunny outside the window.", "grammar": "天候を表すit", "ja": "窓の外は晴れています。", "type": "attribute", "points": 30}
+          {"text": "It is sunny outside the window.", "grammar": "天候を表すit", "ja": "窓の外は晴れています。", "type": "attribute", "points": 30},
+          {"text": "They are holding palettes in their hands.", "grammar": "現在進行形", "ja": "彼らは手にパレットを持っています。", "type": "detail", "points": 30}
         ]
       },
       "high_school": {
@@ -115,14 +115,38 @@
       }
     },
     "pins": {
-      "boy": { "x": 38, "y": 60 },
-      "girl": { "x": 84, "y": 65 },
-      "canvas_left": { "x": 22, "y": 55 },
-      "canvas_right": { "x": 70, "y": 55 },
-      "palette": { "x": 28, "y": 68 },
-      "window": { "x": 78, "y": 25 },
-      "desk": { "x": 14, "y": 90 },
-      "sun": { "x": 95, "y": 18 }
+      "boy": {
+        "x": 38,
+        "y": 60
+      },
+      "girl": {
+        "x": 84,
+        "y": 65
+      },
+      "canvas_left": {
+        "x": 22,
+        "y": 55
+      },
+      "canvas_right": {
+        "x": 70,
+        "y": 55
+      },
+      "palette": {
+        "x": 28,
+        "y": 68
+      },
+      "window": {
+        "x": 78,
+        "y": 25
+      },
+      "desk": {
+        "x": 14,
+        "y": 90
+      },
+      "sun": {
+        "x": 95,
+        "y": 18
+      }
     }
   }
 ]

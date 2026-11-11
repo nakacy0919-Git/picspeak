@@ -164,7 +164,10 @@
           "grammar": "現在進行形",
           "ja": "男の子が青い液体を測っています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "He is holding a glass container.",
@@ -366,7 +369,10 @@
           "grammar": "現在進行形",
           "ja": "男子生徒はメスシリンダーの青い液体の量を測っています。",
           "type": "detail",
-          "points": 40
+          "points": 40,
+          "coverageCategories": [
+            "attribute"
+          ]
         },
         {
           "text": "He appears to be checking the measurement before pouring the liquid.",
@@ -584,6 +590,13 @@
           "points": 40
         },
         {
+          "text": "Meanwhile, the third student is documenting their observations and organizing the quantitative data on a tablet.",
+          "grammar": "現在進行形",
+          "ja": "その一方で、3人目の生徒は観察結果を記録し、数値データをタブレット上で整理しています。",
+          "type": "detail",
+          "points": 40
+        },
+        {
           "text": "One of his classmates is monitoring a bubbling reaction while using a stopwatch to quantify its duration.",
           "grammar": "while＋現在分詞 / to不定詞",
           "ja": "クラスメートの一人は、ストップウォッチで反応時間を測定しながら泡の発生する反応を観察しています。",
@@ -595,13 +608,6 @@
           "grammar": "indicate that",
           "ja": "彼女の集中した表情から、反応時間が重要な実験変数であることが分かります。",
           "type": "inference",
-          "points": 40
-        },
-        {
-          "text": "Meanwhile, the third student is documenting their observations and organizing the quantitative data on a tablet.",
-          "grammar": "現在進行形",
-          "ja": "その一方で、3人目の生徒は観察結果を記録し、数値データをタブレット上で整理しています。",
-          "type": "detail",
           "points": 40
         },
         {
