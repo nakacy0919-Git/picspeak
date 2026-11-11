@@ -3,6 +3,7 @@ import fs from 'node:fs';
 import vm from 'node:vm';
 
 const source=fs.readFileSync(new URL('../js/snapshot_result_ui.js',import.meta.url),'utf8');
+const css=fs.readFileSync(new URL('../css/snapshot_result.css',import.meta.url),'utf8');
 const handlers={};
 const elements={};
 const cls=()=>({add(){},remove(){},toggle(){}});
@@ -10,74 +11,99 @@ const view={classList:cls(),style:{removeProperty(){},height:''}};
 const host={innerHTML:'',removeAttribute(){},parentElement:{removeAttribute(){}}};
 const workspace={dataset:{}};
 const getId=id=>{
-  if(id==='view-result')return view;
-  if(id==='ranking-container')return host;
-  return elements[id] ||= {innerHTML:'',textContent:'',disabled:false,
+  if(id==='view-result') return view;
+  if(id==='ranking-container') return host;
+  return elements[id] ||= {innerHTML:'',textContent:'',scrollTop:24,disabled:false,
     classList:cls(),style:{},querySelector(){return {focus(){}}}};
 };
 const doc={
   readyState:'complete',getElementById:getId,
-  querySelector:q=>q.includes('snapshot-workspace')?workspace:null,
+  querySelector:q=>q.includes('.snapshot-review-list')?workspace:null,
   addEventListener:(name,callback)=>{handlers[name]=callback}
 };
-const words=Array.from({length:8},(_,i)=>({text:'target word '+(i+1),ja:'日本語 '+(i+1),points:10}));
+const targets=[
+  {text:'The boy is playing soccer.',ja:'少年はサッカーをしています。',points:40},
+  {text:'The girl is reading.',ja:'少女は読書をしています。',points:40},
+  {text:'There is a tree.',ja:'木があります。',points:40},
+  {text:'The boy is outside.',ja:'少年は外にいます。',points:40}
+];
+const word={text:'soccer',ja:'サッカー',points:10};
 const cat=(cleared,missed,matchRate)=>({cleared,missed,matchRate});
 const cats={
-  object:cat(words.slice(0,2),words,25),
-  attribute:cat([],words.slice(0,3),0),
-  detail:cat([],words.slice(0,2),0),
-  gist:cat([],[],0),
+  object:cat([targets[0]],[targets[1],word],50),
+  attribute:cat([],[targets[1]],0),
+  detail:cat([targets[2]],[targets[3]],50),
+  gist:cat([targets[0]],[],100),
   other:cat([],[],0)
 };
-const stats={categories:cats,completionRate:25};
-let submits=0,logs=0,practices=0;
+const stats={categories:cats,completionRate:50};
+let submits=0,logs=0,practices=0,audios=0;
 const w={
   renderSnapshotResult(){},
   appState:{selectedMode:'snapshot',selectedLevel:'elementary',customTimeLimit:30},
-  currentTheme:{id:'test-theme'},
-  snapshotVerifiedTranscript:'I see a cat',snapshotVerifiedSeconds:30,
+  currentTheme:{id:'test-theme'},snapshotVerifiedTranscript:'The boy is playing soccer.',
+  snapshotVerifiedSeconds:30,
   innerWidth:1024,innerHeight:768,
   addEventListener:(name,callback)=>{handlers[name]=callback},
   getCompletionStats:()=>stats,
-  getAggregatedData:()=>({words,chunks:[],sentences:[]}),
-  picSpeakEscapeHTML:v=>String(v).replace(/</g,'&lt;'),
+  getAggregatedData:()=>({words:[word],chunks:[],sentences:targets}),
+  picSpeakEscapeHTML:v=>String(v).replace(/&/g,'&amp;').replace(/</g,'&lt;'),
   setupSubmitButton(){submits++},
   saveLearningLog(){logs++},
-  openPractice(){practices++}
+  openPractice(){practices++},
+  playResultTTS(){audios++}
 };
 getId('scoreDisplay').textContent='200';
 vm.runInNewContext(source,{window:w,document:doc,Set,Map,String,Number,Math,Array,console});
+
 w.renderSnapshotResult();
-assert.match(host.innerHTML,/class="snapshot-aside"/);
-assert.match(host.innerHTML,/class="snapshot-workspace"/);
+assert.match(host.innerHTML,/id="snapshot-category-tabs"/);
+assert.match(host.innerHTML,/id="snapshot-item-grid"/);
 assert.match(host.innerHTML,/小学生モード/);
-assert.match(host.innerHTML,/4つの要素の達成度/);
-assert.equal((getId('snapshot-item-grid').innerHTML.match(/snapshot-item-card/g)||[]).length,4);
-assert.match(getId('snapshot-item-grid').innerHTML,/単語/);
-assert.match(getId('snapshot-item-grid').innerHTML,/🎤 音読練習/);
-assert.match(getId('snapshot-status-tabs').innerHTML,/\(8\)/); // overlap counts once
+assert.equal((getId('snapshot-category-tabs').innerHTML.match(/class="snapshot-category-tab"/g)||[]).length,4);
+for (const label of ['物・人','様子・色','位置・背景','動き・要点'])
+  assert.ok(getId('snapshot-category-tabs').innerHTML.includes(label),label+' is always visible');
+assert.equal((getId('snapshot-item-grid').innerHTML.match(/class="snapshot-item-row"/g)||[]).length,3);
+assert.match(getId('snapshot-item-grid').innerHTML,/snapshot-item-mark.*×/);
+assert.match(getId('snapshot-item-grid').innerHTML,/snapshot-item-mark.*○/);
+assert.ok(getId('snapshot-item-grid').innerHTML.indexOf('The girl is reading.') <
+  getId('snapshot-item-grid').innerHTML.indexOf('The boy is playing soccer.'),'unmatched rows first');
+assert.match(getId('snapshot-status-tabs').innerHTML,/言えた/);
+assert.match(getId('snapshot-status-tabs').innerHTML,/言えなかった/);
 assert.equal(submits,1);
 assert.equal(logs,1);
-const resize=(width,height,expected)=>{
-  w.innerWidth=width;w.innerHeight=height;handlers.resize();
-  assert.equal((getId('snapshot-item-grid').innerHTML.match(/snapshot-item-card/g)||[]).length,expected);
-};
-resize(768,1024,6);
-resize(390,844,2);
-resize(390,680,1);
-w.innerWidth=1024;w.innerHeight=768;handlers.resize();
+assert.equal(workspace.dataset.status,'all');
 const click=(selector,dataset)=>{
-  const target={dataset,closest:q=>q===selector?target:null};
+  const target={dataset,closest:q=>{
+    if(q===selector || (q==='#ranking-container' && selector==='[data-feedback-action]'))return target;
+    return null;
+  }};
   handlers.click({target});
 };
+
+click('#snapshot-category-tabs [data-category]',{category:'detail'});
+assert.match(getId('snapshot-list-title').textContent,/位置・背景/);
+assert.match(getId('snapshot-item-grid').innerHTML,/There is a tree./);
+assert.match(getId('snapshot-item-grid').innerHTML,/The boy is outside./);
+assert.equal((getId('snapshot-item-grid').innerHTML.match(/snapshot-item-mark/g)||[]).length,2);
+assert.equal(getId('snapshot-item-grid').scrollTop,0,'category changes reset list scroll');
 click('#snapshot-status-tabs [data-status]',{status:'cleared'});
 assert.equal(workspace.dataset.status,'cleared');
-assert.match(getId('snapshot-list-title').textContent,/言えた表現/);
-assert.match(getId('snapshot-item-grid').innerHTML,/target word 1/);
+assert.equal((getId('snapshot-item-grid').innerHTML.match(/class="snapshot-item-row"/g)||[]).length,1);
+assert.match(getId('snapshot-item-grid').innerHTML,/There is a tree./);
 click('#snapshot-status-tabs [data-status]',{status:'missed'});
-click('#snapshot-category-tabs [data-category]',{category:'attribute'});
-assert.match(getId('snapshot-list-title').textContent,/様子・色/);
-assert.equal((getId('snapshot-item-grid').innerHTML.match(/snapshot-item-card/g)||[]).length,3);
+assert.match(getId('snapshot-item-grid').innerHTML,/The boy is outside./);
+click('#snapshot-status-tabs [data-status]',{status:'all'});
+assert.equal((getId('snapshot-item-grid').innerHTML.match(/class="snapshot-item-row"/g)||[]).length,2);
+click('[data-feedback-action]',{feedbackAction:'audio',index:'0'});
+assert.equal(audios,1);
 assert.equal(practices,0);
-assert.equal(logs,1); // tab switch must not save again
-console.log('Snapshot result layout and interaction regression passed');
+assert.equal(logs,1);
+for (const selector of ['.snapshot-categories','.snapshot-category-tab','.snapshot-expression-list',
+  '@media (max-width:699px)','.snapshot-item-mark'])
+ assert.ok(css.includes(selector),selector+' missing in css');
+assert.match(css,/grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+assert.match(css,/overflow-y:auto/);
+const play=fs.readFileSync(new URL('../play.html',import.meta.url),'utf8');
+assert.match(play,/20261111-four-tabs-status-v1/);
+console.log('Snapshot four-tab, ○× listing, actions, scrolling, CSS layout and data integrity tests passed');
