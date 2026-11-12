@@ -273,7 +273,12 @@
     if (!dialog)return;
     dialog.classList.add('hidden');
     dialog.setAttribute('aria-hidden','true');
-    reviewReturnFocus?.focus?.();
+    // Category tabs are re-rendered on selection, so focus the new live
+    // button rather than the detached pre-render DOM element.
+    const category=reviewReturnFocus?.dataset?.category;
+    const liveButton=category?document.querySelector(
+      '#snapshot-category-tabs [data-category="'+category+'"]'):null;
+    (liveButton||reviewReturnFocus)?.focus?.();
     reviewReturnFocus=null;
   }
 
