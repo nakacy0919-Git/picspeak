@@ -3,10 +3,10 @@
 (function () {
   'use strict';
   const CATEGORY_INFO = [
-    {id:'object',label:'物・人',icon:'👤',hint:'人や物の名前',color:'#059669',tint:'#ecfdf5'},
-    {id:'attribute',label:'様子・色',icon:'🎨',hint:'色・形・様子',color:'#d97706',tint:'#fffbeb'},
-    {id:'detail',label:'位置・背景',icon:'📍',hint:'場所・周りの様子',color:'#7c3aed',tint:'#f5f3ff'},
-    {id:'gist',label:'動き・要点',icon:'🎬',hint:'動作・伝えたいこと',color:'#2563eb',tint:'#eff6ff'},
+    {id:'object',label:'物・人',icon:'👤',hint:'人や物の名前',color:'#047857',tint:'#d1fae5'},
+    {id:'attribute',label:'様子・色',icon:'🎨',hint:'色・形・様子',color:'#b45309',tint:'#fef3c7'},
+    {id:'detail',label:'位置・背景',icon:'📍',hint:'場所・周りの様子',color:'#6d28d9',tint:'#ede9fe'},
+    {id:'gist',label:'動き・要点',icon:'🎬',hint:'動作・伝えたいこと',color:'#1d4ed8',tint:'#dbeafe'},
     {id:'other',label:'その他',icon:'💬',hint:'ほかの表現',color:'#475569',tint:'#f8fafc'}
   ];
   // Inline vector icons are always available on iPad Safari, independent of
