@@ -61,6 +61,16 @@ assert.match(host.innerHTML,/id="snapshot-category-tabs"/);
 assert.match(host.innerHTML,/id="snapshot-item-grid"/);
 assert.match(host.innerHTML,/小学生モード/);
 assert.equal((getId('snapshot-category-tabs').innerHTML.match(/class="snapshot-category-tab"/g)||[]).length,4);
+const renderedTabs=getId('snapshot-category-tabs').innerHTML;
+assert.equal((renderedTabs.match(/class="snapshot-icon-svg"/g)||[]).length,4,
+  'every element tab must contain a real inline SVG icon, not an emoji fallback');
+assert.equal((renderedTabs.match(/class="snapshot-category-name"/g)||[]).length,4,
+  'every element tab must show a text label');
+assert.equal((renderedTabs.match(/<svg /g)||[]).length,4,
+  'SVG icons must render even when the device has no matching emoji font');
+for (const tint of ['#d1fae5','#fef3c7','#ede9fe','#dbeafe'])
+  assert.ok(renderedTabs.includes(tint),'category tint missing: '+tint);
+
 for (const label of ['物・人','様子・色','位置・背景','動き・要点'])
   assert.ok(getId('snapshot-category-tabs').innerHTML.includes(label),label+' is always visible');
 assert.equal((getId('snapshot-item-grid').innerHTML.match(/class="snapshot-item-row"/g)||[]).length,3);
@@ -103,7 +113,13 @@ for (const selector of ['.snapshot-categories','.snapshot-category-tab','.snapsh
   '@media (max-width:699px)','.snapshot-item-mark'])
  assert.ok(css.includes(selector),selector+' missing in css');
 assert.match(css,/grid-template-columns:repeat\(4,minmax\(0,1fr\)\)/);
+assert.match(css,/\.snapshot-category-icon \.snapshot-icon-svg/);
+assert.match(css,/\.snapshot-category-name \{/);
+assert.match(css,/white-space:normal!important/);
+assert.match(css,/grid-template-columns:repeat\(2,minmax\(0,1fr\)\)/); // phones
+assert.match(css,/visibility:visible!important/);
+
 assert.match(css,/overflow-y:auto/);
 const play=fs.readFileSync(new URL('../play.html',import.meta.url),'utf8');
-assert.match(play,/20261111-four-tabs-status-v1/);
+assert.match(play,/20261112-visible-svg-icons-v2/);
 console.log('Snapshot four-tab, ○× listing, actions, scrolling, CSS layout and data integrity tests passed');
