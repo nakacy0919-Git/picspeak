@@ -223,7 +223,8 @@
         const chosen=[];
         // Limit work on tablets with very large datasets. Prefer meaningful
         // improvements; sentence goals take precedence for equal gains.
-        for(let turn=0;turn<Math.min(12,available.length)&&current<100;turn++) {
+        const maxSteps=Math.min(12,available.length);
+        for(let turn=0;turn<maxSteps&&current<100;turn++) {
           let best=-1,bestRate=current,bestPriority=-1;
           for(let i=0;i<available.length;i++) {
             const c=available[i];
