@@ -213,10 +213,17 @@
     if (canSimulate) {
       let current=score(seeds);
       if (Math.abs(current-attempt.completion)<=1) {
-        const available=candidates.slice(),chosen=[];
+        const currentModels=new Set((window.currentTheme?.scoringData?.[window.appState.selectedLevel]?.sentences||[])
+          .map(item=>item.text));
+        const priority=c=>c.kind==='sentences'
+          ? (currentModels.has(c.item.text)?8:5)
+          : c.kind==='chunks'?2:1;
+        // Avoid blocking the iPad UI when an image has hundreds of phrases.
+        const available=candidates.slice().sort((a,b)=>priority(b)-priority(a)).slice(0,48);
+        const chosen=[];
         // Limit work on tablets with very large datasets. Prefer meaningful
         // improvements; sentence goals take precedence for equal gains.
-        for(let turn=0;turn<Math.min(24,candidates.length)&&current<100;turn++) {
+        for(let turn=0;turn<Math.min(12,available.length)&&current<100;turn++) {
           let best=-1,bestRate=current,bestPriority=-1;
           for(let i=0;i<available.length;i++) {
             const c=available[i];
@@ -348,7 +355,9 @@
               '<span class="snapshot-score-track" role="progressbar" aria-label="今回の達成度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="'+completion+'"><span style="width:'+completion+'%"></span></span>'+
             '</div>'+
             '<button type="button" class="snapshot-goal-button" data-feedback-action="goal" aria-label="100％に向けた表現を見る">'+
-              '<span class="snapshot-goal-icon" aria-hidden="true">🎯</span><span>100％への<br>あと一歩</span></button>'+
+              '<span class="snapshot-goal-icon" aria-hidden="true">🎯</span><span>'+
+              (completion>=100?'100％達成':'あと'+(100-completion)+'％')+
+              '<small>'+(completion>=100?'今回の目標達成':'100％へのヒント')+'</small></span></button>'+
             '<div class="snapshot-stat"><span class="snapshot-stat-label">SCORE</span><span class="snapshot-stat-value">'+finalScore+'</span></div>'+
             '<div class="snapshot-stat"><span class="snapshot-stat-label">WORDS</span><span class="snapshot-stat-value">'+words+'</span></div>'+
             '<div class="snapshot-stat"><span class="snapshot-stat-label">WPM</span><span class="snapshot-stat-value">'+wpm+'</span></div>'+
@@ -410,6 +419,7 @@
   }
   function handleClick(event) {
     if (!attempt || window.appState?.selectedMode !== 'snapshot') return;
+    if (event.target?.id==='snapshot-review-dialog') {closeReview();return;}
     const statusTab = event.target.closest('#snapshot-status-tabs [data-status]');
     if (statusTab) {
       attempt.status=statusTab.dataset.status;
@@ -463,7 +473,15 @@
     document.addEventListener('click',handleClick);
     // CSS handles responsive layout without resetting the scroll position on rotation.
     document.addEventListener('keydown',e => {
-      if (e.key==='Escape') {closeReview();closeTranscript();}
+      if (e.key==='Escape') {closeReview();closeTranscript();return;}
+      const dialog=document.getElementById('snapshot-review-dialog');
+      if (e.key==='Tab' && dialog && !dialog.classList.contains('hidden')) {
+        const controls=Array.from(dialog.querySelectorAll('button:not([disabled])'));
+        if (!controls.length)return;
+        const first=controls[0],last=controls[controls.length-1];
+        if (e.shiftKey && document.activeElement===first) {e.preventDefault();last.focus();}
+        else if (!e.shiftKey && document.activeElement===last) {e.preventDefault();first.focus();}
+      }
     });
     // This indicates success in remedial practice only; do not recalculate the
     // attempt score, alter cleared/missed sets, or change result-tab counts.
