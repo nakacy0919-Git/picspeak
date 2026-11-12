@@ -9,6 +9,20 @@
     {id:'gist',label:'動き・要点',icon:'🎬',hint:'動作・伝えたいこと',color:'#2563eb',tint:'#eff6ff'},
     {id:'other',label:'その他',icon:'💬',hint:'ほかの表現',color:'#475569',tint:'#f8fafc'}
   ];
+  // Inline vector icons are always available on iPad Safari, independent of
+  // emoji fonts, third-party icon libraries, and network image requests.
+  const CATEGORY_ICON_SVG = {
+    object: '<circle cx="16" cy="12" r="6"/><path d="M4 35v-3c0-7 5-11 12-11s12 4 12 11v3"/><rect x="29" y="23" width="14" height="14" rx="2"/><path d="M29 29h14"/>',
+    attribute: '<path d="M24 5C13 5 5 13 5 24s9 19 19 19c5 0 8-3 8-7 0-3-2-5-2-7s2-4 5-4h3c5 0 6-4 5-8C40 10 32 5 24 5Z"/><circle cx="15" cy="19" r="2.3"/><circle cx="24" cy="13" r="2.3"/><circle cx="34" cy="19" r="2.3"/><circle cx="15" cy="30" r="2.3"/>',
+    detail: '<path d="M24 43s14-14 14-25a14 14 0 0 0-28 0c0 11 14 25 14 25Z"/><circle cx="24" cy="18" r="5"/><path d="M6 43h36"/>',
+    gist: '<circle cx="27" cy="9" r="4"/><path d="m23 19 7 3 7 1m-14-4-8 8-8 1m16-9-1 12 9 8m-9-8-12 9"/><path d="m6 16 6-2m-6 10 5-1"/>',
+    other: '<path d="M8 10h32v24H19L9 41v-7H8z"/><path d="M16 21h16m-16 7h10"/>'
+  };
+  const renderCategoryIcon = category => '<span class="snapshot-category-icon" aria-hidden="true">'+
+    '<svg class="snapshot-icon-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" '+
+    'stroke="currentColor" stroke-width="2.8" stroke-linecap="round" stroke-linejoin="round" focusable="false">'+
+    (CATEGORY_ICON_SVG[category.id] || CATEGORY_ICON_SVG.other)+'</svg></span>';
+
   const originalRender = window.renderSnapshotResult;
   let attempt = null;
   let pendingPractice = null;
@@ -91,7 +105,7 @@
         'data-category="'+c.id+'" aria-selected="'+(c.id===attempt.category)+'" '+
         'aria-label="'+safe(c.label)+'：言えた'+said+'件、言えなかった'+missed+'件" '+
         'style="--snapshot-accent:'+c.color+';--snapshot-tint:'+c.tint+'">'+
-          '<span class="snapshot-category-icon" aria-hidden="true">'+c.icon+'</span>'+
+          renderCategoryIcon(c)+
           '<span class="snapshot-category-text">'+
             '<strong class="snapshot-category-name">'+safe(c.label)+'</strong>'+
             '<small class="snapshot-category-hint">'+safe(c.hint)+'</small>'+
