@@ -1,0 +1,21 @@
+/* Self-contained shared Dash navigation UI. No global tag selectors. */
+#dash-nav-widget { position: fixed; left: max(12px, env(safe-area-inset-left)); bottom: max(12px, env(safe-area-inset-bottom)); z-index: 9999; pointer-events: none; font-family: system-ui, -apple-system, "Noto Sans JP", sans-serif; font-size: 14px; line-height: 1.4; color: #eaf3ff; }
+#dash-nav-widget *, #dash-nav-widget *::before, #dash-nav-widget *::after { box-sizing: border-box; }
+#dash-nav-widget .dash-nav-orb { position: relative; display: block; width: 70px; height: 70px; padding: 0; border: 1px solid rgba(136,195,255,.32); border-radius: 50%; color: #fff; background: radial-gradient(circle at 45% 35%, #1c346b 0%, #081327 65%, #040b1d 100%); box-shadow: 0 6px 25px rgba(5,19,50,.35), 0 0 12px rgba(67,183,250,.24); cursor: pointer; pointer-events: auto; touch-action: manipulation; -webkit-tap-highlight-color: transparent; transition: transform .18s, box-shadow .18s; }
+#dash-nav-widget .dash-nav-orb:hover { transform: scale(1.055); }
+#dash-nav-widget .dash-nav-orb:focus-visible, #dash-nav-widget .dash-nav-retry:focus-visible, #dash-nav-widget .dash-nav-close:focus-visible, #dash-nav-widget .dash-nav-link:focus-visible { outline: 3px solid #67dcff; outline-offset: 3px; }
+#dash-nav-widget .dash-nav-canvas { display: block; width: 100%; height: 100%; border-radius: inherit; }
+#dash-nav-widget .dash-nav-orb-name { position: absolute; bottom: 5px; left: 0; right: 0; color: #d9f5ff; font-size: 10px; font-weight: 700; letter-spacing: .07em; text-shadow: 0 1px 5px #020916; }
+#dash-nav-widget.dash-nav-listening .dash-nav-orb { box-shadow: 0 0 0 4px rgba(39,204,244,.20), 0 0 30px rgba(57,205,255,.63); }
+#dash-nav-widget .dash-nav-panel { position: absolute; left: 0; bottom: calc(100% + 12px); width: min(320px, calc(100vw - 26px)); max-height: min(450px, 75dvh); overflow: auto; padding: 15px; border: 1px solid rgba(146,196,255,.37); border-radius: 18px; background: #0b1730; box-shadow: 0 16px 42px rgba(0,0,0,.40); pointer-events: auto; color: #e9f3ff; }
+#dash-nav-widget .dash-nav-panel[hidden], #dash-nav-widget .dash-nav-transcript[hidden] { display: none !important; }
+#dash-nav-widget .dash-nav-header { display: flex; align-items: center; justify-content: space-between; gap: 12px; font-size: 15px; letter-spacing: .03em; }
+#dash-nav-widget .dash-nav-close { width: 30px; height: 30px; padding: 0; background: rgba(255,255,255,.09); color: #fff; border: 1px solid rgba(255,255,255,.15); border-radius: 50%; font-size: 20px; line-height: 1; cursor: pointer; }
+#dash-nav-widget .dash-nav-status { margin: 12px 0 7px; font-size: 13px; color: #d5e5ff; }
+#dash-nav-widget .dash-nav-transcript { margin: 6px 0; font-size: 12px; overflow-wrap: anywhere; color: #79e1ff; }
+#dash-nav-widget .dash-nav-links { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 12px; }
+#dash-nav-widget .dash-nav-link { display: inline-block; text-decoration: none; color: #eefbff; background: #22365a; border: 1px solid #426088; padding: 6px 9px; border-radius: 999px; font-size: 12px; cursor: pointer; }
+#dash-nav-widget .dash-nav-link[aria-current="page"] { opacity: .56; }
+#dash-nav-widget .dash-nav-retry { width: 100%; margin-top: 12px; border: 1px solid #5bbce5; border-radius: 10px; padding: 9px; background: #114b74; color: white; font: inherit; font-weight: 650; cursor: pointer; }
+@media (max-width: 600px) { #dash-nav-widget .dash-nav-orb { width: 60px; height: 60px; } #dash-nav-widget .dash-nav-panel { padding: 12px; } }
+@media print { #dash-nav-widget { display: none !important; } }
