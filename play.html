@@ -219,6 +219,7 @@
 </style>
 
 <style id="picspeak-v2-learning-tools">
+#view-start .ps-quick[hidden]{display:none!important}
 #view-start .ps-quick{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}
 #view-start #ps-quick-start{background:#5eead4;color:#093332;font-weight:800;border-radius:11px;padding:10px 15px;min-height:44px;box-shadow:0 4px 15px #062c3344}
 #view-start #ps-quick-start:disabled{opacity:.6;cursor:wait}
@@ -1103,6 +1104,7 @@
  if(!quick||!status||!focus||!play)return;
  let busy=false;
  function updateQuick(){
+   quick.closest('.ps-quick').hidden=assigned();
    const p=read();
    quick.textContent=p?'QUICK START　→':'SNAPSHOTを始める　→';
    status.textContent=p?levels[p.level]+'・'+p.seconds+'秒・ヒント '+(p.support?'ON':'OFF')+'｜前回の写真（端末内）':'初めての写真を選んで練習';
@@ -1134,6 +1136,7 @@
    const p=read();
    if(!p){mode.click();return;}
    busy=true;quick.disabled=true;status.textContent='前回の写真を読み込み中…';
+   let failed=false;
    try{
      // Reuse existing mode, level and time controls, then existing challenge entry.
      mode.click();
@@ -1145,12 +1148,13 @@
      if(typeof window.startGameWithTheme!=='function')throw Error('Challenge unavailable');
      await window.startGameWithTheme(p.id);
      // The normal START button remains required; never auto-activate the microphone.
-     if(play.classList.contains('hidden'))status.textContent='写真を開けませんでした。教材一覧から選び直してください。';
+     if(play.classList.contains('hidden'))failed=true;
    }catch(_){
-     status.textContent='前回の写真を開けませんでした。教材一覧から選び直してください。';
+     failed=true;
      if(typeof window.showView==='function')window.showView(document.getElementById('view-select'));
    }finally{
      busy=false;quick.disabled=false;updateQuick();
+     if(failed)status.textContent='前回の写真を開けませんでした。教材一覧から選び直してください。';
    }
  });
  updateQuick();
