@@ -398,6 +398,54 @@
       '</section>';
     refresh();
 
+    // Speaking Report: use existing verified results, never adjust scores or logs.
+    const reviewSummary=container.querySelector('.snapshot-review-summary');
+    const guide=container.querySelector('.snapshot-category-guide');
+    const imageId=String(window.currentTheme?.id || window.tempSelectedThemeId || 'unknown');
+    const assigned=Boolean(window.appState.formId || location.search || location.hash);
+    let previous=null;
+    if (!assigned && imageId !== 'unknown') {
+      try {
+        const logs=JSON.parse(localStorage.getItem('picspeak_logs') || '[]');
+        if (Array.isArray(logs)) {
+          const comparable=logs.filter(x=>x && x.mode==='snapshot' &&
+            String(x.imageId)===imageId && x.level===window.appState.selectedLevel &&
+            x.completion!==null && x.completion!=='' && Number.isFinite(Number(x.completion)) &&
+            Number(x.completion)>=0 && Number(x.completion)<=100);
+          previous=comparable[window.__picSpeakHistorySaved ? 1 : 0] || null;
+        }
+      } catch (_) { /* local storage unavailable: display current attempt only */ }
+    }
+    const delta=previous ? Math.round((completion-Number(previous.completion))*10)/10 : null;
+    const trend=assigned ? '課題の今回の達成度' : delta===null ? '同じ写真・レベルの比較記録なし' :
+      '前回比 '+(delta>0?'+':'')+delta+'ポイント';
+    const weak=visibleCategories().filter(c=>c.id!=='other')
+      .map(c=>({c,rate:Number(getCategory(c.id).matchRate),missed:categoryEntries(c.id).filter(e=>e.status==='missed').length}))
+      .filter(x=>x.missed>0 && Number.isFinite(x.rate))
+      .sort((a,b)=>a.rate-b.rate || b.missed-a.missed)[0];
+    if (guide) {
+      const guideText=guide.querySelector('span');
+      if(guideText){guideText.textContent=trend;guideText.title='同一端末・同一ブラウザの履歴。個人別・時間別ではありません。';}
+    }
+    if(reviewSummary) {
+      reviewSummary.classList.add('ps-report');
+      reviewSummary.innerHTML='';
+      const title=document.createElement('strong');title.className='ps-report-title';title.textContent='SPEAKING REPORT';
+      const copy=document.createElement('div');copy.className='ps-report-copy';
+      const heading=document.createElement('strong');heading.textContent=weak?'次の練習：'+weak.c.label:completion>=100?'今回の目標を達成！':'今回の表現を確認しよう';
+      const detail=document.createElement('span');detail.textContent=weak?'未達成の表現 '+weak.missed+'件を復習しましょう。':'4つの評価要素から表現を振り返れます。';
+      const note=document.createElement('small');note.textContent=assigned?'課題の評価は変更していません。':'比較は同一端末・同一写真・同一レベルの記録（時間設定は区別しません）。';
+      copy.append(heading,detail,note);
+      reviewSummary.append(title,copy);
+      if(weak){
+        const button=document.createElement('button');button.type='button';button.className='ps-report-action';
+        button.textContent='復習する →';button.addEventListener('click',()=>{
+          container.querySelector('.snapshot-category-tab[data-category="'+weak.c.id+'"]')?.click();
+        });
+        reviewSummary.append(button);
+      }
+    }
+
     // Keep existing Classroom submission and learning history unchanged.
     if (typeof window.setupSubmitButton === 'function') {
       window.setupSubmitButton(stats.completionRate || 0);
