@@ -217,6 +217,50 @@
 }
 @media(prefers-reduced-motion:reduce){#view-start .mode-btn,#view-play button{transition:none!important;animation:none!important;}}
 </style>
+
+<style id="picspeak-v2-learning-tools">
+#view-start .ps-quick{display:flex;align-items:center;gap:12px;margin-top:16px;flex-wrap:wrap}
+#view-start #ps-quick-start{background:#5eead4;color:#093332;font-weight:800;border-radius:11px;padding:10px 15px;min-height:44px;box-shadow:0 4px 15px #062c3344}
+#view-start #ps-quick-start:disabled{opacity:.6;cursor:wait}
+#view-start #ps-quick-status{font-size:12px;color:#c7dae9;max-width:100%;line-height:1.5}
+#view-play #ps-focus-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;padding:7px 10px;border:1px solid #536a82;border-radius:10px;color:#e7eef8;background:#192d45;min-height:38px;font-size:12px;font-weight:800;white-space:nowrap}
+#view-play #ps-focus-toggle.hidden{display:none}
+#view-play #ps-focus-toggle[aria-pressed=true]{background:#0f766e;border-color:#5eead4;color:#fff}
+#view-play.ps-focused .ps-live-coverage,#view-play.ps-focused .ps-live-stats{display:none!important}
+#view-play.ps-focused #resizer-horizontal,#view-play.ps-focused #resizer-vertical{display:none!important}
+#view-play.ps-focused #image-panel{width:68%!important}
+#view-play.ps-focused #transcript-box{font-size:clamp(14px,1.9vw,22px)}
+#view-play.ps-focused #transcript-box:focus-within{outline:2px solid #5eead4}
+#view-result.snapshot-result-mode>div:first-child{background:#102136;color:#f8fafc;border-color:#32455b}
+#view-result.snapshot-result-mode>div:first-child .clean-title{color:#fff;background:none}
+#view-result.snapshot-result-mode>div:first-child h2{color:#e7eef8}
+#view-result.snapshot-result-mode #btn-play-again{background:#0f766e}
+#view-result.snapshot-result-mode .snapshot-review-summary.ps-report{flex:0 1 auto;min-height:0;justify-content:space-between;text-align:left;background:#14253a;border:1px solid #32465e;color:#e7eef8;border-radius:14px;padding:12px 16px;gap:12px}
+#view-result .ps-report-title{font-size:11px;color:#5eead4;letter-spacing:.1em;flex-shrink:0}
+#view-result .ps-report-copy{display:flex;flex:1;min-width:0;flex-direction:column;gap:2px}
+#view-result .ps-report-copy strong{font-size:16px;color:#fff}
+#view-result .ps-report-copy span{font-size:12px;color:#e7eef8}
+#view-result .ps-report-copy small{font-size:10px;color:#b9c9dd;line-height:1.4}
+#view-result .ps-report-action{background:#5eead4;color:#093332;min-height:44px;padding:8px 12px;border-radius:10px;font-weight:800;white-space:nowrap}
+#view-result .ps-report-action:focus-visible{outline:3px solid #fff;outline-offset:3px}
+@media(max-width:767px){
+ #view-start .ps-quick{gap:6px;margin-top:12px}
+ #view-play #ps-focus-toggle{font-size:11px;padding:6px 8px}
+ #view-play>div:first-child>div:first-child{gap:6px;min-width:0}
+ #view-play>div:first-child .clean-title{font-size:18px}
+ #view-play.ps-focused #image-panel{width:100%!important;height:clamp(130px,48dvh,420px)!important;max-height:48dvh}
+}
+@media(max-width:699px){
+ #view-result.snapshot-result-mode .snapshot-review-summary.ps-report{flex-direction:row;align-items:center;padding:8px;gap:8px}
+ #view-result .ps-report-title{display:none}
+ #view-result .ps-report-copy strong{font-size:13px}
+ #view-result .ps-report-copy small{font-size:9px}
+ #view-result .ps-report-action{font-size:11px;min-height:40px;padding:6px 8px}
+}
+@media(max-width:699px) and (max-height:680px){
+ #view-result.snapshot-result-mode .snapshot-review-summary.ps-report{display:none}
+}
+</style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -483,6 +527,7 @@
                       <div class="ps-brand"><img src="assets/picspeaklogo.png" alt="">PicSpeak <span style="color:#5eead4;font-size:11px;letter-spacing:.1em">2.0</span></div>
                       <h1>See it. Say it.<br><em>Speak with confidence.</em></h1>
                       <p>写真から始まる、新しい英語体験。6つのモードで話す力を伸ばそう。</p>
+                      <div class="ps-quick"><button type="button" id="ps-quick-start">QUICK START　→</button><span id="ps-quick-status" role="status" aria-live="polite">SNAPSHOTの写真を選ぶ</span></div>
                     </div>
                     <div class="ps-wave" aria-hidden="true"><i style="--h:16px;--o:0.45"></i><i style="--h:32px;--o:0.505"></i><i style="--h:50px;--o:0.56"></i><i style="--h:27px;--o:0.615"></i><i style="--h:62px;--o:0.67"></i><i style="--h:42px;--o:0.7250000000000001"></i><i style="--h:20px;--o:0.78"></i><i style="--h:47px;--o:0.835"></i><i style="--h:30px;--o:0.89"></i><i style="--h:13px;--o:0.9450000000000001"></i></div>
                 </section>
@@ -587,6 +632,7 @@
                         <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
                         <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
                     </div>
+                    <button type="button" id="ps-focus-toggle" class="hidden" aria-pressed="false" aria-label="Focus Mode：写真を拡大して発話に集中">◎ Focus</button>
                 </div>
                 <div class="flex items-center gap-2 md:gap-3 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-gray-200 shadow-inner">
                     <span class="text-xl md:text-2xl">⏱️</span>
@@ -618,7 +664,7 @@
                 </div>
                 <div class="flex-1 flex flex-col overflow-hidden bg-gray-50 relative">
                     <div class="flex-1 p-3 md:p-4 lg:p-5 flex flex-col overflow-hidden relative">
-                        <div class="mb-2 md:mb-3 shrink-0 bg-white p-3 md:p-4 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
+                        <div class="ps-live-coverage mb-2 md:mb-3 shrink-0 bg-white p-3 md:p-4 rounded-2xl shadow-sm border border-gray-100 relative overflow-hidden">
                             <div class="flex justify-between items-end mb-1 md:mb-2 relative z-10">
                                 <span class="text-xs md:text-sm font-black text-gray-500 uppercase tracking-widest">4要素の達成度 <span id="snapshot-coverage-preview-badge" class="hidden text-[10px] font-bold text-amber-600 ml-1">暫定</span></span>
                                 <span id="live-completion-text" class="text-2xl md:text-3xl lg:text-4xl font-black text-transparent bg-clip-text bg-sns-gradient leading-none">0%</span>
@@ -627,7 +673,7 @@
                                 <div id="live-completion-bar" class="bg-sns-gradient h-full rounded-full transition-all duration-500" style="width: 0%"></div>
                             </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3 shrink-0">
+                        <div class="ps-live-stats grid grid-cols-3 gap-2 md:gap-3 mb-2 md:mb-3 shrink-0">
                             <div class="bg-white rounded-xl p-2 md:p-3 shadow-sm border border-gray-100 flex flex-col justify-center items-center">
                                 <span class="text-[10px] md:text-xs font-extrabold text-gray-400 uppercase tracking-wider mb-0.5">Words</span><span id="wordCountDisplay" class="text-xl md:text-2xl lg:text-3xl font-black text-gray-800">0</span>
                             </div>
@@ -1035,10 +1081,81 @@
     <script src="js/detective_game.js"></script>
     <script src="js/detective_result.js"></script>
     <script src="js/oralquest_game.js"></script>
-    <script src="js/main.js?v=20261111-practice80-1"></script>  
-    <script src="js/snapshot_result_ui.js?v=20261112-compact-review-goal-v1"></script>
+    <script src="js/main.js?v=20261128-v2-ready-1"></script>  
+    <script src="js/snapshot_result_ui.js?v=20261128-v2-report-1"></script>
     <script src="js/grammar_filter.js?v=20261110-grounded-v2"></script>
 <script src="js/practice_fit.js?v=20261111-ipad-fit-1"></script>
+
+<script id="picspeak-v2-learning-actions">
+(function(){
+ 'use strict';
+ const key='picspeak_v2_last_snapshot';
+ const levels={elementary:'小学生',junior_high:'中学生',high_school:'高校生'};
+ const valid=p=>p&&p.mode==='snapshot'&&typeof p.id==='string'&&/^[A-Za-z0-9_-]{1,80}$/.test(p.id)&&Object.prototype.hasOwnProperty.call(levels,p.level)&&[20,30,40,50,60].includes(p.seconds)&&typeof p.support==='boolean';
+ const assigned=()=>Boolean(window.appState?.formId || location.search || location.hash);
+ function read(){
+   try{const p=JSON.parse(localStorage.getItem(key)||'null');return valid(p)?p:null;}catch(_){return null;}
+ }
+ const quick=document.getElementById('ps-quick-start');
+ const status=document.getElementById('ps-quick-status');
+ const focus=document.getElementById('ps-focus-toggle');
+ const play=document.getElementById('view-play');
+ if(!quick||!status||!focus||!play)return;
+ let busy=false;
+ function updateQuick(){
+   const p=read();
+   quick.textContent=p?'QUICK START　→':'SNAPSHOTを始める　→';
+   status.textContent=p?levels[p.level]+'・'+p.seconds+'秒・ヒント '+(p.support?'ON':'OFF')+'｜前回の写真（端末内）':'初めての写真を選んで練習';
+ }
+ function setFocus(on){
+   play.classList.toggle('ps-focused',on);
+   focus.setAttribute('aria-pressed',String(on));
+   focus.textContent=on?'◎ Focus ON':'◎ Focus';
+ }
+ focus.addEventListener('click',()=>{
+   if(window.appState?.selectedMode==='snapshot')setFocus(!play.classList.contains('ps-focused'));
+ });
+ document.addEventListener('picspeak:challenge-ready',e=>{
+   const p=e.detail;
+   setFocus(false);
+   focus.classList.toggle('hidden',p?.mode!=='snapshot');
+   if(assigned()||!valid(p))return;
+   try{localStorage.setItem(key,JSON.stringify(p));}catch(_){}
+   updateQuick();
+ });
+ // Reset Focus whenever the existing view is left; do not alter timer or microphone.
+ new MutationObserver(()=>{
+   if(play.classList.contains('hidden'))setFocus(false);
+ }).observe(play,{attributes:true,attributeFilter:['class']});
+ quick.addEventListener('click',async()=>{
+   if(busy||assigned()||!window.appState)return;
+   const mode=document.querySelector('#view-start .mode-btn[data-mode="snapshot"]');
+   if(!mode)return;
+   const p=read();
+   if(!p){mode.click();return;}
+   busy=true;quick.disabled=true;status.textContent='前回の写真を読み込み中…';
+   try{
+     // Reuse existing mode, level and time controls, then existing challenge entry.
+     mode.click();
+     document.querySelector('#step-level .level-btn[data-level="'+p.level+'"]')?.click();
+     document.querySelector('.time-btn[data-time="'+p.seconds+'"]')?.click();
+     const support=document.getElementById('support-toggle');
+     if(support&&support.checked!==p.support){support.checked=p.support;support.dispatchEvent(new Event('change',{bubbles:true}));}
+     window.tempSelectedThemeId=p.id;
+     if(typeof window.startGameWithTheme!=='function')throw Error('Challenge unavailable');
+     await window.startGameWithTheme(p.id);
+     // The normal START button remains required; never auto-activate the microphone.
+     if(play.classList.contains('hidden'))status.textContent='写真を開けませんでした。教材一覧から選び直してください。';
+   }catch(_){
+     status.textContent='前回の写真を開けませんでした。教材一覧から選び直してください。';
+     if(typeof window.showView==='function')window.showView(document.getElementById('view-select'));
+   }finally{
+     busy=false;quick.disabled=false;updateQuick();
+   }
+ });
+ updateQuick();
+})();
+</script>
 <script defer src="bridge/copeak-lms-bridge.js"></script>
     <script src="share-qr.js?v=20261110-play-qr" defer></script>
 </body>
