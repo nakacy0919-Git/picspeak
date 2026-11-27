@@ -782,6 +782,8 @@ window.startGameWithTheme = async function(id) {
     } else {
         if (typeof showView === 'function') showView(document.getElementById('view-play'));
     }
+    // Presentation hook: fired only after the theme has loaded and the challenge is ready.
+    document.dispatchEvent(new CustomEvent('picspeak:challenge-ready', {detail: {id: String(id), mode: window.appState.selectedMode, level: window.appState.selectedLevel, seconds: window.appState.customTimeLimit, support: Boolean(document.getElementById('support-toggle')?.checked)}}));
 };
 
 window.playResultTTS = function(text) {
