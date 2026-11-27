@@ -118,6 +118,105 @@
       }
     </style>
     <link rel="stylesheet" href="css/practice_fit.css?v=20261111-ipad-fit-1">
+
+<style id="picspeak-v2-ui">
+/* Presentation only: preserve existing game IDs, listeners, scoring and classroom flow. */
+#view-start {--ps-bg:#0c1627;--ps-panel:#14253a;--ps-text:#f1f5f9;--ps-muted:#b9c9dd;--ps-accent:#5eead4;background:radial-gradient(ellipse at 82% 5%,#173e4c 0,transparent 42%),radial-gradient(ellipse at 12% 90%,#212d53 0,transparent 45%),var(--ps-bg);color:var(--ps-text);}
+#view-start .ps-home-shell {width:min(100%,1200px);margin:auto;min-height:100%;padding:102px clamp(16px,4vw,48px) 24px;display:flex;flex-direction:column;justify-content:center;gap:16px;}
+#view-start .ps-hero {display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:20px;padding:clamp(18px,3vw,32px);border-radius:24px;border:1px solid #365064;background:linear-gradient(112deg,#192e46,#163d45);box-shadow:0 18px 45px #030b1733;}
+#view-start .ps-brand {display:flex;align-items:center;gap:10px;margin-bottom:12px;font-weight:800;font-size:17px;letter-spacing:.03em;}
+#view-start .ps-brand img{width:38px;height:38px;border-radius:10px;object-fit:cover;}
+#view-start .ps-hero h1{font-size:clamp(27px,4vw,49px);letter-spacing:-.045em;line-height:1.13;font-weight:800;margin:0 0 9px;color:#fff;}
+#view-start .ps-hero h1 em{font-style:normal;color:var(--ps-accent);}
+#view-start .ps-hero p{font-size:clamp(12px,1.5vw,15px);color:var(--ps-muted);margin:0;}
+#view-start .ps-wave{display:flex;align-items:center;gap:5px;height:72px;opacity:.9;}
+#view-start .ps-wave i{width:7px;border-radius:8px;background:#5eead4;height:var(--h);opacity:var(--o,1);}
+#view-start .ps-home-shell .sns-card{margin:0;max-width:none;padding:0;background:transparent;border:0;box-shadow:none;backdrop-filter:none;border-radius:0;}
+#view-start #step-mode{margin:0;}
+#view-start #mode-question{color:#e5edf7;text-align:left;font-size:16px;letter-spacing:.04em;margin:0 0 12px;}
+#view-start #step-mode>.grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;}
+#view-start .mode-btn{position:relative;display:flex;align-items:flex-start;justify-content:center;text-align:left;min-width:0;min-height:128px;padding:15px 18px;border:1px solid var(--ps-border,#35526a)!important;border-radius:18px!important;background-color:var(--ps-card,#172d44)!important;background-image:linear-gradient(145deg,#ffffff06,transparent)!important;opacity:1;box-shadow:0 7px 22px #02061725;transform:none;}
+#view-start .mode-btn[data-mode=snapshot]{--ps-card:#172e49;--ps-icon:#93c5fd;--ps-border:#34516d}
+#view-start .mode-btn[data-mode=story]{--ps-card:#173b37;--ps-icon:#6ee7b7;--ps-border:#326052}
+#view-start .mode-btn[onclick*="picflash"]{--ps-card:#302747;--ps-icon:#d8b4fe;--ps-border:#534269}
+#view-start .mode-btn[data-mode=oralquest]{--ps-card:#403326;--ps-icon:#fcd34d;--ps-border:#6a5635}
+#view-start .mode-btn[data-mode=mosaic]{--ps-card:#173b43;--ps-icon:#5eead4;--ps-border:#32616a}
+#view-start .mode-btn[data-mode=detective]{--ps-card:#3d293c;--ps-icon:#fda4af;--ps-border:#654458}
+#view-start .mode-btn::after{display:none;}
+#view-start .mode-btn::before{content:"";position:absolute;top:16px;right:16px;width:8px;height:8px;border-top:2px solid var(--ps-icon);border-right:2px solid var(--ps-icon);transform:rotate(45deg);}
+#view-start .mode-btn>.ps-mode-icon{width:28px;height:28px;color:var(--ps-icon);margin-bottom:9px;flex:none;}
+#view-start .mode-btn>.ps-mode-icon svg{width:100%;height:100%;stroke:currentColor;stroke-width:1.8;fill:none;stroke-linecap:round;stroke-linejoin:round;}
+#view-start .mode-btn>span:not(.ps-mode-icon):first-of-type,#view-start .mode-btn>span:nth-last-of-type(2){color:var(--ps-icon);font-size:clamp(15px,2vw,21px);letter-spacing:.02em;filter:none;text-shadow:none;margin:0 0 5px;line-height:1.15;}
+#view-start .mode-btn>span:last-of-type{color:#e1eaf5;font-size:12px;line-height:1.45;font-weight:600;overflow-wrap:anywhere;}
+#view-start .mode-btn>span:last-of-type span{font-size:11px;color:#b9c9dd;font-weight:400;}
+#view-start .mode-btn>div.animate-pulse,#view-start .mode-btn>div.animate-bounce{display:none;}
+#view-start .mode-btn:hover,#view-start .mode-btn:focus-visible{border-color:var(--ps-icon)!important;box-shadow:0 0 0 2px var(--ps-icon),0 12px 24px #02061740;transform:translateY(-2px);}
+#view-start .mode-btn.selected-mode-btn,#view-start .mode-btn.ring-4{outline:2px solid var(--ps-icon);outline-offset:1px;}
+#view-start .ps-home-footer{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;color:#b9c9dd;font-size:12px;}
+#view-start .ps-home-footer button{min-height:40px;padding:8px 15px;border:1px solid #365064;border-radius:12px;color:#e5edf7;background:#14253a;font-weight:700;}
+#view-start .ps-home-footer button:hover{border-color:#5eead4;color:#5eead4;}
+#view-start #btn-open-trouble{animation:none;border-width:1px;border-color:#536a82;color:#dce8f4;background:#14253a;box-shadow:none;}
+#view-start #btn-open-trouble span{color:#dce8f4;}
+#view-start #rabbit-char{animation:none;font-size:42px;}
+/* Existing light dialogs stay light for readable form controls. */
+#view-start #settings-modal,#view-start #tutorial-modal,#view-start #history-modal,#view-start #trouble-modal,#view-start #rabbit-bubble{color:#172033;}
+#view-select{background:#eff4f8;}
+#view-select>div:first-child{background:#102136;color:#f8fafc;border-color:#32455b;}
+#view-select .clean-title,#view-play .clean-title{color:#fff;background:none;font-weight:800;}
+#view-select #step-level,#view-select #step-level+div{border-radius:16px;box-shadow:0 5px 18px #0f172a08;}
+#view-select .selected-level-btn{background:#0f766e!important;color:#fff!important;}
+#view-play{background:#0c1627;color:#e7eef8;min-height:0;}
+#view-play>div:first-child{background:#102136;border-color:#293c52;padding:8px clamp(12px,3vw,30px);box-shadow:none;}
+#view-play>div:first-child>div:last-child{background:#192d45;border-color:#39516a;box-shadow:none;}
+#view-play #timer-text{color:#fff;font-variant-numeric:tabular-nums;}
+#view-play #timer-bar,#view-play #live-completion-bar{background:linear-gradient(90deg,#14b8a6,#5eead4);}
+#view-play>div:nth-child(3){min-height:0;}
+#view-play #image-panel{background:#08111e;border-color:#32445c;box-shadow:none;}
+#view-play #resizer-horizontal,#view-play #resizer-vertical{background:#25374e;border-color:#41536a;box-shadow:none;}
+#view-play>div:nth-child(3)>div:last-child{background:#101e30;min-width:0;min-height:0;}
+#view-play>div:nth-child(3)>div:last-child>div:first-child{padding:clamp(8px,1.4vw,18px);min-height:0;}
+#view-play #live-completion-text{color:#5eead4;background:none;font-variant-numeric:tabular-nums;}
+#view-play>div:nth-child(3)>div:last-child>div:first-child>div:first-child,#view-play .grid.grid-cols-3>div{background:#192d45;border:1px solid #32465e;box-shadow:none;border-radius:14px;}
+#view-play .grid.grid-cols-3>div{padding:7px 5px;}
+#view-play .grid.grid-cols-3>div>span:first-child,#view-play>div:nth-child(3)>div:last-child>div:first-child>div:first-child>div:first-child>span:first-child{color:#b9c9dd;}
+#view-play #wordCountDisplay,#view-play #liveWpmDisplay,#view-play #scoreDisplay{color:#f1f5f9;font-variant-numeric:tabular-nums;}
+#view-play #liveWpmDisplay{color:#93c5fd;}
+#view-play #scoreDisplay{color:#fcd34d;}
+#view-play #transcript-box{background:#14253a;border:1px solid #32465e;box-shadow:none;color:#f1f5f9;font-size:clamp(15px,2.4vw,26px);border-radius:16px;min-height:0;}
+#view-play #transcript-text{color:#d8e5f3;overflow-wrap:anywhere;}
+#view-play #transcript-box .text-gray-400{color:#b9c9dd;}
+#view-play>div:nth-child(3)>div:last-child>div:last-child{padding:10px clamp(10px,1.5vw,18px) max(10px,env(safe-area-inset-bottom));background:#101e30;border-color:#32465e;box-shadow:none;}
+#view-play #status-text{color:#b9c9dd;}
+#view-play #btn-start-turn,#view-play #btn-finish-turn,#view-play #recording-indicator{font-size:clamp(17px,2.7vw,25px);padding:10px 14px;min-height:48px;box-shadow:none;border-radius:14px!important;animation:none;}
+#view-play #btn-start-turn{background:#0f766e;color:#fff;}
+#view-play #recording-indicator{background:#123c3b;border-color:#2dd4bf;color:#99f6e4;}
+#view-play #btn-finish-turn{background:#33465d;color:#fff;}
+#view-play #btn-start-turn:hover{background:#0d9488;}
+#view-play button:focus-visible,#view-select button:focus-visible,#view-start button:focus-visible{outline:3px solid #5eead4;outline-offset:3px;}
+@media(max-width:767px){
+ #view-start .ps-home-shell{padding:122px 12px 20px;gap:13px;justify-content:flex-start;}
+ #view-start .ps-hero{padding:17px;gap:10px;}
+ #view-start .ps-wave{gap:3px;max-width:42px;overflow:hidden;} #view-start .ps-wave i{width:4px;flex:none;}
+ #view-start #step-mode>.grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;}
+ #view-start .mode-btn{min-height:120px;padding:12px;}
+ #view-start .mode-btn>span:last-of-type{font-size:11px;}
+ #view-start .mode-btn>span:last-of-type span{font-size:10px;}
+ #view-play #image-panel{height:clamp(115px,30dvh,280px);max-height:46dvh;}
+ #view-play #resizer-vertical{height:12px;}
+ #view-play #resizer-vertical>div{height:2px;}
+ #view-play #btn-start-turn,#view-play #btn-finish-turn,#view-play #recording-indicator{padding:7px 12px;min-height:44px;}
+ #view-play #btn-start-turn>span,#view-play #btn-finish-turn>span,#view-play #recording-indicator>span{font-size:21px;}
+ #view-play #live-completion-text{font-size:22px;}
+ #view-play .grid.grid-cols-3{gap:5px;}
+}
+@media(min-width:768px) and (max-height:850px){
+ #view-start .ps-home-shell{padding-top:92px;gap:12px;}
+ #view-start .ps-hero{padding:18px 24px;}
+ #view-start .mode-btn{min-height:112px;padding:12px 16px;}
+ #view-play #btn-start-turn,#view-play #btn-finish-turn,#view-play #recording-indicator{padding:9px 12px;}
+}
+@media(prefers-reduced-motion:reduce){#view-start .mode-btn,#view-play button{transition:none!important;animation:none!important;}}
+</style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -378,61 +477,58 @@
                 </div>
             </div>
             
-            <div class="flex flex-col items-center justify-center min-h-full w-full px-4 md:px-8 pt-24 pb-8">
-                <div class="mb-6 md:mb-8 text-center shrink-0 relative z-20 flex flex-col items-center">
-                    <div class="flex items-center justify-center gap-3 md:gap-5 mb-1 pt-2 pb-1">
-                        <img src="assets/picspeaklogo.png" alt="PicSpeak Logo" class="w-14 h-14 md:w-20 md:h-20 rounded-full shadow-[0_0_15px_rgba(236,72,153,0.4)] border-2 border-white/50">
-                        <h1 class="text-5xl md:text-6xl lg:text-7xl font-bold drop-shadow-md tracking-wide" style="font-family: 'Georgia', 'Times New Roman', 'Lora', serif;">
-                            <span style="color: #ec4899;">Pic</span><span style="color: #f43f5e;">Sp</span><span style="color: #f97316;">eak</span>
-                        </h1>
+            <div class="ps-home-shell">
+                <section class="ps-hero" aria-label="PicSpeak introduction">
+                    <div>
+                      <div class="ps-brand"><img src="assets/picspeaklogo.png" alt="">PicSpeak <span style="color:#5eead4;font-size:11px;letter-spacing:.1em">2.0</span></div>
+                      <h1>See it. Say it.<br><em>Speak with confidence.</em></h1>
+                      <p>写真から始まる、新しい英語体験。6つのモードで話す力を伸ばそう。</p>
                     </div>
-                    <p class="text-pink-500 font-bold text-[10px] md:text-xs tracking-[0.25em] uppercase opacity-90 mb-3">English Speaking Platform</p>
-                    <p class="text-gray-900 text-sm md:text-base font-extrabold tracking-widest">写真や画像を英語で説明しよう！</p>
-                    <div class="mt-2 md:mt-3 inline-block bg-white/70 px-4 py-1.5 rounded-full text-[10px] md:text-sm font-black text-gray-900 border border-gray-200 shadow-sm backdrop-blur-md">Complete Edition</div>
-                </div>
-                
+                    <div class="ps-wave" aria-hidden="true"><i style="--h:16px;--o:0.45"></i><i style="--h:32px;--o:0.505"></i><i style="--h:50px;--o:0.56"></i><i style="--h:27px;--o:0.615"></i><i style="--h:62px;--o:0.67"></i><i style="--h:42px;--o:0.7250000000000001"></i><i style="--h:20px;--o:0.78"></i><i style="--h:47px;--o:0.835"></i><i style="--h:30px;--o:0.89"></i><i style="--h:13px;--o:0.9450000000000001"></i></div>
+                </section>
                 <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
-                        <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">どちらのGameで遊びますか？</h2>
+                        <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">TRAINING MODES　·　練習モードを選ぶ</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
                             
                             <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="snapshot">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">SNAPSHOT</span>
+                                <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="6" width="18" height="15" rx="3"/><path d="M8 6l2-3h4l2 3"/><circle cx="12" cy="13" r="3"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">SNAPSHOT</span>
                                 <span class="text-xs md:text-sm font-bold text-blue-800 z-10">1枚の写真をとことん説明する<br><span class="text-[11px] md:text-xs">（話す快適さを実感！）</span></span>
                             </button>
                             
                             <button class="mode-btn btn-stitch bg-emerald-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="story">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">STORY</span>
+                                <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M12 6v15M3 4c4-1 7 0 9 2 2-2 5-3 9-2v15c-4-1-7 0-9 2-2-2-5-3-9-2z"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">STORY</span>
                                 <span class="text-xs md:text-sm font-bold text-emerald-800 z-10">4枚の写真を順番に説明する<br><span class="text-[11px] md:text-xs">（音読＆リテリング練習！）</span></span>
                             </button>
 
                             <button class="mode-btn btn-stitch bg-purple-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" onclick="window.location.href='picflash.html'">
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">PIC FLASH</span>
+                                <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M13 2 4 14h7l-1 8 10-13h-7z"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">PIC FLASH</span>
                                 <span class="text-xs md:text-sm font-bold text-purple-800 z-10">声でめくる瞬間英単語<br><span class="text-[11px] md:text-xs">（英語の瞬発力を鍛える！）</span></span>
                             </button>
 
                             <!-- ORAL QUEST ボタン -->
                             <button class="mode-btn btn-stitch bg-yellow-400 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100 relative" data-mode="oralquest">
                                 <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-red-500 text-white border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-pulse">TEST!</div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">ORAL QUEST</span>
+                                <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 3h8v7a4 4 0 0 1-8 0zM8 5H4v3c0 3 2 4 4 4M16 5h4v3c0 3-2 4-4 4M12 14v5M7 21h10"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">ORAL QUEST</span>
                                 <span class="text-xs md:text-sm font-bold text-yellow-900 z-10">3ステージの実践テスト<br><span class="text-[11px] md:text-xs">（総合スピーキング力を測る！）</span></span>
                             </button>
 
                             <button class="mode-btn btn-stitch bg-pink-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100" data-mode="mosaic">
                                <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">NEW!</div>
-                               <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">MOSAIC</span>
+                               <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">MOSAIC</span>
                                <span class="text-xs md:text-sm font-bold text-pink-800 z-10">話した分だけモザイクが晴れる<br><span class="text-[11px] md:text-xs">（圧倒的な発話量を引き出す！）</span></span>
                             </button>
 
                             <button class="mode-btn btn-stitch bg-blue-300 py-4 md:py-5 rounded-3xl flex flex-col items-center justify-center transition-all duration-300 hover:brightness-110 opacity-80 scale-100 relative" data-mode="detective">
                                 <div class="absolute -top-3 -right-2 md:-top-4 md:-right-3 bg-yellow-400 text-red-600 border-2 border-white text-[11px] md:text-sm font-black px-3 py-1 rounded-full shadow-lg transform rotate-12 z-20 animate-bounce">NEW!</div>
-                                <span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">DETECTIVE</span>
+                                <span class="ps-mode-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="10" cy="10" r="6"/><path d="m15 15 6 6"/></svg></span><span class="text-xl md:text-2xl lg:text-3xl font-black uppercase tracking-wider leading-none mt-1 mb-2 text-white drop-shadow-md z-10">DETECTIVE</span>
                                 <span class="text-xs md:text-sm font-bold text-blue-800 z-10">2枚の絵の間違いを<br>英語で指摘せよ！<span class="text-[11px] md:text-xs">（主語＋動詞の特訓）</span></span>
                             </button>
                         </div>
                       </div>
                     
                 </div>
+                <div class="ps-home-footer"><span>YOUR SPEAKING JOURNEY</span><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" onclick="document.getElementById('btn-open-tutorial').click()">使い方</button><button type="button" onclick="document.getElementById('btn-open-history').click()">学習履歴</button></div></div>
             </div>
         </div>
 
