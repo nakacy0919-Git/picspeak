@@ -446,6 +446,13 @@
       }
     }
 
+    // Daily Challenge consumes confirmed results only; the existing score is unchanged.
+    document.dispatchEvent(new CustomEvent('picspeak:snapshot-result', {
+      detail:{mode:'snapshot',level:window.appState.selectedLevel,
+        id:String(window.tempSelectedThemeId || window.currentTheme?.id || ''),
+        completion,words,wpm,score:finalScore}
+    }));
+
     // Keep existing Classroom submission and learning history unchanged.
     if (typeof window.setupSubmitButton === 'function') {
       window.setupSubmitButton(stats.completionRate || 0);
