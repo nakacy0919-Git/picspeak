@@ -340,6 +340,25 @@
 #view-result .ps-pass-unlock{color:#92400e;font-size:11px;font-weight:850}
 @media(max-width:699px){#ps-passport .ps-pass-body{grid-template-columns:1fr;padding:10px;gap:10px}#ps-passport .ps-pass-head{padding:12px}#ps-passport .ps-badges{grid-template-columns:repeat(3,minmax(0,1fr))}#ps-passport .ps-badge{padding:8px 3px}#ps-passport .ps-badge svg{width:41px;height:41px}#ps-passport .ps-badge strong{font-size:11px}#ps-passport .ps-badge small{font-size:9px}}
 </style>
+<style id="ps-weekly-styles">
+#ps-weekly-card[hidden],#ps-weekly-history[hidden]{display:none!important}
+#view-start .ps-weekly{display:grid;grid-template-columns:48px minmax(0,1fr) auto;align-items:center;gap:12px;padding:13px 18px;border:1px solid #554b80;border-radius:18px;background:linear-gradient(115deg,#2c2746,#22344b);color:#e7eef8}
+#view-start .ps-weekly-icon{display:grid;place-items:center;width:44px;height:44px;border:1px solid #c4b5fd55;background:#c4b5fd18;border-radius:12px;color:#c4b5fd;font-size:23px}
+#view-start .ps-weekly-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+#view-start .ps-weekly-copy strong{font-size:15px;color:#ddd6fe;font-weight:850}
+#view-start .ps-weekly-copy span{font-size:12px;color:#d4dfed}
+#view-start .ps-weekly-track{height:7px;background:#49516c;border-radius:10px;overflow:hidden}
+#view-start .ps-weekly-track span{display:block;height:100%;background:linear-gradient(90deg,#8b5cf6,#c4b5fd);width:0;transition:width .25s}
+#view-start .ps-weekly-actions{display:flex;flex-direction:column;gap:6px;align-items:stretch}
+#view-start .ps-weekly-actions button{min-height:40px;background:#c4b5fd;color:#241746;border-radius:10px;padding:8px 12px;font-weight:850;white-space:nowrap;font-size:12px}
+#view-start #ps-weekly-history-toggle{background:#192d45;color:#ddd6fe;border:1px solid #66598e}
+#view-start #ps-weekly-history{grid-column:1/-1;display:flex;flex-direction:column;gap:5px;border-top:1px solid #554b80;padding-top:9px;font-size:12px;color:#d4dfed}
+#view-start #ps-weekly-history div{display:flex;justify-content:space-between;gap:8px}
+#view-start .ps-weekly.is-complete{border-color:#5eead4}
+#view-result .ps-weekly-earned{font-size:11px;color:#0f766e;font-weight:850}
+@media(max-width:767px){#view-start .ps-weekly{grid-template-columns:36px minmax(0,1fr);padding:10px;gap:8px}#view-start .ps-weekly-icon{width:36px;height:36px}#view-start .ps-weekly-actions{grid-column:1/-1;flex-direction:row;justify-content:flex-end}#view-start .ps-weekly-copy strong{font-size:13px}}
+@media(prefers-reduced-motion:reduce){#view-start .ps-weekly-track span{transition:none}}
+</style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -614,6 +633,7 @@
   <div class="ps-daily-icon" aria-hidden="true">✦</div><div class="ps-daily-copy"><strong>DAILY CHALLENGE</strong><span id="ps-daily-info" role="status" aria-live="polite">今日の写真を準備中…</span><span id="ps-daily-streak"></span></div>
   <div class="ps-daily-controls"><select id="ps-daily-level" aria-label="デイリーチャレンジのレベル"><option value="elementary">小学生</option><option value="junior_high">中学生</option><option value="high_school">高校生</option></select><button id="ps-daily-start" type="button" disabled>挑戦する →</button></div>
 </section>
+<section id="ps-weekly-card" class="ps-weekly" aria-label="ウィークリーチャレンジ" hidden><div class="ps-weekly-icon" aria-hidden="true">✧</div><div class="ps-weekly-copy"><strong>WEEKLY CHALLENGE · <span id="ps-weekly-title">今週のミッション</span></strong><span id="ps-weekly-rule"></span><div class="ps-weekly-track" id="ps-weekly-track" role="progressbar" aria-label="今週の目標達成率" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><span id="ps-weekly-status" role="status" aria-live="polite"></span></div><div class="ps-weekly-actions"><button type="button" id="ps-weekly-start">挑戦する →</button><button type="button" id="ps-weekly-history-toggle" aria-expanded="false" aria-controls="ps-weekly-history">過去の達成</button></div><div id="ps-weekly-history" hidden></div></section>
 <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">TRAINING MODES　·　練習モードを選ぶ</h2>
@@ -656,7 +676,7 @@
                       </div>
                     
                 </div>
-                <div class="ps-home-footer"><button id="ps-passport-open" type="button" hidden>✦ Passport <span id="ps-passport-mini">0/8</span></button><section class="ps-progress-home" id="ps-progress-home" aria-label="学習経験値" hidden><span class="ps-progress-level" id="ps-progress-level">LV 1</span><div class="ps-progress-content"><div class="ps-progress-line"><span id="ps-progress-xp">0 XP</span><span id="ps-progress-next">次のレベルまで 100 XP</span></div><div class="ps-xp-track" role="progressbar" id="ps-progress-track" aria-label="次のレベルへの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><small id="ps-progress-note">この端末の学習経験値・SNAPSHOT</small></div></section><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" onclick="document.getElementById('btn-open-tutorial').click()">使い方</button><button type="button" onclick="document.getElementById('btn-open-history').click()">学習履歴</button></div></div>
+                <div class="ps-home-footer"><button id="ps-passport-open" type="button" hidden>✦ Passport <span id="ps-passport-mini">0/9</span></button><section class="ps-progress-home" id="ps-progress-home" aria-label="学習経験値" hidden><span class="ps-progress-level" id="ps-progress-level">LV 1</span><div class="ps-progress-content"><div class="ps-progress-line"><span id="ps-progress-xp">0 XP</span><span id="ps-progress-next">次のレベルまで 100 XP</span></div><div class="ps-xp-track" role="progressbar" id="ps-progress-track" aria-label="次のレベルへの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><small id="ps-progress-note">この端末の学習経験値・SNAPSHOT</small></div></section><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" onclick="document.getElementById('btn-open-tutorial').click()">使い方</button><button type="button" onclick="document.getElementById('btn-open-history').click()">学習履歴</button></div></div>
             </div>
         </div>
 
@@ -1335,7 +1355,7 @@ load();
 })();
 </script>
 
-<dialog id="ps-passport" aria-labelledby="ps-passport-title"><div class="ps-pass-shell"><header class="ps-pass-head"><div><h2 id="ps-passport-title">SPEAKING PASSPORT</h2><p>学習の軌跡を集めよう</p></div><button type="button" id="ps-passport-close" aria-label="パスポートを閉じる">✕ 閉じる</button></header><div class="ps-pass-body"><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Achievement Badges</h3><span id="ps-pass-count">0 / 8</span></div><div class="ps-badges" id="ps-pass-badges"></div></section><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Learning Calendar</h3><span>JST</span></div><div class="ps-month-nav"><button id="ps-month-prev" type="button" aria-label="前月">‹</button><strong id="ps-month-label"></strong><button id="ps-month-next" type="button" aria-label="翌月">›</button></div><div id="ps-calendar-grid" class="ps-calendar-grid" aria-label="月間学習記録"></div><div class="ps-calendar-key"><b>● 学習あり</b><b>★ Daily達成</b></div><div class="ps-month-stats"><div><strong id="ps-month-days">0</strong><small>学習日数</small></div><div><strong id="ps-month-daily">0</strong><small>Daily達成日数</small></div></div></section><p class="ps-pass-note" id="ps-pass-note">この端末のSNAPSHOT・Daily Challenge記録を表示します。Classroomの成績とは別です。</p></div></div></dialog>
+<dialog id="ps-passport" aria-labelledby="ps-passport-title"><div class="ps-pass-shell"><header class="ps-pass-head"><div><h2 id="ps-passport-title">SPEAKING PASSPORT</h2><p>学習の軌跡を集めよう</p></div><button type="button" id="ps-passport-close" aria-label="パスポートを閉じる">✕ 閉じる</button></header><div class="ps-pass-body"><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Achievement Badges</h3><span id="ps-pass-count">0 / 9</span></div><div class="ps-badges" id="ps-pass-badges"></div></section><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Learning Calendar</h3><span>JST</span></div><div class="ps-month-nav"><button id="ps-month-prev" type="button" aria-label="前月">‹</button><strong id="ps-month-label"></strong><button id="ps-month-next" type="button" aria-label="翌月">›</button></div><div id="ps-calendar-grid" class="ps-calendar-grid" aria-label="月間学習記録"></div><div class="ps-calendar-key"><b>● 学習あり</b><b>★ Daily達成</b></div><div class="ps-month-stats"><div><strong id="ps-month-days">0</strong><small>学習日数</small></div><div><strong id="ps-month-daily">0</strong><small>Daily達成日数</small></div></div></section><p class="ps-pass-note" id="ps-pass-note">この端末のSNAPSHOT・Daily Challenge記録を表示します。Classroomの成績とは別です。</p></div></div></dialog>
 <script id="ps-progress-actions">
 (function(){
 'use strict';
@@ -1409,6 +1429,87 @@ window.addEventListener('focus',()=>{state=merge(read(),state);paint();});
 paint();
 })();
 </script>
+<script id="ps-weekly-actions">
+(function(){
+'use strict';
+const PROGRESS='picspeak_progress_v1',DAILY='picspeak_daily_v1',KEY='picspeak_weekly_v1';
+const $=id=>document.getElementById(id),card=$('ps-weekly-card'),track=$('ps-weekly-track'),start=$('ps-weekly-start'),history=$('ps-weekly-history'),toggle=$('ps-weekly-history-toggle');
+const assigned=()=>Boolean(location.search||location.hash||window.appState?.formId);
+if(!card||!track||!start||!history||!toggle||assigned())return;
+const missions=[
+ {id:'marathon',name:'Speaking Marathon',rule:'10件の教材・難易度に挑戦',target:10,unit:'件',metric:'sessions'},
+ {id:'perfect',name:'Perfect Week',rule:'100%達成を3件記録（同日・同教材・同難易度は1件）',target:3,unit:'件',metric:'perfect'},
+ {id:'daily',name:'Daily Master',rule:'月曜から日曜まで7日すべてDaily達成',target:7,unit:'日',metric:'daily'},
+ {id:'explorer',name:'Picture Explorer',rule:'異なる写真15枚に挑戦',target:15,unit:'枚',metric:'photos'},
+ {id:'xp',name:'XP Hunter',rule:'今週200 XP獲得',target:200,unit:'XP',metric:'xp'}
+];
+const day=()=>Math.floor(Date.now()/86400000+9/24);
+const monday=d=>d-((d+3)%7+7)%7;
+const missionFor=w=>missions[((Math.floor((w-4)/7)%missions.length)+missions.length)%missions.length];
+function facts(p,d,w,now){
+ const photos=new Set(),sessions=new Set(),daily=new Set();let xp=0,perfect=0;
+ for(const [k,v] of Object.entries(p?.xp||{})){
+  const m=/^(\d+)\|([A-Za-z0-9_-]{1,80})\|(elementary|junior_high|high_school)$/.exec(k);
+  if(!m||![10,20,25].includes(v))continue;
+  const n=Number(m[1]);if(n<w||n>w+6||n>now)continue;
+  photos.add(m[2]);sessions.add(m[2]+'|'+m[3]);xp+=v;if(v===25)perfect++;
+ }
+ if(Array.isArray(d))for(const r of d)if(r&&Number.isInteger(r.day)&&r.day>=w&&r.day<=w+6&&r.day<=now&&Number.isFinite(r.best)&&r.best>=80&&r.best<=100)daily.add(r.day);
+ return {photos:photos.size,sessions:sessions.size,daily:daily.size,xp,perfect};
+}
+function evaluate(p,d,w,now){
+ const m=missionFor(w),value=facts(p,d,w,now)[m.metric];
+ return {week:w,id:m.id,value,complete:value>=m.target};
+}
+function safeRead(key,fallback){try{return JSON.parse(localStorage.getItem(key)||'null')??fallback;}catch(_){return fallback;}}
+function readArchive(){
+ const raw=safeRead(KEY,[]),out=new Map();
+ if(Array.isArray(raw))for(const a of raw)if(a&&Number.isInteger(a.week)&&a.week===monday(a.week)&&a.id===missionFor(a.week).id&&a.complete===true)out.set(a.week,a);
+ return out;
+}
+let archive=readArchive(),persistent=true;
+function reconcile(save){
+ const now=day(),w=monday(now),p=safeRead(PROGRESS,{}),d=safeRead(DAILY,[]);
+ const old=readArchive();for(const [k,v] of old)archive.set(k,v);
+ // Rebuild earned weeks from existing XP and Daily records; no extra XP is issued.
+ const weeks=new Set([w]);
+ for(const k of Object.keys(p?.xp||{})){const n=Number(k.split('|')[0]);if(Number.isSafeInteger(n)&&n>=0&&n<=now)weeks.add(monday(n));}
+ if(Array.isArray(d))for(const r of d)if(r&&Number.isInteger(r.day)&&r.day>=0&&r.day<=now)weeks.add(monday(r.day));
+ const before=archive.has(w);
+ for(const week of weeks){const a=evaluate(p,d,week,now);if(a.complete)archive.set(week,a);}
+ if(save){
+  try{const next=JSON.stringify([...archive.values()].sort((a,b)=>a.week-b.week));if(localStorage.getItem(KEY)!==next)localStorage.setItem(KEY,next);}catch(_){persistent=false;}
+ }
+ return {now,w,current:evaluate(p,d,w,now),fresh:!before&&archive.has(w)};
+}
+const label=n=>new Date(n*86400000).toISOString().slice(5,10).replace('-','/');
+function paint(save=true){
+ const a=reconcile(save),m=missionFor(a.w),v=a.current.value,done=archive.has(a.w)||a.current.complete;
+ const pct=done?100:Math.min(100,Math.floor(v/m.target*100));
+ $('ps-weekly-title').textContent=m.name;
+ $('ps-weekly-rule').textContent=m.rule+'｜'+label(a.w)+'〜'+label(a.w+6)+' JST';
+ $('ps-weekly-status').textContent=(done?'✓ 今週の目標達成！　':('あと '+Math.max(0,m.target-v)+' '+m.unit+'　'))+v+' / '+m.target+' '+m.unit+'｜残り '+(a.w+6-a.now)+'日（今日を除く）'+(!persistent?'｜保存不可':'');
+ track.setAttribute('aria-valuenow',String(pct));track.firstElementChild.style.width=pct+'%';card.classList.toggle('is-complete',done);
+ start.textContent=m.id==='daily'?'Daily Challengeへ →':'SNAPSHOTへ →';
+ history.replaceChildren();
+ const entries=[...archive.values()].filter(x=>x.week<=a.w).sort((x,y)=>y.week-x.week).slice(0,12);
+ if(!entries.length){const el=document.createElement('span');el.textContent='まだ達成記録がありません。';history.append(el);}
+ for(const x of entries){const row=document.createElement('div'),left=document.createElement('span'),right=document.createElement('strong');left.textContent=label(x.week)+'〜'+label(x.week+6)+' '+missionFor(x.week).name;right.textContent='✓ 達成';row.append(left,right);history.append(row);}
+ return a;
+}
+toggle.addEventListener('click',()=>{history.hidden=!history.hidden;toggle.setAttribute('aria-expanded',String(!history.hidden));});
+start.addEventListener('click',()=>{if(assigned())return;const m=missionFor(monday(day()));if(m.id==='daily'){const c=$('ps-daily-card');c?.scrollIntoView({block:'center'});$('ps-daily-start')?.focus();}else document.querySelector('#view-start .mode-btn[data-mode="snapshot"]')?.click();});
+document.addEventListener('picspeak:snapshot-result',e=>{
+ if(assigned()||e.detail?.mode!=='snapshot'||!Number.isFinite(e.detail.words)||e.detail.words<=0)return;
+ const a=paint();
+ if(a.fresh){const host=document.querySelector('#ranking-container .snapshot-result-identity');if(host){const el=document.createElement('span');el.className='ps-weekly-earned';el.setAttribute('role','status');el.textContent='✧ WEEKLY MISSION COMPLETE!';host.append(el);}}
+});
+window.addEventListener('storage',e=>{if([PROGRESS,DAILY,KEY].includes(e.key))paint(false);});
+window.addEventListener('focus',()=>paint());document.addEventListener('visibilitychange',()=>{if(!document.hidden)paint();});
+setInterval(()=>{if(!document.hidden)paint();},60000);
+paint();card.hidden=false;
+})();
+</script>
 <script id="ps-passport-actions">
 (function(){
 'use strict';
@@ -1424,7 +1525,8 @@ const definitions=[
  {id:'explorer',name:'Picture Explorer',desc:'異なる写真10枚に挑戦',icon:'image',color:'#93c5fd'},
  {id:'speed',name:'Speed Speaker',desc:'20語以上・100 WPM以上',icon:'bolt',color:'#c4b5fd'},
  {id:'master',name:'Level Master',desc:'レベル10到達',icon:'medal',color:'#60a5fa'},
- {id:'legend',name:'Speaking Legend',desc:'30日間学習（累計）',icon:'crown',color:'#f9a8d4'}
+ {id:'legend',name:'Speaking Legend',desc:'30日間学習（累計）',icon:'crown',color:'#f9a8d4'},
+ {id:'weekly',name:'Weekly Champion',desc:'Weekly Challenge初達成',icon:'star',color:'#c4b5fd'}
 ];
 const paths={mic:'<rect x="28" y="15" width="16" height="31" rx="8"/><path d="M21 34v5a15 15 0 0030 0v-5M36 54v8m-9 0h18"/>',star:'<path d="m36 15 6.5 14 15 2-11 11 2.5 15L36 49l-13 8 2.5-15-11-11 15-2z"/>',sun:'<circle cx="36" cy="36" r="11"/><path d="M36 15v5m0 32v5M15 36h5m32 0h5M21 21l4 4m22 22 4 4m0-30-4 4M25 47l-4 4"/>',flame:'<path d="M35 14c5 13-4 15-2 23 4-2 7-7 9-12 11 11 13 20 5 29-7 8-22 7-27-3-6-12 5-25 15-37Z"/>',image:'<rect x="15" y="20" width="42" height="33" rx="5"/><circle cx="43" cy="30" r="4"/><path d="m18 48 13-14 10 10 6-6 7 10"/>',bolt:'<path d="m40 14-22 27h15l-2 17 23-29H39z"/>',medal:'<path d="m25 16 7 14m15-14-7 14"/><circle cx="36" cy="43" r="14"/><path d="m36 36 2 4 5 .5-3.5 3.5 1 5-4.5-2-4.5 2 1-5L29 40.5l5-.5z"/>',crown:'<path d="m16 25 9 11 11-16 11 16 9-11-5 25H21zM22 56h28"/>'};
 const today=()=>Math.floor(Date.now()/86400000+9/24);
@@ -1443,7 +1545,7 @@ function facts(p,d){
  for(const n of [...daily].sort((a,b)=>a-b)){run=last!==null&&n===last+1?run+1:1;maxStreak=Math.max(maxStreak,run);last=n;}
  return {days,photos,daily,xp,perfect,maxStreak};
 }
-function qualified(f,speed){return [f.days.size>0,f.perfect,f.daily.size>0,f.maxStreak>=7,f.photos.size>=10,speed,f.xp>=900,f.days.size>=30];}
+function qualified(f,speed){const weekly=safeRead('picspeak_weekly_v1',[]);return [f.days.size>0,f.perfect,f.daily.size>0,f.maxStreak>=7,f.photos.size>=10,speed,f.xp>=900,f.days.size>=30,Array.isArray(weekly)&&weekly.some(x=>x?.complete===true&&Number.isInteger(x.week))];}
 function monthData(year,month,f){
  const first=Date.UTC(year,month,1)/86400000;
  const count=new Date(Date.UTC(year,month+1,0)).getUTCDate();
@@ -1507,7 +1609,7 @@ document.addEventListener('picspeak:snapshot-result',e=>{
    if(host){const el=document.createElement('div');el.className='ps-pass-unlock';el.setAttribute('role','status');el.textContent='✦ BADGE UNLOCKED: '+fresh.map(b=>b.name).join(' / ');host.append(el);}
  }
 });
-window.addEventListener('storage',e=>{if([KEY,PROGRESS,DAILY].includes(e.key)){// Do not write back on every storage event.
+window.addEventListener('storage',e=>{if([KEY,PROGRESS,DAILY,'picspeak_weekly_v1'].includes(e.key)){// Do not write back on every storage event.
  const old=readPassport();for(const id of old.unlocked)state.unlocked.add(id);state.speed=state.speed||old.speed;
  f=facts(safeRead(PROGRESS,{}),safeRead(DAILY,[]));qualified(f,state.speed).forEach((q,i)=>{if(q)state.unlocked.add(definitions[i].id);});
  $('ps-passport-mini').textContent=state.unlocked.size+'/'+definitions.length;$('ps-pass-count').textContent=state.unlocked.size+' / '+definitions.length+' 獲得';if(dialog.open)render();
