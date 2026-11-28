@@ -1233,7 +1233,8 @@ document.addEventListener('picspeak:snapshot-result',e=>{
  if(!Number.isFinite(p.completion)||!Number.isFinite(p.words)||p.words<=0)return;
  const best=Math.min(100,Math.max(0,Math.round(p.completion*10)/10));
  // Merge records across open tabs, preserve best score and count only genuine completed attempts.
- const merged=new Map([...read(),...records].map(r=>[r.day+'|'+r.level+'|'+r.id,r]));
+ const merged=new Map();
+ for(const r of [...read(),...records]){const k=r.day+'|'+r.level+'|'+r.id;const old=merged.get(k);if(!old||r.best>old.best)merged.set(k,{...r});}
  records=[...merged.values()];
  let rec=records.find(r=>r.day===a.day&&r.level===a.level&&r.id===a.id);
  if(rec){rec.best=Math.max(rec.best,best);}else{rec={day:a.day,level:a.level,id:a.id,best};records.push(rec);}
@@ -1247,6 +1248,7 @@ button.addEventListener('click',async()=>{
  const d=day(),theme=todayTheme(d),level=select.value;
  if(!theme||!levels.includes(level))return;
  busy=true;button.disabled=true;
+ let failed=false;
  const mode=document.querySelector('#view-start .mode-btn[data-mode="snapshot"]');
  try{
    if(!mode||typeof window.startGameWithTheme!=='function')throw Error('unavailable');
@@ -1257,13 +1259,14 @@ button.addEventListener('click',async()=>{
    pending={day:d,id:theme.id,level};
    window.tempSelectedThemeId=theme.id;
    await window.startGameWithTheme(theme.id);
-   if(!active){pending=null;info.textContent='教材を開けませんでした。';}
- }catch(_){pending=null;active=null;badge.hidden=true;info.textContent='教材を開けませんでした。';}
- finally{busy=false;update();}
+   if(!active){pending=null;failed=true;}
+ }catch(_){pending=null;active=null;badge.hidden=true;failed=true;}
+ finally{busy=false;update();if(failed)info.textContent='教材を開けませんでした。ホームから再挑戦してください。';}
 });
 // Leaving a live challenge via navigation must not credit the next ordinary attempt.
 document.addEventListener('click',e=>{if(e.target.closest('.action-btn-home,.action-btn-back,#btn-play-again')){active=null;pending=null;badge.hidden=true;}},true);
-window.addEventListener('focus',update);document.addEventListener('visibilitychange',()=>{if(!document.hidden)update();});
+window.addEventListener('focus',()=>{if(persistent)records=read();update();});document.addEventListener('visibilitychange',()=>{if(!document.hidden)update();});
+window.addEventListener('storage',e=>{if(e.key===KEY&&persistent){records=read();update();}});
 setInterval(()=>{if(!document.hidden&&!busy)update();},60000);
 load();
 })();
