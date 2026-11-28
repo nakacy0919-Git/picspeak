@@ -262,6 +262,21 @@
  #view-result.snapshot-result-mode .snapshot-review-summary.ps-report{display:none}
 }
 </style>
+<style id="ps-daily-styles">
+#view-start .ps-daily[hidden],#ps-daily-play[hidden],#ps-daily-result[hidden]{display:none!important}
+#view-start .ps-daily{display:grid;grid-template-columns:52px minmax(0,1fr) auto;align-items:center;gap:14px;padding:14px 18px;border:1px solid #655333;border-radius:18px;background:linear-gradient(115deg,#302b26,#263647);color:#f8fafc}
+#view-start .ps-daily-icon{width:48px;height:48px;display:grid;place-items:center;background:#fcd34d19;border:1px solid #fcd34d55;border-radius:13px;color:#fcd34d;font-size:25px}
+#view-start .ps-daily-copy{min-width:0;display:flex;flex-direction:column;gap:3px}
+#view-start .ps-daily-copy strong{font-size:15px;color:#fde68a;letter-spacing:.035em}
+#view-start .ps-daily-copy span{font-size:12px;color:#d4dfed}
+#view-start .ps-daily-controls{display:flex;align-items:center;gap:8px}
+#view-start .ps-daily-controls select{background:#14253a;color:#fff;border:1px solid #64748b;border-radius:9px;padding:8px;min-height:42px;font-size:12px}
+#view-start #ps-daily-start{background:#fcd34d;color:#33240b;border-radius:10px;font-weight:850;min-height:42px;padding:9px 14px;white-space:nowrap}
+#view-start #ps-daily-start:disabled{opacity:.55}
+#ps-daily-play{font-size:10px;font-weight:850;color:#fcd34d;white-space:nowrap}
+#ps-daily-result{color:#0f766e;font-size:11px;font-weight:850;line-height:1.4}
+@media(max-width:767px){#view-start .ps-daily{grid-template-columns:36px minmax(0,1fr);padding:10px;gap:8px}#view-start .ps-daily-icon{width:36px;height:36px;font-size:20px}#view-start .ps-daily-controls{grid-column:1/-1;justify-content:flex-end}#view-start .ps-daily-copy strong{font-size:13px}#ps-daily-play{display:none}}
+</style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -532,7 +547,11 @@
                     </div>
                     <div class="ps-wave" aria-hidden="true"><i style="--h:16px;--o:0.45"></i><i style="--h:32px;--o:0.505"></i><i style="--h:50px;--o:0.56"></i><i style="--h:27px;--o:0.615"></i><i style="--h:62px;--o:0.67"></i><i style="--h:42px;--o:0.7250000000000001"></i><i style="--h:20px;--o:0.78"></i><i style="--h:47px;--o:0.835"></i><i style="--h:30px;--o:0.89"></i><i style="--h:13px;--o:0.9450000000000001"></i></div>
                 </section>
-                <div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
+                <section class="ps-daily" id="ps-daily-card" aria-label="デイリーチャレンジ" hidden>
+  <div class="ps-daily-icon" aria-hidden="true">✦</div><div class="ps-daily-copy"><strong>DAILY CHALLENGE</strong><span id="ps-daily-info" role="status" aria-live="polite">今日の写真を準備中…</span><span id="ps-daily-streak"></span></div>
+  <div class="ps-daily-controls"><select id="ps-daily-level" aria-label="デイリーチャレンジのレベル"><option value="elementary">小学生</option><option value="junior_high">中学生</option><option value="high_school">高校生</option></select><button id="ps-daily-start" type="button" disabled>挑戦する →</button></div>
+</section>
+<div class="sns-card p-5 md:p-6 lg:p-8 w-full max-w-[95%] md:max-w-2xl lg:max-w-7xl shrink-0 bg-white/95 backdrop-blur-sm shadow-xl rounded-[2rem] md:rounded-[3rem] mb-12 md:mb-16">
                     <div id="step-mode" class="mb-5 md:mb-8 relative transition-all duration-500">
                         <h2 id="mode-question" class="text-base md:text-lg lg:text-xl font-black text-gray-900 mb-4 tracking-wider text-center transition-opacity duration-300">TRAINING MODES　·　練習モードを選ぶ</h2>
                         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-3 md:gap-5">
@@ -633,7 +652,7 @@
                         <button class="action-btn-back w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="戻る">◀</button>
                         <button class="action-btn-home w-8 h-8 md:w-10 md:h-10 bg-gray-100 hover:bg-gray-200 text-gray-600 rounded-full flex items-center justify-center transition-colors shadow-sm text-lg md:text-xl" title="ホーム">🏠</button>
                     </div>
-                    <button type="button" id="ps-focus-toggle" class="hidden" aria-pressed="false" aria-label="Focus Mode：写真を拡大して発話に集中">◎ Focus</button>
+                    <span id="ps-daily-play" hidden>DAILY</span><button type="button" id="ps-focus-toggle" class="hidden" aria-pressed="false" aria-label="Focus Mode：写真を拡大して発話に集中">◎ Focus</button>
                 </div>
                 <div class="flex items-center gap-2 md:gap-3 bg-gray-100 px-3 md:px-4 py-1.5 md:py-2 rounded-full border border-gray-200 shadow-inner">
                     <span class="text-xl md:text-2xl">⏱️</span>
@@ -1158,6 +1177,95 @@
    }
  });
  updateQuick();
+})();
+</script>
+
+<script id="ps-daily-actions">
+(function(){
+'use strict';
+const KEY='picspeak_daily_v1',LEVEL='picspeak_daily_level_v1';
+const levels=['elementary','junior_high','high_school'];
+const $=id=>document.getElementById(id);
+const card=$('ps-daily-card'),button=$('ps-daily-start'),select=$('ps-daily-level'),info=$('ps-daily-info'),streak=$('ps-daily-streak'),badge=$('ps-daily-play');
+if(!card||!button||!select||!info||!streak||!badge)return;
+const assigned=()=>Boolean(location.search||location.hash||window.appState?.formId);
+if(assigned())return;
+const day=()=>Math.floor(Date.now()/86400000+9/24);
+const label=d=>new Date(d*86400000).toISOString().slice(0,10).replace(/-/g,'/');
+const validRecord=r=>r&&Number.isInteger(r.day)&&levels.includes(r.level)&&typeof r.id==='string'&&Number.isFinite(r.best)&&r.best>=0&&r.best<=100;
+function read(){try{const a=JSON.parse(localStorage.getItem(KEY)||'[]');return Array.isArray(a)?a.filter(validRecord):[];}catch(_){return [];}}
+let records=read(),pool=[],pending=null,active=null,busy=false,persistent=true;
+function store(){try{localStorage.setItem(KEY,JSON.stringify(records));}catch(_){persistent=false;}}
+function consecutive(d){const done=new Set(records.filter(r=>r.best>=80).map(r=>r.day));let n=0;let t=done.has(d)?d:d-1;while(done.has(t)){n++;t--;}return n;}
+function todayTheme(d){return pool.length?pool[((d%pool.length)+pool.length)%pool.length]:null;}
+function update(){
+ const d=day(),theme=todayTheme(d),rec=records.find(r=>r.day===d&&r.level===select.value&&r.id===theme?.id);
+ const completed=rec&&rec.best>=80;
+ info.textContent=label(d)+' JST｜30秒・ヒントなし・目標80%'+(rec?'｜最高 '+rec.best+'%':'');
+ streak.textContent=(completed?'✓ 今日の目標達成　':'')+'連続達成 '+consecutive(d)+'日'+(!persistent?'｜このページ内のみ保存':'');
+ button.textContent=completed?'もう一度 →':rec?'再挑戦 →':'挑戦する →';
+ button.disabled=busy||!theme;
+}
+try{const level=localStorage.getItem(LEVEL);if(levels.includes(level))select.value=level;}catch(_){}
+select.addEventListener('change',()=>{try{localStorage.setItem(LEVEL,select.value);}catch(_){}update();});
+card.hidden=false;
+async function load(){
+ try{
+   const data=await window.fetchJsonCached('data/theme_catalog.json','theme_catalog');
+   // Stable ordering, fixed pool of the current 100 modern themes; no image is revealed before START.
+   pool=[...new Map(data.filter(x=>x&&/^theme_l2_[0-9]{3}$/.test(x.id)&&typeof x.imageSrc==='string').map(x=>[x.id,x])).values()].sort((a,b)=>a.id.localeCompare(b.id));
+   update();
+   if(!pool.length)info.textContent='教材が見つかりません。通常のSNAPSHOTをご利用ください。';
+ }catch(_){info.textContent='教材を読み込めません。ページを再読み込みしてください。';button.disabled=true;}
+}
+document.addEventListener('picspeak:challenge-ready',e=>{
+ const p=e.detail;
+ active=null;badge.hidden=true;
+ if(pending&&p?.mode==='snapshot'&&p.id===pending.id&&p.level===pending.level&&p.seconds===30&&!p.support&&!assigned()){
+   active=pending;badge.hidden=false;
+ }
+ pending=null;
+});
+document.addEventListener('picspeak:snapshot-result',e=>{
+ const p=e.detail,a=active;
+ if(!a||assigned()||p?.mode!=='snapshot'||p.id!==a.id||p.level!==a.level)return;
+ active=null;badge.hidden=true;
+ if(!Number.isFinite(p.completion)||!Number.isFinite(p.words)||p.words<=0)return;
+ const best=Math.min(100,Math.max(0,Math.round(p.completion*10)/10));
+ // Merge records across open tabs, preserve best score and count only genuine completed attempts.
+ const merged=new Map([...read(),...records].map(r=>[r.day+'|'+r.level+'|'+r.id,r]));
+ records=[...merged.values()];
+ let rec=records.find(r=>r.day===a.day&&r.level===a.level&&r.id===a.id);
+ if(rec){rec.best=Math.max(rec.best,best);}else{rec={day:a.day,level:a.level,id:a.id,best};records.push(rec);}
+ records=records.filter(r=>r.day>=day()-730&&r.day<=day()).sort((a,b)=>b.day-a.day);
+ store();update();
+ const host=document.querySelector('#ranking-container .snapshot-result-identity');
+ if(host){let node=$('ps-daily-result');if(!node){node=document.createElement('span');node.id='ps-daily-result';host.append(node);}node.textContent=best>=80?'DAILY ✓ 目標達成！':('DAILY '+best+'%｜目標80%');}
+});
+button.addEventListener('click',async()=>{
+ if(busy||assigned())return;
+ const d=day(),theme=todayTheme(d),level=select.value;
+ if(!theme||!levels.includes(level))return;
+ busy=true;button.disabled=true;
+ const mode=document.querySelector('#view-start .mode-btn[data-mode="snapshot"]');
+ try{
+   if(!mode||typeof window.startGameWithTheme!=='function')throw Error('unavailable');
+   mode.click();
+   document.querySelector('#step-level .level-btn[data-level="'+level+'"]')?.click();
+   document.querySelector('.time-btn[data-time="30"]')?.click();
+   const support=$('support-toggle');if(support?.checked){support.checked=false;support.dispatchEvent(new Event('change',{bubbles:true}));}
+   pending={day:d,id:theme.id,level};
+   window.tempSelectedThemeId=theme.id;
+   await window.startGameWithTheme(theme.id);
+   if(!active){pending=null;info.textContent='教材を開けませんでした。';}
+ }catch(_){pending=null;active=null;badge.hidden=true;info.textContent='教材を開けませんでした。';}
+ finally{busy=false;update();}
+});
+// Leaving a live challenge via navigation must not credit the next ordinary attempt.
+document.addEventListener('click',e=>{if(e.target.closest('.action-btn-home,.action-btn-back,#btn-play-again')){active=null;pending=null;badge.hidden=true;}},true);
+window.addEventListener('focus',update);document.addEventListener('visibilitychange',()=>{if(!document.hidden)update();});
+setInterval(()=>{if(!document.hidden&&!busy)update();},60000);
+load();
 })();
 </script>
 <script defer src="bridge/copeak-lms-bridge.js"></script>
