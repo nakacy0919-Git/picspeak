@@ -293,6 +293,53 @@
 @media(max-width:699px){#view-result.snapshot-result-mode .snapshot-result-identity{flex-wrap:wrap}#view-result.snapshot-result-mode .ps-progress-result{flex-basis:100%;font-size:10px}#view-start .ps-progress-home{flex-basis:100%}}
 @media(prefers-reduced-motion:reduce){#view-result .ps-progress-result.ps-new-best .ps-progress-best{animation:none}#view-start .ps-xp-track>span{transition:none}}
 </style>
+<style id="ps-passport-styles">
+#ps-passport-open[hidden]{display:none!important}
+#view-start #ps-passport-open{background:#173b43;border-color:#38736f;color:#99f6e4;display:inline-flex;align-items:center;gap:7px}
+#ps-passport{border:1px solid #38516c;border-radius:22px;background:#0c1627;color:#e7eef8;width:min(94vw,960px);max-height:92dvh;max-width:960px;padding:0;overflow:hidden;box-shadow:0 24px 90px #02061788}
+#ps-passport::backdrop{background:#020617bb;backdrop-filter:blur(5px)}
+#ps-passport .ps-pass-shell{display:flex;flex-direction:column;max-height:90dvh}
+#ps-passport .ps-pass-head{display:flex;align-items:center;justify-content:space-between;gap:10px;padding:16px 20px;border-bottom:1px solid #32465e;background:#14253a;flex-shrink:0}
+#ps-passport .ps-pass-head h2{font-size:clamp(17px,3vw,24px);font-weight:900;letter-spacing:.035em;color:#5eead4}
+#ps-passport .ps-pass-head p{font-size:11px;color:#b9c9dd}
+#ps-passport button{cursor:pointer;min-height:42px;padding:8px 13px;border:1px solid #455d76;border-radius:10px;background:#192d45;color:#f1f5f9;font-weight:750}
+#ps-passport button:focus-visible{outline:3px solid #5eead4;outline-offset:2px}
+#ps-passport button:disabled{opacity:.35;cursor:default}
+#ps-passport .ps-pass-body{overflow:auto;overscroll-behavior:contain;padding:16px 20px;min-height:0;display:grid;gap:16px;grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+#ps-passport .ps-pass-panel{background:#14253a;border:1px solid #32465e;border-radius:16px;padding:14px;min-width:0}
+#ps-passport .ps-pass-title{display:flex;justify-content:space-between;align-items:center;gap:8px;margin-bottom:12px}
+#ps-passport .ps-pass-title h3{font-size:15px;font-weight:850;color:#fff}
+#ps-passport .ps-pass-title span{font-size:11px;color:#b9c9dd}
+#ps-passport .ps-badges{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+#ps-passport .ps-badge{min-width:0;display:flex;flex-direction:column;align-items:center;text-align:center;gap:5px;padding:12px 5px;border-radius:13px;background:#192d45;border:1px solid #3b5169}
+#ps-passport .ps-badge.is-earned{background:linear-gradient(150deg,#20364a,#182a3c);border-color:var(--badge-color)}
+#ps-passport .ps-badge svg{width:51px;height:51px;display:block;color:var(--badge-color)}
+#ps-passport .ps-badge:not(.is-earned) svg{color:#71859b;opacity:.72}
+#ps-passport .ps-badge strong{font-size:12px;color:#e7eef8;line-height:1.2}
+#ps-passport .ps-badge small{font-size:10px;color:#b9c9dd;line-height:1.35}
+#ps-passport .ps-badge .ps-badge-status{font-size:10px;font-weight:800;color:#b9c9dd}
+#ps-passport .ps-badge.is-earned .ps-badge-status{color:#5eead4}
+#ps-passport .ps-month-nav{display:flex;align-items:center;justify-content:space-between;gap:8px;margin-bottom:10px}
+#ps-passport .ps-month-nav strong{font-size:15px;color:#fff}
+#ps-passport .ps-calendar-grid{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:4px}
+#ps-passport .ps-weekday{text-align:center;color:#b9c9dd;font-size:10px;font-weight:800;padding:5px 0}
+#ps-passport .ps-day{position:relative;min-width:0;aspect-ratio:1;min-height:34px;display:flex;flex-direction:column;justify-content:center;align-items:center;border-radius:8px;background:#192d45;border:1px solid #32465e;color:#d4dfed;font-size:12px;font-weight:750;line-height:1.1}
+#ps-passport .ps-day.is-practice{background:#134e4a;border-color:#2dd4bf;color:#ccfbf1}
+#ps-passport .ps-day.is-daily{background:#574423;border-color:#fcd34d;color:#fef3c7}
+#ps-passport .ps-day.is-today{outline:2px solid #e7eef8;outline-offset:1px}
+#ps-passport .ps-day.is-future{opacity:.45}
+#ps-passport .ps-day small{font-size:9px;line-height:1.2}
+#ps-passport .ps-calendar-key{display:flex;flex-wrap:wrap;gap:12px;font-size:11px;color:#b9c9dd;margin:12px 0}
+#ps-passport .ps-calendar-key b{font-weight:800;color:#5eead4}
+#ps-passport .ps-calendar-key b:last-child{color:#fcd34d}
+#ps-passport .ps-month-stats{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+#ps-passport .ps-month-stats div{background:#192d45;border-radius:10px;padding:9px;text-align:center}
+#ps-passport .ps-month-stats strong{display:block;font-size:22px;color:#fff}
+#ps-passport .ps-month-stats small{font-size:10px;color:#b9c9dd}
+#ps-passport .ps-pass-note{grid-column:1/-1;font-size:11px;color:#b9c9dd;line-height:1.5}
+#view-result .ps-pass-unlock{color:#92400e;font-size:11px;font-weight:850}
+@media(max-width:699px){#ps-passport .ps-pass-body{grid-template-columns:1fr;padding:10px;gap:10px}#ps-passport .ps-pass-head{padding:12px}#ps-passport .ps-badges{grid-template-columns:repeat(3,minmax(0,1fr))}#ps-passport .ps-badge{padding:8px 3px}#ps-passport .ps-badge svg{width:41px;height:41px}#ps-passport .ps-badge strong{font-size:11px}#ps-passport .ps-badge small{font-size:9px}}
+</style>
 </head>
 <body class="text-gray-900 bg-white overflow-hidden">
     <!-- ★ 追加①: 事前練習か本番かを選ぶポップアップ -->
@@ -609,7 +656,7 @@
                       </div>
                     
                 </div>
-                <div class="ps-home-footer"><section class="ps-progress-home" id="ps-progress-home" aria-label="学習経験値" hidden><span class="ps-progress-level" id="ps-progress-level">LV 1</span><div class="ps-progress-content"><div class="ps-progress-line"><span id="ps-progress-xp">0 XP</span><span id="ps-progress-next">次のレベルまで 100 XP</span></div><div class="ps-xp-track" role="progressbar" id="ps-progress-track" aria-label="次のレベルへの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><small id="ps-progress-note">この端末の学習経験値・SNAPSHOT</small></div></section><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" onclick="document.getElementById('btn-open-tutorial').click()">使い方</button><button type="button" onclick="document.getElementById('btn-open-history').click()">学習履歴</button></div></div>
+                <div class="ps-home-footer"><button id="ps-passport-open" type="button" hidden>✦ Passport <span id="ps-passport-mini">0/8</span></button><section class="ps-progress-home" id="ps-progress-home" aria-label="学習経験値" hidden><span class="ps-progress-level" id="ps-progress-level">LV 1</span><div class="ps-progress-content"><div class="ps-progress-line"><span id="ps-progress-xp">0 XP</span><span id="ps-progress-next">次のレベルまで 100 XP</span></div><div class="ps-xp-track" role="progressbar" id="ps-progress-track" aria-label="次のレベルへの進捗" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div><small id="ps-progress-note">この端末の学習経験値・SNAPSHOT</small></div></section><div style="display:flex;gap:8px;flex-wrap:wrap"><button type="button" onclick="document.getElementById('btn-open-tutorial').click()">使い方</button><button type="button" onclick="document.getElementById('btn-open-history').click()">学習履歴</button></div></div>
             </div>
         </div>
 
@@ -1288,6 +1335,7 @@ load();
 })();
 </script>
 
+<dialog id="ps-passport" aria-labelledby="ps-passport-title"><div class="ps-pass-shell"><header class="ps-pass-head"><div><h2 id="ps-passport-title">SPEAKING PASSPORT</h2><p>学習の軌跡を集めよう</p></div><button type="button" id="ps-passport-close" aria-label="パスポートを閉じる">✕ 閉じる</button></header><div class="ps-pass-body"><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Achievement Badges</h3><span id="ps-pass-count">0 / 8</span></div><div class="ps-badges" id="ps-pass-badges"></div></section><section class="ps-pass-panel"><div class="ps-pass-title"><h3>Learning Calendar</h3><span>JST</span></div><div class="ps-month-nav"><button id="ps-month-prev" type="button" aria-label="前月">‹</button><strong id="ps-month-label"></strong><button id="ps-month-next" type="button" aria-label="翌月">›</button></div><div id="ps-calendar-grid" class="ps-calendar-grid" aria-label="月間学習記録"></div><div class="ps-calendar-key"><b>● 学習あり</b><b>★ Daily達成</b></div><div class="ps-month-stats"><div><strong id="ps-month-days">0</strong><small>学習日数</small></div><div><strong id="ps-month-daily">0</strong><small>Daily達成日数</small></div></div></section><p class="ps-pass-note" id="ps-pass-note">この端末のSNAPSHOT・Daily Challenge記録を表示します。Classroomの成績とは別です。</p></div></div></dialog>
 <script id="ps-progress-actions">
 (function(){
 'use strict';
@@ -1359,6 +1407,112 @@ document.addEventListener('picspeak:snapshot-result',e=>{
 window.addEventListener('storage',e=>{if(e.key===KEY){state=merge(read(),state);paint();}});
 window.addEventListener('focus',()=>{state=merge(read(),state);paint();});
 paint();
+})();
+</script>
+<script id="ps-passport-actions">
+(function(){
+'use strict';
+const KEY='picspeak_passport_v1',PROGRESS='picspeak_progress_v1',DAILY='picspeak_daily_v1';
+const $=id=>document.getElementById(id);
+const dialog=$('ps-passport'),open=$('ps-passport-open'),grid=$('ps-calendar-grid'),badges=$('ps-pass-badges');
+if(!dialog||!open||!grid||!badges||location.search||location.hash||window.appState?.formId)return;
+const definitions=[
+ {id:'first',name:'First Speaker',desc:'初めての発話',icon:'mic',color:'#5eead4'},
+ {id:'perfect',name:'Perfect Speaker',desc:'達成度100%',icon:'star',color:'#fcd34d'},
+ {id:'daily',name:'Daily Hero',desc:'Daily Challenge初達成',icon:'sun',color:'#fbbf24'},
+ {id:'streak',name:'7 Day Streak',desc:'Daily 7日連続達成',icon:'flame',color:'#fb923c'},
+ {id:'explorer',name:'Picture Explorer',desc:'異なる写真10枚に挑戦',icon:'image',color:'#93c5fd'},
+ {id:'speed',name:'Speed Speaker',desc:'20語以上・100 WPM以上',icon:'bolt',color:'#c4b5fd'},
+ {id:'master',name:'Level Master',desc:'レベル10到達',icon:'medal',color:'#60a5fa'},
+ {id:'legend',name:'Speaking Legend',desc:'30日間学習（累計）',icon:'crown',color:'#f9a8d4'}
+];
+const paths={mic:'<rect x="28" y="15" width="16" height="31" rx="8"/><path d="M21 34v5a15 15 0 0030 0v-5M36 54v8m-9 0h18"/>',star:'<path d="m36 15 6.5 14 15 2-11 11 2.5 15L36 49l-13 8 2.5-15-11-11 15-2z"/>',sun:'<circle cx="36" cy="36" r="11"/><path d="M36 15v5m0 32v5M15 36h5m32 0h5M21 21l4 4m22 22 4 4m0-30-4 4M25 47l-4 4"/>',flame:'<path d="M35 14c5 13-4 15-2 23 4-2 7-7 9-12 11 11 13 20 5 29-7 8-22 7-27-3-6-12 5-25 15-37Z"/>',image:'<rect x="15" y="20" width="42" height="33" rx="5"/><circle cx="43" cy="30" r="4"/><path d="m18 48 13-14 10 10 6-6 7 10"/>',bolt:'<path d="m40 14-22 27h15l-2 17 23-29H39z"/>',medal:'<path d="m25 16 7 14m15-14-7 14"/><circle cx="36" cy="43" r="14"/><path d="m36 36 2 4 5 .5-3.5 3.5 1 5-4.5-2-4.5 2 1-5L29 40.5l5-.5z"/>',crown:'<path d="m16 25 9 11 11-16 11 16 9-11-5 25H21zM22 56h28"/>'};
+const today=()=>Math.floor(Date.now()/86400000+9/24);
+function safeRead(key,fallback){try{return JSON.parse(localStorage.getItem(key)||'null')??fallback;}catch(_){return fallback;}}
+function facts(p,d){
+ const days=new Set(),photos=new Set(),daily=new Set();let xp=0,perfect=false;
+ for(const [k,v] of Object.entries(p?.xp||{})){
+   const m=/^(\d+)\|([A-Za-z0-9_-]{1,80})\|(elementary|junior_high|high_school)$/.exec(k);
+   if(!m||![10,20,25].includes(v))continue;
+   const n=Number(m[1]);if(!Number.isSafeInteger(n)||n<0)continue;
+   days.add(n);photos.add(m[2]);xp+=v;if(v===25)perfect=true;
+ }
+ for(const v of Object.values(p?.best||{}))if(v===100)perfect=true;
+ if(Array.isArray(d))for(const r of d)if(r&&Number.isInteger(r.day)&&r.day>=0&&Number.isFinite(r.best)&&r.best>=80&&r.best<=100){daily.add(r.day);days.add(r.day);}
+ let maxStreak=0,run=0,last=null;
+ for(const n of [...daily].sort((a,b)=>a-b)){run=last!==null&&n===last+1?run+1:1;maxStreak=Math.max(maxStreak,run);last=n;}
+ return {days,photos,daily,xp,perfect,maxStreak};
+}
+function qualified(f,speed){return [f.days.size>0,f.perfect,f.daily.size>0,f.maxStreak>=7,f.photos.size>=10,speed,f.xp>=900,f.days.size>=30];}
+function monthData(year,month,f){
+ const first=Date.UTC(year,month,1)/86400000;
+ const count=new Date(Date.UTC(year,month+1,0)).getUTCDate();
+ const offset=(new Date(first*86400000).getUTCDay()+6)%7;
+ const cells=Array.from({length:count},(_,i)=>({n:i+1,d:first+i,practice:f.days.has(first+i),daily:f.daily.has(first+i)}));
+ return {offset,cells,practice:cells.filter(x=>x.practice).length,daily:cells.filter(x=>x.daily).length};
+}
+const validIds=new Set(definitions.map(x=>x.id));
+function readPassport(){const p=safeRead(KEY,{});return {unlocked:new Set(Array.isArray(p?.unlocked)?p.unlocked.filter(x=>validIds.has(x)):[]),speed:p?.speed===true};}
+let state=readPassport(),f=facts({},[]),persistent=true,active=null;
+const nowDate=new Date(today()*86400000);let year=nowDate.getUTCFullYear(),month=nowDate.getUTCMonth();
+function sync(){
+ const old=readPassport();for(const id of old.unlocked)state.unlocked.add(id);state.speed=state.speed||old.speed;
+ f=facts(safeRead(PROGRESS,{}),safeRead(DAILY,[]));
+ const q=qualified(f,state.speed),fresh=[];
+ definitions.forEach((b,i)=>{if(q[i]&&!state.unlocked.has(b.id)){state.unlocked.add(b.id);fresh.push(b);}});
+ try{localStorage.setItem(KEY,JSON.stringify({unlocked:[...state.unlocked],speed:state.speed}));}catch(_){persistent=false;}
+ $('ps-passport-mini').textContent=state.unlocked.size+'/'+definitions.length;
+ $('ps-pass-count').textContent=state.unlocked.size+' / '+definitions.length+' 獲得';
+ $('ps-pass-note').textContent='この端末のSNAPSHOT・Daily Challenge記録です。Classroomの成績とは別です。'+(!persistent?' 保存できない環境です。':'');
+ return fresh;
+}
+function render(){
+ badges.replaceChildren();
+ for(const b of definitions){
+   const earned=state.unlocked.has(b.id),el=document.createElement('div');el.className='ps-badge'+(earned?' is-earned':'');el.style.setProperty('--badge-color',b.color);
+   // SVG consists solely of fixed developer-authored paths.
+   el.innerHTML='<svg viewBox="0 0 72 76" fill="none" aria-hidden="true"><path d="M36 3 66 20v34L36 72 6 54V20Z" fill="currentColor" fill-opacity=".10" stroke="currentColor" stroke-width="2"/><g stroke="currentColor" stroke-width="2.8" stroke-linejoin="round" stroke-linecap="round">'+paths[b.icon]+'</g></svg>';
+   const name=document.createElement('strong');name.textContent=b.name;const desc=document.createElement('small');desc.textContent=b.desc;const status=document.createElement('span');status.className='ps-badge-status';status.textContent=earned?'✓ 獲得済み':'未獲得';el.append(name,desc,status);badges.append(el);
+ }
+ const data=monthData(year,month,f),current=new Date(today()*86400000);
+ $('ps-month-label').textContent=year+'年 '+(month+1)+'月';
+ $('ps-month-next').disabled=year*12+month>=current.getUTCFullYear()*12+current.getUTCMonth();
+ $('ps-month-prev').disabled=year<=1970&&month===0;
+ $('ps-month-days').textContent=data.practice;$('ps-month-daily').textContent=data.daily;
+ grid.replaceChildren();
+ for(const day of ['月','火','水','木','金','土','日']){const el=document.createElement('span');el.className='ps-weekday';el.textContent=day;grid.append(el);}
+ for(let i=0;i<data.offset;i++){const blank=document.createElement('span');blank.setAttribute('aria-hidden','true');grid.append(blank);}
+ for(const c of data.cells){
+   const el=document.createElement('div');el.className='ps-day'+(c.daily?' is-daily':c.practice?' is-practice':'')+(c.d===today()?' is-today':'')+(c.d>today()?' is-future':'');
+   el.setAttribute('aria-label',c.n+'日 '+(c.daily?'Daily達成':c.practice?'学習あり':c.d>today()?'未来の日':'記録なし'));
+   const n=document.createElement('span');n.textContent=c.n;el.append(n);
+   if(c.daily||c.practice){const mark=document.createElement('small');mark.textContent=c.daily?'★':'●';mark.setAttribute('aria-hidden','true');el.append(mark);}
+   grid.append(el);
+ }
+}
+function shift(n){const dt=new Date(Date.UTC(year,month+n,1));year=dt.getUTCFullYear();month=dt.getUTCMonth();sync();render();}
+$('ps-month-prev').addEventListener('click',()=>shift(-1));$('ps-month-next').addEventListener('click',()=>shift(1));
+open.addEventListener('click',()=>{const dt=new Date(today()*86400000);year=dt.getUTCFullYear();month=dt.getUTCMonth();sync();render();if(typeof dialog.showModal==='function')dialog.showModal();else dialog.setAttribute('open','');});
+$('ps-passport-close').addEventListener('click',()=>{if(typeof dialog.close==='function')dialog.close();else dialog.removeAttribute('open');open.focus();});
+dialog.addEventListener('click',e=>{if(e.target===dialog&&typeof dialog.close==='function')dialog.close();});
+document.addEventListener('picspeak:challenge-ready',e=>{const p=e.detail;active=p?.mode==='snapshot'&&!window.appState?.formId?{id:p.id,level:p.level}:null;});
+document.addEventListener('click',e=>{if(e.target.closest('.action-btn-home,.action-btn-back,#btn-play-again'))active=null;},true);
+document.addEventListener('picspeak:snapshot-result',e=>{
+ const p=e.detail,a=active;active=null;
+ if(!a||p?.mode!=='snapshot'||p.id!==a.id||p.level!==a.level||window.appState?.formId||!Number.isFinite(p.words)||p.words<=0)return;
+ if(p.words>=20&&Number.isFinite(p.wpm)&&p.wpm>=100)state.speed=true;
+ const fresh=sync();
+ if(fresh.length){
+   const host=document.querySelector('#ranking-container .snapshot-result-identity');
+   if(host){const el=document.createElement('div');el.className='ps-pass-unlock';el.setAttribute('role','status');el.textContent='✦ BADGE UNLOCKED: '+fresh.map(b=>b.name).join(' / ');host.append(el);}
+ }
+});
+window.addEventListener('storage',e=>{if([KEY,PROGRESS,DAILY].includes(e.key)){// Do not write back on every storage event.
+ const old=readPassport();for(const id of old.unlocked)state.unlocked.add(id);state.speed=state.speed||old.speed;
+ f=facts(safeRead(PROGRESS,{}),safeRead(DAILY,[]));qualified(f,state.speed).forEach((q,i)=>{if(q)state.unlocked.add(definitions[i].id);});
+ $('ps-passport-mini').textContent=state.unlocked.size+'/'+definitions.length;$('ps-pass-count').textContent=state.unlocked.size+' / '+definitions.length+' 獲得';if(dialog.open)render();
+}});
+sync();open.hidden=false;
 })();
 </script>
 <script defer src="bridge/copeak-lms-bridge.js"></script>
